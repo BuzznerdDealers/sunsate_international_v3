@@ -38,6 +38,11 @@
     box.appendChild(frame);
     var host = link.closest('.bz-col') || link.parentNode;
     host.insertBefore(box, host.firstChild);
+    // The link was the un-enhanced state; once the player is in, it is a
+    // duplicate of it, so it is marked rather than removed and the page's own
+    // Custom code decides whether to keep showing it.
+    var block = link.closest('.bz-block');
+    if (block) block.classList.add('ss-embed-replaced');
   }
 
   ['videos-library', 'videos-featured'].forEach(function (id) {

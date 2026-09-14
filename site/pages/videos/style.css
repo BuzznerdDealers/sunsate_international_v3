@@ -34,3 +34,22 @@
 [data-bz-node="vs-t"] p { font-size: 16px; line-height: 1.7; color: var(--body-text); margin: 0 0 20px; }
 [data-bz-node="vs-t"] p:first-child { font-size: 18px; color: var(--ink); }
 [data-bz-node="vs-t"] p:last-child { margin-bottom: 44px; }
+
+/* The featured player sits in a 900px box; the library cards are the player
+   with a small source line under it, and no card padding of their own. */
+[data-bz-node="vf-col"] .ss-embed { max-width: 900px; }
+[data-bz-node="vf-col"] .ss-embed iframe { width: 100%; aspect-ratio: 16 / 9; display: block; border: 0; }
+.ss-embed-replaced { display: none; }
+[data-bz-node="vf-head-h"] h2 { margin-bottom: 28px; }
+
+[data-bz-node="videos-library"] [data-bz-type="column"][data-bz-node^="fg-card-"][data-bz-node] { padding: 0; }
+[data-bz-node="videos-library"] [data-bz-node^="fg-card-h"] { display: none; }
+[data-bz-node="videos-library"] [data-bz-node^="fg-card-b"] { padding: 16px 20px; }
+[data-bz-node="videos-library"] [data-bz-node^="fg-card-b"] p {
+  font: 700 11px/1.4 var(--font-body); letter-spacing: .12em; text-transform: uppercase; color: var(--muted);
+}
+[data-bz-node="videos-library"] [data-bz-node^="fg-card-cta"] { display: none; }
+[data-bz-node="videos-library"] .ss-embed iframe { width: 100%; aspect-ratio: 16 / 9; display: block; border: 0; }
+[data-bz-node="videos-summary"] { padding-block: 80px 0; }
+[data-bz-node="videos-featured"] { padding-block: 56px 0; }
+[data-bz-node="videos-library"] > .bz-section { padding-block: 90px; }
