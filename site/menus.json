@@ -998,6 +998,42 @@
           "url": "#tc-orders"
         }
       ]
+    },
+    {
+      "id": "social",
+      "name": "Social profiles",
+      "items": [
+        {
+          "id": "so-fb",
+          "label": "Facebook",
+          "type": "url",
+          "url": "https://www.facebook.com/sunstateintl"
+        },
+        {
+          "id": "so-ig",
+          "label": "Instagram",
+          "type": "url",
+          "url": "https://www.instagram.com/sunstateintl"
+        },
+        {
+          "id": "so-li",
+          "label": "LinkedIn",
+          "type": "url",
+          "url": "https://www.linkedin.com/company/sun-state-international-trucks"
+        },
+        {
+          "id": "so-x",
+          "label": "X",
+          "type": "url",
+          "url": "https://x.com/sunstateintl"
+        },
+        {
+          "id": "so-yt",
+          "label": "YouTube",
+          "type": "url",
+          "url": "https://www.youtube.com/@sunstateinternationaltruck7699"
+        }
+      ]
     }
   ]
 }
