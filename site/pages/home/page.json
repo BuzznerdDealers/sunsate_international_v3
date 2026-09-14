@@ -453,6 +453,20 @@
                       "limit": 4
                     }
                   }
+                },
+                {
+                  "id": "feat-all",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "View all inventory →",
+                        "url": "/inventory",
+                        "style": "link",
+                        "intent": "browse-inventory"
+                      }
+                    ]
+                  }
                 }
               ]
             }
@@ -512,7 +526,7 @@
       "type": "section",
       "props": {
         "width": "boxed",
-        "background": "card",
+        "background": "paper",
         "paddingY": 10,
         "anchor": "testimonials"
       },
@@ -532,10 +546,18 @@
               },
               "children": [
                 {
+                  "id": "test-head",
+                  "type": "heading",
+                  "props": {
+                    "text": "What our customers say.",
+                    "eyebrow": "TESTIMONIALS",
+                    "headingLevel": 2
+                  }
+                },
+                {
                   "id": "test-block",
                   "type": "testimonials",
                   "props": {
-                    "heading": "What our customers say.",
                     "headingLevel": 2,
                     "items": [
                       {
@@ -569,7 +591,7 @@
       "id": "home-cta",
       "type": "sharedSection",
       "props": {
-        "sectionId": "cta-band",
+        "sectionId": "cta-compact",
         "values": {
           "eyebrow": "",
           "heading": "Ready to get on the road?",
@@ -578,7 +600,8 @@
           "primaryUrl": "/contact",
           "secondaryLabel": "",
           "secondaryUrl": "",
-          "note": "Call us today · 813.521.8148"
+          "note": "Call us today · 813.521.8148",
+          "background": "ink"
         }
       }
     }

@@ -50,3 +50,37 @@
 
 /* The two brand bands mirror: the photo leads on the second one. */
 [data-bz-node="home-brands"] [data-bz-node^="mb-media"] { order: -1; }
+
+/* The testimonial band: a label, a 38px heading and three quoted cards. */
+[data-bz-node="home-testimonials"] { padding-block: 120px; }
+[data-bz-node="test-head"] h2 { font-size: 38px; margin-bottom: 52px; }
+[data-bz-node="test-block"] .bz-grid { gap: 32px; }
+[data-bz-node="test-block"] .bz-quote { padding: 32px; gap: 0; }
+[data-bz-node="test-block"] .bz-quote blockquote { font-size: 16px; line-height: 1.6; color: var(--ink); margin: 0 0 20px; }
+[data-bz-node="test-block"] .bz-quote blockquote::before { content: "\201C"; }
+[data-bz-node="test-block"] .bz-quote blockquote::after { content: "\201D"; }
+[data-bz-node="test-block"] .bz-quote__n { font: 700 14px/1.6 var(--font-body); color: var(--ink); }
+[data-bz-node="test-block"] .bz-quote__r { font-size: 13px; line-height: 1.6; color: var(--muted); }
+
+/* The closing band is the compact one, 560px wide with a 34px heading. */
+[data-bz-section="cta-compact"] > .bz-section { padding-block: 100px; }
+[data-bz-section="cta-compact"] > .bz-section > .bz-container { max-width: calc(560px + 2 * var(--container-pad)); }
+[data-bz-section="cta-compact"] .bz-btn--primary { background: var(--accent); }
+[data-bz-section="cta-compact"] .bz-btn--primary:hover { background: var(--accent-dark); }
+[data-bz-section="cta-compact"] [data-bz-node="ctc-note"] p { color: #B0B0B0; }
+[data-bz-section="cta-compact"] h2 { font-size: 34px; margin-bottom: 14px; }
+[data-bz-section="cta-compact"] .bz-block + .bz-block { padding-block-start: 0; }
+[data-bz-section="cta-compact"] [data-bz-node="ctc-body"] .bz-text { max-width: none; }
+[data-bz-section="cta-compact"] [data-bz-node="ctc-body"] p { margin-bottom: 36px; }
+[data-bz-section="cta-compact"] [data-bz-node="ctc-buttons"] .bz-btns { margin-bottom: 20px; }
+
+/* The two boxed banners sit inside the page grid; the handoff gives the pair
+   120px of air below and none between. */
+[data-bz-node="home-trailers"] > .bz-section > .bz-container { padding-block: 100px 120px; }
+[data-bz-node="home-brands"] > .bz-section > .bz-container { padding-block: 0 120px; }
+
+/* The featured-listings band: a label, a 38px heading and the live grid. */
+[data-bz-node="home-featured"] { padding-block: 100px 0; }
+[data-bz-node="feat-head-h"] h2 { font-size: 38px; margin-bottom: 44px; }
+[data-bz-node="feat-head-h"] .bz-eyebrow { margin-bottom: 14px; }
+[data-bz-node="feat-all"] .bz-btns { justify-content: flex-end; margin-block: 28px 0; }
