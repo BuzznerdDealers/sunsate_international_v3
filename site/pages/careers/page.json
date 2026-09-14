@@ -238,87 +238,35 @@
     },
     {
       "id": "careers-faq",
-      "type": "section",
+      "type": "sharedSection",
       "props": {
-        "width": "boxed",
-        "paddingY": 10,
-        "background": "paper",
-        "anchor": "careers-faq"
-      },
-      "children": [
-        {
-          "id": "careers-faq-head-row",
-          "type": "row",
-          "props": {
-            "gap": 5
-          },
-          "children": [
+        "sectionId": "feature-grid",
+        "values": {
+          "eyebrow": "QUICK ANSWERS",
+          "heading": "Before you apply.",
+          "span": 6,
+          "background": "paper",
+          "anchor": "careers-faq",
+          "items": [
             {
-              "id": "careers-faq-head-col",
-              "type": "column",
-              "props": {
-                "span": 12
-              },
-              "children": [
-                {
-                  "id": "careers-faq-head-h",
-                  "type": "heading",
-                  "props": {
-                    "text": "Before you apply.",
-                    "headingLevel": 2,
-                    "eyebrow": "QUICK ANSWERS"
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "careers-faq-row",
-          "type": "row",
-          "props": {
-            "gap": 5
-          },
-          "children": [
+              "title": "What benefits does Sun State offer?",
+              "body": "Market-based and incentive pay, medical, dental, vision and prescription coverage, an EAP, 401(k), tuition reimbursement, life insurance, AD&D, disability, PTO, supplemental health, identity protection and an employee discount program."
+            },
             {
-              "id": "careers-faq-col",
-              "type": "column",
-              "props": {
-                "span": 12
-              },
-              "children": [
-                {
-                  "id": "careers-faq-list",
-                  "type": "widget",
-                  "props": {
-                    "widget": "faq",
-                    "config": {
-                      "items": [
-                        {
-                          "q": "What benefits does Sun State offer?",
-                          "a": "Market-based and incentive pay, medical, dental, vision and prescription coverage, an EAP, 401(k), tuition reimbursement, life insurance, AD&D, disability, PTO, supplemental health, identity protection and an employee discount program."
-                        },
-                        {
-                          "q": "Do you hire technicians with no experience?",
-                          "a": "Yes. Our Apprentice Technician Program and tuition reimbursement let people new to the industry train into certified technician roles."
-                        },
-                        {
-                          "q": "Where can I work?",
-                          "a": "Five West Central Florida locations: Tampa, Sarasota, Davenport, Brooksville and the Tampa Aftermarket Business."
-                        },
-                        {
-                          "q": "How do I apply?",
-                          "a": "Browse and apply online through our careers portal. Trucks and trailers roles are posted in the same place."
-                        }
-                      ]
-                    }
-                  }
-                }
-              ]
+              "title": "Do you hire technicians with no experience?",
+              "body": "Yes. Our Apprentice Technician Program and tuition reimbursement let people new to the industry train into certified technician roles."
+            },
+            {
+              "title": "Where can I work?",
+              "body": "Five West Central Florida locations: Tampa, Sarasota, Davenport, Brooksville and the Tampa Aftermarket Business."
+            },
+            {
+              "title": "How do I apply?",
+              "body": "Browse and apply online through our careers portal. Trucks and trailers roles are posted in the same place."
             }
           ]
         }
-      ]
+      }
     },
     {
       "id": "careers-cta",

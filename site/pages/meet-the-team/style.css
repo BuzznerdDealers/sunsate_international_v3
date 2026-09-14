@@ -24,3 +24,7 @@
 /* The handoff's contact band on this page. */
 [data-bz-section="cta-compact"] > .bz-section { padding-block: 72px; }
 [data-bz-section="cta-compact"] h2 { font-size: 26px; }
+
+/* The handoff draws these quick answers as a two-up card grid, not an accordion. */
+[data-bz-node="team-faq"] > .bz-section { padding-block: 80px; }
+[data-bz-type="column"][data-bz-node^="fg-card-"][data-bz-node] { padding: 28px; }

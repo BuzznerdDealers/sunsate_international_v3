@@ -62,17 +62,6 @@
                     "text": "At Sun State, we offer only the best quality for the best price — International trucks, IC Bus, Capacity yard trucks, Hyundai Translead and Globe Trailers. A good business starts with the right equipment, and our purpose is to help you find it.\n\nSearch by category below, or call 800.741.7566 and tell us the job — weights, routes, duty cycle — and we'll tell you what fits, what's on the ground now and what would need a factory order.",
                     "width": "prose"
                   }
-                },
-                {
-                  "id": "inv-search",
-                  "type": "widget",
-                  "props": {
-                    "widget": "inventory-search",
-                    "config": {
-                      "heading": "Search the lot",
-                      "placeholder": "Search make, model or stock #…"
-                    }
-                  }
                 }
               ]
             }
@@ -227,72 +216,6 @@
       }
     },
     {
-      "id": "inv-featured",
-      "type": "section",
-      "props": {
-        "width": "boxed",
-        "paddingY": 10,
-        "background": "card"
-      },
-      "children": [
-        {
-          "id": "inv-feat-head-row",
-          "type": "row",
-          "props": {
-            "gap": 5
-          },
-          "children": [
-            {
-              "id": "inv-feat-head-col",
-              "type": "column",
-              "props": {
-                "span": 12
-              },
-              "children": [
-                {
-                  "id": "inv-feat-head-h",
-                  "type": "heading",
-                  "props": {
-                    "text": "Live inventory.",
-                    "headingLevel": 2,
-                    "eyebrow": "ON THE GROUND NOW"
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "inv-feat-row",
-          "type": "row",
-          "props": {
-            "gap": 5
-          },
-          "children": [
-            {
-              "id": "inv-feat-col",
-              "type": "column",
-              "props": {
-                "span": 12
-              },
-              "children": [
-                {
-                  "id": "inv-carousel",
-                  "type": "widget",
-                  "props": {
-                    "widget": "inventory-carousel",
-                    "config": {
-                      "heading": ""
-                    }
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "inv-support",
       "type": "sharedSection",
       "props": {
@@ -385,95 +308,43 @@
     },
     {
       "id": "inv-faq",
-      "type": "section",
+      "type": "sharedSection",
       "props": {
-        "width": "boxed",
-        "paddingY": 10,
-        "background": "paper",
-        "anchor": "inv-faq"
-      },
-      "children": [
-        {
-          "id": "inv-faq-head-row",
-          "type": "row",
-          "props": {
-            "gap": 5
-          },
-          "children": [
+        "sectionId": "feature-grid",
+        "values": {
+          "eyebrow": "INVENTORY FAQS",
+          "heading": "Common questions.",
+          "span": 12,
+          "background": "paper",
+          "anchor": "inv-faq",
+          "items": [
             {
-              "id": "inv-faq-head-col",
-              "type": "column",
-              "props": {
-                "span": 12
-              },
-              "children": [
-                {
-                  "id": "inv-faq-head-h",
-                  "type": "heading",
-                  "props": {
-                    "text": "Common questions.",
-                    "headingLevel": 2,
-                    "eyebrow": "INVENTORY FAQS"
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "inv-faq-row",
-          "type": "row",
-          "props": {
-            "gap": 5
-          },
-          "children": [
+              "title": "What does Sun State sell?",
+              "body": "New and used International trucks, IC Bus, Capacity yard trucks, and new and used Hyundai Translead and Globe trailers including dry van, reefer and flatbed. Trailer rentals are also available through Sun State Trailers."
+            },
             {
-              "id": "inv-faq-col",
-              "type": "column",
-              "props": {
-                "span": 12
-              },
-              "children": [
-                {
-                  "id": "inv-faq-list",
-                  "type": "widget",
-                  "props": {
-                    "widget": "faq",
-                    "config": {
-                      "items": [
-                        {
-                          "q": "What does Sun State sell?",
-                          "a": "New and used International trucks, IC Bus, Capacity yard trucks, and new and used Hyundai Translead and Globe trailers including dry van, reefer and flatbed. Trailer rentals are also available through Sun State Trailers."
-                        },
-                        {
-                          "q": "Where is the inventory located?",
-                          "a": "Units are held across Tampa, Davenport and Sarasota, with trailer sales at 6020 Adamo Drive in Tampa. Call 800-741-7566 and we will confirm which location has the unit you are looking at and whether it can be moved."
-                        },
-                        {
-                          "q": "Can I order a truck that isn't in stock?",
-                          "a": "Yes. Build a spec in the truck configurator or tell us the application, and we will quote a factory order with a current lead time, or find a comparable unit already in stock or in transit."
-                        },
-                        {
-                          "q": "Do you rent trailers?",
-                          "a": "Yes. Sun State Trailers offers trailer rentals in addition to new and used trailer sales. Call Trailer Sales at (813) 621-1331 for availability."
-                        },
-                        {
-                          "q": "Can inventory be financed?",
-                          "a": "Yes. With a minimum down payment and approved credit we arrange financing through BMO Harris Bank, Navistar Financial and other sources, and can include parts, accessories, insurance and extended coverage in one monthly payment."
-                        },
-                        {
-                          "q": "Can you upfit a unit before delivery?",
-                          "a": "Yes. Our Tampa aftermarket facility installs bodies, roll-off hoists, liftgates, tarp systems, lift axles, PTO and wet-line kits and performs frame modifications, so the unit arrives ready to work."
-                        }
-                      ]
-                    }
-                  }
-                }
-              ]
+              "title": "Where is the inventory located?",
+              "body": "Units are held across Tampa, Davenport and Sarasota, with trailer sales at 6020 Adamo Drive in Tampa. Call 800-741-7566 and we will confirm which location has the unit you are looking at and whether it can be moved."
+            },
+            {
+              "title": "Can I order a truck that isn't in stock?",
+              "body": "Yes. Build a spec in the truck configurator or tell us the application, and we will quote a factory order with a current lead time, or find a comparable unit already in stock or in transit."
+            },
+            {
+              "title": "Do you rent trailers?",
+              "body": "Yes. Sun State Trailers offers trailer rentals in addition to new and used trailer sales. Call Trailer Sales at (813) 621-1331 for availability."
+            },
+            {
+              "title": "Can inventory be financed?",
+              "body": "Yes. With a minimum down payment and approved credit we arrange financing through BMO Harris Bank, Navistar Financial and other sources, and can include parts, accessories, insurance and extended coverage in one monthly payment."
+            },
+            {
+              "title": "Can you upfit a unit before delivery?",
+              "body": "Yes. Our Tampa aftermarket facility installs bodies, roll-off hoists, liftgates, tarp systems, lift axles, PTO and wet-line kits and performs frame modifications, so the unit arrives ready to work."
             }
           ]
         }
-      ]
+      }
     },
     {
       "id": "inv-cta",

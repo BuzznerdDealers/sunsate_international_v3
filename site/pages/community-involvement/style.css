@@ -18,3 +18,9 @@
   background: none; border: 0; border-top: 3px solid var(--ink);
   padding: 16px 0 0;
 }
+
+/* The handoff opens with a lede, two figures and the at-a-glance card. */
+[data-bz-node="ci-summary"] { padding-block: 76px 0; }
+[data-bz-node="ci-sum-t"] .bz-text { max-width: 880px; }
+[data-bz-node="ci-sum-t"] p { font-size: 18px; line-height: 1.7; color: var(--ink); margin: 0 0 32px; }
+[data-bz-node="ci-glance-card"] { margin: 36px 0 44px; }

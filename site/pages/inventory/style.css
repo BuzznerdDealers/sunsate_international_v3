@@ -23,3 +23,22 @@
   background: none; border: 0; border-top: 3px solid var(--accent);
   padding: 20px 0 0;
 }
+
+/* The handoff's opening band: two paragraphs in an 880px measure. */
+[data-bz-node="inv-intro"] { padding-block: 76px 0; }
+[data-bz-node="inv-intro-t"] .bz-text { max-width: 880px; }
+[data-bz-node="inv-intro-t"] p { font-size: 16px; line-height: 1.7; color: var(--body-text); margin: 0 0 20px; }
+[data-bz-node="inv-intro-t"] p:first-child { font-size: 18px; color: var(--ink); }
+[data-bz-node="inv-intro-t"] p:last-child { margin-bottom: 0; }
+
+/* The handoff answers these in the open, in a 900px measure, rather than behind
+   an accordion. */
+[data-bz-node="inv-faq"] > .bz-section { padding-block: 100px; }
+[data-bz-node="inv-faq"] > .bz-section > .bz-container { max-width: 900px; }
+[data-bz-node="inv-faq"] [data-bz-node="fg-grid"] { row-gap: 28px; }
+[data-bz-node="inv-faq"] h2 { font-size: 32px; }
+[data-bz-node="inv-faq"] [data-bz-type="column"][data-bz-node^="fg-card-"][data-bz-node] {
+  background: none; border: 0; border-top: 1px solid var(--line); padding: 24px 0 0;
+}
+[data-bz-node="inv-faq"] h3 { font-size: 17px; margin-bottom: 8px; }
+[data-bz-node="inv-faq"] [data-bz-node^="fg-card-b"] p { font-size: 15px; line-height: 1.65; }

@@ -64,50 +64,41 @@
                       }
                     ]
                   }
+                },
+                {
+                  "id": "ci-glance-card",
+                  "type": "glance-table",
+                  "props": {
+                    "title": "At a glance",
+                    "rows": [
+                      {
+                        "label": "What we give",
+                        "text": "Time, talent and treasure — donated employee hours, professional expertise and board service, and direct financial support."
+                      },
+                      {
+                        "label": "Annual investment",
+                        "text": "Over $100,000 a year, alongside donated employee time and talent."
+                      },
+                      {
+                        "label": "Partner organizations",
+                        "text": "Eleven, including Feeding Tampa Bay, Boys & Girls Club of Tampa Bay, Academy Prep, Goodwill, Tampa General Hospital and USF."
+                      },
+                      {
+                        "label": "Where",
+                        "text": "The Tampa Bay region and the communities around our Tampa, Sarasota, Davenport and Brooksville locations."
+                      },
+                      {
+                        "label": "To partner with us",
+                        "text": "Email info@sunstateintl.com or call 813.521.8148 to discuss sponsorship, in-kind support or employee volunteering."
+                      }
+                    ]
+                  }
                 }
               ]
             }
           ]
         }
       ]
-    },
-    {
-      "id": "ci-glance",
-      "type": "sharedSection",
-      "props": {
-        "sectionId": "feature-grid",
-        "values": {
-          "eyebrow": "AT A GLANCE",
-          "heading": "What our giving looks like.",
-          "span": 4,
-          "background": "card",
-          "anchor": "community-answers",
-          "items": [
-            {
-              "title": "What we give",
-              "body": "Time, talent and treasure — donated employee hours, professional expertise and board service, and direct financial support."
-            },
-            {
-              "title": "Annual investment",
-              "body": "Over $100,000 a year, alongside donated employee time and talent."
-            },
-            {
-              "title": "Partner organizations",
-              "body": "Eleven, including Feeding Tampa Bay, Boys & Girls Club of Tampa Bay, Academy Prep, Goodwill, Tampa General Hospital and USF."
-            },
-            {
-              "title": "Where",
-              "body": "The Tampa Bay region and the communities around our Tampa, Sarasota, Davenport and Brooksville locations."
-            },
-            {
-              "title": "To partner with us",
-              "body": "Email info@sunstateintl.com or call 813.521.8148 to discuss sponsorship, in-kind support or employee volunteering.",
-              "linkLabel": "Contact us →",
-              "linkUrl": "/contact"
-            }
-          ]
-        }
-      }
     },
     {
       "id": "ci-partners",
