@@ -135,8 +135,8 @@
       "props": {
         "sectionId": "feature-grid",
         "values": {
-          "eyebrow": "SERVICES",
-          "heading": "What we do in the bays.",
+          "eyebrow": "",
+          "heading": "",
           "span": 4,
           "background": "card",
           "anchor": "services",
@@ -277,8 +277,8 @@
       "props": {
         "sectionId": "feature-grid",
         "values": {
-          "eyebrow": "PROTECTING THE BUDGET",
-          "heading": "Coverage and credit.",
+          "eyebrow": "",
+          "heading": "",
           "span": 6,
           "background": "paper",
           "items": [
@@ -496,28 +496,26 @@
                       }
                     ]
                   }
+                },
+                {
+                  "id": "svc-contact-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Schedule Your Service Appointment",
+                        "url": "/service-appointment",
+                        "style": "primary",
+                        "intent": "schedule-service"
+                      }
+                    ]
+                  }
                 }
               ]
             }
           ]
         }
       ]
-    },
-    {
-      "id": "svc-cta",
-      "type": "sharedSection",
-      "props": {
-        "sectionId": "cta-band",
-        "values": {
-          "eyebrow": "LET'S GET YOU GOING",
-          "heading": "Schedule your service appointment.",
-          "body": "Tell us what the unit needs and when you would like it in, and a service advisor will confirm the time and the scope of work.",
-          "primaryLabel": "Schedule your service appointment",
-          "primaryUrl": "/service-appointment",
-          "secondaryLabel": "Call 800.741.7566",
-          "secondaryUrl": "tel:+18007417566"
-        }
-      }
     }
   ]
 }

@@ -20,3 +20,10 @@
   .bz-block--hero { padding-block: 49px; }
   .bz-block--hero h1 { font-size: 28px; }
 }
+
+/* --- The handoff's opening band --- */
+[data-bz-node="br-intro"] { padding-block: 76px 0; }
+[data-bz-node="br-intro-t"] .bz-text { max-width: 880px; }
+[data-bz-node="br-intro-t"] p { font-size: 16px; line-height: 1.7; color: var(--body-text); margin: 0 0 20px; }
+[data-bz-node="br-intro-t"] p:first-child { font-size: 18px; color: var(--ink); }
+[data-bz-node="br-intro-t"] p:last-child { margin-bottom: 44px; }

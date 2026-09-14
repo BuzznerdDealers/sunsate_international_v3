@@ -14,3 +14,10 @@
 
 /* The handoff's contact band on this page. */
 [data-bz-section="cta-compact"] > .bz-section > .bz-container { max-width: calc(700px + 2 * var(--container-pad)); }
+
+/* --- The handoff's opening band --- */
+[data-bz-node="reviews-highlights"] { padding-block: 76px 0; }
+[data-bz-node="rh-intro-t"] .bz-text { max-width: 880px; }
+[data-bz-node="rh-intro-t"] p { font-size: 16px; line-height: 1.7; color: var(--body-text); margin: 0 0 20px; }
+[data-bz-node="rh-intro-t"] p:first-child { font-size: 18px; color: var(--ink); }
+[data-bz-node="rh-intro-t"] p:last-child { margin-bottom: 44px; }

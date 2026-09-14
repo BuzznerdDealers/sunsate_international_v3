@@ -21,3 +21,10 @@
   padding: 20px 0 0;
 }
 [data-bz-node="ext-locations"] [data-bz-type="column"][data-bz-node^="fg-card-"][data-bz-node] { padding: 28px; }
+
+/* --- The handoff's opening band --- */
+[data-bz-node="ext-summary"] { padding-block: 76px 0; }
+[data-bz-node="ext-sum-t"] .bz-text { max-width: 880px; }
+[data-bz-node="ext-sum-t"] p { font-size: 16px; line-height: 1.7; color: var(--body-text); margin: 0 0 20px; }
+[data-bz-node="ext-sum-t"] p:first-child { font-size: 18px; color: var(--ink); }
+[data-bz-node="ext-sum-t"] p:last-child { margin-bottom: 44px; }
