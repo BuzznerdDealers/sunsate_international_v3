@@ -52,7 +52,8 @@
             "width": 1600,
             "height": 900
           },
-          "anchor": "sar-summary"
+          "anchor": "sar-summary",
+          "background": "card"
         }
       }
     },
@@ -86,7 +87,8 @@
               "phoneUrl": "tel:+19415413251",
               "rows": "<strong>Monday</strong> 7:00am – 5:00pm\n\n<strong>Tuesday</strong> 7:00am – 5:00pm\n\n<strong>Wednesday</strong> 7:00am – 5:00pm\n\n<strong>Thursday</strong> 7:00am – 5:00pm\n\n<strong>Friday</strong> 7:00am – 5:00pm\n\n<strong>Saturday</strong> Closed\n\n<strong>Sunday</strong> Closed"
             }
-          ]
+          ],
+          "background": "card"
         }
       }
     },
@@ -315,7 +317,8 @@
           "primaryLabel": "Call (941) 355-7681",
           "primaryUrl": "tel:+19413557681",
           "secondaryLabel": "Schedule service",
-          "secondaryUrl": "/service-appointment"
+          "secondaryUrl": "/service-appointment",
+          "background": "ink"
         }
       }
     }

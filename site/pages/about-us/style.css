@@ -2,7 +2,6 @@
 [data-bz-node="leader-img"] img { width: 100%; max-width: 420px; height: auto; }
 [data-bz-node="story-mission"] .bz-text { margin-inline: auto; font-size: 19px; }
 /* The intro band leads with the photograph. */
-[data-bz-node="story-intro"] [data-bz-node^="mb-media"] { order: -1; }
 [data-bz-node="story-care"] [data-bz-node^="mb-media"] { order: -1; }
 
 /* --- Hero geometry, measured from the handoff --- */
@@ -25,3 +24,6 @@
 /* --- Card treatment, measured from the handoff --- */
 [data-bz-node="story-culture"] [data-bz-type="column"][data-bz-node^="fg-card-"][data-bz-node] { padding: 28px 24px; }
 [data-bz-node="story-values"] [data-bz-type="column"][data-bz-node^="fg-card-"][data-bz-node] { padding: 32px; }
+
+/* The leadership band sits on the darker chrome, not on ink. */
+[data-bz-node="story-leader"] { background: var(--chrome); }

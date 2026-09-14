@@ -165,7 +165,8 @@
               "ctaLabel": "Buy Now →",
               "ctaUrl": "/capacity-yard-trucks"
             }
-          ]
+          ],
+          "background": "ink"
         }
       }
     },
@@ -398,7 +399,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 10,
-        "background": "paper",
+        "background": "card",
         "anchor": "featured-inventory"
       },
       "children": [
@@ -509,7 +510,7 @@
           "ctaLabel": "Globe Trailers",
           "ctaUrl": "/store/inventory?brand=globe-trailers",
           "ctaStyle": "primary",
-          "background": "paper",
+          "background": "card",
           "anchor": "brands",
           "image": {
             "src": "/img/photo-placeholder.svg",

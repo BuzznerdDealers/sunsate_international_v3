@@ -37,7 +37,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 9,
-        "background": "paper",
+        "background": "card",
         "anchor": "fin-summary"
       },
       "children": [
@@ -555,7 +555,8 @@
           "primaryLabel": "Call 800.741.7566",
           "primaryUrl": "tel:+18007417566",
           "secondaryLabel": "Apply for credit",
-          "secondaryUrl": "#credit-applications"
+          "secondaryUrl": "#credit-applications",
+          "background": "ink"
         }
       }
     }

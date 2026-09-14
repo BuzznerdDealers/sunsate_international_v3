@@ -23,7 +23,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 9,
-        "background": "paper",
+        "background": "card",
         "anchor": "community-summary"
       },
       "children": [
@@ -106,7 +106,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 10,
-        "background": "paper",
+        "background": "card",
         "anchor": "partners"
       },
       "children": [
@@ -274,7 +274,7 @@
           "eyebrow": "WHY WE GIVE",
           "heading": "More than a business; a family.",
           "body": "At Sun State, we're more than a business; we're a family. Within our tight-knit community, every individual is not merely an employee but a valued member. We ensure every member of our team is cared for and respected as they are an essential part of our success.\n\nOur family-owned business has a heritage of community service and \"be the change\" care, and we seek to create the next generation of leaders in our region. That begins inside our own walls — and carries into the neighborhoods our trucks and trailers run through every day.",
-          "background": "card",
+          "background": "paper",
           "image": {
             "src": "/img/photo-placeholder.svg",
             "alt": "Sun State employees volunteering — photograph to be supplied",
@@ -295,7 +295,7 @@
           "heading": "Time, talent and treasure.",
           "body": "Three ways we show up for Tampa Bay, and what each one means in practice.",
           "span": 4,
-          "background": "paper",
+          "background": "card",
           "items": [
             {
               "title": "Time",
@@ -319,7 +319,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 10,
-        "background": "card",
+        "background": "paper",
         "anchor": "community-faq"
       },
       "children": [

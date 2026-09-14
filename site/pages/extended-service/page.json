@@ -37,7 +37,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 9,
-        "background": "paper",
+        "background": "card",
         "anchor": "ext-summary"
       },
       "children": [
@@ -157,7 +157,7 @@
           "eyebrow": "WHY IT PAYS OFF",
           "heading": "Predictable cost, protected uptime.",
           "span": 3,
-          "background": "paper",
+          "background": "card",
           "items": [
             {
               "title": "Predictable budgets",
@@ -191,7 +191,7 @@
           "ctaLabel": "Schedule trailer service →",
           "ctaUrl": "/service-appointment",
           "ctaStyle": "link",
-          "background": "card",
+          "background": "paper",
           "image": {
             "src": "/img/photo-placeholder.svg",
             "alt": "A trailer repair bay — photograph to be supplied",
@@ -211,7 +211,7 @@
           "eyebrow": "PAYING FOR IT",
           "heading": "Financing and fleet programs.",
           "span": 6,
-          "background": "paper",
+          "background": "card",
           "items": [
             {
               "title": "Finance your coverage",
@@ -238,7 +238,7 @@
           "eyebrow": "WHERE COVERED REPAIRS HAPPEN",
           "heading": "Service departments across Florida.",
           "span": 3,
-          "background": "card",
+          "background": "paper",
           "anchor": "ext-locations",
           "items": [
             {
@@ -275,7 +275,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 10,
-        "background": "paper",
+        "background": "card",
         "anchor": "ext-faq"
       },
       "children": [
@@ -377,7 +377,8 @@
           "primaryLabel": "Call 800.741.7566",
           "primaryUrl": "tel:+18007417566",
           "secondaryLabel": "Schedule service",
-          "secondaryUrl": "/service-appointment"
+          "secondaryUrl": "/service-appointment",
+          "background": "ink"
         }
       }
     }

@@ -24,3 +24,6 @@
 [data-bz-node="ci-sum-t"] .bz-text { max-width: 880px; }
 [data-bz-node="ci-sum-t"] p { font-size: 18px; line-height: 1.7; color: var(--ink); margin: 0 0 32px; }
 [data-bz-node="ci-glance-card"] { margin: 36px 0 44px; }
+
+/* The handoff puts this band's photograph on the left. */
+[data-bz-node="ci-why"] [data-bz-node^="mb-media"] { order: -1; }

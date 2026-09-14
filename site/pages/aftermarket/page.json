@@ -37,7 +37,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 9,
-        "background": "paper",
+        "background": "card",
         "anchor": "aft-summary"
       },
       "children": [
@@ -435,7 +435,8 @@
           "primaryLabel": "Call (813) 627-3282",
           "primaryUrl": "tel:+18136273282",
           "secondaryLabel": "Request an appointment",
-          "secondaryUrl": "/service-appointment"
+          "secondaryUrl": "/service-appointment",
+          "background": "ink"
         }
       }
     }

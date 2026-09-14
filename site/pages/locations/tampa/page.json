@@ -52,7 +52,8 @@
             "width": 1600,
             "height": 900
           },
-          "anchor": "tpa-summary"
+          "anchor": "tpa-summary",
+          "background": "card"
         }
       }
     },
@@ -86,7 +87,8 @@
               "phoneUrl": "tel:+18135218053",
               "rows": "<strong>Monday</strong> 7:00am – 7:00pm\n\n<strong>Tuesday</strong> 7:00am – 7:00pm\n\n<strong>Wednesday</strong> 7:00am – 7:00pm\n\n<strong>Thursday</strong> 7:00am – 7:00pm\n\n<strong>Friday</strong> 7:00am – 7:00pm\n\n<strong>Saturday</strong> Closed\n\n<strong>Sunday</strong> Closed"
             }
-          ]
+          ],
+          "background": "card"
         }
       }
     },
@@ -315,7 +317,8 @@
           "primaryLabel": "Call (813) 621-1331",
           "primaryUrl": "tel:+18136211331",
           "secondaryLabel": "Schedule service",
-          "secondaryUrl": "/service-appointment"
+          "secondaryUrl": "/service-appointment",
+          "background": "ink"
         }
       }
     }

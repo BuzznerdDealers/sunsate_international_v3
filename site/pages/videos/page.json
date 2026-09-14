@@ -23,7 +23,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 9,
-        "background": "paper",
+        "background": "card",
         "anchor": "videos-summary"
       },
       "children": [
@@ -134,7 +134,7 @@
           "eyebrow": "VIDEO LIBRARY",
           "heading": "More from Sun State.",
           "span": 4,
-          "background": "paper",
+          "background": "card",
           "anchor": "library",
           "items": [
             {
@@ -186,7 +186,7 @@
           "eyebrow": "QUICK ANSWERS",
           "heading": "About our videos.",
           "span": 6,
-          "background": "card",
+          "background": "paper",
           "items": [
             {
               "title": "Where else can I watch?",

@@ -52,7 +52,8 @@
             "width": 1600,
             "height": 900
           },
-          "anchor": "dav-summary"
+          "anchor": "dav-summary",
+          "background": "card"
         }
       }
     },
@@ -86,7 +87,8 @@
               "phoneUrl": "tel:+18632382939",
               "rows": "<strong>Monday</strong> 7:00am – 7:00pm\n\n<strong>Tuesday</strong> 7:00am – 7:00pm\n\n<strong>Wednesday</strong> 7:00am – 7:00pm\n\n<strong>Thursday</strong> 7:00am – 7:00pm\n\n<strong>Friday</strong> 7:00am – 7:00pm\n\n<strong>Saturday</strong> 7:00am – 12:00pm\n\n<strong>Sunday</strong> Closed"
             }
-          ]
+          ],
+          "background": "card"
         }
       }
     },
@@ -315,7 +317,8 @@
           "primaryLabel": "Call (863) 424-2411",
           "primaryUrl": "tel:+18634242411",
           "secondaryLabel": "Schedule service",
-          "secondaryUrl": "/service-appointment"
+          "secondaryUrl": "/service-appointment",
+          "background": "ink"
         }
       }
     }

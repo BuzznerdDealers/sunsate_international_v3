@@ -28,7 +28,7 @@
           "ctaLabel": "Find a Location",
           "ctaUrl": "/locations",
           "ctaStyle": "primary",
-          "background": "paper",
+          "background": "card",
           "image": {
             "src": "/img/photo-placeholder.svg",
             "alt": "The Sun State parts warehouse — photograph to be supplied",
@@ -81,7 +81,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 10,
-        "background": "paper",
+        "background": "card",
         "anchor": "trailer-parts"
       },
       "children": [
@@ -202,7 +202,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 10,
-        "background": "card"
+        "background": "paper"
       },
       "children": [
         {
@@ -317,7 +317,7 @@
           "ctaLabel": "Explore Our Service Department →",
           "ctaUrl": "/service",
           "ctaStyle": "link",
-          "background": "paper",
+          "background": "card",
           "anchor": "mobile-support",
           "image": {
             "src": "/img/photo-placeholder.svg",
@@ -342,7 +342,7 @@
           "ctaLabel": "Part Request →",
           "ctaUrl": "/contact",
           "ctaStyle": "link",
-          "background": "card",
+          "background": "paper",
           "anchor": "online-orders",
           "image": {
             "src": "/img/photo-placeholder.svg",
@@ -367,7 +367,7 @@
           "ctaLabel": "Parts Return Policy →",
           "ctaUrl": "https://sunstateintl.com/wp-content/uploads/2024/08/Parts-Return-Policy-2022-Final.pdf",
           "ctaStyle": "link",
-          "background": "none",
+          "background": "card",
           "anchor": "return-policy",
           "width": "full",
           "image": {
@@ -390,7 +390,7 @@
           "ctaLabel": "Sun State Credit Application →",
           "ctaUrl": "https://www.sunstateintl.com/wp-content/uploads/2026/05/IBS-Credit-App-for-intranet.pdf",
           "ctaStyle": "link",
-          "background": "card",
+          "background": "paper",
           "anchor": "credit-options",
           "width": "full",
           "image": {
@@ -496,7 +496,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 9,
-        "background": "paper"
+        "background": "ink"
       },
       "children": [
         {

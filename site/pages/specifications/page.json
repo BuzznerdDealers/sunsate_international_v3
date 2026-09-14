@@ -37,7 +37,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 9,
-        "background": "paper",
+        "background": "card",
         "anchor": "br-intro"
       },
       "children": [
@@ -84,7 +84,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 10,
-        "background": "card",
+        "background": "ink",
         "anchor": "br-s13"
       },
       "children": [
@@ -247,7 +247,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 10,
-        "background": "paper",
+        "background": "card",
         "anchor": "br-library"
       },
       "children": [
@@ -594,7 +594,7 @@
           "eyebrow": "NEXT STEPS",
           "heading": "Trailer specs and factory orders.",
           "span": 6,
-          "background": "card",
+          "background": "paper",
           "items": [
             {
               "title": "Trailer specifications",
@@ -620,7 +620,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 10,
-        "background": "paper",
+        "background": "card",
         "anchor": "br-faq"
       },
       "children": [
@@ -718,7 +718,8 @@
           "primaryLabel": "Call 800.741.7566",
           "primaryUrl": "tel:+18007417566",
           "secondaryLabel": "Contact us",
-          "secondaryUrl": "/contact"
+          "secondaryUrl": "/contact",
+          "background": "ink"
         }
       }
     }

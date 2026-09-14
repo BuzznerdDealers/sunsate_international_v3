@@ -52,7 +52,8 @@
             "width": 1600,
             "height": 900
           },
-          "anchor": "trl-summary"
+          "anchor": "trl-summary",
+          "background": "card"
         }
       }
     },
@@ -86,7 +87,8 @@
               "phoneUrl": "/service-appointment",
               "rows": "Dedicated trailer repair bays\n\nParts counter on the same campus\n\nService 7 AM – 7 PM M–F\n\nAfter-hours via Certified Fleet"
             }
-          ]
+          ],
+          "background": "card"
         }
       }
     },
@@ -140,7 +142,7 @@
           "heading": "Other Sun State locations.",
           "body": "Ready to find the right commercial trucks for your business? Visit us at our convenient locations across Central and Southwest Florida.",
           "span": 3,
-          "background": "paper",
+          "background": "card",
           "locations": [
             {
               "tag": "TRUCKS · TRAILERS · PARTS · SERVICE",
@@ -188,7 +190,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 10,
-        "background": "card",
+        "background": "paper",
         "anchor": "trl-faq"
       },
       "children": [
@@ -286,7 +288,8 @@
           "primaryLabel": "Call (813) 621-1331",
           "primaryUrl": "tel:+18136211331",
           "secondaryLabel": "Browse trailers",
-          "secondaryUrl": "/store/inventory?type=trailer"
+          "secondaryUrl": "/store/inventory?type=trailer",
+          "background": "ink"
         }
       }
     }

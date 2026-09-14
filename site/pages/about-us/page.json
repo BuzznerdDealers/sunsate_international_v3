@@ -45,7 +45,7 @@
           "heading": "A family, not just a company.",
           "body": "As a family-owned and operated business, we've created an environment where every team member plays a crucial role in our success. In our workplace, we believe a team works best when united with a common goal. That goal for us is to provide the best possible care to our customers and to make our business the best it can be. It's this unique culture that is the driving force behind our remarkable success of over 30 years. Some of the values that help us stay united and successful as a team at Sun State include:",
           "span": 3,
-          "background": "paper",
+          "background": "card",
           "items": [
             {
               "title": "Community",
@@ -73,7 +73,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 10,
-        "background": "card"
+        "background": "ink"
       },
       "children": [
         {
@@ -277,7 +277,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 9,
-        "background": "ink"
+        "background": "accent"
       },
       "children": [
         {

@@ -37,7 +37,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 9,
-        "background": "paper",
+        "background": "card",
         "anchor": "mob-summary"
       },
       "children": [
@@ -365,7 +365,8 @@
           "primaryLabel": "Call 800.741.7566",
           "primaryUrl": "tel:+18007417566",
           "secondaryLabel": "Request mobile service",
-          "secondaryUrl": "/service-appointment#appointment-form"
+          "secondaryUrl": "/service-appointment#appointment-form",
+          "background": "ink"
         }
       }
     }

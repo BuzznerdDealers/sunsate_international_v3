@@ -52,7 +52,8 @@
             "width": 1600,
             "height": 900
           },
-          "anchor": "aftloc-summary"
+          "anchor": "aftloc-summary",
+          "background": "card"
         }
       }
     },
@@ -86,7 +87,8 @@
               "phoneUrl": "/service-appointment",
               "rows": "<strong>Diagnostics and PM</strong> Adamo Drive dealership\n\nService 7 AM – 7 PM M–F\n\nAfter-hours via Certified Fleet"
             }
-          ]
+          ],
+          "background": "card"
         }
       }
     },
@@ -159,7 +161,7 @@
           "heading": "Other Sun State locations.",
           "body": "Ready to find the right commercial trucks for your business? Visit us at our convenient locations across Central and Southwest Florida.",
           "span": 3,
-          "background": "paper",
+          "background": "card",
           "locations": [
             {
               "tag": "TRUCKS · TRAILERS · PARTS · SERVICE",
@@ -207,7 +209,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 10,
-        "background": "card",
+        "background": "paper",
         "anchor": "aftloc-faq"
       },
       "children": [
@@ -305,7 +307,8 @@
           "primaryLabel": "Call (813) 627-3282",
           "primaryUrl": "tel:+18136273282",
           "secondaryLabel": "Request an appointment",
-          "secondaryUrl": "/service-appointment"
+          "secondaryUrl": "/service-appointment",
+          "background": "ink"
         }
       }
     }

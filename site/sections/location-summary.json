@@ -73,6 +73,26 @@
       "type": "text",
       "label": "Anchor id",
       "default": ""
+    },
+    {
+      "key": "background",
+      "type": "select",
+      "label": "Band background",
+      "default": "card",
+      "options": [
+        {
+          "value": "card",
+          "label": "White"
+        },
+        {
+          "value": "paper",
+          "label": "Paper"
+        },
+        {
+          "value": "none",
+          "label": "None"
+        }
+      ]
     }
   ],
   "nodes": [
@@ -81,7 +101,7 @@
       "type": "section",
       "props": {
         "width": "boxed",
-        "background": "paper",
+        "background": "{{background}}",
         "paddingY": 10,
         "anchor": "{{anchor}}"
       },

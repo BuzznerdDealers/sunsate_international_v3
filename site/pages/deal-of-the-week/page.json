@@ -37,7 +37,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 9,
-        "background": "paper",
+        "background": "card",
         "anchor": "dw-intro"
       },
       "children": [
@@ -111,7 +111,7 @@
           "eyebrow": "THIS WEEK'S FEATURED DEALS · UPDATED WEEKLY, WHILE AVAILABLE",
           "heading": "On the front row right now.",
           "span": 4,
-          "background": "paper",
+          "background": "card",
           "anchor": "dw-deals",
           "items": [
             {
@@ -333,7 +333,8 @@
           "primaryLabel": "Call 800.741.7566",
           "primaryUrl": "tel:+18007417566",
           "secondaryLabel": "Send a message",
-          "secondaryUrl": "/contact"
+          "secondaryUrl": "/contact",
+          "background": "ink"
         }
       }
     }

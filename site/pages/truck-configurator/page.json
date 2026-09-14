@@ -37,7 +37,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 9,
-        "background": "paper",
+        "background": "card",
         "anchor": "tcf-intro"
       },
       "children": [
@@ -139,7 +139,7 @@
           "heading": "Which International fits the job?",
           "body": "Pick the family first, then spec it. Every series has a brochure and spec sheets if you want the numbers before you start building, and the configurator lets you switch series once it's open.",
           "span": 4,
-          "background": "paper",
+          "background": "card",
           "anchor": "tcf-series",
           "items": [
             {
@@ -197,7 +197,7 @@
           "eyebrow": "FROM BUILD TO DELIVERY",
           "heading": "Four steps.",
           "span": 3,
-          "background": "paper",
+          "background": "ink",
           "anchor": "tcf-how",
           "items": [
             {
@@ -241,7 +241,7 @@
           "eyebrow": "BEYOND THE CHASSIS",
           "heading": "Trailers and upfit.",
           "span": 6,
-          "background": "paper",
+          "background": "card",
           "items": [
             {
               "title": "Spec'ing a trailer instead?",
@@ -267,7 +267,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 10,
-        "background": "card",
+        "background": "paper",
         "anchor": "tcf-faq"
       },
       "children": [
@@ -365,7 +365,8 @@
           "primaryLabel": "Call 800.741.7566",
           "primaryUrl": "tel:+18007417566",
           "secondaryLabel": "Send your build",
-          "secondaryUrl": "/contact"
+          "secondaryUrl": "/contact",
+          "background": "ink"
         }
       }
     }

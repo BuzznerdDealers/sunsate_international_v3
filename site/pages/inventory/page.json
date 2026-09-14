@@ -37,7 +37,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 9,
-        "background": "paper",
+        "background": "card",
         "anchor": "inv-intro"
       },
       "children": [
@@ -185,7 +185,7 @@
           "heading": "Match the trailer to the freight.",
           "body": "New and used Hyundai Translead and Globe Trailers, with specifications available for every configuration. If the spec you need isn't on the lot, we'll order it or alter one to fit.",
           "span": 3,
-          "background": "paper",
+          "background": "card",
           "items": [
             {
               "title": "Dry van",
@@ -224,7 +224,7 @@
           "eyebrow": "BEYOND THE LISTING",
           "heading": "What comes with the unit.",
           "span": 3,
-          "background": "paper",
+          "background": "ink",
           "items": [
             {
               "title": "Financing",
@@ -358,7 +358,8 @@
           "primaryLabel": "Call 800.741.7566",
           "primaryUrl": "tel:+18007417566",
           "secondaryLabel": "Send a message",
-          "secondaryUrl": "/contact"
+          "secondaryUrl": "/contact",
+          "background": "ink"
         }
       }
     }

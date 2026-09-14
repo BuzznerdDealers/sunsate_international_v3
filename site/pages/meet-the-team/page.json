@@ -23,7 +23,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 6,
-        "background": "paper"
+        "background": "card"
       },
       "children": [
         {
@@ -102,7 +102,8 @@
               "label": "Store Managers",
               "blurb": "Parts and service operations leadership at each Sun State location."
             }
-          ]
+          ],
+          "background": "card"
         }
       }
     },

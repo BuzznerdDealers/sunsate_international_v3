@@ -31,7 +31,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 9,
-        "background": "paper",
+        "background": "card",
         "anchor": "service-summary"
       },
       "children": [
@@ -280,7 +280,7 @@
           "eyebrow": "",
           "heading": "",
           "span": 6,
-          "background": "paper",
+          "background": "card",
           "items": [
             {
               "title": "Extended service contracts",
@@ -310,7 +310,7 @@
           "ctaLabel": "Visit our parts department →",
           "ctaUrl": "/parts",
           "ctaStyle": "link",
-          "background": "card",
+          "background": "paper",
           "image": {
             "src": "/img/photo-placeholder.svg",
             "alt": "The Sun State parts counter — photograph to be supplied",
@@ -327,7 +327,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 10,
-        "background": "paper",
+        "background": "card",
         "anchor": "service-faq"
       },
       "children": [
@@ -419,7 +419,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 9,
-        "background": "card"
+        "background": "ink"
       },
       "children": [
         {

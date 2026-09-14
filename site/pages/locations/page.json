@@ -37,7 +37,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 9,
-        "background": "paper",
+        "background": "card",
         "anchor": "loc-summary"
       },
       "children": [
@@ -361,7 +361,8 @@
           "primaryLabel": "Call 800.741.7566",
           "primaryUrl": "tel:+18007417566",
           "secondaryLabel": "info@sunstateintl.com",
-          "secondaryUrl": "mailto:info@sunstateintl.com"
+          "secondaryUrl": "mailto:info@sunstateintl.com",
+          "background": "ink"
         }
       }
     }

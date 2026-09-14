@@ -52,7 +52,8 @@
             "width": 1600,
             "height": 900
           },
-          "anchor": "brk-summary"
+          "anchor": "brk-summary",
+          "background": "card"
         }
       }
     },
@@ -86,7 +87,8 @@
               "phoneUrl": "/service-appointment",
               "rows": "<strong>Truck and trailer repairs</strong> Tampa, Davenport, Sarasota\n\n<strong>Mobile service</strong> at your yard or job site\n\n<strong>After-hours</strong> Certified Fleet, 5 PM – 8 AM"
             }
-          ]
+          ],
+          "background": "card"
         }
       }
     },
@@ -136,7 +138,7 @@
           "heading": "Other Sun State locations.",
           "body": "Ready to find the right commercial trucks for your business? Visit us at our convenient locations across Central and Southwest Florida.",
           "span": 3,
-          "background": "paper",
+          "background": "card",
           "locations": [
             {
               "tag": "TRUCKS · TRAILERS · PARTS · SERVICE",
@@ -184,7 +186,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 10,
-        "background": "card",
+        "background": "paper",
         "anchor": "brk-faq"
       },
       "children": [
@@ -282,7 +284,8 @@
           "primaryLabel": "Call (352) 277-0221",
           "primaryUrl": "tel:+13522770221",
           "secondaryLabel": "Order parts online",
-          "secondaryUrl": "https://www.sunstateparts.com/login"
+          "secondaryUrl": "https://www.sunstateparts.com/login",
+          "background": "ink"
         }
       }
     }
