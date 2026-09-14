@@ -1,0 +1,339 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "careers-hero",
+      "type": "hero",
+      "props": {
+        "headingLevel": 1,
+        "eyebrow": "HOME / OUR STORY / CAREERS",
+        "headline": "Careers at Sun State",
+        "subhead": "One team behind Sun State International Trucks and Sun State Trailers — over 200 employees across five West Central Florida locations, hiring in sales, service, parts and aftermarket.",
+        "ctas": [
+          {
+            "label": "See Open Positions",
+            "url": "#open-positions",
+            "style": "primary",
+            "intent": "careers"
+          }
+        ],
+        "image": {
+          "src": "/img/photo-placeholder.svg",
+          "alt": "Sun State technicians at work — photograph to be supplied",
+          "width": 1600,
+          "height": 900
+        }
+      }
+    },
+    {
+      "id": "careers-stats",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "paper"
+      },
+      "children": [
+        {
+          "id": "careers-stats-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "careers-stats-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "careers-stat-band",
+                  "type": "statBand",
+                  "props": {
+                    "stats": [
+                      {
+                        "value": "200+",
+                        "label": "Employees"
+                      },
+                      {
+                        "value": "5",
+                        "label": "Locations"
+                      },
+                      {
+                        "value": "25+",
+                        "label": "Years in business"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "careers-culture",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "media-band",
+        "values": {
+          "eyebrow": "JOIN OUR TEAM TODAY",
+          "heading": "We're not like everyone else.",
+          "body": "We believe our people are the driving force that keeps our customers — and the trucking industry — moving forward. That's why we foster a culture of respect, appreciation, and opportunity, recognizing every employee's contribution to our shared success.\n\nWe're always looking for motivated, hardworking professionals who are passionate about helping fleets stay on the road and businesses keep moving. Whether in sales, service, or parts, teamwork drives everything we do — and it's what allows us to deliver for our customers, every time.\n\nIf you're ready to bring your skills to an industry where reliability matters most, we'd love to hear from you. Explore our open positions and apply today.",
+          "ctaLabel": "See open positions",
+          "ctaUrl": "#open-positions",
+          "ctaStyle": "primary",
+          "background": "card",
+          "image": {
+            "src": "/img/photo-placeholder.svg",
+            "alt": "The Sun State team at work — photograph to be supplied",
+            "width": 1600,
+            "height": 900
+          }
+        }
+      }
+    },
+    {
+      "id": "careers-values",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-grid",
+        "values": {
+          "eyebrow": "WHAT DRIVES OUR SUCCESS",
+          "heading": "A family, not just a company.",
+          "body": "As a family-owned and operated business, we've created an environment where every team member plays a crucial role in our success. In our workplace, we believe a team works best when united with a common goal. It's this unique culture that is the driving force behind our remarkable success of over 30 years.",
+          "span": 3,
+          "background": "paper",
+          "items": [
+            {
+              "title": "Community",
+              "body": "At Sun State, we're more than a business; we're a family. Within our tight-knit community, every individual is not merely an employee but a valued member."
+            },
+            {
+              "title": "Growth",
+              "body": "Investing in the growth and development of our people is a cornerstone of our company culture. We encourage our team to make the change they want to see."
+            },
+            {
+              "title": "Transparency",
+              "body": "We operate on the principle of \"open book\" transparency, allowing our employees a clear view of how their contributions directly impact our success."
+            },
+            {
+              "title": "Dependability",
+              "body": "We hold our employees responsible for upholding our mission and values, and at the core of our values is an unwavering commitment to customer care and satisfaction."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "careers-benefits",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "bullet-grid",
+        "values": {
+          "eyebrow": "BENEFITS",
+          "heading": "What we offer.",
+          "span": 3,
+          "background": "card",
+          "anchor": "benefits",
+          "items": [
+            {
+              "title": "Competitive pay",
+              "bullets": "Market-based pay\n\nIncentive-based compensation"
+            },
+            {
+              "title": "Health & wellness",
+              "bullets": "Medical plan\n\nDental plan\n\nPrescription drug coverage\n\nVision coverage\n\nEmployee assistance plan (EAP)"
+            },
+            {
+              "title": "Financial coverage",
+              "bullets": "401(k) plan\n\nTuition reimbursement\n\nLife insurance\n\nAccidental death and dismemberment (AD&D)\n\nShort and long-term disability"
+            },
+            {
+              "title": "And more",
+              "bullets": "PTO\n\nSupplemental health\n\nAccident and critical illness insurance\n\nIdentity protection\n\nEmployee discount program\n\nApprentice Technician Program\n\nEmployee Referral Program"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "careers-locations",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "location-grid",
+        "values": {
+          "eyebrow": "OUR LOCATIONS",
+          "heading": "Build your career close to home.",
+          "body": "With multiple locations across West Central Florida, we make it easy to build your career close to home. Discover opportunities in your area and apply to join our team today.",
+          "span": 4,
+          "background": "paper",
+          "anchor": "locations",
+          "locations": [
+            {
+              "city": "Sun State International — Tampa",
+              "address": "6020 Adamo Drive, Tampa, FL 33619",
+              "url": "/locations/tampa"
+            },
+            {
+              "city": "Sun State International — Sarasota",
+              "address": "1000 Sarasota Center Blvd, Sarasota, FL 34240",
+              "url": "/locations/sarasota"
+            },
+            {
+              "city": "Sun State International — Davenport",
+              "address": "41609 US Highway 27, Davenport, FL 33837",
+              "url": "/locations/davenport"
+            },
+            {
+              "city": "Sun State International — Brooksville",
+              "address": "17127 Runway Drive, Brooksville, FL 34604",
+              "url": "/locations/brooksville"
+            },
+            {
+              "city": "Aftermarket Business — Tampa",
+              "address": "7105 East 6th Avenue, Tampa, FL 33619",
+              "url": "/locations/aftermarket-parts"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "careers-roles",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-grid",
+        "values": {
+          "eyebrow": "CAREERS",
+          "heading": "Where you could fit in.",
+          "body": "Whether you're new to the industry or looking to take the next step, we offer opportunities to learn, lead, and thrive. Both Sun State International Trucks and Sun State Trailers hire through one portal.",
+          "span": 3,
+          "background": "card",
+          "anchor": "open-positions",
+          "items": [
+            {
+              "title": "Service",
+              "body": "Diesel and trailer technicians, mobile service, aftermarket modifications and DOT inspections. Apprentice Technician Program for people new to the trade."
+            },
+            {
+              "title": "Parts",
+              "body": "Counter and territory parts sales, warehouse and delivery roles supporting over $14M in OEM, Diamond Advantage and all-makes inventory."
+            },
+            {
+              "title": "Sales & Rental",
+              "body": "New and used truck sales, Hyundai Translead and Globe Trailer sales, fleet solutions, rental operations and finance."
+            },
+            {
+              "title": "Corporate & Support",
+              "body": "Accounting, human resources, marketing, IT and administration across the Tampa headquarters and store locations."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "careers-faq",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "paper",
+        "anchor": "careers-faq"
+      },
+      "children": [
+        {
+          "id": "careers-faq-head-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "careers-faq-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "careers-faq-head-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Before you apply.",
+                    "headingLevel": 2,
+                    "eyebrow": "QUICK ANSWERS"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "careers-faq-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "careers-faq-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "careers-faq-list",
+                  "type": "widget",
+                  "props": {
+                    "widget": "faq",
+                    "config": {
+                      "items": [
+                        {
+                          "q": "What benefits does Sun State offer?",
+                          "a": "Market-based and incentive pay, medical, dental, vision and prescription coverage, an EAP, 401(k), tuition reimbursement, life insurance, AD&D, disability, PTO, supplemental health, identity protection and an employee discount program."
+                        },
+                        {
+                          "q": "Do you hire technicians with no experience?",
+                          "a": "Yes. Our Apprentice Technician Program and tuition reimbursement let people new to the industry train into certified technician roles."
+                        },
+                        {
+                          "q": "Where can I work?",
+                          "a": "Five West Central Florida locations: Tampa, Sarasota, Davenport, Brooksville and the Tampa Aftermarket Business."
+                        },
+                        {
+                          "q": "How do I apply?",
+                          "a": "Browse and apply online through our careers portal. Trucks and trailers roles are posted in the same place."
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "careers-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "JOIN THE TEAM",
+          "heading": "Ready to begin your career journey with Sun State?",
+          "body": "Explore our open positions and apply today.",
+          "primaryLabel": "Apply Today",
+          "primaryUrl": "/contact",
+          "secondaryLabel": "Meet the team",
+          "secondaryUrl": "/meet-the-team"
+        }
+      }
+    }
+  ]
+}

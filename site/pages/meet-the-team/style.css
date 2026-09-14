@@ -1,0 +1,8 @@
+[data-bz-node="jump-menu"] .bz-nav { justify-content: center; gap: 10px; flex-wrap: wrap; }
+[data-bz-node="jump-menu"] .bz-navitem > a {
+  display: inline-flex; align-items: center;
+  padding: 10px 16px; border: 1.5px solid var(--line); background: var(--card);
+  font-size: 13px; font-weight: 700; letter-spacing: .04em;
+}
+[data-bz-node="jump-menu"] .bz-navitem > a:hover { background: var(--accent); border-color: transparent; color: #fff; }
+[data-bz-node="jump-note"] p { color: var(--muted); font-size: 13px; }

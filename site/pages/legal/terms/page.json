@@ -1,0 +1,260 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "tc-hero",
+      "type": "hero",
+      "props": {
+        "headingLevel": 1,
+        "eyebrow": "HOME / TERMS AND CONDITIONS",
+        "headline": "Terms and Conditions",
+        "subhead": "Applies to the Sun State International Trucks and Sun State Trailers websites. Last updated September 11, 2026.",
+        "image": {
+          "src": "/img/photo-placeholder.svg",
+          "alt": "Terms and Conditions — no photograph in this design",
+          "width": 1600,
+          "height": 900
+        }
+      }
+    },
+    {
+      "id": "tc-intro",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 9,
+        "background": "paper",
+        "anchor": "tc-intro"
+      },
+      "children": [
+        {
+          "id": "tc-intro-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "tc-intro-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "tc-intro-t",
+                  "type": "text",
+                  "props": {
+                    "text": "The information, services, products, and materials contained in this site, including, without limitation, text, graphics, and links, are provided on an \"as is\" basis with no warranty.\n\nTo the maximum extent permitted by law, Sun State International Trucks, LLC. disclaim all representations and warranties, express or implied, with respect to such information, services, products, and materials, including but not limited to warranties of merchantability, fitness for a particular purpose, title, noninfringement, freedom from computer virus, and implied warranties arising from course of dealing or course of performance.\n\nIn addition, Sun State International Trucks, LLC. do not represent or warrant that the information accessible via this web site is accurate, complete or current. Price and availability information is subject to change without notice. Due to the large amount of content and information provided, errors can and will occur.\n\nBy visiting this web site you agreed that Sun State International Trucks, LLC. shall be held harmless from all liability and responsibility for any and all errors or omissions in the information provided on this web site. Sun State International Trucks, LLC. shall not be required or obligated to honor any price if said price is incorrect or inaccurate, regardless of whether the information was entered by Sun State International Trucks, LLC.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "tc-toc-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "On this page",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "tc-toc",
+                  "type": "menu",
+                  "props": {
+                    "menuId": "terms-toc",
+                    "layout": "horizontal",
+                    "depth": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tc-body",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "card"
+      },
+      "children": [
+        {
+          "id": "tc-body-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "tc-body-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "tc-liability-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Limitation of Liability",
+                    "headingLevel": 2,
+                    "anchor": "tc-liability"
+                  }
+                },
+                {
+                  "id": "tc-liability-b",
+                  "type": "text",
+                  "props": {
+                    "text": "In no event shall Sun State International Trucks, LLC. be liable for any direct, indirect, special, punitive, incidental, exemplary or consequential damages, or any damages whatsoever, even if Sun State International Trucks, LLC. has been previously advised of the possibility of such damages, whether in an action under contract, negligence, or any other theory, arising out of or in connection with the use, inability to use, or performance of the information, services, products, and materials available from this site.\n\nThese limitations shall apply notwithstanding any failure of essential purpose of any limited remedy. Because some jurisdictions do not allow limitations on how long an implied warranty lasts, or the exclusion or limitation of liability for consequential or incidental damages, the above limitations may not apply to you.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "tc-ip-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Images, Logos, Trademarks & Copyright",
+                    "headingLevel": 2,
+                    "anchor": "tc-ip"
+                  }
+                },
+                {
+                  "id": "tc-ip-b",
+                  "type": "text",
+                  "props": {
+                    "text": "The images, logos, copy and trademarks contained in this site, including but not limited to the text, images, audio or video, may not be used in any manner, or for any purpose, without Sun State International Trucks, LLC. express written permission, are believed to be in the public domain or used with permission of the respective trademark or copyright holder.\n\nThe information and images on this site may not in any way be used in any manner, or for any purpose, without the express written permission of Sun State International Trucks, LLC. or the official holder of the copyright or trademark. Please contact Sun State International Trucks, LLC. if you have questions or concerns about the site content.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "tc-orders-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Acceptance of Orders",
+                    "headingLevel": 2,
+                    "anchor": "tc-orders"
+                  }
+                },
+                {
+                  "id": "tc-orders-b",
+                  "type": "text",
+                  "props": {
+                    "text": "The receipt of an e-mail order confirmation does not constitute the acceptance of an order or a confirmation of an offer to sell. Sun State International Trucks, LLC. reserves the right, without prior notification, to limit the order quantity on any item and/or refuse service to any customer.\n\nVerification of information may be required prior to the acceptance of any order. By placing a credit card order, the customer grants Sun State International Trucks, LLC. permission to contact their bank to verify name and address.",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tc-faq",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "paper",
+        "anchor": "tc-faq"
+      },
+      "children": [
+        {
+          "id": "tc-faq-head-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "tc-faq-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "tc-faq-head-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Common questions.",
+                    "headingLevel": 2,
+                    "eyebrow": "TERMS FAQS"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tc-faq-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "tc-faq-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "tc-faq-list",
+                  "type": "widget",
+                  "props": {
+                    "widget": "faq",
+                    "config": {
+                      "items": [
+                        {
+                          "q": "Is the pricing on the website guaranteed?",
+                          "a": "No. Price and availability information is subject to change without notice, and Sun State International Trucks, LLC. shall not be required or obligated to honor any price if said price is incorrect or inaccurate, regardless of whether the information was entered by Sun State International Trucks, LLC."
+                        },
+                        {
+                          "q": "Does an email order confirmation mean my order is accepted?",
+                          "a": "No. The receipt of an e-mail order confirmation does not constitute the acceptance of an order or a confirmation of an offer to sell. We reserve the right, without prior notification, to limit the order quantity on any item and/or refuse service to any customer."
+                        },
+                        {
+                          "q": "Can I use images or logos from the site?",
+                          "a": "No. The images, logos, copy and trademarks on this site, including text, images, audio and video, may not be used in any manner or for any purpose without the express written permission of Sun State International Trucks, LLC. or the official holder of the copyright or trademark."
+                        },
+                        {
+                          "q": "What happens when I place a credit card order?",
+                          "a": "Verification of information may be required prior to the acceptance of any order. By placing a credit card order, the customer grants Sun State International Trucks, LLC. permission to contact their bank to verify name and address."
+                        },
+                        {
+                          "q": "Do these terms cover both Sun State websites?",
+                          "a": "Yes. These Terms and Conditions apply to the Sun State International Trucks and Sun State Trailers websites, alongside our Policies and Privacy Policy."
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tc-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "CONTACT US",
+          "heading": "Questions about these terms?",
+          "body": "Contact Sun State International if you have questions or concerns about site content, pricing or an order.",
+          "primaryLabel": "Contact us",
+          "primaryUrl": "/contact",
+          "secondaryLabel": "Call 800.741.7566",
+          "secondaryUrl": "tel:+18007417566"
+        }
+      }
+    }
+  ]
+}

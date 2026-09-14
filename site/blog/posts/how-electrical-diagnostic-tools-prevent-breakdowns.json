@@ -1,0 +1,137 @@
+{
+  "slug": "how-electrical-diagnostic-tools-prevent-breakdowns",
+  "title": "How Electrical Diagnostic Tools Prevent Breakdowns",
+  "date": "2026-07-13",
+  "description": "With today’s heavy-duty vehicles relying on dozens of sensors, electronic control modules, wiring harnesses, and onboard computers, even a small electrical issue can quickly turn into unexpected downtime. That’s why professional electrical diagnostic tools have become essential for keeping trucks on the road.",
+  "status": "published",
+  "coverImage": "https://www.sunstateintl.com/wp-content/uploads/2026/07/truck-electrical-testing-400x250.jpg",
+  "topic": "Diagnostics",
+  "nodes": [
+    {
+      "id": "intro",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "intro-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "intro-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "intro-eyebrow",
+                  "type": "heading",
+                  "props": {
+                    "text": "How Electrical Diagnostic Tools Prevent Breakdowns",
+                    "headingLevel": 2,
+                    "eyebrow": "DIAGNOSTICS"
+                  }
+                },
+                {
+                  "id": "intro-text",
+                  "type": "text",
+                  "props": {
+                    "text": "With today’s heavy-duty vehicles relying on dozens of sensors, electronic control modules, wiring harnesses, and onboard computers, even a small electrical issue can quickly turn into unexpected downtime. That’s why professional electrical diagnostic tools have become essential for keeping trucks on the road.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "intro-note",
+                  "type": "text",
+                  "props": {
+                    "text": "The full article was published on sunstateintl.com. Paste the migrated body here in Posts → this post, and the card on the blog index updates with it.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "intro-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Read the original article →",
+                        "url": "https://www.sunstateintl.com/how-electrical-diagnostic-tools-prevent-breakdowns/",
+                        "style": "link",
+                        "intent": "read-post"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "post-cta-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "post-cta-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "post-cta-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Got the same symptom on a unit you run?",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "post-cta-b",
+                  "type": "text",
+                  "props": {
+                    "text": "Call 800.741.7566 and we'll look at the specific truck or trailer instead of the general case.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "post-cta-btn",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "request-appointment"
+                      },
+                      {
+                        "ctaId": "call-main-secondary"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

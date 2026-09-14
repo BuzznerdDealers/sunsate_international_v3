@@ -1,0 +1,345 @@
+{
+  "version": 2,
+  "id": "default",
+  "name": "Site template",
+  "conditions": [
+    {
+      "type": "entireSite",
+      "ref": null
+    }
+  ],
+  "css": "/* Chrome — the utility bar, the header and the footer.\n   Scoped to the template's own node ids so a page section can never inherit it. */\n\n/* Utility bar: red band, socials pinned left, location links right. */\n[data-bz-node=\"utility-bar\"] { border-bottom: 0; }\n[data-bz-node=\"utility-bar\"] .bz-navitem > a {\n  font-size: 12px; font-weight: 600; color: #fff; font-family: var(--font-body);\n}\n[data-bz-node=\"utility-bar\"] .bz-navitem > a:hover { color: #fff; text-decoration: underline; }\n[data-bz-node=\"utility-bar\"] .bz-block { padding-block: 0; }\n@media (max-width: 640px) {\n  [data-bz-node=\"utility-links\"] { display: none; }\n  [data-bz-node=\"utility-social\"] { justify-content: center; }\n  [data-bz-node=\"utility-social\"] .ss-social { justify-content: center; }\n}\n\n/* Header: near-black chrome, 64px logo, nav pushed right, red phone button. */\n[data-bz-node=\"site-header\"] { border-bottom: 1px solid var(--line); border-color: #333; }\n[data-bz-node=\"site-header\"] .bz-logo__img { height: 64px; width: auto; }\n[data-bz-node=\"site-header\"] .bz-navitem > a,\n[data-bz-node=\"site-header\"] .bz-menu-toggle { color: #EDEDED; font-size: 14px; font-weight: 600; }\n[data-bz-node=\"site-header\"] .bz-navitem > a:hover { color: #fff; }\n[data-bz-node=\"site-header\"] .bz-navitem > a[aria-current=\"page\"] { color: var(--accent); }\n[data-bz-node=\"site-header\"] .bz-subnav { background: #fff; border: 1px solid var(--line); padding: 24px 32px; }\n[data-bz-node=\"site-header\"] .bz-subnav .bz-navitem > a { color: var(--ink); font-size: 14px; }\n[data-bz-node=\"site-header\"] .bz-subnav .bz-navitem > a:hover { color: var(--accent); }\n[data-bz-node=\"site-header\"] .bz-btns { margin-block: 0; }\n[data-bz-node=\"header-phone\"] .bz-btn { white-space: nowrap; }\n/* A mega panel is absolutely positioned and viewport-wide, so nothing above it\n   may clip overflow. Stated here because it is easy to add later and hard to\n   diagnose once added. */\n[data-bz-node=\"site-header\"], [data-bz-node=\"header-row\"] { overflow: visible; }\n@media (max-width: 640px) {\n  [data-bz-node=\"site-header\"] .bz-logo__img { height: 40px; }\n}\n\n/* The footer band is the \"Site footer\" component; its rules travel with it.\n   Only the legal strip below the content area is styled here. */\n[data-bz-node=\"footer-legal\"] { border-top: 1px solid #333; }\n[data-bz-node=\"footer-legal\"] p,\n[data-bz-node=\"footer-legal\"] .bz-navitem > a { color: #8A8A8A; font-size: 12px; }\n\n/* --- Chrome on small screens ---------------------------------------------\n   The header and utility rows are set to never stack, so their twelve grid\n   tracks stay in force at every width. Below the nav's collapse breakpoint\n   they become a simple flex row instead: logo left, phone button and the\n   hamburger right, which is what the handoff draws. */\n@media (max-width: 1100px) {\n  [data-bz-node=\"header-row\"] { display: flex; align-items: center; gap: 12px; }\n  [data-bz-node=\"header-brand\"] { flex: 1 1 auto; }\n  [data-bz-node=\"header-cta\"] { flex: 0 0 auto; order: 2; }\n  [data-bz-node=\"header-nav\"] { flex: 0 0 auto; order: 3; }\n  [data-bz-node=\"utility-row\"] { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; }\n  [data-bz-node=\"utility-social\"] { flex: 0 0 auto; }\n  [data-bz-node=\"utility-links\"] { flex: 1 1 auto; }\n  [data-bz-node=\"site-header\"] .bz-menu-wrap[data-open] > .bz-menu { background: #fff; }\n  [data-bz-node=\"site-header\"] .bz-menu-wrap[data-open] .bz-navitem > a { color: var(--ink); }\n  [data-bz-node=\"site-header\"] .bz-menu-toggle { border-color: #444; color: #EDEDED; }\n}\n@media (max-width: 640px) {\n  [data-bz-node=\"utility-links\"] { display: none; }\n  [data-bz-node=\"utility-social\"] { flex: 1 1 auto; }\n  [data-bz-node=\"utility-social\"] .ss-social { justify-content: center; }\n  [data-bz-node=\"header-cta\"] .bz-btn { min-height: 40px; padding: 0 12px; font-size: 13px; }\n}\n\n/* The collapsed nav panel is positioned against the header section, so it needs\n   to sit above the hero that follows it. */\n@media (max-width: 1100px) {\n  [data-bz-node=\"site-header\"] { z-index: 40; }\n  [data-bz-node=\"site-header\"] .bz-menu-wrap[data-open] > .bz-menu {\n    z-index: 40; max-height: 70vh; overflow-y: auto;\n  }\n}\n/* A mega panel is viewport-wide; align its columns to the page gutter. */\n[data-bz-node=\"site-header\"] .bz-menu--mega .bz-nav > .bz-navitem--has-sub > .bz-subnav {\n  padding-inline: max(var(--container-pad), calc((100vw - var(--container)) / 2 + var(--container-pad)));\n  padding-block: 36px 40px;\n  gap: 48px;\n}\n",
+  "nodes": [
+    {
+      "id": "utility-bar",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "accent",
+        "paddingY": 3
+      },
+      "children": [
+        {
+          "id": "utility-row",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "align": "center",
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "utility-social",
+              "type": "column",
+              "props": {
+                "span": 3,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "utility-social-links",
+                  "type": "social-links",
+                  "props": {
+                    "tone": "light",
+                    "links": [
+                      {
+                        "label": "Twitter",
+                        "url": "https://x.com/SunStateIntl",
+                        "icon": {
+                          "src": "/icons/twitter.svg",
+                          "alt": "Twitter"
+                        }
+                      },
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sunstateintl",
+                        "icon": {
+                          "src": "/icons/facebook.svg",
+                          "alt": "Facebook"
+                        }
+                      },
+                      {
+                        "label": "Instagram",
+                        "url": "https://www.instagram.com/sunstateintl/",
+                        "icon": {
+                          "src": "/icons/instagram.svg",
+                          "alt": "Instagram"
+                        }
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/company/sun-state-international-trucks/",
+                        "icon": {
+                          "src": "/icons/linkedin.svg",
+                          "alt": "Linkedin"
+                        }
+                      },
+                      {
+                        "label": "YouTube",
+                        "url": "https://www.youtube.com/channel/UCZw35HTHQi737CZnkV22nww",
+                        "icon": {
+                          "src": "/icons/youtube.svg",
+                          "alt": "Youtube"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "utility-links",
+              "type": "column",
+              "props": {
+                "span": 9,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "utility-menu",
+                  "type": "menu",
+                  "props": {
+                    "menuId": "utility",
+                    "layout": "horizontal",
+                    "align": "end",
+                    "depth": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "site-header",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "ink",
+        "paddingY": 4
+      },
+      "children": [
+        {
+          "id": "header-row",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "align": "center",
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "header-brand",
+              "type": "column",
+              "props": {
+                "span": 3,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "header-logo",
+                  "type": "logo",
+                  "props": {
+                    "url": "/",
+                    "height": 64,
+                    "text": "Sun State International Trucks",
+                    "image": {
+                      "src": "/img/sunstate-logo.png",
+                      "alt": "Sun State International Trucks",
+                      "width": 320,
+                      "height": 96
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "header-nav",
+              "type": "column",
+              "props": {
+                "span": 7,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "main-nav",
+                  "type": "menu",
+                  "props": {
+                    "menuId": "main",
+                    "layout": "mega",
+                    "align": "end",
+                    "collapseOnMobile": true,
+                    "depth": 3
+                  }
+                }
+              ]
+            },
+            {
+              "id": "header-cta",
+              "type": "column",
+              "props": {
+                "span": 2,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "header-phone",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "header-phone"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "content",
+      "type": "contentArea",
+      "props": {
+        "label": "Page content"
+      }
+    },
+    {
+      "id": "site-footer",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "site-footer",
+        "values": {
+          "blurb": "International trucks, IC Bus, Hyundai Translead and Globe Trailers. Serving Tampa, Davenport, Sarasota and Brooksville, Florida for 25 years.",
+          "emailLabel": "info@sunstateintl.com",
+          "emailUrl": "mailto:info@sunstateintl.com",
+          "logo": {
+            "src": "/img/sunstate-logo.png",
+            "alt": "Sun State International Trucks",
+            "width": 320,
+            "height": 96
+          },
+          "social": [
+            {
+              "label": "Twitter",
+              "url": "https://x.com/SunStateIntl",
+              "icon": {
+                "src": "/icons/twitter.svg",
+                "alt": "Twitter"
+              }
+            },
+            {
+              "label": "Facebook",
+              "url": "https://www.facebook.com/sunstateintl",
+              "icon": {
+                "src": "/icons/facebook.svg",
+                "alt": "Facebook"
+              }
+            },
+            {
+              "label": "Instagram",
+              "url": "https://www.instagram.com/sunstateintl/",
+              "icon": {
+                "src": "/icons/instagram.svg",
+                "alt": "Instagram"
+              }
+            },
+            {
+              "label": "LinkedIn",
+              "url": "https://www.linkedin.com/company/sun-state-international-trucks/",
+              "icon": {
+                "src": "/icons/linkedin.svg",
+                "alt": "LinkedIn"
+              }
+            },
+            {
+              "label": "YouTube",
+              "url": "https://www.youtube.com/channel/UCZw35HTHQi737CZnkV22nww",
+              "icon": {
+                "src": "/icons/youtube.svg",
+                "alt": "YouTube"
+              }
+            }
+          ],
+          "columns": [
+            {
+              "heading": "Brands",
+              "menuId": "footer-brands"
+            },
+            {
+              "heading": "Shop",
+              "menuId": "footer-shop"
+            },
+            {
+              "heading": "Company",
+              "menuId": "footer-company"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "footer-legal",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "ink",
+        "paddingY": 4
+      },
+      "children": [
+        {
+          "id": "footer-legal-row",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "align": "center"
+          },
+          "children": [
+            {
+              "id": "footer-copyright",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "footer-copy",
+                  "type": "text",
+                  "props": {
+                    "text": "© 2026 Sun State International Trucks, LLC. All rights reserved.",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "footer-legal-links",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "footer-legal-nav",
+                  "type": "menu",
+                  "props": {
+                    "menuId": "legal",
+                    "layout": "horizontal",
+                    "align": "end",
+                    "depth": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

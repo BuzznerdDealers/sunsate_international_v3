@@ -1,0 +1,8 @@
+[data-bz-node="parts-jump"] .bz-nav { gap: 10px; flex-wrap: wrap; margin-top: 8px; }
+[data-bz-node="parts-jump"] .bz-navitem > a {
+  display: inline-flex; padding: 10px 16px; border: 1px solid var(--line); background: var(--card);
+  font-size: 13px; font-weight: 700;
+}
+[data-bz-node="parts-jump"] .bz-navitem > a:hover { background: var(--accent); border-color: transparent; color: #fff; }
+[data-bz-node="parts-intro"] [data-bz-node^="mb-media"] { order: -1; }
+[data-bz-node="parts-online"] [data-bz-node^="mb-media"] { order: -1; }

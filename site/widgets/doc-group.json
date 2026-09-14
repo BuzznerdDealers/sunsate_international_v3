@@ -1,0 +1,21 @@
+{
+  "id": "doc-group",
+  "label": "Document group",
+  "description": "One series' brochures and spec sheets: a title, a count line and the list of PDF links.",
+  "props": [
+    { "key": "title", "type": "text", "label": "Series" },
+    { "key": "meta", "type": "text", "label": "Meta line" },
+    {
+      "key": "docs",
+      "type": "list",
+      "label": "Documents",
+      "fields": [
+        { "key": "label", "type": "text", "label": "Document" },
+        { "key": "url", "type": "url", "label": "File" },
+        { "key": "kind", "type": "text", "label": "File type" }
+      ]
+    }
+  ],
+  "html": "<div class=\"ss-docs\"><div class=\"ss-docs__h\"><h3 class=\"ss-docs__t\">{{title}}</h3>{{#if meta}}<span class=\"ss-docs__m\">{{meta}}</span>{{/if}}</div><ul class=\"ss-docs__l\">{{#each docs}}<li><a href=\"{{link url}}\" target=\"_blank\" rel=\"noopener\" data-bz-el=\"link\" data-bz-intent=\"download-brochure\"><span>{{label}}</span><span class=\"ss-docs__k\">{{kind}} →</span></a></li>{{/each}}</ul></div>",
+  "css": ".ss-docs{border:1px solid var(--line);background:var(--card);height:100%}\n.ss-docs__h{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:10px;padding:22px 24px;border-bottom:1px solid var(--line)}\n.ss-docs__t{font-family:var(--font-heading);font-weight:800;font-size:19px;margin:0}\n.ss-docs__m{font:700 10px/1 var(--font-body);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}\n.ss-docs__l{list-style:none;margin:0;padding:0}\n.ss-docs__l li+li{border-top:1px solid var(--line)}\n.ss-docs__l a{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px 24px;font-size:14px;font-weight:600;color:var(--ink);text-decoration:none}\n.ss-docs__l a:hover{background:var(--paper);color:var(--accent)}\n.ss-docs__k{font:700 10px/1 var(--font-body);letter-spacing:.08em;color:var(--accent);white-space:nowrap}"
+}

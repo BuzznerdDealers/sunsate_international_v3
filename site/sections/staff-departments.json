@@ -1,0 +1,108 @@
+{
+  "version": 2,
+  "id": "staff-departments",
+  "name": "Staff by department",
+  "css": "[data-bz-section=\"staff-departments\"] [data-bz-node^=\"sd-band\"] { border-top: 1px solid var(--line) }\n[data-bz-section=\"staff-departments\"] .bz-widget__empty { color: var(--muted) }",
+  "props": [
+    {
+      "key": "departments",
+      "type": "list",
+      "label": "Departments",
+      "fields": [
+        {
+          "key": "id",
+          "type": "text",
+          "label": "Anchor id"
+        },
+        {
+          "key": "label",
+          "type": "text",
+          "label": "Department name (must match the Staff module)"
+        },
+        {
+          "key": "blurb",
+          "type": "textarea",
+          "label": "Intro"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "sd-band",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 9,
+        "anchor": "{{id}}",
+        "repeat": "departments"
+      },
+      "children": [
+        {
+          "id": "sd-head",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "sd-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "sd-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{label}}",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "sd-b",
+                  "type": "text",
+                  "props": {
+                    "text": "{{blurb}}",
+                    "width": "prose"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sd-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "sd-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "sd-staff",
+                  "type": "widget",
+                  "props": {
+                    "widget": "staff",
+                    "config": {
+                      "heading": "",
+                      "department": "{{label}}"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "id": "contact-us",
+  "name": "Contact us",
+  "status": "live",
+  "surfaces": ["page"],
+  "intent": "contact-dealer",
+  "submitLabel": "Send message",
+  "successMessage": "Thanks — your message is with the right department. We answer messages sent during business hours the same business day.",
+  "consent": {
+    "enabled": true,
+    "required": true,
+    "text": "I agree to be contacted about this enquiry by phone, text or email."
+  },
+  "fields": [
+    { "id": "cu-name", "type": "full_name", "label": "Full name", "required": true },
+    { "id": "cu-company", "type": "single_line", "label": "Company or fleet", "required": false },
+    { "id": "cu-phone", "type": "phone", "label": "Phone", "required": true },
+    { "id": "cu-email", "type": "email", "label": "Email", "required": true },
+    {
+      "id": "cu-dept",
+      "type": "dropdown",
+      "label": "Department",
+      "required": true,
+      "options": [
+        { "value": "sales-trucks", "label": "Sales — trucks" },
+        { "value": "sales-trailers", "label": "Sales — trailers" },
+        { "value": "parts", "label": "Parts" },
+        { "value": "service", "label": "Service" },
+        { "value": "aftermarket", "label": "Aftermarket & modifications" },
+        { "value": "financing", "label": "Financing & credit" },
+        { "value": "careers", "label": "Careers" },
+        { "value": "other", "label": "Something else" }
+      ]
+    },
+    {
+      "id": "cu-location",
+      "type": "dropdown",
+      "label": "Location",
+      "required": true,
+      "options": [
+        { "value": "tampa", "label": "Tampa — 6020 Adamo Drive" },
+        { "value": "davenport", "label": "Davenport — 41609 Hwy 27" },
+        { "value": "sarasota", "label": "Sarasota — 1000 Sarasota Center Blvd." },
+        { "value": "brooksville", "label": "Brooksville — 17127 Runway Drive" },
+        { "value": "aftermarket-parts", "label": "Aftermarket — 7105 East 6th Ave., Tampa" },
+        { "value": "trailer-sales", "label": "Trailer Sales — 6020 Adamo Drive, Tampa" },
+        { "value": "no-preference", "label": "No preference" }
+      ]
+    },
+    {
+      "id": "cu-message",
+      "type": "paragraph",
+      "label": "How can we help?",
+      "required": true,
+      "placeholder": "Unit details, part numbers, timing — whatever helps us answer on the first reply.",
+      "help": "For a service appointment, use the service request form so we can capture unit details and fault codes."
+    }
+  ],
+  "notifications": [
+    {
+      "id": "cu-sales",
+      "name": "Sales enquiries",
+      "logic": "OR",
+      "rules": [
+        { "fieldId": "cu-dept", "operator": "is", "value": "sales-trucks" },
+        { "fieldId": "cu-dept", "operator": "is", "value": "sales-trailers" }
+      ],
+      "targetType": "role",
+      "roleId": "salesperson",
+      "scopeMode": "dynamic"
+    },
+    {
+      "id": "cu-service",
+      "name": "Service enquiries",
+      "logic": "AND",
+      "rules": [{ "fieldId": "cu-dept", "operator": "is", "value": "service" }],
+      "targetType": "role",
+      "roleId": "service-advisor",
+      "scopeMode": "dynamic"
+    },
+    {
+      "id": "cu-parts",
+      "name": "Parts enquiries",
+      "logic": "OR",
+      "rules": [
+        { "fieldId": "cu-dept", "operator": "is", "value": "parts" },
+        { "fieldId": "cu-dept", "operator": "is", "value": "aftermarket" }
+      ],
+      "targetType": "role",
+      "roleId": "parts-advisor",
+      "scopeMode": "dynamic"
+    }
+  ]
+}

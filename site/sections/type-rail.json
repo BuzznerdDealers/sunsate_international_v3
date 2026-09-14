@@ -1,0 +1,210 @@
+{
+  "version": 2,
+  "id": "type-rail",
+  "name": "Vehicle type rail",
+  "css": "[data-bz-section=\"type-rail\"] h2 { text-align: center; color: #fff; margin-bottom: 40px }\n[data-bz-section=\"type-rail\"] [data-bz-type=\"column\"][data-bz-node^=\"tr-slide-\"] { position: relative; min-height: 420px; padding: 24px; display: flex; flex-direction: column; justify-content: flex-end; overflow: hidden }\n[data-bz-section=\"type-rail\"] [data-bz-node^=\"tr-slide-img\"] { position: absolute; inset: 0; padding: 0 }\n[data-bz-section=\"type-rail\"] [data-bz-node^=\"tr-slide-img\"] .bz-figure { margin: 0; height: 100% }\n[data-bz-section=\"type-rail\"] [data-bz-node^=\"tr-slide-img\"] img { width: 100%; height: 100%; object-fit: cover }\n[data-bz-section=\"type-rail\"] [data-bz-node^=\"tr-slide-img\"]::after { content: \"\"; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(20,20,20,.25), rgba(20,20,20,.72)); pointer-events: none }\n[data-bz-section=\"type-rail\"] [data-bz-node^=\"tr-slide-h\"], [data-bz-section=\"type-rail\"] [data-bz-node^=\"tr-slide-cta\"] { position: relative; z-index: 1; padding-block: 0 }\n[data-bz-section=\"type-rail\"] [data-bz-node^=\"tr-slide-h\"] h3 { color: #fff; font-size: 20px }\n[data-bz-section=\"type-rail\"] [data-bz-node^=\"tr-slide-cta\"] .bz-btns { justify-content: center; margin-block: 14px 0 }\n[data-bz-section=\"type-rail\"] [data-bz-node=\"tr-nav\"] { margin-top: 24px }\n[data-bz-section=\"type-rail\"] [data-bz-node=\"tr-nav\"] .bz-btns { margin-block: 0 }\n[data-bz-section=\"type-rail\"] [data-bz-track] { --bz-slide: 320px }",
+  "props": [
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": "Choose a type to explore"
+    },
+    {
+      "key": "anchor",
+      "type": "text",
+      "label": "Anchor id",
+      "default": ""
+    },
+    {
+      "key": "span",
+      "type": "number",
+      "label": "Card width in grid columns",
+      "default": 3
+    },
+    {
+      "key": "items",
+      "type": "list",
+      "label": "Types",
+      "fields": [
+        {
+          "key": "image",
+          "type": "image",
+          "label": "Photo"
+        },
+        {
+          "key": "label",
+          "type": "text",
+          "label": "Type"
+        },
+        {
+          "key": "ctaLabel",
+          "type": "text",
+          "label": "Button label"
+        },
+        {
+          "key": "ctaUrl",
+          "type": "url",
+          "label": "Button link"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "tr",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "ink",
+        "paddingY": 10,
+        "anchor": "{{anchor}}",
+        "behaviour": "carousel",
+        "behaviourOptions": "{\"label\":\"Vehicle types\",\"perMove\":1}"
+      },
+      "children": [
+        {
+          "id": "tr-head",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "tr-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "tr-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tr-rail",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "part": "track",
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "tr-slide",
+              "type": "column",
+              "props": {
+                "span": "{{span}}",
+                "part": "slide",
+                "repeat": "items"
+              },
+              "children": [
+                {
+                  "id": "tr-slide-img",
+                  "type": "image",
+                  "props": {
+                    "image": "{{image}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "tr-slide-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{label}}",
+                    "headingLevel": 3,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "tr-slide-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "center",
+                    "items": [
+                      {
+                        "label": "{{ctaLabel}}",
+                        "url": "{{ctaUrl}}",
+                        "style": "primary",
+                        "intent": "browse-inventory"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tr-nav",
+          "type": "row",
+          "props": {
+            "gap": 3,
+            "align": "center"
+          },
+          "children": [
+            {
+              "id": "tr-prev",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "part": "prev"
+              },
+              "children": [
+                {
+                  "id": "tr-prev-b",
+                  "type": "buttons",
+                  "props": {
+                    "align": "center",
+                    "items": [
+                      {
+                        "label": "‹ Previous",
+                        "url": "#",
+                        "style": "secondary",
+                        "intent": "carousel-prev"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "tr-next",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "part": "next"
+              },
+              "children": [
+                {
+                  "id": "tr-next-b",
+                  "type": "buttons",
+                  "props": {
+                    "align": "center",
+                    "items": [
+                      {
+                        "label": "Next ›",
+                        "url": "#",
+                        "style": "secondary",
+                        "intent": "carousel-next"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

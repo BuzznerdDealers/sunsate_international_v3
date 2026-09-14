@@ -1,0 +1,437 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "ci-hero",
+      "type": "hero",
+      "props": {
+        "headingLevel": 1,
+        "eyebrow": "HOME / OUR STORY / COMMUNITY INVOLVEMENT",
+        "headline": "Community Involvement Is Important To Us",
+        "subhead": "We donate our time, talent and treasure across Tampa Bay — on behalf of Sun State International Trucks and Sun State Trailers alike.",
+        "image": {
+          "src": "/img/photo-placeholder.svg",
+          "alt": "A Sun State community event — photograph to be supplied",
+          "width": 1600,
+          "height": 900
+        }
+      }
+    },
+    {
+      "id": "ci-summary",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 9,
+        "background": "paper",
+        "anchor": "community-summary"
+      },
+      "children": [
+        {
+          "id": "ci-sum-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "ci-sum-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "ci-sum-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Sun State donates time, talent and treasure to eleven Tampa Bay organizations, with an annual investment of over $100,000. We believe in investing in people: our employees, our customers, and our communities.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "ci-stats",
+                  "type": "statBand",
+                  "props": {
+                    "stats": [
+                      {
+                        "value": "$100K+",
+                        "label": "Annual investment"
+                      },
+                      {
+                        "value": "11",
+                        "label": "Partner organizations"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ci-glance",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-grid",
+        "values": {
+          "eyebrow": "AT A GLANCE",
+          "heading": "What our giving looks like.",
+          "span": 4,
+          "background": "card",
+          "anchor": "community-answers",
+          "items": [
+            {
+              "title": "What we give",
+              "body": "Time, talent and treasure — donated employee hours, professional expertise and board service, and direct financial support."
+            },
+            {
+              "title": "Annual investment",
+              "body": "Over $100,000 a year, alongside donated employee time and talent."
+            },
+            {
+              "title": "Partner organizations",
+              "body": "Eleven, including Feeding Tampa Bay, Boys & Girls Club of Tampa Bay, Academy Prep, Goodwill, Tampa General Hospital and USF."
+            },
+            {
+              "title": "Where",
+              "body": "The Tampa Bay region and the communities around our Tampa, Sarasota, Davenport and Brooksville locations."
+            },
+            {
+              "title": "To partner with us",
+              "body": "Email info@sunstateintl.com or call 813.521.8148 to discuss sponsorship, in-kind support or employee volunteering.",
+              "linkLabel": "Contact us →",
+              "linkUrl": "/contact"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "ci-partners",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "paper",
+        "anchor": "partners"
+      },
+      "children": [
+        {
+          "id": "ci-partners-head-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "ci-partners-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "ci-partners-head-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Our community partners.",
+                    "headingLevel": 2,
+                    "eyebrow": "WHO WE SUPPORT"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ci-partners-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "ci-partners-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "ci-logos",
+                  "type": "logoStrip",
+                  "props": {
+                    "headingLevel": 3,
+                    "logos": [
+                      {
+                        "name": "Community Foundation Tampa Bay",
+                        "image": {
+                          "src": "https://sunstateintl.com/wp-content/uploads/2024/09/Community-Foundation-TB.png",
+                          "alt": "Community Foundation Tampa Bay logo — a Sun State International community partner",
+                          "width": 240,
+                          "height": 120
+                        }
+                      },
+                      {
+                        "name": "Academy Prep",
+                        "image": {
+                          "src": "https://sunstateintl.com/wp-content/uploads/2024/09/Academy-Prep.png",
+                          "alt": "Academy Prep logo — a Sun State International community partner",
+                          "width": 240,
+                          "height": 120
+                        }
+                      },
+                      {
+                        "name": "The Bank of Tampa",
+                        "image": {
+                          "src": "https://sunstateintl.com/wp-content/uploads/2024/09/Bank-of-Tampa.png",
+                          "alt": "The Bank of Tampa logo — a Sun State International community partner",
+                          "width": 240,
+                          "height": 120
+                        }
+                      },
+                      {
+                        "name": "USF",
+                        "image": {
+                          "src": "https://sunstateintl.com/wp-content/uploads/2024/09/usf.png",
+                          "alt": "USF logo — a Sun State International community partner",
+                          "width": 240,
+                          "height": 120
+                        }
+                      },
+                      {
+                        "name": "Corporation To Develop Communities",
+                        "image": {
+                          "src": "https://sunstateintl.com/wp-content/uploads/2024/09/cdc-tampa.png",
+                          "alt": "Corporation To Develop Communities logo — a Sun State International community partner",
+                          "width": 240,
+                          "height": 120
+                        }
+                      },
+                      {
+                        "name": "Tampa General Hospital",
+                        "image": {
+                          "src": "https://sunstateintl.com/wp-content/uploads/2024/09/Tampa-General-Hospital.jpg",
+                          "alt": "Tampa General Hospital logo — a Sun State International community partner",
+                          "width": 240,
+                          "height": 120
+                        }
+                      },
+                      {
+                        "name": "Goodwill",
+                        "image": {
+                          "src": "https://sunstateintl.com/wp-content/uploads/2024/09/Goodwill.png",
+                          "alt": "Goodwill logo — a Sun State International community partner",
+                          "width": 240,
+                          "height": 120
+                        }
+                      },
+                      {
+                        "name": "Boys & Girls Club of Tampa Bay",
+                        "image": {
+                          "src": "https://sunstateintl.com/wp-content/uploads/2024/09/Boys-and-Girls-Club.png",
+                          "alt": "Boys & Girls Club of Tampa Bay logo — a Sun State International community partner",
+                          "width": 240,
+                          "height": 120
+                        }
+                      },
+                      {
+                        "name": "Abe Brown Ministries, Inc",
+                        "image": {
+                          "src": "https://sunstateintl.com/wp-content/uploads/2024/09/Abe-Brown.png",
+                          "alt": "Abe Brown Ministries, Inc logo — a Sun State International community partner",
+                          "width": 240,
+                          "height": 120
+                        }
+                      },
+                      {
+                        "name": "Federal Reserve Bank of Atlanta",
+                        "image": {
+                          "src": "https://sunstateintl.com/wp-content/uploads/2024/09/Bank-of-ATL.png",
+                          "alt": "Federal Reserve Bank of Atlanta logo — a Sun State International community partner",
+                          "width": 240,
+                          "height": 120
+                        }
+                      },
+                      {
+                        "name": "Feeding Tampa Bay",
+                        "image": {
+                          "src": "https://www.sunstateintl.com/wp-content/uploads/2025/04/Feeding-TB-logo-1.png",
+                          "alt": "Feeding Tampa Bay logo — a Sun State International community partner",
+                          "width": 240,
+                          "height": 120
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ci-why",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "media-band",
+        "values": {
+          "eyebrow": "WHY WE GIVE",
+          "heading": "More than a business; a family.",
+          "body": "At Sun State, we're more than a business; we're a family. Within our tight-knit community, every individual is not merely an employee but a valued member. We ensure every member of our team is cared for and respected as they are an essential part of our success.\n\nOur family-owned business has a heritage of community service and \"be the change\" care, and we seek to create the next generation of leaders in our region. That begins inside our own walls — and carries into the neighborhoods our trucks and trailers run through every day.",
+          "background": "card",
+          "image": {
+            "src": "/img/photo-placeholder.svg",
+            "alt": "Sun State employees volunteering — photograph to be supplied",
+            "width": 1600,
+            "height": 900
+          }
+        }
+      }
+    },
+    {
+      "id": "ci-how",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-grid",
+        "values": {
+          "eyebrow": "HOW WE GIVE",
+          "heading": "Time, talent and treasure.",
+          "body": "Three ways we show up for Tampa Bay, and what each one means in practice.",
+          "span": 4,
+          "background": "paper",
+          "items": [
+            {
+              "title": "Time",
+              "body": "Hours our team gives to the organizations listed above."
+            },
+            {
+              "title": "Talent",
+              "body": "Skills and expertise our people bring to the work."
+            },
+            {
+              "title": "Treasure",
+              "body": "An annual investment of over $100,000."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "ci-faq",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "card",
+        "anchor": "community-faq"
+      },
+      "children": [
+        {
+          "id": "ci-faq-head-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "ci-faq-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "ci-faq-head-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Partnering with Sun State.",
+                    "headingLevel": 2,
+                    "eyebrow": "QUICK ANSWERS"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ci-faq-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "ci-faq-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "ci-faq-list",
+                  "type": "widget",
+                  "props": {
+                    "widget": "faq",
+                    "config": {
+                      "items": [
+                        {
+                          "q": "How much does Sun State give each year?",
+                          "a": "Over $100,000 annually in direct investment, alongside donated employee time and expertise."
+                        },
+                        {
+                          "q": "Which organizations do you support?",
+                          "a": "Eleven Tampa Bay organizations, including Feeding Tampa Bay, Boys & Girls Club of Tampa Bay, Academy Prep, Goodwill, Tampa General Hospital, USF and Abe Brown Ministries."
+                        },
+                        {
+                          "q": "How can my organization partner with you?",
+                          "a": "Email info@sunstateintl.com or call 813.521.8148 to talk about sponsorship, in-kind support or employee volunteering."
+                        },
+                        {
+                          "q": "Does giving cover the trailers business too?",
+                          "a": "Yes. Sun State International Trucks and Sun State Trailers give as one family-owned company across all six Florida locations."
+                        },
+                        {
+                          "q": "What does \"time, talent and treasure\" mean?",
+                          "a": "Time is donated employee hours at partner events and programs. Talent is professional expertise, board service and mentorship. Treasure is direct financial support — an annual investment of over $100,000."
+                        },
+                        {
+                          "q": "Which areas does your community giving cover?",
+                          "a": "The Tampa Bay region and the communities around our locations in Tampa, Sarasota, Davenport and Brooksville, Florida."
+                        },
+                        {
+                          "q": "Why does a truck dealership invest in the community?",
+                          "a": "Sun State is a family-owned business with a heritage of community service and \"be the change\" care. We believe in investing in people — our employees, our customers and our communities — and in creating the next generation of leaders in our region."
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ci-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "PARTNER WITH US",
+          "heading": "Working on something good in Tampa Bay?",
+          "body": "Tell us about it. We're always looking for the next organization to stand behind.",
+          "primaryLabel": "Contact Us",
+          "primaryUrl": "/contact",
+          "secondaryLabel": "Call 813.521.8148",
+          "secondaryUrl": "tel:+18135218148"
+        }
+      }
+    }
+  ]
+}

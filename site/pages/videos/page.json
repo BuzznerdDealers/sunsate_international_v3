@@ -1,0 +1,224 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "videos-hero",
+      "type": "hero",
+      "props": {
+        "headingLevel": 1,
+        "eyebrow": "HOME / OUR STORY / VIDEOS",
+        "headline": "Videos",
+        "subhead": "Sun State International Trucks and Sun State Trailers on video — one library for both sides of the business.",
+        "image": {
+          "src": "/img/photo-placeholder.svg",
+          "alt": "The Sun State shop floor — photograph to be supplied",
+          "width": 1600,
+          "height": 900
+        }
+      }
+    },
+    {
+      "id": "videos-summary",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 9,
+        "background": "paper",
+        "anchor": "videos-summary"
+      },
+      "children": [
+        {
+          "id": "vs-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "vs-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "vs-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Seven videos in total: six from the Sun State International YouTube channel and the Sun State Trailers feature that ran on the trailers site. Start with Welcome to Sun State for an introduction to the company, its people and its six Florida locations.\n\nTitles and descriptions are pending for the remaining videos — send them over and we'll label each card.",
+                    "width": "prose"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "videos-featured",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "card"
+      },
+      "children": [
+        {
+          "id": "vf-head-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "vf-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "vf-head-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Welcome to Sun State",
+                    "headingLevel": 2,
+                    "eyebrow": "FEATURED"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "vf-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "vf-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "vf-play",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Watch Welcome to Sun State →",
+                        "url": "https://www.youtube.com/watch?v=tmKiQq8eLpk",
+                        "style": "primary",
+                        "intent": "watch-video"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "videos-library",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-grid",
+        "values": {
+          "eyebrow": "VIDEO LIBRARY",
+          "heading": "More from Sun State.",
+          "span": 4,
+          "background": "paper",
+          "anchor": "library",
+          "items": [
+            {
+              "title": "Sun State International",
+              "body": "Sun State International · YouTube",
+              "linkLabel": "Watch on YouTube →",
+              "linkUrl": "https://www.youtube.com/watch?v=tgpn5eG7lJM"
+            },
+            {
+              "title": "Sun State International",
+              "body": "Sun State International · YouTube",
+              "linkLabel": "Watch on YouTube →",
+              "linkUrl": "https://www.youtube.com/watch?v=deo2-sCYjfU"
+            },
+            {
+              "title": "Sun State International",
+              "body": "Sun State International · YouTube",
+              "linkLabel": "Watch on YouTube →",
+              "linkUrl": "https://www.youtube.com/watch?v=NYv0m5ilxZk"
+            },
+            {
+              "title": "Sun State International",
+              "body": "Sun State International · YouTube",
+              "linkLabel": "Watch on YouTube →",
+              "linkUrl": "https://www.youtube.com/watch?v=DbKbGHHYm0I"
+            },
+            {
+              "title": "Sun State International",
+              "body": "Sun State International · YouTube",
+              "linkLabel": "Watch on YouTube →",
+              "linkUrl": "https://www.youtube.com/watch?v=TBA443wxszg"
+            },
+            {
+              "title": "Sun State Trailers",
+              "body": "Sun State Trailers · Vimeo",
+              "linkLabel": "Watch on Vimeo →",
+              "linkUrl": "https://vimeo.com/1022278946"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "videos-answers",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-grid",
+        "values": {
+          "eyebrow": "QUICK ANSWERS",
+          "heading": "About our videos.",
+          "span": 6,
+          "background": "card",
+          "items": [
+            {
+              "title": "Where else can I watch?",
+              "body": "Six of the seven are on the Sun State International YouTube channel. The Sun State Trailers feature is hosted on Vimeo.",
+              "linkLabel": "Sun State on YouTube →",
+              "linkUrl": "https://www.youtube.com/channel/UCZw35HTHQi737CZnkV22nww"
+            },
+            {
+              "title": "Is there a video about working here?",
+              "body": "Yes — Welcome to Sun State introduces our people and culture.",
+              "linkLabel": "Careers →",
+              "linkUrl": "/careers"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "videos-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "READY TO GET ON THE ROAD?",
+          "heading": "Ready to get on the road?",
+          "body": "Contact us to explore our trucks and trailers and experience nothing less than the dedicated care you deserve.",
+          "primaryLabel": "Contact Us",
+          "primaryUrl": "/contact",
+          "secondaryLabel": "Call 800.741.7566",
+          "secondaryUrl": "tel:+18007417566"
+        }
+      }
+    }
+  ]
+}

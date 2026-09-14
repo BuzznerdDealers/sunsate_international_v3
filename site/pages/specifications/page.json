@@ -1,0 +1,726 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "br-hero",
+      "type": "hero",
+      "props": {
+        "headingLevel": 1,
+        "eyebrow": "HOME / BROCHURES & S13 POWERTRAIN",
+        "headline": "Brochures & S13 Integrated Powertrain",
+        "subhead": "International specification sheets by series, S13 powertrain documentation and competitive comparisons — every one a free PDF download.",
+        "ctas": [
+          {
+            "label": "Browse the library",
+            "url": "#br-library",
+            "style": "primary",
+            "intent": "download-brochure"
+          },
+          {
+            "label": "S13 Integrated Powertrain",
+            "url": "#br-s13",
+            "style": "secondary",
+            "intent": "download-brochure"
+          }
+        ],
+        "image": {
+          "src": "/img/photo-placeholder.svg",
+          "alt": "The International truck lineup — photograph to be supplied",
+          "width": 1600,
+          "height": 900
+        }
+      }
+    },
+    {
+      "id": "br-intro",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 9,
+        "background": "paper",
+        "anchor": "br-intro"
+      },
+      "children": [
+        {
+          "id": "br-intro-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "br-intro-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "br-intro-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Every International series we sell, with the brochure and the spec sheets that go with it. Pull the numbers you need before you spec a unit, then call and we'll build it to the application.\n\nAll files are free PDF downloads, no form required. For trailer specifications, Sun State Trailers can send the sheet for the Hyundai Translead or Globe configuration you're considering.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "br-jump",
+                  "type": "menu",
+                  "props": {
+                    "menuId": "brochure-series",
+                    "layout": "horizontal",
+                    "depth": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "br-s13",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "card",
+        "anchor": "br-s13"
+      },
+      "children": [
+        {
+          "id": "br-s13-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "align": "center",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "br-s13-copy",
+              "type": "column",
+              "props": {
+                "span": 7,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "br-s13-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Engine, transmission and aftertreatment designed as one.",
+                    "headingLevel": 2,
+                    "eyebrow": "INTERNATIONAL S13 INTEGRATED POWERTRAIN"
+                  }
+                },
+                {
+                  "id": "br-s13-b",
+                  "type": "text",
+                  "props": {
+                    "text": "A clean sheet of paper and decades of experience. That's what the engineering team started with when they began work on the International® S13® Integrated Powertrain.\n\nThanks to this spirit of collaboration between partner companies, the team was able to shift what's possible and rethink, redesign and reinvent what an integrated powertrain can be. The result is an engine, transmission and after treatment system designed to work as one that's simple, easy to service and delivers stellar performance with superior operating economy."
+                  }
+                },
+                {
+                  "id": "br-s13-links",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Watch the S13 videos →",
+                        "url": "https://www.youtube.com/watch?v=hC-dZePapQs",
+                        "style": "link",
+                        "intent": "watch-video"
+                      },
+                      {
+                        "label": "Learn more →",
+                        "url": "https://www.internationaltrucks.com/engines/s13integrated",
+                        "style": "link",
+                        "intent": "learn-more"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "br-s13-docs",
+                  "type": "doc-group",
+                  "props": {
+                    "title": "S13 spec sheets",
+                    "meta": "LT · RH · HX",
+                    "docs": [
+                      {
+                        "label": "S13 spec sheet — LT and RH Series",
+                        "url": "https://sunstateintl.com/wp-content/uploads/2025/03/int-s13-spec-sheet-ltandrh-2024-9-23-2.pdf",
+                        "kind": "PDF"
+                      },
+                      {
+                        "label": "S13 spec sheet — HX Series",
+                        "url": "https://sunstateintl.com/wp-content/uploads/2025/03/int-s13-spec-sheet-hx-2024-9-23-2.pdf",
+                        "kind": "PDF"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "br-s13-media",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "br-s13-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/img/photo-placeholder.svg",
+                      "alt": "The International S13 Integrated Powertrain — image to be supplied",
+                      "width": 1600,
+                      "height": 900
+                    },
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "br-s13-compare",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "br-s13-compare-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "br-s13-compare-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "See how International stacks up against the competition.",
+                    "headingLevel": 3,
+                    "eyebrow": "COMPETITIVE COMPARISONS"
+                  }
+                },
+                {
+                  "id": "br-s13-compare-docs",
+                  "type": "doc-group",
+                  "props": {
+                    "title": "Competitive comparisons",
+                    "meta": "3 DOCUMENTS",
+                    "docs": [
+                      {
+                        "label": "CV Series comparison",
+                        "url": "https://www.sunstateintl.com/wp-content/uploads/2026/04/CV_04_24_2026_10_34_09-1.pdf",
+                        "kind": "PDF"
+                      },
+                      {
+                        "label": "HX Series comparison",
+                        "url": "https://www.sunstateintl.com/wp-content/uploads/2026/04/HX_04_24_2026_03_44_43.pdf",
+                        "kind": "PDF"
+                      },
+                      {
+                        "label": "LT Series comparison",
+                        "url": "https://www.sunstateintl.com/wp-content/uploads/2026/04/LT_04_24_2026_10_41_05.pdf",
+                        "kind": "PDF"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "br-library",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "paper",
+        "anchor": "br-library"
+      },
+      "children": [
+        {
+          "id": "br-lib-head-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "br-lib-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "br-lib-head-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Brochures by series.",
+                    "headingLevel": 2,
+                    "eyebrow": "INTERNATIONAL SPECIFICATION SHEETS"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "br-lib-row",
+          "type": "row",
+          "props": {
+            "gap": 6,
+            "align": "stretch"
+          },
+          "children": [
+            {
+              "id": "col-br-mv",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "anchor": "br-mv"
+              },
+              "children": [
+                {
+                  "id": "w-br-mv",
+                  "type": "doc-group",
+                  "props": {
+                    "title": "International MV Series",
+                    "meta": "MEDIUM DUTY · 7 DOCUMENTS",
+                    "docs": [
+                      {
+                        "label": "MV Series brochure",
+                        "url": "https://sunstateintl.com/wp-content/uploads/2025/03/int24-mv-series-brochure-2024-9-23-2.pdf",
+                        "kind": "PDF"
+                      },
+                      {
+                        "label": "MV Specifications",
+                        "url": "https://sunstateintl.com/wp-content/uploads/2025/03/int24-pm-mv-series-spec-sheet-final.pdf",
+                        "kind": "PDF"
+                      },
+                      {
+                        "label": "MV Dry Van",
+                        "url": "https://sunstateintl.com/wp-content/uploads/2025/03/int24-pm-mv-series-van-spec-sheet-final.pdf",
+                        "kind": "PDF"
+                      },
+                      {
+                        "label": "MV Utility",
+                        "url": "https://sunstateintl.com/wp-content/uploads/2025/03/int24-pm-mv-series-utility-spec-sheet-final.pdf",
+                        "kind": "PDF"
+                      },
+                      {
+                        "label": "MV Recovery",
+                        "url": "https://sunstateintl.com/wp-content/uploads/2025/03/int24-mv-series-recovery-spec-sheet-final.pdf",
+                        "kind": "PDF"
+                      },
+                      {
+                        "label": "MV Boom",
+                        "url": "https://sunstateintl.com/wp-content/uploads/2025/03/int24-mv-series-boom-spec-sheet-final.pdf",
+                        "kind": "PDF"
+                      },
+                      {
+                        "label": "MV Snowplow",
+                        "url": "https://sunstateintl.com/wp-content/uploads/2025/03/int24-pm-mv-series-snowplow-spec-sheet-final.pdf",
+                        "kind": "PDF"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "col-br-emv",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "anchor": "br-emv"
+              },
+              "children": [
+                {
+                  "id": "w-br-emv",
+                  "type": "doc-group",
+                  "props": {
+                    "title": "International eMV Series",
+                    "meta": "ELECTRIC MEDIUM DUTY · 3 DOCUMENTS",
+                    "docs": [
+                      {
+                        "label": "eMV Series brochure",
+                        "url": "https://sunstateintl.com/wp-content/uploads/2025/03/int_brochure-emvseries-9-26-1.pdf",
+                        "kind": "PDF"
+                      },
+                      {
+                        "label": "eMV Specifications",
+                        "url": "https://sunstateintl.com/wp-content/uploads/2025/03/int_emvseries-specs-2024-9-23-1.pdf",
+                        "kind": "PDF"
+                      },
+                      {
+                        "label": "eMV Body Integration",
+                        "url": "https://sunstateintl.com/wp-content/uploads/2025/03/pm_international_specsheet-epower_2024-final-web.pdf",
+                        "kind": "PDF"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "col-br-hv",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "anchor": "br-hv"
+              },
+              "children": [
+                {
+                  "id": "w-br-hv",
+                  "type": "doc-group",
+                  "props": {
+                    "title": "International HV Series",
+                    "meta": "VOCATIONAL · 4 DOCUMENTS",
+                    "docs": [
+                      {
+                        "label": "HV509 specifications",
+                        "url": "https://sunstateintl.com/wp-content/uploads/2025/03/int_hv-series-specs-509-2024-9-23-2.pdf",
+                        "kind": "PDF"
+                      },
+                      {
+                        "label": "HV515 specifications",
+                        "url": "https://sunstateintl.com/wp-content/uploads/2025/03/int_hv-series-specs-515-2024-9-23-2.pdf",
+                        "kind": "PDF"
+                      },
+                      {
+                        "label": "HV609 specifications",
+                        "url": "https://sunstateintl.com/wp-content/uploads/2025/03/int_hv-series-specs-609-2024-9-23-2.pdf",
+                        "kind": "PDF"
+                      },
+                      {
+                        "label": "HV615 specifications",
+                        "url": "https://sunstateintl.com/wp-content/uploads/2025/03/int_hv-series-specs-615-2024-9-23-2.pdf",
+                        "kind": "PDF"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "col-br-lt",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "anchor": "br-lt"
+              },
+              "children": [
+                {
+                  "id": "w-br-lt",
+                  "type": "doc-group",
+                  "props": {
+                    "title": "International LT Series",
+                    "meta": "ON HIGHWAY · 3 DOCUMENTS",
+                    "docs": [
+                      {
+                        "label": "LT Series brochure",
+                        "url": "https://sunstateintl.com/wp-content/uploads/2025/03/int_brochure-ltseries-2024-9-23-1.pdf",
+                        "kind": "PDF"
+                      },
+                      {
+                        "label": "LT Series Day Cab",
+                        "url": "https://sunstateintl.com/wp-content/uploads/2025/03/int_ltseries-daycabspecs-2024-9-23-1.pdf",
+                        "kind": "PDF"
+                      },
+                      {
+                        "label": "LT Series Sleeper",
+                        "url": "https://sunstateintl.com/wp-content/uploads/2025/03/int_ltseries-sleeperspecs-2024-9-23-1.pdf",
+                        "kind": "PDF"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "col-br-rh",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "anchor": "br-rh"
+              },
+              "children": [
+                {
+                  "id": "w-br-rh",
+                  "type": "doc-group",
+                  "props": {
+                    "title": "International RH Series",
+                    "meta": "ON HIGHWAY · 3 DOCUMENTS",
+                    "docs": [
+                      {
+                        "label": "RH Series brochure",
+                        "url": "https://sunstateintl.com/wp-content/uploads/2025/03/int_brochure-rhseries-9-23-1.pdf",
+                        "kind": "PDF"
+                      },
+                      {
+                        "label": "RH Series Day Cab",
+                        "url": "https://sunstateintl.com/wp-content/uploads/2025/03/int_rhseries-daycabspecs-2024-9-23-1.pdf",
+                        "kind": "PDF"
+                      },
+                      {
+                        "label": "RH Series Sleeper",
+                        "url": "https://sunstateintl.com/wp-content/uploads/2025/03/int_rhseries-sleeperspecs-2024-9-23-1.pdf",
+                        "kind": "PDF"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "col-br-hx",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "anchor": "br-hx"
+              },
+              "children": [
+                {
+                  "id": "w-br-hx",
+                  "type": "doc-group",
+                  "props": {
+                    "title": "International HX Series",
+                    "meta": "SEVERE SERVICE · 3 DOCUMENTS",
+                    "docs": [
+                      {
+                        "label": "HX Series brochure",
+                        "url": "https://sunstateintl.com/wp-content/uploads/2025/03/int_hx-series-brochure-2024-9-23-3.pdf",
+                        "kind": "PDF"
+                      },
+                      {
+                        "label": "HX520 specifications",
+                        "url": "https://sunstateintl.com/wp-content/uploads/2025/03/pm_int_hx520specs-v1.1.pdf",
+                        "kind": "PDF"
+                      },
+                      {
+                        "label": "HX620 specifications",
+                        "url": "https://sunstateintl.com/wp-content/uploads/2025/03/int_hx620specs-2024-9-23-2.pdf",
+                        "kind": "PDF"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "col-br-cv",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "anchor": "br-cv"
+              },
+              "children": [
+                {
+                  "id": "w-br-cv",
+                  "type": "doc-group",
+                  "props": {
+                    "title": "International CV Series",
+                    "meta": "CLASS 4–5 · 1 DOCUMENT",
+                    "docs": [
+                      {
+                        "label": "CV Series brochure",
+                        "url": "https://sunstateintl.com/wp-content/uploads/2025/03/int_cv-series-brochure-9-23-2.pdf",
+                        "kind": "PDF"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "col-br-lonestar",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "anchor": "br-lonestar"
+              },
+              "children": [
+                {
+                  "id": "w-br-lonestar",
+                  "type": "doc-group",
+                  "props": {
+                    "title": "LoneStar",
+                    "meta": "ON HIGHWAY · 3 DOCUMENTS",
+                    "docs": [
+                      {
+                        "label": "LoneStar Series brochure",
+                        "url": "https://sunstateintl.com/wp-content/uploads/2024/08/LoneStar_1.pdf",
+                        "kind": "PDF"
+                      },
+                      {
+                        "label": "LoneStar Day Cab",
+                        "url": "https://sunstateintl.com/wp-content/uploads/2024/08/LoneStar_daycab.pdf",
+                        "kind": "PDF"
+                      },
+                      {
+                        "label": "LoneStar Sleeper",
+                        "url": "https://sunstateintl.com/wp-content/uploads/2024/08/LoneStar_sleeper.pdf",
+                        "kind": "PDF"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "br-next",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-grid",
+        "values": {
+          "eyebrow": "NEXT STEPS",
+          "heading": "Trailer specs and factory orders.",
+          "span": 6,
+          "background": "card",
+          "items": [
+            {
+              "eyebrow": "SUN STATE TRAILERS",
+              "title": "Trailer specifications",
+              "body": "Specifications for Hyundai Translead and Globe Trailers — dry van, reefer, flatbed and specialty configurations. Tell us the application and our trailer sales team will send the right sheet.",
+              "linkLabel": "Trailer Sales →",
+              "linkUrl": "/locations/trailer-sales"
+            },
+            {
+              "eyebrow": "NEXT STEP",
+              "title": "Spec your truck",
+              "body": "Use the truck configurator to build a unit, then talk to us about lead times, financing and the aftermarket work it needs before it goes to work.",
+              "linkLabel": "Truck configurator →",
+              "linkUrl": "/truck-configurator"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "br-faq",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "paper",
+        "anchor": "br-faq"
+      },
+      "children": [
+        {
+          "id": "br-faq-head-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "br-faq-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "br-faq-head-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Common questions.",
+                    "headingLevel": 2,
+                    "eyebrow": "BROCHURE & POWERTRAIN FAQS"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "br-faq-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "br-faq-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "br-faq-list",
+                  "type": "widget",
+                  "props": {
+                    "widget": "faq",
+                    "config": {
+                      "items": [
+                        {
+                          "q": "What is the International S13 Integrated Powertrain?",
+                          "a": "The S13 is an engine, transmission and aftertreatment system designed to work as one. It is simple, easy to service, and delivers stellar performance with superior operating economy. Spec sheets are available for the LT and RH Series and the HX Series."
+                        },
+                        {
+                          "q": "Which trucks can be ordered with the S13?",
+                          "a": "The S13 Integrated Powertrain is offered on the International LT Series, RH Series and HX Series. Download the matching spec sheet or call 800-741-7566 and we will spec a unit for your application."
+                        },
+                        {
+                          "q": "Which International series brochures are available?",
+                          "a": "MV Series (including van, utility, recovery, boom and snowplow spec sheets), eMV Series, HV Series (HV509, HV515, HV609, HV615), LT Series, RH Series, HX Series (HX520, HX620), CV Series and LoneStar."
+                        },
+                        {
+                          "q": "Are the brochures free to download?",
+                          "a": "Yes. Every brochure and spec sheet on this page is a free PDF download. No form or registration is required."
+                        },
+                        {
+                          "q": "How does International compare to competitors?",
+                          "a": "Competitive comparison sheets are available for the CV, HX and LT Series, showing how International stacks up against comparable models."
+                        },
+                        {
+                          "q": "Where can I get trailer specifications?",
+                          "a": "Trailer specifications for Hyundai Translead and Globe Trailers are available through Sun State Trailers, or call Trailer Sales at (813) 621-1331 and we will send the spec sheet for the configuration you need."
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "br-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "NEED HELP CHOOSING?",
+          "heading": "Tell us the job, we'll tell you the truck.",
+          "body": "Ready to get on the road? Contact us to explore our trucks and experience nothing less than the dedicated care you deserve.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Contact us",
+          "secondaryUrl": "/contact"
+        }
+      }
+    }
+  ]
+}

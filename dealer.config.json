@@ -1,0 +1,43 @@
+{
+  "$schema": "./dealer.config.schema.json",
+  "contractVersion": "5.0.0",
+  "name": "Sun State International Trucks",
+  "shortName": "Sun State",
+  "channelToken": "REPLACE_CHANNEL_TOKEN",
+  "domain": "REPLACE_CHANNEL_TOKEN.buzznerd.com",
+  "url": "https://REPLACE_CHANNEL_TOKEN.buzznerd.com",
+  "storefrontOrigin": "https://REPLACE_STOREFRONT_ORIGIN",
+  "storefrontPrefix": "store",
+  "logo": "/img/sunstate-logo.png",
+  "favicon": "/favicon.svg",
+  "analytics": {
+    "loaderUrl": null,
+    "loaderVersion": null
+  },
+  "business": {
+    "type": "AutoDealer",
+    "legalName": "Sun State International Trucks, LLC.",
+    "phone": "+1-813-521-8148",
+    "email": "info@sunstateintl.com",
+    "streetAddress": "6020 E Adamo Dr",
+    "addressLocality": "Tampa",
+    "addressRegion": "FL",
+    "postalCode": "33619",
+    "addressCountry": "US",
+    "latitude": 27.9472,
+    "longitude": -82.3776,
+    "priceRange": "$$",
+    "openingHours": [
+      "Mo-Fr 07:00-18:00",
+      "Sa 08:00-12:00"
+    ]
+  },
+  "seo": {
+    "defaultTitle": "Sun State International Trucks & Trailers | International Trucks, Trailers, Parts & Service in Florida",
+    "titleTemplate": "%s | Sun State International",
+    "defaultDescription": "Family-owned International Truck and trailer dealer serving West Central Florida for over 30 years. New and used trucks, Hyundai Translead and Globe Trailers, IC Bus, parts, service, financing and rental across six Florida locations.",
+    "ogImage": "/img/sunstate-logo.png",
+    "locale": "en_US",
+    "themeColor": "#141414"
+  }
+}

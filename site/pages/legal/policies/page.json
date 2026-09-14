@@ -1,0 +1,352 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "po-hero",
+      "type": "hero",
+      "props": {
+        "headingLevel": 1,
+        "eyebrow": "HOME / POLICIES",
+        "headline": "Policies",
+        "subhead": "Order, shipping and return policies for parts and accessories purchased from Sun State International Trucks and Sun State Trailers. Last updated September 11, 2026.",
+        "image": {
+          "src": "/img/photo-placeholder.svg",
+          "alt": "Policies — no photograph in this design",
+          "width": 1600,
+          "height": 900
+        }
+      }
+    },
+    {
+      "id": "po-intro",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 9,
+        "background": "paper",
+        "anchor": "po-intro"
+      },
+      "children": [
+        {
+          "id": "po-intro-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "po-intro-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "po-intro-t",
+                  "type": "text",
+                  "props": {
+                    "text": "These policies cover orders placed through our online parts store and by phone. Shipping and handling is based on your order total, returns run 30 days from shipment, and every online transaction runs over a secure connection.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "po-stats",
+                  "type": "statBand",
+                  "props": {
+                    "stats": [
+                      {
+                        "value": "4–10",
+                        "label": "Business days for delivery in the continental US"
+                      },
+                      {
+                        "value": "30 days",
+                        "label": "Return window from original shipment date"
+                      },
+                      {
+                        "value": "15%",
+                        "label": "Restocking fee on preauthorized returns"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "po-toc-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "On this page",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "po-toc",
+                  "type": "menu",
+                  "props": {
+                    "menuId": "policies-toc",
+                    "layout": "horizontal",
+                    "depth": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "po-body",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "card"
+      },
+      "children": [
+        {
+          "id": "po-body-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "po-body-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "po-shipping-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Shipping and Handling",
+                    "headingLevel": 2,
+                    "anchor": "po-shipping"
+                  }
+                },
+                {
+                  "id": "po-shipping-b",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Shipping and handling charges.</strong> Shipping and handling charges are based on total price of your order. Oversized or heavy items may have an additional shipping cost. This charge may not be calculated until the order is being prepared. We will notify you if there is an increase in the shipping charge for your order prior to billing and shipping.\n\n<strong>Shipment by UPS.</strong> We ship via UPS Ground or US Postal Service in the continental US. Shipments to Alaska &amp; Hawaii and International orders will have an additional shipping cost applied.\n\n<strong>Delivery time.</strong> Allow 4-10 business days for delivery of non-backordered items in the continental US. Allow additional time for shipments to Alaska, Hawaii and International Orders.\n\n<strong>Consolidated shipments.</strong> Entire orders will be shipped together if possible.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "po-returns-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Returns and Exchanges",
+                    "headingLevel": 2,
+                    "anchor": "po-returns"
+                  }
+                },
+                {
+                  "id": "po-returns-b",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>General.</strong> All returns must be postmarked no later than 30 days from the original customer shipment date. Returns and exchanges must be in new condition and must include all instructions and original packing material. Customer pays all return shipping charges. Include a copy of your packing list with all returns. Original shipping and handling charges are not refundable. Returns must be preauthorized by us and are subject to a 15% re-stocking fee. These amounts will be deducted from the original amount billed and the remaining balance will be credited to the original credit card.\n\n<strong>Incorrect item.</strong> If you received an incorrect item no extra charges will be incurred. We will replace incorrect items and pay the additional shipping charge.\n\n<strong>Incorrect size.</strong> No charge for exchange. We will exchange customer orders that do not fit, if the customer requests the same item in a different size. Customer pays all shipping charges.\n\n<strong>Customer order error.</strong> Incorrect customer orders can be exchanged for any other item without paying the restocking charge. However, the customer will pay the additional shipping and handling charge. The replacement item must be at least 75% of the value of the original item.\n\n<strong>Return shipping instructions.</strong> Return via prepaid UPS or US mail. Insure shipment for full value of purchase. Use original packaging. We are not responsible for packages lost during return shipping.\n\n<strong>Return / exchange instructions.</strong> Enclose a copy of your packing list or e-mail invoice along with detailed return/exchange instructions. Send exchanges and returns to the dealership.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "po-tax-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Sales Tax",
+                    "headingLevel": 2,
+                    "anchor": "po-tax"
+                  }
+                },
+                {
+                  "id": "po-tax-b",
+                  "type": "text",
+                  "props": {
+                    "text": "Sales tax is charged on instate orders if required by law.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "po-payment-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Payment Methods",
+                    "headingLevel": 2,
+                    "anchor": "po-payment"
+                  }
+                },
+                {
+                  "id": "po-payment-b",
+                  "type": "text",
+                  "props": {
+                    "text": "Orders accepted via secure online order form only. Most major credit cards are accepted. Credit card purchases verified for your protection.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "po-backorders-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Backordered Items",
+                    "headingLevel": 2,
+                    "anchor": "po-backorders"
+                  }
+                },
+                {
+                  "id": "po-backorders-b",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Backorders.</strong> If an item is backordered, we will notify you via e-mail.\n\n<strong>Shipments scheduled more than 30 days after the order date.</strong> We will notify you via email and give you a cancellation option.\n\n<strong>Filling backorders.</strong> Backorders will be filled before new orders when the backordered items become available.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "po-secure-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Secured Online Shopping",
+                    "headingLevel": 2,
+                    "anchor": "po-secure"
+                  }
+                },
+                {
+                  "id": "po-secure-b",
+                  "type": "text",
+                  "props": {
+                    "text": "We guarantee your order's privacy and security over the web, with all transactions utilizing an SSL secure server connection. Verisign, Inc., provides our Secure Server Certificate through Dealer Spike, LLC.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "po-product-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Product Information and Pricing",
+                    "headingLevel": 2,
+                    "anchor": "po-product"
+                  }
+                },
+                {
+                  "id": "po-product-b",
+                  "type": "text",
+                  "props": {
+                    "text": "Individual product descriptions are claims of the manufacturer and/or distributor and are not guaranteed accurate. Prices subject to change without notice. Mistakenly posted prices and/or options on the website do not obligate us to those incorrect prices and/or options. We reserve the right to refuse to sell to anyone for any reason.",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "po-faq",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "paper",
+        "anchor": "po-faq"
+      },
+      "children": [
+        {
+          "id": "po-faq-head-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "po-faq-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "po-faq-head-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Common questions.",
+                    "headingLevel": 2,
+                    "eyebrow": "POLICY FAQS"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "po-faq-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "po-faq-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "po-faq-list",
+                  "type": "widget",
+                  "props": {
+                    "widget": "faq",
+                    "config": {
+                      "items": [
+                        {
+                          "q": "How long does shipping take?",
+                          "a": "Allow 4-10 business days for delivery of non-backordered items in the continental US. Allow additional time for shipments to Alaska, Hawaii and international orders."
+                        },
+                        {
+                          "q": "How are shipping and handling charges calculated?",
+                          "a": "Shipping and handling charges are based on the total price of your order. Oversized or heavy items may have an additional shipping cost, which may not be calculated until the order is being prepared. We will notify you if there is an increase in the shipping charge prior to billing and shipping."
+                        },
+                        {
+                          "q": "What is the return window and is there a fee?",
+                          "a": "All returns must be postmarked no later than 30 days from the original customer shipment date, must be in new condition with all instructions and original packing material, and must be preauthorized by us. Returns are subject to a 15% re-stocking fee, the customer pays all return shipping charges, and original shipping and handling charges are not refundable."
+                        },
+                        {
+                          "q": "What if you sent the wrong item?",
+                          "a": "If you received an incorrect item no extra charges will be incurred. We will replace incorrect items and pay the additional shipping charge."
+                        },
+                        {
+                          "q": "What payment methods do you accept?",
+                          "a": "Orders are accepted via secure online order form only. Most major credit cards are accepted, and credit card purchases are verified for your protection."
+                        },
+                        {
+                          "q": "What happens if an item is backordered?",
+                          "a": "We will notify you by email. If the shipment is scheduled more than 30 days after the order date we will email you and give you a cancellation option. Backorders are filled before new orders when the items become available."
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "po-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "CONTACT US",
+          "heading": "Questions about an order?",
+          "body": "Call the parts counter with your order number and we will walk you through shipping, returns or a backorder.",
+          "primaryLabel": "Contact us",
+          "primaryUrl": "/contact",
+          "secondaryLabel": "Call 800.741.7566",
+          "secondaryUrl": "tel:+18007417566"
+        }
+      }
+    }
+  ]
+}

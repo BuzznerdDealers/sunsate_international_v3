@@ -1,0 +1,3 @@
+[data-bz-node="cu-form-aside"] .bz-navitem > a { font-size: 14px; }
+[data-bz-node="cu-form-aside"] .bz-block + .bz-block { padding-block-start: 14px; }
+[data-bz-node="cu-map-widget"] .bz-map { width: 100%; aspect-ratio: auto; min-height: 420px; background: var(--card); border: 1px solid var(--line); }

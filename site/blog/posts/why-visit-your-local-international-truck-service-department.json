@@ -1,0 +1,137 @@
+{
+  "slug": "why-visit-your-local-international-truck-service-department",
+  "title": "Why Visit Your Local International Truck Service Department",
+  "date": "2026-07-15",
+  "description": "At Sun State International, we provide comprehensive semi truck service, genuine OEM parts, and experienced technicians who know International trucks inside and out. Our goal is simple: help keep your business moving with dependable service you can count on.",
+  "status": "published",
+  "coverImage": "https://www.sunstateintl.com/wp-content/uploads/2026/08/sun-state-service-team-2-400x250.jpg",
+  "topic": "Service",
+  "nodes": [
+    {
+      "id": "intro",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "intro-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "intro-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "intro-eyebrow",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Visit Your Local International Truck Service Department",
+                    "headingLevel": 2,
+                    "eyebrow": "SERVICE"
+                  }
+                },
+                {
+                  "id": "intro-text",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, we provide comprehensive semi truck service, genuine OEM parts, and experienced technicians who know International trucks inside and out. Our goal is simple: help keep your business moving with dependable service you can count on.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "intro-note",
+                  "type": "text",
+                  "props": {
+                    "text": "The full article was published on sunstateintl.com. Paste the migrated body here in Posts → this post, and the card on the blog index updates with it.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "intro-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Read the original article →",
+                        "url": "https://www.sunstateintl.com/why-visit-your-local-international-truck-service-department/",
+                        "style": "link",
+                        "intent": "read-post"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "post-cta-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "post-cta-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "post-cta-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Got the same symptom on a unit you run?",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "post-cta-b",
+                  "type": "text",
+                  "props": {
+                    "text": "Call 800.741.7566 and we'll look at the specific truck or trailer instead of the general case.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "post-cta-btn",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "request-appointment"
+                      },
+                      {
+                        "ctaId": "call-main-secondary"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+[data-bz-node="loc-map"] .bz-map { width: 100%; aspect-ratio: auto; min-height: 460px; background: var(--card); border: 1px solid var(--line); }
+[data-bz-node="loc-afterhours"] [data-bz-node^="mb-media"] { order: -1; }

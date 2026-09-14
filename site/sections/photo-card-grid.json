@@ -1,0 +1,248 @@
+{
+  "version": 2,
+  "id": "photo-card-grid",
+  "name": "Photo card grid",
+  "css": "[data-bz-section=\"photo-card-grid\"] .bz-block { padding-block: 0 }\n[data-bz-section=\"photo-card-grid\"] .bz-block + .bz-block { padding-block-start: 12px }\n[data-bz-section=\"photo-card-grid\"] .bz-row + .bz-row { margin-top: 44px }\n[data-bz-section=\"photo-card-grid\"] .bz-col .bz-block--image { padding-block: 0; margin: -26px -26px 20px }\n[data-bz-section=\"photo-card-grid\"] .bz-col .bz-block--image img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; display: block }\n[data-bz-section=\"photo-card-grid\"] .bz-col .bz-figure { margin: 0 }\n[data-bz-section=\"photo-card-grid\"] h3 { font-size: 20px; margin: 0 0 10px }\n[data-bz-section=\"photo-card-grid\"] .bz-col p { font-size: 15px; color: #3f3f3f }\n[data-bz-section=\"photo-card-grid\"] .bz-col .bz-eyebrow { font-size: 10px; letter-spacing: .1em; color: var(--accent); margin-bottom: 10px }\n[data-bz-section=\"photo-card-grid\"] .bz-btns { margin-block: 16px 0; gap: 6px; flex-direction: column; align-items: flex-start }\n[data-bz-section=\"photo-card-grid\"] [data-bz-node^=\"pcg-card-specs\"] .bz-text { margin-top: 16px }\n[data-bz-section=\"photo-card-grid\"] [data-bz-node^=\"pcg-card-specs\"] p { display: flex; justify-content: space-between; gap: 12px; border-top: 1px solid var(--line); padding: 9px 0; margin: 0; font: 700 12px/1.3 var(--font-body); letter-spacing: .04em; color: var(--ink) }",
+  "props": [
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Eyebrow",
+      "default": ""
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": ""
+    },
+    {
+      "key": "body",
+      "type": "textarea",
+      "label": "Intro",
+      "default": ""
+    },
+    {
+      "key": "span",
+      "type": "number",
+      "label": "Card width in grid columns",
+      "default": 4
+    },
+    {
+      "key": "background",
+      "type": "select",
+      "label": "Band background",
+      "default": "card",
+      "options": [
+        {
+          "value": "card",
+          "label": "White"
+        },
+        {
+          "value": "paper",
+          "label": "Paper"
+        },
+        {
+          "value": "ink",
+          "label": "Dark chrome"
+        },
+        {
+          "value": "none",
+          "label": "None"
+        }
+      ]
+    },
+    {
+      "key": "anchor",
+      "type": "text",
+      "label": "Anchor id",
+      "default": ""
+    },
+    {
+      "key": "items",
+      "type": "list",
+      "label": "Cards",
+      "fields": [
+        {
+          "key": "image",
+          "type": "image",
+          "label": "Photo"
+        },
+        {
+          "key": "eyebrow",
+          "type": "text",
+          "label": "Eyebrow"
+        },
+        {
+          "key": "title",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "key": "body",
+          "type": "textarea",
+          "label": "Body"
+        },
+        {
+          "key": "specs",
+          "type": "textarea",
+          "label": "Spec lines — one per line"
+        },
+        {
+          "key": "linkLabel",
+          "type": "text",
+          "label": "First link label"
+        },
+        {
+          "key": "linkUrl",
+          "type": "url",
+          "label": "First link"
+        },
+        {
+          "key": "link2Label",
+          "type": "text",
+          "label": "Second link label"
+        },
+        {
+          "key": "link2Url",
+          "type": "url",
+          "label": "Second link"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "pcg",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "{{background}}",
+        "paddingY": 10,
+        "anchor": "{{anchor}}"
+      },
+      "children": [
+        {
+          "id": "pcg-head",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "pcg-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "pcg-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "eyebrow": "{{eyebrow}}",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "pcg-body",
+                  "type": "text",
+                  "props": {
+                    "text": "{{body}}",
+                    "width": "prose"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pcg-grid",
+          "type": "row",
+          "props": {
+            "gap": 6,
+            "align": "stretch"
+          },
+          "children": [
+            {
+              "id": "pcg-card",
+              "type": "column",
+              "props": {
+                "span": "{{span}}",
+                "repeat": "items"
+              },
+              "styles": {
+                "base": {
+                  "background": "card",
+                  "borderWidth": 1,
+                  "borderStyle": "solid",
+                  "borderColor": "line",
+                  "paddingTop": 26,
+                  "paddingRight": 26,
+                  "paddingBottom": 26,
+                  "paddingLeft": 26
+                }
+              },
+              "children": [
+                {
+                  "id": "pcg-card-img",
+                  "type": "image",
+                  "props": {
+                    "image": "{{image}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "pcg-card-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{title}}",
+                    "eyebrow": "{{eyebrow}}",
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "pcg-card-b",
+                  "type": "text",
+                  "props": {
+                    "text": "{{body}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "pcg-card-specs",
+                  "type": "text",
+                  "props": {
+                    "text": "{{specs}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "pcg-card-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "{{linkLabel}}",
+                        "url": "{{linkUrl}}",
+                        "style": "link",
+                        "intent": "learn-more"
+                      },
+                      {
+                        "label": "{{link2Label}}",
+                        "url": "{{link2Url}}",
+                        "style": "link",
+                        "intent": "learn-more"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,226 @@
+{
+  "version": 2,
+  "id": "service-rows",
+  "name": "Numbered service rows",
+  "css": "[data-bz-section=\"service-rows\"] .bz-block { padding-block: 0 }\n[data-bz-section=\"service-rows\"] .bz-row + .bz-row { margin-top: 0 }\n[data-bz-section=\"service-rows\"] h3 { font-size: 20px; margin: 0 0 6px }\n[data-bz-section=\"service-rows\"] .bz-col p { font-size: 15px; color: #3f3f3f; max-width: 70ch }\n[data-bz-section=\"service-rows\"] [data-bz-node^=\"sr-num\"] p { font: 700 20px/1 var(--font-heading); color: var(--muted) }\n[data-bz-section=\"service-rows\"] .bz-btns { margin-block: 0 }",
+  "props": [
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Eyebrow",
+      "default": "OUR INVENTORY"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": ""
+    },
+    {
+      "key": "body",
+      "type": "textarea",
+      "label": "Intro",
+      "default": ""
+    },
+    {
+      "key": "background",
+      "type": "select",
+      "label": "Band background",
+      "default": "card",
+      "options": [
+        {
+          "value": "card",
+          "label": "White"
+        },
+        {
+          "value": "paper",
+          "label": "Paper"
+        },
+        {
+          "value": "ink",
+          "label": "Dark chrome"
+        },
+        {
+          "value": "none",
+          "label": "None"
+        }
+      ]
+    },
+    {
+      "key": "anchor",
+      "type": "text",
+      "label": "Anchor id",
+      "default": ""
+    },
+    {
+      "key": "items",
+      "type": "list",
+      "label": "Rows",
+      "fields": [
+        {
+          "key": "num",
+          "type": "text",
+          "label": "Number"
+        },
+        {
+          "key": "title",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "key": "body",
+          "type": "textarea",
+          "label": "Description"
+        },
+        {
+          "key": "linkLabel",
+          "type": "text",
+          "label": "Link label"
+        },
+        {
+          "key": "linkUrl",
+          "type": "url",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "sr",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "{{background}}",
+        "paddingY": 10,
+        "anchor": "{{anchor}}"
+      },
+      "children": [
+        {
+          "id": "sr-head",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "sr-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "sr-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "eyebrow": "{{eyebrow}}",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "sr-body",
+                  "type": "text",
+                  "props": {
+                    "text": "{{body}}",
+                    "width": "prose"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sr-row",
+          "type": "row",
+          "props": {
+            "gap": 6,
+            "align": "center",
+            "repeat": "items",
+            "stackOn": "mobile"
+          },
+          "styles": {
+            "base": {
+              "borderTopWidth": 1,
+              "borderStyle": "solid",
+              "borderColor": "line",
+              "paddingTop": 26,
+              "paddingBottom": 26
+            }
+          },
+          "children": [
+            {
+              "id": "sr-num",
+              "type": "column",
+              "props": {
+                "span": 1,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "sr-num-t",
+                  "type": "text",
+                  "props": {
+                    "text": "{{num}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "sr-copy",
+              "type": "column",
+              "props": {
+                "span": 8,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "sr-title",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{title}}",
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "sr-desc",
+                  "type": "text",
+                  "props": {
+                    "text": "{{body}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "sr-link",
+              "type": "column",
+              "props": {
+                "span": 3,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "sr-link-b",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "{{linkLabel}}",
+                        "url": "{{linkUrl}}",
+                        "style": "link",
+                        "intent": "browse-inventory"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

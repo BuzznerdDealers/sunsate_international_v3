@@ -1,0 +1,121 @@
+{
+  "version": 2,
+  "id": "cta-band",
+  "name": "Contact CTA band",
+  "css": "[data-bz-section=\"cta-band\"] .bz-container { text-align: center }\n[data-bz-section=\"cta-band\"] h2 { font-size: var(--text-h2-sm, 34px); margin: 0 auto 18px; max-width: 20ch }\n[data-bz-section=\"cta-band\"] .bz-lede { margin: 0 auto 28px; max-width: 58ch }\n[data-bz-section=\"cta-band\"] .bz-btns { justify-content: center; margin-block: 0 }\n[data-bz-section=\"cta-band\"] .bz-eyebrow { color: #E2E2E2 }\n[data-bz-section=\"cta-band\"] p { color: #C7C1B4 }",
+  "props": [
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Eyebrow",
+      "default": "READY TO GET ON THE ROAD?"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": "Ready to get on the road?"
+    },
+    {
+      "key": "body",
+      "type": "textarea",
+      "label": "Body",
+      "default": "Contact us to explore our trucks and experience nothing less than the dedicated care you deserve."
+    },
+    {
+      "key": "primaryLabel",
+      "type": "text",
+      "label": "Primary button label",
+      "default": "Contact us"
+    },
+    {
+      "key": "primaryUrl",
+      "type": "url",
+      "label": "Primary button link",
+      "default": "/contact"
+    },
+    {
+      "key": "secondaryLabel",
+      "type": "text",
+      "label": "Secondary button label",
+      "default": "Call 800.741.7566"
+    },
+    {
+      "key": "secondaryUrl",
+      "type": "url",
+      "label": "Secondary button link",
+      "default": "tel:+18007417566"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "cta",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "ink",
+        "paddingY": 9
+      },
+      "children": [
+        {
+          "id": "cta-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "cta-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "cta-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "eyebrow": "{{eyebrow}}",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "cta-body",
+                  "type": "text",
+                  "props": {
+                    "text": "{{body}}",
+                    "align": "center",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "cta-buttons",
+                  "type": "buttons",
+                  "props": {
+                    "align": "center",
+                    "items": [
+                      {
+                        "label": "{{primaryLabel}}",
+                        "url": "{{primaryUrl}}",
+                        "style": "primary",
+                        "intent": "contact-dealer"
+                      },
+                      {
+                        "label": "{{secondaryLabel}}",
+                        "url": "{{secondaryUrl}}",
+                        "style": "secondary",
+                        "intent": "call-dealer"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

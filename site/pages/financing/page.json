@@ -1,0 +1,563 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "fin-hero",
+      "type": "hero",
+      "props": {
+        "headingLevel": 1,
+        "eyebrow": "HOME / FINANCING",
+        "headline": "Financing Trucks and Trailers at Sun State International",
+        "subhead": "We know how to take the curves out of transportation financing.",
+        "ctas": [
+          {
+            "label": "Apply for credit",
+            "url": "#credit-applications",
+            "style": "primary",
+            "intent": "get-financing"
+          },
+          {
+            "label": "Call 800.741.7566",
+            "url": "tel:+18007417566",
+            "style": "secondary",
+            "intent": "call-dealer"
+          }
+        ],
+        "image": {
+          "src": "/img/photo-placeholder.svg",
+          "alt": "A new truck being handed over — photograph to be supplied",
+          "width": 1600,
+          "height": 900
+        }
+      }
+    },
+    {
+      "id": "fin-summary",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 9,
+        "background": "paper",
+        "anchor": "fin-summary"
+      },
+      "children": [
+        {
+          "id": "fin-sum-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "fin-sum-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "fin-sum-t",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International Trucks, LLC., we know the ins and outs of the transportation industry. We offer competitive rates and flexible financing solutions through BMO Harris Bank and other financial sources. Our depth of expertise allows us to simplify your financial decisions by showing you your options, sharing solutions, and meeting your financial needs.\n\nIf you've decided you want to finance your new truck, you're not alone. Seventy percent of enthusiasts do. With a minimum down payment and approved credit, you can arrange Credit Financing with us and get out on the road quickly.\n\nPlus, you can add all your parts and accessories, apparel, insurance and more. You’ll have everything you need, and you only have to make one monthly payment.\n\nAnd because we finance more than anyone else, we understand your special needs. Only someone who knows how you feel when you hit the starter button understands that hitting the road ASAP is your biggest concern. That’s why we make it easy.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "fin-stats",
+                  "type": "statBand",
+                  "props": {
+                    "stats": [
+                      {
+                        "value": "6",
+                        "label": "Payment structures, from equal monthly to skip payment"
+                      },
+                      {
+                        "value": "0%",
+                        "label": "Interest rate on financed 1–4 year extended warranties"
+                      },
+                      {
+                        "value": "1",
+                        "label": "Monthly payment covering truck, parts, apparel and insurance"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fin-options",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-grid",
+        "values": {
+          "eyebrow": "FINANCING OPTIONS",
+          "heading": "We offer the following financing options tailored to fit your needs.",
+          "body": "Structures can be combined and matched to your cash flow, season and duty cycle. Tell us how the equipment earns and we'll show you which of these fits.",
+          "span": 4,
+          "background": "card",
+          "anchor": "fin-options",
+          "items": [
+            {
+              "eyebrow": "DEBT FINANCING",
+              "title": "Retail financing",
+              "body": "Also known as debt financing, a retail finance contract allows you to include the funding for related equipment and many of the other costs for placing equipment in service."
+            },
+            {
+              "eyebrow": "TAX-EXEMPT",
+              "title": "Municipal leasing",
+              "body": "Tax-exempt municipal leasing helps your government agency obtain essential equipment while staying within budgetary limits. Any agency that can issue tax-exempt securities can generally use it, including states, counties, cities, school districts, universities, hospitals, Special Purpose Districts and Section 501(c) not-for-profit organizations."
+            },
+            {
+              "eyebrow": "PREDICTABLE",
+              "title": "Equal monthly",
+              "body": "A set monthly payment throughout the term of the contract."
+            },
+            {
+              "eyebrow": "SEASONAL",
+              "title": "Skip payment",
+              "body": "Excellent for seasonal customers; it preserves cash during your downtimes. Decide which months you need to increase your cash flow, and during those months you can skip your truck payment."
+            },
+            {
+              "eyebrow": "CASH FLOW",
+              "title": "Balloon payment",
+              "body": "5%, 10% or 15% of the financed amount will be due at the end of the contract. This lowers your monthly payments and preserves your cash flow."
+            },
+            {
+              "eyebrow": "EQUITY",
+              "title": "Accelerated payment",
+              "body": "Save interest expense with higher payments at the beginning of the contract and lower payments as the contract matures. This builds equity faster and lowers payments when maintenance expenses may increase."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "fin-warranty",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-grid",
+        "values": {
+          "eyebrow": "WARRANTY, INSURANCE AND REPAIR FINANCING",
+          "heading": "More than the truck itself.",
+          "span": 3,
+          "background": "paper",
+          "items": [
+            {
+              "title": "Warranty",
+              "body": "Truck Master Warranty has the ability to finance 1, 2, 3 and 4-year extended warranties. You can also purchase a warranty for your existing truck.",
+              "linkLabel": "Extended service →",
+              "linkUrl": "/extended-service"
+            },
+            {
+              "title": "We now finance extended warranties",
+              "body": "Paying cash for your truck, but can't afford an extended warranty? Finance our 1, 2, 3 and 4 year extended warranties — 0% interest rate, low down payment, easy terms."
+            },
+            {
+              "title": "GAP insurance",
+              "body": "Protect yourself and avoid financial loss."
+            },
+            {
+              "title": "CAG Truck Capital",
+              "body": "Financing for major engine and transmission overhauls or replacements."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "fin-apply",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "card",
+        "anchor": "credit-applications"
+      },
+      "children": [
+        {
+          "id": "fin-apply-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "align": "start",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "fin-apply-docs",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "fin-apply-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Apply for credit.",
+                    "headingLevel": 2,
+                    "eyebrow": "CREDIT APPLICATIONS"
+                  }
+                },
+                {
+                  "id": "fin-apply-b",
+                  "type": "text",
+                  "props": {
+                    "text": "A credit application can be filled out and then emailed to <a href=\"mailto:Lynn.DeJesus@sunstateintl.com\">Lynn.DeJesus@sunstateintl.com</a>. Pick the application that matches the lender you’re working with, or call and we’ll point you to the right one."
+                  }
+                },
+                {
+                  "id": "fin-apply-list",
+                  "type": "doc-group",
+                  "props": {
+                    "title": "Credit applications",
+                    "meta": "3 DOCUMENTS",
+                    "docs": [
+                      {
+                        "label": "BMO Credit Application",
+                        "url": "https://www.sunstateintl.com/wp-content/uploads/2026/08/BMO-Credit-App-1-2026.pdf",
+                        "kind": "PDF"
+                      },
+                      {
+                        "label": "Navistar Financial Credit Application",
+                        "url": "https://www.sunstateintl.com/wp-content/uploads/2026/08/International-Financial-Credit-Application-Fillable-8-26-26.pdf",
+                        "kind": "PDF"
+                      },
+                      {
+                        "label": "Sun State Credit Application",
+                        "url": "https://sunstatetrailers.com/wp-content/uploads/2024/07/SunstateFinApp.pdf",
+                        "kind": "PDF"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "fin-apply-contact",
+              "type": "column",
+              "props": {
+                "span": 5,
+                "background": "paper",
+                "padding": 6
+              },
+              "children": [
+                {
+                  "id": "fin-contact-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Lynn DeJesus",
+                    "headingLevel": 2,
+                    "eyebrow": "TALK TO FINANCE"
+                  }
+                },
+                {
+                  "id": "fin-contact-b",
+                  "type": "text",
+                  "props": {
+                    "text": "Talk to Lynn DeJesus about financing your truck or transportation equipment with credit, and get out on the road today."
+                  }
+                },
+                {
+                  "id": "fin-contact-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "(800) 741-7566",
+                        "url": "tel:+18007417566",
+                        "style": "link",
+                        "intent": "call-department"
+                      },
+                      {
+                        "label": "(813) 621-1331 ext. 1008",
+                        "url": "tel:+18136211331",
+                        "style": "link",
+                        "intent": "call-department"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "fin-contact-email",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Lynn.DeJesus@sunstateintl.com",
+                        "url": "mailto:Lynn.DeJesus@sunstateintl.com",
+                        "style": "link",
+                        "intent": "email-department"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "fin-contact-note",
+                  "type": "text",
+                  "props": {
+                    "text": "For extended warranty financing, call (800) 621-1331 ext. 1008."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fin-lenders",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "paper"
+      },
+      "children": [
+        {
+          "id": "fin-lenders-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "align": "center",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "fin-lenders-copy",
+              "type": "column",
+              "props": {
+                "span": 7,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "fin-lenders-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Who we finance through.",
+                    "headingLevel": 2,
+                    "eyebrow": "LENDING PARTNERS"
+                  }
+                },
+                {
+                  "id": "fin-lenders-list",
+                  "type": "list",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "BMO Harris Bank",
+                        "desc": "Competitive rates and flexible financing solutions."
+                      },
+                      {
+                        "label": "Navistar Financial",
+                        "desc": "Factory financing for International trucks."
+                      },
+                      {
+                        "label": "CAG Truck Capital",
+                        "desc": "Major engine and transmission overhauls or replacements."
+                      },
+                      {
+                        "label": "Truck Master Warranty",
+                        "desc": "Financed 1 to 4-year extended warranties."
+                      },
+                      {
+                        "label": "Sun State in-house credit",
+                        "desc": "Line of credit for parts and service with approved credit and minimal down payment."
+                      }
+                    ],
+                    "columns": 1
+                  }
+                },
+                {
+                  "id": "fin-lenders-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Navistar Financial →",
+                        "url": "https://www.navistarfinancial.com/",
+                        "style": "link",
+                        "intent": "learn-more"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "fin-lenders-media",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "fin-lenders-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/img/photo-placeholder.svg",
+                      "alt": "A truck delivery — photograph to be supplied",
+                      "width": 1600,
+                      "height": 900
+                    },
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fin-trailers",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-grid",
+        "values": {
+          "eyebrow": "ALSO FINANCED",
+          "heading": "Trailers, parts and service.",
+          "span": 6,
+          "background": "card",
+          "items": [
+            {
+              "title": "Financing trailers",
+              "body": "A good business starts with the right equipment. Talk to a member of our sales team about available inventory, financing, or to schedule an in-person appointment, and we'll structure the trailer the same way we structure trucks.",
+              "linkLabel": "Sun State Credit Application (PDF) →",
+              "linkUrl": "https://sunstatetrailers.com/wp-content/uploads/2024/07/SunstateFinApp.pdf"
+            },
+            {
+              "title": "Credit for parts and service",
+              "body": "With approved credit and minimal down payment, we offer an in-house line of credit for all your parts and service needs. Diamond Advantage adds a credit program designed for the transportation industry, and Fleet Charge simplifies parts pricing and billing for qualifying fleets.",
+              "linkLabel": "Parts department →",
+              "linkUrl": "/parts"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "fin-faq",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "paper",
+        "anchor": "fin-faq"
+      },
+      "children": [
+        {
+          "id": "fin-faq-head-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "fin-faq-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "fin-faq-head-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Common questions.",
+                    "headingLevel": 2,
+                    "eyebrow": "FINANCING FAQS"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "fin-faq-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "fin-faq-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "fin-faq-list",
+                  "type": "widget",
+                  "props": {
+                    "widget": "faq",
+                    "config": {
+                      "items": [
+                        {
+                          "q": "Who does Sun State International finance through?",
+                          "a": "We offer competitive rates and flexible financing solutions through BMO Harris Bank and other financial sources, including Navistar Financial and CAG Truck Capital for major engine and transmission overhauls or replacements."
+                        },
+                        {
+                          "q": "What do I need to get financed?",
+                          "a": "With a minimum down payment and approved credit you can arrange credit financing with us and get out on the road quickly. Complete a credit application and email it to Lynn.DeJesus@sunstateintl.com."
+                        },
+                        {
+                          "q": "Can I include parts, accessories and insurance in the loan?",
+                          "a": "Yes. You can add all your parts and accessories, apparel, insurance and more, so you have everything you need and only have to make one monthly payment."
+                        },
+                        {
+                          "q": "What financing structures are available?",
+                          "a": "Retail financing, tax-exempt municipal leasing, equal monthly payments, skip payment for seasonal operations, balloon payment at 5%, 10% or 15%, and accelerated payment plans."
+                        },
+                        {
+                          "q": "Do you offer tax-exempt leasing for government agencies?",
+                          "a": "Yes. Tax-exempt municipal leasing helps government agencies obtain essential equipment within budget. Any agency that can issue tax-exempt securities can generally use it, including states, counties, cities, school districts, universities, hospitals, Special Purpose Districts and Section 501(c) not-for-profit organizations."
+                        },
+                        {
+                          "q": "Can I finance an extended warranty?",
+                          "a": "Yes. Truck Master Warranty can finance 1, 2, 3 and 4-year extended warranties at 0% interest rate with low down payment and easy terms, and you can purchase a warranty for your existing truck."
+                        },
+                        {
+                          "q": "Can I finance an engine or transmission overhaul?",
+                          "a": "Yes. CAG Truck Capital provides financing for major engine and transmission overhauls or replacements."
+                        },
+                        {
+                          "q": "Is there a line of credit for parts and service?",
+                          "a": "Yes. With approved credit and minimal down payment we offer an in-house line of credit for all your parts and service needs, and Diamond Advantage provides a credit program built for the transportation industry."
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fin-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "READY TO GET ON THE ROAD?",
+          "heading": "Hit the road running.",
+          "body": "Contact us to explore our trucks and experience nothing less than the dedicated care you deserve.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Apply for credit",
+          "secondaryUrl": "#credit-applications"
+        }
+      }
+    }
+  ]
+}

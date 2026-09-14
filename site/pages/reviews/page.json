@@ -1,0 +1,356 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "reviews-hero",
+      "type": "hero",
+      "props": {
+        "headingLevel": 1,
+        "eyebrow": "HOME / OUR STORY / REVIEWS",
+        "headline": "What Our Customers Are Saying",
+        "subhead": "Fleet managers, owner-operators and RV owners on service, parts, trucks and trailers at Sun State International Trucks and Sun State Trailers across Tampa, Sarasota, Davenport and Brooksville.",
+        "image": {
+          "src": "/img/photo-placeholder.svg",
+          "alt": "A Sun State service bay — photograph to be supplied",
+          "width": 1600,
+          "height": 900
+        }
+      }
+    },
+    {
+      "id": "reviews-highlights",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 9,
+        "background": "paper",
+        "anchor": "review-highlights"
+      },
+      "children": [
+        {
+          "id": "rh-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "align": "start",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "rh-intro",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "rh-intro-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Every customer review published by Sun State International Trucks is rated 5 out of 5. Customers most often cite same-day repair turnaround, fair pricing, knowledgeable technicians and on-site technician training — on commercial trucks, trailers and RVs alike, at all six West Central Florida locations.",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "rh-facts",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "rh-list",
+                  "type": "list",
+                  "props": {
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "Most praised",
+                        "desc": "Repair turnaround — one coolant leak was diagnosed and back on the road the same afternoon."
+                      },
+                      {
+                        "label": "Who reviews us",
+                        "desc": "Fleet managers, owner-operators, shop foremen and RV owners across Tampa, Sarasota and Davenport."
+                      },
+                      {
+                        "label": "Longest relationship",
+                        "desc": "One reviewer has been coming to Sun State for 30 to 40 years."
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reviews-list",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "card",
+        "anchor": "customer-reviews"
+      },
+      "children": [
+        {
+          "id": "rl-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "rl-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "rl-block",
+                  "type": "testimonials",
+                  "props": {
+                    "heading": "In their words.",
+                    "headingLevel": 2,
+                    "items": [
+                      {
+                        "quote": "Mike Baker came out on Thursday, 3/10, to do some training modules with my technicians for the day and he did an outstanding job. Mike was extremely knowledgeable on the subject matter, very engaging with the group, and did a great job of making it a collaborative learning process. Mike gave us insights on some diagnostic tools that will be very beneficial for us. We look forward to having him out again once he has the Bendix Wingman and SCR modules ready.",
+                        "name": "George Murray",
+                        "role": "28 April 2022",
+                        "rating": 5
+                      },
+                      {
+                        "quote": "When a truck driver breaks his truck it is the worst problem because it affects your entire personal, financial and work life. Without a doubt, in this workshop they understand you from the moment you arrive. Antony Merrill welcomes you with a smile that makes you feel that you are in good hands. Super fair prices, excellent work, I recommend them 100, do not start inventing with your truck, take it to the professionals.",
+                        "name": "Angel Colon",
+                        "role": "28 April 2022",
+                        "rating": 5
+                      },
+                      {
+                        "quote": "Came in for coolant leak was told I would be down about a day or so. Mechanic was on it and had me rolling by the same afternoon…great work, proud professionalism clean lounge and restroom. If you need work done on truck or RV…I highly recommend these guys if you’re in the area.",
+                        "name": "Da Mileman",
+                        "role": "28 April 2022",
+                        "rating": 5
+                      },
+                      {
+                        "quote": "I scheduled an appointment to check out an oil leak on the back of my RV, when I arrived, I was showing the technician where it was leaking and he figured out it was a faulty oil cap, he then offered to wash off the oil around that area. After he was finished, he said there is no charge! I’m truly grateful for their love and kindness for others… I plan to pass on the kindness.",
+                        "name": "Merv Beiler",
+                        "role": "28 April 2022",
+                        "rating": 5
+                      },
+                      {
+                        "quote": "Good place been going there for 30 or 40 years.",
+                        "name": "James Ashley",
+                        "role": "28 April 2022",
+                        "rating": 5
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reviews-testimonials",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "paper",
+        "anchor": "testimonials"
+      },
+      "children": [
+        {
+          "id": "rt-head-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "rt-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "rt-head-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Across trucks, trailers and parts.",
+                    "headingLevel": 2,
+                    "eyebrow": "TESTIMONIALS"
+                  }
+                },
+                {
+                  "id": "rt-head-b",
+                  "type": "text",
+                  "props": {
+                    "text": "Feedback from the sales, parts and finance side of the business.",
+                    "width": "prose"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "rt-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "rt-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "rt-block",
+                  "type": "testimonials",
+                  "props": {
+                    "headingLevel": 3,
+                    "items": [
+                      {
+                        "quote": "The team at Sun State International kept our fleet on the road with fast, reliable service.",
+                        "name": "Fleet Manager",
+                        "role": "Tampa, FL",
+                        "rating": 5
+                      },
+                      {
+                        "quote": "Great selection of trucks and trailers, and the parts team always comes through same-day.",
+                        "name": "Owner-Operator",
+                        "role": "Sarasota, FL",
+                        "rating": 5
+                      },
+                      {
+                        "quote": "Dedicated care from sales through financing. They made the whole process easy.",
+                        "name": "Business Owner",
+                        "role": "Davenport, FL",
+                        "rating": 5
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reviews-leave",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "card"
+      },
+      "children": [
+        {
+          "id": "rlv-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "align": "start",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "rlv-copy",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "rlv-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Worked with us recently?",
+                    "headingLevel": 2,
+                    "eyebrow": "LEAVE A REVIEW"
+                  }
+                },
+                {
+                  "id": "rlv-body",
+                  "type": "text",
+                  "props": {
+                    "text": "Tell us how it went. Reviews help other fleets and owner-operators know what to expect, and they tell our <a href=\"/parts\">parts</a>, service and sales <a href=\"/meet-the-team\">teams</a> what’s working."
+                  }
+                },
+                {
+                  "id": "rlv-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Write a Review",
+                        "url": "/contact",
+                        "style": "primary",
+                        "intent": "leave-review"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "rlv-locs",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "rlv-locs-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Review a location",
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "rlv-locs-menu",
+                  "type": "menu",
+                  "props": {
+                    "menuId": "utility",
+                    "layout": "vertical",
+                    "depth": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reviews-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "SHOP SUN STATE",
+          "heading": "Experience the Sun State difference.",
+          "body": "New and used International trucks, IC Bus, Capacity yard trucks and trailers, ready to work.",
+          "primaryLabel": "Shop New",
+          "primaryUrl": "/store/inventory?condition=new",
+          "secondaryLabel": "Shop Pre-Owned",
+          "secondaryUrl": "/store/inventory?condition=used"
+        }
+      }
+    }
+  ]
+}

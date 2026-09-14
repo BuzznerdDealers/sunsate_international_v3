@@ -1,0 +1,526 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "appt-hero",
+      "type": "hero",
+      "props": {
+        "headingLevel": 1,
+        "eyebrow": "HOME / SERVICE / SERVICE APPOINTMENT",
+        "headline": "Schedule a Service Appointment",
+        "subhead": "We're here to help you with all of your commercial truck and trailer repair needs. Let's get you going.",
+        "ctas": [
+          {
+            "label": "Request an appointment",
+            "url": "#appointment-form",
+            "style": "primary",
+            "intent": "book-service"
+          },
+          {
+            "label": "Call 800.741.7566",
+            "url": "tel:+18007417566",
+            "style": "secondary",
+            "intent": "call-dealer"
+          }
+        ],
+        "image": {
+          "src": "/img/photo-placeholder.svg",
+          "alt": "The Sun State service drive-in — photograph to be supplied",
+          "width": 1600,
+          "height": 900
+        }
+      }
+    },
+    {
+      "id": "appt-summary",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 9,
+        "background": "paper",
+        "anchor": "appt-summary"
+      },
+      "children": [
+        {
+          "id": "appt-sum-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "appt-sum-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "appt-sum-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Streamline your service experience with online service appointments for trucks and trailers. Easier and faster scheduling, assisted fleet management, and comprehensive service history tracking, backed by over 60 certified factory-trained technicians across Tampa, Sarasota, Davenport and Brooksville.\n\nTell us what the unit needs and when you'd like it in. A service advisor reviews your request, confirms a time and walks through the scope of work before repairs begin. If the truck or trailer can't make it to us, request mobile service and we'll come to you.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "appt-stats",
+                  "type": "statBand",
+                  "props": {
+                    "stats": [
+                      {
+                        "value": "Same day",
+                        "label": "Response on requests during service hours"
+                      },
+                      {
+                        "value": "2 hrs",
+                        "label": "ASED diagnostic evaluation and estimate on arrival"
+                      },
+                      {
+                        "value": "24/7",
+                        "label": "Coverage with after-hours support via Certified Fleet"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "appt-form",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "card",
+        "anchor": "appointment-form"
+      },
+      "children": [
+        {
+          "id": "appt-form-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "align": "start",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "appt-form-col",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "children": [
+                {
+                  "id": "appt-form-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Tell us about the unit.",
+                    "headingLevel": 2,
+                    "eyebrow": "SERVICE APPOINTMENT REQUEST"
+                  }
+                },
+                {
+                  "id": "appt-form-b",
+                  "type": "text",
+                  "props": {
+                    "text": "Fields marked with an asterisk are required. A service advisor will follow up to confirm your appointment."
+                  }
+                },
+                {
+                  "id": "appt-form-block",
+                  "type": "form",
+                  "props": {
+                    "formId": "service-appointment"
+                  }
+                },
+                {
+                  "id": "appt-form-note",
+                  "type": "text",
+                  "props": {
+                    "text": "Submitting a request does not confirm an appointment. A service advisor will contact you by phone or email."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "appt-form-aside",
+              "type": "column",
+              "props": {
+                "span": 4,
+                "background": "paper",
+                "padding": 6
+              },
+              "children": [
+                {
+                  "id": "appt-phone-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Schedule by phone.",
+                    "headingLevel": 3,
+                    "eyebrow": "PREFER TO CALL?"
+                  }
+                },
+                {
+                  "id": "appt-phone-list",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Service scheduling — 800.741.7566",
+                        "url": "tel:+18007417566",
+                        "style": "link",
+                        "intent": "call-department"
+                      },
+                      {
+                        "label": "Tampa — (813) 521-8053",
+                        "url": "tel:+18135218053",
+                        "style": "link",
+                        "intent": "call-department"
+                      },
+                      {
+                        "label": "Sarasota — (941) 541-3251",
+                        "url": "tel:+19415413251",
+                        "style": "link",
+                        "intent": "call-department"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "appt-phone-list-2",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Davenport — (863) 238-2939",
+                        "url": "tel:+18632382939",
+                        "style": "link",
+                        "intent": "call-department"
+                      },
+                      {
+                        "label": "Brooksville Parts — (352) 277-0221",
+                        "url": "tel:+13522770221",
+                        "style": "link",
+                        "intent": "call-department"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "appt-phone-note",
+                  "type": "text",
+                  "props": {
+                    "text": "After-hours service via Certified Fleet, 5:00 PM to 8:00 AM."
+                  }
+                },
+                {
+                  "id": "appt-how-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "How it works",
+                    "headingLevel": 3,
+                    "eyebrow": "FOUR STEPS"
+                  }
+                },
+                {
+                  "id": "appt-how-list",
+                  "type": "list",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "1. Tell us about your unit",
+                        "desc": "Contact details, unit information and the repairs or maintenance you need."
+                      },
+                      {
+                        "label": "2. Pick a location and time",
+                        "desc": "Tampa, Sarasota, Davenport or Brooksville, or request mobile service at your yard or job site."
+                      },
+                      {
+                        "label": "3. Confirm with a service advisor",
+                        "desc": "We review the scope of work and provide an estimate before repairs begin."
+                      },
+                      {
+                        "label": "4. Get back to work",
+                        "desc": "Factory-trained technicians perform the work and your service history is tracked for future planning."
+                      }
+                    ],
+                    "columns": 1
+                  }
+                },
+                {
+                  "id": "appt-ready-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Have ready",
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "appt-ready-list",
+                  "type": "list",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "VIN or unit number"
+                      },
+                      {
+                        "label": "Year, make and model"
+                      },
+                      {
+                        "label": "Current mileage or engine hours"
+                      },
+                      {
+                        "label": "Active fault codes, if any"
+                      },
+                      {
+                        "label": "Recent repair or maintenance history"
+                      }
+                    ],
+                    "columns": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "appt-locations",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "location-grid",
+        "values": {
+          "eyebrow": "FIND A LOCATION",
+          "heading": "Where to bring it in.",
+          "body": "Truck, trailer and parts locations across Central and Southwest Florida, each with dedicated service and trailer repair bays.",
+          "span": 4,
+          "background": "paper",
+          "anchor": "appt-hours",
+          "locations": [
+            {
+              "tag": "TRUCKS · TRAILERS · PARTS",
+              "city": "Tampa",
+              "address": "6020 E Adamo Dr, Tampa, FL 33619",
+              "hours": "Service 7 AM – 7 PM M–F, 7 AM – 12 PM Sat · Parts 7 AM – 7 PM M–F · Sales 7 AM – 7 PM M–F",
+              "phone": "(813) 521-8053",
+              "phoneUrl": "tel:+18135218053",
+              "url": "/locations/tampa"
+            },
+            {
+              "tag": "TRUCKS · TRAILERS · PARTS",
+              "city": "Davenport",
+              "address": "41609 Hwy 27, Davenport, FL 33837",
+              "hours": "Service 7 AM – 7 PM M–F, 7 AM – 12 PM Sat · Parts 7 AM – 5 PM M–F · Sales 8 AM – 4:30 PM M–F",
+              "phone": "(863) 238-2939",
+              "phoneUrl": "tel:+18632382939",
+              "url": "/locations/davenport"
+            },
+            {
+              "tag": "TRUCKS · TRAILERS · PARTS",
+              "city": "Sarasota",
+              "address": "1000 Sarasota Center Blvd, Sarasota, FL 34240",
+              "hours": "Service 7 AM – 5 PM M–F · Parts 7 AM – 5 PM M–F · Sales 8 AM – 5 PM M–F",
+              "phone": "(941) 541-3251",
+              "phoneUrl": "tel:+19415413251",
+              "url": "/locations/sarasota"
+            },
+            {
+              "tag": "PARTS",
+              "city": "Truck & Trailer Parts — Brooksville",
+              "address": "17127 Runway Drive, Brooksville, FL 34604",
+              "hours": "Store 7 AM – 5 PM M–F",
+              "phone": "(352) 277-0221",
+              "phoneUrl": "tel:+13522770221",
+              "url": "/locations/brooksville"
+            },
+            {
+              "tag": "AFTERMARKET PARTS",
+              "city": "Sun State Aftermarket Parts — Tampa",
+              "address": "7105 East 6th Ave, Tampa, FL 33619",
+              "hours": "Store 7 AM – 4 PM M–F",
+              "phone": "(813) 627-3282",
+              "phoneUrl": "tel:+18136273282",
+              "url": "/locations/aftermarket-parts"
+            },
+            {
+              "tag": "TRAILER SALES",
+              "city": "Trailer Sales — Tampa",
+              "address": "6020 E Adamo Dr, Tampa, FL 33619",
+              "hours": "Store 8 AM – 5 PM M–F",
+              "phone": "(813) 621-1331",
+              "phoneUrl": "tel:+18136211331",
+              "url": "/locations/trailer-sales"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "appt-mobile",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "media-band",
+        "values": {
+          "eyebrow": "MOBILE SERVICE",
+          "heading": "Or we come to you.",
+          "body": "Whether you're stuck roadside or at a job site, our mobile technicians provide efficient, on-the-spot repairs to minimize downtime. Many repairs, diagnostics and preventative maintenance can be performed at your location without transporting the unit.\n\nChoose \"Mobile service at my location\" on the request form and add your service address, or call 800.741.7566 to dispatch a truck.",
+          "ctaLabel": "Learn more about mobile service →",
+          "ctaUrl": "/mobile-service",
+          "ctaStyle": "link",
+          "background": "card",
+          "image": {
+            "src": "/img/photo-placeholder.svg",
+            "alt": "A Sun State mobile service truck — photograph to be supplied",
+            "width": 1600,
+            "height": 900
+          }
+        }
+      }
+    },
+    {
+      "id": "appt-fleet",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-grid",
+        "values": {
+          "eyebrow": "FLEETS AND TRAILERS",
+          "heading": "Planned, not reactive.",
+          "span": 6,
+          "background": "paper",
+          "items": [
+            {
+              "title": "Fleet scheduling and service history",
+              "body": "Online appointments give fleets assisted fleet management and comprehensive service history tracking, so preventative maintenance is planned rather than reactive. Fleet Charge, OnCommand Connection and International 360 keep pricing, diagnostics and repair status visible across your units.",
+              "linkLabel": "See fleet service programs →",
+              "linkUrl": "/service#services"
+            },
+            {
+              "title": "Trailer service appointments",
+              "body": "When your trailer requires maintenance, you can depend on Sun State for all your trailer parts and service needs. Kingpins, landing gear, aluminum and fiberglass repair, alignment, fabrication and welding, DOT inspections and complete liftgate care including new installations, remounts, warranty service and parts.",
+              "linkLabel": "Trailer parts & service →",
+              "linkUrl": "/parts#trailer-parts"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "appt-faq",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "card",
+        "anchor": "appt-faq"
+      },
+      "children": [
+        {
+          "id": "appt-faq-head-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "appt-faq-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "appt-faq-head-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Common questions.",
+                    "headingLevel": 2,
+                    "eyebrow": "SERVICE APPOINTMENT FAQS"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "appt-faq-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "appt-faq-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "appt-faq-list",
+                  "type": "widget",
+                  "props": {
+                    "widget": "faq",
+                    "config": {
+                      "items": [
+                        {
+                          "q": "How do I schedule a service appointment at Sun State?",
+                          "a": "Submit the online service appointment request form on this page, or call 800-741-7566. You can also reach the Tampa Service Department directly at (813) 521-8053, Sarasota at (941) 541-3251 and Davenport at (863) 238-2939."
+                        },
+                        {
+                          "q": "Is this a confirmed appointment?",
+                          "a": "Your request reserves a place in the schedule. A service advisor contacts you to confirm the date and time, review the work needed and answer questions before your unit arrives."
+                        },
+                        {
+                          "q": "What information should I have ready?",
+                          "a": "Have your VIN or unit number, year, make and model, current mileage or hours, and a short description of the symptoms or the maintenance due. Fault codes and recent repair history help our technicians diagnose faster."
+                        },
+                        {
+                          "q": "Can you come to my location instead?",
+                          "a": "Yes. Request mobile service on the form and our mobile team can perform many repairs, diagnostics and preventative maintenance at your yard or job site, reducing downtime and the cost of transporting the unit."
+                        },
+                        {
+                          "q": "Do you schedule trailer service as well as truck service?",
+                          "a": "Yes. The same form schedules trucks, trailers, buses and yard trucks. Sun State Trailers online service appointments offer easier scheduling, assisted fleet management and comprehensive service history tracking."
+                        },
+                        {
+                          "q": "What if my truck breaks down after hours?",
+                          "a": "Certified Fleet provides after-hours support from 5:00 PM to 8:00 AM. Call 800-741-7566 for assistance outside of service department hours."
+                        },
+                        {
+                          "q": "How soon will I hear back?",
+                          "a": "Requests submitted during service department hours are typically answered the same business day. Requests submitted overnight or on weekends are handled the next business morning."
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "appt-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "DOWN NOW?",
+          "heading": "Call us and we'll get you in.",
+          "body": "Service scheduling is available during department hours, with after-hours support through Certified Fleet from 5:00 PM to 8:00 AM.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Request an appointment",
+          "secondaryUrl": "#appointment-form"
+        }
+      }
+    }
+  ]
+}

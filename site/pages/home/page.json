@@ -1,0 +1,569 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "home-hero",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "ink",
+        "align": "center",
+        "minHeight": "half"
+      },
+      "children": [
+        {
+          "id": "hero-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "hero-col",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "hero-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Your trusted partner for trucks, trailers, and more.",
+                    "headingLevel": 1,
+                    "align": "center",
+                    "eyebrow": "CELEBRATING 25 YEARS · TAMPA · DAVENPORT · SARASOTA · BROOKSVILLE, FL"
+                  }
+                },
+                {
+                  "id": "hero-brand-lockup",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/img/brand-logos.png",
+                      "alt": "International, IC Bus, Hyundai Translead and Globe Trailers",
+                      "width": 1400,
+                      "height": 120
+                    },
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "hero-search",
+                  "type": "widget",
+                  "props": {
+                    "widget": "inventory-search",
+                    "config": {
+                      "placeholder": "Search trucks, trailers and yard trucks…"
+                    }
+                  }
+                },
+                {
+                  "id": "hero-brands",
+                  "type": "menu",
+                  "props": {
+                    "menuId": "hero-brands",
+                    "layout": "horizontal",
+                    "align": "center",
+                    "depth": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "home-about",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "media-band",
+        "values": {
+          "eyebrow": "GOING THE EXTRA MILE",
+          "heading": "More than a dealership.",
+          "body": "At Sun State International, we're more than just a dealership — we're industry experts who understand the challenges of the road. Our culture is built on accountability, action, and a commitment to doing what's right. From our parts and service teams to our finance specialists, every member of the Sun State family is dedicated to helping you succeed.",
+          "ctaLabel": "Read more →",
+          "ctaUrl": "/about-us",
+          "ctaStyle": "link",
+          "background": "paper",
+          "anchor": "about",
+          "image": {
+            "src": "/img/photo-placeholder.svg",
+            "alt": "Sun State International dealership — photograph to be supplied",
+            "width": 1600,
+            "height": 900
+          }
+        }
+      }
+    },
+    {
+      "id": "home-types",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "type-rail",
+        "values": {
+          "heading": "Choose a type to explore",
+          "anchor": "truck-types",
+          "span": 3,
+          "items": [
+            {
+              "image": {
+                "src": "/img/photo-placeholder.svg",
+                "alt": "International Sleeper Cabs — photograph to be supplied",
+                "width": 1600,
+                "height": 900
+              },
+              "label": "International Sleeper Cabs",
+              "ctaLabel": "Buy Now →",
+              "ctaUrl": "/store/inventory?category=sleeper-cabs"
+            },
+            {
+              "image": {
+                "src": "/img/photo-placeholder.svg",
+                "alt": "International Dump Trucks — photograph to be supplied",
+                "width": 1600,
+                "height": 900
+              },
+              "label": "International Dump Trucks",
+              "ctaLabel": "Buy Now →",
+              "ctaUrl": "/store/inventory?category=dump-trucks"
+            },
+            {
+              "image": {
+                "src": "/img/photo-placeholder.svg",
+                "alt": "International Trucks — photograph to be supplied",
+                "width": 1600,
+                "height": 900
+              },
+              "label": "International Trucks",
+              "ctaLabel": "Buy Now →",
+              "ctaUrl": "/store/inventory?type=truck"
+            },
+            {
+              "image": {
+                "src": "/img/photo-placeholder.svg",
+                "alt": "IC Bus — photograph to be supplied",
+                "width": 1600,
+                "height": 900
+              },
+              "label": "IC Bus",
+              "ctaLabel": "Buy Now →",
+              "ctaUrl": "/store/inventory?type=bus"
+            },
+            {
+              "image": {
+                "src": "/img/photo-placeholder.svg",
+                "alt": "Capacity Yard Trucks — photograph to be supplied",
+                "width": 1600,
+                "height": 900
+              },
+              "label": "Capacity Yard Trucks",
+              "ctaLabel": "Buy Now →",
+              "ctaUrl": "/capacity-yard-trucks"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "home-locations",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "paper",
+        "anchor": "locations"
+      },
+      "children": [
+        {
+          "id": "loc-head-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "loc-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "loc-head-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Find a location",
+                    "headingLevel": 2,
+                    "eyebrow": "FIND A LOCATION"
+                  }
+                },
+                {
+                  "id": "loc-head-b",
+                  "type": "text",
+                  "props": {
+                    "text": "Ready to find the right commercial trucks for your business? Visit us at one of our convenient locations across Southwest Florida to find the perfect trucks and trailers for your needs.",
+                    "width": "prose"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "loc-map-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "loc-map-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "loc-map",
+                  "type": "widget",
+                  "props": {
+                    "widget": "locations-map",
+                    "config": {
+                      "showMap": true
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "home-location-cards",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "location-grid",
+        "values": {
+          "eyebrow": "",
+          "heading": "",
+          "body": "",
+          "span": 4,
+          "background": "paper",
+          "locations": [
+            {
+              "tag": "TRUCK & TRAILER PARTS",
+              "city": "Brooksville",
+              "address": "17127 Runway Drive, Brooksville, FL 34604",
+              "hours": "In-store shopping · Curbside pickup · Delivery",
+              "phone": "(352) 277-0221",
+              "phoneUrl": "tel:+13522770221",
+              "url": "/locations/brooksville"
+            },
+            {
+              "tag": "TRUCKS · PARTS · SERVICE",
+              "city": "Davenport",
+              "address": "41609 Hwy 27, Davenport, FL 33837",
+              "hours": "In-store shopping · Curbside pickup · After-hours service",
+              "phone": "(863) 238-2989",
+              "phoneUrl": "tel:+18632382989",
+              "url": "/locations/davenport"
+            },
+            {
+              "tag": "TRUCKS · PARTS · SERVICE",
+              "city": "Sarasota",
+              "address": "1000 Sarasota Center Blvd, Sarasota, FL 34240",
+              "hours": "In-store shopping · Curbside pickup · After-hours service",
+              "phone": "(941) 549-2251",
+              "phoneUrl": "tel:+19415492251",
+              "url": "/locations/sarasota"
+            },
+            {
+              "tag": "AFTERMARKET PARTS",
+              "city": "Sun State Aftermarket Parts — Tampa",
+              "address": "7105 East 6th Ave, Tampa, FL 33619",
+              "hours": "In-store shopping · Delivery",
+              "phone": "(813) 521-8053",
+              "phoneUrl": "tel:+18135218053",
+              "url": "/locations/aftermarket-parts"
+            },
+            {
+              "tag": "TRUCKS · TRAILERS · PARTS · SERVICE",
+              "city": "Tampa",
+              "address": "6020 E Adamo Dr, Tampa, FL 33619",
+              "hours": "In-store shopping · Curbside pickup · After-hours service",
+              "phone": "(813) 521-8053",
+              "phoneUrl": "tel:+18135218053",
+              "url": "/locations/tampa"
+            },
+            {
+              "tag": "SUN STATE TRAILERS",
+              "city": "Trailer Sales — Tampa",
+              "address": "6020 E Adamo Dr, Tampa, FL 33619",
+              "hours": "In-store shopping · In-store pickup · Delivery",
+              "phone": "(813) 621-1331",
+              "phoneUrl": "tel:+18136211331",
+              "url": "/locations/trailer-sales"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "home-services",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "service-rows",
+        "values": {
+          "eyebrow": "OUR INVENTORY",
+          "heading": "Everything to keep you moving.",
+          "body": "We make finding the right equipment from reputable brands easier than ever at Sun State International. Whether you need a commercial truck, trailer, or school bus, we have the equipment you need to keep your business moving.",
+          "background": "card",
+          "anchor": "services",
+          "items": [
+            {
+              "num": "01",
+              "title": "Trucks",
+              "body": "Shop our wide selection of new and International trucks built to handle any job, equipped with advanced telematics via OnCommand Connection for real-time fleet insights.",
+              "linkLabel": "Browse trucks →",
+              "linkUrl": "/store/inventory?type=truck"
+            },
+            {
+              "num": "02",
+              "title": "Trailers",
+              "body": "Explore our diverse inventory of trailers, including flatbeds, dump trailers, and reefers, from trusted brands like Hyundai Translead and Globe Trailers.",
+              "linkLabel": "Browse trailers →",
+              "linkUrl": "/store/inventory?type=trailer"
+            },
+            {
+              "num": "03",
+              "title": "IC Bus",
+              "body": "Built for safety and reliability, our IC Bus selection offers top-of-the-line school and commercial buses from industry-leading manufacturers.",
+              "linkLabel": "Browse buses →",
+              "linkUrl": "/store/inventory?type=bus"
+            },
+            {
+              "num": "04",
+              "title": "Capacity Yard Trucks",
+              "body": "Capacity yard trucks deliver the reliability and power your business needs to run smoothly day after day.",
+              "linkLabel": "Explore models →",
+              "linkUrl": "/capacity-yard-trucks"
+            },
+            {
+              "num": "05",
+              "title": "Service",
+              "body": "We offer full-service repairs for trucks and trailers at our Diamond Edge certified service centers, plus mobile maintenance support so we come to you.",
+              "linkLabel": "Schedule service →",
+              "linkUrl": "/service-appointment"
+            },
+            {
+              "num": "06",
+              "title": "Parts",
+              "body": "Order genuine parts online or in-store, with same-day pickup at our Aftermarket Parts and Truck & Trailer Parts locations.",
+              "linkLabel": "Order parts →",
+              "linkUrl": "/parts"
+            },
+            {
+              "num": "07",
+              "title": "Financing",
+              "body": "Get financing options for your next truck or trailer purchase, with a team ready to walk you through it.",
+              "linkLabel": "Learn more →",
+              "linkUrl": "/financing"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "home-featured",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "paper",
+        "anchor": "featured-inventory"
+      },
+      "children": [
+        {
+          "id": "feat-head-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "feat-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "feat-head-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Featured listings",
+                    "headingLevel": 2,
+                    "eyebrow": "INVENTORY"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "feat-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "feat-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "feat-inventory",
+                  "type": "widget",
+                  "props": {
+                    "widget": "inventory-carousel",
+                    "config": {
+                      "heading": "",
+                      "limit": 4
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "home-trailers",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "media-band",
+        "values": {
+          "eyebrow": "NEW & USED TRAILERS",
+          "heading": "The same trailers, every time.",
+          "body": "At Sun State Trailers, customer service is our priority. With quality products, quick service, and dedicated care, we provide everything you need for your business to succeed. Explore our diverse selection of new and used trailers to find the equipment you're looking for.",
+          "ctaLabel": "See what's available now",
+          "ctaUrl": "/store/inventory?type=trailer",
+          "ctaStyle": "primary",
+          "background": "card",
+          "image": {
+            "src": "/img/photo-placeholder.svg",
+            "alt": "Sun State trailers on the lot — photograph to be supplied",
+            "width": 1600,
+            "height": 900
+          }
+        }
+      }
+    },
+    {
+      "id": "home-brands",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "media-band",
+        "values": {
+          "eyebrow": "ABOUT OUR BRANDS",
+          "heading": "Built by industry leaders.",
+          "body": "At Sun State, we offer only the best quality for the best price — International trucks, IC Bus, and trailers from industry leaders like Hyundai Translead and Globe Trailers. When you choose a truck or trailer through Sun State, you're investing in durability, reliability, and innovation.",
+          "ctaLabel": "Globe Trailers",
+          "ctaUrl": "/store/inventory?brand=globe-trailers",
+          "ctaStyle": "primary",
+          "background": "paper",
+          "anchor": "brands",
+          "image": {
+            "src": "/img/photo-placeholder.svg",
+            "alt": "International and IC Bus brand vehicles — photograph to be supplied",
+            "width": 1600,
+            "height": 900
+          }
+        }
+      }
+    },
+    {
+      "id": "home-testimonials",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 10,
+        "anchor": "testimonials"
+      },
+      "children": [
+        {
+          "id": "test-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "test-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "test-block",
+                  "type": "testimonials",
+                  "props": {
+                    "heading": "What our customers say.",
+                    "headingLevel": 2,
+                    "items": [
+                      {
+                        "quote": "The team at Sun State International kept our fleet on the road with fast, reliable service.",
+                        "name": "Fleet Manager",
+                        "role": "Tampa, FL",
+                        "rating": 5
+                      },
+                      {
+                        "quote": "Great selection of trucks and trailers, and the parts team always comes through same-day.",
+                        "name": "Owner-Operator",
+                        "role": "Sarasota, FL",
+                        "rating": 5
+                      },
+                      {
+                        "quote": "Dedicated care from sales through financing. They made the whole process easy.",
+                        "name": "Business Owner",
+                        "role": "Davenport, FL",
+                        "rating": 5
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "home-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "READY TO GET ON THE ROAD?",
+          "heading": "Ready to get on the road?",
+          "body": "Contact us to explore our trucks and experience nothing less than the dedicated care you deserve.",
+          "primaryLabel": "Contact us",
+          "primaryUrl": "/contact",
+          "secondaryLabel": "Call us today · 813.521.8148",
+          "secondaryUrl": "tel:+18135218148"
+        }
+      }
+    }
+  ]
+}

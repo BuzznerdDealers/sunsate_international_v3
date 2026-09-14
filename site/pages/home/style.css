@@ -1,0 +1,34 @@
+/* The hero photograph sits behind a scrim at the handoff's --scrim-hero value.
+   The photo is a background layer so the section stays one selectable node on
+   the canvas; swap the image in the style panel when the real shot lands. */
+[data-bz-node="home-hero"] {
+  background-image: url("/img/photo-placeholder.svg");
+  background-size: cover;
+  background-position: center;
+  isolation: isolate;
+}
+[data-bz-node="home-hero"]::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 20, 20, .68);
+  z-index: 0;
+}
+[data-bz-node="home-hero"] > .bz-container { position: relative; z-index: 1; }
+[data-bz-node="home-hero"] h1 { color: #fff; max-width: 900px; margin-inline: auto; }
+[data-bz-node="home-hero"] .bz-eyebrow { color: #E2E2E2; text-align: center; }
+[data-bz-node="hero-brand-lockup"] img { width: 82%; max-width: 1400px; margin: 0 auto; }
+[data-bz-node="hero-search"] .bz-searchbar { max-width: 520px; margin-inline: auto; }
+[data-bz-node="hero-brands"] .bz-nav { justify-content: center; gap: 36px; }
+[data-bz-node="hero-brands"] .bz-navitem > a {
+  font: 700 12px/1 var(--font-body);
+  letter-spacing: .1em;
+  color: #B5B5B5;
+}
+[data-bz-node="hero-brands"] .bz-navitem > a:hover { color: #fff; }
+
+/* Featured listings and the map read as one band with the heading above. */
+[data-bz-node="loc-map"] .bz-map { width: 100%; aspect-ratio: auto; min-height: 420px; background: var(--card); border: 1px solid var(--line); }
+
+/* The two brand bands mirror: the photo leads on the second one. */
+[data-bz-node="home-brands"] [data-bz-node^="mb-media"] { order: -1; }

@@ -1,0 +1,556 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "cu-hero",
+      "type": "hero",
+      "props": {
+        "headingLevel": 1,
+        "eyebrow": "HOME / CONTACT US",
+        "headline": "Contact Us",
+        "subhead": "Ready to get on the road? Contact us to explore our trucks and trailers and experience nothing less than the dedicated care you deserve.",
+        "ctas": [
+          {
+            "label": "Call 800.741.7566",
+            "url": "tel:+18007417566",
+            "style": "primary",
+            "intent": "call-dealer"
+          },
+          {
+            "label": "Send a message",
+            "url": "#contact-form",
+            "style": "secondary",
+            "intent": "contact-dealer"
+          }
+        ],
+        "image": {
+          "src": "/img/photo-placeholder.svg",
+          "alt": "The Sun State team — photograph to be supplied",
+          "width": 1600,
+          "height": 900
+        }
+      }
+    },
+    {
+      "id": "cu-intro",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 9,
+        "background": "paper",
+        "anchor": "cu-intro"
+      },
+      "children": [
+        {
+          "id": "cu-intro-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "cu-intro-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "cu-intro-t",
+                  "type": "text",
+                  "props": {
+                    "text": "A good business starts with the right equipment. Our purpose at Sun State is to help you find the right trucks and trailers for your business, then keep them working.\n\nReady to place an order? Talk to a member of our sales team about our available inventory, financing, or to schedule an in-person appointment. Need parts or a repair? Use the department numbers below, or send a message and we'll route it to the right team.",
+                    "width": "prose"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cu-quick",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-grid",
+        "values": {
+          "eyebrow": "FASTEST WAYS TO REACH US",
+          "heading": "Call, email or after hours.",
+          "span": 4,
+          "background": "paper",
+          "items": [
+            {
+              "title": "Call us today",
+              "body": "One number routes to every department across all six Florida locations.",
+              "linkLabel": "800.741.7566",
+              "linkUrl": "tel:+18007417566"
+            },
+            {
+              "title": "Email us",
+              "body": "Messages sent during business hours are typically answered the same business day.",
+              "linkLabel": "info@sunstateintl.com",
+              "linkUrl": "mailto:info@sunstateintl.com"
+            },
+            {
+              "title": "After hours service · 8 PM – 5 AM",
+              "body": "Certified Fleet covers the hours our service departments are closed.",
+              "linkLabel": "(863) 880-2206",
+              "linkUrl": "tel:+18638802206"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cu-form",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "card",
+        "anchor": "contact-form"
+      },
+      "children": [
+        {
+          "id": "cu-form-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "align": "start",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "cu-form-col",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "children": [
+                {
+                  "id": "cu-form-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Tell us what you need.",
+                    "headingLevel": 2,
+                    "eyebrow": "SEND A MESSAGE"
+                  }
+                },
+                {
+                  "id": "cu-form-b",
+                  "type": "text",
+                  "props": {
+                    "text": "Pick the department and location, and we'll get your message to the right person. Fields marked with an asterisk are required."
+                  }
+                },
+                {
+                  "id": "cu-form-block",
+                  "type": "form",
+                  "props": {
+                    "formId": "contact-us"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "cu-form-aside",
+              "type": "column",
+              "props": {
+                "span": 4,
+                "background": "paper",
+                "padding": 6
+              },
+              "children": [
+                {
+                  "id": "cu-links-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Quick links",
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "cu-links",
+                  "type": "menu",
+                  "props": {
+                    "menuId": "contact-quick-links",
+                    "layout": "vertical",
+                    "depth": 1
+                  }
+                },
+                {
+                  "id": "cu-social-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Follow Sun State",
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "cu-social",
+                  "type": "social-links",
+                  "props": {
+                    "tone": "dark",
+                    "links": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sunstateintl",
+                        "icon": {
+                          "src": "/icons/facebook.svg",
+                          "alt": "Facebook"
+                        }
+                      },
+                      {
+                        "label": "Instagram",
+                        "url": "https://www.instagram.com/sunstateintl/",
+                        "icon": {
+                          "src": "/icons/instagram.svg",
+                          "alt": "Instagram"
+                        }
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/company/sun-state-international-trucks/",
+                        "icon": {
+                          "src": "/icons/linkedin.svg",
+                          "alt": "LinkedIn"
+                        }
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/SunStateIntl",
+                        "icon": {
+                          "src": "/icons/twitter.svg",
+                          "alt": "X"
+                        }
+                      },
+                      {
+                        "label": "YouTube",
+                        "url": "https://www.youtube.com/channel/UCZw35HTHQi737CZnkV22nww",
+                        "icon": {
+                          "src": "/icons/youtube.svg",
+                          "alt": "YouTube"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cu-directory",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-grid",
+        "values": {
+          "eyebrow": "DEPARTMENT DIRECTORY",
+          "heading": "Call the right desk directly.",
+          "span": 4,
+          "background": "paper",
+          "anchor": "cu-directory",
+          "items": [
+            {
+              "eyebrow": "SALES",
+              "title": "Truck sales",
+              "body": "New and used International trucks, IC Bus and Capacity yard trucks.\n\nTampa — (813) 621-1331 · Davenport — (863) 424-2411 · Sarasota — (941) 355-7681",
+              "linkLabel": "Call Tampa truck sales →",
+              "linkUrl": "tel:+18136211331"
+            },
+            {
+              "eyebrow": "SALES",
+              "title": "Trailer sales",
+              "body": "New and used Hyundai Translead and Globe Trailers. Fax 813-628-0527.\n\nTampa — (813) 621-1331",
+              "linkLabel": "Call trailer sales →",
+              "linkUrl": "tel:+18136211331"
+            },
+            {
+              "eyebrow": "PARTS",
+              "title": "Parts counters",
+              "body": "Genuine OEM and all-makes parts, with pickup and delivery.\n\nTampa — (813) 521-8148 · Brooksville — (352) 277-0221 · Aftermarket — (813) 627-3282",
+              "linkLabel": "Call the Tampa parts counter →",
+              "linkUrl": "tel:+18135218148"
+            },
+            {
+              "eyebrow": "SERVICE",
+              "title": "Service departments",
+              "body": "Truck, trailer and bus repair. Mobile service 8 AM – 5 PM M–F.\n\nTampa — (813) 521-8053 · Sarasota — (941) 541-3251 · Davenport — (863) 238-2939",
+              "linkLabel": "Call Tampa service →",
+              "linkUrl": "tel:+18135218053"
+            },
+            {
+              "eyebrow": "AFTERMARKET",
+              "title": "Aftermarket business",
+              "body": "Bodies, hoists, liftgates, hydraulics and frame work. Fax (813) 621-8709.\n\nTampa — (813) 627-3282",
+              "linkLabel": "Call aftermarket →",
+              "linkUrl": "tel:+18136273282"
+            },
+            {
+              "eyebrow": "FINANCE",
+              "title": "Financing & credit",
+              "body": "Retail financing, municipal leasing and extended warranty financing.\n\nLynn DeJesus — (813) 621-1331 ext. 1008",
+              "linkLabel": "Lynn.DeJesus@sunstateintl.com",
+              "linkUrl": "mailto:Lynn.DeJesus@sunstateintl.com"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cu-map",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "card",
+        "anchor": "cu-locations"
+      },
+      "children": [
+        {
+          "id": "cu-map-head-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "cu-map-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "cu-map-head-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Six locations across Florida.",
+                    "headingLevel": 2,
+                    "eyebrow": "FIND A LOCATION"
+                  }
+                },
+                {
+                  "id": "cu-map-head-b",
+                  "type": "text",
+                  "props": {
+                    "text": "Ready to find the right commercial trucks for your business? Visit us at our convenient locations across Central and Southwest Florida to find the perfect trucks and trailers for your needs.",
+                    "width": "prose"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cu-map-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "cu-map-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "cu-map-widget",
+                  "type": "widget",
+                  "props": {
+                    "widget": "locations-map",
+                    "config": {
+                      "showMap": true
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cu-locations",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "location-grid",
+        "values": {
+          "eyebrow": "",
+          "heading": "",
+          "span": 4,
+          "background": "card",
+          "locations": [
+            {
+              "tag": "TRUCKS · TRAILERS · PARTS · SERVICE",
+              "city": "Tampa",
+              "address": "6020 Adamo Drive, Tampa, FL 33619",
+              "hours": "Sales & parts 7 AM – 7 PM M–F, 8 AM – 12 PM Sat · Service 7 AM – 7 PM M–F",
+              "phone": "(813) 621-1331",
+              "phoneUrl": "tel:+18136211331",
+              "url": "/locations/tampa"
+            },
+            {
+              "tag": "TRUCKS · TRAILERS · PARTS · SERVICE",
+              "city": "Davenport",
+              "address": "41609 Hwy 27, Davenport, FL 33837",
+              "hours": "Sales 8 AM – 4:30 PM M–F · Parts 7 AM – 5 PM M–F · Service 7 AM – 7 PM M–F",
+              "phone": "(863) 424-2411",
+              "phoneUrl": "tel:+18634242411",
+              "url": "/locations/davenport"
+            },
+            {
+              "tag": "TRUCKS · TRAILERS · PARTS · SERVICE",
+              "city": "Sarasota",
+              "address": "1000 Sarasota Center Blvd., Sarasota, FL 34240",
+              "hours": "Sales 8 AM – 5 PM M–F · Parts 7 AM – 5 PM M–F · Service 7 AM – 5 PM M–F",
+              "phone": "(941) 355-7681",
+              "phoneUrl": "tel:+19413557681",
+              "url": "/locations/sarasota"
+            },
+            {
+              "tag": "TRUCK & TRAILER PARTS",
+              "city": "Brooksville",
+              "address": "17127 Runway Drive, Brooksville, FL 34604",
+              "hours": "Store 7 AM – 5 PM M–F",
+              "phone": "(352) 277-0221",
+              "phoneUrl": "tel:+13522770221",
+              "url": "/locations/brooksville"
+            },
+            {
+              "tag": "AFTERMARKET PARTS",
+              "city": "Sun State Aftermarket Parts",
+              "address": "7105 East 6th Ave., Tampa, FL 33619",
+              "hours": "Store 7 AM – 4 PM M–F",
+              "phone": "(813) 627-3282",
+              "phoneUrl": "tel:+18136273282",
+              "url": "/locations/aftermarket-parts"
+            },
+            {
+              "tag": "SUN STATE TRAILERS",
+              "city": "Trailer Sales",
+              "address": "6020 Adamo Drive, Tampa, FL 33619",
+              "hours": "Store 8 AM – 5 PM M–F",
+              "phone": "(813) 621-1331",
+              "phoneUrl": "tel:+18136211331",
+              "url": "/locations/trailer-sales"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cu-faq",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "paper",
+        "anchor": "cu-faq"
+      },
+      "children": [
+        {
+          "id": "cu-faq-head-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "cu-faq-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "cu-faq-head-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Common questions.",
+                    "headingLevel": 2,
+                    "eyebrow": "CONTACT FAQS"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cu-faq-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "cu-faq-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "cu-faq-list",
+                  "type": "widget",
+                  "props": {
+                    "widget": "faq",
+                    "config": {
+                      "items": [
+                        {
+                          "q": "What is the main phone number for Sun State?",
+                          "a": "Call 800-741-7566 and we'll route you to the right department, or email info@sunstateintl.com. Direct numbers for sales, parts, service, aftermarket and trailer sales are listed on this page."
+                        },
+                        {
+                          "q": "Who do I call if my truck is down after hours?",
+                          "a": "Certified Fleet provides after-hours service from 8:00 PM to 5:00 AM at (863) 880-2206. Mobile service runs from Tampa, Sarasota and Davenport Monday through Friday, 8 AM to 5 PM."
+                        },
+                        {
+                          "q": "How do I schedule a service appointment?",
+                          "a": "Submit the online service appointment request, or call the service department at your location: Tampa (813) 521-8053, Sarasota (941) 541-3251, Davenport (863) 238-2939."
+                        },
+                        {
+                          "q": "Who handles financing questions?",
+                          "a": "Talk to Lynn DeJesus at (800) 741-7566 or (813) 621-1331 ext. 1008, or email a completed credit application to Lynn.DeJesus@sunstateintl.com."
+                        },
+                        {
+                          "q": "How do I order parts?",
+                          "a": "Call the parts counter at your nearest location, or order through the online parts store at sunstateparts.com for in-store pickup or delivery."
+                        },
+                        {
+                          "q": "How quickly will you respond to a message?",
+                          "a": "Messages submitted during business hours are typically answered the same business day. Messages sent overnight or on weekends are handled the next business morning."
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cu-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "READY TO GET ON THE ROAD?",
+          "heading": "We're here when you need us.",
+          "body": "Sales, parts, service and aftermarket teams across Tampa, Sarasota, Davenport and Brooksville, with after-hours coverage through Certified Fleet.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "info@sunstateintl.com",
+          "secondaryUrl": "mailto:info@sunstateintl.com"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "slug": "why-fuel-filter-pressure-in-your-semi-truck-matters",
+  "title": "Why Fuel Filter Pressure In Your Semi Truck Matters",
+  "date": "2026-06-09",
+  "description": "Fuel filters are responsible for removing dirt, debris, water, and contaminants before they reach sensitive fuel system components. For owner-operators and fleet managers, understanding how fuel filter pressure affects performance can help prevent unexpected downtime and extend the life of your truck.",
+  "status": "published",
+  "coverImage": "https://www.sunstateintl.com/wp-content/uploads/2026/02/semi-truck-maintenance-inspection-400x250.jpg",
+  "topic": "Maintenance",
+  "nodes": [
+    {
+      "id": "intro",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "intro-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "intro-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "intro-eyebrow",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Fuel Filter Pressure In Your Semi Truck Matters",
+                    "headingLevel": 2,
+                    "eyebrow": "MAINTENANCE"
+                  }
+                },
+                {
+                  "id": "intro-text",
+                  "type": "text",
+                  "props": {
+                    "text": "Fuel filters are responsible for removing dirt, debris, water, and contaminants before they reach sensitive fuel system components. For owner-operators and fleet managers, understanding how fuel filter pressure affects performance can help prevent unexpected downtime and extend the life of your truck.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "intro-note",
+                  "type": "text",
+                  "props": {
+                    "text": "The full article was published on sunstateintl.com. Paste the migrated body here in Posts → this post, and the card on the blog index updates with it.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "intro-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Read the original article →",
+                        "url": "https://www.sunstateintl.com/why-fuel-filter-pressure-in-your-semi-truck-matters/",
+                        "style": "link",
+                        "intent": "read-post"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "post-cta-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "post-cta-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "post-cta-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Got the same symptom on a unit you run?",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "post-cta-b",
+                  "type": "text",
+                  "props": {
+                    "text": "Call 800.741.7566 and we'll look at the specific truck or trailer instead of the general case.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "post-cta-btn",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "request-appointment"
+                      },
+                      {
+                        "ctaId": "call-main-secondary"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

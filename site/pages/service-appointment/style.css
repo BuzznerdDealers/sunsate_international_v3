@@ -1,0 +1,3 @@
+[data-bz-node="appt-form-aside"] .bz-btns { flex-direction: column; align-items: flex-start; gap: 6px; margin-block: 0 0; }
+[data-bz-node="appt-form-aside"] .bz-block + .bz-block { padding-block-start: 12px; }
+[data-bz-node="appt-form-note"] p, [data-bz-node="appt-phone-note"] p { font-size: 13px; color: var(--muted); }

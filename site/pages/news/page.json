@@ -1,0 +1,511 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "news-hero",
+      "type": "hero",
+      "props": {
+        "headingLevel": 1,
+        "eyebrow": "HOME / OUR STORY / NEWS & PRESS",
+        "headline": "Find Sun State International in the News",
+        "subhead": "Press coverage, awards and media resources for Sun State International Trucks and Sun State Trailers.",
+        "image": {
+          "src": "/img/photo-placeholder.svg",
+          "alt": "Sun State in the press — photograph to be supplied",
+          "width": 1600,
+          "height": 900
+        }
+      }
+    },
+    {
+      "id": "news-summary",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 9,
+        "background": "paper",
+        "anchor": "news-summary"
+      },
+      "children": [
+        {
+          "id": "ns-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "ns-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "ns-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Sun State has been covered by Florida Trends, Heavy Duty Trucking, Fox 13, ABC News and NADA — on Florida's first electric school buses, workforce programs, computerized truck and trailer alignment, and CEO Oscar Horton's 2020 Truck Dealer of the Year award.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "ns-stats",
+                  "type": "statBand",
+                  "props": {
+                    "stats": [
+                      {
+                        "value": "2020",
+                        "label": "NADA Truck Dealer of the Year"
+                      },
+                      {
+                        "value": "2020–22",
+                        "label": "Top Workplace, plus Top Workplace USA"
+                      },
+                      {
+                        "value": "14",
+                        "label": "Published stories & features"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "news-coverage",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "card",
+        "anchor": "coverage"
+      },
+      "children": [
+        {
+          "id": "nc-head-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "nc-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "nc-head-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Coverage and features.",
+                    "headingLevel": 2,
+                    "eyebrow": "IN THE NEWS"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "nc-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "nc-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "nc-grid",
+                  "type": "categoryGrid",
+                  "props": {
+                    "headingLevel": 3,
+                    "items": [
+                      {
+                        "label": "Florida Trends",
+                        "image": {
+                          "src": "https://sunstateintl.com/wp-content/uploads/2024/09/florida-trends.jpg",
+                          "alt": "Florida Trends — Sun State International press coverage",
+                          "width": 400,
+                          "height": 250
+                        }
+                      },
+                      {
+                        "label": "Computerized Truck & Trailer Alignment",
+                        "image": {
+                          "src": "https://sunstateintl.com/wp-content/uploads/2024/09/smart-business.jpg",
+                          "alt": "Computerized Truck & Trailer Alignment — Sun State International press coverage",
+                          "width": 400,
+                          "height": 250
+                        }
+                      },
+                      {
+                        "label": "OCPS Schools Debut Florida's First Electric School Buses",
+                        "image": {
+                          "src": "https://sunstateintl.com/wp-content/uploads/2024/09/OCPS-EV-Event.png",
+                          "alt": "OCPS Schools Debut Florida's First Electric School Buses — Sun State International press coverage",
+                          "width": 400,
+                          "height": 250
+                        }
+                      },
+                      {
+                        "label": "Sun State & Career Academy",
+                        "image": {
+                          "src": "https://sunstateintl.com/wp-content/uploads/2024/09/Career-Academy-video-image.png",
+                          "alt": "Sun State & Career Academy — Sun State International press coverage",
+                          "width": 400,
+                          "height": 250
+                        }
+                      },
+                      {
+                        "label": "Hire Vets First",
+                        "image": {
+                          "src": "https://sunstateintl.com/wp-content/uploads/2024/09/hire-vets-first.jpg",
+                          "alt": "Hire Vets First — Sun State International press coverage",
+                          "width": 400,
+                          "height": 250
+                        }
+                      },
+                      {
+                        "label": "Goodwill Industries",
+                        "image": {
+                          "src": "https://sunstateintl.com/wp-content/uploads/2024/09/goodwill.jpg",
+                          "alt": "Goodwill Industries — Sun State International press coverage",
+                          "width": 400,
+                          "height": 250
+                        }
+                      },
+                      {
+                        "label": "Federal Reserve Bank of Atlanta",
+                        "image": {
+                          "src": "https://sunstateintl.com/wp-content/uploads/2024/09/federal-atlanta.jpg",
+                          "alt": "Federal Reserve Bank of Atlanta — Sun State International press coverage",
+                          "width": 400,
+                          "height": 250
+                        }
+                      },
+                      {
+                        "label": "Tampa Legend",
+                        "image": {
+                          "src": "https://sunstateintl.com/wp-content/uploads/2024/09/8.jpg",
+                          "alt": "Tampa Legend — Sun State International press coverage",
+                          "width": 400,
+                          "height": 250
+                        }
+                      },
+                      {
+                        "label": "Heavy Duty Trucking",
+                        "image": {
+                          "src": "https://sunstateintl.com/wp-content/uploads/2024/09/todays-trucking.jpg",
+                          "alt": "Heavy Duty Trucking — Sun State International press coverage",
+                          "width": 400,
+                          "height": 250
+                        }
+                      },
+                      {
+                        "label": "2020 Truck Dealer of the Year: Oscar Horton",
+                        "image": {
+                          "src": "https://sunstateintl.com/wp-content/uploads/2024/09/nada.jpg",
+                          "alt": "2020 Truck Dealer of the Year: Oscar Horton — Sun State International press coverage",
+                          "width": 400,
+                          "height": 250
+                        }
+                      },
+                      {
+                        "label": "Manatee County School for the Arts",
+                        "image": {
+                          "src": "https://sunstateintl.com/wp-content/uploads/2024/09/fox-13.jpg",
+                          "alt": "Manatee County School for the Arts — Sun State International press coverage",
+                          "width": 400,
+                          "height": 250
+                        }
+                      },
+                      {
+                        "label": "ABC News: Manatee County School For the Arts",
+                        "image": {
+                          "src": "https://sunstateintl.com/wp-content/uploads/2024/09/manatee.jpg",
+                          "alt": "ABC News: Manatee County School For the Arts — Sun State International press coverage",
+                          "width": 400,
+                          "height": 250
+                        }
+                      },
+                      {
+                        "label": "Purchasing A New Truck For Your Business: 11 Fundamentals",
+                        "image": {
+                          "src": "https://sunstateintl.com/wp-content/uploads/2024/09/hazchem.jpg",
+                          "alt": "Purchasing A New Truck For Your Business: 11 Fundamentals — Sun State International press coverage",
+                          "width": 400,
+                          "height": 250
+                        }
+                      },
+                      {
+                        "label": "2020 Truck Dealer of the Year Oscar Horton Offers Guest Lecture to Indiana University Business Students",
+                        "image": {
+                          "src": "https://sunstateintl.com/wp-content/uploads/2024/09/2020-truck-dealer-of-the-year.jpg",
+                          "alt": "2020 Truck Dealer of the Year Oscar Horton Offers Guest Lecture to Indiana University Business Students — Sun State International press coverage",
+                          "width": 400,
+                          "height": 250
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "news-presskit",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "paper",
+        "anchor": "press-kit"
+      },
+      "children": [
+        {
+          "id": "np-head-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "np-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "np-head-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "For journalists and partners.",
+                    "headingLevel": 2,
+                    "eyebrow": "PRESS KIT"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "np-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "align": "start",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "np-contact",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "np-contact-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Media contact",
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "np-contact-b",
+                  "type": "text",
+                  "props": {
+                    "text": "For interviews, statements, imagery or a facility visit at any of our six Florida locations, reach the Sun State marketing team. Leadership bios are on <a href=\"/meet-the-team\">Meet the Team</a>, company history on <a href=\"/about-us\">Our Story</a>, and giving on <a href=\"/community-involvement\">Community Involvement</a>."
+                  }
+                },
+                {
+                  "id": "np-contact-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "info@sunstateintl.com",
+                        "url": "mailto:info@sunstateintl.com",
+                        "style": "primary",
+                        "intent": "email-dealer"
+                      },
+                      {
+                        "label": "813.521.8148",
+                        "url": "tel:+18135218148",
+                        "style": "secondary",
+                        "intent": "call-dealer"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "np-facts",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "np-facts-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Company facts",
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "np-facts-list",
+                  "type": "list",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Family-owned and operated, 30+ years in West Central Florida."
+                      },
+                      {
+                        "label": "Over 200 employees across six locations."
+                      },
+                      {
+                        "label": "Authorized dealer for International, IC Bus, Hyundai Translead and Globe Trailers."
+                      },
+                      {
+                        "label": "One of the largest Black-owned businesses in the region, with annual gross revenues exceeding $150M."
+                      }
+                    ],
+                    "columns": 1
+                  }
+                },
+                {
+                  "id": "np-facts-note",
+                  "type": "text",
+                  "props": {
+                    "text": "Logo files, executive headshots and brand guidelines are available on request — send us the downloadable assets and we'll link them here.",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "news-faq",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "card",
+        "anchor": "news-faq"
+      },
+      "children": [
+        {
+          "id": "nf-head-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "nf-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "nf-head-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "For the record.",
+                    "headingLevel": 2,
+                    "eyebrow": "QUICK ANSWERS"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "nf-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "nf-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "nf-list",
+                  "type": "widget",
+                  "props": {
+                    "widget": "faq",
+                    "config": {
+                      "items": [
+                        {
+                          "q": "Who do I contact for media enquiries?",
+                          "a": "Email info@sunstateintl.com or call 813.521.8148."
+                        },
+                        {
+                          "q": "What awards has Sun State won?",
+                          "a": "CEO Oscar Horton was named NADA 2020 Truck Dealer of the Year. The company was a Top Workplace 2020 to 2022, received the Top Workplace USA award and is in the Tampa Bay Business Hall of Fame."
+                        },
+                        {
+                          "q": "Where has Sun State been covered?",
+                          "a": "Florida Trends, Heavy Duty Trucking, Fox 13, ABC News and NADA, among others."
+                        },
+                        {
+                          "q": "Does this cover the trailers business?",
+                          "a": "Yes. Sun State International Trucks and Sun State Trailers share one press office and one media contact."
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "news-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "PRESS ENQUIRIES",
+          "heading": "Working on a story?",
+          "body": "We'll connect you with the right person on the team.",
+          "primaryLabel": "Contact Us",
+          "primaryUrl": "/contact",
+          "secondaryLabel": "info@sunstateintl.com",
+          "secondaryUrl": "mailto:info@sunstateintl.com"
+        }
+      }
+    }
+  ]
+}

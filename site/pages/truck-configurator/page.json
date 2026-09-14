@@ -1,0 +1,372 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "tcf-hero",
+      "type": "hero",
+      "props": {
+        "headingLevel": 1,
+        "eyebrow": "HOME / TRUCK CONFIGURATOR",
+        "headline": "Semi Truck Configurator",
+        "subhead": "Build your International the way the job needs it — series, cab, powertrain and equipment — then send us the spec for pricing, lead time and upfit.",
+        "ctas": [
+          {
+            "label": "Start building",
+            "url": "#tcf-build",
+            "style": "primary",
+            "intent": "build-truck"
+          },
+          {
+            "label": "View inventory",
+            "url": "/store/inventory?type=truck",
+            "style": "secondary",
+            "intent": "browse-inventory"
+          }
+        ],
+        "image": {
+          "src": "/img/photo-placeholder.svg",
+          "alt": "A new International truck — photograph to be supplied",
+          "width": 1600,
+          "height": 900
+        }
+      }
+    },
+    {
+      "id": "tcf-intro",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 9,
+        "background": "paper",
+        "anchor": "tcf-intro"
+      },
+      "children": [
+        {
+          "id": "tcf-intro-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "tcf-intro-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "tcf-intro-t",
+                  "type": "text",
+                  "props": {
+                    "text": "The configurator is the fastest way to turn a job description into a real truck spec. Pick the series, work through the cab, powertrain and equipment choices, and see what the build looks like before you talk price.\n\nIt's free and no account is needed. When you have a build you like, send it over — we'll quote it, tell you the current lead time and check whether a comparable unit is already on the ground in Tampa, Davenport or Sarasota.",
+                    "width": "prose"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tcf-build",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "card",
+        "anchor": "tcf-build"
+      },
+      "children": [
+        {
+          "id": "tcf-build-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "tcf-build-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "tcf-build-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Build your truck.",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "tcf-build-open",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Open the configurator in a new tab →",
+                        "url": "https://www.navconfig.com/index.html#/?vehicle=hx_series",
+                        "style": "primary",
+                        "intent": "build-truck"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "tcf-build-note",
+                  "type": "text",
+                  "props": {
+                    "text": "The configurator is hosted by International. If it doesn’t load in the frame above, open it in a new tab. Pricing and availability are confirmed by Sun State — see our <a href=\"/legal/terms\">Terms and Conditions</a>.",
+                    "width": "prose"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tcf-series",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-grid",
+        "values": {
+          "eyebrow": "START FROM A SERIES",
+          "heading": "Which International fits the job?",
+          "body": "Pick the family first, then spec it. Every series has a brochure and spec sheets if you want the numbers before you start building, and the configurator lets you switch series once it's open.",
+          "span": 4,
+          "background": "paper",
+          "anchor": "tcf-series",
+          "items": [
+            {
+              "eyebrow": "SEVERE SERVICE",
+              "title": "HX Series",
+              "body": "Heavy-haul and severe-service chassis for dump, mixer, crane and heavy vocational work. S13 Integrated Powertrain available.",
+              "linkLabel": "Spec sheets →",
+              "linkUrl": "/specifications#br-hx"
+            },
+            {
+              "eyebrow": "ON HIGHWAY",
+              "title": "LT Series",
+              "body": "Line-haul and regional tractor, day cab or sleeper, built around fuel economy and driver comfort. S13 available.",
+              "linkLabel": "Spec sheets →",
+              "linkUrl": "/specifications#br-lt"
+            },
+            {
+              "eyebrow": "ON HIGHWAY",
+              "title": "RH Series",
+              "body": "Regional haul tractor for shorter runs and mixed duty cycles, day cab or sleeper. S13 available.",
+              "linkLabel": "Spec sheets →",
+              "linkUrl": "/specifications#br-rh"
+            },
+            {
+              "eyebrow": "VOCATIONAL",
+              "title": "HV Series",
+              "body": "Vocational chassis in HV509, HV515, HV609 and HV615 configurations for municipal, utility and construction fleets.",
+              "linkLabel": "Spec sheets →",
+              "linkUrl": "/specifications#br-hv"
+            },
+            {
+              "eyebrow": "MEDIUM DUTY",
+              "title": "MV Series",
+              "body": "Medium-duty workhorse for dry van, utility, recovery, boom and snowplow bodies — the most upfit-friendly of the lineup.",
+              "linkLabel": "Spec sheets →",
+              "linkUrl": "/specifications#br-mv"
+            },
+            {
+              "eyebrow": "CLASS 4–5 / ELECTRIC",
+              "title": "CV & eMV Series",
+              "body": "CV Series for class 4-5 work, and the battery-electric eMV Series with body integration guidance for zero-emission routes.",
+              "linkLabel": "Spec sheets →",
+              "linkUrl": "/specifications#br-cv"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "tcf-how",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "service-rows",
+        "values": {
+          "eyebrow": "FROM BUILD TO DELIVERY",
+          "heading": "Four steps.",
+          "background": "card",
+          "anchor": "tcf-how",
+          "items": [
+            {
+              "num": "01",
+              "title": "Pick the series",
+              "body": "Start from the family that fits the job — severe service, on-highway, vocational or medium duty.",
+              "linkLabel": "Compare series →",
+              "linkUrl": "#tcf-series"
+            },
+            {
+              "num": "02",
+              "title": "Build the spec",
+              "body": "Work through cab, powertrain, axles, wheelbase and equipment. The S13 Integrated Powertrain is available on LT, RH and HX.",
+              "linkLabel": "S13 powertrain →",
+              "linkUrl": "/specifications#br-s13"
+            },
+            {
+              "num": "03",
+              "title": "Send it to us",
+              "body": "Save or screenshot the build and send it over. We confirm pricing, lead time and whether a comparable unit is in stock.",
+              "linkLabel": "Send your build →",
+              "linkUrl": "/contact"
+            },
+            {
+              "num": "04",
+              "title": "Finance and upfit",
+              "body": "Financing with minimum down payment and approved credit, then body, hoist or liftgate work before delivery.",
+              "linkLabel": "Financing →",
+              "linkUrl": "/financing"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "tcf-trailers",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-grid",
+        "values": {
+          "eyebrow": "BEYOND THE CHASSIS",
+          "heading": "Trailers and upfit.",
+          "span": 6,
+          "background": "paper",
+          "items": [
+            {
+              "eyebrow": "SUN STATE TRAILERS",
+              "title": "Spec'ing a trailer instead?",
+              "body": "At Sun State, we want to help all our customers find the equipment that's right for them. Talk to a member of our sales team about available inventory, financing, or to schedule an in-person appointment, and we'll match a Hyundai Translead or Globe trailer to the freight — or alter one to fit.",
+              "linkLabel": "Trailer Sales →",
+              "linkUrl": "/locations/trailer-sales"
+            },
+            {
+              "eyebrow": "AFTERMARKET UPFIT",
+              "title": "The chassis is only half of it.",
+              "body": "Our Tampa aftermarket shop installs van, reefer, dump, flatbed, tank and roll-off hoist bodies, liftgates, tarp systems, lift axles, PTO and wet-line kits, and handles frame modifications with Huck bolt replacement to maintain factory warranty on all makes.",
+              "linkLabel": "Aftermarket capabilities →",
+              "linkUrl": "/aftermarket"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "tcf-faq",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "card",
+        "anchor": "tcf-faq"
+      },
+      "children": [
+        {
+          "id": "tcf-faq-head-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "tcf-faq-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "tcf-faq-head-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Common questions.",
+                    "headingLevel": 2,
+                    "eyebrow": "CONFIGURATOR FAQS"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tcf-faq-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "tcf-faq-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "tcf-faq-list",
+                  "type": "widget",
+                  "props": {
+                    "widget": "faq",
+                    "config": {
+                      "items": [
+                        {
+                          "q": "Is the truck configurator free to use?",
+                          "a": "Yes. The International configurator is free and requires no account. Build as many specs as you like, then send the one you want priced to our sales team."
+                        },
+                        {
+                          "q": "Does the configurator show prices?",
+                          "a": "No. The configurator builds the specification; pricing, incentives, lead time and availability come from us. Call 800-741-7566 with your build and we will quote it."
+                        },
+                        {
+                          "q": "Which series can I configure?",
+                          "a": "HX and HV Series for severe service and vocational work, LT and RH Series for on-highway, MV and eMV Series for medium duty, and CV Series for class 4-5 applications."
+                        },
+                        {
+                          "q": "Can I order the S13 Integrated Powertrain?",
+                          "a": "Yes. The S13 Integrated Powertrain is available on LT, RH and HX Series builds. Spec sheets for those combinations are on our brochures page."
+                        },
+                        {
+                          "q": "How long does a factory order take?",
+                          "a": "Lead times vary by series, spec and build slot availability. Send us your configuration and we will give you a current lead time, and check whether a comparable unit is already in stock or in transit."
+                        },
+                        {
+                          "q": "Can you add a body or equipment to the build?",
+                          "a": "Yes. Our Tampa aftermarket facility installs bodies, roll-off hoists, liftgates, PTO and wet-line kits, towing packages and lift axles, and performs frame modifications, so the truck arrives ready to work."
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tcf-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "BUILT A SPEC?",
+          "heading": "Send it over and we'll price it.",
+          "body": "Call 800.741.7566 or message us with your build. We'll confirm pricing, lead time and whether something close is already in stock.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send your build",
+          "secondaryUrl": "/contact"
+        }
+      }
+    }
+  ]
+}

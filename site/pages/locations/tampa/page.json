@@ -1,0 +1,323 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "tpa-hero",
+      "type": "hero",
+      "props": {
+        "headingLevel": 1,
+        "eyebrow": "HOME / LOCATIONS / TAMPA, FLORIDA",
+        "headline": "Hours & Location of Sun State International Tampa, Florida",
+        "subhead": "6020 Adamo Drive, Tampa, FL 33619 — trucks, trailers, parts and service, with our aftermarket facility minutes away.",
+        "ctas": [
+          {
+            "label": "Call (813) 621-1331",
+            "url": "tel:+18136211331",
+            "style": "primary",
+            "intent": "call-location"
+          },
+          {
+            "label": "Get directions",
+            "url": "https://www.google.com/maps/search/?api=1&query=6020+Adamo+Drive+Tampa+FL+33619",
+            "style": "secondary",
+            "intent": "get-directions"
+          }
+        ],
+        "image": {
+          "src": "/img/photo-placeholder.svg",
+          "alt": "The Sun State Tampa dealership — photograph to be supplied",
+          "width": 1600,
+          "height": 900
+        }
+      }
+    },
+    {
+      "id": "tpa-summary",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "location-summary",
+        "values": {
+          "eyebrow": "STORE MAP",
+          "name": "Sun State International Trucks, LLC.",
+          "address": "6020 Adamo Drive\n\nTampa, FL 33619",
+          "phones": "<strong>Main / sales</strong> (813) 621-1331\n\n<strong>Parts</strong> (813) 521-8148\n\n<strong>Service</strong> (813) 521-8053\n\n<strong>Rental</strong> (813) 769-2549\n\n<strong>Rental (alt)</strong> (813) 323-1026\n\n<strong>Fax</strong> 813-628-0527",
+          "noticeEyebrow": "NOW OFFERING",
+          "noticeTitle": "After hours service",
+          "noticeBody": "8:00 PM – 5:00 AM via Certified Fleet.",
+          "noticeLinkLabel": "Certified Fleet — (863) 880-2206",
+          "noticeLinkUrl": "tel:+18638802206",
+          "map": {
+            "src": "/img/photo-placeholder.svg",
+            "alt": "A map of the Tampa location — image to be supplied",
+            "width": 1600,
+            "height": 900
+          },
+          "anchor": "tpa-summary"
+        }
+      }
+    },
+    {
+      "id": "tpa-hours",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "hours-grid",
+        "values": {
+          "eyebrow": "DEPARTMENT HOURS",
+          "heading": "When each department is open.",
+          "note": "Saturday service coverage varies. Call (813) 521-8053 to confirm before bringing a unit in on a Saturday.",
+          "span": 4,
+          "anchor": "tpa-hours",
+          "departments": [
+            {
+              "title": "Sales Hours",
+              "phone": "(813) 621-1331",
+              "phoneUrl": "tel:+18136211331",
+              "rows": "<strong>Monday</strong> 7:00am – 7:00pm\n\n<strong>Tuesday</strong> 7:00am – 7:00pm\n\n<strong>Wednesday</strong> 7:00am – 7:00pm\n\n<strong>Thursday</strong> 7:00am – 7:00pm\n\n<strong>Friday</strong> 7:00am – 7:00pm\n\n<strong>Saturday</strong> 8:00am – 12:00pm\n\n<strong>Sunday</strong> Closed"
+            },
+            {
+              "title": "Parts Hours",
+              "phone": "(813) 521-8148",
+              "phoneUrl": "tel:+18135218148",
+              "rows": "<strong>Monday</strong> 7:00am – 7:00pm\n\n<strong>Tuesday</strong> 7:00am – 7:00pm\n\n<strong>Wednesday</strong> 7:00am – 7:00pm\n\n<strong>Thursday</strong> 7:00am – 7:00pm\n\n<strong>Friday</strong> 7:00am – 7:00pm\n\n<strong>Saturday</strong> 8:00am – 12:00pm\n\n<strong>Sunday</strong> Closed"
+            },
+            {
+              "title": "Service Hours",
+              "phone": "(813) 521-8053",
+              "phoneUrl": "tel:+18135218053",
+              "rows": "<strong>Monday</strong> 7:00am – 7:00pm\n\n<strong>Tuesday</strong> 7:00am – 7:00pm\n\n<strong>Wednesday</strong> 7:00am – 7:00pm\n\n<strong>Thursday</strong> 7:00am – 7:00pm\n\n<strong>Friday</strong> 7:00am – 7:00pm\n\n<strong>Saturday</strong> Closed\n\n<strong>Sunday</strong> Closed"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "tpa-onsite",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-grid",
+        "values": {
+          "eyebrow": "WHAT'S ON SITE IN TAMPA",
+          "heading": "One address, every department.",
+          "body": "",
+          "span": 3,
+          "background": "paper",
+          "items": [
+            {
+              "title": "Truck sales",
+              "body": "New and used International trucks, IC Bus and Capacity yard trucks, plus the truck configurator and financing.",
+              "linkLabel": "Financing →",
+              "linkUrl": "/financing"
+            },
+            {
+              "title": "Parts counter",
+              "body": "Genuine OEM and all-makes parts for trucks and trailers, with online ordering and delivery across the Tampa Bay area.",
+              "linkLabel": "Parts Department →",
+              "linkUrl": "/parts"
+            },
+            {
+              "title": "Service & trailer bays",
+              "body": "Factory-trained technicians, dedicated trailer repair bays, DOT inspections, alignment, and mobile service dispatch.",
+              "linkLabel": "Service Department →",
+              "linkUrl": "/service"
+            },
+            {
+              "title": "In-store shopping",
+              "body": "In-store shopping and curbside pickup, with after-hours service coverage through Certified Fleet.",
+              "linkLabel": "All locations →",
+              "linkUrl": "/locations"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "tpa-extras",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-grid",
+        "values": {
+          "eyebrow": "ON THE SAME CAMPUS",
+          "heading": "Trailer sales and aftermarket.",
+          "span": 6,
+          "background": "card",
+          "items": [
+            {
+              "eyebrow": "SUN STATE TRAILERS",
+              "title": "Trailer Sales — 6020 E Adamo Dr",
+              "body": "New and used Hyundai Translead and Globe Trailers share the Tampa address, open 8 AM – 5 PM Monday through Friday. Talk to a member of our sales team about available inventory, financing, or to schedule an in-person appointment.\n\nPhone: (813) 621-1331 · Fax: 813-628-0527",
+              "linkLabel": "Trailer Sales details →",
+              "linkUrl": "/locations/trailer-sales"
+            },
+            {
+              "eyebrow": "SUN STATE AFTERMARKET",
+              "title": "Aftermarket Parts — 7105 E 6th Ave",
+              "body": "Minutes from the dealership, our Tampa aftermarket facility handles truck equipment repair, roll off cable repair, hydraulic repairs, body installations, liftgates and frame modifications, open 7 AM – 4 PM Monday through Friday.\n\nPhone: (813) 627-3282",
+              "linkLabel": "Aftermarket capabilities →",
+              "linkUrl": "/aftermarket"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "tpa-others",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "location-grid",
+        "values": {
+          "eyebrow": "FIND A LOCATION",
+          "heading": "Other Sun State locations.",
+          "body": "Ready to find the right commercial trucks for your business? Visit us at our convenient locations across Central and Southwest Florida.",
+          "span": 3,
+          "background": "paper",
+          "locations": [
+            {
+              "tag": "TRUCKS · PARTS · SERVICE",
+              "city": "Davenport",
+              "address": "41609 Hwy 27, Davenport, FL 33837",
+              "hours": "Service 7 AM – 7 PM M–F",
+              "phone": "(863) 424-2411",
+              "phoneUrl": "tel:+18634242411",
+              "url": "/locations/davenport"
+            },
+            {
+              "tag": "TRUCKS · PARTS · SERVICE",
+              "city": "Sarasota",
+              "address": "1000 Sarasota Center Blvd, Sarasota, FL 34240",
+              "hours": "Service 7 AM – 5 PM M–F",
+              "phone": "(941) 355-7681",
+              "phoneUrl": "tel:+19413557681",
+              "url": "/locations/sarasota"
+            },
+            {
+              "tag": "TRUCK & TRAILER PARTS",
+              "city": "Brooksville",
+              "address": "17127 Runway Drive, Brooksville, FL 34604",
+              "hours": "Store 7 AM – 5 PM M–F",
+              "phone": "(352) 277-0221",
+              "phoneUrl": "tel:+13522770221",
+              "url": "/locations/brooksville"
+            },
+            {
+              "tag": "AFTERMARKET PARTS",
+              "city": "Sun State Aftermarket Parts",
+              "address": "7105 East 6th Ave, Tampa, FL 33619",
+              "hours": "Store 7 AM – 4 PM M–F",
+              "phone": "(813) 627-3282",
+              "phoneUrl": "tel:+18136273282",
+              "url": "/locations/aftermarket-parts"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "tpa-faq",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "card",
+        "anchor": "tpa-faq"
+      },
+      "children": [
+        {
+          "id": "tpa-faq-head-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "tpa-faq-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "tpa-faq-head-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Common questions.",
+                    "headingLevel": 2,
+                    "eyebrow": "TAMPA LOCATION FAQS"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tpa-faq-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "tpa-faq-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "tpa-faq-list",
+                  "type": "widget",
+                  "props": {
+                    "widget": "faq",
+                    "config": {
+                      "items": [
+                        {
+                          "q": "Where is Sun State International in Tampa?",
+                          "a": "Sun State International Trucks, LLC. is at 6020 Adamo Drive, Tampa, FL 33619, just off Adamo Drive east of downtown Tampa. Phone (813) 621-1331, fax 813-628-0527."
+                        },
+                        {
+                          "q": "What are the Tampa hours?",
+                          "a": "Sales and parts are open 7:00 AM to 7:00 PM Monday through Friday and 8:00 AM to 12:00 PM Saturday. Service is open 7:00 AM to 7:00 PM Monday through Friday. Closed Sunday."
+                        },
+                        {
+                          "q": "Is after-hours service available in Tampa?",
+                          "a": "Yes. After hours service runs 8:00 PM to 5:00 AM via Certified Fleet at (863) 880-2206."
+                        },
+                        {
+                          "q": "Do you rent equipment from the Tampa location?",
+                          "a": "Yes. For rentals call (813) 769-2549 or (813) 323-1026."
+                        },
+                        {
+                          "q": "Can I buy trailers at the Tampa location?",
+                          "a": "Yes. Sun State Trailers Trailer Sales shares the 6020 Adamo Drive address and is open 8:00 AM to 5:00 PM Monday through Friday, selling new and used Hyundai Translead and Globe Trailers. Call (813) 621-1331."
+                        },
+                        {
+                          "q": "Where is the Tampa aftermarket facility?",
+                          "a": "Sun State Aftermarket Parts is a few minutes away at 7105 East 6th Ave, Tampa, FL 33619, open 7:00 AM to 4:00 PM Monday through Friday. Call (813) 627-3282."
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tpa-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "CONTACT US",
+          "heading": "Ready to get on the road?",
+          "body": "Contact us to explore our trucks and experience nothing less than the dedicated care you deserve.",
+          "primaryLabel": "Call (813) 621-1331",
+          "primaryUrl": "tel:+18136211331",
+          "secondaryLabel": "Schedule service",
+          "secondaryUrl": "/service-appointment"
+        }
+      }
+    }
+  ]
+}

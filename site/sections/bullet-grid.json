@@ -1,0 +1,176 @@
+{
+  "version": 2,
+  "id": "bullet-grid",
+  "name": "Bullet list cards",
+  "css": "[data-bz-section=\"bullet-grid\"] .bz-block { padding-block: 0 }\n[data-bz-section=\"bullet-grid\"] .bz-block + .bz-block { padding-block-start: 14px }\n[data-bz-section=\"bullet-grid\"] .bz-row + .bz-row { margin-top: 44px }\n[data-bz-section=\"bullet-grid\"] h3 { font-size: 19px; margin: 0 }\n[data-bz-section=\"bullet-grid\"] .bz-col .bz-text p { position: relative; padding-left: 16px; margin: 0 0 8px; font-size: 15px; color: #3f3f3f; line-height: 1.5 }\n[data-bz-section=\"bullet-grid\"] .bz-col .bz-text p::before { content: \"\"; position: absolute; left: 0; top: .62em; width: 6px; height: 6px; background: var(--accent) }",
+  "props": [
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Eyebrow",
+      "default": ""
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": ""
+    },
+    {
+      "key": "body",
+      "type": "textarea",
+      "label": "Intro",
+      "default": ""
+    },
+    {
+      "key": "span",
+      "type": "number",
+      "label": "Card width in grid columns",
+      "default": 3
+    },
+    {
+      "key": "background",
+      "type": "select",
+      "label": "Band background",
+      "default": "card",
+      "options": [
+        {
+          "value": "card",
+          "label": "White"
+        },
+        {
+          "value": "paper",
+          "label": "Paper"
+        },
+        {
+          "value": "ink",
+          "label": "Dark chrome"
+        },
+        {
+          "value": "none",
+          "label": "None"
+        }
+      ]
+    },
+    {
+      "key": "anchor",
+      "type": "text",
+      "label": "Anchor id",
+      "default": ""
+    },
+    {
+      "key": "items",
+      "type": "list",
+      "label": "Cards",
+      "fields": [
+        {
+          "key": "title",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "key": "bullets",
+          "type": "textarea",
+          "label": "Bullets — one per line, separated by a blank line"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "bg",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "{{background}}",
+        "paddingY": 10,
+        "anchor": "{{anchor}}"
+      },
+      "children": [
+        {
+          "id": "bg-head",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "bg-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "bg-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "eyebrow": "{{eyebrow}}",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "bg-body",
+                  "type": "text",
+                  "props": {
+                    "text": "{{body}}",
+                    "width": "prose"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bg-grid",
+          "type": "row",
+          "props": {
+            "gap": 6,
+            "align": "stretch"
+          },
+          "children": [
+            {
+              "id": "bg-card",
+              "type": "column",
+              "props": {
+                "span": "{{span}}",
+                "repeat": "items"
+              },
+              "styles": {
+                "base": {
+                  "background": "card",
+                  "borderWidth": 1,
+                  "borderStyle": "solid",
+                  "borderColor": "line",
+                  "paddingTop": 26,
+                  "paddingRight": 26,
+                  "paddingBottom": 26,
+                  "paddingLeft": 26
+                }
+              },
+              "children": [
+                {
+                  "id": "bg-card-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{title}}",
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "bg-card-b",
+                  "type": "text",
+                  "props": {
+                    "text": "{{bullets}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,521 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "svc-hero",
+      "type": "hero",
+      "props": {
+        "headingLevel": 1,
+        "eyebrow": "HOME / SERVICE",
+        "headline": "Commercial Truck & Trailer Service in Florida",
+        "subhead": "Commercial truck service, trailer repair and fleet maintenance at Sun State International Trucks and Sun State Trailers. Let's get you going.",
+        "ctas": [
+          {
+            "label": "Schedule your service appointment",
+            "url": "/service-appointment",
+            "style": "primary",
+            "intent": "book-service"
+          }
+        ],
+        "image": {
+          "src": "/img/photo-placeholder.svg",
+          "alt": "A Sun State service bay — photograph to be supplied",
+          "width": 1600,
+          "height": 900
+        }
+      }
+    },
+    {
+      "id": "svc-summary",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 9,
+        "background": "paper",
+        "anchor": "service-summary"
+      },
+      "children": [
+        {
+          "id": "svc-sum-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "svc-sum-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "svc-sum-t",
+                  "type": "text",
+                  "props": {
+                    "text": "When your truck or trailer is out of service, every minute counts. Whether you're managing an entire fleet or operating a single truck, you need a service team that understands the demands of your business and works efficiently to get you back on the road.\n\nWe provide dependable commercial truck service for all makes and models backed by experienced technicians, advanced diagnostic equipment, and a commitment to minimizing downtime. From routine maintenance and trailer repair to complex engine diagnostics and warranty work, our team delivers the quality service your operation depends on.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "svc-stats",
+                  "type": "statBand",
+                  "props": {
+                    "stats": [
+                      {
+                        "value": "60+",
+                        "label": "Certified factory-trained technicians"
+                      },
+                      {
+                        "value": "4",
+                        "label": "Warranty brands: International, Cummins, Allison, Caterpillar"
+                      },
+                      {
+                        "value": "2 hrs",
+                        "label": "ASED diagnostic evaluation and estimate"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "svc-what",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 9,
+        "background": "card"
+      },
+      "children": [
+        {
+          "id": "svc-what-head-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "svc-what-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "svc-what-head-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Service that keeps your business moving.",
+                    "headingLevel": 2,
+                    "eyebrow": "WHAT WE SERVICE"
+                  }
+                },
+                {
+                  "id": "svc-what-head-b",
+                  "type": "text",
+                  "props": {
+                    "text": "As an authorized repair and warranty facility for International, Cummins, Allison and Caterpillar, we perform warranty repairs while also providing expert service for a wide variety of commercial vehicles. Whether you operate an International truck, IC Bus, Hyundai Translead trailer, Globe Trailer or another commercial vehicle, you can count on our team for dependable repairs and honest recommendations.",
+                    "width": "prose"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "svc-services",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-grid",
+        "values": {
+          "eyebrow": "SERVICES",
+          "heading": "What we do in the bays.",
+          "span": 4,
+          "background": "card",
+          "anchor": "services",
+          "items": [
+            {
+              "eyebrow": "TRUCKS & TRAILERS",
+              "title": "Diamond Repair Estimating",
+              "body": "International's fully automated estimating platform lets our technicians create detailed repair estimates with greater speed and accuracy, so you understand the scope of repairs before work begins."
+            },
+            {
+              "eyebrow": "TRUCKS & TRAILERS",
+              "title": "Computerized truck & trailer alignment",
+              "body": "Advanced laser technology identifies alignment issues with precision. Performed by factory-trained technicians, alignment reduces uneven tire wear, improves steering performance and extends the life of suspension components."
+            },
+            {
+              "eyebrow": "TRUCKS & TRAILERS",
+              "title": "Fabrication & welding shop",
+              "body": "Frame alterations, wheelbase modifications, body wraps and liftgate repairs. Whether repairing damaged equipment or modifying a vehicle to suit your operation, our technicians deliver workmanship built for commercial transportation."
+            },
+            {
+              "eyebrow": "TRAILERS",
+              "title": "Repair and replace",
+              "body": "Our skilled technicians handle everything from repairing aluminum and fiberglass to replacing kingpins and landing gears, plus all-makes trailer parts replacement to restore your trailer to its best condition."
+            },
+            {
+              "eyebrow": "TRUCKS & TRAILERS",
+              "title": "DOT safety inspections",
+              "body": "We ensure your vehicle and trailer meet federal and state regulations with Department of Transportation Safety Inspections, helping you identify and fix potential safety hazards before accidents occur."
+            },
+            {
+              "eyebrow": "TRAILERS",
+              "title": "Liftgates",
+              "body": "Comprehensive care for your liftgates, including new installations, remounts, warranty services and parts replacements."
+            },
+            {
+              "eyebrow": "FLEETS",
+              "title": "Fleet Charge",
+              "body": "Designed by International, Fleet Charge simplifies the service experience with consistent parts pricing, nationwide support and streamlined billing for qualifying fleet customers."
+            },
+            {
+              "eyebrow": "TRUCKS",
+              "title": "Accelerated Service Express Diagnostics",
+              "body": "ASED offers a complete vehicle diagnostic evaluation, repair assessment and detailed estimate within two hours of arrival, through participating International dealerships."
+            },
+            {
+              "eyebrow": "FLEETS",
+              "title": "Diamond Advantage",
+              "body": "A credit program designed for the transportation industry, giving drivers and fleet operators access to products and services while simplifying payment and expense management."
+            },
+            {
+              "eyebrow": "FLEETS",
+              "title": "OnCommand Connection",
+              "body": "An industry-leading remote diagnostics platform that monitors vehicle health in real time across virtually all makes and models, turning vehicle data into insights that improve performance and maximize uptime."
+            },
+            {
+              "eyebrow": "FLEETS",
+              "title": "International 360",
+              "body": "A fleet management and service communication platform that makes the repair process more transparent from start to finish, helping fleet managers make informed decisions."
+            },
+            {
+              "eyebrow": "ON SITE",
+              "title": "Mobile service",
+              "body": "Repairs, diagnostics and preventative maintenance performed at your location, so a truck that cannot reach the shop still gets back to work.",
+              "linkLabel": "Mobile service →",
+              "linkUrl": "/mobile-service"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "svc-hours",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-grid",
+        "values": {
+          "eyebrow": "SERVICE DEPARTMENT HOURS",
+          "heading": "When we're open.",
+          "body": "Dedicated trailer repair bays at Tampa, Tampa Aftermarket, Davenport and Sarasota.",
+          "span": 3,
+          "background": "paper",
+          "anchor": "service-hours",
+          "items": [
+            {
+              "title": "Tampa",
+              "body": "Monday–Friday: 7:00 AM–7:00 PM\n\nSaturday: 7:00 AM–12:00 PM",
+              "linkLabel": "(813) 521-8053",
+              "linkUrl": "tel:+18135218053"
+            },
+            {
+              "title": "Davenport",
+              "body": "Monday–Friday: 7:00 AM–7:00 PM\n\nSaturday: 7:00 AM–12:00 PM",
+              "linkLabel": "(863) 238-2939",
+              "linkUrl": "tel:+18632382939"
+            },
+            {
+              "title": "Sarasota",
+              "body": "Monday–Friday: 7:00 AM–5:00 PM",
+              "linkLabel": "(941) 541-3251",
+              "linkUrl": "tel:+19415413251"
+            },
+            {
+              "title": "After hours",
+              "body": "Certified Fleet provides after-hours support from 5:00 PM to 8:00 AM, helping you get assistance when you need it most.",
+              "linkLabel": "Certified Fleet — (863) 880-2206",
+              "linkUrl": "tel:+18638802206"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "svc-mobile",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "media-band",
+        "values": {
+          "eyebrow": "MOBILE SERVICE",
+          "heading": "When the truck can't come to us.",
+          "body": "Our mobile service team is equipped to perform many repairs and maintenance services at your location, helping you reduce downtime and keep your operation moving without the added inconvenience of transporting your vehicle.\n\nWe can assist with repairs, diagnostics and preventative maintenance when you need them, wherever you need them.",
+          "ctaLabel": "Learn more about mobile service →",
+          "ctaUrl": "/mobile-service",
+          "ctaStyle": "link",
+          "background": "card",
+          "image": {
+            "src": "/img/photo-placeholder.svg",
+            "alt": "A Sun State mobile service truck on site — photograph to be supplied",
+            "width": 1600,
+            "height": 900
+          }
+        }
+      }
+    },
+    {
+      "id": "svc-money",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-grid",
+        "values": {
+          "eyebrow": "PROTECTING THE BUDGET",
+          "heading": "Coverage and credit.",
+          "span": 6,
+          "background": "paper",
+          "items": [
+            {
+              "title": "Extended service contracts",
+              "body": "Unexpected repairs can have a significant impact on your operating budget. An extended service contract helps protect your trucks from many unexpected repair costs while making maintenance expenses more predictable. We offer options designed for owner-operators, fleets, municipalities and businesses to keep vehicles protected long after the original warranty expires.",
+              "linkLabel": "Explore extended service options →",
+              "linkUrl": "/extended-service"
+            },
+            {
+              "title": "Apply for credit with Sun State",
+              "body": "With approved credit and minimal down payment, we offer an in-house line of credit for all your parts and service needs. Apply to take advantage of flexible financing options tailored to keep your business running smoothly.",
+              "linkLabel": "Credit application (PDF) →",
+              "linkUrl": "https://sunstatetrailers.com/wp-content/uploads/2024/07/SunstateFinApp.pdf"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "svc-parts",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "media-band",
+        "values": {
+          "eyebrow": "PARTS AND SERVICE WORKING TOGETHER",
+          "heading": "Quality repairs begin with quality parts.",
+          "body": "Our Service Department works closely with the Sun State International Parts Department to ensure your truck or trailer receives the components it needs without unnecessary delays. We stock a large inventory of genuine OEM and high-quality aftermarket parts, and if a part isn't immediately available our specialists source it through our supplier network to help minimize downtime.",
+          "ctaLabel": "Visit our parts department →",
+          "ctaUrl": "/parts",
+          "ctaStyle": "link",
+          "background": "card",
+          "image": {
+            "src": "/img/photo-placeholder.svg",
+            "alt": "The Sun State parts counter — photograph to be supplied",
+            "width": 1600,
+            "height": 900
+          }
+        }
+      }
+    },
+    {
+      "id": "svc-faq",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "paper",
+        "anchor": "service-faq"
+      },
+      "children": [
+        {
+          "id": "svc-faq-head-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "svc-faq-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "svc-faq-head-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Common questions.",
+                    "headingLevel": 2,
+                    "eyebrow": "COMMERCIAL TRUCK SERVICE FAQS"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "svc-faq-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "svc-faq-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "svc-faq-list",
+                  "type": "widget",
+                  "props": {
+                    "widget": "faq",
+                    "config": {
+                      "items": [
+                        {
+                          "q": "What types of vehicles does Sun State International service?",
+                          "a": "Our technicians service heavy-duty and medium-duty commercial trucks, trailers, buses and fleet vehicles. We work on all makes and models while specializing in International trucks, IC Bus, Hyundai Translead and Globe Trailers."
+                        },
+                        {
+                          "q": "Do you offer preventive fleet maintenance?",
+                          "a": "Yes. We provide customized fleet maintenance services designed to help reduce unexpected breakdowns, extend vehicle life and keep your operation running efficiently. Our technicians can recommend maintenance schedules based on your equipment and operating conditions."
+                        },
+                        {
+                          "q": "Do you perform warranty repairs?",
+                          "a": "Yes. Sun State International is an authorized warranty repair facility for International, Cummins, Allison and Caterpillar products."
+                        },
+                        {
+                          "q": "Can you repair trailers?",
+                          "a": "Yes. Our trailer repair services include diagnostics, suspension repairs, brake service, alignment, fabrication, welding, liftgate repairs and more to keep your trailers operating safely and reliably."
+                        },
+                        {
+                          "q": "Do you service fleets?",
+                          "a": "Yes. We work with owner-operators, municipalities, school districts, contractors and commercial fleets of all sizes. Whether you operate a few trucks or hundreds, our team has the experience and resources to help keep your fleet moving."
+                        },
+                        {
+                          "q": "Is service available after hours?",
+                          "a": "Yes. Certified Fleet provides after-hours support from 5:00 PM to 8:00 AM, and our mobile service team can perform many repairs and maintenance services at your location."
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "svc-contact",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 9,
+        "background": "card"
+      },
+      "children": [
+        {
+          "id": "svc-contact-head-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "svc-contact-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "svc-contact-head-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Contact our service departments.",
+                    "headingLevel": 2,
+                    "eyebrow": "NEED HELP?"
+                  }
+                },
+                {
+                  "id": "svc-contact-head-b",
+                  "type": "text",
+                  "props": {
+                    "text": "Call our service departments, or visit one of our dealership locations in Tampa, Sarasota or Davenport.",
+                    "width": "prose"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "svc-contact-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "svc-contact-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "svc-contact-phones",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Tampa (813) 521-8053",
+                        "url": "tel:+18135218053",
+                        "style": "secondary",
+                        "intent": "call-department"
+                      },
+                      {
+                        "label": "Sarasota (941) 541-3251",
+                        "url": "tel:+19415413251",
+                        "style": "secondary",
+                        "intent": "call-department"
+                      },
+                      {
+                        "label": "Davenport (863) 238-2939",
+                        "url": "tel:+18632382939",
+                        "style": "secondary",
+                        "intent": "call-department"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "svc-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "LET'S GET YOU GOING",
+          "heading": "Schedule your service appointment.",
+          "body": "Tell us what the unit needs and when you would like it in, and a service advisor will confirm the time and the scope of work.",
+          "primaryLabel": "Schedule your service appointment",
+          "primaryUrl": "/service-appointment",
+          "secondaryLabel": "Call 800.741.7566",
+          "secondaryUrl": "tel:+18007417566"
+        }
+      }
+    }
+  ]
+}

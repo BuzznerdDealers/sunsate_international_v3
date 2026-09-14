@@ -1,0 +1,384 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "ext-hero",
+      "type": "hero",
+      "props": {
+        "headingLevel": 1,
+        "eyebrow": "HOME / SERVICE / EXTENDED SERVICE",
+        "headline": "Extended Service Coverage",
+        "subhead": "Protect your trucks and trailers from unexpected repair costs and make maintenance expenses more predictable long after the original warranty expires.",
+        "ctas": [
+          {
+            "label": "View coverage plans",
+            "url": "#ext-plans",
+            "style": "primary",
+            "intent": "learn-more"
+          },
+          {
+            "label": "Call 800.741.7566",
+            "url": "tel:+18007417566",
+            "style": "secondary",
+            "intent": "call-dealer"
+          }
+        ],
+        "image": {
+          "src": "/img/photo-placeholder.svg",
+          "alt": "An International truck on the highway — photograph to be supplied",
+          "width": 1600,
+          "height": 900
+        }
+      }
+    },
+    {
+      "id": "ext-summary",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 9,
+        "background": "paper",
+        "anchor": "ext-summary"
+      },
+      "children": [
+        {
+          "id": "ext-sum-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "ext-sum-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "ext-sum-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Unexpected repairs can have a significant impact on your operating budget. An extended service contract helps protect your trucks from many unexpected repair costs while making maintenance expenses more predictable.\n\nWe offer options designed for owner-operators, fleets, municipalities and businesses to keep vehicles protected long after the original warranty expires. Covered repairs are performed by our own factory-trained technicians at an authorized warranty repair facility for International, Cummins, Allison and Caterpillar products, with trailer warranty support through Sun State Trailers.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "ext-stats",
+                  "type": "statBand",
+                  "props": {
+                    "stats": [
+                      {
+                        "value": "3",
+                        "label": "Coverage programs: On Highway, Vocational, A26"
+                      },
+                      {
+                        "value": "4",
+                        "label": "Authorized warranty brands: International, Cummins, Allison, Caterpillar"
+                      },
+                      {
+                        "value": "60+",
+                        "label": "Certified factory-trained technicians performing covered repairs"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ext-plans",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "photo-card-grid",
+        "values": {
+          "eyebrow": "COVERAGE PLANS",
+          "heading": "Pick the coverage that matches how you run.",
+          "body": "Each program is published as a printable brochure with component coverage, terms and mileage limits. Review the plan that fits your duty cycle, then talk with a service advisor about term length and deductible options.",
+          "span": 4,
+          "background": "card",
+          "anchor": "ext-plans",
+          "items": [
+            {
+              "image": {
+                "src": "/img/photo-placeholder.svg",
+                "alt": "A line-haul tractor on the interstate — photograph to be supplied",
+                "width": 1600,
+                "height": 900
+              },
+              "eyebrow": "CHASSIS COVERAGE",
+              "title": "On Highway",
+              "body": "Extended chassis coverage for line-haul and regional trucks running high annual mileage on paved routes.",
+              "specs": "Built for sleeper and day cab applications\n\nComponent coverage beyond base warranty\n\nTerm and mileage options by duty cycle",
+              "linkLabel": "On Highway coverage brochure (PDF) →",
+              "linkUrl": "https://sunstateintl.com/wp-content/uploads/2024/09/warrantychassis-highway-printfriendly-r3.pdf"
+            },
+            {
+              "image": {
+                "src": "/img/photo-placeholder.svg",
+                "alt": "A vocational dump truck on site — photograph to be supplied",
+                "width": 1600,
+                "height": 900
+              },
+              "eyebrow": "CHASSIS COVERAGE",
+              "title": "Vocational",
+              "body": "Extended chassis coverage for dump, refuse, construction, utility and municipal trucks that work hard at low mileage.",
+              "specs": "Built for severe-duty and on/off-road work\n\nCoverage aligned to hours as well as miles\n\nOptions for municipalities and contractors",
+              "linkLabel": "Vocational coverage brochure (PDF) →",
+              "linkUrl": "https://sunstateintl.com/wp-content/uploads/2024/09/warrantychassis-vocational-printfriendly-r3.pdf"
+            },
+            {
+              "image": {
+                "src": "/img/photo-placeholder.svg",
+                "alt": "An International A26 engine — photograph to be supplied",
+                "width": 1600,
+                "height": 900
+              },
+              "eyebrow": "ENGINE COVERAGE",
+              "title": "International A26",
+              "body": "Engine-specific extended coverage for the International A26, protecting the most expensive component on the truck.",
+              "specs": "A26 engine and related systems\n\nRepairs by factory-trained technicians\n\nPairs with chassis coverage programs",
+              "linkLabel": "International A26 coverage brochure (PDF) →",
+              "linkUrl": "https://sunstateintl.com/wp-content/uploads/2024/09/warranty-a26-printfriendly-r3.pdf"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "ext-why",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-grid",
+        "values": {
+          "eyebrow": "WHY IT PAYS OFF",
+          "heading": "Predictable cost, protected uptime.",
+          "span": 3,
+          "background": "paper",
+          "items": [
+            {
+              "title": "Predictable budgets",
+              "body": "Known coverage on major components turns surprise repair bills into a planned operating cost."
+            },
+            {
+              "title": "Authorized repairs",
+              "body": "Covered work is performed in-house as an authorized warranty facility for International, Cummins, Allison and Caterpillar."
+            },
+            {
+              "title": "Less downtime",
+              "body": "Claims, parts and scheduling are handled by the same team, with mobile service and after-hours support behind them."
+            },
+            {
+              "title": "Stronger resale",
+              "body": "Documented coverage and a complete service history make a used truck or trailer easier to sell or trade."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "ext-trailers",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "media-band",
+        "values": {
+          "eyebrow": "TRAILER WARRANTY SUPPORT",
+          "heading": "Coverage for trailers, too.",
+          "body": "Sun State Trailers handles Hyundai Translead and Globe Trailers warranty work in our dedicated trailer repair bays, along with comprehensive liftgate care including new installations, remounts, warranty services and parts replacements.\n\nOnline service appointments track full service history for every unit, which makes warranty and coverage claims straightforward when you need them.",
+          "ctaLabel": "Schedule trailer service →",
+          "ctaUrl": "/service-appointment",
+          "ctaStyle": "link",
+          "background": "card",
+          "image": {
+            "src": "/img/photo-placeholder.svg",
+            "alt": "A trailer repair bay — photograph to be supplied",
+            "width": 1600,
+            "height": 900
+          }
+        }
+      }
+    },
+    {
+      "id": "ext-paying",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-grid",
+        "values": {
+          "eyebrow": "PAYING FOR IT",
+          "heading": "Financing and fleet programs.",
+          "span": 6,
+          "background": "paper",
+          "items": [
+            {
+              "title": "Finance your coverage",
+              "body": "Extended coverage can be rolled into the financing on a new or used unit. With approved credit and minimal down payment, we also offer an in-house line of credit for all your parts and service needs.",
+              "linkLabel": "Financing →",
+              "linkUrl": "/financing"
+            },
+            {
+              "title": "Fleet programs that pair with coverage",
+              "body": "Fleet Charge simplifies parts pricing and billing nationwide, Diamond Advantage provides a credit program built for the transportation industry, and OnCommand Connection monitors vehicle health in real time so covered issues are caught early.",
+              "linkLabel": "See fleet service programs →",
+              "linkUrl": "/service#services"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "ext-locations",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-grid",
+        "values": {
+          "eyebrow": "WHERE COVERED REPAIRS HAPPEN",
+          "heading": "Service departments across Florida.",
+          "span": 3,
+          "background": "card",
+          "anchor": "ext-locations",
+          "items": [
+            {
+              "title": "Tampa",
+              "body": "6020 E Adamo Dr\n\nService: 7 AM – 7 PM M–F, 7 AM – 12 PM Sat",
+              "linkLabel": "(813) 521-8053",
+              "linkUrl": "tel:+18135218053"
+            },
+            {
+              "title": "Davenport",
+              "body": "41609 Hwy 27\n\nService: 7 AM – 7 PM M–F, 7 AM – 12 PM Sat",
+              "linkLabel": "(863) 238-2939",
+              "linkUrl": "tel:+18632382939"
+            },
+            {
+              "title": "Sarasota",
+              "body": "1000 Sarasota Center Blvd\n\nService: 7 AM – 5 PM M–F",
+              "linkLabel": "(941) 541-3251",
+              "linkUrl": "tel:+19415413251"
+            },
+            {
+              "title": "After hours",
+              "body": "After-hours service via Certified Fleet, 5:00 PM to 8:00 AM, plus mobile service at your yard or job site.",
+              "linkLabel": "Mobile service →",
+              "linkUrl": "/mobile-service"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "ext-faq",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "paper",
+        "anchor": "ext-faq"
+      },
+      "children": [
+        {
+          "id": "ext-faq-head-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "ext-faq-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "ext-faq-head-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Common questions.",
+                    "headingLevel": 2,
+                    "eyebrow": "EXTENDED SERVICE FAQS"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ext-faq-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "ext-faq-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "ext-faq-list",
+                  "type": "widget",
+                  "props": {
+                    "widget": "faq",
+                    "config": {
+                      "items": [
+                        {
+                          "q": "What is an extended service contract?",
+                          "a": "An extended service contract continues coverage on specified components after the original factory warranty expires. It helps protect your trucks from many unexpected repair costs and makes maintenance expenses more predictable."
+                        },
+                        {
+                          "q": "Which extended coverage plans does Sun State offer?",
+                          "a": "Coverage is available for On Highway chassis, Vocational chassis and the International A26 engine. Each plan is detailed in a printable brochure, and a service advisor can match the plan to your duty cycle, annual mileage and equipment."
+                        },
+                        {
+                          "q": "When should I purchase extended coverage?",
+                          "a": "Coverage is most often purchased with a new truck or before the base warranty expires. Talk with us about your options while the unit is still within factory coverage so there is no gap."
+                        },
+                        {
+                          "q": "Where can I have covered repairs performed?",
+                          "a": "Sun State International is an authorized warranty repair facility for International, Cummins, Allison and Caterpillar products, with service departments in Tampa, Sarasota and Davenport plus a mobile service team."
+                        },
+                        {
+                          "q": "Do you offer coverage for trailers?",
+                          "a": "Yes. Sun State Trailers supports Hyundai Translead and Globe Trailers warranty work along with liftgate warranty service, remounts and parts replacement through our trailer repair bays."
+                        },
+                        {
+                          "q": "Can extended service be financed?",
+                          "a": "Extended coverage can be included in the financing on a new or used unit. With approved credit and minimal down payment we also offer an in-house line of credit for parts and service needs, and Diamond Advantage provides a credit program built for the transportation industry."
+                        },
+                        {
+                          "q": "Is coverage transferable if I sell the truck?",
+                          "a": "Transferability depends on the specific plan and term. Review the plan brochure or ask a service advisor to confirm the terms before you sell or trade the unit."
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ext-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "TALK IT THROUGH",
+          "heading": "Find the right coverage for your equipment.",
+          "body": "Tell us how the unit is spec'd and how many miles or hours it runs each year, and we'll walk through the plan options and terms.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Schedule service",
+          "secondaryUrl": "/service-appointment"
+        }
+      }
+    }
+  ]
+}

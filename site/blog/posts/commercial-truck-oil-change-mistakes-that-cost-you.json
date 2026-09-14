@@ -1,0 +1,137 @@
+{
+  "slug": "commercial-truck-oil-change-mistakes-that-cost-you",
+  "title": "Commercial Truck Oil Change Mistakes That Cost You",
+  "date": "2026-06-14",
+  "description": "For owner-operators and fleet managers alike, routine maintenance isn’t just another item on the calendar. It’s one of the smartest investments you can make in your equipment.",
+  "status": "published",
+  "coverImage": "https://www.sunstateintl.com/wp-content/uploads/2026/07/commercial-truck-oil-change-400x250.jpg",
+  "topic": "Maintenance",
+  "nodes": [
+    {
+      "id": "intro",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "intro-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "intro-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "intro-eyebrow",
+                  "type": "heading",
+                  "props": {
+                    "text": "Commercial Truck Oil Change Mistakes That Cost You",
+                    "headingLevel": 2,
+                    "eyebrow": "MAINTENANCE"
+                  }
+                },
+                {
+                  "id": "intro-text",
+                  "type": "text",
+                  "props": {
+                    "text": "For owner-operators and fleet managers alike, routine maintenance isn’t just another item on the calendar. It’s one of the smartest investments you can make in your equipment.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "intro-note",
+                  "type": "text",
+                  "props": {
+                    "text": "The full article was published on sunstateintl.com. Paste the migrated body here in Posts → this post, and the card on the blog index updates with it.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "intro-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Read the original article →",
+                        "url": "https://www.sunstateintl.com/commercial-truck-oil-change-mistakes-that-cost-you/",
+                        "style": "link",
+                        "intent": "read-post"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "post-cta-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "post-cta-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "post-cta-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Got the same symptom on a unit you run?",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "post-cta-b",
+                  "type": "text",
+                  "props": {
+                    "text": "Call 800.741.7566 and we'll look at the specific truck or trailer instead of the general case.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "post-cta-btn",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "request-appointment"
+                      },
+                      {
+                        "ctaId": "call-main-secondary"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

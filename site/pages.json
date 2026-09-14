@@ -1,0 +1,436 @@
+[
+  {
+    "slug": "home",
+    "title": "Home",
+    "description": "New and used International trucks, trailers, IC Bus, parts, service and financing across six West Central Florida locations.",
+    "path": "/",
+    "out": "index.html",
+    "dir": "home",
+    "status": "published",
+    "group": "entry",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    }
+  },
+  {
+    "slug": "our-story",
+    "title": "Our Story",
+    "description": "Family-owned International Truck and trailer dealer serving West Central Florida for over 30 years.",
+    "path": "/about-us",
+    "out": "about-us/index.html",
+    "dir": "about-us",
+    "status": "published",
+    "group": "company",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    }
+  },
+  {
+    "slug": "meet-the-team",
+    "title": "Meet the Team",
+    "description": "The sales, parts, service and finance people behind Sun State International.",
+    "path": "/meet-the-team",
+    "out": "meet-the-team/index.html",
+    "dir": "meet-the-team",
+    "status": "published",
+    "group": "company",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    }
+  },
+  {
+    "slug": "careers",
+    "title": "Careers",
+    "description": "Technician, parts, sales and support careers at a Top Workplace across Tampa, Sarasota, Davenport and Brooksville.",
+    "path": "/careers",
+    "out": "careers/index.html",
+    "dir": "careers",
+    "status": "published",
+    "group": "company",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    }
+  },
+  {
+    "slug": "reviews",
+    "title": "Reviews",
+    "description": "What fleets, owner-operators and municipalities say about Sun State International.",
+    "path": "/reviews",
+    "out": "reviews/index.html",
+    "dir": "reviews",
+    "status": "published",
+    "group": "company",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    }
+  },
+  {
+    "slug": "community-involvement",
+    "title": "Community Involvement",
+    "description": "How Sun State International supports the Tampa Bay community.",
+    "path": "/community-involvement",
+    "out": "community-involvement/index.html",
+    "dir": "community-involvement",
+    "status": "published",
+    "group": "company",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    }
+  },
+  {
+    "slug": "news-and-press",
+    "title": "News & Press",
+    "description": "Dealership news, awards and press coverage from Sun State International.",
+    "path": "/news",
+    "out": "news/index.html",
+    "dir": "news",
+    "status": "published",
+    "group": "editorial",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    }
+  },
+  {
+    "slug": "videos",
+    "title": "Videos",
+    "description": "Walkarounds, product explainers and dealership videos from Sun State International.",
+    "path": "/videos",
+    "out": "videos/index.html",
+    "dir": "videos",
+    "status": "published",
+    "group": "editorial",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    }
+  },
+  {
+    "slug": "inventory",
+    "title": "Inventory",
+    "description": "New and used trucks, trailers, yard trucks and rentals from Sun State International and Sun State Trailers.",
+    "path": "/inventory",
+    "out": "inventory/index.html",
+    "dir": "inventory",
+    "status": "published",
+    "group": "inventory",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    }
+  },
+  {
+    "slug": "capacity-yard-trucks",
+    "title": "Capacity Yard Trucks",
+    "description": "Capacity TJ5000, TJ6500 and TJ9000 yard trucks for sale and rent in Florida.",
+    "path": "/capacity-yard-trucks",
+    "out": "capacity-yard-trucks/index.html",
+    "dir": "capacity-yard-trucks",
+    "status": "published",
+    "group": "inventory",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    }
+  },
+  {
+    "slug": "truck-configurator",
+    "title": "Truck Configurator",
+    "description": "Build your International truck spec by spec and send it to our sales team.",
+    "path": "/truck-configurator",
+    "out": "truck-configurator/index.html",
+    "dir": "truck-configurator",
+    "status": "published",
+    "group": "inventory",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    }
+  },
+  {
+    "slug": "brochures-and-s13-powertrain",
+    "title": "Brochures & S13 Powertrain",
+    "description": "International spec sheets, brochures and the S13 Integrated Powertrain.",
+    "path": "/specifications",
+    "out": "specifications/index.html",
+    "dir": "specifications",
+    "status": "published",
+    "group": "inventory",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    }
+  },
+  {
+    "slug": "deal-of-the-week",
+    "title": "Deal of the Week",
+    "description": "Current truck, trailer, parts and service specials from Sun State International.",
+    "path": "/deal-of-the-week",
+    "out": "deal-of-the-week/index.html",
+    "dir": "deal-of-the-week",
+    "status": "published",
+    "group": "inventory",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    }
+  },
+  {
+    "slug": "parts",
+    "title": "Parts",
+    "description": "Genuine OEM and all-makes truck and trailer parts across Tampa, Sarasota, Davenport and Brooksville.",
+    "path": "/parts",
+    "out": "parts/index.html",
+    "dir": "parts",
+    "status": "published",
+    "group": "parts",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    }
+  },
+  {
+    "slug": "aftermarket",
+    "title": "Aftermarket",
+    "description": "Aftermarket modifications and alterations for heavy and medium-duty trucks, trailers and buses in Florida.",
+    "path": "/aftermarket",
+    "out": "aftermarket/index.html",
+    "dir": "aftermarket",
+    "status": "published",
+    "group": "parts",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    }
+  },
+  {
+    "slug": "service",
+    "title": "Service",
+    "description": "Truck and trailer service and repair at Diamond Edge certified centers in Tampa, Sarasota and Davenport.",
+    "path": "/service",
+    "out": "service/index.html",
+    "dir": "service",
+    "status": "published",
+    "group": "service",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    }
+  },
+  {
+    "slug": "service-appointment",
+    "title": "Service Appointment",
+    "description": "Request a truck or trailer service appointment online, or ask for mobile service at your yard.",
+    "path": "/service-appointment",
+    "out": "service-appointment/index.html",
+    "dir": "service-appointment",
+    "status": "published",
+    "group": "service",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    }
+  },
+  {
+    "slug": "extended-service",
+    "title": "Extended Service",
+    "description": "Extended service contracts and warranty coverage for your International truck.",
+    "path": "/extended-service",
+    "out": "extended-service/index.html",
+    "dir": "extended-service",
+    "status": "published",
+    "group": "service",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    }
+  },
+  {
+    "slug": "mobile-service",
+    "title": "Mobile Service",
+    "description": "Mobile truck and trailer service across Tampa, Sarasota and Davenport.",
+    "path": "/mobile-service",
+    "out": "mobile-service/index.html",
+    "dir": "mobile-service",
+    "status": "published",
+    "group": "service",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    }
+  },
+  {
+    "slug": "financing",
+    "title": "Financing",
+    "description": "Competitive rates and flexible truck and trailer financing through BMO Harris Bank, Navistar Financial and more.",
+    "path": "/financing",
+    "out": "financing/index.html",
+    "dir": "financing",
+    "status": "published",
+    "group": "transact",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    }
+  },
+  {
+    "slug": "locations",
+    "title": "Locations",
+    "description": "Hours, addresses and directions for all six Sun State International and Sun State Trailers locations.",
+    "path": "/locations",
+    "out": "locations/index.html",
+    "dir": "locations",
+    "status": "published",
+    "group": "locations",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    }
+  },
+  {
+    "slug": "tampa-location",
+    "title": "Tampa",
+    "description": "Hours, directions and department phone numbers for Sun State International Tampa, 6020 Adamo Drive.",
+    "path": "/locations/tampa",
+    "out": "locations/tampa/index.html",
+    "dir": "locations/tampa",
+    "status": "published",
+    "group": "locations",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    }
+  },
+  {
+    "slug": "davenport-location",
+    "title": "Davenport",
+    "description": "Hours, directions and department phone numbers for Sun State International Davenport, 41609 Hwy 27.",
+    "path": "/locations/davenport",
+    "out": "locations/davenport/index.html",
+    "dir": "locations/davenport",
+    "status": "published",
+    "group": "locations",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    }
+  },
+  {
+    "slug": "sarasota-location",
+    "title": "Sarasota",
+    "description": "Hours, directions and department phone numbers for Sun State International Sarasota, 1000 Sarasota Center Blvd.",
+    "path": "/locations/sarasota",
+    "out": "locations/sarasota/index.html",
+    "dir": "locations/sarasota",
+    "status": "published",
+    "group": "locations",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    }
+  },
+  {
+    "slug": "brooksville-location",
+    "title": "Brooksville",
+    "description": "Hours, directions and phone numbers for Truck & Trailer Parts, Brooksville, 17127 Runway Drive.",
+    "path": "/locations/brooksville",
+    "out": "locations/brooksville/index.html",
+    "dir": "locations/brooksville",
+    "status": "published",
+    "group": "locations",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    }
+  },
+  {
+    "slug": "trailer-sales-location",
+    "title": "Trailer Sales",
+    "description": "Hours, directions and phone numbers for Sun State Trailers Trailer Sales, 6020 Adamo Drive, Tampa.",
+    "path": "/locations/trailer-sales",
+    "out": "locations/trailer-sales/index.html",
+    "dir": "locations/trailer-sales",
+    "status": "published",
+    "group": "locations",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    }
+  },
+  {
+    "slug": "aftermarket-parts-location",
+    "title": "Aftermarket Parts",
+    "description": "Hours, directions and phone numbers for Sun State Aftermarket Parts, 7105 East 6th Ave, Tampa.",
+    "path": "/locations/aftermarket-parts",
+    "out": "locations/aftermarket-parts/index.html",
+    "dir": "locations/aftermarket-parts",
+    "status": "published",
+    "group": "locations",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    }
+  },
+  {
+    "slug": "contact-us",
+    "title": "Contact Us",
+    "description": "Call, email or message the right Sun State department across Tampa, Sarasota, Davenport and Brooksville.",
+    "path": "/contact",
+    "out": "contact/index.html",
+    "dir": "contact",
+    "status": "published",
+    "group": "transact",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    }
+  },
+  {
+    "slug": "privacy-policy",
+    "title": "Privacy Policy",
+    "description": "How Sun State International Trucks and Sun State Trailers collect, use and protect your information.",
+    "path": "/legal/privacy",
+    "out": "legal/privacy/index.html",
+    "dir": "legal/privacy",
+    "status": "published",
+    "group": "legal",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    }
+  },
+  {
+    "slug": "policies",
+    "title": "Policies",
+    "description": "Shipping, returns, payment and backorder policies for Sun State International and Sun State Trailers.",
+    "path": "/legal/policies",
+    "out": "legal/policies/index.html",
+    "dir": "legal/policies",
+    "status": "published",
+    "group": "legal",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    }
+  },
+  {
+    "slug": "terms-and-conditions",
+    "title": "Terms and Conditions",
+    "description": "Terms and conditions for using the Sun State International and Sun State Trailers websites.",
+    "path": "/legal/terms",
+    "out": "legal/terms/index.html",
+    "dir": "legal/terms",
+    "status": "published",
+    "group": "legal",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    }
+  }
+]

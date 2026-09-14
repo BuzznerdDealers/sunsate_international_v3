@@ -1,0 +1,617 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "cy-hero",
+      "type": "hero",
+      "props": {
+        "headingLevel": 1,
+        "eyebrow": "HOME / CAPACITY YARD TRUCKS",
+        "headline": "Capacity Yard Trucks",
+        "subhead": "Explore our selection of Capacity yard trucks and learn why they are a powerful addition to your business.",
+        "ctas": [
+          {
+            "label": "View Capacity inventory",
+            "url": "/store/inventory?brand=capacity",
+            "style": "primary",
+            "intent": "browse-inventory"
+          },
+          {
+            "label": "Call 800.741.7566",
+            "url": "tel:+18007417566",
+            "style": "secondary",
+            "intent": "call-dealer"
+          }
+        ],
+        "image": {
+          "src": "/img/photo-placeholder.svg",
+          "alt": "A Capacity yard truck at work — photograph to be supplied",
+          "width": 1600,
+          "height": 900
+        }
+      }
+    },
+    {
+      "id": "cy-intro",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 9,
+        "background": "paper",
+        "anchor": "cy-intro"
+      },
+      "children": [
+        {
+          "id": "cy-intro-head-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "cy-intro-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "cy-intro-head-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Top-quality equipment to keep your business moving.",
+                    "headingLevel": 2,
+                    "eyebrow": "STREAMLINE YOUR OPERATIONS"
+                  }
+                },
+                {
+                  "id": "cy-intro-head-b",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, our mission is to provide top-quality equipment to keep your business moving. We understand that efficiency and reliability are critical in warehouse and distribution operations, which is why we are proud to offer Capacity yard trucks.\n\nDesigned for strength, durability, and maximum performance, Capacity yard trucks help streamline your operations and keep your business running smoothly. Learn more about our available models and find the perfect fit for your operation.",
+                    "width": "prose"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cy-why",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "card"
+      },
+      "children": [
+        {
+          "id": "cy-why-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "align": "center",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "cy-why-copy",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "cy-why-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Built to outperform and outlast.",
+                    "headingLevel": 2,
+                    "eyebrow": "WHY YOU NEED A CAPACITY YARD TRUCK"
+                  }
+                },
+                {
+                  "id": "cy-why-b",
+                  "type": "text",
+                  "props": {
+                    "text": "Capacity yard trucks provide the strength and dependability your business needs to operate efficiently every day. Whether you need a single-axle model for light-duty operations or a heavy-duty tandem-axle unit for the toughest jobs, there is a Capacity yard truck designed for your specific needs."
+                  }
+                },
+                {
+                  "id": "cy-why-list",
+                  "type": "list",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Distribution centers"
+                      },
+                      {
+                        "label": "Warehouses"
+                      },
+                      {
+                        "label": "Ports"
+                      },
+                      {
+                        "label": "Rail car terminals"
+                      },
+                      {
+                        "label": "Intermodal trucking operations"
+                      }
+                    ],
+                    "heading": "Businesses that can benefit",
+                    "headingLevel": 3,
+                    "columns": 2
+                  }
+                },
+                {
+                  "id": "cy-why-b2",
+                  "type": "text",
+                  "props": {
+                    "text": "These powerful yard trucks are the backbone of modern logistics, ensuring seamless transportation of trailers within busy work environments."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "cy-why-media",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "cy-why-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/img/photo-placeholder.svg",
+                      "alt": "A Capacity yard truck in a distribution yard — photograph to be supplied",
+                      "width": 1600,
+                      "height": 900
+                    },
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cy-models",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "photo-card-grid",
+        "values": {
+          "eyebrow": "THE ORIGINAL \"TRAILER JOCKEY\"",
+          "heading": "Shop from the brand that started it all.",
+          "body": "Capacity introduced the \"Original Trailer Jockey\" almost fifty years ago. Now, it has evolved into three powerful models tailored for various operational needs. The TJ Series includes the TJ5000, TJ6500, and TJ9000, each designed with unique features and capabilities. Whether you need a single or double rear axle, off-road, or DOT-certified model, these yard trucks provide unmatched versatility and performance.",
+          "span": 4,
+          "background": "paper",
+          "anchor": "cy-models",
+          "items": [
+            {
+              "image": {
+                "src": "/img/photo-placeholder.svg",
+                "alt": "Capacity TJ5000 — photograph to be supplied",
+                "width": 1600,
+                "height": 900
+              },
+              "eyebrow": "SINGLE AXLE",
+              "title": "TJ5000",
+              "body": "The TJ5000 is a single-axle yard jockey truck designed for strength and efficiency. For in-house use there is an off-highway model perfect for warehouse and distribution operations, where durability and maneuverability are essential. It also comes in a DOT model, better suited for intermodal trucking and operations that require navigating rough surface conditions like potholes and railroad crossings.",
+              "specs": "<strong>GCWR</strong> Up to 81,000 lbs\n\n<strong>Can move</strong> Up to 242,000 lbs\n\n<strong>Models</strong> Off-highway & DOT",
+              "linkLabel": "Explore the TJ5000 →",
+              "linkUrl": "https://capacitytrucks.com/tj-series/tj-5000/"
+            },
+            {
+              "image": {
+                "src": "/img/photo-placeholder.svg",
+                "alt": "Capacity TJ6500 — photograph to be supplied",
+                "width": 1600,
+                "height": 900
+              },
+              "eyebrow": "TANDEM AXLE",
+              "title": "TJ6500",
+              "body": "The TJ6500 is a tandem-axle yard jockey truck built for increased stability and load capacity. This model is built to handle demanding applications and is ideal for warehouse work, especially in environments with rough surface conditions. For businesses that require over-the-road operations, we offer tandem-axle non-DOT models with on-road and off-road capabilities.",
+              "specs": "<strong>GCWR</strong> Up to 125,000 lbs\n\n<strong>Gradability</strong> 90,000 lbs\n\n<strong>Best for</strong> Rough surfaces",
+              "linkLabel": "Explore the TJ6500 →",
+              "linkUrl": "https://capacitytrucks.com/tj-series/tj-6500/"
+            },
+            {
+              "image": {
+                "src": "/img/photo-placeholder.svg",
+                "alt": "Capacity TJ9000 — photograph to be supplied",
+                "width": 1600,
+                "height": 900
+              },
+              "eyebrow": "SINGLE AXLE · HEAVY DUTY",
+              "title": "TJ9000",
+              "body": "The TJ9000 is a powerful single-axle yard jockey truck, designed for the toughest jobs. It offers unmatched strength and flexibility for a variety of industries, and can be used across intermodal, warehouse and distribution, and port trucking applications, adapting to different operational needs and rough surface conditions.",
+              "specs": "<strong>GCWR</strong> Up to 242,000 lbs\n\n<strong>Applications</strong> Intermodal, warehouse, port\n\n<strong>Dura-Ride</strong> Available",
+              "linkLabel": "Explore the TJ9000 →",
+              "linkUrl": "https://capacitytrucks.com/tj-series/tj-9000/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cy-duraride",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "card"
+      },
+      "children": [
+        {
+          "id": "cy-dr-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "align": "center",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "cy-dr-media",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "cy-dr-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/img/photo-placeholder.svg",
+                      "alt": "A Dura-Ride equipped cab interior — photograph to be supplied",
+                      "width": 1600,
+                      "height": 900
+                    },
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "cy-dr-copy",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "cy-dr-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Easier on the operator, easier on the freight.",
+                    "headingLevel": 2,
+                    "eyebrow": "BENEFITS OF DURA-RIDE"
+                  }
+                },
+                {
+                  "id": "cy-dr-list",
+                  "type": "list",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Enhanced comfort for operators"
+                      },
+                      {
+                        "label": "Less wear and tear on cargo"
+                      },
+                      {
+                        "label": "Reduced maintenance costs"
+                      },
+                      {
+                        "label": "Improved operator health and safety"
+                      }
+                    ],
+                    "columns": 2
+                  }
+                },
+                {
+                  "id": "cy-dr-b",
+                  "type": "text",
+                  "props": {
+                    "text": "If these features sound like something your business can benefit from, ask us about our Dura-Ride options for the TJ5000 and TJ9000. We're here to meet all your equipment needs for your business."
+                  }
+                },
+                {
+                  "id": "cy-dr-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Ask about Dura-Ride →",
+                        "url": "/contact",
+                        "style": "link",
+                        "intent": "contact-dealer"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cy-financing",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-grid",
+        "values": {
+          "eyebrow": "FINANCING",
+          "heading": "Paying for it.",
+          "span": 6,
+          "background": "paper",
+          "items": [
+            {
+              "title": "Financing your new Capacity yard truck",
+              "body": "Investing in new equipment is a big decision, but we make it easier with tailored financing solutions. Sun State International offers flexible financing options to help you secure the equipment you need without straining your budget.",
+              "linkLabel": "Explore our Financing page →",
+              "linkUrl": "/financing"
+            },
+            {
+              "title": "Convenient payments with our credit application",
+              "body": "With approved credit and a minimal down payment, you can secure financing that fits your budget. We offer the flexibility to combine options like physical damage insurance, GAP waivers, extended service contracts, and protection plans into one convenient monthly payment, making it easier to manage costs while protecting your investment.",
+              "linkLabel": "Apply for your credit application →",
+              "linkUrl": "https://www.navistarfinancial.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cy-parts",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-grid",
+        "values": {
+          "eyebrow": "KEEPING IT IN THE YARD, NOT THE SHOP",
+          "heading": "Capacity parts, warranty and service.",
+          "body": "Our aftermarket parts department stocks Capacity yard tractor parts and handles warranty, and our service departments keep yard trucks working — in the shop or at your yard with mobile service.",
+          "span": 4,
+          "background": "card",
+          "items": [
+            {
+              "title": "Capacity parts & warranty",
+              "body": "Capacity yard tractor parts and warranty handled through our Tampa aftermarket parts department, with pickup and delivery.",
+              "linkLabel": "Aftermarket parts →",
+              "linkUrl": "/aftermarket"
+            },
+            {
+              "title": "Service departments",
+              "body": "Factory-trained technicians in Tampa, Davenport and Sarasota, open until 7 PM on weekdays with after-hours support via Certified Fleet.",
+              "linkLabel": "Service department →",
+              "linkUrl": "/service"
+            },
+            {
+              "title": "Mobile service",
+              "body": "Repairs, diagnostics and preventative maintenance performed at your yard, Monday through Friday, 8 AM to 5 PM.",
+              "linkLabel": "Mobile service →",
+              "linkUrl": "/mobile-service"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cy-fleet",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-grid",
+        "values": {
+          "eyebrow": "COMPLETE YOUR FLEET",
+          "heading": "Everything else the operation needs.",
+          "body": "In addition to Capacity yard trucks, Sun State International offers a wide selection of high-quality equipment from top brands, including Globe Trailers and Hyundai Translead. Whether you need a brand-new truck or a reliable used trailer, we have you covered.",
+          "span": 3,
+          "background": "paper",
+          "items": [
+            {
+              "title": "Trucks",
+              "body": "New and used International heavy and medium-duty trucks.",
+              "linkLabel": "New trucks →",
+              "linkUrl": "/store/inventory?type=truck&condition=new"
+            },
+            {
+              "title": "Trailers",
+              "body": "New, used and rental Hyundai Translead and Globe Trailers.",
+              "linkLabel": "Browse trailers →",
+              "linkUrl": "/store/inventory?type=trailer"
+            },
+            {
+              "title": "Let's get you going",
+              "body": "Parts and service across all six Florida locations.",
+              "linkLabel": "Parts department →",
+              "linkUrl": "/parts"
+            },
+            {
+              "title": "IC Bus",
+              "body": "School and commercial buses through Sun State Bus Centers.",
+              "linkLabel": "Learn more →",
+              "linkUrl": "https://www.sunstatebuscenters.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cy-testimonials",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "card"
+      },
+      "children": [
+        {
+          "id": "cy-t-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "cy-t-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "cy-t-block",
+                  "type": "testimonials",
+                  "props": {
+                    "heading": "What customers say.",
+                    "headingLevel": 2,
+                    "items": [
+                      {
+                        "quote": "Came in for coolant leak was told I would be down about a day or so. Mechanic was on it and had me rolling by the same afternoon…great work, proud professionalism clean lounge and restroom.",
+                        "name": "Da Mileman",
+                        "rating": 5
+                      },
+                      {
+                        "quote": "Good place been going there for 30 or 40 years.",
+                        "name": "James Ashley",
+                        "rating": 5
+                      },
+                      {
+                        "quote": "Mike Baker came out on Thursday, 3/10, to do some training modules with my technicians for the day and he did an outstanding job. Mike was extremely knowledgeable on the subject matter, very engaging with the group.",
+                        "name": "George Murray",
+                        "rating": 5
+                      },
+                      {
+                        "quote": "When a truck driver breaks his truck it is the worst problem because it affects your entire personal, financial and work life. Without a doubt, in this workshop they understand you from the moment you arrive.",
+                        "name": "Angel Colon",
+                        "rating": 5
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cy-faq",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "paper",
+        "anchor": "cy-faq"
+      },
+      "children": [
+        {
+          "id": "cy-faq-head-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "cy-faq-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "cy-faq-head-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Common questions.",
+                    "headingLevel": 2,
+                    "eyebrow": "YARD TRUCK FAQS"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cy-faq-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "cy-faq-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "cy-faq-list",
+                  "type": "widget",
+                  "props": {
+                    "widget": "faq",
+                    "config": {
+                      "items": [
+                        {
+                          "q": "What is a yard truck used for?",
+                          "a": "Yard trucks, also called trailer jockeys or spotters, move trailers within a facility. They are the backbone of modern logistics in distribution centers, warehouses, ports, rail car terminals and intermodal trucking operations."
+                        },
+                        {
+                          "q": "Which Capacity TJ model should I choose?",
+                          "a": "The TJ5000 is a single-axle truck with a GCWR up to 81,000 lbs that can move up to 242,000 pounds, in off-highway or DOT versions. The TJ6500 is a tandem-axle model with a GCWR up to 125,000 pounds and 90,000 pounds of gradability for greater stability. The TJ9000 is a single-axle model with a GCWR up to 242,000 pounds for the toughest intermodal, warehouse and port applications."
+                        },
+                        {
+                          "q": "What is the difference between off-highway and DOT models?",
+                          "a": "Off-highway models are intended for in-house use in warehouse and distribution operations where durability and maneuverability matter most. DOT models are better suited to intermodal trucking and operations that require navigating rough surface conditions like potholes and railroad crossings."
+                        },
+                        {
+                          "q": "What is Dura-Ride?",
+                          "a": "Dura-Ride is a suspension option offering enhanced comfort for operators, less wear and tear on cargo, reduced maintenance costs and improved operator health and safety. Ask us about Dura-Ride options for the TJ5000 and TJ9000."
+                        },
+                        {
+                          "q": "Can I finance a Capacity yard truck?",
+                          "a": "Yes. With approved credit and a minimal down payment you can secure financing, and combine physical damage insurance, GAP waivers, extended service contracts and protection plans into one convenient monthly payment."
+                        },
+                        {
+                          "q": "Do you stock Capacity parts and service yard trucks?",
+                          "a": "Yes. Our aftermarket parts department stocks Capacity yard tractor parts and handles warranty, and our service departments in Tampa, Sarasota and Davenport service yard trucks, with mobile service available at your yard."
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cy-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "FIND THE RIGHT MODEL",
+          "heading": "Tell us about your yard.",
+          "body": "Trailer weights, surface conditions, shifts per day and whether you need DOT certification — that's all we need to point you at the right TJ model.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "View Capacity inventory",
+          "secondaryUrl": "/store/inventory?brand=capacity"
+        }
+      }
+    }
+  ]
+}

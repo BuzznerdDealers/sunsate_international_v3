@@ -1,0 +1,210 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "team-hero",
+      "type": "hero",
+      "props": {
+        "headingLevel": 1,
+        "eyebrow": "HOME / OUR STORY / MEET THE TEAM",
+        "headline": "Meet the Sun State Team",
+        "subhead": "Sun State International Trucks and Sun State Trailers share one team of 38 people across six Florida locations in Tampa, Sarasota, Davenport and Brooksville — executive staff, truck and trailer sales, parts, service and store management.",
+        "image": {
+          "src": "/img/photo-placeholder.svg",
+          "alt": "The Sun State team — photograph to be supplied",
+          "width": 1600,
+          "height": 900
+        }
+      }
+    },
+    {
+      "id": "team-jump",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 6,
+        "background": "paper"
+      },
+      "children": [
+        {
+          "id": "jump-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "jump-col",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "jump-menu",
+                  "type": "menu",
+                  "props": {
+                    "menuId": "team-departments",
+                    "layout": "horizontal",
+                    "align": "center",
+                    "depth": 1
+                  }
+                },
+                {
+                  "id": "jump-note",
+                  "type": "text",
+                  "props": {
+                    "text": "Trucks, trailers, parts and service — one team across six Florida locations.",
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "team-departments",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "staff-departments",
+        "values": {
+          "departments": [
+            {
+              "id": "executive-staff",
+              "label": "Executive Staff",
+              "blurb": "Leadership across both Sun State International Trucks and Sun State Trailers."
+            },
+            {
+              "id": "wholegoods-sales-rental",
+              "label": "Wholegoods Sales & Rental",
+              "blurb": "New and used trucks, Globe and Hyundai Translead trailers, rental and finance."
+            },
+            {
+              "id": "parts",
+              "label": "Parts",
+              "blurb": "Genuine OEM, Diamond Advantage and all-makes parts for trucks and trailers."
+            },
+            {
+              "id": "parts-sales-team",
+              "label": "Parts Sales Team",
+              "blurb": "Territory parts representatives across Tampa, Sarasota, Brooksville and Davenport."
+            },
+            {
+              "id": "service",
+              "label": "Service",
+              "blurb": "Diamond Edge certified service, aftermarket modifications and mobile maintenance."
+            },
+            {
+              "id": "store-managers",
+              "label": "Store Managers",
+              "blurb": "Parts and service operations leadership at each Sun State location."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "team-faq",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "card",
+        "anchor": "team-faq"
+      },
+      "children": [
+        {
+          "id": "team-faq-head-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "team-faq-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "team-faq-head-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Who to ask for at Sun State.",
+                    "headingLevel": 2,
+                    "eyebrow": "QUICK ANSWERS"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "team-faq-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "team-faq-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "team-faq-list",
+                  "type": "widget",
+                  "props": {
+                    "widget": "faq",
+                    "config": {
+                      "items": [
+                        {
+                          "q": "Who is the CEO of Sun State International Trucks?",
+                          "a": "Oscar Horton is CEO. Miriam Horton is VP and Anthony Martell is COO."
+                        },
+                        {
+                          "q": "Who do I contact about buying a trailer?",
+                          "a": "Scott Anderson is Truck & Trailer Sales Manager and Debbie Hall handles New Truck and Globe Trailer sales. Sun State Trailers sells Hyundai Translead and Globe Trailers from the Tampa and Davenport locations."
+                        },
+                        {
+                          "q": "Who manages parts and service at each location?",
+                          "a": "Jason Velez in Tampa, Paul Royals in Davenport, Mike Velez in Sarasota, Ronnie Jones in Brooksville and Damian Groene at the Tampa Aftermarket center."
+                        },
+                        {
+                          "q": "Where is the Sun State team located?",
+                          "a": "Six Florida locations: Tampa (6020 E Adamo Dr), Sarasota (1000 Sarasota Center Blvd), Davenport (41609 Hwy 27), Brooksville (17127 Runway Drive), Tampa Aftermarket Parts (7105 E 6th Ave) and Trailer Sales in Tampa."
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "team-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "LET'S GET IN TOUCH",
+          "heading": "Ready to get on the road?",
+          "body": "Contact us to explore our trucks and trailers and experience nothing less than the dedicated care you deserve.",
+          "primaryLabel": "Contact us",
+          "primaryUrl": "/contact",
+          "secondaryLabel": "See open roles",
+          "secondaryUrl": "/careers"
+        }
+      }
+    }
+  ]
+}

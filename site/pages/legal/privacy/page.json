@@ -1,0 +1,515 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "pp-hero",
+      "type": "hero",
+      "props": {
+        "headingLevel": 1,
+        "eyebrow": "HOME / PRIVACY POLICY",
+        "headline": "Privacy Policy",
+        "subhead": "Applies to the Sun State International Trucks and Sun State Trailers websites. Last updated September 11, 2026.",
+        "image": {
+          "src": "/img/photo-placeholder.svg",
+          "alt": "Privacy Policy — no photograph in this design",
+          "width": 1600,
+          "height": 900
+        }
+      }
+    },
+    {
+      "id": "pp-intro",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 9,
+        "background": "paper",
+        "anchor": "pp-intro"
+      },
+      "children": [
+        {
+          "id": "pp-intro-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "pp-intro-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "pp-intro-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Use of this website acknowledges your consent to this Privacy Policy for Dealer Spike, LLC and Sun State International Trucks, LLC. and Dealer Spike Opco, LLC. Protecting your private information is our priority and we are committed to safeguarding your privacy online.\n\nThis Privacy Policy explains what personal information we may collect about you through our website, when we collect it, how we may use it, who we may disclose it to, and is intended to help you understand the terms and conditions surrounding the collection and use of your data.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "pp-toc-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "On this page",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "pp-toc",
+                  "type": "menu",
+                  "props": {
+                    "menuId": "privacy-toc",
+                    "layout": "horizontal",
+                    "depth": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pp-body",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "card"
+      },
+      "children": [
+        {
+          "id": "pp-body-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "pp-body-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "pp-how-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "How Your Personal Information Is Collected",
+                    "headingLevel": 2,
+                    "anchor": "pp-how"
+                  }
+                },
+                {
+                  "id": "pp-how-b",
+                  "type": "text",
+                  "props": {
+                    "text": "We collect Personal Information that you voluntarily give or has been given through some other direct contact from you. When you access our website, we may also passively or automatically collect additional Personal Information and non-personally identifiable data regarding the means you use to access our website and the content you view when you use our website, for example, via cookies on our website.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "pp-quotes-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Requests for Unit Quotes",
+                    "headingLevel": 2,
+                    "anchor": "pp-quotes"
+                  }
+                },
+                {
+                  "id": "pp-quotes-b",
+                  "type": "text",
+                  "props": {
+                    "text": "If you request a unit price quote, you may be asked to provide Personal Information such as your name, address, telephone number, zip code, email address and other transactional information related to the desired unit purchase. Your Personal Information may be used to contact you with the requested quote or to request additional information. While not required, you may voluntarily provide financial information so that a determination can be made regarding units that meet the parameters of your requested unit quote or your pre-qualification for financing, if interested.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "pp-orders-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Online Unit Orders",
+                    "headingLevel": 2,
+                    "anchor": "pp-orders"
+                  }
+                },
+                {
+                  "id": "pp-orders-b",
+                  "type": "text",
+                  "props": {
+                    "text": "If you submit an online unit order, you will be required to provide Personal Information to complete the purchase transaction. This information includes your name, email address, shipping address as well as financial information to facilitate payment for the transaction and for billing purposes. If your online unit order is not processed correctly, your Personal Information may be used to contact you to finalize the transaction.\n\nIn order to process a purchase transaction, it may be necessary for us to supplement information you provide with information we receive from third party sources to obtain approval from a financial lending institution. Your Personal Information may also be shared with third parties to assist with finalizing the purchase transaction such as shipping companies (i.e., UPS, USPS, FedEx) and credit card processing companies. These third-party companies do not, to our knowledge, retain, share, store, or use Personal Information for any secondary purposes outside of the purpose of providing the required services.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "pp-payments-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Monthly Payment Calculations",
+                    "headingLevel": 2,
+                    "anchor": "pp-payments"
+                  }
+                },
+                {
+                  "id": "pp-payments-b",
+                  "type": "text",
+                  "props": {
+                    "text": "If you use the digital retailing tool to calculate your estimated monthly payment, you are not required to provide Personal Information unless you decide to contact the dealer to obtain additional information about the unit you are interested in. If you decide to contact the dealer, you will be asked to provide your name, email address, shipping address and phone number. Your Personal Information will be used to contact you regarding your inquiry.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "pp-logs-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Log Files",
+                    "headingLevel": 2,
+                    "anchor": "pp-logs"
+                  }
+                },
+                {
+                  "id": "pp-logs-b",
+                  "type": "text",
+                  "props": {
+                    "text": "We use IP addresses to analyze trends, administer the site, track user's movement, and gather broad demographic and geographic information for aggregate use. IP addresses are only linked to Personal Information if you submit a form requesting additional information.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "pp-surveys-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Surveys and Contests",
+                    "headingLevel": 2,
+                    "anchor": "pp-surveys"
+                  }
+                },
+                {
+                  "id": "pp-surveys-b",
+                  "type": "text",
+                  "props": {
+                    "text": "From time to time, this website may offer contests or request information from you via surveys to conduct research about your opinion of current services or of potential new services that may be offered. Participation in these surveys or contests is completely voluntary and you are not obligated to disclose the Personal Information requested such as your name, email address, mailing address, or demographic information (i.e., age, zip code). If you elect to participate in a contest, the contact information provided will only be used to notify the winners and award prizes. Survey information will only be used for purposes of monitoring or improving the use and satisfaction of this website.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "pp-use-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Use of Your Personal Information",
+                    "headingLevel": 2,
+                    "anchor": "pp-use"
+                  }
+                },
+                {
+                  "id": "pp-use-b",
+                  "type": "text",
+                  "props": {
+                    "text": "We may use or disclose the Personal Information we collect for one or more of the following business purposes:",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "pp-cookies-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Use of Cookies",
+                    "headingLevel": 2,
+                    "anchor": "pp-cookies"
+                  }
+                },
+                {
+                  "id": "pp-cookies-b",
+                  "type": "text",
+                  "props": {
+                    "text": "Our website may use “cookies” to help you personalize your online experience. A cookie is a text file that is placed on your hard disk by a web page server. Cookies cannot be used to run programs or deliver viruses to your computer. Cookies are uniquely assigned to you and can only be read by a web server in the domain that issued the cookie to you.\n\nCookies can be used for various purposes such as to detect whether your device has accessed a particular online service before. We use cookies on pages to make your visit to our website more enjoyable and to enable the use of certain functions, including the ability to identify units that have been previously viewed on your device.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "pp-share-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Who We Share Your Personal Information With",
+                    "headingLevel": 2,
+                    "anchor": "pp-share"
+                  }
+                },
+                {
+                  "id": "pp-share-b",
+                  "type": "text",
+                  "props": {
+                    "text": "We do not sell, rent or lease our customer lists to third parties. We may share your Personal Information with:",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "pp-retention-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Data Retention",
+                    "headingLevel": 2,
+                    "anchor": "pp-retention"
+                  }
+                },
+                {
+                  "id": "pp-retention-b",
+                  "type": "text",
+                  "props": {
+                    "text": "We retain Personal Information we collect from you for the period of time that is necessary to fulfill the purposes outlined in this Privacy Policy (for example, to provide you with a service you have requested or to comply with applicable legal, tax or accounting requirements), unless a longer retention period is required or permitted by law.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "pp-thirdparty-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Access to Third Party Websites",
+                    "headingLevel": 2,
+                    "anchor": "pp-thirdparty"
+                  }
+                },
+                {
+                  "id": "pp-thirdparty-b",
+                  "type": "text",
+                  "props": {
+                    "text": "This website may contain links to other sites. Please be aware that we are not responsible for the privacy practices of such other sites. We encourage our users to read the privacy statements of every website that collects personally identifiable information. This privacy statement applies solely to information collected by this website.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "pp-security-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Security",
+                    "headingLevel": 2,
+                    "anchor": "pp-security"
+                  }
+                },
+                {
+                  "id": "pp-security-b",
+                  "type": "text",
+                  "props": {
+                    "text": "We take precautions to protect your information. When you submit sensitive information via our website, your information is protected both online and offline. Whenever we collect sensitive information, that information is encrypted and transmitted to us in a secure way. We do not collect sensitive Personal Information in online forms you may voluntarily complete to indicate your interest in a unit or service. The computers and servers in which we store Personal Information are kept in a secure environment.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "pp-children-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Children Under Thirteen",
+                    "headingLevel": 2,
+                    "anchor": "pp-children"
+                  }
+                },
+                {
+                  "id": "pp-children-b",
+                  "type": "text",
+                  "props": {
+                    "text": "We believe that it is especially important to protect children's privacy online. We do not knowingly collect Personal Information from children under the age of thirteen, regardless of the source. Nor do we share with any third party for any purpose whatsoever Personal Information from website visitors younger than thirteen years of age. If you are under the age of thirteen, you must ask your parent or guardian for permission to use this website.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "pp-california-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Privacy Notice for California Residents",
+                    "headingLevel": 2,
+                    "anchor": "pp-california"
+                  }
+                },
+                {
+                  "id": "pp-california-b",
+                  "type": "text",
+                  "props": {
+                    "text": "This Privacy Notice for California Residents supplements and is expressly made part of the information contained in the Privacy Policy and applies solely to all visitors, users, and others who reside in the State of California (“consumers” or “you”). We adopt this Notice to comply with the California Consumer Privacy Act, as amended by the California Privacy Rights Act (“CCPA”). Any terms defined in the CCPA have the same meaning when used in this Notice.\n\nUnder the CCPA, we are required to disclose whether we sell Personal Information. We do not sell Personal Information, but we may share Personal Information with third parties or allow them to collect Personal Information from our Site or services if those third parties are authorized service providers or business partners who have agreed to our contractual limitations as to their retention, use, and disclosure of such Personal Information, or if you direct us to disclose your Personal Information to third parties.\n\nCalifornia law grants you the right to know: the categories of Personal Information we have collected about you; the categories of sources from which the Personal Information is collected; our business or commercial purpose for collecting Personal Information; the categories of third parties with whom we share Personal Information, if any; and the specific pieces of Personal Information we have collected about you.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "pp-optout-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Opt-Out & Unsubscribe",
+                    "headingLevel": 2,
+                    "anchor": "pp-optout"
+                  }
+                },
+                {
+                  "id": "pp-optout-b",
+                  "type": "text",
+                  "props": {
+                    "text": "We respect your privacy and give you an opportunity to opt-out of receiving announcements of certain information at any time. Users may opt-out of receiving marketing communications from us by contacting us via email at support@dealerspike.com. Users may also unsubscribe from newsletters by using the unsubscribe link at the bottom of the newsletter.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "pp-access-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Accessing this Website",
+                    "headingLevel": 2,
+                    "anchor": "pp-access"
+                  }
+                },
+                {
+                  "id": "pp-access-b",
+                  "type": "text",
+                  "props": {
+                    "text": "This website is hosted on servers located in the United States. As such, your connection will be through and to servers located in the United States. Any Personal Information you provide during your visit will be processed and maintained on our web servers and other internal systems located within the United States. By using this website, you consent to the collection and use of your anonymous data, Personal Information, and/or form submissions for the purposes of analytics and/or advertising.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "pp-updates-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Updates to this Privacy Policy",
+                    "headingLevel": 2,
+                    "anchor": "pp-updates"
+                  }
+                },
+                {
+                  "id": "pp-updates-b",
+                  "type": "text",
+                  "props": {
+                    "text": "We reserve the right to change and update this Privacy Policy. These changes will be made when appropriate, and in a timely manner. We encourage you to examine our Privacy Policy from time to time to ensure you are aware of any changes we may have made. Your continued use of our website following an update to the Privacy Policy indicates your agreement to the same.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "pp-rights-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "How to Exercise Your Rights and Contact Information",
+                    "headingLevel": 2,
+                    "anchor": "pp-rights"
+                  }
+                },
+                {
+                  "id": "pp-rights-b",
+                  "type": "text",
+                  "props": {
+                    "text": "If your Personal Information changes (i.e., email address, mailing address), or if you no longer desire to receive information from us, we will endeavor to correct, update, or remove your Personal Information from our records. If you have any questions or comments about this Privacy Policy, the ways in which we collect and use your information described above, or your choices and rights regarding such use, please do not hesitate to contact us at support@dealerspike.com.\n\nIf you contact us directly via email, we may require that you provide us with certain information in order to verify your identity: enough information to identify you (for example your full name, email address and phone number), and a description of what right you want to exercise and the information to which your request relates.\n\nIf we are not able to verify your identity or verify that the person making the request is the person about whom we collected the information, we are not obligated to make a data access or data portability disclosure. Any Personal Information we collect from you to verify your identity in connection with your request will be used solely for the purposes of verification.",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pp-faq",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "paper",
+        "anchor": "pp-faq"
+      },
+      "children": [
+        {
+          "id": "pp-faq-head-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "pp-faq-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "pp-faq-head-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Common questions.",
+                    "headingLevel": 2,
+                    "eyebrow": "PRIVACY FAQS"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pp-faq-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "pp-faq-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "pp-faq-list",
+                  "type": "widget",
+                  "props": {
+                    "widget": "faq",
+                    "config": {
+                      "items": [
+                        {
+                          "q": "Does Sun State sell my personal information?",
+                          "a": "No. We do not sell, rent or lease our customer lists to third parties and we do not sell Personal Information. We may share Personal Information with authorized service providers and business partners who have agreed to contractual limitations on their retention, use and disclosure of it, or where you direct us to."
+                        },
+                        {
+                          "q": "How do I opt out of marketing communications?",
+                          "a": "Email support@dealerspike.com to opt out of receiving marketing communications, or use the unsubscribe link at the bottom of any newsletter."
+                        },
+                        {
+                          "q": "How do I request access to or deletion of my data?",
+                          "a": "Contact support@dealerspike.com with enough information to identify you (full name, email address and phone number) and a description of the right you want to exercise. Under the CCPA you may make a data access or portability request twice within a twelve-month period."
+                        },
+                        {
+                          "q": "Do you collect information from children?",
+                          "a": "No. We do not knowingly collect Personal Information from children under the age of thirteen, regardless of source, and we do not share information from visitors younger than thirteen with any third party for any purpose."
+                        },
+                        {
+                          "q": "Does this policy cover both Sun State websites?",
+                          "a": "Yes. This Privacy Policy applies to the Sun State International Trucks and Sun State Trailers websites. It does not apply to other sites you may reach through links from our pages."
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pp-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "CONTACT US",
+          "heading": "Exercising your privacy rights.",
+          "body": "Contact us to access, correct or delete the personal information we hold, or to opt out of marketing communications.",
+          "primaryLabel": "Contact us",
+          "primaryUrl": "/contact",
+          "secondaryLabel": "Call 800.741.7566",
+          "secondaryUrl": "tel:+18007417566"
+        }
+      }
+    }
+  ]
+}

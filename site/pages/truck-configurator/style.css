@@ -1,0 +1,7 @@
+/* The configurator is a third-party application on navconfig.com. The node model
+   has no iframe block, so the page ships the real link — which is what the
+   design canvas shows and what a visitor without JS gets — and script.js frames
+   it below the button where scripts run. */
+.ss-frame { position: relative; width: 100%; height: 760px; border: 1px solid var(--line); background: var(--paper); margin-top: 24px; }
+.ss-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+@media (max-width: 640px) { .ss-frame { height: 560px; } }

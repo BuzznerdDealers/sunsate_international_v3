@@ -1,0 +1,1009 @@
+{
+  "version": 3,
+  "menus": [
+    {
+      "id": "main",
+      "name": "Main navigation",
+      "items": [
+        {
+          "id": "trucks-trailers",
+          "label": "Trucks & Trailers",
+          "type": "page",
+          "ref": "inventory",
+          "children": [
+            {
+              "id": "tt-shop",
+              "label": "Shop inventory",
+              "type": "label",
+              "children": [
+                {
+                  "id": "tt-all",
+                  "label": "All inventory",
+                  "type": "inventory",
+                  "ref": "inventory"
+                },
+                {
+                  "id": "tt-new-trucks",
+                  "label": "New trucks",
+                  "type": "inventory",
+                  "ref": "inventory?condition=new&type=truck"
+                },
+                {
+                  "id": "tt-used-trucks",
+                  "label": "Used trucks",
+                  "type": "inventory",
+                  "ref": "inventory?condition=used&type=truck"
+                },
+                {
+                  "id": "tt-new-trailers",
+                  "label": "New trailers",
+                  "type": "inventory",
+                  "ref": "inventory?condition=new&type=trailer"
+                },
+                {
+                  "id": "tt-used-trailers",
+                  "label": "Used trailers",
+                  "type": "inventory",
+                  "ref": "inventory?condition=used&type=trailer"
+                },
+                {
+                  "id": "tt-rentals",
+                  "label": "Rental & lease",
+                  "type": "inventory",
+                  "ref": "inventory?condition=rental"
+                }
+              ]
+            },
+            {
+              "id": "tt-category",
+              "label": "By category",
+              "type": "label",
+              "children": [
+                {
+                  "id": "tt-sleeper",
+                  "label": "Sleeper cabs",
+                  "type": "inventory",
+                  "ref": "inventory?category=sleeper-cabs"
+                },
+                {
+                  "id": "tt-day",
+                  "label": "Day cabs",
+                  "type": "inventory",
+                  "ref": "inventory?category=day-cabs"
+                },
+                {
+                  "id": "tt-dump",
+                  "label": "Dump trucks",
+                  "type": "inventory",
+                  "ref": "inventory?category=dump-trucks"
+                },
+                {
+                  "id": "tt-yard",
+                  "label": "Capacity yard trucks",
+                  "type": "page",
+                  "ref": "capacity-yard-trucks"
+                },
+                {
+                  "id": "tt-dryvan",
+                  "label": "Dry van trailers",
+                  "type": "inventory",
+                  "ref": "inventory?category=dry-van"
+                },
+                {
+                  "id": "tt-reefer",
+                  "label": "Refrigerated trailers",
+                  "type": "inventory",
+                  "ref": "inventory?category=refrigerated"
+                },
+                {
+                  "id": "tt-flatbed",
+                  "label": "Flatbed trailers",
+                  "type": "inventory",
+                  "ref": "inventory?category=flatbed"
+                }
+              ]
+            },
+            {
+              "id": "tt-tools",
+              "label": "Build & compare",
+              "type": "label",
+              "children": [
+                {
+                  "id": "tt-hub",
+                  "label": "Inventory hub",
+                  "type": "page",
+                  "ref": "inventory"
+                },
+                {
+                  "id": "tt-config",
+                  "label": "Truck configurator",
+                  "type": "page",
+                  "ref": "truck-configurator"
+                },
+                {
+                  "id": "tt-specs",
+                  "label": "Brochures & S13 powertrain",
+                  "type": "page",
+                  "ref": "brochures-and-s13-powertrain"
+                },
+                {
+                  "id": "tt-deal",
+                  "label": "Deal of the week",
+                  "type": "page",
+                  "ref": "deal-of-the-week"
+                },
+                {
+                  "id": "tt-finance",
+                  "label": "Financing",
+                  "type": "page",
+                  "ref": "financing"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "parts",
+          "label": "Parts",
+          "type": "page",
+          "ref": "parts",
+          "children": [
+            {
+              "id": "pt-shop",
+              "label": "Shop parts",
+              "type": "label",
+              "children": [
+                {
+                  "id": "pt-catalogue",
+                  "label": "Parts catalogue",
+                  "type": "inventory",
+                  "ref": "parts"
+                },
+                {
+                  "id": "pt-dept",
+                  "label": "Parts department",
+                  "type": "page",
+                  "ref": "parts"
+                },
+                {
+                  "id": "pt-online",
+                  "label": "Order parts online",
+                  "type": "url",
+                  "url": "https://www.sunstateparts.com/login"
+                }
+              ]
+            },
+            {
+              "id": "pt-counters",
+              "label": "Parts counters",
+              "type": "label",
+              "children": [
+                {
+                  "id": "pt-tampa",
+                  "label": "Tampa",
+                  "type": "page",
+                  "ref": "tampa-location"
+                },
+                {
+                  "id": "pt-brooksville",
+                  "label": "Truck & Trailer Parts — Brooksville",
+                  "type": "page",
+                  "ref": "brooksville-location"
+                },
+                {
+                  "id": "pt-aftermarket-parts",
+                  "label": "Aftermarket Parts — Tampa",
+                  "type": "page",
+                  "ref": "aftermarket-parts-location"
+                }
+              ]
+            },
+            {
+              "id": "pt-aftermarket",
+              "label": "Aftermarket",
+              "type": "label",
+              "children": [
+                {
+                  "id": "pt-mods",
+                  "label": "Modifications & alterations",
+                  "type": "page",
+                  "ref": "aftermarket"
+                },
+                {
+                  "id": "pt-warranty",
+                  "label": "Extended service",
+                  "type": "page",
+                  "ref": "extended-service"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "service",
+          "label": "Service",
+          "type": "page",
+          "ref": "service",
+          "children": [
+            {
+              "id": "sv-book",
+              "label": "Book service",
+              "type": "label",
+              "children": [
+                {
+                  "id": "sv-appt",
+                  "label": "Schedule an appointment",
+                  "type": "page",
+                  "ref": "service-appointment"
+                },
+                {
+                  "id": "sv-mobile",
+                  "label": "Mobile service",
+                  "type": "page",
+                  "ref": "mobile-service"
+                },
+                {
+                  "id": "sv-after",
+                  "label": "After hours — (863) 880-2206",
+                  "type": "url",
+                  "url": "tel:+18638802206"
+                }
+              ]
+            },
+            {
+              "id": "sv-dept",
+              "label": "Departments",
+              "type": "label",
+              "children": [
+                {
+                  "id": "sv-overview",
+                  "label": "Service & repair",
+                  "type": "page",
+                  "ref": "service"
+                },
+                {
+                  "id": "sv-extended",
+                  "label": "Extended service contracts",
+                  "type": "page",
+                  "ref": "extended-service"
+                },
+                {
+                  "id": "sv-parts",
+                  "label": "Parts department",
+                  "type": "page",
+                  "ref": "parts"
+                }
+              ]
+            },
+            {
+              "id": "sv-where",
+              "label": "Service centers",
+              "type": "label",
+              "children": [
+                {
+                  "id": "sv-tampa",
+                  "label": "Tampa",
+                  "type": "page",
+                  "ref": "tampa-location"
+                },
+                {
+                  "id": "sv-sarasota",
+                  "label": "Sarasota",
+                  "type": "page",
+                  "ref": "sarasota-location"
+                },
+                {
+                  "id": "sv-davenport",
+                  "label": "Davenport",
+                  "type": "page",
+                  "ref": "davenport-location"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "aftermarket",
+          "label": "Aftermarket",
+          "type": "page",
+          "ref": "aftermarket"
+        },
+        {
+          "id": "our-story",
+          "label": "Our Story",
+          "type": "page",
+          "ref": "our-story"
+        },
+        {
+          "id": "locations",
+          "label": "Location Details",
+          "type": "page",
+          "ref": "locations",
+          "children": [
+            {
+              "id": "lo-trucks",
+              "label": "Trucks, parts & service",
+              "type": "label",
+              "children": [
+                {
+                  "id": "lo-tampa",
+                  "label": "Tampa",
+                  "type": "page",
+                  "ref": "tampa-location"
+                },
+                {
+                  "id": "lo-davenport",
+                  "label": "Davenport",
+                  "type": "page",
+                  "ref": "davenport-location"
+                },
+                {
+                  "id": "lo-sarasota",
+                  "label": "Sarasota",
+                  "type": "page",
+                  "ref": "sarasota-location"
+                }
+              ]
+            },
+            {
+              "id": "lo-specialist",
+              "label": "Parts & trailers",
+              "type": "label",
+              "children": [
+                {
+                  "id": "lo-brooksville",
+                  "label": "Truck & Trailer Parts — Brooksville",
+                  "type": "page",
+                  "ref": "brooksville-location"
+                },
+                {
+                  "id": "lo-aftermarket",
+                  "label": "Aftermarket Parts — Tampa",
+                  "type": "page",
+                  "ref": "aftermarket-parts-location"
+                },
+                {
+                  "id": "lo-trailer",
+                  "label": "Trailer Sales — Tampa",
+                  "type": "page",
+                  "ref": "trailer-sales-location"
+                }
+              ]
+            },
+            {
+              "id": "lo-more",
+              "label": "Plan a visit",
+              "type": "label",
+              "children": [
+                {
+                  "id": "lo-all",
+                  "label": "All locations & hours",
+                  "type": "page",
+                  "ref": "locations"
+                },
+                {
+                  "id": "lo-contact",
+                  "label": "Contact us",
+                  "type": "page",
+                  "ref": "contact-us"
+                },
+                {
+                  "id": "lo-appt",
+                  "label": "Schedule service",
+                  "type": "page",
+                  "ref": "service-appointment"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hero-brands",
+      "name": "Hero brand row",
+      "items": [
+        {
+          "id": "hb-international",
+          "label": "INTERNATIONAL",
+          "type": "inventory",
+          "ref": "inventory?brand=international"
+        },
+        {
+          "id": "hb-icbus",
+          "label": "IC BUS",
+          "type": "inventory",
+          "ref": "inventory?brand=ic-bus"
+        },
+        {
+          "id": "hb-hyundai",
+          "label": "HYUNDAI TRANSLEAD",
+          "type": "inventory",
+          "ref": "inventory?brand=hyundai-translead"
+        },
+        {
+          "id": "hb-globe",
+          "label": "GLOBE TRAILERS",
+          "type": "inventory",
+          "ref": "inventory?brand=globe-trailers"
+        }
+      ]
+    },
+    {
+      "id": "utility",
+      "name": "Utility bar",
+      "items": [
+        {
+          "id": "u-tampa",
+          "label": "Tampa",
+          "type": "page",
+          "ref": "tampa-location"
+        },
+        {
+          "id": "u-sarasota",
+          "label": "Sarasota",
+          "type": "page",
+          "ref": "sarasota-location"
+        },
+        {
+          "id": "u-davenport",
+          "label": "Davenport",
+          "type": "page",
+          "ref": "davenport-location"
+        },
+        {
+          "id": "u-brooksville",
+          "label": "Brooksville",
+          "type": "page",
+          "ref": "brooksville-location"
+        },
+        {
+          "id": "u-aftermarket",
+          "label": "Aftermarket",
+          "type": "page",
+          "ref": "aftermarket-parts-location"
+        },
+        {
+          "id": "u-trailers",
+          "label": "Trailers",
+          "type": "page",
+          "ref": "trailer-sales-location"
+        },
+        {
+          "id": "u-centers",
+          "label": "Sun State US Centers",
+          "type": "page",
+          "ref": "locations"
+        }
+      ]
+    },
+    {
+      "id": "footer-brands",
+      "name": "Footer — Brands",
+      "items": [
+        {
+          "id": "fb-international",
+          "label": "International",
+          "type": "inventory",
+          "ref": "inventory?brand=international"
+        },
+        {
+          "id": "fb-icbus",
+          "label": "IC Bus",
+          "type": "inventory",
+          "ref": "inventory?brand=ic-bus"
+        },
+        {
+          "id": "fb-hyundai",
+          "label": "Hyundai Translead",
+          "type": "inventory",
+          "ref": "inventory?brand=hyundai-translead"
+        },
+        {
+          "id": "fb-globe",
+          "label": "Globe Trailers",
+          "type": "inventory",
+          "ref": "inventory?brand=globe-trailers"
+        },
+        {
+          "id": "fb-capacity",
+          "label": "Capacity Yard Trucks",
+          "type": "page",
+          "ref": "capacity-yard-trucks"
+        }
+      ]
+    },
+    {
+      "id": "footer-shop",
+      "name": "Footer — Shop",
+      "items": [
+        {
+          "id": "fs-new-trucks",
+          "label": "New Trucks",
+          "type": "inventory",
+          "ref": "inventory?condition=new&type=truck"
+        },
+        {
+          "id": "fs-used-trucks",
+          "label": "Used Trucks",
+          "type": "inventory",
+          "ref": "inventory?condition=used&type=truck"
+        },
+        {
+          "id": "fs-new-trailers",
+          "label": "New Trailers",
+          "type": "inventory",
+          "ref": "inventory?condition=new&type=trailer"
+        },
+        {
+          "id": "fs-used-trailers",
+          "label": "Used Trailers",
+          "type": "inventory",
+          "ref": "inventory?condition=used&type=trailer"
+        },
+        {
+          "id": "fs-parts",
+          "label": "Parts",
+          "type": "page",
+          "ref": "parts"
+        },
+        {
+          "id": "fs-service",
+          "label": "Service",
+          "type": "page",
+          "ref": "service"
+        },
+        {
+          "id": "fs-deal",
+          "label": "Deal of the Week",
+          "type": "page",
+          "ref": "deal-of-the-week"
+        }
+      ]
+    },
+    {
+      "id": "footer-company",
+      "name": "Footer — Company",
+      "items": [
+        {
+          "id": "fc-about",
+          "label": "About Us",
+          "type": "page",
+          "ref": "our-story"
+        },
+        {
+          "id": "fc-team",
+          "label": "Meet the Team",
+          "type": "page",
+          "ref": "meet-the-team"
+        },
+        {
+          "id": "fc-careers",
+          "label": "Careers",
+          "type": "page",
+          "ref": "careers"
+        },
+        {
+          "id": "fc-blog",
+          "label": "Blog",
+          "type": "url",
+          "url": "/blog"
+        },
+        {
+          "id": "fc-news",
+          "label": "News & Press",
+          "type": "page",
+          "ref": "news-and-press"
+        },
+        {
+          "id": "fc-community",
+          "label": "Community Involvement",
+          "type": "page",
+          "ref": "community-involvement"
+        },
+        {
+          "id": "fc-reviews",
+          "label": "Reviews",
+          "type": "page",
+          "ref": "reviews"
+        },
+        {
+          "id": "fc-contact",
+          "label": "Contact",
+          "type": "page",
+          "ref": "contact-us"
+        }
+      ]
+    },
+    {
+      "id": "legal",
+      "name": "Legal",
+      "items": [
+        {
+          "id": "lg-privacy",
+          "label": "Privacy",
+          "type": "page",
+          "ref": "privacy-policy"
+        },
+        {
+          "id": "lg-policies",
+          "label": "Policies",
+          "type": "page",
+          "ref": "policies"
+        },
+        {
+          "id": "lg-terms",
+          "label": "Terms & Conditions",
+          "type": "page",
+          "ref": "terms-and-conditions"
+        }
+      ]
+    },
+    {
+      "id": "team-departments",
+      "name": "Team departments",
+      "items": [
+        {
+          "id": "td-exec",
+          "label": "Executive Staff",
+          "type": "url",
+          "url": "#executive-staff"
+        },
+        {
+          "id": "td-whole",
+          "label": "Wholegoods Sales & Rental",
+          "type": "url",
+          "url": "#wholegoods-sales-rental"
+        },
+        {
+          "id": "td-parts",
+          "label": "Parts",
+          "type": "url",
+          "url": "#parts"
+        },
+        {
+          "id": "td-parts-sales",
+          "label": "Parts Sales Team",
+          "type": "url",
+          "url": "#parts-sales-team"
+        },
+        {
+          "id": "td-service",
+          "label": "Service",
+          "type": "url",
+          "url": "#service"
+        },
+        {
+          "id": "td-stores",
+          "label": "Store Managers",
+          "type": "url",
+          "url": "#store-managers"
+        }
+      ]
+    },
+    {
+      "id": "brochure-series",
+      "name": "Brochure series",
+      "items": [
+        {
+          "id": "bs-s13",
+          "label": "S13 Integrated Powertrain",
+          "type": "url",
+          "url": "#br-s13"
+        },
+        {
+          "id": "bs-mv",
+          "label": "MV Series",
+          "type": "url",
+          "url": "#br-mv"
+        },
+        {
+          "id": "bs-emv",
+          "label": "eMV Series",
+          "type": "url",
+          "url": "#br-emv"
+        },
+        {
+          "id": "bs-hv",
+          "label": "HV Series",
+          "type": "url",
+          "url": "#br-hv"
+        },
+        {
+          "id": "bs-lt",
+          "label": "LT Series",
+          "type": "url",
+          "url": "#br-lt"
+        },
+        {
+          "id": "bs-rh",
+          "label": "RH Series",
+          "type": "url",
+          "url": "#br-rh"
+        },
+        {
+          "id": "bs-hx",
+          "label": "HX Series",
+          "type": "url",
+          "url": "#br-hx"
+        },
+        {
+          "id": "bs-cv",
+          "label": "CV Series",
+          "type": "url",
+          "url": "#br-cv"
+        },
+        {
+          "id": "bs-lonestar",
+          "label": "LoneStar",
+          "type": "url",
+          "url": "#br-lonestar"
+        }
+      ]
+    },
+    {
+      "id": "parts-topics",
+      "name": "Parts page topics",
+      "items": [
+        {
+          "id": "pt-credit",
+          "label": "Credit options",
+          "type": "url",
+          "url": "#return-policy"
+        },
+        {
+          "id": "pt-return",
+          "label": "Return policy",
+          "type": "url",
+          "url": "#return-policy"
+        },
+        {
+          "id": "pt-online",
+          "label": "Online orders",
+          "type": "url",
+          "url": "#online-orders"
+        },
+        {
+          "id": "pt-mobile",
+          "label": "Mobile support",
+          "type": "url",
+          "url": "#mobile-support"
+        },
+        {
+          "id": "pt-trailer",
+          "label": "Trailer parts",
+          "type": "url",
+          "url": "#trailer-parts"
+        }
+      ]
+    },
+    {
+      "id": "contact-quick-links",
+      "name": "Contact quick links",
+      "items": [
+        {
+          "id": "cql-appt",
+          "label": "Schedule a service appointment →",
+          "type": "page",
+          "ref": "service-appointment"
+        },
+        {
+          "id": "cql-parts",
+          "label": "Order parts online →",
+          "type": "url",
+          "url": "https://www.sunstateparts.com/login"
+        },
+        {
+          "id": "cql-finance",
+          "label": "Financing and credit applications →",
+          "type": "page",
+          "ref": "financing"
+        },
+        {
+          "id": "cql-careers",
+          "label": "Careers at Sun State →",
+          "type": "page",
+          "ref": "careers"
+        },
+        {
+          "id": "cql-locations",
+          "label": "All locations and hours →",
+          "type": "page",
+          "ref": "locations"
+        }
+      ]
+    },
+    {
+      "id": "policies-toc",
+      "name": "Policies — on this page",
+      "items": [
+        {
+          "id": "po-toc-0",
+          "label": "Shipping and Handling",
+          "type": "url",
+          "url": "#po-shipping"
+        },
+        {
+          "id": "po-toc-1",
+          "label": "Returns and Exchanges",
+          "type": "url",
+          "url": "#po-returns"
+        },
+        {
+          "id": "po-toc-2",
+          "label": "Sales Tax",
+          "type": "url",
+          "url": "#po-tax"
+        },
+        {
+          "id": "po-toc-3",
+          "label": "Payment Methods",
+          "type": "url",
+          "url": "#po-payment"
+        },
+        {
+          "id": "po-toc-4",
+          "label": "Backordered Items",
+          "type": "url",
+          "url": "#po-backorders"
+        },
+        {
+          "id": "po-toc-5",
+          "label": "Secured Online Shopping",
+          "type": "url",
+          "url": "#po-secure"
+        },
+        {
+          "id": "po-toc-6",
+          "label": "Product Information and Pricing",
+          "type": "url",
+          "url": "#po-product"
+        }
+      ]
+    },
+    {
+      "id": "privacy-toc",
+      "name": "Privacy Policy — on this page",
+      "items": [
+        {
+          "id": "pp-toc-0",
+          "label": "Information We Collect",
+          "type": "url",
+          "url": "#pp-collect"
+        },
+        {
+          "id": "pp-toc-1",
+          "label": "How Your Personal Information Is Collected",
+          "type": "url",
+          "url": "#pp-how"
+        },
+        {
+          "id": "pp-toc-2",
+          "label": "Requests for Unit Quotes",
+          "type": "url",
+          "url": "#pp-quotes"
+        },
+        {
+          "id": "pp-toc-3",
+          "label": "Online Unit Orders",
+          "type": "url",
+          "url": "#pp-orders"
+        },
+        {
+          "id": "pp-toc-4",
+          "label": "Monthly Payment Calculations",
+          "type": "url",
+          "url": "#pp-payments"
+        },
+        {
+          "id": "pp-toc-5",
+          "label": "Log Files",
+          "type": "url",
+          "url": "#pp-logs"
+        },
+        {
+          "id": "pp-toc-6",
+          "label": "Surveys and Contests",
+          "type": "url",
+          "url": "#pp-surveys"
+        },
+        {
+          "id": "pp-toc-7",
+          "label": "Use of Your Personal Information",
+          "type": "url",
+          "url": "#pp-use"
+        },
+        {
+          "id": "pp-toc-8",
+          "label": "Use of Cookies",
+          "type": "url",
+          "url": "#pp-cookies"
+        },
+        {
+          "id": "pp-toc-9",
+          "label": "Who We Share Your Personal Information With",
+          "type": "url",
+          "url": "#pp-share"
+        },
+        {
+          "id": "pp-toc-10",
+          "label": "Data Retention",
+          "type": "url",
+          "url": "#pp-retention"
+        },
+        {
+          "id": "pp-toc-11",
+          "label": "Access to Third Party Websites",
+          "type": "url",
+          "url": "#pp-thirdparty"
+        },
+        {
+          "id": "pp-toc-12",
+          "label": "Security",
+          "type": "url",
+          "url": "#pp-security"
+        },
+        {
+          "id": "pp-toc-13",
+          "label": "Children Under Thirteen",
+          "type": "url",
+          "url": "#pp-children"
+        },
+        {
+          "id": "pp-toc-14",
+          "label": "Privacy Notice for California Residents",
+          "type": "url",
+          "url": "#pp-california"
+        },
+        {
+          "id": "pp-toc-15",
+          "label": "Opt-Out & Unsubscribe",
+          "type": "url",
+          "url": "#pp-optout"
+        },
+        {
+          "id": "pp-toc-16",
+          "label": "Accessing this Website",
+          "type": "url",
+          "url": "#pp-access"
+        },
+        {
+          "id": "pp-toc-17",
+          "label": "Updates to this Privacy Policy",
+          "type": "url",
+          "url": "#pp-updates"
+        },
+        {
+          "id": "pp-toc-18",
+          "label": "How to Exercise Your Rights and Contact Information",
+          "type": "url",
+          "url": "#pp-rights"
+        }
+      ]
+    },
+    {
+      "id": "terms-toc",
+      "name": "Terms and Conditions — on this page",
+      "items": [
+        {
+          "id": "tc-toc-0",
+          "label": "Limitation of Liability",
+          "type": "url",
+          "url": "#tc-liability"
+        },
+        {
+          "id": "tc-toc-1",
+          "label": "Images, Logos, Trademarks & Copyright",
+          "type": "url",
+          "url": "#tc-ip"
+        },
+        {
+          "id": "tc-toc-2",
+          "label": "Acceptance of Orders",
+          "type": "url",
+          "url": "#tc-orders"
+        }
+      ]
+    }
+  ]
+}

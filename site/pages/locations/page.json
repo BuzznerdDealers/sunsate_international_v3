@@ -1,0 +1,341 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "loc-hero",
+      "type": "hero",
+      "props": {
+        "headingLevel": 1,
+        "eyebrow": "HOME / LOCATIONS & HOURS",
+        "headline": "Locations & Hours",
+        "subhead": "Six locations across Central and Southwest Florida for trucks, trailers, parts, service and aftermarket work.",
+        "ctas": [
+          {
+            "label": "See all locations",
+            "url": "#loc-list",
+            "style": "primary",
+            "intent": "find-location"
+          },
+          {
+            "label": "Call 800.741.7566",
+            "url": "tel:+18007417566",
+            "style": "secondary",
+            "intent": "call-dealer"
+          }
+        ],
+        "image": {
+          "src": "/img/photo-placeholder.svg",
+          "alt": "A Sun State dealership exterior — photograph to be supplied",
+          "width": 1600,
+          "height": 900
+        }
+      }
+    },
+    {
+      "id": "loc-summary",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 9,
+        "background": "paper",
+        "anchor": "loc-summary"
+      },
+      "children": [
+        {
+          "id": "loc-sum-head-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "loc-sum-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "loc-sum-head-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Ready to find the right equipment for your business?",
+                    "headingLevel": 2,
+                    "eyebrow": "FIND A LOCATION"
+                  }
+                },
+                {
+                  "id": "loc-sum-head-b",
+                  "type": "text",
+                  "props": {
+                    "text": "Visit us at our convenient locations across Central and Southwest Florida. Every dealership carries sales, parts and service departments, with dedicated trailer repair bays, an aftermarket facility in Tampa and a parts store in Brooksville. After-hours service is available through Certified Fleet, and our mobile service team comes to you.",
+                    "width": "prose"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "loc-map-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "loc-map-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "loc-map",
+                  "type": "widget",
+                  "props": {
+                    "widget": "locations-map",
+                    "config": {
+                      "showMap": true
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loc-list",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "location-grid",
+        "values": {
+          "eyebrow": "",
+          "heading": "",
+          "span": 4,
+          "background": "card",
+          "anchor": "loc-list",
+          "locations": [
+            {
+              "tag": "TRUCKS · TRAILERS · PARTS · SERVICE",
+              "city": "Tampa",
+              "address": "6020 E Adamo Dr, Tampa, FL 33619",
+              "hours": "Sales 7 AM – 7 PM M–F, 8 AM – 12 PM Sat · Parts 7 AM – 7 PM M–F, 8 AM – 12 PM Sat · Service 7 AM – 7 PM M–F, 7 AM – 12 PM Sat · In-store shopping · Curbside pickup · After-hours service via Certified Fleet",
+              "phone": "Main — (813) 521-8148",
+              "phoneUrl": "tel:+18135218148",
+              "url": "/locations/tampa"
+            },
+            {
+              "tag": "TRUCKS · TRAILERS · PARTS · SERVICE",
+              "city": "Davenport",
+              "address": "41609 Hwy 27, Davenport, FL 33837",
+              "hours": "Sales 8 AM – 4:30 PM M–F · Parts 7 AM – 5 PM M–F, 8 AM – 12 PM Sat · Service 7 AM – 7 PM M–F, 7 AM – 12 PM Sat · In-store shopping · Curbside pickup · After-hours service via Certified Fleet",
+              "phone": "Main — (863) 424-2411",
+              "phoneUrl": "tel:+18634242411",
+              "url": "/locations/davenport"
+            },
+            {
+              "tag": "TRUCKS · TRAILERS · PARTS · SERVICE",
+              "city": "Sarasota",
+              "address": "1000 Sarasota Center Blvd, Sarasota, FL 34240",
+              "hours": "Sales 8 AM – 5 PM M–F · Parts 7 AM – 5 PM M–F, 8 AM – 12 PM Sat · Service 7 AM – 5 PM M–F · In-store shopping · Curbside pickup · After-hours service via Certified Fleet",
+              "phone": "Main — (941) 355-7681",
+              "phoneUrl": "tel:+19413557681",
+              "url": "/locations/sarasota"
+            },
+            {
+              "tag": "TRUCK & TRAILER PARTS",
+              "city": "Brooksville",
+              "address": "17127 Runway Drive, Brooksville, FL 34604",
+              "hours": "Store 7 AM – 5 PM M–F · In-store shopping · In-store pickup · Delivery",
+              "phone": "Parts — (352) 277-0221",
+              "phoneUrl": "tel:+13522770221",
+              "url": "/locations/brooksville"
+            },
+            {
+              "tag": "AFTERMARKET PARTS & MODIFICATIONS",
+              "city": "Sun State Aftermarket Parts — Tampa",
+              "address": "7105 East 6th Ave, Tampa, FL 33619",
+              "hours": "Store 7 AM – 4 PM M–F · In-store shopping · In-store pickup · Delivery · Body, hoist, liftgate and frame work",
+              "phone": "Aftermarket — (813) 627-3282",
+              "phoneUrl": "tel:+18136273282",
+              "url": "/locations/aftermarket-parts"
+            },
+            {
+              "tag": "SUN STATE TRAILERS · TRAILER SALES",
+              "city": "Trailer Sales — Tampa",
+              "address": "6020 E Adamo Dr, Tampa, FL 33619",
+              "hours": "Store 8 AM – 5 PM M–F · In-store shopping · In-store pickup · Delivery · Fax (813) 628-0527",
+              "phone": "Trailer Sales — (813) 621-1331",
+              "phoneUrl": "tel:+18136211331",
+              "url": "/locations/trailer-sales"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "loc-afterhours",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "media-band",
+        "values": {
+          "eyebrow": "WHEN WE'RE CLOSED",
+          "heading": "Coverage outside store hours.",
+          "body": "Certified Fleet provides after-hours support from 5:00 PM to 8:00 AM at our Tampa, Davenport and Sarasota locations, so help is available when a truck goes down overnight.\n\nOur mobile service team runs Monday–Friday, 8 AM – 5 PM from all three dealerships and performs many repairs, diagnostics and preventative maintenance at your yard or job site.",
+          "ctaLabel": "Mobile service →",
+          "ctaUrl": "/mobile-service",
+          "ctaStyle": "link",
+          "background": "paper",
+          "image": {
+            "src": "/img/photo-placeholder.svg",
+            "alt": "A Sun State service bay at night — photograph to be supplied",
+            "width": 1600,
+            "height": 900
+          }
+        }
+      }
+    },
+    {
+      "id": "loc-departments",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-grid",
+        "values": {
+          "eyebrow": "WHAT'S AT EACH LOCATION",
+          "heading": "Departments by site.",
+          "span": 3,
+          "background": "card",
+          "items": [
+            {
+              "title": "Truck sales",
+              "body": "New and used International trucks, IC Bus and Capacity yard trucks at Tampa, Davenport and Sarasota."
+            },
+            {
+              "title": "Trailer sales",
+              "body": "New and used Hyundai Translead and Globe Trailers through Sun State Trailers in Tampa."
+            },
+            {
+              "title": "Parts",
+              "body": "Parts counters at all three dealerships plus Brooksville Truck & Trailer Parts and Sun State Aftermarket Parts in Tampa."
+            },
+            {
+              "title": "Service & aftermarket",
+              "body": "Truck and trailer service bays in Tampa, Davenport and Sarasota; body, hoist and frame work at the Tampa aftermarket facility."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "loc-faq",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "paper",
+        "anchor": "loc-faq"
+      },
+      "children": [
+        {
+          "id": "loc-faq-head-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "loc-faq-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "loc-faq-head-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Common questions.",
+                    "headingLevel": 2,
+                    "eyebrow": "LOCATION FAQS"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "loc-faq-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "loc-faq-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "loc-faq-list",
+                  "type": "widget",
+                  "props": {
+                    "widget": "faq",
+                    "config": {
+                      "items": [
+                        {
+                          "q": "How many Sun State locations are there?",
+                          "a": "Six: full dealerships in Tampa, Davenport and Sarasota, Truck & Trailer Parts in Brooksville, Sun State Aftermarket Parts in Tampa, and Sun State Trailers Trailer Sales in Tampa."
+                        },
+                        {
+                          "q": "What are the service department hours?",
+                          "a": "Tampa and Davenport service run 7 AM to 7 PM Monday through Friday and 7 AM to 12 PM Saturday. Sarasota service runs 7 AM to 5 PM Monday through Friday. After-hours service is available via Certified Fleet from 5 PM to 8 AM."
+                        },
+                        {
+                          "q": "Which locations sell trailers?",
+                          "a": "Sun State Trailers Trailer Sales is at 6020 E Adamo Dr in Tampa, open 8 AM to 5 PM Monday through Friday. Trailer parts and service are available in Tampa, Davenport and Sarasota, and trailer parts are also stocked in Brooksville."
+                        },
+                        {
+                          "q": "Where do I go for aftermarket modifications?",
+                          "a": "Sun State Aftermarket Parts at 7105 East 6th Ave, Tampa, FL 33619, open 7 AM to 4 PM Monday through Friday. Call (813) 627-3282."
+                        },
+                        {
+                          "q": "Do you offer curbside pickup or delivery?",
+                          "a": "The Tampa, Davenport and Sarasota dealerships offer in-store shopping and curbside pickup. The Brooksville, Aftermarket and Trailer Sales locations offer in-store shopping, in-store pickup and delivery."
+                        },
+                        {
+                          "q": "Which areas do you serve?",
+                          "a": "Our locations serve Tampa, Sarasota, Davenport and Brooksville along with St. Petersburg, Lakeland, Orlando, Bradenton and the rest of Central and Southwest Florida, plus mobile service at your yard or job site."
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loc-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "CONTACT US",
+          "heading": "Ready to get on the road?",
+          "body": "Contact us to explore our trucks and trailers and experience nothing less than the dedicated care you deserve.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "info@sunstateintl.com",
+          "secondaryUrl": "mailto:info@sunstateintl.com"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+/* A legal page is one column of prose: the headings carry their own anchors and
+   the table of contents is a menu, so a clause can be renamed in one place. */
+[data-bz-node="po-body-col"] .bz-block--heading { padding-block: 40px 0; }
+[data-bz-node="po-body-col"] h2 { font-size: 26px; scroll-margin-top: 24px; }
+[data-bz-node="po-body-col"] .bz-text { max-width: 80ch; }
+[data-bz-node="po-body-col"] .bz-text p { font-size: 15px; line-height: 1.75; color: #3f3f3f; }
+[data-bz-node="po-toc"] .bz-nav { gap: 8px 16px; flex-wrap: wrap; }
+[data-bz-node="po-toc"] .bz-navitem > a { font-size: 13px; font-weight: 600; color: var(--accent); }
+[data-bz-node="po-hero"] { min-height: 0; }

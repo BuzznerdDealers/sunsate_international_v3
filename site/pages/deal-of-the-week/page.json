@@ -1,0 +1,385 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "dw-hero",
+      "type": "hero",
+      "props": {
+        "headingLevel": 1,
+        "eyebrow": "HOME / DEAL OF THE WEEK",
+        "headline": "Deal of the Week",
+        "subhead": "Featured trucks, trailers, parts and service offers, refreshed every week across our Florida locations.",
+        "ctas": [
+          {
+            "label": "Call 800.741.7566",
+            "url": "tel:+18007417566",
+            "style": "primary",
+            "intent": "call-dealer"
+          },
+          {
+            "label": "See this week's deals",
+            "url": "#dw-deals",
+            "style": "secondary",
+            "intent": "browse-inventory"
+          }
+        ],
+        "image": {
+          "src": "/img/photo-placeholder.svg",
+          "alt": "This week's featured unit — photograph to be supplied",
+          "width": 1600,
+          "height": 900
+        }
+      }
+    },
+    {
+      "id": "dw-intro",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 9,
+        "background": "paper",
+        "anchor": "dw-intro"
+      },
+      "children": [
+        {
+          "id": "dw-intro-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "dw-intro-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "dw-intro-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Every week we put a handful of units, parts and service offers out front. Some weeks it's a new International spec'd and ready to work, some weeks it's a used trailer coming off trade, sometimes it's a parts or PM special for fleets.\n\nDeals move fast and quantities are limited. Call 800.741.7566, mention the Deal of the Week, and we'll confirm what's still available and hold it for you.",
+                    "width": "prose"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dw-answers",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-grid",
+        "values": {
+          "eyebrow": "AT A GLANCE",
+          "heading": "How the Deal of the Week works.",
+          "span": 4,
+          "background": "card",
+          "anchor": "dw-answers",
+          "items": [
+            {
+              "title": "What it is",
+              "body": "A weekly set of featured specials from Sun State International Trucks and Sun State Trailers: one truck, one trailer, and one parts or service offer."
+            },
+            {
+              "title": "How often it changes",
+              "body": "Refreshed every week, and each offer runs only while that unit or part is available."
+            },
+            {
+              "title": "How to claim",
+              "body": "Call 800-741-7566 or message us, mention the Deal of the Week, and we will confirm availability and hold it."
+            },
+            {
+              "title": "Where",
+              "body": "Tampa (6020 Adamo Drive), Davenport (41609 Hwy 27), Sarasota (1000 Sarasota Center Blvd.) and Brooksville (17127 Runway Drive), Florida."
+            },
+            {
+              "title": "Financing",
+              "body": "Available with minimum down payment and approved credit through BMO Harris Bank, Navistar Financial and other sources; parts, accessories, insurance and extended coverage can be included."
+            },
+            {
+              "title": "Price terms",
+              "body": "Prices and availability are subject to change without notice; mistakenly posted prices or options do not obligate us to honor them."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dw-deals",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "photo-card-grid",
+        "values": {
+          "eyebrow": "THIS WEEK'S FEATURED DEALS · UPDATED WEEKLY, WHILE AVAILABLE",
+          "heading": "On the front row right now.",
+          "span": 4,
+          "background": "paper",
+          "anchor": "dw-deals",
+          "items": [
+            {
+              "image": {
+                "src": "/img/photo-placeholder.svg",
+                "alt": "This week's featured truck — photograph to be supplied",
+                "width": 1600,
+                "height": 900
+              },
+              "eyebrow": "TRUCK OF THE WEEK",
+              "title": "Featured truck",
+              "body": "Add this week's featured new or used International, IC Bus or Capacity yard truck here — year, make, model and what makes it a deal.",
+              "specs": "<strong>Year / make / model</strong> To be filled\n\n<strong>Mileage</strong> To be filled\n\n<strong>Location</strong> Tampa / Davenport / Sarasota",
+              "linkLabel": "View truck inventory →",
+              "linkUrl": "/store/inventory?type=truck"
+            },
+            {
+              "image": {
+                "src": "/img/photo-placeholder.svg",
+                "alt": "This week's featured trailer — photograph to be supplied",
+                "width": 1600,
+                "height": 900
+              },
+              "eyebrow": "TRAILER OF THE WEEK",
+              "title": "Featured trailer",
+              "body": "Add this week's featured Hyundai Translead or Globe trailer — dry van, reefer, flatbed or specialty, new or used.",
+              "specs": "<strong>Type</strong> To be filled\n\n<strong>Year / length</strong> To be filled\n\n<strong>Location</strong> Trailer Sales, Tampa",
+              "linkLabel": "View trailer inventory →",
+              "linkUrl": "/store/inventory?type=trailer"
+            },
+            {
+              "image": {
+                "src": "/img/photo-placeholder.svg",
+                "alt": "This week's parts or service offer artwork — to be supplied",
+                "width": 1600,
+                "height": 900
+              },
+              "eyebrow": "PARTS & SERVICE SPECIAL",
+              "title": "Featured parts or service offer",
+              "body": "Add this week's parts promotion or service special — PM package, DOT inspection, liftgate service, filters or aftertreatment cleaning.",
+              "specs": "<strong>Offer</strong> To be filled\n\n<strong>Good through</strong> To be filled\n\n<strong>Where</strong> All parts counters",
+              "linkLabel": "Parts department →",
+              "linkUrl": "/parts"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dw-terms",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 6,
+        "background": "paper"
+      },
+      "children": [
+        {
+          "id": "dw-terms-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "dw-terms-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "dw-terms-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Pricing and availability subject to change without notice. Mistakenly posted prices or options do not obligate us to those incorrect prices or options. See our <a href=\"/legal/terms\">Terms and Conditions</a>.",
+                    "width": "prose"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dw-how",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-grid",
+        "values": {
+          "eyebrow": "HOW TO CLAIM A DEAL",
+          "heading": "Three steps, one phone call.",
+          "span": 4,
+          "background": "card",
+          "anchor": "dw-how",
+          "items": [
+            {
+              "title": "1. Call or message",
+              "body": "Call 800.741.7566 or send a message and tell us which deal you're after. We'll confirm it's still available and which location has it.",
+              "linkLabel": "Send a message →",
+              "linkUrl": "/contact"
+            },
+            {
+              "title": "2. Sort the money",
+              "body": "With a minimum down payment and approved credit we can arrange financing, and roll parts, accessories, insurance and extended coverage into one monthly payment.",
+              "linkLabel": "Financing options →",
+              "linkUrl": "/financing"
+            },
+            {
+              "title": "3. Pick it up or get it fitted",
+              "body": "Take delivery at Tampa, Davenport or Sarasota, or have our aftermarket shop add the body, liftgate or equipment the job needs before you roll.",
+              "linkLabel": "Aftermarket & upfit →",
+              "linkUrl": "/aftermarket"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dw-shop",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-grid",
+        "values": {
+          "eyebrow": "NOT ON THE LIST THIS WEEK?",
+          "heading": "Shop the full inventory.",
+          "span": 3,
+          "background": "paper",
+          "items": [
+            {
+              "title": "New trucks",
+              "body": "International, IC Bus and Capacity yard trucks, spec'd for Florida work and ready to configure.",
+              "linkLabel": "New trucks →",
+              "linkUrl": "/store/inventory?type=truck&condition=new"
+            },
+            {
+              "title": "Used trucks",
+              "body": "Inspected trade-ins and off-lease units, with service history from our own technicians.",
+              "linkLabel": "Used trucks →",
+              "linkUrl": "/store/inventory?type=truck&condition=used"
+            },
+            {
+              "title": "Trailers",
+              "body": "New and used Hyundai Translead and Globe Trailers — dry van, reefer, flatbed and specialty.",
+              "linkLabel": "Trailer sales →",
+              "linkUrl": "/locations/trailer-sales"
+            },
+            {
+              "title": "Parts store",
+              "body": "Order genuine OEM and all-makes parts online for in-store pickup or delivery.",
+              "linkLabel": "Online parts store →",
+              "linkUrl": "https://www.sunstateparts.com/login"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dw-faq",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "card",
+        "anchor": "dw-faq"
+      },
+      "children": [
+        {
+          "id": "dw-faq-head-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "dw-faq-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "dw-faq-head-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Common questions.",
+                    "headingLevel": 2,
+                    "eyebrow": "DEAL OF THE WEEK FAQS"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dw-faq-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "dw-faq-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "dw-faq-list",
+                  "type": "widget",
+                  "props": {
+                    "widget": "faq",
+                    "config": {
+                      "items": [
+                        {
+                          "q": "How often do the deals change?",
+                          "a": "Featured deals are refreshed weekly. Offers run while the featured unit or part is available, so call to confirm a deal is still live before you drive out."
+                        },
+                        {
+                          "q": "How do I claim a Deal of the Week?",
+                          "a": "Call 800-741-7566, mention the Deal of the Week and the unit or part you saw, and a salesperson or parts advisor will confirm availability and hold it for you. You can also send a message through our contact page."
+                        },
+                        {
+                          "q": "Can I finance a Deal of the Week unit?",
+                          "a": "Yes. With a minimum down payment and approved credit you can arrange credit financing through BMO Harris Bank, Navistar Financial or our other financing sources, and roll parts, accessories, insurance and extended coverage into one monthly payment."
+                        },
+                        {
+                          "q": "Do the deals apply at every location?",
+                          "a": "Unit deals are tied to the location holding that unit, in Tampa, Davenport or Sarasota. Parts specials are available at our Tampa, Brooksville and Aftermarket parts counters and through the online parts store."
+                        },
+                        {
+                          "q": "Are advertised prices guaranteed?",
+                          "a": "Prices and availability are subject to change without notice, and mistakenly posted prices or options do not obligate us to those incorrect prices or options. See our Terms and Conditions for details."
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dw-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "DEALS MOVE FAST",
+          "heading": "Call before it's gone.",
+          "body": "Mention the Deal of the Week and we'll confirm availability, quote a payment and hold the unit while you decide.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact"
+        }
+      }
+    }
+  ]
+}

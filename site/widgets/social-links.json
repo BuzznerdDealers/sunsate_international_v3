@@ -1,0 +1,29 @@
+{
+  "id": "social-links",
+  "label": "Social links",
+  "description": "The row of social profile icons used in the utility bar and the footer.",
+  "props": [
+    {
+      "key": "tone",
+      "type": "select",
+      "label": "Icon colour",
+      "default": "light",
+      "options": [
+        { "value": "light", "label": "Light — on dark or accent" },
+        { "value": "dark", "label": "Dark — on paper or card" }
+      ]
+    },
+    {
+      "key": "links",
+      "type": "list",
+      "label": "Profiles",
+      "fields": [
+        { "key": "label", "type": "text", "label": "Network" },
+        { "key": "url", "type": "url", "label": "Profile URL" },
+        { "key": "icon", "type": "image", "label": "Icon" }
+      ]
+    }
+  ],
+  "html": "<ul class=\"ss-social ss-social--{{tone}}\">{{#each links}}<li class=\"ss-social__i\"><a class=\"ss-social__a\" href=\"{{link url}}\" aria-label=\"{{label}}\" data-bz-el=\"link\" data-bz-intent=\"social-profile\" target=\"_blank\" rel=\"noopener\"><img src=\"{{icon}}\" alt=\"\" width=\"14\" height=\"14\"></a></li>{{/each}}</ul>",
+  "css": ".ss-social{display:flex;align-items:center;gap:14px;margin:0;padding:0;list-style:none}\n.ss-social__i{display:flex}\n.ss-social__a{display:flex;line-height:1}\n.ss-social__a img{width:14px;height:14px;display:block}\n.ss-social--light .ss-social__a img{filter:brightness(0) invert(1)}\n.ss-social--dark .ss-social__a img{filter:none}\n.ss-social__a:hover{opacity:.75}"
+}

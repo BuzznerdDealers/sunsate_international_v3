@@ -1,0 +1,207 @@
+{
+  "version": 2,
+  "id": "feature-grid",
+  "name": "Feature card grid",
+  "css": "[data-bz-section=\"feature-grid\"] .bz-block { padding-block: 0 }\n[data-bz-section=\"feature-grid\"] .bz-block + .bz-block { padding-block-start: 12px }\n[data-bz-section=\"feature-grid\"] .bz-row + .bz-row { margin-top: 44px }\n[data-bz-section=\"feature-grid\"] h3 { font-size: 19px; margin: 0 0 10px }\n[data-bz-section=\"feature-grid\"] .bz-col p { font-size: 15px; color: #3f3f3f }\n[data-bz-section=\"feature-grid\"] .bz-col .bz-eyebrow { font-size: 10px; letter-spacing: .1em; color: var(--accent); margin-bottom: 12px }\n[data-bz-section=\"feature-grid\"] .bz-btns { margin-block: 14px 0 }\n[data-bz-section=\"feature-grid\"] .bz-section--bg-ink .bz-col p { color: #C7C1B4 }",
+  "props": [
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Eyebrow",
+      "default": ""
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": ""
+    },
+    {
+      "key": "body",
+      "type": "textarea",
+      "label": "Intro",
+      "default": ""
+    },
+    {
+      "key": "span",
+      "type": "number",
+      "label": "Card width in grid columns (12 = full)",
+      "default": 4
+    },
+    {
+      "key": "background",
+      "type": "select",
+      "label": "Band background",
+      "default": "card",
+      "options": [
+        {
+          "value": "card",
+          "label": "White"
+        },
+        {
+          "value": "paper",
+          "label": "Paper"
+        },
+        {
+          "value": "ink",
+          "label": "Dark chrome"
+        },
+        {
+          "value": "none",
+          "label": "None"
+        }
+      ]
+    },
+    {
+      "key": "anchor",
+      "type": "text",
+      "label": "Anchor id",
+      "default": ""
+    },
+    {
+      "key": "items",
+      "type": "list",
+      "label": "Cards",
+      "fields": [
+        {
+          "key": "eyebrow",
+          "type": "text",
+          "label": "Eyebrow"
+        },
+        {
+          "key": "title",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "key": "body",
+          "type": "textarea",
+          "label": "Body"
+        },
+        {
+          "key": "linkLabel",
+          "type": "text",
+          "label": "Link label"
+        },
+        {
+          "key": "linkUrl",
+          "type": "url",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "fg",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "{{background}}",
+        "paddingY": 10,
+        "anchor": "{{anchor}}"
+      },
+      "children": [
+        {
+          "id": "fg-head",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "fg-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "fg-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "eyebrow": "{{eyebrow}}",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "fg-body",
+                  "type": "text",
+                  "props": {
+                    "text": "{{body}}",
+                    "width": "prose"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "fg-grid",
+          "type": "row",
+          "props": {
+            "gap": 6,
+            "align": "stretch",
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "fg-card",
+              "type": "column",
+              "props": {
+                "span": "{{span}}",
+                "repeat": "items"
+              },
+              "styles": {
+                "base": {
+                  "background": "card",
+                  "borderWidth": 1,
+                  "borderStyle": "solid",
+                  "borderColor": "line",
+                  "paddingTop": 28,
+                  "paddingRight": 28,
+                  "paddingBottom": 28,
+                  "paddingLeft": 28
+                }
+              },
+              "children": [
+                {
+                  "id": "fg-card-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{title}}",
+                    "eyebrow": "{{eyebrow}}",
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "fg-card-b",
+                  "type": "text",
+                  "props": {
+                    "text": "{{body}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fg-card-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "{{linkLabel}}",
+                        "url": "{{linkUrl}}",
+                        "style": "link",
+                        "intent": "learn-more"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

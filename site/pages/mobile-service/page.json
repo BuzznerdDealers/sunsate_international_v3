@@ -1,0 +1,371 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "mob-hero",
+      "type": "hero",
+      "props": {
+        "headingLevel": 1,
+        "eyebrow": "HOME / SERVICE / MOBILE SERVICE",
+        "headline": "Mobile Service Truck",
+        "subhead": "Need mobile service for your commercial truck? Our Mobile Service technicians are here to help. Your one-stop shop for all of your commercial truck repair needs.",
+        "ctas": [
+          {
+            "label": "Call 800.741.7566",
+            "url": "tel:+18007417566",
+            "style": "primary",
+            "intent": "call-dealer"
+          },
+          {
+            "label": "Request mobile service",
+            "url": "/service-appointment#appointment-form",
+            "style": "secondary",
+            "intent": "book-service"
+          }
+        ],
+        "image": {
+          "src": "/img/photo-placeholder.svg",
+          "alt": "A Sun State mobile service truck — photograph to be supplied",
+          "width": 1600,
+          "height": 900
+        }
+      }
+    },
+    {
+      "id": "mob-summary",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 9,
+        "background": "paper",
+        "anchor": "mob-summary"
+      },
+      "children": [
+        {
+          "id": "mob-sum-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "mob-sum-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "mob-sum-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Give us a call today for your mobile service truck appointment. Available at our Tampa, Sarasota and Davenport locations, Monday–Friday, 8 AM – 5 PM.\n\nOur mobile service team is equipped to perform many repairs and maintenance services at your location, helping you reduce downtime and keep your operation moving without the added inconvenience of transporting your vehicle. Whether you're stuck roadside or at a job site, our technicians provide efficient, on-the-spot repairs for trucks and trailers alike.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "mob-stats",
+                  "type": "statBand",
+                  "props": {
+                    "stats": [
+                      {
+                        "value": "3",
+                        "label": "Dispatch points: Tampa, Sarasota, Davenport"
+                      },
+                      {
+                        "value": "8–5",
+                        "label": "Mobile service hours, Monday through Friday"
+                      },
+                      {
+                        "value": "60+",
+                        "label": "Certified factory-trained technicians behind every call"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mob-capabilities",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-grid",
+        "values": {
+          "eyebrow": "WHAT WE DO ON SITE",
+          "heading": "A service bay that drives to you.",
+          "body": "Each mobile truck carries diagnostic equipment, tooling and commonly needed parts, backed by our parts department and supplier network. Work that requires a lift, alignment rack or fabrication is scheduled into the shop instead.",
+          "span": 4,
+          "background": "card",
+          "anchor": "mob-capabilities",
+          "items": [
+            {
+              "eyebrow": "DIAGNOSTICS",
+              "title": "On-site diagnostics",
+              "body": "Fault code reads, sensor and aftertreatment checks and driveability diagnosis performed at your location so you know what the repair takes before the unit moves."
+            },
+            {
+              "eyebrow": "MAINTENANCE",
+              "title": "Preventative maintenance",
+              "body": "Scheduled PM services, fluid and filter changes and inspections performed in your yard, keeping units available instead of shuttling them to the shop."
+            },
+            {
+              "eyebrow": "REPAIRS",
+              "title": "Roadside and job-site repair",
+              "body": "Efficient, on-the-spot repairs when a truck or trailer is stuck roadside or at a job site, aimed at getting you back on the road the same visit."
+            },
+            {
+              "eyebrow": "CHASSIS",
+              "title": "Brakes, suspension and air systems",
+              "body": "Common chassis work including brake service, air leaks, suspension components and related adjustments handled from the mobile truck."
+            },
+            {
+              "eyebrow": "ELECTRICAL",
+              "title": "Electrical and lighting",
+              "body": "Batteries, charging systems, harnesses, lighting and trailer wiring repairs, including the electrical faults that keep a unit out of DOT compliance."
+            },
+            {
+              "eyebrow": "TRAILERS",
+              "title": "Trailer and liftgate repair",
+              "body": "Trailer repairs on site including liftgate service, doors, lighting and running gear, with liftgate installations, remounts and parts handled in the shop."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "mob-trailers",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "media-band",
+        "values": {
+          "eyebrow": "MOBILE TRAILER SERVICE",
+          "heading": "Trailers, wherever they sit.",
+          "body": "Sun State Trailers offers a mobile service that comes out to where you are to repair your trailer, so you can get back on the road as soon as possible. Whether you're stuck roadside or at a job site, our expert technicians are ready to provide efficient, on-the-spot repairs to minimize downtime.\n\nIf the job needs the shop instead, we have convenient locations in Tampa, Davenport and Sarasota with dedicated trailer repair bays.",
+          "ctaLabel": "Schedule trailer service →",
+          "ctaUrl": "/service-appointment",
+          "ctaStyle": "link",
+          "background": "paper",
+          "image": {
+            "src": "/img/photo-placeholder.svg",
+            "alt": "A roadside trailer repair — photograph to be supplied",
+            "width": 1600,
+            "height": 900
+          }
+        }
+      }
+    },
+    {
+      "id": "mob-request",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-grid",
+        "values": {
+          "eyebrow": "HOW TO GET A TRUCK ROLLING",
+          "heading": "Three ways to reach us.",
+          "span": 4,
+          "background": "card",
+          "items": [
+            {
+              "eyebrow": "FASTEST",
+              "title": "Call dispatch",
+              "body": "Tell us where the unit is, what it's doing and whether it's loaded. We'll confirm availability and an arrival window.",
+              "linkLabel": "800.741.7566 →",
+              "linkUrl": "tel:+18007417566"
+            },
+            {
+              "eyebrow": "ONLINE",
+              "title": "Request form",
+              "body": "Choose the mobile service option on the service appointment form and add your service address, unit details and fault codes.",
+              "linkLabel": "Request mobile service →",
+              "linkUrl": "/service-appointment#appointment-form"
+            },
+            {
+              "eyebrow": "AFTER HOURS",
+              "title": "Certified Fleet",
+              "body": "Certified Fleet provides after-hours support from 5:00 PM to 8:00 AM, so help is available outside mobile service hours.",
+              "linkLabel": "After-hours support →",
+              "linkUrl": "tel:+18007417566"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "mob-hours",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-grid",
+        "values": {
+          "eyebrow": "MOBILE SERVICE DISPATCH",
+          "heading": "Where our trucks run from.",
+          "body": "Mobile service is available Monday–Friday, 8 AM – 5 PM from these locations. Call to confirm coverage for your address.",
+          "span": 3,
+          "background": "paper",
+          "anchor": "mob-hours",
+          "items": [
+            {
+              "title": "Tampa",
+              "body": "6020 E Adamo Dr\n\nMobile service: 8 AM – 5 PM M–F\n\nShop service: 7 AM – 7 PM M–F, 7 AM – 12 PM Sat",
+              "linkLabel": "(813) 521-8053",
+              "linkUrl": "tel:+18135218053"
+            },
+            {
+              "title": "Davenport",
+              "body": "41609 Hwy 27\n\nMobile service: 8 AM – 5 PM M–F\n\nShop service: 7 AM – 7 PM M–F, 7 AM – 12 PM Sat",
+              "linkLabel": "(863) 238-2939",
+              "linkUrl": "tel:+18632382939"
+            },
+            {
+              "title": "Sarasota",
+              "body": "1000 Sarasota Center Blvd\n\nMobile service: 8 AM – 5 PM M–F\n\nShop service: 7 AM – 5 PM M–F",
+              "linkLabel": "(941) 541-3251",
+              "linkUrl": "tel:+19415413251"
+            },
+            {
+              "title": "Service area",
+              "body": "Central and Southwest Florida, including Hillsborough, Polk, Sarasota, Manatee, Pinellas, Pasco and Hernando counties."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "mob-flyer",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "media-band",
+        "values": {
+          "eyebrow": "MOBILE SERVICE FLYER",
+          "heading": "Print it for the drivers' room.",
+          "body": "The mobile service flyer lists dispatch hours, locations and the number to call. Post it where drivers and dispatchers will see it before the next breakdown.",
+          "ctaLabel": "View the mobile service flyer →",
+          "ctaUrl": "https://sunstateintl.com/wp-content/uploads/2024/09/Updated-Mobile-Service-Flyer-white-2024.jpg",
+          "ctaStyle": "secondary",
+          "background": "card",
+          "image": {
+            "src": "/img/photo-placeholder.svg",
+            "alt": "The Sun State mobile service flyer — artwork to be supplied",
+            "width": 1600,
+            "height": 900
+          }
+        }
+      }
+    },
+    {
+      "id": "mob-faq",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "paper",
+        "anchor": "mob-faq"
+      },
+      "children": [
+        {
+          "id": "mob-faq-head-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "mob-faq-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "mob-faq-head-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Common questions.",
+                    "headingLevel": 2,
+                    "eyebrow": "MOBILE SERVICE FAQS"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mob-faq-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "mob-faq-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "mob-faq-list",
+                  "type": "widget",
+                  "props": {
+                    "widget": "faq",
+                    "config": {
+                      "items": [
+                        {
+                          "q": "What is mobile service?",
+                          "a": "Our mobile service technicians come to your location with a fully equipped service truck to perform many repairs, diagnostics and preventative maintenance services, so you reduce downtime and avoid transporting the unit."
+                        },
+                        {
+                          "q": "When is mobile service available?",
+                          "a": "Mobile service is available from our Tampa, Sarasota and Davenport locations Monday through Friday, 8:00 AM to 5:00 PM. Outside those hours, Certified Fleet provides after-hours support from 5:00 PM to 8:00 AM."
+                        },
+                        {
+                          "q": "How do I request a mobile service truck?",
+                          "a": "Call 800-741-7566 for your mobile service truck appointment, or submit the service appointment request form and choose the mobile service option with your service address."
+                        },
+                        {
+                          "q": "What can be repaired on site?",
+                          "a": "Many repairs can be completed at your location, including diagnostics and fault code analysis, preventative maintenance, brake, suspension and air system work, electrical and lighting repairs, and trailer repairs including liftgate service. Work that requires a lift, alignment rack or fabrication is scheduled into the shop."
+                        },
+                        {
+                          "q": "Do you provide mobile trailer service?",
+                          "a": "Yes. Sun State Trailers offers mobile service that comes out to where you are to repair your trailer. Whether you're stuck roadside or at a job site, our technicians provide efficient, on-the-spot repairs to minimize downtime."
+                        },
+                        {
+                          "q": "Which areas do you cover?",
+                          "a": "Mobile service runs out of Tampa, Sarasota and Davenport, covering Central and Southwest Florida including Hillsborough, Polk, Sarasota, Manatee, Pinellas, Pasco and Hernando counties. Call to confirm coverage for your address."
+                        },
+                        {
+                          "q": "Do you service fleets at their own yards?",
+                          "a": "Yes. Fleets, municipalities, school districts and contractors use mobile service for scheduled PM programs performed on site, keeping units in service and reducing shuttle time between your yard and the dealership."
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mob-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "DOWN AT THE JOB SITE?",
+          "heading": "Give us a call and we'll come to you.",
+          "body": "Mobile service technicians run Monday–Friday, 8 AM – 5 PM out of Tampa, Sarasota and Davenport, with after-hours support through Certified Fleet.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Request mobile service",
+          "secondaryUrl": "/service-appointment#appointment-form"
+        }
+      }
+    }
+  ]
+}

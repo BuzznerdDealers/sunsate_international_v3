@@ -1,0 +1,173 @@
+{
+  "version": 2,
+  "id": "site-footer",
+  "name": "Site footer",
+  "css": "[data-bz-section=\"site-footer\"] .bz-block { padding-block: 0 }\n[data-bz-section=\"site-footer\"] .bz-block + .bz-block { padding-block-start: 18px }\n[data-bz-section=\"site-footer\"] h2 { font: 700 11px/1 var(--font-body); letter-spacing: .1em; text-transform: uppercase; color: #8A8A8A; margin: 0 0 18px }\n[data-bz-section=\"site-footer\"] .bz-navitem > a { color: #C7C1B4; font-size: 14px; font-weight: 400 }\n[data-bz-section=\"site-footer\"] .bz-navitem > a:hover { color: #fff }\n[data-bz-section=\"site-footer\"] p { color: #A0A0A0; font-size: 14px; line-height: 1.7 }\n[data-bz-section=\"site-footer\"] .bz-logo__img { height: 52px; width: auto }\n[data-bz-section=\"site-footer\"] .bz-btn--link { color: #A0A0A0; padding: 0; min-height: 0 }\n[data-bz-section=\"site-footer\"] .bz-btn--link:hover { color: #fff }",
+  "props": [
+    {
+      "key": "blurb",
+      "type": "textarea",
+      "label": "Footer blurb",
+      "default": "International trucks, IC Bus, Hyundai Translead and Globe Trailers. Serving Tampa, Davenport, Sarasota and Brooksville, Florida for 25 years."
+    },
+    {
+      "key": "emailLabel",
+      "type": "text",
+      "label": "Email label",
+      "default": "info@sunstateintl.com"
+    },
+    {
+      "key": "emailUrl",
+      "type": "url",
+      "label": "Email link",
+      "default": "mailto:info@sunstateintl.com"
+    },
+    {
+      "key": "logo",
+      "type": "image",
+      "label": "Logo",
+      "default": {
+        "src": "/img/sunstate-logo.png",
+        "alt": "Sun State International Trucks"
+      }
+    },
+    {
+      "key": "social",
+      "type": "list",
+      "label": "Social profiles",
+      "fields": [
+        {
+          "key": "label",
+          "type": "text",
+          "label": "Network"
+        },
+        {
+          "key": "url",
+          "type": "url",
+          "label": "Profile URL"
+        },
+        {
+          "key": "icon",
+          "type": "image",
+          "label": "Icon"
+        }
+      ]
+    },
+    {
+      "key": "columns",
+      "type": "list",
+      "label": "Link columns",
+      "fields": [
+        {
+          "key": "heading",
+          "type": "text",
+          "label": "Column heading"
+        },
+        {
+          "key": "menuId",
+          "type": "text",
+          "label": "Menu id (from the Menus screen)"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "sf",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "ink",
+        "paddingY": 9
+      },
+      "children": [
+        {
+          "id": "sf-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "align": "start"
+          },
+          "children": [
+            {
+              "id": "sf-brand",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "sf-logo",
+                  "type": "logo",
+                  "props": {
+                    "url": "/",
+                    "height": 52,
+                    "text": "Sun State International Trucks",
+                    "image": "{{logo}}"
+                  }
+                },
+                {
+                  "id": "sf-blurb",
+                  "type": "text",
+                  "props": {
+                    "text": "{{blurb}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "sf-email",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "{{emailLabel}}",
+                        "url": "{{emailUrl}}",
+                        "style": "link",
+                        "intent": "email-dealer"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "sf-social",
+                  "type": "social-links",
+                  "props": {
+                    "tone": "light",
+                    "links": "{{social}}"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "sf-col",
+              "type": "column",
+              "props": {
+                "span": 3,
+                "repeat": "columns"
+              },
+              "children": [
+                {
+                  "id": "sf-col-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "sf-col-nav",
+                  "type": "menu",
+                  "props": {
+                    "menuId": "{{menuId}}",
+                    "layout": "vertical",
+                    "depth": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

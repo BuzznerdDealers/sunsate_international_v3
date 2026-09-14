@@ -1,0 +1,203 @@
+{
+  "version": 2,
+  "id": "location-summary",
+  "name": "Location summary",
+  "css": "[data-bz-section=\"location-summary\"] .bz-block { padding-block: 0 }\n[data-bz-section=\"location-summary\"] .bz-block + .bz-block { padding-block-start: 18px }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-address\"] p { font-size: 17px; line-height: 1.6; color: var(--ink) }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-phones\"] .bz-text p { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 12px; margin: 0; padding: 12px 0; border-top: 1px solid var(--line); font-size: 14px; font-weight: 600 }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice\"] { border: 1px solid var(--line); background: var(--card); padding: 24px; margin-top: 28px }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice\"] .bz-block + .bz-block { padding-block-start: 10px }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-map\"] img { width: 100%; height: 100%; min-height: 420px; object-fit: cover; display: block }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-map\"] .bz-figure { margin: 0; height: 100% }",
+  "props": [
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Eyebrow",
+      "default": "STORE MAP"
+    },
+    {
+      "key": "name",
+      "type": "text",
+      "label": "Legal name of this location",
+      "default": ""
+    },
+    {
+      "key": "address",
+      "type": "textarea",
+      "label": "Address",
+      "default": ""
+    },
+    {
+      "key": "phones",
+      "type": "textarea",
+      "label": "Phone lines — one per line",
+      "default": "",
+      "description": "Write each as <strong>Label</strong> number; the label sits left and the number right."
+    },
+    {
+      "key": "noticeEyebrow",
+      "type": "text",
+      "label": "Notice eyebrow",
+      "default": ""
+    },
+    {
+      "key": "noticeTitle",
+      "type": "text",
+      "label": "Notice title",
+      "default": ""
+    },
+    {
+      "key": "noticeBody",
+      "type": "textarea",
+      "label": "Notice body",
+      "default": ""
+    },
+    {
+      "key": "noticeLinkLabel",
+      "type": "text",
+      "label": "Notice link label",
+      "default": ""
+    },
+    {
+      "key": "noticeLinkUrl",
+      "type": "url",
+      "label": "Notice link",
+      "default": ""
+    },
+    {
+      "key": "map",
+      "type": "image",
+      "label": "Map image",
+      "default": {
+        "src": "/img/photo-placeholder.svg",
+        "alt": "Map to be supplied"
+      }
+    },
+    {
+      "key": "anchor",
+      "type": "text",
+      "label": "Anchor id",
+      "default": ""
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ls",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10,
+        "anchor": "{{anchor}}"
+      },
+      "children": [
+        {
+          "id": "ls-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "align": "stretch",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "ls-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "ls-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{name}}",
+                    "eyebrow": "{{eyebrow}}",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "ls-address",
+                  "type": "text",
+                  "props": {
+                    "text": "{{address}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "ls-phones",
+                  "type": "text",
+                  "props": {
+                    "text": "{{phones}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "ls-notice",
+                  "type": "row",
+                  "props": {
+                    "gap": 3
+                  },
+                  "children": [
+                    {
+                      "id": "ls-notice-col",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "children": [
+                        {
+                          "id": "ls-notice-h",
+                          "type": "heading",
+                          "props": {
+                            "text": "{{noticeTitle}}",
+                            "eyebrow": "{{noticeEyebrow}}",
+                            "headingLevel": 3
+                          }
+                        },
+                        {
+                          "id": "ls-notice-b",
+                          "type": "text",
+                          "props": {
+                            "text": "{{noticeBody}}",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "ls-notice-cta",
+                          "type": "buttons",
+                          "props": {
+                            "items": [
+                              {
+                                "label": "{{noticeLinkLabel}}",
+                                "url": "{{noticeLinkUrl}}",
+                                "style": "link",
+                                "intent": "learn-more"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ls-map",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "ls-map-img",
+                  "type": "image",
+                  "props": {
+                    "image": "{{map}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

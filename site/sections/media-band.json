@@ -1,0 +1,188 @@
+{
+  "version": 2,
+  "id": "media-band",
+  "name": "Media + copy band",
+  "css": "[data-bz-section=\"media-band\"] [data-bz-node^=\"mb-media\"] { display: flex }\n[data-bz-section=\"media-band\"] [data-bz-node^=\"mb-img\"] { padding-block: 0; width: 100% }\n[data-bz-section=\"media-band\"] [data-bz-node^=\"mb-img\"] .bz-figure { margin: 0; height: 100% }\n[data-bz-section=\"media-band\"] [data-bz-node^=\"mb-img\"] img { width: 100%; height: 100%; min-height: 420px; object-fit: cover; display: block }\n@media (max-width: 640px) { [data-bz-section=\"media-band\"] [data-bz-node^=\"mb-img\"] img { min-height: 220px } }",
+  "props": [
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Eyebrow",
+      "default": ""
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": ""
+    },
+    {
+      "key": "body",
+      "type": "textarea",
+      "label": "Body",
+      "default": ""
+    },
+    {
+      "key": "ctaLabel",
+      "type": "text",
+      "label": "Button label",
+      "default": ""
+    },
+    {
+      "key": "ctaUrl",
+      "type": "url",
+      "label": "Button link",
+      "default": ""
+    },
+    {
+      "key": "ctaStyle",
+      "type": "select",
+      "label": "Button style",
+      "default": "primary",
+      "options": [
+        {
+          "value": "primary",
+          "label": "Primary"
+        },
+        {
+          "value": "secondary",
+          "label": "Secondary"
+        },
+        {
+          "value": "link",
+          "label": "Text link"
+        }
+      ]
+    },
+    {
+      "key": "image",
+      "type": "image",
+      "label": "Photo",
+      "default": {
+        "src": "/img/photo-placeholder.svg",
+        "alt": "Photograph to be supplied"
+      }
+    },
+    {
+      "key": "background",
+      "type": "select",
+      "label": "Band background",
+      "default": "card",
+      "options": [
+        {
+          "value": "card",
+          "label": "White"
+        },
+        {
+          "value": "paper",
+          "label": "Paper"
+        },
+        {
+          "value": "ink",
+          "label": "Dark chrome"
+        },
+        {
+          "value": "none",
+          "label": "None"
+        }
+      ]
+    },
+    {
+      "key": "anchor",
+      "type": "text",
+      "label": "Anchor id",
+      "default": ""
+    }
+  ],
+  "nodes": [
+    {
+      "id": "mb",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "{{background}}",
+        "paddingY": 10,
+        "anchor": "{{anchor}}"
+      },
+      "children": [
+        {
+          "id": "mb-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "align": "stretch",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "mb-copy",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "mb-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "eyebrow": "{{eyebrow}}",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "mb-body",
+                  "type": "text",
+                  "props": {
+                    "text": "{{body}}",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "mb-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "{{ctaLabel}}",
+                        "url": "{{ctaUrl}}",
+                        "style": "{{ctaStyle}}",
+                        "intent": "learn-more"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "mb-media",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "styles": {
+                "base": {
+                  "minHeight": 420
+                },
+                "mobile": {
+                  "minHeight": 200
+                }
+              },
+              "children": [
+                {
+                  "id": "mb-img",
+                  "type": "image",
+                  "props": {
+                    "image": "{{image}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

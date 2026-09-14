@@ -1,0 +1,495 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "inv-hero",
+      "type": "hero",
+      "props": {
+        "headingLevel": 1,
+        "eyebrow": "HOME / INVENTORY",
+        "headline": "Inventory",
+        "subhead": "Trucks, trailers, yard trucks and rentals — everything Sun State has on the ground, in one place.",
+        "ctas": [
+          {
+            "label": "Search truck inventory",
+            "url": "/store/inventory?type=truck",
+            "style": "primary",
+            "intent": "browse-inventory"
+          },
+          {
+            "label": "Browse trailers",
+            "url": "/store/inventory?type=trailer",
+            "style": "secondary",
+            "intent": "browse-inventory"
+          }
+        ],
+        "image": {
+          "src": "/img/photo-placeholder.svg",
+          "alt": "The Sun State truck and trailer lot — photograph to be supplied",
+          "width": 1600,
+          "height": 900
+        }
+      }
+    },
+    {
+      "id": "inv-intro",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 9,
+        "background": "paper",
+        "anchor": "inv-intro"
+      },
+      "children": [
+        {
+          "id": "inv-intro-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "inv-intro-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "inv-intro-t",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State, we offer only the best quality for the best price — International trucks, IC Bus, Capacity yard trucks, Hyundai Translead and Globe Trailers. A good business starts with the right equipment, and our purpose is to help you find it.\n\nSearch by category below, or call 800.741.7566 and tell us the job — weights, routes, duty cycle — and we'll tell you what fits, what's on the ground now and what would need a factory order.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "inv-search",
+                  "type": "widget",
+                  "props": {
+                    "widget": "inventory-search",
+                    "config": {
+                      "heading": "Search the lot",
+                      "placeholder": "Search make, model or stock #…"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "inv-categories",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "photo-card-grid",
+        "values": {
+          "eyebrow": "SHOP BY CATEGORY",
+          "heading": "What are you looking for?",
+          "span": 4,
+          "background": "card",
+          "anchor": "inv-categories",
+          "items": [
+            {
+              "image": {
+                "src": "/img/photo-placeholder.svg",
+                "alt": "A new International truck — photograph to be supplied",
+                "width": 1600,
+                "height": 900
+              },
+              "eyebrow": "INTERNATIONAL",
+              "title": "New trucks",
+              "body": "New International heavy and medium-duty trucks — LT, RH, HX, HV, MV, eMV and CV Series — with the S13 Integrated Powertrain available on LT, RH and HX.",
+              "linkLabel": "Browse new trucks →",
+              "linkUrl": "/store/inventory?type=truck&condition=new",
+              "link2Label": "Build a spec in the configurator →",
+              "link2Url": "/truck-configurator"
+            },
+            {
+              "image": {
+                "src": "/img/photo-placeholder.svg",
+                "alt": "A used International truck — photograph to be supplied",
+                "width": 1600,
+                "height": 900
+              },
+              "eyebrow": "ALL MAKES",
+              "title": "Used trucks",
+              "body": "Inspected trade-ins and off-lease units, day cabs, sleepers, dump and vocational trucks, with service history from our own technicians.",
+              "linkLabel": "Browse used trucks →",
+              "linkUrl": "/store/inventory?type=truck&condition=used",
+              "link2Label": "Extended service coverage →",
+              "link2Url": "/extended-service"
+            },
+            {
+              "image": {
+                "src": "/img/photo-placeholder.svg",
+                "alt": "A Capacity yard truck — photograph to be supplied",
+                "width": 1600,
+                "height": 900
+              },
+              "eyebrow": "CAPACITY",
+              "title": "Yard trucks",
+              "body": "Capacity TJ5000, TJ6500 and TJ9000 trailer jockeys for distribution centers, warehouses, ports, rail terminals and intermodal operations.",
+              "linkLabel": "Capacity yard trucks →",
+              "linkUrl": "/capacity-yard-trucks",
+              "link2Label": "Search Capacity inventory →",
+              "link2Url": "/store/inventory?brand=capacity"
+            },
+            {
+              "image": {
+                "src": "/img/photo-placeholder.svg",
+                "alt": "A new Hyundai Translead trailer — photograph to be supplied",
+                "width": 1600,
+                "height": 900
+              },
+              "eyebrow": "HYUNDAI TRANSLEAD · GLOBE",
+              "title": "New trailers",
+              "body": "New dry van, reefer, flatbed and specialty trailers from Sun State Trailers, with specifications for every configuration.",
+              "linkLabel": "Browse new trailers →",
+              "linkUrl": "/store/inventory?type=trailer&condition=new",
+              "link2Label": "Trailer Sales, Tampa →",
+              "link2Url": "/locations/trailer-sales"
+            },
+            {
+              "image": {
+                "src": "/img/photo-placeholder.svg",
+                "alt": "A used trailer — photograph to be supplied",
+                "width": 1600,
+                "height": 900
+              },
+              "eyebrow": "ALL MAKES",
+              "title": "Used trailers",
+              "body": "A rotating selection of used trailers coming off trade and lease, repaired and inspected in our own trailer bays before they go out.",
+              "linkLabel": "Browse used trailers →",
+              "linkUrl": "/store/inventory?type=trailer&condition=used",
+              "link2Label": "Trailer parts & service →",
+              "link2Url": "/service"
+            },
+            {
+              "image": {
+                "src": "/img/photo-placeholder.svg",
+                "alt": "A rental trailer — photograph to be supplied",
+                "width": 1600,
+                "height": 900
+              },
+              "eyebrow": "SHORT & LONG TERM",
+              "title": "Trailer rentals",
+              "body": "Rent instead of buy when volume spikes or a unit is down. Rentals are handled through Sun State Trailers in Tampa.",
+              "linkLabel": "Trailer rentals →",
+              "linkUrl": "/store/inventory?type=trailer&condition=rental",
+              "link2Label": "Call (813) 621-1331 →",
+              "link2Url": "tel:+18136211331"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "inv-trailer-types",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-grid",
+        "values": {
+          "eyebrow": "TRAILERS BY TYPE",
+          "heading": "Match the trailer to the freight.",
+          "body": "New and used Hyundai Translead and Globe Trailers, with specifications available for every configuration. If the spec you need isn't on the lot, we'll order it or alter one to fit.",
+          "span": 3,
+          "background": "paper",
+          "items": [
+            {
+              "title": "Dry van",
+              "body": "General freight vans from Hyundai Translead, the volume workhorse for distribution and line-haul.",
+              "linkLabel": "Browse dry vans →",
+              "linkUrl": "/store/inventory?type=trailer&category=dry-van"
+            },
+            {
+              "title": "Reefer",
+              "body": "Refrigerated vans for temperature-controlled freight, with liftgate and door options available.",
+              "linkLabel": "Browse reefers →",
+              "linkUrl": "/store/inventory?type=trailer&category=refrigerated"
+            },
+            {
+              "title": "Flatbed",
+              "body": "Flatbeds and drop decks for construction materials, equipment and oversized loads.",
+              "linkLabel": "Browse flatbeds →",
+              "linkUrl": "/store/inventory?type=trailer&category=flatbed"
+            },
+            {
+              "title": "Specialty & Globe",
+              "body": "Globe Trailers for purpose-built applications, plus alterations and accessory installation in our shop.",
+              "linkLabel": "Aftermarket & alterations →",
+              "linkUrl": "/aftermarket"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "inv-featured",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "card"
+      },
+      "children": [
+        {
+          "id": "inv-feat-head-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "inv-feat-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "inv-feat-head-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Live inventory.",
+                    "headingLevel": 2,
+                    "eyebrow": "ON THE GROUND NOW"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "inv-feat-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "inv-feat-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "inv-carousel",
+                  "type": "widget",
+                  "props": {
+                    "widget": "inventory-carousel",
+                    "config": {
+                      "heading": ""
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "inv-support",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-grid",
+        "values": {
+          "eyebrow": "BEYOND THE LISTING",
+          "heading": "What comes with the unit.",
+          "span": 3,
+          "background": "paper",
+          "items": [
+            {
+              "title": "Financing",
+              "body": "Minimum down payment and approved credit through BMO Harris Bank, Navistar Financial and other sources, with parts, insurance and coverage in one payment.",
+              "linkLabel": "Financing options →",
+              "linkUrl": "/financing"
+            },
+            {
+              "title": "Extended service",
+              "body": "On Highway, Vocational and International A26 coverage to keep repair costs predictable after the base warranty ends.",
+              "linkLabel": "Extended service →",
+              "linkUrl": "/extended-service"
+            },
+            {
+              "title": "Aftermarket upfit",
+              "body": "Bodies, roll-off hoists, liftgates, tarp systems, lift axles, PTO and wet-line kits, and frame modifications before delivery.",
+              "linkLabel": "Upfit capabilities →",
+              "linkUrl": "/aftermarket"
+            },
+            {
+              "title": "Parts & service",
+              "body": "60+ factory-trained technicians, dedicated trailer bays, mobile service and after-hours support via Certified Fleet.",
+              "linkLabel": "Service department →",
+              "linkUrl": "/service"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "inv-locations",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "location-grid",
+        "values": {
+          "eyebrow": "WHERE THE UNITS ARE",
+          "heading": "Four sales locations across Florida.",
+          "body": "Ready to find the right commercial trucks for your business? Visit us at our convenient locations across Central and Southwest Florida to find the perfect trucks and trailers for your needs.",
+          "span": 3,
+          "background": "card",
+          "locations": [
+            {
+              "tag": "TRUCKS · TRAILERS · PARTS · SERVICE",
+              "city": "Tampa",
+              "address": "6020 Adamo Drive, Tampa, FL 33619",
+              "hours": "Sales 7 AM – 7 PM M–F, 8 AM – 12 PM Sat",
+              "phone": "(813) 621-1331",
+              "phoneUrl": "tel:+18136211331",
+              "url": "/locations/tampa"
+            },
+            {
+              "tag": "TRUCKS · PARTS · SERVICE",
+              "city": "Davenport",
+              "address": "41609 Hwy 27, Davenport, FL 33837",
+              "hours": "Sales 8 AM – 4:30 PM M–F",
+              "phone": "(863) 424-2411",
+              "phoneUrl": "tel:+18634242411",
+              "url": "/locations/davenport"
+            },
+            {
+              "tag": "TRUCKS · PARTS · SERVICE",
+              "city": "Sarasota",
+              "address": "1000 Sarasota Center Blvd., Sarasota, FL 34240",
+              "hours": "Sales 8 AM – 5 PM M–F",
+              "phone": "(941) 355-7681",
+              "phoneUrl": "tel:+19413557681",
+              "url": "/locations/sarasota"
+            },
+            {
+              "tag": "SUN STATE TRAILERS",
+              "city": "Trailer Sales",
+              "address": "6020 Adamo Drive, Tampa, FL 33619",
+              "hours": "Store 8 AM – 5 PM M–F",
+              "phone": "(813) 621-1331",
+              "phoneUrl": "tel:+18136211331",
+              "url": "/locations/trailer-sales"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "inv-faq",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "paper",
+        "anchor": "inv-faq"
+      },
+      "children": [
+        {
+          "id": "inv-faq-head-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "inv-faq-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "inv-faq-head-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Common questions.",
+                    "headingLevel": 2,
+                    "eyebrow": "INVENTORY FAQS"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "inv-faq-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "inv-faq-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "inv-faq-list",
+                  "type": "widget",
+                  "props": {
+                    "widget": "faq",
+                    "config": {
+                      "items": [
+                        {
+                          "q": "What does Sun State sell?",
+                          "a": "New and used International trucks, IC Bus, Capacity yard trucks, and new and used Hyundai Translead and Globe trailers including dry van, reefer and flatbed. Trailer rentals are also available through Sun State Trailers."
+                        },
+                        {
+                          "q": "Where is the inventory located?",
+                          "a": "Units are held across Tampa, Davenport and Sarasota, with trailer sales at 6020 Adamo Drive in Tampa. Call 800-741-7566 and we will confirm which location has the unit you are looking at and whether it can be moved."
+                        },
+                        {
+                          "q": "Can I order a truck that isn't in stock?",
+                          "a": "Yes. Build a spec in the truck configurator or tell us the application, and we will quote a factory order with a current lead time, or find a comparable unit already in stock or in transit."
+                        },
+                        {
+                          "q": "Do you rent trailers?",
+                          "a": "Yes. Sun State Trailers offers trailer rentals in addition to new and used trailer sales. Call Trailer Sales at (813) 621-1331 for availability."
+                        },
+                        {
+                          "q": "Can inventory be financed?",
+                          "a": "Yes. With a minimum down payment and approved credit we arrange financing through BMO Harris Bank, Navistar Financial and other sources, and can include parts, accessories, insurance and extended coverage in one monthly payment."
+                        },
+                        {
+                          "q": "Can you upfit a unit before delivery?",
+                          "a": "Yes. Our Tampa aftermarket facility installs bodies, roll-off hoists, liftgates, tarp systems, lift axles, PTO and wet-line kits and performs frame modifications, so the unit arrives ready to work."
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "inv-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "READY TO GET ON THE ROAD?",
+          "heading": "Tell us the job.",
+          "body": "Contact us to explore our trucks and trailers and experience nothing less than the dedicated care you deserve.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact"
+        }
+      }
+    }
+  ]
+}

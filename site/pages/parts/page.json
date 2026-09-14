@@ -1,0 +1,661 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "parts-hero",
+      "type": "hero",
+      "props": {
+        "headingLevel": 1,
+        "eyebrow": "PARTS DEPARTMENT",
+        "headline": "Find the parts you need, people you trust, and the support that keeps your business moving.",
+        "ctas": [
+          {
+            "label": "Order parts online",
+            "url": "https://www.sunstateparts.com/login",
+            "style": "primary",
+            "intent": "browse-parts"
+          },
+          {
+            "label": "Find a location",
+            "url": "/locations",
+            "style": "secondary",
+            "intent": "find-location"
+          }
+        ],
+        "image": {
+          "src": "/img/photo-placeholder.svg",
+          "alt": "The Sun State parts counter — photograph to be supplied",
+          "width": 1600,
+          "height": 900
+        }
+      }
+    },
+    {
+      "id": "parts-intro",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "media-band",
+        "values": {
+          "eyebrow": "SEMI TRUCK & TRAILER PARTS YOUR BUSINESS CAN DEPEND ON",
+          "heading": "Downtime is lost revenue.",
+          "body": "When your truck or trailer needs a part, downtime isn't just an inconvenience; it's lost revenue. The Parts Department at Sun State International is built around one goal: helping you get the right part, fast, with service you can count on. Whether you're replacing a critical component or planning ahead with routine maintenance parts, our team is here to make the process straightforward, efficient, and dependable.",
+          "ctaLabel": "Find a Location",
+          "ctaUrl": "/locations",
+          "ctaStyle": "primary",
+          "background": "paper",
+          "image": {
+            "src": "/img/photo-placeholder.svg",
+            "alt": "The Sun State parts warehouse — photograph to be supplied",
+            "width": 1600,
+            "height": 900
+          }
+        }
+      }
+    },
+    {
+      "id": "parts-offer-head",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 9,
+        "background": "card"
+      },
+      "children": [
+        {
+          "id": "parts-offer-h-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "parts-offer-h-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "parts-offer-h-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Everything your fleet needs to keep rolling.",
+                    "headingLevel": 2,
+                    "eyebrow": "PARTS WE OFFER"
+                  }
+                },
+                {
+                  "id": "parts-offer-h-b",
+                  "type": "text",
+                  "props": {
+                    "text": "Our Parts Department supports both truck and trailer operations, offering a wide selection of heavy-duty and medium-duty commercial truck parts and accessories. From essential wear items to specialized components, our team works quickly to locate the exact part your equipment requires. If it's not on our shelf today, we'll source it through our trusted network and get it moving to you without delay.",
+                    "width": "prose"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "parts-offer-cta-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "parts-offer-cta-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "parts-offer-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "See what's available now →",
+                        "url": "/store/parts",
+                        "style": "link",
+                        "intent": "browse-parts"
+                      },
+                      {
+                        "label": "Parts specials →",
+                        "url": "/deal-of-the-week",
+                        "style": "link",
+                        "intent": "browse-parts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "parts-offer",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-grid",
+        "values": {
+          "heading": "",
+          "span": 4,
+          "background": "card",
+          "items": [
+            {
+              "title": "International OEM Parts",
+              "body": "As part of the International Truck family, Sun State International has access to one of the most extensive parts networks in the industry. We maintain over $3 million in on-hand inventory and have access to more than one million unique parts, giving our customers the confidence that what they need is within reach. Choosing OEM means fewer surprises, better compatibility, and confidence that the part will perform the way it was designed to.",
+              "linkLabel": "Talk to a rep now →",
+              "linkUrl": "/contact"
+            },
+            {
+              "title": "Aftermarket Parts",
+              "body": "In addition to OEM solutions, Sun State International offers a wide range of aftermarket truck parts to support different budgets and operating needs. Aftermarket options can be a cost-effective solution for many applications while still delivering dependable performance. Our parts specialists help you compare options so you can make informed decisions.",
+              "linkLabel": "Visit our Tampa location →",
+              "linkUrl": "/locations/aftermarket-parts"
+            },
+            {
+              "title": "Beyond Semi Truck Parts",
+              "body": "We offer all OE truck & trailer parts for International, IC Bus, Globe, and Hyundai Translead equipment, giving fleets and owner-operators a single, reliable place to turn. Stop in, call ahead, or work with one of our parts professionals to experience service that's focused on getting you back on the road, not slowing you down."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "parts-trailer",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "paper",
+        "anchor": "trailer-parts"
+      },
+      "children": [
+        {
+          "id": "parts-trailer-head-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "parts-trailer-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "parts-trailer-head-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "When your trailer needs a part, we have you covered.",
+                    "headingLevel": 2,
+                    "eyebrow": "ALL MAKES TRAILER PARTS"
+                  }
+                },
+                {
+                  "id": "parts-trailer-head-b",
+                  "type": "text",
+                  "props": {
+                    "text": "Our Parts Department offers an extensive inventory with a wide range of trailer parts to suit every need. We have part stores located in Tampa, Sarasota, Brooksville and Davenport. Even if the part you require isn't in stock, we can help you acquire any part you need for your Hyundai Translead or Globe trailer — request it through our convenient and easy-to-use part request process.",
+                    "width": "prose"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "parts-trailer-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "parts-trailer-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "parts-trailer-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Request a part →",
+                        "url": "#online-orders",
+                        "style": "link",
+                        "intent": "browse-parts"
+                      },
+                      {
+                        "label": "See our online store →",
+                        "url": "https://sunstateparts.com/login",
+                        "style": "link",
+                        "intent": "browse-parts"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "parts-trailer-list",
+                  "type": "list",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Truck bodies"
+                      },
+                      {
+                        "label": "Van and reefer",
+                        "desc": "Not body installation or swap"
+                      },
+                      {
+                        "label": "Lift axle"
+                      },
+                      {
+                        "label": "Hyundai & all-makes trailer parts"
+                      },
+                      {
+                        "label": "Aluminum & fiberglass reinforced plywood"
+                      },
+                      {
+                        "label": "Kingpins"
+                      },
+                      {
+                        "label": "Landing gear"
+                      },
+                      {
+                        "label": "Liftgates",
+                        "desc": "Installs, remounts, warranty and parts"
+                      },
+                      {
+                        "label": "Accessories",
+                        "desc": "Underbody skirts, vents, side doors, tire carriers"
+                      }
+                    ],
+                    "columns": 3
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "parts-instore",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "card"
+      },
+      "children": [
+        {
+          "id": "parts-instore-head-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "parts-instore-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "parts-instore-head-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Never far from the help you need.",
+                    "headingLevel": 2,
+                    "eyebrow": "OUR IN-STORE LOCATIONS"
+                  }
+                },
+                {
+                  "id": "parts-instore-head-b",
+                  "type": "text",
+                  "props": {
+                    "text": "Convenience matters when time is money. Sun State International operates multiple Parts Department locations across Florida, ensuring you're never far from the help you need.\n\nWe offer local delivery from our locations to the following counties: Hillsborough, Pinellas, Pasco, Polk, Brooksville, Hernando, DeSoto, Highlands, Hardee, Manatee, and Sarasota.\n\nWith multiple locations and a knowledgeable team at each, Sun State International makes it easier to get parts quickly without unnecessary travel or delays.",
+                    "width": "prose"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "parts-jump-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "parts-jump-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "parts-jump",
+                  "type": "menu",
+                  "props": {
+                    "menuId": "parts-topics",
+                    "layout": "horizontal",
+                    "depth": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "parts-support",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "media-band",
+        "values": {
+          "eyebrow": "MORE THAN PARTS: SERVICE & MOBILE SUPPORT",
+          "heading": "Finding the part is one piece of the puzzle.",
+          "body": "Finding the right part is only one piece of the puzzle. If you need help installing or replacing a component, Sun State International's Service Department is ready to assist with experienced technicians who know your equipment.\n\nFor situations where getting to a shop isn't practical, our Mobile Service team can come to you. Mobile support helps minimize downtime, reduce towing costs, and get your truck or trailer safely off the roadside and back into operation as quickly as possible.",
+          "ctaLabel": "Explore our service department →",
+          "ctaUrl": "/service",
+          "ctaStyle": "link",
+          "background": "paper",
+          "anchor": "mobile-support",
+          "image": {
+            "src": "/img/photo-placeholder.svg",
+            "alt": "A Sun State mobile service truck — photograph to be supplied",
+            "width": 1600,
+            "height": 900
+          }
+        }
+      }
+    },
+    {
+      "id": "parts-online",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "media-band",
+        "values": {
+          "eyebrow": "ONLINE PARTS ORDERS",
+          "heading": "Ordering parts, made simple.",
+          "body": "Sun State International makes ordering parts simple. If you already know what you need, you can submit a request through our Parts Request page or work directly with one of our parts professionals.\n\nYou're also welcome to visit our parts stores and dealerships in Tampa, Sarasota, Brooksville, and Davenport, proudly serving St. Petersburg, Lakeland, Haines City, Clearwater, Venice, and surrounding areas.",
+          "ctaLabel": "Order parts online →",
+          "ctaUrl": "https://www.sunstateparts.com/login",
+          "ctaStyle": "primary",
+          "background": "card",
+          "anchor": "online-orders",
+          "image": {
+            "src": "/img/photo-placeholder.svg",
+            "alt": "Ordering parts online — photograph to be supplied",
+            "width": 1600,
+            "height": 900
+          }
+        }
+      }
+    },
+    {
+      "id": "parts-policy",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-grid",
+        "values": {
+          "eyebrow": "PAPERWORK",
+          "heading": "Returns and credit.",
+          "span": 6,
+          "background": "paper",
+          "anchor": "return-policy",
+          "items": [
+            {
+              "title": "Our parts return policy",
+              "body": "Transparency matters. Sun State International's Parts Return Policy is designed to be clear, fair, and straightforward, so you know exactly what to expect. If you got the wrong part or need to switch one out, our team is always available to walk you through the process and answer questions before or after your purchase, ensuring there are no surprises.",
+              "linkLabel": "Parts Return Policy (PDF) →",
+              "linkUrl": "https://sunstateintl.com/wp-content/uploads/2024/08/Parts-Return-Policy-2022-Final.pdf"
+            },
+            {
+              "title": "Flexible credit options",
+              "body": "We understand that cash flow is a real concern for many fleets and owner-operators. Sun State International offers flexible credit options to help you get the parts you need without unnecessary strain on your budget. With an approved credit application, you can bundle purchases and manage expenses more efficiently. Our in-house team works with you to create solutions that support your business, not complicate it.",
+              "linkLabel": "Sun State Credit Application (PDF) →",
+              "linkUrl": "https://www.sunstateintl.com/wp-content/uploads/2026/05/IBS-Credit-App-for-intranet.pdf"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "parts-faq",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "card",
+        "anchor": "parts-faq"
+      },
+      "children": [
+        {
+          "id": "parts-faq-head-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "parts-faq-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "parts-faq-head-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Common questions.",
+                    "headingLevel": 2,
+                    "eyebrow": "PARTS DEPARTMENT FAQS"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "parts-faq-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "parts-faq-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "parts-faq-list",
+                  "type": "widget",
+                  "props": {
+                    "widget": "faq",
+                    "config": {
+                      "items": [
+                        {
+                          "q": "Do you carry both truck and trailer parts?",
+                          "a": "Yes. Sun State International supports both truck and trailer parts, including equipment from International, IC Bus, Globe, Hyundai Translead, and Capacity Yard Trucks."
+                        },
+                        {
+                          "q": "Can you help me find a part if I don't have a part number?",
+                          "a": "Absolutely. Our parts professionals can assist with lookups using vehicle details and system information to ensure accuracy."
+                        },
+                        {
+                          "q": "Do you offer local delivery?",
+                          "a": "Yes. We deliver locally to Hillsborough, Pinellas, Pasco, Polk, Brooksville, Hernando, DeSoto, Highlands, Hardee, Manatee and Sarasota counties to help reduce downtime and keep operations moving."
+                        },
+                        {
+                          "q": "Where are the Sun State parts stores located?",
+                          "a": "Parts stores are in Tampa, Sarasota, Brooksville and Davenport, plus the Sun State Aftermarket Parts store at 7105 East 6th Ave in Tampa."
+                        },
+                        {
+                          "q": "Can I order Sun State parts online?",
+                          "a": "Yes. Register at the Sun State online parts store to browse inventory and order truck and trailer parts, with local delivery available across West Central Florida."
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "parts-partner",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 9,
+        "background": "paper"
+      },
+      "children": [
+        {
+          "id": "parts-partner-head-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "parts-partner-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "parts-partner-head-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Decades of dependable service.",
+                    "headingLevel": 2,
+                    "eyebrow": "YOUR RELIABLE PARTNER ON THE ROAD"
+                  }
+                },
+                {
+                  "id": "parts-partner-head-b",
+                  "type": "text",
+                  "props": {
+                    "text": "For decades, Sun State International has built its reputation on dependable service, a knowledgeable team, and a genuine commitment to customer success. Our Parts Department is an extension of that promise, focused on keeping your trucks and trailers working, your drivers supported, and your business moving forward.",
+                    "width": "prose"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "parts-locations",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "location-grid",
+        "values": {
+          "eyebrow": "FIND A LOCATION",
+          "heading": "Ready to find the right parts for your business?",
+          "span": 4,
+          "background": "card",
+          "anchor": "location-footer",
+          "locations": [
+            {
+              "tag": "TRUCKS · TRAILERS · PARTS · SERVICE",
+              "city": "Sun State International Trucks, LLC. — Tampa",
+              "address": "6020 E Adamo Dr, Tampa, FL 33619",
+              "hours": "Parts 7 AM – 7 PM M–F, 8 AM – 12 PM Sat",
+              "phone": "813-521-8053",
+              "phoneUrl": "tel:+18135218053",
+              "url": "/locations/tampa"
+            },
+            {
+              "tag": "TRUCKS · PARTS · SERVICE",
+              "city": "Sun State International Trucks, LLC. — Davenport",
+              "address": "41609 Hwy 27, Davenport, FL 33837",
+              "hours": "Parts 7 AM – 5 PM M–F, 8 AM – 12 PM Sat",
+              "phone": "863-424-2411",
+              "phoneUrl": "tel:+18634242411",
+              "url": "/locations/davenport"
+            },
+            {
+              "tag": "TRUCKS · PARTS · SERVICE",
+              "city": "Sun State International Trucks, LLC. — Sarasota",
+              "address": "1000 Sarasota Center Blvd, Sarasota, FL 34240",
+              "hours": "Parts 7 AM – 5 PM M–F, 8 AM – 12 PM Sat",
+              "phone": "941-355-7681",
+              "phoneUrl": "tel:+19413557681",
+              "url": "/locations/sarasota"
+            },
+            {
+              "tag": "TRUCK & TRAILER PARTS",
+              "city": "Truck & Trailer Parts — Brooksville",
+              "address": "17127 Runway Drive, Brooksville, FL 34604",
+              "hours": "Store 7 AM – 5 PM M–F",
+              "phone": "352-277-0221",
+              "phoneUrl": "tel:+13522770221",
+              "url": "/locations/brooksville"
+            },
+            {
+              "tag": "AFTERMARKET PARTS",
+              "city": "Sun State Aftermarket Parts — Tampa",
+              "address": "7105 East 6th Ave, Tampa, FL 33619",
+              "hours": "Store 7 AM – 4 PM M–F",
+              "phone": "813-627-3282",
+              "phoneUrl": "tel:+18136273282",
+              "url": "/locations/aftermarket-parts"
+            },
+            {
+              "tag": "SUN STATE TRAILERS",
+              "city": "Trailer Sales — Tampa",
+              "address": "6020 E Adamo Dr, Tampa, FL 33619",
+              "hours": "Store 8 AM – 5 PM M–F",
+              "phone": "813-621-1331",
+              "phoneUrl": "tel:+18136211331",
+              "url": "/locations/trailer-sales"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "parts-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "READY TO GET ON THE ROAD?",
+          "heading": "Ready to get on the road?",
+          "body": "Contact us to explore our trucks and experience nothing less than the dedicated care you deserve.",
+          "primaryLabel": "Contact Us",
+          "primaryUrl": "/contact",
+          "secondaryLabel": "Call 813.521.8148",
+          "secondaryUrl": "tel:+18135218148"
+        }
+      }
+    }
+  ]
+}

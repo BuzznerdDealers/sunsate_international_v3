@@ -1,0 +1,418 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "story-hero",
+      "type": "hero",
+      "props": {
+        "headingLevel": 1,
+        "eyebrow": "OUR STORY",
+        "headline": "Where quality meets family.",
+        "image": {
+          "src": "/img/photo-placeholder.svg",
+          "alt": "The Sun State International team — photograph to be supplied",
+          "width": 1600,
+          "height": 900
+        }
+      }
+    },
+    {
+      "id": "story-intro",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "media-band",
+        "values": {
+          "heading": "",
+          "body": "Sun State is where quality meets family. Whether you're in the market for new or used trucks and trailers, we've got you covered with selections from renowned manufacturers like International, Hyundai Translead and Globe Trailers. Our commitment goes beyond providing quality equipment; we offer a full-service experience.",
+          "background": "card",
+          "image": {
+            "src": "/img/photo-placeholder.svg",
+            "alt": "Sun State International dealership — photograph to be supplied",
+            "width": 1600,
+            "height": 900
+          }
+        }
+      }
+    },
+    {
+      "id": "story-culture",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-grid",
+        "values": {
+          "eyebrow": "WHAT DRIVES OUR SUCCESS",
+          "heading": "A family, not just a company.",
+          "body": "As a family-owned and operated business, we've created an environment where every team member plays a crucial role in our success. In our workplace, we believe a team works best when united with a common goal. That goal for us is to provide the best possible care to our customers and to make our business the best it can be. It's this unique culture that is the driving force behind our remarkable success of over 30 years. Some of the values that help us stay united and successful as a team at Sun State include:",
+          "span": 3,
+          "background": "paper",
+          "items": [
+            {
+              "title": "Community",
+              "body": "At Sun State, we're more than a business; we're a family. Within our tight-knit community, every individual is not merely an employee but a valued member."
+            },
+            {
+              "title": "Growth",
+              "body": "Investing in the growth and development of our people is a cornerstone of our company culture. We encourage our team to make the change they want to see."
+            },
+            {
+              "title": "Transparency",
+              "body": "We operate on the principle of \"open book\" transparency, allowing our employees a clear view of how their contributions directly impact our success."
+            },
+            {
+              "title": "Dependability",
+              "body": "We hold our employees responsible for upholding our mission and values, and at the core of our values is an unwavering commitment to customer care and satisfaction."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "story-leader",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "card"
+      },
+      "children": [
+        {
+          "id": "leader-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "align": "center",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "leader-photo",
+              "type": "column",
+              "props": {
+                "span": 4
+              },
+              "children": [
+                {
+                  "id": "leader-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/img/team-tony-martell.png",
+                      "alt": "Tony Martell, Chief Operating Officer",
+                      "width": 800,
+                      "height": 900
+                    },
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "leader-copy",
+              "type": "column",
+              "props": {
+                "span": 8,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "leader-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Tony Martell",
+                    "headingLevel": 2,
+                    "eyebrow": "CHIEF OPERATING OFFICER (COO)"
+                  }
+                },
+                {
+                  "id": "leader-body",
+                  "type": "text",
+                  "props": {
+                    "text": "Originally from Vermont, Tony Martell started as a service technician at Sun State International in 1990. Between 1990 and 2000, he held positions of Service Writer, Manager, and eventually Director. In 2007, Martell moved to the parts side of the business, eventually becoming VP of Fixed Operations. Martell has been married to his wife Kim for 12 years. Together they enjoy travel, boating, and their three dogs."
+                  }
+                },
+                {
+                  "id": "leader-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "meet-the-team"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "story-glance",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "paper"
+      },
+      "children": [
+        {
+          "id": "glance-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "align": "start",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "glance-list",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "glance-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Sun State at a glance",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "glance-items",
+                  "type": "list",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Voted a Top Workplace for 2020 to 2022, and recipient of the Top Workplace USA award."
+                      },
+                      {
+                        "label": "Family-owned and operated business, celebrating 30+ years in the region with annual gross revenues exceeding $150M."
+                      },
+                      {
+                        "label": "Authorized dealer for International's flagship line of products, Capacity Yard Trucks and Terex Trucks, and a large selection of used trucks across a wide variety of makes and models."
+                      },
+                      {
+                        "label": "Comprehensive service offering truck, trailer and bus modifications, from DPF/DOC cleanings to body swaps and frame modifications."
+                      },
+                      {
+                        "label": "Diamond Logic and OTA programming to automate performance; OnCommand Connection, the industry's only all-makes/all-models telematics solution to monitor fleet health; and after-hours, mobile service and preventative maintenance teams."
+                      },
+                      {
+                        "label": "Over $14M in inventory of genuine OEM, Diamond Advantage and all-makes parts; extended delivery, hot-shot service, consignment program and an award-winning International PDC."
+                      },
+                      {
+                        "label": "Diamond Repair Estimating/360 to automate quotes, scheduling and updates; a Diamond Edge certified dealership offering full-service repairs, over 60 ASE-certified technicians, and an authorized repair/warranty facility for Caterpillar, Allison, Cummins, and International."
+                      },
+                      {
+                        "label": "Member of an industry network of more than 1,000 service locations across North America."
+                      }
+                    ],
+                    "columns": 1
+                  }
+                }
+              ]
+            },
+            {
+              "id": "glance-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "glance-copy-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why celebrating 30 years with Sun State is not all that uncommon.",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "glance-copy-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Sun State's culture is our company's \"secret sauce\" and most competitive advantage. No one can steal or copy it because our culture is the engine that drives our individual behaviors and beliefs toward one common vision.\n\nOur family-owned business has a 20+ year track record of helping customers achieve their goals, and a heritage of community service and \"be the change\" care we seek to create the next generation of leaders in our region.\n\nAnd that begins inside our own walls:",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "glance-copy-list",
+                  "type": "list",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "We invest heavily in developing our people and giving them opportunities to grow and lead."
+                      },
+                      {
+                        "label": "We share an \"open book\" transparency into our operation that demonstrates how each employee contributes to our success."
+                      },
+                      {
+                        "label": "We promote accountability with our mission and values, instill a sense of urgency in our people and give them a voice as part of the Sun State family."
+                      }
+                    ],
+                    "columns": 1
+                  }
+                },
+                {
+                  "id": "glance-copy-2",
+                  "type": "text",
+                  "props": {
+                    "text": "As a result, we continue to invest in our operation and an ever-expanding range of products, service, solutions and support to meet all your transportation needs.\n\nBacked by International’s industry-leading product line and services, we will continue to deliver innovation, services and support you can count on today and tomorrow. We value the opportunity to be your trusted partner, deliver on our commitment and put our mission and values to work for you.",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "story-mission",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 9,
+        "background": "ink"
+      },
+      "children": [
+        {
+          "id": "mission-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "mission-col",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "mission-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Our mission",
+                    "headingLevel": 2,
+                    "align": "center",
+                    "eyebrow": "OUR MISSION"
+                  }
+                },
+                {
+                  "id": "mission-body",
+                  "type": "text",
+                  "props": {
+                    "text": "We strive to be the premier provider of quality transportation products, parts and service at a fair price, with an unrivaled commitment to our customers' success — matched only by our dedication to our employees' growth, development and well-being, and our calling to have a meaningful impact in our community.",
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "story-values",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-grid",
+        "values": {
+          "eyebrow": "OUR VALUES",
+          "heading": "What we stand for.",
+          "span": 4,
+          "background": "card",
+          "items": [
+            {
+              "title": "Trust",
+              "body": "Our number one goal — and we earn it, one word, one choice and one action at a time."
+            },
+            {
+              "title": "Honesty",
+              "body": "Always the best policy, and our ongoing promise."
+            },
+            {
+              "title": "Teamwork",
+              "body": "Travel fast alone, or far together."
+            },
+            {
+              "title": "Customer Service",
+              "body": "Let's get you going."
+            },
+            {
+              "title": "Mutual Respect",
+              "body": "Treating all people with dignity is our gold standard."
+            },
+            {
+              "title": "Vision / Action Oriented",
+              "body": "If you don't know where you're going, any road will take you there."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "story-care",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "media-band",
+        "values": {
+          "eyebrow": "CUSTOMER CARE",
+          "heading": "Going the extra mile.",
+          "body": "Providing excellent customer service is at the heart of everything we do. We believe in going above and beyond to understand and meet your unique needs and challenges.\n\nWhether it's assisting you in finding the perfect truck or trailer, offering expert advice, or ensuring swift and reliable support, you can count on us to provide the quality care you deserve. When it comes to your satisfaction, our commitment to excellence isn't just a promise — it's a daily practice that sets us apart.",
+          "background": "paper",
+          "image": {
+            "src": "/img/photo-placeholder.svg",
+            "alt": "A Sun State advisor with a customer — photograph to be supplied",
+            "width": 1600,
+            "height": 900
+          }
+        }
+      }
+    },
+    {
+      "id": "story-trailers",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "media-band",
+        "values": {
+          "eyebrow": "YOUR HOME ON THE ROAD",
+          "heading": "More than a provider of trailers.",
+          "body": "For more information on our new and used trailers, contact us today. We're available by phone or in person at our Tampa and Davenport locations and ready to help you take your business further. At these locations, we also sell trucks and provide service and parts. Your journey is our journey, and we're dedicated to making it as easy and successful as possible by supplying the quality equipment you need.",
+          "ctaLabel": "Browse trailers →",
+          "ctaUrl": "/store/inventory?type=trailer",
+          "ctaStyle": "link",
+          "background": "card",
+          "image": {
+            "src": "/img/photo-placeholder.svg",
+            "alt": "Sun State trailers — photograph to be supplied",
+            "width": 1600,
+            "height": 900
+          }
+        }
+      }
+    },
+    {
+      "id": "story-careers-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "CAREERS AT SUN STATE",
+          "heading": "Ready to begin your career journey with Sun State?",
+          "body": "We invest heavily in developing our people and giving them opportunities to grow and lead.",
+          "primaryLabel": "Let's Get You Going!",
+          "primaryUrl": "/careers",
+          "secondaryLabel": "Meet the team",
+          "secondaryUrl": "/meet-the-team"
+        }
+      }
+    }
+  ]
+}
