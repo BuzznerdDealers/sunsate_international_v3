@@ -88,3 +88,15 @@
 /* The hero's search sits in a 520px row at 46px, as the handoff draws it. */
 [data-bz-node="hero-search"] .bz-input,
 [data-bz-node="hero-search"] .bz-btn { min-height: 46px; }
+
+/* The handoff steps the hero display down to 46px on a tablet and 30px on a
+   phone; the home hero's own rule above has to carry it. */
+@media (max-width: 1100px) {
+  [data-bz-node="home-hero"] h1 { font-size: 46px; }
+  [data-bz-node="home-hero"] { padding-block: 112px 88px; }
+}
+@media (max-width: 640px) {
+  [data-bz-node="home-hero"] h1 { font-size: 30px; }
+  [data-bz-node="home-hero"] { padding-block: 96px 56px; }
+  [data-bz-node="hero-brands"] .bz-nav { gap: 18px; }
+}

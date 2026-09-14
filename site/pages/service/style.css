@@ -5,14 +5,6 @@
 .bz-block--hero h1 { font-size: 48px; line-height: 1.12; margin-bottom: 20px; }
 .bz-block--hero .bz-hero__copy { max-width: 940px; }
 .bz-block--hero .bz-hero__sub { font-size: 16px; max-width: 660px; margin-bottom: 30px; }
-@media (max-width: 1100px) {
-  .bz-block--hero { padding-block: 72px; }
-  .bz-block--hero h1 { font-size: 34px; }
-}
-@media (max-width: 640px) {
-  .bz-block--hero { padding-block: 56px; }
-  .bz-block--hero h1 { font-size: 28px; }
-}
 
 .bz-block--hero .bz-btn { min-height: 46px; padding: 0 16px; }
 
@@ -33,3 +25,8 @@
 }
 [data-bz-node="svc-hours"] [data-bz-node="fg-card-h4"] h3 { color: #fff; }
 [data-bz-node="svc-hours"] [data-bz-node="fg-card-b4"] p { color: var(--chrome-body); }
+
+@media (max-width: 640px) {
+  .bz-block--hero { padding-block: 72px; }
+  .bz-block--hero h1 { font-size: 32px; }
+}

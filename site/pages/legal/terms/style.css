@@ -14,10 +14,6 @@
 .bz-block--hero h1 { font-size: 44px; line-height: 1.14; margin-bottom: 18px; }
 .bz-block--hero .bz-eyebrow { color: #A0A0A0; }
 .bz-block--hero .bz-hero__sub { font-size: 15px; line-height: 1.7; color: #C7C1B4; max-width: none; margin: 0; }
-@media (max-width: 640px) {
-  .bz-block--hero { padding-block: 48px; }
-  .bz-block--hero h1 { font-size: 30px; }
-}
 
 /* --- The handoff sets the legal pages in a 900px measure --- */
 .bz-section > .bz-container { max-width: 900px; }
@@ -44,3 +40,8 @@
 [data-bz-section="cta-band"] > .bz-section { padding-block: 72px; }
 [data-bz-section="cta-band"] > .bz-section > .bz-container { max-width: 900px; }
 [data-bz-section="cta-band"] h2 { font-size: 26px; }
+
+@media (max-width: 640px) {
+  .bz-block--hero { padding-block: 72px; }
+  .bz-block--hero h1 { font-size: 30px; }
+}
