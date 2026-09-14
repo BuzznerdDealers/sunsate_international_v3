@@ -192,36 +192,37 @@
       "id": "tcf-how",
       "type": "sharedSection",
       "props": {
-        "sectionId": "service-rows",
+        "sectionId": "feature-grid",
         "values": {
           "eyebrow": "FROM BUILD TO DELIVERY",
           "heading": "Four steps.",
+          "span": 3,
           "background": "paper",
           "anchor": "tcf-how",
           "items": [
             {
-              "num": "01",
+              "cardEyebrow": "01",
               "title": "Pick the series",
               "body": "Start from the family that fits the job — severe service, on-highway, vocational or medium duty.",
               "linkLabel": "Compare series →",
               "linkUrl": "#tcf-series"
             },
             {
-              "num": "02",
+              "cardEyebrow": "02",
               "title": "Build the spec",
               "body": "Work through cab, powertrain, axles, wheelbase and equipment. The S13 Integrated Powertrain is available on LT, RH and HX.",
               "linkLabel": "S13 powertrain →",
               "linkUrl": "/specifications#br-s13"
             },
             {
-              "num": "03",
+              "cardEyebrow": "03",
               "title": "Send it to us",
               "body": "Save or screenshot the build and send it over. We confirm pricing, lead time and whether a comparable unit is in stock.",
               "linkLabel": "Send your build →",
               "linkUrl": "/contact"
             },
             {
-              "num": "04",
+              "cardEyebrow": "04",
               "title": "Finance and upfit",
               "body": "Financing with minimum down payment and approved credit, then body, hoist or liftgate work before delivery.",
               "linkLabel": "Financing →",

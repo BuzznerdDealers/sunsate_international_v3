@@ -2,7 +2,7 @@
   "version": 2,
   "id": "bullet-grid",
   "name": "Bullet list cards",
-  "css": "[data-bz-section=\"bullet-grid\"] .bz-block { padding-block: 0 }\n[data-bz-section=\"bullet-grid\"] .bz-block + .bz-block { padding-block-start: 14px }\n[data-bz-section=\"bullet-grid\"] .bz-row + .bz-row { margin-top: 44px }\n[data-bz-section=\"bullet-grid\"] h3 { font-size: 19px; margin: 0 }\n[data-bz-section=\"bullet-grid\"] .bz-col .bz-text p { position: relative; padding-left: 16px; margin: 0 0 8px; font-size: 15px; color: #3f3f3f; line-height: 1.5 }\n[data-bz-section=\"bullet-grid\"] .bz-col .bz-text p::before { content: \"\"; position: absolute; left: 0; top: .62em; width: 6px; height: 6px; background: var(--accent) }",
+  "css": "[data-bz-section=\"bullet-grid\"] .bz-block { padding-block: 0 }\n[data-bz-section=\"bullet-grid\"] .bz-block + .bz-block { padding-block-start: 0 }\n[data-bz-section=\"bullet-grid\"] .bz-row + .bz-row { margin-top: 0 }\n[data-bz-section=\"bullet-grid\"] h2 { margin: 0 0 40px }\n[data-bz-section=\"bullet-grid\"] h3 { font-size: 19px; line-height: 1.6; margin: 0 0 8px }\n/* The first line of a card is its description; the rest are ruled rows. */\n[data-bz-section=\"bullet-grid\"] [data-bz-node^=\"bg-card-b\"] .bz-text { display: flex; flex-direction: column; gap: 8px }\n[data-bz-section=\"bullet-grid\"] [data-bz-node^=\"bg-card-b\"] .bz-text p {\n  margin: 0; padding-top: 8px; border-top: 1px solid var(--line);\n  font-size: 14px; line-height: 1.5; color: var(--body-text) }\n[data-bz-section=\"bullet-grid\"] [data-bz-node^=\"bg-card-b\"] .bz-text p:first-child {\n  border-top: 0; padding-top: 0; margin-bottom: 16px }",
   "props": [
     {
       "key": "eyebrow",
@@ -126,7 +126,7 @@
           "id": "bg-grid",
           "type": "row",
           "props": {
-            "gap": 6,
+            "gap": 5,
             "align": "stretch"
           },
           "children": [
@@ -143,9 +143,9 @@
                   "borderWidth": 1,
                   "borderStyle": "solid",
                   "borderColor": "line",
-                  "paddingTop": 26,
+                  "paddingTop": 30,
                   "paddingRight": 26,
-                  "paddingBottom": 26,
+                  "paddingBottom": 30,
                   "paddingLeft": 26
                 }
               },
