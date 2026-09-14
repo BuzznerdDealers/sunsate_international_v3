@@ -1,3 +1,13 @@
 [data-bz-node="cu-form-aside"] .bz-navitem > a { font-size: 14px; }
 [data-bz-node="cu-form-aside"] .bz-block + .bz-block { padding-block-start: 14px; }
 [data-bz-node="cu-map-widget"] .bz-map { width: 100%; aspect-ratio: auto; min-height: 420px; background: var(--card); border: 1px solid var(--line); }
+
+/* The aside's headings are the handoff's tracked micro-labels, not section titles. */
+[data-bz-node="cu-form-aside"] h3 {
+  font: 700 11px/1 var(--font-body);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0;
+}
+[data-bz-node="cu-form-aside"] [data-bz-node="cu-social-h"] { padding-block-start: 28px; }
