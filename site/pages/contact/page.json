@@ -62,45 +62,41 @@
                     "text": "A good business starts with the right equipment. Our purpose at Sun State is to help you find the right trucks and trailers for your business, then keep them working.\n\nReady to place an order? Talk to a member of our sales team about our available inventory, financing, or to schedule an in-person appointment. Need parts or a repair? Use the department numbers below, or send a message and we'll route it to the right team.",
                     "width": "prose"
                   }
+                },
+                {
+                  "id": "cu-quick-cards",
+                  "type": "contact-cards",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Call us today",
+                        "value": "800.741.7566",
+                        "href": "tel:+18007417566",
+                        "size": "30",
+                        "note": ""
+                      },
+                      {
+                        "label": "Email us",
+                        "value": "info@sunstateintl.com",
+                        "href": "mailto:info@sunstateintl.com",
+                        "size": "22",
+                        "note": ""
+                      },
+                      {
+                        "label": "After hours service · 8 PM – 5 AM",
+                        "value": "(863) 880-2206",
+                        "href": "tel:+18638802206",
+                        "size": "26",
+                        "note": "Certified Fleet"
+                      }
+                    ]
+                  }
                 }
               ]
             }
           ]
         }
       ]
-    },
-    {
-      "id": "cu-quick",
-      "type": "sharedSection",
-      "props": {
-        "sectionId": "feature-grid",
-        "values": {
-          "eyebrow": "FASTEST WAYS TO REACH US",
-          "heading": "Call, email or after hours.",
-          "span": 4,
-          "background": "paper",
-          "items": [
-            {
-              "title": "Call us today",
-              "body": "One number routes to every department across all six Florida locations.",
-              "linkLabel": "800.741.7566",
-              "linkUrl": "tel:+18007417566"
-            },
-            {
-              "title": "Email us",
-              "body": "Messages sent during business hours are typically answered the same business day.",
-              "linkLabel": "info@sunstateintl.com",
-              "linkUrl": "mailto:info@sunstateintl.com"
-            },
-            {
-              "title": "After hours service · 8 PM – 5 AM",
-              "body": "Certified Fleet covers the hours our service departments are closed.",
-              "linkLabel": "(863) 880-2206",
-              "linkUrl": "tel:+18638802206"
-            }
-          ]
-        }
-      }
     },
     {
       "id": "cu-form",
@@ -301,88 +297,13 @@
       }
     },
     {
-      "id": "cu-map",
-      "type": "section",
-      "props": {
-        "width": "boxed",
-        "paddingY": 10,
-        "background": "card",
-        "anchor": "cu-locations"
-      },
-      "children": [
-        {
-          "id": "cu-map-head-row",
-          "type": "row",
-          "props": {
-            "gap": 5
-          },
-          "children": [
-            {
-              "id": "cu-map-head-col",
-              "type": "column",
-              "props": {
-                "span": 12
-              },
-              "children": [
-                {
-                  "id": "cu-map-head-h",
-                  "type": "heading",
-                  "props": {
-                    "text": "Six locations across Florida.",
-                    "headingLevel": 2,
-                    "eyebrow": "FIND A LOCATION"
-                  }
-                },
-                {
-                  "id": "cu-map-head-b",
-                  "type": "text",
-                  "props": {
-                    "text": "Ready to find the right commercial trucks for your business? Visit us at our convenient locations across Central and Southwest Florida to find the perfect trucks and trailers for your needs.",
-                    "width": "prose"
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "cu-map-row",
-          "type": "row",
-          "props": {
-            "gap": 5
-          },
-          "children": [
-            {
-              "id": "cu-map-col",
-              "type": "column",
-              "props": {
-                "span": 12
-              },
-              "children": [
-                {
-                  "id": "cu-map-widget",
-                  "type": "widget",
-                  "props": {
-                    "widget": "locations-map",
-                    "config": {
-                      "showMap": true
-                    }
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "cu-locations",
       "type": "sharedSection",
       "props": {
         "sectionId": "location-grid",
         "values": {
-          "eyebrow": "",
-          "heading": "",
+          "eyebrow": "FIND A LOCATION",
+          "heading": "Six locations across Florida.",
           "span": 4,
           "background": "card",
           "locations": [
@@ -439,6 +360,12 @@
               "phone": "(813) 621-1331",
               "phoneUrl": "tel:+18136211331",
               "url": "/locations/trailer-sales"
+            }
+          ],
+          "body": "Ready to find the right commercial trucks for your business? Visit us at our convenient locations across Central and Southwest Florida to find the perfect trucks and trailers for your needs.",
+          "map": [
+            {
+              "show": true
             }
           ]
         }

@@ -2,7 +2,7 @@
   "version": 2,
   "id": "location-grid",
   "name": "Location card grid",
-  "css": "[data-bz-section=\"location-grid\"] .bz-block { padding-block: 0 }\n[data-bz-section=\"location-grid\"] .bz-block + .bz-block { padding-block-start: 10px }\n[data-bz-section=\"location-grid\"] .bz-row + .bz-row { margin-top: 44px }\n[data-bz-section=\"location-grid\"] h3 { font-size: 19px; margin: 0 0 8px }\n[data-bz-section=\"location-grid\"] [data-bz-node^=\"lg-card-h\"] .bz-eyebrow { font-size: 10px; letter-spacing: .1em; color: var(--accent); margin-bottom: 12px }\n[data-bz-section=\"location-grid\"] .bz-col p { font-size: 14px; color: #3f3f3f; margin: 0 }\n[data-bz-section=\"location-grid\"] .bz-btns { margin-block: 14px 0; gap: 6px; flex-direction: column; align-items: flex-start }",
+  "css": "[data-bz-section=\"location-grid\"] .bz-block { padding-block: 0 }\n[data-bz-section=\"location-grid\"] .bz-block + .bz-block { padding-block-start: 10px }\n[data-bz-section=\"location-grid\"] .bz-row + .bz-row { margin-top: 44px }\n[data-bz-section=\"location-grid\"] h3 { font-size: 19px; margin: 0 0 8px }\n[data-bz-section=\"location-grid\"] [data-bz-node^=\"lg-card-h\"] .bz-eyebrow { font-size: 10px; letter-spacing: .1em; color: var(--accent); margin-bottom: 12px }\n[data-bz-section=\"location-grid\"] .bz-col p { font-size: 14px; color: #3f3f3f; margin: 0 }\n[data-bz-section=\"location-grid\"] .bz-btns { margin-block: 14px 0; gap: 6px; flex-direction: column; align-items: flex-start }\n[data-bz-section=\"location-grid\"] [data-bz-node^=\"lg-map\"] .bz-map { width: 100%; aspect-ratio: auto; min-height: 440px; margin-bottom: 40px }",
   "props": [
     {
       "key": "eyebrow",
@@ -99,6 +99,18 @@
           "label": "Location page"
         }
       ]
+    },
+    {
+      "key": "map",
+      "type": "list",
+      "label": "Map (add one empty row to show the locations map)",
+      "fields": [
+        {
+          "key": "show",
+          "type": "boolean",
+          "label": "Show"
+        }
+      ]
     }
   ],
   "nodes": [
@@ -141,6 +153,35 @@
                   "props": {
                     "text": "{{body}}",
                     "width": "prose"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lg-map",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "repeat": "map"
+          },
+          "children": [
+            {
+              "id": "lg-map-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "lg-map-w",
+                  "type": "widget",
+                  "props": {
+                    "widget": "locations-map",
+                    "config": {
+                      "showMap": true
+                    }
                   }
                 }
               ]
