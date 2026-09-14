@@ -1,0 +1,26 @@
+{
+  "id": "def-rows",
+  "label": "Definition rows",
+  "description": "A label-and-detail table ruled top and bottom — the shape the policies page uses for shipping and return terms.",
+  "props": [
+    {
+      "key": "rows",
+      "type": "list",
+      "label": "Rows",
+      "fields": [
+        {
+          "key": "label",
+          "type": "text",
+          "label": "Label"
+        },
+        {
+          "key": "text",
+          "type": "textarea",
+          "label": "Detail"
+        }
+      ]
+    }
+  ],
+  "html": "<div class=\"ss-def\">{{#each rows}}<div class=\"ss-def__r\"><div class=\"ss-def__l\">{{label}}</div><div class=\"ss-def__t\">{{text}}</div></div>{{/each}}</div>",
+  "css": ".ss-def{display:flex;flex-direction:column;border-top:1px solid var(--line)}\n.ss-def__r{display:grid;grid-template-columns:220px 1fr;gap:20px;padding:14px 0;border-bottom:1px solid var(--line)}\n.ss-def__l{font-size:14px;line-height:1.5;font-weight:700;color:var(--ink)}\n.ss-def__t{font-size:15px;line-height:1.7;color:var(--body-text, #3f3f3f)}\n@media (max-width:640px){.ss-def__r{grid-template-columns:1fr;gap:6px}}"
+}

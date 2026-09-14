@@ -1,0 +1,21 @@
+{
+  "id": "rule-list",
+  "label": "Ruled list",
+  "description": "A stack of statements, each opened by a hairline rule — the handoff's list shape on the legal and policy pages.",
+  "props": [
+    {
+      "key": "items",
+      "type": "list",
+      "label": "Items",
+      "fields": [
+        {
+          "key": "text",
+          "type": "textarea",
+          "label": "Text"
+        }
+      ]
+    }
+  ],
+  "html": "<div class=\"ss-rl\">{{#each items}}<div class=\"ss-rl__i\">{{text}}</div>{{/each}}</div>",
+  "css": ".ss-rl{display:flex;flex-direction:column;gap:10px;margin-top:16px}\n.ss-rl__i{font-size:15px;line-height:1.7;color:var(--body-text, #3f3f3f);border-top:1px solid var(--line);padding-top:10px}"
+}

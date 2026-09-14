@@ -18,3 +18,21 @@
   .bz-block--hero { padding-block: 48px; }
   .bz-block--hero h1 { font-size: 30px; }
 }
+
+/* --- The handoff sets the legal pages in a 900px measure --- */
+.bz-section > .bz-container { max-width: 900px; }
+.bz-block h2 { font-size: 24px; line-height: 1.6; margin: 0 0 16px; }
+.bz-block h2 + * { margin-top: 0; }
+.bz-block p { font-size: 16px; line-height: 1.75; color: var(--body-text); margin: 0 0 14px; }
+.bz-block p:last-child { margin-bottom: 0; }
+
+[data-bz-node="pp-intro"] { padding-block: 72px 0; }
+[data-bz-node="pp-body"] { padding-block: 44px 90px; }
+[data-bz-node="pp-body"] .bz-block + .bz-block { padding-block-start: 0; }
+[data-bz-node="pp-body"] [id] { scroll-margin-top: 120px; }
+[data-bz-node="pp-body"] .bz-block--heading { margin-top: 40px; }
+[data-bz-node="pp-body"] .bz-block--heading:first-child { margin-top: 0; }
+[data-bz-node="pp-collect"] { padding-block: 0 20px; }
+[data-bz-node="pp-collect"] h2 { font-size: 28px; margin-bottom: 18px; }
+[data-bz-node="pp-collect"] [data-bz-node="pp-collect-b"] p { margin-bottom: 16px; }
+[data-bz-node="pp-collect"] [data-bz-node="pp-collect-b"] p:last-child { margin-bottom: 28px; }

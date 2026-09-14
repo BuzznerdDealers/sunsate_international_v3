@@ -1,0 +1,44 @@
+{
+  "id": "spec-table",
+  "label": "Two-column table",
+  "description": "A bordered two-column table with a dark header row — the shape the legal pages use for the categories of data collected.",
+  "props": [
+    {
+      "key": "headA",
+      "type": "text",
+      "label": "Left column heading",
+      "default": ""
+    },
+    {
+      "key": "headB",
+      "type": "text",
+      "label": "Right column heading",
+      "default": ""
+    },
+    {
+      "key": "ratio",
+      "type": "text",
+      "label": "Column ratio (left fr / right fr)",
+      "default": "1 1.3"
+    },
+    {
+      "key": "rows",
+      "type": "list",
+      "label": "Rows",
+      "fields": [
+        {
+          "key": "a",
+          "type": "text",
+          "label": "Left"
+        },
+        {
+          "key": "b",
+          "type": "textarea",
+          "label": "Right"
+        }
+      ]
+    }
+  ],
+  "html": "<div class=\"ss-tbl\" style=\"--ss-tbl-cols: {{ratio}}\">{{#if headA}}<div class=\"ss-tbl__hr\"><div class=\"ss-tbl__h\">{{headA}}</div><div class=\"ss-tbl__h\">{{headB}}</div></div>{{/if}}{{#each rows}}<div class=\"ss-tbl__r\"><div class=\"ss-tbl__a\">{{a}}</div><div class=\"ss-tbl__b\">{{b}}</div></div>{{/each}}</div>",
+  "css": ".ss-tbl{display:flex;flex-direction:column;border:1px solid var(--line);border-bottom:none}\n.ss-tbl__hr,.ss-tbl__r{display:grid;grid-template-columns:var(--ss-tbl-cols, 1fr 1.3fr);gap:0}\n.ss-tbl__hr{background:var(--ink)}\n.ss-tbl__h{font:700 10px/1.4 var(--font-body);letter-spacing:.12em;text-transform:uppercase;color:#fff;padding:14px 16px}\n.ss-tbl__r{border-bottom:1px solid var(--line)}\n.ss-tbl__a{font-size:14px;line-height:1.6;font-weight:700;color:var(--ink);padding:16px;border-right:1px solid var(--line)}\n.ss-tbl__b{font-size:14px;line-height:1.6;color:var(--body-text, #3f3f3f);padding:16px}\n@media (max-width:640px){.ss-tbl__hr,.ss-tbl__r{grid-template-columns:1fr}.ss-tbl__a{border-right:0;border-bottom:1px solid var(--line)}}"
+}
