@@ -35,7 +35,7 @@
 
 /* The handoff closes the terms with a bordered "also see" card. */
 [data-bz-node="tc-alsosee"] { margin-top: 44px; border: 1px solid var(--line); border-bottom: 0; padding: 28px 26px 0; }
-[data-bz-node="tc-alsosee"] .bz-eyebrow { letter-spacing: .14em; margin-bottom: 0; }
+[data-bz-node="tc-alsosee"] h3 { font: 700 11px/1 var(--font-body); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin: 0; }
 [data-bz-node="tc-alsosee-links"] { border: 1px solid var(--line); border-top: 0; padding: 0 26px 28px; }
 [data-bz-node="tc-alsosee-links"] .bz-btns { margin-block: 0; gap: 12px 24px; }
 [data-bz-node="tc-alsosee-links"] .bz-btn--link { font-size: 15px; font-weight: 700; text-decoration: none; }
