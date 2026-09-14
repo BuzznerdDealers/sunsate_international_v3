@@ -2,7 +2,7 @@
   "version": 2,
   "id": "feature-grid",
   "name": "Feature card grid",
-  "css": "[data-bz-section=\"feature-grid\"] .bz-block { padding-block: 0 }\n[data-bz-section=\"feature-grid\"] .bz-block + .bz-block { padding-block-start: 12px }\n[data-bz-section=\"feature-grid\"] .bz-row + .bz-row { margin-top: 0 }\n[data-bz-section=\"feature-grid\"] h2 { margin: 0 0 40px }\n[data-bz-section=\"feature-grid\"] [data-bz-node=\"fg-body\"] p { font-size: 16px; line-height: 1.7; color: var(--body-text); margin: -24px 0 40px }\n[data-bz-section=\"feature-grid\"] h3 { font-size: 18px; line-height: 1.6; font-weight: 700; margin: 0 0 12px }\n[data-bz-section=\"feature-grid\"] [data-bz-node^=\"fg-card-b\"] p { font-size: 14px; line-height: 1.65; color: var(--body-text); margin: 0 }\n[data-bz-section=\"feature-grid\"] [data-bz-node^=\"fg-card-h\"] .bz-eyebrow { font-size: 10px; line-height: 1; letter-spacing: .14em; color: var(--accent); margin-bottom: 12px }\n[data-bz-section=\"feature-grid\"] .bz-btns { margin-block: 14px 0 }\n[data-bz-section=\"feature-grid\"] .bz-section--bg-ink [data-bz-node^=\"fg-card-b\"] p { color: var(--chrome-body) }",
+  "css": "[data-bz-section=\"feature-grid\"] .bz-block { padding-block: 0 }\n[data-bz-section=\"feature-grid\"] .bz-block + .bz-block { padding-block-start: 12px }\n[data-bz-section=\"feature-grid\"] .bz-row + .bz-row { margin-top: 0 }\n[data-bz-section=\"feature-grid\"] h2 { margin: 0 0 40px }\n[data-bz-section=\"feature-grid\"] [data-bz-node=\"fg-body\"] p { font-size: 16px; line-height: 1.7; color: var(--body-text); margin: -24px 0 40px }\n[data-bz-section=\"feature-grid\"] h3 { font-size: 18px; line-height: 1.6; font-weight: 700; margin: 0 0 12px }\n[data-bz-section=\"feature-grid\"] [data-bz-node^=\"fg-card-b\"] p { font-size: 14px; line-height: 1.65; color: var(--body-text); margin: 0 }\n[data-bz-section=\"feature-grid\"] [data-bz-node^=\"fg-card-h\"] .bz-eyebrow { font-size: 10px; line-height: 1; letter-spacing: .14em; color: var(--accent); margin-bottom: 12px }\n[data-bz-section=\"feature-grid\"] .bz-btns { margin-block: 14px 0 }\n[data-bz-section=\"feature-grid\"] .bz-section--bg-ink [data-bz-node^=\"fg-card-b\"] p { color: var(--chrome-body) }\n[data-bz-section=\"feature-grid\"] [data-bz-node=\"fg-head-cta\"] .bz-btns { margin-block: 0 0; gap: 12px 24px }\n[data-bz-section=\"feature-grid\"] [data-bz-node=\"fg-head-cta\"] .bz-btn--link { font-size: 15px; font-weight: 700; text-decoration: none }",
   "props": [
     {
       "key": "eyebrow",
@@ -89,6 +89,30 @@
           "label": "Link"
         }
       ]
+    },
+    {
+      "key": "ctaLabel",
+      "type": "text",
+      "label": "First link label",
+      "default": ""
+    },
+    {
+      "key": "ctaUrl",
+      "type": "url",
+      "label": "First link",
+      "default": ""
+    },
+    {
+      "key": "cta2Label",
+      "type": "text",
+      "label": "Second link label",
+      "default": ""
+    },
+    {
+      "key": "cta2Url",
+      "type": "url",
+      "label": "Second link",
+      "default": ""
     }
   ],
   "nodes": [
@@ -131,6 +155,26 @@
                   "props": {
                     "text": "{{body}}",
                     "width": "prose"
+                  }
+                },
+                {
+                  "id": "fg-head-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "{{ctaLabel}}",
+                        "url": "{{ctaUrl}}",
+                        "style": "link",
+                        "intent": "learn-more"
+                      },
+                      {
+                        "label": "{{cta2Label}}",
+                        "url": "{{cta2Url}}",
+                        "style": "link",
+                        "intent": "learn-more"
+                      }
+                    ]
                   }
                 }
               ]

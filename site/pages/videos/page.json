@@ -208,15 +208,16 @@
       "id": "videos-cta",
       "type": "sharedSection",
       "props": {
-        "sectionId": "cta-band",
+        "sectionId": "cta-compact",
         "values": {
-          "eyebrow": "READY TO GET ON THE ROAD?",
+          "eyebrow": "",
           "heading": "Ready to get on the road?",
           "body": "Contact us to explore our trucks and trailers and experience nothing less than the dedicated care you deserve.",
           "primaryLabel": "Contact Us",
           "primaryUrl": "/contact",
-          "secondaryLabel": "Call 800.741.7566",
-          "secondaryUrl": "tel:+18007417566"
+          "secondaryLabel": "",
+          "secondaryUrl": "",
+          "background": "ink"
         }
       }
     }

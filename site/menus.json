@@ -747,33 +747,27 @@
       "items": [
         {
           "id": "pt-credit",
-          "label": "Credit options",
+          "label": "Credit Options",
           "type": "url",
-          "url": "#return-policy"
+          "url": "#credit-options"
         },
         {
           "id": "pt-return",
-          "label": "Return policy",
+          "label": "Return Policy",
           "type": "url",
           "url": "#return-policy"
         },
         {
           "id": "pt-online",
-          "label": "Online orders",
+          "label": "Online Orders",
           "type": "url",
           "url": "#online-orders"
         },
         {
           "id": "pt-mobile",
-          "label": "Mobile support",
+          "label": "Mobile Support",
           "type": "url",
           "url": "#mobile-support"
-        },
-        {
-          "id": "pt-trailer",
-          "label": "Trailer parts",
-          "type": "url",
-          "url": "#trailer-parts"
         }
       ]
     },

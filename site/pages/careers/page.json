@@ -324,15 +324,16 @@
       "id": "careers-cta",
       "type": "sharedSection",
       "props": {
-        "sectionId": "cta-band",
+        "sectionId": "cta-compact",
         "values": {
-          "eyebrow": "JOIN THE TEAM",
+          "eyebrow": "",
           "heading": "Ready to begin your career journey with Sun State?",
           "body": "Explore our open positions and apply today.",
           "primaryLabel": "Apply Today",
-          "primaryUrl": "/contact",
-          "secondaryLabel": "Meet the team",
-          "secondaryUrl": "/meet-the-team"
+          "primaryUrl": "/careers#openings",
+          "secondaryLabel": "",
+          "secondaryUrl": "",
+          "background": "ink"
         }
       }
     }

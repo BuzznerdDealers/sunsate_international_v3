@@ -20,3 +20,7 @@
   .bz-block--hero { padding-block: 56px; }
   .bz-block--hero h1 { font-size: 30px; }
 }
+
+/* The handoff's contact band on this page. */
+[data-bz-section="cta-compact"] > .bz-section { padding-block: 72px; }
+[data-bz-section="cta-compact"] h2 { font-size: 26px; }

@@ -19,3 +19,38 @@
   .bz-block--hero { padding-block: 56px; }
   .bz-block--hero h1 { font-size: 28px; }
 }
+
+/* The handoff's topic tiles: four bordered links in a row, ruled off below. */
+[data-bz-node="parts-quick"] { border-bottom: 1px solid var(--line); }
+[data-bz-node="parts-quick"] > .bz-container { padding-block: 56px; }
+[data-bz-node="parts-quick-menu"] .bz-nav { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+[data-bz-node="parts-quick-menu"] .bz-navitem > a {
+  display: block; border: 1px solid var(--line); padding: 24px;
+  font: 700 15px/1.6 var(--font-heading); text-align: center; color: var(--ink);
+}
+[data-bz-node="parts-quick-menu"] .bz-navitem > a:hover { background: var(--paper); }
+@media (max-width: 640px) {
+  [data-bz-node="parts-quick-menu"] .bz-nav { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* The online-orders and credit bands put the photograph on the left. */
+[data-bz-node="parts-online"] [data-bz-node="mb-media"],
+[data-bz-node="parts-credit"] [data-bz-node="mb-media"] { order: -1; }
+
+/* The handoff's contact band on this page. */
+[data-bz-section="cta-compact"] > .bz-section { padding-block: 72px; }
+[data-bz-section="cta-compact"] h2 { font-size: 26px; }
+
+/* The handoff's closing "reliable partner" band is a label, a paragraph and a
+   button — no display heading. */
+[data-bz-node="parts-partner"] > .bz-container { max-width: calc(760px + 2 * var(--container-pad)); text-align: center; }
+[data-bz-node="parts-partner-head-h"] p {
+  font: 700 11px/1 var(--font-body); letter-spacing: .16em; color: var(--muted); margin: 0 0 18px;
+}
+[data-bz-node="parts-partner-head-b"] .bz-text { max-width: none; }
+[data-bz-node="parts-partner-head-b"] p { font-size: 22px; line-height: 1.5; color: var(--ink); margin: 0 0 32px; }
+[data-bz-node="parts-partner-cta"] .bz-btns { justify-content: center; margin-block: 0; }
+
+/* The handoff's contact band on this page. */
+[data-bz-section="cta-compact"] > .bz-section { padding-block: 72px; }
+[data-bz-section="cta-compact"] h2 { font-size: 26px; }

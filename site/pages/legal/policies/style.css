@@ -32,3 +32,8 @@
 [data-bz-node="po-body"] [id] { scroll-margin-top: 120px; }
 [data-bz-node="po-body"] .bz-block--heading { margin-top: 40px; }
 [data-bz-node="po-body"] .bz-block--heading:first-child { margin-top: 0; }
+
+/* The handoff's contact band on the legal pages: a 900px well at 72px. */
+[data-bz-section="cta-band"] > .bz-section { padding-block: 72px; }
+[data-bz-section="cta-band"] > .bz-section > .bz-container { max-width: 900px; }
+[data-bz-section="cta-band"] h2 { font-size: 26px; }

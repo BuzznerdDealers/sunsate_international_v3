@@ -422,15 +422,16 @@
       "id": "ci-cta",
       "type": "sharedSection",
       "props": {
-        "sectionId": "cta-band",
+        "sectionId": "cta-compact",
         "values": {
-          "eyebrow": "PARTNER WITH US",
+          "eyebrow": "",
           "heading": "Working on something good in Tampa Bay?",
           "body": "Tell us about it. We're always looking for the next organization to stand behind.",
           "primaryLabel": "Contact Us",
           "primaryUrl": "/contact",
-          "secondaryLabel": "Call 813.521.8148",
-          "secondaryUrl": "tel:+18135218148"
+          "secondaryLabel": "",
+          "secondaryUrl": "",
+          "background": "ink"
         }
       }
     }

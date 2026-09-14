@@ -405,15 +405,16 @@
       "id": "story-careers-cta",
       "type": "sharedSection",
       "props": {
-        "sectionId": "cta-band",
+        "sectionId": "cta-compact",
         "values": {
-          "eyebrow": "CAREERS AT SUN STATE",
+          "eyebrow": "",
           "heading": "Ready to begin your career journey with Sun State?",
-          "body": "We invest heavily in developing our people and giving them opportunities to grow and lead.",
+          "body": "",
           "primaryLabel": "Let's Get You Going!",
           "primaryUrl": "/careers",
-          "secondaryLabel": "Meet the team",
-          "secondaryUrl": "/meet-the-team"
+          "secondaryLabel": "",
+          "secondaryUrl": "",
+          "background": "ink"
         }
       }
     }

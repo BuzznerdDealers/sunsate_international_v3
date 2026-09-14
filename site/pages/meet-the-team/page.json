@@ -194,15 +194,16 @@
       "id": "team-cta",
       "type": "sharedSection",
       "props": {
-        "sectionId": "cta-band",
+        "sectionId": "cta-compact",
         "values": {
           "eyebrow": "LET'S GET IN TOUCH",
           "heading": "Ready to get on the road?",
           "body": "Contact us to explore our trucks and trailers and experience nothing less than the dedicated care you deserve.",
-          "primaryLabel": "Contact us",
+          "primaryLabel": "Contact Us",
           "primaryUrl": "/contact",
-          "secondaryLabel": "See open roles",
-          "secondaryUrl": "/careers"
+          "secondaryLabel": "",
+          "secondaryUrl": "",
+          "background": "ink"
         }
       }
     }

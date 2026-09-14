@@ -39,3 +39,8 @@
 [data-bz-node="tc-alsosee-links"] { border: 1px solid var(--line); border-top: 0; padding: 0 26px 28px; }
 [data-bz-node="tc-alsosee-links"] .bz-btns { margin-block: 0; gap: 12px 24px; }
 [data-bz-node="tc-alsosee-links"] .bz-btn--link { font-size: 15px; font-weight: 700; text-decoration: none; }
+
+/* The handoff's contact band on the legal pages: a 900px well at 72px. */
+[data-bz-section="cta-band"] > .bz-section { padding-block: 72px; }
+[data-bz-section="cta-band"] > .bz-section > .bz-container { max-width: 900px; }
+[data-bz-section="cta-band"] h2 { font-size: 26px; }
