@@ -62,52 +62,45 @@
                     "text": "Every week we put a handful of units, parts and service offers out front. Some weeks it's a new International spec'd and ready to work, some weeks it's a used trailer coming off trade, sometimes it's a parts or PM special for fleets.\n\nDeals move fast and quantities are limited. Call 800.741.7566, mention the Deal of the Week, and we'll confirm what's still available and hold it for you.",
                     "width": "prose"
                   }
+                },
+                {
+                  "id": "dw-glance",
+                  "type": "glance-table",
+                  "props": {
+                    "title": "At a glance",
+                    "rows": [
+                      {
+                        "label": "What it is",
+                        "text": "A weekly set of featured specials from Sun State International Trucks and Sun State Trailers: one truck, one trailer, and one parts or service offer."
+                      },
+                      {
+                        "label": "How often it changes",
+                        "text": "Refreshed every week, and each offer runs only while that unit or part is available."
+                      },
+                      {
+                        "label": "How to claim",
+                        "text": "Call 800-741-7566 or message us, mention the Deal of the Week, and we will confirm availability and hold it."
+                      },
+                      {
+                        "label": "Where",
+                        "text": "Tampa (6020 Adamo Drive), Davenport (41609 Hwy 27), Sarasota (1000 Sarasota Center Blvd.) and Brooksville (17127 Runway Drive), Florida."
+                      },
+                      {
+                        "label": "Financing",
+                        "text": "Available with minimum down payment and approved credit through BMO Harris Bank, Navistar Financial and other sources; parts, accessories, insurance and extended coverage can be included."
+                      },
+                      {
+                        "label": "Price terms",
+                        "text": "Prices and availability are subject to change without notice; mistakenly posted prices or options do not obligate us to honor them."
+                      }
+                    ]
+                  }
                 }
               ]
             }
           ]
         }
       ]
-    },
-    {
-      "id": "dw-answers",
-      "type": "sharedSection",
-      "props": {
-        "sectionId": "feature-grid",
-        "values": {
-          "eyebrow": "AT A GLANCE",
-          "heading": "How the Deal of the Week works.",
-          "span": 4,
-          "background": "card",
-          "anchor": "dw-answers",
-          "items": [
-            {
-              "title": "What it is",
-              "body": "A weekly set of featured specials from Sun State International Trucks and Sun State Trailers: one truck, one trailer, and one parts or service offer."
-            },
-            {
-              "title": "How often it changes",
-              "body": "Refreshed every week, and each offer runs only while that unit or part is available."
-            },
-            {
-              "title": "How to claim",
-              "body": "Call 800-741-7566 or message us, mention the Deal of the Week, and we will confirm availability and hold it."
-            },
-            {
-              "title": "Where",
-              "body": "Tampa (6020 Adamo Drive), Davenport (41609 Hwy 27), Sarasota (1000 Sarasota Center Blvd.) and Brooksville (17127 Runway Drive), Florida."
-            },
-            {
-              "title": "Financing",
-              "body": "Available with minimum down payment and approved credit through BMO Harris Bank, Navistar Financial and other sources; parts, accessories, insurance and extended coverage can be included."
-            },
-            {
-              "title": "Price terms",
-              "body": "Prices and availability are subject to change without notice; mistakenly posted prices or options do not obligate us to honor them."
-            }
-          ]
-        }
-      }
     },
     {
       "id": "dw-deals",
@@ -166,43 +159,6 @@
           ]
         }
       }
-    },
-    {
-      "id": "dw-terms",
-      "type": "section",
-      "props": {
-        "width": "boxed",
-        "paddingY": 6,
-        "background": "paper"
-      },
-      "children": [
-        {
-          "id": "dw-terms-row",
-          "type": "row",
-          "props": {
-            "gap": 5
-          },
-          "children": [
-            {
-              "id": "dw-terms-col",
-              "type": "column",
-              "props": {
-                "span": 12
-              },
-              "children": [
-                {
-                  "id": "dw-terms-t",
-                  "type": "text",
-                  "props": {
-                    "text": "Pricing and availability subject to change without notice. Mistakenly posted prices or options do not obligate us to those incorrect prices or options. See our <a href=\"/legal/terms\">Terms and Conditions</a>.",
-                    "width": "prose"
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
     },
     {
       "id": "dw-how",

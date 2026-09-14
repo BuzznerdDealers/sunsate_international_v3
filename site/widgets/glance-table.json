@@ -1,0 +1,32 @@
+{
+  "id": "glance-table",
+  "label": "At-a-glance card",
+  "description": "A bordered card ruled in accent at the top, holding a label and a set of label/value rows — the handoff's at-a-glance summary.",
+  "props": [
+    {
+      "key": "title",
+      "type": "text",
+      "label": "Card label",
+      "default": "At a glance"
+    },
+    {
+      "key": "rows",
+      "type": "list",
+      "label": "Rows",
+      "fields": [
+        {
+          "key": "label",
+          "type": "text",
+          "label": "Label"
+        },
+        {
+          "key": "text",
+          "type": "textarea",
+          "label": "Value"
+        }
+      ]
+    }
+  ],
+  "html": "<div class=\"ss-gl\"><div class=\"ss-gl__t\">{{title}}</div><div class=\"ss-gl__rows\">{{#each rows}}<div class=\"ss-gl__r\"><div class=\"ss-gl__l\">{{label}}</div><div class=\"ss-gl__v\">{{text}}</div></div>{{/each}}</div></div>",
+  "css": ".ss-gl{border:1px solid var(--line);border-top:4px solid var(--accent);padding:30px 28px}\n.ss-gl__t{font:700 11px/1 var(--font-body);letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:20px}\n.ss-gl__rows{display:flex;flex-direction:column}\n.ss-gl__r{display:grid;grid-template-columns:190px 1fr;gap:20px;padding:12px 0;border-bottom:1px solid var(--line)}\n.ss-gl__l{font:700 10px/1.6 var(--font-body);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}\n.ss-gl__v{font-size:15px;line-height:1.65;color:var(--ink)}\n@media (max-width:640px){.ss-gl__r{grid-template-columns:1fr;gap:4px}}"
+}

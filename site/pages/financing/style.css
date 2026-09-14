@@ -18,3 +18,6 @@
   .bz-block--hero { padding-block: 53px; }
   .bz-block--hero h1 { font-size: 28px; }
 }
+
+/* --- Card treatment, measured from the handoff --- */
+[data-bz-node="fin-warranty"] [data-bz-type="column"][data-bz-node^="fg-card-"][data-bz-node] { padding: 28px; }

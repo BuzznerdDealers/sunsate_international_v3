@@ -24,3 +24,6 @@
   .bz-block--hero { padding-block: 56px; }
   .bz-block--hero h1 { font-size: 30px; }
 }
+
+/* --- Card treatment, measured from the handoff --- */
+[data-bz-node="videos-answers"] [data-bz-type="column"][data-bz-node^="fg-card-"][data-bz-node] { padding: 28px; }

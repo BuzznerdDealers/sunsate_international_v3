@@ -13,3 +13,7 @@
 }
 
 .bz-block--hero .bz-btn { min-height: 46px; padding: 0 16px; }
+
+/* --- Card treatment, measured from the handoff --- */
+[data-bz-node="careers-values"] [data-bz-type="column"][data-bz-node^="fg-card-"][data-bz-node] { padding: 28px 24px; }
+[data-bz-node="careers-roles"] [data-bz-type="column"][data-bz-node^="fg-card-"][data-bz-node] { padding: 28px 24px; }

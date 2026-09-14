@@ -21,3 +21,7 @@
 /* The handoff's contact band on this page. */
 [data-bz-section="cta-compact"] > .bz-section { padding-block: 72px; }
 [data-bz-section="cta-compact"] h2 { font-size: 26px; }
+
+/* --- Card treatment, measured from the handoff --- */
+[data-bz-node="story-culture"] [data-bz-type="column"][data-bz-node^="fg-card-"][data-bz-node] { padding: 28px 24px; }
+[data-bz-node="story-values"] [data-bz-type="column"][data-bz-node^="fg-card-"][data-bz-node] { padding: 32px; }

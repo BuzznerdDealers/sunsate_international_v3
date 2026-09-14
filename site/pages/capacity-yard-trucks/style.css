@@ -13,3 +13,11 @@
   .bz-block--hero { padding-block: 49px; }
   .bz-block--hero h1 { font-size: 28px; }
 }
+
+/* --- Card treatment, measured from the handoff --- */
+/* The handoff rules this grid at the top rather than boxing each card. */
+[data-bz-node="cy-parts"] [data-bz-type="column"][data-bz-node^="fg-card-"][data-bz-node] {
+  background: none; border: 0; border-top: 3px solid var(--accent);
+  padding: 20px 0 0;
+}
+[data-bz-node="cy-fleet"] [data-bz-type="column"][data-bz-node^="fg-card-"][data-bz-node] { padding: 28px; }
