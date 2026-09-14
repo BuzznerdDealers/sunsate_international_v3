@@ -262,5 +262,6 @@ npm run build      exit 0 — 31 pages + 9 posts + the blog index, sitemap, robo
 No horizontal overflow at 390px, 900px or 1440px on any of the 32 routes.
 
 Band-by-band against the handoff at 1440px, summing the absolute difference in every
-band's height across all 31 pages: **57,350px at the start of the matching pass, 12,700px
-now** — and 2,386px of what is left is the staff roster the platform will fill in.
+band's height across all 31 pages: **57,350px at the start of the matching pass, 12,936px
+now** — and 2,386px of what is left is the staff roster the platform will fill in, with
+about 1,600px more in the closed first answer of each accordion (§4).
