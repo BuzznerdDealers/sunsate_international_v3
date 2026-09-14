@@ -130,17 +130,6 @@
                   "props": {
                     "text": "Originally from Vermont, Tony Martell started as a service technician at Sun State International in 1990. Between 1990 and 2000, he held positions of Service Writer, Manager, and eventually Director. In 2007, Martell moved to the parts side of the business, eventually becoming VP of Fixed Operations. Martell has been married to his wife Kim for 12 years. Together they enjoy travel, boating, and their three dogs."
                   }
-                },
-                {
-                  "id": "leader-cta",
-                  "type": "buttons",
-                  "props": {
-                    "items": [
-                      {
-                        "ctaId": "meet-the-team"
-                      }
-                    ]
-                  }
                 }
               ]
             }
@@ -214,7 +203,16 @@
                     "columns": 1
                   }
                 }
-              ]
+              ],
+              "styles": {
+                "base": {
+                  "background": "inkDark",
+                  "paddingTop": 40,
+                  "paddingRight": 36,
+                  "paddingBottom": 40,
+                  "paddingLeft": 36
+                }
+              }
             },
             {
               "id": "glance-copy",

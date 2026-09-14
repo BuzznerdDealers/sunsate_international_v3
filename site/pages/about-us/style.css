@@ -27,3 +27,10 @@
 
 /* The leadership band sits on the darker chrome, not on ink. */
 [data-bz-node="story-leader"] { background: var(--chrome); }
+
+/* The at-a-glance list is a dark card: a 22px title over ruled-off bullets. */
+[data-bz-node="glance-h"] h2 { font-size: 22px; line-height: 1.6; color: #fff; margin: 0 0 20px; }
+[data-bz-node="glance-items"] .bz-grid { display: flex; flex-direction: column; gap: 14px; padding-left: 18px; }
+[data-bz-node="glance-items"] .bz-feature { border-top: 0; padding: 0; list-style: disc; display: list-item; }
+[data-bz-node="glance-items"] .bz-feature__t { font-size: 14px; line-height: 1.6; color: var(--chrome-body); }
+[data-bz-node="glance-copy-h"] h2 { font-size: 30px; }

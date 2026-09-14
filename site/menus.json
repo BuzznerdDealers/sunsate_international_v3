@@ -504,12 +504,6 @@
           "label": "Globe Trailers",
           "type": "inventory",
           "ref": "inventory?brand=globe-trailers"
-        },
-        {
-          "id": "fb-capacity",
-          "label": "Capacity Yard Trucks",
-          "type": "page",
-          "ref": "capacity-yard-trucks"
         }
       ]
     },
@@ -546,18 +540,6 @@
           "label": "Parts",
           "type": "page",
           "ref": "parts"
-        },
-        {
-          "id": "fs-service",
-          "label": "Service",
-          "type": "page",
-          "ref": "service"
-        },
-        {
-          "id": "fs-deal",
-          "label": "Deal of the Week",
-          "type": "page",
-          "ref": "deal-of-the-week"
         }
       ]
     },
@@ -572,12 +554,6 @@
           "ref": "our-story"
         },
         {
-          "id": "fc-team",
-          "label": "Meet the Team",
-          "type": "page",
-          "ref": "meet-the-team"
-        },
-        {
           "id": "fc-careers",
           "label": "Careers",
           "type": "page",
@@ -590,22 +566,10 @@
           "url": "/blog"
         },
         {
-          "id": "fc-news",
-          "label": "News & Press",
-          "type": "page",
-          "ref": "news-and-press"
-        },
-        {
           "id": "fc-community",
           "label": "Community Involvement",
           "type": "page",
           "ref": "community-involvement"
-        },
-        {
-          "id": "fc-reviews",
-          "label": "Reviews",
-          "type": "page",
-          "ref": "reviews"
         },
         {
           "id": "fc-contact",
