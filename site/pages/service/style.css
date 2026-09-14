@@ -25,3 +25,11 @@
 [data-bz-node="svc-sum-t"] p { font-size: 16px; line-height: 1.7; color: var(--body-text); margin: 0 0 20px; }
 [data-bz-node="svc-sum-t"] p:first-child { font-size: 18px; color: var(--ink); }
 [data-bz-node="svc-sum-t"] p:last-child { margin-bottom: 44px; }
+
+/* The handoff sets the after-hours card on ink, to separate it from the three
+   department cards beside it. */
+[data-bz-node="svc-hours"] [data-bz-type="column"][data-bz-node="fg-card-4"][data-bz-node] {
+  background: var(--ink); border-color: var(--ink);
+}
+[data-bz-node="svc-hours"] [data-bz-node="fg-card-h4"] h3 { color: #fff; }
+[data-bz-node="svc-hours"] [data-bz-node="fg-card-b4"] p { color: var(--chrome-body); }
