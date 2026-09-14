@@ -84,3 +84,7 @@
 [data-bz-node="feat-head-h"] h2 { font-size: 38px; margin-bottom: 44px; }
 [data-bz-node="feat-head-h"] .bz-eyebrow { margin-bottom: 14px; }
 [data-bz-node="feat-all"] .bz-btns { justify-content: flex-end; margin-block: 28px 0; }
+
+/* The hero's search sits in a 520px row at 46px, as the handoff draws it. */
+[data-bz-node="hero-search"] .bz-input,
+[data-bz-node="hero-search"] .bz-btn { min-height: 46px; }
