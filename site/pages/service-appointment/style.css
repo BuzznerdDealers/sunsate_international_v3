@@ -1,3 +1,17 @@
 [data-bz-node="appt-form-aside"] .bz-btns { flex-direction: column; align-items: flex-start; gap: 6px; margin-block: 0 0; }
 [data-bz-node="appt-form-aside"] .bz-block + .bz-block { padding-block-start: 12px; }
 [data-bz-node="appt-form-note"] p, [data-bz-node="appt-phone-note"] p { font-size: 13px; color: var(--muted); }
+
+/* --- Hero geometry, measured from the handoff --- */
+.bz-block--hero { padding-block: 96px; }
+.bz-block--hero h1 { font-size: 48px; line-height: 1.12; margin-bottom: 20px; }
+.bz-block--hero .bz-hero__copy { max-width: 940px; }
+.bz-block--hero .bz-hero__sub { font-size: 17px; max-width: 700px; margin-bottom: 30px; }
+@media (max-width: 1100px) {
+  .bz-block--hero { padding-block: 69px; }
+  .bz-block--hero h1 { font-size: 34px; }
+}
+@media (max-width: 640px) {
+  .bz-block--hero { padding-block: 53px; }
+  .bz-block--hero h1 { font-size: 28px; }
+}

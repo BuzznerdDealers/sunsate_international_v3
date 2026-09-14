@@ -1,0 +1,86 @@
+{
+  "id": "location-cards",
+  "label": "Location cards",
+  "description": "The scrolling row of location cards. Each card carries its brands and perks as data attributes, which is what the platform filter behaviour matches on.",
+  "props": [
+    {
+      "key": "locations",
+      "type": "list",
+      "label": "Locations",
+      "fields": [
+        {
+          "key": "num",
+          "type": "text",
+          "label": "Number"
+        },
+        {
+          "key": "city",
+          "type": "text",
+          "label": "City"
+        },
+        {
+          "key": "state",
+          "type": "text",
+          "label": "State"
+        },
+        {
+          "key": "name",
+          "type": "text",
+          "label": "Trading name"
+        },
+        {
+          "key": "phone",
+          "type": "text",
+          "label": "Phone"
+        },
+        {
+          "key": "phoneUrl",
+          "type": "url",
+          "label": "Phone link"
+        },
+        {
+          "key": "url",
+          "type": "url",
+          "label": "Directions link"
+        },
+        {
+          "key": "brands",
+          "type": "text",
+          "label": "Brand values — space separated"
+        },
+        {
+          "key": "perks",
+          "type": "text",
+          "label": "Perk values — space separated"
+        },
+        {
+          "key": "dot1",
+          "type": "color",
+          "label": "Brand dot 1"
+        },
+        {
+          "key": "dot2",
+          "type": "color",
+          "label": "Brand dot 2"
+        },
+        {
+          "key": "tag1",
+          "type": "text",
+          "label": "Tag 1"
+        },
+        {
+          "key": "tag2",
+          "type": "text",
+          "label": "Tag 2"
+        },
+        {
+          "key": "tag3",
+          "type": "text",
+          "label": "Tag 3"
+        }
+      ]
+    }
+  ],
+  "html": "<div class=\"ss-locrail\" data-ss-locrail><div class=\"ss-locrail__track\">{{#each locations}}<article class=\"ss-loc\" data-bz-part=\"item\" data-brand=\"{{brands}}\" data-perk=\"{{perks}}\"><div class=\"ss-loc__dots\">{{#if dot1}}<span style=\"background:{{dot1}}\"></span>{{/if}}{{#if dot2}}<span style=\"background:{{dot2}}\"></span>{{/if}}</div><div class=\"ss-loc__head\"><h3 class=\"ss-loc__c\"><span class=\"ss-loc__n\">{{num}}</span>{{city}}</h3><span class=\"ss-loc__s\">{{state}}</span></div><p class=\"ss-loc__name\">{{name}}</p><p class=\"ss-loc__phone\"><a href=\"{{link phoneUrl}}\" data-bz-el=\"phone\" data-bz-intent=\"call-location\">{{phone}}</a></p><p class=\"ss-loc__dir\"><a href=\"{{link url}}\" data-bz-el=\"link\" data-bz-intent=\"find-location\">Directions &#8594;</a></p><div class=\"ss-loc__tags\">{{#if tag1}}<span>{{tag1}}</span>{{/if}}{{#if tag2}}<span>{{tag2}}</span>{{/if}}{{#if tag3}}<span>{{tag3}}</span>{{/if}}</div></article>{{/each}}</div></div>",
+  "css": ".ss-locrail__track{display:flex;gap:20px;overflow-x:auto;scroll-behavior:smooth;scroll-snap-type:x mandatory;padding-bottom:4px}\n.ss-locrail__track::-webkit-scrollbar{height:6px}\n.ss-locrail__track::-webkit-scrollbar-thumb{background:var(--line)}\n.ss-loc{flex:0 0 320px;scroll-snap-align:start;border:1px solid var(--line);background:var(--card);padding:24px;display:flex;flex-direction:column;min-height:310px}\n.ss-loc[hidden]{display:none}\n.ss-loc__dots{display:flex;gap:6px;min-height:8px;margin-bottom:22px}\n.ss-loc__dots span{width:8px;height:8px;border-radius:50%;display:inline-block}\n.ss-loc__head{display:flex;align-items:baseline;justify-content:space-between;gap:12px}\n.ss-loc__c{display:flex;align-items:baseline;gap:10px;font-family:var(--font-heading);font-weight:800;font-size:19px;margin:0;text-transform:uppercase}\n.ss-loc__n{font:700 13px/1 var(--font-body);color:var(--muted)}\n.ss-loc__s{font:700 12px/1 var(--font-body);letter-spacing:.08em;color:var(--muted)}\n.ss-loc__name{font:700 13px/1.4 var(--font-body);color:var(--ink);margin:14px 0 0}\n.ss-loc__phone{font-size:14px;color:#3f3f3f;margin:10px 0 0}\n.ss-loc__phone a{color:#3f3f3f;text-decoration:none}\n.ss-loc__phone a:hover{color:var(--accent)}\n.ss-loc__dir{margin:14px 0 0}\n.ss-loc__dir a{font:700 13px/1 var(--font-body);color:var(--accent);text-decoration:none}\n.ss-loc__dir a:hover{text-decoration:underline}\n.ss-loc__tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:24px}\n.ss-loc__tags span{border:1px solid var(--line);padding:5px 8px;font:700 10px/1 var(--font-body);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}\n@media (max-width:640px){.ss-loc{flex-basis:82vw}}"
+}

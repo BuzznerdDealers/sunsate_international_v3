@@ -597,18 +597,18 @@
           "background": "card",
           "items": [
             {
-              "eyebrow": "SUN STATE TRAILERS",
               "title": "Trailer specifications",
               "body": "Specifications for Hyundai Translead and Globe Trailers — dry van, reefer, flatbed and specialty configurations. Tell us the application and our trailer sales team will send the right sheet.",
               "linkLabel": "Trailer Sales →",
-              "linkUrl": "/locations/trailer-sales"
+              "linkUrl": "/locations/trailer-sales",
+              "cardEyebrow": "SUN STATE TRAILERS"
             },
             {
-              "eyebrow": "NEXT STEP",
               "title": "Spec your truck",
               "body": "Use the truck configurator to build a unit, then talk to us about lead times, financing and the aftermarket work it needs before it goes to work.",
               "linkLabel": "Truck configurator →",
-              "linkUrl": "/truck-configurator"
+              "linkUrl": "/truck-configurator",
+              "cardEyebrow": "NEXT STEP"
             }
           ]
         }

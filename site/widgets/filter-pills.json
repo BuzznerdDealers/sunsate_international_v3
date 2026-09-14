@@ -1,0 +1,47 @@
+{
+  "id": "filter-pills",
+  "label": "Filter pills",
+  "description": "One facet of a filter: a label and its pills. The pills carry the facet and value the platform filter behaviour reads, so no script is needed.",
+  "props": [
+    {
+      "key": "label",
+      "type": "text",
+      "label": "Facet label"
+    },
+    {
+      "key": "facet",
+      "type": "text",
+      "label": "Facet key — matches the data- attribute on each card"
+    },
+    {
+      "key": "allLabel",
+      "type": "text",
+      "label": "Reset pill label",
+      "default": "ALL"
+    },
+    {
+      "key": "options",
+      "type": "list",
+      "label": "Pills",
+      "fields": [
+        {
+          "key": "label",
+          "type": "text",
+          "label": "Label"
+        },
+        {
+          "key": "value",
+          "type": "text",
+          "label": "Value"
+        },
+        {
+          "key": "dot",
+          "type": "color",
+          "label": "Dot colour"
+        }
+      ]
+    }
+  ],
+  "html": "<div class=\"ss-filter\">{{#if label}}<span class=\"ss-filter__l\">{{label}}</span>{{/if}}<div class=\"ss-filter__pills\"><button type=\"button\" class=\"ss-pill\" data-bz-part=\"control\" data-bz-facet=\"{{facet}}\" data-bz-value=\"all\" aria-pressed=\"true\">{{allLabel}}</button>{{#each options}}<button type=\"button\" class=\"ss-pill\" data-bz-part=\"control\" data-bz-facet=\"{{facet}}\" data-bz-value=\"{{value}}\" aria-pressed=\"false\">{{#if dot}}<span class=\"ss-pill__dot\" style=\"background:{{dot}}\"></span>{{/if}}{{label}}</button>{{/each}}</div></div>",
+  "css": ".ss-filter{display:flex;align-items:flex-start;gap:24px;flex-wrap:wrap}\n.ss-filter__l{flex:0 0 72px;padding-top:12px;font:700 11px/1 var(--font-body);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}\n.ss-filter__pills{display:flex;flex-wrap:wrap;gap:10px;flex:1 1 auto}\n.ss-pill{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;background:var(--card);color:var(--ink);border:1px solid var(--line);font:700 12px/1 var(--font-body);letter-spacing:.04em;text-transform:uppercase;white-space:nowrap;cursor:pointer}\n.ss-pill[aria-pressed=\"true\"]{background:var(--accent);color:#fff;border-color:transparent}\n.ss-pill[aria-pressed=\"true\"] .ss-pill__dot{display:none}\n.ss-pill__dot{width:8px;height:8px;border-radius:50%;display:inline-block}\n.ss-pill:hover{border-color:var(--muted)}"
+}

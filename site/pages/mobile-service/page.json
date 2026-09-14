@@ -103,34 +103,34 @@
           "anchor": "mob-capabilities",
           "items": [
             {
-              "eyebrow": "DIAGNOSTICS",
               "title": "On-site diagnostics",
-              "body": "Fault code reads, sensor and aftertreatment checks and driveability diagnosis performed at your location so you know what the repair takes before the unit moves."
+              "body": "Fault code reads, sensor and aftertreatment checks and driveability diagnosis performed at your location so you know what the repair takes before the unit moves.",
+              "cardEyebrow": "DIAGNOSTICS"
             },
             {
-              "eyebrow": "MAINTENANCE",
               "title": "Preventative maintenance",
-              "body": "Scheduled PM services, fluid and filter changes and inspections performed in your yard, keeping units available instead of shuttling them to the shop."
+              "body": "Scheduled PM services, fluid and filter changes and inspections performed in your yard, keeping units available instead of shuttling them to the shop.",
+              "cardEyebrow": "MAINTENANCE"
             },
             {
-              "eyebrow": "REPAIRS",
               "title": "Roadside and job-site repair",
-              "body": "Efficient, on-the-spot repairs when a truck or trailer is stuck roadside or at a job site, aimed at getting you back on the road the same visit."
+              "body": "Efficient, on-the-spot repairs when a truck or trailer is stuck roadside or at a job site, aimed at getting you back on the road the same visit.",
+              "cardEyebrow": "REPAIRS"
             },
             {
-              "eyebrow": "CHASSIS",
               "title": "Brakes, suspension and air systems",
-              "body": "Common chassis work including brake service, air leaks, suspension components and related adjustments handled from the mobile truck."
+              "body": "Common chassis work including brake service, air leaks, suspension components and related adjustments handled from the mobile truck.",
+              "cardEyebrow": "CHASSIS"
             },
             {
-              "eyebrow": "ELECTRICAL",
               "title": "Electrical and lighting",
-              "body": "Batteries, charging systems, harnesses, lighting and trailer wiring repairs, including the electrical faults that keep a unit out of DOT compliance."
+              "body": "Batteries, charging systems, harnesses, lighting and trailer wiring repairs, including the electrical faults that keep a unit out of DOT compliance.",
+              "cardEyebrow": "ELECTRICAL"
             },
             {
-              "eyebrow": "TRAILERS",
               "title": "Trailer and liftgate repair",
-              "body": "Trailer repairs on site including liftgate service, doors, lighting and running gear, with liftgate installations, remounts and parts handled in the shop."
+              "body": "Trailer repairs on site including liftgate service, doors, lighting and running gear, with liftgate installations, remounts and parts handled in the shop.",
+              "cardEyebrow": "TRAILERS"
             }
           ]
         }
@@ -154,7 +154,8 @@
             "alt": "A roadside trailer repair — photograph to be supplied",
             "width": 1600,
             "height": 900
-          }
+          },
+          "width": "full"
         }
       }
     },
@@ -170,25 +171,25 @@
           "background": "card",
           "items": [
             {
-              "eyebrow": "FASTEST",
               "title": "Call dispatch",
               "body": "Tell us where the unit is, what it's doing and whether it's loaded. We'll confirm availability and an arrival window.",
               "linkLabel": "800.741.7566 →",
-              "linkUrl": "tel:+18007417566"
+              "linkUrl": "tel:+18007417566",
+              "cardEyebrow": "FASTEST"
             },
             {
-              "eyebrow": "ONLINE",
               "title": "Request form",
               "body": "Choose the mobile service option on the service appointment form and add your service address, unit details and fault codes.",
               "linkLabel": "Request mobile service →",
-              "linkUrl": "/service-appointment#appointment-form"
+              "linkUrl": "/service-appointment#appointment-form",
+              "cardEyebrow": "ONLINE"
             },
             {
-              "eyebrow": "AFTER HOURS",
               "title": "Certified Fleet",
               "body": "Certified Fleet provides after-hours support from 5:00 PM to 8:00 AM, so help is available outside mobile service hours.",
               "linkLabel": "After-hours support →",
-              "linkUrl": "tel:+18007417566"
+              "linkUrl": "tel:+18007417566",
+              "cardEyebrow": "AFTER HOURS"
             }
           ]
         }
@@ -251,7 +252,8 @@
             "alt": "The Sun State mobile service flyer — artwork to be supplied",
             "width": 1600,
             "height": 900
-          }
+          },
+          "width": "full"
         }
       }
     },

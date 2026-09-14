@@ -95,7 +95,8 @@
             "alt": "Sun State International dealership — photograph to be supplied",
             "width": 1600,
             "height": 900
-          }
+          },
+          "width": "full"
         }
       }
     },
@@ -170,144 +171,157 @@
     },
     {
       "id": "home-locations",
-      "type": "section",
-      "props": {
-        "width": "boxed",
-        "paddingY": 10,
-        "background": "paper",
-        "anchor": "locations"
-      },
-      "children": [
-        {
-          "id": "loc-head-row",
-          "type": "row",
-          "props": {
-            "gap": 5
-          },
-          "children": [
-            {
-              "id": "loc-head-col",
-              "type": "column",
-              "props": {
-                "span": 12
-              },
-              "children": [
-                {
-                  "id": "loc-head-h",
-                  "type": "heading",
-                  "props": {
-                    "text": "Find a location",
-                    "headingLevel": 2,
-                    "eyebrow": "FIND A LOCATION"
-                  }
-                },
-                {
-                  "id": "loc-head-b",
-                  "type": "text",
-                  "props": {
-                    "text": "Ready to find the right commercial trucks for your business? Visit us at one of our convenient locations across Southwest Florida to find the perfect trucks and trailers for your needs.",
-                    "width": "prose"
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "loc-map-row",
-          "type": "row",
-          "props": {
-            "gap": 5
-          },
-          "children": [
-            {
-              "id": "loc-map-col",
-              "type": "column",
-              "props": {
-                "span": 12
-              },
-              "children": [
-                {
-                  "id": "loc-map",
-                  "type": "widget",
-                  "props": {
-                    "widget": "locations-map",
-                    "config": {
-                      "showMap": true
-                    }
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "home-location-cards",
       "type": "sharedSection",
       "props": {
-        "sectionId": "location-grid",
+        "sectionId": "location-rail",
         "values": {
-          "eyebrow": "",
-          "heading": "",
-          "body": "",
-          "span": 4,
-          "background": "paper",
+          "eyebrow": "FIND A LOCATION",
+          "heading": "Find a location",
+          "body": "Ready to find the right commercial trucks for your business? Visit us at one of our convenient locations across Southwest Florida to find the perfect trucks and trailers for your needs.",
+          "anchor": "locations",
+          "background": "card",
+          "brandLabel": "BRAND",
+          "brands": [
+            {
+              "label": "International",
+              "value": "international",
+              "dot": "#EE2D24"
+            },
+            {
+              "label": "IC Bus",
+              "value": "ic-bus",
+              "dot": "#242424"
+            },
+            {
+              "label": "Hyundai Translead",
+              "value": "hyundai-translead",
+              "dot": "#6C6C6C"
+            },
+            {
+              "label": "Globe Trailers",
+              "value": "globe-trailers",
+              "dot": ""
+            }
+          ],
+          "perkLabel": "PERKS",
+          "perks": [
+            {
+              "label": "In-store shopping",
+              "value": "in-store-shopping"
+            },
+            {
+              "label": "Curbside pickup",
+              "value": "curbside-pickup"
+            },
+            {
+              "label": "After-hours service",
+              "value": "after-hours-service"
+            },
+            {
+              "label": "In-store pickup",
+              "value": "in-store-pickup"
+            },
+            {
+              "label": "Delivery",
+              "value": "delivery"
+            }
+          ],
           "locations": [
             {
-              "tag": "TRUCK & TRAILER PARTS",
+              "num": "01",
               "city": "Brooksville",
-              "address": "17127 Runway Drive, Brooksville, FL 34604",
-              "hours": "In-store shopping · Curbside pickup · Delivery",
+              "state": "FL",
+              "name": "Truck & Trailer Parts",
               "phone": "(352) 277-0221",
               "phoneUrl": "tel:+13522770221",
-              "url": "/locations/brooksville"
+              "url": "/locations/brooksville",
+              "brands": "international",
+              "perks": "in-store-shopping curbside-pickup delivery",
+              "dot1": "",
+              "dot2": "",
+              "tag1": "In-store shopping",
+              "tag2": "Curbside pickup",
+              "tag3": "Delivery"
             },
             {
-              "tag": "TRUCKS · PARTS · SERVICE",
+              "num": "02",
               "city": "Davenport",
-              "address": "41609 Hwy 27, Davenport, FL 33837",
-              "hours": "In-store shopping · Curbside pickup · After-hours service",
+              "state": "FL",
+              "name": "Sun State International Trucks, LLC.",
               "phone": "(863) 238-2989",
               "phoneUrl": "tel:+18632382989",
-              "url": "/locations/davenport"
+              "url": "/locations/davenport",
+              "brands": "international ic-bus",
+              "perks": "in-store-shopping curbside-pickup after-hours-service",
+              "dot1": "#EE2D24",
+              "dot2": "#242424",
+              "tag1": "In-store shopping",
+              "tag2": "Curbside pickup",
+              "tag3": "After-hours service"
             },
             {
-              "tag": "TRUCKS · PARTS · SERVICE",
+              "num": "03",
               "city": "Sarasota",
-              "address": "1000 Sarasota Center Blvd, Sarasota, FL 34240",
-              "hours": "In-store shopping · Curbside pickup · After-hours service",
+              "state": "FL",
+              "name": "Sun State International Trucks, LLC.",
               "phone": "(941) 549-2251",
               "phoneUrl": "tel:+19415492251",
-              "url": "/locations/sarasota"
+              "url": "/locations/sarasota",
+              "brands": "international ic-bus",
+              "perks": "in-store-shopping curbside-pickup after-hours-service",
+              "dot1": "#EE2D24",
+              "dot2": "#242424",
+              "tag1": "In-store shopping",
+              "tag2": "Curbside pickup",
+              "tag3": "After-hours service"
             },
             {
-              "tag": "AFTERMARKET PARTS",
-              "city": "Sun State Aftermarket Parts — Tampa",
-              "address": "7105 East 6th Ave, Tampa, FL 33619",
-              "hours": "In-store shopping · Delivery",
-              "phone": "(813) 521-8053",
-              "phoneUrl": "tel:+18135218053",
-              "url": "/locations/aftermarket-parts"
-            },
-            {
-              "tag": "TRUCKS · TRAILERS · PARTS · SERVICE",
+              "num": "04",
               "city": "Tampa",
-              "address": "6020 E Adamo Dr, Tampa, FL 33619",
-              "hours": "In-store shopping · Curbside pickup · After-hours service",
+              "state": "FL",
+              "name": "Sun State Aftermarket Parts",
               "phone": "(813) 521-8053",
               "phoneUrl": "tel:+18135218053",
-              "url": "/locations/tampa"
+              "url": "/locations/aftermarket-parts",
+              "brands": "international",
+              "perks": "in-store-shopping delivery",
+              "dot1": "",
+              "dot2": "",
+              "tag1": "In-store shopping",
+              "tag2": "Delivery",
+              "tag3": ""
             },
             {
-              "tag": "SUN STATE TRAILERS",
-              "city": "Trailer Sales — Tampa",
-              "address": "6020 E Adamo Dr, Tampa, FL 33619",
-              "hours": "In-store shopping · In-store pickup · Delivery",
-              "phone": "(813) 621-1331",
-              "phoneUrl": "tel:+18136211331",
-              "url": "/locations/trailer-sales"
+              "num": "05",
+              "city": "Tampa",
+              "state": "FL",
+              "name": "Sun State International Trucks, LLC.",
+              "phone": "(813) 521-8053",
+              "phoneUrl": "tel:+18135218053",
+              "url": "/locations/tampa",
+              "brands": "international ic-bus hyundai-translead globe-trailers",
+              "perks": "in-store-shopping curbside-pickup after-hours-service",
+              "dot1": "#EE2D24",
+              "dot2": "#242424",
+              "tag1": "In-store shopping",
+              "tag2": "Curbside pickup",
+              "tag3": "After-hours service"
+            },
+            {
+              "num": "06",
+              "city": "Tampa",
+              "state": "FL",
+              "name": "Trailer Sales",
+              "phone": "(813) 521-8053",
+              "phoneUrl": "tel:+18135218053",
+              "url": "/locations/trailer-sales",
+              "brands": "hyundai-translead globe-trailers",
+              "perks": "in-store-shopping in-store-pickup delivery",
+              "dot1": "#6C6C6C",
+              "dot2": "#242424",
+              "tag1": "In-store shopping",
+              "tag2": "In-store pickup",
+              "tag3": "Delivery"
             }
           ]
         }
@@ -322,7 +336,7 @@
           "eyebrow": "OUR INVENTORY",
           "heading": "Everything to keep you moving.",
           "body": "We make finding the right equipment from reputable brands easier than ever at Sun State International. Whether you need a commercial truck, trailer, or school bus, we have the equipment you need to keep your business moving.",
-          "background": "card",
+          "background": "paper",
           "anchor": "services",
           "items": [
             {
@@ -464,7 +478,8 @@
             "alt": "Sun State trailers on the lot — photograph to be supplied",
             "width": 1600,
             "height": 900
-          }
+          },
+          "width": "boxed"
         }
       }
     },
@@ -487,7 +502,8 @@
             "alt": "International and IC Bus brand vehicles — photograph to be supplied",
             "width": 1600,
             "height": 900
-          }
+          },
+          "width": "boxed"
         }
       }
     },
@@ -555,13 +571,14 @@
       "props": {
         "sectionId": "cta-band",
         "values": {
-          "eyebrow": "READY TO GET ON THE ROAD?",
+          "eyebrow": "",
           "heading": "Ready to get on the road?",
           "body": "Contact us to explore our trucks and experience nothing less than the dedicated care you deserve.",
           "primaryLabel": "Contact us",
           "primaryUrl": "/contact",
-          "secondaryLabel": "Call us today · 813.521.8148",
-          "secondaryUrl": "tel:+18135218148"
+          "secondaryLabel": "",
+          "secondaryUrl": "",
+          "note": "Call us today · 813.521.8148"
         }
       }
     }

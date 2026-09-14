@@ -1,1 +1,15 @@
 [data-bz-node="ext-trailers"] [data-bz-node^="mb-media"] { order: -1; }
+
+/* --- Hero geometry, measured from the handoff --- */
+.bz-block--hero { padding-block: 96px; }
+.bz-block--hero h1 { font-size: 48px; line-height: 1.12; margin-bottom: 20px; }
+.bz-block--hero .bz-hero__copy { max-width: 940px; }
+.bz-block--hero .bz-hero__sub { font-size: 17px; max-width: 700px; margin-bottom: 30px; }
+@media (max-width: 1100px) {
+  .bz-block--hero { padding-block: 69px; }
+  .bz-block--hero h1 { font-size: 34px; }
+}
+@media (max-width: 640px) {
+  .bz-block--hero { padding-block: 53px; }
+  .bz-block--hero h1 { font-size: 28px; }
+}

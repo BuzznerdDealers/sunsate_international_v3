@@ -143,46 +143,46 @@
           "anchor": "tcf-series",
           "items": [
             {
-              "eyebrow": "SEVERE SERVICE",
               "title": "HX Series",
               "body": "Heavy-haul and severe-service chassis for dump, mixer, crane and heavy vocational work. S13 Integrated Powertrain available.",
               "linkLabel": "Spec sheets →",
-              "linkUrl": "/specifications#br-hx"
+              "linkUrl": "/specifications#br-hx",
+              "cardEyebrow": "SEVERE SERVICE"
             },
             {
-              "eyebrow": "ON HIGHWAY",
               "title": "LT Series",
               "body": "Line-haul and regional tractor, day cab or sleeper, built around fuel economy and driver comfort. S13 available.",
               "linkLabel": "Spec sheets →",
-              "linkUrl": "/specifications#br-lt"
+              "linkUrl": "/specifications#br-lt",
+              "cardEyebrow": "ON HIGHWAY"
             },
             {
-              "eyebrow": "ON HIGHWAY",
               "title": "RH Series",
               "body": "Regional haul tractor for shorter runs and mixed duty cycles, day cab or sleeper. S13 available.",
               "linkLabel": "Spec sheets →",
-              "linkUrl": "/specifications#br-rh"
+              "linkUrl": "/specifications#br-rh",
+              "cardEyebrow": "ON HIGHWAY"
             },
             {
-              "eyebrow": "VOCATIONAL",
               "title": "HV Series",
               "body": "Vocational chassis in HV509, HV515, HV609 and HV615 configurations for municipal, utility and construction fleets.",
               "linkLabel": "Spec sheets →",
-              "linkUrl": "/specifications#br-hv"
+              "linkUrl": "/specifications#br-hv",
+              "cardEyebrow": "VOCATIONAL"
             },
             {
-              "eyebrow": "MEDIUM DUTY",
               "title": "MV Series",
               "body": "Medium-duty workhorse for dry van, utility, recovery, boom and snowplow bodies — the most upfit-friendly of the lineup.",
               "linkLabel": "Spec sheets →",
-              "linkUrl": "/specifications#br-mv"
+              "linkUrl": "/specifications#br-mv",
+              "cardEyebrow": "MEDIUM DUTY"
             },
             {
-              "eyebrow": "CLASS 4–5 / ELECTRIC",
               "title": "CV & eMV Series",
               "body": "CV Series for class 4-5 work, and the battery-electric eMV Series with body integration guidance for zero-emission routes.",
               "linkLabel": "Spec sheets →",
-              "linkUrl": "/specifications#br-cv"
+              "linkUrl": "/specifications#br-cv",
+              "cardEyebrow": "CLASS 4–5 / ELECTRIC"
             }
           ]
         }
@@ -196,7 +196,7 @@
         "values": {
           "eyebrow": "FROM BUILD TO DELIVERY",
           "heading": "Four steps.",
-          "background": "card",
+          "background": "paper",
           "anchor": "tcf-how",
           "items": [
             {
@@ -243,18 +243,18 @@
           "background": "paper",
           "items": [
             {
-              "eyebrow": "SUN STATE TRAILERS",
               "title": "Spec'ing a trailer instead?",
               "body": "At Sun State, we want to help all our customers find the equipment that's right for them. Talk to a member of our sales team about available inventory, financing, or to schedule an in-person appointment, and we'll match a Hyundai Translead or Globe trailer to the freight — or alter one to fit.",
               "linkLabel": "Trailer Sales →",
-              "linkUrl": "/locations/trailer-sales"
+              "linkUrl": "/locations/trailer-sales",
+              "cardEyebrow": "SUN STATE TRAILERS"
             },
             {
-              "eyebrow": "AFTERMARKET UPFIT",
               "title": "The chassis is only half of it.",
               "body": "Our Tampa aftermarket shop installs van, reefer, dump, flatbed, tank and roll-off hoist bodies, liftgates, tarp systems, lift axles, PTO and wet-line kits, and handles frame modifications with Huck bolt replacement to maintain factory warranty on all makes.",
               "linkLabel": "Aftermarket capabilities →",
-              "linkUrl": "/aftermarket"
+              "linkUrl": "/aftermarket",
+              "cardEyebrow": "AFTERMARKET UPFIT"
             }
           ]
         }

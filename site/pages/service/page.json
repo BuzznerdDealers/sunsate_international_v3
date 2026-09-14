@@ -142,66 +142,66 @@
           "anchor": "services",
           "items": [
             {
-              "eyebrow": "TRUCKS & TRAILERS",
               "title": "Diamond Repair Estimating",
-              "body": "International's fully automated estimating platform lets our technicians create detailed repair estimates with greater speed and accuracy, so you understand the scope of repairs before work begins."
+              "body": "International's fully automated estimating platform lets our technicians create detailed repair estimates with greater speed and accuracy, so you understand the scope of repairs before work begins.",
+              "cardEyebrow": "TRUCKS & TRAILERS"
             },
             {
-              "eyebrow": "TRUCKS & TRAILERS",
               "title": "Computerized truck & trailer alignment",
-              "body": "Advanced laser technology identifies alignment issues with precision. Performed by factory-trained technicians, alignment reduces uneven tire wear, improves steering performance and extends the life of suspension components."
+              "body": "Advanced laser technology identifies alignment issues with precision. Performed by factory-trained technicians, alignment reduces uneven tire wear, improves steering performance and extends the life of suspension components.",
+              "cardEyebrow": "TRUCKS & TRAILERS"
             },
             {
-              "eyebrow": "TRUCKS & TRAILERS",
               "title": "Fabrication & welding shop",
-              "body": "Frame alterations, wheelbase modifications, body wraps and liftgate repairs. Whether repairing damaged equipment or modifying a vehicle to suit your operation, our technicians deliver workmanship built for commercial transportation."
+              "body": "Frame alterations, wheelbase modifications, body wraps and liftgate repairs. Whether repairing damaged equipment or modifying a vehicle to suit your operation, our technicians deliver workmanship built for commercial transportation.",
+              "cardEyebrow": "TRUCKS & TRAILERS"
             },
             {
-              "eyebrow": "TRAILERS",
               "title": "Repair and replace",
-              "body": "Our skilled technicians handle everything from repairing aluminum and fiberglass to replacing kingpins and landing gears, plus all-makes trailer parts replacement to restore your trailer to its best condition."
+              "body": "Our skilled technicians handle everything from repairing aluminum and fiberglass to replacing kingpins and landing gears, plus all-makes trailer parts replacement to restore your trailer to its best condition.",
+              "cardEyebrow": "TRAILERS"
             },
             {
-              "eyebrow": "TRUCKS & TRAILERS",
               "title": "DOT safety inspections",
-              "body": "We ensure your vehicle and trailer meet federal and state regulations with Department of Transportation Safety Inspections, helping you identify and fix potential safety hazards before accidents occur."
+              "body": "We ensure your vehicle and trailer meet federal and state regulations with Department of Transportation Safety Inspections, helping you identify and fix potential safety hazards before accidents occur.",
+              "cardEyebrow": "TRUCKS & TRAILERS"
             },
             {
-              "eyebrow": "TRAILERS",
               "title": "Liftgates",
-              "body": "Comprehensive care for your liftgates, including new installations, remounts, warranty services and parts replacements."
+              "body": "Comprehensive care for your liftgates, including new installations, remounts, warranty services and parts replacements.",
+              "cardEyebrow": "TRAILERS"
             },
             {
-              "eyebrow": "FLEETS",
               "title": "Fleet Charge",
-              "body": "Designed by International, Fleet Charge simplifies the service experience with consistent parts pricing, nationwide support and streamlined billing for qualifying fleet customers."
+              "body": "Designed by International, Fleet Charge simplifies the service experience with consistent parts pricing, nationwide support and streamlined billing for qualifying fleet customers.",
+              "cardEyebrow": "FLEETS"
             },
             {
-              "eyebrow": "TRUCKS",
               "title": "Accelerated Service Express Diagnostics",
-              "body": "ASED offers a complete vehicle diagnostic evaluation, repair assessment and detailed estimate within two hours of arrival, through participating International dealerships."
+              "body": "ASED offers a complete vehicle diagnostic evaluation, repair assessment and detailed estimate within two hours of arrival, through participating International dealerships.",
+              "cardEyebrow": "TRUCKS"
             },
             {
-              "eyebrow": "FLEETS",
               "title": "Diamond Advantage",
-              "body": "A credit program designed for the transportation industry, giving drivers and fleet operators access to products and services while simplifying payment and expense management."
+              "body": "A credit program designed for the transportation industry, giving drivers and fleet operators access to products and services while simplifying payment and expense management.",
+              "cardEyebrow": "FLEETS"
             },
             {
-              "eyebrow": "FLEETS",
               "title": "OnCommand Connection",
-              "body": "An industry-leading remote diagnostics platform that monitors vehicle health in real time across virtually all makes and models, turning vehicle data into insights that improve performance and maximize uptime."
+              "body": "An industry-leading remote diagnostics platform that monitors vehicle health in real time across virtually all makes and models, turning vehicle data into insights that improve performance and maximize uptime.",
+              "cardEyebrow": "FLEETS"
             },
             {
-              "eyebrow": "FLEETS",
               "title": "International 360",
-              "body": "A fleet management and service communication platform that makes the repair process more transparent from start to finish, helping fleet managers make informed decisions."
+              "body": "A fleet management and service communication platform that makes the repair process more transparent from start to finish, helping fleet managers make informed decisions.",
+              "cardEyebrow": "FLEETS"
             },
             {
-              "eyebrow": "ON SITE",
               "title": "Mobile service",
               "body": "Repairs, diagnostics and preventative maintenance performed at your location, so a truck that cannot reach the shop still gets back to work.",
               "linkLabel": "Mobile service →",
-              "linkUrl": "/mobile-service"
+              "linkUrl": "/mobile-service",
+              "cardEyebrow": "ON SITE"
             }
           ]
         }
@@ -266,7 +266,8 @@
             "alt": "A Sun State mobile service truck on site — photograph to be supplied",
             "width": 1600,
             "height": 900
-          }
+          },
+          "width": "full"
         }
       }
     },
@@ -315,7 +316,8 @@
             "alt": "The Sun State parts counter — photograph to be supplied",
             "width": 1600,
             "height": 900
-          }
+          },
+          "width": "full"
         }
       }
     },

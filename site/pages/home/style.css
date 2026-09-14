@@ -2,6 +2,7 @@
    The photo is a background layer so the section stays one selectable node on
    the canvas; swap the image in the style panel when the real shot lands. */
 [data-bz-node="home-hero"] {
+  padding: 160px 0 136px;
   background-image: url("/img/photo-placeholder.svg");
   background-size: cover;
   background-position: center;
@@ -14,8 +15,25 @@
   background: rgba(20, 20, 20, .68);
   z-index: 0;
 }
-[data-bz-node="home-hero"] > .bz-container { position: relative; z-index: 1; }
-[data-bz-node="home-hero"] h1 { color: #fff; max-width: 900px; margin-inline: auto; }
+[data-bz-node="home-hero"] > .bz-container {
+  position: relative;
+  z-index: 1;
+  /* The handoff's hero holds a 1280px box inside the section's own gutter,
+     so its copy runs 48px wider than a normal boxed band. */
+  max-width: calc(var(--container) + 2 * var(--container-pad));
+}
+[data-bz-node="home-hero"] .bz-block { padding-block: 0; }
+[data-bz-node="home-hero"] h1 {
+  color: #fff;
+  font-size: var(--text-h1);
+  line-height: 1.05;
+  letter-spacing: -.01em;
+  max-width: 900px;
+  margin: 0 auto 26px;
+}
+[data-bz-node="home-hero"] .bz-eyebrow { margin-bottom: 22px; }
+[data-bz-node="hero-brand-lockup"] { margin-bottom: 44px; }
+[data-bz-node="hero-search"] { margin-bottom: 56px; }
 [data-bz-node="home-hero"] .bz-eyebrow { color: #E2E2E2; text-align: center; }
 [data-bz-node="hero-brand-lockup"] img { width: 82%; max-width: 1400px; margin: 0 auto; }
 [data-bz-node="hero-search"] .bz-searchbar { max-width: 520px; margin-inline: auto; }

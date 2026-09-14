@@ -2,7 +2,7 @@
   "version": 2,
   "id": "media-band",
   "name": "Media + copy band",
-  "css": "[data-bz-section=\"media-band\"] [data-bz-node^=\"mb-media\"] { display: flex }\n[data-bz-section=\"media-band\"] [data-bz-node^=\"mb-img\"] { padding-block: 0; width: 100% }\n[data-bz-section=\"media-band\"] [data-bz-node^=\"mb-img\"] .bz-figure { margin: 0; height: 100% }\n[data-bz-section=\"media-band\"] [data-bz-node^=\"mb-img\"] img { width: 100%; height: 100%; min-height: 420px; object-fit: cover; display: block }\n@media (max-width: 640px) { [data-bz-section=\"media-band\"] [data-bz-node^=\"mb-img\"] img { min-height: 220px } }",
+  "css": "/* Two shapes. A full-bleed split has no container, so the row is a direct child\n   of the section and the copy carries the page gutter itself; a boxed card sits\n   inside the container with a rule around it. */\n[data-bz-section=\"media-band\"] .bz-block { padding-block: 0 }\n[data-bz-section=\"media-band\"] .bz-block + .bz-block { padding-block-start: 22px }\n[data-bz-section=\"media-band\"] h2 { font-size: var(--text-h2); line-height: 1.15; margin: 0 }\n[data-bz-section=\"media-band\"] .bz-eyebrow { margin-bottom: 18px }\n[data-bz-section=\"media-band\"] [data-bz-node=\"mb-body\"] p { font-size: 16px; line-height: 1.7; color: #3f3f3f }\n[data-bz-section=\"media-band\"] [data-bz-node=\"mb-body\"] .bz-text { max-width: 46ch }\n[data-bz-section=\"media-band\"] .bz-btns { margin-block: 0 }\n[data-bz-section=\"media-band\"] [data-bz-node=\"mb-media\"] { display: flex; min-height: 480px }\n[data-bz-section=\"media-band\"] [data-bz-node=\"mb-img\"] { padding-block: 0; width: 100% }\n[data-bz-section=\"media-band\"] [data-bz-node=\"mb-img\"] .bz-figure { margin: 0; height: 100% }\n[data-bz-section=\"media-band\"] [data-bz-node=\"mb-img\"] img { width: 100%; height: 100%; object-fit: cover; display: block }\n\n/* Full-bleed split: the copy half is padded to the page grid. */\n[data-bz-section=\"media-band\"] > .bz-section > [data-bz-node=\"mb-row\"] > [data-bz-node=\"mb-copy\"] {\n  padding: 60px 40px 60px max(var(--container-pad), calc((100vw - var(--container)) / 2 + var(--container-pad)));\n}\n[data-bz-section=\"media-band\"] > .bz-section > [data-bz-node=\"mb-row\"] > [data-bz-node=\"mb-media\"] { min-height: 480px }\n\n/* Boxed card: a rule around the whole band, the copy padded inside it. */\n[data-bz-section=\"media-band\"] .bz-container > [data-bz-node=\"mb-row\"] { border: 1px solid var(--line); background: var(--card) }\n[data-bz-section=\"media-band\"] .bz-container > [data-bz-node=\"mb-row\"] > [data-bz-node=\"mb-copy\"] { padding: 56px }\n[data-bz-section=\"media-band\"] .bz-container > [data-bz-node=\"mb-row\"] > [data-bz-node=\"mb-media\"] { min-height: 400px }\n[data-bz-section=\"media-band\"] .bz-section { padding-block: 0 }\n\n@media (max-width: 1100px) {\n  [data-bz-section=\"media-band\"] > .bz-section > [data-bz-node=\"mb-row\"] > [data-bz-node=\"mb-copy\"] { padding: 48px var(--container-pad-tablet) }\n  [data-bz-section=\"media-band\"] [data-bz-node=\"mb-media\"] { min-height: 320px }\n}\n@media (max-width: 640px) {\n  [data-bz-section=\"media-band\"] > .bz-section > [data-bz-node=\"mb-row\"] > [data-bz-node=\"mb-copy\"] { padding: 44px var(--container-pad-mobile) }\n  [data-bz-section=\"media-band\"] .bz-container > [data-bz-node=\"mb-row\"] > [data-bz-node=\"mb-copy\"] { padding: 32px 24px }\n  [data-bz-section=\"media-band\"] [data-bz-node=\"mb-media\"] { min-height: 220px }\n  [data-bz-section=\"media-band\"] h2 { font-size: 28px }\n}\n/* The boxed variant carries the section rhythm on its container; the bleed\n   variant is edge to edge with none. */\n[data-bz-section=\"media-band\"] > .bz-section > .bz-container { padding-block: var(--space-10) }",
   "props": [
     {
       "key": "eyebrow",
@@ -64,26 +64,42 @@
       }
     },
     {
+      "key": "width",
+      "type": "select",
+      "label": "Band shape",
+      "default": "full",
+      "options": [
+        {
+          "value": "full",
+          "label": "Full-bleed split — the photo runs to the screen edge"
+        },
+        {
+          "value": "boxed",
+          "label": "Boxed card — the band sits on the page grid with a rule around it"
+        }
+      ]
+    },
+    {
       "key": "background",
       "type": "select",
       "label": "Band background",
-      "default": "card",
+      "default": "paper",
       "options": [
-        {
-          "value": "card",
-          "label": "White"
-        },
         {
           "value": "paper",
           "label": "Paper"
         },
         {
-          "value": "ink",
-          "label": "Dark chrome"
+          "value": "card",
+          "label": "White"
         },
         {
           "value": "none",
           "label": "None"
+        },
+        {
+          "value": "ink",
+          "label": "Dark chrome"
         }
       ]
     },
@@ -99,9 +115,9 @@
       "id": "mb",
       "type": "section",
       "props": {
-        "width": "boxed",
+        "width": "{{width}}",
         "background": "{{background}}",
-        "paddingY": 10,
+        "paddingY": 0,
         "anchor": "{{anchor}}"
       },
       "children": [
@@ -109,7 +125,7 @@
           "id": "mb-row",
           "type": "row",
           "props": {
-            "gap": 7,
+            "gap": 0,
             "align": "stretch",
             "stackOn": "tablet"
           },
@@ -160,14 +176,6 @@
               "type": "column",
               "props": {
                 "span": 6
-              },
-              "styles": {
-                "base": {
-                  "minHeight": 420
-                },
-                "mobile": {
-                  "minHeight": 200
-                }
               },
               "children": [
                 {

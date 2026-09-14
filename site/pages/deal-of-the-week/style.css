@@ -1,6 +1,3 @@
-[data-bz-node="loc-map"] .bz-map { width: 100%; aspect-ratio: auto; min-height: 460px; background: var(--card); border: 1px solid var(--line); }
-[data-bz-node="loc-afterhours"] [data-bz-node^="mb-media"] { order: -1; }
-
 /* --- Hero geometry, measured from the handoff --- */
 .bz-block--hero { padding-block: 88px; }
 .bz-block--hero h1 { font-size: 46px; line-height: 1.12; margin-bottom: 20px; }

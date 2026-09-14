@@ -2,7 +2,7 @@
   "version": 2,
   "id": "site-footer",
   "name": "Site footer",
-  "css": "[data-bz-section=\"site-footer\"] .bz-block { padding-block: 0 }\n[data-bz-section=\"site-footer\"] .bz-block + .bz-block { padding-block-start: 18px }\n[data-bz-section=\"site-footer\"] h2 { font: 700 11px/1 var(--font-body); letter-spacing: .1em; text-transform: uppercase; color: #8A8A8A; margin: 0 0 18px }\n[data-bz-section=\"site-footer\"] .bz-navitem > a { color: #C7C1B4; font-size: 14px; font-weight: 400 }\n[data-bz-section=\"site-footer\"] .bz-navitem > a:hover { color: #fff }\n[data-bz-section=\"site-footer\"] p { color: #A0A0A0; font-size: 14px; line-height: 1.7 }\n[data-bz-section=\"site-footer\"] .bz-logo__img { height: 52px; width: auto }\n[data-bz-section=\"site-footer\"] .bz-btn--link { color: #A0A0A0; padding: 0; min-height: 0 }\n[data-bz-section=\"site-footer\"] .bz-btn--link:hover { color: #fff }",
+  "css": "[data-bz-section=\"site-footer\"] .bz-block { padding-block: 0 }\n[data-bz-section=\"site-footer\"] .bz-block + .bz-block { padding-block-start: 20px }\n[data-bz-section=\"site-footer\"] h2 { font: 700 11px/1 var(--font-body); letter-spacing: .1em; text-transform: uppercase; color: #8A8A8A; margin: 0 0 16px }\n[data-bz-section=\"site-footer\"] [data-bz-node^=\"sf-col-nav\"] .bz-nav { gap: 11px }\n[data-bz-section=\"site-footer\"] .bz-navitem > a { color: #EDEDED; font-size: 14px; font-weight: 400; font-family: var(--font-body) }\n[data-bz-section=\"site-footer\"] .bz-navitem > a:hover { color: #fff; text-decoration: underline }\n[data-bz-section=\"site-footer\"] p { color: #A0A0A0; font-size: 14px; line-height: 1.7; max-width: 34ch }\n[data-bz-section=\"site-footer\"] .bz-logo__img { height: 44px; width: auto }\n[data-bz-section=\"site-footer\"] [data-bz-node=\"sf-logo\"] { padding-block: 0 0 }\n[data-bz-section=\"site-footer\"] .bz-btn--link { color: #A0A0A0; padding: 0; min-height: 0; font-size: 14px; text-decoration: none }\n[data-bz-section=\"site-footer\"] .bz-btn--link:hover { color: #fff; text-decoration: underline }\n[data-bz-section=\"site-footer\"] [data-bz-node=\"sf-social\"] { padding-block-start: 24px }\n[data-bz-section=\"site-footer\"] [data-bz-node=\"sf-social\"] .ss-social { gap: 18px }\n[data-bz-section=\"site-footer\"] [data-bz-node=\"sf-social\"] .ss-social__a img { width: 16px; height: 16px }",
   "props": [
     {
       "key": "blurb",
@@ -54,7 +54,7 @@
       ]
     },
     {
-      "key": "columns",
+      "key": "linkColumns",
       "type": "list",
       "label": "Link columns",
       "fields": [
@@ -143,7 +143,7 @@
               "type": "column",
               "props": {
                 "span": 3,
-                "repeat": "columns"
+                "repeat": "linkColumns"
               },
               "children": [
                 {
