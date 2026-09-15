@@ -1,6 +1,41 @@
-/* The leadership portrait keeps its own shape rather than stretching. */
-[data-bz-node="leader-img"] img { width: 100%; max-width: 420px; height: auto; }
-[data-bz-node="story-mission"] .bz-text { margin-inline: auto; font-size: 19px; }
+/* --- Leadership band -------------------------------------------------------
+   The handoff draws this as a 260px portrait beside the copy, not as a 4/8
+   split: grid-template-columns: 260px 1fr, 56px apart, aligned to the top,
+   in a 96px band. */
+[data-bz-node="story-leader"] > .bz-section { padding-block: 96px; }
+[data-bz-node="leader-row"] { display: grid; grid-template-columns: 260px 1fr; gap: 56px; align-items: start; }
+/* The row is the renderer's 12-column grid and each column still carries its
+   own span; hand both tracks back to the two-column template above. */
+[data-bz-node="leader-photo"], [data-bz-node="leader-copy"] {
+  grid-column: auto; max-width: none; width: auto; min-width: 0;
+}
+[data-bz-node="leader-img"] img { width: 100%; max-width: none; aspect-ratio: 3 / 4; object-fit: cover; height: auto; }
+[data-bz-node="leader-h"] h2 { font-size: 24px; line-height: 1.2; color: #fff; margin: 0 0 4px; }
+[data-bz-node="leader-h"] .bz-eyebrow {
+  font: 700 12px/1 var(--font-body); letter-spacing: .08em;
+  color: var(--accent); margin: 0 0 22px;
+}
+/* The handoff puts the role under the name, so the eyebrow follows the h2. */
+[data-bz-node="leader-h"] .bz-headingblock { display: flex; flex-direction: column; }
+[data-bz-node="leader-h"] .bz-headingblock .bz-eyebrow { order: 2; }
+[data-bz-node="leader-h"] .bz-headingblock h2 { order: 1; }
+[data-bz-node="leader-body"] p { font-size: 15px; line-height: 1.7; color: var(--chrome-body); margin: 0; max-width: 640px; }
+[data-bz-node="leader-body"] .bz-text { max-width: 640px; }
+
+/* --- Mission band ----------------------------------------------------------
+   An eyebrow over one statement set in the display face at 24px, in a 760px
+   column. There is no heading in this band. */
+[data-bz-node="story-mission"] > .bz-section { padding-block: 72px; }
+[data-bz-node="story-mission"] > .bz-section > .bz-container { max-width: calc(760px + 2 * var(--container-pad)); }
+[data-bz-node="mission-h"] .bz-eyebrow {
+  font: 700 11px/1 var(--font-body); letter-spacing: .16em;
+  color: #FFD9D5; margin: 0 0 16px; text-align: center;
+}
+[data-bz-node="story-mission"] .bz-text { margin-inline: auto; max-width: 760px; }
+[data-bz-node="mission-body"] p {
+  font-family: var(--font-heading); font-weight: 700;
+  font-size: 24px; line-height: 1.45; color: #fff; margin: 0;
+}
 /* The intro band leads with the photograph. */
 [data-bz-node="story-care"] [data-bz-node^="mb-media"] { order: -1; }
 

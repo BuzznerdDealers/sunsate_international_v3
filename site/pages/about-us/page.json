@@ -81,7 +81,7 @@
           "type": "row",
           "props": {
             "gap": 7,
-            "align": "center",
+            "align": "start",
             "stackOn": "tablet"
           },
           "children": [
@@ -111,8 +111,7 @@
               "id": "leader-copy",
               "type": "column",
               "props": {
-                "span": 8,
-                "align": "center"
+                "span": 8
               },
               "children": [
                 {
@@ -274,7 +273,7 @@
       "type": "section",
       "props": {
         "width": "boxed",
-        "paddingY": 9,
+        "paddingY": 8,
         "background": "accent"
       },
       "children": [
@@ -297,7 +296,7 @@
                   "id": "mission-h",
                   "type": "heading",
                   "props": {
-                    "text": "Our mission",
+                    "text": "",
                     "headingLevel": 2,
                     "align": "center",
                     "eyebrow": "OUR MISSION"
