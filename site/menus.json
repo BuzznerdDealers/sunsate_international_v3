@@ -312,7 +312,78 @@
           "id": "our-story",
           "label": "Our Story",
           "type": "page",
-          "ref": "our-story"
+          "ref": "our-story",
+          "children": [
+            {
+              "id": "os-company",
+              "label": "The company",
+              "type": "label",
+              "children": [
+                {
+                  "id": "os-story",
+                  "label": "Our Story",
+                  "type": "page",
+                  "ref": "our-story"
+                },
+                {
+                  "id": "os-team",
+                  "label": "Meet the Team",
+                  "type": "page",
+                  "ref": "meet-the-team"
+                },
+                {
+                  "id": "os-careers",
+                  "label": "Careers",
+                  "type": "page",
+                  "ref": "careers"
+                }
+              ]
+            },
+            {
+              "id": "os-community",
+              "label": "In the community",
+              "type": "label",
+              "children": [
+                {
+                  "id": "os-involvement",
+                  "label": "Community Involvement",
+                  "type": "page",
+                  "ref": "community-involvement"
+                },
+                {
+                  "id": "os-reviews",
+                  "label": "Reviews",
+                  "type": "page",
+                  "ref": "reviews"
+                }
+              ]
+            },
+            {
+              "id": "os-media",
+              "label": "News & media",
+              "type": "label",
+              "children": [
+                {
+                  "id": "os-news",
+                  "label": "News & Press",
+                  "type": "page",
+                  "ref": "news-and-press"
+                },
+                {
+                  "id": "os-videos",
+                  "label": "Videos",
+                  "type": "page",
+                  "ref": "videos"
+                },
+                {
+                  "id": "os-blog",
+                  "label": "Blog",
+                  "type": "url",
+                  "url": "/blog"
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "locations",
@@ -596,6 +667,12 @@
           "ref": "careers"
         },
         {
+          "id": "fc-blog",
+          "label": "Blog",
+          "type": "url",
+          "url": "/blog"
+        },
+        {
           "id": "f-co-reviews",
           "label": "Reviews",
           "type": "page",
@@ -618,6 +695,12 @@
           "label": "Videos",
           "type": "page",
           "ref": "videos"
+        },
+        {
+          "id": "fc-contact",
+          "label": "Contact",
+          "type": "page",
+          "ref": "contact-us"
         }
       ]
     },
