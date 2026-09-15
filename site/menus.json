@@ -315,6 +315,70 @@
           "ref": "our-story",
           "children": [
             {
+              "id": "os-about",
+              "label": "About Sun State",
+              "type": "label",
+              "ref": null,
+              "children": [
+                {
+                  "id": "os-story",
+                  "label": "Our story",
+                  "type": "page",
+                  "ref": "our-story"
+                },
+                {
+                  "id": "os-team",
+                  "label": "Meet the team",
+                  "type": "page",
+                  "ref": "meet-the-team"
+                },
+                {
+                  "id": "os-careers",
+                  "label": "Careers",
+                  "type": "page",
+                  "ref": "careers"
+                },
+                {
+                  "id": "os-reviews",
+                  "label": "Reviews",
+                  "type": "page",
+                  "ref": "reviews"
+                }
+              ]
+            },
+            {
+              "id": "os-media",
+              "label": "News & media",
+              "type": "label",
+              "ref": null,
+              "children": [
+                {
+                  "id": "os-community",
+                  "label": "Community involvement",
+                  "type": "page",
+                  "ref": "community-involvement"
+                },
+                {
+                  "id": "os-news",
+                  "label": "News & press",
+                  "type": "page",
+                  "ref": "news-and-press"
+                },
+                {
+                  "id": "os-videos",
+                  "label": "Videos",
+                  "type": "page",
+                  "ref": "videos"
+                },
+                {
+                  "id": "os-blog",
+                  "label": "Blog",
+                  "type": "url",
+                  "url": "/blog"
+                }
+              ]
+            },
+            {
               "id": "os-visit",
               "label": "Visit us",
               "type": "label",
