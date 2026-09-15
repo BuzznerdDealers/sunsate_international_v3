@@ -2,13 +2,13 @@
   "version": 2,
   "id": "cta-band",
   "name": "Contact CTA band",
-  "css": "[data-bz-section=\"cta-band\"] .bz-container { text-align: center }\n[data-bz-section=\"cta-band\"] h2 { font-size: var(--text-h2-sm, 34px); margin: 0 auto 18px; max-width: 20ch }\n[data-bz-section=\"cta-band\"] .bz-lede { margin: 0 auto 28px; max-width: 58ch }\n[data-bz-section=\"cta-band\"] .bz-btns { justify-content: center; margin-block: 0 }\n[data-bz-section=\"cta-band\"] .bz-eyebrow { color: #E2E2E2 }\n[data-bz-section=\"cta-band\"] p { color: #C7C1B4 }",
+  "css": "[data-bz-section=\"cta-band\"] > .bz-section { padding-block: 80px }\n[data-bz-section=\"cta-band\"] > .bz-section > .bz-container { max-width: calc(var(--container) + 2 * var(--container-pad)) }\n[data-bz-section=\"cta-band\"] .bz-eyebrow { color: #A0A0A0; text-align: center; margin-bottom: 18px }\n[data-bz-section=\"cta-band\"] h2 { font-size: 28px; line-height: 1.6; margin: 0 0 18px; color: #fff }\n[data-bz-section=\"cta-band\"] [data-bz-node=\"cta-body\"] .bz-text { margin-inline: auto; max-width: 620px }\n[data-bz-section=\"cta-band\"] [data-bz-node=\"cta-body\"] p { color: #C7C1B4; font-size: 15px; line-height: 1.7; margin: 0 auto 30px }\n[data-bz-section=\"cta-band\"] .bz-btns { justify-content: center; margin-block: 0; gap: 14px }\n[data-bz-section=\"cta-band\"] .bz-btn { min-height: 48px; padding: 0 26px }\n[data-bz-section=\"cta-band\"] [data-bz-node=\"cta-note\"] .bz-text { margin-inline: auto }\n[data-bz-section=\"cta-band\"] [data-bz-node=\"cta-note\"] p { color: #A0A0A0; font-size: 13px; margin-top: 22px }\n[data-bz-section=\"cta-band\"] .bz-btn--secondary { background: transparent; color: #fff; border-color: #fff }\n[data-bz-section=\"cta-band\"] .bz-btn--secondary:hover { background: rgba(255,255,255,.08) }\n@media (max-width: 640px) { [data-bz-section=\"cta-band\"] > .bz-section { padding-block: 56px } }",
   "props": [
     {
       "key": "eyebrow",
       "type": "text",
       "label": "Eyebrow",
-      "default": "READY TO GET ON THE ROAD?"
+      "default": ""
     },
     {
       "key": "heading",
@@ -38,13 +38,19 @@
       "key": "secondaryLabel",
       "type": "text",
       "label": "Secondary button label",
-      "default": "Call 800.741.7566"
+      "default": ""
     },
     {
       "key": "secondaryUrl",
       "type": "url",
       "label": "Secondary button link",
-      "default": "tel:+18007417566"
+      "default": ""
+    },
+    {
+      "key": "note",
+      "type": "text",
+      "label": "Note under the buttons",
+      "default": ""
     }
   ],
   "nodes": [
@@ -54,7 +60,12 @@
       "props": {
         "width": "boxed",
         "background": "ink",
-        "paddingY": 9
+        "paddingY": 10
+      },
+      "styles": {
+        "base": {
+          "background": "#242424"
+        }
       },
       "children": [
         {
@@ -109,6 +120,15 @@
                         "intent": "call-dealer"
                       }
                     ]
+                  }
+                },
+                {
+                  "id": "cta-note",
+                  "type": "text",
+                  "props": {
+                    "text": "{{note}}",
+                    "align": "center",
+                    "width": "prose"
                   }
                 }
               ]

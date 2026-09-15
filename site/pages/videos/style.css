@@ -7,6 +7,55 @@
   aspect-ratio: 16 / 9;
   width: 100%;
   margin-bottom: 14px;
-  background: #D8D8D8;
+  background: var(--chrome);
 }
 .ss-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+/* --- Hero geometry, measured from the handoff --- */
+.bz-block--hero { padding-block: 100px; }
+.bz-block--hero h1 { font-size: 52px; line-height: 1.1; margin-bottom: 20px; }
+.bz-block--hero .bz-hero__copy { max-width: 900px; }
+.bz-block--hero .bz-hero__sub { font-size: 16px; max-width: 620px; margin-bottom: 0px; }
+
+/* --- Card treatment, measured from the handoff --- */
+[data-bz-node="videos-answers"] [data-bz-type="column"][data-bz-node^="fg-card-"][data-bz-node] { padding: 28px; }
+
+/* --- The handoff's opening band --- */
+[data-bz-node="vs-t"] .bz-text { max-width: 860px; }
+[data-bz-node="vs-t"] p { font-size: 18px; line-height: 1.7; color: var(--ink); margin: 0 0 8px; max-width: 860px; }
+[data-bz-node="vs-t"] p:last-child { font-size: 14px; line-height: 1.6; color: var(--muted); margin: 0; max-width: 620px; }
+
+/* The featured player sits in a 900px box; the library cards are the player
+   with a small source line under it, and no card padding of their own. */
+[data-bz-node="vf-col"] .ss-embed { max-width: 900px; }
+[data-bz-node="vf-col"] .ss-embed iframe { width: 100%; aspect-ratio: 16 / 9; display: block; border: 0; }
+.ss-embed-replaced { display: none; }
+[data-bz-node="vf-head-h"] h2 { margin-bottom: 28px; }
+
+[data-bz-node="videos-library"] [data-bz-type="column"][data-bz-node^="fg-card-"][data-bz-node] { padding: 0; }
+[data-bz-node="videos-library"] [data-bz-node^="fg-card-h"] { display: none; }
+[data-bz-node="videos-library"] [data-bz-node^="fg-card-b"] { padding: 16px 20px; }
+[data-bz-node="videos-library"] [data-bz-node^="fg-card-b"] p {
+  font: 700 11px/1.4 var(--font-body); letter-spacing: .12em; text-transform: uppercase; color: var(--muted);
+}
+[data-bz-node="videos-library"] [data-bz-node^="fg-card-cta"] { display: none; }
+[data-bz-node="videos-library"] .ss-embed iframe { width: 100%; aspect-ratio: 16 / 9; display: block; border: 0; }
+[data-bz-node="videos-summary"] { padding-block: 80px 0; }
+[data-bz-node="videos-featured"] { padding-block: 56px 0; }
+[data-bz-node="videos-library"] > .bz-section { padding-block: 80px 90px; }
+
+@media (max-width: 640px) {
+  .bz-block--hero { padding-block: 72px; }
+  .bz-block--hero h1 { font-size: 32px; }
+}
+
+/* --- Quick answers ---------------------------------------------------------
+   This page's cards take the handoff's 17px heading step, and its copy runs at
+   the relaxed leading. The heading's own 10px margin is the whole gap, so the
+   grid's 12px block rhythm is switched off inside these cards. */
+[data-bz-node="videos-answers"] h3 { font-size: 17px; margin: 0 0 10px; }
+[data-bz-node="videos-answers"] [data-bz-node^="fg-card-b"] { padding-block-start: 0; }
+[data-bz-node="videos-answers"] [data-bz-node^="fg-card-b"] p { font-size: 14px; line-height: 1.7; }
+
+/* The handoff's video grid is 32px apart. */
+[data-bz-node="videos-library"] [data-bz-node="fg-grid"] { gap: 32px; }

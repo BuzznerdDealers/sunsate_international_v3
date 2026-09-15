@@ -1,0 +1,24 @@
+/* --- Hero geometry, measured from the handoff --- */
+.bz-block--hero { padding-block: 100px; }
+.bz-block--hero h1 { font-size: 52px; line-height: 1.1; margin-bottom: 20px; }
+.bz-block--hero .bz-hero__copy { max-width: 900px; }
+.bz-block--hero .bz-hero__sub { font-size: 16px; max-width: 640px; margin-bottom: 0px; }
+
+
+[data-bz-node="ns-t"] .bz-text { max-width: 880px; }
+[data-bz-node="ns-t"] p { font-size: 16px; line-height: 1.7; color: var(--body-text); margin: 0 0 20px; }
+[data-bz-node="ns-t"] p:first-child { font-size: 18px; color: var(--ink); }
+[data-bz-node="ns-t"] p:last-child { margin-bottom: 44px; }
+
+@media (max-width: 640px) {
+  .bz-block--hero { padding-block: 72px; }
+  .bz-block--hero h1 { font-size: 32px; }
+}
+
+/* --- Band rhythm, measured from the handoff --------------------------------
+   Each band's own padding, read off the section it is drawn as. The build
+   was using the 90px house rhythm where the handoff sets its own. */
+[data-bz-node="news-summary"].bz-section,
+[data-bz-node="news-summary"] > .bz-section { padding-block: 80px 0px; }
+[data-bz-node="news-faq"].bz-section,
+[data-bz-node="news-faq"] > .bz-section { padding-block: 90px 90px; }

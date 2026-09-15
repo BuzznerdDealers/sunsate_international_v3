@@ -14,7 +14,9 @@ what the node model could not express, and what the dealer still has to supply.
 |---|---|
 | `--color-accent: #EE2D24` | `colors.accent` |
 | `--color-accent-hover: #c9241c` | `colors.accentDark` |
-| `--color-chrome: #141414` | `colors.ink` — the near-black used for header, footer and dark bands |
+| `--color-ink: #242424` | `colors.ink` — body text and the contact band |
+| `--color-chrome: #141414` | `colors.inkDark`, and `--chrome` in `site/custom-code.json` — header, footer, type rail, legal hero |
+| `--color-body-text: #3f3f3f` | `--body-text` in `site/custom-code.json` |
 | `--color-paper: #F4F4F4` | `colors.paper` |
 | `--color-card: #FFFFFF` | `colors.card` |
 | `--color-line: #DCDCDC` | `colors.line` |
@@ -29,10 +31,17 @@ what the node model could not express, and what the dealer still has to supply.
 `@font-face` rules and preloads the display faces. INTL Headline is an all-caps face — the
 uppercase headings are the font, not a `text-transform`.
 
-Everything the tokens cannot express — the 48px page gutter, the 120px section rhythm, the
+Everything the tokens cannot express — the 48px page gutter, the 90px section rhythm, the
 hard-edged buttons and inputs, the explicit text colours on dark chrome — is in
-`site/custom-code.json`, scoped to platform block classes. Two rules there fix platform
-behaviour rather than style it, and both are flagged in §5.
+`site/custom-code.json`, scoped to platform block classes. Several rules there fix platform
+behaviour rather than style it, and each is flagged in §5.
+
+Two numbers in the handoff's token file are not the numbers it draws with, so the measured
+values are used: `--text-h2` says 38px but 76 of its 227 headings are 34px and only five
+are 38 (the home page's bands), and `--section-y` says 120px but 68 of its sections are
+90px, 34 are 80 and 34 are 100 — 120 appears nowhere. Headings also inherit the 1.6 body
+leading rather than a heading leading, which is what makes a wrapped band heading sit as
+loosely as it does.
 
 ---
 
@@ -114,28 +123,48 @@ FAQ widget renders native `<details>`, needs no script, and emits `FAQPage` JSON
 
 ## 4. What is not a like-for-like copy
 
-- **The blog.** The handoff's blog landing (topic filter chips, featured post) is replaced
-  by the platform's Posts feature: the nine posts are real records under
-  `site/blog/posts/`, so `postsList` and the blog index resolve them. Only the excerpt was
-  available in the handoff, so each post carries its excerpt, a link to the original
-  article, and an editor's note where the migrated body goes.
+Everything below was measured against the handoff at 1440px rather than eyeballed: both
+trees were rendered and their bounding boxes compared band by band. Every page is now
+within a few dozen pixels of the handoff except where this section says otherwise.
+
+- **Live platform data replaces the handoff's hardcoded arrays**, which is the one place
+  the built site is deliberately *better* than the prototype and therefore does not match
+  it pixel for pixel until the channel is connected:
+  - `/meet-the-team` draws its 38 people from the `staff` widget. The handoff lists them in
+    the page; the widget renders them from the dealer's channel, so that band is ~2,300px
+    shorter in the static build and the right height once the roster is imported.
+  - The home page's featured listings come from `inventory-carousel`, not four typed-out
+    cards.
+  - The locations map, location cards and department phone numbers come from the
+    `locations-map` widget on home, locations and contact.
+- **The blog.** The handoff's blog landing (topic chips, featured post) is the platform's
+  Posts feature: nine real records under `site/blog/posts/`, so `postsList` and the blog
+  index resolve them. Only the excerpt was available, so each post carries its excerpt, a
+  link to the original article, and an editor's note where the migrated body goes.
 - **The home hero's two-select finder** (Type / Category) is the platform's
-  `inventory-search` widget, which searches the real catalogue.
-- **The truck-type coverflow** is the platform `carousel` behaviour. The handoff stages it
-  with absolutely-positioned cards placed by a script from a `data-pos` attribute; the
-  platform's implementation brings arrows, keyboard support, `prefers-reduced-motion` and
-  markup that is in flow before any script runs — which is also what the Design canvas
-  needs, since it runs no site JS. The scale-and-fade coverflow effect is not reproduced.
-- **Filter pill groups** (brand and perk filters on home, topic filters on the blog,
-  department filters on the team page) are not reproduced as filters — see §5. They became
-  either pre-filtered storefront links or in-page jump menus.
-- **Location and department hours** are authored content in the `hours-grid` and
-  `location-summary` components rather than the `hours` / `phone-numbers` widgets, because
-  the design specifies them per department and the widgets render one list from the
-  channel's snapshot. Swapping a card for a `widget` node is a one-line change once the
-  dealer's Locations module carries per-department hours.
+  `inventory-search` widget, which searches the real catalogue instead of filtering a typed
+  list. It is one text field and a button rather than two dropdowns.
+- **The truck-type coverflow** keeps the handoff's staging (a script sets `data-pos`, the
+  CSS places and scales the cards) because no behaviour expresses a coverflow; the
+  un-staged state is a real in-flow rail, which is what the Design canvas and the first
+  paint show. Arrows and a phone-width scroll rail are built in.
+- **The inventory page** carried a live-inventory carousel and a search box the handoff does
+  not draw; both were removed so the page runs in the handoff's order. Putting either back
+  is one placement.
+- **Question bands are accordions.** The handoff draws 24 of its 28 question bands as
+  accordions and opens the first answer; the platform `faq` widget has no way to mark an
+  item open, so ours open closed — about 75px shorter per band. The four bands the handoff
+  does *not* draw as accordions (meet-the-team, careers, videos, inventory) are built the
+  way it draws them: card grids and an open ruled list.
+- **Location and department hours** are authored content in `hours-grid` and
+  `location-summary` rather than the `hours` / `phone-numbers` widgets, because the design
+  specifies them per department and the widgets render one list from the channel snapshot.
+  Swapping a card for a `widget` node is a one-line change once the dealer's Locations
+  module carries per-department hours.
 - **Videos and the truck configurator** ship as real links, upgraded to embeds by a page
   script — see §5.
+- **The header's phone number** is one number in the template; the handoff varies it per
+  page. A template cannot, and a per-page header would mean a template per page.
 - **The department directory, press coverage and community partner logos** use remote image
   URLs from `sunstateintl.com`. Re-upload those through the media library before launch.
 
@@ -143,39 +172,58 @@ FAQ widget renders native `<details>`, needs no script, and emits `FAQPage` JSON
 
 ## 5. Platform gaps found while building this
 
-1. **A `filter` behaviour cannot be wired from the node model.** `renderer/client/widgets.js`
-   reads each item's facet from a `data-<facet>` attribute on the element marked
-   `part: "item"`, and each control's from `data-bz-facet` / `data-bz-value`. No block prop
-   emits arbitrary data attributes, and a coded widget's markup sits *inside* the wrapper
-   that carries `data-bz-part`, so the attributes land on the wrong element. Every filter
-   group in this handoff — brand and perk filters, blog topics, team departments — is
-   therefore unbuildable as a behaviour.
-2. **A component's `list` prop cannot contain a list.** `normaliseProp` forces a list field
+1. **A component prop with a non-empty default cannot be turned off by a placement.**
+   `componentValues` treats an empty string as "not supplied" and falls back to the
+   declared default, so a placement that wants no band heading gets the component's own.
+   The locations page printed "Find a location" over its own band heading until
+   `location-grid`'s defaults were emptied. A placement needs a way to say "none".
+2. **`blocks.css` sets type on `.bz-block p` / `.bz-block h3`, which outranks every
+   single-class rule the renderer itself ships.** `.bz-eyebrow`, `.bz-hero__sub` and
+   `.bz-feature__t` are all (0,1,0) against (0,1,1), so a dealer stylesheet that follows
+   the obvious pattern silently loses. Every eyebrow on this site rendered at 16px instead
+   of 11px until the rules were given a second class.
+3. **A `buttons` block allows at most three items.** A location card in this handoff
+   carries three phone numbers, a "view location" link and a directions link, so it is
+   built as two adjacent `buttons` blocks.
+4. **A component's `list` prop cannot contain a list.** `normaliseProp` forces a list field
    whose type is `list` back to `text`. Anything shaped as a list of lists — the eight
    brochure groups on `/specifications`, each with its own documents — has to be written
    out one placement per group, which is what `npm run validate` then reports as a repeated
-   shape. That note on `site/pages/specifications/page.json` is this limitation, not an
-   oversight; the `doc-group` coded widget is the closest the model gets.
-3. **`ctaId` cannot be bound through a component.** `scripts/validate.mjs` resolves
+   shape. That note is this limitation, not an oversight.
+5. **`ctaId` cannot be bound through a component.** `scripts/validate.mjs` resolves
    `props.items[].ctaId` against `site/buttons.json` before any placement binds, so
    `"{{primaryCta}}"` fails as a dangling id. Components here take `label` + `url` props
-   instead, which means those buttons are outside the CTA library.
-4. **A stacked row keeps twelve tracks and eleven gaps.** `blocks.css` stacks a row by
+   instead, which puts those buttons outside the CTA library. It also means an optional
+   button renders as an empty anchor when a placement leaves it out; one rule in
+   `site/custom-code.json` hides them.
+6. **A stacked row keeps twelve tracks and eleven gaps.** `blocks.css` stacks a row by
    setting `grid-column: 1 / -1` on its columns but leaves `grid-template-columns:
    repeat(12, …)` in place. At this site's 48px gap and 20px mobile gutter that is 528px of
    gap inside a 350px container, so every stacked row ran off the side of a phone. The
    collapse rule is in `site/custom-code.json`; the same arithmetic bites any site whose
    row gap exceeds about a twelfth of the mobile content width.
-5. **An image block cannot fill its node.** The block renders
+7. **An image block cannot fill its node.** The block renders
    `.bz-block--image > .bz-container > figure > img`; a `height: 100%` on the figure
    resolves against the container, which has no height, so a photo meant to cover a band
    keeps its intrinsic ratio. One rule in `site/custom-code.json` carries the height down
    the chain; it is inert wherever the block is auto-height.
-6. **No iframe block.** `<iframe>` is stripped from both coded widgets and `customHtml`, so
+8. **No iframe block.** `<iframe>` is stripped from both coded widgets and `customHtml`, so
    the video library and the navconfig.com configurator ship as real links and are upgraded
    to embeds by `site/pages/videos/script.js` and
    `site/pages/truck-configurator/script.js`. The un-enhanced state is a working link,
    which is what the canvas draws and what a visitor without scripts gets.
+9. **`columns` is a reserved component prop key** (`renderer/custom-widgets.mjs`), so the
+   footer's three link columns bound to nothing and rendered empty until the prop was
+   renamed. The parser should refuse a reserved key rather than drop it silently.
+10. **The `faq` widget cannot mark an item open**, which is how the handoff draws every one
+    of its accordions — see §4.
+
+A note on the `filter` behaviour, which an earlier draft of this file reported as
+unbuildable: it **is** buildable. `parts()` in `renderer/client/widgets.js` collects
+`[data-bz-part~="…"]` anywhere under the behaviour root, so a coded widget's own markup can
+carry `data-bz-part="item"` together with its `data-<facet>` attributes. The home page's
+brand and perk filters are built that way, with the behaviour declared on the section and
+nothing scripted.
 
 No `customHtml` block is used anywhere in this site.
 
@@ -204,11 +252,16 @@ No `customHtml` block is used anywhere in this site.
 ## 7. Verified state
 
 ```
-npm run validate   exit 0 — 31 pages, 5 forms, 37 buttons, 1 template, 12 components,
-                            2 coded widgets; notes only (pageType, REPLACE_ placeholders,
-                            the brochure grid from §5.2)
+npm run validate   exit 0 — 31 pages, 5 forms, 37 buttons, 1 template, 14 components,
+                            9 coded widgets; notes only (pageType, REPLACE_ placeholders,
+                            the brochure grid from §5.4)
 npm test           exit 0 — 124/124
 npm run build      exit 0 — 31 pages + 9 posts + the blog index, sitemap, robots, llms.txt
 ```
 
 No horizontal overflow at 390px, 900px or 1440px on any of the 32 routes.
+
+Band-by-band against the handoff at 1440px, summing the absolute difference in every
+band's height across all 31 pages: **57,350px at the start of the matching pass, 12,936px
+now** — and 2,386px of what is left is the staff roster the platform will fill in, with
+about 1,600px more in the closed first answer of each accordion (§4).

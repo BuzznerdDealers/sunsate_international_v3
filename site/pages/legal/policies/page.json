@@ -8,13 +8,7 @@
         "headingLevel": 1,
         "eyebrow": "HOME / POLICIES",
         "headline": "Policies",
-        "subhead": "Order, shipping and return policies for parts and accessories purchased from Sun State International Trucks and Sun State Trailers. Last updated September 11, 2026.",
-        "image": {
-          "src": "/img/photo-placeholder.svg",
-          "alt": "Policies — no photograph in this design",
-          "width": 1600,
-          "height": 900
-        }
+        "subhead": "Order, shipping and return policies for parts and accessories purchased from Sun State International Trucks and Sun State Trailers. Last updated September 11, 2026."
       }
     },
     {
@@ -23,7 +17,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 9,
-        "background": "paper",
+        "background": "card",
         "anchor": "po-intro"
       },
       "children": [
@@ -125,11 +119,27 @@
                   }
                 },
                 {
-                  "id": "po-shipping-b",
-                  "type": "text",
+                  "id": "po-shipping-d",
+                  "type": "def-rows",
                   "props": {
-                    "text": "<strong>Shipping and handling charges.</strong> Shipping and handling charges are based on total price of your order. Oversized or heavy items may have an additional shipping cost. This charge may not be calculated until the order is being prepared. We will notify you if there is an increase in the shipping charge for your order prior to billing and shipping.\n\n<strong>Shipment by UPS.</strong> We ship via UPS Ground or US Postal Service in the continental US. Shipments to Alaska &amp; Hawaii and International orders will have an additional shipping cost applied.\n\n<strong>Delivery time.</strong> Allow 4-10 business days for delivery of non-backordered items in the continental US. Allow additional time for shipments to Alaska, Hawaii and International Orders.\n\n<strong>Consolidated shipments.</strong> Entire orders will be shipped together if possible.",
-                    "width": "full"
+                    "rows": [
+                      {
+                        "label": "Shipping and handling charges",
+                        "text": "Shipping and handling charges are based on total price of your order. Oversized or heavy items may have an additional shipping cost. This charge may not be calculated until the order is being prepared. We will notify you if there is an increase in the shipping charge for your order prior to billing and shipping."
+                      },
+                      {
+                        "label": "Shipment by UPS",
+                        "text": "We ship via UPS Ground or US Postal Service in the continental US. Shipments to Alaska & Hawaii and International orders will have an additional shipping cost applied."
+                      },
+                      {
+                        "label": "Delivery time",
+                        "text": "Allow 4-10 business days for delivery of non-backordered items in the continental US. Allow additional time for shipments to Alaska, Hawaii and International Orders."
+                      },
+                      {
+                        "label": "Consolidated shipments",
+                        "text": "Entire orders will be shipped together if possible."
+                      }
+                    ]
                   }
                 },
                 {
@@ -142,11 +152,35 @@
                   }
                 },
                 {
-                  "id": "po-returns-b",
-                  "type": "text",
+                  "id": "po-returns-d",
+                  "type": "def-rows",
                   "props": {
-                    "text": "<strong>General.</strong> All returns must be postmarked no later than 30 days from the original customer shipment date. Returns and exchanges must be in new condition and must include all instructions and original packing material. Customer pays all return shipping charges. Include a copy of your packing list with all returns. Original shipping and handling charges are not refundable. Returns must be preauthorized by us and are subject to a 15% re-stocking fee. These amounts will be deducted from the original amount billed and the remaining balance will be credited to the original credit card.\n\n<strong>Incorrect item.</strong> If you received an incorrect item no extra charges will be incurred. We will replace incorrect items and pay the additional shipping charge.\n\n<strong>Incorrect size.</strong> No charge for exchange. We will exchange customer orders that do not fit, if the customer requests the same item in a different size. Customer pays all shipping charges.\n\n<strong>Customer order error.</strong> Incorrect customer orders can be exchanged for any other item without paying the restocking charge. However, the customer will pay the additional shipping and handling charge. The replacement item must be at least 75% of the value of the original item.\n\n<strong>Return shipping instructions.</strong> Return via prepaid UPS or US mail. Insure shipment for full value of purchase. Use original packaging. We are not responsible for packages lost during return shipping.\n\n<strong>Return / exchange instructions.</strong> Enclose a copy of your packing list or e-mail invoice along with detailed return/exchange instructions. Send exchanges and returns to the dealership.",
-                    "width": "full"
+                    "rows": [
+                      {
+                        "label": "General",
+                        "text": "All returns must be postmarked no later than 30 days from the original customer shipment date. Returns and exchanges must be in new condition and must include all instructions and original packing material. Customer pays all return shipping charges. Include a copy of your packing list with all returns. Original shipping and handling charges are not refundable. Returns must be preauthorized by us and are subject to a 15% re-stocking fee. These amounts will be deducted from the original amount billed and the remaining balance will be credited to the original credit card."
+                      },
+                      {
+                        "label": "Incorrect item",
+                        "text": "If you received an incorrect item no extra charges will be incurred. We will replace incorrect items and pay the additional shipping charge."
+                      },
+                      {
+                        "label": "Incorrect size",
+                        "text": "No charge for exchange. We will exchange customer orders that do not fit, if the customer requests the same item in a different size. Customer pays all shipping charges."
+                      },
+                      {
+                        "label": "Customer order error",
+                        "text": "Incorrect customer orders can be exchanged for any other item without paying the restocking charge. However, the customer will pay the additional shipping and handling charge. The replacement item must be at least 75% of the value of the original item."
+                      },
+                      {
+                        "label": "Return shipping instructions",
+                        "text": "Return via prepaid UPS or US mail. Insure shipment for full value of purchase. Use original packaging. We are not responsible for packages lost during return shipping."
+                      },
+                      {
+                        "label": "Return / exchange instructions",
+                        "text": "Enclose a copy of your packing list or e-mail invoice along with detailed return/exchange instructions. Send exchanges and returns to the dealership."
+                      }
+                    ]
                   }
                 },
                 {
@@ -193,11 +227,23 @@
                   }
                 },
                 {
-                  "id": "po-backorders-b",
-                  "type": "text",
+                  "id": "po-backorders-d",
+                  "type": "def-rows",
                   "props": {
-                    "text": "<strong>Backorders.</strong> If an item is backordered, we will notify you via e-mail.\n\n<strong>Shipments scheduled more than 30 days after the order date.</strong> We will notify you via email and give you a cancellation option.\n\n<strong>Filling backorders.</strong> Backorders will be filled before new orders when the backordered items become available.",
-                    "width": "full"
+                    "rows": [
+                      {
+                        "label": "Backorders",
+                        "text": "If an item is backordered, we will notify you via e-mail."
+                      },
+                      {
+                        "label": "Shipments scheduled more than 30 days after the order date",
+                        "text": "We will notify you via email and give you a cancellation option."
+                      },
+                      {
+                        "label": "Filling backorders",
+                        "text": "Backorders will be filled before new orders when the backordered items become available."
+                      }
+                    ]
                   }
                 },
                 {
@@ -338,13 +384,14 @@
       "props": {
         "sectionId": "cta-band",
         "values": {
-          "eyebrow": "CONTACT US",
-          "heading": "Questions about an order?",
-          "body": "Call the parts counter with your order number and we will walk you through shipping, returns or a backorder.",
-          "primaryLabel": "Contact us",
-          "primaryUrl": "/contact",
-          "secondaryLabel": "Call 800.741.7566",
-          "secondaryUrl": "tel:+18007417566"
+          "eyebrow": "QUESTIONS ABOUT AN ORDER?",
+          "heading": "Talk to the parts counter.",
+          "body": "Have your order or packing list handy and we'll sort out shipping, a return authorization or a backorder status.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Parts department",
+          "secondaryUrl": "/parts",
+          "background": "ink"
         }
       }
     }

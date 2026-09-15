@@ -8,13 +8,7 @@
         "headingLevel": 1,
         "eyebrow": "HOME / TERMS AND CONDITIONS",
         "headline": "Terms and Conditions",
-        "subhead": "Applies to the Sun State International Trucks and Sun State Trailers websites. Last updated September 11, 2026.",
-        "image": {
-          "src": "/img/photo-placeholder.svg",
-          "alt": "Terms and Conditions — no photograph in this design",
-          "width": 1600,
-          "height": 900
-        }
+        "subhead": "Applies to the Sun State International Trucks and Sun State Trailers websites. Last updated September 11, 2026."
       }
     },
     {
@@ -23,7 +17,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 9,
-        "background": "paper",
+        "background": "card",
         "anchor": "tc-intro"
       },
       "children": [
@@ -108,7 +102,15 @@
                   "id": "tc-liability-b",
                   "type": "text",
                   "props": {
-                    "text": "In no event shall Sun State International Trucks, LLC. be liable for any direct, indirect, special, punitive, incidental, exemplary or consequential damages, or any damages whatsoever, even if Sun State International Trucks, LLC. has been previously advised of the possibility of such damages, whether in an action under contract, negligence, or any other theory, arising out of or in connection with the use, inability to use, or performance of the information, services, products, and materials available from this site.\n\nThese limitations shall apply notwithstanding any failure of essential purpose of any limited remedy. Because some jurisdictions do not allow limitations on how long an implied warranty lasts, or the exclusion or limitation of liability for consequential or incidental damages, the above limitations may not apply to you.",
+                    "text": "In no event shall Sun State International Trucks, LLC. be liable for any direct, indirect, special, punitive, incidental, exemplary or consequential damages, or any damages whatsoever, even if Sun State International Trucks, LLC. has been previously advised of the possibility of such damages, whether in an action under contract, negligence, or any other theory, arising out of or in connection with the use, inability to use, or performance of the information, services, products, and materials available from this site.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "tc-liability-b2",
+                  "type": "text",
+                  "props": {
+                    "text": "These limitations shall apply notwithstanding any failure of essential purpose of any limited remedy. Because some jurisdictions do not allow limitations on how long an implied warranty lasts, or the exclusion or limitation of liability for consequential or incidental damages, the above limitations may not apply to you.",
                     "width": "full"
                   }
                 },
@@ -125,7 +127,15 @@
                   "id": "tc-ip-b",
                   "type": "text",
                   "props": {
-                    "text": "The images, logos, copy and trademarks contained in this site, including but not limited to the text, images, audio or video, may not be used in any manner, or for any purpose, without Sun State International Trucks, LLC. express written permission, are believed to be in the public domain or used with permission of the respective trademark or copyright holder.\n\nThe information and images on this site may not in any way be used in any manner, or for any purpose, without the express written permission of Sun State International Trucks, LLC. or the official holder of the copyright or trademark. Please contact Sun State International Trucks, LLC. if you have questions or concerns about the site content.",
+                    "text": "The images, logos, copy and trademarks contained in this site, including but not limited to the text, images, audio or video, may not be used in any manner, or for any purpose, without Sun State International Trucks, LLC. express written permission, are believed to be in the public domain or used with permission of the respective trademark or copyright holder.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "tc-ip-b2",
+                  "type": "text",
+                  "props": {
+                    "text": "The information and images on this site may not in any way be used in any manner, or for any purpose, without the express written permission of Sun State International Trucks, LLC. or the official holder of the copyright or trademark. Please contact Sun State International Trucks, LLC. if you have questions or concerns about the site content.",
                     "width": "full"
                   }
                 },
@@ -142,8 +152,44 @@
                   "id": "tc-orders-b",
                   "type": "text",
                   "props": {
-                    "text": "The receipt of an e-mail order confirmation does not constitute the acceptance of an order or a confirmation of an offer to sell. Sun State International Trucks, LLC. reserves the right, without prior notification, to limit the order quantity on any item and/or refuse service to any customer.\n\nVerification of information may be required prior to the acceptance of any order. By placing a credit card order, the customer grants Sun State International Trucks, LLC. permission to contact their bank to verify name and address.",
+                    "text": "The receipt of an e-mail order confirmation does not constitute the acceptance of an order or a confirmation of an offer to sell. Sun State International Trucks, LLC. reserves the right, without prior notification, to limit the order quantity on any item and/or refuse service to any customer.",
                     "width": "full"
+                  }
+                },
+                {
+                  "id": "tc-orders-b2",
+                  "type": "text",
+                  "props": {
+                    "text": "Verification of information may be required prior to the acceptance of any order. By placing a credit card order, the customer grants Sun State International Trucks, LLC. permission to contact their bank to verify name and address.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "tc-alsosee",
+                  "type": "heading",
+                  "props": {
+                    "text": "Also see",
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "tc-alsosee-links",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Order, shipping & return policies →",
+                        "url": "/legal/policies",
+                        "style": "link",
+                        "intent": "learn-more"
+                      },
+                      {
+                        "label": "Privacy Policy →",
+                        "url": "/legal/privacy",
+                        "style": "link",
+                        "intent": "learn-more"
+                      }
+                    ]
                   }
                 }
               ]
@@ -246,13 +292,14 @@
       "props": {
         "sectionId": "cta-band",
         "values": {
-          "eyebrow": "CONTACT US",
-          "heading": "Questions about these terms?",
-          "body": "Contact Sun State International if you have questions or concerns about site content, pricing or an order.",
-          "primaryLabel": "Contact us",
-          "primaryUrl": "/contact",
-          "secondaryLabel": "Call 800.741.7566",
-          "secondaryUrl": "tel:+18007417566"
+          "eyebrow": "QUESTIONS ABOUT SITE CONTENT?",
+          "heading": "Please contact us.",
+          "body": "Please contact Sun State International Trucks, LLC. if you have questions or concerns about the site content, including permission to use images, logos or copy.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Contact us",
+          "secondaryUrl": "/contact",
+          "background": "ink"
         }
       }
     }

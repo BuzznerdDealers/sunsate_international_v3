@@ -8,20 +8,6 @@
         "headingLevel": 1,
         "eyebrow": "PARTS DEPARTMENT",
         "headline": "Find the parts you need, people you trust, and the support that keeps your business moving.",
-        "ctas": [
-          {
-            "label": "Order parts online",
-            "url": "https://www.sunstateparts.com/login",
-            "style": "primary",
-            "intent": "browse-parts"
-          },
-          {
-            "label": "Find a location",
-            "url": "/locations",
-            "style": "secondary",
-            "intent": "find-location"
-          }
-        ],
         "image": {
           "src": "/img/photo-placeholder.svg",
           "alt": "The Sun State parts counter — photograph to be supplied",
@@ -42,99 +28,16 @@
           "ctaLabel": "Find a Location",
           "ctaUrl": "/locations",
           "ctaStyle": "primary",
-          "background": "paper",
+          "background": "card",
           "image": {
             "src": "/img/photo-placeholder.svg",
             "alt": "The Sun State parts warehouse — photograph to be supplied",
             "width": 1600,
             "height": 900
-          }
+          },
+          "width": "full"
         }
       }
-    },
-    {
-      "id": "parts-offer-head",
-      "type": "section",
-      "props": {
-        "width": "boxed",
-        "paddingY": 9,
-        "background": "card"
-      },
-      "children": [
-        {
-          "id": "parts-offer-h-row",
-          "type": "row",
-          "props": {
-            "gap": 5
-          },
-          "children": [
-            {
-              "id": "parts-offer-h-col",
-              "type": "column",
-              "props": {
-                "span": 12
-              },
-              "children": [
-                {
-                  "id": "parts-offer-h-h",
-                  "type": "heading",
-                  "props": {
-                    "text": "Everything your fleet needs to keep rolling.",
-                    "headingLevel": 2,
-                    "eyebrow": "PARTS WE OFFER"
-                  }
-                },
-                {
-                  "id": "parts-offer-h-b",
-                  "type": "text",
-                  "props": {
-                    "text": "Our Parts Department supports both truck and trailer operations, offering a wide selection of heavy-duty and medium-duty commercial truck parts and accessories. From essential wear items to specialized components, our team works quickly to locate the exact part your equipment requires. If it's not on our shelf today, we'll source it through our trusted network and get it moving to you without delay.",
-                    "width": "prose"
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "parts-offer-cta-row",
-          "type": "row",
-          "props": {
-            "gap": 5
-          },
-          "children": [
-            {
-              "id": "parts-offer-cta-col",
-              "type": "column",
-              "props": {
-                "span": 12
-              },
-              "children": [
-                {
-                  "id": "parts-offer-cta",
-                  "type": "buttons",
-                  "props": {
-                    "items": [
-                      {
-                        "label": "See what's available now →",
-                        "url": "/store/parts",
-                        "style": "link",
-                        "intent": "browse-parts"
-                      },
-                      {
-                        "label": "Parts specials →",
-                        "url": "/deal-of-the-week",
-                        "style": "link",
-                        "intent": "browse-parts"
-                      }
-                    ]
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
     },
     {
       "id": "parts-offer",
@@ -142,14 +45,14 @@
       "props": {
         "sectionId": "feature-grid",
         "values": {
-          "heading": "",
+          "heading": "Everything your fleet needs to keep rolling.",
           "span": 4,
           "background": "card",
           "items": [
             {
               "title": "International OEM Parts",
               "body": "As part of the International Truck family, Sun State International has access to one of the most extensive parts networks in the industry. We maintain over $3 million in on-hand inventory and have access to more than one million unique parts, giving our customers the confidence that what they need is within reach. Choosing OEM means fewer surprises, better compatibility, and confidence that the part will perform the way it was designed to.",
-              "linkLabel": "Talk to a rep now →",
+              "linkLabel": "Talk to a Rep Now →",
               "linkUrl": "/contact"
             },
             {
@@ -162,7 +65,13 @@
               "title": "Beyond Semi Truck Parts",
               "body": "We offer all OE truck & trailer parts for International, IC Bus, Globe, and Hyundai Translead equipment, giving fleets and owner-operators a single, reliable place to turn. Stop in, call ahead, or work with one of our parts professionals to experience service that's focused on getting you back on the road, not slowing you down."
             }
-          ]
+          ],
+          "eyebrow": "PARTS WE OFFER",
+          "body": "Our Parts Department supports both truck and trailer operations, offering a wide selection of heavy-duty and medium-duty commercial truck parts and accessories. From essential wear items to specialized components, our team works quickly to locate the exact part your equipment requires. If it's not on our shelf today, we'll source it through our trusted network and get it moving to you without delay.",
+          "ctaLabel": "See what's Available Now →",
+          "ctaUrl": "/inventory",
+          "cta2Label": "Parts Specials →",
+          "cta2Url": "/deal-of-the-week"
         }
       }
     },
@@ -172,7 +81,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 10,
-        "background": "paper",
+        "background": "card",
         "anchor": "trailer-parts"
       },
       "children": [
@@ -231,13 +140,13 @@
                   "props": {
                     "items": [
                       {
-                        "label": "Request a part →",
+                        "label": "Request a Part →",
                         "url": "#online-orders",
                         "style": "link",
                         "intent": "browse-parts"
                       },
                       {
-                        "label": "See our online store →",
+                        "label": "See Our Online Store →",
                         "url": "https://sunstateparts.com/login",
                         "style": "link",
                         "intent": "browse-parts"
@@ -254,8 +163,7 @@
                         "label": "Truck bodies"
                       },
                       {
-                        "label": "Van and reefer",
-                        "desc": "Not body installation or swap"
+                        "label": "Van and reefer (not body installation or swap)"
                       },
                       {
                         "label": "Lift axle"
@@ -273,12 +181,10 @@
                         "label": "Landing gear"
                       },
                       {
-                        "label": "Liftgates",
-                        "desc": "Installs, remounts, warranty and parts"
+                        "label": "Liftgates — installs, remounts, warranty and parts"
                       },
                       {
-                        "label": "Accessories",
-                        "desc": "Underbody skirts, vents, side doors, tire carriers"
+                        "label": "Accessories: underbody skirts, vents, side doors, tire carriers"
                       }
                     ],
                     "columns": 3
@@ -296,7 +202,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 10,
-        "background": "card"
+        "background": "paper"
       },
       "children": [
         {
@@ -364,25 +270,64 @@
       ]
     },
     {
+      "id": "parts-quick",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "card"
+      },
+      "children": [
+        {
+          "id": "parts-quick-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "parts-quick-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "parts-quick-menu",
+                  "type": "menu",
+                  "props": {
+                    "menuId": "parts-topics",
+                    "layout": "horizontal"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "parts-support",
       "type": "sharedSection",
       "props": {
         "sectionId": "media-band",
         "values": {
           "eyebrow": "MORE THAN PARTS: SERVICE & MOBILE SUPPORT",
-          "heading": "Finding the part is one piece of the puzzle.",
           "body": "Finding the right part is only one piece of the puzzle. If you need help installing or replacing a component, Sun State International's Service Department is ready to assist with experienced technicians who know your equipment.\n\nFor situations where getting to a shop isn't practical, our Mobile Service team can come to you. Mobile support helps minimize downtime, reduce towing costs, and get your truck or trailer safely off the roadside and back into operation as quickly as possible.",
-          "ctaLabel": "Explore our service department →",
+          "ctaLabel": "Explore Our Service Department →",
           "ctaUrl": "/service",
           "ctaStyle": "link",
-          "background": "paper",
+          "background": "card",
           "anchor": "mobile-support",
           "image": {
             "src": "/img/photo-placeholder.svg",
             "alt": "A Sun State mobile service truck — photograph to be supplied",
             "width": 1600,
             "height": 900
-          }
+          },
+          "width": "full",
+          "cta2Label": "Get Mobile Help ASAP →",
+          "cta2Url": "/mobile-service"
         }
       }
     },
@@ -393,13 +338,38 @@
         "sectionId": "media-band",
         "values": {
           "eyebrow": "ONLINE PARTS ORDERS",
-          "heading": "Ordering parts, made simple.",
           "body": "Sun State International makes ordering parts simple. If you already know what you need, you can submit a request through our Parts Request page or work directly with one of our parts professionals.\n\nYou're also welcome to visit our parts stores and dealerships in Tampa, Sarasota, Brooksville, and Davenport, proudly serving St. Petersburg, Lakeland, Haines City, Clearwater, Venice, and surrounding areas.",
-          "ctaLabel": "Order parts online →",
-          "ctaUrl": "https://www.sunstateparts.com/login",
-          "ctaStyle": "primary",
-          "background": "card",
+          "ctaLabel": "Part Request →",
+          "ctaUrl": "/contact",
+          "ctaStyle": "link",
+          "background": "paper",
           "anchor": "online-orders",
+          "image": {
+            "src": "/img/photo-placeholder.svg",
+            "alt": "Ordering parts online — photograph to be supplied",
+            "width": 1600,
+            "height": 900
+          },
+          "width": "full",
+          "cta2Label": "Order Parts Online →",
+          "cta2Url": "https://www.sunstateparts.com/login"
+        }
+      }
+    },
+    {
+      "id": "parts-return",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "media-band",
+        "values": {
+          "eyebrow": "OUR PARTS RETURN POLICY",
+          "body": "Transparency matters. Sun State International's Parts Return Policy is designed to be clear, fair, and straightforward, so you know exactly what to expect. If you got the wrong part or need to switch one out, our team is always available to walk you through the process and answer questions before or after your purchase, ensuring there are no surprises.",
+          "ctaLabel": "Parts Return Policy →",
+          "ctaUrl": "https://sunstateintl.com/wp-content/uploads/2024/08/Parts-Return-Policy-2022-Final.pdf",
+          "ctaStyle": "link",
+          "background": "card",
+          "anchor": "return-policy",
+          "width": "full",
           "image": {
             "src": "/img/photo-placeholder.svg",
             "alt": "Ordering parts online — photograph to be supplied",
@@ -410,30 +380,25 @@
       }
     },
     {
-      "id": "parts-policy",
+      "id": "parts-credit",
       "type": "sharedSection",
       "props": {
-        "sectionId": "feature-grid",
+        "sectionId": "media-band",
         "values": {
-          "eyebrow": "PAPERWORK",
-          "heading": "Returns and credit.",
-          "span": 6,
+          "eyebrow": "FLEXIBLE CREDIT OPTIONS",
+          "body": "We understand that cash flow is a real concern for many fleets and owner-operators. Sun State International offers flexible credit options to help you get the parts you need without unnecessary strain on your budget. With an approved credit application, you can bundle purchases and manage expenses more efficiently. Our in-house team works with you to create solutions that support your business, not complicate it.",
+          "ctaLabel": "Sun State Credit Application →",
+          "ctaUrl": "https://www.sunstateintl.com/wp-content/uploads/2026/05/IBS-Credit-App-for-intranet.pdf",
+          "ctaStyle": "link",
           "background": "paper",
-          "anchor": "return-policy",
-          "items": [
-            {
-              "title": "Our parts return policy",
-              "body": "Transparency matters. Sun State International's Parts Return Policy is designed to be clear, fair, and straightforward, so you know exactly what to expect. If you got the wrong part or need to switch one out, our team is always available to walk you through the process and answer questions before or after your purchase, ensuring there are no surprises.",
-              "linkLabel": "Parts Return Policy (PDF) →",
-              "linkUrl": "https://sunstateintl.com/wp-content/uploads/2024/08/Parts-Return-Policy-2022-Final.pdf"
-            },
-            {
-              "title": "Flexible credit options",
-              "body": "We understand that cash flow is a real concern for many fleets and owner-operators. Sun State International offers flexible credit options to help you get the parts you need without unnecessary strain on your budget. With an approved credit application, you can bundle purchases and manage expenses more efficiently. Our in-house team works with you to create solutions that support your business, not complicate it.",
-              "linkLabel": "Sun State Credit Application (PDF) →",
-              "linkUrl": "https://www.sunstateintl.com/wp-content/uploads/2026/05/IBS-Credit-App-for-intranet.pdf"
-            }
-          ]
+          "anchor": "credit-options",
+          "width": "full",
+          "image": {
+            "src": "/img/photo-placeholder.svg",
+            "alt": "Ordering parts online — photograph to be supplied",
+            "width": 1600,
+            "height": 900
+          }
         }
       }
     },
@@ -531,7 +496,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 9,
-        "background": "paper"
+        "background": "ink"
       },
       "children": [
         {
@@ -550,11 +515,10 @@
               "children": [
                 {
                   "id": "parts-partner-head-h",
-                  "type": "heading",
+                  "type": "text",
                   "props": {
-                    "text": "Decades of dependable service.",
-                    "headingLevel": 2,
-                    "eyebrow": "YOUR RELIABLE PARTNER ON THE ROAD"
+                    "text": "YOUR RELIABLE PARTNER ON THE ROAD",
+                    "width": "full"
                   }
                 },
                 {
@@ -563,6 +527,20 @@
                   "props": {
                     "text": "For decades, Sun State International has built its reputation on dependable service, a knowledgeable team, and a genuine commitment to customer success. Our Parts Department is an extension of that promise, focused on keeping your trucks and trailers working, your drivers supported, and your business moving forward.",
                     "width": "prose"
+                  }
+                },
+                {
+                  "id": "parts-partner-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Contact Us",
+                        "url": "/contact",
+                        "style": "primary",
+                        "intent": "contact-dealer"
+                      }
+                    ]
                   }
                 }
               ]
@@ -645,15 +623,16 @@
       "id": "parts-cta",
       "type": "sharedSection",
       "props": {
-        "sectionId": "cta-band",
+        "sectionId": "cta-compact",
         "values": {
-          "eyebrow": "READY TO GET ON THE ROAD?",
+          "eyebrow": "",
           "heading": "Ready to get on the road?",
           "body": "Contact us to explore our trucks and experience nothing less than the dedicated care you deserve.",
           "primaryLabel": "Contact Us",
           "primaryUrl": "/contact",
-          "secondaryLabel": "Call 813.521.8148",
-          "secondaryUrl": "tel:+18135218148"
+          "secondaryLabel": "",
+          "secondaryUrl": "",
+          "background": "accent"
         }
       }
     }

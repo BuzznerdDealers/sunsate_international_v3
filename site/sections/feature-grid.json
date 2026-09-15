@@ -2,7 +2,7 @@
   "version": 2,
   "id": "feature-grid",
   "name": "Feature card grid",
-  "css": "[data-bz-section=\"feature-grid\"] .bz-block { padding-block: 0 }\n[data-bz-section=\"feature-grid\"] .bz-block + .bz-block { padding-block-start: 12px }\n[data-bz-section=\"feature-grid\"] .bz-row + .bz-row { margin-top: 44px }\n[data-bz-section=\"feature-grid\"] h3 { font-size: 19px; margin: 0 0 10px }\n[data-bz-section=\"feature-grid\"] .bz-col p { font-size: 15px; color: #3f3f3f }\n[data-bz-section=\"feature-grid\"] [data-bz-node^=\"fg-card-h\"] .bz-eyebrow { font-size: 10px; letter-spacing: .1em; color: var(--accent); margin-bottom: 12px }\n[data-bz-section=\"feature-grid\"] .bz-btns { margin-block: 14px 0 }\n[data-bz-section=\"feature-grid\"] .bz-section--bg-ink .bz-col p { color: #C7C1B4 }",
+  "css": "[data-bz-section=\"feature-grid\"] .bz-block { padding-block: 0 }\n[data-bz-section=\"feature-grid\"] .bz-block + .bz-block { padding-block-start: 12px }\n[data-bz-section=\"feature-grid\"] .bz-row + .bz-row { margin-top: 0 }\n[data-bz-section=\"feature-grid\"] h2 { margin: 0 0 40px }\n[data-bz-section=\"feature-grid\"] [data-bz-node=\"fg-body\"] p { font-size: 16px; line-height: 1.7; color: var(--body-text); margin: -24px 0 40px }\n[data-bz-section=\"feature-grid\"] h3 { font-size: 18px; line-height: 1.6; font-weight: 700; margin: 0 0 12px }\n[data-bz-section=\"feature-grid\"] [data-bz-node^=\"fg-card-b\"] p { font-size: 14px; line-height: 1.65; color: var(--body-text); margin: 0 }\n[data-bz-section=\"feature-grid\"] [data-bz-node^=\"fg-card-h\"] .bz-eyebrow { font-size: 10px; line-height: 1; letter-spacing: .14em; color: var(--accent); margin-bottom: 12px }\n[data-bz-section=\"feature-grid\"] .bz-btns { margin-block: 14px 0 }\n[data-bz-section=\"feature-grid\"] .bz-section--bg-ink [data-bz-node^=\"fg-card-b\"] p { color: var(--chrome-body) }\n[data-bz-section=\"feature-grid\"] [data-bz-node=\"fg-head-cta\"] .bz-btns { margin-block: 0 0; gap: 12px 24px }\n[data-bz-section=\"feature-grid\"] [data-bz-node=\"fg-head-cta\"] .bz-btn--link { font-size: 15px; font-weight: 700; text-decoration: none }\n/* The handoff's card heading is a section h2, so it takes the 26px mobile step. */\n@media (max-width: 640px) { [data-bz-section=\"feature-grid\"] h3 { font-size: 26px } }",
   "props": [
     {
       "key": "eyebrow",
@@ -89,6 +89,30 @@
           "label": "Link"
         }
       ]
+    },
+    {
+      "key": "ctaLabel",
+      "type": "text",
+      "label": "First link label",
+      "default": ""
+    },
+    {
+      "key": "ctaUrl",
+      "type": "url",
+      "label": "First link",
+      "default": ""
+    },
+    {
+      "key": "cta2Label",
+      "type": "text",
+      "label": "Second link label",
+      "default": ""
+    },
+    {
+      "key": "cta2Url",
+      "type": "url",
+      "label": "Second link",
+      "default": ""
     }
   ],
   "nodes": [
@@ -132,6 +156,26 @@
                     "text": "{{body}}",
                     "width": "prose"
                   }
+                },
+                {
+                  "id": "fg-head-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "{{ctaLabel}}",
+                        "url": "{{ctaUrl}}",
+                        "style": "link",
+                        "intent": "learn-more"
+                      },
+                      {
+                        "label": "{{cta2Label}}",
+                        "url": "{{cta2Url}}",
+                        "style": "link",
+                        "intent": "learn-more"
+                      }
+                    ]
+                  }
                 }
               ]
             }
@@ -141,7 +185,7 @@
           "id": "fg-grid",
           "type": "row",
           "props": {
-            "gap": 6,
+            "gap": 5,
             "align": "stretch",
             "stackOn": "mobile"
           },
@@ -159,10 +203,10 @@
                   "borderWidth": 1,
                   "borderStyle": "solid",
                   "borderColor": "line",
-                  "paddingTop": 28,
-                  "paddingRight": 28,
-                  "paddingBottom": 28,
-                  "paddingLeft": 28
+                  "paddingTop": 30,
+                  "paddingRight": 26,
+                  "paddingBottom": 30,
+                  "paddingLeft": 26
                 }
               },
               "children": [
@@ -171,7 +215,7 @@
                   "type": "heading",
                   "props": {
                     "text": "{{title}}",
-                    "eyebrow": "{{eyebrow}}",
+                    "eyebrow": "{{cardEyebrow}}",
                     "headingLevel": 3
                   }
                 },
@@ -191,6 +235,12 @@
                       {
                         "label": "{{linkLabel}}",
                         "url": "{{linkUrl}}",
+                        "style": "link",
+                        "intent": "learn-more"
+                      },
+                      {
+                        "label": "{{link2Label}}",
+                        "url": "{{link2Url}}",
                         "style": "link",
                         "intent": "learn-more"
                       }

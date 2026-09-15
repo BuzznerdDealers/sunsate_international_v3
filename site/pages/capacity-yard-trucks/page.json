@@ -37,7 +37,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 9,
-        "background": "paper",
+        "background": "card",
         "anchor": "cy-intro"
       },
       "children": [
@@ -191,7 +191,7 @@
           "heading": "Shop from the brand that started it all.",
           "body": "Capacity introduced the \"Original Trailer Jockey\" almost fifty years ago. Now, it has evolved into three powerful models tailored for various operational needs. The TJ Series includes the TJ5000, TJ6500, and TJ9000, each designed with unique features and capabilities. Whether you need a single or double rear axle, off-road, or DOT-certified model, these yard trucks provide unmatched versatility and performance.",
           "span": 4,
-          "background": "paper",
+          "background": "card",
           "anchor": "cy-models",
           "items": [
             {
@@ -246,7 +246,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 10,
-        "background": "card"
+        "background": "paper"
       },
       "children": [
         {
@@ -354,7 +354,7 @@
           "eyebrow": "FINANCING",
           "heading": "Paying for it.",
           "span": 6,
-          "background": "paper",
+          "background": "card",
           "items": [
             {
               "title": "Financing your new Capacity yard truck",
@@ -382,7 +382,7 @@
           "heading": "Capacity parts, warranty and service.",
           "body": "Our aftermarket parts department stocks Capacity yard tractor parts and handles warranty, and our service departments keep yard trucks working — in the shop or at your yard with mobile service.",
           "span": 4,
-          "background": "card",
+          "background": "ink",
           "items": [
             {
               "title": "Capacity parts & warranty",
@@ -416,7 +416,7 @@
           "heading": "Everything else the operation needs.",
           "body": "In addition to Capacity yard trucks, Sun State International offers a wide selection of high-quality equipment from top brands, including Globe Trailers and Hyundai Translead. Whether you need a brand-new truck or a reliable used trailer, we have you covered.",
           "span": 3,
-          "background": "paper",
+          "background": "card",
           "items": [
             {
               "title": "Trucks",
@@ -452,7 +452,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 10,
-        "background": "card"
+        "background": "paper"
       },
       "children": [
         {
@@ -511,7 +511,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 10,
-        "background": "paper",
+        "background": "card",
         "anchor": "cy-faq"
       },
       "children": [
@@ -609,7 +609,8 @@
           "primaryLabel": "Call 800.741.7566",
           "primaryUrl": "tel:+18007417566",
           "secondaryLabel": "View Capacity inventory",
-          "secondaryUrl": "/store/inventory?brand=capacity"
+          "secondaryUrl": "/store/inventory?brand=capacity",
+          "background": "ink"
         }
       }
     }

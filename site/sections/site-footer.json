@@ -2,7 +2,7 @@
   "version": 2,
   "id": "site-footer",
   "name": "Site footer",
-  "css": "[data-bz-section=\"site-footer\"] .bz-block { padding-block: 0 }\n[data-bz-section=\"site-footer\"] .bz-block + .bz-block { padding-block-start: 18px }\n[data-bz-section=\"site-footer\"] h2 { font: 700 11px/1 var(--font-body); letter-spacing: .1em; text-transform: uppercase; color: #8A8A8A; margin: 0 0 18px }\n[data-bz-section=\"site-footer\"] .bz-navitem > a { color: #C7C1B4; font-size: 14px; font-weight: 400 }\n[data-bz-section=\"site-footer\"] .bz-navitem > a:hover { color: #fff }\n[data-bz-section=\"site-footer\"] p { color: #A0A0A0; font-size: 14px; line-height: 1.7 }\n[data-bz-section=\"site-footer\"] .bz-logo__img { height: 52px; width: auto }\n[data-bz-section=\"site-footer\"] .bz-btn--link { color: #A0A0A0; padding: 0; min-height: 0 }\n[data-bz-section=\"site-footer\"] .bz-btn--link:hover { color: #fff }",
+  "css": "/* The footer sits on the darker chrome, and its first column is wider than the\n   three link columns, which the twelve-column grid cannot express on its own. */\n/* The legal strip below carries the footer's closing padding, so this band\n   runs straight into its divider the way the handoff's does. */\n[data-bz-section=\"site-footer\"] > .bz-section { background: var(--chrome); padding-block: 80px 60px }\n[data-bz-section=\"site-footer\"] [data-bz-node=\"sf-row\"] { grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 0 }\n[data-bz-section=\"site-footer\"] [data-bz-node=\"sf-row\"] > .bz-col { grid-column: auto }\n[data-bz-section=\"site-footer\"] .bz-block { padding-block: 0 }\n[data-bz-section=\"site-footer\"] .bz-block + .bz-block { padding-block-start: 0 }\n[data-bz-section=\"site-footer\"] h2 { font: 700 11px/1 var(--font-body); letter-spacing: .1em; text-transform: uppercase; color: var(--chrome-label); margin: 0 0 16px }\n[data-bz-section=\"site-footer\"] .bz-menu .bz-nav { gap: 10px }\n[data-bz-section=\"site-footer\"] .bz-navitem { font-size: 14px; line-height: 1.6 }\n[data-bz-section=\"site-footer\"] .bz-navitem > a { color: #fff; font-size: 14px; line-height: 1.6; font-weight: 400; font-family: var(--font-body); padding: 0 }\n[data-bz-section=\"site-footer\"] .bz-navitem > a:hover { text-decoration: underline }\n/* Doubled attribute: this component's own `.bz-block + .bz-block` rule sits at\n   (0,3,0) and was zeroing the three paddings that set the first column. */\n[data-bz-section=\"site-footer\"] [data-bz-node=\"sf-blurb\"][data-bz-node] { padding-block-start: 16px }\n[data-bz-section=\"site-footer\"] p { color: var(--chrome-meta); font-size: 13px; line-height: 1.6; max-width: 260px; margin: 0 }\n[data-bz-section=\"site-footer\"] .bz-logo__img { height: 56px; width: auto; display: block }\n/* The brand anchor is inline, so its line box added 10px under the mark. */\n[data-bz-section=\"site-footer\"] [data-bz-node=\"sf-logo\"] .bz-brand { display: block }\n[data-bz-section=\"site-footer\"] [data-bz-node=\"sf-logo\"] { padding-block: 0 }\n[data-bz-section=\"site-footer\"] .bz-btn--link { color: var(--chrome-meta); padding: 0; min-height: 0; font-size: 13px; font-weight: 400; text-decoration: none }\n[data-bz-section=\"site-footer\"] .bz-btn--link:hover { color: #fff; text-decoration: underline }\n[data-bz-section=\"site-footer\"] [data-bz-node=\"sf-email\"][data-bz-node] { padding-block-start: 12px }\n[data-bz-section=\"site-footer\"] [data-bz-node=\"sf-email\"] .bz-btns { margin-block: 0 }\n[data-bz-section=\"site-footer\"] [data-bz-node=\"sf-social\"][data-bz-node] { padding-block-start: 19px }\n[data-bz-section=\"site-footer\"] [data-bz-node=\"sf-social\"] .ss-social { gap: 14px }\n[data-bz-section=\"site-footer\"] [data-bz-node=\"sf-social\"] .ss-social__a img { width: 16px; height: 16px }\n@media (max-width: 1100px) { [data-bz-section=\"site-footer\"] [data-bz-node=\"sf-row\"] { grid-template-columns: 1fr 1fr } }\n@media (max-width: 640px) { [data-bz-section=\"site-footer\"] [data-bz-node=\"sf-row\"] { grid-template-columns: 1fr } }",
   "props": [
     {
       "key": "blurb",
@@ -14,13 +14,13 @@
       "key": "emailLabel",
       "type": "text",
       "label": "Email label",
-      "default": "info@sunstateintl.com"
+      "default": "info@sunstateint.com"
     },
     {
       "key": "emailUrl",
       "type": "url",
       "label": "Email link",
-      "default": "mailto:info@sunstateintl.com"
+      "default": "mailto:info@sunstateint.com"
     },
     {
       "key": "logo",
@@ -54,7 +54,7 @@
       ]
     },
     {
-      "key": "columns",
+      "key": "linkColumns",
       "type": "list",
       "label": "Link columns",
       "fields": [
@@ -143,7 +143,7 @@
               "type": "column",
               "props": {
                 "span": 3,
-                "repeat": "columns"
+                "repeat": "linkColumns"
               },
               "children": [
                 {

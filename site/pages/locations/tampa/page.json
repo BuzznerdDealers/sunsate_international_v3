@@ -40,7 +40,7 @@
           "eyebrow": "STORE MAP",
           "name": "Sun State International Trucks, LLC.",
           "address": "6020 Adamo Drive\n\nTampa, FL 33619",
-          "phones": "<strong>Main / sales</strong> (813) 621-1331\n\n<strong>Parts</strong> (813) 521-8148\n\n<strong>Service</strong> (813) 521-8053\n\n<strong>Rental</strong> (813) 769-2549\n\n<strong>Rental (alt)</strong> (813) 323-1026\n\n<strong>Fax</strong> 813-628-0527",
+          "phones": "<strong>Main / sales</strong> <a href=\"tel:+18136211331\">(813) 621-1331</a><strong>Parts</strong> <a href=\"tel:+18135218148\">(813) 521-8148</a><strong>Service</strong> <a href=\"tel:+18135218053\">(813) 521-8053</a><strong>Rental</strong> <a href=\"tel:+18137692549\">(813) 769-2549</a><strong>Rental (alt)</strong> <a href=\"tel:+18133231026\">(813) 323-1026</a><strong>Fax</strong> 813-628-0527",
           "noticeEyebrow": "NOW OFFERING",
           "noticeTitle": "After hours service",
           "noticeBody": "8:00 PM – 5:00 AM via Certified Fleet.",
@@ -52,7 +52,8 @@
             "width": 1600,
             "height": 900
           },
-          "anchor": "tpa-summary"
+          "anchor": "tpa-summary",
+          "background": "card"
         }
       }
     },
@@ -86,7 +87,8 @@
               "phoneUrl": "tel:+18135218053",
               "rows": "<strong>Monday</strong> 7:00am – 7:00pm\n\n<strong>Tuesday</strong> 7:00am – 7:00pm\n\n<strong>Wednesday</strong> 7:00am – 7:00pm\n\n<strong>Thursday</strong> 7:00am – 7:00pm\n\n<strong>Friday</strong> 7:00am – 7:00pm\n\n<strong>Saturday</strong> Closed\n\n<strong>Sunday</strong> Closed"
             }
-          ]
+          ],
+          "background": "card"
         }
       }
     },
@@ -142,18 +144,18 @@
           "background": "card",
           "items": [
             {
-              "eyebrow": "SUN STATE TRAILERS",
               "title": "Trailer Sales — 6020 E Adamo Dr",
               "body": "New and used Hyundai Translead and Globe Trailers share the Tampa address, open 8 AM – 5 PM Monday through Friday. Talk to a member of our sales team about available inventory, financing, or to schedule an in-person appointment.\n\nPhone: (813) 621-1331 · Fax: 813-628-0527",
               "linkLabel": "Trailer Sales details →",
-              "linkUrl": "/locations/trailer-sales"
+              "linkUrl": "/locations/trailer-sales",
+              "cardEyebrow": "SUN STATE TRAILERS"
             },
             {
-              "eyebrow": "SUN STATE AFTERMARKET",
               "title": "Aftermarket Parts — 7105 E 6th Ave",
               "body": "Minutes from the dealership, our Tampa aftermarket facility handles truck equipment repair, roll off cable repair, hydraulic repairs, body installations, liftgates and frame modifications, open 7 AM – 4 PM Monday through Friday.\n\nPhone: (813) 627-3282",
               "linkLabel": "Aftermarket capabilities →",
-              "linkUrl": "/aftermarket"
+              "linkUrl": "/aftermarket",
+              "cardEyebrow": "SUN STATE AFTERMARKET"
             }
           ]
         }
@@ -315,7 +317,8 @@
           "primaryLabel": "Call (813) 621-1331",
           "primaryUrl": "tel:+18136211331",
           "secondaryLabel": "Schedule service",
-          "secondaryUrl": "/service-appointment"
+          "secondaryUrl": "/service-appointment",
+          "background": "ink"
         }
       }
     }

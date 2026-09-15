@@ -1,6 +1,108 @@
-/* The leadership portrait keeps its own shape rather than stretching. */
-[data-bz-node="leader-img"] img { width: 100%; max-width: 420px; height: auto; }
-[data-bz-node="story-mission"] .bz-text { margin-inline: auto; font-size: 19px; }
+
+
+[data-bz-node="leader-row"] { display: grid; grid-template-columns: 260px 1fr; gap: 56px; align-items: start; }
+/* The row is the renderer's 12-column grid and each column still carries its
+   own span; hand both tracks back to the two-column template above. */
+[data-bz-node="leader-photo"], [data-bz-node="leader-copy"] {
+  grid-column: auto; max-width: none; width: auto; min-width: 0;
+}
+[data-bz-node="leader-img"] img { width: 100%; max-width: none; aspect-ratio: 3 / 4; object-fit: cover; height: auto; }
+[data-bz-node="leader-h"] h2 { font-size: 24px; line-height: 1.2; color: #fff; margin: 0 0 4px; }
+[data-bz-node="leader-h"] .bz-eyebrow {
+  font: 700 12px/1 var(--font-body); letter-spacing: .08em;
+  color: var(--accent); margin: 0 0 22px;
+}
+/* The handoff puts the role under the name, so the eyebrow follows the h2. */
+[data-bz-node="leader-h"] .bz-headingblock { display: flex; flex-direction: column; }
+[data-bz-node="leader-h"] .bz-headingblock .bz-eyebrow { order: 2; }
+[data-bz-node="leader-h"] .bz-headingblock h2 { order: 1; }
+[data-bz-node="leader-body"] p { font-size: 15px; line-height: 1.7; color: var(--chrome-body); margin: 0; max-width: 640px; }
+[data-bz-node="leader-body"] .bz-text { max-width: 640px; }
+
+
+[data-bz-node="story-mission"] > .bz-section > .bz-container { max-width: calc(760px + 2 * var(--container-pad)); }
+[data-bz-node="story-mission"] .bz-text { margin-inline: auto; max-width: 760px; }
+/* First paragraph is the tracked label, second is the statement. */
+[data-bz-node="mission-body"] p:first-child {
+  font: 700 11px/1 var(--font-body); letter-spacing: .16em;
+  color: #FFD9D5; margin: 0 0 16px;
+}
+[data-bz-node="mission-body"] p:last-child {
+  font-family: var(--font-heading); font-weight: 700;
+  font-size: 24px; line-height: 1.45; color: #fff; margin: 0;
+}
 /* The intro band leads with the photograph. */
-[data-bz-node="story-intro"] [data-bz-node^="mb-media"] { order: -1; }
 [data-bz-node="story-care"] [data-bz-node^="mb-media"] { order: -1; }
+
+/* --- Hero geometry, measured from the handoff --- */
+.bz-block--hero { padding-block: 100px; }
+.bz-block--hero h1 { font-size: 52px; line-height: 1.1; margin-bottom: 0px; }
+.bz-block--hero .bz-hero__copy { max-width: 900px; }
+
+/* The handoff's contact band on this page. */
+[data-bz-section="cta-compact"] > .bz-section { padding-block: 72px; }
+[data-bz-section="cta-compact"] h2 { font-size: 26px; }
+
+/* --- Card treatment, measured from the handoff --- */
+[data-bz-node="story-culture"] [data-bz-type="column"][data-bz-node^="fg-card-"][data-bz-node] { padding: 28px 24px; }
+[data-bz-node="story-values"] [data-bz-type="column"][data-bz-node^="fg-card-"][data-bz-node] { padding: 32px; }
+
+/* The leadership band sits on the darker chrome, not on ink. */
+[data-bz-node="story-leader"] { background: var(--chrome); }
+
+/* The at-a-glance list is a dark card: a 22px title over ruled-off bullets. */
+[data-bz-node="glance-h"] h2 { font-size: 22px; line-height: 1.6; color: #fff; margin: 0 0 20px; }
+[data-bz-node="glance-items"] .bz-grid { display: flex; flex-direction: column; gap: 14px; padding-left: 18px; }
+[data-bz-node="glance-items"] .bz-feature { border-top: 0; padding: 0; list-style: disc; display: list-item; }
+[data-bz-node="glance-items"] .bz-feature__t { font-size: 14px; line-height: 1.6; color: var(--chrome-body); }
+/* The right-hand column's heading takes the 24px step, and its paragraphs
+   and inner list all run at 15/1.7 eighteen apart. */
+[data-bz-node="glance-copy-h"] h2 { font-size: 24px; line-height: 1.3; margin: 0 0 18px; }
+[data-bz-node="glance-copy-1"] p, [data-bz-node="glance-copy-2"] p { font-size: 15px; line-height: 1.7; margin: 0 0 18px; }
+[data-bz-node="glance-copy-1"] p:last-child, [data-bz-node="glance-copy-2"] p:last-child { margin-bottom: 0; }
+[data-bz-node="glance-copy-list"] .bz-feature__t { font-size: 15px; line-height: 1.7; }
+
+@media (max-width: 640px) {
+  .bz-block--hero { padding-block: 72px; }
+  .bz-block--hero h1 { font-size: 32px; }
+}
+
+/* --- Band rhythm, measured from the handoff --------------------------------
+   Each band's own padding, read off the section it is drawn as. The build
+   was using the 90px house rhythm where the handoff sets its own. */
+[data-bz-node="story-culture"].bz-section,
+[data-bz-node="story-culture"] > .bz-section { padding-block: 100px 100px; }
+[data-bz-node="story-leader"].bz-section,
+[data-bz-node="story-leader"] > .bz-section { padding-block: 96px 96px; }
+[data-bz-node="story-glance"].bz-section,
+[data-bz-node="story-glance"] > .bz-section { padding-block: 100px 100px; }
+[data-bz-node="story-mission"].bz-section,
+[data-bz-node="story-mission"] > .bz-section { padding-block: 72px 72px; }
+[data-bz-node="story-values"].bz-section,
+[data-bz-node="story-values"] > .bz-section { padding-block: 100px 100px; }
+
+/* --- The three split bands -------------------------------------------------
+   Each is a 1fr/1fr split with its own minimum height, and its heading takes
+   the 32px step rather than the component's 38px default. */
+[data-bz-node="story-intro"] [data-bz-node="mb-row"] { min-height: 440px; }
+[data-bz-node="story-care"]  [data-bz-node="mb-row"] { min-height: 420px; }
+[data-bz-node="story-trailers"] [data-bz-node="mb-row"] { min-height: 380px; }
+[data-bz-node="story-care"] h2,
+[data-bz-node="story-trailers"] h2 { font-size: 32px; line-height: 1.2; margin: 0 0 20px; }
+[data-bz-node="story-care"] [data-bz-node="mb-body"] .bz-text,
+[data-bz-node="story-trailers"] [data-bz-node="mb-body"] .bz-text,
+[data-bz-node="story-intro"] [data-bz-node="mb-body"] .bz-text { max-width: 460px; }
+/* The handoff sets the customer-care lead in bold ink, with the second
+   paragraph falling back to the body colour. */
+[data-bz-node="story-care"] [data-bz-node="mb-body"] p:first-child {
+  font-size: 16px; line-height: 1.6; font-weight: 700; color: var(--ink); margin: 0 0 16px;
+}
+[data-bz-node="story-trailers"] [data-bz-node="mb-body"] p { font-size: 15px; line-height: 1.7; margin: 0; }
+/* The heading block's own 20px margin carries the gap to the body. */
+[data-bz-node="story-care"] [data-bz-node="mb-body"],
+[data-bz-node="story-trailers"] [data-bz-node="mb-body"] { padding-block-start: 0; }
+/* The handoff sets the customer-care band's closing paragraph in italic. */
+[data-bz-node="story-care"] [data-bz-node="mb-body"] p:last-child {
+  font-size: 15px; line-height: 1.7; font-style: italic;
+  font-weight: 400; color: var(--body-text); margin: 0;
+}

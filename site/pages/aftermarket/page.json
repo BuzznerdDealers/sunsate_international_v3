@@ -7,8 +7,8 @@
       "props": {
         "headingLevel": 1,
         "eyebrow": "HOME / AFTERMARKET",
-        "headline": "Aftermarket Modifications & Alterations for Trucks, Trailers & Buses in FL",
-        "subhead": "Visit our Aftermarket Location for all of your truck and trailer repair needs. We specialize in truck equipment repair, roll off cable repair, hydraulic truck equipment repair and much more.",
+        "headline": "Aftermarket Modifications & Alterations for Trucks, Trailers, & Buses in FL",
+        "subhead": "Visit our Aftermarket Location for all of your Truck and Trailer Repair needs. We specialize in Truck Equipment Repair, Roll Off Cable Repair, Hydraulic Truck Equipment Repair and much more.",
         "ctas": [
           {
             "label": "Call (813) 627-3282",
@@ -29,6 +29,11 @@
           "width": 1600,
           "height": 900
         }
+      },
+      "styles": {
+        "base": {
+          "textTransform": "uppercase"
+        }
       }
     },
     {
@@ -37,7 +42,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 9,
-        "background": "paper",
+        "background": "card",
         "anchor": "aft-summary"
       },
       "children": [
@@ -97,52 +102,53 @@
         "values": {
           "eyebrow": "WHAT WE BUILD, FIT AND FIX",
           "heading": "Aftermarket capabilities.",
-          "span": 3,
+          "span": 4,
           "background": "card",
           "anchor": "aft-capabilities",
           "items": [
             {
-              "title": "Truck bodies",
-              "bullets": "All-makes, new or used body installations and swaps\n\nVan\n\nReefer\n\nDump\n\nFlatbed\n\nTank\n\nRoll-off hoist"
+              "title": "Truck Bodies",
+              "bullets": "All-makes, new or used body installations and swaps\n\nVan\n\nReefer\n\nDump\n\nFlatbed\n\nTank\n\nRoll-off Hoist"
             },
             {
-              "title": "Lift gates",
-              "bullets": "New installations\n\nRemounts\n\nWarranty\n\nService\n\nParts"
+              "title": "Lift Gates",
+              "bullets": "Complete liftgate care\n\nNew Installations\n\nRemounts\n\nWarranty\n\nService\n\nParts"
             },
             {
-              "title": "Body equipment",
-              "bullets": "Tarps & tarp systems\n\nSecurement systems\n\nCan tie downs\n\nBody vibrators\n\nEmergency lighting\n\nSide boards\n\nPintle hooks\n\nUnderbody boxes\n\nLift axles"
+              "title": "Body Equipment",
+              "bullets": "Fitted and repaired in our shop\n\nTarps & Tarp Systems\n\nSecurement Systems\n\nCan Tie Downs\n\nBody Vibrators\n\nEmergency Lighting\n\nSide Boards\n\nPintle Hooks\n\nUnderbody Boxes\n\nLift Axles"
             },
             {
-              "title": "Truck aftermarket",
-              "bullets": "DOT safety inspections\n\nPTO & wet-line kits\n\nTowing packages\n\nFabrication & welding shop\n\nHydraulic repairs\n\nWheelbase changes\n\nTractor protection systems\n\nAxle service"
+              "title": "Truck Aftermarket",
+              "bullets": "Modifications and equipment work\n\nDOT Safety Inspections\n\nPTO & Wet-line Kits\n\nTowing Packages\n\nFabrication & Welding Shop\n\nHydraulic Repairs\n\nWheelbase Changes\n\nTractor Protection Systems\n\nAxle Service"
             },
             {
-              "title": "Frame modifications & alterations",
-              "bullets": "Shorten or lengthen\n\nDouble single rails\n\nDriveline work\n\nHuck bolt replacement to maintain factory warranty on all makes"
+              "title": "Frame Modifications & Alterations",
+              "bullets": "Structural work on all makes\n\nShorten or Lengthen\n\nDouble Single Rails\n\nDriveline Work\n\nHuck Bolt Replacement to Maintain Factory Warranty on All-Makes"
             },
             {
-              "title": "All makes trailer parts & service",
-              "bullets": "Repair aluminum & fiberglass reinforced plywood\n\nRepair/replace king pins\n\nRepair/replace landing gear\n\nAccessory installation — underbody skirts, vents, side doors, tire carriers\n\nDedicated trailer repair bays"
+              "title": "All Makes Trailer Parts & Service",
+              "bullets": "Dedicated trailer repair bays\n\nRepair Aluminum & Fiberglass Reinforced Plywood\n\nRepair/Replace King Pins\n\nRepair/Replace Landing Gear\n\nAccessory Installation — Underbody Skirts, Vents, Side Doors, Tire Carriers\n\nDedicated Trailer Repair Bays"
             },
             {
-              "title": "Cleaning & baking equipment",
-              "bullets": "DPFs — diesel particulate filters\n\nDOCs — diesel oxidation catalyst"
+              "title": "Cleaning & Baking Equipment",
+              "bullets": "Aftertreatment service\n\nDPFs — Diesel Particulate Filters\n\nDOCs — Diesel Oxidation Catalyst"
             },
             {
-              "title": "Equipment repair",
-              "bullets": "Truck equipment repair\n\nRoll off cable repair\n\nHydraulic truck equipment repair\n\nBody wraps\n\nFrame alterations"
+              "title": "Equipment Repair",
+              "bullets": "What the aftermarket shop specializes in\n\nTruck Equipment Repair\n\nRoll Off Cable Repair\n\nHydraulic Truck Equipment Repair\n\nBody Wraps\n\nFrame Alterations"
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "aft-lines",
       "type": "section",
       "props": {
-        "width": "boxed",
-        "paddingY": 10,
+        "width": "full",
+        "paddingY": 0,
         "background": "paper"
       },
       "children": [
@@ -150,8 +156,8 @@
           "id": "aft-lines-row",
           "type": "row",
           "props": {
-            "gap": 7,
-            "align": "center",
+            "gap": 0,
+            "align": "stretch",
             "stackOn": "tablet"
           },
           "children": [
@@ -159,7 +165,7 @@
               "id": "aft-lines-copy",
               "type": "column",
               "props": {
-                "span": 7,
+                "span": 6,
                 "align": "center"
               },
               "children": [
@@ -196,7 +202,7 @@
                         "label": "A/C Parts from Carrier, MCC, ACT, Transair & Busair"
                       }
                     ],
-                    "columns": 2
+                    "columns": 1
                   }
                 },
                 {
@@ -205,13 +211,13 @@
                   "props": {
                     "items": [
                       {
-                        "label": "Visit our parts department →",
+                        "label": "Visit Our Parts Department →",
                         "url": "/parts",
                         "style": "link",
                         "intent": "browse-parts"
                       },
                       {
-                        "label": "Shop our online parts store →",
+                        "label": "Shop Our Online Parts Store →",
                         "url": "https://www.sunstateparts.com/login",
                         "style": "link",
                         "intent": "browse-parts"
@@ -225,7 +231,7 @@
               "id": "aft-lines-media",
               "type": "column",
               "props": {
-                "span": 5
+                "span": 6
               },
               "children": [
                 {
@@ -253,26 +259,29 @@
       "props": {
         "sectionId": "feature-grid",
         "values": {
-          "eyebrow": "TRAILERS",
-          "heading": "All makes trailer parts & service.",
+          "eyebrow": "",
+          "heading": "",
           "span": 6,
           "background": "card",
           "items": [
             {
               "title": "All makes trailer parts & service",
               "body": "Everything you need for your trailer is in one place. We repair aluminum and fiberglass reinforced plywood, repair or replace king pins and landing gear, and install accessories including underbody skirts, vents, side doors and tire carriers, all in dedicated trailer repair bays.",
-              "linkLabel": "Schedule trailer service →",
-              "linkUrl": "/service-appointment"
+              "linkLabel": "Schedule Trailer Service →",
+              "linkUrl": "/service-appointment",
+              "link2Label": "Sun State Trailers →",
+              "link2Url": "https://sunstatetrailers.com/parts-and-service/"
             },
             {
               "title": "Liftgates, start to finish",
               "body": "We cover all your trailer needs down to the last detail, including comprehensive care for your liftgates: new installations, remounts, warranty services and parts replacements.",
-              "linkLabel": "See service programs →",
+              "linkLabel": "See Service Programs →",
               "linkUrl": "/service#services"
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "aft-location",
@@ -290,42 +299,47 @@
             {
               "tag": "AFTERMARKET",
               "city": "Sun State Aftermarket Parts",
-              "address": "7105 East 6th Ave, Tampa, FL 33619",
-              "hours": "Store 7 AM – 4 PM M–F · In-store shopping · In-store pickup · Delivery",
+              "address": "7105 East 6th Ave\n\nTampa, FL 33619",
+              "hours": "Store: 7 AM – 4 PM M–F",
               "phone": "(813) 627-3282",
               "phoneUrl": "tel:+18136273282",
-              "url": "/locations/aftermarket-parts"
+              "url": "/locations/aftermarket-parts",
+              "perks": "In-store shopping · In-store pickup · Delivery"
             },
             {
-              "tag": "TRUCKS · TRAILERS · PARTS · SERVICE",
+              "tag": "",
               "city": "Tampa",
-              "address": "6020 E Adamo Dr, Tampa, FL 33619",
-              "hours": "Service 7 AM – 7 PM M–F, 7 AM – 12 PM Sat",
+              "address": "6020 E Adamo Dr",
+              "hours": "Service: 7 AM – 7 PM M–F, 7 AM – 12 PM Sat",
               "phone": "(813) 521-8053",
               "phoneUrl": "tel:+18135218053",
-              "url": "/locations/tampa"
+              "url": "/locations/tampa",
+              "perks": ""
             },
             {
-              "tag": "TRUCKS · PARTS · SERVICE",
+              "tag": "",
               "city": "Davenport",
-              "address": "41609 Hwy 27, Davenport, FL 33837",
-              "hours": "Service 7 AM – 7 PM M–F, 7 AM – 12 PM Sat",
+              "address": "41609 Hwy 27",
+              "hours": "Service: 7 AM – 7 PM M–F, 7 AM – 12 PM Sat",
               "phone": "(863) 238-2939",
               "phoneUrl": "tel:+18632382939",
-              "url": "/locations/davenport"
+              "url": "/locations/davenport",
+              "perks": ""
             },
             {
-              "tag": "TRUCK & TRAILER PARTS",
-              "city": "Truck & Trailer Parts — Brooksville",
-              "address": "17127 Runway Drive, Brooksville, FL 34604",
-              "hours": "Store 7 AM – 5 PM M–F",
+              "tag": "",
+              "city": "Truck & Trailer Parts",
+              "address": "17127 Runway Drive\n\nBrooksville, FL 34604",
+              "hours": "Store: 7 AM – 5 PM M–F",
               "phone": "(352) 277-0221",
               "phoneUrl": "tel:+13522770221",
-              "url": "/locations/brooksville"
+              "url": "/locations/brooksville",
+              "perks": ""
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "aft-faq",
@@ -414,7 +428,8 @@
                           "a": "Yes. All-makes trailer parts and service includes repairing aluminum and fiberglass reinforced plywood, repairing or replacing king pins and landing gear, and accessory installation such as underbody skirts, vents, side doors and tire carriers, in dedicated trailer repair bays."
                         }
                       ]
-                    }
+                    },
+                    "snapshot": null
                   }
                 }
               ]
@@ -435,9 +450,11 @@
           "primaryLabel": "Call (813) 627-3282",
           "primaryUrl": "tel:+18136273282",
           "secondaryLabel": "Request an appointment",
-          "secondaryUrl": "/service-appointment"
+          "secondaryUrl": "/service-appointment",
+          "background": "ink"
         }
-      }
+      },
+      "children": []
     }
   ]
 }

@@ -40,7 +40,7 @@
           "eyebrow": "STORE MAP",
           "name": "Sun State International Trucks",
           "address": "1000 Sarasota Center Blvd.\n\nSarasota, FL 34240",
-          "phones": "<strong>Main / sales</strong> (941) 355-7681\n\n<strong>Service</strong> (941) 541-3251\n\n<strong>Toll free</strong> (800) 741-7566\n\n<strong>Fax</strong> (941) 351-9108",
+          "phones": "<strong>Main / sales</strong> <a href=\"tel:+19413557681\">(941) 355-7681</a><strong>Service</strong> <a href=\"tel:+19415413251\">(941) 541-3251</a><strong>Toll free</strong> <a href=\"tel:+18007417566\">(800) 741-7566</a><strong>Fax</strong> (941) 351-9108",
           "noticeEyebrow": "NOW OFFERING",
           "noticeTitle": "Mobile truck service at this location",
           "noticeBody": "Mobile service technicians dispatch from Sarasota, Monday–Friday, 8 AM – 5 PM. After hours service runs 8:00 PM – 5:00 AM via Certified Fleet.",
@@ -52,7 +52,8 @@
             "width": 1600,
             "height": 900
           },
-          "anchor": "sar-summary"
+          "anchor": "sar-summary",
+          "background": "card"
         }
       }
     },
@@ -86,7 +87,8 @@
               "phoneUrl": "tel:+19415413251",
               "rows": "<strong>Monday</strong> 7:00am – 5:00pm\n\n<strong>Tuesday</strong> 7:00am – 5:00pm\n\n<strong>Wednesday</strong> 7:00am – 5:00pm\n\n<strong>Thursday</strong> 7:00am – 5:00pm\n\n<strong>Friday</strong> 7:00am – 5:00pm\n\n<strong>Saturday</strong> Closed\n\n<strong>Sunday</strong> Closed"
             }
-          ]
+          ],
+          "background": "card"
         }
       }
     },
@@ -142,18 +144,18 @@
           "background": "card",
           "items": [
             {
-              "eyebrow": "SUN STATE TRAILERS",
               "title": "Trailer parts & service in Sarasota",
               "body": "When your trailer requires maintenance, you can depend on Sun State for all your trailer parts and service needs. Sarasota runs dedicated trailer repair bays covering kingpins, landing gear, aluminum and fiberglass repair, brakes, liftgates and DOT inspections, with Hyundai and all-makes trailer parts on the shelf.",
               "linkLabel": "Schedule trailer service →",
-              "linkUrl": "/service-appointment"
+              "linkUrl": "/service-appointment",
+              "cardEyebrow": "SUN STATE TRAILERS"
             },
             {
-              "eyebrow": "MOBILE SERVICE",
               "title": "We'll come to your yard",
               "body": "Mobile service runs out of Sarasota Monday through Friday, 8 AM – 5 PM, performing many repairs, diagnostics and preventative maintenance at your location across Sarasota, Manatee and Charlotte counties.",
               "linkLabel": "Mobile service →",
-              "linkUrl": "/mobile-service"
+              "linkUrl": "/mobile-service",
+              "cardEyebrow": "MOBILE SERVICE"
             }
           ]
         }
@@ -315,7 +317,8 @@
           "primaryLabel": "Call (941) 355-7681",
           "primaryUrl": "tel:+19413557681",
           "secondaryLabel": "Schedule service",
-          "secondaryUrl": "/service-appointment"
+          "secondaryUrl": "/service-appointment",
+          "background": "ink"
         }
       }
     }

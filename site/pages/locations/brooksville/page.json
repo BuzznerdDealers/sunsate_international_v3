@@ -40,7 +40,7 @@
           "eyebrow": "STORE MAP",
           "name": "Sun State Truck & Trailer Parts",
           "address": "17127 Runway Drive\n\nBrooksville, FL 34604",
-          "phones": "<strong>Parts counter</strong> (352) 277-0221\n\n<strong>Toll free</strong> (800) 741-7566",
+          "phones": "<strong>Parts counter</strong> <a href=\"tel:+13522770221\">(352) 277-0221</a><strong>Toll free</strong> <a href=\"tel:+18007417566\">(800) 741-7566</a>",
           "noticeEyebrow": "HOW TO BUY",
           "noticeTitle": "In-store shopping · In-store pickup · Delivery",
           "noticeBody": "Walk in at the counter, order ahead for pickup, or have parts delivered to your shop or job site.",
@@ -52,7 +52,8 @@
             "width": 1600,
             "height": 900
           },
-          "anchor": "brk-summary"
+          "anchor": "brk-summary",
+          "background": "card"
         }
       }
     },
@@ -86,7 +87,8 @@
               "phoneUrl": "/service-appointment",
               "rows": "<strong>Truck and trailer repairs</strong> Tampa, Davenport, Sarasota\n\n<strong>Mobile service</strong> at your yard or job site\n\n<strong>After-hours</strong> Certified Fleet, 5 PM – 8 AM"
             }
-          ]
+          ],
+          "background": "card"
         }
       }
     },
@@ -136,7 +138,7 @@
           "heading": "Other Sun State locations.",
           "body": "Ready to find the right commercial trucks for your business? Visit us at our convenient locations across Central and Southwest Florida.",
           "span": 3,
-          "background": "paper",
+          "background": "card",
           "locations": [
             {
               "tag": "TRUCKS · TRAILERS · PARTS · SERVICE",
@@ -184,7 +186,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 10,
-        "background": "card",
+        "background": "paper",
         "anchor": "brk-faq"
       },
       "children": [
@@ -282,7 +284,8 @@
           "primaryLabel": "Call (352) 277-0221",
           "primaryUrl": "tel:+13522770221",
           "secondaryLabel": "Order parts online",
-          "secondaryUrl": "https://www.sunstateparts.com/login"
+          "secondaryUrl": "https://www.sunstateparts.com/login",
+          "background": "ink"
         }
       }
     }

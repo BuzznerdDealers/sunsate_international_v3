@@ -23,7 +23,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 9,
-        "background": "paper",
+        "background": "card",
         "anchor": "news-summary"
       },
       "children": [
@@ -495,15 +495,16 @@
       "id": "news-cta",
       "type": "sharedSection",
       "props": {
-        "sectionId": "cta-band",
+        "sectionId": "cta-compact",
         "values": {
-          "eyebrow": "PRESS ENQUIRIES",
+          "eyebrow": "",
           "heading": "Working on a story?",
           "body": "We'll connect you with the right person on the team.",
           "primaryLabel": "Contact Us",
           "primaryUrl": "/contact",
-          "secondaryLabel": "info@sunstateintl.com",
-          "secondaryUrl": "mailto:info@sunstateintl.com"
+          "secondaryLabel": "",
+          "secondaryUrl": "",
+          "background": "ink"
         }
       }
     }

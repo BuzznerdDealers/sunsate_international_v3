@@ -1,0 +1,41 @@
+{
+  "id": "contact-cards",
+  "label": "Contact cards",
+  "description": "Dark cards, each a label above one large phone or email link — the handoff's fastest-ways-to-reach-us row.",
+  "props": [
+    {
+      "key": "items",
+      "type": "list",
+      "label": "Cards",
+      "fields": [
+        {
+          "key": "label",
+          "type": "text",
+          "label": "Label"
+        },
+        {
+          "key": "value",
+          "type": "text",
+          "label": "Number or address"
+        },
+        {
+          "key": "href",
+          "type": "url",
+          "label": "Link"
+        },
+        {
+          "key": "size",
+          "type": "text",
+          "label": "Value size in px (default 30)"
+        },
+        {
+          "key": "note",
+          "type": "textarea",
+          "label": "Note under the value"
+        }
+      ]
+    }
+  ],
+  "html": "<div class=\"ss-cc\">{{#each items}}<div class=\"ss-cc__c\"><div class=\"ss-cc__l\">{{label}}</div><a class=\"ss-cc__v\" href=\"{{href}}\" style=\"font-size:{{size}}px\">{{value}}</a>{{#if note}}<div class=\"ss-cc__n\">{{note}}</div>{{/if}}</div>{{/each}}</div>",
+  "css": ".ss-cc{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}\n.ss-cc__c{background:var(--ink);padding:32px 28px}\n.ss-cc__l{font:700 11px/1.4 var(--font-body);letter-spacing:.14em;text-transform:uppercase;color:#A0A0A0;margin-bottom:12px}\n.ss-cc__v{font-family:var(--font-heading);font-weight:800;font-size:30px;line-height:1.15;color:#fff;display:inline-block;word-break:break-word;text-decoration:none}\n.ss-cc__v:hover{text-decoration:underline}\n.ss-cc__n{font-size:13px;line-height:1.6;color:var(--chrome-body, #C7C1B4);margin-top:10px}\n@media (max-width:1100px){.ss-cc{grid-template-columns:repeat(2,minmax(0,1fr))}}\n@media (max-width:640px){.ss-cc{grid-template-columns:minmax(0,1fr)}}"
+}

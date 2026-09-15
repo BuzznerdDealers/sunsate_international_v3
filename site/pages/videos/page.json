@@ -23,7 +23,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 9,
-        "background": "paper",
+        "background": "card",
         "anchor": "videos-summary"
       },
       "children": [
@@ -134,7 +134,7 @@
           "eyebrow": "VIDEO LIBRARY",
           "heading": "More from Sun State.",
           "span": 4,
-          "background": "paper",
+          "background": "card",
           "anchor": "library",
           "items": [
             {
@@ -186,19 +186,15 @@
           "eyebrow": "QUICK ANSWERS",
           "heading": "About our videos.",
           "span": 6,
-          "background": "card",
+          "background": "paper",
           "items": [
             {
               "title": "Where else can I watch?",
-              "body": "Six of the seven are on the Sun State International YouTube channel. The Sun State Trailers feature is hosted on Vimeo.",
-              "linkLabel": "Sun State on YouTube →",
-              "linkUrl": "https://www.youtube.com/channel/UCZw35HTHQi737CZnkV22nww"
+              "body": "Six of the seven are on the <a href=\"https://www.youtube.com/channel/UCZw35HTHQi737CZnkV22nww\">Sun State International YouTube channel</a>. The Sun State Trailers feature is hosted on Vimeo."
             },
             {
               "title": "Is there a video about working here?",
-              "body": "Yes — Welcome to Sun State introduces our people and culture.",
-              "linkLabel": "Careers →",
-              "linkUrl": "/careers"
+              "body": "Yes — Welcome to Sun State introduces our people and culture. More on the <a href=\"/careers\">Careers</a> page."
             }
           ]
         }
@@ -208,15 +204,16 @@
       "id": "videos-cta",
       "type": "sharedSection",
       "props": {
-        "sectionId": "cta-band",
+        "sectionId": "cta-compact",
         "values": {
-          "eyebrow": "READY TO GET ON THE ROAD?",
+          "eyebrow": "",
           "heading": "Ready to get on the road?",
           "body": "Contact us to explore our trucks and trailers and experience nothing less than the dedicated care you deserve.",
           "primaryLabel": "Contact Us",
           "primaryUrl": "/contact",
-          "secondaryLabel": "Call 800.741.7566",
-          "secondaryUrl": "tel:+18007417566"
+          "secondaryLabel": "",
+          "secondaryUrl": "",
+          "background": "ink"
         }
       }
     }

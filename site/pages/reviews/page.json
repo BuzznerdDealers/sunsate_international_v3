@@ -23,7 +23,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 9,
-        "background": "paper",
+        "background": "card",
         "anchor": "review-highlights"
       },
       "children": [
@@ -340,15 +340,16 @@
       "id": "reviews-cta",
       "type": "sharedSection",
       "props": {
-        "sectionId": "cta-band",
+        "sectionId": "cta-compact",
         "values": {
-          "eyebrow": "SHOP SUN STATE",
+          "eyebrow": "",
           "heading": "Experience the Sun State difference.",
-          "body": "New and used International trucks, IC Bus, Capacity yard trucks and trailers, ready to work.",
+          "body": "",
           "primaryLabel": "Shop New",
-          "primaryUrl": "/store/inventory?condition=new",
+          "primaryUrl": "/inventory",
           "secondaryLabel": "Shop Pre-Owned",
-          "secondaryUrl": "/store/inventory?condition=used"
+          "secondaryUrl": "/inventory",
+          "background": "ink"
         }
       }
     }

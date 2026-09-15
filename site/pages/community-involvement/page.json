@@ -23,7 +23,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 9,
-        "background": "paper",
+        "background": "card",
         "anchor": "community-summary"
       },
       "children": [
@@ -64,6 +64,35 @@
                       }
                     ]
                   }
+                },
+                {
+                  "id": "ci-glance-card",
+                  "type": "glance-table",
+                  "props": {
+                    "title": "At a glance",
+                    "rows": [
+                      {
+                        "label": "What we give",
+                        "text": "Time, talent and treasure — donated employee hours, professional expertise and board service, and direct financial support."
+                      },
+                      {
+                        "label": "Annual investment",
+                        "text": "Over $100,000 a year, alongside donated employee time and talent."
+                      },
+                      {
+                        "label": "Partner organizations",
+                        "text": "Eleven, including Feeding Tampa Bay, Boys & Girls Club of Tampa Bay, Academy Prep, Goodwill, Tampa General Hospital and USF."
+                      },
+                      {
+                        "label": "Where",
+                        "text": "The Tampa Bay region and the communities around our Tampa, Sarasota, Davenport and Brooksville locations."
+                      },
+                      {
+                        "label": "To partner with us",
+                        "text": "Email info@sunstateintl.com or call 813.521.8148 to discuss sponsorship, in-kind support or employee volunteering."
+                      }
+                    ]
+                  }
                 }
               ]
             }
@@ -72,50 +101,12 @@
       ]
     },
     {
-      "id": "ci-glance",
-      "type": "sharedSection",
-      "props": {
-        "sectionId": "feature-grid",
-        "values": {
-          "eyebrow": "AT A GLANCE",
-          "heading": "What our giving looks like.",
-          "span": 4,
-          "background": "card",
-          "anchor": "community-answers",
-          "items": [
-            {
-              "title": "What we give",
-              "body": "Time, talent and treasure — donated employee hours, professional expertise and board service, and direct financial support."
-            },
-            {
-              "title": "Annual investment",
-              "body": "Over $100,000 a year, alongside donated employee time and talent."
-            },
-            {
-              "title": "Partner organizations",
-              "body": "Eleven, including Feeding Tampa Bay, Boys & Girls Club of Tampa Bay, Academy Prep, Goodwill, Tampa General Hospital and USF."
-            },
-            {
-              "title": "Where",
-              "body": "The Tampa Bay region and the communities around our Tampa, Sarasota, Davenport and Brooksville locations."
-            },
-            {
-              "title": "To partner with us",
-              "body": "Email info@sunstateintl.com or call 813.521.8148 to discuss sponsorship, in-kind support or employee volunteering.",
-              "linkLabel": "Contact us →",
-              "linkUrl": "/contact"
-            }
-          ]
-        }
-      }
-    },
-    {
       "id": "ci-partners",
       "type": "section",
       "props": {
         "width": "boxed",
         "paddingY": 10,
-        "background": "paper",
+        "background": "card",
         "anchor": "partners"
       },
       "children": [
@@ -283,13 +274,14 @@
           "eyebrow": "WHY WE GIVE",
           "heading": "More than a business; a family.",
           "body": "At Sun State, we're more than a business; we're a family. Within our tight-knit community, every individual is not merely an employee but a valued member. We ensure every member of our team is cared for and respected as they are an essential part of our success.\n\nOur family-owned business has a heritage of community service and \"be the change\" care, and we seek to create the next generation of leaders in our region. That begins inside our own walls — and carries into the neighborhoods our trucks and trailers run through every day.",
-          "background": "card",
+          "background": "paper",
           "image": {
             "src": "/img/photo-placeholder.svg",
             "alt": "Sun State employees volunteering — photograph to be supplied",
             "width": 1600,
             "height": 900
-          }
+          },
+          "width": "full"
         }
       }
     },
@@ -303,7 +295,7 @@
           "heading": "Time, talent and treasure.",
           "body": "Three ways we show up for Tampa Bay, and what each one means in practice.",
           "span": 4,
-          "background": "paper",
+          "background": "card",
           "items": [
             {
               "title": "Time",
@@ -327,7 +319,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 10,
-        "background": "card",
+        "background": "paper",
         "anchor": "community-faq"
       },
       "children": [
@@ -421,15 +413,16 @@
       "id": "ci-cta",
       "type": "sharedSection",
       "props": {
-        "sectionId": "cta-band",
+        "sectionId": "cta-compact",
         "values": {
-          "eyebrow": "PARTNER WITH US",
+          "eyebrow": "",
           "heading": "Working on something good in Tampa Bay?",
           "body": "Tell us about it. We're always looking for the next organization to stand behind.",
           "primaryLabel": "Contact Us",
           "primaryUrl": "/contact",
-          "secondaryLabel": "Call 813.521.8148",
-          "secondaryUrl": "tel:+18135218148"
+          "secondaryLabel": "",
+          "secondaryUrl": "",
+          "background": "ink"
         }
       }
     }

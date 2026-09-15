@@ -37,7 +37,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 9,
-        "background": "paper",
+        "background": "card",
         "anchor": "appt-summary"
       },
       "children": [
@@ -379,7 +379,8 @@
             "alt": "A Sun State mobile service truck — photograph to be supplied",
             "width": 1600,
             "height": 900
-          }
+          },
+          "width": "full"
         }
       }
     },
@@ -392,7 +393,7 @@
           "eyebrow": "FLEETS AND TRAILERS",
           "heading": "Planned, not reactive.",
           "span": 6,
-          "background": "paper",
+          "background": "card",
           "items": [
             {
               "title": "Fleet scheduling and service history",
@@ -416,7 +417,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 10,
-        "background": "card",
+        "background": "paper",
         "anchor": "appt-faq"
       },
       "children": [
@@ -518,7 +519,8 @@
           "primaryLabel": "Call 800.741.7566",
           "primaryUrl": "tel:+18007417566",
           "secondaryLabel": "Request an appointment",
-          "secondaryUrl": "#appointment-form"
+          "secondaryUrl": "#appointment-form",
+          "background": "ink"
         }
       }
     }

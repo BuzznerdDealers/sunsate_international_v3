@@ -31,7 +31,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 8,
-        "background": "paper"
+        "background": "ink"
       },
       "children": [
         {
@@ -92,7 +92,8 @@
             "alt": "The Sun State team at work — photograph to be supplied",
             "width": 1600,
             "height": 900
-          }
+          },
+          "width": "full"
         }
       }
     },
@@ -106,7 +107,7 @@
           "heading": "A family, not just a company.",
           "body": "As a family-owned and operated business, we've created an environment where every team member plays a crucial role in our success. In our workplace, we believe a team works best when united with a common goal. It's this unique culture that is the driving force behind our remarkable success of over 30 years.",
           "span": 3,
-          "background": "paper",
+          "background": "card",
           "items": [
             {
               "title": "Community",
@@ -137,7 +138,7 @@
           "eyebrow": "BENEFITS",
           "heading": "What we offer.",
           "span": 3,
-          "background": "card",
+          "background": "paper",
           "anchor": "benefits",
           "items": [
             {
@@ -170,7 +171,7 @@
           "heading": "Build your career close to home.",
           "body": "With multiple locations across West Central Florida, we make it easy to build your career close to home. Discover opportunities in your area and apply to join our team today.",
           "span": 4,
-          "background": "paper",
+          "background": "card",
           "anchor": "locations",
           "locations": [
             {
@@ -212,7 +213,7 @@
           "heading": "Where you could fit in.",
           "body": "Whether you're new to the industry or looking to take the next step, we offer opportunities to learn, lead, and thrive. Both Sun State International Trucks and Sun State Trailers hire through one portal.",
           "span": 3,
-          "background": "card",
+          "background": "paper",
           "anchor": "open-positions",
           "items": [
             {
@@ -237,101 +238,50 @@
     },
     {
       "id": "careers-faq",
-      "type": "section",
+      "type": "sharedSection",
       "props": {
-        "width": "boxed",
-        "paddingY": 10,
-        "background": "paper",
-        "anchor": "careers-faq"
-      },
-      "children": [
-        {
-          "id": "careers-faq-head-row",
-          "type": "row",
-          "props": {
-            "gap": 5
-          },
-          "children": [
+        "sectionId": "feature-grid",
+        "values": {
+          "eyebrow": "QUICK ANSWERS",
+          "heading": "Before you apply.",
+          "span": 6,
+          "background": "card",
+          "anchor": "careers-faq",
+          "items": [
             {
-              "id": "careers-faq-head-col",
-              "type": "column",
-              "props": {
-                "span": 12
-              },
-              "children": [
-                {
-                  "id": "careers-faq-head-h",
-                  "type": "heading",
-                  "props": {
-                    "text": "Before you apply.",
-                    "headingLevel": 2,
-                    "eyebrow": "QUICK ANSWERS"
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "careers-faq-row",
-          "type": "row",
-          "props": {
-            "gap": 5
-          },
-          "children": [
+              "title": "What benefits does Sun State offer?",
+              "body": "Market-based and incentive pay, medical, dental, vision and prescription coverage, an EAP, 401(k), tuition reimbursement, life insurance, AD&D, disability, PTO, supplemental health, identity protection and an employee discount program."
+            },
             {
-              "id": "careers-faq-col",
-              "type": "column",
-              "props": {
-                "span": 12
-              },
-              "children": [
-                {
-                  "id": "careers-faq-list",
-                  "type": "widget",
-                  "props": {
-                    "widget": "faq",
-                    "config": {
-                      "items": [
-                        {
-                          "q": "What benefits does Sun State offer?",
-                          "a": "Market-based and incentive pay, medical, dental, vision and prescription coverage, an EAP, 401(k), tuition reimbursement, life insurance, AD&D, disability, PTO, supplemental health, identity protection and an employee discount program."
-                        },
-                        {
-                          "q": "Do you hire technicians with no experience?",
-                          "a": "Yes. Our Apprentice Technician Program and tuition reimbursement let people new to the industry train into certified technician roles."
-                        },
-                        {
-                          "q": "Where can I work?",
-                          "a": "Five West Central Florida locations: Tampa, Sarasota, Davenport, Brooksville and the Tampa Aftermarket Business."
-                        },
-                        {
-                          "q": "How do I apply?",
-                          "a": "Browse and apply online through our careers portal. Trucks and trailers roles are posted in the same place."
-                        }
-                      ]
-                    }
-                  }
-                }
-              ]
+              "title": "Do you hire technicians with no experience?",
+              "body": "Yes. Our Apprentice Technician Program and tuition reimbursement let people new to the industry train into certified technician roles."
+            },
+            {
+              "title": "Where can I work?",
+              "body": "Five West Central Florida locations: Tampa, Sarasota, Davenport, Brooksville and the Tampa Aftermarket Business."
+            },
+            {
+              "title": "How do I apply?",
+              "body": "Browse and apply online through our careers portal. Trucks and trailers roles are posted in the same place."
             }
           ]
         }
-      ]
+      }
     },
     {
       "id": "careers-cta",
       "type": "sharedSection",
       "props": {
-        "sectionId": "cta-band",
+        "sectionId": "cta-compact",
         "values": {
-          "eyebrow": "JOIN THE TEAM",
+          "eyebrow": "",
           "heading": "Ready to begin your career journey with Sun State?",
           "body": "Explore our open positions and apply today.",
           "primaryLabel": "Apply Today",
-          "primaryUrl": "/contact",
-          "secondaryLabel": "Meet the team",
-          "secondaryUrl": "/meet-the-team"
+          "primaryUrl": "/careers#openings",
+          "secondaryLabel": "",
+          "secondaryUrl": "",
+          "background": "ink"
         }
       }
     }

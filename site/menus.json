@@ -312,7 +312,78 @@
           "id": "our-story",
           "label": "Our Story",
           "type": "page",
-          "ref": "our-story"
+          "ref": "our-story",
+          "children": [
+            {
+              "id": "os-company",
+              "label": "The company",
+              "type": "label",
+              "children": [
+                {
+                  "id": "os-story",
+                  "label": "Our Story",
+                  "type": "page",
+                  "ref": "our-story"
+                },
+                {
+                  "id": "os-team",
+                  "label": "Meet the Team",
+                  "type": "page",
+                  "ref": "meet-the-team"
+                },
+                {
+                  "id": "os-careers",
+                  "label": "Careers",
+                  "type": "page",
+                  "ref": "careers"
+                }
+              ]
+            },
+            {
+              "id": "os-community",
+              "label": "In the community",
+              "type": "label",
+              "children": [
+                {
+                  "id": "os-involvement",
+                  "label": "Community Involvement",
+                  "type": "page",
+                  "ref": "community-involvement"
+                },
+                {
+                  "id": "os-reviews",
+                  "label": "Reviews",
+                  "type": "page",
+                  "ref": "reviews"
+                }
+              ]
+            },
+            {
+              "id": "os-media",
+              "label": "News & media",
+              "type": "label",
+              "children": [
+                {
+                  "id": "os-news",
+                  "label": "News & Press",
+                  "type": "page",
+                  "ref": "news-and-press"
+                },
+                {
+                  "id": "os-videos",
+                  "label": "Videos",
+                  "type": "page",
+                  "ref": "videos"
+                },
+                {
+                  "id": "os-blog",
+                  "label": "Blog",
+                  "type": "url",
+                  "url": "/blog"
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "locations",
@@ -504,12 +575,6 @@
           "label": "Globe Trailers",
           "type": "inventory",
           "ref": "inventory?brand=globe-trailers"
-        },
-        {
-          "id": "fb-capacity",
-          "label": "Capacity Yard Trucks",
-          "type": "page",
-          "ref": "capacity-yard-trucks"
         }
       ]
     },
@@ -548,16 +613,34 @@
           "ref": "parts"
         },
         {
-          "id": "fs-service",
+          "id": "f-shop-aftermarket",
+          "label": "Aftermarket",
+          "type": "page",
+          "ref": "aftermarket"
+        },
+        {
+          "id": "f-shop-service",
           "label": "Service",
           "type": "page",
           "ref": "service"
         },
         {
-          "id": "fs-deal",
-          "label": "Deal of the Week",
+          "id": "f-shop-appt",
+          "label": "Service Appointment",
           "type": "page",
-          "ref": "deal-of-the-week"
+          "ref": "service-appointment"
+        },
+        {
+          "id": "f-shop-mobile",
+          "label": "Mobile Service",
+          "type": "page",
+          "ref": "mobile-service"
+        },
+        {
+          "id": "f-shop-extended",
+          "label": "Extended Service",
+          "type": "page",
+          "ref": "extended-service"
         }
       ]
     },
@@ -572,7 +655,7 @@
           "ref": "our-story"
         },
         {
-          "id": "fc-team",
+          "id": "f-co-team",
           "label": "Meet the Team",
           "type": "page",
           "ref": "meet-the-team"
@@ -590,10 +673,10 @@
           "url": "/blog"
         },
         {
-          "id": "fc-news",
-          "label": "News & Press",
+          "id": "f-co-reviews",
+          "label": "Reviews",
           "type": "page",
-          "ref": "news-and-press"
+          "ref": "reviews"
         },
         {
           "id": "fc-community",
@@ -602,10 +685,16 @@
           "ref": "community-involvement"
         },
         {
-          "id": "fc-reviews",
-          "label": "Reviews",
+          "id": "f-co-news",
+          "label": "News & Press",
           "type": "page",
-          "ref": "reviews"
+          "ref": "news-and-press"
+        },
+        {
+          "id": "f-co-videos",
+          "label": "Videos",
+          "type": "page",
+          "ref": "videos"
         },
         {
           "id": "fc-contact",
@@ -626,16 +715,16 @@
           "ref": "privacy-policy"
         },
         {
-          "id": "lg-policies",
-          "label": "Policies",
-          "type": "page",
-          "ref": "policies"
-        },
-        {
           "id": "lg-terms",
           "label": "Terms & Conditions",
           "type": "page",
           "ref": "terms-and-conditions"
+        },
+        {
+          "id": "lg-policies",
+          "label": "Policies",
+          "type": "page",
+          "ref": "policies"
         }
       ]
     },
@@ -747,33 +836,27 @@
       "items": [
         {
           "id": "pt-credit",
-          "label": "Credit options",
+          "label": "Credit Options",
           "type": "url",
-          "url": "#return-policy"
+          "url": "#credit-options"
         },
         {
           "id": "pt-return",
-          "label": "Return policy",
+          "label": "Return Policy",
           "type": "url",
           "url": "#return-policy"
         },
         {
           "id": "pt-online",
-          "label": "Online orders",
+          "label": "Online Orders",
           "type": "url",
           "url": "#online-orders"
         },
         {
           "id": "pt-mobile",
-          "label": "Mobile support",
+          "label": "Mobile Support",
           "type": "url",
           "url": "#mobile-support"
-        },
-        {
-          "id": "pt-trailer",
-          "label": "Trailer parts",
-          "type": "url",
-          "url": "#trailer-parts"
         }
       ]
     },
@@ -1002,6 +1085,42 @@
           "label": "Acceptance of Orders",
           "type": "url",
           "url": "#tc-orders"
+        }
+      ]
+    },
+    {
+      "id": "social",
+      "name": "Social profiles",
+      "items": [
+        {
+          "id": "so-fb",
+          "label": "Facebook",
+          "type": "url",
+          "url": "https://www.facebook.com/sunstateintl"
+        },
+        {
+          "id": "so-ig",
+          "label": "Instagram",
+          "type": "url",
+          "url": "https://www.instagram.com/sunstateintl"
+        },
+        {
+          "id": "so-li",
+          "label": "LinkedIn",
+          "type": "url",
+          "url": "https://www.linkedin.com/company/sun-state-international-trucks"
+        },
+        {
+          "id": "so-x",
+          "label": "X",
+          "type": "url",
+          "url": "https://x.com/sunstateintl"
+        },
+        {
+          "id": "so-yt",
+          "label": "YouTube",
+          "type": "url",
+          "url": "https://www.youtube.com/@sunstateinternationaltruck7699"
         }
       ]
     }
