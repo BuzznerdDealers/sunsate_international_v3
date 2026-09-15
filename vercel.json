@@ -6,15 +6,15 @@
   "rewrites": [
     {
       "source": "/store",
-      "destination": "https://buzznerd.buzznerdrv.com/store"
+      "destination": "https://a1.buzznerdsubsite.loc/store"
     },
     {
       "source": "/store/",
-      "destination": "https://buzznerd.buzznerdrv.com/store/"
+      "destination": "https://a1.buzznerdsubsite.loc/store/"
     },
     {
       "source": "/store/:path*",
-      "destination": "https://buzznerd.buzznerdrv.com/store/:path*"
+      "destination": "https://a1.buzznerdsubsite.loc/store/:path*"
     }
   ],
   "headers": [
