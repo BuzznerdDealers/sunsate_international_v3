@@ -6,15 +6,15 @@
   "rewrites": [
     {
       "source": "/store",
-      "destination": "https://a1.buzznerdsubsite.loc/store"
+      "destination": "https://vikas-group.buzznerdrv.com/store"
     },
     {
       "source": "/store/",
-      "destination": "https://a1.buzznerdsubsite.loc/store/"
+      "destination": "https://vikas-group.buzznerdrv.com/store/"
     },
     {
       "source": "/store/:path*",
-      "destination": "https://a1.buzznerdsubsite.loc/store/:path*"
+      "destination": "https://vikas-group.buzznerdrv.com/store/:path*"
     }
   ],
   "headers": [
