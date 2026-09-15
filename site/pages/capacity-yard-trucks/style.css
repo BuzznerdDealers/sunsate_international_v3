@@ -18,3 +18,11 @@
   .bz-block--hero { padding-block: 72px; }
   .bz-block--hero h1 { font-size: 30px; }
 }
+
+/* --- Band rhythm, measured from the handoff --------------------------------
+   Each band's own padding, read off the section it is drawn as. The build
+   was using the 90px house rhythm where the handoff sets its own. */
+[data-bz-node="cy-intro"].bz-section,
+[data-bz-node="cy-intro"] > .bz-section { padding-block: 76px 0px; }
+[data-bz-node="cy-parts"].bz-section,
+[data-bz-node="cy-parts"] > .bz-section { padding-block: 80px 80px; }

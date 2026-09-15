@@ -27,12 +27,13 @@
    column. There is no heading in this band. */
 [data-bz-node="story-mission"] > .bz-section { padding-block: 72px; }
 [data-bz-node="story-mission"] > .bz-section > .bz-container { max-width: calc(760px + 2 * var(--container-pad)); }
-[data-bz-node="mission-h"] .bz-eyebrow {
-  font: 700 11px/1 var(--font-body); letter-spacing: .16em;
-  color: #FFD9D5; margin: 0 0 16px; text-align: center;
-}
 [data-bz-node="story-mission"] .bz-text { margin-inline: auto; max-width: 760px; }
-[data-bz-node="mission-body"] p {
+/* First paragraph is the tracked label, second is the statement. */
+[data-bz-node="mission-body"] p:first-child {
+  font: 700 11px/1 var(--font-body); letter-spacing: .16em;
+  color: #FFD9D5; margin: 0 0 16px;
+}
+[data-bz-node="mission-body"] p:last-child {
   font-family: var(--font-heading); font-weight: 700;
   font-size: 24px; line-height: 1.45; color: #fff; margin: 0;
 }
@@ -66,3 +67,17 @@
   .bz-block--hero { padding-block: 72px; }
   .bz-block--hero h1 { font-size: 32px; }
 }
+
+/* --- Band rhythm, measured from the handoff --------------------------------
+   Each band's own padding, read off the section it is drawn as. The build
+   was using the 90px house rhythm where the handoff sets its own. */
+[data-bz-node="story-culture"].bz-section,
+[data-bz-node="story-culture"] > .bz-section { padding-block: 100px 100px; }
+[data-bz-node="story-leader"].bz-section,
+[data-bz-node="story-leader"] > .bz-section { padding-block: 96px 96px; }
+[data-bz-node="story-glance"].bz-section,
+[data-bz-node="story-glance"] > .bz-section { padding-block: 100px 100px; }
+[data-bz-node="story-mission"].bz-section,
+[data-bz-node="story-mission"] > .bz-section { padding-block: 72px 72px; }
+[data-bz-node="story-values"].bz-section,
+[data-bz-node="story-values"] > .bz-section { padding-block: 100px 100px; }

@@ -217,3 +217,11 @@
     padding-right: 40px;
   }
 }
+
+/* --- Band rhythm, measured from the handoff --------------------------------
+   Each band's own padding, read off the section it is drawn as. The build
+   was using the 90px house rhythm where the handoff sets its own. */
+[data-bz-node="home-trailers"].bz-section,
+[data-bz-node="home-trailers"] > .bz-section { padding-block: 100px 120px; }
+[data-bz-node="home-brands"].bz-section,
+[data-bz-node="home-brands"] > .bz-section { padding-block: 0px 120px; }

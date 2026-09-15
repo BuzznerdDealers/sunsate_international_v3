@@ -93,7 +93,7 @@
       "id": "ext-plans",
       "type": "sharedSection",
       "props": {
-        "sectionId": "photo-card-grid",
+        "sectionId": "feature-grid",
         "values": {
           "eyebrow": "COVERAGE PLANS",
           "heading": "Pick the coverage that matches how you run.",
@@ -103,46 +103,25 @@
           "anchor": "ext-plans",
           "items": [
             {
-              "image": {
-                "src": "/img/photo-placeholder.svg",
-                "alt": "A line-haul tractor on the interstate — photograph to be supplied",
-                "width": 1600,
-                "height": 900
-              },
-              "eyebrow": "CHASSIS COVERAGE",
               "title": "On Highway",
-              "body": "Extended chassis coverage for line-haul and regional trucks running high annual mileage on paved routes.",
-              "specs": "Built for sleeper and day cab applications\n\nComponent coverage beyond base warranty\n\nTerm and mileage options by duty cycle",
+              "body": "Extended chassis coverage for line-haul and regional trucks running high annual mileage on paved routes.\n\nBuilt for sleeper and day cab applications\n\nComponent coverage beyond base warranty\n\nTerm and mileage options by duty cycle",
               "linkLabel": "On Highway coverage brochure (PDF) →",
-              "linkUrl": "https://sunstateintl.com/wp-content/uploads/2024/09/warrantychassis-highway-printfriendly-r3.pdf"
+              "linkUrl": "https://sunstateintl.com/wp-content/uploads/2024/09/warrantychassis-highway-printfriendly-r3.pdf",
+              "cardEyebrow": "CHASSIS COVERAGE"
             },
             {
-              "image": {
-                "src": "/img/photo-placeholder.svg",
-                "alt": "A vocational dump truck on site — photograph to be supplied",
-                "width": 1600,
-                "height": 900
-              },
-              "eyebrow": "CHASSIS COVERAGE",
               "title": "Vocational",
-              "body": "Extended chassis coverage for dump, refuse, construction, utility and municipal trucks that work hard at low mileage.",
-              "specs": "Built for severe-duty and on/off-road work\n\nCoverage aligned to hours as well as miles\n\nOptions for municipalities and contractors",
+              "body": "Extended chassis coverage for dump, refuse, construction, utility and municipal trucks that work hard at low mileage.\n\nBuilt for severe-duty and on/off-road work\n\nCoverage aligned to hours as well as miles\n\nOptions for municipalities and contractors",
               "linkLabel": "Vocational coverage brochure (PDF) →",
-              "linkUrl": "https://sunstateintl.com/wp-content/uploads/2024/09/warrantychassis-vocational-printfriendly-r3.pdf"
+              "linkUrl": "https://sunstateintl.com/wp-content/uploads/2024/09/warrantychassis-vocational-printfriendly-r3.pdf",
+              "cardEyebrow": "CHASSIS COVERAGE"
             },
             {
-              "image": {
-                "src": "/img/photo-placeholder.svg",
-                "alt": "An International A26 engine — photograph to be supplied",
-                "width": 1600,
-                "height": 900
-              },
-              "eyebrow": "ENGINE COVERAGE",
               "title": "International A26",
-              "body": "Engine-specific extended coverage for the International A26, protecting the most expensive component on the truck.",
-              "specs": "A26 engine and related systems\n\nRepairs by factory-trained technicians\n\nPairs with chassis coverage programs",
+              "body": "Engine-specific extended coverage for the International A26, protecting the most expensive component on the truck.\n\nA26 engine and related systems\n\nRepairs by factory-trained technicians\n\nPairs with chassis coverage programs",
               "linkLabel": "International A26 coverage brochure (PDF) →",
-              "linkUrl": "https://sunstateintl.com/wp-content/uploads/2024/09/warranty-a26-printfriendly-r3.pdf"
+              "linkUrl": "https://sunstateintl.com/wp-content/uploads/2024/09/warranty-a26-printfriendly-r3.pdf",
+              "cardEyebrow": "ENGINE COVERAGE"
             }
           ]
         }
