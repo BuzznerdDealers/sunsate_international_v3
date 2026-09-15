@@ -10,8 +10,7 @@
 [data-bz-node="careers-values"] [data-bz-type="column"][data-bz-node^="fg-card-"][data-bz-node] { padding: 28px 24px; }
 [data-bz-node="careers-roles"] [data-bz-type="column"][data-bz-node^="fg-card-"][data-bz-node] { padding: 28px 24px; }
 
-/* The handoff draws these quick answers as a two-up card grid, not an accordion. */
-[data-bz-node="careers-faq"] > .bz-section { padding-block: 80px; }
+
 [data-bz-type="column"][data-bz-node^="fg-card-"][data-bz-node] { padding: 28px; }
 
 @media (max-width: 640px) {

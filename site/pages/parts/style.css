@@ -13,7 +13,7 @@
 
 /* The handoff's topic tiles: four bordered links in a row, ruled off below. */
 [data-bz-node="parts-quick"] { border-bottom: 1px solid var(--line); }
-[data-bz-node="parts-quick"] > .bz-container { padding-block: 56px; }
+
 [data-bz-node="parts-quick-menu"] .bz-nav { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
 [data-bz-node="parts-quick-menu"] .bz-navitem > a {
   display: block; border: 1px solid var(--line); padding: 24px;
@@ -67,3 +67,25 @@
 [data-bz-node="parts-quick"] > .bz-section { padding-block: 56px 56px; }
 [data-bz-node="parts-locations"].bz-section,
 [data-bz-node="parts-locations"] > .bz-section { padding-block: 100px 100px; }
+
+/* --- Parts topic tiles -----------------------------------------------------
+   The handoff draws this menu as four bordered tiles on a 4-up grid, not as a
+   nav bar. The menu stays the data; this is the presentation the block owns. */
+[data-bz-node="parts-quick"].bz-section { border-bottom: 1px solid var(--line); }
+[data-bz-node="parts-quick-menu"] .bz-nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+[data-bz-node="parts-quick-menu"] .bz-navitem > a {
+  display: block;
+  border: 1px solid var(--line);
+  padding: 24px;
+  font: 700 15px/1 var(--font-heading);
+  text-align: center;
+  color: var(--ink);
+  text-decoration: none;
+}
+[data-bz-node="parts-quick-menu"] .bz-navitem > a:hover { background: var(--paper); }
+@media (max-width: 1100px) { [data-bz-node="parts-quick-menu"] .bz-nav { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px)  { [data-bz-node="parts-quick-menu"] .bz-nav { grid-template-columns: 1fr; } }
