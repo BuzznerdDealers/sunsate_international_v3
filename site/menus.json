@@ -312,7 +312,29 @@
           "id": "our-story",
           "label": "Our Story",
           "type": "page",
-          "ref": "our-story"
+          "ref": "our-story",
+          "children": [
+            {
+              "id": "os-visit",
+              "label": "Visit us",
+              "type": "label",
+              "ref": null,
+              "children": [
+                {
+                  "id": "os-hours",
+                  "label": "All locations & hours",
+                  "type": "page",
+                  "ref": "locations"
+                },
+                {
+                  "id": "os-contact",
+                  "label": "Contact us",
+                  "type": "page",
+                  "ref": "contact-us"
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "locations",
