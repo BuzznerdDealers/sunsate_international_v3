@@ -1016,11 +1016,17 @@ test("the editor never sees the expansion as part of the page's own tree", () =>
   const doc = { nodes: [{ id: 'ref', type: 'sharedSection', props: { sectionId: 'cta-band' } }] };
 
   const editing = renderDocument(doc, { ...SHARED_CTX, editing: true });
-  // The canvas reads structure back out of the DOM, so the inner nodes must not
-  // look like page nodes — otherwise a save would copy them into the page.
-  assert.equal(editing.match(/data-bz-node/g).length, 1, 'only the reference itself is a node');
+  // The canvas matches a block on `data-bz-type`, so dropping it is what stops a
+  // save copying the expansion into the page.
   assert.doesNotMatch(editing, /data-bz-type="section"/);
   assert.match(editing, /data-bz-opaque="1"/);
+  // `data-bz-node` survives, or the component's own `[data-bz-node="…"]` rules
+  // apply in preview and on the published page but not on the canvas — the
+  // component would draw itself unstyled in the one place it is edited.
+  assert.ok(
+    editing.match(/data-bz-node/g).length > 1,
+    'the expansion keeps the hooks its stylesheet is written against',
+  );
 
   // Published, the attributes stay: nothing is reading the page back there.
   const published = renderDocument(doc, SHARED_CTX);

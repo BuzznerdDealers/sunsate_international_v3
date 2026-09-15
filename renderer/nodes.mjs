@@ -394,14 +394,20 @@ export const LAYOUT_REGISTRY = {
 const expanding = new Set();
 
 /**
- * Strip the attributes the canvas builds its component tree from.
+ * Strip the attribute the canvas builds its component tree from.
  *
- * Only used for a shared section's expansion in the editor. The markup still
- * renders exactly as it will on the page — it simply stops looking like part of
- * this page's tree.
+ * Only used for a shared section's expansion in the editor. `data-bz-type` is
+ * what GrapesJS matches a block on, so without it the expansion is markup the
+ * tree reader walks past and a save cannot copy into the page.
+ *
+ * `data-bz-node` stays. A component scopes its own CSS with
+ * `[data-bz-node="…"]`, which is the documented way to write it, so stripping
+ * that left every such rule dead on the canvas and live in preview and on the
+ * published page — the component drew itself unstyled in the one place it is
+ * edited.
  */
 function inert(html) {
-  return String(html).replace(/\s(?:data-bz-node|data-bz-type)="[^"]*"/g, '');
+  return String(html).replace(/\sdata-bz-type="[^"]*"/g, '');
 }
 
 function clamp(value, min, max) {
