@@ -29,6 +29,11 @@
           "width": 1600,
           "height": 900
         }
+      },
+      "styles": {
+        "base": {
+          "textTransform": "uppercase"
+        }
       }
     },
     {
@@ -135,7 +140,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "aft-lines",
@@ -274,7 +280,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "aft-location",
@@ -331,7 +338,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "aft-faq",
@@ -420,7 +428,8 @@
                           "a": "Yes. All-makes trailer parts and service includes repairing aluminum and fiberglass reinforced plywood, repairing or replacing king pins and landing gear, and accessory installation such as underbody skirts, vents, side doors and tire carriers, in dedicated trailer repair bays."
                         }
                       ]
-                    }
+                    },
+                    "snapshot": null
                   }
                 }
               ]
@@ -444,7 +453,8 @@
           "secondaryUrl": "/service-appointment",
           "background": "ink"
         }
-      }
+      },
+      "children": []
     }
   ]
 }
