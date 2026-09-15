@@ -58,6 +58,16 @@
           "key": "rows",
           "type": "textarea",
           "label": "Hours — one line per day"
+        },
+        {
+          "key": "link2Label",
+          "type": "text",
+          "label": "Second link (optional)"
+        },
+        {
+          "key": "link2Url",
+          "type": "url",
+          "label": "Second link URL"
         }
       ]
     }
@@ -144,6 +154,12 @@
                       {
                         "label": "{{phone}}",
                         "url": "{{phoneUrl}}",
+                        "style": "link",
+                        "intent": "call-department"
+                      },
+                      {
+                        "label": "{{link2Label}}",
+                        "url": "{{link2Url}}",
                         "style": "link",
                         "intent": "call-department"
                       }
