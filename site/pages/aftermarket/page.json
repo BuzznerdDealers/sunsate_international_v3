@@ -24,7 +24,6 @@
           }
         ],
         "image": {
-          "src": "/img/photo-placeholder.svg",
           "alt": "The Sun State aftermarket shop — photograph to be supplied",
           "width": 1600,
           "height": 900
@@ -32,7 +31,9 @@
       },
       "styles": {
         "base": {
-          "textTransform": "uppercase"
+          "textTransform": "uppercase",
+          "backgroundImage": "https://vendure.buzznerdrv.com/assets/source/ac/aftermarket-2.jpg",
+          "backgroundSize": "cover"
         }
       }
     },
@@ -239,10 +240,10 @@
                   "type": "image",
                   "props": {
                     "image": {
-                      "src": "/img/photo-placeholder.svg",
-                      "alt": "The aftermarket parts counter — photograph to be supplied",
-                      "width": 1600,
-                      "height": 900
+                      "src": "https://vendure.buzznerdrv.com/assets/source/ac/aftermarket-2.jpg",
+                      "alt": "The aftermarket parts counter",
+                      "width": 2250,
+                      "height": 750
                     },
                     "width": "full"
                   }
