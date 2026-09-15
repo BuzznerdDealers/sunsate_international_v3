@@ -38,6 +38,8 @@
 [data-bz-node="hero-brand-lockup"] img { width: 82%; max-width: 1400px; margin: 0 auto; }
 [data-bz-node="hero-search"] .bz-searchbar { max-width: 520px; margin-inline: auto; }
 [data-bz-node="hero-brands"] .bz-nav { justify-content: center; gap: 36px; }
+/* The row's own leading, not the link's, was setting its height. */
+[data-bz-node="hero-brands"] .bz-navitem { line-height: 1; }
 [data-bz-node="hero-brands"] .bz-navitem > a {
   font: 700 12px/1 var(--font-body);
   letter-spacing: .1em;
@@ -61,6 +63,8 @@
 [data-bz-node="test-block"] .bz-quote blockquote::after { content: "\201D"; }
 [data-bz-node="test-block"] .bz-quote__n { font: 700 14px/1.6 var(--font-body); color: var(--ink); }
 [data-bz-node="test-block"] .bz-quote__r { font-size: 13px; line-height: 1.6; color: var(--muted); }
+/* The handoff sets the attribution lines solid; the block adds 4px between. */
+[data-bz-node="test-block"] .bz-quote figcaption { gap: 0; }
 
 /* The closing band is the compact one, 560px wide with a 34px heading. */
 [data-bz-section="cta-compact"] > .bz-section { padding-block: 100px; }
@@ -71,7 +75,7 @@
 [data-bz-section="cta-compact"] h2 { font-size: 34px; margin-bottom: 14px; }
 [data-bz-section="cta-compact"] .bz-block + .bz-block { padding-block-start: 0; }
 [data-bz-section="cta-compact"] [data-bz-node="ctc-body"] .bz-text { max-width: none; }
-[data-bz-section="cta-compact"] [data-bz-node="ctc-body"] p { margin-bottom: 36px; }
+[data-bz-section="cta-compact"] [data-bz-node="ctc-body"] p { font-size: 15px; line-height: 1.6; margin-bottom: 36px; }
 [data-bz-section="cta-compact"] [data-bz-node="ctc-buttons"] .bz-btns { margin-bottom: 20px; }
 
 /* The two boxed banners sit inside the page grid; the handoff gives the pair
@@ -86,8 +90,9 @@
 [data-bz-node="feat-all"] .bz-btns { justify-content: flex-end; margin-block: 28px 0; }
 
 /* The hero's search sits in a 520px row at 46px, as the handoff draws it. */
+/* The handoff's field is exactly 46px: a 46px floor and no vertical padding. */
 [data-bz-node="hero-search"] .bz-input,
-[data-bz-node="hero-search"] .bz-btn { min-height: 46px; }
+[data-bz-node="hero-search"] .bz-btn { min-height: 46px; padding-block: 0; }
 
 /* The handoff steps the hero display down to 46px on a tablet and 30px on a
    phone; the home hero's own rule above has to carry it. */
@@ -99,4 +104,116 @@
   [data-bz-node="home-hero"] h1 { font-size: 30px; }
   [data-bz-node="home-hero"] { padding-block: 96px 56px; }
   [data-bz-node="hero-brands"] .bz-nav { gap: 18px; }
+}
+
+/* ===========================================================================
+   Measured against the handoff's home.html, band by band. Everything here is
+   scoped to this page's own nodes: media-band, type-rail, location-rail and
+   the rest are shared with nine other pages.
+   =========================================================================== */
+
+/* About: the handoff gives the band a 480px floor and centres the copy in it,
+   so the column's own height no longer sets the band. */
+[data-bz-node="home-about"] > .bz-section { min-height: 480px; }
+[data-bz-node="home-about"] [data-bz-node="mb-row"] { min-height: 480px; }
+[data-bz-node="home-about"] [data-bz-node="mb-copy"] { justify-content: center; }
+[data-bz-node="home-about"] [data-bz-node="mb-body"] .bz-text { max-width: 460px; }
+/* The component means to set 28px above its button, but its own
+   `.bz-block + .bz-block` rule sits a class higher and wins. Said again at
+   that weight, for this page's three media bands. */
+[data-bz-node="home-about"] [data-bz-node="mb-cta"][data-bz-node],
+[data-bz-node="home-trailers"] [data-bz-node="mb-cta"][data-bz-node],
+[data-bz-node="home-brands"] [data-bz-node="mb-cta"][data-bz-node] { padding-block-start: 28px; }
+
+/* The handoff's "Read more" is its ghost button: the body face at 600, with a
+   standing underline 3px clear of the text — not the site's plain text link. */
+[data-bz-node="home-about"] .bz-btn--link {
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* The handoff sets its filled buttons in the display face — only the ghost
+   link and its inline text links use the body face, which is what the site
+   default is tuned for. These four are real .btn primaries in the design. */
+[data-bz-node="hero-search"] .bz-btn--primary,
+[data-bz-node="home-trailers"] .bz-btn--primary,
+[data-bz-node="home-brands"] .bz-btn--primary,
+[data-bz-section="cta-compact"] .bz-btn--primary,
+[data-bz-section="cta-compact"] .bz-btn--secondary { font-family: var(--font-heading); }
+
+/* ---------------------------------------------------------------------------
+   Mobile, taken from home.html's own @media (max-width: 640px) block. The
+   homepage's step-downs differ from the rest of the site's — its section
+   headings go to 28px where every other page's go to 26px — so they are said
+   here rather than in the site layer.
+   --------------------------------------------------------------------------- */
+@media (max-width: 640px) {
+  .bz-section .bz-block h2 { font-size: 28px; }
+
+  /* Hero: a smaller label, a wider mark, and the control stacked in a 320px
+     column instead of a row. */
+  [data-bz-node="home-hero"] .bz-eyebrow { font-size: 10px; letter-spacing: .1em; }
+  [data-bz-node="hero-brand-lockup"] img { width: 92%; }
+  [data-bz-node="hero-brand-lockup"] { margin-bottom: 32px; }
+  [data-bz-node="hero-search"] .bz-searchbar {
+    flex-direction: column;
+    max-width: 320px;
+    gap: 10px;
+  }
+  /* The field's `flex: 1 1 192px` is a width basis in the row; once the bar is
+     a column that basis becomes 192px of height. */
+  [data-bz-node="hero-search"] .bz-input { flex: 0 0 auto; }
+  [data-bz-node="hero-brands"] .bz-nav { gap: 16px 22px; }
+
+  /* About: the photograph leads on a phone, and the band stops holding a
+     480px floor. */
+  [data-bz-node="home-about"] > .bz-section,
+  [data-bz-node="home-about"] [data-bz-node="mb-row"] { min-height: auto; }
+  [data-bz-node="home-about"] [data-bz-node="mb-media"] { order: -1; min-height: 200px; }
+  [data-bz-node="home-about"] [data-bz-node="mb-copy"] { padding: 44px 20px; }
+
+  /* The type rail keeps its own 26px heading against the 28px step above. */
+  [data-bz-section="type-rail"] > .bz-section { padding: 56px 0 64px; }
+  [data-bz-section="type-rail"] .bz-block h2 { font-size: 26px; }
+  [data-bz-section="type-rail"] [data-bz-node="tr-head"] { padding-inline: 20px; }
+
+  /* Service rows stack, and the index sits at the copy's size. */
+  [data-bz-section="service-rows"] > .bz-section { padding-block: 64px; }
+  [data-bz-section="service-rows"] [data-bz-node^="sr-row"] {
+    grid-template-columns: 1fr;
+    gap: 6px 8px;
+    padding-block: 24px;
+  }
+  [data-bz-section="service-rows"] [data-bz-node^="sr-num"] p { font-size: 16px; }
+
+  /* The facet rows wrap and their labels shrink to their text. */
+  [data-bz-section="location-rail"] .ss-filter { flex-wrap: wrap; gap: 10px; }
+  [data-bz-section="location-rail"] .ss-filter__l { flex: 0 0 auto; }
+
+  [data-bz-node="home-testimonials"] { padding-block: 64px; }
+}
+
+/* The handoff only collapses its splits at 640px — at tablet width the about
+   band and the two banners are still two columns. The platform row is marked
+   "stack on tablet", which collapses them a breakpoint early. */
+@media (min-width: 641px) and (max-width: 1100px) {
+  /* Tablet stacking collapses the row's track list as well as the spans, so
+     both have to be put back. */
+  [data-bz-node="home-about"] [data-bz-node="mb-row"],
+  [data-bz-node="home-trailers"] [data-bz-node="mb-row"],
+  [data-bz-node="home-brands"] [data-bz-node="mb-row"] {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+  [data-bz-node="home-about"] [data-bz-node="mb-row"] > .bz-col,
+  [data-bz-node="home-trailers"] [data-bz-node="mb-row"] > .bz-col,
+  [data-bz-node="home-brands"] [data-bz-node="mb-row"] > .bz-col {
+    grid-column: span 6 / span 6;
+  }
+  /* The split's inner edge stays at 40px, as it does at full width. Matched
+     to the component's own four-attribute tablet rule so it outranks it. */
+  [data-bz-node="home-about"] > .bz-section > [data-bz-node="mb-row"] > [data-bz-node="mb-copy"] {
+    padding-block: 60px;
+    padding-right: 40px;
+  }
 }
