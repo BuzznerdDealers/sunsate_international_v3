@@ -7,7 +7,7 @@
       "props": {
         "headingLevel": 1,
         "eyebrow": "HOME / AFTERMARKET",
-        "headline": "Aftermarket Modifications & Alterations for Trucks, Trailers & Buses in FL",
+        "headline": "Aftermarket Modifications & Alterations for Trucks, Trailers, & Buses in FL",
         "subhead": "Visit our Aftermarket Location for all of your Truck and Trailer Repair needs. We specialize in Truck Equipment Repair, Roll Off Cable Repair, Hydraulic Truck Equipment Repair and much more.",
         "ctas": [
           {
@@ -141,8 +141,8 @@
       "id": "aft-lines",
       "type": "section",
       "props": {
-        "width": "boxed",
-        "paddingY": 10,
+        "width": "full",
+        "paddingY": 0,
         "background": "paper"
       },
       "children": [
@@ -150,8 +150,8 @@
           "id": "aft-lines-row",
           "type": "row",
           "props": {
-            "gap": 7,
-            "align": "center",
+            "gap": 0,
+            "align": "stretch",
             "stackOn": "tablet"
           },
           "children": [
@@ -159,7 +159,7 @@
               "id": "aft-lines-copy",
               "type": "column",
               "props": {
-                "span": 7,
+                "span": 6,
                 "align": "center"
               },
               "children": [
@@ -196,7 +196,7 @@
                         "label": "A/C Parts from Carrier, MCC, ACT, Transair & Busair"
                       }
                     ],
-                    "columns": 2
+                    "columns": 1
                   }
                 },
                 {
@@ -205,13 +205,13 @@
                   "props": {
                     "items": [
                       {
-                        "label": "Visit our parts department →",
+                        "label": "Visit Our Parts Department →",
                         "url": "/parts",
                         "style": "link",
                         "intent": "browse-parts"
                       },
                       {
-                        "label": "Shop our online parts store →",
+                        "label": "Shop Our Online Parts Store →",
                         "url": "https://www.sunstateparts.com/login",
                         "style": "link",
                         "intent": "browse-parts"
@@ -225,7 +225,7 @@
               "id": "aft-lines-media",
               "type": "column",
               "props": {
-                "span": 5
+                "span": 6
               },
               "children": [
                 {
@@ -253,21 +253,23 @@
       "props": {
         "sectionId": "feature-grid",
         "values": {
-          "eyebrow": "TRAILERS",
-          "heading": "All makes trailer parts & service.",
+          "eyebrow": "",
+          "heading": "",
           "span": 6,
           "background": "card",
           "items": [
             {
               "title": "All makes trailer parts & service",
               "body": "Everything you need for your trailer is in one place. We repair aluminum and fiberglass reinforced plywood, repair or replace king pins and landing gear, and install accessories including underbody skirts, vents, side doors and tire carriers, all in dedicated trailer repair bays.",
-              "linkLabel": "Schedule trailer service →",
-              "linkUrl": "/service-appointment"
+              "linkLabel": "Schedule Trailer Service →",
+              "linkUrl": "/service-appointment",
+              "link2Label": "Sun State Trailers →",
+              "link2Url": "https://sunstatetrailers.com/parts-and-service/"
             },
             {
               "title": "Liftgates, start to finish",
               "body": "We cover all your trailer needs down to the last detail, including comprehensive care for your liftgates: new installations, remounts, warranty services and parts replacements.",
-              "linkLabel": "See service programs →",
+              "linkLabel": "See Service Programs →",
               "linkUrl": "/service#services"
             }
           ]
@@ -290,38 +292,42 @@
             {
               "tag": "AFTERMARKET",
               "city": "Sun State Aftermarket Parts",
-              "address": "7105 East 6th Ave, Tampa, FL 33619",
-              "hours": "Store 7 AM – 4 PM M–F · In-store shopping · In-store pickup · Delivery",
+              "address": "7105 East 6th Ave\n\nTampa, FL 33619",
+              "hours": "Store: 7 AM – 4 PM M–F",
               "phone": "(813) 627-3282",
               "phoneUrl": "tel:+18136273282",
-              "url": "/locations/aftermarket-parts"
+              "url": "/locations/aftermarket-parts",
+              "perks": "In-store shopping · In-store pickup · Delivery"
             },
             {
-              "tag": "TRUCKS · TRAILERS · PARTS · SERVICE",
+              "tag": "",
               "city": "Tampa",
-              "address": "6020 E Adamo Dr, Tampa, FL 33619",
-              "hours": "Service 7 AM – 7 PM M–F, 7 AM – 12 PM Sat",
+              "address": "6020 E Adamo Dr",
+              "hours": "Service: 7 AM – 7 PM M–F, 7 AM – 12 PM Sat",
               "phone": "(813) 521-8053",
               "phoneUrl": "tel:+18135218053",
-              "url": "/locations/tampa"
+              "url": "/locations/tampa",
+              "perks": ""
             },
             {
-              "tag": "TRUCKS · PARTS · SERVICE",
+              "tag": "",
               "city": "Davenport",
-              "address": "41609 Hwy 27, Davenport, FL 33837",
-              "hours": "Service 7 AM – 7 PM M–F, 7 AM – 12 PM Sat",
+              "address": "41609 Hwy 27",
+              "hours": "Service: 7 AM – 7 PM M–F, 7 AM – 12 PM Sat",
               "phone": "(863) 238-2939",
               "phoneUrl": "tel:+18632382939",
-              "url": "/locations/davenport"
+              "url": "/locations/davenport",
+              "perks": ""
             },
             {
-              "tag": "TRUCK & TRAILER PARTS",
-              "city": "Truck & Trailer Parts — Brooksville",
-              "address": "17127 Runway Drive, Brooksville, FL 34604",
-              "hours": "Store 7 AM – 5 PM M–F",
+              "tag": "",
+              "city": "Truck & Trailer Parts",
+              "address": "17127 Runway Drive\n\nBrooksville, FL 34604",
+              "hours": "Store: 7 AM – 5 PM M–F",
               "phone": "(352) 277-0221",
               "phoneUrl": "tel:+13522770221",
-              "url": "/locations/brooksville"
+              "url": "/locations/brooksville",
+              "perks": ""
             }
           ]
         }

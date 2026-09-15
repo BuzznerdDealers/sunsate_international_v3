@@ -17,3 +17,72 @@
   .bz-block--hero { padding-block: 72px; }
   .bz-block--hero h1 { font-size: 30px; }
 }
+
+/* --- Measured against the handoff, band by band --- */
+/* Parts lines: a full-bleed split, the copy padded to the page grid. */
+[data-bz-node="aft-lines-copy"] {
+  padding: 64px 40px 64px max(var(--container-pad), calc((100vw - var(--container)) / 2 + var(--container-pad)));
+}
+[data-bz-node="aft-lines-media"] { display: flex; min-height: 400px; }
+[data-bz-node="aft-lines-img"] { padding-block: 0; width: 100%; }
+[data-bz-node="aft-lines-img"] .bz-figure { margin: 0; height: 100%; }
+[data-bz-node="aft-lines-img"] img { width: 100%; height: 100%; object-fit: cover; display: block; }
+[data-bz-node="aft-lines-h"] h2 { font-size: 32px; line-height: 1.2; margin: 0 0 20px; }
+/* The handoff's list is as wide as its longest line, capped at 500px, so the
+   rules above each row stop with the text. */
+[data-bz-node="aft-lines-list"] { width: fit-content; max-width: 500px; }
+[data-bz-node="aft-lines-list"] .bz-grid { gap: 10px; }
+[data-bz-node="aft-lines-list"] .bz-feature { padding: 10px 0 0; }
+[data-bz-node="aft-lines-list"] .bz-feature__t { font-size: 15px; line-height: 1.55; }
+/* Doubled attribute so this outranks blocks.css `.bz-block + .bz-block`. */
+[data-bz-node="aft-lines-cta"][data-bz-node] { padding-block-start: 24px; }
+[data-bz-node="aft-lines-cta"] .bz-btns { margin-block: 0; gap: 24px; }
+[data-bz-node="aft-lines-cta"] .bz-btn--link { font-size: 15px; line-height: 1.6; }
+
+/* Trailers: two bordered cards at 36/32, each a 24px display heading. */
+[data-bz-node="aft-trailers"] > .bz-section { padding-block: 90px; }
+[data-bz-node="aft-trailers"] [data-bz-node="fg-grid"] { gap: 28px; }
+[data-bz-node="aft-trailers"] [data-bz-type="column"][data-bz-node^="fg-card-"][data-bz-node] { padding: 36px 32px; }
+[data-bz-node="aft-trailers"] h3 { font-size: 24px; font-weight: 800; line-height: 1.6; margin: 0 0 16px; }
+[data-bz-node="aft-trailers"] [data-bz-node^="fg-card-b"] p { font-size: 15px; line-height: 1.7; margin: 0 0 20px; }
+/* The handoff's card stacks on its own margins; the component's 12px between
+   blocks would add to them. */
+[data-bz-node="aft-trailers"] .bz-block + .bz-block { padding-block-start: 0; }
+[data-bz-node="aft-trailers"] .bz-btns { margin-block: 0; gap: 24px; }
+[data-bz-node="aft-trailers"] .bz-btn--link { font-size: 15px; line-height: 1.6; }
+
+/* Locations: a 1280px well, four 28px cards, the aftermarket one on ink. */
+[data-bz-node="aft-location"] > .bz-section > .bz-container { max-width: calc(var(--container) + 2 * var(--container-pad)); }
+[data-bz-node="aft-location"] > .bz-section { padding-block: 90px; }
+[data-bz-node="aft-location"] h2 { margin-bottom: 16px; }
+[data-bz-node="aft-location"] [data-bz-node="lg-body"] .bz-text { max-width: 780px; }
+[data-bz-node="aft-location"] [data-bz-node="lg-body"] p { max-width: none; margin-bottom: 40px; }
+[data-bz-node="aft-location"] [data-bz-type="column"][data-bz-node^="lg-card-"][data-bz-node] { padding: 28px; }
+[data-bz-node="aft-location"] h3 { font-size: 18px; font-weight: 800; line-height: 1.6; margin: 0 0 12px; }
+[data-bz-node="aft-location"] [data-bz-node^="lg-card-addr"] p,
+[data-bz-node="aft-location"] [data-bz-node^="lg-card-hours"] p,
+[data-bz-node="aft-location"] [data-bz-node^="lg-card-perks"] p {
+  font-size: 15px; line-height: 1.7; color: var(--body-text); margin: 0; border-top: 0; padding-top: 0;
+}
+[data-bz-node="aft-location"] [data-bz-node^="lg-card-hours"] .bz-text { gap: 0; margin-bottom: 0; }
+[data-bz-node="aft-location"] [data-bz-node^="lg-card-cta"] { padding-block-start: 14px; }
+[data-bz-node="aft-location"] .bz-btn--link { font-size: 15px; font-weight: 700; }
+/* The aftermarket card itself is on ink. */
+/* The handoff's dark card carries no border at all, so it stands 2px shorter
+   than the three outlined ones would make it. */
+[data-bz-node="aft-location"] [data-bz-type="column"][data-bz-node="lg-card-1"][data-bz-node] { background: var(--ink); border: 0; }
+[data-bz-node="aft-location"] [data-bz-node="lg-card-h-1"] h3 { color: #fff; }
+[data-bz-node="aft-location"] [data-bz-node^="lg-card-h-"] .bz-eyebrow { line-height: 1; margin-bottom: 12px; }
+[data-bz-node="aft-location"] [data-bz-node="lg-card-addr-1"] p,
+[data-bz-node="aft-location"] [data-bz-node="lg-card-hours-1"] p,
+[data-bz-node="aft-location"] [data-bz-node="lg-card-perks-1"] p { color: var(--chrome-body); }
+[data-bz-node="aft-location"] [data-bz-node="lg-card-cta-1"] .bz-btn--link { color: #fff; }
+
+/* The FAQ band holds a 900px section, so 804px of copy inside its gutter. */
+[data-bz-node="aft-faq"][data-bz-node] > .bz-container { max-width: 900px; }
+
+/* The handoff's trailer card heading is a section h2, so it takes the same
+   26px mobile step the other headings do. */
+@media (max-width: 640px) {
+  [data-bz-node="aft-trailers"] h3 { font-size: 26px; }
+}

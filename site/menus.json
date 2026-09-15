@@ -540,6 +540,36 @@
           "label": "Parts",
           "type": "page",
           "ref": "parts"
+        },
+        {
+          "id": "f-shop-aftermarket",
+          "label": "Aftermarket",
+          "type": "page",
+          "ref": "aftermarket"
+        },
+        {
+          "id": "f-shop-service",
+          "label": "Service",
+          "type": "page",
+          "ref": "service"
+        },
+        {
+          "id": "f-shop-appt",
+          "label": "Service Appointment",
+          "type": "page",
+          "ref": "service-appointment"
+        },
+        {
+          "id": "f-shop-mobile",
+          "label": "Mobile Service",
+          "type": "page",
+          "ref": "mobile-service"
+        },
+        {
+          "id": "f-shop-extended",
+          "label": "Extended Service",
+          "type": "page",
+          "ref": "extended-service"
         }
       ]
     },
@@ -554,16 +584,22 @@
           "ref": "our-story"
         },
         {
+          "id": "f-co-team",
+          "label": "Meet the Team",
+          "type": "page",
+          "ref": "meet-the-team"
+        },
+        {
           "id": "fc-careers",
           "label": "Careers",
           "type": "page",
           "ref": "careers"
         },
         {
-          "id": "fc-blog",
-          "label": "Blog",
-          "type": "url",
-          "url": "/blog"
+          "id": "f-co-reviews",
+          "label": "Reviews",
+          "type": "page",
+          "ref": "reviews"
         },
         {
           "id": "fc-community",
@@ -572,10 +608,16 @@
           "ref": "community-involvement"
         },
         {
-          "id": "fc-contact",
-          "label": "Contact",
+          "id": "f-co-news",
+          "label": "News & Press",
           "type": "page",
-          "ref": "contact-us"
+          "ref": "news-and-press"
+        },
+        {
+          "id": "f-co-videos",
+          "label": "Videos",
+          "type": "page",
+          "ref": "videos"
         }
       ]
     },
