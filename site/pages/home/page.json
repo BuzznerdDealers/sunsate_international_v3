@@ -13,7 +13,9 @@
       },
       "styles": {
         "base": {
-          "backgroundImage": "https://vendure.buzznerdrv.com/assets/source/0a/lakeside-hero-720.mp4"
+          "backgroundImage": "https://vendure.buzznerdrv.com/assets/source/0a/lakeside-hero-720.mp4",
+          "backgroundSize": "cover",
+          "backgroundPosition": "center"
         }
       },
       "children": [
