@@ -1,0 +1,26 @@
+{
+  "id": "result-count",
+  "label": "Result count",
+  "description": "The live count beside a filtered grid. The platform filter behaviour rewrites it from the template on every change; the number written here is what the page shows before any script runs. The singular template is for the band that places it to apply — a widget carries no script.",
+  "props": [
+    {
+      "key": "text",
+      "type": "text",
+      "label": "Count as first drawn, e.g. \"9 articles\""
+    },
+    {
+      "key": "template",
+      "type": "text",
+      "label": "Template — {n} is the number shown",
+      "default": "{n} results"
+    },
+    {
+      "key": "templateOne",
+      "type": "text",
+      "label": "Template when exactly one matches",
+      "default": "{n} result"
+    }
+  ],
+  "html": "<span class=\"ss-count\" data-bz-part=\"count\" data-bz-count-template=\"{{template}}\" data-bz-count-one=\"{{templateOne}}\">{{text}}</span>",
+  "css": ".ss-count{display:inline-block;font:700 11px/1.5 var(--font-body);letter-spacing:.12em;color:var(--muted)}"
+}

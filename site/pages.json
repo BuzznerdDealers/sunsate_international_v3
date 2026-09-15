@@ -112,6 +112,20 @@
     }
   },
   {
+    "slug": "blog",
+    "title": "Blog",
+    "description": "Truck and trailer maintenance, diagnostics and fleet advice from the Sun State service, parts and aftermarket teams in Tampa, Sarasota, Davenport and Brooksville.",
+    "path": "/blog",
+    "out": "blog/index.html",
+    "dir": "blog",
+    "status": "published",
+    "group": "editorial",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    }
+  },
+  {
     "slug": "inventory",
     "title": "Inventory",
     "description": "New and used trucks, trailers, yard trucks and rentals from Sun State International and Sun State Trailers.",

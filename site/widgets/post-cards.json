@@ -1,0 +1,57 @@
+{
+  "id": "post-cards",
+  "label": "Post cards",
+  "description": "The blog archive grid: one card per post, each carrying its topic as the facet the platform filter behaviour reads, plus the \"no results\" line. No script — the chips filter it.",
+  "props": [
+    {
+      "key": "posts",
+      "type": "list",
+      "label": "Posts",
+      "fields": [
+        {
+          "key": "topic",
+          "type": "text",
+          "label": "Topic — also the filter value"
+        },
+        {
+          "key": "date",
+          "type": "text",
+          "label": "Date, as shown"
+        },
+        {
+          "key": "title",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "key": "excerpt",
+          "type": "textarea",
+          "label": "Excerpt"
+        },
+        {
+          "key": "url",
+          "type": "url",
+          "label": "Post link"
+        },
+        {
+          "key": "image",
+          "type": "image",
+          "label": "Thumbnail"
+        },
+        {
+          "key": "moreLabel",
+          "type": "text",
+          "label": "Read-more label"
+        }
+      ]
+    },
+    {
+      "key": "emptyText",
+      "type": "text",
+      "label": "Shown when a topic matches nothing",
+      "default": "No posts in this topic yet."
+    }
+  ],
+  "html": "<div class=\"ss-posts\">{{#each posts}}<article class=\"ss-post\" data-bz-part=\"item\" data-topic=\"{{topic}}\"><a class=\"ss-post__m\" href=\"{{link url}}\" tabindex=\"-1\">{{img image}}</a><div class=\"ss-post__b\"><div class=\"ss-post__meta\">{{#if topic}}<span class=\"ss-post__topic\">{{topic}}</span>{{/if}}{{#if date}}<span class=\"ss-post__date\">{{date}}</span>{{/if}}</div><h3 class=\"ss-post__t\"><a href=\"{{link url}}\" data-bz-el=\"link\" data-bz-intent=\"read-post\">{{title}}</a></h3><p class=\"ss-post__x\">{{excerpt}}</p>{{#if moreLabel}}<a class=\"ss-post__more\" href=\"{{link url}}\" data-bz-el=\"link\" data-bz-intent=\"read-post\">{{moreLabel}}</a>{{/if}}</div></article>{{/each}}</div><p class=\"ss-posts__empty\" data-bz-part=\"empty\" hidden>{{emptyText}}</p>",
+  "css": ".ss-posts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}\n.ss-post{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line)}\n.ss-post[hidden]{display:none}\n.ss-post__m{display:block;height:190px;background:var(--paper);overflow:hidden}\n.ss-post__m img{width:100%;height:100%;object-fit:cover;display:block}\n.ss-post__b{display:flex;flex-direction:column;flex:1;padding:24px 22px 26px}\n.ss-post__meta{display:flex;align-items:baseline;flex-wrap:wrap;gap:10px;margin-bottom:12px}\n.ss-post__topic{font:700 10px/1.3 var(--font-body);letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}\n.ss-post__date{font:400 12px/1.3 var(--font-body);color:var(--muted)}\n.ss-post__t{font:700 19px/1.3 var(--font-heading);letter-spacing:normal;margin:0 0 12px}\n.ss-post__t a{color:var(--ink);text-decoration:none}\n.ss-post__t a:hover{color:var(--accent)}\n.ss-post__x{font:400 14px/1.7 var(--font-body);color:var(--body-text);margin:0 0 18px}\n.ss-post__more{margin-top:auto;font:700 14px/1.6 var(--font-body);color:var(--accent);text-decoration:none}\n.ss-post__more:hover{text-decoration:underline;text-underline-offset:3px}\n.ss-posts__empty{margin:24px 0 0;border-top:1px solid var(--line);padding-top:22px;font:400 15px/1.7 var(--font-body);color:var(--muted)}\n.ss-posts__empty[hidden]{display:none}\n@media (max-width:1100px){.ss-posts{grid-template-columns:repeat(2,minmax(0,1fr))}}\n@media (max-width:640px){.ss-posts{grid-template-columns:minmax(0,1fr)}}"
+}

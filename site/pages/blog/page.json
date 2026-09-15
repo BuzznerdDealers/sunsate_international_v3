@@ -1,0 +1,477 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "blog-hero",
+      "type": "hero",
+      "props": {
+        "headingLevel": 1,
+        "eyebrow": "HOME / BLOG",
+        "headline": "Blog",
+        "subhead": "Maintenance, diagnostics and fleet advice from the people who work on these trucks and trailers every day.",
+        "image": {
+          "src": "/img/photo-placeholder.svg",
+          "alt": "Sun State technicians at work — photograph to be supplied",
+          "width": 1600,
+          "height": 900
+        }
+      }
+    },
+    {
+      "id": "blog-archive",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "blog-archive",
+        "values": {
+          "lead": "What we write about is what comes through the bays: alignment and tire wear, air brake and suspension parts, electrical faults, fuel system care, oil change intervals, and how fleets keep unplanned downtime off the schedule.",
+          "body": "Truck posts come from our International service and parts teams; trailer posts come from Sun State Trailers. If something here applies to a unit you run, call 800.741.7566 and we'll look at the specific truck instead of the general case.",
+          "topicLabel": "",
+          "allLabel": "All",
+          "topics": [
+            {
+              "label": "Service",
+              "value": "service"
+            },
+            {
+              "label": "Diagnostics",
+              "value": "diagnostics"
+            },
+            {
+              "label": "Fleet",
+              "value": "fleet"
+            },
+            {
+              "label": "Parts",
+              "value": "parts"
+            },
+            {
+              "label": "Maintenance",
+              "value": "maintenance"
+            }
+          ],
+          "resultsHeading": "Latest posts",
+          "count": "9 articles",
+          "countTemplate": "{n} articles",
+          "countTemplateOne": "{n} article",
+          "posts": [
+            {
+              "topic": "Service",
+              "date": "Jul 30, 2026",
+              "title": "When to Schedule Semi Truck Alignment Near Me",
+              "excerpt": "Maybe your truck pulls to one side, your steering wheel feels off-center, or your tires are wearing unevenly. While these may seem like minor issues at first, they can quickly turn into expensive repairs, poor fuel economy, and unnecessary downtime.",
+              "url": "/blog/posts/when-to-schedule-semi-truck-alignment-near-me",
+              "image": {
+                "src": "https://www.sunstateintl.com/wp-content/uploads/2026/07/fleet-alignment-service-400x250.jpg",
+                "alt": "When to Schedule Semi Truck Alignment Near Me",
+                "width": 400,
+                "height": 250
+              },
+              "moreLabel": "Read more →"
+            },
+            {
+              "topic": "Service",
+              "date": "Jul 15, 2026",
+              "title": "Why Visit Your Local International Truck Service Department",
+              "excerpt": "At Sun State International, we provide comprehensive semi truck service, genuine OEM parts, and experienced technicians who know International trucks inside and out. Our goal is simple: help keep your business moving with dependable service you can count on.",
+              "url": "/blog/posts/why-visit-your-local-international-truck-service-department",
+              "image": {
+                "src": "https://www.sunstateintl.com/wp-content/uploads/2026/08/sun-state-service-team-2-400x250.jpg",
+                "alt": "Why Visit Your Local International Truck Service Department",
+                "width": 400,
+                "height": 250
+              },
+              "moreLabel": "Read more →"
+            },
+            {
+              "topic": "Diagnostics",
+              "date": "Jul 13, 2026",
+              "title": "How Electrical Diagnostic Tools Prevent Breakdowns",
+              "excerpt": "With today’s heavy-duty vehicles relying on dozens of sensors, electronic control modules, wiring harnesses, and onboard computers, even a small electrical issue can quickly turn into unexpected downtime. That’s why professional electrical diagnostic tools have become essential for keeping trucks on the road.",
+              "url": "/blog/posts/how-electrical-diagnostic-tools-prevent-breakdowns",
+              "image": {
+                "src": "https://www.sunstateintl.com/wp-content/uploads/2026/07/truck-electrical-testing-400x250.jpg",
+                "alt": "How Electrical Diagnostic Tools Prevent Breakdowns",
+                "width": 400,
+                "height": 250
+              },
+              "moreLabel": "Read more →"
+            },
+            {
+              "topic": "Fleet",
+              "date": "Jul 5, 2026",
+              "title": "Why Sun State is One of the Top Fleet Service Providers",
+              "excerpt": "Every vehicle in your operation plays a critical role in your business, and even one unexpected breakdown can create a ripple effect of missed deliveries, unhappy customers, and lost revenue. That’s why choosing the right fleet service providers matters.",
+              "url": "/blog/posts/why-sun-state-is-one-of-the-top-fleet-service-providers",
+              "image": {
+                "src": "https://www.sunstateintl.com/wp-content/uploads/2026/08/commercial-truck-service-400x250.jpg",
+                "alt": "Why Sun State is One of the Top Fleet Service Providers",
+                "width": 400,
+                "height": 250
+              },
+              "moreLabel": "Read more →"
+            },
+            {
+              "topic": "Parts",
+              "date": "Jun 29, 2026",
+              "title": "Signs You Need to Replace Your Semi Truck Suspension Parts",
+              "excerpt": "Understanding how semi truck suspension parts work and when they need attention is one of the best ways to keep your trucks operating safely and efficiently.",
+              "url": "/blog/posts/signs-you-need-to-replace-your-semi-truck-suspension-parts",
+              "image": {
+                "src": "https://www.sunstateintl.com/wp-content/uploads/2026/06/fleet-maintenance-inspection-400x250.jpg",
+                "alt": "Signs You Need to Replace Your Semi Truck Suspension Parts",
+                "width": 400,
+                "height": 250
+              },
+              "moreLabel": "Read more →"
+            },
+            {
+              "topic": "Parts",
+              "date": "Jun 25, 2026",
+              "title": "Common Problems With Air Brake Parts for Semi Trucks",
+              "excerpt": "When even one part begins to wear out or fail, it can lead to longer stopping distances, unexpected downtime, expensive repairs, and failed inspections. Understanding the most common problems with air brake parts can help you recognize issues early and keep your trucks operating safely.",
+              "url": "/blog/posts/common-problems-with-air-brake-parts-for-semi-trucks",
+              "image": {
+                "src": "https://www.sunstateintl.com/wp-content/uploads/2026/07/air-brake-parts-truck-400x250.jpg",
+                "alt": "Common Problems With Air Brake Parts for Semi Trucks",
+                "width": 400,
+                "height": 250
+              },
+              "moreLabel": "Read more →"
+            },
+            {
+              "topic": "Service",
+              "date": "Jun 19, 2026",
+              "title": "What to Expect From an International Truck Service Center",
+              "excerpt": "Whether you operate a single truck or manage an entire fleet, choosing the right International truck service center can make a significant difference in your uptime, operating costs, and overall peace of mind.",
+              "url": "/blog/posts/what-to-expect-from-an-international-truck-service-center",
+              "image": {
+                "src": "https://www.sunstateintl.com/wp-content/uploads/2026/07/truck-engine-diagnostics-400x250.jpg",
+                "alt": "What to Expect From an International Truck Service Center",
+                "width": 400,
+                "height": 250
+              },
+              "moreLabel": "Read more →"
+            },
+            {
+              "topic": "Maintenance",
+              "date": "Jun 14, 2026",
+              "title": "Commercial Truck Oil Change Mistakes That Cost You",
+              "excerpt": "For owner-operators and fleet managers alike, routine maintenance isn’t just another item on the calendar. It’s one of the smartest investments you can make in your equipment.",
+              "url": "/blog/posts/commercial-truck-oil-change-mistakes-that-cost-you",
+              "image": {
+                "src": "https://www.sunstateintl.com/wp-content/uploads/2026/07/commercial-truck-oil-change-400x250.jpg",
+                "alt": "Commercial Truck Oil Change Mistakes That Cost You",
+                "width": 400,
+                "height": 250
+              },
+              "moreLabel": "Read more →"
+            },
+            {
+              "topic": "Maintenance",
+              "date": "Jun 9, 2026",
+              "title": "Why Fuel Filter Pressure In Your Semi Truck Matters",
+              "excerpt": "Fuel filters are responsible for removing dirt, debris, water, and contaminants before they reach sensitive fuel system components. For owner-operators and fleet managers, understanding how fuel filter pressure affects performance can help prevent unexpected downtime and extend the life of your truck.",
+              "url": "/blog/posts/why-fuel-filter-pressure-in-your-semi-truck-matters",
+              "image": {
+                "src": "https://www.sunstateintl.com/wp-content/uploads/2026/02/semi-truck-maintenance-inspection-400x250.jpg",
+                "alt": "Why Fuel Filter Pressure In Your Semi Truck Matters",
+                "width": 400,
+                "height": 250
+              },
+              "moreLabel": "Read more →"
+            }
+          ],
+          "emptyText": "No posts in this topic yet.",
+          "pagerLabel": "Browse all posts →",
+          "pagerUrl": "/blog/posts",
+          "background": "card",
+          "anchor": "bl-posts"
+        }
+      }
+    },
+    {
+      "id": "blog-panels",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 9,
+        "anchor": "trailer-articles"
+      },
+      "children": [
+        {
+          "id": "bp-row",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "align": "stretch"
+          },
+          "children": [
+            {
+              "id": "bp-trailers",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "styles": {
+                "base": {
+                  "background": "card",
+                  "borderWidth": 1,
+                  "borderStyle": "solid",
+                  "borderColor": "line",
+                  "paddingTop": 36,
+                  "paddingRight": 32,
+                  "paddingBottom": 36,
+                  "paddingLeft": 32
+                }
+              },
+              "children": [
+                {
+                  "id": "bp-trailers-h",
+                  "type": "heading",
+                  "props": {
+                    "eyebrow": "SUN STATE TRAILERS",
+                    "text": "Trailer articles",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "bp-trailers-b",
+                  "type": "text",
+                  "props": {
+                    "text": "Sun State Trailers writes on the trailer side of the yard — getting a repair fast after an unexpected breakdown, tracking down parts for specialized or older models, and when mobile service beats bringing the trailer in.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "bp-trailers-links",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "trailer-breakdown-repair",
+                        "style": "link"
+                      },
+                      {
+                        "ctaId": "trailer-parts-tampa",
+                        "style": "link"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "bp-trailers-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "trailers-parts-service",
+                        "style": "link"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "bp-appointment",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "background": "ink"
+              },
+              "styles": {
+                "base": {
+                  "paddingTop": 36,
+                  "paddingRight": 32,
+                  "paddingBottom": 36,
+                  "paddingLeft": 32
+                }
+              },
+              "children": [
+                {
+                  "id": "bp-appointment-h",
+                  "type": "heading",
+                  "props": {
+                    "eyebrow": "FROM READING TO FIXING",
+                    "text": "Turn the advice into an appointment.",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "bp-appointment-b",
+                  "type": "text",
+                  "props": {
+                    "text": "Most of these posts end the same way: get it looked at before it becomes a tow. Our service departments run until 7 PM on weekdays, mobile service comes to your yard, and Certified Fleet covers after hours.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "bp-appointment-links",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "schedule-service",
+                        "style": "link"
+                      },
+                      {
+                        "ctaId": "mobile-service",
+                        "style": "link"
+                      },
+                      {
+                        "ctaId": "parts-department",
+                        "style": "link"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "blog-elsewhere",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-grid",
+        "values": {
+          "eyebrow": "MORE FROM SUN STATE",
+          "heading": "Elsewhere on the site.",
+          "span": 3,
+          "background": "paper",
+          "anchor": "more-from-sun-state",
+          "items": [
+            {
+              "title": "News & Press",
+              "body": "Dealership announcements, awards and coverage from around Central and Southwest Florida.",
+              "linkLabel": "News & Press →",
+              "linkUrl": "/news"
+            },
+            {
+              "title": "Videos",
+              "body": "Walkarounds, service explainers and the S13 Integrated Powertrain video series.",
+              "linkLabel": "Videos →",
+              "linkUrl": "/videos"
+            },
+            {
+              "title": "Reviews",
+              "body": "What customers say about our service, parts and sales teams in their own words.",
+              "linkLabel": "Reviews →",
+              "linkUrl": "/reviews"
+            },
+            {
+              "title": "Community",
+              "body": "Where Sun State shows up outside the shop — schools, charities and local events.",
+              "linkLabel": "Community →",
+              "linkUrl": "/community-involvement"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "blog-faq",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 10,
+        "anchor": "bl-faq"
+      },
+      "children": [
+        {
+          "id": "bf-head-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "bf-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "bf-head-h",
+                  "type": "heading",
+                  "props": {
+                    "eyebrow": "ABOUT THE BLOG",
+                    "text": "Common questions.",
+                    "headingLevel": 2
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bf-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "bf-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "bf-list",
+                  "type": "widget",
+                  "props": {
+                    "widget": "faq",
+                    "config": {
+                      "items": [
+                        {
+                          "q": "Who writes the Sun State blog?",
+                          "a": "Posts come from our service, parts and aftermarket teams — the technicians and specialists who work on International trucks and Hyundai Translead and Globe trailers every day across Tampa, Sarasota, Davenport and Brooksville."
+                        },
+                        {
+                          "q": "What topics does the blog cover?",
+                          "a": "Preventative maintenance and oil change intervals, alignment, air brake and suspension parts, electrical diagnostics, fuel system care, fleet service programs, trailer repair, and what to expect from an International truck service center."
+                        },
+                        {
+                          "q": "Does the blog cover trailers as well as trucks?",
+                          "a": "Yes. Sun State Trailers covers trailer repair topics including finding parts, getting a trailer repaired quickly after a breakdown, and mobile trailer service, alongside the truck maintenance posts."
+                        },
+                        {
+                          "q": "Can I get help with something I read here?",
+                          "a": "Yes. Call 800-741-7566 or submit a service appointment request, and a service advisor will look at the specific unit rather than the general case."
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "blog-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "QUESTIONS ON YOUR OWN UNIT?",
+          "heading": "Ask a technician, not an article.",
+          "body": "Call 800.741.7566 with your VIN or unit number and we'll tell you what we'd check first.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact#contact-form",
+          "note": ""
+        }
+      }
+    }
+  ]
+}

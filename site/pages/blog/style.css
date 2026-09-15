@@ -1,0 +1,77 @@
+/* --- Hero geometry, measured from the handoff ------------------------------
+   The blog hero carries no CTAs, so the standfirst is the last thing in it. */
+.bz-block--hero { padding-block: 88px; }
+.bz-block--hero h1 { font-size: 44px; line-height: 1.14; margin-bottom: 22px; }
+.bz-block--hero .bz-hero__sub { margin-bottom: 0; }
+
+@media (max-width: 640px) {
+  .bz-block--hero { padding-block: 72px; }
+  .bz-block--hero h1 { font-size: 30px; }
+}
+
+/* --- The two-up panel band -------------------------------------------------
+   Two padded boxes on one row: the trailer reading list on a hairline, the
+   service panel on ink. The handoff sets the kicker in accent on both. */
+[data-bz-node="bp-trailers"] .bz-eyebrow,
+[data-bz-node="bp-appointment"] .bz-eyebrow {
+  color: var(--accent);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  margin-bottom: 12px;
+}
+[data-bz-node="bp-trailers"] .bz-block h2,
+[data-bz-node="bp-appointment"] .bz-block h2 {
+  font-size: 24px;
+  line-height: 1.3;
+  margin: 0 0 18px;
+}
+[data-bz-node="bp-trailers"] p,
+[data-bz-node="bp-appointment"] p {
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0 0 22px;
+}
+[data-bz-node="bp-trailers"] p { color: var(--body-text); }
+[data-bz-node="bp-appointment"] p { color: var(--chrome-body); }
+
+/* The trailer articles read as a ruled list rather than a row of buttons:
+   each link opens on a hairline, the way the handoff draws .link-list. */
+[data-bz-node="bp-trailers-links"] .bz-btns {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+  margin: 0 0 22px;
+}
+[data-bz-node="bp-trailers-links"] .bz-btn {
+  justify-content: flex-start;
+  text-align: left;
+  border-top: 1px solid var(--line);
+  padding-top: 10px;
+  font: 700 15px / 1.5 var(--font-body);
+}
+[data-bz-node="bp-trailers-cta"] .bz-btns { margin: 0; }
+[data-bz-node="bp-trailers-cta"] .bz-btn { font: 700 15px / 1.6 var(--font-body); }
+
+[data-bz-node="bp-appointment-links"] .bz-btns {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 0;
+}
+/* A link-style button is accent red by default, which is unreadable on ink. */
+[data-bz-node="bp-appointment-links"] .bz-btn--link {
+  color: #fff;
+  font: 700 15px / 1.6 var(--font-body);
+}
+[data-bz-node="bp-appointment-links"] .bz-btn--link:hover { color: #fff; }
+
+@media (max-width: 640px) {
+  [data-bz-node="bp-trailers"] .bz-block h2,
+  [data-bz-node="bp-appointment"] .bz-block h2 { font-size: 22px; }
+}
+
+/* The links below each panel's copy: the handoff sets them a clear step down
+   from the paragraph, not hard against it. */
+[data-bz-node="bp-trailers-links"] .bz-btns,
+[data-bz-node="bp-appointment-links"] .bz-btns { margin-top: 4px; }
+[data-bz-node="bp-appointment-links"] .bz-btns { margin-top: 22px; }

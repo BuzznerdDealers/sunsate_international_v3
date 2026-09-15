@@ -35,5 +35,8 @@
   { "id": "read-reviews", "label": "Read reviews →", "url": "/reviews", "style": "link", "intent": "about", "newTab": false, "active": true },
   { "id": "truck-configurator", "label": "Build your truck", "url": "/truck-configurator", "style": "primary", "intent": "build-truck", "newTab": false, "active": true },
   { "id": "view-specifications", "label": "Brochures & spec sheets →", "url": "/specifications", "style": "link", "intent": "browse-inventory", "newTab": false, "active": true },
-  { "id": "deal-of-the-week", "label": "See this week's deal", "url": "/deal-of-the-week", "style": "primary", "intent": "browse-inventory", "newTab": false, "active": true }
+  { "id": "deal-of-the-week", "label": "See this week's deal", "url": "/deal-of-the-week", "style": "primary", "intent": "browse-inventory", "newTab": false, "active": true },
+  { "id": "trailer-breakdown-repair", "label": "Unexpected breakdown? How to quickly get a trailer repair and back on the road →", "url": "https://sunstatetrailers.com/used-trailers/unexpected-breakdown-heres-how-you-can-quickly-get-a-trailer-repair-and-back-on-the-road/", "style": "link", "intent": "read-post", "newTab": true, "active": true },
+  { "id": "trailer-parts-tampa", "label": "How to find trailer parts in Tampa at Sun State Trailers →", "url": "https://sunstatetrailers.com/trailer-rentals/how-to-find-trailer-parts-in-tampa-at-sun-state-trailers/", "style": "link", "intent": "read-post", "newTab": true, "active": true },
+  { "id": "trailers-parts-service", "label": "Sun State Trailers parts & service →", "url": "https://sunstatetrailers.com/parts-and-service/", "style": "link", "intent": "learn-more", "newTab": true, "active": true }
 ]

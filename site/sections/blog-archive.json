@@ -1,0 +1,339 @@
+{
+  "version": 2,
+  "id": "blog-archive",
+  "name": "Blog archive",
+  "props": [
+    {
+      "key": "lead",
+      "type": "textarea",
+      "label": "Standfirst",
+      "default": ""
+    },
+    {
+      "key": "body",
+      "type": "textarea",
+      "label": "Intro",
+      "default": ""
+    },
+    {
+      "key": "topicLabel",
+      "type": "text",
+      "label": "Chip row label — leave empty for none",
+      "default": ""
+    },
+    {
+      "key": "allLabel",
+      "type": "text",
+      "label": "Reset chip label",
+      "default": "All"
+    },
+    {
+      "key": "topics",
+      "type": "list",
+      "label": "Topic chips",
+      "fields": [
+        {
+          "key": "label",
+          "type": "text",
+          "label": "Label"
+        },
+        {
+          "key": "value",
+          "type": "text",
+          "label": "Value — matches a post's topic"
+        }
+      ]
+    },
+    {
+      "key": "resultsHeading",
+      "type": "text",
+      "label": "Results heading",
+      "default": "Latest posts"
+    },
+    {
+      "key": "count",
+      "type": "text",
+      "label": "Count before filtering, e.g. \"9 articles\"",
+      "default": ""
+    },
+    {
+      "key": "countTemplate",
+      "type": "text",
+      "label": "Count template — {n} is the number shown",
+      "default": "{n} articles"
+    },
+    {
+      "key": "countTemplateOne",
+      "type": "text",
+      "label": "Count template when one post matches",
+      "default": "{n} article"
+    },
+    {
+      "key": "posts",
+      "type": "list",
+      "label": "Posts",
+      "fields": [
+        {
+          "key": "topic",
+          "type": "text",
+          "label": "Topic"
+        },
+        {
+          "key": "date",
+          "type": "text",
+          "label": "Date, as shown"
+        },
+        {
+          "key": "title",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "key": "excerpt",
+          "type": "textarea",
+          "label": "Excerpt"
+        },
+        {
+          "key": "url",
+          "type": "url",
+          "label": "Post link"
+        },
+        {
+          "key": "image",
+          "type": "image",
+          "label": "Thumbnail"
+        },
+        {
+          "key": "moreLabel",
+          "type": "text",
+          "label": "Read-more label"
+        }
+      ]
+    },
+    {
+      "key": "emptyText",
+      "type": "text",
+      "label": "Shown when a topic matches nothing",
+      "default": "No posts in this topic yet."
+    },
+    {
+      "key": "pagerLabel",
+      "type": "text",
+      "label": "Pager link label",
+      "default": ""
+    },
+    {
+      "key": "pagerUrl",
+      "type": "url",
+      "label": "Pager link",
+      "default": ""
+    },
+    {
+      "key": "background",
+      "type": "select",
+      "label": "Band background",
+      "default": "card",
+      "options": [
+        {
+          "value": "card",
+          "label": "White"
+        },
+        {
+          "value": "paper",
+          "label": "Paper"
+        }
+      ]
+    },
+    {
+      "key": "anchor",
+      "type": "text",
+      "label": "Anchor id",
+      "default": ""
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ba",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "{{background}}",
+        "paddingY": 10,
+        "anchor": "{{anchor}}",
+        "behaviour": "filter",
+        "behaviourOptions": "{\"match\":\"exact\"}"
+      },
+      "children": [
+        {
+          "id": "ba-intro-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "ba-intro-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "ba-lead",
+                  "type": "text",
+                  "props": {
+                    "text": "{{lead}}",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "ba-body",
+                  "type": "text",
+                  "props": {
+                    "text": "{{body}}",
+                    "width": "prose"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ba-chips-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "ba-chips-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "ba-chips",
+                  "type": "filter-pills",
+                  "props": {
+                    "label": "{{topicLabel}}",
+                    "facet": "topic",
+                    "allLabel": "{{allLabel}}",
+                    "options": "{{topics}}"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ba-results-row",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "align": "end",
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "ba-results-head",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "children": [
+                {
+                  "id": "ba-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{resultsHeading}}",
+                    "headingLevel": 2
+                  }
+                }
+              ]
+            },
+            {
+              "id": "ba-results-count",
+              "type": "column",
+              "props": {
+                "span": 4
+              },
+              "children": [
+                {
+                  "id": "ba-count",
+                  "type": "result-count",
+                  "props": {
+                    "text": "{{count}}",
+                    "template": "{{countTemplate}}",
+                    "templateOne": "{{countTemplateOne}}"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ba-grid-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "ba-grid-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "ba-cards",
+                  "type": "post-cards",
+                  "props": {
+                    "posts": "{{posts}}",
+                    "emptyText": "{{emptyText}}"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ba-pager-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "ba-pager-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "ba-pager",
+                  "type": "buttons",
+                  "props": {
+                    "align": "center",
+                    "items": [
+                      {
+                        "label": "{{pagerLabel}}",
+                        "url": "{{pagerUrl}}",
+                        "style": "secondary",
+                        "intent": "read-post"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "/* The archive band: intro, the topic chips, the results bar, the grid and the\n   pager. Everything that moves is the platform `filter` behaviour on the\n   section — the chips are its controls, the cards its items, the count and the\n   empty line its readouts. Nothing here is staged or revealed by a script, so\n   the band lays out and is editable in the Design canvas, which runs none —\n   the component's own js only rewords the count for a single result. */\n/* The handoff opens the band at 70px and closes it tight under the pager; the\n   panel band below brings its own 80px. Row spacing is stated per row, and at\n   the row's own weight, so a later rule here cannot flatten it by accident. */\n[data-bz-section=\"blog-archive\"] > .bz-section { padding-block: 70px 20px }\n[data-bz-section=\"blog-archive\"] .bz-row[data-bz-node=\"ba-chips-row\"] { margin-top: 0 }\n[data-bz-section=\"blog-archive\"] .bz-row[data-bz-node=\"ba-results-row\"] { margin-top: 40px; align-items: baseline }\n[data-bz-section=\"blog-archive\"] .bz-row[data-bz-node=\"ba-grid-row\"] { margin-top: 26px }\n[data-bz-section=\"blog-archive\"] .bz-row[data-bz-node=\"ba-pager-row\"] { margin-top: 40px }\n\n/* Intro */\n[data-bz-section=\"blog-archive\"] [data-bz-node=\"ba-lead\"] .bz-text { max-width: 880px }\n[data-bz-section=\"blog-archive\"] [data-bz-node=\"ba-lead\"] p { font-size: 17px; line-height: 1.75; color: var(--ink); margin: 0 0 20px }\n[data-bz-section=\"blog-archive\"] [data-bz-node=\"ba-body\"] .bz-text { max-width: 880px }\n[data-bz-section=\"blog-archive\"] [data-bz-node=\"ba-body\"] p { font-size: 16px; line-height: 1.75; color: var(--body-text); margin: 0 }\n\n/* Chips. The pills widget draws a scrolling rail for the location finder; a\n   topic row wraps instead, and the handoff sets these in sentence case. */\n[data-bz-section=\"blog-archive\"] [data-bz-node=\"ba-chips\"] { border-top: 1px solid var(--line); padding-top: 22px; margin-top: 30px }\n[data-bz-section=\"blog-archive\"] .ss-filter { gap: 14px }\n[data-bz-section=\"blog-archive\"] .ss-filter__pills { flex-wrap: wrap; overflow: visible; padding-bottom: 0; gap: 10px }\n[data-bz-section=\"blog-archive\"] .ss-pill {\n  padding: 10px 16px; border-width: 1px; border-color: var(--line);\n  font: 700 13px/1 var(--font-body); letter-spacing: normal; text-transform: none;\n  color: var(--body-text);\n}\n[data-bz-section=\"blog-archive\"] .ss-pill:hover { border-color: var(--ink); color: var(--ink) }\n[data-bz-section=\"blog-archive\"] .ss-pill[aria-pressed=\"true\"] { background: var(--accent); border-color: var(--accent); color: #fff }\n\n/* Results bar: heading and count on one baseline. */\n[data-bz-section=\"blog-archive\"] [data-bz-node=\"ba-h\"] h2 { font-size: 30px; line-height: 1.2; margin: 0 }\n[data-bz-section=\"blog-archive\"] [data-bz-node=\"ba-results-count\"] { text-align: right }\n\n/* Pager */\n[data-bz-section=\"blog-archive\"] [data-bz-node=\"ba-pager\"] .bz-btn { min-height: 46px; padding: 0 24px }\n\n@media (max-width: 640px) {\n  [data-bz-section=\"blog-archive\"] > .bz-section { padding-block: 48px 56px }\n  [data-bz-section=\"blog-archive\"] [data-bz-node=\"ba-results-count\"] { text-align: left }\n  [data-bz-section=\"blog-archive\"] [data-bz-node=\"ba-h\"] h2 { font-size: 26px }\n}",
+  "js": "/* The one thing the filter behaviour cannot say.\n *\n * Everything that moves on this band is the platform `filter` behaviour: the\n * chips are its controls, the cards its items, the count and the empty line its\n * readouts. Its count is a single template with one hole, so a topic with one\n * post reads \"1 articles\". This listens to the `bz:filter` event the behaviour\n * already emits and puts the singular wording back — it never filters, hides or\n * stages anything itself, so the band is complete and editable in the Design\n * canvas, which runs no site JS, exactly as it is without this file.\n */\n(function () {\n  document.querySelectorAll('[data-bz-section=\"blog-archive\"]').forEach(function (band) {\n    var count = band.querySelector('[data-bz-part=\"count\"]');\n    if (!count) return;\n    var many = count.getAttribute('data-bz-count-template') || '';\n    var one = count.getAttribute('data-bz-count-one') || '';\n    if (!one) return;\n    band.addEventListener('bz:filter', function (event) {\n      var shown = event.detail && event.detail.shown;\n      if (typeof shown !== 'number') return;\n      count.textContent = (shown === 1 ? one : many).replace('{n}', String(shown));\n    });\n  });\n})();"
+}
