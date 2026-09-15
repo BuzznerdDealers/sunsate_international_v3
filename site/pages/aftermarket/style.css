@@ -1,16 +1,14 @@
 [data-bz-node="aft-lines-media"] img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
 
 /* --- Hero geometry, measured from the handoff --- */
-/* --space-hero 88px, a 960px well, the lead capped at 700px. */
-.bz-block--hero { padding-block: 88px; }
+/* A 96px hero band, a 960px well, the lead capped at 700px. */
+.bz-block--hero { padding-block: 96px; }
 .bz-block--hero h1 { font-size: 44px; line-height: 1.14; margin-bottom: 22px; }
 .bz-block--hero .bz-hero__copy { max-width: 960px; }
 .bz-block--hero .bz-hero__sub { font-size: 17px; max-width: 700px; margin-bottom: 30px; }
 
 /* --- The handoff's opening band --- */
-/* --space-section 90px; .lead 17px and .prose 16px, both at the 1.75 loose
-   leading, capped at 880px. */
-[data-bz-node="aft-summary"] { padding-block: 90px 0; }
+
 [data-bz-node="aft-sum-t"] .bz-text { max-width: 880px; }
 [data-bz-node="aft-sum-t"] p { font-size: 16px; line-height: 1.75; color: var(--body-text); margin: 0 0 22px; }
 [data-bz-node="aft-sum-t"] p:first-child { font-size: 17px; color: var(--ink); }
@@ -119,13 +117,10 @@
    leaves the question 2px more measure and breaks it a word later. */
 [data-bz-node="aft-faq"] .bz-faq > summary { line-height: normal; gap: 18px; }
 [data-bz-node="aft-faq"] .bz-block .bz-faq__a { padding-bottom: 22px; }
-/* This handoff keeps the FAQ band on the 90px section rhythm and sets its
-   heading at 1.7 like every other h2 on the page. */
-[data-bz-node="aft-faq"][data-bz-node] { padding-block: 90px; }
+
 [data-bz-node="aft-faq"] .bz-block h2 { line-height: 1.7; }
 
-/* Closing band: the 90px section rhythm and a 28px heading at 1.7. */
-[data-bz-node="aft-cta"] > .bz-section { padding-block: 90px; }
+
 [data-bz-node="aft-cta"] h2 { line-height: 1.7; }
 
 /* --- Tablet, from the handoff's own 1100px block -------------------------- */
@@ -154,3 +149,15 @@
   /* --gutter drops to 20px below 640, and the stacked band's copy with it. */
   [data-bz-node="aft-lines-copy"] { padding: 56px var(--container-pad-mobile); }
 }
+
+/* --- Band rhythm, measured from the handoff --------------------------------
+   Each band's own padding, read off the section it is drawn as. The build
+   was using the 90px house rhythm where the handoff sets its own. */
+[data-bz-node="aft-hero"].bz-section,
+[data-bz-node="aft-hero"] > .bz-section { padding-block: 96px 96px; }
+[data-bz-node="aft-summary"].bz-section,
+[data-bz-node="aft-summary"] > .bz-section { padding-block: 76px 0px; }
+[data-bz-node="aft-faq"].bz-section,
+[data-bz-node="aft-faq"] > .bz-section { padding-block: 100px 100px; }
+[data-bz-node="aft-cta"].bz-section,
+[data-bz-node="aft-cta"] > .bz-section { padding-block: 80px 80px; }

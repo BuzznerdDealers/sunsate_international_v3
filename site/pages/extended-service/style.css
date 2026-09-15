@@ -25,3 +25,30 @@
   .bz-block--hero { padding-block: 72px; }
   .bz-block--hero h1 { font-size: 32px; }
 }
+
+
+/* --- Coverage plans --------------------------------------------------------
+   The handoff draws these as bordered cards with no photograph: a 32px/28px
+   box, a 21px title, a 15px lead, then the spec lines at 14/1.5 eight apart,
+   with the brochure link pinned to the bottom so the three cards line up. */
+[data-bz-node="ext-plans"] [data-bz-type="column"][data-bz-node^="fg-card-"] {
+  border: 1px solid var(--line);
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+}
+[data-bz-node="ext-plans"] h3 { font-size: 21px; margin: 0 0 12px; }
+[data-bz-node="ext-plans"] [data-bz-node^="fg-card-b"] { padding-block-start: 0; }
+[data-bz-node="ext-plans"] [data-bz-node^="fg-card-b"] p { font-size: 14px; line-height: 1.5; margin: 0 0 8px; }
+[data-bz-node="ext-plans"] [data-bz-node^="fg-card-b"] p:first-child { font-size: 15px; line-height: 1.65; margin: 0 0 16px; }
+[data-bz-node="ext-plans"] [data-bz-node^="fg-card-b"] p:last-child { margin-bottom: 22px; }
+[data-bz-node="ext-plans"] [data-bz-node^="fg-card-cta"] { margin-top: auto; padding-block-start: 0; }
+[data-bz-node="ext-plans"] [data-bz-node^="fg-card-cta"] .bz-btn { font-size: 15px; font-weight: 700; }
+
+/* --- Band rhythm, measured from the handoff --------------------------------
+   Each band's own padding, read off the section it is drawn as. The build
+   was using the 90px house rhythm where the handoff sets its own. */
+[data-bz-node="ext-plans"].bz-section,
+[data-bz-node="ext-plans"] > .bz-section { padding-block: 90px 0px; }
+[data-bz-node="ext-why"].bz-section,
+[data-bz-node="ext-why"] > .bz-section { padding-block: 76px 90px; }

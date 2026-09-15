@@ -78,10 +78,8 @@
 [data-bz-section="cta-compact"] [data-bz-node="ctc-body"] p { font-size: 15px; line-height: 1.6; margin-bottom: 36px; }
 [data-bz-section="cta-compact"] [data-bz-node="ctc-buttons"] .bz-btns { margin-bottom: 20px; }
 
-/* The two boxed banners sit inside the page grid; the handoff gives the pair
-   120px of air below and none between. */
-[data-bz-node="home-trailers"] > .bz-section > .bz-container { padding-block: 100px 120px; }
-[data-bz-node="home-brands"] > .bz-section > .bz-container { padding-block: 0 120px; }
+
+
 
 /* The featured-listings band: a label, a 38px heading and the live grid. */
 [data-bz-node="home-featured"] { padding-block: 100px 0; }
@@ -217,3 +215,11 @@
     padding-right: 40px;
   }
 }
+
+/* --- Band rhythm, measured from the handoff --------------------------------
+   Each band's own padding, read off the section it is drawn as. The build
+   was using the 90px house rhythm where the handoff sets its own. */
+[data-bz-node="home-trailers"].bz-section,
+[data-bz-node="home-trailers"] > .bz-section { padding-block: 100px 120px; }
+[data-bz-node="home-brands"].bz-section,
+[data-bz-node="home-brands"] > .bz-section { padding-block: 0px 120px; }

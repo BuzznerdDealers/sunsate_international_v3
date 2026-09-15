@@ -25,3 +25,13 @@
   .bz-block--hero { padding-block: 72px; }
   .bz-block--hero h1 { font-size: 32px; }
 }
+
+/* --- Band rhythm, measured from the handoff --------------------------------
+   Each band's own padding, read off the section it is drawn as. The build
+   was using the 90px house rhythm where the handoff sets its own. */
+[data-bz-node="team-jump"].bz-section,
+[data-bz-node="team-jump"] > .bz-section { padding-block: 56px 0px; }
+[data-bz-node="team-departments"].bz-section,
+[data-bz-node="team-departments"] > .bz-section { padding-block: 40px 90px; }
+[data-bz-node="team-departments"].bz-section,
+[data-bz-node="team-departments"] > .bz-section { padding-block: 72px 72px; }

@@ -81,7 +81,7 @@
           "type": "row",
           "props": {
             "gap": 7,
-            "align": "center",
+            "align": "start",
             "stackOn": "tablet"
           },
           "children": [
@@ -111,8 +111,7 @@
               "id": "leader-copy",
               "type": "column",
               "props": {
-                "span": 8,
-                "align": "center"
+                "span": 8
               },
               "children": [
                 {
@@ -274,7 +273,7 @@
       "type": "section",
       "props": {
         "width": "boxed",
-        "paddingY": 9,
+        "paddingY": 8,
         "background": "accent"
       },
       "children": [
@@ -294,20 +293,10 @@
               },
               "children": [
                 {
-                  "id": "mission-h",
-                  "type": "heading",
-                  "props": {
-                    "text": "Our mission",
-                    "headingLevel": 2,
-                    "align": "center",
-                    "eyebrow": "OUR MISSION"
-                  }
-                },
-                {
                   "id": "mission-body",
                   "type": "text",
                   "props": {
-                    "text": "We strive to be the premier provider of quality transportation products, parts and service at a fair price, with an unrivaled commitment to our customers' success — matched only by our dedication to our employees' growth, development and well-being, and our calling to have a meaningful impact in our community.",
+                    "text": "OUR MISSION\n\nWe strive to be the premier provider of quality transportation products, parts and service at a fair price, with an unrivaled commitment to our customers' success — matched only by our dedication to our employees' growth, development and well-being, and our calling to have a meaningful impact in our community.",
                     "align": "center"
                   }
                 }
@@ -385,9 +374,6 @@
           "eyebrow": "YOUR HOME ON THE ROAD",
           "heading": "More than a provider of trailers.",
           "body": "For more information on our new and used trailers, contact us today. We're available by phone or in person at our Tampa and Davenport locations and ready to help you take your business further. At these locations, we also sell trucks and provide service and parts. Your journey is our journey, and we're dedicated to making it as easy and successful as possible by supplying the quality equipment you need.",
-          "ctaLabel": "Browse trailers →",
-          "ctaUrl": "/store/inventory?type=trailer",
-          "ctaStyle": "link",
           "background": "card",
           "image": {
             "src": "/img/photo-placeholder.svg",

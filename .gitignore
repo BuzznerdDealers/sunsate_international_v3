@@ -85,7 +85,8 @@ jspm_packages/
 
 # Gatsby files
 .cache/
-public
+# NOTE: 'public' is NOT ignored here - in a dealer site public/ holds the
+# brand's licensed fonts, logos and imagery, and must be committed.
 
 # Storybook build outputs
 .out
