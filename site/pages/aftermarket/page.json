@@ -24,7 +24,6 @@
           }
         ],
         "image": {
-          "src": "/img/photo-placeholder.svg",
           "alt": "The Sun State aftermarket shop — photograph to be supplied",
           "width": 1600,
           "height": 900
@@ -32,7 +31,9 @@
       },
       "styles": {
         "base": {
-          "textTransform": "uppercase"
+          "textTransform": "uppercase",
+          "backgroundImage": "https://vendure.buzznerdrv.com/assets/source/ac/aftermarket-2.jpg",
+          "backgroundSize": "cover"
         }
       }
     },
