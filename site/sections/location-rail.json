@@ -3,7 +3,6 @@
   "id": "location-rail",
   "name": "Find a location",
   "css": "/* Live locations: the map and the cards are the same `locations-map` widget.\n   The list is a horizontal rail; arrows only page it. */\n[data-bz-section=\"location-rail\"] > .bz-section { padding-block: 120px }\n[data-bz-section=\"location-rail\"] .bz-block { padding-block: 0 }\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-head-col\"] .bz-block + .bz-block { padding-block-start: 18px }\n[data-bz-section=\"location-rail\"] h2 { font-size: 38px; margin: 0 }\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-body\"] .bz-text { max-width: 640px }\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-body\"] p { font-size: 16px; line-height: 1.6; color: var(--body-text); margin: 0 }\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-head\"] { margin-bottom: 40px }\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-map\"] .bz-map {\n  width: 100%; aspect-ratio: auto; min-height: 460px;\n  background: var(--paper); border: 1px solid var(--line); margin: 0 0 44px;\n  border-radius: 0;\n}\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-map\"] .bz-widget__empty { margin-bottom: 24px }\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-map\"] .bz-loclist {\n  display: flex; gap: 20px; overflow-x: auto; scroll-snap-type: x mandatory;\n  grid-template-columns: none;\n  padding-bottom: 4px;\n}\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-map\"] .bz-loc {\n  flex: 0 0 320px; scroll-snap-align: start;\n}\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-nav-row\"] { margin-block: 20px 0 }\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-nav\"] .bz-btns { margin-block: 0; justify-content: flex-end; gap: 8px }\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-nav\"] .bz-btn {\n  width: 38px; height: 38px; min-height: 0; padding: 0;\n  border: 1px solid var(--line); background: var(--card); color: var(--ink);\n}\n@media (max-width: 640px) {\n  [data-bz-section=\"location-rail\"] [data-bz-node=\"lr-map\"] .bz-loc { flex-basis: 82vw }\n}",
-  "js": "/* Arrow scrolling for the location rail. The cards themselves are the live\n   locations-map widget; this only pages the overflow container. */\n(function () {\n  document.querySelectorAll('[data-bz-section=\"location-rail\"]').forEach(function (band) {\n    var track = band.querySelector('.bz-loclist');\n    if (!track) return;\n    function page(dir) {\n      var card = track.querySelector('.bz-loc');\n      var step = card ? card.offsetWidth + 20 : track.clientWidth;\n      track.scrollBy({ left: dir * step, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });\n    }\n    ['lr-prev', 'lr-next'].forEach(function (id, i) {\n      var host = band.querySelector('[data-bz-node=\"' + id + '\"]');\n      var control = host && host.querySelector('a, button');\n      if (!control) return;\n      control.addEventListener('click', function (event) {\n        event.preventDefault();\n        page(i === 0 ? -1 : 1);\n      });\n    });\n  });\n})();",
   "props": [
     {
       "key": "eyebrow",
@@ -48,7 +47,9 @@
         "width": "boxed",
         "background": "{{background}}",
         "paddingY": 10,
-        "anchor": "{{anchor}}"
+        "anchor": "{{anchor}}",
+        "behaviour": "carousel",
+        "behaviourOptions": "{\"label\":\"Our locations\"}"
       },
       "children": [
         {
@@ -119,6 +120,7 @@
                   "type": "buttons",
                   "props": {
                     "align": "left",
+                    "part": "prev",
                     "items": [{ "label": "‹", "url": "#", "style": "secondary", "intent": "carousel-prev" }]
                   }
                 },
@@ -127,6 +129,7 @@
                   "type": "buttons",
                   "props": {
                     "align": "left",
+                    "part": "next",
                     "items": [{ "label": "›", "url": "#", "style": "secondary", "intent": "carousel-next" }]
                   }
                 }
