@@ -24,7 +24,7 @@
           }
         ],
         "image": {
-          "src": "/img/photo-placeholder.svg",
+          "src": "https://vendure.buzznerdrv.com/assets/source/ca/s13.jpg",
           "alt": "The International truck lineup — photograph to be supplied",
           "width": 1600,
           "height": 900
@@ -175,10 +175,10 @@
                   "type": "image",
                   "props": {
                     "image": {
-                      "src": "/img/photo-placeholder.svg",
+                      "src": "https://vendure.buzznerdrv.com/assets/source/ca/s13.jpg",
                       "alt": "The International S13 Integrated Powertrain — image to be supplied",
-                      "width": 1600,
-                      "height": 900
+                      "width": 1316,
+                      "height": 657
                     },
                     "width": "full"
                   }
@@ -612,7 +612,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "br-faq",
@@ -697,7 +698,8 @@
                           "a": "Trailer specifications for Hyundai Translead and Globe Trailers are available through Sun State Trailers, or call Trailer Sales at (813) 621-1331 and we will send the spec sheet for the configuration you need."
                         }
                       ]
-                    }
+                    },
+                    "snapshot": null
                   }
                 }
               ]
@@ -721,7 +723,8 @@
           "secondaryUrl": "/contact",
           "background": "ink"
         }
-      }
+      },
+      "children": []
     }
   ]
 }
