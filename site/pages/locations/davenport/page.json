@@ -8,7 +8,7 @@
         "headingLevel": 1,
         "eyebrow": "HOME / LOCATIONS / DAVENPORT, FLORIDA",
         "headline": "Hours & Location of Sun State International Davenport, Florida",
-        "subhead": "41609 Hwy 27, Davenport, FL 33837 \u2014 trucks, trailers, parts and service on Highway 27, between Orlando and Lakeland.",
+        "subhead": "41609 Hwy 27, Davenport, FL 33837 — trucks, trailers, parts and service on Highway 27, between Orlando and Lakeland.",
         "ctas": [
           {
             "label": "Call (863) 424-2411",
@@ -25,7 +25,7 @@
         ],
         "image": {
           "src": "/img/photo-placeholder.svg",
-          "alt": "The Sun State Davenport dealership \u2014 photograph to be supplied",
+          "alt": "The Sun State Davenport dealership — photograph to be supplied",
           "width": 1600,
           "height": 900
         }
@@ -41,12 +41,20 @@
           "name": "Sun State International Trucks of Central Florida, LLC",
           "noticeEyebrow": "NOW OFFERING",
           "noticeTitle": "After hours service",
-          "noticeBody": "8:00 PM \u2013 5:00 AM via Certified Fleet.",
-          "noticeLinkLabel": "Certified Fleet \u2014 (863) 880-2206",
+          "noticeBody": "8:00 PM – 5:00 AM via Certified Fleet.",
+          "noticeLinkLabel": "Certified Fleet — (863) 880-2206",
           "noticeLinkUrl": "tel:+18638802206",
           "anchor": "dav-summary",
           "background": "card",
           "locationSlug": "davenport"
+        },
+        "snapshots": {
+          "ls-phones": {
+            "numbers": []
+          },
+          "ls-map-w": {
+            "locations": []
+          }
         }
       }
     },
@@ -62,6 +70,12 @@
           "anchor": "dav-hours",
           "background": "card",
           "locationSlug": "davenport"
+        },
+        "snapshots": {
+          "hg-hours": {
+            "hours": [],
+            "schedules": []
+          }
         }
       }
     },
@@ -80,25 +94,25 @@
             {
               "title": "Truck sales",
               "body": "New and used International trucks, IC Bus and Capacity yard trucks, with financing arranged in house.",
-              "linkLabel": "Financing \u2192",
+              "linkLabel": "Financing →",
               "linkUrl": "/financing"
             },
             {
               "title": "Parts counter",
               "body": "Genuine OEM and all-makes truck and trailer parts, Saturday morning hours, plus online ordering and delivery.",
-              "linkLabel": "Parts Department \u2192",
+              "linkLabel": "Parts Department →",
               "linkUrl": "/parts"
             },
             {
               "title": "Service & trailer bays",
               "body": "Factory-trained technicians, dedicated trailer repair bays, DOT inspections and alignment, open until 7 PM on weekdays.",
-              "linkLabel": "Service Department \u2192",
+              "linkLabel": "Service Department →",
               "linkUrl": "/service"
             },
             {
               "title": "In-store shopping",
               "body": "In-store shopping and curbside pickup, with after-hours service coverage through Certified Fleet.",
-              "linkLabel": "All locations \u2192",
+              "linkLabel": "All locations →",
               "linkUrl": "/locations"
             }
           ]
@@ -119,14 +133,14 @@
             {
               "title": "Trailer parts & service in Davenport",
               "body": "When your trailer requires maintenance, you can depend on Sun State for all your trailer parts and service needs. Davenport runs dedicated trailer repair bays covering kingpins, landing gear, aluminum and fiberglass repair, brakes, liftgates and DOT inspections, with Hyundai and all-makes trailer parts on the shelf.",
-              "linkLabel": "Schedule trailer service \u2192",
+              "linkLabel": "Schedule trailer service →",
               "linkUrl": "/service-appointment",
               "cardEyebrow": "SUN STATE TRAILERS"
             },
             {
               "title": "We'll come to your yard",
-              "body": "Mobile service runs out of Davenport Monday through Friday, 8 AM \u2013 5 PM, performing many repairs, diagnostics and preventative maintenance at your location across Polk and Osceola counties and the Orlando corridor.",
-              "linkLabel": "Mobile service \u2192",
+              "body": "Mobile service runs out of Davenport Monday through Friday, 8 AM – 5 PM, performing many repairs, diagnostics and preventative maintenance at your location across Polk and Osceola counties and the Orlando corridor.",
+              "linkLabel": "Mobile service →",
               "linkUrl": "/mobile-service",
               "cardEyebrow": "MOBILE SERVICE"
             }
@@ -145,6 +159,27 @@
           "body": "Ready to find the right commercial trucks for your business? Visit us at our convenient locations across Central and Southwest Florida.",
           "background": "paper",
           "showMap": false
+        },
+        "snapshots": {
+          "lg-list": {
+            "locations": [
+              {
+                "id": "15",
+                "name": "sudip1 location",
+                "slug": "main",
+                "href": "/locations/main",
+                "streetAddress": "sdfdsf werewr",
+                "city": "",
+                "region": "",
+                "postalCode": "",
+                "country": null,
+                "latitude": 40.7258,
+                "longitude": -111.961,
+                "phone": "",
+                "email": null
+              }
+            ]
+          }
         }
       }
     },

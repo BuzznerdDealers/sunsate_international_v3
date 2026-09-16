@@ -34,8 +34,14 @@
       "label": "Band background",
       "default": "card",
       "options": [
-        { "value": "card", "label": "White" },
-        { "value": "paper", "label": "Paper" }
+        {
+          "value": "card",
+          "label": "White"
+        },
+        {
+          "value": "paper",
+          "label": "Paper"
+        }
       ]
     }
   ],
@@ -55,12 +61,16 @@
         {
           "id": "lr-head",
           "type": "row",
-          "props": { "gap": 5 },
+          "props": {
+            "gap": 5
+          },
           "children": [
             {
               "id": "lr-head-col",
               "type": "column",
-              "props": { "span": 12 },
+              "props": {
+                "span": 12
+              },
               "children": [
                 {
                   "id": "lr-h",
@@ -74,7 +84,10 @@
                 {
                   "id": "lr-body",
                   "type": "text",
-                  "props": { "text": "{{body}}", "width": "prose" }
+                  "props": {
+                    "text": "{{body}}",
+                    "width": "prose"
+                  }
                 }
               ]
             }
@@ -83,12 +96,16 @@
         {
           "id": "lr-map-row",
           "type": "row",
-          "props": { "gap": 5 },
+          "props": {
+            "gap": 5
+          },
           "children": [
             {
               "id": "lr-map-col",
               "type": "column",
-              "props": { "span": 12 },
+              "props": {
+                "span": 12
+              },
               "children": [
                 {
                   "id": "lr-map",
@@ -98,6 +115,25 @@
                     "config": {
                       "showMap": true,
                       "pagePathPrefix": "/locations"
+                    },
+                    "snapshot": {
+                      "locations": [
+                        {
+                          "id": "15",
+                          "name": "sudip1 location",
+                          "slug": "main",
+                          "href": "/locations/main",
+                          "streetAddress": "sdfdsf werewr",
+                          "city": "",
+                          "region": "",
+                          "postalCode": "",
+                          "country": null,
+                          "latitude": 40.7258,
+                          "longitude": -111.961,
+                          "phone": "",
+                          "email": null
+                        }
+                      ]
                     }
                   }
                 }
@@ -108,12 +144,19 @@
         {
           "id": "lr-nav-row",
           "type": "row",
-          "props": { "gap": 5, "align": "center", "stackOn": "never" },
+          "props": {
+            "gap": 5,
+            "align": "center",
+            "stackOn": "never"
+          },
           "children": [
             {
               "id": "lr-nav",
               "type": "column",
-              "props": { "span": 12, "align": "center" },
+              "props": {
+                "span": 12,
+                "align": "center"
+              },
               "children": [
                 {
                   "id": "lr-prev",
@@ -121,7 +164,14 @@
                   "props": {
                     "align": "left",
                     "part": "prev",
-                    "items": [{ "label": "‹", "url": "#", "style": "secondary", "intent": "carousel-prev" }]
+                    "items": [
+                      {
+                        "label": "‹",
+                        "url": "#",
+                        "style": "secondary",
+                        "intent": "carousel-prev"
+                      }
+                    ]
                   }
                 },
                 {
@@ -130,7 +180,14 @@
                   "props": {
                     "align": "left",
                     "part": "next",
-                    "items": [{ "label": "›", "url": "#", "style": "secondary", "intent": "carousel-next" }]
+                    "items": [
+                      {
+                        "label": "›",
+                        "url": "#",
+                        "style": "secondary",
+                        "intent": "carousel-next"
+                      }
+                    ]
                   }
                 }
               ]

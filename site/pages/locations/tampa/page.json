@@ -8,7 +8,7 @@
         "headingLevel": 1,
         "eyebrow": "HOME / LOCATIONS / TAMPA, FLORIDA",
         "headline": "Hours & Location of Sun State International Tampa, Florida",
-        "subhead": "6020 Adamo Drive, Tampa, FL 33619 \u2014 trucks, trailers, parts and service, with our aftermarket facility minutes away.",
+        "subhead": "6020 Adamo Drive, Tampa, FL 33619 — trucks, trailers, parts and service, with our aftermarket facility minutes away.",
         "ctas": [
           {
             "label": "Call (813) 621-1331",
@@ -25,7 +25,7 @@
         ],
         "image": {
           "src": "/img/photo-placeholder.svg",
-          "alt": "The Sun State Tampa dealership \u2014 photograph to be supplied",
+          "alt": "The Sun State Tampa dealership — photograph to be supplied",
           "width": 1600,
           "height": 900
         }
@@ -41,12 +41,20 @@
           "name": "Sun State International Trucks, LLC.",
           "noticeEyebrow": "NOW OFFERING",
           "noticeTitle": "After hours service",
-          "noticeBody": "8:00 PM \u2013 5:00 AM via Certified Fleet.",
-          "noticeLinkLabel": "Certified Fleet \u2014 (863) 880-2206",
+          "noticeBody": "8:00 PM – 5:00 AM via Certified Fleet.",
+          "noticeLinkLabel": "Certified Fleet — (863) 880-2206",
           "noticeLinkUrl": "tel:+18638802206",
           "anchor": "tpa-summary",
           "background": "card",
           "locationSlug": "tampa"
+        },
+        "snapshots": {
+          "ls-phones": {
+            "numbers": []
+          },
+          "ls-map-w": {
+            "locations": []
+          }
         }
       }
     },
@@ -62,6 +70,12 @@
           "anchor": "tpa-hours",
           "background": "card",
           "locationSlug": "tampa"
+        },
+        "snapshots": {
+          "hg-hours": {
+            "hours": [],
+            "schedules": []
+          }
         }
       }
     },
@@ -80,25 +94,25 @@
             {
               "title": "Truck sales",
               "body": "New and used International trucks, IC Bus and Capacity yard trucks, plus the truck configurator and financing.",
-              "linkLabel": "Financing \u2192",
+              "linkLabel": "Financing →",
               "linkUrl": "/financing"
             },
             {
               "title": "Parts counter",
               "body": "Genuine OEM and all-makes parts for trucks and trailers, with online ordering and delivery across the Tampa Bay area.",
-              "linkLabel": "Parts Department \u2192",
+              "linkLabel": "Parts Department →",
               "linkUrl": "/parts"
             },
             {
               "title": "Service & trailer bays",
               "body": "Factory-trained technicians, dedicated trailer repair bays, DOT inspections, alignment, and mobile service dispatch.",
-              "linkLabel": "Service Department \u2192",
+              "linkLabel": "Service Department →",
               "linkUrl": "/service"
             },
             {
               "title": "In-store shopping",
               "body": "In-store shopping and curbside pickup, with after-hours service coverage through Certified Fleet.",
-              "linkLabel": "All locations \u2192",
+              "linkLabel": "All locations →",
               "linkUrl": "/locations"
             }
           ]
@@ -117,16 +131,16 @@
           "background": "card",
           "items": [
             {
-              "title": "Trailer Sales \u2014 6020 E Adamo Dr",
-              "body": "New and used Hyundai Translead and Globe Trailers share the Tampa address, open 8 AM \u2013 5 PM Monday through Friday. Talk to a member of our sales team about available inventory, financing, or to schedule an in-person appointment.\n\nPhone: (813) 621-1331 \u00b7 Fax: 813-628-0527",
-              "linkLabel": "Trailer Sales details \u2192",
+              "title": "Trailer Sales — 6020 E Adamo Dr",
+              "body": "New and used Hyundai Translead and Globe Trailers share the Tampa address, open 8 AM – 5 PM Monday through Friday. Talk to a member of our sales team about available inventory, financing, or to schedule an in-person appointment.\n\nPhone: (813) 621-1331 · Fax: 813-628-0527",
+              "linkLabel": "Trailer Sales details →",
               "linkUrl": "/locations/trailer-sales",
               "cardEyebrow": "SUN STATE TRAILERS"
             },
             {
-              "title": "Aftermarket Parts \u2014 7105 E 6th Ave",
-              "body": "Minutes from the dealership, our Tampa aftermarket facility handles truck equipment repair, roll off cable repair, hydraulic repairs, body installations, liftgates and frame modifications, open 7 AM \u2013 4 PM Monday through Friday.\n\nPhone: (813) 627-3282",
-              "linkLabel": "Aftermarket capabilities \u2192",
+              "title": "Aftermarket Parts — 7105 E 6th Ave",
+              "body": "Minutes from the dealership, our Tampa aftermarket facility handles truck equipment repair, roll off cable repair, hydraulic repairs, body installations, liftgates and frame modifications, open 7 AM – 4 PM Monday through Friday.\n\nPhone: (813) 627-3282",
+              "linkLabel": "Aftermarket capabilities →",
               "linkUrl": "/aftermarket",
               "cardEyebrow": "SUN STATE AFTERMARKET"
             }
@@ -145,6 +159,27 @@
           "body": "Ready to find the right commercial trucks for your business? Visit us at our convenient locations across Central and Southwest Florida.",
           "background": "paper",
           "showMap": false
+        },
+        "snapshots": {
+          "lg-list": {
+            "locations": [
+              {
+                "id": "15",
+                "name": "sudip1 location",
+                "slug": "main",
+                "href": "/locations/main",
+                "streetAddress": "sdfdsf werewr",
+                "city": "",
+                "region": "",
+                "postalCode": "",
+                "country": null,
+                "latitude": 40.7258,
+                "longitude": -111.961,
+                "phone": "",
+                "email": null
+              }
+            ]
+          }
         }
       }
     },

@@ -8,7 +8,7 @@
         "headingLevel": 1,
         "eyebrow": "HOME / LOCATIONS / AFTERMARKET BUSINESS, TAMPA",
         "headline": "Hours & Location of Sun State International Aftermarket Business Tampa, FL",
-        "subhead": "7105 East 6th Ave., Tampa, FL 33619 \u2014 truck equipment repair, roll off cable repair, hydraulic repairs and aftermarket parts.",
+        "subhead": "7105 East 6th Ave., Tampa, FL 33619 — truck equipment repair, roll off cable repair, hydraulic repairs and aftermarket parts.",
         "ctas": [
           {
             "label": "Call (813) 627-3282",
@@ -25,7 +25,7 @@
         ],
         "image": {
           "src": "/img/photo-placeholder.svg",
-          "alt": "The Sun State aftermarket shop \u2014 photograph to be supplied",
+          "alt": "The Sun State aftermarket shop — photograph to be supplied",
           "width": 1600,
           "height": 900
         }
@@ -38,15 +38,23 @@
         "sectionId": "location-summary",
         "values": {
           "eyebrow": "STORE MAP",
-          "name": "Sun State International Trucks, LLC. \u2013 Aftermarket Business",
+          "name": "Sun State International Trucks, LLC. – Aftermarket Business",
           "noticeEyebrow": "WHAT WE SPECIALIZE IN",
           "noticeTitle": "Truck equipment, hoists and hydraulics",
           "noticeBody": "Visit our Aftermarket Location for all of your truck and trailer repair needs. We specialize in truck equipment repair, roll off cable repair, hydraulic truck equipment repair and much more.",
-          "noticeLinkLabel": "Full aftermarket capabilities \u2192",
+          "noticeLinkLabel": "Full aftermarket capabilities →",
           "noticeLinkUrl": "/aftermarket",
           "anchor": "aftloc-summary",
           "background": "card",
           "locationSlug": "aftermarket-parts"
+        },
+        "snapshots": {
+          "ls-phones": {
+            "numbers": []
+          },
+          "ls-map-w": {
+            "locations": []
+          }
         }
       }
     },
@@ -61,6 +69,12 @@
           "anchor": "aftloc-hours",
           "background": "card",
           "locationSlug": "aftermarket-parts"
+        },
+        "snapshots": {
+          "hg-hours": {
+            "hours": [],
+            "schedules": []
+          }
         }
       }
     },
@@ -78,26 +92,26 @@
           "items": [
             {
               "title": "Truck bodies",
-              "body": "All-makes new or used body installations and swaps \u2014 van, reefer, dump, flatbed, tank and roll-off hoist.",
-              "linkLabel": "Body capabilities \u2192",
+              "body": "All-makes new or used body installations and swaps — van, reefer, dump, flatbed, tank and roll-off hoist.",
+              "linkLabel": "Body capabilities →",
               "linkUrl": "/aftermarket"
             },
             {
               "title": "Liftgates",
               "body": "New installations, remounts, warranty service and parts replacement for liftgates on trucks and trailers.",
-              "linkLabel": "Liftgate service \u2192",
+              "linkLabel": "Liftgate service →",
               "linkUrl": "/aftermarket"
             },
             {
               "title": "Frame & hydraulics",
               "body": "Shorten or lengthen, double single rails, driveline work, Huck bolt replacement, PTO and wet-line kits, hydraulic repairs.",
-              "linkLabel": "Frame modifications \u2192",
+              "linkLabel": "Frame modifications →",
               "linkUrl": "/aftermarket"
             },
             {
               "title": "Trailer parts & service",
               "body": "Aluminum and fiberglass repair, kingpins, landing gear, accessory installation, and Hyundai and all-makes trailer parts.",
-              "linkLabel": "Parts department \u2192",
+              "linkLabel": "Parts department →",
               "linkUrl": "/parts"
             }
           ]
@@ -181,6 +195,27 @@
           "body": "Visit us at our convenient locations across Central and Southwest Florida.",
           "background": "card",
           "showMap": false
+        },
+        "snapshots": {
+          "lg-list": {
+            "locations": [
+              {
+                "id": "15",
+                "name": "sudip1 location",
+                "slug": "main",
+                "href": "/locations/main",
+                "streetAddress": "sdfdsf werewr",
+                "city": "",
+                "region": "",
+                "postalCode": "",
+                "country": null,
+                "latitude": 40.7258,
+                "longitude": -111.961,
+                "phone": "",
+                "email": null
+              }
+            ]
+          }
         }
       }
     },
@@ -244,7 +279,7 @@
                       "items": [
                         {
                           "q": "Where is the Sun State Aftermarket Business?",
-                          "a": "Sun State International Trucks, LLC. \u2013 Aftermarket Business is at 7105 East 6th Ave., Tampa, FL 33619, a few minutes from the Adamo Drive dealership. Phone (813) 627-3282, fax (813) 621-8709."
+                          "a": "Sun State International Trucks, LLC. – Aftermarket Business is at 7105 East 6th Ave., Tampa, FL 33619, a few minutes from the Adamo Drive dealership. Phone (813) 627-3282, fax (813) 621-8709."
                         },
                         {
                           "q": "What are the Aftermarket store hours?",

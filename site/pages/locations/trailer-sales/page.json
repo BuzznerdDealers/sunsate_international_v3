@@ -7,8 +7,8 @@
       "props": {
         "headingLevel": 1,
         "eyebrow": "HOME / LOCATIONS / TRAILER SALES, TAMPA",
-        "headline": "Hours & Location of Sun State International \u2013 Trailer Sales",
-        "subhead": "6020 Adamo Drive, Tampa, FL 33619 \u2014 new and used Hyundai Translead and Globe Trailers, with parts, service and financing on the same campus.",
+        "headline": "Hours & Location of Sun State International – Trailer Sales",
+        "subhead": "6020 Adamo Drive, Tampa, FL 33619 — new and used Hyundai Translead and Globe Trailers, with parts, service and financing on the same campus.",
         "ctas": [
           {
             "label": "Call (813) 621-1331",
@@ -25,7 +25,7 @@
         ],
         "image": {
           "src": "/img/photo-placeholder.svg",
-          "alt": "The Sun State trailer lot \u2014 photograph to be supplied",
+          "alt": "The Sun State trailer lot — photograph to be supplied",
           "width": 1600,
           "height": 900
         }
@@ -38,15 +38,23 @@
         "sectionId": "location-summary",
         "values": {
           "eyebrow": "STORE MAP",
-          "name": "Sun State \u2014 Trailer Sales",
+          "name": "Sun State — Trailer Sales",
           "noticeEyebrow": "READY TO PLACE AN ORDER?",
           "noticeTitle": "Talk to trailer sales",
           "noticeBody": "Talk to a member of our sales team about our available inventory, financing, or to schedule an in-person appointment.",
-          "noticeLinkLabel": "Contact trailer sales \u2192",
+          "noticeLinkLabel": "Contact trailer sales →",
           "noticeLinkUrl": "/contact",
           "anchor": "trl-summary",
           "background": "card",
           "locationSlug": "trailer-sales"
+        },
+        "snapshots": {
+          "ls-phones": {
+            "numbers": []
+          },
+          "ls-map-w": {
+            "locations": []
+          }
         }
       }
     },
@@ -58,10 +66,16 @@
         "values": {
           "eyebrow": "STORE HOURS",
           "heading": "When we're open.",
-          "note": "Dedicated trailer repair bays and a parts counter share the Tampa campus, with service hours running 7 AM \u2013 7 PM weekdays and after-hours coverage via Certified Fleet.",
+          "note": "Dedicated trailer repair bays and a parts counter share the Tampa campus, with service hours running 7 AM – 7 PM weekdays and after-hours coverage via Certified Fleet.",
           "anchor": "trl-hours",
           "background": "card",
           "locationSlug": "trailer-sales"
+        },
+        "snapshots": {
+          "hg-hours": {
+            "hours": [],
+            "schedules": []
+          }
         }
       }
     },
@@ -79,26 +93,26 @@
           "items": [
             {
               "title": "New trailers",
-              "body": "Hyundai Translead and Globe Trailers built for Florida freight \u2014 dry van, reefer, flatbed and specialty configurations.",
-              "linkLabel": "Browse new trailers \u2192",
+              "body": "Hyundai Translead and Globe Trailers built for Florida freight — dry van, reefer, flatbed and specialty configurations.",
+              "linkLabel": "Browse new trailers →",
               "linkUrl": "/store/inventory?type=trailer&condition=new"
             },
             {
               "title": "Used trailers",
               "body": "A rotating selection of inspected used trailers, with service history and repairs documented by our own technicians.",
-              "linkLabel": "Browse used trailers \u2192",
+              "linkLabel": "Browse used trailers →",
               "linkUrl": "/store/inventory?type=trailer&condition=used"
             },
             {
               "title": "Financing",
               "body": "Retail financing, municipal leasing and flexible payment structures with minimum down payment and approved credit.",
-              "linkLabel": "Financing \u2192",
+              "linkLabel": "Financing →",
               "linkUrl": "/financing"
             },
             {
               "title": "Parts & service",
               "body": "Dedicated trailer repair bays, liftgate work, DOT inspections, and Hyundai and all-makes trailer parts on the same campus.",
-              "linkLabel": "Parts department \u2192",
+              "linkLabel": "Parts department →",
               "linkUrl": "/parts"
             }
           ]
@@ -116,6 +130,27 @@
           "body": "Ready to find the right commercial trucks for your business? Visit us at our convenient locations across Central and Southwest Florida.",
           "background": "card",
           "showMap": false
+        },
+        "snapshots": {
+          "lg-list": {
+            "locations": [
+              {
+                "id": "15",
+                "name": "sudip1 location",
+                "slug": "main",
+                "href": "/locations/main",
+                "streetAddress": "sdfdsf werewr",
+                "city": "",
+                "region": "",
+                "postalCode": "",
+                "country": null,
+                "latitude": 40.7258,
+                "longitude": -111.961,
+                "phone": "",
+                "email": null
+              }
+            ]
+          }
         }
       }
     },

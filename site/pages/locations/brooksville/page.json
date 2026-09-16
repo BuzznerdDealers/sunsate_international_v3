@@ -7,8 +7,8 @@
       "props": {
         "headingLevel": 1,
         "eyebrow": "HOME / LOCATIONS / BROOKSVILLE",
-        "headline": "Hours of Operation & Store Location \u2013 Brooksville",
-        "subhead": "17127 Runway Drive, Brooksville, FL 34604 \u2014 truck and trailer parts for Hernando, Pasco and Citrus counties, with in-store pickup and delivery.",
+        "headline": "Hours of Operation & Store Location – Brooksville",
+        "subhead": "17127 Runway Drive, Brooksville, FL 34604 — truck and trailer parts for Hernando, Pasco and Citrus counties, with in-store pickup and delivery.",
         "ctas": [
           {
             "label": "Call (352) 277-0221",
@@ -25,7 +25,7 @@
         ],
         "image": {
           "src": "/img/photo-placeholder.svg",
-          "alt": "The Brooksville parts store \u2014 photograph to be supplied",
+          "alt": "The Brooksville parts store — photograph to be supplied",
           "width": 1600,
           "height": 900
         }
@@ -40,13 +40,21 @@
           "eyebrow": "STORE MAP",
           "name": "Sun State Truck & Trailer Parts",
           "noticeEyebrow": "HOW TO BUY",
-          "noticeTitle": "In-store shopping \u00b7 In-store pickup \u00b7 Delivery",
+          "noticeTitle": "In-store shopping · In-store pickup · Delivery",
           "noticeBody": "Walk in at the counter, order ahead for pickup, or have parts delivered to your shop or job site.",
-          "noticeLinkLabel": "Order parts online \u2192",
+          "noticeLinkLabel": "Order parts online →",
           "noticeLinkUrl": "https://www.sunstateparts.com/login",
           "anchor": "brk-summary",
           "background": "card",
           "locationSlug": "brooksville"
+        },
+        "snapshots": {
+          "ls-phones": {
+            "numbers": []
+          },
+          "ls-map-w": {
+            "locations": []
+          }
         }
       }
     },
@@ -62,6 +70,12 @@
           "anchor": "brk-hours",
           "background": "card",
           "locationSlug": "brooksville"
+        },
+        "snapshots": {
+          "hg-hours": {
+            "hours": [],
+            "schedules": []
+          }
         }
       }
     },
@@ -88,13 +102,13 @@
             {
               "title": "Order online",
               "body": "Search availability, price and order through the Sun State online parts store, then pick up in Brooksville or have it delivered.",
-              "linkLabel": "Online parts store \u2192",
+              "linkLabel": "Online parts store →",
               "linkUrl": "https://www.sunstateparts.com/login"
             },
             {
               "title": "Fleet accounts",
               "body": "Fleet Charge gives qualifying fleets consistent parts pricing and streamlined billing, with an in-house credit line available.",
-              "linkLabel": "Parts department \u2192",
+              "linkLabel": "Parts department →",
               "linkUrl": "/parts"
             }
           ]
@@ -112,6 +126,27 @@
           "body": "Ready to find the right commercial trucks for your business? Visit us at our convenient locations across Central and Southwest Florida.",
           "background": "card",
           "showMap": false
+        },
+        "snapshots": {
+          "lg-list": {
+            "locations": [
+              {
+                "id": "15",
+                "name": "sudip1 location",
+                "slug": "main",
+                "href": "/locations/main",
+                "streetAddress": "sdfdsf werewr",
+                "city": "",
+                "region": "",
+                "postalCode": "",
+                "country": null,
+                "latitude": 40.7258,
+                "longitude": -111.961,
+                "phone": "",
+                "email": null
+              }
+            ]
+          }
         }
       }
     },
