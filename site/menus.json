@@ -802,8 +802,8 @@
         {
           "id": "fb-international",
           "label": "International",
-          "type": "inventory",
-          "ref": "inventory?brand=international",
+          "type": "label",
+          "ref": null,
           "url": null,
           "newTab": false,
           "children": []
@@ -811,8 +811,8 @@
         {
           "id": "fb-icbus",
           "label": "IC Bus",
-          "type": "inventory",
-          "ref": "inventory?brand=ic-bus",
+          "type": "label",
+          "ref": null,
           "url": null,
           "newTab": false,
           "children": []
@@ -820,8 +820,8 @@
         {
           "id": "fb-hyundai",
           "label": "Hyundai Translead",
-          "type": "inventory",
-          "ref": "inventory?brand=hyundai-translead",
+          "type": "label",
+          "ref": null,
           "url": null,
           "newTab": false,
           "children": []
@@ -829,8 +829,8 @@
         {
           "id": "fb-globe",
           "label": "Globe Trailers",
-          "type": "inventory",
-          "ref": "inventory?brand=globe-trailers",
+          "type": "label",
+          "ref": null,
           "url": null,
           "newTab": false,
           "children": []
