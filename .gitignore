@@ -120,3 +120,6 @@ vendure-plugin-shipmate
 stripe
 vendure-stripe-plugin
 woocommerce-shipstation-integration
+# Blog migration working files: response cache, the test-import gate and
+# report.json. The readable report (migration-report.md) is committed.
+tools/blog-import/.work/
