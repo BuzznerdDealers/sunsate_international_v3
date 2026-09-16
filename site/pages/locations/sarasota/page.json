@@ -24,10 +24,10 @@
           }
         ],
         "image": {
-          "src": "/img/photo-placeholder.svg",
+          "src": "https://vendure.buzznerdrv.com/assets/source/e2/whatsapp-image-2026-09-16-at-10.49.40-pm.jpeg",
           "alt": "The Sun State Sarasota dealership — photograph to be supplied",
           "width": 1600,
-          "height": 900
+          "height": 1066
         }
       }
     },
@@ -47,7 +47,7 @@
           "noticeLinkLabel": "Certified Fleet — (863) 880-2206",
           "noticeLinkUrl": "tel:+18638802206",
           "map": {
-            "src": "/img/photo-placeholder.svg",
+            "src": "https://vendure.buzznerdrv.com/assets/source/1e/sarasota-fl-black-map-pin.png",
             "alt": "A map of the Sarasota location — image to be supplied",
             "width": 1600,
             "height": 900
@@ -55,7 +55,8 @@
           "anchor": "sar-summary",
           "background": "card"
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "sar-hours",
@@ -90,7 +91,8 @@
           ],
           "background": "card"
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "sar-onsite",
@@ -130,7 +132,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "sar-extras",
@@ -159,7 +162,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "sar-others",
@@ -211,7 +215,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "sar-faq",
@@ -296,7 +301,8 @@
                           "a": "Sarasota serves Sarasota, Manatee and Charlotte counties, including Bradenton, Venice, Palmetto, North Port and Punta Gorda, with mobile service available at your yard or job site."
                         }
                       ]
-                    }
+                    },
+                    "snapshot": null
                   }
                 }
               ]
@@ -320,7 +326,8 @@
           "secondaryUrl": "/service-appointment",
           "background": "ink"
         }
-      }
+      },
+      "children": []
     }
   ]
 }
