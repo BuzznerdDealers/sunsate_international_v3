@@ -33,6 +33,7 @@
   { "id": "view-careers", "label": "See open roles", "url": "/careers", "style": "primary", "intent": "careers", "newTab": false, "active": true },
   { "id": "meet-the-team", "label": "Meet the team →", "url": "/meet-the-team", "style": "link", "intent": "about", "newTab": false, "active": true },
   { "id": "read-reviews", "label": "Read reviews →", "url": "/reviews", "style": "link", "intent": "about", "newTab": false, "active": true },
+  { "id": "all-posts", "label": "See all posts →", "url": "/blog/posts", "style": "secondary", "intent": "read-post", "newTab": false, "active": true },
   { "id": "truck-configurator", "label": "Build your truck", "url": "/truck-configurator", "style": "primary", "intent": "build-truck", "newTab": false, "active": true },
   { "id": "view-specifications", "label": "Brochures & spec sheets →", "url": "/specifications", "style": "link", "intent": "browse-inventory", "newTab": false, "active": true },
   { "id": "deal-of-the-week", "label": "See this week's deal", "url": "/deal-of-the-week", "style": "primary", "intent": "browse-inventory", "newTab": false, "active": true }

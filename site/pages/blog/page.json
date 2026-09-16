@@ -1,0 +1,429 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "bl-hero",
+      "type": "hero",
+      "props": {
+        "headingLevel": 1,
+        "eyebrow": "HOME / BLOG",
+        "headline": "Blog",
+        "subhead": "Maintenance, diagnostics and fleet advice from the people who work on these trucks and trailers every day.",
+        "image": {
+          "src": "/img/photo-placeholder.svg",
+          "alt": "Sun State technicians on the shop floor — photograph to be supplied",
+          "width": 1600,
+          "height": 900
+        }
+      }
+    },
+    {
+      "id": "bl-intro",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 9,
+        "background": "card",
+        "anchor": "bl-intro"
+      },
+      "children": [
+        {
+          "id": "bi-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "bi-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "bi-lead",
+                  "type": "text",
+                  "props": {
+                    "text": "What we write about is what comes through the bays: alignment and tire wear, air brake and suspension parts, electrical faults, fuel system care, oil change intervals, and how fleets keep unplanned downtime off the schedule.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "bi-body",
+                  "type": "text",
+                  "props": {
+                    "text": "Truck posts come from our International service and parts teams; trailer posts come from Sun State Trailers. If something here applies to a unit you run, call <a href=\"tel:+18007417566\">800.741.7566</a> and we'll look at the specific truck instead of the general case.",
+                    "width": "prose"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bl-posts",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "card",
+        "anchor": "bl-posts"
+      },
+      "children": [
+        {
+          "id": "bp-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "bp-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "bp-list",
+                  "type": "postsList",
+                  "props": {
+                    "heading": "Latest posts",
+                    "headingLevel": 2,
+                    "count": 6,
+                    "showDates": true
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bp-pager-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "bp-pager-col",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "bp-pager",
+                  "type": "buttons",
+                  "props": {
+                    "align": "center",
+                    "items": [
+                      {
+                        "ctaId": "all-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bl-panels",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "card"
+      },
+      "children": [
+        {
+          "id": "bn-row",
+          "type": "row",
+          "props": {
+            "gap": 6,
+            "align": "stretch",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "bn-trailers",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "styles": {
+                "base": {
+                  "background": "card",
+                  "borderWidth": 1,
+                  "borderStyle": "solid",
+                  "borderColor": "line",
+                  "paddingTop": 40,
+                  "paddingRight": 36,
+                  "paddingBottom": 40,
+                  "paddingLeft": 36
+                }
+              },
+              "children": [
+                {
+                  "id": "bn-tr-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Trailer articles",
+                    "eyebrow": "SUN STATE TRAILERS",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "bn-tr-b",
+                  "type": "text",
+                  "props": {
+                    "text": "Sun State Trailers writes on the trailer side of the yard — getting a repair fast after an unexpected breakdown, tracking down parts for specialized or older models, and when mobile service beats bringing the trailer in.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "bn-tr-links",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Unexpected breakdown? How to quickly get a trailer repair and back on the road →",
+                        "url": "https://sunstatetrailers.com/used-trailers/unexpected-breakdown-heres-how-you-can-quickly-get-a-trailer-repair-and-back-on-the-road/",
+                        "style": "link",
+                        "intent": "read-post"
+                      },
+                      {
+                        "label": "How to find trailer parts in Tampa at Sun State Trailers →",
+                        "url": "https://sunstatetrailers.com/trailer-rentals/how-to-find-trailer-parts-in-tampa-at-sun-state-trailers/",
+                        "style": "link",
+                        "intent": "read-post"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "bn-tr-more",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Sun State Trailers parts & service →",
+                        "url": "https://sunstatetrailers.com/parts-and-service/",
+                        "style": "link",
+                        "intent": "learn-more"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "bn-appt",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "styles": {
+                "base": {
+                  "background": "ink",
+                  "paddingTop": 40,
+                  "paddingRight": 36,
+                  "paddingBottom": 40,
+                  "paddingLeft": 36
+                }
+              },
+              "children": [
+                {
+                  "id": "bn-ap-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Turn the advice into an appointment.",
+                    "eyebrow": "FROM READING TO FIXING",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "bn-ap-b",
+                  "type": "text",
+                  "props": {
+                    "text": "Most of these posts end the same way: get it looked at before it becomes a tow. Our service departments run until 7 PM on weekdays, mobile service comes to your yard, and Certified Fleet covers after hours.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "bn-ap-links",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "schedule-service",
+                        "style": "link"
+                      },
+                      {
+                        "ctaId": "mobile-service",
+                        "style": "link"
+                      },
+                      {
+                        "ctaId": "parts-department",
+                        "style": "link"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bl-more",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-grid",
+        "values": {
+          "eyebrow": "MORE FROM SUN STATE",
+          "heading": "Elsewhere on the site.",
+          "body": "",
+          "span": 3,
+          "background": "paper",
+          "anchor": "bl-more",
+          "items": [
+            {
+              "title": "News & Press",
+              "body": "Dealership announcements, awards and coverage from around Central and Southwest Florida.",
+              "linkLabel": "News & Press →",
+              "linkUrl": "/news"
+            },
+            {
+              "title": "Videos",
+              "body": "Walkarounds, service explainers and the S13 Integrated Powertrain video series.",
+              "linkLabel": "Videos →",
+              "linkUrl": "/videos"
+            },
+            {
+              "title": "Reviews",
+              "body": "What customers say about our service, parts and sales teams in their own words.",
+              "linkLabel": "Reviews →",
+              "linkUrl": "/reviews"
+            },
+            {
+              "title": "Community",
+              "body": "Where Sun State shows up outside the shop — schools, charities and local events.",
+              "linkLabel": "Community →",
+              "linkUrl": "/community-involvement"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "bl-faq",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "card",
+        "anchor": "bl-faq"
+      },
+      "children": [
+        {
+          "id": "bf-head-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "bf-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "bf-head-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Common questions.",
+                    "eyebrow": "ABOUT THE BLOG",
+                    "headingLevel": 2
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bf-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "bf-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "bf-list",
+                  "type": "widget",
+                  "props": {
+                    "widget": "faq",
+                    "config": {
+                      "items": [
+                        {
+                          "q": "Who writes the Sun State blog?",
+                          "a": "Posts come from our service, parts and aftermarket teams — the technicians and specialists who work on International trucks and Hyundai Translead and Globe trailers every day across Tampa, Sarasota, Davenport and Brooksville."
+                        },
+                        {
+                          "q": "What topics does the blog cover?",
+                          "a": "Preventative maintenance and oil change intervals, alignment, air brake and suspension parts, electrical diagnostics, fuel system care, fleet service programs, trailer repair, and what to expect from an International truck service center."
+                        },
+                        {
+                          "q": "Does the blog cover trailers as well as trucks?",
+                          "a": "Yes. Sun State Trailers covers trailer repair topics including finding parts, getting a trailer repaired quickly after a breakdown, and mobile trailer service, alongside the truck maintenance posts."
+                        },
+                        {
+                          "q": "Can I get help with something I read here?",
+                          "a": "Yes. Call 800.741.7566 or submit a service appointment request, and a service advisor will look at the specific unit rather than the general case."
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bl-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-compact",
+        "values": {
+          "eyebrow": "QUESTIONS ON YOUR OWN UNIT?",
+          "heading": "Ask a technician, not an article.",
+          "body": "Call 800.741.7566 with your VIN or unit number and we'll tell you what we'd check first.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact#contact-form",
+          "background": "ink"
+        }
+      }
+    }
+  ]
+}
