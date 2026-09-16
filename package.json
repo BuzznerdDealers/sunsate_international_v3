@@ -12,10 +12,13 @@
     "schemas": "node scripts/export-schemas.mjs",
     "test": "node --test renderer/renderer.spec.mjs",
     "validate": "node scripts/validate.mjs",
-    "check": "npm run validate && npm test && npm run build",
+    "blog:sync": "node tools/blog-sync/sync.mjs",
+    "blog:sync-check": "node tools/blog-sync/sync.mjs --check",
+    "check": "npm run validate && npm run blog:sync-check && npm test && npm run build",
     "blog:test": "node tools/blog-import/import.mjs --test",
     "blog:import": "node tools/blog-import/import.mjs --all",
     "blog:retry": "node tools/blog-import/import.mjs --retry",
-    "blog:test-suite": "node --test tools/blog-import/test/*.spec.mjs"
+    "blog:test-suite": "node --test tools/blog-import/test/*.spec.mjs",
+    "blog:sync-test": "node --test tools/blog-sync/test/*.spec.mjs"
   }
 }

@@ -170,6 +170,46 @@ within a few dozen pixels of the handoff except where this section says otherwis
 
 ---
 
+## 4a. The blog: one record per post
+
+A blog is **one record**, `site/blog/posts/<slug>.json` — the post's title, date, topic,
+description, featured image and body. Everything anything shows about that post is read
+from it, through its slug:
+
+| Where | What it reads |
+|---|---|
+| `/blog` card | its `slug` names the post; topic, date, title, link, excerpt and featured image are projected from that record |
+| **Read more** | built from the record's slug, so it opens the record the card came from |
+| `/blog/posts/<slug>` | masthead from `title`/`date`/`coverImage`, category from `topic`, then the record's body **in full** |
+
+This was two records until now. The Blog page's `post-cards` node carried its own copy of
+each post's five fields, typed out per card, and nothing tied a card to the post it stood
+for. So a thumbnail set on a card stayed on the card: the post's own page reads
+`coverImage`, which still held whatever the import left there, and **Read more** landed on
+a picture nobody had chosen. Two copies of one blog, drifting apart from the first edit.
+
+`node tools/blog-sync/sync.mjs` projects the records onto the cards and runs inside
+`npm run check`, so a card edited away from its post fails the build rather than shipping.
+Which posts the page shows, and in what order, stays the page's decision — sync fills the
+rest. `tools/blog-sync/README.md` has the detail.
+
+Two consequences worth knowing:
+
+- **A post's featured image is set on Posts, not on the card.** One field, both surfaces,
+  and it cannot reach another post.
+- **The old site's default thumbnails are cleared.** They were the images the detail pages
+  were drawing while the cards drew placeholders — the mismatch above. Each record now
+  carries no featured image until one is set, so card and page agree on the placeholder.
+  The migration (§6) brings the real ones back, downloaded into `public/img/blog/<slug>/`.
+
+The nine post records hold their real excerpt and no body yet: the stub that stood in for
+one — a note and a "Read the original article" link off to `sunstateintl.com` — is gone, so
+what the page shows is the post's own content and nothing else. `npm run blog:import`
+fills the bodies in; it could not be run from the session that made this change, because
+egress to `www.sunstateintl.com` is denied by the environment's network policy.
+
+---
+
 ## 5. Platform gaps found while building this
 
 1. **A component prop with a non-empty default cannot be turned off by a placement.**
@@ -229,6 +269,20 @@ No `customHtml` block is used anywhere in this site.
 
 ---
 
+
+Two more, found fixing the blog's data model:
+
+11. **A coded widget cannot read the site's own data.** `site/widgets/*` are rendered from
+    their own props and nothing else — there is no `ctx.posts` and no prop type that binds
+    one. A post grid with topic chips, a "read more" label and more than six cards therefore
+    cannot be built from records inside `site/`, which is why the Blog page's cards are
+    projected by a repo tool (§4a) instead of resolved at build time.
+12. **`postsList` is a teaser, not an index.** It is the one block that resolves real posts,
+    but it caps at six, emits no `data-bz-part="item"` so the `filter` behaviour cannot see
+    its cards, carries no topic and has no link label. Giving it those would let a blog
+    index be one record-driven node, and would make the drift in §4a impossible rather than
+    merely detected.
+
 ## 6. What the dealer still has to supply
 
 - **Photography.** Every photograph in the handoff is a slot; each one here is a real
@@ -239,7 +293,11 @@ No `customHtml` block is used anywhere in this site.
   pages use the live `locations-map` widget, which needs the channel's Locations module.
 - **Staff.** `/meet-the-team` renders six `staff` widgets keyed by department name. The
   handoff's 38-person roster is in `data/meet-the-team.json` for import.
-- **Blog bodies.** Nine posts, each with its excerpt and a link to the original article.
+- **Blog bodies.** Nine posts, each with its excerpt and no body yet. `npm run blog:import`
+  migrates them from the live site; see §4a.
+- **Blog featured images.** Set on Posts → (post) → featured image. That one field is what
+  both the `/blog` card and the post's page draw (§4a); the cards show a placeholder in the
+  same box until it is set.
 - **`pageType` on each page and the analytics bags on both forms.** Deliberately unset:
   their allowed values come from whichever analytics providers the dealer has enabled, so
   they are set on the dashboard (Pages → page settings, and Forms), not here. `npm run
@@ -252,11 +310,13 @@ No `customHtml` block is used anywhere in this site.
 ## 7. Verified state
 
 ```
-npm run validate   exit 0 — 31 pages, 5 forms, 37 buttons, 1 template, 14 components,
-                            9 coded widgets; notes only (pageType, REPLACE_ placeholders,
-                            the brochure grid from §5.4)
-npm test           exit 0 — 124/124
-npm run build      exit 0 — 31 pages + 9 posts + the blog index, sitemap, robots, llms.txt
+npm run validate      exit 0 — notes only (pageType, REPLACE_ placeholders, the brochure
+                               grid from §5.4)
+npm run blog:sync-check exit 0 — 4 cards match their post records (§4a)
+npm test              exit 0 — 132/132
+npm run blog:sync-test exit 0 — 10/10
+npm run build         exit 0 — 32 pages + 9 posts + the blog index, sitemap, robots,
+                               llms.txt
 ```
 
 No horizontal overflow at 390px, 900px or 1440px on any of the 32 routes.
