@@ -4,7 +4,7 @@
   "date": "2026-07-30",
   "description": "Maybe your truck pulls to one side, your steering wheel feels off-center, or your tires are wearing unevenly. While these may seem like minor issues at first, they can quickly turn into expensive repairs, poor fuel economy, and unnecessary downtime.",
   "status": "published",
-  "coverImage": "https://www.sunstateintl.com/wp-content/uploads/2026/07/fleet-alignment-service-400x250.jpg",
+  "coverImage": "/img/photo-placeholder.svg",
   "topic": "Service",
   "nodes": [
     {
@@ -33,7 +33,7 @@
                   "id": "intro-eyebrow",
                   "type": "heading",
                   "props": {
-                    "text": "When to Schedule Semi Truck Alignment Near Me",
+                    "text": "Small alignment problems get expensive quickly",
                     "headingLevel": 2,
                     "eyebrow": "SERVICE"
                   }
@@ -47,10 +47,145 @@
                   }
                 },
                 {
-                  "id": "intro-note",
+                  "id": "intro-lede",
                   "type": "text",
                   "props": {
-                    "text": "The full article was published on sunstateintl.com. Paste the migrated body here in Posts → this post, and the card on the blog index updates with it.",
+                    "text": "Alignment is one of the cheapest services on the schedule and one of the most expensive to put off. Left alone, a truck that is out of specification eats tires, burns extra fuel on every mile, and works the steering and suspension harder than it should.",
+                    "width": "prose"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "body",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 2
+      },
+      "children": [
+        {
+          "id": "body-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "body-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "s1-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Signs your truck needs an alignment",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "s1-p1",
+                  "type": "text",
+                  "props": {
+                    "text": "Most alignment work starts with a driver noticing something rather than with a mileage reading. If any of the following show up on a unit you run, get the axle geometry measured before the tires pay for it.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "s1-list",
+                  "type": "list",
+                  "props": {
+                    "heading": "What to look and listen for",
+                    "headingLevel": 3,
+                    "columns": 2,
+                    "items": [
+                      {
+                        "label": "Uneven tread wear",
+                        "desc": "One edge of the tire wearing faster than the other is usually the earliest indicator, and it shows up long before the truck feels wrong to drive."
+                      },
+                      {
+                        "label": "An off-center steering wheel",
+                        "desc": "If the wheel is not centered while the truck is tracking straight, the alignment should be inspected."
+                      },
+                      {
+                        "label": "Pulling to one side",
+                        "desc": "A truck that drifts without steering input is working against itself, and the driver is correcting for it all day."
+                      },
+                      {
+                        "label": "Excessive vibration",
+                        "desc": "Vibration often points at worn suspension components that are best replaced as part of the alignment rather than after it."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "s2-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "What knocks a truck out of specification",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "s2-p1",
+                  "type": "text",
+                  "props": {
+                    "text": "Commercial trucks meet conditions every day that move components out of specification a little at a time. A hard hit from a pothole or a curb can shift wheel angles enough to cause long-term problems, and as suspension components wear, the alignment changes with them.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "s2-p2",
+                  "type": "text",
+                  "props": {
+                    "text": "That is why suspension and alignment are treated together here. Replacing a worn bushing or shock and then aligning the truck gives a reading that holds; aligning around worn parts gives one that does not.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "s3-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "When to schedule the inspection",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "s3-p1",
+                  "type": "text",
+                  "props": {
+                    "text": "There is no universal mileage interval, because no two operations put the same work through a truck. Instead of a number, use the triggers: any of the symptoms above, after suspension or steering work, after a hard impact, and whenever a new set of tires is going on.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "s3-p2",
+                  "type": "text",
+                  "props": {
+                    "text": "Many fleets simply fold an alignment check into scheduled service appointments, which turns it into preventive maintenance instead of a repair. Ignoring the issue usually ends in premature tire replacement and more extensive suspension repair, which costs far more than catching it early.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "s4-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why this is not a tape-measure job",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "s4-p1",
+                  "type": "text",
+                  "props": {
+                    "text": "Commercial truck alignment needs more than basic measuring tools. Computerized equipment measures axle geometry across the whole vehicle, and an experienced technician reads what handheld tools cannot: the underlying suspension condition that is moving those numbers in the first place.",
                     "width": "prose"
                   }
                 }

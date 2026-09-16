@@ -4,7 +4,7 @@
   "date": "2026-06-14",
   "description": "For owner-operators and fleet managers alike, routine maintenance isn’t just another item on the calendar. It’s one of the smartest investments you can make in your equipment.",
   "status": "published",
-  "coverImage": "https://www.sunstateintl.com/wp-content/uploads/2026/07/commercial-truck-oil-change-400x250.jpg",
+  "coverImage": "/img/photo-placeholder.svg",
   "topic": "Maintenance",
   "nodes": [
     {
@@ -33,7 +33,7 @@
                   "id": "intro-eyebrow",
                   "type": "heading",
                   "props": {
-                    "text": "Commercial Truck Oil Change Mistakes That Cost You",
+                    "text": "The cheapest service on the schedule protects the most expensive part of the truck",
                     "headingLevel": 2,
                     "eyebrow": "MAINTENANCE"
                   }
@@ -47,25 +47,122 @@
                   }
                 },
                 {
-                  "id": "intro-note",
+                  "id": "intro-lede",
                   "type": "text",
                   "props": {
-                    "text": "The full article was published on sunstateintl.com. Paste the migrated body here in Posts → this post, and the card on the blog index updates with it.",
+                    "text": "A routine commercial truck oil change is one of the simplest services you can book, and it does more than almost anything else to protect the engine, hold down repair costs and extend the life of the truck. Cutting corners on it is where a lot of expensive engine work begins.",
+                    "width": "prose"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "body",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 2
+      },
+      "children": [
+        {
+          "id": "body-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "body-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "s1-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Mistakes that cost real money",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "s1-p1",
+                  "type": "text",
+                  "props": {
+                    "text": "Four patterns account for most of the oil-related engine damage we see.",
                     "width": "prose"
                   }
                 },
                 {
-                  "id": "intro-cta",
-                  "type": "buttons",
+                  "id": "s1-list",
+                  "type": "list",
                   "props": {
+                    "heading": "What to avoid",
+                    "headingLevel": 3,
+                    "columns": 2,
                     "items": [
                       {
-                        "label": "Read the original article →",
-                        "url": "https://www.sunstateintl.com/commercial-truck-oil-change-mistakes-that-cost-you/",
-                        "style": "link",
-                        "intent": "read-post"
+                        "label": "Skipping scheduled changes",
+                        "desc": "Oil gradually loses its ability to lubricate as contaminants, soot and debris build up. Waiting too long increases engine wear and reduces fuel efficiency."
+                      },
+                      {
+                        "label": "Using low-quality filters",
+                        "desc": "Not every filter is built to manufacturer standards. A quality filter removes contaminants while maintaining proper oil flow through the engine; a cheap one compromises both."
+                      },
+                      {
+                        "label": "The wrong oil specification",
+                        "desc": "Modern diesel engines and their emissions systems are specified for particular oil grades. The wrong one is not a saving."
+                      },
+                      {
+                        "label": "Treating it as an oil change only",
+                        "desc": "The service is also an inspection. Many expensive repairs start as small issues that a technician would have caught while the truck was already on the lift."
                       }
                     ]
+                  }
+                },
+                {
+                  "id": "s2-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Intervals belong to the operation, not the calendar",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "s2-p1",
+                  "type": "text",
+                  "props": {
+                    "text": "Idle time, load, terrain and duty cycle all change how quickly oil degrades. A truck running short local routes in Florida heat is not on the same schedule as one running long highway miles, even when the odometers agree.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "s2-p2",
+                  "type": "text",
+                  "props": {
+                    "text": "The right interval comes from the manufacturer specification for the engine, adjusted for how the unit actually works. Our service team will set that interval with you rather than defaulting to a number off a chart.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "s3-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Preventive maintenance is where the savings are",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "s3-p1",
+                  "type": "text",
+                  "props": {
+                    "text": "Regular inspections and scheduled oil change services let technicians identify developing problems before they turn into breakdowns. That is the whole argument for preventive maintenance: it converts an unplanned road call into a planned bay visit, and a planned bay visit is always the cheaper of the two.",
+                    "width": "prose"
                   }
                 }
               ]

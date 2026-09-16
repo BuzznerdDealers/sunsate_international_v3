@@ -4,7 +4,7 @@
   "date": "2026-06-29",
   "description": "Understanding how semi truck suspension parts work and when they need attention is one of the best ways to keep your trucks operating safely and efficiently.",
   "status": "published",
-  "coverImage": "https://www.sunstateintl.com/wp-content/uploads/2026/06/fleet-maintenance-inspection-400x250.jpg",
+  "coverImage": "/img/photo-placeholder.svg",
   "topic": "Parts",
   "nodes": [
     {
@@ -33,7 +33,7 @@
                   "id": "intro-eyebrow",
                   "type": "heading",
                   "props": {
-                    "text": "Signs You Need to Replace Your Semi Truck Suspension Parts",
+                    "text": "Suspension wear shows up in the tires before it shows up in the ride",
                     "headingLevel": 2,
                     "eyebrow": "PARTS"
                   }
@@ -47,25 +47,122 @@
                   }
                 },
                 {
-                  "id": "intro-note",
+                  "id": "intro-lede",
                   "type": "text",
                   "props": {
-                    "text": "The full article was published on sunstateintl.com. Paste the migrated body here in Posts → this post, and the card on the blog index updates with it.",
+                    "text": "The suspension system carries more of the truck than most people credit it with: stability, steering control, tire wear, cargo protection and driver safety all depend on it. Worn components affect every one of those at once.",
+                    "width": "prose"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "body",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 2
+      },
+      "children": [
+        {
+          "id": "body-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "body-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "s1-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "The warning signs",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "s1-p1",
+                  "type": "text",
+                  "props": {
+                    "text": "Suspension problems tend to be reported late, because the change happens slowly enough that a driver adapts to it. These are the signs worth acting on.",
                     "width": "prose"
                   }
                 },
                 {
-                  "id": "intro-cta",
-                  "type": "buttons",
+                  "id": "s1-list",
+                  "type": "list",
                   "props": {
+                    "heading": "What to check",
+                    "headingLevel": 3,
+                    "columns": 2,
                     "items": [
                       {
-                        "label": "Read the original article →",
-                        "url": "https://www.sunstateintl.com/signs-you-need-to-replace-your-semi-truck-suspension-parts/",
-                        "style": "link",
-                        "intent": "read-post"
+                        "label": "Uneven tire wear",
+                        "desc": "Often the very first sign. When suspension components wear, the truck no longer distributes its weight evenly across the tires."
+                      },
+                      {
+                        "label": "Rough ride quality",
+                        "desc": "If the truck suddenly feels rougher, the suspension is no longer absorbing impact the way it should."
+                      },
+                      {
+                        "label": "Leaning or sagging",
+                        "desc": "A unit that sits low on one corner, or leans under load, is telling you something about springs, bushings or air springs."
+                      },
+                      {
+                        "label": "Noise over bumps",
+                        "desc": "Knocking or clunking over expansion joints points at worn bushings, pins or shock mounts."
                       }
                     ]
+                  }
+                },
+                {
+                  "id": "s2-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why catching it early matters",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "s2-p1",
+                  "type": "text",
+                  "props": {
+                    "text": "The earlier a suspension problem is found, the easier and cheaper the repair usually is. The longer worn components run, the more strain they put on tires, steering and driveline components, so a single worn part turns into a list of them.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "s2-p2",
+                  "type": "text",
+                  "props": {
+                    "text": "It also works in the other direction. Suspension condition and alignment are linked, so a truck that is going out of alignment repeatedly is often telling you about a suspension part rather than about the alignment itself.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "s3-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Getting it inspected",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "s3-p1",
+                  "type": "text",
+                  "props": {
+                    "text": "A suspension inspection is quick and is worth folding into scheduled service. Our parts departments stock components for all makes and models, and our technicians can replace what is worn and align the truck in the same visit so the new geometry holds.",
+                    "width": "prose"
                   }
                 }
               ]

@@ -4,7 +4,7 @@
   "date": "2026-07-05",
   "description": "Every vehicle in your operation plays a critical role in your business, and even one unexpected breakdown can create a ripple effect of missed deliveries, unhappy customers, and lost revenue. That’s why choosing the right fleet service providers matters.",
   "status": "published",
-  "coverImage": "https://www.sunstateintl.com/wp-content/uploads/2026/08/commercial-truck-service-400x250.jpg",
+  "coverImage": "/img/photo-placeholder.svg",
   "topic": "Fleet",
   "nodes": [
     {
@@ -33,7 +33,7 @@
                   "id": "intro-eyebrow",
                   "type": "heading",
                   "props": {
-                    "text": "Why Sun State is One of the Top Fleet Service Providers",
+                    "text": "Uptime is the only fleet metric that matters",
                     "headingLevel": 2,
                     "eyebrow": "FLEET"
                   }
@@ -47,25 +47,122 @@
                   }
                 },
                 {
-                  "id": "intro-note",
+                  "id": "intro-lede",
                   "type": "text",
                   "props": {
-                    "text": "The full article was published on sunstateintl.com. Paste the migrated body here in Posts → this post, and the card on the blog index updates with it.",
+                    "text": "Sun State International is a Florida International truck service center providing fleet repair and maintenance, quality OEM parts and technicians whose job is to keep your units earning. Fleet work is judged on one thing, and it is not the hourly rate.",
+                    "width": "prose"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "body",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 2
+      },
+      "children": [
+        {
+          "id": "body-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "body-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "s1-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "What fleets get here",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "s1-p1",
+                  "type": "text",
+                  "props": {
+                    "text": "The best fleet service providers prevent disruptions rather than reacting to them. That comes down to a few things working together.",
                     "width": "prose"
                   }
                 },
                 {
-                  "id": "intro-cta",
-                  "type": "buttons",
+                  "id": "s1-list",
+                  "type": "list",
                   "props": {
+                    "heading": "How we keep fleets moving",
+                    "headingLevel": 3,
+                    "columns": 2,
                     "items": [
                       {
-                        "label": "Read the original article →",
-                        "url": "https://www.sunstateintl.com/why-sun-state-is-one-of-the-top-fleet-service-providers/",
-                        "style": "link",
-                        "intent": "read-post"
+                        "label": "Proactive maintenance",
+                        "desc": "Scheduled work built around how your units actually run, so problems are found in the bay instead of on the road."
+                      },
+                      {
+                        "label": "Sales, service and parts together",
+                        "desc": "With all three working from the same building, fleets spend less time waiting and more time on the road."
+                      },
+                      {
+                        "label": "Factory-trained technicians",
+                        "desc": "As an authorized International truck service center, our technicians know these trucks in depth rather than in general."
+                      },
+                      {
+                        "label": "An OEM parts inventory",
+                        "desc": "Genuine International components on the shelf reduce repair delays, and parts engineered for the vehicle hold up longer."
                       }
                     ]
+                  }
+                },
+                {
+                  "id": "s2-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Family-owned, and it shows in how we work",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "s2-p1",
+                  "type": "text",
+                  "props": {
+                    "text": "We have built this business over three decades on hard work, dependable service and genuine relationships. Customers are treated as part of an extended family, which in practice means straightforward answers, practical solutions and no interest in selling work that does not need doing.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "s2-p2",
+                  "type": "text",
+                  "props": {
+                    "text": "For a fleet manager, that is worth more than a rate card. It means you can call and get a real answer about whether a unit should go in now or run to the next scheduled service.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "s3-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Talk to us about your fleet",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "s3-p1",
+                  "type": "text",
+                  "props": {
+                    "text": "If you run units across West Central Florida, we can set up a maintenance schedule around your routes and your duty cycles rather than a generic interval. Call the number below and ask for the service department at the location nearest your yard.",
+                    "width": "prose"
                   }
                 }
               ]
@@ -101,7 +198,7 @@
                   "id": "post-cta-h",
                   "type": "heading",
                   "props": {
-                    "text": "Got the same symptom on a unit you run?",
+                    "text": "Running a fleet across West Central Florida?",
                     "headingLevel": 2
                   }
                 },
@@ -109,7 +206,7 @@
                   "id": "post-cta-b",
                   "type": "text",
                   "props": {
-                    "text": "Call 800.741.7566 and we'll look at the specific truck or trailer instead of the general case.",
+                    "text": "Call 800.741.7566 and we'll build a maintenance schedule around your routes and duty cycles instead of a generic interval.",
                     "width": "prose"
                   }
                 },

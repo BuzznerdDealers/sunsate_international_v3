@@ -4,7 +4,7 @@
   "date": "2026-06-19",
   "description": "Whether you operate a single truck or manage an entire fleet, choosing the right International truck service center can make a significant difference in your uptime, operating costs, and overall peace of mind.",
   "status": "published",
-  "coverImage": "https://www.sunstateintl.com/wp-content/uploads/2026/07/truck-engine-diagnostics-400x250.jpg",
+  "coverImage": "/img/photo-placeholder.svg",
   "topic": "Service",
   "nodes": [
     {
@@ -33,7 +33,7 @@
                   "id": "intro-eyebrow",
                   "type": "heading",
                   "props": {
-                    "text": "What to Expect From an International Truck Service Center",
+                    "text": "What a dealer service department does differently",
                     "headingLevel": 2,
                     "eyebrow": "SERVICE"
                   }
@@ -47,25 +47,114 @@
                   }
                 },
                 {
-                  "id": "intro-note",
+                  "id": "intro-lede",
                   "type": "text",
                   "props": {
-                    "text": "The full article was published on sunstateintl.com. Paste the migrated body here in Posts → this post, and the card on the blog index updates with it.",
+                    "text": "An International truck dealer service department works on International trucks every day. That focus shows up in diagnostic accuracy, in parts availability and in how long a truck stays in the bay.",
+                    "width": "prose"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "body",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 2
+      },
+      "children": [
+        {
+          "id": "body-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "body-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "s1-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "What a service visit should include",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "s1-p1",
+                  "type": "text",
+                  "props": {
+                    "text": "Whatever the repair, these are the things worth expecting from the department you hand your truck to.",
                     "width": "prose"
                   }
                 },
                 {
-                  "id": "intro-cta",
-                  "type": "buttons",
+                  "id": "s1-list",
+                  "type": "list",
                   "props": {
+                    "heading": "What to expect",
+                    "headingLevel": 3,
+                    "columns": 2,
                     "items": [
                       {
-                        "label": "Read the original article →",
-                        "url": "https://www.sunstateintl.com/what-to-expect-from-an-international-truck-service-center/",
-                        "style": "link",
-                        "intent": "read-post"
+                        "label": "Factory-trained technicians",
+                        "desc": "Technicians who know current engines, electrical systems, emissions technology, diagnostics and manufacturer repair procedures rather than learning them on your truck."
+                      },
+                      {
+                        "label": "Accurate diagnosis",
+                        "desc": "Experience means identifying the root cause quickly and recommending the right repair the first time, instead of working through parts."
+                      },
+                      {
+                        "label": "Clear communication",
+                        "desc": "You should be kept informed through the repair, with recommended services explained, so there are no surprises on the invoice."
+                      },
+                      {
+                        "label": "Genuine OEM parts",
+                        "desc": "Immediate access to parts designed for your truck, which is usually the difference between a repair finished today and one waiting on a supplier."
                       }
                     ]
+                  }
+                },
+                {
+                  "id": "s2-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Sales, parts and service under one roof",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "s2-p1",
+                  "type": "text",
+                  "props": {
+                    "text": "Our service departments are equipped to handle a wide range of maintenance and repair work for all makes and models, not only International units. Having sales, parts and service in the same building means a diagnosis does not have to wait on a parts order from somewhere else, and a unit that needs replacing rather than repairing can be discussed in the same visit.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "s3-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "How we work",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "s3-p1",
+                  "type": "text",
+                  "props": {
+                    "text": "The priorities are straightforward: quality repairs, honest communication, and getting you back on the road as quickly as we can. If a repair is not worth doing, we will tell you that too.",
+                    "width": "prose"
                   }
                 }
               ]
@@ -101,7 +190,7 @@
                   "id": "post-cta-h",
                   "type": "heading",
                   "props": {
-                    "text": "Got the same symptom on a unit you run?",
+                    "text": "Ready to book your truck in?",
                     "headingLevel": 2
                   }
                 },
@@ -109,7 +198,7 @@
                   "id": "post-cta-b",
                   "type": "text",
                   "props": {
-                    "text": "Call 800.741.7566 and we'll look at the specific truck or trailer instead of the general case.",
+                    "text": "Call 800.741.7566 and we'll talk through the work before it starts, not after.",
                     "width": "prose"
                   }
                 },

@@ -4,7 +4,7 @@
   "date": "2026-07-13",
   "description": "With today’s heavy-duty vehicles relying on dozens of sensors, electronic control modules, wiring harnesses, and onboard computers, even a small electrical issue can quickly turn into unexpected downtime. That’s why professional electrical diagnostic tools have become essential for keeping trucks on the road.",
   "status": "published",
-  "coverImage": "https://www.sunstateintl.com/wp-content/uploads/2026/07/truck-electrical-testing-400x250.jpg",
+  "coverImage": "/img/photo-placeholder.svg",
   "topic": "Diagnostics",
   "nodes": [
     {
@@ -33,7 +33,7 @@
                   "id": "intro-eyebrow",
                   "type": "heading",
                   "props": {
-                    "text": "How Electrical Diagnostic Tools Prevent Breakdowns",
+                    "text": "A fault code tells you where the computer noticed a problem, not what caused it",
                     "headingLevel": 2,
                     "eyebrow": "DIAGNOSTICS"
                   }
@@ -47,25 +47,122 @@
                   }
                 },
                 {
-                  "id": "intro-note",
+                  "id": "intro-lede",
                   "type": "text",
                   "props": {
-                    "text": "The full article was published on sunstateintl.com. Paste the migrated body here in Posts → this post, and the card on the blog index updates with it.",
+                    "text": "Electrical faults are one of the most common reasons a modern commercial truck ends up in a service bay. With dozens of sensors, electronic control modules, wiring harnesses and onboard computers in play, a small electrical issue turns into unexpected downtime quickly.",
+                    "width": "prose"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "body",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 2
+      },
+      "children": [
+        {
+          "id": "body-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "body-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "s1-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Reading a code is the start of the job, not the end",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "s1-p1",
+                  "type": "text",
+                  "props": {
+                    "text": "A diagnostic code identifies where a fault was detected. It does not identify the cause. A code pointing at a sensor circuit might be a failed sensor, a chafed wire, a corroded connector, a ground fault or a module that is not seeing the right voltage.",
                     "width": "prose"
                   }
                 },
                 {
-                  "id": "intro-cta",
-                  "type": "buttons",
+                  "id": "s1-p2",
+                  "type": "text",
                   "props": {
+                    "text": "Replacing the part the code names is how a truck comes back with the same complaint a week later. Professional technicians combine diagnostic equipment with experience to find the root cause instead of replacing parts and hoping.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "s2-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "What proper diagnostic work prevents",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "s2-p1",
+                  "type": "text",
+                  "props": {
+                    "text": "The value of good diagnostics is mostly in what does not happen.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "s2-list",
+                  "type": "list",
+                  "props": {
+                    "heading": "What accurate diagnostics avoid",
+                    "headingLevel": 3,
+                    "columns": 2,
                     "items": [
                       {
-                        "label": "Read the original article →",
-                        "url": "https://www.sunstateintl.com/how-electrical-diagnostic-tools-prevent-breakdowns/",
-                        "style": "link",
-                        "intent": "read-post"
+                        "label": "Parts replaced unnecessarily",
+                        "desc": "Every part swapped on a guess is money spent without fixing anything, and the truck is still down."
+                      },
+                      {
+                        "label": "Repeat visits",
+                        "desc": "A fault traced to its cause is a fault that stays fixed, instead of coming back as the same code on the next trip."
+                      },
+                      {
+                        "label": "Roadside breakdowns",
+                        "desc": "Most electrical failures give warning first. Found in the bay, they are a repair; found on the road, they are a road call and a lost day."
+                      },
+                      {
+                        "label": "Lost diagnostic time",
+                        "desc": "Manufacturer-approved equipment reads what generic tools cannot, so the truck spends less time being investigated."
                       }
                     ]
+                  }
+                },
+                {
+                  "id": "s3-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Make diagnostics part of the schedule",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "s3-p1",
+                  "type": "text",
+                  "props": {
+                    "text": "Including routine inspections and truck electrical diagnostics in a regular maintenance schedule lets technicians catch developing faults before they become expensive roadside failures. Working with an experienced diesel technician usually saves both time and money over the life of the unit.",
+                    "width": "prose"
                   }
                 }
               ]

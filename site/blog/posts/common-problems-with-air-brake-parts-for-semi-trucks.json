@@ -4,7 +4,7 @@
   "date": "2026-06-25",
   "description": "When even one part begins to wear out or fail, it can lead to longer stopping distances, unexpected downtime, expensive repairs, and failed inspections. Understanding the most common problems with air brake parts can help you recognize issues early and keep your trucks operating safely.",
   "status": "published",
-  "coverImage": "https://www.sunstateintl.com/wp-content/uploads/2026/07/air-brake-parts-truck-400x250.jpg",
+  "coverImage": "/img/photo-placeholder.svg",
   "topic": "Parts",
   "nodes": [
     {
@@ -33,7 +33,7 @@
                   "id": "intro-eyebrow",
                   "type": "heading",
                   "props": {
-                    "text": "Common Problems With Air Brake Parts for Semi Trucks",
+                    "text": "One worn component changes how the whole system stops",
                     "headingLevel": 2,
                     "eyebrow": "PARTS"
                   }
@@ -47,25 +47,122 @@
                   }
                 },
                 {
-                  "id": "intro-note",
+                  "id": "intro-lede",
                   "type": "text",
                   "props": {
-                    "text": "The full article was published on sunstateintl.com. Paste the migrated body here in Posts → this post, and the card on the blog index updates with it.",
+                    "text": "An air brake system is a chain of parts that only works as well as its weakest link. When one component begins to wear or fail, the result is longer stopping distances, unexpected downtime, expensive repairs, and failed inspections.",
+                    "width": "prose"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "body",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 2
+      },
+      "children": [
+        {
+          "id": "body-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "body-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "s1-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "The problems that come through the bay most often",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "s1-p1",
+                  "type": "text",
+                  "props": {
+                    "text": "These are the failures our parts and service teams see week in and week out on heavy-duty trucks.",
                     "width": "prose"
                   }
                 },
                 {
-                  "id": "intro-cta",
-                  "type": "buttons",
+                  "id": "s1-list",
+                  "type": "list",
                   "props": {
+                    "heading": "Common air brake failures",
+                    "headingLevel": 3,
+                    "columns": 2,
                     "items": [
                       {
-                        "label": "Read the original article →",
-                        "url": "https://www.sunstateintl.com/common-problems-with-air-brake-parts-for-semi-trucks/",
-                        "style": "link",
-                        "intent": "read-post"
+                        "label": "Air leaks",
+                        "desc": "The most common problem of all. Even a small leak forces the compressor to work harder and reduces available braking pressure over time."
+                      },
+                      {
+                        "label": "Worn brake shoes",
+                        "desc": "Shoes wear down every time the brakes are applied. How fast depends on load, terrain and driving style, not on the calendar."
+                      },
+                      {
+                        "label": "Moisture in the system",
+                        "desc": "Water that gets past the dryer corrodes components from the inside and can freeze in lines, which is why dryer cartridges are a maintenance item and not a fit-and-forget part."
+                      },
+                      {
+                        "label": "Out-of-adjustment slack adjusters",
+                        "desc": "Adjustment that has drifted changes stroke and braking balance across the vehicle, and it is one of the first things an inspector checks."
                       }
                     ]
+                  }
+                },
+                {
+                  "id": "s2-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why small brake faults get expensive",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "s2-p1",
+                  "type": "text",
+                  "props": {
+                    "text": "None of these failures announce themselves. A leak bleeds off pressure slowly, a shoe wears gradually, corrosion works out of sight. By the time a driver reports a problem, the fault has usually been developing for a while and has started to load other parts of the system.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "s2-p2",
+                  "type": "text",
+                  "props": {
+                    "text": "The cost is rarely the component itself. It is the road call, the day out of service, and the inspection that puts a unit out of service at the worst possible moment.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "s3-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Replacing parts with the right parts",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "s3-p1",
+                  "type": "text",
+                  "props": {
+                    "text": "Sun State International carries a wide selection of quality brake components for all makes and models of heavy-duty trucks, so a repair does not wait on an aftermarket supplier. If you would rather have the work done, our service departments handle brake inspection, adjustment and replacement across all six locations.",
+                    "width": "prose"
                   }
                 }
               ]

@@ -4,7 +4,7 @@
   "date": "2026-06-09",
   "description": "Fuel filters are responsible for removing dirt, debris, water, and contaminants before they reach sensitive fuel system components. For owner-operators and fleet managers, understanding how fuel filter pressure affects performance can help prevent unexpected downtime and extend the life of your truck.",
   "status": "published",
-  "coverImage": "https://www.sunstateintl.com/wp-content/uploads/2026/02/semi-truck-maintenance-inspection-400x250.jpg",
+  "coverImage": "/img/photo-placeholder.svg",
   "topic": "Maintenance",
   "nodes": [
     {
@@ -33,7 +33,7 @@
                   "id": "intro-eyebrow",
                   "type": "heading",
                   "props": {
-                    "text": "Why Fuel Filter Pressure In Your Semi Truck Matters",
+                    "text": "A restricted filter is a cheap part protecting expensive ones",
                     "headingLevel": 2,
                     "eyebrow": "MAINTENANCE"
                   }
@@ -47,25 +47,122 @@
                   }
                 },
                 {
-                  "id": "intro-note",
+                  "id": "intro-lede",
                   "type": "text",
                   "props": {
-                    "text": "The full article was published on sunstateintl.com. Paste the migrated body here in Posts → this post, and the card on the blog index updates with it.",
+                    "text": "Fuel filters remove dirt, debris, water and contaminants before they reach sensitive fuel system components. Keeping pressure through those filters where it should be is what keeps the engine running efficiently and the injectors and pumps out of the repair order.",
+                    "width": "prose"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "body",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 2
+      },
+      "children": [
+        {
+          "id": "body-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "body-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "s1-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "What happens when pressure drops",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "s1-p1",
+                  "type": "text",
+                  "props": {
+                    "text": "Modern diesel engines depend on consistent fuel pressure. When fuel cannot flow freely through a restricted filter, the whole fuel system is affected: the engine works harder to draw fuel, delivery becomes inconsistent, and performance and economy fall off.",
                     "width": "prose"
                   }
                 },
                 {
-                  "id": "intro-cta",
-                  "type": "buttons",
+                  "id": "s1-p2",
+                  "type": "text",
                   "props": {
+                    "text": "Left long enough, low fuel pressure damages the components the filter was there to protect. Injectors and high-pressure fuel pumps are among the most expensive parts on the truck, and both are sensitive to poor supply.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "s2-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Symptoms worth reporting",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "s2-p1",
+                  "type": "text",
+                  "props": {
+                    "text": "Drivers usually notice fuel supply problems as driveability complaints rather than as a pressure reading.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "s2-list",
+                  "type": "list",
+                  "props": {
+                    "heading": "What low fuel pressure feels like",
+                    "headingLevel": 3,
+                    "columns": 2,
                     "items": [
                       {
-                        "label": "Read the original article →",
-                        "url": "https://www.sunstateintl.com/why-fuel-filter-pressure-in-your-semi-truck-matters/",
-                        "style": "link",
-                        "intent": "read-post"
+                        "label": "Power loss under load",
+                        "desc": "Most obvious pulling a grade or accelerating loaded, when the engine is asking for the most fuel."
+                      },
+                      {
+                        "label": "Hard starting",
+                        "desc": "Especially after the truck has sat, when a restricted filter makes the system slow to prime."
+                      },
+                      {
+                        "label": "Rough running or surging",
+                        "desc": "Inconsistent delivery shows up as an engine that will not hold steady."
+                      },
+                      {
+                        "label": "Falling fuel economy",
+                        "desc": "A gradual drop across a unit, with nothing else changed, is worth a look at the filters."
                       }
                     ]
+                  }
+                },
+                {
+                  "id": "s3-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Replace before it restricts",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "s3-p1",
+                  "type": "text",
+                  "props": {
+                    "text": "Replacing filters before they become restricted is one of the simplest ways to avoid a major repair. For fleet operators, that means tracking filter changes against the schedule and the operating conditions rather than waiting for a driver complaint, and folding a fuel system check into routine preventive maintenance.",
+                    "width": "prose"
                   }
                 }
               ]

@@ -4,7 +4,7 @@
   "date": "2026-07-15",
   "description": "At Sun State International, we provide comprehensive semi truck service, genuine OEM parts, and experienced technicians who know International trucks inside and out. Our goal is simple: help keep your business moving with dependable service you can count on.",
   "status": "published",
-  "coverImage": "https://www.sunstateintl.com/wp-content/uploads/2026/08/sun-state-service-team-2-400x250.jpg",
+  "coverImage": "/img/photo-placeholder.svg",
   "topic": "Service",
   "nodes": [
     {
@@ -33,7 +33,7 @@
                   "id": "intro-eyebrow",
                   "type": "heading",
                   "props": {
-                    "text": "Why Visit Your Local International Truck Service Department",
+                    "text": "Local matters more than it sounds like it should",
                     "headingLevel": 2,
                     "eyebrow": "SERVICE"
                   }
@@ -47,25 +47,102 @@
                   }
                 },
                 {
-                  "id": "intro-note",
+                  "id": "intro-lede",
                   "type": "text",
                   "props": {
-                    "text": "The full article was published on sunstateintl.com. Paste the migrated body here in Posts → this post, and the card on the blog index updates with it.",
+                    "text": "Sun State International provides semi truck service, genuine OEM parts and technicians who know International trucks inside and out, across six West Central Florida locations. Here is what that proximity actually buys you.",
+                    "width": "prose"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "body",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 2
+      },
+      "children": [
+        {
+          "id": "body-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "body-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "s1-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Five reasons fleets use a dealer department",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "s1-list",
+                  "type": "list",
+                  "props": {
+                    "heading": "What a local dealer department gives you",
+                    "headingLevel": 3,
+                    "columns": 2,
+                    "items": [
+                      {
+                        "label": "Preventive maintenance that catches things early",
+                        "desc": "A professional department identifies small issues before they become expensive repairs, which reduces unexpected work and extends the life of the truck."
+                      },
+                      {
+                        "label": "Parts on the shelf",
+                        "desc": "An extensive parts inventory means many repairs are completed without waiting on an aftermarket supplier."
+                      },
+                      {
+                        "label": "Parts built for your truck",
+                        "desc": "OEM parts are designed for the specific vehicle, which is what makes fit, durability and long-term performance predictable."
+                      },
+                      {
+                        "label": "Professional diagnostics",
+                        "desc": "Modern trucks generate diagnostic information that needs specialized equipment to interpret. Manufacturer-approved tools identify issues accurately and eliminate unnecessary repairs."
+                      },
+                      {
+                        "label": "People who know your operation",
+                        "desc": "We would rather understand how you run than quote you a job. Recommendations are more useful when they come from someone who knows the route the truck is on."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "s2-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Downtime is the real cost",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "s2-p1",
+                  "type": "text",
+                  "props": {
+                    "text": "The invoice is rarely the expensive part of a breakdown. The expensive part is the load that did not move, the driver who could not work, and the customer who had to be called. Everything a service department does well is ultimately about keeping that from happening.",
                     "width": "prose"
                   }
                 },
                 {
-                  "id": "intro-cta",
-                  "type": "buttons",
+                  "id": "s2-p2",
+                  "type": "text",
                   "props": {
-                    "items": [
-                      {
-                        "label": "Read the original article →",
-                        "url": "https://www.sunstateintl.com/why-visit-your-local-international-truck-service-department/",
-                        "style": "link",
-                        "intent": "read-post"
-                      }
-                    ]
+                    "text": "That is also the argument for using the department near you rather than the one that happened to be closest when the truck stopped. A relationship with a local team means service history in one place and a shop that knows the unit before it arrives.",
+                    "width": "prose"
                   }
                 }
               ]
@@ -101,7 +178,7 @@
                   "id": "post-cta-h",
                   "type": "heading",
                   "props": {
-                    "text": "Got the same symptom on a unit you run?",
+                    "text": "Find the service department nearest your yard",
                     "headingLevel": 2
                   }
                 },
@@ -109,7 +186,7 @@
                   "id": "post-cta-b",
                   "type": "text",
                   "props": {
-                    "text": "Call 800.741.7566 and we'll look at the specific truck or trailer instead of the general case.",
+                    "text": "Call 800.741.7566 or book online, and we'll get your unit into the closest of our six locations.",
                     "width": "prose"
                   }
                 },
