@@ -9,7 +9,7 @@
         "eyebrow": "PARTS DEPARTMENT",
         "headline": "Find the parts you need, people you trust, and the support that keeps your business moving.",
         "image": {
-          "src": "/img/photo-placeholder.svg",
+          "src": "https://vendure.buzznerdrv.com/assets/source/ce/c-00001-1.png",
           "alt": "The Sun State parts counter — photograph to be supplied",
           "width": 1600,
           "height": 900
@@ -37,7 +37,8 @@
           },
           "width": "full"
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "parts-offer",
@@ -73,7 +74,8 @@
           "cta2Label": "Parts Specials →",
           "cta2Url": "/deal-of-the-week"
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "parts-trailer",
@@ -320,16 +322,17 @@
           "background": "card",
           "anchor": "mobile-support",
           "image": {
-            "src": "/img/photo-placeholder.svg",
+            "src": "https://vendure.buzznerdrv.com/assets/source/23/mobile-truck-service.jpg",
             "alt": "A Sun State mobile service truck — photograph to be supplied",
-            "width": 1600,
-            "height": 900
+            "width": 2000,
+            "height": 1333
           },
           "width": "full",
           "cta2Label": "Get Mobile Help ASAP →",
           "cta2Url": "/mobile-service"
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "parts-online",
@@ -345,7 +348,7 @@
           "background": "paper",
           "anchor": "online-orders",
           "image": {
-            "src": "/img/photo-placeholder.svg",
+            "src": "https://vendure.buzznerdrv.com/assets/source/40/sun-state-international-parts-counter-florida-scaled-1.jpg",
             "alt": "Ordering parts online — photograph to be supplied",
             "width": 1600,
             "height": 900
@@ -354,7 +357,8 @@
           "cta2Label": "Order Parts Online →",
           "cta2Url": "https://www.sunstateparts.com/login"
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "parts-return",
@@ -371,13 +375,14 @@
           "anchor": "return-policy",
           "width": "full",
           "image": {
-            "src": "/img/photo-placeholder.svg",
+            "src": "https://vendure.buzznerdrv.com/assets/source/21/sun-state-parts-return-policy-scaled-1.jpg",
             "alt": "Ordering parts online — photograph to be supplied",
             "width": 1600,
             "height": 900
           }
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "parts-credit",
@@ -394,13 +399,14 @@
           "anchor": "credit-options",
           "width": "full",
           "image": {
-            "src": "/img/photo-placeholder.svg",
+            "src": "https://vendure.buzznerdrv.com/assets/source/fa/parts-department-semi-truck-parts-scaled-1.jpg",
             "alt": "Ordering parts online — photograph to be supplied",
             "width": 1600,
             "height": 900
           }
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "parts-faq",
@@ -481,7 +487,8 @@
                           "a": "Yes. Register at the Sun State online parts store to browse inventory and order truck and trailer parts, with local delivery available across West Central Florida."
                         }
                       ]
-                    }
+                    },
+                    "snapshot": null
                   }
                 }
               ]
@@ -527,6 +534,11 @@
                   "props": {
                     "text": "For decades, Sun State International has built its reputation on dependable service, a knowledgeable team, and a genuine commitment to customer success. Our Parts Department is an extension of that promise, focused on keeping your trucks and trailers working, your drivers supported, and your business moving forward.",
                     "width": "prose"
+                  },
+                  "styles": {
+                    "base": {
+                      "textColor": "#ffffff"
+                    }
                   }
                 },
                 {
@@ -617,7 +629,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "parts-cta",
@@ -634,7 +647,8 @@
           "secondaryUrl": "",
           "background": "accent"
         }
-      }
+      },
+      "children": []
     }
   ]
 }
