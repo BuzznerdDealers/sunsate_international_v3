@@ -24,10 +24,10 @@
           }
         ],
         "image": {
-          "src": "/img/photo-placeholder.svg",
+          "src": "https://vendure.buzznerdrv.com/assets/source/e2/whatsapp-image-2026-09-16-at-10.49.40-pm.jpeg",
           "alt": "The Sun State Tampa dealership — photograph to be supplied",
           "width": 1600,
-          "height": 900
+          "height": 1066
         }
       }
     },
@@ -47,7 +47,7 @@
           "noticeLinkLabel": "Certified Fleet — (863) 880-2206",
           "noticeLinkUrl": "tel:+18638802206",
           "map": {
-            "src": "/img/photo-placeholder.svg",
+            "src": "https://vendure.buzznerdrv.com/assets/source/cb/tampa-fl-black-map-pin.png",
             "alt": "A map of the Tampa location — image to be supplied",
             "width": 1600,
             "height": 900
@@ -55,7 +55,8 @@
           "anchor": "tpa-summary",
           "background": "card"
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "tpa-hours",
@@ -90,7 +91,8 @@
           ],
           "background": "card"
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "tpa-onsite",
@@ -130,7 +132,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "tpa-extras",
@@ -159,7 +162,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "tpa-others",
@@ -211,7 +215,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "tpa-faq",
@@ -296,7 +301,8 @@
                           "a": "Sun State Aftermarket Parts is a few minutes away at 7105 East 6th Ave, Tampa, FL 33619, open 7:00 AM to 4:00 PM Monday through Friday. Call (813) 627-3282."
                         }
                       ]
-                    }
+                    },
+                    "snapshot": null
                   }
                 }
               ]
@@ -320,7 +326,8 @@
           "secondaryUrl": "/service-appointment",
           "background": "ink"
         }
-      }
+      },
+      "children": []
     }
   ]
 }
