@@ -505,7 +505,6 @@
           "heading": "The same trailers, every time.",
           "body": "At Sun State Trailers, customer service is our priority. With quality products, quick service, and dedicated care, we provide everything you need for your business to succeed. Explore our diverse selection of new and used trailers to find the equipment you're looking for.",
           "ctaLabel": "See what's available now",
-          "ctaUrl": "/store/inventory?type=trailer",
           "ctaStyle": "primary",
           "background": "card",
           "image": {
@@ -514,7 +513,13 @@
             "width": 1600,
             "height": 900
           },
-          "width": "boxed"
+          "width": "boxed",
+          "ctaUrl": "#"
+        }
+      },
+      "styles": {
+        "base": {
+          "height": 600
         }
       },
       "children": []
@@ -540,6 +545,11 @@
             "height": 900
           },
           "width": "boxed"
+        }
+      },
+      "styles": {
+        "base": {
+          "height": 600
         }
       },
       "children": []
