@@ -377,10 +377,10 @@
                 "phoneUrl": null,
                 "mapUrl": "https://www.google.com/maps/search/?api=1&query=40.7258,-111.961",
                 "email": null,
-                "brands": "Brand1 · Brand 2",
+                "brands": "Brand1 · Brand 2 · Brand 3",
                 "services": "",
                 "perks": "",
-                "brandKeys": "brand1 brand-2",
+                "brandKeys": "brand1 brand-2 brand-3",
                 "perkKeys": "",
                 "perk1": null,
                 "perk2": null,
@@ -397,6 +397,10 @@
               {
                 "value": "brand-2",
                 "label": "Brand 2"
+              },
+              {
+                "value": "brand-3",
+                "label": "Brand 3"
               },
               {
                 "value": "brand1",
