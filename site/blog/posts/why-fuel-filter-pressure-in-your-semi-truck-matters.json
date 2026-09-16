@@ -4,7 +4,7 @@
   "date": "2026-06-09",
   "description": "Fuel filters are responsible for removing dirt, debris, water, and contaminants before they reach sensitive fuel system components. For owner-operators and fleet managers, understanding how fuel filter pressure affects performance can help prevent unexpected downtime and extend the life of your truck.",
   "status": "published",
-  "coverImage": "https://www.sunstateintl.com/wp-content/uploads/2026/02/semi-truck-maintenance-inspection-400x250.jpg",
+  "coverImage": null,
   "topic": "Maintenance",
   "nodes": [
     {
@@ -31,11 +31,10 @@
               "children": [
                 {
                   "id": "intro-eyebrow",
-                  "type": "heading",
+                  "type": "text",
                   "props": {
-                    "text": "Why Fuel Filter Pressure In Your Semi Truck Matters",
-                    "headingLevel": 2,
-                    "eyebrow": "MAINTENANCE"
+                    "text": "Maintenance",
+                    "width": "prose"
                   }
                 },
                 {
@@ -44,28 +43,6 @@
                   "props": {
                     "text": "Fuel filters are responsible for removing dirt, debris, water, and contaminants before they reach sensitive fuel system components. For owner-operators and fleet managers, understanding how fuel filter pressure affects performance can help prevent unexpected downtime and extend the life of your truck.",
                     "width": "prose"
-                  }
-                },
-                {
-                  "id": "intro-note",
-                  "type": "text",
-                  "props": {
-                    "text": "The full article was published on sunstateintl.com. Paste the migrated body here in Posts → this post, and the card on the blog index updates with it.",
-                    "width": "prose"
-                  }
-                },
-                {
-                  "id": "intro-cta",
-                  "type": "buttons",
-                  "props": {
-                    "items": [
-                      {
-                        "label": "Read the original article →",
-                        "url": "https://www.sunstateintl.com/why-fuel-filter-pressure-in-your-semi-truck-matters/",
-                        "style": "link",
-                        "intent": "read-post"
-                      }
-                    ]
                   }
                 }
               ]

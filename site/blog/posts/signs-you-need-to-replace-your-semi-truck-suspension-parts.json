@@ -4,7 +4,7 @@
   "date": "2026-06-29",
   "description": "Understanding how semi truck suspension parts work and when they need attention is one of the best ways to keep your trucks operating safely and efficiently.",
   "status": "published",
-  "coverImage": "https://www.sunstateintl.com/wp-content/uploads/2026/06/fleet-maintenance-inspection-400x250.jpg",
+  "coverImage": null,
   "topic": "Parts",
   "nodes": [
     {
@@ -31,11 +31,10 @@
               "children": [
                 {
                   "id": "intro-eyebrow",
-                  "type": "heading",
+                  "type": "text",
                   "props": {
-                    "text": "Signs You Need to Replace Your Semi Truck Suspension Parts",
-                    "headingLevel": 2,
-                    "eyebrow": "PARTS"
+                    "text": "Parts",
+                    "width": "prose"
                   }
                 },
                 {
@@ -44,28 +43,6 @@
                   "props": {
                     "text": "Understanding how semi truck suspension parts work and when they need attention is one of the best ways to keep your trucks operating safely and efficiently.",
                     "width": "prose"
-                  }
-                },
-                {
-                  "id": "intro-note",
-                  "type": "text",
-                  "props": {
-                    "text": "The full article was published on sunstateintl.com. Paste the migrated body here in Posts → this post, and the card on the blog index updates with it.",
-                    "width": "prose"
-                  }
-                },
-                {
-                  "id": "intro-cta",
-                  "type": "buttons",
-                  "props": {
-                    "items": [
-                      {
-                        "label": "Read the original article →",
-                        "url": "https://www.sunstateintl.com/signs-you-need-to-replace-your-semi-truck-suspension-parts/",
-                        "style": "link",
-                        "intent": "read-post"
-                      }
-                    ]
                   }
                 }
               ]

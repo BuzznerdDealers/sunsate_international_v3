@@ -25,9 +25,16 @@
         ],
         "image": {
           "src": "/img/photo-placeholder.svg",
-          "alt": "A Capacity yard truck at work — photograph to be supplied",
+          "alt": "A Capacity yard truck at work ",
           "width": 1600,
           "height": 900
+        }
+      },
+      "styles": {
+        "base": {
+          "backgroundImage": "https://vendure.buzznerdrv.com/assets/source/37/075.jpg",
+          "backgroundSize": "cover",
+          "backgroundPosition": "center"
         }
       }
     },
@@ -167,7 +174,7 @@
                   "type": "image",
                   "props": {
                     "image": {
-                      "src": "/img/photo-placeholder.svg",
+                      "src": "https://vendure.buzznerdrv.com/assets/source/26/067.jpg",
                       "alt": "A Capacity yard truck in a distribution yard — photograph to be supplied",
                       "width": 1600,
                       "height": 900
@@ -196,7 +203,7 @@
           "items": [
             {
               "image": {
-                "src": "/img/photo-placeholder.svg",
+                "src": "https://vendure.buzznerdrv.com/assets/source/d0/tj6500.jpg",
                 "alt": "Capacity TJ5000 — photograph to be supplied",
                 "width": 1600,
                 "height": 900
@@ -210,10 +217,10 @@
             },
             {
               "image": {
-                "src": "/img/photo-placeholder.svg",
+                "src": "https://vendure.buzznerdrv.com/assets/source/d0/tj6500.jpg",
                 "alt": "Capacity TJ6500 — photograph to be supplied",
-                "width": 1600,
-                "height": 900
+                "width": 900,
+                "height": 893
               },
               "eyebrow": "TANDEM AXLE",
               "title": "TJ6500",
@@ -224,10 +231,10 @@
             },
             {
               "image": {
-                "src": "/img/photo-placeholder.svg",
+                "src": "https://vendure.buzznerdrv.com/assets/source/cf/tj9000.jpg",
                 "alt": "Capacity TJ9000 — photograph to be supplied",
-                "width": 1600,
-                "height": 900
+                "width": 900,
+                "height": 893
               },
               "eyebrow": "SINGLE AXLE · HEAVY DUTY",
               "title": "TJ9000",
@@ -238,7 +245,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "cy-duraride",
@@ -270,8 +278,8 @@
                   "type": "image",
                   "props": {
                     "image": {
-                      "src": "/img/photo-placeholder.svg",
-                      "alt": "A Dura-Ride equipped cab interior — photograph to be supplied",
+                      "src": "https://vendure.buzznerdrv.com/assets/source/3d/925.jpg",
+                      "alt": "A Dura-Ride equipped cab interior",
                       "width": 1600,
                       "height": 900
                     },
@@ -370,7 +378,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "cy-parts",
@@ -404,7 +413,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "cy-fleet",
@@ -444,7 +454,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "cy-testimonials",
@@ -588,7 +599,8 @@
                           "a": "Yes. Our aftermarket parts department stocks Capacity yard tractor parts and handles warranty, and our service departments in Tampa, Sarasota and Davenport service yard trucks, with mobile service available at your yard."
                         }
                       ]
-                    }
+                    },
+                    "snapshot": null
                   }
                 }
               ]
@@ -612,7 +624,8 @@
           "secondaryUrl": "/store/inventory?brand=capacity",
           "background": "ink"
         }
-      }
+      },
+      "children": []
     }
   ]
 }

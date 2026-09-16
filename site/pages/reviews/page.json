@@ -10,10 +10,10 @@
         "headline": "What Our Customers Are Saying",
         "subhead": "Fleet managers, owner-operators and RV owners on service, parts, trucks and trailers at Sun State International Trucks and Sun State Trailers across Tampa, Sarasota, Davenport and Brooksville.",
         "image": {
-          "src": "/img/photo-placeholder.svg",
+          "src": "https://vendure.buzznerdrv.com/assets/source/4a/customer-care.jpeg",
           "alt": "A Sun State service bay — photograph to be supplied",
-          "width": 1600,
-          "height": 900
+          "width": 1500,
+          "height": 600
         }
       }
     },
@@ -351,7 +351,8 @@
           "secondaryUrl": "/inventory",
           "background": "ink"
         }
-      }
+      },
+      "children": []
     }
   ]
 }

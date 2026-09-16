@@ -1,0 +1,21 @@
+{
+  "id": "result-count",
+  "label": "Result count",
+  "description": "The live count beside a filtered list. The platform filter behaviour rewrites it from the template every time a chip is pressed; the text below is what shows before it binds and in the Design canvas.",
+  "props": [
+    {
+      "key": "template",
+      "type": "text",
+      "label": "Wording — {n} is the number showing",
+      "default": "{n} articles"
+    },
+    {
+      "key": "initial",
+      "type": "text",
+      "label": "Text before the filter binds",
+      "default": ""
+    }
+  ],
+  "html": "<span class=\"ss-count\" data-bz-part=\"count\" data-bz-count-template=\"{{template}}\">{{initial}}</span>",
+  "css": ".ss-count{display:inline-block;font:700 11px/1.5 var(--font-body);letter-spacing:.12em;color:var(--muted)}"
+}

@@ -4,7 +4,7 @@
   "date": "2026-06-14",
   "description": "For owner-operators and fleet managers alike, routine maintenance isn’t just another item on the calendar. It’s one of the smartest investments you can make in your equipment.",
   "status": "published",
-  "coverImage": "https://www.sunstateintl.com/wp-content/uploads/2026/07/commercial-truck-oil-change-400x250.jpg",
+  "coverImage": null,
   "topic": "Maintenance",
   "nodes": [
     {
@@ -31,11 +31,10 @@
               "children": [
                 {
                   "id": "intro-eyebrow",
-                  "type": "heading",
+                  "type": "text",
                   "props": {
-                    "text": "Commercial Truck Oil Change Mistakes That Cost You",
-                    "headingLevel": 2,
-                    "eyebrow": "MAINTENANCE"
+                    "text": "Maintenance",
+                    "width": "prose"
                   }
                 },
                 {
@@ -44,28 +43,6 @@
                   "props": {
                     "text": "For owner-operators and fleet managers alike, routine maintenance isn’t just another item on the calendar. It’s one of the smartest investments you can make in your equipment.",
                     "width": "prose"
-                  }
-                },
-                {
-                  "id": "intro-note",
-                  "type": "text",
-                  "props": {
-                    "text": "The full article was published on sunstateintl.com. Paste the migrated body here in Posts → this post, and the card on the blog index updates with it.",
-                    "width": "prose"
-                  }
-                },
-                {
-                  "id": "intro-cta",
-                  "type": "buttons",
-                  "props": {
-                    "items": [
-                      {
-                        "label": "Read the original article →",
-                        "url": "https://www.sunstateintl.com/commercial-truck-oil-change-mistakes-that-cost-you/",
-                        "style": "link",
-                        "intent": "read-post"
-                      }
-                    ]
                   }
                 }
               ]

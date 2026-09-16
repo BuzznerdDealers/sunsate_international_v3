@@ -1,5 +1,5 @@
 {
-  "rendererVersion": "4.11.0",
+  "rendererVersion": "4.12.0",
   "documentVersion": 2,
   "gridColumns": 12,
   "tokenGroups": {
@@ -1130,6 +1130,23 @@
             ],
             "default": "none"
           },
+          "backgroundVideo": {
+            "type": "object",
+            "description": "A muted, looping clip behind this section's content — the hero-with-video pattern. An uploaded file only: an embed cannot be a background, because a third-party iframe brings its own chrome and swallows every click. Give it a `background` as well, so the section still reads before the clip has loaded and when a visitor has asked for reduced motion.",
+            "properties": {
+              "src": {
+                "type": "string",
+                "description": "Public video URL from the media library (mp4/webm)."
+              },
+              "poster": {
+                "type": "string",
+                "description": "The frame shown before the clip loads, when motion is reduced, and on the editing canvas. Effectively required: without it the band is empty in all three."
+              }
+            },
+            "required": [
+              "src"
+            ]
+          },
           "paddingY": {
             "type": "integer",
             "description": "Vertical padding, on the spacing scale.",
@@ -1577,6 +1594,67 @@
         },
         "required": [
           "image"
+        ]
+      }
+    },
+    {
+      "id": "video",
+      "label": "Video",
+      "category": "basic",
+      "group": "basic",
+      "autoTagged": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "video": {
+            "type": "object",
+            "description": "A video: either a file uploaded to the media library (mp4/webm), or a YouTube or Vimeo link. Anything that is not a recognised YouTube or Vimeo URL is treated as a file.",
+            "properties": {
+              "src": {
+                "type": "string",
+                "description": "Public video URL from the media library, or a YouTube/Vimeo page URL."
+              },
+              "poster": {
+                "type": "string",
+                "description": "Image shown before playback starts. Strongly recommended for an uploaded file: without it the block is a black rectangle until the visitor presses play, and the editing canvas has nothing to show at all. Ignored by YouTube and Vimeo, which bring their own."
+              },
+              "title": {
+                "type": "string",
+                "description": "Accessible title, read by screen readers and shown if the video cannot load."
+              }
+            },
+            "required": [
+              "src"
+            ]
+          },
+          "caption": {
+            "type": "string",
+            "description": "Optional caption shown under the video."
+          },
+          "width": {
+            "type": "string",
+            "description": "How wide the video sits.",
+            "enum": [
+              "prose",
+              "full"
+            ],
+            "default": "full"
+          },
+          "autoplay": {
+            "type": "boolean",
+            "description": "Start on load. Forces the clip muted, because no browser autoplays audio. Pair with `controls` off and `loop` on for an ambient clip."
+          },
+          "loop": {
+            "type": "boolean",
+            "description": "Restart when it ends."
+          },
+          "controls": {
+            "type": "boolean",
+            "description": "Show the player controls. On unless turned off."
+          }
+        },
+        "required": [
+          "video"
         ]
       }
     },
