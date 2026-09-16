@@ -230,6 +230,53 @@
                       "showMap": true,
                       "pagePathPrefix": "/locations",
                       "mapProvider": "static"
+                    },
+                    "snapshot": {
+                      "locations": [
+                        {
+                          "id": "15",
+                          "name": "sudip1 location",
+                          "slug": "main",
+                          "num": "01",
+                          "href": "/locations/main",
+                          "streetAddress": "sdfdsf werewr",
+                          "city": "",
+                          "region": "",
+                          "postalCode": "",
+                          "country": null,
+                          "latitude": 40.7258,
+                          "longitude": -111.961,
+                          "phone": "",
+                          "phoneUrl": null,
+                          "mapUrl": "https://www.google.com/maps/search/?api=1&query=40.7258,-111.961",
+                          "email": null,
+                          "brands": "Brand1 · Brand 2",
+                          "services": "",
+                          "perks": "",
+                          "brandKeys": "brand1 brand-2",
+                          "perkKeys": "",
+                          "perk1": null,
+                          "perk2": null,
+                          "perk3": null,
+                          "departments": "Sales · Used Sales · Service · Parts · Body Shop · Tire · Rental · Leasing · Finance · Ecommerce Ops · Office · Warehouse",
+                          "hours": "",
+                          "phone2": null,
+                          "phone2Url": null,
+                          "phone3": null,
+                          "phone3Url": null
+                        }
+                      ],
+                      "brandFacets": [
+                        {
+                          "value": "brand-2",
+                          "label": "Brand 2"
+                        },
+                        {
+                          "value": "brand1",
+                          "label": "Brand1"
+                        }
+                      ],
+                      "perkFacets": []
                     }
                   }
                 }
