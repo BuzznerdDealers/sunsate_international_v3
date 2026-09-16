@@ -10,7 +10,7 @@
         "headline": "Community Involvement Is Important To Us",
         "subhead": "We donate our time, talent and treasure across Tampa Bay — on behalf of Sun State International Trucks and Sun State Trailers alike.",
         "image": {
-          "src": "/img/photo-placeholder.svg",
+          "src": "https://vendure.buzznerdrv.com/assets/source/2a/283a4338.jpg",
           "alt": "A Sun State community event — photograph to be supplied",
           "width": 1600,
           "height": 900
@@ -276,14 +276,15 @@
           "body": "At Sun State, we're more than a business; we're a family. Within our tight-knit community, every individual is not merely an employee but a valued member. We ensure every member of our team is cared for and respected as they are an essential part of our success.\n\nOur family-owned business has a heritage of community service and \"be the change\" care, and we seek to create the next generation of leaders in our region. That begins inside our own walls — and carries into the neighborhoods our trucks and trailers run through every day.",
           "background": "paper",
           "image": {
-            "src": "/img/photo-placeholder.svg",
+            "src": "https://vendure.buzznerdrv.com/assets/source/40/sun-state-international-parts-counter-florida-scaled-1.jpg",
             "alt": "Sun State employees volunteering — photograph to be supplied",
-            "width": 1600,
-            "height": 900
+            "width": 2560,
+            "height": 1707
           },
           "width": "full"
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "ci-how",
@@ -311,7 +312,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "ci-faq",
@@ -400,7 +402,8 @@
                           "a": "Sun State is a family-owned business with a heritage of community service and \"be the change\" care. We believe in investing in people — our employees, our customers and our communities — and in creating the next generation of leaders in our region."
                         }
                       ]
-                    }
+                    },
+                    "snapshot": null
                   }
                 }
               ]
@@ -424,7 +427,8 @@
           "secondaryUrl": "",
           "background": "ink"
         }
-      }
+      },
+      "children": []
     }
   ]
 }
