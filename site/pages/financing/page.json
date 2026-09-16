@@ -24,8 +24,8 @@
           }
         ],
         "image": {
-          "src": "/img/photo-placeholder.svg",
-          "alt": "A new truck being handed over — photograph to be supplied",
+          "src": "https://vendure.buzznerdrv.com/assets/source/f3/4c11fa29-52da-45c4-87f5-450661ef9b37.jpeg",
+          "alt": "Financing Trucks",
           "width": 1600,
           "height": 900
         }
@@ -134,7 +134,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "fin-warranty",
@@ -167,7 +168,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "fin-apply",
@@ -441,7 +443,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "fin-faq",
@@ -534,7 +537,8 @@
                           "a": "Yes. With approved credit and minimal down payment we offer an in-house line of credit for all your parts and service needs, and Diamond Advantage provides a credit program built for the transportation industry."
                         }
                       ]
-                    }
+                    },
+                    "snapshot": null
                   }
                 }
               ]
@@ -558,7 +562,8 @@
           "secondaryUrl": "#credit-applications",
           "background": "ink"
         }
-      }
+      },
+      "children": []
     }
   ]
 }
