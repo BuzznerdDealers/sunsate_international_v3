@@ -24,10 +24,10 @@
           }
         ],
         "image": {
-          "src": "/img/photo-placeholder.svg",
+          "src": "https://vendure.buzznerdrv.com/assets/source/e2/whatsapp-image-2026-09-16-at-10.49.40-pm.jpeg",
           "alt": "A Sun State dealership exterior — photograph to be supplied",
           "width": 1600,
-          "height": 900
+          "height": 1066
         }
       }
     },
@@ -97,6 +97,24 @@
                     "widget": "locations-map",
                     "config": {
                       "showMap": true
+                    },
+                    "snapshot": {
+                      "locations": [
+                        {
+                          "id": "2",
+                          "name": "Seatle",
+                          "slug": "main",
+                          "streetAddress": "1428 Post Alley",
+                          "city": null,
+                          "region": null,
+                          "postalCode": null,
+                          "country": null,
+                          "latitude": null,
+                          "longitude": null,
+                          "phone": null,
+                          "email": null
+                        }
+                      ]
                     }
                   }
                 }
@@ -201,7 +219,8 @@
           ],
           "body": ""
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "loc-afterhours",
@@ -224,7 +243,8 @@
           },
           "width": "full"
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "loc-departments",
@@ -255,7 +275,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "loc-faq",
@@ -340,7 +361,8 @@
                           "a": "Our locations serve Tampa, Sarasota, Davenport and Brooksville along with St. Petersburg, Lakeland, Orlando, Bradenton and the rest of Central and Southwest Florida, plus mobile service at your yard or job site."
                         }
                       ]
-                    }
+                    },
+                    "snapshot": null
                   }
                 }
               ]
@@ -364,7 +386,8 @@
           "secondaryUrl": "mailto:info@sunstateintl.com",
           "background": "ink"
         }
-      }
+      },
+      "children": []
     }
   ]
 }
