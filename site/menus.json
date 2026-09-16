@@ -378,8 +378,8 @@
                 {
                   "id": "os-blog",
                   "label": "Blog",
-                  "type": "url",
-                  "url": "/blog"
+                  "type": "page",
+                  "ref": "blog"
                 }
               ]
             }
@@ -669,8 +669,8 @@
         {
           "id": "fc-blog",
           "label": "Blog",
-          "type": "url",
-          "url": "/blog"
+          "type": "page",
+          "ref": "blog"
         },
         {
           "id": "f-co-reviews",
