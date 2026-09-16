@@ -24,7 +24,7 @@
           }
         ],
         "image": {
-          "src": "/img/photo-placeholder.svg",
+          "src": "https://vendure.buzznerdrv.com/assets/source/e2/whatsapp-image-2026-09-16-at-10.49.40-pm.jpeg",
           "alt": "The Brooksville parts store — photograph to be supplied",
           "width": 1600,
           "height": 900
@@ -47,7 +47,7 @@
           "noticeLinkLabel": "Order parts online →",
           "noticeLinkUrl": "https://www.sunstateparts.com/login",
           "map": {
-            "src": "/img/photo-placeholder.svg",
+            "src": "https://vendure.buzznerdrv.com/assets/source/26/brooksville-fl-black-map-pin__02.png",
             "alt": "A map of the Brooksville store — image to be supplied",
             "width": 1600,
             "height": 900
@@ -55,7 +55,8 @@
           "anchor": "brk-summary",
           "background": "card"
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "brk-hours",
@@ -90,7 +91,8 @@
           ],
           "background": "card"
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "brk-onsite",
@@ -126,7 +128,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "brk-others",
@@ -178,7 +181,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "brk-faq",
@@ -263,7 +267,8 @@
                           "a": "Yes. Order through the Sun State online parts store at sunstateparts.com and pick up in Brooksville or have the parts delivered."
                         }
                       ]
-                    }
+                    },
+                    "snapshot": null
                   }
                 }
               ]
@@ -287,7 +292,8 @@
           "secondaryUrl": "https://www.sunstateparts.com/login",
           "background": "ink"
         }
-      }
+      },
+      "children": []
     }
   ]
 }
