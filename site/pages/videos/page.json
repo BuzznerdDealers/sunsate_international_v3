@@ -10,8 +10,8 @@
         "headline": "Videos",
         "subhead": "Sun State International Trucks and Sun State Trailers on video — one library for both sides of the business.",
         "image": {
-          "src": "/img/photo-placeholder.svg",
-          "alt": "The Sun State shop floor — photograph to be supplied",
+          "src": "https://vendure.buzznerdrv.com/assets/source/b6/o74a7855.jpg",
+          "alt": "The Sun State shop floor",
           "width": 1600,
           "height": 900
         }
@@ -175,7 +175,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "videos-answers",
@@ -198,7 +199,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "videos-cta",
@@ -215,7 +217,8 @@
           "secondaryUrl": "",
           "background": "ink"
         }
-      }
+      },
+      "children": []
     }
   ]
 }
