@@ -185,51 +185,15 @@
           "anchor": "locations",
           "background": "card",
           "brandLabel": "BRAND",
-          "brands": [
-            {
-              "label": "International",
-              "value": "international",
-              "dot": "#EE2D24"
-            },
-            {
-              "label": "IC Bus",
-              "value": "ic-bus",
-              "dot": "#242424"
-            },
-            {
-              "label": "Hyundai Translead",
-              "value": "hyundai-translead",
-              "dot": "#6C6C6C"
-            },
-            {
-              "label": "Globe Trailers",
-              "value": "globe-trailers",
-              "dot": ""
-            }
-          ],
+          "brands": {
+            "source": "location-brands",
+            "config": {}
+          },
           "perkLabel": "PERKS",
-          "perks": [
-            {
-              "label": "In-store shopping",
-              "value": "in-store-shopping"
-            },
-            {
-              "label": "Curbside pickup",
-              "value": "curbside-pickup"
-            },
-            {
-              "label": "After-hours service",
-              "value": "after-hours-service"
-            },
-            {
-              "label": "In-store pickup",
-              "value": "in-store-pickup"
-            },
-            {
-              "label": "Delivery",
-              "value": "delivery"
-            }
-          ],
+          "perks": {
+            "source": "location-service-options",
+            "config": {}
+          },
           "locations": {
             "source": "locations",
             "config": {
