@@ -19,9 +19,9 @@
           "label": "City"
         },
         {
-          "key": "state",
+          "key": "region",
           "type": "text",
-          "label": "State"
+          "label": "State / region"
         },
         {
           "key": "name",
@@ -39,7 +39,7 @@
           "label": "Phone link"
         },
         {
-          "key": "url",
+          "key": "mapUrl",
           "type": "url",
           "label": "Directions link"
         },
@@ -81,6 +81,6 @@
       ]
     }
   ],
-  "html": "<div class=\"ss-locrail\" data-ss-locrail><div class=\"ss-locrail__track\">{{#each locations}}<article class=\"ss-loc\" data-bz-part=\"item\" data-brand=\"{{brands}}\" data-perk=\"{{perks}}\"><div class=\"ss-loc__dots\">{{#if dot1}}<span style=\"background:{{dot1}}\"></span>{{/if}}{{#if dot2}}<span style=\"background:{{dot2}}\"></span>{{/if}}</div><div class=\"ss-loc__head\"><h3 class=\"ss-loc__c\"><span class=\"ss-loc__n\">{{num}}</span>{{city}}</h3><span class=\"ss-loc__s\">{{state}}</span></div><p class=\"ss-loc__name\">{{name}}</p><p class=\"ss-loc__phone\"><a href=\"{{link phoneUrl}}\" data-bz-el=\"phone\" data-bz-intent=\"call-location\">{{phone}}</a></p><p class=\"ss-loc__dir\"><a href=\"{{link url}}\" data-bz-el=\"link\" data-bz-intent=\"find-location\">Directions &#8594;</a></p><div class=\"ss-loc__tags\">{{#if tag1}}<span>{{tag1}}</span>{{/if}}{{#if tag2}}<span>{{tag2}}</span>{{/if}}{{#if tag3}}<span>{{tag3}}</span>{{/if}}</div></article>{{/each}}</div></div>",
+  "html": "<div class=\"ss-locrail\" data-ss-locrail><div class=\"ss-locrail__track\" data-bz-part=\"track\">{{#each locations}}<article class=\"ss-loc\" data-bz-part=\"item slide\" data-brand=\"{{brands}}\" data-perk=\"{{perks}}\"><div class=\"ss-loc__dots\">{{#if dot1}}<span style=\"background:{{dot1}}\"></span>{{/if}}{{#if dot2}}<span style=\"background:{{dot2}}\"></span>{{/if}}</div><div class=\"ss-loc__head\"><h3 class=\"ss-loc__c\"><span class=\"ss-loc__n\">{{num}}</span>{{city}}</h3><span class=\"ss-loc__s\">{{region}}</span></div><p class=\"ss-loc__name\">{{name}}</p><p class=\"ss-loc__phone\"><a href=\"{{link phoneUrl}}\" data-bz-el=\"phone\" data-bz-intent=\"call-location\">{{phone}}</a></p><p class=\"ss-loc__dir\"><a href=\"{{link mapUrl}}\" data-bz-el=\"link\" data-bz-intent=\"find-location\">Directions &#8594;</a></p><div class=\"ss-loc__tags\">{{#if tag1}}<span>{{tag1}}</span>{{/if}}{{#if tag2}}<span>{{tag2}}</span>{{/if}}{{#if tag3}}<span>{{tag3}}</span>{{/if}}</div></article>{{/each}}</div></div>",
   "css": ".ss-locrail__track{display:flex;gap:20px;overflow-x:auto;scroll-behavior:smooth;scroll-snap-type:x mandatory;padding-bottom:4px}\n.ss-locrail__track::-webkit-scrollbar{height:6px}\n.ss-locrail__track::-webkit-scrollbar-thumb{background:var(--line)}\n.ss-loc{flex:0 0 320px;scroll-snap-align:start;border:1px solid var(--line);background:var(--card);padding:28px}\n.ss-loc[hidden]{display:none}\n.ss-loc__dots{display:flex;gap:6px;min-height:9px;margin-bottom:14px}\n.ss-loc__dots span{width:8px;height:8px;border-radius:50%;display:inline-block}\n.ss-loc__head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:4px}\n.ss-loc__c{font-family:var(--font-heading);font-weight:700;font-size:19px;line-height:1.6;margin:0}\n.ss-loc__n{font-weight:700;font-size:13px;color:var(--muted);margin-right:8px}\n.ss-loc__s{font:700 11px/1 var(--font-body);color:var(--muted)}\n.ss-loc__name{font-size:13px;font-weight:600;line-height:1.6;color:var(--muted);margin:0 0 10px}\n.ss-loc__phone{font-size:14px;line-height:1.6;color:var(--muted);margin:0 0 16px}\n.ss-loc__phone a{color:inherit;text-decoration:none}\n.ss-loc__phone a:hover{color:var(--accent)}\n.ss-loc__dir{margin:0 0 16px}\n.ss-loc__dir a{display:inline-block;padding:4px 0;font:700 13px/1.6 var(--font-body);color:var(--accent);text-decoration:none}\n.ss-loc__dir a:hover{text-decoration:underline}\n.ss-loc__tags{display:flex;flex-wrap:wrap;gap:6px}\n.ss-loc__tags span{border:1px solid var(--line);padding:5px 8px;font:700 10px/1 var(--font-body);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}\n@media (max-width:640px){.ss-loc{flex-basis:82vw}}"
 }
