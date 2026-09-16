@@ -2,8 +2,8 @@
   "version": 2,
   "id": "location-rail",
   "name": "Find a location",
-  "css": "/* The \"Find a location\" band: a map, two facet filters and a scrolling row of\n   location cards. The pills and the cards are coded widgets because the\n   platform filter behaviour matches a card's facets from its own data-\n   attributes, and no block prop emits those; the behaviour itself is declared\n   on the section, so the filtering is not scripted. */\n\n/* The handoff gives this band 120px of air top and bottom. */\n[data-bz-section=\"location-rail\"] > .bz-section { padding-block: 120px }\n[data-bz-section=\"location-rail\"] .bz-block { padding-block: 0 }\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-head-col\"] .bz-block + .bz-block { padding-block-start: 18px }\n[data-bz-section=\"location-rail\"] h2 { font-size: 38px; margin: 0 }\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-body\"] .bz-text { max-width: 640px }\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-body\"] p { font-size: 16px; line-height: 1.6; color: var(--body-text); margin: 0 }\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-head\"] { margin-bottom: 40px }\n\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-map\"] .bz-map {\n  width: 100%; aspect-ratio: auto; min-height: 460px;\n  background: var(--paper); border: 1px solid var(--line); margin: 0;\n  border-radius: 0;\n}\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-map\"] .bz-loclist { display: none }\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-map\"] .bz-widget__empty { display: none }\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-map-row\"] { margin-bottom: 44px }\n\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-brands\"] { margin-bottom: 18px }\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-perks\"] { margin-bottom: 0 }\n\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-nav-row\"] { margin-block: 44px 20px }\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-nav\"] .bz-btns { margin-block: 0; justify-content: flex-end; gap: 8px }\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-nav\"] .bz-btn {\n  width: 38px; height: 38px; min-height: 0; padding: 0;\n  border: 1px solid var(--line); background: var(--card); color: var(--ink);\n  font-family: var(--font-body); font-weight: 400; font-size: 15px;\n}\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-nav\"] .bz-btn:hover { border-color: var(--muted) }\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-nav\"] { display: flex; justify-content: flex-end; align-items: center; gap: 8px }\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-nav\"] .bz-block { padding-block: 0 }\n@media (max-width: 640px) {\n  /* The handoff keeps the rail arrows on a phone. */\n  [data-bz-section=\"location-rail\"] .ss-filter__l { flex-basis: auto; padding-top: 0 }\n}",
-  "js": "/* Arrow scrolling for the location rail.\n *\n * The filtering itself is the platform `filter` behaviour declared on the\n * section — nothing here touches it. The rail's own horizontal scroll is a\n * plain overflow container, correct with no script at all; these two buttons\n * only page it, and they are real links until this runs.\n */\n(function () {\n  document.querySelectorAll('[data-bz-section=\"location-rail\"]').forEach(function (band) {\n    var track = band.querySelector('.ss-locrail__track');\n    if (!track) return;\n    function page(dir) {\n      var card = track.querySelector('.ss-loc:not([hidden])');\n      var step = card ? card.offsetWidth + 20 : track.clientWidth;\n      track.scrollBy({ left: dir * step, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });\n    }\n    ['lr-prev', 'lr-next'].forEach(function (id, i) {\n      var host = band.querySelector('[data-bz-node=\"' + id + '\"]');\n      var control = host && host.querySelector('a, button');\n      if (!control) return;\n      control.addEventListener('click', function (event) {\n        event.preventDefault();\n        page(i === 0 ? -1 : 1);\n      });\n    });\n  });\n})();",
+  "css": "/* Live locations: the map and the cards are the same `locations-map` widget.\n   The list is a horizontal rail; arrows only page it. */\n[data-bz-section=\"location-rail\"] > .bz-section { padding-block: 120px }\n[data-bz-section=\"location-rail\"] .bz-block { padding-block: 0 }\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-head-col\"] .bz-block + .bz-block { padding-block-start: 18px }\n[data-bz-section=\"location-rail\"] h2 { font-size: 38px; margin: 0 }\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-body\"] .bz-text { max-width: 640px }\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-body\"] p { font-size: 16px; line-height: 1.6; color: var(--body-text); margin: 0 }\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-head\"] { margin-bottom: 40px }\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-map\"] .bz-map {\n  width: 100%; aspect-ratio: auto; min-height: 460px;\n  background: var(--paper); border: 1px solid var(--line); margin: 0 0 44px;\n  border-radius: 0;\n}\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-map\"] .bz-widget__empty { margin-bottom: 24px }\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-map\"] .bz-loclist {\n  display: flex; gap: 20px; overflow-x: auto; scroll-snap-type: x mandatory;\n  grid-template-columns: none;\n  padding-bottom: 4px;\n}\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-map\"] .bz-loc {\n  flex: 0 0 320px; scroll-snap-align: start;\n}\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-nav-row\"] { margin-block: 20px 0 }\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-nav\"] .bz-btns { margin-block: 0; justify-content: flex-end; gap: 8px }\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-nav\"] .bz-btn {\n  width: 38px; height: 38px; min-height: 0; padding: 0;\n  border: 1px solid var(--line); background: var(--card); color: var(--ink);\n}\n@media (max-width: 640px) {\n  [data-bz-section=\"location-rail\"] [data-bz-node=\"lr-map\"] .bz-loc { flex-basis: 82vw }\n}",
+  "js": "/* Arrow scrolling for the location rail. The cards themselves are the live\n   locations-map widget; this only pages the overflow container. */\n(function () {\n  document.querySelectorAll('[data-bz-section=\"location-rail\"]').forEach(function (band) {\n    var track = band.querySelector('.bz-loclist');\n    if (!track) return;\n    function page(dir) {\n      var card = track.querySelector('.bz-loc');\n      var step = card ? card.offsetWidth + 20 : track.clientWidth;\n      track.scrollBy({ left: dir * step, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });\n    }\n    ['lr-prev', 'lr-next'].forEach(function (id, i) {\n      var host = band.querySelector('[data-bz-node=\"' + id + '\"]');\n      var control = host && host.querySelector('a, button');\n      if (!control) return;\n      control.addEventListener('click', function (event) {\n        event.preventDefault();\n        page(i === 0 ? -1 : 1);\n      });\n    });\n  });\n})();",
   "props": [
     {
       "key": "eyebrow",
@@ -35,142 +35,8 @@
       "label": "Band background",
       "default": "card",
       "options": [
-        {
-          "value": "card",
-          "label": "White"
-        },
-        {
-          "value": "paper",
-          "label": "Paper"
-        }
-      ]
-    },
-    {
-      "key": "brandLabel",
-      "type": "text",
-      "label": "First facet label",
-      "default": "BRAND"
-    },
-    {
-      "key": "brands",
-      "type": "list",
-      "label": "Brand pills",
-      "fields": [
-        {
-          "key": "label",
-          "type": "text",
-          "label": "Label"
-        },
-        {
-          "key": "value",
-          "type": "text",
-          "label": "Value"
-        },
-        {
-          "key": "dot",
-          "type": "color",
-          "label": "Dot colour"
-        }
-      ]
-    },
-    {
-      "key": "perkLabel",
-      "type": "text",
-      "label": "Second facet label",
-      "default": "PERKS"
-    },
-    {
-      "key": "perks",
-      "type": "list",
-      "label": "Perk pills",
-      "fields": [
-        {
-          "key": "label",
-          "type": "text",
-          "label": "Label"
-        },
-        {
-          "key": "value",
-          "type": "text",
-          "label": "Value"
-        }
-      ]
-    },
-    {
-      "key": "locations",
-      "type": "list",
-      "label": "Locations",
-      "fields": [
-        {
-          "key": "num",
-          "type": "text",
-          "label": "Number"
-        },
-        {
-          "key": "city",
-          "type": "text",
-          "label": "City"
-        },
-        {
-          "key": "state",
-          "type": "text",
-          "label": "State"
-        },
-        {
-          "key": "name",
-          "type": "text",
-          "label": "Trading name"
-        },
-        {
-          "key": "phone",
-          "type": "text",
-          "label": "Phone"
-        },
-        {
-          "key": "phoneUrl",
-          "type": "url",
-          "label": "Phone link"
-        },
-        {
-          "key": "url",
-          "type": "url",
-          "label": "Directions link"
-        },
-        {
-          "key": "brands",
-          "type": "text",
-          "label": "Brand values — space separated"
-        },
-        {
-          "key": "perks",
-          "type": "text",
-          "label": "Perk values — space separated"
-        },
-        {
-          "key": "dot1",
-          "type": "color",
-          "label": "Brand dot 1"
-        },
-        {
-          "key": "dot2",
-          "type": "color",
-          "label": "Brand dot 2"
-        },
-        {
-          "key": "tag1",
-          "type": "text",
-          "label": "Tag 1"
-        },
-        {
-          "key": "tag2",
-          "type": "text",
-          "label": "Tag 2"
-        },
-        {
-          "key": "tag3",
-          "type": "text",
-          "label": "Tag 3"
-        }
+        { "value": "card", "label": "White" },
+        { "value": "paper", "label": "Paper" }
       ]
     }
   ],
@@ -182,24 +48,18 @@
         "width": "boxed",
         "background": "{{background}}",
         "paddingY": 10,
-        "anchor": "{{anchor}}",
-        "behaviour": "filter",
-        "behaviourOptions": "{\"match\":\"includes\"}"
+        "anchor": "{{anchor}}"
       },
       "children": [
         {
           "id": "lr-head",
           "type": "row",
-          "props": {
-            "gap": 5
-          },
+          "props": { "gap": 5 },
           "children": [
             {
               "id": "lr-head-col",
               "type": "column",
-              "props": {
-                "span": 12
-              },
+              "props": { "span": 12 },
               "children": [
                 {
                   "id": "lr-h",
@@ -213,10 +73,7 @@
                 {
                   "id": "lr-body",
                   "type": "text",
-                  "props": {
-                    "text": "{{body}}",
-                    "width": "prose"
-                  }
+                  "props": { "text": "{{body}}", "width": "prose" }
                 }
               ]
             }
@@ -225,16 +82,12 @@
         {
           "id": "lr-map-row",
           "type": "row",
-          "props": {
-            "gap": 5
-          },
+          "props": { "gap": 5 },
           "children": [
             {
               "id": "lr-map-col",
               "type": "column",
-              "props": {
-                "span": 12
-              },
+              "props": { "span": 12 },
               "children": [
                 {
                   "id": "lr-map",
@@ -242,64 +95,9 @@
                   "props": {
                     "widget": "locations-map",
                     "config": {
-                      "showMap": true
+                      "showMap": true,
+                      "pagePathPrefix": "/locations"
                     }
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "lr-brands",
-          "type": "row",
-          "props": {
-            "gap": 5
-          },
-          "children": [
-            {
-              "id": "lr-brands-col",
-              "type": "column",
-              "props": {
-                "span": 12
-              },
-              "children": [
-                {
-                  "id": "lr-brands-pills",
-                  "type": "filter-pills",
-                  "props": {
-                    "label": "{{brandLabel}}",
-                    "facet": "brand",
-                    "allLabel": "ALL",
-                    "options": "{{brands}}"
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "lr-perks",
-          "type": "row",
-          "props": {
-            "gap": 5
-          },
-          "children": [
-            {
-              "id": "lr-perks-col",
-              "type": "column",
-              "props": {
-                "span": 12
-              },
-              "children": [
-                {
-                  "id": "lr-perks-pills",
-                  "type": "filter-pills",
-                  "props": {
-                    "label": "{{perkLabel}}",
-                    "facet": "perk",
-                    "allLabel": "ALL",
-                    "options": "{{perks}}"
                   }
                 }
               ]
@@ -309,33 +107,19 @@
         {
           "id": "lr-nav-row",
           "type": "row",
-          "props": {
-            "gap": 5,
-            "align": "center",
-            "stackOn": "never"
-          },
+          "props": { "gap": 5, "align": "center", "stackOn": "never" },
           "children": [
             {
               "id": "lr-nav",
               "type": "column",
-              "props": {
-                "span": 12,
-                "align": "center"
-              },
+              "props": { "span": 12, "align": "center" },
               "children": [
                 {
                   "id": "lr-prev",
                   "type": "buttons",
                   "props": {
                     "align": "left",
-                    "items": [
-                      {
-                        "label": "‹",
-                        "url": "#",
-                        "style": "secondary",
-                        "intent": "carousel-prev"
-                      }
-                    ]
+                    "items": [{ "label": "‹", "url": "#", "style": "secondary", "intent": "carousel-prev" }]
                   }
                 },
                 {
@@ -343,39 +127,7 @@
                   "type": "buttons",
                   "props": {
                     "align": "left",
-                    "items": [
-                      {
-                        "label": "›",
-                        "url": "#",
-                        "style": "secondary",
-                        "intent": "carousel-next"
-                      }
-                    ]
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "lr-cards-row",
-          "type": "row",
-          "props": {
-            "gap": 5
-          },
-          "children": [
-            {
-              "id": "lr-cards-col",
-              "type": "column",
-              "props": {
-                "span": 12
-              },
-              "children": [
-                {
-                  "id": "lr-cards",
-                  "type": "location-cards",
-                  "props": {
-                    "locations": "{{locations}}"
+                    "items": [{ "label": "›", "url": "#", "style": "secondary", "intent": "carousel-next" }]
                   }
                 }
               ]

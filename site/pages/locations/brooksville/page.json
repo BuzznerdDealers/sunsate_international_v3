@@ -7,8 +7,8 @@
       "props": {
         "headingLevel": 1,
         "eyebrow": "HOME / LOCATIONS / BROOKSVILLE",
-        "headline": "Hours of Operation & Store Location – Brooksville",
-        "subhead": "17127 Runway Drive, Brooksville, FL 34604 — truck and trailer parts for Hernando, Pasco and Citrus counties, with in-store pickup and delivery.",
+        "headline": "Hours of Operation & Store Location \u2013 Brooksville",
+        "subhead": "17127 Runway Drive, Brooksville, FL 34604 \u2014 truck and trailer parts for Hernando, Pasco and Citrus counties, with in-store pickup and delivery.",
         "ctas": [
           {
             "label": "Call (352) 277-0221",
@@ -25,7 +25,7 @@
         ],
         "image": {
           "src": "/img/photo-placeholder.svg",
-          "alt": "The Brooksville parts store — photograph to be supplied",
+          "alt": "The Brooksville parts store \u2014 photograph to be supplied",
           "width": 1600,
           "height": 900
         }
@@ -39,21 +39,14 @@
         "values": {
           "eyebrow": "STORE MAP",
           "name": "Sun State Truck & Trailer Parts",
-          "address": "17127 Runway Drive\n\nBrooksville, FL 34604",
-          "phones": "<strong>Parts counter</strong> <a href=\"tel:+13522770221\">(352) 277-0221</a><strong>Toll free</strong> <a href=\"tel:+18007417566\">(800) 741-7566</a>",
           "noticeEyebrow": "HOW TO BUY",
-          "noticeTitle": "In-store shopping · In-store pickup · Delivery",
+          "noticeTitle": "In-store shopping \u00b7 In-store pickup \u00b7 Delivery",
           "noticeBody": "Walk in at the counter, order ahead for pickup, or have parts delivered to your shop or job site.",
-          "noticeLinkLabel": "Order parts online →",
+          "noticeLinkLabel": "Order parts online \u2192",
           "noticeLinkUrl": "https://www.sunstateparts.com/login",
-          "map": {
-            "src": "/img/photo-placeholder.svg",
-            "alt": "A map of the Brooksville store — image to be supplied",
-            "width": 1600,
-            "height": 900
-          },
           "anchor": "brk-summary",
-          "background": "card"
+          "background": "card",
+          "locationSlug": "brooksville"
         }
       }
     },
@@ -66,29 +59,9 @@
           "eyebrow": "STORE HOURS",
           "heading": "When we're open.",
           "note": "Brooksville is a parts store. Truck and trailer repairs run out of Tampa, Davenport and Sarasota, and our mobile service team can come to you.",
-          "span": 4,
           "anchor": "brk-hours",
-          "departments": [
-            {
-              "title": "Store Hours",
-              "phone": "(352) 277-0221",
-              "phoneUrl": "tel:+13522770221",
-              "rows": "<strong>Monday</strong> 7:00am – 5:00pm\n\n<strong>Tuesday</strong> 7:00am – 5:00pm\n\n<strong>Wednesday</strong> 7:00am – 5:00pm\n\n<strong>Thursday</strong> 7:00am – 5:00pm\n\n<strong>Friday</strong> 7:00am – 5:00pm\n\n<strong>Saturday</strong> Closed\n\n<strong>Sunday</strong> Closed"
-            },
-            {
-              "title": "What's here",
-              "phone": "Order parts online →",
-              "phoneUrl": "https://www.sunstateparts.com/login",
-              "rows": "In-store shopping\n\nIn-store pickup\n\nDelivery\n\nGenuine OEM and all-makes truck parts\n\nHyundai and all-makes trailer parts"
-            },
-            {
-              "title": "Need service instead?",
-              "phone": "Schedule service →",
-              "phoneUrl": "/service-appointment",
-              "rows": "<strong>Truck and trailer repairs</strong> Tampa, Davenport, Sarasota\n\n<strong>Mobile service</strong> at your yard or job site\n\n<strong>After-hours</strong> Certified Fleet, 5 PM – 8 AM"
-            }
-          ],
-          "background": "card"
+          "background": "card",
+          "locationSlug": "brooksville"
         }
       }
     },
@@ -115,13 +88,13 @@
             {
               "title": "Order online",
               "body": "Search availability, price and order through the Sun State online parts store, then pick up in Brooksville or have it delivered.",
-              "linkLabel": "Online parts store →",
+              "linkLabel": "Online parts store \u2192",
               "linkUrl": "https://www.sunstateparts.com/login"
             },
             {
               "title": "Fleet accounts",
               "body": "Fleet Charge gives qualifying fleets consistent parts pricing and streamlined billing, with an in-house credit line available.",
-              "linkLabel": "Parts department →",
+              "linkLabel": "Parts department \u2192",
               "linkUrl": "/parts"
             }
           ]
@@ -137,46 +110,8 @@
           "eyebrow": "FIND A LOCATION",
           "heading": "Other Sun State locations.",
           "body": "Ready to find the right commercial trucks for your business? Visit us at our convenient locations across Central and Southwest Florida.",
-          "span": 3,
           "background": "card",
-          "locations": [
-            {
-              "tag": "TRUCKS · TRAILERS · PARTS · SERVICE",
-              "city": "Tampa",
-              "address": "6020 Adamo Drive, Tampa, FL 33619",
-              "hours": "Sales & parts 7 AM – 7 PM M–F · Service 7 AM – 7 PM M–F",
-              "phone": "(813) 621-1331",
-              "phoneUrl": "tel:+18136211331",
-              "url": "/locations/tampa"
-            },
-            {
-              "tag": "TRUCKS · PARTS · SERVICE",
-              "city": "Davenport",
-              "address": "41609 Hwy 27, Davenport, FL 33837",
-              "hours": "Service 7 AM – 7 PM M–F",
-              "phone": "(863) 424-2411",
-              "phoneUrl": "tel:+18634242411",
-              "url": "/locations/davenport"
-            },
-            {
-              "tag": "TRUCKS · PARTS · SERVICE",
-              "city": "Sarasota",
-              "address": "1000 Sarasota Center Blvd, Sarasota, FL 34240",
-              "hours": "Service 7 AM – 5 PM M–F",
-              "phone": "(941) 355-7681",
-              "phoneUrl": "tel:+19413557681",
-              "url": "/locations/sarasota"
-            },
-            {
-              "tag": "AFTERMARKET PARTS",
-              "city": "Sun State Aftermarket Parts",
-              "address": "7105 East 6th Ave, Tampa, FL 33619",
-              "hours": "Store 7 AM – 4 PM M–F",
-              "phone": "(813) 627-3282",
-              "phoneUrl": "tel:+18136273282",
-              "url": "/locations/aftermarket-parts"
-            }
-          ]
+          "showMap": false
         }
       }
     },

@@ -2,7 +2,7 @@
   "version": 2,
   "id": "hours-grid",
   "name": "Department hours",
-  "css": "[data-bz-section=\"hours-grid\"] .bz-block { padding-block: 0 }\n[data-bz-section=\"hours-grid\"] .bz-block + .bz-block { padding-block-start: 0 }\n[data-bz-section=\"hours-grid\"] .bz-row + .bz-row { margin-top: 0 }\n[data-bz-section=\"hours-grid\"] h2 { margin: 0 0 40px }\n[data-bz-section=\"hours-grid\"] h3 { font-size: 20px; line-height: 1.6; margin: 0 0 6px }\n[data-bz-section=\"hours-grid\"] [data-bz-node^=\"hg-card-cta\"] .bz-btns { margin-block: 0 18px }\n[data-bz-section=\"hours-grid\"] [data-bz-node^=\"hg-card-cta\"] .bz-btn--link { font-size: 15px; line-height: 1.6 }\n[data-bz-section=\"hours-grid\"] [data-bz-node^=\"hg-card-rows\"] .bz-text p {\n  display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 12px;\n  margin: 0; padding: 8px 0 0; border-top: 1px solid var(--line); font-size: 14px; line-height: 1.5 }\n[data-bz-section=\"hours-grid\"] [data-bz-node=\"hg-note\"] p { font-size: 13px; color: var(--muted); margin-top: 28px }",
+  "css": "[data-bz-section=\"hours-grid\"] .bz-block { padding-block: 0 }\n[data-bz-section=\"hours-grid\"] .bz-block + .bz-block { padding-block-start: 0 }\n[data-bz-section=\"hours-grid\"] h2 { margin: 0 0 40px }\n[data-bz-section=\"hours-grid\"] [data-bz-node=\"hg-hours\"] .bz-hours { background: var(--card); border: 1px solid var(--line); padding: 26px }\n[data-bz-section=\"hours-grid\"] [data-bz-node=\"hg-note\"] p { font-size: 13px; color: var(--muted); margin-top: 28px }",
   "props": [
     {
       "key": "eyebrow",
@@ -17,16 +17,16 @@
       "default": "When each department is open."
     },
     {
+      "key": "locationSlug",
+      "type": "text",
+      "label": "Location slug (must match Locations in the dashboard)",
+      "default": ""
+    },
+    {
       "key": "note",
       "type": "textarea",
       "label": "Note under the tables",
       "default": ""
-    },
-    {
-      "key": "span",
-      "type": "number",
-      "label": "Card width in grid columns",
-      "default": 4
     },
     {
       "key": "anchor",
@@ -35,40 +35,13 @@
       "default": ""
     },
     {
-      "key": "departments",
-      "type": "list",
-      "label": "Departments",
-      "fields": [
-        {
-          "key": "title",
-          "type": "text",
-          "label": "Department"
-        },
-        {
-          "key": "phone",
-          "type": "text",
-          "label": "Phone (as displayed)"
-        },
-        {
-          "key": "phoneUrl",
-          "type": "url",
-          "label": "Phone link (tel:)"
-        },
-        {
-          "key": "rows",
-          "type": "textarea",
-          "label": "Hours — one line per day"
-        },
-        {
-          "key": "link2Label",
-          "type": "text",
-          "label": "Second link (optional)"
-        },
-        {
-          "key": "link2Url",
-          "type": "url",
-          "label": "Second link URL"
-        }
+      "key": "background",
+      "type": "select",
+      "label": "Band background",
+      "default": "card",
+      "options": [
+        { "value": "card", "label": "White" },
+        { "value": "paper", "label": "Paper" }
       ]
     }
   ],
@@ -78,7 +51,7 @@
       "type": "section",
       "props": {
         "width": "boxed",
-        "background": "card",
+        "background": "{{background}}",
         "paddingY": 10,
         "anchor": "{{anchor}}"
       },
@@ -86,16 +59,12 @@
         {
           "id": "hg-head",
           "type": "row",
-          "props": {
-            "gap": 5
-          },
+          "props": { "gap": 5 },
           "children": [
             {
               "id": "hg-head-col",
               "type": "column",
-              "props": {
-                "span": 12
-              },
+              "props": { "span": 12 },
               "children": [
                 {
                   "id": "hg-h",
@@ -111,67 +80,21 @@
           ]
         },
         {
-          "id": "hg-grid",
+          "id": "hg-hours-row",
           "type": "row",
-          "props": {
-            "gap": 5,
-            "align": "stretch"
-          },
+          "props": { "gap": 5 },
           "children": [
             {
-              "id": "hg-card",
+              "id": "hg-hours-col",
               "type": "column",
-              "props": {
-                "span": "{{span}}",
-                "repeat": "departments"
-              },
-              "styles": {
-                "base": {
-                  "background": "card",
-                  "borderWidth": 1,
-                  "borderStyle": "solid",
-                  "borderColor": "line",
-                  "paddingTop": 30,
-                  "paddingRight": 26,
-                  "paddingBottom": 30,
-                  "paddingLeft": 26
-                }
-              },
+              "props": { "span": 12 },
               "children": [
                 {
-                  "id": "hg-card-h",
-                  "type": "heading",
+                  "id": "hg-hours",
+                  "type": "widget",
                   "props": {
-                    "text": "{{title}}",
-                    "headingLevel": 3
-                  }
-                },
-                {
-                  "id": "hg-card-cta",
-                  "type": "buttons",
-                  "props": {
-                    "items": [
-                      {
-                        "label": "{{phone}}",
-                        "url": "{{phoneUrl}}",
-                        "style": "link",
-                        "intent": "call-department"
-                      },
-                      {
-                        "label": "{{link2Label}}",
-                        "url": "{{link2Url}}",
-                        "style": "link",
-                        "intent": "call-department"
-                      }
-                    ]
-                  }
-                },
-                {
-                  "id": "hg-card-rows",
-                  "type": "text",
-                  "props": {
-                    "text": "{{rows}}",
-                    "width": "full"
+                    "widget": "hours",
+                    "config": { "locationSlug": "{{locationSlug}}" }
                   }
                 }
               ]
@@ -181,24 +104,17 @@
         {
           "id": "hg-note-row",
           "type": "row",
-          "props": {
-            "gap": 5
-          },
+          "props": { "gap": 5 },
           "children": [
             {
               "id": "hg-note-col",
               "type": "column",
-              "props": {
-                "span": 12
-              },
+              "props": { "span": 12 },
               "children": [
                 {
                   "id": "hg-note",
                   "type": "text",
-                  "props": {
-                    "text": "{{note}}",
-                    "width": "prose"
-                  }
+                  "props": { "text": "{{note}}", "width": "full" }
                 }
               ]
             }

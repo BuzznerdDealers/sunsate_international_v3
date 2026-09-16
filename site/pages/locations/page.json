@@ -75,34 +75,6 @@
               ]
             }
           ]
-        },
-        {
-          "id": "loc-map-row",
-          "type": "row",
-          "props": {
-            "gap": 5
-          },
-          "children": [
-            {
-              "id": "loc-map-col",
-              "type": "column",
-              "props": {
-                "span": 12
-              },
-              "children": [
-                {
-                  "id": "loc-map",
-                  "type": "widget",
-                  "props": {
-                    "widget": "locations-map",
-                    "config": {
-                      "showMap": true
-                    }
-                  }
-                }
-              ]
-            }
-          ]
         }
       ]
     },
@@ -114,92 +86,10 @@
         "values": {
           "eyebrow": "",
           "heading": "",
-          "span": 4,
           "background": "card",
           "anchor": "loc-list",
-          "locations": [
-            {
-              "tag": "TRUCKS · TRAILERS · PARTS · SERVICE",
-              "city": "Tampa",
-              "address": "6020 E Adamo Dr, Tampa, FL 33619",
-              "hours": "Sales: 7 AM – 7 PM M–F, 8 AM – 12 PM Sat\n\nParts: 7 AM – 7 PM M–F, 8 AM – 12 PM Sat\n\nService: 7 AM – 7 PM M–F, 7 AM – 12 PM Sat",
-              "perks": "In-store shopping · Curbside pickup · After-hours service via Certified Fleet",
-              "phone": "Main — (813) 521-8148",
-              "phoneUrl": "tel:+18135218148",
-              "phone2": "Service — (813) 521-8053",
-              "phone2Url": "tel:+18135218053",
-              "phone3": "Sales — (813) 621-1331",
-              "phone3Url": "tel:+18136211331",
-              "directionsLabel": "Directions →",
-              "directionsUrl": "https://www.google.com/maps/search/?api=1&query=6020+E+Adamo+Dr+Tampa+FL+33619",
-              "url": "/locations/tampa"
-            },
-            {
-              "tag": "TRUCKS · TRAILERS · PARTS · SERVICE",
-              "city": "Davenport",
-              "address": "41609 Hwy 27, Davenport, FL 33837",
-              "hours": "Sales: 8 AM – 4:30 PM M–F\n\nParts: 7 AM – 5 PM M–F, 8 AM – 12 PM Sat\n\nService: 7 AM – 7 PM M–F, 7 AM – 12 PM Sat",
-              "perks": "In-store shopping · Curbside pickup · After-hours service via Certified Fleet",
-              "phone": "Main — (863) 424-2411",
-              "phoneUrl": "tel:+18634242411",
-              "phone2": "Service — (863) 238-2939",
-              "phone2Url": "tel:+18632382939",
-              "directionsLabel": "Directions →",
-              "directionsUrl": "https://www.google.com/maps/search/?api=1&query=41609+Hwy+27+Davenport+FL+33837",
-              "url": "/locations/davenport"
-            },
-            {
-              "tag": "TRUCKS · TRAILERS · PARTS · SERVICE",
-              "city": "Sarasota",
-              "address": "1000 Sarasota Center Blvd, Sarasota, FL 34240",
-              "hours": "Sales: 8 AM – 5 PM M–F\n\nParts: 7 AM – 5 PM M–F, 8 AM – 12 PM Sat\n\nService: 7 AM – 5 PM M–F",
-              "perks": "In-store shopping · Curbside pickup · After-hours service via Certified Fleet",
-              "phone": "Main — (941) 355-7681",
-              "phoneUrl": "tel:+19413557681",
-              "phone2": "Service — (941) 541-3251",
-              "phone2Url": "tel:+19415413251",
-              "directionsLabel": "Directions →",
-              "directionsUrl": "https://www.google.com/maps/search/?api=1&query=1000+Sarasota+Center+Blvd+Sarasota+FL+34240",
-              "url": "/locations/sarasota"
-            },
-            {
-              "tag": "TRUCK & TRAILER PARTS",
-              "city": "Brooksville",
-              "address": "17127 Runway Drive, Brooksville, FL 34604",
-              "hours": "Store: 7 AM – 5 PM M–F",
-              "perks": "In-store shopping · In-store pickup · Delivery",
-              "phone": "Parts — (352) 277-0221",
-              "phoneUrl": "tel:+13522770221",
-              "directionsLabel": "Directions →",
-              "directionsUrl": "https://www.google.com/maps/search/?api=1&query=17127+Runway+Drive+Brooksville+FL+34604",
-              "url": "/locations/brooksville"
-            },
-            {
-              "tag": "AFTERMARKET PARTS & MODIFICATIONS",
-              "city": "Sun State Aftermarket Parts — Tampa",
-              "address": "7105 East 6th Ave, Tampa, FL 33619",
-              "hours": "Store: 7 AM – 4 PM M–F",
-              "perks": "In-store shopping · In-store pickup · Delivery · Body, hoist, liftgate and frame work",
-              "phone": "Aftermarket — (813) 627-3282",
-              "phoneUrl": "tel:+18136273282",
-              "directionsLabel": "Directions →",
-              "directionsUrl": "https://www.google.com/maps/search/?api=1&query=7105+East+6th+Ave+Tampa+FL+33619",
-              "url": "/locations/aftermarket-parts"
-            },
-            {
-              "tag": "SUN STATE TRAILERS · TRAILER SALES",
-              "city": "Trailer Sales — Tampa",
-              "address": "6020 E Adamo Dr, Tampa, FL 33619",
-              "hours": "Store: 8 AM – 5 PM M–F",
-              "perks": "In-store shopping · In-store pickup · Delivery · Fax (813) 628-0527",
-              "phone": "Trailer Sales — (813) 621-1331",
-              "phoneUrl": "tel:+18136211331",
-              "directionsLabel": "Directions →",
-              "directionsUrl": "https://www.google.com/maps/search/?api=1&query=6020+E+Adamo+Dr+Tampa+FL+33619",
-              "url": "/locations/trailer-sales"
-            }
-          ],
-          "body": ""
+          "body": "",
+          "showMap": true
         }
       }
     },

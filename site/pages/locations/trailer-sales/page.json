@@ -7,8 +7,8 @@
       "props": {
         "headingLevel": 1,
         "eyebrow": "HOME / LOCATIONS / TRAILER SALES, TAMPA",
-        "headline": "Hours & Location of Sun State International – Trailer Sales",
-        "subhead": "6020 Adamo Drive, Tampa, FL 33619 — new and used Hyundai Translead and Globe Trailers, with parts, service and financing on the same campus.",
+        "headline": "Hours & Location of Sun State International \u2013 Trailer Sales",
+        "subhead": "6020 Adamo Drive, Tampa, FL 33619 \u2014 new and used Hyundai Translead and Globe Trailers, with parts, service and financing on the same campus.",
         "ctas": [
           {
             "label": "Call (813) 621-1331",
@@ -25,7 +25,7 @@
         ],
         "image": {
           "src": "/img/photo-placeholder.svg",
-          "alt": "The Sun State trailer lot — photograph to be supplied",
+          "alt": "The Sun State trailer lot \u2014 photograph to be supplied",
           "width": 1600,
           "height": 900
         }
@@ -38,22 +38,15 @@
         "sectionId": "location-summary",
         "values": {
           "eyebrow": "STORE MAP",
-          "name": "Sun State — Trailer Sales",
-          "address": "6020 Adamo Drive\n\nTampa, FL 33619",
-          "phones": "<strong>Trailer sales</strong> <a href=\"tel:+18136211331\">(813) 621-1331</a><strong>Toll free</strong> <a href=\"tel:+18007417566\">(800) 741-7566</a><strong>Fax</strong> 813-628-0527",
+          "name": "Sun State \u2014 Trailer Sales",
           "noticeEyebrow": "READY TO PLACE AN ORDER?",
           "noticeTitle": "Talk to trailer sales",
           "noticeBody": "Talk to a member of our sales team about our available inventory, financing, or to schedule an in-person appointment.",
-          "noticeLinkLabel": "Contact trailer sales →",
+          "noticeLinkLabel": "Contact trailer sales \u2192",
           "noticeLinkUrl": "/contact",
-          "map": {
-            "src": "/img/photo-placeholder.svg",
-            "alt": "A map of Trailer Sales — image to be supplied",
-            "width": 1600,
-            "height": 900
-          },
           "anchor": "trl-summary",
-          "background": "card"
+          "background": "card",
+          "locationSlug": "trailer-sales"
         }
       }
     },
@@ -65,30 +58,10 @@
         "values": {
           "eyebrow": "STORE HOURS",
           "heading": "When we're open.",
-          "note": "Dedicated trailer repair bays and a parts counter share the Tampa campus, with service hours running 7 AM – 7 PM weekdays and after-hours coverage via Certified Fleet.",
-          "span": 4,
+          "note": "Dedicated trailer repair bays and a parts counter share the Tampa campus, with service hours running 7 AM \u2013 7 PM weekdays and after-hours coverage via Certified Fleet.",
           "anchor": "trl-hours",
-          "departments": [
-            {
-              "title": "Store Hours",
-              "phone": "(813) 621-1331",
-              "phoneUrl": "tel:+18136211331",
-              "rows": "<strong>Monday</strong> 8:00am – 5:00pm\n\n<strong>Tuesday</strong> 8:00am – 5:00pm\n\n<strong>Wednesday</strong> 8:00am – 5:00pm\n\n<strong>Thursday</strong> 8:00am – 5:00pm\n\n<strong>Friday</strong> 8:00am – 5:00pm\n\n<strong>Saturday</strong> Closed\n\n<strong>Sunday</strong> Closed"
-            },
-            {
-              "title": "What's here",
-              "phone": "Browse trailers →",
-              "phoneUrl": "/store/inventory?type=trailer",
-              "rows": "In-store shopping\n\nIn-store pickup\n\nDelivery\n\nNew Hyundai Translead and Globe Trailers\n\nUsed trailer inventory\n\nTrailer financing and credit applications"
-            },
-            {
-              "title": "Trailer service & parts",
-              "phone": "Schedule trailer service →",
-              "phoneUrl": "/service-appointment",
-              "rows": "Dedicated trailer repair bays\n\nParts counter on the same campus\n\nService 7 AM – 7 PM M–F\n\nAfter-hours via Certified Fleet"
-            }
-          ],
-          "background": "card"
+          "background": "card",
+          "locationSlug": "trailer-sales"
         }
       }
     },
@@ -106,26 +79,26 @@
           "items": [
             {
               "title": "New trailers",
-              "body": "Hyundai Translead and Globe Trailers built for Florida freight — dry van, reefer, flatbed and specialty configurations.",
-              "linkLabel": "Browse new trailers →",
+              "body": "Hyundai Translead and Globe Trailers built for Florida freight \u2014 dry van, reefer, flatbed and specialty configurations.",
+              "linkLabel": "Browse new trailers \u2192",
               "linkUrl": "/store/inventory?type=trailer&condition=new"
             },
             {
               "title": "Used trailers",
               "body": "A rotating selection of inspected used trailers, with service history and repairs documented by our own technicians.",
-              "linkLabel": "Browse used trailers →",
+              "linkLabel": "Browse used trailers \u2192",
               "linkUrl": "/store/inventory?type=trailer&condition=used"
             },
             {
               "title": "Financing",
               "body": "Retail financing, municipal leasing and flexible payment structures with minimum down payment and approved credit.",
-              "linkLabel": "Financing →",
+              "linkLabel": "Financing \u2192",
               "linkUrl": "/financing"
             },
             {
               "title": "Parts & service",
               "body": "Dedicated trailer repair bays, liftgate work, DOT inspections, and Hyundai and all-makes trailer parts on the same campus.",
-              "linkLabel": "Parts department →",
+              "linkLabel": "Parts department \u2192",
               "linkUrl": "/parts"
             }
           ]
@@ -141,46 +114,8 @@
           "eyebrow": "FIND A LOCATION",
           "heading": "Other Sun State locations.",
           "body": "Ready to find the right commercial trucks for your business? Visit us at our convenient locations across Central and Southwest Florida.",
-          "span": 3,
           "background": "card",
-          "locations": [
-            {
-              "tag": "TRUCKS · TRAILERS · PARTS · SERVICE",
-              "city": "Tampa",
-              "address": "6020 Adamo Drive, Tampa, FL 33619",
-              "hours": "Sales & parts 7 AM – 7 PM M–F · Service 7 AM – 7 PM M–F",
-              "phone": "(813) 621-1331",
-              "phoneUrl": "tel:+18136211331",
-              "url": "/locations/tampa"
-            },
-            {
-              "tag": "TRUCKS · PARTS · SERVICE",
-              "city": "Davenport",
-              "address": "41609 Hwy 27, Davenport, FL 33837",
-              "hours": "Service 7 AM – 7 PM M–F",
-              "phone": "(863) 424-2411",
-              "phoneUrl": "tel:+18634242411",
-              "url": "/locations/davenport"
-            },
-            {
-              "tag": "TRUCKS · PARTS · SERVICE",
-              "city": "Sarasota",
-              "address": "1000 Sarasota Center Blvd, Sarasota, FL 34240",
-              "hours": "Service 7 AM – 5 PM M–F",
-              "phone": "(941) 355-7681",
-              "phoneUrl": "tel:+19413557681",
-              "url": "/locations/sarasota"
-            },
-            {
-              "tag": "TRUCK & TRAILER PARTS",
-              "city": "Brooksville",
-              "address": "17127 Runway Drive, Brooksville, FL 34604",
-              "hours": "Store 7 AM – 5 PM M–F",
-              "phone": "(352) 277-0221",
-              "phoneUrl": "tel:+13522770221",
-              "url": "/locations/brooksville"
-            }
-          ]
+          "showMap": false
         }
       }
     },

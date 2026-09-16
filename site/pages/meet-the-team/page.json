@@ -8,10 +8,10 @@
         "headingLevel": 1,
         "eyebrow": "HOME / OUR STORY / MEET THE TEAM",
         "headline": "Meet the Sun State Team",
-        "subhead": "Sun State International Trucks and Sun State Trailers share one team of 38 people across six Florida locations in Tampa, Sarasota, Davenport and Brooksville — executive staff, truck and trailer sales, parts, service and store management. Together, we'll continue to grow and provide the best service and highest quality trucks and trailers to our customers.",
+        "subhead": "Sun State International Trucks and Sun State Trailers share one team of 38 people across six Florida locations in Tampa, Sarasota, Davenport and Brooksville \u2014 executive staff, truck and trailer sales, parts, service and store management. Together, we'll continue to grow and provide the best service and highest quality trucks and trailers to our customers.",
         "image": {
           "src": "/img/photo-placeholder.svg",
-          "alt": "The Sun State team — photograph to be supplied",
+          "alt": "The Sun State team \u2014 photograph to be supplied",
           "width": 1600,
           "height": 900
         }
@@ -55,7 +55,7 @@
                   "id": "jump-note",
                   "type": "text",
                   "props": {
-                    "text": "Trucks, trailers, parts and service — one team across six Florida locations.",
+                    "text": "Trucks, trailers, parts and service \u2014 one team across six Florida locations.",
                     "align": "center"
                   }
                 }
@@ -75,32 +75,38 @@
             {
               "id": "executive-staff",
               "label": "Executive Staff",
-              "blurb": "Leadership across both Sun State International Trucks and Sun State Trailers."
+              "blurb": "Leadership across both Sun State International Trucks and Sun State Trailers.",
+              "code": "executive"
             },
             {
               "id": "wholegoods-sales-rental",
               "label": "Wholegoods Sales & Rental",
-              "blurb": "New and used trucks, Globe and Hyundai Translead trailers, rental and finance."
+              "blurb": "New and used trucks, Globe and Hyundai Translead trailers, rental and finance.",
+              "code": "sales"
             },
             {
               "id": "parts",
               "label": "Parts",
-              "blurb": "Genuine OEM, Diamond Advantage and all-makes parts for trucks and trailers."
+              "blurb": "Genuine OEM, Diamond Advantage and all-makes parts for trucks and trailers.",
+              "code": "parts"
             },
             {
               "id": "parts-sales-team",
               "label": "Parts Sales Team",
-              "blurb": "Territory parts representatives across Tampa, Sarasota, Brooksville and Davenport."
+              "blurb": "Territory parts representatives across Tampa, Sarasota, Brooksville and Davenport.",
+              "code": "parts"
             },
             {
               "id": "service",
               "label": "Service",
-              "blurb": "Diamond Edge certified service, aftermarket modifications and mobile maintenance."
+              "blurb": "Diamond Edge certified service, aftermarket modifications and mobile maintenance.",
+              "code": "service"
             },
             {
               "id": "store-managers",
               "label": "Store Managers",
-              "blurb": "Parts and service operations leadership at each Sun State location."
+              "blurb": "Parts and service operations leadership at each Sun State location.",
+              "code": "office"
             }
           ],
           "background": "card"

@@ -156,11 +156,11 @@ within a few dozen pixels of the handoff except where this section says otherwis
   item open, so ours open closed — about 75px shorter per band. The four bands the handoff
   does *not* draw as accordions (meet-the-team, careers, videos, inventory) are built the
   way it draws them: card grids and an open ruled list.
-- **Location and department hours** are authored content in `hours-grid` and
-  `location-summary` rather than the `hours` / `phone-numbers` widgets, because the design
-  specifies them per department and the widgets render one list from the channel snapshot.
-  Swapping a card for a `widget` node is a one-line change once the dealer's Locations
-  module carries per-department hours.
+- **Location and department hours** come from the `hours` and `phone-numbers` widgets,
+  keyed by `locationSlug`. The page still carries editorial chrome (hero copy, on-site
+  department blurbs, FAQ answers). Cards and tables stay empty until Admin → Locations
+  has a row whose slug matches the page (`tampa`, `davenport`, `sarasota`, `brooksville`,
+  `trailer-sales`, `aftermarket-parts`).
 - **Videos and the truck configurator** ship as real links, upgraded to embeds by a page
   script — see §5.
 - **The header's phone number** is one number in the template; the handoff varies it per
@@ -234,34 +234,38 @@ No `customHtml` block is used anywhere in this site.
 - **Photography.** Every photograph in the handoff is a slot; each one here is a real
   `image` block or a background layer pointing at `/img/photo-placeholder.svg`, with the
   handoff's shot brief as its `alt` text. Searching the repo for `photo-placeholder` gives
-  the complete shot list.
-- **Maps.** The six location pages carry a map image slot; the home, locations and contact
-  pages use the live `locations-map` widget, which needs the channel's Locations module.
-- **Staff.** `/meet-the-team` renders six `staff` widgets keyed by department name. The
-  handoff's 38-person roster is in `data/meet-the-team.json` for import.
+  the complete shot list. `public/img/` currently holds the logo, brand lockup, one staff
+  photo (`team-tony-martell.png`) and the placeholder.
+- **Locations module.** Six rooftops in Admin → Locations, slug exactly:
+  `tampa` · `davenport` · `sarasota` · `brooksville` · `trailer-sales` · `aftermarket-parts`.
+  Fill address (geocoded for the map), main phone, and on the Departments tab: enable
+  Sales / Parts / Service (and Rental where it applies) as **public**, with hours and
+  public phone contacts. Without that, the live widgets render "Locations load here."
+- **Staff.** `/meet-the-team` renders one `staff` widget per department code
+  (`executive`, `sales`, `parts`, `service`, `office`). `executive` is not in the
+  platform seed — add it as a custom department, then publish people onto those
+  departments from Locations → Employees. Until then the bands stay empty.
 - **Blog bodies.** Nine posts, each with its excerpt and a link to the original article.
 - **`pageType` on each page and the analytics bags on both forms.** Deliberately unset:
   their allowed values come from whichever analytics providers the dealer has enabled, so
   they are set on the dashboard (Pages → page settings, and Forms), not here. `npm run
   validate` notes each one.
-- **`channelToken`, `domain`, `url`, `storefrontOrigin`** in `dealer.config.json` stay as
-  `REPLACE_…` until the repo is connected to the channel.
+- **Publish from the dashboard** after filling Locations. Save each location-bearing page
+  so widget snapshots commit into `site/`, then Publish — that also syncs renderer 4.13.0
+  onto this repo (it still ships 4.11.0 locally; do not edit `renderer/` here).
+- **`dealer.config.json` identity** (`channelToken` `c1-msqf4iad`) is already baked.
+  Production `storefrontOrigin` is rewritten by the platform on the production dashboard;
+  the local value `https://a1.buzznerdsubsite.loc` is not what Vercel should ship.
 
 ---
 
 ## 7. Verified state
 
 ```
-npm run validate   exit 0 — 31 pages, 5 forms, 37 buttons, 1 template, 14 components,
-                            9 coded widgets; notes only (pageType, REPLACE_ placeholders,
-                            the brochure grid from §5.4)
-npm test           exit 0 — 124/124
-npm run build      exit 0 — 31 pages + 9 posts + the blog index, sitemap, robots, llms.txt
+npm run validate   exit 0 — notes only (pageType, brochure grid from §5.4)
+npm run build      exit 0 — 31 pages + 9 posts + the blog index (local renderer 4.11.0)
 ```
 
-No horizontal overflow at 390px, 900px or 1440px on any of the 32 routes.
-
-Band-by-band against the handoff at 1440px, summing the absolute difference in every
-band's height across all 31 pages: **57,350px at the start of the matching pass, 12,936px
-now** — and 2,386px of what is left is the staff roster the platform will fill in, with
-about 1,600px more in the closed first answer of each accordion (§4).
+The platform renderer is **4.13.0** (template + dashboard + Vendure catalogue). This
+dealer repo still has 4.11.0 until Publish syncs it; the location card links, hours
+tables-per-department, and hydrate for lists/phones land with that sync.

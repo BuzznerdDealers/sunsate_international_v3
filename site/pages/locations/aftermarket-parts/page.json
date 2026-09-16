@@ -8,7 +8,7 @@
         "headingLevel": 1,
         "eyebrow": "HOME / LOCATIONS / AFTERMARKET BUSINESS, TAMPA",
         "headline": "Hours & Location of Sun State International Aftermarket Business Tampa, FL",
-        "subhead": "7105 East 6th Ave., Tampa, FL 33619 — truck equipment repair, roll off cable repair, hydraulic repairs and aftermarket parts.",
+        "subhead": "7105 East 6th Ave., Tampa, FL 33619 \u2014 truck equipment repair, roll off cable repair, hydraulic repairs and aftermarket parts.",
         "ctas": [
           {
             "label": "Call (813) 627-3282",
@@ -25,7 +25,7 @@
         ],
         "image": {
           "src": "/img/photo-placeholder.svg",
-          "alt": "The Sun State aftermarket shop — photograph to be supplied",
+          "alt": "The Sun State aftermarket shop \u2014 photograph to be supplied",
           "width": 1600,
           "height": 900
         }
@@ -38,22 +38,15 @@
         "sectionId": "location-summary",
         "values": {
           "eyebrow": "STORE MAP",
-          "name": "Sun State International Trucks, LLC. – Aftermarket Business",
-          "address": "7105 East 6th Ave.\n\nTampa, FL 33619",
-          "phones": "<strong>Aftermarket</strong> <a href=\"tel:+18136273282\">(813) 627-3282</a>\n\n<strong>Toll free</strong> <a href=\"tel:+18007417566\">(800) 741-7566</a>\n\n<strong>Fax</strong> (813) 621-8709",
+          "name": "Sun State International Trucks, LLC. \u2013 Aftermarket Business",
           "noticeEyebrow": "WHAT WE SPECIALIZE IN",
           "noticeTitle": "Truck equipment, hoists and hydraulics",
           "noticeBody": "Visit our Aftermarket Location for all of your truck and trailer repair needs. We specialize in truck equipment repair, roll off cable repair, hydraulic truck equipment repair and much more.",
-          "noticeLinkLabel": "Full aftermarket capabilities →",
+          "noticeLinkLabel": "Full aftermarket capabilities \u2192",
           "noticeLinkUrl": "/aftermarket",
-          "map": {
-            "src": "/img/photo-placeholder.svg",
-            "alt": "A map of the Aftermarket location — image to be supplied",
-            "width": 1600,
-            "height": 900
-          },
           "anchor": "aftloc-summary",
-          "background": "card"
+          "background": "card",
+          "locationSlug": "aftermarket-parts"
         }
       }
     },
@@ -65,31 +58,9 @@
         "values": {
           "eyebrow": "STORE HOURS",
           "heading": "When we're open.",
-          "span": 4,
           "anchor": "aftloc-hours",
-          "departments": [
-            {
-              "title": "Store Hours",
-              "phone": "(813) 627-3282",
-              "phoneUrl": "tel:+18136273282",
-              "rows": "<strong>Monday</strong> 7:00am – 4:00pm\n\n<strong>Tuesday</strong> 7:00am – 4:00pm\n\n<strong>Wednesday</strong> 7:00am – 4:00pm\n\n<strong>Thursday</strong> 7:00am – 4:00pm\n\n<strong>Friday</strong> 7:00am – 4:00pm\n\n<strong>Saturday</strong> Closed\n\n<strong>Sunday</strong> Closed"
-            },
-            {
-              "title": "What's here",
-              "phone": "",
-              "phoneUrl": "",
-              "rows": "In-store shopping\n\nIn-store pickup\n\nDelivery\n\nFabrication & welding shop\n\nBody, hoist and liftgate installation\n\nDPF and DOC cleaning and baking"
-            },
-            {
-              "title": "Need routine service?",
-              "phone": "Schedule service →",
-              "phoneUrl": "/service-appointment",
-              "rows": "Diagnostics, preventative maintenance and warranty repairs run out of the Adamo Drive dealership, open 7 AM – 7 PM weekdays with after-hours coverage via Certified Fleet.",
-              "link2Label": "Tampa dealership hours →",
-              "link2Url": "/locations/tampa"
-            }
-          ],
-          "background": "card"
+          "background": "card",
+          "locationSlug": "aftermarket-parts"
         }
       }
     },
@@ -107,26 +78,26 @@
           "items": [
             {
               "title": "Truck bodies",
-              "body": "All-makes new or used body installations and swaps — van, reefer, dump, flatbed, tank and roll-off hoist.",
-              "linkLabel": "Body capabilities →",
+              "body": "All-makes new or used body installations and swaps \u2014 van, reefer, dump, flatbed, tank and roll-off hoist.",
+              "linkLabel": "Body capabilities \u2192",
               "linkUrl": "/aftermarket"
             },
             {
               "title": "Liftgates",
               "body": "New installations, remounts, warranty service and parts replacement for liftgates on trucks and trailers.",
-              "linkLabel": "Liftgate service →",
+              "linkLabel": "Liftgate service \u2192",
               "linkUrl": "/aftermarket"
             },
             {
               "title": "Frame & hydraulics",
               "body": "Shorten or lengthen, double single rails, driveline work, Huck bolt replacement, PTO and wet-line kits, hydraulic repairs.",
-              "linkLabel": "Frame modifications →",
+              "linkLabel": "Frame modifications \u2192",
               "linkUrl": "/aftermarket"
             },
             {
               "title": "Trailer parts & service",
               "body": "Aluminum and fiberglass repair, kingpins, landing gear, accessory installation, and Hyundai and all-makes trailer parts.",
-              "linkLabel": "Parts department →",
+              "linkLabel": "Parts department \u2192",
               "linkUrl": "/parts"
             }
           ]
@@ -208,50 +179,8 @@
           "eyebrow": "FIND A LOCATION",
           "heading": "Other Sun State locations.",
           "body": "Visit us at our convenient locations across Central and Southwest Florida.",
-          "span": 3,
           "background": "card",
-          "locations": [
-            {
-              "tag": "TRUCKS · TRAILERS · PARTS · SERVICE",
-              "city": "Tampa",
-              "address": "6020 Adamo Drive, Tampa, FL 33619",
-              "hours": "Service: 7 AM – 7 PM M–F",
-              "phone": "(813) 621-1331",
-              "phoneUrl": "tel:+18136211331",
-              "url": "/locations/tampa",
-              "linkLabel": "View location →"
-            },
-            {
-              "tag": "SUN STATE TRAILERS",
-              "city": "Trailer Sales",
-              "address": "6020 Adamo Drive, Tampa, FL 33619",
-              "hours": "Store: 8 AM – 5 PM M–F",
-              "phone": "(813) 621-1331",
-              "phoneUrl": "tel:+18136211331",
-              "url": "/locations/trailer-sales",
-              "linkLabel": "View location →"
-            },
-            {
-              "tag": "TRUCKS · PARTS · SERVICE",
-              "city": "Davenport",
-              "address": "41609 Hwy 27, Davenport, FL 33837",
-              "hours": "Service: 7 AM – 7 PM M–F",
-              "phone": "(863) 424-2411",
-              "phoneUrl": "tel:+18634242411",
-              "url": "/locations/davenport",
-              "linkLabel": "View location →"
-            },
-            {
-              "tag": "TRUCK & TRAILER PARTS",
-              "city": "Brooksville",
-              "address": "17127 Runway Drive, Brooksville, FL 34604",
-              "hours": "Store: 7 AM – 5 PM M–F",
-              "phone": "(352) 277-0221",
-              "phoneUrl": "tel:+13522770221",
-              "url": "/locations/brooksville",
-              "linkLabel": "View location →"
-            }
-          ]
+          "showMap": false
         }
       }
     },
@@ -315,7 +244,7 @@
                       "items": [
                         {
                           "q": "Where is the Sun State Aftermarket Business?",
-                          "a": "Sun State International Trucks, LLC. – Aftermarket Business is at 7105 East 6th Ave., Tampa, FL 33619, a few minutes from the Adamo Drive dealership. Phone (813) 627-3282, fax (813) 621-8709."
+                          "a": "Sun State International Trucks, LLC. \u2013 Aftermarket Business is at 7105 East 6th Ave., Tampa, FL 33619, a few minutes from the Adamo Drive dealership. Phone (813) 627-3282, fax (813) 621-8709."
                         },
                         {
                           "q": "What are the Aftermarket store hours?",

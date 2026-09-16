@@ -8,7 +8,7 @@
         "headingLevel": 1,
         "eyebrow": "HOME / LOCATIONS / SARASOTA, FLORIDA",
         "headline": "Hours & Location of Sun State International Sarasota, Florida",
-        "subhead": "1000 Sarasota Center Blvd., Sarasota, FL 34240 — trucks, trailers, parts and service off Sarasota Center Blvd, minutes from I-75.",
+        "subhead": "1000 Sarasota Center Blvd., Sarasota, FL 34240 \u2014 trucks, trailers, parts and service off Sarasota Center Blvd, minutes from I-75.",
         "ctas": [
           {
             "label": "Call (941) 355-7681",
@@ -25,7 +25,7 @@
         ],
         "image": {
           "src": "/img/photo-placeholder.svg",
-          "alt": "The Sun State Sarasota dealership — photograph to be supplied",
+          "alt": "The Sun State Sarasota dealership \u2014 photograph to be supplied",
           "width": 1600,
           "height": 900
         }
@@ -39,21 +39,14 @@
         "values": {
           "eyebrow": "STORE MAP",
           "name": "Sun State International Trucks",
-          "address": "1000 Sarasota Center Blvd.\n\nSarasota, FL 34240",
-          "phones": "<strong>Main / sales</strong> <a href=\"tel:+19413557681\">(941) 355-7681</a><strong>Service</strong> <a href=\"tel:+19415413251\">(941) 541-3251</a><strong>Toll free</strong> <a href=\"tel:+18007417566\">(800) 741-7566</a><strong>Fax</strong> (941) 351-9108",
           "noticeEyebrow": "NOW OFFERING",
           "noticeTitle": "Mobile truck service at this location",
-          "noticeBody": "Mobile service technicians dispatch from Sarasota, Monday–Friday, 8 AM – 5 PM. After hours service runs 8:00 PM – 5:00 AM via Certified Fleet.",
-          "noticeLinkLabel": "Certified Fleet — (863) 880-2206",
+          "noticeBody": "Mobile service technicians dispatch from Sarasota, Monday\u2013Friday, 8 AM \u2013 5 PM. After hours service runs 8:00 PM \u2013 5:00 AM via Certified Fleet.",
+          "noticeLinkLabel": "Certified Fleet \u2014 (863) 880-2206",
           "noticeLinkUrl": "tel:+18638802206",
-          "map": {
-            "src": "/img/photo-placeholder.svg",
-            "alt": "A map of the Sarasota location — image to be supplied",
-            "width": 1600,
-            "height": 900
-          },
           "anchor": "sar-summary",
-          "background": "card"
+          "background": "card",
+          "locationSlug": "sarasota"
         }
       }
     },
@@ -66,29 +59,9 @@
           "eyebrow": "DEPARTMENT HOURS",
           "heading": "When each department is open.",
           "note": "Service runs to 5 PM on weekdays. Call (941) 541-3251 before bringing a unit in outside those hours.",
-          "span": 4,
           "anchor": "sar-hours",
-          "departments": [
-            {
-              "title": "Sales Hours",
-              "phone": "(941) 355-7681",
-              "phoneUrl": "tel:+19413557681",
-              "rows": "<strong>Monday</strong> 8:00am – 5:00pm\n\n<strong>Tuesday</strong> 8:00am – 5:00pm\n\n<strong>Wednesday</strong> 8:00am – 5:00pm\n\n<strong>Thursday</strong> 8:00am – 5:00pm\n\n<strong>Friday</strong> 8:00am – 5:00pm\n\n<strong>Saturday</strong> Closed\n\n<strong>Sunday</strong> Closed"
-            },
-            {
-              "title": "Parts Hours",
-              "phone": "(941) 355-7681",
-              "phoneUrl": "tel:+19413557681",
-              "rows": "<strong>Monday</strong> 7:00am – 5:00pm\n\n<strong>Tuesday</strong> 7:00am – 5:00pm\n\n<strong>Wednesday</strong> 7:00am – 5:00pm\n\n<strong>Thursday</strong> 7:00am – 5:00pm\n\n<strong>Friday</strong> 7:00am – 5:00pm\n\n<strong>Saturday</strong> 8:00am – 12:00pm\n\n<strong>Sunday</strong> Closed"
-            },
-            {
-              "title": "Service Hours",
-              "phone": "(941) 541-3251",
-              "phoneUrl": "tel:+19415413251",
-              "rows": "<strong>Monday</strong> 7:00am – 5:00pm\n\n<strong>Tuesday</strong> 7:00am – 5:00pm\n\n<strong>Wednesday</strong> 7:00am – 5:00pm\n\n<strong>Thursday</strong> 7:00am – 5:00pm\n\n<strong>Friday</strong> 7:00am – 5:00pm\n\n<strong>Saturday</strong> Closed\n\n<strong>Sunday</strong> Closed"
-            }
-          ],
-          "background": "card"
+          "background": "card",
+          "locationSlug": "sarasota"
         }
       }
     },
@@ -107,25 +80,25 @@
             {
               "title": "Truck sales",
               "body": "New and used International trucks, IC Bus and Capacity yard trucks, with financing arranged in house.",
-              "linkLabel": "Financing →",
+              "linkLabel": "Financing \u2192",
               "linkUrl": "/financing"
             },
             {
               "title": "Parts counter",
               "body": "Genuine OEM and all-makes truck and trailer parts, Saturday morning hours, plus online ordering and delivery.",
-              "linkLabel": "Parts Department →",
+              "linkLabel": "Parts Department \u2192",
               "linkUrl": "/parts"
             },
             {
               "title": "Service & trailer bays",
               "body": "Factory-trained technicians, dedicated trailer repair bays, DOT inspections and alignment, open until 5 PM on weekdays.",
-              "linkLabel": "Service Department →",
+              "linkLabel": "Service Department \u2192",
               "linkUrl": "/service"
             },
             {
               "title": "In-store shopping",
               "body": "In-store shopping and curbside pickup, with after-hours service coverage through Certified Fleet.",
-              "linkLabel": "All locations →",
+              "linkLabel": "All locations \u2192",
               "linkUrl": "/locations"
             }
           ]
@@ -146,14 +119,14 @@
             {
               "title": "Trailer parts & service in Sarasota",
               "body": "When your trailer requires maintenance, you can depend on Sun State for all your trailer parts and service needs. Sarasota runs dedicated trailer repair bays covering kingpins, landing gear, aluminum and fiberglass repair, brakes, liftgates and DOT inspections, with Hyundai and all-makes trailer parts on the shelf.",
-              "linkLabel": "Schedule trailer service →",
+              "linkLabel": "Schedule trailer service \u2192",
               "linkUrl": "/service-appointment",
               "cardEyebrow": "SUN STATE TRAILERS"
             },
             {
               "title": "We'll come to your yard",
-              "body": "Mobile service runs out of Sarasota Monday through Friday, 8 AM – 5 PM, performing many repairs, diagnostics and preventative maintenance at your location across Sarasota, Manatee and Charlotte counties.",
-              "linkLabel": "Mobile service →",
+              "body": "Mobile service runs out of Sarasota Monday through Friday, 8 AM \u2013 5 PM, performing many repairs, diagnostics and preventative maintenance at your location across Sarasota, Manatee and Charlotte counties.",
+              "linkLabel": "Mobile service \u2192",
               "linkUrl": "/mobile-service",
               "cardEyebrow": "MOBILE SERVICE"
             }
@@ -170,46 +143,8 @@
           "eyebrow": "FIND A LOCATION",
           "heading": "Other Sun State locations.",
           "body": "Ready to find the right commercial trucks for your business? Visit us at our convenient locations across Central and Southwest Florida.",
-          "span": 3,
           "background": "paper",
-          "locations": [
-            {
-              "tag": "TRUCKS · TRAILERS · PARTS · SERVICE",
-              "city": "Tampa",
-              "address": "6020 Adamo Drive, Tampa, FL 33619",
-              "hours": "Sales & parts 7 AM – 7 PM M–F · Service 7 AM – 7 PM M–F",
-              "phone": "(813) 621-1331",
-              "phoneUrl": "tel:+18136211331",
-              "url": "/locations/tampa"
-            },
-            {
-              "tag": "TRUCKS · PARTS · SERVICE",
-              "city": "Davenport",
-              "address": "41609 Hwy 27, Davenport, FL 33837",
-              "hours": "Service 7 AM – 7 PM M–F",
-              "phone": "(863) 424-2411",
-              "phoneUrl": "tel:+18634242411",
-              "url": "/locations/davenport"
-            },
-            {
-              "tag": "TRUCK & TRAILER PARTS",
-              "city": "Brooksville",
-              "address": "17127 Runway Drive, Brooksville, FL 34604",
-              "hours": "Store 7 AM – 5 PM M–F",
-              "phone": "(352) 277-0221",
-              "phoneUrl": "tel:+13522770221",
-              "url": "/locations/brooksville"
-            },
-            {
-              "tag": "AFTERMARKET PARTS",
-              "city": "Sun State Aftermarket Parts",
-              "address": "7105 East 6th Ave, Tampa, FL 33619",
-              "hours": "Store 7 AM – 4 PM M–F",
-              "phone": "(813) 627-3282",
-              "phoneUrl": "tel:+18136273282",
-              "url": "/locations/aftermarket-parts"
-            }
-          ]
+          "showMap": false
         }
       }
     },
