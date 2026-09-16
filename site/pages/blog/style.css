@@ -55,6 +55,20 @@
    The card itself is the Post cards component; its rules travel with it. */
 [data-bz-node="bp-list"] .bz-block { padding-block: 0; }
 
+/* TEMPORARY — sample setup for client content review.
+   The component's own grid is 3-up, which is the handoff's layout and the one
+   the full archive should come back to. While only four sample posts are on
+   the page, 3-up would leave a single card alone on a second row, so the grid
+   runs 4-up here instead. Delete this block when the rest of the posts land
+   and the grid returns to the component's own rule. */
+[data-bz-node="bp-list"] .ss-posts { grid-template-columns: repeat(4, 1fr); }
+@media (max-width: 1100px) {
+  [data-bz-node="bp-list"] .ss-posts { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  [data-bz-node="bp-list"] .ss-posts { grid-template-columns: 1fr; }
+}
+
 /* --- Pager --------------------------------------------------------------- */
 [data-bz-node="bp-pager"] .bz-btns { justify-content: center; margin-block: 40px 0; }
 [data-bz-node="bp-pager"] .bz-btn { min-height: 46px; padding: 0 24px; }
