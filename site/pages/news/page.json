@@ -10,7 +10,7 @@
         "headline": "Find Sun State International in the News",
         "subhead": "Press coverage, awards and media resources for Sun State International Trucks and Sun State Trailers.",
         "image": {
-          "src": "/img/photo-placeholder.svg",
+          "src": "https://vendure.buzznerdrv.com/assets/source/f9/283a44061.jpg",
           "alt": "Sun State in the press — photograph to be supplied",
           "width": 1600,
           "height": 900
@@ -482,7 +482,8 @@
                           "a": "Yes. Sun State International Trucks and Sun State Trailers share one press office and one media contact."
                         }
                       ]
-                    }
+                    },
+                    "snapshot": null
                   }
                 }
               ]
@@ -506,7 +507,8 @@
           "secondaryUrl": "",
           "background": "ink"
         }
-      }
+      },
+      "children": []
     }
   ]
 }
