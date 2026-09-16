@@ -16,7 +16,7 @@
 // Widget descriptors (prop schemas, which surfaces a widget is allowed on) live
 // in Vendure, because plugins register them. This module owns only the markup.
 
-import { attrs, cls, esc, image, join, tagAttrs } from './html.mjs';
+import { attrs, cls, esc, href, image, join, tagAttrs } from './html.mjs';
 import { renderForm } from './forms.mjs';
 
 /** Widgets that install behaviour and render nothing a buyer sees. */
@@ -31,28 +31,81 @@ function shell(widget, config, inner, opts = {}) {
   })}>${inner}</div>`;
 }
 
+/**
+ * Carousel parts for a list a widget generates.
+ *
+ * A behaviour finds its moving pieces by `data-bz-part`, which an author sets on a
+ * node. These items have no node — they are built from the dealer's data at render
+ * time — so a rail of live locations, listings or staff was the one kind of rail
+ * that could not be a `carousel`. The way that went wrong was always the same: the
+ * author wrote arrow buttons and their own JavaScript, which the Design canvas
+ * never runs, so the arrows were dead in the editor and unstyleable on the page.
+ *
+ * Inert unless an ancestor declares `behaviour`, so it costs nothing anywhere else.
+ */
+const TRACK = ' data-bz-part="track"';
+const SLIDE = ' data-bz-part="slide"';
+
 /* ------------------------------------------------------------- placeholders */
+
+/**
+ * The map the snapshot already knows how to draw.
+ *
+ * Left as an empty box, the only thing that could fill it was `widgets.js`,
+ * which the Design canvas never runs and a sandboxed Preview may not be
+ * allowed to iframe. Putting the embed in the HTML means the editor, the first
+ * paint, and a crawler all see the same map.
+ */
+function mapEmbed(locations) {
+  const points = (locations || []).filter(
+    (l) => l.latitude != null && l.longitude != null && l.latitude !== '' && l.longitude !== '',
+  );
+  if (!points.length) return '';
+  const lats = points.map((p) => Number(p.latitude));
+  const lons = points.map((p) => Number(p.longitude));
+  const pad = 0.08;
+  const bbox = [
+    Math.min(...lons) - pad,
+    Math.min(...lats) - pad,
+    Math.max(...lons) + pad,
+    Math.max(...lats) + pad,
+  ].join(',');
+  const marker =
+    points.length === 1
+      ? `&amp;marker=${encodeURIComponent(`${points[0].latitude},${points[0].longitude}`)}`
+      : '';
+  return (
+    `<iframe src="https://www.openstreetmap.org/export/embed.html?bbox=${encodeURIComponent(bbox)}` +
+    `&amp;layer=mapnik${marker}" title="Map of our locations" loading="lazy" ` +
+    `referrerpolicy="no-referrer" style="width:100%;height:100%;border:0;display:block"></iframe>`
+  );
+}
 
 function locationsMap(config, snapshot, ctx) {
   const locations = (snapshot && snapshot.locations) || [];
   const list = locations.length
-    ? `<ul class="bz-loclist bz-bare">${join(
-        locations.map(
-          (l) =>
-            `<li class="bz-loc"><span class="bz-loc__c">${esc(l.name || l.city)}</span>${
-              l.streetAddress
-                ? `<address class="bz-loc__a">${esc(l.streetAddress)}, ${esc(
-                    l.city || '',
-                  )} ${esc(l.region || '')} ${esc(l.postalCode || '')}</address>`
-                : ''
-            }${
-              l.phone
-                ? `<a class="bz-loc__p" href="tel:${esc(l.phone.replace(/[^+\d]/g, ''))}"${attrs(
-                    tagAttrs('phone', 'call-location'),
-                  )}>${esc(l.phone)}</a>`
-                : ''
-            }${l.services ? `<span class="bz-loc__s">${esc(l.services)}</span>` : ''}</li>`,
-        ),
+    ? `<ul class="bz-loclist bz-bare"${TRACK}>${join(
+        locations.map((l) => {
+          const name = esc(l.name || l.city);
+          const title = l.href
+            ? `<a class="bz-loc__c" href="${esc(href(l.href, ctx))}"${attrs(
+                tagAttrs('link', 'find-location'),
+              )}>${name}</a>`
+            : `<span class="bz-loc__c">${name}</span>`;
+          const locality = [l.city, [l.region, l.postalCode].filter(Boolean).join(' ')]
+            .filter(Boolean)
+            .join(', ');
+          const address = [l.streetAddress, locality].filter(Boolean).join(', ');
+          return `<li class="bz-loc"${SLIDE}>${title}${
+            address ? `<address class="bz-loc__a">${esc(address)}</address>` : ''
+          }${
+            l.phone
+              ? `<a class="bz-loc__p" href="tel:${esc(l.phone.replace(/[^+\d]/g, ''))}"${attrs(
+                  tagAttrs('phone', 'call-location'),
+                )}>${esc(l.phone)}</a>`
+              : ''
+          }${l.services ? `<span class="bz-loc__s">${esc(l.services)}</span>` : ''}</li>`;
+        }),
         '',
       )}</ul>`
     : `<p class="bz-widget__empty">Locations load here.</p>`;
@@ -60,7 +113,7 @@ function locationsMap(config, snapshot, ctx) {
   const map =
     config.showMap === false
       ? ''
-      : `<div class="bz-map" data-bz-map role="img" aria-label="Map of our locations"></div>`;
+      : `<div class="bz-map" data-bz-map role="img" aria-label="Map of our locations">${mapEmbed(locations)}</div>`;
 
   return shell(
     'locations-map',
@@ -73,7 +126,7 @@ function staff(config, snapshot) {
   const people = (snapshot && snapshot.staff) || [];
   const cards = people.map(
     (p) =>
-      `<li class="bz-person">${image(p.photo, { width: 128, height: 128, placeholder: '' })}<span class="bz-person__n">${esc(
+      `<li class="bz-person"${SLIDE}>${image(p.photo, { width: 128, height: 128, placeholder: '' })}<span class="bz-person__n">${esc(
         p.name,
       )}</span>${p.title ? `<span class="bz-person__t">${esc(p.title)}</span>` : ''}${
         p.phone
@@ -88,7 +141,7 @@ function staff(config, snapshot) {
     config,
     `${config.heading ? `<p class="bz-widget__h">${esc(config.heading)}</p>` : ''}${
       cards.length
-        ? `<ul class="bz-people bz-bare">${join(cards, '')}</ul>`
+        ? `<ul class="bz-people bz-bare"${TRACK}>${join(cards, '')}</ul>`
         : '<p class="bz-widget__empty">Team members load here.</p>'
     }`,
   );
@@ -146,19 +199,29 @@ function phoneNumbers(config, snapshot) {
 }
 
 function hours(config, snapshot) {
-  const rows = (snapshot && snapshot.hours) || [];
+  const schedules =
+    snapshot && Array.isArray(snapshot.schedules) && snapshot.schedules.length
+      ? snapshot.schedules
+      : snapshot && Array.isArray(snapshot.hours) && snapshot.hours.length
+        ? [{ heading: config.heading || 'Opening hours', hours: snapshot.hours }]
+        : [];
   return shell(
     'hours',
     config,
-    rows.length
-      ? `<table class="bz-hours"><caption>${esc(
-          config.heading || 'Opening hours',
-        )}</caption><tbody>${join(
-          rows.map(
-            (r) => `<tr><th scope="row">${esc(r.day)}</th><td>${esc(r.hours)}</td></tr>`,
+    schedules.length
+      ? join(
+          schedules.map(
+            (schedule) =>
+              `<table class="bz-hours"><caption>${esc(
+                schedule.heading || config.heading || 'Opening hours',
+              )}</caption><tbody>${join(
+                (schedule.hours || []).map(
+                  (r) => `<tr><th scope="row">${esc(r.day)}</th><td>${esc(r.hours)}</td></tr>`,
+                ),
+                '',
+              )}</tbody></table>`,
           ),
-          '',
-        )}</tbody></table>`
+        )
       : '<p class="bz-widget__empty">Opening hours load here.</p>',
   );
 }
@@ -174,7 +237,7 @@ function listingHref(prefix, listing) {
 
 function listingCard(prefix, listing) {
   const facts = Array.isArray(listing.facts) ? listing.facts.slice(0, 3) : [];
-  return `<li><a class="bz-card" href="${esc(listingHref(prefix, listing))}"${attrs(
+  return `<li${SLIDE}><a class="bz-card" href="${esc(listingHref(prefix, listing))}"${attrs(
     tagAttrs('link', 'view-listing'),
   )}>${image(listing.image, { placeholder: 'Photo' })}<div class="bz-card__body"><span class="bz-card__t">${esc(
     listing.title,
@@ -199,7 +262,7 @@ function inventoryCarousel(config, snapshot, ctx) {
     config,
     `${config.heading ? `<p class="bz-widget__h">${esc(config.heading)}</p>` : ''}${
       items.length
-        ? `<ul class="bz-grid bz-grid--4 bz-bare">${join(
+        ? `<ul class="bz-grid bz-grid--4 bz-bare"${TRACK}>${join(
             items.map((l) => listingCard(prefix, l)),
             '',
           )}</ul>`
@@ -299,4 +362,59 @@ export function renderWidget(props, ctx, block) {
 /** Widget ids this renderer version can render statically. */
 export function staticWidgetIds() {
   return [...Object.keys(PLACEHOLDERS), 'form'];
+}
+
+/**
+ * The location a rooftop page is about, assembled from that page's own widget
+ * snapshots.
+ *
+ * Read from the snapshots rather than fetched, for the same reason the widgets
+ * are: the build has no credentials. That also makes the structured data a
+ * description of what is on the page rather than a second, independently
+ * sourced claim about the business — the two cannot disagree, because there is
+ * only one record.
+ *
+ * Returns null when the page carries no location data for `slug`, which is the
+ * honest answer: a page that does not say where it is should not tell a search
+ * engine that it does.
+ */
+export function rooftopFrom(nodes, slug) {
+  if (!slug) return null;
+  let place = null;
+  let schedules = null;
+
+  /**
+   * `hint` is the slug the snapshot was resolved for. A locations snapshot names
+   * each branch and can be searched, but an hours snapshot carries the location's
+   * *name* and not its slug, so the only way to know whose hours these are is the
+   * config that asked for them — the widget's own on a page, the placement's
+   * values inside a component.
+   */
+  const take = (snapshot, hint) => {
+    if (!snapshot || typeof snapshot !== 'object') return;
+    if (!place && Array.isArray(snapshot.locations)) {
+      place = snapshot.locations.find((l) => l && l.slug === slug) || null;
+    }
+    if (!schedules && hint === slug && Array.isArray(snapshot.schedules) && snapshot.schedules.length) {
+      schedules = snapshot.schedules;
+    }
+  };
+
+  const walk = (list) => {
+    for (const node of list || []) {
+      const props = (node && node.props) || {};
+      if (node && node.type === 'widget') {
+        take(props.snapshot, (props.config || {}).locationSlug);
+      }
+      if (node && node.type === 'sharedSection' && props.snapshots) {
+        const hint = (props.values || {}).locationSlug;
+        for (const snapshot of Object.values(props.snapshots)) take(snapshot, hint);
+      }
+      if (Array.isArray(node && node.children)) walk(node.children);
+    }
+  };
+  walk(nodes);
+
+  if (!place) return null;
+  return { ...place, schedules: schedules || [] };
 }

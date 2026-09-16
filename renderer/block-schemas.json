@@ -1,5 +1,5 @@
 {
-  "rendererVersion": "4.12.0",
+  "rendererVersion": "4.15.0",
   "documentVersion": 2,
   "gridColumns": 12,
   "tokenGroups": {
@@ -1390,6 +1390,10 @@
           "values": {
             "type": "object",
             "description": "Content for this placement, keyed by the component's declared prop keys. Anything left out falls back to the prop's default, so a placement need only state what differs."
+          },
+          "snapshots": {
+            "type": "object",
+            "description": "Widget data resolved by the platform for this placement, keyed by the widget node's id inside the component. Never hand-written."
           }
         },
         "required": [
@@ -1839,6 +1843,10 @@
           "config": {
             "type": "object",
             "description": "Widget props, validated against that widget's own schema."
+          },
+          "snapshot": {
+            "type": "object",
+            "description": "Data resolved by the platform and committed into the page, so the facts are in the static HTML. Never hand-written."
           }
         },
         "required": [

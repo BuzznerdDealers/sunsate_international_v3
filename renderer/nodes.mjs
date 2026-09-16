@@ -367,6 +367,14 @@ export const LAYOUT_REGISTRY = {
             'Anything left out falls back to the prop\'s default, so a placement need only ' +
             'state what differs.',
         },
+        /* Per-placement, because the definition is shared: two rooftops placing
+           the same component must not see one another's addresses. */
+        snapshots: {
+          type: 'object',
+          description:
+            'Widget data resolved by the platform for this placement, keyed by the ' +
+            "widget node's id inside the component. Never hand-written.",
+        },
       },
       required: ['sectionId'],
     },
@@ -412,7 +420,10 @@ export const LAYOUT_REGISTRY = {
       let inner;
       try {
         inner = renderChildren(
-          bindTree(parseDocument(section).nodes, values, { keepEmptyRepeat: !!(ctx && ctx.editing) }),
+          bindTree(parseDocument(section).nodes, values, {
+            keepEmptyRepeat: !!(ctx && ctx.editing),
+            snapshots: (node.props && node.props.snapshots) || null,
+          }),
           ctx,
         );
       } finally {

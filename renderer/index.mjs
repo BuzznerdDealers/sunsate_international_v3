@@ -18,6 +18,36 @@
 // Zero runtime dependencies, ESM, Node 20 and modern browsers. It is imported by
 // a zero-dependency static build, so it may not add a bundler requirement to it.
 
+// 4.15.0 — a dealer-data list can be a carousel. `locations-map`, `staff` and
+// `inventory-carousel` mark their generated list as `track` and each item as
+// `slide`, so a rail of live rooftops, people or listings finally answers to the
+// `carousel` behaviour. Until now those were the only rails that could not: a
+// behaviour finds its pieces by `data-bz-part`, an author sets that on a node,
+// and these items have no node. Every such rail therefore shipped hand-written
+// arrow JavaScript, which the Design canvas never runs — so the arrows were dead
+// in the editor and carried no keyboard or reduced-motion support anywhere. The
+// carousel also reads its slides live and watches a declared track, because
+// `hydrate` rebuilds those lists after the behaviour has already bound.
+//
+// 4.14.1 — locations-map draws the OpenStreetMap embed from the snapshot, so
+// the Design canvas and a no-JS first paint show the map. Until now the box
+// was empty until widgets.js ran, which the editor never does.
+// 4.14.0 — a rooftop page emits its own LocalBusiness. A page naming a
+// `locationSlug` in site/pages.json builds its structured data from that page's
+// own widget snapshots — address, geo, phone, per-department
+// openingHoursSpecification — and the company-level node is suppressed there, so
+// a four-branch dealer stops publishing four pages that all claim the head
+// office. `staff` finally redraws on hydrate; it had fetched its data and thrown
+// it away since the endpoint existed. `snapshot` is a declared prop, so the
+// validator no longer calls the one prop that makes a published page correct an
+// unknown one it will ignore.
+//
+// 4.13.0 — locations-map cards carry `href` from `pagePathPrefix` + slug so a
+// rooftop list links into `/locations/{slug}` rather than being dead cards; hours
+// emit one table per public department (`schedules`); the client hydrate redraws
+// location lists, phones and hours, not only the map iframe. Video blocks and
+// `backgroundVideo` land in the same cut (4.12).
+//
 // 4.10.0 — a style override can target a descendant. `textColor` now also
 // compiles onto `*:not(.bz-btn)` inside the node, because `color` is inherited
 // and an inherited value loses to any rule that matches a descendant directly —
@@ -48,7 +78,7 @@
 // person or a model hand-writes. `anchor` and `scope` join them as declared
 // universal props: the renderer always read those off any node's wrapper while no
 // widget declared them, so the validator refused edits the build would render.
-export const RENDERER_VERSION = '4.12.0';
+export const RENDERER_VERSION = '4.15.0';
 
 export { isValidPageType, pageTypeOptions } from './analytics-vocab.mjs';
 export { analyticsConfig, analyticsHead, missingIdentity } from './analytics.mjs';
@@ -169,7 +199,7 @@ export {
 } from './custom-widgets.mjs';
 
 export { renderForm, operatorsForFieldType, FIELD_TYPES } from './forms.mjs';
-export { renderWidget, staticWidgetIds, BEHAVIOUR_ONLY } from './widgets.mjs';
+export { renderWidget, staticWidgetIds, rooftopFrom, BEHAVIOUR_ONLY } from './widgets.mjs';
 
 /* -------------------------------------------------------- menus + templates */
 
