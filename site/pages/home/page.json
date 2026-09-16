@@ -9,7 +9,12 @@
         "paddingY": 10,
         "background": "ink",
         "align": "center",
-        "minHeight": "half"
+        "minHeight": "half",
+        "backgroundVideo": {
+          "src": "https://vendure.buzznerdrv.com/assets/source/d6/lakeside-hero-720__05.mp4",
+          "title": "lakeside-hero-720__05.mp4",
+          "poster": "https://vendure.buzznerdrv.com/assets/source/3d/925.jpg"
+        }
       },
       "styles": {
         "base": {
