@@ -64,9 +64,9 @@
       "label": "Locations",
       "fields": [
         {
-          "key": "tag",
+          "key": "departments",
           "type": "text",
-          "label": "Departments on site"
+          "label": "Departments"
         },
         {
           "key": "city",
@@ -127,16 +127,6 @@
           "key": "mapUrl",
           "type": "url",
           "label": "Directions link"
-        },
-        {
-          "key": "linkLabel",
-          "type": "text",
-          "label": "Link label"
-        },
-        {
-          "key": "directionsLabel",
-          "type": "text",
-          "label": "Directions label"
         }
       ]
     },
@@ -261,7 +251,7 @@
                   "type": "heading",
                   "props": {
                     "text": "{{city}}",
-                    "eyebrow": "{{tag}}",
+                    "eyebrow": "{{departments}}",
                     "headingLevel": 3
                   }
                 },
@@ -321,13 +311,13 @@
                   "props": {
                     "items": [
                       {
-                        "label": "{{linkLabel}}",
+                        "label": "View location →",
                         "url": "{{href}}",
                         "style": "link",
                         "intent": "find-location"
                       },
                       {
-                        "label": "{{directionsLabel}}",
+                        "label": "Directions →",
                         "url": "{{mapUrl}}",
                         "style": "link",
                         "intent": "find-location"
