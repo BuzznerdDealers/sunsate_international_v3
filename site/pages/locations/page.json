@@ -89,25 +89,73 @@
           "background": "card",
           "anchor": "loc-list",
           "body": "",
-          "showMap": true
-        },
-        "snapshots": {
-          "lg-list": {
-            "locations": [
+          "span": 4,
+          "map": [
+            {
+              "show": "yes"
+            }
+          ],
+          "locations": {
+            "source": "locations",
+            "config": {
+              "pagePathPrefix": "/locations"
+            },
+            "overlay": [
               {
-                "id": "15",
-                "name": "sudip1 location",
-                "slug": "main",
-                "href": "/locations/main",
-                "streetAddress": "sdfdsf werewr",
-                "city": "",
-                "region": "",
-                "postalCode": "",
-                "country": null,
-                "latitude": 40.7258,
-                "longitude": -111.961,
-                "phone": "",
-                "email": null
+                "slug": "tampa",
+                "tag": "TRUCKS · TRAILERS · PARTS · SERVICE",
+                "hours": "Sales: 7 AM – 7 PM M–F, 8 AM – 12 PM Sat\n\nParts: 7 AM – 7 PM M–F, 8 AM – 12 PM Sat\n\nService: 7 AM – 7 PM M–F, 7 AM – 12 PM Sat",
+                "perks": "In-store shopping · Curbside pickup · After-hours service via Certified Fleet",
+                "phone2": "Service — (813) 521-8053",
+                "phone2Url": "tel:+18135218053",
+                "phone3": "Sales — (813) 621-1331",
+                "phone3Url": "tel:+18136211331",
+                "directionsLabel": "Directions →",
+                "linkLabel": "View location →"
+              },
+              {
+                "slug": "davenport",
+                "tag": "TRUCKS · TRAILERS · PARTS · SERVICE",
+                "hours": "Sales: 8 AM – 4:30 PM M–F\n\nParts: 7 AM – 5 PM M–F, 8 AM – 12 PM Sat\n\nService: 7 AM – 7 PM M–F, 7 AM – 12 PM Sat",
+                "perks": "In-store shopping · Curbside pickup · After-hours service via Certified Fleet",
+                "phone2": "Service — (863) 238-2939",
+                "phone2Url": "tel:+18632382939",
+                "directionsLabel": "Directions →",
+                "linkLabel": "View location →"
+              },
+              {
+                "slug": "sarasota",
+                "tag": "TRUCKS · TRAILERS · PARTS · SERVICE",
+                "hours": "Sales: 8 AM – 5 PM M–F\n\nParts: 7 AM – 5 PM M–F, 8 AM – 12 PM Sat\n\nService: 7 AM – 5 PM M–F",
+                "perks": "In-store shopping · Curbside pickup · After-hours service via Certified Fleet",
+                "phone2": "Service — (941) 541-3251",
+                "phone2Url": "tel:+19415413251",
+                "directionsLabel": "Directions →",
+                "linkLabel": "View location →"
+              },
+              {
+                "slug": "brooksville",
+                "tag": "TRUCK & TRAILER PARTS",
+                "hours": "Store: 7 AM – 5 PM M–F",
+                "perks": "In-store shopping · In-store pickup · Delivery",
+                "directionsLabel": "Directions →",
+                "linkLabel": "View location →"
+              },
+              {
+                "slug": "aftermarket-parts",
+                "tag": "AFTERMARKET PARTS & MODIFICATIONS",
+                "hours": "Store: 7 AM – 4 PM M–F",
+                "perks": "In-store shopping · In-store pickup · Delivery · Body, hoist, liftgate and frame work",
+                "directionsLabel": "Directions →",
+                "linkLabel": "View location →"
+              },
+              {
+                "slug": "trailer-sales",
+                "tag": "SUN STATE TRAILERS · TRAILER SALES",
+                "hours": "Store: 8 AM – 5 PM M–F",
+                "perks": "In-store shopping · In-store pickup · Delivery · Fax (813) 628-0527",
+                "directionsLabel": "Directions →",
+                "linkLabel": "View location →"
               }
             ]
           }

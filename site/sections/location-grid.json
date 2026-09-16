@@ -74,9 +74,9 @@
           "label": "Name"
         },
         {
-          "key": "address",
+          "key": "streetAddress",
           "type": "text",
-          "label": "Address"
+          "label": "Street address"
         },
         {
           "key": "hours",
@@ -94,9 +94,9 @@
           "label": "Phone link (tel:)"
         },
         {
-          "key": "url",
+          "key": "href",
           "type": "url",
-          "label": "Location page"
+          "label": "Page link"
         },
         {
           "key": "perks",
@@ -124,7 +124,7 @@
           "label": "Third phone link"
         },
         {
-          "key": "directionsUrl",
+          "key": "mapUrl",
           "type": "url",
           "label": "Directions link"
         },
@@ -269,7 +269,7 @@
                   "id": "lg-card-addr",
                   "type": "text",
                   "props": {
-                    "text": "{{address}}",
+                    "text": "{{streetAddress}}",
                     "width": "full"
                   }
                 },
@@ -322,13 +322,13 @@
                     "items": [
                       {
                         "label": "{{linkLabel}}",
-                        "url": "{{url}}",
+                        "url": "{{href}}",
                         "style": "link",
                         "intent": "find-location"
                       },
                       {
                         "label": "{{directionsLabel}}",
-                        "url": "{{directionsUrl}}",
+                        "url": "{{mapUrl}}",
                         "style": "link",
                         "intent": "find-location"
                       }
