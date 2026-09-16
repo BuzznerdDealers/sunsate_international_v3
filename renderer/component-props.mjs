@@ -225,38 +225,36 @@ export function previewProps(props, values, item) {
  */
 export function bindTree(nodes, values, opts = {}) {
   const scopes = [{ value: values || {} }];
-  return expand(nodes, scopes, !!opts.keepEmptyRepeat, '', opts.snapshots || null);
+  return expand(nodes, scopes, !!opts.keepEmptyRepeat, '');
 }
 
-function expand(nodes, scopes, keepEmpty, suffix, snapshots) {
+function expand(nodes, scopes, keepEmpty, suffix) {
   const out = [];
   for (const node of Array.isArray(nodes) ? nodes : []) {
     if (!node || typeof node !== 'object') continue;
     const repeatKey = typeof node.props?.repeat === 'string' ? node.props.repeat.trim() : '';
 
     if (!repeatKey) {
-      out.push(bindNode(node, scopes, keepEmpty, suffix, snapshots));
+      out.push(bindNode(node, scopes, keepEmpty, suffix));
       continue;
     }
 
     const list = lookup(repeatKey, scopes);
     const items = Array.isArray(list) ? list : [];
     if (!items.length) {
-      if (keepEmpty) out.push(bindNode(node, [...scopes, { value: {}, index: 0 }], keepEmpty, suffix, snapshots));
+      if (keepEmpty) out.push(bindNode(node, [...scopes, { value: {}, index: 0 }], keepEmpty, suffix));
       continue;
     }
     items.forEach((item, index) => {
       // Ids have to stay unique: the canvas keys components off `data-bz-node`
       // and a duplicate would make two slides the same slide.
-      out.push(
-        bindNode(node, [...scopes, { value: item, index }], keepEmpty, `${suffix}-${index + 1}`, snapshots),
-      );
+      out.push(bindNode(node, [...scopes, { value: item, index }], keepEmpty, `${suffix}-${index + 1}`));
     });
   }
   return out;
 }
 
-function bindNode(node, scopes, keepEmpty, suffix, snapshots) {
+function bindNode(node, scopes, keepEmpty, suffix) {
   const props = {};
   for (const [key, value] of Object.entries(node.props || {})) {
     // `repeat` is an instruction to this function, not something a renderer
@@ -265,25 +263,12 @@ function bindNode(node, scopes, keepEmpty, suffix, snapshots) {
     if (key === 'repeat') continue;
     props[key] = substitute(value, scopes);
   }
-
-  // Widget data belongs to the *placement*, never to the definition. A component
-  // whose widget reads `{{locationSlug}}` is one shape used by every rooftop, so
-  // a snapshot stored on the definition would be one branch's address shown on
-  // all of them. The placement supplies them, keyed by the id the node has in
-  // the definition — before any repeat suffix, because that is the only id the
-  // placement can know.
-  if (snapshots && node.type === 'widget' && snapshots[node.id] !== undefined) {
-    props.snapshot = snapshots[node.id];
-  }
-
   const bound = {
     ...node,
     id: suffix && node.id ? `${node.id}${suffix}` : node.id,
     props,
   };
-  if (Array.isArray(node.children)) {
-    bound.children = expand(node.children, scopes, keepEmpty, suffix, snapshots);
-  }
+  if (Array.isArray(node.children)) bound.children = expand(node.children, scopes, keepEmpty, suffix);
   if (node.styles && typeof node.styles === 'object') bound.styles = node.styles;
   return bound;
 }

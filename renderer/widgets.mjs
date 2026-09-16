@@ -16,7 +16,7 @@
 // Widget descriptors (prop schemas, which surfaces a widget is allowed on) live
 // in Vendure, because plugins register them. This module owns only the markup.
 
-import { attrs, cls, esc, href, image, join, tagAttrs } from './html.mjs';
+import { attrs, cls, esc, image, join, tagAttrs } from './html.mjs';
 import { renderForm } from './forms.mjs';
 
 /** Widgets that install behaviour and render nothing a buyer sees. */
@@ -37,27 +37,22 @@ function locationsMap(config, snapshot, ctx) {
   const locations = (snapshot && snapshot.locations) || [];
   const list = locations.length
     ? `<ul class="bz-loclist bz-bare">${join(
-        locations.map((l) => {
-          const name = esc(l.name || l.city);
-          const title = l.href
-            ? `<a class="bz-loc__c" href="${esc(href(l.href, ctx))}"${attrs(
-                tagAttrs('link', 'find-location'),
-              )}>${name}</a>`
-            : `<span class="bz-loc__c">${name}</span>`;
-          const locality = [l.city, [l.region, l.postalCode].filter(Boolean).join(' ')]
-            .filter(Boolean)
-            .join(', ');
-          const address = [l.streetAddress, locality].filter(Boolean).join(', ');
-          return `<li class="bz-loc">${title}${
-            address ? `<address class="bz-loc__a">${esc(address)}</address>` : ''
-          }${
-            l.phone
-              ? `<a class="bz-loc__p" href="tel:${esc(l.phone.replace(/[^+\d]/g, ''))}"${attrs(
-                  tagAttrs('phone', 'call-location'),
-                )}>${esc(l.phone)}</a>`
-              : ''
-          }${l.services ? `<span class="bz-loc__s">${esc(l.services)}</span>` : ''}</li>`;
-        }),
+        locations.map(
+          (l) =>
+            `<li class="bz-loc"><span class="bz-loc__c">${esc(l.name || l.city)}</span>${
+              l.streetAddress
+                ? `<address class="bz-loc__a">${esc(l.streetAddress)}, ${esc(
+                    l.city || '',
+                  )} ${esc(l.region || '')} ${esc(l.postalCode || '')}</address>`
+                : ''
+            }${
+              l.phone
+                ? `<a class="bz-loc__p" href="tel:${esc(l.phone.replace(/[^+\d]/g, ''))}"${attrs(
+                    tagAttrs('phone', 'call-location'),
+                  )}>${esc(l.phone)}</a>`
+                : ''
+            }${l.services ? `<span class="bz-loc__s">${esc(l.services)}</span>` : ''}</li>`,
+        ),
         '',
       )}</ul>`
     : `<p class="bz-widget__empty">Locations load here.</p>`;
@@ -151,29 +146,19 @@ function phoneNumbers(config, snapshot) {
 }
 
 function hours(config, snapshot) {
-  const schedules =
-    snapshot && Array.isArray(snapshot.schedules) && snapshot.schedules.length
-      ? snapshot.schedules
-      : snapshot && Array.isArray(snapshot.hours) && snapshot.hours.length
-        ? [{ heading: config.heading || 'Opening hours', hours: snapshot.hours }]
-        : [];
+  const rows = (snapshot && snapshot.hours) || [];
   return shell(
     'hours',
     config,
-    schedules.length
-      ? join(
-          schedules.map(
-            (schedule) =>
-              `<table class="bz-hours"><caption>${esc(
-                schedule.heading || config.heading || 'Opening hours',
-              )}</caption><tbody>${join(
-                (schedule.hours || []).map(
-                  (r) => `<tr><th scope="row">${esc(r.day)}</th><td>${esc(r.hours)}</td></tr>`,
-                ),
-                '',
-              )}</tbody></table>`,
+    rows.length
+      ? `<table class="bz-hours"><caption>${esc(
+          config.heading || 'Opening hours',
+        )}</caption><tbody>${join(
+          rows.map(
+            (r) => `<tr><th scope="row">${esc(r.day)}</th><td>${esc(r.hours)}</td></tr>`,
           ),
-        )
+          '',
+        )}</tbody></table>`
       : '<p class="bz-widget__empty">Opening hours load here.</p>',
   );
 }
@@ -314,59 +299,4 @@ export function renderWidget(props, ctx, block) {
 /** Widget ids this renderer version can render statically. */
 export function staticWidgetIds() {
   return [...Object.keys(PLACEHOLDERS), 'form'];
-}
-
-/**
- * The location a rooftop page is about, assembled from that page's own widget
- * snapshots.
- *
- * Read from the snapshots rather than fetched, for the same reason the widgets
- * are: the build has no credentials. That also makes the structured data a
- * description of what is on the page rather than a second, independently
- * sourced claim about the business — the two cannot disagree, because there is
- * only one record.
- *
- * Returns null when the page carries no location data for `slug`, which is the
- * honest answer: a page that does not say where it is should not tell a search
- * engine that it does.
- */
-export function rooftopFrom(nodes, slug) {
-  if (!slug) return null;
-  let place = null;
-  let schedules = null;
-
-  /**
-   * `hint` is the slug the snapshot was resolved for. A locations snapshot names
-   * each branch and can be searched, but an hours snapshot carries the location's
-   * *name* and not its slug, so the only way to know whose hours these are is the
-   * config that asked for them — the widget's own on a page, the placement's
-   * values inside a component.
-   */
-  const take = (snapshot, hint) => {
-    if (!snapshot || typeof snapshot !== 'object') return;
-    if (!place && Array.isArray(snapshot.locations)) {
-      place = snapshot.locations.find((l) => l && l.slug === slug) || null;
-    }
-    if (!schedules && hint === slug && Array.isArray(snapshot.schedules) && snapshot.schedules.length) {
-      schedules = snapshot.schedules;
-    }
-  };
-
-  const walk = (list) => {
-    for (const node of list || []) {
-      const props = (node && node.props) || {};
-      if (node && node.type === 'widget') {
-        take(props.snapshot, (props.config || {}).locationSlug);
-      }
-      if (node && node.type === 'sharedSection' && props.snapshots) {
-        const hint = (props.values || {}).locationSlug;
-        for (const snapshot of Object.values(props.snapshots)) take(snapshot, hint);
-      }
-      if (Array.isArray(node && node.children)) walk(node.children);
-    }
-  };
-  walk(nodes);
-
-  if (!place) return null;
-  return { ...place, schedules: schedules || [] };
 }

@@ -453,16 +453,6 @@ const BLOCKS = {
           type: 'object',
           description: "Widget props, validated against that widget's own schema.",
         },
-        /* Declared so the validator stops reporting the one prop that makes a
-           published page correct as an unknown one it will ignore. It is written
-           by the platform — the editor on save, and publish for the whole repo —
-           and its shape is the widget's own, so there is nothing to check here. */
-        snapshot: {
-          type: 'object',
-          description:
-            'Data resolved by the platform and committed into the page, so the ' +
-            'facts are in the static HTML. Never hand-written.',
-        },
       },
       required: ['widget'],
     },

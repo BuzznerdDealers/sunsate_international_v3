@@ -5,27 +5,13 @@
 import { esc } from './html.mjs';
 import { analyticsHead } from './analytics.mjs';
 
-/** Drop keys with nothing in them, so a sparse record does not emit empty nodes. */
-function compact(object) {
-  return Object.fromEntries(
-    Object.entries(object).filter(([, v]) => v != null && v !== '' && !(Array.isArray(v) && !v.length)),
-  );
-}
-
 /**
  * LocalBusiness node for the dealership. Injected once per page by the shell —
  * page content must never duplicate it, or search engines see two conflicting
  * business records for one URL.
- *
- * On a rooftop page the record describes *that branch*, not the company. A
- * multi-location dealer whose every location page repeats one head-office
- * address is not merely missing an opportunity: it tells Google that the Tampa
- * page is about somewhere else, which is the opposite of what a location page is
- * for. `rooftop` therefore replaces the company node rather than joining it.
  */
-export function businessJsonLd(config, rooftop, canonical) {
+export function businessJsonLd(config) {
   const biz = config.business;
-  if (rooftop) return rooftopJsonLd(config, rooftop, canonical);
   return JSON.stringify({
     '@context': 'https://schema.org',
     '@type': biz.type,
@@ -47,88 +33,6 @@ export function businessJsonLd(config, rooftop, canonical) {
     openingHours: biz.openingHours,
     priceRange: biz.priceRange,
   });
-}
-
-/**
- * The branch's own name.
- *
- * Local ranking turns on the name, address and phone matching what the dealer
- * has on their Google Business Profile and in every directory that cites them,
- * so the name a dealer typed in Admin → Locations wins whenever it is a name
- * rather than a bare place. "Tampa" alone is a place; it is prefixed so the
- * record still says who the business is.
- */
-function rooftopName(config, rooftop) {
-  const name = (rooftop.name || '').trim();
-  if (!name) return config.name;
-  return name.toLowerCase().includes(config.name.toLowerCase()) ? name : `${config.name} ${name}`;
-}
-
-/** `{day, opensAt, closesAt}` rows to OpeningHoursSpecification, closed days omitted. */
-function openingHours(rows) {
-  return (rows || [])
-    .filter((r) => r && r.opensAt && r.closesAt)
-    .map((r) => ({
-      '@type': 'OpeningHoursSpecification',
-      dayOfWeek: r.day,
-      opens: r.opensAt,
-      closes: r.closesAt,
-    }));
-}
-
-function rooftopJsonLd(config, rooftop, canonical) {
-  const biz = config.business;
-  const url = canonical || config.url;
-  const schedules = rooftop.schedules || [];
-
-  return JSON.stringify(
-    compact({
-      '@context': 'https://schema.org',
-      '@type': biz.type,
-      // A stable identity for this branch, so the hours, the address and any
-      // review data a dealer adds later all attach to the same node.
-      '@id': `${url}#location`,
-      name: rooftopName(config, rooftop),
-      url,
-      telephone: rooftop.phone || biz.phone,
-      email: rooftop.email || biz.email,
-      image: config.url + config.seo.ogImage,
-      address: compact({
-        '@type': 'PostalAddress',
-        streetAddress: rooftop.streetAddress,
-        addressLocality: rooftop.city,
-        addressRegion: rooftop.region,
-        postalCode: rooftop.postalCode,
-        addressCountry: rooftop.country || biz.addressCountry,
-      }),
-      geo:
-        rooftop.latitude != null && rooftop.longitude != null
-          ? {
-              '@type': 'GeoCoordinates',
-              latitude: rooftop.latitude,
-              longitude: rooftop.longitude,
-            }
-          : null,
-      // The first public department's hours are the branch's hours; the rest are
-      // real sub-entities rather than a flattened list, because "Service closes
-      // at 5 but Sales at 7" is a fact a single openingHours cannot hold.
-      openingHoursSpecification: openingHours(schedules[0]?.hours),
-      department: schedules.slice(1).map((s) =>
-        compact({
-          '@type': 'LocalBusiness',
-          name: s.heading,
-          openingHoursSpecification: openingHours(s.hours),
-        }),
-      ),
-      parentOrganization: {
-        '@type': 'Organization',
-        name: config.name,
-        legalName: biz.legalName,
-        url: config.url,
-      },
-      priceRange: biz.priceRange,
-    }),
-  );
 }
 
 /**
@@ -174,12 +78,6 @@ export function renderShell({
   title,
   description,
   canonical,
-  /**
-   * The location this page is about, when it is a rooftop page. Extracted from
-   * the page's own widget snapshots by the build, so the structured data and the
-   * address a visitor reads are the same record and cannot drift.
-   */
-  rooftop = null,
   bodyHtml,
   pageCss,
   /**
@@ -265,7 +163,7 @@ ${fontTags}
 <link rel="stylesheet" href="/styles/blocks.css" />
 <link rel="stylesheet" href="/styles/chrome.css" />
 ${custom.css ? `<style data-bz-custom>${custom.css}</style>\n` : ''}<style>${pageCss}</style>
-<script type="application/ld+json">${businessJsonLd(config, rooftop, canonical)}</script>${analyticsTag(config)}${analyticsHead(
+<script type="application/ld+json">${businessJsonLd(config)}</script>${analyticsTag(config)}${analyticsHead(
   config,
   analyticsPage,
 )}${extraHead}${custom.headEnd ? `\n${custom.headEnd}` : ''}

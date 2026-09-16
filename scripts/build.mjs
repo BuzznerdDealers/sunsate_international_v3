@@ -38,7 +38,6 @@ import {
   splitAtContentArea,
   componentCode,
   documentStyles,
-  rooftopFrom,
 } from '../renderer/index.mjs';
 
 const ROOT = process.cwd();
@@ -497,7 +496,6 @@ for (const p of pages) {
       noindex,
       tokenScopes: p.tokenScope ? [p.tokenScope] : [],
       analyticsPage: { pageType: p.pageType || null },
-      rooftop: rooftopFrom(nodes, p.locationSlug),
     }),
   );
   emitted.push({ ...p, status, noindex, template: rendered.resolved.template?.id ?? null });

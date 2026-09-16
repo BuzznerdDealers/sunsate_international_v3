@@ -42,7 +42,6 @@ import {
   registerCustomWidgets,
   validateDocument,
   validateTemplate,
-  walkNodes,
 } from '../renderer/index.mjs';
 
 const HERE = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -259,15 +258,9 @@ let sitewideTemplate = false;
    `sharedSection` on a page names one of these, and `checkReferences` reads
    the set. Validation of the component files themselves still happens later. */
 const sectionIds = new Set();
-/* Their trees too: a rooftop page usually places its locations and hours widgets
-   through a component, so "does this page show location X" cannot be answered
-   from the page alone. */
-const sectionNodes = new Map();
 for (const file of listJson(join(SITE, 'sections'))) {
   const { value } = readJson(join(SITE, 'sections', file));
-  const id = value?.id ?? file.replace(/\.json$/, '');
-  sectionIds.add(id);
-  sectionNodes.set(id, value?.nodes ?? []);
+  sectionIds.add(value?.id ?? file.replace(/\.json$/, ''));
 }
 
 /* ----------------------------------------------------------- page documents */
@@ -370,67 +363,6 @@ for (const page of pages) {
       fail('site/pages.json', `${page.slug}.templates.${slot}`, `no template called "${id}"`);
     }
   }
-
-  reportRooftop(page, value?.nodes ?? []);
-}
-
-/**
- * A rooftop page's structured data is built from its own widget snapshots, so a
- * page that claims to be a location without carrying that location's data emits
- * nothing — silently, and only in production, which is the worst combination.
- */
-function reportRooftop(page, nodes) {
-  const slug = page.locationSlug;
-  if (!slug) {
-    if (/^\/locations\/[^/]+$/.test(page.path || '')) {
-      note(
-        'site/pages.json',
-        `"${page.slug}" looks like a rooftop page but has no locationSlug, so it emits the ` +
-          'company address rather than this branch\'s. Set it to the slug in Admin → Locations.',
-      );
-    }
-    return;
-  }
-  if (!placesWidget(nodes, 'locations-map', slug)) {
-    fail(
-      'site/pages.json',
-      `${page.slug}.locationSlug`,
-      `the page declares location "${slug}" but places no locations widget for it, so ` +
-        'there is nothing to build its address from',
-      'Add a "locations-map" widget with the same locationSlug — directly, or through a ' +
-        'component whose locationSlug value matches — then publish.',
-    );
-  } else if (!placesWidget(nodes, 'hours', slug)) {
-    note(
-      `site/pages/${page.dir}/page.json`,
-      `rooftop page "${slug}" has no hours widget for it, so its structured data carries ` +
-        'an address but no opening hours.',
-    );
-  }
-}
-
-/**
- * Is this widget placed for this rooftop — directly, or inside a component whose
- * `locationSlug` value matches? A component's own widgets read `{{locationSlug}}`,
- * so the placement is the only place the real slug appears.
- */
-function placesWidget(nodes, id, slug) {
-  let found = false;
-  walkNodes({ nodes }, node => {
-    if (node.type === 'widget' && node.props?.widget === id) {
-      const configured = node.props?.config?.locationSlug;
-      if (!configured || configured === slug) found = true;
-    }
-    if (node.type === 'sharedSection' && node.props?.values?.locationSlug === slug) {
-      const section = sectionNodes.get(node.props.sectionId);
-      if (section) {
-        walkNodes({ nodes: section }, inner => {
-          if (inner.type === 'widget' && inner.props?.widget === id) found = true;
-        });
-      }
-    }
-  });
-  return found;
 }
 
 /* ---------------------------------------------------- sections (components) */

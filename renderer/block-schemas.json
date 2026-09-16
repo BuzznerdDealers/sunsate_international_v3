@@ -1,5 +1,5 @@
 {
-  "rendererVersion": "4.14.0",
+  "rendererVersion": "4.12.0",
   "documentVersion": 2,
   "gridColumns": 12,
   "tokenGroups": {
@@ -1839,10 +1839,6 @@
           "config": {
             "type": "object",
             "description": "Widget props, validated against that widget's own schema."
-          },
-          "snapshot": {
-            "type": "object",
-            "description": "Data resolved by the platform and committed into the page, so the facts are in the static HTML. Never hand-written."
           }
         },
         "required": [
