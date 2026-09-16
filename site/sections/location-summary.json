@@ -64,9 +64,18 @@
       "label": "Band background",
       "default": "paper",
       "options": [
-        { "value": "card", "label": "White" },
-        { "value": "paper", "label": "Paper" },
-        { "value": "none", "label": "None" }
+        {
+          "value": "card",
+          "label": "White"
+        },
+        {
+          "value": "paper",
+          "label": "Paper"
+        },
+        {
+          "value": "none",
+          "label": "None"
+        }
       ]
     }
   ],
@@ -84,12 +93,18 @@
         {
           "id": "ls-row",
           "type": "row",
-          "props": { "gap": 7, "align": "stretch", "stackOn": "tablet" },
+          "props": {
+            "gap": 7,
+            "align": "stretch",
+            "stackOn": "tablet"
+          },
           "children": [
             {
               "id": "ls-copy",
               "type": "column",
-              "props": { "span": 6 },
+              "props": {
+                "span": 6
+              },
               "children": [
                 {
                   "id": "ls-h",
@@ -105,18 +120,24 @@
                   "type": "widget",
                   "props": {
                     "widget": "phone-numbers",
-                    "config": { "locationSlug": "{{locationSlug}}" }
+                    "config": {
+                      "locationSlug": "{{locationSlug}}"
+                    }
                   }
                 },
                 {
                   "id": "ls-notice",
                   "type": "row",
-                  "props": { "gap": 3 },
+                  "props": {
+                    "gap": 3
+                  },
                   "children": [
                     {
                       "id": "ls-notice-col",
                       "type": "column",
-                      "props": { "span": 12 },
+                      "props": {
+                        "span": 12
+                      },
                       "children": [
                         {
                           "id": "ls-notice-h",
@@ -130,7 +151,10 @@
                         {
                           "id": "ls-notice-b",
                           "type": "text",
-                          "props": { "text": "{{noticeBody}}", "width": "full" }
+                          "props": {
+                            "text": "{{noticeBody}}",
+                            "width": "full"
+                          }
                         },
                         {
                           "id": "ls-notice-cta",
@@ -155,7 +179,9 @@
             {
               "id": "ls-map",
               "type": "column",
-              "props": { "span": 6 },
+              "props": {
+                "span": 6
+              },
               "children": [
                 {
                   "id": "ls-map-w",
@@ -164,7 +190,8 @@
                     "widget": "locations-map",
                     "config": {
                       "showMap": true,
-                      "locationSlug": "{{locationSlug}}"
+                      "locationSlug": "{{locationSlug}}",
+                      "mapProvider": "static"
                     }
                   }
                 }

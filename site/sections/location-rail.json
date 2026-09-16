@@ -233,7 +233,8 @@
                     "widget": "locations-map",
                     "config": {
                       "showMap": true,
-                      "pagePathPrefix": "/locations"
+                      "pagePathPrefix": "/locations",
+                      "mapProvider": "static"
                     }
                   }
                 }

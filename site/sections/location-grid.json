@@ -210,7 +210,8 @@
                   "props": {
                     "widget": "locations-map",
                     "config": {
-                      "showMap": true
+                      "showMap": true,
+                      "mapProvider": "static"
                     }
                   }
                 }
