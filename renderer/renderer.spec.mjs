@@ -11,8 +11,12 @@ import {
   clearCustomWidgets,
   componentSampleValues,
   componentValues,
+  dataSource,
+  isDataBinding,
   parseComponentProps,
   previewProps,
+  resolveDataBinding,
+  resolveValues,
   compileNodeStyles,
   compileTokens,
   compileTokenScope,
@@ -1177,6 +1181,120 @@ test('stale values for props the component dropped are not fed to the tree', () 
   assert.deepEqual(Object.keys(values).sort(), ['heading', 'logos']);
 });
 
+/* ------------------------------------------- a designed list over live data */
+
+/**
+ * The trade every site here had been making: a `widget` node is live but draws
+ * the platform's card, and a typed list draws the dealer's card over data that
+ * goes stale. A list prop pointed at a data source is both.
+ */
+const ROOFTOPS = {
+  id: 'rooftops',
+  props: [
+    {
+      key: 'spots',
+      type: 'list',
+      label: 'Locations',
+      fields: [
+        { key: 'city', type: 'text' },
+        { key: 'region', type: 'text' },
+        { key: 'phone', type: 'text' },
+      ],
+    },
+  ],
+  nodes: [
+    {
+      id: 'grid',
+      type: 'section',
+      children: [
+        {
+          id: 'row',
+          type: 'row',
+          children: [
+            {
+              id: 'card',
+              type: 'column',
+              props: { span: 4, repeat: 'spots' },
+              children: [{ id: 'name', type: 'heading', props: { text: '{{city}}, {{region}}' } }],
+            },
+          ],
+        },
+      ],
+    },
+  ],
+};
+
+const ROOFTOP_CTX = { ...CTX, sections: { rooftops: ROOFTOPS } };
+
+const placeRooftops = (values, data, ctx = ROOFTOP_CTX) =>
+  renderDocument(
+    { nodes: [{ id: 'ref', type: 'sharedSection', props: { sectionId: 'rooftops', values, data } }] },
+    ctx,
+  );
+
+const LIVE = [
+  { slug: 'ogden', city: 'Ogden', region: 'UT', phone: '801-555-0100' },
+  { slug: 'provo', city: 'Provo', region: 'UT', phone: '801-555-0200' },
+];
+
+test('a list prop pointed at a data source draws the design once per live row', () => {
+  const html = placeRooftops({ spots: { source: 'locations' } }, { spots: LIVE });
+  assert.match(html, /Ogden, UT/);
+  assert.match(html, /Provo, UT/);
+  assert.equal(html.match(/bz-col/g).length, 2, 'two rooftops, two cards');
+  // The design is still the dealer's — the platform's own card markup is absent.
+  assert.doesNotMatch(html, /bz-loclist/);
+});
+
+test('a source with nothing baked publishes no rows, and shows the shape in the editor', () => {
+  // Inventing rows would put fictional addresses in the served HTML.
+  assert.doesNotMatch(placeRooftops({ spots: { source: 'locations' } }, null), /bz-col/);
+  const editing = placeRooftops({ spots: { source: 'locations' } }, null, { ...ROOFTOP_CTX, editing: true });
+  assert.match(editing, /bz-col/, 'a band that vanishes on the canvas reads as broken');
+});
+
+test('an overlay adds the editorial fields the platform does not hold', () => {
+  const rows = resolveDataBinding(
+    { source: 'locations', overlay: [{ slug: 'provo', badge: 'New' }] },
+    LIVE,
+  );
+  assert.equal(rows[1].badge, 'New');
+  assert.equal(rows[1].city, 'Provo', 'live fields survive the merge');
+  assert.equal(rows[0].badge, undefined, 'an overlay row only touches the row it names');
+});
+
+test('an overlay cannot restate a field the source owns', () => {
+  // Typing an address here would win over Admin and go stale with nothing to
+  // say so — the exact failure a data source exists to end.
+  const rows = resolveDataBinding(
+    { source: 'locations', overlay: [{ slug: 'ogden', city: 'Somewhere else', badge: 'Flagship' }] },
+    LIVE,
+  );
+  assert.equal(rows[0].city, 'Ogden');
+  assert.equal(rows[0].badge, 'Flagship');
+});
+
+test('an unknown source is empty rather than fatal, and only a list can carry one', () => {
+  assert.deepEqual(resolveDataBinding({ source: 'nonesuch' }, LIVE), []);
+  assert.equal(dataSource('nonesuch'), null);
+  assert.ok(isDataBinding({ source: 'locations' }));
+  assert.ok(!isDataBinding([{ city: 'Ogden' }]), 'typed rows are not a binding');
+
+  // A text prop naming a source is a mistake the validator reports; the renderer
+  // must not silently turn the object into "[object Object]" on the page.
+  const props = parseComponentProps([{ key: 'heading', type: 'text' }]);
+  const values = resolveValues(props, { heading: { source: 'locations' } }, null);
+  assert.deepEqual(values.heading, { source: 'locations' });
+});
+
+test('the editor keeps the binding, so saving does not freeze live rows into the file', () => {
+  const props = parseComponentProps(ROOFTOPS.props);
+  const stored = componentValues(props, { spots: { source: 'locations' } });
+  assert.ok(isDataBinding(stored.spots), 'what the page said is what the page keeps');
+  const drawn = resolveValues(props, { spots: { source: 'locations' } }, { spots: LIVE });
+  assert.equal(drawn.spots.length, 2, 'what is drawn is the resolved rows');
+});
+
 /**
  * The canvas renders node by node, so it cannot use `bindTree`. Without this a
  * slide showed the literal text `{{name}}`, which reads as a broken component
@@ -1396,7 +1514,7 @@ test('a locations-map snapshot with coordinates draws the map in the HTML', () =
           type: 'widget',
           props: {
             widget: 'locations-map',
-            config: { showMap: true },
+            config: { showMap: true, mapProvider: 'openstreetmap' },
             snapshot: {
               locations: [
                 { name: 'Tampa', latitude: 27.95, longitude: -82.45 },
@@ -1411,6 +1529,76 @@ test('a locations-map snapshot with coordinates draws the map in the HTML', () =
   assert.match(html, /data-bz-map/);
   assert.match(html, /openstreetmap\.org\/export\/embed/);
   assert.match(html, /27\.95/);
+});
+
+test('the static map provider draws tiles, not an iframe', () => {
+  // An iframe inside the dashboard's Preview is sandboxed without allow-same-origin
+  // and the provider serves its own blocked page there. Tiles are images, so they
+  // draw in Preview, on the canvas and with JavaScript off.
+  const html = renderDocument(
+    {
+      nodes: [
+        {
+          id: 'm',
+          type: 'widget',
+          props: {
+            widget: 'locations-map',
+            config: { showMap: true, mapProvider: 'static' },
+            snapshot: { locations: [{ name: 'Tampa', latitude: 27.95, longitude: -82.45 }] },
+          },
+        },
+      ],
+    },
+    CTX,
+  );
+  assert.match(html, /tile\.openstreetmap\.org\/\d+\/\d+\/\d+\.png/);
+  assert.match(html, /OpenStreetMap/);
+  assert.doesNotMatch(html, /<iframe/);
+});
+
+test('a map with no provider chosen draws tiles, not an iframe', () => {
+  // The default has to be the one that survives a sandboxed Preview frame and a
+  // canvas that runs no site JS. An iframe default meant every dealer who never
+  // opened the setting saw the embed's "access blocked" page instead of a map.
+  const html = renderDocument(
+    {
+      nodes: [
+        {
+          id: 'm',
+          type: 'widget',
+          props: {
+            widget: 'locations-map',
+            config: { showMap: true },
+            snapshot: { locations: [{ name: 'Tampa', latitude: 27.95, longitude: -82.45 }] },
+          },
+        },
+      ],
+    },
+    CTX,
+  );
+  assert.match(html, /tile\.openstreetmap\.org\/\d+\/\d+\/\d+\.png/);
+  assert.doesNotMatch(html, /<iframe/);
+});
+
+test('the google map provider draws its embed', () => {
+  const html = renderDocument(
+    {
+      nodes: [
+        {
+          id: 'm',
+          type: 'widget',
+          props: {
+            widget: 'locations-map',
+            config: { showMap: true, mapProvider: 'google' },
+            snapshot: { locations: [{ name: 'Tampa', latitude: 27.95, longitude: -82.45 }] },
+          },
+        },
+      ],
+    },
+    CTX,
+  );
+  assert.match(html, /maps\.google\.com\/maps\?q=/);
+  assert.doesNotMatch(html, /openstreetmap\.org\/export/);
 });
 
 test('a dealer-data list marks itself as a carousel track and slides', () => {

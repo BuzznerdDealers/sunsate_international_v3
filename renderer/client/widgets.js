@@ -50,8 +50,10 @@
   function mountMap(node, locations) {
     var target = node.querySelector('[data-bz-map]');
     if (!target || target.dataset.bzMounted) return;
-    // Already in the snapshot HTML — the canvas and first paint drew it.
-    if (target.querySelector('iframe')) {
+    // Already in the snapshot HTML — the canvas and first paint drew it. Any child
+    // counts, not just an iframe: the `static` provider renders tile images and
+    // replacing those with an embed would undo the reason it was chosen.
+    if (target.firstElementChild) {
       target.dataset.bzMounted = '1';
       return;
     }

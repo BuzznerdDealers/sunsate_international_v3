@@ -18,6 +18,38 @@
 // Zero runtime dependencies, ESM, Node 20 and modern browsers. It is imported by
 // a zero-dependency static build, so it may not add a bundler requirement to it.
 
+// 4.18.0 — `locations-map` draws static OpenStreetMap tiles unless a placement
+// asks for an interactive provider. The old default was the openstreetmap
+// iframe, which is the one output that cannot appear in three of the four
+// places a map is looked at: the Design canvas runs no site JS, Preview's frame
+// is a unique origin the embed refuses to render inside, and JS-off gets
+// nothing. So a dealer who never opened the setting saw "access blocked" in
+// Preview and a grey box on the canvas. `openstreetmap` and `google` are still
+// there for a placement that wants pan and zoom on the published page; neither
+// they nor the tiles need an API key.
+
+// 4.17.0 — the `locations` source carries the rest of a rooftop's record, not
+// just its address: brands carried, services offered, Google service options
+// (in-store shopping, curbside pickup, delivery), public departments, an hours
+// summary, and the first two public department phones. These read as a card's
+// editorial copy and are in fact dealer records edited on Admin → Locations, so
+// 4.16's `overlay` was quietly the wrong home for them: an overlay keyed to a
+// slug is a typed copy wearing a costume, and it goes stale the same way. What
+// belongs in an overlay is only what the platform does not hold at all — a brand
+// swatch, a display badge.
+//
+// 4.16.0 — a component's `list` prop can be pointed at live dealer data instead
+// of typed rows. The placement names a source from `data-sources.mjs`, the
+// platform resolves it on publish exactly as it resolves a widget snapshot, and
+// `repeat` draws the dealer's own design once per live row. Until now the two
+// halves were mutually exclusive: a `widget` node was live but owned its markup,
+// and a typed list was the dealer's markup over a copy of the facts. Every site
+// built here resolved that the same way — the widget placed for its map with its
+// list hidden in CSS, and the real tiles hand-fed beside it, going stale the day
+// a rooftop moved. An `overlay` carries the editorial extras the platform does
+// not hold (a badge, a swatch), keyed to the row it belongs to, and may not
+// restate a field the source owns.
+//
 // 4.15.0 — a dealer-data list can be a carousel. `locations-map`, `staff` and
 // `inventory-carousel` mark their generated list as `track` and each item as
 // `slide`, so a rail of live rooftops, people or listings finally answers to the
@@ -78,7 +110,7 @@
 // person or a model hand-writes. `anchor` and `scope` join them as declared
 // universal props: the renderer always read those off any node's wrapper while no
 // widget declared them, so the validator refused edits the build would render.
-export const RENDERER_VERSION = '4.15.0';
+export const RENDERER_VERSION = '4.18.0';
 
 export { isValidPageType, pageTypeOptions } from './analytics-vocab.mjs';
 export { analyticsConfig, analyticsHead, missingIdentity } from './analytics.mjs';
@@ -99,7 +131,10 @@ export {
   isBinding,
   parseComponentProps,
   previewProps,
+  resolveValues,
 } from './component-props.mjs';
+
+export { DATA_SOURCES, dataSource, isDataBinding, resolveDataBinding } from './data-sources.mjs';
 
 export { componentCode, documentStyles } from './document-assets.mjs';
 export {

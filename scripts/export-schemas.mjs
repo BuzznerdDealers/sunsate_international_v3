@@ -18,6 +18,7 @@ import {
   DOCUMENT_VERSION,
   BEHAVIOURS,
   CONDITION_TYPES,
+  DATA_SOURCES,
   GRID_COLUMNS,
   MENU_ITEM_TYPES,
   MAX_MENU_DEPTH,
@@ -77,6 +78,11 @@ const catalogue = {
   // edits the other and the AI contract states the list once.
   customWidgetPropTypes: PROP_TYPES,
   componentPropTypes: PROP_TYPES,
+  // Live dealer data a component's list prop may be pointed at instead of typed
+  // rows. The platform resolves `widget` and reads `path` out of the answer, so
+  // both halves of that contract have to travel together or a binding resolves
+  // to nothing and the band publishes empty.
+  dataSources: DATA_SOURCES,
   // Instance style overrides: the fields a node's `styles` buckets may set.
   // Functions cannot travel as JSON, so the validator gets names + options and
   // enforces "known field" — value shape is re-checked by the renderer at

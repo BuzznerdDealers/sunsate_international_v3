@@ -55,7 +55,89 @@ const SLIDE = ' data-bz-part="slide"';
  * which the Design canvas never runs and a sandboxed Preview may not be
  * allowed to iframe. Putting the embed in the HTML means the editor, the first
  * paint, and a crawler all see the same map.
+ *
+ * Which map is the design's call, because the trade-off is real rather than
+ * technical. The two embeds are interactive and are `<iframe>`s, which the
+ * dashboard's Preview sandboxes without `allow-same-origin` — correct, since
+ * that frame must not reach the dashboard's session, and the consequence is
+ * that a third-party embed inside it renders its own "access blocked" page.
+ * `static` has no iframe: it is OpenStreetMap's own tiles as `<img>`, so it
+ * draws in Preview, on the canvas, in the first paint and with JS switched
+ * off, at the cost of pan and zoom.
  */
+function mapCentre(locations) {
+  const points = (locations || []).filter(
+    (l) => l.latitude != null && l.longitude != null && l.latitude !== '' && l.longitude !== '',
+  );
+  if (!points.length) return null;
+  const lats = points.map((p) => Number(p.latitude));
+  const lons = points.map((p) => Number(p.longitude));
+  return {
+    points,
+    lat: (Math.min(...lats) + Math.max(...lats)) / 2,
+    lon: (Math.min(...lons) + Math.max(...lons)) / 2,
+    spread: Math.max(Math.max(...lats) - Math.min(...lats), Math.max(...lons) - Math.min(...lons)),
+  };
+}
+
+/** Slippy-map tile x/y for a coordinate, the scheme every OSM tile server uses. */
+function tileXY(lat, lon, zoom) {
+  const n = 2 ** zoom;
+  const rad = (lat * Math.PI) / 180;
+  return {
+    x: ((lon + 180) / 360) * n,
+    y: ((1 - Math.log(Math.tan(rad) + 1 / Math.cos(rad)) / Math.PI) / 2) * n,
+  };
+}
+
+/**
+ * A 4×3 grid of OSM tiles as plain images. No iframe, no third-party script, no
+ * API key — so it survives the Preview sandbox and a crawler reads it.
+ * Attribution is required by the tile usage policy and is not optional chrome.
+ */
+function staticMap(locations) {
+  const centre = mapCentre(locations);
+  if (!centre) return '';
+  const zoom = centre.spread > 4 ? 6 : centre.spread > 1 ? 8 : centre.spread > 0.2 ? 10 : 12;
+  const { x, y } = tileXY(centre.lat, centre.lon, zoom);
+  const cols = 4;
+  const rows = 3;
+  const left = Math.floor(x) - Math.floor(cols / 2);
+  const top = Math.floor(y) - Math.floor(rows / 2);
+  const limit = 2 ** zoom;
+  const tiles = [];
+  for (let row = 0; row < rows; row++) {
+    for (let col = 0; col < cols; col++) {
+      const tx = ((left + col) % limit + limit) % limit;
+      const ty = top + row;
+      if (ty < 0 || ty >= limit) {
+        tiles.push('<span class="bz-map__t"></span>');
+        continue;
+      }
+      tiles.push(
+        `<img class="bz-map__t" src="https://tile.openstreetmap.org/${zoom}/${tx}/${ty}.png" ` +
+          `alt="" loading="lazy" referrerpolicy="no-referrer" width="256" height="256">`,
+      );
+    }
+  }
+  return (
+    `<div class="bz-map__g" style="--bz-map-cols:${cols}">${join(tiles, '')}</div>` +
+    `<a class="bz-map__a" href="https://www.openstreetmap.org/copyright" rel="noopener">© OpenStreetMap</a>`
+  );
+}
+
+/** Google's embed, which needs no key in `output=embed` form. */
+function googleMap(locations) {
+  const centre = mapCentre(locations);
+  if (!centre) return '';
+  const query = encodeURIComponent(`${centre.lat},${centre.lon}`);
+  return (
+    `<iframe src="https://maps.google.com/maps?q=${query}&amp;z=11&amp;output=embed" ` +
+    `title="Map of our locations" loading="lazy" referrerpolicy="no-referrer" ` +
+    `style="width:100%;height:100%;border:0;display:block"></iframe>`
+  );
+}
+
 function mapEmbed(locations) {
   const points = (locations || []).filter(
     (l) => l.latitude != null && l.longitude != null && l.latitude !== '' && l.longitude !== '',
@@ -110,10 +192,20 @@ function locationsMap(config, snapshot, ctx) {
       )}</ul>`
     : `<p class="bz-widget__empty">Locations load here.</p>`;
 
+  // `static` by default because it is the only one that draws in all four
+  // places a map has to: the Design canvas, which runs no site JS; Preview,
+  // whose frame is a unique origin an `openstreetmap.org` embed refuses to
+  // render inside; the published page; and a crawler. The two interactive
+  // providers are an opt-in, and neither needs an API key.
+  const providers = { openstreetmap: mapEmbed, google: googleMap, static: staticMap };
+  const provider = config.mapProvider || 'static';
+  const draw = providers[provider] || staticMap;
   const map =
     config.showMap === false
       ? ''
-      : `<div class="bz-map" data-bz-map role="img" aria-label="Map of our locations">${mapEmbed(locations)}</div>`;
+      : `<div class="bz-map" data-bz-map data-bz-map-provider="${esc(
+          provider,
+        )}" role="img" aria-label="Map of our locations">${draw(locations)}</div>`;
 
   return shell(
     'locations-map',

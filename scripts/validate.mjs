@@ -31,11 +31,15 @@ import { fileURLToPath } from 'node:url';
 import { isValidPageType, pageTypeOptions } from '../renderer/analytics-vocab.mjs';
 import {
   CONDITION_TYPES,
+  DATA_SOURCES,
   MENU_ITEM_TYPES,
   RENDERER_VERSION,
   allWidgetIds,
   blockCatalogue,
+  dataSource,
+  isDataBinding,
   listMenus,
+  parseComponentProps,
   parseMenus,
   parseTemplate,
   parseWidgetDefinition,
@@ -263,11 +267,15 @@ const sectionIds = new Set();
    through a component, so "does this page show location X" cannot be answered
    from the page alone. */
 const sectionNodes = new Map();
+/* And their declared props, because a placement may point a list prop at a live
+   data source and only the declaration says which props are lists. */
+const sectionProps = new Map();
 for (const file of listJson(join(SITE, 'sections'))) {
   const { value } = readJson(join(SITE, 'sections', file));
   const id = value?.id ?? file.replace(/\.json$/, '');
   sectionIds.add(id);
   sectionNodes.set(id, value?.nodes ?? []);
+  sectionProps.set(id, parseComponentProps(value?.props));
 }
 
 /* ----------------------------------------------------------- page documents */
@@ -801,6 +809,72 @@ function reportRepeatedShapes(file, nodes) {
   check(nodes, 'nodes');
 }
 
+/**
+ * A placement pointing a list prop at live dealer data.
+ *
+ * Every failure here renders as an empty band rather than an error, which is the
+ * worst way to find out: the page builds, publishes, and shows nothing where the
+ * locations were. So each one is caught at the only point the names can be
+ * cross-checked — the placement knows the source, the component knows which of
+ * its props are lists, and the catalogue knows which fields the source owns.
+ */
+function checkDataBindings(file, at, props) {
+  const declared = sectionProps.get(props.sectionId) ?? [];
+  const byKey = new Map(declared.map(p => [p.key, p]));
+
+  for (const [key, value] of Object.entries(props.values ?? {})) {
+    if (!isDataBinding(value)) continue;
+    const where = `${at}.props.values.${key}`;
+    const prop = byKey.get(key);
+
+    if (!prop) {
+      fail(file, where, `"${props.sectionId}" declares no prop called "${key}"`);
+      continue;
+    }
+    if (prop.type !== 'list') {
+      fail(file, where, `"${key}" is a ${prop.type} prop; only a list can come from a data source`);
+      continue;
+    }
+    const source = dataSource(value.source);
+    if (!source) {
+      const known = DATA_SOURCES.map(s => s.id).join(', ');
+      fail(file, `${where}.source`, `no data source called "${value.source}" — try one of: ${known}`);
+      continue;
+    }
+
+    // A field the tree binds to that the source does not carry renders as empty
+    // text forever, and reads on the canvas as "the data is not arriving".
+    const owned = new Set(source.fields.map(f => f.key));
+    const overlaid = new Set();
+    for (const [i, row] of (value.overlay ?? []).entries()) {
+      if (!row || typeof row !== 'object') {
+        fail(file, `${where}.overlay[${i}]`, 'must be an object');
+        continue;
+      }
+      if (row[source.match] == null || row[source.match] === '') {
+        fail(file, `${where}.overlay[${i}]`, `needs "${source.match}" to say which row it belongs to`);
+      }
+      for (const field of Object.keys(row)) {
+        if (field === source.match) continue;
+        if (owned.has(field)) {
+          fail(
+            file,
+            `${where}.overlay[${i}].${field}`,
+            `"${field}" comes from ${source.label} and would go stale if typed here — remove it`,
+          );
+          continue;
+        }
+        overlaid.add(field);
+      }
+    }
+
+    for (const field of prop.fields ?? []) {
+      if (owned.has(field.key) || overlaid.has(field.key)) continue;
+      note(file, `${where}: "${field.key}" is not in ${source.label} and no overlay row sets it — it renders empty`);
+    }
+  }
+}
+
 /** Library ids a node points at, which no schema can check. */
 function checkReferences(file, nodes) {
   eachNode(nodes, (node, at) => {
@@ -811,6 +885,7 @@ function checkReferences(file, nodes) {
     if (node.type === 'sharedSection' && props.sectionId && !sectionIds.has(props.sectionId)) {
       fail(file, `${at}.props.sectionId`, `no component called "${props.sectionId}"`);
     }
+    if (node.type === 'sharedSection') checkDataBindings(file, at, props);
     for (const [i, item] of (props.items ?? []).entries()) {
       if (item?.ctaId && !buttons.has(item.ctaId)) {
         fail(file, `${at}.props.items[${i}].ctaId`, `no button called "${item.ctaId}"`);

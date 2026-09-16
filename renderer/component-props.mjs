@@ -21,6 +21,7 @@
 // needs a CMS collection for this and WordPress cannot do it at all.
 
 import { PROP_TYPES, lookup, normaliseProp } from './custom-widgets.mjs';
+import { isDataBinding, resolveDataBinding } from './data-sources.mjs';
 
 export { PROP_TYPES };
 
@@ -62,6 +63,28 @@ export function componentValues(props, values) {
   for (const prop of props || []) {
     const given = supplied[prop.key];
     out[prop.key] = given === undefined || given === null || given === '' ? fallback(prop) : given;
+  }
+  return out;
+}
+
+/**
+ * The same values, with every list prop that points at a data source replaced by
+ * the rows the platform resolved for this placement.
+ *
+ * Kept separate from `componentValues` because the two answer different
+ * questions: that one is "what did the page say", which the editor needs
+ * verbatim in order to save it back, and this one is "what should be drawn",
+ * which only the renderer needs. Collapsing them would make the editor write the
+ * resolved rows into the file on the next save and quietly turn a live list back
+ * into the typed copy it replaced.
+ */
+export function resolveValues(props, values, data, opts = {}) {
+  const out = componentValues(props, values);
+  for (const prop of props || []) {
+    if (prop.type !== 'list') continue;
+    const value = out[prop.key];
+    if (!isDataBinding(value)) continue;
+    out[prop.key] = resolveDataBinding(value, data ? data[prop.key] : null, opts);
   }
   return out;
 }
