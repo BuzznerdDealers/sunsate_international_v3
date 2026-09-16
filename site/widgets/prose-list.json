@@ -1,0 +1,27 @@
+{
+  "id": "prose-list",
+  "label": "Prose list",
+  "description": "A bulleted or numbered list as it reads inside an article. The platform Feature list block is a card grid, which restructures a migrated article's bullets — this keeps a real <ul>/<ol> while staying a list the dealer can edit item by item.",
+  "props": [
+    {
+      "key": "ordered",
+      "type": "boolean",
+      "label": "Numbered list",
+      "default": false
+    },
+    {
+      "key": "items",
+      "type": "list",
+      "label": "Items",
+      "fields": [
+        {
+          "key": "text",
+          "type": "richtext",
+          "label": "Item"
+        }
+      ]
+    }
+  ],
+  "html": "{{#if ordered}}<ol class=\"ss-prose-list ss-prose-list--num\">{{#each items}}<li>{{&text}}</li>{{/each}}</ol>{{else}}<ul class=\"ss-prose-list\">{{#each items}}<li>{{&text}}</li>{{/each}}</ul>{{/if}}",
+  "css": ".ss-prose-list{margin:0 0 24px;padding-left:22px;max-width:70ch}\n.ss-prose-list li{font-size:16px;line-height:1.7;color:var(--body-text);margin:0 0 8px}\n.ss-prose-list li::marker{color:var(--accent)}\n.ss-prose-list--num{list-style:decimal}\n.ss-prose-list a{color:var(--accent)}"
+}
