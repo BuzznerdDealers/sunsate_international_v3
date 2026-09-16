@@ -8,49 +8,72 @@
         {
           "id": "trucks-trailers",
           "label": "Trucks & Trailers",
-          "type": "page",
-          "ref": "inventory",
+          "type": "label",
+          "ref": null,
+          "url": null,
+          "newTab": false,
           "children": [
             {
               "id": "tt-shop",
               "label": "Shop inventory",
               "type": "label",
+              "ref": null,
+              "url": null,
+              "newTab": false,
               "children": [
                 {
                   "id": "tt-all",
                   "label": "All inventory",
-                  "type": "inventory",
-                  "ref": "inventory"
+                  "type": "label",
+                  "ref": null,
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "tt-new-trucks",
                   "label": "New trucks",
-                  "type": "inventory",
-                  "ref": "inventory?condition=new&type=truck"
+                  "type": "label",
+                  "ref": null,
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "tt-used-trucks",
                   "label": "Used trucks",
-                  "type": "inventory",
-                  "ref": "inventory?condition=used&type=truck"
+                  "type": "label",
+                  "ref": null,
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "tt-new-trailers",
                   "label": "New trailers",
-                  "type": "inventory",
-                  "ref": "inventory?condition=new&type=trailer"
+                  "type": "label",
+                  "ref": null,
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "tt-used-trailers",
                   "label": "Used trailers",
-                  "type": "inventory",
-                  "ref": "inventory?condition=used&type=trailer"
+                  "type": "label",
+                  "ref": null,
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "tt-rentals",
                   "label": "Rental & lease",
-                  "type": "inventory",
-                  "ref": "inventory?condition=rental"
+                  "type": "label",
+                  "ref": null,
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 }
               ]
             },
@@ -58,48 +81,72 @@
               "id": "tt-category",
               "label": "By category",
               "type": "label",
+              "ref": null,
+              "url": null,
+              "newTab": false,
               "children": [
                 {
                   "id": "tt-sleeper",
                   "label": "Sleeper cabs",
-                  "type": "inventory",
-                  "ref": "inventory?category=sleeper-cabs"
+                  "type": "label",
+                  "ref": null,
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "tt-day",
                   "label": "Day cabs",
-                  "type": "inventory",
-                  "ref": "inventory?category=day-cabs"
+                  "type": "label",
+                  "ref": null,
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "tt-dump",
                   "label": "Dump trucks",
-                  "type": "inventory",
-                  "ref": "inventory?category=dump-trucks"
+                  "type": "label",
+                  "ref": null,
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "tt-yard",
                   "label": "Capacity yard trucks",
                   "type": "page",
-                  "ref": "capacity-yard-trucks"
+                  "ref": "capacity-yard-trucks",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "tt-dryvan",
                   "label": "Dry van trailers",
-                  "type": "inventory",
-                  "ref": "inventory?category=dry-van"
+                  "type": "label",
+                  "ref": null,
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "tt-reefer",
                   "label": "Refrigerated trailers",
-                  "type": "inventory",
-                  "ref": "inventory?category=refrigerated"
+                  "type": "label",
+                  "ref": null,
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "tt-flatbed",
                   "label": "Flatbed trailers",
-                  "type": "inventory",
-                  "ref": "inventory?category=flatbed"
+                  "type": "label",
+                  "ref": null,
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 }
               ]
             },
@@ -107,36 +154,54 @@
               "id": "tt-tools",
               "label": "Build & compare",
               "type": "label",
+              "ref": null,
+              "url": null,
+              "newTab": false,
               "children": [
                 {
                   "id": "tt-hub",
                   "label": "Inventory hub",
-                  "type": "page",
-                  "ref": "inventory"
+                  "type": "label",
+                  "ref": null,
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "tt-config",
                   "label": "Truck configurator",
                   "type": "page",
-                  "ref": "truck-configurator"
+                  "ref": "truck-configurator",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "tt-specs",
                   "label": "Brochures & S13 powertrain",
                   "type": "page",
-                  "ref": "brochures-and-s13-powertrain"
+                  "ref": "brochures-and-s13-powertrain",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "tt-deal",
                   "label": "Deal of the week",
                   "type": "page",
-                  "ref": "deal-of-the-week"
+                  "ref": "deal-of-the-week",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "tt-finance",
                   "label": "Financing",
                   "type": "page",
-                  "ref": "financing"
+                  "ref": "financing",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 }
               ]
             }
@@ -147,29 +212,43 @@
           "label": "Parts",
           "type": "page",
           "ref": "parts",
+          "url": null,
+          "newTab": false,
           "children": [
             {
               "id": "pt-shop",
               "label": "Shop parts",
               "type": "label",
+              "ref": null,
+              "url": null,
+              "newTab": false,
               "children": [
                 {
                   "id": "pt-catalogue",
                   "label": "Parts catalogue",
-                  "type": "inventory",
-                  "ref": "parts"
+                  "type": "label",
+                  "ref": null,
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "pt-dept",
                   "label": "Parts department",
                   "type": "page",
-                  "ref": "parts"
+                  "ref": "parts",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "pt-online",
                   "label": "Order parts online",
                   "type": "url",
-                  "url": "https://www.sunstateparts.com/login"
+                  "ref": null,
+                  "url": "https://www.sunstateparts.com/login",
+                  "newTab": false,
+                  "children": []
                 }
               ]
             },
@@ -177,24 +256,36 @@
               "id": "pt-counters",
               "label": "Parts counters",
               "type": "label",
+              "ref": null,
+              "url": null,
+              "newTab": false,
               "children": [
                 {
                   "id": "pt-tampa",
                   "label": "Tampa",
                   "type": "page",
-                  "ref": "tampa-location"
+                  "ref": "tampa-location",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "pt-brooksville",
                   "label": "Truck & Trailer Parts — Brooksville",
                   "type": "page",
-                  "ref": "brooksville-location"
+                  "ref": "brooksville-location",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "pt-aftermarket-parts",
                   "label": "Aftermarket Parts — Tampa",
                   "type": "page",
-                  "ref": "aftermarket-parts-location"
+                  "ref": "aftermarket-parts-location",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 }
               ]
             },
@@ -202,18 +293,27 @@
               "id": "pt-aftermarket",
               "label": "Aftermarket",
               "type": "label",
+              "ref": null,
+              "url": null,
+              "newTab": false,
               "children": [
                 {
                   "id": "pt-mods",
                   "label": "Modifications & alterations",
                   "type": "page",
-                  "ref": "aftermarket"
+                  "ref": "aftermarket",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "pt-warranty",
                   "label": "Extended service",
                   "type": "page",
-                  "ref": "extended-service"
+                  "ref": "extended-service",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 }
               ]
             }
@@ -224,29 +324,43 @@
           "label": "Service",
           "type": "page",
           "ref": "service",
+          "url": null,
+          "newTab": false,
           "children": [
             {
               "id": "sv-book",
               "label": "Book service",
               "type": "label",
+              "ref": null,
+              "url": null,
+              "newTab": false,
               "children": [
                 {
                   "id": "sv-appt",
                   "label": "Schedule an appointment",
                   "type": "page",
-                  "ref": "service-appointment"
+                  "ref": "service-appointment",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "sv-mobile",
                   "label": "Mobile service",
                   "type": "page",
-                  "ref": "mobile-service"
+                  "ref": "mobile-service",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "sv-after",
                   "label": "After hours — (863) 880-2206",
                   "type": "url",
-                  "url": "tel:+18638802206"
+                  "ref": null,
+                  "url": "tel:+18638802206",
+                  "newTab": false,
+                  "children": []
                 }
               ]
             },
@@ -254,24 +368,36 @@
               "id": "sv-dept",
               "label": "Departments",
               "type": "label",
+              "ref": null,
+              "url": null,
+              "newTab": false,
               "children": [
                 {
                   "id": "sv-overview",
                   "label": "Service & repair",
                   "type": "page",
-                  "ref": "service"
+                  "ref": "service",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "sv-extended",
                   "label": "Extended service contracts",
                   "type": "page",
-                  "ref": "extended-service"
+                  "ref": "extended-service",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "sv-parts",
                   "label": "Parts department",
                   "type": "page",
-                  "ref": "parts"
+                  "ref": "parts",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 }
               ]
             },
@@ -279,24 +405,36 @@
               "id": "sv-where",
               "label": "Service centers",
               "type": "label",
+              "ref": null,
+              "url": null,
+              "newTab": false,
               "children": [
                 {
                   "id": "sv-tampa",
                   "label": "Tampa",
                   "type": "page",
-                  "ref": "tampa-location"
+                  "ref": "tampa-location",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "sv-sarasota",
                   "label": "Sarasota",
                   "type": "page",
-                  "ref": "sarasota-location"
+                  "ref": "sarasota-location",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "sv-davenport",
                   "label": "Davenport",
                   "type": "page",
-                  "ref": "davenport-location"
+                  "ref": "davenport-location",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 }
               ]
             }
@@ -306,36 +444,53 @@
           "id": "aftermarket",
           "label": "Aftermarket",
           "type": "page",
-          "ref": "aftermarket"
+          "ref": "aftermarket",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "our-story",
           "label": "Our Story",
           "type": "page",
           "ref": "our-story",
+          "url": null,
+          "newTab": false,
           "children": [
             {
               "id": "os-company",
               "label": "The company",
               "type": "label",
+              "ref": null,
+              "url": null,
+              "newTab": false,
               "children": [
                 {
                   "id": "os-story",
                   "label": "Our Story",
                   "type": "page",
-                  "ref": "our-story"
+                  "ref": "our-story",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "os-team",
                   "label": "Meet the Team",
                   "type": "page",
-                  "ref": "meet-the-team"
+                  "ref": "meet-the-team",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "os-careers",
                   "label": "Careers",
                   "type": "page",
-                  "ref": "careers"
+                  "ref": "careers",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 }
               ]
             },
@@ -343,18 +498,27 @@
               "id": "os-community",
               "label": "In the community",
               "type": "label",
+              "ref": null,
+              "url": null,
+              "newTab": false,
               "children": [
                 {
                   "id": "os-involvement",
                   "label": "Community Involvement",
                   "type": "page",
-                  "ref": "community-involvement"
+                  "ref": "community-involvement",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "os-reviews",
                   "label": "Reviews",
                   "type": "page",
-                  "ref": "reviews"
+                  "ref": "reviews",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 }
               ]
             },
@@ -362,24 +526,36 @@
               "id": "os-media",
               "label": "News & media",
               "type": "label",
+              "ref": null,
+              "url": null,
+              "newTab": false,
               "children": [
                 {
                   "id": "os-news",
                   "label": "News & Press",
                   "type": "page",
-                  "ref": "news-and-press"
+                  "ref": "news-and-press",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "os-videos",
                   "label": "Videos",
                   "type": "page",
-                  "ref": "videos"
+                  "ref": "videos",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "os-blog",
                   "label": "Blog",
-                  "type": "url",
-                  "url": "/blog"
+                  "type": "page",
+                  "ref": "blog",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 }
               ]
             }
@@ -390,29 +566,43 @@
           "label": "Location Details",
           "type": "page",
           "ref": "locations",
+          "url": null,
+          "newTab": false,
           "children": [
             {
               "id": "lo-trucks",
               "label": "Trucks, parts & service",
               "type": "label",
+              "ref": null,
+              "url": null,
+              "newTab": false,
               "children": [
                 {
                   "id": "lo-tampa",
                   "label": "Tampa",
                   "type": "page",
-                  "ref": "tampa-location"
+                  "ref": "tampa-location",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "lo-davenport",
                   "label": "Davenport",
                   "type": "page",
-                  "ref": "davenport-location"
+                  "ref": "davenport-location",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "lo-sarasota",
                   "label": "Sarasota",
                   "type": "page",
-                  "ref": "sarasota-location"
+                  "ref": "sarasota-location",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 }
               ]
             },
@@ -420,24 +610,36 @@
               "id": "lo-specialist",
               "label": "Parts & trailers",
               "type": "label",
+              "ref": null,
+              "url": null,
+              "newTab": false,
               "children": [
                 {
                   "id": "lo-brooksville",
                   "label": "Truck & Trailer Parts — Brooksville",
                   "type": "page",
-                  "ref": "brooksville-location"
+                  "ref": "brooksville-location",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "lo-aftermarket",
                   "label": "Aftermarket Parts — Tampa",
                   "type": "page",
-                  "ref": "aftermarket-parts-location"
+                  "ref": "aftermarket-parts-location",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "lo-trailer",
                   "label": "Trailer Sales — Tampa",
                   "type": "page",
-                  "ref": "trailer-sales-location"
+                  "ref": "trailer-sales-location",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 }
               ]
             },
@@ -445,24 +647,36 @@
               "id": "lo-more",
               "label": "Plan a visit",
               "type": "label",
+              "ref": null,
+              "url": null,
+              "newTab": false,
               "children": [
                 {
                   "id": "lo-all",
                   "label": "All locations & hours",
                   "type": "page",
-                  "ref": "locations"
+                  "ref": "locations",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "lo-contact",
                   "label": "Contact us",
                   "type": "page",
-                  "ref": "contact-us"
+                  "ref": "contact-us",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "lo-appt",
                   "label": "Schedule service",
                   "type": "page",
-                  "ref": "service-appointment"
+                  "ref": "service-appointment",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 }
               ]
             }
@@ -478,25 +692,37 @@
           "id": "hb-international",
           "label": "INTERNATIONAL",
           "type": "inventory",
-          "ref": "inventory?brand=international"
+          "ref": "inventory?brand=international",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "hb-icbus",
           "label": "IC BUS",
           "type": "inventory",
-          "ref": "inventory?brand=ic-bus"
+          "ref": "inventory?brand=ic-bus",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "hb-hyundai",
           "label": "HYUNDAI TRANSLEAD",
           "type": "inventory",
-          "ref": "inventory?brand=hyundai-translead"
+          "ref": "inventory?brand=hyundai-translead",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "hb-globe",
           "label": "GLOBE TRAILERS",
           "type": "inventory",
-          "ref": "inventory?brand=globe-trailers"
+          "ref": "inventory?brand=globe-trailers",
+          "url": null,
+          "newTab": false,
+          "children": []
         }
       ]
     },
@@ -508,43 +734,64 @@
           "id": "u-tampa",
           "label": "Tampa",
           "type": "page",
-          "ref": "tampa-location"
+          "ref": "tampa-location",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "u-sarasota",
           "label": "Sarasota",
           "type": "page",
-          "ref": "sarasota-location"
+          "ref": "sarasota-location",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "u-davenport",
           "label": "Davenport",
           "type": "page",
-          "ref": "davenport-location"
+          "ref": "davenport-location",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "u-brooksville",
           "label": "Brooksville",
           "type": "page",
-          "ref": "brooksville-location"
+          "ref": "brooksville-location",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "u-aftermarket",
           "label": "Aftermarket",
           "type": "page",
-          "ref": "aftermarket-parts-location"
+          "ref": "aftermarket-parts-location",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "u-trailers",
           "label": "Trailers",
           "type": "page",
-          "ref": "trailer-sales-location"
+          "ref": "trailer-sales-location",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "u-centers",
           "label": "Sun State US Centers",
           "type": "page",
-          "ref": "locations"
+          "ref": "locations",
+          "url": null,
+          "newTab": false,
+          "children": []
         }
       ]
     },
@@ -555,26 +802,38 @@
         {
           "id": "fb-international",
           "label": "International",
-          "type": "inventory",
-          "ref": "inventory?brand=international"
+          "type": "label",
+          "ref": null,
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "fb-icbus",
           "label": "IC Bus",
-          "type": "inventory",
-          "ref": "inventory?brand=ic-bus"
+          "type": "label",
+          "ref": null,
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "fb-hyundai",
           "label": "Hyundai Translead",
-          "type": "inventory",
-          "ref": "inventory?brand=hyundai-translead"
+          "type": "label",
+          "ref": null,
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "fb-globe",
           "label": "Globe Trailers",
-          "type": "inventory",
-          "ref": "inventory?brand=globe-trailers"
+          "type": "label",
+          "ref": null,
+          "url": null,
+          "newTab": false,
+          "children": []
         }
       ]
     },
@@ -586,61 +845,91 @@
           "id": "fs-new-trucks",
           "label": "New Trucks",
           "type": "inventory",
-          "ref": "inventory?condition=new&type=truck"
+          "ref": "inventory?condition=new&type=truck",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "fs-used-trucks",
           "label": "Used Trucks",
           "type": "inventory",
-          "ref": "inventory?condition=used&type=truck"
+          "ref": "inventory?condition=used&type=truck",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "fs-new-trailers",
           "label": "New Trailers",
           "type": "inventory",
-          "ref": "inventory?condition=new&type=trailer"
+          "ref": "inventory?condition=new&type=trailer",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "fs-used-trailers",
           "label": "Used Trailers",
           "type": "inventory",
-          "ref": "inventory?condition=used&type=trailer"
+          "ref": "inventory?condition=used&type=trailer",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "fs-parts",
           "label": "Parts",
           "type": "page",
-          "ref": "parts"
+          "ref": "parts",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "f-shop-aftermarket",
           "label": "Aftermarket",
           "type": "page",
-          "ref": "aftermarket"
+          "ref": "aftermarket",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "f-shop-service",
           "label": "Service",
           "type": "page",
-          "ref": "service"
+          "ref": "service",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "f-shop-appt",
           "label": "Service Appointment",
           "type": "page",
-          "ref": "service-appointment"
+          "ref": "service-appointment",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "f-shop-mobile",
           "label": "Mobile Service",
           "type": "page",
-          "ref": "mobile-service"
+          "ref": "mobile-service",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "f-shop-extended",
           "label": "Extended Service",
           "type": "page",
-          "ref": "extended-service"
+          "ref": "extended-service",
+          "url": null,
+          "newTab": false,
+          "children": []
         }
       ]
     },
@@ -652,55 +941,82 @@
           "id": "fc-about",
           "label": "About Us",
           "type": "page",
-          "ref": "our-story"
+          "ref": "our-story",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "f-co-team",
           "label": "Meet the Team",
           "type": "page",
-          "ref": "meet-the-team"
+          "ref": "meet-the-team",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "fc-careers",
           "label": "Careers",
           "type": "page",
-          "ref": "careers"
+          "ref": "careers",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "fc-blog",
           "label": "Blog",
-          "type": "url",
-          "url": "/blog"
+          "type": "page",
+          "ref": "blog",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "f-co-reviews",
           "label": "Reviews",
           "type": "page",
-          "ref": "reviews"
+          "ref": "reviews",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "fc-community",
           "label": "Community Involvement",
           "type": "page",
-          "ref": "community-involvement"
+          "ref": "community-involvement",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "f-co-news",
           "label": "News & Press",
           "type": "page",
-          "ref": "news-and-press"
+          "ref": "news-and-press",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "f-co-videos",
           "label": "Videos",
           "type": "page",
-          "ref": "videos"
+          "ref": "videos",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "fc-contact",
           "label": "Contact",
           "type": "page",
-          "ref": "contact-us"
+          "ref": "contact-us",
+          "url": null,
+          "newTab": false,
+          "children": []
         }
       ]
     },
@@ -712,19 +1028,28 @@
           "id": "lg-privacy",
           "label": "Privacy",
           "type": "page",
-          "ref": "privacy-policy"
+          "ref": "privacy-policy",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "lg-terms",
           "label": "Terms & Conditions",
           "type": "page",
-          "ref": "terms-and-conditions"
+          "ref": "terms-and-conditions",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "lg-policies",
           "label": "Policies",
           "type": "page",
-          "ref": "policies"
+          "ref": "policies",
+          "url": null,
+          "newTab": false,
+          "children": []
         }
       ]
     },
@@ -736,37 +1061,55 @@
           "id": "td-exec",
           "label": "Executive Staff",
           "type": "url",
-          "url": "#executive-staff"
+          "ref": null,
+          "url": "#executive-staff",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "td-whole",
           "label": "Wholegoods Sales & Rental",
           "type": "url",
-          "url": "#wholegoods-sales-rental"
+          "ref": null,
+          "url": "#wholegoods-sales-rental",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "td-parts",
           "label": "Parts",
           "type": "url",
-          "url": "#parts"
+          "ref": null,
+          "url": "#parts",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "td-parts-sales",
           "label": "Parts Sales Team",
           "type": "url",
-          "url": "#parts-sales-team"
+          "ref": null,
+          "url": "#parts-sales-team",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "td-service",
           "label": "Service",
           "type": "url",
-          "url": "#service"
+          "ref": null,
+          "url": "#service",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "td-stores",
           "label": "Store Managers",
           "type": "url",
-          "url": "#store-managers"
+          "ref": null,
+          "url": "#store-managers",
+          "newTab": false,
+          "children": []
         }
       ]
     },
@@ -778,55 +1121,82 @@
           "id": "bs-s13",
           "label": "S13 Integrated Powertrain",
           "type": "url",
-          "url": "#br-s13"
+          "ref": null,
+          "url": "#br-s13",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "bs-mv",
           "label": "MV Series",
           "type": "url",
-          "url": "#br-mv"
+          "ref": null,
+          "url": "#br-mv",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "bs-emv",
           "label": "eMV Series",
           "type": "url",
-          "url": "#br-emv"
+          "ref": null,
+          "url": "#br-emv",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "bs-hv",
           "label": "HV Series",
           "type": "url",
-          "url": "#br-hv"
+          "ref": null,
+          "url": "#br-hv",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "bs-lt",
           "label": "LT Series",
           "type": "url",
-          "url": "#br-lt"
+          "ref": null,
+          "url": "#br-lt",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "bs-rh",
           "label": "RH Series",
           "type": "url",
-          "url": "#br-rh"
+          "ref": null,
+          "url": "#br-rh",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "bs-hx",
           "label": "HX Series",
           "type": "url",
-          "url": "#br-hx"
+          "ref": null,
+          "url": "#br-hx",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "bs-cv",
           "label": "CV Series",
           "type": "url",
-          "url": "#br-cv"
+          "ref": null,
+          "url": "#br-cv",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "bs-lonestar",
           "label": "LoneStar",
           "type": "url",
-          "url": "#br-lonestar"
+          "ref": null,
+          "url": "#br-lonestar",
+          "newTab": false,
+          "children": []
         }
       ]
     },
@@ -838,25 +1208,37 @@
           "id": "pt-credit",
           "label": "Credit Options",
           "type": "url",
-          "url": "#credit-options"
+          "ref": null,
+          "url": "#credit-options",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "pt-return",
           "label": "Return Policy",
           "type": "url",
-          "url": "#return-policy"
+          "ref": null,
+          "url": "#return-policy",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "pt-online",
           "label": "Online Orders",
           "type": "url",
-          "url": "#online-orders"
+          "ref": null,
+          "url": "#online-orders",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "pt-mobile",
           "label": "Mobile Support",
           "type": "url",
-          "url": "#mobile-support"
+          "ref": null,
+          "url": "#mobile-support",
+          "newTab": false,
+          "children": []
         }
       ]
     },
@@ -868,31 +1250,46 @@
           "id": "cql-appt",
           "label": "Schedule a service appointment →",
           "type": "page",
-          "ref": "service-appointment"
+          "ref": "service-appointment",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "cql-parts",
           "label": "Order parts online →",
           "type": "url",
-          "url": "https://www.sunstateparts.com/login"
+          "ref": null,
+          "url": "https://www.sunstateparts.com/login",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "cql-finance",
           "label": "Financing and credit applications →",
           "type": "page",
-          "ref": "financing"
+          "ref": "financing",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "cql-careers",
           "label": "Careers at Sun State →",
           "type": "page",
-          "ref": "careers"
+          "ref": "careers",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "cql-locations",
           "label": "All locations and hours →",
           "type": "page",
-          "ref": "locations"
+          "ref": "locations",
+          "url": null,
+          "newTab": false,
+          "children": []
         }
       ]
     },
@@ -904,43 +1301,64 @@
           "id": "po-toc-0",
           "label": "Shipping and Handling",
           "type": "url",
-          "url": "#po-shipping"
+          "ref": null,
+          "url": "#po-shipping",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "po-toc-1",
           "label": "Returns and Exchanges",
           "type": "url",
-          "url": "#po-returns"
+          "ref": null,
+          "url": "#po-returns",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "po-toc-2",
           "label": "Sales Tax",
           "type": "url",
-          "url": "#po-tax"
+          "ref": null,
+          "url": "#po-tax",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "po-toc-3",
           "label": "Payment Methods",
           "type": "url",
-          "url": "#po-payment"
+          "ref": null,
+          "url": "#po-payment",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "po-toc-4",
           "label": "Backordered Items",
           "type": "url",
-          "url": "#po-backorders"
+          "ref": null,
+          "url": "#po-backorders",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "po-toc-5",
           "label": "Secured Online Shopping",
           "type": "url",
-          "url": "#po-secure"
+          "ref": null,
+          "url": "#po-secure",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "po-toc-6",
           "label": "Product Information and Pricing",
           "type": "url",
-          "url": "#po-product"
+          "ref": null,
+          "url": "#po-product",
+          "newTab": false,
+          "children": []
         }
       ]
     },
@@ -952,115 +1370,172 @@
           "id": "pp-toc-0",
           "label": "Information We Collect",
           "type": "url",
-          "url": "#pp-collect"
+          "ref": null,
+          "url": "#pp-collect",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "pp-toc-1",
           "label": "How Your Personal Information Is Collected",
           "type": "url",
-          "url": "#pp-how"
+          "ref": null,
+          "url": "#pp-how",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "pp-toc-2",
           "label": "Requests for Unit Quotes",
           "type": "url",
-          "url": "#pp-quotes"
+          "ref": null,
+          "url": "#pp-quotes",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "pp-toc-3",
           "label": "Online Unit Orders",
           "type": "url",
-          "url": "#pp-orders"
+          "ref": null,
+          "url": "#pp-orders",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "pp-toc-4",
           "label": "Monthly Payment Calculations",
           "type": "url",
-          "url": "#pp-payments"
+          "ref": null,
+          "url": "#pp-payments",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "pp-toc-5",
           "label": "Log Files",
           "type": "url",
-          "url": "#pp-logs"
+          "ref": null,
+          "url": "#pp-logs",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "pp-toc-6",
           "label": "Surveys and Contests",
           "type": "url",
-          "url": "#pp-surveys"
+          "ref": null,
+          "url": "#pp-surveys",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "pp-toc-7",
           "label": "Use of Your Personal Information",
           "type": "url",
-          "url": "#pp-use"
+          "ref": null,
+          "url": "#pp-use",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "pp-toc-8",
           "label": "Use of Cookies",
           "type": "url",
-          "url": "#pp-cookies"
+          "ref": null,
+          "url": "#pp-cookies",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "pp-toc-9",
           "label": "Who We Share Your Personal Information With",
           "type": "url",
-          "url": "#pp-share"
+          "ref": null,
+          "url": "#pp-share",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "pp-toc-10",
           "label": "Data Retention",
           "type": "url",
-          "url": "#pp-retention"
+          "ref": null,
+          "url": "#pp-retention",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "pp-toc-11",
           "label": "Access to Third Party Websites",
           "type": "url",
-          "url": "#pp-thirdparty"
+          "ref": null,
+          "url": "#pp-thirdparty",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "pp-toc-12",
           "label": "Security",
           "type": "url",
-          "url": "#pp-security"
+          "ref": null,
+          "url": "#pp-security",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "pp-toc-13",
           "label": "Children Under Thirteen",
           "type": "url",
-          "url": "#pp-children"
+          "ref": null,
+          "url": "#pp-children",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "pp-toc-14",
           "label": "Privacy Notice for California Residents",
           "type": "url",
-          "url": "#pp-california"
+          "ref": null,
+          "url": "#pp-california",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "pp-toc-15",
           "label": "Opt-Out & Unsubscribe",
           "type": "url",
-          "url": "#pp-optout"
+          "ref": null,
+          "url": "#pp-optout",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "pp-toc-16",
           "label": "Accessing this Website",
           "type": "url",
-          "url": "#pp-access"
+          "ref": null,
+          "url": "#pp-access",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "pp-toc-17",
           "label": "Updates to this Privacy Policy",
           "type": "url",
-          "url": "#pp-updates"
+          "ref": null,
+          "url": "#pp-updates",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "pp-toc-18",
           "label": "How to Exercise Your Rights and Contact Information",
           "type": "url",
-          "url": "#pp-rights"
+          "ref": null,
+          "url": "#pp-rights",
+          "newTab": false,
+          "children": []
         }
       ]
     },
@@ -1072,19 +1547,28 @@
           "id": "tc-toc-0",
           "label": "Limitation of Liability",
           "type": "url",
-          "url": "#tc-liability"
+          "ref": null,
+          "url": "#tc-liability",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "tc-toc-1",
           "label": "Images, Logos, Trademarks & Copyright",
           "type": "url",
-          "url": "#tc-ip"
+          "ref": null,
+          "url": "#tc-ip",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "tc-toc-2",
           "label": "Acceptance of Orders",
           "type": "url",
-          "url": "#tc-orders"
+          "ref": null,
+          "url": "#tc-orders",
+          "newTab": false,
+          "children": []
         }
       ]
     },
@@ -1096,31 +1580,46 @@
           "id": "so-fb",
           "label": "Facebook",
           "type": "url",
-          "url": "https://www.facebook.com/sunstateintl"
+          "ref": null,
+          "url": "https://www.facebook.com/sunstateintl",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "so-ig",
           "label": "Instagram",
           "type": "url",
-          "url": "https://www.instagram.com/sunstateintl"
+          "ref": null,
+          "url": "https://www.instagram.com/sunstateintl",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "so-li",
           "label": "LinkedIn",
           "type": "url",
-          "url": "https://www.linkedin.com/company/sun-state-international-trucks"
+          "ref": null,
+          "url": "https://www.linkedin.com/company/sun-state-international-trucks",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "so-x",
           "label": "X",
           "type": "url",
-          "url": "https://x.com/sunstateintl"
+          "ref": null,
+          "url": "https://x.com/sunstateintl",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "so-yt",
           "label": "YouTube",
           "type": "url",
-          "url": "https://www.youtube.com/@sunstateinternationaltruck7699"
+          "ref": null,
+          "url": "https://www.youtube.com/@sunstateinternationaltruck7699",
+          "newTab": false,
+          "children": []
         }
       ]
     }

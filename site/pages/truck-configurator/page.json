@@ -24,10 +24,10 @@
           }
         ],
         "image": {
-          "src": "/img/photo-placeholder.svg",
-          "alt": "A new International truck — photograph to be supplied",
-          "width": 1600,
-          "height": 900
+          "src": "https://vendure.buzznerdrv.com/assets/source/f3/4c11fa29-52da-45c4-87f5-450661ef9b37.jpeg",
+          "alt": "A new International truck ",
+          "width": 2048,
+          "height": 1024
         }
       }
     },
@@ -186,7 +186,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "tcf-how",
@@ -230,7 +231,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "tcf-trailers",
@@ -259,7 +261,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "tcf-faq",
@@ -344,7 +347,8 @@
                           "a": "Yes. Our Tampa aftermarket facility installs bodies, roll-off hoists, liftgates, PTO and wet-line kits, towing packages and lift axles, and performs frame modifications, so the truck arrives ready to work."
                         }
                       ]
-                    }
+                    },
+                    "snapshot": null
                   }
                 }
               ]
@@ -368,7 +372,8 @@
           "secondaryUrl": "/contact",
           "background": "ink"
         }
-      }
+      },
+      "children": []
     }
   ]
 }

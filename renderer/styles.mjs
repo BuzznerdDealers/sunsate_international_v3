@@ -117,6 +117,11 @@ const imageUrl = value => {
   const raw = value.trim();
   if (!raw || /["'()\\]|[\u0000-\u001f]/.test(raw)) return null;
   if (!/^(?:https:\/\/[\w.-]+\/|\/(?!\/))/.test(raw)) return null;
+  // `background-image` cannot play a video, and fails silently when handed one:
+  // the browser treats the mp4 as a broken image and paints nothing, so the band
+  // is simply empty with no error anywhere. A section plays video through its
+  // `backgroundVideo` prop, which renders a real element.
+  if (/\.(?:mp4|m4v|mov|webm|ogv|avi|mkv)(?:[?#]|$)/i.test(raw)) return null;
   return `url("${raw}")`;
 };
 

@@ -24,8 +24,8 @@
           }
         ],
         "image": {
-          "src": "/img/photo-placeholder.svg",
-          "alt": "An International truck on the highway — photograph to be supplied",
+          "src": "https://vendure.buzznerdrv.com/assets/source/d7/fleet-maintenance-inspection.jpg",
+          "alt": "An International truck on the highway",
           "width": 1600,
           "height": 900
         }
@@ -125,7 +125,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "ext-why",
@@ -156,7 +157,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "ext-trailers",
@@ -172,14 +174,15 @@
           "ctaStyle": "link",
           "background": "paper",
           "image": {
-            "src": "/img/photo-placeholder.svg",
-            "alt": "A trailer repair bay — photograph to be supplied",
+            "src": "https://vendure.buzznerdrv.com/assets/source/91/copy-of-o74a4064.jpg",
+            "alt": "A trailer repair bay",
             "width": 1600,
             "height": 900
           },
           "width": "full"
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "ext-paying",
@@ -206,7 +209,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "ext-locations",
@@ -246,7 +250,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "ext-faq",
@@ -335,7 +340,8 @@
                           "a": "Transferability depends on the specific plan and term. Review the plan brochure or ask a service advisor to confirm the terms before you sell or trade the unit."
                         }
                       ]
-                    }
+                    },
+                    "snapshot": null
                   }
                 }
               ]
@@ -359,7 +365,8 @@
           "secondaryUrl": "/service-appointment",
           "background": "ink"
         }
-      }
+      },
+      "children": []
     }
   ]
 }

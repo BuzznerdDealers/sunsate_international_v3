@@ -9,7 +9,7 @@
         "eyebrow": "OUR STORY",
         "headline": "Where quality meets family.",
         "image": {
-          "src": "/img/photo-placeholder.svg",
+          "src": "https://vendure.buzznerdrv.com/assets/source/89/vision-action-oriented-2.jpg",
           "alt": "The Sun State International team — photograph to be supplied",
           "width": 1600,
           "height": 900
@@ -26,14 +26,15 @@
           "body": "Sun State is where quality meets family. Whether you're in the market for new or used trucks and trailers, we've got you covered with selections from renowned manufacturers like International, Hyundai Translead and Globe Trailers. Our commitment goes beyond providing quality equipment; we offer a full-service experience.",
           "background": "card",
           "image": {
-            "src": "/img/photo-placeholder.svg",
+            "src": "https://vendure.buzznerdrv.com/assets/source/6a/trust.jpg",
             "alt": "Sun State International dealership — photograph to be supplied",
             "width": 1600,
             "height": 900
           },
           "width": "full"
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "story-culture",
@@ -65,7 +66,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "story-leader",
@@ -160,6 +162,15 @@
               "props": {
                 "span": 6
               },
+              "styles": {
+                "base": {
+                  "background": "inkDark",
+                  "paddingTop": 40,
+                  "paddingRight": 36,
+                  "paddingBottom": 40,
+                  "paddingLeft": 36
+                }
+              },
               "children": [
                 {
                   "id": "glance-h",
@@ -202,16 +213,7 @@
                     "columns": 1
                   }
                 }
-              ],
-              "styles": {
-                "base": {
-                  "background": "inkDark",
-                  "paddingTop": 40,
-                  "paddingRight": 36,
-                  "paddingBottom": 40,
-                  "paddingLeft": 36
-                }
-              }
+              ]
             },
             {
               "id": "glance-copy",
@@ -343,7 +345,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "story-care",
@@ -363,7 +366,8 @@
           },
           "width": "full"
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "story-trailers",
@@ -383,7 +387,8 @@
           },
           "width": "full"
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "story-careers-cta",
@@ -400,7 +405,8 @@
           "secondaryUrl": "",
           "background": "ink"
         }
-      }
+      },
+      "children": []
     }
   ]
 }

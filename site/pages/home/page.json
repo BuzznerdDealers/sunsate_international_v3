@@ -9,7 +9,17 @@
         "paddingY": 10,
         "background": "ink",
         "align": "center",
-        "minHeight": "half"
+        "minHeight": "half",
+        "backgroundVideo": {
+          "src": "https://vendure.buzznerdrv.com/assets/source/d6/lakeside-hero-720__05.mp4",
+          "title": "lakeside-hero-720__05.mp4",
+          "poster": "https://vendure.buzznerdrv.com/assets/source/61/international-12-scaled.jpg"
+        }
+      },
+      "styles": {
+        "base": {
+          "backgroundImage": "https://vendure.buzznerdrv.com/assets/source/4d/lakeside-hero-720__02.mp4"
+        }
       },
       "children": [
         {
@@ -57,6 +67,9 @@
                     "widget": "inventory-search",
                     "config": {
                       "placeholder": "Search trucks, trailers and yard trucks…"
+                    },
+                    "snapshot": {
+                      "types": []
                     }
                   }
                 },
@@ -91,14 +104,15 @@
           "background": "paper",
           "anchor": "about",
           "image": {
-            "src": "/img/photo-placeholder.svg",
+            "src": "https://vendure.buzznerdrv.com/assets/source/6a/trust.jpg",
             "alt": "Sun State International dealership — photograph to be supplied",
-            "width": 1600,
-            "height": 900
+            "width": 1500,
+            "height": 600
           },
           "width": "full"
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "home-types",
@@ -168,7 +182,8 @@
           ],
           "background": "ink"
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "home-locations",
@@ -326,7 +341,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "home-services",
@@ -391,7 +407,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "home-featured",
@@ -452,6 +469,9 @@
                     "config": {
                       "heading": "",
                       "limit": 4
+                    },
+                    "snapshot": {
+                      "listings": []
                     }
                   }
                 },
@@ -485,18 +505,24 @@
           "heading": "The same trailers, every time.",
           "body": "At Sun State Trailers, customer service is our priority. With quality products, quick service, and dedicated care, we provide everything you need for your business to succeed. Explore our diverse selection of new and used trailers to find the equipment you're looking for.",
           "ctaLabel": "See what's available now",
-          "ctaUrl": "/store/inventory?type=trailer",
           "ctaStyle": "primary",
           "background": "card",
           "image": {
-            "src": "/img/photo-placeholder.svg",
+            "src": "https://vendure.buzznerdrv.com/assets/source/9b/whatsapp-image-2026-09-16-at-10.44.39-pm.jpeg",
             "alt": "Sun State trailers on the lot — photograph to be supplied",
             "width": 1600,
             "height": 900
           },
-          "width": "boxed"
+          "width": "boxed",
+          "ctaUrl": "#"
         }
-      }
+      },
+      "styles": {
+        "base": {
+          "height": 600
+        }
+      },
+      "children": []
     },
     {
       "id": "home-brands",
@@ -513,14 +539,20 @@
           "background": "card",
           "anchor": "brands",
           "image": {
-            "src": "/img/photo-placeholder.svg",
+            "src": "https://vendure.buzznerdrv.com/assets/source/41/whatsapp-image-2026-09-16-at-10.46.17-pm.jpeg",
             "alt": "International and IC Bus brand vehicles — photograph to be supplied",
             "width": 1600,
             "height": 900
           },
           "width": "boxed"
         }
-      }
+      },
+      "styles": {
+        "base": {
+          "height": 600
+        }
+      },
+      "children": []
     },
     {
       "id": "home-testimonials",
@@ -604,7 +636,8 @@
           "note": "Call us today · 813.521.8148",
           "background": "ink"
         }
-      }
+      },
+      "children": []
     }
   ]
 }

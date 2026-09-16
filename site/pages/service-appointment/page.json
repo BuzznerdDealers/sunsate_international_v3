@@ -24,10 +24,10 @@
           }
         ],
         "image": {
-          "src": "/img/photo-placeholder.svg",
-          "alt": "The Sun State service drive-in — photograph to be supplied",
-          "width": 1600,
-          "height": 900
+          "src": "https://vendure.buzznerdrv.com/assets/source/2c/sunstate_sarasota-324.jpg",
+          "alt": "The Sun State service drive-in",
+          "width": 2000,
+          "height": 1333
         }
       }
     },
@@ -359,7 +359,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "appt-mobile",
@@ -375,14 +376,15 @@
           "ctaStyle": "link",
           "background": "card",
           "image": {
-            "src": "/img/photo-placeholder.svg",
+            "src": "https://vendure.buzznerdrv.com/assets/source/23/mobile-truck-service.jpg",
             "alt": "A Sun State mobile service truck — photograph to be supplied",
-            "width": 1600,
-            "height": 900
+            "width": 2000,
+            "height": 1333
           },
           "width": "full"
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "appt-fleet",
@@ -409,7 +411,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "appt-faq",
@@ -498,7 +501,8 @@
                           "a": "Requests submitted during service department hours are typically answered the same business day. Requests submitted overnight or on weekends are handled the next business morning."
                         }
                       ]
-                    }
+                    },
+                    "snapshot": null
                   }
                 }
               ]
@@ -522,7 +526,8 @@
           "secondaryUrl": "#appointment-form",
           "background": "ink"
         }
-      }
+      },
+      "children": []
     }
   ]
 }

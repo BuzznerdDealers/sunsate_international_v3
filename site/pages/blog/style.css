@@ -1,0 +1,115 @@
+/* Blog — geometry measured from the handoff (handoff-blog/css/styles.css).
+   Colour, type and spacing all come from the design system; nothing here
+   hardcodes a brand value the Design screen cannot change. */
+
+/* --- Hero ---------------------------------------------------------------
+   The site-wide layer already centres every hero, scrims it at 68% and sets
+   the 44px display face, so only the two values this handoff moves are here:
+   its 88px band and the tracked-out breadcrumb. */
+.bz-block--hero { padding-block: 88px; }
+.bz-block--hero h1 { margin-bottom: 22px; }
+.bz-block--hero .bz-eyebrow { letter-spacing: 0.16em; }
+
+/* --- Band rhythm, read off the handoff's own sections -------------------- */
+[data-bz-node="bl-intro"].bz-section,
+[data-bz-node="bl-intro"] > .bz-section { padding-block: 70px 0; }
+[data-bz-node="bl-posts"].bz-section,
+[data-bz-node="bl-posts"] > .bz-section { padding-block: 0 20px; }
+[data-bz-node="bl-panels"].bz-section,
+[data-bz-node="bl-panels"] > .bz-section { padding-block: 80px; }
+[data-bz-node="bl-faq"].bz-section,
+[data-bz-node="bl-faq"] > .bz-section { padding-block: 90px; }
+
+/* --- Intro --------------------------------------------------------------- */
+[data-bz-node="bi-lead"] .bz-text,
+[data-bz-node="bi-body"] .bz-text { max-width: 880px; }
+[data-bz-node="bi-lead"] p { font-size: 17px; line-height: 1.75; color: var(--ink); margin: 0 0 20px; }
+[data-bz-node="bi-body"] p { font-size: 16px; line-height: 1.75; color: var(--body-text); margin: 0 0 40px; }
+
+/* --- Topic chips --------------------------------------------------------
+   The Filter pills widget carries the facet and value the platform filter
+   behaviour reads. The handoff draws them square, sentence case and a size
+   down from the location rail's, so only those differences are set here. */
+[data-bz-node="bp-chips"] .bz-block { padding-block: 0; }
+[data-bz-node="bp-chips-col"] { border-top: 1px solid var(--line); padding-top: 22px; }
+[data-bz-node="bp-chips-row"] { margin-bottom: 40px; }
+[data-bz-node="bp-chips"] .ss-filter__pills { flex-wrap: wrap; overflow: visible; padding-bottom: 0; }
+[data-bz-node="bp-chips"] .ss-pill {
+  border-width: 1px;
+  font-size: 13px;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--body-text);
+}
+[data-bz-node="bp-chips"] .ss-pill:hover { border-color: var(--ink); color: var(--ink); }
+[data-bz-node="bp-chips"] .ss-pill[aria-pressed="true"] { border-color: var(--accent); color: #fff; }
+
+/* --- Results header ------------------------------------------------------
+   Title and count sit on one baseline, the count pushed to the far edge. */
+[data-bz-node="bp-head-row"] { align-items: baseline; margin-bottom: 26px; }
+[data-bz-node="bp-head-row"] .bz-block { padding-block: 0; }
+[data-bz-node="bp-head-h"] h2 { font-size: 30px; margin: 0; }
+[data-bz-node="bp-count-col"] { text-align: right; }
+
+/* --- Post cards ----------------------------------------------------------
+   The card itself is the Post cards component; its rules travel with it. */
+[data-bz-node="bp-list"] .bz-block { padding-block: 0; }
+
+/* TEMPORARY — sample setup for client content review.
+   The component's own grid is 3-up, which is the handoff's layout and the one
+   the full archive should come back to. While only four sample posts are on
+   the page, 3-up would leave a single card alone on a second row, so the grid
+   runs 4-up here instead. Delete this block when the rest of the posts land
+   and the grid returns to the component's own rule. */
+[data-bz-node="bp-list"] .ss-posts { grid-template-columns: repeat(4, 1fr); }
+@media (max-width: 1100px) {
+  [data-bz-node="bp-list"] .ss-posts { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  [data-bz-node="bp-list"] .ss-posts { grid-template-columns: 1fr; }
+}
+
+/* --- Pager --------------------------------------------------------------- */
+[data-bz-node="bp-pager"] .bz-btns { justify-content: center; margin-block: 40px 0; }
+[data-bz-node="bp-pager"] .bz-btn { min-height: 46px; padding: 0 24px; }
+
+/* --- Two-up promo panels ------------------------------------------------- */
+[data-bz-node="bl-panels"] .bz-block { padding-block: 0; }
+[data-bz-node="bn-tr-h"] .bz-eyebrow,
+[data-bz-node="bn-ap-h"] .bz-eyebrow { font-size: 10px; letter-spacing: 0.14em; margin-bottom: 12px; }
+[data-bz-node="bn-tr-h"] h2,
+[data-bz-node="bn-ap-h"] h2 { font-size: 24px; margin: 0 0 18px; }
+[data-bz-node="bn-tr-b"] p,
+[data-bz-node="bn-ap-b"] p { font-size: 15px; line-height: 1.7; color: var(--body-text); margin: 0 0 18px; }
+
+/* The trailer links are a hairline-topped stack, as the handoff draws them. */
+[data-bz-node="bn-tr-links"] .bz-btns { flex-direction: column; align-items: stretch; gap: 10px; margin-block: 0 22px; }
+[data-bz-node="bn-tr-links"] .bz-btn--link {
+  justify-content: flex-start; text-align: left;
+  font-size: 15px; font-weight: 700; text-decoration: none;
+  border-top: 1px solid var(--line); padding: 10px 0 0;
+}
+[data-bz-node="bn-tr-more"] .bz-btns { margin-block: 0; }
+[data-bz-node="bn-tr-more"] .bz-btn--link { font-size: 15px; font-weight: 700; text-decoration: none; }
+
+/* The dark panel sets its own colours rather than tinting every descendant,
+   so the kicker keeps the accent and the body keeps the chrome scale. */
+[data-bz-node="bn-ap-h"] h2 { color: var(--chrome-text); }
+[data-bz-node="bn-ap-b"] p { color: var(--chrome-body); }
+[data-bz-node="bn-ap-links"] .bz-btns { flex-direction: column; align-items: flex-start; gap: 10px; margin-block: 0; }
+[data-bz-node="bn-ap-links"] .bz-btn--link {
+  padding: 0; font-size: 15px; font-weight: 700;
+  color: var(--chrome-text); text-decoration: none;
+}
+[data-bz-node="bn-ap-links"] .bz-btn--link:hover { color: var(--accent); }
+
+/* --- FAQ ----------------------------------------------------------------- */
+[data-bz-node="bf-head-h"] h2 { font-size: 34px; margin: 0 0 40px; }
+[data-bz-node="bf-row"] { max-width: 900px; }
+
+@media (max-width: 640px) {
+  .bz-block--hero { padding-block: 72px; }
+  [data-bz-node="bp-head-h"] h2,
+  [data-bz-node="bf-head-h"] h2 { font-size: 26px; }
+  [data-bz-node="bp-head-col"], [data-bz-node="bp-count-col"] { text-align: left; }
+}

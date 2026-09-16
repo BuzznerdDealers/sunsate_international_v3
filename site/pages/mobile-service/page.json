@@ -24,10 +24,10 @@
           }
         ],
         "image": {
-          "src": "/img/photo-placeholder.svg",
-          "alt": "A Sun State mobile service truck — photograph to be supplied",
-          "width": 1600,
-          "height": 900
+          "src": "https://vendure.buzznerdrv.com/assets/source/23/mobile-truck-service.jpg",
+          "alt": "A Sun State mobile service truck ",
+          "width": 2000,
+          "height": 1333
         }
       }
     },
@@ -134,7 +134,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "mob-trailers",
@@ -150,14 +151,15 @@
           "ctaStyle": "link",
           "background": "paper",
           "image": {
-            "src": "/img/photo-placeholder.svg",
+            "src": "https://vendure.buzznerdrv.com/assets/source/a4/o74a4652.jpg",
             "alt": "A roadside trailer repair — photograph to be supplied",
             "width": 1600,
             "height": 900
           },
           "width": "full"
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "mob-request",
@@ -193,7 +195,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "mob-hours",
@@ -232,7 +235,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "mob-flyer",
@@ -248,14 +252,15 @@
           "ctaStyle": "secondary",
           "background": "card",
           "image": {
-            "src": "/img/photo-placeholder.svg",
+            "src": "https://vendure.buzznerdrv.com/assets/source/c8/sunstate_sarasota-286-1.jpg",
             "alt": "The Sun State mobile service flyer — artwork to be supplied",
             "width": 1600,
             "height": 900
           },
           "width": "full"
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "mob-faq",
@@ -344,7 +349,8 @@
                           "a": "Yes. Fleets, municipalities, school districts and contractors use mobile service for scheduled PM programs performed on site, keeping units in service and reducing shuttle time between your yard and the dealership."
                         }
                       ]
-                    }
+                    },
+                    "snapshot": null
                   }
                 }
               ]
@@ -368,7 +374,8 @@
           "secondaryUrl": "/service-appointment#appointment-form",
           "background": "ink"
         }
-      }
+      },
+      "children": []
     }
   ]
 }
