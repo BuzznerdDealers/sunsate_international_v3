@@ -24,7 +24,7 @@
 // the same table, and this module renders it. There is no translation layer
 // between the three, because there is nothing to translate.
 
-import { attrs, cls, esc, rewriteAssetUrls } from './html.mjs';
+import { attrs, cls, cssUrl, esc, resolveAssetUrl, rewriteAssetUrls } from './html.mjs';
 import { getBlock } from './blocks.mjs';
 import { BEHAVIOURS, PARTS, behaviourAttrs } from './behaviours.mjs';
 import { bindTree, componentValues, parseComponentProps } from './component-props.mjs';
@@ -138,6 +138,23 @@ export const LAYOUT_REGISTRY = {
           enum: SECTION_BACKGROUNDS,
           default: 'none',
         }),
+        backgroundVideo: {
+          type: 'object',
+          description:
+            'A muted, looping clip behind this section\'s content — the hero-with-video ' +
+            'pattern. An uploaded file only: an embed cannot be a background, because a ' +
+            'third-party iframe brings its own chrome and swallows every click. Give it a ' +
+            '`background` as well, so the section still reads before the clip has loaded ' +
+            'and when a visitor has asked for reduced motion.',
+          properties: {
+            src: str('Public video URL from the media library (mp4/webm).'),
+            poster: str(
+              'The frame shown before the clip loads, when motion is reduced, and on the ' +
+                'editing canvas. Effectively required: without it the band is empty in all three.',
+            ),
+          },
+          required: ['src'],
+        },
         paddingY: int('Vertical padding, on the spacing scale.', { minimum: 0, maximum: 10, default: 7 }),
         anchor: str('An id, so a link can jump here. Lower-case, no spaces.'),
         minHeight: str('Minimum height.', { enum: ['auto', 'half', 'full'], default: 'auto' }),
@@ -161,19 +178,47 @@ export const LAYOUT_REGISTRY = {
               width === 'bleed-left' && 'bz-container--bleed-left',
               width === 'bleed-right' && 'bz-container--bleed-right',
             )}">${inner}</div>`;
+      // The clip is a sibling of the content rather than a CSS background, because
+      // only a real element can carry `poster`, `playsinline` and a reduced-motion
+      // escape. The poster doubles as a CSS background on the section, so the band
+      // is never empty: not before the file loads, not under reduced motion, and
+      // not on the editing canvas, which does not play media.
+      const bg = props.backgroundVideo;
+      const bgSrc = bg && typeof bg === 'object' ? bg.src : null;
+      const bgPoster = bg && typeof bg === 'object' ? bg.poster : null;
+      const bgVideo = bgSrc
+        ? `<video${attrs({
+            class: 'bz-section__bgvideo',
+            src: resolveAssetUrl(bgSrc, ctx),
+            poster: bgPoster ? resolveAssetUrl(bgPoster, ctx) : null,
+            autoplay: true,
+            muted: true,
+            loop: true,
+            playsinline: true,
+            preload: 'auto',
+            tabindex: '-1',
+            'aria-hidden': 'true',
+          })}></video>`
+        : '';
+
       return `<section${attrs({
         class: cls(
           'bz-section',
           `bz-section--bg-${props.background || 'none'}`,
+          bgSrc && 'bz-section--bgvideo',
           props.minHeight && props.minHeight !== 'auto' && `bz-section--h-${props.minHeight}`,
           props.align && props.align !== 'start' && `bz-section--v-${props.align}`,
         ),
         id: props.anchor || null,
-        style: styleVars({ '--bz-pad': spacing(props.paddingY) }),
+        style: styleVars({
+          '--bz-pad': spacing(props.paddingY),
+          '--bz-bgvideo-poster':
+            bgSrc && bgPoster ? cssUrl(resolveAssetUrl(bgPoster, ctx)) : null,
+        }),
         'data-bz-node': node.id || null,
         'data-bz-type': 'section',
         ...behaviourAttrs(props, ctx, node.id),
-      })}>${body}</section>`;
+      })}>${bgVideo}${body}</section>`;
     },
   },
 
@@ -322,6 +367,14 @@ export const LAYOUT_REGISTRY = {
             'Anything left out falls back to the prop\'s default, so a placement need only ' +
             'state what differs.',
         },
+        /* Per-placement, because the definition is shared: two rooftops placing
+           the same component must not see one another's addresses. */
+        snapshots: {
+          type: 'object',
+          description:
+            'Widget data resolved by the platform for this placement, keyed by the ' +
+            "widget node's id inside the component. Never hand-written.",
+        },
       },
       required: ['sectionId'],
     },
@@ -367,7 +420,10 @@ export const LAYOUT_REGISTRY = {
       let inner;
       try {
         inner = renderChildren(
-          bindTree(parseDocument(section).nodes, values, { keepEmptyRepeat: !!(ctx && ctx.editing) }),
+          bindTree(parseDocument(section).nodes, values, {
+            keepEmptyRepeat: !!(ctx && ctx.editing),
+            snapshots: (node.props && node.props.snapshots) || null,
+          }),
           ctx,
         );
       } finally {
@@ -394,14 +450,20 @@ export const LAYOUT_REGISTRY = {
 const expanding = new Set();
 
 /**
- * Strip the attributes the canvas builds its component tree from.
+ * Strip the attribute the canvas builds its component tree from.
  *
- * Only used for a shared section's expansion in the editor. The markup still
- * renders exactly as it will on the page — it simply stops looking like part of
- * this page's tree.
+ * Only used for a shared section's expansion in the editor. `data-bz-type` is
+ * what GrapesJS matches a block on, so without it the expansion is markup the
+ * tree reader walks past and a save cannot copy into the page.
+ *
+ * `data-bz-node` stays. A component scopes its own CSS with
+ * `[data-bz-node="…"]`, which is the documented way to write it, so stripping
+ * that left every such rule dead on the canvas and live in preview and on the
+ * published page — the component drew itself unstyled in the one place it is
+ * edited.
  */
 function inert(html) {
-  return String(html).replace(/\s(?:data-bz-node|data-bz-type)="[^"]*"/g, '');
+  return String(html).replace(/\sdata-bz-type="[^"]*"/g, '');
 }
 
 function clamp(value, min, max) {

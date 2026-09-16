@@ -1016,11 +1016,17 @@ test("the editor never sees the expansion as part of the page's own tree", () =>
   const doc = { nodes: [{ id: 'ref', type: 'sharedSection', props: { sectionId: 'cta-band' } }] };
 
   const editing = renderDocument(doc, { ...SHARED_CTX, editing: true });
-  // The canvas reads structure back out of the DOM, so the inner nodes must not
-  // look like page nodes — otherwise a save would copy them into the page.
-  assert.equal(editing.match(/data-bz-node/g).length, 1, 'only the reference itself is a node');
+  // The canvas matches a block on `data-bz-type`, so dropping it is what stops a
+  // save copying the expansion into the page.
   assert.doesNotMatch(editing, /data-bz-type="section"/);
   assert.match(editing, /data-bz-opaque="1"/);
+  // `data-bz-node` survives, or the component's own `[data-bz-node="…"]` rules
+  // apply in preview and on the published page but not on the canvas — the
+  // component would draw itself unstyled in the one place it is edited.
+  assert.ok(
+    editing.match(/data-bz-node/g).length > 1,
+    'the expansion keeps the hooks its stylesheet is written against',
+  );
 
   // Published, the attributes stay: nothing is reading the page back there.
   const published = renderDocument(doc, SHARED_CTX);
@@ -1224,6 +1230,195 @@ test('an image with a url is clickable, and one without gains no anchor', () => 
     CTX,
   );
   assert.doesNotMatch(plain, /<a /);
+});
+
+/* ------------------------------------------------------------------ video */
+
+/**
+ * One `src` field carries both a media-library file and an embed, so everything
+ * here turns on the renderer classifying the URL correctly. Getting it wrong is
+ * silent in both directions: a YouTube link in `<video>` is a black rectangle,
+ * and a file in an `<iframe>` is a download prompt.
+ */
+const videoDoc = (props) => renderDocument({ nodes: [{ id: 'v', type: 'video', props }] }, CTX);
+
+test('a media-library file renders as a real video element', () => {
+  const html = videoDoc({ video: { src: '/media/walkaround.mp4', poster: '/media/truck.jpg' } });
+  assert.match(html, /<video/);
+  assert.doesNotMatch(html, /<iframe/);
+  assert.match(html, /src="\/media\/walkaround\.mp4"/);
+  assert.match(html, /poster="\/media\/truck\.jpg"/);
+  // Controls are the default: a clip a visitor cannot pause is a dark pattern.
+  assert.match(html, /controls/);
+  assert.match(html, /playsinline/);
+});
+
+test('YouTube and Vimeo links become embeds built from the id, never the supplied URL', () => {
+  for (const src of [
+    'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+    'https://youtu.be/dQw4w9WgXcQ',
+    'https://www.youtube.com/shorts/dQw4w9WgXcQ',
+  ]) {
+    const html = videoDoc({ video: { src } });
+    assert.match(html, /<iframe/, src);
+    assert.match(html, /src="https:\/\/www\.youtube-nocookie\.com\/embed\/dQw4w9WgXcQ\?rel=0"/, src);
+  }
+
+  const vimeo = videoDoc({ video: { src: 'https://vimeo.com/123456789' } });
+  assert.match(vimeo, /src="https:\/\/player\.vimeo\.com\/video\/123456789\?dnt=1"/);
+});
+
+test('an unrecognised URL is treated as a file, not framed', () => {
+  // The security property: only a provider we parsed an id out of reaches an
+  // iframe. Otherwise any https string would be a way into a dealer's page.
+  const html = videoDoc({ video: { src: 'https://evil.example/page' } });
+  assert.doesNotMatch(html, /<iframe/);
+  assert.match(html, /<video/);
+});
+
+test('autoplay forces muted, because no browser will autoplay sound', () => {
+  const html = videoDoc({ video: { src: '/clip.mp4' }, autoplay: true, controls: false, loop: true });
+  assert.match(html, /autoplay/);
+  assert.match(html, /muted/);
+  assert.match(html, /loop/);
+  assert.doesNotMatch(html, /controls/);
+});
+
+test('a section background video keeps a poster the canvas and reduced motion can show', () => {
+  const html = renderDocument(
+    {
+      nodes: [
+        {
+          id: 'hero',
+          type: 'section',
+          props: { backgroundVideo: { src: '/bg.mp4', poster: '/bg.jpg' }, background: 'ink' },
+          children: [{ id: 'h', type: 'heading', props: { text: 'Trucks' } }],
+        },
+      ],
+    },
+    CTX,
+  );
+  assert.match(html, /class="[^"]*bz-section--bgvideo/);
+  assert.match(html, /<video[^>]*class="bz-section__bgvideo"/);
+  // Always muted, looping and inert: it is decoration, not content.
+  assert.match(html, /bz-section__bgvideo[^>]*muted/);
+  assert.match(html, /bz-section__bgvideo[^>]*loop/);
+  assert.match(html, /bz-section__bgvideo[^>]*aria-hidden="true"/);
+  // The poster reaches CSS too, which is the only thing the editing canvas and a
+  // reduced-motion visitor ever see. Quotes arrive HTML-escaped in the attribute.
+  assert.match(html, /--bz-bgvideo-poster:url\(&quot;\/bg\.jpg&quot;\)/);
+});
+
+test('a poster cannot smuggle a second declaration into the style attribute', () => {
+  // The browser un-escapes the attribute before CSS parses it, so `esc` alone
+  // would let a quote close the url() and open a declaration of the author's
+  // choosing — an outbound request from every page the section is on.
+  const html = renderDocument(
+    {
+      nodes: [
+        {
+          id: 'hero',
+          type: 'section',
+          props: {
+            backgroundVideo: {
+              src: '/bg.mp4',
+              poster: '/bg.jpg"); background-image: url("https://tracker.example/p.gif',
+            },
+          },
+          children: [],
+        },
+      ],
+    },
+    CTX,
+  );
+  // Read it the way the browser does: un-escape the attribute, then look at what
+  // CSS is handed. The whole poster must still be one quoted url() token, with
+  // the injected text trapped inside the string where it parses as characters.
+  const style = html.match(/style="([^"]*)"/)[1].replace(/&quot;/g, '"');
+  const value = style.match(/--bz-bgvideo-poster:(.*)$/)[1];
+  assert.match(value, /^url\("[^"]*"\)$/, 'nothing escapes the url() token');
+  assert.match(value, /%22/, 'the quote is encoded rather than passed through');
+});
+
+test('a video URL is refused as a background image rather than emitted', () => {
+  // It reached the published page as `background-image: url(…mp4)`, which paints
+  // nothing at all — the browser treats the container as a broken image. Dropping
+  // it keeps the section's colour instead of silently blanking the band.
+  const bg = (src) =>
+    compileNodeStyles([{ id: 's', type: 'section', props: {}, styles: { base: { backgroundImage: src } } }]);
+
+  assert.doesNotMatch(bg('/media/hero.mp4'), /background-image/);
+  assert.doesNotMatch(bg('https://cdn.example/a.webm?v=2'), /background-image/);
+  assert.match(bg('/media/hero.jpg'), /background-image/);
+});
+
+test('a locations-map snapshot paints addresses and a rooftop link', () => {
+  const html = renderDocument(
+    {
+      nodes: [
+        {
+          id: 'm',
+          type: 'widget',
+          props: {
+            widget: 'locations-map',
+            config: { showMap: false },
+            snapshot: {
+              locations: [
+                {
+                  name: 'Tampa',
+                  href: '/locations/tampa',
+                  streetAddress: '6020 E Adamo Dr',
+                  city: 'Tampa',
+                  region: 'FL',
+                  postalCode: '33619',
+                  phone: '(813) 521-8148',
+                },
+              ],
+            },
+          },
+        },
+      ],
+    },
+    CTX,
+  );
+  assert.match(html, /href="\/locations\/tampa"/);
+  assert.match(html, /6020 E Adamo Dr, Tampa, FL 33619/);
+  assert.match(html, /tel:8135218148/);
+  assert.doesNotMatch(html, /data-bz-map/);
+});
+
+test('hours renders one table per public department', () => {
+  const html = renderDocument(
+    {
+      nodes: [
+        {
+          id: 'h',
+          type: 'widget',
+          props: {
+            widget: 'hours',
+            snapshot: {
+              schedules: [
+                { heading: 'Sales', hours: [{ day: 'Monday', hours: '07:00–19:00' }] },
+                { heading: 'Service', hours: [{ day: 'Monday', hours: '07:00–19:00' }] },
+              ],
+            },
+          },
+        },
+      ],
+    },
+    CTX,
+  );
+  assert.match(html, /<caption>Sales<\/caption>/);
+  assert.match(html, /<caption>Service<\/caption>/);
+});
+
+test('a section with no background video gains no video element or class', () => {
+  const html = renderDocument(
+    { nodes: [{ id: 's', type: 'section', props: {}, children: [] }] },
+    CTX,
+  );
+  assert.doesNotMatch(html, /bz-section--bgvideo/);
+  assert.doesNotMatch(html, /<video/);
 });
 
 /* ------------------------------------------------------- document styles */
@@ -1975,4 +2170,175 @@ test('a provider with no readyCall is not marked as having sent its page view', 
   const html = analyticsHead(withProviders([queueProvider]), { pageType: 'Home' });
   const blob = JSON.parse(html.slice(html.indexOf('{', html.indexOf('__BZ_ANALYTICS__')), html.indexOf(';</script>')));
   assert.equal(blob.providers[0].bootstrapped, false);
+});
+
+/* ------------------------------------------- rooftop structured data (4.14) */
+
+import { businessJsonLd } from './shell.mjs';
+import { rooftopFrom } from './widgets.mjs';
+
+const dealerConfig = {
+  name: 'Sun State International',
+  url: 'https://example.com',
+  favicon: '/favicon.svg',
+  seo: { locale: 'en_US', themeColor: '#000', defaultTitle: 'X', defaultDescription: 'Y', ogImage: '/og.jpg' },
+  business: {
+    type: 'AutoDealer',
+    legalName: 'Sun State International Trucks, LLC',
+    phone: '+1-800-555-0100',
+    addressCountry: 'US',
+    priceRange: '$$',
+  },
+};
+
+const tampa = {
+  name: 'Tampa',
+  slug: 'tampa',
+  streetAddress: '6020 Adamo Dr',
+  city: 'Tampa',
+  region: 'FL',
+  postalCode: '33619',
+  latitude: 27.95,
+  longitude: -82.4,
+  phone: '(813) 555-0100',
+  schedules: [
+    { heading: 'Sales', hours: [{ day: 'Monday', opensAt: '08:00', closesAt: '18:00' }, { day: 'Sunday', hours: 'Closed' }] },
+    { heading: 'Service', hours: [{ day: 'Monday', opensAt: '07:00', closesAt: '17:00' }] },
+  ],
+};
+
+test('a rooftop page describes the branch, not the head office', () => {
+  const ld = JSON.parse(businessJsonLd(dealerConfig, tampa, 'https://example.com/locations/tampa'));
+  assert.equal(ld.address.streetAddress, '6020 Adamo Dr');
+  assert.equal(ld.telephone, '(813) 555-0100');
+  assert.equal(ld['@id'], 'https://example.com/locations/tampa#location');
+  assert.equal(ld.parentOrganization.name, 'Sun State International');
+});
+
+test('a bare place name is prefixed, so the record still says who the business is', () => {
+  const ld = JSON.parse(businessJsonLd(dealerConfig, tampa, 'https://example.com/locations/tampa'));
+  assert.equal(ld.name, 'Sun State International Tampa');
+  const named = JSON.parse(
+    businessJsonLd(dealerConfig, { ...tampa, name: 'Sun State International — Tampa' }, 'https://example.com/x'),
+  );
+  assert.equal(named.name, 'Sun State International — Tampa', 'a dealer-typed full name is left alone');
+});
+
+test('closed days are omitted and extra departments become sub-entities', () => {
+  const ld = JSON.parse(businessJsonLd(dealerConfig, tampa, 'https://example.com/locations/tampa'));
+  assert.equal(ld.openingHoursSpecification.length, 1, 'the Sunday row has no opens/closes');
+  assert.deepEqual(ld.openingHoursSpecification[0], {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: 'Monday',
+    opens: '08:00',
+    closes: '18:00',
+  });
+  assert.equal(ld.department[0].name, 'Service');
+});
+
+test('with no rooftop the company node is unchanged', () => {
+  const ld = JSON.parse(businessJsonLd(dealerConfig));
+  assert.equal(ld.name, 'Sun State International');
+  assert.equal(ld['@id'], undefined);
+});
+
+test('the rooftop is read from the page own snapshots, and is null without them', () => {
+  const nodes = [
+    {
+      id: 's',
+      type: 'section',
+      children: [
+        {
+          id: 'w1',
+          type: 'widget',
+          props: {
+            widget: 'locations-map',
+            config: { locationSlug: 'tampa' },
+            snapshot: { locations: [{ slug: 'tampa', name: 'Tampa', city: 'Tampa' }] },
+          },
+        },
+        {
+          id: 'w2',
+          type: 'widget',
+          props: {
+            widget: 'hours',
+            config: { locationSlug: 'tampa' },
+            snapshot: { schedules: [{ heading: 'Sales', hours: [] }] },
+          },
+        },
+      ],
+    },
+  ];
+  const found = rooftopFrom(nodes, 'tampa');
+  assert.equal(found.city, 'Tampa');
+  assert.equal(found.schedules[0].heading, 'Sales');
+  assert.equal(rooftopFrom(nodes, 'sarasota'), null, 'a slug with no data must not claim an address');
+  assert.equal(rooftopFrom(nodes, null), null);
+});
+
+test('a component widget gets the placement own snapshot, not the definition one', () => {
+  const sections = {
+    'loc-summary': {
+      id: 'loc-summary',
+      props: [{ key: 'locationSlug', type: 'text', label: 'Slug', default: '' }],
+      nodes: [
+        {
+          id: 'band',
+          type: 'section',
+          props: {},
+          children: [
+            {
+              id: 'map',
+              type: 'widget',
+              props: { widget: 'locations-map', config: { locationSlug: '{{locationSlug}}' } },
+            },
+          ],
+        },
+      ],
+    },
+  };
+  const place = (slug, city) => ({
+    id: 'ref-' + slug,
+    type: 'sharedSection',
+    props: {
+      sectionId: 'loc-summary',
+      values: { locationSlug: slug },
+      snapshots: { map: { locations: [{ slug: slug, name: city, city: city, streetAddress: '1 Main St' }] } },
+    },
+  });
+
+  const tampaHtml = renderDocument({ nodes: [place('tampa', 'Tampa')] }, { sections });
+  const sarasotaHtml = renderDocument({ nodes: [place('sarasota', 'Sarasota')] }, { sections });
+
+  assert.match(tampaHtml, /Tampa/);
+  assert.equal(tampaHtml.includes('Sarasota'), false, 'one placement must not see another data');
+  assert.match(sarasotaHtml, /Sarasota/);
+  // The definition itself holds no data, so without a placement snapshot the
+  // widget falls back to its empty state rather than another rooftop address.
+  const bare = renderDocument(
+    { nodes: [{ id: 'r', type: 'sharedSection', props: { sectionId: 'loc-summary', values: { locationSlug: 'x' } } }] },
+    { sections },
+  );
+  assert.match(bare, /Locations load here\./);
+});
+
+test('rooftopFrom reads a snapshot placed through a component', () => {
+  const nodes = [
+    {
+      id: 'ref',
+      type: 'sharedSection',
+      props: {
+        sectionId: 'loc-summary',
+        values: { locationSlug: 'tampa' },
+        snapshots: {
+          map: { locations: [{ slug: 'tampa', name: 'Tampa', city: 'Tampa' }] },
+          hrs: { schedules: [{ heading: 'Sales', hours: [] }] },
+        },
+      },
+    },
+  ];
+  const found = rooftopFrom(nodes, 'tampa');
+  assert.equal(found.city, 'Tampa');
+  assert.equal(found.schedules[0].heading, 'Sales');
+  assert.equal(rooftopFrom(nodes, 'davenport'), null);
 });

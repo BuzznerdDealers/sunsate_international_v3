@@ -266,6 +266,33 @@
   aspect-ratio: 4 / 3; font-size: var(--text-small);
 }
 
+/* Both kinds reserve 16/9 before anything loads, so the page does not jump when
+   a file's metadata arrives or an embed's iframe paints. */
+.bz-video { position: relative; aspect-ratio: 16 / 9; background: var(--ink); border-radius: var(--radius-card); overflow: hidden; }
+.bz-video > video,
+.bz-video > iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; display: block; }
+.bz-video > video { object-fit: cover; }
+
+/* Background video. The poster is painted on the section itself, so the band
+   reads identically before the file loads, under reduced motion, and on the
+   editing canvas — which never plays media. */
+.bz-section--bgvideo {
+  position: relative; overflow: hidden;
+  background-image: var(--bz-bgvideo-poster, none);
+  background-size: cover; background-position: center;
+}
+.bz-section__bgvideo {
+  position: absolute; inset: 0; z-index: 0;
+  width: 100%; height: 100%; object-fit: cover;
+  pointer-events: none;
+}
+.bz-section--bgvideo > .bz-container,
+.bz-section--bgvideo > .bz-block { position: relative; z-index: 1; }
+
+@media (prefers-reduced-motion: reduce) {
+  .bz-section__bgvideo { display: none; }
+}
+
 /* ------------------------------------------------------------------ hero */
 
 .bz-block--hero { position: relative; overflow: hidden; }
@@ -343,9 +370,10 @@ a.bz-card:hover { border-color: var(--muted); }
 .bz-logo { display: inline-flex; align-items: center; text-decoration: none; }
 .bz-logo__t { font: 700 var(--text-small) / 1 var(--font-heading); letter-spacing: 0.03em; color: var(--muted); }
 
-.bz-loclist { display: flex; flex-direction: column; gap: var(--space-3); }
-.bz-loc { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius-card); padding: var(--space-3) var(--space-4); display: flex; flex-direction: column; gap: 2px; }
-.bz-loc__c { font: 700 var(--text-small) / 1.2 var(--font-heading); color: var(--ink); }
+.bz-loclist { display: grid; grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); gap: var(--space-4); }
+.bz-loc { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius-card); padding: var(--space-4); display: flex; flex-direction: column; gap: var(--space-2); }
+.bz-loc__c { font: 700 var(--text-small) / 1.2 var(--font-heading); color: var(--ink); text-decoration: none; }
+a.bz-loc__c:hover { color: var(--accent); }
 .bz-loc__a { font-size: var(--text-small); color: var(--muted); font-style: normal; }
 .bz-loc__p, .bz-person__p { font-size: var(--text-small); color: var(--accent-dark); }
 .bz-loc__s { font-size: var(--text-small); color: var(--muted); }
@@ -400,6 +428,7 @@ a.bz-card:hover { border-color: var(--muted); }
 .bz-phones { display: flex; flex-direction: column; gap: var(--space-2); }
 .bz-phone { display: flex; justify-content: space-between; gap: var(--space-4); border-bottom: 1px solid var(--line); padding-block: var(--space-2); font-size: var(--text-small); }
 .bz-phone__l { color: var(--muted); }
+.bz-widget--hours { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: var(--space-6); }
 .bz-hours { width: 100%; border-collapse: collapse; font-size: var(--text-small); }
 .bz-hours caption { text-align: left; font: 700 var(--text-body) / 1.3 var(--font-heading); margin-bottom: var(--space-3); }
 .bz-hours th, .bz-hours td { text-align: left; padding: var(--space-2) 0; border-bottom: 1px solid var(--line); }

@@ -14,7 +14,7 @@
 //  2. Blocks take `headingLevel` rather than hardcoding `<h1>`, so a page keeps
 //     exactly one h1 no matter which blocks it is assembled from.
 
-import { attrs, cls, esc, heading, href, image, isExternal, join, tagAttrs } from './html.mjs';
+import { attrs, cls, esc, heading, href, image, isExternal, join, tagAttrs, video } from './html.mjs';
 import { compileWidgets } from './custom-widgets.mjs';
 import { renderForm } from './forms.mjs';
 import { renderMenu } from './menus.mjs';
@@ -44,6 +44,29 @@ const IMAGE_SCHEMA = {
     height: int('Intrinsic height in pixels.'),
   },
   required: ['src', 'alt'],
+};
+
+/**
+ * One field for both kinds of video, because the renderer can tell them apart
+ * from the URL. A mode select would be a second thing to get wrong, and getting
+ * it wrong is silent — a YouTube link in `<video>` renders an empty black box.
+ */
+const VIDEO_SCHEMA = {
+  type: 'object',
+  description:
+    'A video: either a file uploaded to the media library (mp4/webm), or a YouTube or Vimeo ' +
+    'link. Anything that is not a recognised YouTube or Vimeo URL is treated as a file.',
+  properties: {
+    src: str('Public video URL from the media library, or a YouTube/Vimeo page URL.'),
+    poster: str(
+      'Image shown before playback starts. Strongly recommended for an uploaded file: ' +
+        'without it the block is a black rectangle until the visitor presses play, and the ' +
+        'editing canvas has nothing to show at all. Ignored by YouTube and Vimeo, which ' +
+        'bring their own.',
+    ),
+    title: str('Accessible title, read by screen readers and shown if the video cannot load.'),
+  },
+  required: ['src'],
 };
 
 /**
@@ -278,6 +301,43 @@ const BLOCKS = {
     },
   },
 
+  video: {
+    label: 'Video',
+    category: 'basic',
+    schema: {
+      type: 'object',
+      properties: {
+        video: VIDEO_SCHEMA,
+        caption: str('Optional caption shown under the video.'),
+        width: str('How wide the video sits.', { enum: ['prose', 'full'], default: 'full' }),
+        autoplay: bool(
+          'Start on load. Forces the clip muted, because no browser autoplays audio. ' +
+            'Pair with `controls` off and `loop` on for an ambient clip.',
+        ),
+        loop: bool('Restart when it ends.'),
+        controls: bool('Show the player controls. On unless turned off.'),
+      },
+      required: ['video'],
+    },
+    /**
+     * No `data-bz-el`: the tagging vocabulary has no video member, and a made-up
+     * one is an element that looks instrumented and reports to nothing. Play
+     * tracking is a vocabulary change, not a block change.
+     */
+    render(props, ctx) {
+      const player = video(props.video, {
+        ctx,
+        autoplay: props.autoplay,
+        loop: props.loop,
+        controls: props.controls,
+      });
+      const fig = `<figure class="${cls('bz-figure', props.width === 'prose' && 'bz-prose')}">${player}${
+        props.caption ? `<figcaption>${esc(props.caption)}</figcaption>` : ''
+      }</figure>`;
+      return container(fig);
+    },
+  },
+
   buttons: {
     label: 'Buttons',
     category: 'basic',
@@ -392,6 +452,16 @@ const BLOCKS = {
         config: {
           type: 'object',
           description: "Widget props, validated against that widget's own schema.",
+        },
+        /* Declared so the validator stops reporting the one prop that makes a
+           published page correct as an unknown one it will ignore. It is written
+           by the platform — the editor on save, and publish for the whole repo —
+           and its shape is the widget's own, so there is nothing to check here. */
+        snapshot: {
+          type: 'object',
+          description:
+            'Data resolved by the platform and committed into the page, so the ' +
+            'facts are in the static HTML. Never hand-written.',
         },
       },
       required: ['widget'],

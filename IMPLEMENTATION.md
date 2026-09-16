@@ -250,9 +250,10 @@ No `customHtml` block is used anywhere in this site.
   their allowed values come from whichever analytics providers the dealer has enabled, so
   they are set on the dashboard (Pages → page settings, and Forms), not here. `npm run
   validate` notes each one.
-- **Publish from the dashboard** after filling Locations. Save each location-bearing page
-  so widget snapshots commit into `site/`, then Publish — that also syncs renderer 4.13.0
-  onto this repo (it still ships 4.11.0 locally; do not edit `renderer/` here).
+- **Publish from the dashboard** after filling Locations. Publish now re-resolves every
+  widget in the repo server-side and commits the answers, so there is no longer any need to
+  open each page and save it first — one Publish is the whole action. It also brings
+  `renderer/` up to date; do not edit it here.
 - **`dealer.config.json` identity** (`channelToken` `c1-msqf4iad`) is already baked.
   Production `storefrontOrigin` is rewritten by the platform on the production dashboard;
   the local value `https://a1.buzznerdsubsite.loc` is not what Vercel should ship.
@@ -263,9 +264,25 @@ No `customHtml` block is used anywhere in this site.
 
 ```
 npm run validate   exit 0 — notes only (pageType, brochure grid from §5.4)
-npm run build      exit 0 — 31 pages + 9 posts + the blog index (local renderer 4.11.0)
+npm run build      exit 0 — 31 pages + 9 posts + the blog index (renderer 4.14.0)
 ```
 
-The platform renderer is **4.13.0** (template + dashboard + Vendure catalogue). This
-dealer repo still has 4.11.0 until Publish syncs it; the location card links, hours
-tables-per-department, and hydrate for lists/phones land with that sync.
+All four renderer copies are on **4.14.0** — template, dashboard, Vendure catalogue and this
+repo.
+
+### Rooftop structured data
+
+Each of the six location pages carries `locationSlug` in `site/pages.json`, matching its
+directory and the slug in Admin → Locations. That makes the page emit a `LocalBusiness` for
+**that branch** — address, geo, phone, per-department `openingHoursSpecification` — instead
+of repeating the company's head-office record on all six, which is what every rooftop page
+published before.
+
+It is built from the page's own widget snapshots, so it appears once the dealer has filled
+in Locations and pressed Publish, and not before. A page with no snapshot falls back to the
+company node rather than inventing an address.
+
+The FAQ blocks on each rooftop page still spell out that branch's address and hours as
+editorial prose. That is dealer-maintained copy, not live data: if a rooftop moves or
+changes its hours, those answers have to be edited on the Pages screen. Everything above
+them updates itself.
