@@ -3,15 +3,12 @@
    hardcodes a brand value the Design screen cannot change. */
 
 /* --- Hero ---------------------------------------------------------------
-   The handoff centres this hero — breadcrumb, h1 and standfirst — where the
-   rest of the site's interior heroes run left. That is the design file's own
-   treatment for the blog, kept page-scoped so no other page moves. */
-.bz-block--hero { padding-block: 88px; text-align: center; }
-.bz-block--hero .bz-hero__copy { max-width: 960px; margin-inline: auto; }
-.bz-block--hero h1 { font-size: 44px; line-height: 1.14; letter-spacing: -0.01em; margin-bottom: 22px; }
-.bz-block--hero .bz-hero__sub { font-size: 17px; line-height: 1.7; max-width: 700px; margin: 0 auto; }
-/* The breadcrumb reads as chrome over the photo, not as an accent label. */
-.bz-block--hero .bz-eyebrow { color: #E2E2E2; letter-spacing: 0.16em; margin-bottom: 22px; }
+   The site-wide layer already centres every hero, scrims it at 68% and sets
+   the 44px display face, so only the two values this handoff moves are here:
+   its 88px band and the tracked-out breadcrumb. */
+.bz-block--hero { padding-block: 88px; }
+.bz-block--hero h1 { margin-bottom: 22px; }
+.bz-block--hero .bz-eyebrow { letter-spacing: 0.16em; }
 
 /* --- Band rhythm, read off the handoff's own sections -------------------- */
 [data-bz-node="bl-intro"].bz-section,
@@ -29,25 +26,34 @@
 [data-bz-node="bi-lead"] p { font-size: 17px; line-height: 1.75; color: var(--ink); margin: 0 0 20px; }
 [data-bz-node="bi-body"] p { font-size: 16px; line-height: 1.75; color: var(--body-text); margin: 0 0 40px; }
 
-/* --- Post cards ---------------------------------------------------------
-   The grid is the platform postsList block resolving real posts, so these
-   rules dress the block's own markup rather than replacing it. */
-[data-bz-node="bp-list"] .bz-block { padding-block: 0; }
-[data-bz-node="bp-list"] .bz-sechead { margin-bottom: 26px; }
-[data-bz-node="bp-list"] h2 { font-size: 30px; margin: 0; }
-[data-bz-node="bp-list"] .bz-grid { gap: 24px; }
-[data-bz-node="bp-list"] .bz-card {
-  background: var(--card);
-  border: 1px solid var(--line);
-  display: flex;
-  flex-direction: column;
+/* --- Topic chips --------------------------------------------------------
+   The Filter pills widget carries the facet and value the platform filter
+   behaviour reads. The handoff draws them square, sentence case and a size
+   down from the location rail's, so only those differences are set here. */
+[data-bz-node="bp-chips"] .bz-block { padding-block: 0; }
+[data-bz-node="bp-chips-col"] { border-top: 1px solid var(--line); padding-top: 22px; }
+[data-bz-node="bp-chips-row"] { margin-bottom: 40px; }
+[data-bz-node="bp-chips"] .ss-filter__pills { flex-wrap: wrap; overflow: visible; padding-bottom: 0; }
+[data-bz-node="bp-chips"] .ss-pill {
+  border-width: 1px;
+  font-size: 13px;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--body-text);
 }
-[data-bz-node="bp-list"] .bz-card img { height: 190px; object-fit: cover; background: var(--paper); }
-[data-bz-node="bp-list"] .bz-card__body { padding: 24px 22px 26px; gap: 0; flex: 1; }
-[data-bz-node="bp-list"] .bz-card__m { font-size: 12px; color: var(--muted); margin-bottom: 12px; }
-[data-bz-node="bp-list"] .bz-card__t { font-size: 19px; line-height: 1.3; color: var(--ink); margin-bottom: 12px; }
-[data-bz-node="bp-list"] .bz-post__d { font-size: 14px; line-height: 1.7; color: var(--body-text); }
-[data-bz-node="bp-list"] a.bz-card:hover .bz-card__t { color: var(--accent); }
+[data-bz-node="bp-chips"] .ss-pill:hover { border-color: var(--ink); color: var(--ink); }
+[data-bz-node="bp-chips"] .ss-pill[aria-pressed="true"] { border-color: var(--accent); color: #fff; }
+
+/* --- Results header ------------------------------------------------------
+   Title and count sit on one baseline, the count pushed to the far edge. */
+[data-bz-node="bp-head-row"] { align-items: baseline; margin-bottom: 26px; }
+[data-bz-node="bp-head-row"] .bz-block { padding-block: 0; }
+[data-bz-node="bp-head-h"] h2 { font-size: 30px; margin: 0; }
+[data-bz-node="bp-count-col"] { text-align: right; }
+
+/* --- Post cards ----------------------------------------------------------
+   The card itself is the Post cards component; its rules travel with it. */
+[data-bz-node="bp-list"] .bz-block { padding-block: 0; }
 
 /* --- Pager --------------------------------------------------------------- */
 [data-bz-node="bp-pager"] .bz-btns { justify-content: center; margin-block: 40px 0; }
@@ -89,7 +95,7 @@
 
 @media (max-width: 640px) {
   .bz-block--hero { padding-block: 72px; }
-  .bz-block--hero h1 { font-size: 30px; }
-  [data-bz-node="bp-list"] h2,
+  [data-bz-node="bp-head-h"] h2,
   [data-bz-node="bf-head-h"] h2 { font-size: 26px; }
+  [data-bz-node="bp-head-col"], [data-bz-node="bp-count-col"] { text-align: left; }
 }
