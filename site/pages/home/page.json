@@ -9,7 +9,12 @@
         "paddingY": 10,
         "background": "ink",
         "align": "center",
-        "minHeight": "half"
+        "minHeight": "half",
+        "backgroundVideo": {
+          "src": "https://vendure.buzznerdrv.com/assets/source/d6/lakeside-hero-720__05.mp4",
+          "title": "lakeside-hero-720__05.mp4",
+          "poster": "https://vendure.buzznerdrv.com/assets/source/61/international-12-scaled.jpg"
+        }
       },
       "styles": {
         "base": {
@@ -99,10 +104,10 @@
           "background": "paper",
           "anchor": "about",
           "image": {
-            "src": "/img/photo-placeholder.svg",
+            "src": "https://vendure.buzznerdrv.com/assets/source/6a/trust.jpg",
             "alt": "Sun State International dealership — photograph to be supplied",
-            "width": 1600,
-            "height": 900
+            "width": 1500,
+            "height": 600
           },
           "width": "full"
         }
