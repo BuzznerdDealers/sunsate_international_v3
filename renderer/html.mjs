@@ -66,6 +66,107 @@ export function image(img, opts = {}) {
   })} />`;
 }
 
+/**
+ * A URL as a quoted CSS `url()`, safe to put in a `style` attribute.
+ *
+ * `esc` is not enough on its own. It escapes the quote in the HTML, but the
+ * browser un-escapes the attribute before the CSS parser sees it, so a `"` in
+ * the URL still closes the string and whatever follows becomes a second
+ * declaration — `url("/a.jpg"); background: url("https://tracker…` being the
+ * shape of it. Percent-encoding the quote and the backslash means the string
+ * cannot be terminated early, which makes everything after it inert.
+ */
+export function cssUrl(url) {
+  const encoded = String(url == null ? '' : url).replace(/["\\\r\n]/g, (c) =>
+    `%${c.charCodeAt(0).toString(16).padStart(2, '0').toUpperCase()}`,
+  );
+  return `url("${encoded}")`;
+}
+
+/**
+ * Classify a video source as a hosted file or a known embed.
+ *
+ * Returns the provider's own **id**, never the author's URL, because the id is
+ * what the embed URL is then built from. Passing a supplied URL into an iframe
+ * `src` would make any `https://` string a way to put a third-party document
+ * inside a dealer's page; a `[A-Za-z0-9_-]` id cannot.
+ *
+ * An unrecognised URL is a file. That is the honest default: a dealer pasting a
+ * link to a provider we do not know gets a `<video>` that fails visibly, not an
+ * iframe pointing somewhere nobody vetted.
+ */
+export function videoSource(src) {
+  const raw = String(src || '').trim();
+  if (!raw) return null;
+
+  const youtube = raw.match(
+    /^https?:\/\/(?:www\.|m\.)?(?:youtube(?:-nocookie)?\.com\/(?:watch\?(?:.*&)?v=|embed\/|shorts\/|live\/)|youtu\.be\/)([A-Za-z0-9_-]{6,})/i,
+  );
+  if (youtube) return { kind: 'youtube', id: youtube[1], url: raw };
+
+  const vimeo = raw.match(
+    /^https?:\/\/(?:www\.)?(?:vimeo\.com\/(?:video\/)?|player\.vimeo\.com\/video\/)(\d{6,})/i,
+  );
+  if (vimeo) return { kind: 'vimeo', id: vimeo[1], url: raw };
+
+  return { kind: 'file', id: null, url: raw };
+}
+
+/**
+ * A video, from the media library or an embed.
+ *
+ * `autoplay` implies `muted`, because every browser refuses to autoplay audio
+ * and the clip would simply never start. Setting one without the other is the
+ * most common way a background video ships broken, so it is not expressible
+ * here rather than being left to the caller to remember.
+ */
+export function video(source, opts = {}) {
+  const parsed = videoSource(source && typeof source === 'object' ? source.src : source);
+  if (!parsed) {
+    return `<div class="bz-photo bz-photo--empty"${attrs({ 'aria-hidden': 'true' })}>${esc(
+      opts.placeholder || 'Video',
+    )}</div>`;
+  }
+
+  const title = (source && source.title) || opts.title || 'Video';
+  const poster = (source && source.poster) || opts.poster || null;
+
+  if (parsed.kind !== 'file') {
+    // youtube-nocookie and Vimeo's dnt both stop the provider writing a cookie
+    // until the visitor actually presses play, which is what keeps an embedded
+    // clip out of the dealer's consent surface.
+    const embed =
+      parsed.kind === 'youtube'
+        ? `https://www.youtube-nocookie.com/embed/${parsed.id}?rel=0`
+        : `https://player.vimeo.com/video/${parsed.id}?dnt=1`;
+    return `<div class="bz-video bz-video--embed"><iframe${attrs({
+      src: embed,
+      title,
+      loading: 'lazy',
+      referrerpolicy: 'strict-origin-when-cross-origin',
+      allow: 'accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture',
+      allowfullscreen: true,
+      frameborder: '0',
+    })}></iframe></div>`;
+  }
+
+  const autoplay = !!opts.autoplay;
+  return `<div class="bz-video bz-video--file"><video${attrs({
+    src: resolveAssetUrl(parsed.url, opts.ctx),
+    poster: poster ? resolveAssetUrl(poster, opts.ctx) : null,
+    title,
+    controls: opts.controls !== false,
+    autoplay,
+    muted: autoplay || !!opts.muted,
+    loop: !!opts.loop,
+    playsinline: true,
+    // `metadata` rather than `auto`: a dealer home page with three clips on it
+    // would otherwise pull tens of megabytes before a visitor pressed anything.
+    preload: autoplay ? 'auto' : 'metadata',
+    class: opts.class,
+  })}></video></div>`;
+}
+
 /** Join rendered children, dropping empties. */
 export function join(parts, sep = '\n') {
   return (parts || []).filter((p) => p != null && p !== '').join(sep);

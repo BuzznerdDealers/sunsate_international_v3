@@ -1232,6 +1232,135 @@ test('an image with a url is clickable, and one without gains no anchor', () => 
   assert.doesNotMatch(plain, /<a /);
 });
 
+/* ------------------------------------------------------------------ video */
+
+/**
+ * One `src` field carries both a media-library file and an embed, so everything
+ * here turns on the renderer classifying the URL correctly. Getting it wrong is
+ * silent in both directions: a YouTube link in `<video>` is a black rectangle,
+ * and a file in an `<iframe>` is a download prompt.
+ */
+const videoDoc = (props) => renderDocument({ nodes: [{ id: 'v', type: 'video', props }] }, CTX);
+
+test('a media-library file renders as a real video element', () => {
+  const html = videoDoc({ video: { src: '/media/walkaround.mp4', poster: '/media/truck.jpg' } });
+  assert.match(html, /<video/);
+  assert.doesNotMatch(html, /<iframe/);
+  assert.match(html, /src="\/media\/walkaround\.mp4"/);
+  assert.match(html, /poster="\/media\/truck\.jpg"/);
+  // Controls are the default: a clip a visitor cannot pause is a dark pattern.
+  assert.match(html, /controls/);
+  assert.match(html, /playsinline/);
+});
+
+test('YouTube and Vimeo links become embeds built from the id, never the supplied URL', () => {
+  for (const src of [
+    'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+    'https://youtu.be/dQw4w9WgXcQ',
+    'https://www.youtube.com/shorts/dQw4w9WgXcQ',
+  ]) {
+    const html = videoDoc({ video: { src } });
+    assert.match(html, /<iframe/, src);
+    assert.match(html, /src="https:\/\/www\.youtube-nocookie\.com\/embed\/dQw4w9WgXcQ\?rel=0"/, src);
+  }
+
+  const vimeo = videoDoc({ video: { src: 'https://vimeo.com/123456789' } });
+  assert.match(vimeo, /src="https:\/\/player\.vimeo\.com\/video\/123456789\?dnt=1"/);
+});
+
+test('an unrecognised URL is treated as a file, not framed', () => {
+  // The security property: only a provider we parsed an id out of reaches an
+  // iframe. Otherwise any https string would be a way into a dealer's page.
+  const html = videoDoc({ video: { src: 'https://evil.example/page' } });
+  assert.doesNotMatch(html, /<iframe/);
+  assert.match(html, /<video/);
+});
+
+test('autoplay forces muted, because no browser will autoplay sound', () => {
+  const html = videoDoc({ video: { src: '/clip.mp4' }, autoplay: true, controls: false, loop: true });
+  assert.match(html, /autoplay/);
+  assert.match(html, /muted/);
+  assert.match(html, /loop/);
+  assert.doesNotMatch(html, /controls/);
+});
+
+test('a section background video keeps a poster the canvas and reduced motion can show', () => {
+  const html = renderDocument(
+    {
+      nodes: [
+        {
+          id: 'hero',
+          type: 'section',
+          props: { backgroundVideo: { src: '/bg.mp4', poster: '/bg.jpg' }, background: 'ink' },
+          children: [{ id: 'h', type: 'heading', props: { text: 'Trucks' } }],
+        },
+      ],
+    },
+    CTX,
+  );
+  assert.match(html, /class="[^"]*bz-section--bgvideo/);
+  assert.match(html, /<video[^>]*class="bz-section__bgvideo"/);
+  // Always muted, looping and inert: it is decoration, not content.
+  assert.match(html, /bz-section__bgvideo[^>]*muted/);
+  assert.match(html, /bz-section__bgvideo[^>]*loop/);
+  assert.match(html, /bz-section__bgvideo[^>]*aria-hidden="true"/);
+  // The poster reaches CSS too, which is the only thing the editing canvas and a
+  // reduced-motion visitor ever see. Quotes arrive HTML-escaped in the attribute.
+  assert.match(html, /--bz-bgvideo-poster:url\(&quot;\/bg\.jpg&quot;\)/);
+});
+
+test('a poster cannot smuggle a second declaration into the style attribute', () => {
+  // The browser un-escapes the attribute before CSS parses it, so `esc` alone
+  // would let a quote close the url() and open a declaration of the author's
+  // choosing — an outbound request from every page the section is on.
+  const html = renderDocument(
+    {
+      nodes: [
+        {
+          id: 'hero',
+          type: 'section',
+          props: {
+            backgroundVideo: {
+              src: '/bg.mp4',
+              poster: '/bg.jpg"); background-image: url("https://tracker.example/p.gif',
+            },
+          },
+          children: [],
+        },
+      ],
+    },
+    CTX,
+  );
+  // Read it the way the browser does: un-escape the attribute, then look at what
+  // CSS is handed. The whole poster must still be one quoted url() token, with
+  // the injected text trapped inside the string where it parses as characters.
+  const style = html.match(/style="([^"]*)"/)[1].replace(/&quot;/g, '"');
+  const value = style.match(/--bz-bgvideo-poster:(.*)$/)[1];
+  assert.match(value, /^url\("[^"]*"\)$/, 'nothing escapes the url() token');
+  assert.match(value, /%22/, 'the quote is encoded rather than passed through');
+});
+
+test('a video URL is refused as a background image rather than emitted', () => {
+  // It reached the published page as `background-image: url(…mp4)`, which paints
+  // nothing at all — the browser treats the container as a broken image. Dropping
+  // it keeps the section's colour instead of silently blanking the band.
+  const bg = (src) =>
+    compileNodeStyles([{ id: 's', type: 'section', props: {}, styles: { base: { backgroundImage: src } } }]);
+
+  assert.doesNotMatch(bg('/media/hero.mp4'), /background-image/);
+  assert.doesNotMatch(bg('https://cdn.example/a.webm?v=2'), /background-image/);
+  assert.match(bg('/media/hero.jpg'), /background-image/);
+});
+
+test('a section with no background video gains no video element or class', () => {
+  const html = renderDocument(
+    { nodes: [{ id: 's', type: 'section', props: {}, children: [] }] },
+    CTX,
+  );
+  assert.doesNotMatch(html, /bz-section--bgvideo/);
+  assert.doesNotMatch(html, /<video/);
+});
+
 /* ------------------------------------------------------- document styles */
 
 /**
