@@ -69,20 +69,7 @@
                       "placeholder": "Search trucks, trailers and yard trucks…"
                     },
                     "snapshot": {
-                      "types": [
-                        {
-                          "slug": "equipment",
-                          "label": "Equipment"
-                        },
-                        {
-                          "slug": "truck",
-                          "label": "Truck"
-                        },
-                        {
-                          "slug": "trailer",
-                          "label": "Trailer"
-                        }
-                      ]
+                      "types": []
                     }
                   },
                   "styles": {
@@ -491,112 +478,7 @@
                       "limit": 4
                     },
                     "snapshot": {
-                      "listings": [
-                        {
-                          "slug": "2-2024-international-emv",
-                          "href": "products/2-2024-international-emv",
-                          "title": "2024 INTERNATIONAL EMV",
-                          "price": "$0",
-                          "facts": [
-                            {
-                              "label": "Condition",
-                              "value": "Used"
-                            },
-                            {
-                              "label": "Axles",
-                              "value": "Single"
-                            },
-                            {
-                              "label": "Make",
-                              "value": "INTERNATIONAL"
-                            }
-                          ],
-                          "image": {
-                            "src": "preview/a0/dms-8043066049__03__preview.webp",
-                            "alt": "2024 INTERNATIONAL EMV",
-                            "width": 600,
-                            "height": 400
-                          }
-                        },
-                        {
-                          "slug": "2-2025-hyundai",
-                          "href": "products/2-2025-hyundai",
-                          "title": "2025 HYUNDAI",
-                          "price": "$0",
-                          "facts": [
-                            {
-                              "label": "Make",
-                              "value": "HYUNDAI"
-                            },
-                            {
-                              "label": "Year",
-                              "value": "2025"
-                            },
-                            {
-                              "label": "Condition",
-                              "value": "New"
-                            }
-                          ],
-                          "image": {
-                            "src": "preview/cc/dms-9070598747__03__preview.webp",
-                            "alt": "2025 HYUNDAI",
-                            "width": 600,
-                            "height": 400
-                          }
-                        },
-                        {
-                          "slug": "2-2026-international-lt",
-                          "href": "products/2-2026-international-lt",
-                          "title": "2026 INTERNATIONAL LT",
-                          "price": "$0",
-                          "facts": [
-                            {
-                              "label": "Axles",
-                              "value": "Single"
-                            },
-                            {
-                              "label": "Make",
-                              "value": "INTERNATIONAL"
-                            },
-                            {
-                              "label": "Model",
-                              "value": "LT"
-                            }
-                          ],
-                          "image": {
-                            "src": "preview/4f/dms-11009572643__preview.webp",
-                            "alt": "2026 INTERNATIONAL LT",
-                            "width": 600,
-                            "height": 400
-                          }
-                        },
-                        {
-                          "slug": "2-2026-international-lt-2",
-                          "href": "products/2-2026-international-lt-2",
-                          "title": "2026 INTERNATIONAL LT",
-                          "price": "$0",
-                          "facts": [
-                            {
-                              "label": "Make",
-                              "value": "INTERNATIONAL"
-                            },
-                            {
-                              "label": "Model",
-                              "value": "LT"
-                            },
-                            {
-                              "label": "Year",
-                              "value": "2026"
-                            }
-                          ],
-                          "image": {
-                            "src": "preview/ec/dms-11009586039__03__preview.webp",
-                            "alt": "2026 INTERNATIONAL LT",
-                            "width": 600,
-                            "height": 400
-                          }
-                        }
-                      ]
+                      "listings": []
                     }
                   }
                 },
