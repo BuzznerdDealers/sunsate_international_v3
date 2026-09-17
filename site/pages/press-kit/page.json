@@ -1,0 +1,673 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "pk-hero",
+      "type": "hero",
+      "props": {
+        "headingLevel": 1,
+        "eyebrow": "HOME / OUR STORY / PRESS KIT",
+        "headline": "Press Kit",
+        "subhead": "Company history, awards, brand assets and media contact for Sun State International Trucks and Sun State Trailers.",
+        "image": {
+          "src": "/img/photo-placeholder.svg",
+          "alt": "Sun State facility or fleet photography — to be supplied",
+          "width": 1600,
+          "height": 900
+        }
+      }
+    },
+    {
+      "id": "pk-summary",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 9,
+        "background": "card",
+        "anchor": "press-summary"
+      },
+      "children": [
+        {
+          "id": "pk-sum-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "pk-sum-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "pk-sum-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Sun State International Trucks traces back to Orange State Motor Co. in 1920s downtown Tampa. Today it is a family-owned International, IC Bus, Hyundai Translead and Globe Trailers dealer with six Florida locations, a five-award record with ATD, the Tampa Bay Business Journal and Women In Trucking, and one press office covering both the truck and trailer businesses.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "pk-stats",
+                  "type": "statBand",
+                  "props": {
+                    "stats": [
+                      {
+                        "value": "1920s",
+                        "label": "Founded as Orange State Motor Co."
+                      },
+                      {
+                        "value": "2000",
+                        "label": "Oscar Horton purchases Sun State"
+                      },
+                      {
+                        "value": "6",
+                        "label": "Florida locations"
+                      },
+                      {
+                        "value": "5",
+                        "label": "Awards & recognitions"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pk-history",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "card",
+        "anchor": "history"
+      },
+      "children": [
+        {
+          "id": "pk-hist-head",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "pk-hist-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "pk-hist-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "History of Sun State",
+                    "headingLevel": 2,
+                    "eyebrow": "COMPANY BACKGROUND"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pk-hist-row",
+          "type": "row",
+          "props": {
+            "gap": 6,
+            "stackOn": "tablet",
+            "align": "start"
+          },
+          "children": [
+            {
+              "id": "pk-hist-copy",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "pk-hist-body",
+                  "type": "text",
+                  "props": {
+                    "text": "What is now Sun State International Trucks, LLC. originally began in the 1920s as Orange State Motor Co. The original building was on Twigg St. in downtown Tampa. When they outgrew that location in 1970, it moved to the current location on Highway 60 / Adamo Drive and became Sun State International Trucks, LLC.\n\nBy the 1980s Orange State had become Boswell International, and in the year 2000 Oscar Horton purchased Sun State International Trucks, LLC. which included 2 locations, the Adamo Drive store, and the Sarasota store. In 2003 we opened our second Tampa location, the Aftermarket Shop. In 2005 Sun State purchased Moore International and opened our Central Florida store in Davenport, FL. In 2011 we added to our product line and became the Hyundai Translead trailer dealer for the state of Florida. In 2015 we expanded our product offerings again and purchased the rights to be the IC Bus dealer for the state of Florida, and opened Sun State Bus Centers, as well as adding Fontaine Trailers to our product line.\n\nIn 2018 we opened our first parts only store in Clearwater, FL, Sun State Truck & Trailer Parts. With the success of the first parts store and the need to better meet our ever-expanding customer base, we opened a second Sun State Truck and Trailer Parts store in Brooksville, FL in the fall of 2019.",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "pk-hist-line",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "pk-timeline",
+                  "type": "list",
+                  "props": {
+                    "columns": 1,
+                    "headingLevel": 2,
+                    "items": [
+                      {
+                        "label": "1920s",
+                        "desc": "Founded as Orange State Motor Co. on Twigg St. in downtown Tampa."
+                      },
+                      {
+                        "label": "1970",
+                        "desc": "Moved to Highway 60 / Adamo Drive and became Sun State International Trucks, LLC."
+                      },
+                      {
+                        "label": "1980s",
+                        "desc": "Orange State becomes Boswell International."
+                      },
+                      {
+                        "label": "2000",
+                        "desc": "Oscar Horton purchases the company — Adamo Drive and Sarasota stores."
+                      },
+                      {
+                        "label": "2003",
+                        "desc": "Second Tampa location opens: the Aftermarket Shop."
+                      },
+                      {
+                        "label": "2005",
+                        "desc": "Moore International purchased; Central Florida store opens in Davenport, FL."
+                      },
+                      {
+                        "label": "2011",
+                        "desc": "Becomes the Hyundai Translead trailer dealer for the state of Florida."
+                      },
+                      {
+                        "label": "2015",
+                        "desc": "Named Florida IC Bus dealer, opens Sun State Bus Centers, adds Fontaine Trailers."
+                      },
+                      {
+                        "label": "2018",
+                        "desc": "First parts-only store opens in Clearwater, FL — Sun State Truck & Trailer Parts."
+                      },
+                      {
+                        "label": "2019",
+                        "desc": "Second parts store opens in Brooksville, FL."
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pk-awards",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "awards-gallery",
+        "values": {
+          "eyebrow": "RECOGNITION",
+          "heading": "Awards & Recognition",
+          "span": 4,
+          "background": "paper",
+          "anchor": "awards",
+          "awards": [
+            {
+              "title": "2008 Finalist for ATD Truck Dealer of the Year Award",
+              "org": "American Truck Dealers"
+            },
+            {
+              "title": "2009 Tampa Bay Business Journal Hall of Fame Inductee",
+              "org": "Tampa Bay Business Journal"
+            },
+            {
+              "title": "2020 Winner - ATD Truck Dealer of the Year",
+              "org": "American Truck Dealers"
+            },
+            {
+              "title": "2024 - Top Companies for Women to Work in Transportation",
+              "org": "Women in Trucking Organization"
+            },
+            {
+              "title": "2025 - Top Companies for Women to Work in Transportation",
+              "org": "Women in Trucking Organization"
+            }
+          ],
+          "galleryEyebrow": "PHOTO ASSETS",
+          "galleryHeading": "",
+          "gallery": [
+            {
+              "image": {
+                "src": "https://sunstateintl.com/wp-content/uploads/2024/09/1.jpg",
+                "alt": "Sun State International Trucks press photo 1",
+                "width": 1200,
+                "height": 900
+              }
+            },
+            {
+              "image": {
+                "src": "https://sunstateintl.com/wp-content/uploads/2024/09/2.jpg",
+                "alt": "Sun State International Trucks press photo 2",
+                "width": 1200,
+                "height": 900
+              }
+            },
+            {
+              "image": {
+                "src": "https://sunstateintl.com/wp-content/uploads/2024/09/3.jpg",
+                "alt": "Sun State International Trucks press photo 3",
+                "width": 1200,
+                "height": 900
+              }
+            },
+            {
+              "image": {
+                "src": "https://sunstateintl.com/wp-content/uploads/2024/09/4.jpg",
+                "alt": "Sun State International Trucks press photo 4",
+                "width": 1200,
+                "height": 900
+              }
+            },
+            {
+              "image": {
+                "src": "https://sunstateintl.com/wp-content/uploads/2024/09/5.jpg",
+                "alt": "Sun State International Trucks press photo 5",
+                "width": 1200,
+                "height": 900
+              }
+            }
+          ],
+          "note": "Print-resolution versions of these images, logo files and executive headshots are available on request."
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "pk-media",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "card",
+        "anchor": "media-contact"
+      },
+      "children": [
+        {
+          "id": "pk-media-head",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "pk-media-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "pk-media-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Media contact and company facts.",
+                    "headingLevel": 2,
+                    "eyebrow": "FOR JOURNALISTS"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pk-media-row",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "align": "stretch"
+          },
+          "children": [
+            {
+              "id": "pk-media-card",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "styles": {
+                "base": {
+                  "background": "card",
+                  "borderWidth": 1,
+                  "borderStyle": "solid",
+                  "borderColor": "line",
+                  "paddingTop": 32,
+                  "paddingRight": 32,
+                  "paddingBottom": 32,
+                  "paddingLeft": 32
+                }
+              },
+              "children": [
+                {
+                  "id": "pk-media-card-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Media contact",
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "pk-media-card-b",
+                  "type": "text",
+                  "props": {
+                    "text": "For interviews, statements, imagery or a facility visit at any of our six Florida locations, reach the Sun State marketing team. Leadership bios are on <a href=\"/meet-the-team\">Meet the Team</a>, published coverage on <a href=\"/news\">News & Press</a>, company history on <a href=\"/about-us\">Our Story</a>, and giving on <a href=\"/community-involvement\">Community Involvement</a>.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "pk-media-card-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "email-us",
+                        "style": "link"
+                      },
+                      {
+                        "ctaId": "call-main",
+                        "label": "800.741.7566",
+                        "style": "link"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "pk-facts-card",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "styles": {
+                "base": {
+                  "background": "card",
+                  "borderWidth": 1,
+                  "borderStyle": "solid",
+                  "borderColor": "line",
+                  "paddingTop": 32,
+                  "paddingRight": 32,
+                  "paddingBottom": 32,
+                  "paddingLeft": 32
+                }
+              },
+              "children": [
+                {
+                  "id": "pk-facts-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Company facts",
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "pk-facts-list",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Family-owned and operated, purchased by Oscar Horton in 2000."
+                      },
+                      {
+                        "text": "Six locations across West Central Florida."
+                      },
+                      {
+                        "text": "Authorized dealer for International, IC Bus, Hyundai Translead and Globe Trailers."
+                      },
+                      {
+                        "text": "Sun State Bus Centers opened in 2015 as the Florida IC Bus dealer."
+                      },
+                      {
+                        "text": "Legal name: Sun State International Trucks, LLC."
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pk-social-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "pk-social-card",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "styles": {
+                "base": {
+                  "background": "card",
+                  "borderWidth": 1,
+                  "borderStyle": "solid",
+                  "borderColor": "line",
+                  "paddingTop": 32,
+                  "paddingRight": 32,
+                  "paddingBottom": 32,
+                  "paddingLeft": 32
+                }
+              },
+              "children": [
+                {
+                  "id": "pk-social-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Sun State Social Media",
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "pk-social-b",
+                  "type": "text",
+                  "props": {
+                    "text": "Official channels — use these for tagging and embeds.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "pk-social-links",
+                  "type": "social-links",
+                  "props": {
+                    "tone": "dark",
+                    "showLabels": true,
+                    "links": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sunstateintl",
+                        "icon": {
+                          "src": "/icons/facebook.svg",
+                          "alt": "Facebook"
+                        }
+                      },
+                      {
+                        "label": "Instagram",
+                        "url": "https://www.instagram.com/sunstateintl/",
+                        "icon": {
+                          "src": "/icons/instagram.svg",
+                          "alt": "Instagram"
+                        }
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/SunStateIntl",
+                        "icon": {
+                          "src": "/icons/twitter.svg",
+                          "alt": "X"
+                        }
+                      },
+                      {
+                        "label": "YouTube",
+                        "url": "https://www.youtube.com/channel/UCZw35HTHQi737CZnkV22nww",
+                        "icon": {
+                          "src": "/icons/youtube.svg",
+                          "alt": "YouTube"
+                        }
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/company/sun-state-international-trucks/",
+                        "icon": {
+                          "src": "/icons/linkedin.svg",
+                          "alt": "LinkedIn"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pk-locations",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "location-directory",
+        "values": {
+          "eyebrow": "WHERE WE ARE",
+          "heading": "Find a Location",
+          "body": "Ready to find the right commercial trucks for your business? Visit us at our convenient locations across West Central Florida to find the perfect trucks and trailers for your needs.",
+          "span": 4,
+          "background": "paper",
+          "anchor": "locations",
+          "linkLabel": "View Location →",
+          "locations": {
+            "source": "locations",
+            "config": {
+              "pagePathPrefix": "/locations"
+            }
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "pk-faq",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "card",
+        "anchor": "press-faq"
+      },
+      "children": [
+        {
+          "id": "pk-faq-head",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "pk-faq-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "pk-faq-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "For the record.",
+                    "headingLevel": 2,
+                    "eyebrow": "QUICK ANSWERS"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pk-faq-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "pk-faq-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "pk-faq-list",
+                  "type": "widget",
+                  "props": {
+                    "widget": "faq",
+                    "config": {
+                      "items": [
+                        {
+                          "q": "Who is the media contact for Sun State International?",
+                          "a": "Email info@sunstateintl.com or call 800.741.7566 and ask for the marketing team. One press office covers both Sun State International Trucks and Sun State Trailers."
+                        },
+                        {
+                          "q": "When was Sun State International Trucks founded?",
+                          "a": "The business began in the 1920s as Orange State Motor Co. on Twigg St. in downtown Tampa, moved to Highway 60 / Adamo Drive in 1970, and was purchased by Oscar Horton in 2000."
+                        },
+                        {
+                          "q": "How many locations does Sun State have?",
+                          "a": "Six Florida locations: Tampa on Adamo Drive, Sun State Aftermarket Parts in Tampa, Trailer Sales in Tampa, Davenport, Sarasota and Truck & Trailer Parts in Brooksville."
+                        },
+                        {
+                          "q": "Can I use Sun State logos and photos in my story?",
+                          "a": "Yes. Logo files, executive headshots, facility photography and brand guidelines are available on request from info@sunstateintl.com."
+                        },
+                        {
+                          "q": "What awards has Sun State received?",
+                          "a": "2008 Finalist for ATD Truck Dealer of the Year, 2009 Tampa Bay Business Journal Hall of Fame inductee, 2020 Winner of ATD Truck Dealer of the Year, and Top Companies for Women to Work in Transportation from the Women In Trucking Organization in 2024 and 2025."
+                        }
+                      ]
+                    },
+                    "snapshot": null
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pk-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-compact",
+        "values": {
+          "eyebrow": "",
+          "heading": "Need an asset or an interview?",
+          "body": "Ready to get on the road? Contact us to explore our trucks and experience nothing less than the dedicated care you deserve.",
+          "primaryLabel": "Contact Us",
+          "primaryUrl": "/contact",
+          "secondaryLabel": "",
+          "secondaryUrl": "",
+          "background": "ink"
+        }
+      },
+      "children": []
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "id": "social-links",
   "label": "Social links",
-  "description": "The row of social profile icons used in the utility bar and the footer.",
+  "description": "The row of social profile icons used in the utility bar and the footer. With labels turned on it becomes the bordered icon-and-name pills the press kit lists the official channels with.",
   "props": [
     {
       "key": "tone",
@@ -14,6 +14,12 @@
       ]
     },
     {
+      "key": "showLabels",
+      "type": "boolean",
+      "label": "Show the network name beside each icon",
+      "default": false
+    },
+    {
       "key": "links",
       "type": "list",
       "label": "Profiles",
@@ -24,6 +30,6 @@
       ]
     }
   ],
-  "html": "<ul class=\"ss-social ss-social--{{tone}}\">{{#each links}}<li class=\"ss-social__i\"><a class=\"ss-social__a\" href=\"{{link url}}\" aria-label=\"{{label}}\" data-bz-el=\"link\" data-bz-intent=\"social-profile\" target=\"_blank\" rel=\"noopener\"><img src=\"{{icon}}\" alt=\"\" width=\"14\" height=\"14\"></a></li>{{/each}}</ul>",
-  "css": ".ss-social{display:flex;align-items:center;gap:14px;margin:0;padding:0;list-style:none}\n.ss-social__i{display:flex}\n.ss-social__a{display:flex;line-height:1}\n.ss-social__a img{width:14px;height:14px;display:block}\n.ss-social--light .ss-social__a img{filter:brightness(0) invert(1)}\n.ss-social--dark .ss-social__a img{filter:none}\n.ss-social__a:hover{opacity:.75}"
+  "html": "<ul class=\"ss-social ss-social--{{tone}}{{#if showLabels}} ss-social--pills{{/if}}\">{{#each links}}<li class=\"ss-social__i\"><a class=\"ss-social__a\" href=\"{{link url}}\" aria-label=\"{{label}}\" data-bz-el=\"link\" data-bz-intent=\"social-profile\" target=\"_blank\" rel=\"noopener\"><img src=\"{{icon}}\" alt=\"\" width=\"14\" height=\"14\">{{#if showLabels}}<span class=\"ss-social__l\">{{label}}</span>{{/if}}</a></li>{{/each}}</ul>",
+  "css": ".ss-social{display:flex;align-items:center;gap:14px;margin:0;padding:0;list-style:none}\n.ss-social__i{display:flex}\n.ss-social__a{display:flex;line-height:1}\n.ss-social__a img{width:14px;height:14px;display:block}\n.ss-social--light .ss-social__a img{filter:brightness(0) invert(1)}\n.ss-social--dark .ss-social__a img{filter:none}\n.ss-social__a:hover{opacity:.75}\n/* Labelled variant: the handoff's official-channel pills — icon, name and a\n   hairline box, on a card rather than on the dark chrome. */\n.ss-social--pills{flex-wrap:wrap;gap:12px}\n.ss-social--pills .ss-social__a{align-items:center;gap:8px;border:1px solid var(--line);padding:10px 16px;font:700 14px/1 var(--font-body);color:var(--ink)}\n.ss-social--pills .ss-social__a:hover{opacity:1;background:var(--paper)}\n.ss-social--pills.ss-social--light .ss-social__a{border-color:rgba(255,255,255,.35);color:#fff}"
 }
