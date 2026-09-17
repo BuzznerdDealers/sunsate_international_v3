@@ -186,13 +186,13 @@
                 },
                 {
                   "id": "pt-brooksville",
-                  "label": "Truck & Trailer Parts \u2014 Brooksville",
+                  "label": "Truck & Trailer Parts — Brooksville",
                   "type": "location",
                   "ref": "brooksville"
                 },
                 {
                   "id": "pt-aftermarket-parts",
-                  "label": "Aftermarket Parts \u2014 Tampa",
+                  "label": "Aftermarket Parts — Tampa",
                   "type": "location",
                   "ref": "aftermarket-parts"
                 }
@@ -244,7 +244,7 @@
                 },
                 {
                   "id": "sv-after",
-                  "label": "After hours \u2014 (863) 880-2206",
+                  "label": "After hours — (863) 880-2206",
                   "type": "url",
                   "url": "tel:+18638802206"
                 }
@@ -312,7 +312,7 @@
           "id": "our-story",
           "label": "Our Story",
           "type": "page",
-          "ref": "our-story",
+          "ref": "our-stor",
           "children": [
             {
               "id": "os-company",
@@ -323,7 +323,7 @@
                   "id": "os-story",
                   "label": "Our Story",
                   "type": "page",
-                  "ref": "our-story"
+                  "ref": "our-stor"
                 },
                 {
                   "id": "os-team",
@@ -423,19 +423,19 @@
               "children": [
                 {
                   "id": "lo-brooksville",
-                  "label": "Truck & Trailer Parts \u2014 Brooksville",
+                  "label": "Truck & Trailer Parts — Brooksville",
                   "type": "location",
                   "ref": "brooksville"
                 },
                 {
                   "id": "lo-aftermarket",
-                  "label": "Aftermarket Parts \u2014 Tampa",
+                  "label": "Aftermarket Parts — Tampa",
                   "type": "location",
                   "ref": "aftermarket-parts"
                 },
                 {
                   "id": "lo-trailer",
-                  "label": "Trailer Sales \u2014 Tampa",
+                  "label": "Trailer Sales — Tampa",
                   "type": "location",
                   "ref": "trailer-sales"
                 }
@@ -550,7 +550,7 @@
     },
     {
       "id": "footer-brands",
-      "name": "Footer \u2014 Brands",
+      "name": "Footer — Brands",
       "items": [
         {
           "id": "fb-international",
@@ -580,7 +580,7 @@
     },
     {
       "id": "footer-shop",
-      "name": "Footer \u2014 Shop",
+      "name": "Footer — Shop",
       "items": [
         {
           "id": "fs-new-trucks",
@@ -646,13 +646,13 @@
     },
     {
       "id": "footer-company",
-      "name": "Footer \u2014 Company",
+      "name": "Footer — Company",
       "items": [
         {
           "id": "fc-about",
           "label": "About Us",
           "type": "page",
-          "ref": "our-story"
+          "ref": "our-stor"
         },
         {
           "id": "f-co-team",
@@ -866,31 +866,31 @@
       "items": [
         {
           "id": "cql-appt",
-          "label": "Schedule a service appointment \u2192",
+          "label": "Schedule a service appointment →",
           "type": "page",
           "ref": "service-appointment"
         },
         {
           "id": "cql-parts",
-          "label": "Order parts online \u2192",
+          "label": "Order parts online →",
           "type": "url",
           "url": "https://www.sunstateparts.com/login"
         },
         {
           "id": "cql-finance",
-          "label": "Financing and credit applications \u2192",
+          "label": "Financing and credit applications →",
           "type": "page",
           "ref": "financing"
         },
         {
           "id": "cql-careers",
-          "label": "Careers at Sun State \u2192",
+          "label": "Careers at Sun State →",
           "type": "page",
           "ref": "careers"
         },
         {
           "id": "cql-locations",
-          "label": "All locations and hours \u2192",
+          "label": "All locations and hours →",
           "type": "page",
           "ref": "locations"
         }
@@ -898,7 +898,7 @@
     },
     {
       "id": "policies-toc",
-      "name": "Policies \u2014 on this page",
+      "name": "Policies — on this page",
       "items": [
         {
           "id": "po-toc-0",
@@ -946,7 +946,7 @@
     },
     {
       "id": "privacy-toc",
-      "name": "Privacy Policy \u2014 on this page",
+      "name": "Privacy Policy — on this page",
       "items": [
         {
           "id": "pp-toc-0",
@@ -1066,7 +1066,7 @@
     },
     {
       "id": "terms-toc",
-      "name": "Terms and Conditions \u2014 on this page",
+      "name": "Terms and Conditions — on this page",
       "items": [
         {
           "id": "tc-toc-0",
