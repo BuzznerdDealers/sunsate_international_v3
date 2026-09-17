@@ -74,6 +74,14 @@
                   "url": null,
                   "newTab": false,
                   "children": []
+                },
+                {
+                  "id": "item-74",
+                  "label": "Emv Series",
+                  "type": "url",
+                  "url": "https://vendure.buzznerdrv.com/assets/source/fe/int_brochure-emvseries-9-26-1.pdf",
+                  "ref": null,
+                  "children": []
                 }
               ]
             },
@@ -661,19 +669,19 @@
                   "children": []
                 },
                 {
-                  "id": "lo-contact",
-                  "label": "Contact us",
+                  "id": "lo-appt",
+                  "label": "Schedule service",
                   "type": "page",
-                  "ref": "contact-us",
+                  "ref": "service-appointment",
                   "url": null,
                   "newTab": false,
                   "children": []
                 },
                 {
-                  "id": "lo-appt",
-                  "label": "Schedule service",
+                  "id": "lo-contact",
+                  "label": "Contact us",
                   "type": "page",
-                  "ref": "service-appointment",
+                  "ref": "contact-us",
                   "url": null,
                   "newTab": false,
                   "children": []
