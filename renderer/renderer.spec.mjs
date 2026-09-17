@@ -2682,3 +2682,26 @@ test('a template can dress every location page without naming a slug', () => {
   assert.equal(conditionMatches({ type: 'pageGroup', ref: 'locations' }, target), true);
   assert.equal(conditionMatches({ type: 'allLocations' }, { kind: 'page', slug: 'home' }), false);
 });
+
+test('a location menu item is a link before that location is baked', () => {
+  // The regression this exists for: resolving the address from the *baked*
+  // locations meant an item for a branch this repo had not published yet fell
+  // through to `<span class="bz-navlabel">`. That is the styling for a heading
+  // inside a panel, so a utility bar of six branches quietly lost its link
+  // colour — a design change, reported as "you broke the nav", with nothing in
+  // any log. The address comes from the route pattern, which is known always.
+  const menus = [
+    {
+      id: 'utility',
+      name: 'Utility bar',
+      items: [{ id: 'tpa', label: 'Tampa', type: 'location', ref: 'tampa' }],
+    },
+  ];
+  const html = renderMenu(menus, 'utility', { locationPagePath: '/locations/:slug' });
+  assert.match(html, /<a href="\/locations\/tampa"/);
+  assert.doesNotMatch(html, /bz-navlabel/);
+
+  // A site with no location page at all has nowhere to send it, and a heading
+  // is then the honest render rather than a link to a URL that cannot exist.
+  assert.match(renderMenu(menus, 'utility', {}), /bz-navlabel/);
+});

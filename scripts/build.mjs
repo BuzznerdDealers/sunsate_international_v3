@@ -205,10 +205,12 @@ const renderCtx = {
   // Menu items point at a page by slug rather than by address, so the manifest
   // has to be in context for a link to resolve.
   pages,
-  // The generated location pages, by Admin slug. A `location` menu item resolves
-  // through this, so the day a branch is renamed the link follows rather than
-  // pointing at a page that no longer exists.
-  locationPages: locationPageIndex(pages),
+  // The route pattern a `location` menu item resolves through — the manifest's
+  // own `/locations/:slug`, not the locations baked into the repo. A link's
+  // address does not depend on whether that location has been published here
+  // yet, and making it depend on that turned every unbaked item into a plain
+  // heading.
+  locationPagePath: locationPagePattern(pages),
   warn,
 };
 
@@ -469,17 +471,9 @@ if (blogSettings.enabled && existsSync(join(BLOG, 'posts'))) {
 renderCtx.posts = posts;
 renderCtx.blogBasePath = blogBase;
 
-/** Every generated location page's address, by the location's slug in Admin. */
-function locationPageIndex(entries) {
-  const out = [];
-  for (const p of entries) {
-    if (!isLocationPage(p)) continue;
-    const document = readJsonIf(join(SITE, 'pages', p.dir, 'page.json'), {});
-    for (const location of locationIndex(document)) {
-      out.push({ slug: location.slug, name: location.name, path: locationPath(p.path, location.slug) });
-    }
-  }
-  return out;
+/** The route every generated location page is emitted at, e.g. `/locations/:slug`. */
+function locationPagePattern(entries) {
+  return entries.find(isLocationPage)?.path ?? null;
 }
 
 /**
