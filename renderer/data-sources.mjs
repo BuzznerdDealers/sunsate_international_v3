@@ -70,6 +70,82 @@ export const DATA_SOURCES = [
       { key: 'phone2Url', type: 'url', label: 'Second phone link' },
       { key: 'phone3', type: 'text', label: 'Third phone' },
       { key: 'phone3Url', type: 'url', label: 'Third phone link' },
+      // The rooftop's place in the organisation, for a design that sections or
+      // filters branches by region. `group` is the name a dealer typed in Admin
+      // for their own reasons, so it is published copy — `groupKey` is its slug,
+      // for a `filter` behaviour's data- attributes.
+      { key: 'group', type: 'text', label: 'Group' },
+      { key: 'groupKey', type: 'text', label: 'Group key (for filtering)' },
+      // The same facts as `brands`, `services`, `perks`, `departments` and
+      // `hours` above, kept as lists instead of joined into one string apiece.
+      // Those stay, because sites are bound to them; reach for these whenever
+      // the design wants tiles, pills, rows or a table rather than a sentence.
+      {
+        key: 'brandRows',
+        type: 'list',
+        label: 'Brands (one row each)',
+        fields: [
+          { key: 'name', type: 'text', label: 'Name' },
+          { key: 'key', type: 'text', label: 'Filter value' },
+        ],
+      },
+      {
+        key: 'serviceRows',
+        type: 'list',
+        label: 'Services (one row each)',
+        fields: [
+          { key: 'name', type: 'text', label: 'Name' },
+          { key: 'description', type: 'text', label: 'Description' },
+        ],
+      },
+      {
+        key: 'perkRows',
+        type: 'list',
+        label: 'Service options (one row each)',
+        fields: [
+          { key: 'label', type: 'text', label: 'Label' },
+          { key: 'key', type: 'text', label: 'Filter value' },
+        ],
+      },
+      {
+        key: 'departmentRows',
+        type: 'list',
+        label: 'Departments (one row each)',
+        fields: [
+          { key: 'name', type: 'text', label: 'Name' },
+          { key: 'key', type: 'text', label: 'Code' },
+          { key: 'phone', type: 'text', label: 'Phone' },
+          { key: 'phoneUrl', type: 'url', label: 'Phone link' },
+          { key: 'email', type: 'text', label: 'Email' },
+          { key: 'hours', type: 'text', label: 'Hours, summarised' },
+        ],
+      },
+      // The nested one, and the reason nesting exists: a rooftop has departments
+      // and a department has a week. All seven days are always present, closed
+      // ones included — a table that skips Sunday misaligns against one that does
+      // not, and "Closed" is the answer the buyer came for.
+      {
+        key: 'hoursRows',
+        type: 'list',
+        label: 'Opening hours, by department',
+        fields: [
+          { key: 'department', type: 'text', label: 'Department' },
+          { key: 'key', type: 'text', label: 'Code' },
+          { key: 'summary', type: 'text', label: 'Whole week, in one line' },
+          {
+            key: 'days',
+            type: 'list',
+            label: 'Days',
+            fields: [
+              { key: 'day', type: 'text', label: 'Day' },
+              { key: 'hours', type: 'text', label: 'Open–close, or Closed' },
+              { key: 'opensAt', type: 'text', label: 'Opens at' },
+              { key: 'closesAt', type: 'text', label: 'Closes at' },
+              { key: 'closed', type: 'boolean', label: 'Closed that day' },
+            ],
+          },
+        ],
+      },
     ],
   },
   // A filter bar's buttons. The rows a `filter` behaviour offers have to be the
@@ -185,18 +261,29 @@ export function resolveDataBinding(binding, resolved, opts = {}) {
 
 /** Placeholder rows, so a source binding has a shape on a canvas before it is published. */
 function sampleRows(source, count) {
-  return Array.from({ length: count }, (_, i) =>
-    Object.fromEntries(
-      source.fields.map((f) => [
-        f.key,
-        f.type === 'number'
-          ? i + 1
-          : f.type === 'image'
-            ? { src: '', alt: '' }
-            : f.type === 'url'
-              ? '#'
-              : `${f.label} ${i + 1}`,
-      ]),
-    ),
-  );
+  return Array.from({ length: count }, (_, i) => sampleRow(source.fields, i));
+}
+
+function sampleRow(fields, i) {
+  return Object.fromEntries((fields || []).map((f) => [f.key, sampleValue(f, i)]));
+}
+
+function sampleValue(field, i) {
+  switch (field.type) {
+    case 'number':
+      return i + 1;
+    case 'boolean':
+      return false;
+    case 'image':
+      return { src: '', alt: '' };
+    case 'url':
+      return '#';
+    // Two rows rather than one: a nested list drawn once looks like a scalar on
+    // the canvas, and the whole point of the sample is to show that the design
+    // repeats here.
+    case 'list':
+      return [0, 1].map((n) => sampleRow(field.fields, n));
+    default:
+      return `${field.label} ${i + 1}`;
+  }
 }
