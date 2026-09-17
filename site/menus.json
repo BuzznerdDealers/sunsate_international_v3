@@ -844,8 +844,8 @@
         {
           "id": "fs-new-trucks",
           "label": "New Trucks",
-          "type": "inventory",
-          "ref": "#",
+          "type": "label",
+          "ref": null,
           "url": null,
           "newTab": false,
           "children": []
@@ -853,8 +853,8 @@
         {
           "id": "fs-used-trucks",
           "label": "Used Trucks",
-          "type": "inventory",
-          "ref": "#",
+          "type": "label",
+          "ref": null,
           "url": null,
           "newTab": false,
           "children": []
@@ -862,8 +862,8 @@
         {
           "id": "fs-new-trailers",
           "label": "New Trailers",
-          "type": "inventory",
-          "ref": "#",
+          "type": "label",
+          "ref": null,
           "url": null,
           "newTab": false,
           "children": []
@@ -871,8 +871,8 @@
         {
           "id": "fs-used-trailers",
           "label": "Used Trailers",
-          "type": "inventory",
-          "ref": "#",
+          "type": "label",
+          "ref": null,
           "url": null,
           "newTab": false,
           "children": []
