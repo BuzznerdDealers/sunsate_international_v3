@@ -16,6 +16,14 @@
       },
       "children": [
         {
+          "id": "image",
+          "type": "image",
+          "props": {
+            "width": "full",
+            "image": {}
+          }
+        },
+        {
           "id": "intro-row",
           "type": "row",
           "props": {
@@ -59,6 +67,14 @@
           ]
         }
       ]
+    },
+    {
+      "id": "row",
+      "type": "row",
+      "props": {
+        "gap": 6
+      },
+      "children": []
     },
     {
       "id": "post-cta",
