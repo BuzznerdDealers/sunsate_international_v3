@@ -24,7 +24,7 @@
           }
         ],
         "image": {
-          "src": "/img/photo-placeholder.svg",
+          "src": "https://vendure.buzznerdrv.com/assets/source/08/283a1693.jpg",
           "alt": "The Sun State team — photograph to be supplied",
           "width": 1600,
           "height": 900
@@ -310,7 +310,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "cu-locations",
@@ -385,7 +386,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "cu-faq",
@@ -470,7 +472,8 @@
                           "a": "Messages submitted during business hours are typically answered the same business day. Messages sent overnight or on weekends are handled the next business morning."
                         }
                       ]
-                    }
+                    },
+                    "snapshot": null
                   }
                 }
               ]
@@ -494,7 +497,8 @@
           "secondaryUrl": "mailto:info@sunstateintl.com",
           "background": "ink"
         }
-      }
+      },
+      "children": []
     }
   ]
 }
