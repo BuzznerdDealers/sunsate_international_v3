@@ -11,8 +11,12 @@ import {
   clearCustomWidgets,
   componentSampleValues,
   componentValues,
+  dataSource,
+  isDataBinding,
   parseComponentProps,
   previewProps,
+  resolveDataBinding,
+  resolveValues,
   compileNodeStyles,
   compileTokens,
   compileTokenScope,
@@ -1177,6 +1181,120 @@ test('stale values for props the component dropped are not fed to the tree', () 
   assert.deepEqual(Object.keys(values).sort(), ['heading', 'logos']);
 });
 
+/* ------------------------------------------- a designed list over live data */
+
+/**
+ * The trade every site here had been making: a `widget` node is live but draws
+ * the platform's card, and a typed list draws the dealer's card over data that
+ * goes stale. A list prop pointed at a data source is both.
+ */
+const ROOFTOPS = {
+  id: 'rooftops',
+  props: [
+    {
+      key: 'spots',
+      type: 'list',
+      label: 'Locations',
+      fields: [
+        { key: 'city', type: 'text' },
+        { key: 'region', type: 'text' },
+        { key: 'phone', type: 'text' },
+      ],
+    },
+  ],
+  nodes: [
+    {
+      id: 'grid',
+      type: 'section',
+      children: [
+        {
+          id: 'row',
+          type: 'row',
+          children: [
+            {
+              id: 'card',
+              type: 'column',
+              props: { span: 4, repeat: 'spots' },
+              children: [{ id: 'name', type: 'heading', props: { text: '{{city}}, {{region}}' } }],
+            },
+          ],
+        },
+      ],
+    },
+  ],
+};
+
+const ROOFTOP_CTX = { ...CTX, sections: { rooftops: ROOFTOPS } };
+
+const placeRooftops = (values, data, ctx = ROOFTOP_CTX) =>
+  renderDocument(
+    { nodes: [{ id: 'ref', type: 'sharedSection', props: { sectionId: 'rooftops', values, data } }] },
+    ctx,
+  );
+
+const LIVE = [
+  { slug: 'ogden', city: 'Ogden', region: 'UT', phone: '801-555-0100' },
+  { slug: 'provo', city: 'Provo', region: 'UT', phone: '801-555-0200' },
+];
+
+test('a list prop pointed at a data source draws the design once per live row', () => {
+  const html = placeRooftops({ spots: { source: 'locations' } }, { spots: LIVE });
+  assert.match(html, /Ogden, UT/);
+  assert.match(html, /Provo, UT/);
+  assert.equal(html.match(/bz-col/g).length, 2, 'two rooftops, two cards');
+  // The design is still the dealer's — the platform's own card markup is absent.
+  assert.doesNotMatch(html, /bz-loclist/);
+});
+
+test('a source with nothing baked publishes no rows, and shows the shape in the editor', () => {
+  // Inventing rows would put fictional addresses in the served HTML.
+  assert.doesNotMatch(placeRooftops({ spots: { source: 'locations' } }, null), /bz-col/);
+  const editing = placeRooftops({ spots: { source: 'locations' } }, null, { ...ROOFTOP_CTX, editing: true });
+  assert.match(editing, /bz-col/, 'a band that vanishes on the canvas reads as broken');
+});
+
+test('an overlay adds the editorial fields the platform does not hold', () => {
+  const rows = resolveDataBinding(
+    { source: 'locations', overlay: [{ slug: 'provo', badge: 'New' }] },
+    LIVE,
+  );
+  assert.equal(rows[1].badge, 'New');
+  assert.equal(rows[1].city, 'Provo', 'live fields survive the merge');
+  assert.equal(rows[0].badge, undefined, 'an overlay row only touches the row it names');
+});
+
+test('an overlay cannot restate a field the source owns', () => {
+  // Typing an address here would win over Admin and go stale with nothing to
+  // say so — the exact failure a data source exists to end.
+  const rows = resolveDataBinding(
+    { source: 'locations', overlay: [{ slug: 'ogden', city: 'Somewhere else', badge: 'Flagship' }] },
+    LIVE,
+  );
+  assert.equal(rows[0].city, 'Ogden');
+  assert.equal(rows[0].badge, 'Flagship');
+});
+
+test('an unknown source is empty rather than fatal, and only a list can carry one', () => {
+  assert.deepEqual(resolveDataBinding({ source: 'nonesuch' }, LIVE), []);
+  assert.equal(dataSource('nonesuch'), null);
+  assert.ok(isDataBinding({ source: 'locations' }));
+  assert.ok(!isDataBinding([{ city: 'Ogden' }]), 'typed rows are not a binding');
+
+  // A text prop naming a source is a mistake the validator reports; the renderer
+  // must not silently turn the object into "[object Object]" on the page.
+  const props = parseComponentProps([{ key: 'heading', type: 'text' }]);
+  const values = resolveValues(props, { heading: { source: 'locations' } }, null);
+  assert.deepEqual(values.heading, { source: 'locations' });
+});
+
+test('the editor keeps the binding, so saving does not freeze live rows into the file', () => {
+  const props = parseComponentProps(ROOFTOPS.props);
+  const stored = componentValues(props, { spots: { source: 'locations' } });
+  assert.ok(isDataBinding(stored.spots), 'what the page said is what the page keeps');
+  const drawn = resolveValues(props, { spots: { source: 'locations' } }, { spots: LIVE });
+  assert.equal(drawn.spots.length, 2, 'what is drawn is the resolved rows');
+});
+
 /**
  * The canvas renders node by node, so it cannot use `bindTree`. Without this a
  * slide showed the literal text `{{name}}`, which reads as a broken component
@@ -1350,6 +1468,211 @@ test('a video URL is refused as a background image rather than emitted', () => {
   assert.doesNotMatch(bg('/media/hero.mp4'), /background-image/);
   assert.doesNotMatch(bg('https://cdn.example/a.webm?v=2'), /background-image/);
   assert.match(bg('/media/hero.jpg'), /background-image/);
+});
+
+test('a locations-map snapshot paints addresses and a rooftop link', () => {
+  const html = renderDocument(
+    {
+      nodes: [
+        {
+          id: 'm',
+          type: 'widget',
+          props: {
+            widget: 'locations-map',
+            config: { showMap: false },
+            snapshot: {
+              locations: [
+                {
+                  name: 'Tampa',
+                  href: '/locations/tampa',
+                  streetAddress: '6020 E Adamo Dr',
+                  city: 'Tampa',
+                  region: 'FL',
+                  postalCode: '33619',
+                  phone: '(813) 521-8148',
+                },
+              ],
+            },
+          },
+        },
+      ],
+    },
+    CTX,
+  );
+  assert.match(html, /href="\/locations\/tampa"/);
+  assert.match(html, /6020 E Adamo Dr, Tampa, FL 33619/);
+  assert.match(html, /tel:8135218148/);
+  assert.doesNotMatch(html, /data-bz-map/);
+});
+
+test('a locations-map snapshot with coordinates draws the map in the HTML', () => {
+  const html = renderDocument(
+    {
+      nodes: [
+        {
+          id: 'm',
+          type: 'widget',
+          props: {
+            widget: 'locations-map',
+            config: { showMap: true, mapProvider: 'openstreetmap' },
+            snapshot: {
+              locations: [
+                { name: 'Tampa', latitude: 27.95, longitude: -82.45 },
+              ],
+            },
+          },
+        },
+      ],
+    },
+    CTX,
+  );
+  assert.match(html, /data-bz-map/);
+  assert.match(html, /openstreetmap\.org\/export\/embed/);
+  assert.match(html, /27\.95/);
+});
+
+test('the static map provider draws tiles, not an iframe', () => {
+  // An iframe inside the dashboard's Preview is sandboxed without allow-same-origin
+  // and the provider serves its own blocked page there. Tiles are images, so they
+  // draw in Preview, on the canvas and with JavaScript off.
+  const html = renderDocument(
+    {
+      nodes: [
+        {
+          id: 'm',
+          type: 'widget',
+          props: {
+            widget: 'locations-map',
+            config: { showMap: true, mapProvider: 'static' },
+            snapshot: { locations: [{ name: 'Tampa', latitude: 27.95, longitude: -82.45 }] },
+          },
+        },
+      ],
+    },
+    CTX,
+  );
+  assert.match(html, /tile\.openstreetmap\.org\/\d+\/\d+\/\d+\.png/);
+  assert.match(html, /OpenStreetMap/);
+  assert.doesNotMatch(html, /<iframe/);
+});
+
+test('a map with no provider chosen draws tiles, not an iframe', () => {
+  // The default has to be the one that survives a sandboxed Preview frame and a
+  // canvas that runs no site JS. An iframe default meant every dealer who never
+  // opened the setting saw the embed's "access blocked" page instead of a map.
+  const html = renderDocument(
+    {
+      nodes: [
+        {
+          id: 'm',
+          type: 'widget',
+          props: {
+            widget: 'locations-map',
+            config: { showMap: true },
+            snapshot: { locations: [{ name: 'Tampa', latitude: 27.95, longitude: -82.45 }] },
+          },
+        },
+      ],
+    },
+    CTX,
+  );
+  assert.match(html, /tile\.openstreetmap\.org\/\d+\/\d+\/\d+\.png/);
+  assert.doesNotMatch(html, /<iframe/);
+});
+
+test('the google map provider draws its embed', () => {
+  const html = renderDocument(
+    {
+      nodes: [
+        {
+          id: 'm',
+          type: 'widget',
+          props: {
+            widget: 'locations-map',
+            config: { showMap: true, mapProvider: 'google' },
+            snapshot: { locations: [{ name: 'Tampa', latitude: 27.95, longitude: -82.45 }] },
+          },
+        },
+      ],
+    },
+    CTX,
+  );
+  assert.match(html, /maps\.google\.com\/maps\?q=/);
+  assert.doesNotMatch(html, /openstreetmap\.org\/export/);
+});
+
+test('a dealer-data list marks itself as a carousel track and slides', () => {
+  // These items have no node, so an author cannot mark them. Without the parts
+  // the carousel behaviour finds nothing and every such rail ends up carrying
+  // hand-written arrow JavaScript the Design canvas never runs.
+  const rail = (widget, snapshot) =>
+    renderDocument(
+      {
+        nodes: [
+          {
+            id: 'band',
+            type: 'section',
+            props: { behaviour: 'carousel' },
+            children: [
+              {
+                id: 'r',
+                type: 'row',
+                props: {},
+                children: [
+                  {
+                    id: 'c',
+                    type: 'column',
+                    props: { span: 12 },
+                    children: [{ id: 'w', type: 'widget', props: { widget, snapshot } }],
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+      },
+      CTX,
+    );
+
+  const locations = rail('locations-map', {
+    locations: [{ name: 'Tampa' }, { name: 'Sarasota' }],
+  });
+  assert.match(locations, /<section[^>]+data-bz-behavior="carousel"/);
+  assert.match(locations, /<ul class="bz-loclist bz-bare" data-bz-part="track">/);
+  assert.equal(locations.match(/<li class="bz-loc" data-bz-part="slide">/g)?.length, 2);
+
+  const people = rail('staff', { staff: [{ name: 'Ada' }] });
+  assert.match(people, /<ul class="bz-people bz-bare" data-bz-part="track">/);
+  assert.match(people, /<li class="bz-person" data-bz-part="slide">/);
+
+  const listings = rail('inventory-carousel', { listings: [{ title: 'A truck', slug: 'a' }] });
+  assert.match(listings, /<ul class="bz-grid bz-grid--4 bz-bare" data-bz-part="track">/);
+  assert.match(listings, /<li data-bz-part="slide">/);
+});
+
+test('hours renders one table per public department', () => {
+  const html = renderDocument(
+    {
+      nodes: [
+        {
+          id: 'h',
+          type: 'widget',
+          props: {
+            widget: 'hours',
+            snapshot: {
+              schedules: [
+                { heading: 'Sales', hours: [{ day: 'Monday', hours: '07:00–19:00' }] },
+                { heading: 'Service', hours: [{ day: 'Monday', hours: '07:00–19:00' }] },
+              ],
+            },
+          },
+        },
+      ],
+    },
+    CTX,
+  );
+  assert.match(html, /<caption>Sales<\/caption>/);
+  assert.match(html, /<caption>Service<\/caption>/);
 });
 
 test('a section with no background video gains no video element or class', () => {
@@ -2110,4 +2433,275 @@ test('a provider with no readyCall is not marked as having sent its page view', 
   const html = analyticsHead(withProviders([queueProvider]), { pageType: 'Home' });
   const blob = JSON.parse(html.slice(html.indexOf('{', html.indexOf('__BZ_ANALYTICS__')), html.indexOf(';</script>')));
   assert.equal(blob.providers[0].bootstrapped, false);
+});
+
+/* ------------------------------------------- rooftop structured data (4.14) */
+
+import { businessJsonLd } from './shell.mjs';
+import { rooftopFrom } from './widgets.mjs';
+
+const dealerConfig = {
+  name: 'Sun State International',
+  url: 'https://example.com',
+  favicon: '/favicon.svg',
+  seo: { locale: 'en_US', themeColor: '#000', defaultTitle: 'X', defaultDescription: 'Y', ogImage: '/og.jpg' },
+  business: {
+    type: 'AutoDealer',
+    legalName: 'Sun State International Trucks, LLC',
+    phone: '+1-800-555-0100',
+    addressCountry: 'US',
+    priceRange: '$$',
+  },
+};
+
+const tampa = {
+  name: 'Tampa',
+  slug: 'tampa',
+  streetAddress: '6020 Adamo Dr',
+  city: 'Tampa',
+  region: 'FL',
+  postalCode: '33619',
+  latitude: 27.95,
+  longitude: -82.4,
+  phone: '(813) 555-0100',
+  schedules: [
+    { heading: 'Sales', hours: [{ day: 'Monday', opensAt: '08:00', closesAt: '18:00' }, { day: 'Sunday', hours: 'Closed' }] },
+    { heading: 'Service', hours: [{ day: 'Monday', opensAt: '07:00', closesAt: '17:00' }] },
+  ],
+};
+
+test('a rooftop page describes the branch, not the head office', () => {
+  const ld = JSON.parse(businessJsonLd(dealerConfig, tampa, 'https://example.com/locations/tampa'));
+  assert.equal(ld.address.streetAddress, '6020 Adamo Dr');
+  assert.equal(ld.telephone, '(813) 555-0100');
+  assert.equal(ld['@id'], 'https://example.com/locations/tampa#location');
+  assert.equal(ld.parentOrganization.name, 'Sun State International');
+});
+
+test('a bare place name is prefixed, so the record still says who the business is', () => {
+  const ld = JSON.parse(businessJsonLd(dealerConfig, tampa, 'https://example.com/locations/tampa'));
+  assert.equal(ld.name, 'Sun State International Tampa');
+  const named = JSON.parse(
+    businessJsonLd(dealerConfig, { ...tampa, name: 'Sun State International — Tampa' }, 'https://example.com/x'),
+  );
+  assert.equal(named.name, 'Sun State International — Tampa', 'a dealer-typed full name is left alone');
+});
+
+test('closed days are omitted and extra departments become sub-entities', () => {
+  const ld = JSON.parse(businessJsonLd(dealerConfig, tampa, 'https://example.com/locations/tampa'));
+  assert.equal(ld.openingHoursSpecification.length, 1, 'the Sunday row has no opens/closes');
+  assert.deepEqual(ld.openingHoursSpecification[0], {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: 'Monday',
+    opens: '08:00',
+    closes: '18:00',
+  });
+  assert.equal(ld.department[0].name, 'Service');
+});
+
+test('with no rooftop the company node is unchanged', () => {
+  const ld = JSON.parse(businessJsonLd(dealerConfig));
+  assert.equal(ld.name, 'Sun State International');
+  assert.equal(ld['@id'], undefined);
+});
+
+test('the rooftop is read from the page own snapshots, and is null without them', () => {
+  const nodes = [
+    {
+      id: 's',
+      type: 'section',
+      children: [
+        {
+          id: 'w1',
+          type: 'widget',
+          props: {
+            widget: 'locations-map',
+            config: { locationSlug: 'tampa' },
+            snapshot: { locations: [{ slug: 'tampa', name: 'Tampa', city: 'Tampa' }] },
+          },
+        },
+        {
+          id: 'w2',
+          type: 'widget',
+          props: {
+            widget: 'hours',
+            config: { locationSlug: 'tampa' },
+            snapshot: { schedules: [{ heading: 'Sales', hours: [] }] },
+          },
+        },
+      ],
+    },
+  ];
+  const found = rooftopFrom(nodes, 'tampa');
+  assert.equal(found.city, 'Tampa');
+  assert.equal(found.schedules[0].heading, 'Sales');
+  assert.equal(rooftopFrom(nodes, 'sarasota'), null, 'a slug with no data must not claim an address');
+  assert.equal(rooftopFrom(nodes, null), null);
+});
+
+test('a component widget gets the placement own snapshot, not the definition one', () => {
+  const sections = {
+    'loc-summary': {
+      id: 'loc-summary',
+      props: [{ key: 'locationSlug', type: 'text', label: 'Slug', default: '' }],
+      nodes: [
+        {
+          id: 'band',
+          type: 'section',
+          props: {},
+          children: [
+            {
+              id: 'map',
+              type: 'widget',
+              props: { widget: 'locations-map', config: { locationSlug: '{{locationSlug}}' } },
+            },
+          ],
+        },
+      ],
+    },
+  };
+  const place = (slug, city) => ({
+    id: 'ref-' + slug,
+    type: 'sharedSection',
+    props: {
+      sectionId: 'loc-summary',
+      values: { locationSlug: slug },
+      snapshots: { map: { locations: [{ slug: slug, name: city, city: city, streetAddress: '1 Main St' }] } },
+    },
+  });
+
+  const tampaHtml = renderDocument({ nodes: [place('tampa', 'Tampa')] }, { sections });
+  const sarasotaHtml = renderDocument({ nodes: [place('sarasota', 'Sarasota')] }, { sections });
+
+  assert.match(tampaHtml, /Tampa/);
+  assert.equal(tampaHtml.includes('Sarasota'), false, 'one placement must not see another data');
+  assert.match(sarasotaHtml, /Sarasota/);
+  // The definition itself holds no data, so without a placement snapshot the
+  // widget falls back to its empty state rather than another rooftop address.
+  const bare = renderDocument(
+    { nodes: [{ id: 'r', type: 'sharedSection', props: { sectionId: 'loc-summary', values: { locationSlug: 'x' } } }] },
+    { sections },
+  );
+  assert.match(bare, /Locations load here\./);
+});
+
+test('rooftopFrom reads a snapshot placed through a component', () => {
+  const nodes = [
+    {
+      id: 'ref',
+      type: 'sharedSection',
+      props: {
+        sectionId: 'loc-summary',
+        values: { locationSlug: 'tampa' },
+        snapshots: {
+          map: { locations: [{ slug: 'tampa', name: 'Tampa', city: 'Tampa' }] },
+          hrs: { schedules: [{ heading: 'Sales', hours: [] }] },
+        },
+      },
+    },
+  ];
+  const found = rooftopFrom(nodes, 'tampa');
+  assert.equal(found.city, 'Tampa');
+  assert.equal(found.schedules[0].heading, 'Sales');
+  assert.equal(rooftopFrom(nodes, 'davenport'), null);
+});
+
+/* ------------------------------------------------- one page, many locations */
+
+import {
+  applyLocationSlug,
+  fillTokens,
+  isLocationPage,
+  locationIndex,
+  locationOut,
+  locationPageNodes,
+  locationPath,
+} from './location-pages.mjs';
+
+const LOC_DOC = {
+  version: 2,
+  locations: [
+    { slug: 'tampa', name: 'Tampa', city: 'Tampa', region: 'FL' },
+    { slug: 'davenport', name: 'Davenport', city: 'Davenport', region: 'FL' },
+  ],
+  locationSnapshots: {
+    tampa: { hrs: { snapshot: { schedules: [{ heading: 'Sales', hours: [] }] } } },
+    davenport: { hrs: { snapshot: { schedules: [{ heading: 'Parts', hours: [] }] } } },
+  },
+  nodes: [{ id: 'hrs', type: 'widget', props: { widget: 'hours', config: {} } }],
+};
+
+test('a location page names the locations it will build', () => {
+  assert.deepEqual(
+    locationIndex(LOC_DOC).map((l) => l.slug),
+    ['tampa', 'davenport'],
+  );
+  // A repo nobody has published has no index, and that must read as "none yet"
+  // rather than throwing — the build has to survive it.
+  assert.deepEqual(locationIndex({ version: 2, nodes: [] }), []);
+  assert.equal(isLocationPage({ forEach: 'locations' }), true);
+  assert.equal(isLocationPage({ forEach: 'staff' }), false);
+});
+
+test('each location gets its own slug, snapshot and URL', () => {
+  const tampa = locationPageNodes(LOC_DOC.nodes, LOC_DOC, 'tampa');
+  const dav = locationPageNodes(LOC_DOC.nodes, LOC_DOC, 'davenport');
+
+  assert.equal(tampa[0].props.config.locationSlug, 'tampa');
+  assert.equal(dav[0].props.config.locationSlug, 'davenport');
+  assert.equal(tampa[0].props.snapshot.schedules[0].heading, 'Sales');
+  assert.equal(dav[0].props.snapshot.schedules[0].heading, 'Parts');
+
+  // The authored document is rendered once per location and must survive each
+  // pass untouched, or the second location inherits the first's data.
+  assert.equal(LOC_DOC.nodes[0].props.snapshot, undefined);
+  assert.deepEqual(LOC_DOC.nodes[0].props.config, {});
+
+  assert.equal(locationPath('/locations/:slug', 'tampa'), '/locations/tampa');
+  assert.equal(locationOut('/locations/tampa'), 'locations/tampa/index.html');
+  assert.equal(fillTokens('{{name}}, {{region}}', LOC_DOC.locations[0]), 'Tampa, FL');
+  // An unknown token must not reach a <title> as literal braces.
+  assert.equal(fillTokens('{{nope}}!', LOC_DOC.locations[0]), '!');
+});
+
+test('a widget that names a location keeps it', () => {
+  // A deliberate cross-reference — "parts counter is at Tampa" — must not be
+  // rewritten to the current page, or one link becomes six wrong ones.
+  const nodes = [{ id: 'x', type: 'widget', props: { widget: 'hours', config: { locationSlug: 'tampa' } } }];
+  applyLocationSlug(nodes, 'davenport');
+  assert.equal(nodes[0].props.config.locationSlug, 'tampa');
+});
+
+test('a template can dress every location page without naming a slug', () => {
+  const target = { kind: 'location', slug: 'location-detail--tampa', group: 'locations', location: 'tampa' };
+  assert.equal(conditionMatches({ type: 'allLocations' }, target), true);
+  assert.equal(conditionMatches({ type: 'location', ref: 'tampa' }, target), true);
+  assert.equal(conditionMatches({ type: 'location', ref: 'davenport' }, target), false);
+  // A site whose only template is "all pages" must still frame these.
+  assert.equal(conditionMatches({ type: 'allPages' }, target), true);
+  assert.equal(conditionMatches({ type: 'pageGroup', ref: 'locations' }, target), true);
+  assert.equal(conditionMatches({ type: 'allLocations' }, { kind: 'page', slug: 'home' }), false);
+});
+
+test('a location menu item is a link before that location is baked', () => {
+  // The regression this exists for: resolving the address from the *baked*
+  // locations meant an item for a branch this repo had not published yet fell
+  // through to `<span class="bz-navlabel">`. That is the styling for a heading
+  // inside a panel, so a utility bar of six branches quietly lost its link
+  // colour — a design change, reported as "you broke the nav", with nothing in
+  // any log. The address comes from the route pattern, which is known always.
+  const menus = [
+    {
+      id: 'utility',
+      name: 'Utility bar',
+      items: [{ id: 'tpa', label: 'Tampa', type: 'location', ref: 'tampa' }],
+    },
+  ];
+  const html = renderMenu(menus, 'utility', { locationPagePath: '/locations/:slug' });
+  assert.match(html, /<a href="\/locations\/tampa"/);
+  assert.doesNotMatch(html, /bz-navlabel/);
+
+  // A site with no location page at all has nowhere to send it, and a heading
+  // is then the honest render rather than a link to a URL that cannot exist.
+  assert.match(renderMenu(menus, 'utility', {}), /bz-navlabel/);
 });

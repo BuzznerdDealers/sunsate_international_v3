@@ -27,7 +27,7 @@
 import { attrs, cls, cssUrl, esc, resolveAssetUrl, rewriteAssetUrls } from './html.mjs';
 import { getBlock } from './blocks.mjs';
 import { BEHAVIOURS, PARTS, behaviourAttrs } from './behaviours.mjs';
-import { bindTree, componentValues, parseComponentProps } from './component-props.mjs';
+import { bindTree, parseComponentProps, resolveValues } from './component-props.mjs';
 
 export const DOCUMENT_VERSION = 2;
 
@@ -367,6 +367,20 @@ export const LAYOUT_REGISTRY = {
             'Anything left out falls back to the prop\'s default, so a placement need only ' +
             'state what differs.',
         },
+        /* Per-placement, because the definition is shared: two rooftops placing
+           the same component must not see one another's addresses. */
+        snapshots: {
+          type: 'object',
+          description:
+            'Widget data resolved by the platform for this placement, keyed by the ' +
+            "widget node's id inside the component. Never hand-written.",
+        },
+        data: {
+          type: 'object',
+          description:
+            'Rows resolved by the platform for each list prop this placement pointed ' +
+            'at a data source, keyed by the prop key. Never hand-written.',
+        },
       },
       required: ['sectionId'],
     },
@@ -406,13 +420,22 @@ export const LAYOUT_REGISTRY = {
       // happens here, once, against a tree that is cloned rather than mutated —
       // two placements of the same component must not see each other's values.
       const declared = parseComponentProps(section.props);
-      const values = componentValues(declared, node.props && node.props.values);
+      const values = resolveValues(declared, node.props && node.props.values, node.props && node.props.data, {
+        // A source binding that has never been published has nothing baked for
+        // it. On a page that must mean no rows; on the canvas it would mean a
+        // section that vanishes the moment a dealer points it at live data, so
+        // there it shows the shape instead.
+        sample: !!(ctx && ctx.editing),
+      });
 
       expanding.add(id);
       let inner;
       try {
         inner = renderChildren(
-          bindTree(parseDocument(section).nodes, values, { keepEmptyRepeat: !!(ctx && ctx.editing) }),
+          bindTree(parseDocument(section).nodes, values, {
+            keepEmptyRepeat: !!(ctx && ctx.editing),
+            snapshots: (node.props && node.props.snapshots) || null,
+          }),
           ctx,
         );
       } finally {

@@ -20,9 +20,10 @@
 // page that changes slug does not leave a dead link behind.
 
 import { esc, href, isExternal, join } from './html.mjs';
+import { locationPath } from './location-pages.mjs';
 
 /** Where a menu item can point. */
-export const MENU_ITEM_TYPES = ['page', 'post', 'inventory', 'url', 'label'];
+export const MENU_ITEM_TYPES = ['page', 'post', 'inventory', 'location', 'url', 'label'];
 
 /** How deep a menu may nest. Beyond this the tree is flattened, not dropped. */
 export const MAX_MENU_DEPTH = 3;
@@ -139,6 +140,22 @@ function destinationOf(item, ctx) {
         ctx.warn(`Menu item "${item.label}" points at "${page.title}", which is not published.`);
       }
       return page.path;
+    }
+    case 'location': {
+      // `ref` is the location's slug in Admin, not a page slug, because the page
+      // it lands on is generated and has no slug of its own until that location
+      // exists. Written as a `page` item it would break the day a branch was
+      // renamed, and as a `url` it would hardcode the pattern.
+      //
+      // Resolved from the manifest's path *pattern*, never from the locations
+      // baked into the repo. Those two answer different questions — the index
+      // says which pages to emit, the pattern says what one costs to link to —
+      // and conflating them cost a design: an item whose location was not baked
+      // yet returned null, which renders as a `bz-navlabel` heading rather than
+      // an anchor, so a utility bar of six branches silently lost its link
+      // colour and its underline.
+      if (!ctx.locationPagePath || !item.ref) return null;
+      return locationPath(ctx.locationPagePath, item.ref);
     }
     case 'post':
       return `${ctx.blogBasePath ?? '/blog'}/${item.ref}`;

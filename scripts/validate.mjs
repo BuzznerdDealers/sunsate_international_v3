@@ -31,17 +31,25 @@ import { fileURLToPath } from 'node:url';
 import { isValidPageType, pageTypeOptions } from '../renderer/analytics-vocab.mjs';
 import {
   CONDITION_TYPES,
+  DATA_SOURCES,
   MENU_ITEM_TYPES,
   RENDERER_VERSION,
+  SLUG_TOKEN,
   allWidgetIds,
   blockCatalogue,
+  dataSource,
+  isDataBinding,
+  isLocationPage,
   listMenus,
+  locationIndex,
+  parseComponentProps,
   parseMenus,
   parseTemplate,
   parseWidgetDefinition,
   registerCustomWidgets,
   validateDocument,
   validateTemplate,
+  walkNodes,
 } from '../renderer/index.mjs';
 
 const HERE = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -203,6 +211,29 @@ if (!existsSync(pagesPath)) {
           if (paths.has(page.path)) fail('site/pages.json', `${at}.path`, `"${page.path}" appears twice`);
           paths.add(page.path);
         }
+        // One authored page standing for many. Its `path` is a pattern and its
+        // `out` is derived per location, so the fixed-path rules below cannot
+        // apply — and the two ways of getting it wrong are both silent: a path
+        // with no :slug writes every location over the same file, and a page
+        // nobody has published yet emits nothing at all.
+        if (isLocationPage(page)) {
+          if (page?.path && !page.path.includes(SLUG_TOKEN)) {
+            fail(
+              'site/pages.json',
+              `${at}.path`,
+              `builds one page per location but has no "${SLUG_TOKEN}" in "${page.path}", so every location would overwrite the same file`,
+              `Use a path like "/locations/${SLUG_TOKEN}".`,
+            );
+          }
+          const doc = readJson(join(SITE, 'pages', page.dir ?? '', 'page.json')).value;
+          if (!locationIndex(doc).length) {
+            note(
+              'site/pages.json',
+              `"${page.slug}" builds one page per location and has no locations baked into it yet, so it emits nothing. Publishing writes them in.`,
+            );
+          }
+          continue;
+        }
         // `path` is the address a visitor types; `out` is the file written for it.
         // They are separate fields and nothing else checks that they agree, so a
         // page can be listed at /financing and written to about/index.html.
@@ -252,15 +283,32 @@ if (!existsSync(pagesPath)) {
 
 const CONDITION_IDS = CONDITION_TYPES.map(c => c.id);
 const pageSlugs = new Set(pages.map(p => p.slug));
+/** The Admin location slugs publish has baked into this repo, if any. */
+const bakedLocationSlugs = new Set(
+  pages
+    .filter(isLocationPage)
+    .flatMap(p => locationIndex(readJson(join(SITE, 'pages', p.dir ?? '', 'page.json')).value))
+    .map(l => l.slug),
+);
 let sitewideTemplate = false;
 
 /* Component ids have to exist before pages and templates are checked — a
    `sharedSection` on a page names one of these, and `checkReferences` reads
    the set. Validation of the component files themselves still happens later. */
 const sectionIds = new Set();
+/* Their trees too: a rooftop page usually places its locations and hours widgets
+   through a component, so "does this page show location X" cannot be answered
+   from the page alone. */
+const sectionNodes = new Map();
+/* And their declared props, because a placement may point a list prop at a live
+   data source and only the declaration says which props are lists. */
+const sectionProps = new Map();
 for (const file of listJson(join(SITE, 'sections'))) {
   const { value } = readJson(join(SITE, 'sections', file));
-  sectionIds.add(value?.id ?? file.replace(/\.json$/, ''));
+  const id = value?.id ?? file.replace(/\.json$/, '');
+  sectionIds.add(id);
+  sectionNodes.set(id, value?.nodes ?? []);
+  sectionProps.set(id, parseComponentProps(value?.props));
 }
 
 /* ----------------------------------------------------------- page documents */
@@ -363,6 +411,67 @@ for (const page of pages) {
       fail('site/pages.json', `${page.slug}.templates.${slot}`, `no template called "${id}"`);
     }
   }
+
+  reportRooftop(page, value?.nodes ?? []);
+}
+
+/**
+ * A rooftop page's structured data is built from its own widget snapshots, so a
+ * page that claims to be a location without carrying that location's data emits
+ * nothing — silently, and only in production, which is the worst combination.
+ */
+function reportRooftop(page, nodes) {
+  const slug = page.locationSlug;
+  if (!slug) {
+    if (/^\/locations\/[^/]+$/.test(page.path || '')) {
+      note(
+        'site/pages.json',
+        `"${page.slug}" looks like a rooftop page but has no locationSlug, so it emits the ` +
+          'company address rather than this branch\'s. Set it to the slug in Admin → Locations.',
+      );
+    }
+    return;
+  }
+  if (!placesWidget(nodes, 'locations-map', slug)) {
+    fail(
+      'site/pages.json',
+      `${page.slug}.locationSlug`,
+      `the page declares location "${slug}" but places no locations widget for it, so ` +
+        'there is nothing to build its address from',
+      'Add a "locations-map" widget with the same locationSlug — directly, or through a ' +
+        'component whose locationSlug value matches — then publish.',
+    );
+  } else if (!placesWidget(nodes, 'hours', slug)) {
+    note(
+      `site/pages/${page.dir}/page.json`,
+      `rooftop page "${slug}" has no hours widget for it, so its structured data carries ` +
+        'an address but no opening hours.',
+    );
+  }
+}
+
+/**
+ * Is this widget placed for this rooftop — directly, or inside a component whose
+ * `locationSlug` value matches? A component's own widgets read `{{locationSlug}}`,
+ * so the placement is the only place the real slug appears.
+ */
+function placesWidget(nodes, id, slug) {
+  let found = false;
+  walkNodes({ nodes }, node => {
+    if (node.type === 'widget' && node.props?.widget === id) {
+      const configured = node.props?.config?.locationSlug;
+      if (!configured || configured === slug) found = true;
+    }
+    if (node.type === 'sharedSection' && node.props?.values?.locationSlug === slug) {
+      const section = sectionNodes.get(node.props.sectionId);
+      if (section) {
+        walkNodes({ nodes: section }, inner => {
+          if (inner.type === 'widget' && inner.props?.widget === id) found = true;
+        });
+      }
+    }
+  });
+  return found;
 }
 
 /* ---------------------------------------------------- sections (components) */
@@ -440,6 +549,16 @@ if (existsSync(menusPath)) {
           if (!item?.label) fail('site/menus.json', at, 'every item needs a label');
           if (item?.type && !MENU_ITEM_TYPES.includes(item.type)) {
             fail('site/menus.json', `${at}.type`, `"${item.type}" is not one of ${MENU_ITEM_TYPES.join(', ')}`);
+          }
+          // A location item's `ref` is an Admin slug, and which slugs exist is a
+          // fact about the dealer's account rather than about this repo. Warned,
+          // never failed: a repo that has not been published yet knows of none,
+          // and refusing to validate it would make the feature unusable offline.
+          if (item?.type === 'location' && item.ref && !bakedLocationSlugs.has(item.ref)) {
+            note(
+              'site/menus.json',
+              `${at}.ref points at location "${item.ref}", which is not in the locations baked into this repo. It will resolve once that location is published, and link nowhere until then.`,
+            );
           }
           if (item?.type === 'page' && item.ref && !pageSlugs.has(item.ref)) {
             fail('site/menus.json', `${at}.ref`, `no page with slug "${item.ref}"`, 'Menu items point at a page by slug, not by address.');
@@ -733,6 +852,72 @@ function reportRepeatedShapes(file, nodes) {
   check(nodes, 'nodes');
 }
 
+/**
+ * A placement pointing a list prop at live dealer data.
+ *
+ * Every failure here renders as an empty band rather than an error, which is the
+ * worst way to find out: the page builds, publishes, and shows nothing where the
+ * locations were. So each one is caught at the only point the names can be
+ * cross-checked — the placement knows the source, the component knows which of
+ * its props are lists, and the catalogue knows which fields the source owns.
+ */
+function checkDataBindings(file, at, props) {
+  const declared = sectionProps.get(props.sectionId) ?? [];
+  const byKey = new Map(declared.map(p => [p.key, p]));
+
+  for (const [key, value] of Object.entries(props.values ?? {})) {
+    if (!isDataBinding(value)) continue;
+    const where = `${at}.props.values.${key}`;
+    const prop = byKey.get(key);
+
+    if (!prop) {
+      fail(file, where, `"${props.sectionId}" declares no prop called "${key}"`);
+      continue;
+    }
+    if (prop.type !== 'list') {
+      fail(file, where, `"${key}" is a ${prop.type} prop; only a list can come from a data source`);
+      continue;
+    }
+    const source = dataSource(value.source);
+    if (!source) {
+      const known = DATA_SOURCES.map(s => s.id).join(', ');
+      fail(file, `${where}.source`, `no data source called "${value.source}" — try one of: ${known}`);
+      continue;
+    }
+
+    // A field the tree binds to that the source does not carry renders as empty
+    // text forever, and reads on the canvas as "the data is not arriving".
+    const owned = new Set(source.fields.map(f => f.key));
+    const overlaid = new Set();
+    for (const [i, row] of (value.overlay ?? []).entries()) {
+      if (!row || typeof row !== 'object') {
+        fail(file, `${where}.overlay[${i}]`, 'must be an object');
+        continue;
+      }
+      if (row[source.match] == null || row[source.match] === '') {
+        fail(file, `${where}.overlay[${i}]`, `needs "${source.match}" to say which row it belongs to`);
+      }
+      for (const field of Object.keys(row)) {
+        if (field === source.match) continue;
+        if (owned.has(field)) {
+          fail(
+            file,
+            `${where}.overlay[${i}].${field}`,
+            `"${field}" comes from ${source.label} and would go stale if typed here — remove it`,
+          );
+          continue;
+        }
+        overlaid.add(field);
+      }
+    }
+
+    for (const field of prop.fields ?? []) {
+      if (owned.has(field.key) || overlaid.has(field.key)) continue;
+      note(file, `${where}: "${field.key}" is not in ${source.label} and no overlay row sets it — it renders empty`);
+    }
+  }
+}
+
 /** Library ids a node points at, which no schema can check. */
 function checkReferences(file, nodes) {
   eachNode(nodes, (node, at) => {
@@ -743,6 +928,7 @@ function checkReferences(file, nodes) {
     if (node.type === 'sharedSection' && props.sectionId && !sectionIds.has(props.sectionId)) {
       fail(file, `${at}.props.sectionId`, `no component called "${props.sectionId}"`);
     }
+    if (node.type === 'sharedSection') checkDataBindings(file, at, props);
     for (const [i, item] of (props.items ?? []).entries()) {
       if (item?.ctaId && !buttons.has(item.ctaId)) {
         fail(file, `${at}.props.items[${i}].ctaId`, `no button called "${item.ctaId}"`);

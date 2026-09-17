@@ -67,6 +67,14 @@ export const CONDITION_TYPES = [
     specificity: 350,
   },
   {
+    id: 'allLocations',
+    label: 'Location pages',
+    description:
+      'Every page built from the one-page-per-location template. Generated slugs do not exist until a location does, so a specific-page condition cannot reach them.',
+    ref: null,
+    specificity: 300,
+  },
+  {
     id: 'pageGroup',
     label: 'A group of pages',
     description: 'Every page tagged with one group.',
@@ -75,6 +83,13 @@ export const CONDITION_TYPES = [
   },
   { id: 'page', label: 'A specific page', description: '', ref: 'page', specificity: 500 },
   { id: 'post', label: 'A specific post', description: '', ref: 'post', specificity: 500 },
+  {
+    id: 'location',
+    label: 'One location’s page',
+    description: 'The generated page for a single location, by its slug.',
+    ref: 'location',
+    specificity: 500,
+  },
 ];
 
 const BY_ID = new Map(CONDITION_TYPES.map(c => [c.id, c]));
@@ -88,7 +103,11 @@ export function conditionMatches(condition, target) {
     case 'entireSite':
       return true;
     case 'allPages':
-      return kind === 'page';
+      // Location pages count: to a dealer they are pages, and a site whose only
+      // template is "all pages" must still put chrome round them.
+      return kind === 'page' || kind === 'location';
+    case 'allLocations':
+      return kind === 'location';
     case 'allPosts':
       return kind === 'post';
     case 'blog':
@@ -101,11 +120,17 @@ export function conditionMatches(condition, target) {
     case 'parts':
       return kind === 'parts';
     case 'pageGroup':
-      return kind === 'page' && !!target.group && target.group === condition.ref;
+      return (
+        (kind === 'page' || kind === 'location') &&
+        !!target.group &&
+        target.group === condition.ref
+      );
     case 'page':
       return kind === 'page' && target.slug === condition.ref;
     case 'post':
       return kind === 'post' && target.slug === condition.ref;
+    case 'location':
+      return kind === 'location' && target.location === condition.ref;
     default:
       return false;
   }

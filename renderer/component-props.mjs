@@ -21,6 +21,7 @@
 // needs a CMS collection for this and WordPress cannot do it at all.
 
 import { PROP_TYPES, lookup, normaliseProp } from './custom-widgets.mjs';
+import { isDataBinding, resolveDataBinding } from './data-sources.mjs';
 
 export { PROP_TYPES };
 
@@ -62,6 +63,28 @@ export function componentValues(props, values) {
   for (const prop of props || []) {
     const given = supplied[prop.key];
     out[prop.key] = given === undefined || given === null || given === '' ? fallback(prop) : given;
+  }
+  return out;
+}
+
+/**
+ * The same values, with every list prop that points at a data source replaced by
+ * the rows the platform resolved for this placement.
+ *
+ * Kept separate from `componentValues` because the two answer different
+ * questions: that one is "what did the page say", which the editor needs
+ * verbatim in order to save it back, and this one is "what should be drawn",
+ * which only the renderer needs. Collapsing them would make the editor write the
+ * resolved rows into the file on the next save and quietly turn a live list back
+ * into the typed copy it replaced.
+ */
+export function resolveValues(props, values, data, opts = {}) {
+  const out = componentValues(props, values);
+  for (const prop of props || []) {
+    if (prop.type !== 'list') continue;
+    const value = out[prop.key];
+    if (!isDataBinding(value)) continue;
+    out[prop.key] = resolveDataBinding(value, data ? data[prop.key] : null, opts);
   }
   return out;
 }
@@ -225,36 +248,38 @@ export function previewProps(props, values, item) {
  */
 export function bindTree(nodes, values, opts = {}) {
   const scopes = [{ value: values || {} }];
-  return expand(nodes, scopes, !!opts.keepEmptyRepeat, '');
+  return expand(nodes, scopes, !!opts.keepEmptyRepeat, '', opts.snapshots || null);
 }
 
-function expand(nodes, scopes, keepEmpty, suffix) {
+function expand(nodes, scopes, keepEmpty, suffix, snapshots) {
   const out = [];
   for (const node of Array.isArray(nodes) ? nodes : []) {
     if (!node || typeof node !== 'object') continue;
     const repeatKey = typeof node.props?.repeat === 'string' ? node.props.repeat.trim() : '';
 
     if (!repeatKey) {
-      out.push(bindNode(node, scopes, keepEmpty, suffix));
+      out.push(bindNode(node, scopes, keepEmpty, suffix, snapshots));
       continue;
     }
 
     const list = lookup(repeatKey, scopes);
     const items = Array.isArray(list) ? list : [];
     if (!items.length) {
-      if (keepEmpty) out.push(bindNode(node, [...scopes, { value: {}, index: 0 }], keepEmpty, suffix));
+      if (keepEmpty) out.push(bindNode(node, [...scopes, { value: {}, index: 0 }], keepEmpty, suffix, snapshots));
       continue;
     }
     items.forEach((item, index) => {
       // Ids have to stay unique: the canvas keys components off `data-bz-node`
       // and a duplicate would make two slides the same slide.
-      out.push(bindNode(node, [...scopes, { value: item, index }], keepEmpty, `${suffix}-${index + 1}`));
+      out.push(
+        bindNode(node, [...scopes, { value: item, index }], keepEmpty, `${suffix}-${index + 1}`, snapshots),
+      );
     });
   }
   return out;
 }
 
-function bindNode(node, scopes, keepEmpty, suffix) {
+function bindNode(node, scopes, keepEmpty, suffix, snapshots) {
   const props = {};
   for (const [key, value] of Object.entries(node.props || {})) {
     // `repeat` is an instruction to this function, not something a renderer
@@ -263,12 +288,25 @@ function bindNode(node, scopes, keepEmpty, suffix) {
     if (key === 'repeat') continue;
     props[key] = substitute(value, scopes);
   }
+
+  // Widget data belongs to the *placement*, never to the definition. A component
+  // whose widget reads `{{locationSlug}}` is one shape used by every rooftop, so
+  // a snapshot stored on the definition would be one branch's address shown on
+  // all of them. The placement supplies them, keyed by the id the node has in
+  // the definition — before any repeat suffix, because that is the only id the
+  // placement can know.
+  if (snapshots && node.type === 'widget' && snapshots[node.id] !== undefined) {
+    props.snapshot = snapshots[node.id];
+  }
+
   const bound = {
     ...node,
     id: suffix && node.id ? `${node.id}${suffix}` : node.id,
     props,
   };
-  if (Array.isArray(node.children)) bound.children = expand(node.children, scopes, keepEmpty, suffix);
+  if (Array.isArray(node.children)) {
+    bound.children = expand(node.children, scopes, keepEmpty, suffix, snapshots);
+  }
   if (node.styles && typeof node.styles === 'object') bound.styles = node.styles;
   return bound;
 }

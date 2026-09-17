@@ -1,5 +1,5 @@
 {
-  "rendererVersion": "4.12.0",
+  "rendererVersion": "4.19.0",
   "documentVersion": 2,
   "gridColumns": 12,
   "tokenGroups": {
@@ -124,6 +124,7 @@
     "page",
     "post",
     "inventory",
+    "location",
     "url",
     "label"
   ],
@@ -172,6 +173,13 @@
       "specificity": 350
     },
     {
+      "id": "allLocations",
+      "label": "Location pages",
+      "description": "Every page built from the one-page-per-location template. Generated slugs do not exist until a location does, so a specific-page condition cannot reach them.",
+      "ref": null,
+      "specificity": 300
+    },
+    {
       "id": "pageGroup",
       "label": "A group of pages",
       "description": "Every page tagged with one group.",
@@ -190,6 +198,13 @@
       "label": "A specific post",
       "description": "",
       "ref": "post",
+      "specificity": 500
+    },
+    {
+      "id": "location",
+      "label": "One location’s page",
+      "description": "The generated page for a single location, by its slug.",
+      "ref": "location",
       "specificity": 500
     }
   ],
@@ -320,6 +335,257 @@
     "select",
     "color",
     "list"
+  ],
+  "dataSources": [
+    {
+      "id": "locations",
+      "label": "Locations",
+      "description": "Every active rooftop, from Admin → Locations. Opening a branch adds a card to every list built on this.",
+      "widget": "locations-map",
+      "path": "locations",
+      "match": "slug",
+      "config": [
+        "locationSlug",
+        "pagePathPrefix"
+      ],
+      "fields": [
+        {
+          "key": "id",
+          "type": "text",
+          "label": "Id"
+        },
+        {
+          "key": "name",
+          "type": "text",
+          "label": "Name"
+        },
+        {
+          "key": "slug",
+          "type": "text",
+          "label": "Slug"
+        },
+        {
+          "key": "href",
+          "type": "url",
+          "label": "Page link"
+        },
+        {
+          "key": "streetAddress",
+          "type": "text",
+          "label": "Street address"
+        },
+        {
+          "key": "city",
+          "type": "text",
+          "label": "City"
+        },
+        {
+          "key": "region",
+          "type": "text",
+          "label": "State / region"
+        },
+        {
+          "key": "postalCode",
+          "type": "text",
+          "label": "Postal code"
+        },
+        {
+          "key": "country",
+          "type": "text",
+          "label": "Country"
+        },
+        {
+          "key": "latitude",
+          "type": "number",
+          "label": "Latitude"
+        },
+        {
+          "key": "longitude",
+          "type": "number",
+          "label": "Longitude"
+        },
+        {
+          "key": "phone",
+          "type": "text",
+          "label": "Phone"
+        },
+        {
+          "key": "phoneUrl",
+          "type": "url",
+          "label": "Phone link"
+        },
+        {
+          "key": "email",
+          "type": "text",
+          "label": "Email"
+        },
+        {
+          "key": "mapUrl",
+          "type": "url",
+          "label": "Directions link"
+        },
+        {
+          "key": "num",
+          "type": "text",
+          "label": "Position in the list"
+        },
+        {
+          "key": "brands",
+          "type": "text",
+          "label": "Brands carried"
+        },
+        {
+          "key": "services",
+          "type": "text",
+          "label": "Services offered"
+        },
+        {
+          "key": "perks",
+          "type": "text",
+          "label": "Service options"
+        },
+        {
+          "key": "brandKeys",
+          "type": "text",
+          "label": "Brand keys (for filtering)"
+        },
+        {
+          "key": "perkKeys",
+          "type": "text",
+          "label": "Service option keys (for filtering)"
+        },
+        {
+          "key": "perk1",
+          "type": "text",
+          "label": "First service option"
+        },
+        {
+          "key": "perk2",
+          "type": "text",
+          "label": "Second service option"
+        },
+        {
+          "key": "perk3",
+          "type": "text",
+          "label": "Third service option"
+        },
+        {
+          "key": "departments",
+          "type": "text",
+          "label": "Departments"
+        },
+        {
+          "key": "hours",
+          "type": "text",
+          "label": "Opening hours"
+        },
+        {
+          "key": "phone2",
+          "type": "text",
+          "label": "Second phone"
+        },
+        {
+          "key": "phone2Url",
+          "type": "url",
+          "label": "Second phone link"
+        },
+        {
+          "key": "phone3",
+          "type": "text",
+          "label": "Third phone"
+        },
+        {
+          "key": "phone3Url",
+          "type": "url",
+          "label": "Third phone link"
+        }
+      ]
+    },
+    {
+      "id": "location-brands",
+      "label": "Brands carried (filter options)",
+      "description": "One row per brand at least one rooftop carries, from Admin → Locations → Brands.",
+      "widget": "locations-map",
+      "path": "brandFacets",
+      "match": "value",
+      "config": [
+        "locationSlug"
+      ],
+      "fields": [
+        {
+          "key": "label",
+          "type": "text",
+          "label": "Label"
+        },
+        {
+          "key": "value",
+          "type": "text",
+          "label": "Filter value"
+        }
+      ]
+    },
+    {
+      "id": "location-service-options",
+      "label": "Service options (filter options)",
+      "description": "One row per service option at least one rooftop offers, from Admin → Locations → Profile.",
+      "widget": "locations-map",
+      "path": "perkFacets",
+      "match": "value",
+      "config": [
+        "locationSlug"
+      ],
+      "fields": [
+        {
+          "key": "label",
+          "type": "text",
+          "label": "Label"
+        },
+        {
+          "key": "value",
+          "type": "text",
+          "label": "Filter value"
+        }
+      ]
+    },
+    {
+      "id": "staff",
+      "label": "Staff",
+      "description": "Sales and service contacts, from the team directory.",
+      "widget": "staff",
+      "path": "staff",
+      "match": "name",
+      "config": [
+        "locationSlug",
+        "departmentCode"
+      ],
+      "fields": [
+        {
+          "key": "name",
+          "type": "text",
+          "label": "Name"
+        },
+        {
+          "key": "title",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "key": "phone",
+          "type": "text",
+          "label": "Phone"
+        },
+        {
+          "key": "phoneUrl",
+          "type": "url",
+          "label": "Phone link"
+        },
+        {
+          "key": "photo",
+          "type": "image",
+          "label": "Photo"
+        }
+      ]
+    }
   ],
   "styleBuckets": [
     "base",
@@ -1390,6 +1656,14 @@
           "values": {
             "type": "object",
             "description": "Content for this placement, keyed by the component's declared prop keys. Anything left out falls back to the prop's default, so a placement need only state what differs."
+          },
+          "snapshots": {
+            "type": "object",
+            "description": "Widget data resolved by the platform for this placement, keyed by the widget node's id inside the component. Never hand-written."
+          },
+          "data": {
+            "type": "object",
+            "description": "Rows resolved by the platform for each list prop this placement pointed at a data source, keyed by the prop key. Never hand-written."
           }
         },
         "required": [
@@ -1839,6 +2113,10 @@
           "config": {
             "type": "object",
             "description": "Widget props, validated against that widget's own schema."
+          },
+          "snapshot": {
+            "type": "object",
+            "description": "Data resolved by the platform and committed into the page, so the facts are in the static HTML. Never hand-written."
           }
         },
         "required": [
