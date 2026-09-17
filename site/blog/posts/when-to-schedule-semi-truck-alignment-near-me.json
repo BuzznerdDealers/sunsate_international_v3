@@ -4,7 +4,7 @@
   "date": "2026-07-30",
   "description": "Maybe your truck pulls to one side, your steering wheel feels off-center, or your tires are wearing unevenly. While these may seem like minor issues at first, they can quickly turn into expensive repairs, poor fuel economy, and unnecessary downtime.",
   "status": "published",
-  "coverImage": "https://www.sunstateintl.com/wp-content/uploads/2026/07/fleet-alignment-service-400x250.jpg",
+  "coverImage": "/img/photo-placeholder.svg",
   "topic": "Service",
   "nodes": [
     {
@@ -29,15 +29,6 @@
                 "span": 12
               },
               "children": [
-                {
-                  "id": "intro-eyebrow",
-                  "type": "heading",
-                  "props": {
-                    "text": "When to Schedule Semi Truck Alignment Near Me",
-                    "headingLevel": 2,
-                    "eyebrow": "SERVICE"
-                  }
-                },
                 {
                   "id": "intro-text",
                   "type": "text",

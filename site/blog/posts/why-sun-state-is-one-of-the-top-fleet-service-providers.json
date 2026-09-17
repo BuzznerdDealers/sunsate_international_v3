@@ -3,8 +3,8 @@
   "title": "Why Sun State is One of the Top Fleet Service Providers",
   "date": "2026-07-05",
   "description": "Every vehicle in your operation plays a critical role in your business, and even one unexpected breakdown can create a ripple effect of missed deliveries, unhappy customers, and lost revenue. That’s why choosing the right fleet service providers matters.",
-  "status": "published",
-  "coverImage": "https://www.sunstateintl.com/wp-content/uploads/2026/08/commercial-truck-service-400x250.jpg",
+  "status": "draft",
+  "coverImage": "/img/photo-placeholder.svg",
   "topic": "Fleet",
   "nodes": [
     {
@@ -29,15 +29,6 @@
                 "span": 12
               },
               "children": [
-                {
-                  "id": "intro-eyebrow",
-                  "type": "heading",
-                  "props": {
-                    "text": "Why Sun State is One of the Top Fleet Service Providers",
-                    "headingLevel": 2,
-                    "eyebrow": "FLEET"
-                  }
-                },
                 {
                   "id": "intro-text",
                   "type": "text",
