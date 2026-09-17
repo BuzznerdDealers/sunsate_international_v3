@@ -24,8 +24,8 @@
           }
         ],
         "image": {
-          "src": "/img/photo-placeholder.svg",
-          "alt": "The Sun State aftermarket shop — photograph to be supplied",
+          "src": "https://vendure.buzznerdrv.com/assets/source/35/whatsapp-image-2026-09-16-at-10.49.40-pm__02.jpeg",
+          "alt": "The Sun State aftermarket shop",
           "width": 1600,
           "height": 900
         }
@@ -47,7 +47,7 @@
           "noticeLinkLabel": "Full aftermarket capabilities →",
           "noticeLinkUrl": "/aftermarket",
           "map": {
-            "src": "/img/photo-placeholder.svg",
+            "src": "https://vendure.buzznerdrv.com/assets/source/c9/tampa-fl-black-map-pin__02.png",
             "alt": "A map of the Aftermarket location — image to be supplied",
             "width": 1600,
             "height": 900
@@ -55,7 +55,8 @@
           "anchor": "aftloc-summary",
           "background": "card"
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "aftloc-hours",
@@ -91,7 +92,8 @@
           ],
           "background": "card"
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "aftloc-onsite",
@@ -131,7 +133,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "aftloc-extras",
@@ -253,7 +256,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "aftloc-faq",
@@ -338,7 +342,8 @@
                           "a": "Yes. Frame work includes shortening and lengthening, double single rails, driveline work and Huck bolt replacement to maintain factory warranty on all makes."
                         }
                       ]
-                    }
+                    },
+                    "snapshot": null
                   }
                 }
               ]
@@ -362,7 +367,8 @@
           "secondaryUrl": "/aftermarket",
           "background": "ink"
         }
-      }
+      },
+      "children": []
     }
   ]
 }
