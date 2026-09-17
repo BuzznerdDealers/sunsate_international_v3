@@ -31,3 +31,49 @@
 [data-bz-node="ci-summary"] > .bz-section { padding-block: 80px 0px; }
 [data-bz-node="ci-faq"].bz-section,
 [data-bz-node="ci-faq"] > .bz-section { padding-block: 90px 90px; }
+
+/* --- The partner wall ------------------------------------------------------
+   Eleven marks of wildly different proportions (55px tall to 223px) share one
+   grid, so the tile owns the geometry and the logo is contained inside it:
+   a fixed media box, `contain`, and a width cap so a wordmark cannot run to
+   the tile's edges while a square mark sits small in the middle. Without the
+   cap the Federal Reserve lockup reads five times the size of Academy Prep's.
+   `.bz-card img { width: 100% }` in the platform sheet is what the height and
+   `object-fit` here are overriding. */
+[data-bz-node="ci-logos"] .bz-container { padding-inline: 0; max-width: none; }
+[data-bz-node="ci-logos"] .bz-sechead { display: none; }
+[data-bz-node="ci-logos"] .bz-grid { gap: 20px; }
+[data-bz-node="ci-logos"] .bz-card {
+  display: flex; flex-direction: column;
+  background: var(--card); border: 1px solid var(--line);
+}
+[data-bz-node="ci-logos"] .bz-card img {
+  width: 100%; height: 148px; padding: 26px 30px; box-sizing: border-box;
+  object-fit: contain; object-position: center; display: block;
+  max-width: 100%; margin: 0 auto;
+}
+/* The caption strip: ruled off the mark, and the tile's floor, so every tile
+   in a row ends on the same line however long the name is. Its floor is two
+   lines of the caption face, so the rule above it lands at the same height in
+   every tile of a row — "Corporation To Develop Communities" wraps and "USF"
+   does not, and a rule that steps 17px between neighbours reads as a mistake.
+   A `min-height`, so a third line grows the tile rather than being clipped. */
+[data-bz-node="ci-logos"] .bz-card__body {
+  margin-top: auto; border-top: 1px solid var(--line);
+  padding: 18px 20px; gap: 0;
+}
+/* Only the four-up grid needs that floor: at two-up and one-up the tiles are
+   wide enough that no name wraps, and a reserved second line there is just a
+   band of empty white under every caption. */
+@media (min-width: 1101px) {
+  [data-bz-node="ci-logos"] .bz-card__body { min-height: 71px; box-sizing: border-box; }
+}
+[data-bz-node="ci-logos"] .bz-card__t {
+  font: 700 12px/1.45 var(--font-body);
+  letter-spacing: .06em; text-transform: uppercase; color: var(--ink);
+}
+
+@media (max-width: 640px) {
+  [data-bz-node="ci-logos"] .bz-card img { height: 116px; padding: 20px 22px; }
+  [data-bz-node="ci-logos"] .bz-card__body { padding: 14px 16px; }
+}
