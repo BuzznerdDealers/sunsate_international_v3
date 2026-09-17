@@ -30,6 +30,14 @@
               },
               "children": [
                 {
+                  "id": "image",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {}
+                  }
+                },
+                {
                   "id": "intro-text",
                   "type": "text",
                   "props": {
