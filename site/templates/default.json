@@ -110,6 +110,11 @@
                     "layout": "horizontal",
                     "align": "end",
                     "depth": 1
+                  },
+                  "styles": {
+                    "base": {
+                      "textTransform": "uppercase"
+                    }
                   }
                 }
               ]
