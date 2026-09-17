@@ -79,8 +79,9 @@
                   "id": "item-74",
                   "label": "Emv Series",
                   "type": "url",
-                  "url": "https://vendure.buzznerdrv.com/assets/source/fe/int_brochure-emvseries-9-26-1.pdf",
                   "ref": null,
+                  "url": "https://vendure.buzznerdrv.com/assets/source/fe/int_brochure-emvseries-9-26-1.pdf",
+                  "newTab": false,
                   "children": []
                 }
               ]
@@ -844,7 +845,7 @@
           "id": "fs-new-trucks",
           "label": "New Trucks",
           "type": "inventory",
-          "ref": "inventory?condition=new&type=truck",
+          "ref": "#",
           "url": null,
           "newTab": false,
           "children": []
@@ -853,7 +854,7 @@
           "id": "fs-used-trucks",
           "label": "Used Trucks",
           "type": "inventory",
-          "ref": "inventory?condition=used&type=truck",
+          "ref": "#",
           "url": null,
           "newTab": false,
           "children": []
@@ -862,7 +863,7 @@
           "id": "fs-new-trailers",
           "label": "New Trailers",
           "type": "inventory",
-          "ref": "inventory?condition=new&type=trailer",
+          "ref": "#",
           "url": null,
           "newTab": false,
           "children": []
@@ -871,7 +872,7 @@
           "id": "fs-used-trailers",
           "label": "Used Trailers",
           "type": "inventory",
-          "ref": "inventory?condition=used&type=trailer",
+          "ref": "#",
           "url": null,
           "newTab": false,
           "children": []
