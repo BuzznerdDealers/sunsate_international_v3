@@ -1,0 +1,222 @@
+{
+  "version": 2,
+  "id": "awards-gallery",
+  "name": "Awards & photo assets",
+  "css": "[data-bz-section=\"awards-gallery\"] .bz-block { padding-block: 0 }\n[data-bz-section=\"awards-gallery\"] .bz-block + .bz-block { padding-block-start: 0 }\n[data-bz-section=\"awards-gallery\"] h2 { margin: 0 0 40px }\n\n/* The award card: a star, the citation, and the body that gave it, set in the\n   italic the handoff uses for an attribution everywhere else on the site. */\n[data-bz-section=\"awards-gallery\"] .bz-col[data-bz-node^=\"ag-card-\"]::before {\n  content: \"\\2605\"; display: block; font-size: 18px; line-height: 1;\n  color: var(--accent); margin-bottom: 10px;\n}\n[data-bz-section=\"awards-gallery\"] [data-bz-node^=\"ag-card-h\"] h3 { font: 800 17px/1.35 var(--font-heading); margin: 0 0 10px }\n[data-bz-section=\"awards-gallery\"] [data-bz-node^=\"ag-card-org\"] p { font-size: 13px; line-height: 1.5; color: var(--muted); font-style: italic; margin: 0 }\n\n/* The photo strip sits inside the same band, 48px under the cards. */\n[data-bz-section=\"awards-gallery\"] [data-bz-node=\"ag-gal-head\"] { margin-top: 48px }\n[data-bz-section=\"awards-gallery\"] [data-bz-node=\"ag-gal-h\"] .bz-eyebrow { margin-bottom: 18px }\n\n/* Five across, as the handoff draws it. A row is a twelve-column grid and five\n   does not divide into twelve, so the track list is stated here rather than\n   faked with a span. The columns stay real, in-flow columns either way. */\n[data-bz-section=\"awards-gallery\"] [data-bz-node=\"ag-gal\"] { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px }\n[data-bz-section=\"awards-gallery\"] [data-bz-node=\"ag-gal\"] > .bz-col { grid-column: auto }\n[data-bz-section=\"awards-gallery\"] [data-bz-node^=\"ag-gal-img\"] { padding-block: 0 }\n[data-bz-section=\"awards-gallery\"] [data-bz-node^=\"ag-gal-img\"] img { display: block; width: 100%; height: 100%; aspect-ratio: 4 / 3; object-fit: cover }\n[data-bz-section=\"awards-gallery\"] [data-bz-node=\"ag-note\"] { margin-top: 20px }\n[data-bz-section=\"awards-gallery\"] [data-bz-node=\"ag-note\"] p { font-size: 14px; line-height: 1.6; color: var(--muted); margin: 0 }\n\n/* The handoff's own two steps: three photos across below 1100, two below 640. */\n@media (max-width: 1100px) {\n  [data-bz-section=\"awards-gallery\"] [data-bz-node=\"ag-gal\"] { grid-template-columns: repeat(3, minmax(0, 1fr)) }\n}\n@media (max-width: 640px) {\n  [data-bz-section=\"awards-gallery\"] [data-bz-node=\"ag-gal\"] { grid-template-columns: repeat(2, minmax(0, 1fr)) }\n}",
+  "props": [
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Eyebrow",
+      "default": ""
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": ""
+    },
+    {
+      "key": "span",
+      "type": "number",
+      "label": "Award card width in grid columns",
+      "default": 4
+    },
+    {
+      "key": "background",
+      "type": "select",
+      "label": "Band background",
+      "default": "paper",
+      "options": [
+        { "value": "paper", "label": "Paper" },
+        { "value": "card", "label": "White" },
+        { "value": "ink", "label": "Dark chrome" },
+        { "value": "none", "label": "None" }
+      ]
+    },
+    {
+      "key": "anchor",
+      "type": "text",
+      "label": "Anchor id",
+      "default": ""
+    },
+    {
+      "key": "awards",
+      "type": "list",
+      "label": "Awards",
+      "fields": [
+        { "key": "title", "type": "text", "label": "Citation" },
+        { "key": "org", "type": "text", "label": "Awarded by" }
+      ]
+    },
+    {
+      "key": "galleryEyebrow",
+      "type": "text",
+      "label": "Photo strip label",
+      "default": "PHOTO ASSETS"
+    },
+    {
+      "key": "galleryHeading",
+      "type": "text",
+      "label": "Photo strip heading",
+      "default": ""
+    },
+    {
+      "key": "gallery",
+      "type": "list",
+      "label": "Press photos",
+      "fields": [
+        { "key": "image", "type": "image", "label": "Photo" }
+      ]
+    },
+    {
+      "key": "note",
+      "type": "textarea",
+      "label": "Note under the photos",
+      "default": ""
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ag",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "{{background}}",
+        "paddingY": 10,
+        "anchor": "{{anchor}}"
+      },
+      "children": [
+        {
+          "id": "ag-head",
+          "type": "row",
+          "props": { "gap": 5 },
+          "children": [
+            {
+              "id": "ag-head-col",
+              "type": "column",
+              "props": { "span": 12 },
+              "children": [
+                {
+                  "id": "ag-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "eyebrow": "{{eyebrow}}",
+                    "headingLevel": 2
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ag-grid",
+          "type": "row",
+          "props": { "gap": 5, "align": "stretch" },
+          "children": [
+            {
+              "id": "ag-card",
+              "type": "column",
+              "props": { "span": "{{span}}", "repeat": "awards" },
+              "styles": {
+                "base": {
+                  "background": "card",
+                  "borderWidth": 1,
+                  "borderStyle": "solid",
+                  "borderColor": "line",
+                  "paddingTop": 28,
+                  "paddingRight": 28,
+                  "paddingBottom": 28,
+                  "paddingLeft": 28
+                }
+              },
+              "children": [
+                {
+                  "id": "ag-card-h",
+                  "type": "heading",
+                  "props": { "text": "{{title}}", "headingLevel": 3 }
+                },
+                {
+                  "id": "ag-card-org",
+                  "type": "text",
+                  "props": { "text": "{{org}}", "width": "full" }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ag-gal-head",
+          "type": "row",
+          "props": { "gap": 5 },
+          "children": [
+            {
+              "id": "ag-gal-head-col",
+              "type": "column",
+              "props": { "span": 12 },
+              "children": [
+                {
+                  "id": "ag-gal-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{galleryHeading}}",
+                    "eyebrow": "{{galleryEyebrow}}",
+                    "headingLevel": 2
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ag-gal",
+          "type": "row",
+          "props": { "gap": 4, "align": "stretch" },
+          "children": [
+            {
+              "id": "ag-gal-card",
+              "type": "column",
+              "props": { "span": 2, "repeat": "gallery" },
+              "styles": {
+                "base": {
+                  "background": "card",
+                  "borderWidth": 1,
+                  "borderStyle": "solid",
+                  "borderColor": "line",
+                  "overflow": "hidden"
+                }
+              },
+              "children": [
+                {
+                  "id": "ag-gal-img",
+                  "type": "image",
+                  "props": { "image": "{{image}}", "width": "full" }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ag-note-row",
+          "type": "row",
+          "props": { "gap": 5 },
+          "children": [
+            {
+              "id": "ag-note-col",
+              "type": "column",
+              "props": { "span": 12 },
+              "children": [
+                {
+                  "id": "ag-note",
+                  "type": "text",
+                  "props": { "text": "{{note}}", "width": "full" }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

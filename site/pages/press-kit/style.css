@@ -1,0 +1,116 @@
+/* ===========================================================================
+   Press Kit — page layer
+   Only what is particular to this page: the hero, the summary lede, the history
+   timeline and the three bordered cards in the media-contact band. Everything
+   else is carried by the tokens, the site design layer and the components.
+   =========================================================================== */
+
+/* --- Hero ------------------------------------------------------------------
+   The handoff's page hero: 100px bands, the title a step above the site's
+   default, the standfirst on a 640px measure. */
+.bz-block--hero { padding-block: 100px; }
+.bz-block--hero h1 { font-size: 52px; line-height: 1.1; margin-bottom: 20px; }
+.bz-block--hero .bz-hero__copy { max-width: 900px; }
+.bz-block--hero .bz-hero__sub { font-size: 16px; max-width: 640px; margin-bottom: 0; }
+
+/* --- Summary ---------------------------------------------------------------
+   The handoff sets this one paragraph a step above body copy and runs the band
+   straight into the history section below it, so only its top padding counts.
+   `.bz-block p:last-child` zeroes the paragraph's margin, hence the measure
+   here is stated against the block's own text wrapper. */
+[data-bz-node="pk-summary"] { padding-bottom: 0; }
+[data-bz-node="pk-sum-t"] .bz-text p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--ink);
+  max-width: 860px;
+  margin: 0 0 40px;
+}
+
+/* --- History ---------------------------------------------------------------
+   Prose on the left, the dated milestones on the right. */
+[data-bz-node="pk-hist-body"] p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--body-text);
+  max-width: 760px;
+  margin: 0 0 22px;
+}
+[data-bz-node="pk-hist-body"] p:last-child { margin-bottom: 0; }
+
+/* The timeline is a Feature list block — a real list the dealer can add a year
+   to — dressed as the handoff's ruled spine. The rule is the list's own left
+   border and each dot is a pseudo-element on the item, so nothing here moves a
+   node out of flow: the band reads the same on the Design canvas, in the first
+   paint and with JavaScript off. */
+[data-bz-node="pk-timeline"] .bz-grid {
+  gap: 0;
+  border-left: 2px solid var(--line);
+}
+[data-bz-node="pk-timeline"] .bz-feature {
+  position: relative;
+  border-top: 0;
+  padding: 0 0 26px 26px;
+}
+[data-bz-node="pk-timeline"] .bz-feature:last-child { padding-bottom: 0; }
+[data-bz-node="pk-timeline"] .bz-feature::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: 6px;
+  width: 10px;
+  height: 10px;
+  background: var(--accent);
+  border-radius: 50%;
+}
+[data-bz-node="pk-timeline"] .bz-feature__t {
+  font: 800 15px / 1.3 var(--font-heading);
+  color: var(--ink);
+  margin: 0;
+}
+[data-bz-node="pk-timeline"] .bz-feature__d {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--body-text);
+  margin: 4px 0 0;
+}
+
+/* --- Media contact, company facts, social ----------------------------------
+   Three bordered cards; the rule and the padding are node styles, so only the
+   type inside them is set here. */
+[data-bz-node="pk-media-row"],
+[data-bz-node="pk-social-row"] { margin-top: 0; }
+[data-bz-node="pk-social-row"] { margin-top: 28px; }
+[data-bz-node="pk-media-card-h"] h3,
+[data-bz-node="pk-facts-h"] h3,
+[data-bz-node="pk-social-h"] h3 {
+  font: 800 18px / 1.4 var(--font-heading);
+  margin: 0 0 14px;
+}
+[data-bz-node="pk-social-h"] h3 { margin-bottom: 8px; }
+[data-bz-node="pk-media-card-b"] p,
+[data-bz-node="pk-social-b"] p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--body-text);
+  margin: 0 0 18px;
+}
+[data-bz-node="pk-media-card-cta"] .bz-btns {
+  margin-block: 0;
+  gap: 8px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+[data-bz-node="pk-media-card-cta"] .bz-btn--link { font-size: 15px; }
+[data-bz-node="pk-facts-list"] .ss-prose-list { margin-bottom: 0; }
+[data-bz-node="pk-facts-list"] .ss-prose-list li { font-size: 15px; line-height: 1.6; }
+
+/* --- FAQ -------------------------------------------------------------------
+   The site layer already gives the FAQ band its 900px well and its accordion;
+   this page's heading is the same 34px as its other section titles. */
+[data-bz-node="pk-faq-h"] h2 { margin: 0 0 40px; }
+
+/* The handoff sets inline prose links in the accent; the site layer styles CTAs
+   and nav links but leaves a link inside a paragraph at body colour. */
+[data-bz-node="pk-media-card-b"] a { color: var(--accent); }
+[data-bz-node="pk-media-card-b"] a:hover { text-decoration: underline; text-underline-offset: 3px; }
