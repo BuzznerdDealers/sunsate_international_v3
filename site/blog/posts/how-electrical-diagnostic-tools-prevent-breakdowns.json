@@ -16,6 +16,14 @@
       },
       "children": [
         {
+          "id": "image",
+          "type": "image",
+          "props": {
+            "width": "full",
+            "image": {}
+          }
+        },
+        {
           "id": "intro-row",
           "type": "row",
           "props": {
@@ -33,35 +41,63 @@
                   "id": "intro-text",
                   "type": "text",
                   "props": {
-                    "text": "With today’s heavy-duty vehicles relying on dozens of sensors, electronic control modules, wiring harnesses, and onboard computers, even a small electrical issue can quickly turn into unexpected downtime. That’s why professional electrical diagnostic tools have become essential for keeping trucks on the road.",
-                    "width": "prose"
-                  }
-                },
-                {
-                  "id": "intro-note",
-                  "type": "text",
-                  "props": {
-                    "text": "The full article was published on sunstateintl.com. Paste the migrated body here in Posts → this post, and the card on the blog index updates with it.",
-                    "width": "prose"
-                  }
-                },
-                {
-                  "id": "intro-cta",
-                  "type": "buttons",
-                  "props": {
-                    "items": [
-                      {
-                        "label": "Read the original article →",
-                        "url": "https://www.sunstateintl.com/how-electrical-diagnostic-tools-prevent-breakdowns/",
-                        "style": "link",
-                        "intent": "read-post"
-                      }
-                    ]
+                    "width": "prose",
+                    "text": "\nElectrical problems have become one of the most common reasons modern commercial trucks end up in the service bay. With today’s heavy-duty vehicles relying on dozens of sensors, electronic control modules, wiring harnesses, and onboard computers, even a small electrical issue can quickly turn into unexpected downtime. That’s why professional electrical diagnostic tools have become essential for keeping trucks on the road. Rather than guessing what’s wrong or replacing parts unnecessarily, experienced technicians can pinpoint the source of a problem before it turns into a costly breakdown."
                   }
                 }
               ]
             }
           ]
+        },
+        {
+          "id": "spacer",
+          "type": "spacer",
+          "props": {
+            "size": 6
+          }
+        },
+        {
+          "id": "heading",
+          "type": "heading",
+          "props": {
+            "headingLevel": 2,
+            "align": "left",
+            "text": "Why Electrical Systems Matter More Than Ever"
+          }
+        },
+        {
+          "id": "text",
+          "type": "text",
+          "props": {
+            "align": "left",
+            "width": "prose",
+            "text": "Commercial trucks today are more advanced than ever before. Electrical systems control critical components like:\n\n✓ Engine management<br>\n✓ Transmission operation<br>\n✓ Anti-lock braking systems (ABS)<br>\n✓ Emissions equipment<br>\n✓ Battery charging systems<br>\n✓ Lighting<br>\n✓ Safety features<br>\n✓ Driver information displays\n\nWhen one sensor or circuit begins to fail, it can create a chain reaction of warning lights, performance issues, and unexpected shutdowns."
+          }
+        },
+        {
+          "id": "spacer-2",
+          "type": "spacer",
+          "props": {
+            "size": 6
+          }
+        },
+        {
+          "id": "heading-2",
+          "type": "heading",
+          "props": {
+            "headingLevel": 2,
+            "align": "left",
+            "text": "How Electrical Diagnostic Tools Find Problems Faster\n"
+          }
+        },
+        {
+          "id": "text-2",
+          "type": "text",
+          "props": {
+            "align": "left",
+            "width": "prose",
+            "text": "Modern electrical diagnostic tools do much more than read fault codes. Professional diagnostic equipment communicates directly with the truck’s onboard computer systems, allowing technicians to monitor real-time performance and isolate electrical faults that aren’t always visible during a physical inspection.\n\nThese tools help identify issues involving:\n\n✓ Wiring failures<br>\n✓ Faulty sensors<br>\n✓ Battery and charging systems<br>\n✓ Alternator performance<br>\n✓ Electronic control modules (ECMs)<br>\n✓ Communication network failures<br>\n✓ Switches and relays\n\nInstead of replacing multiple components through trial and error, technicians can focus on repairing the actual source of the problem. That means less downtime, fewer unnecessary repairs, and lower operating costs.\n\n"
+          }
         }
       ]
     },
