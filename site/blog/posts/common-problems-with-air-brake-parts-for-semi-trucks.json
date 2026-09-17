@@ -16,6 +16,14 @@
       },
       "children": [
         {
+          "id": "image",
+          "type": "image",
+          "props": {
+            "width": "full",
+            "image": {}
+          }
+        },
+        {
           "id": "intro-row",
           "type": "row",
           "props": {
@@ -33,35 +41,171 @@
                   "id": "intro-text",
                   "type": "text",
                   "props": {
-                    "text": "When even one part begins to wear out or fail, it can lead to longer stopping distances, unexpected downtime, expensive repairs, and failed inspections. Understanding the most common problems with air brake parts can help you recognize issues early and keep your trucks operating safely.",
-                    "width": "prose"
+                    "width": "prose",
+                    "text": "Commercial Trucks\n\nCommercial trucks depend on reliable braking performance every mile they travel. Whether you’re hauling freight across Florida or making local deliveries, your air brake system is one of the most important safety components on your truck. When even one part begins to wear out or fail, it can lead to longer stopping distances, unexpected downtime, expensive repairs, and failed inspections. Understanding the most common problems with air brake parts can help you recognize issues early and keep your trucks operating safely."
                   }
                 },
                 {
-                  "id": "intro-note",
-                  "type": "text",
+                  "id": "spacer",
+                  "type": "spacer",
                   "props": {
-                    "text": "The full article was published on sunstateintl.com. Paste the migrated body here in Posts → this post, and the card on the blog index updates with it.",
-                    "width": "prose"
-                  }
-                },
-                {
-                  "id": "intro-cta",
-                  "type": "buttons",
-                  "props": {
-                    "items": [
-                      {
-                        "label": "Read the original article →",
-                        "url": "https://www.sunstateintl.com/common-problems-with-air-brake-parts-for-semi-trucks/",
-                        "style": "link",
-                        "intent": "read-post"
-                      }
-                    ]
+                    "size": 6
                   }
                 }
               ]
             }
           ]
+        },
+        {
+          "id": "heading",
+          "type": "heading",
+          "props": {
+            "headingLevel": 2,
+            "align": "left"
+          }
+        },
+        {
+          "id": "heading-2",
+          "type": "heading",
+          "props": {
+            "headingLevel": 2,
+            "align": "left",
+            "text": "1. Air Leaks"
+          }
+        },
+        {
+          "id": "text",
+          "type": "text",
+          "props": {
+            "align": "left",
+            "width": "prose",
+            "text": "Air leaks are one of the most common problems affecting air brake systems. Leaks often develop from:\n\nWorn air lines<br>\nDamaged fittings<br>\nCracked hoses<br>\nFaulty valves\n\nEven a small leak forces the compressor to work harder and can reduce available braking pressure over time. Signs of an air leak include:\n\nConstant compressor cycling<br>\nLow air pressure warnings<br>\nAudible hissing sounds\n\nLonger brake application times\nIgnoring an air leak can quickly turn a minor repair into a much larger problem."
+          }
+        },
+        {
+          "id": "spacer-2",
+          "type": "spacer",
+          "props": {
+            "size": 6
+          }
+        },
+        {
+          "id": "heading-3",
+          "type": "heading",
+          "props": {
+            "headingLevel": 2,
+            "align": "left",
+            "text": "2. Worn Brake Shoes and Brake Drums"
+          }
+        },
+        {
+          "id": "text-2",
+          "type": "text",
+          "props": {
+            "align": "left",
+            "width": "prose",
+            "text": "Brake shoes naturally wear down every time the brakes are applied. Over time, worn friction material reduces braking performance and places additional stress on the rest of the braking system.\n\nSimilarly, brake drums can become:\n\nHeat checked<br>\nScored<br>\nOut of round<br>\nCracked\n\nThese conditions reduce stopping performance and increase repair costs if left unaddressed. Routine inspections help identify wear before it creates larger safety concerns."
+          }
+        },
+        {
+          "id": "spacer-3",
+          "type": "spacer",
+          "props": {
+            "size": 6
+          }
+        },
+        {
+          "id": "heading-4",
+          "type": "heading",
+          "props": {
+            "headingLevel": 2,
+            "align": "left",
+            "text": "3. Failing Brake Chambers"
+          }
+        },
+        {
+          "id": "text-3",
+          "type": "text",
+          "props": {
+            "align": "left",
+            "width": "prose",
+            "text": "Brake chambers convert compressed air into mechanical force. When diaphragms wear out or chambers become damaged by corrosion, braking force can decrease significantly.\n\nCommon symptoms include:\n\nUneven braking<br>\nAir leaks around the chamber<br>\nReduced stopping power<br>\nParking brake issues\n\nBecause brake chambers are critical safety components, replacement should always be performed by experienced technicians.\n\n"
+          }
+        },
+        {
+          "id": "spacer-4",
+          "type": "spacer",
+          "props": {
+            "size": 6
+          }
+        },
+        {
+          "id": "heading-5",
+          "type": "heading",
+          "props": {
+            "headingLevel": 2,
+            "align": "left",
+            "text": "4. Slack Adjuster Problems"
+          }
+        },
+        {
+          "id": "text-4",
+          "type": "text",
+          "props": {
+            "align": "left",
+            "width": "prose",
+            "text": "WSlack adjusters help maintain proper brake adjustment. Although automatic slack adjusters reduce maintenance, they still require regular inspection.\n\nWhen slack adjusters fail, drivers may notice:\n\nExcessive pushrod travel<br>\nUneven brake wear<br>\nPoor braking response<br>\nOut-of-service inspection violations\n\nMany brake issues that appear to involve other components actually begin with improper adjustment."
+          }
+        },
+        {
+          "id": "spacer-5",
+          "type": "spacer",
+          "props": {
+            "size": 6
+          }
+        },
+        {
+          "id": "heading-6",
+          "type": "heading",
+          "props": {
+            "headingLevel": 2,
+            "align": "left",
+            "text": "5. Contaminated Air Systems"
+          }
+        },
+        {
+          "id": "text-5",
+          "type": "text",
+          "props": {
+            "align": "left",
+            "width": "prose",
+            "text": "Moisture is one of the biggest enemies of any air brake system. That’s why air dryers play such an important role. When air dryers fail, moisture enters the system and causes:\n\nInternal corrosion<br>\nFrozen air lines during colder weather<br>\nValve failures<br>\nReduced component life\n\nReplacing filters and servicing air dryers on schedule helps protect the entire brake system."
+          }
+        },
+        {
+          "id": "spacer-6",
+          "type": "spacer",
+          "props": {
+            "size": 6
+          }
+        },
+        {
+          "id": "heading-7",
+          "type": "heading",
+          "props": {
+            "headingLevel": 2,
+            "align": "left",
+            "text": "Why Air Brake Parts Matter"
+          }
+        },
+        {
+          "id": "text-6",
+          "type": "text",
+          "props": {
+            "align": "left",
+            "width": "prose",
+            "text": "Unlike hydraulic braking systems found on passenger vehicles, commercial trucks rely on compressed air to activate the brakes. Because every component works together, a single worn or damaged part can affect the entire system.\n\nThe primary parts of an air brake system include:\n\n✓\tAir compressor<br>\n✓\tAir dryer<br>\n✓\tAir tanks<br>\n✓\tBrake chambers<br>\n✓\tSlack adjusters<br>\n✓\tBrake drums and shoes<br>\n✓\tValves<br>\n✓\tAir lines and hoses\n\nRoutine inspections and preventive maintenance help ensure these components continue performing as designed."
+          }
         }
       ]
     },
