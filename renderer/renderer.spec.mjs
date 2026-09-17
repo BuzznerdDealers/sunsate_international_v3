@@ -2336,6 +2336,35 @@ test('the renderer version is a page fact, named by whoever wants it', () => {
   assert.equal(doesNot.slice(doesNot.indexOf('window.dm=')).includes('4.11.0'), false);
 });
 
+test('meta keywords is emitted only when a page asks for one', () => {
+  const shell = (extra) =>
+    renderShell({
+      config: withProviders(null),
+      fontsHref: '',
+      chrome: {},
+      title: 'T',
+      description: 'D',
+      canonical: 'https://example.com/',
+      bodyHtml: '<main></main>',
+      storefrontPrefix: 'store',
+      ...extra,
+    });
+
+  // A site that never opts in carries no empty tag, which is the difference
+  // between "this dealer chose not to" and "this dealer set it to nothing".
+  assert.equal(shell({}).includes('name="keywords"'), false);
+  assert.equal(shell({ keywords: [] }).includes('name="keywords"'), false);
+  assert.equal(shell({ keywords: ['  ', ''] }).includes('name="keywords"'), false);
+
+  assert.match(
+    shell({ keywords: ['used trucks', ' tampa ', '', 'fleet service'] }),
+    /<meta name="keywords" content="used trucks, tampa, fleet service" \/>/,
+  );
+  // Same escaping as every other meta: a quote in a keyword must not end the
+  // attribute and open an injection point.
+  assert.match(shell({ keywords: ['24" wheels'] }), /content="24&quot; wheels"/);
+});
+
 test('the shell puts the whole analytics burst in the head, in order', () => {
   // The function-level ordering tests above prove `analyticsHead` composes the
   // burst correctly. This proves the shell actually emits it inside <head> —

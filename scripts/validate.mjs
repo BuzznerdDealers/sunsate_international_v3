@@ -249,6 +249,21 @@ if (!existsSync(pagesPath)) {
             );
           }
         }
+        // Optional, and a plain list of strings. Worth checking only because a
+        // string typed here instead of an array renders as one keyword made of
+        // every character, which nothing else reports.
+        if (page?.seo?.keywords !== undefined) {
+          if (!Array.isArray(page.seo.keywords)) {
+            fail(
+              'site/pages.json',
+              `${at}.seo.keywords`,
+              'must be an array of strings',
+              'Write ["used trucks", "tampa"], not a comma-separated string.',
+            );
+          } else if (page.seo.keywords.some((k) => typeof k !== 'string')) {
+            fail('site/pages.json', `${at}.seo.keywords`, 'must contain only strings');
+          }
+        }
         // Checked against the vocabulary the platform baked for whichever
         // providers this dealer enabled, and unconstrained when there is none —
         // a dealer in no programme authors whatever word describes the page.
@@ -627,6 +642,73 @@ if (existsSync(configPath)) {
         'dealer.config.json',
         'still carries REPLACE_ placeholders — right, if this repo has not been connected to a channel yet. The platform fills them in on connect.',
       );
+    }
+  }
+}
+
+/**
+ * `site/redirects.json` — where a page's old address goes after a rename.
+ *
+ * Kept here, in the dealer's own tree, rather than in `vercel.json`: that file
+ * is platform-owned and rebuilt from the template on every engine sync, so a
+ * rule written into it survives until the next sync and then silently does not.
+ * The platform composes this file into `vercel.json` when it bakes.
+ *
+ * Absent is the normal case. A repo that has never renamed a page has no such
+ * file, and that is not worth a note.
+ */
+const redirectsPath = join(SITE, 'redirects.json');
+if (existsSync(redirectsPath)) {
+  const { value, error } = readJson(redirectsPath);
+  if (error) {
+    fail('site/redirects.json', '', `not valid JSON — ${error}`);
+  } else {
+    const list = Array.isArray(value) ? value : (value?.redirects ?? []);
+    if (!Array.isArray(list)) {
+      fail('site/redirects.json', '', 'must be an array of redirects (or { "redirects": [...] })');
+    } else {
+      const sources = new Set();
+      const livePaths = new Set(pages.map((p) => p.path));
+      for (const [i, rule] of list.entries()) {
+        const at = `[${i}]`;
+        for (const key of ['from', 'to']) {
+          if (!rule?.[key]) fail('site/redirects.json', `${at}.${key}`, 'is required');
+        }
+        if (rule?.from && !String(rule.from).startsWith('/')) {
+          fail('site/redirects.json', `${at}.from`, `"${rule.from}" must start with "/"`);
+        }
+        if (rule?.from) {
+          if (sources.has(rule.from)) {
+            fail('site/redirects.json', `${at}.from`, `"${rule.from}" appears twice`);
+          }
+          sources.add(rule.from);
+        }
+        // A redirect away from an address the site still builds is dead weight
+        // at best: the static file wins on some hosts and the rule wins on
+        // others, so which one a visitor gets stops being knowable.
+        if (rule?.from && livePaths.has(rule.from)) {
+          fail(
+            'site/redirects.json',
+            `${at}.from`,
+            `"${rule.from}" is also a page this site builds`,
+            'Redirect from an address nothing serves, or delete the page.',
+          );
+        }
+        if (rule?.from && rule.from === rule?.to) {
+          fail('site/redirects.json', `${at}.from`, `"${rule.from}" redirects to itself`);
+        }
+      }
+      // Two hops is a chain search engines follow grudgingly and some clients
+      // not at all. It happens naturally: rename a page twice and the first
+      // rule still points at the second name.
+      for (const rule of list) {
+        if (rule?.to && sources.has(rule.to)) {
+          note(
+            'site/redirects.json',
+            `"${rule.from}" redirects to "${rule.to}", which itself redirects. Point the first straight at the final address.`,
+          );
+        }
+      }
     }
   }
 }

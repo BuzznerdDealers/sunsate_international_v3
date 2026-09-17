@@ -123,7 +123,11 @@
 // person or a model hand-writes. `anchor` and `scope` join them as declared
 // universal props: the renderer always read those off any node's wrapper while no
 // widget declared them, so the validator refused edits the build would render.
-export const RENDERER_VERSION = '4.19.0';
+// 4.20.0 — a page may carry `seo.keywords`, and `site/redirects.json` records
+// where a renamed page's old address goes. The redirects file is the dealer's,
+// in `site/`, because `vercel.json` is rebuilt from the template on every engine
+// sync; the platform composes one into the other when it bakes.
+export const RENDERER_VERSION = '4.20.0';
 
 export {
   LOCATION_SOURCE,

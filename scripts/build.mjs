@@ -560,6 +560,7 @@ for (const p of expandLocationPages(pages)) {
       pageJs: [...(rendered.scripts ?? []), ...(pageJs ? [pageJs] : [])],
       ogImage: p.seo && p.seo.ogImage,
       noindex,
+      keywords: (p.seo && p.seo.keywords) || [],
       tokenScopes: p.tokenScope ? [p.tokenScope] : [],
       analyticsPage: { pageType: p.pageType || null },
       rooftop: rooftopFrom(nodes, p.locationSlug),
@@ -641,6 +642,7 @@ if (blogSettings.enabled && posts.length) {
           pageJs: [...(rendered.scripts ?? []), ...(postJs ? [postJs] : [])],
           ogImage: post.coverImage,
           noindex: false,
+          keywords: post.keywords || [],
           analyticsPage: { pageType: POST_PAGE_TYPE },
         }),
       );
