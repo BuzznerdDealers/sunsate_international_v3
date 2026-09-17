@@ -40,5 +40,12 @@
         }
       ]
     }
+  ],
+  "redirects": [
+    {
+      "source": "/about-us",
+      "destination": "/our-stor",
+      "permanent": true
+    }
   ]
 }

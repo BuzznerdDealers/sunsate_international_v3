@@ -191,6 +191,15 @@ export function renderShell({
   pageJs,
   ogImage,
   noindex,
+  /**
+   * `seo.keywords` from this page's manifest entry.
+   *
+   * Emitted because certification programmes and agency audits still check for
+   * the tag, not because it ranks: Google has ignored `<meta name="keywords">`
+   * since 2009 and Bing reads it as a spam signal. Absent unless a page sets
+   * it, so a site that does not opt in carries no empty tag.
+   */
+  keywords = [],
   tokenScopes = [],
   extraHead = '',
   storefrontPrefix = 'store',
@@ -214,6 +223,9 @@ export function renderShell({
         ? config.seo.defaultTitle
         : title;
   const og = config.url + (ogImage || config.seo.ogImage);
+  const keywordList = (Array.isArray(keywords) ? keywords : [])
+    .map((k) => String(k).trim())
+    .filter(Boolean);
   const scopes = tokenScopes.length
     ? tokenScopes.map((s) => `\n<link rel="stylesheet" href="/styles/tokens.${s}.css" />`).join('')
     : '';
@@ -244,7 +256,7 @@ export function renderShell({
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />${custom.headStart ? `\n${custom.headStart}` : ''}
 <title>${esc(fullTitle)}</title>
-<meta name="description" content="${esc(description)}" />
+<meta name="description" content="${esc(description)}" />${keywordList.length ? `\n<meta name="keywords" content="${esc(keywordList.join(', '))}" />` : ''}
 <link rel="canonical" href="${esc(canonical)}" />${noindex ? '\n<meta name="robots" content="noindex,nofollow" />' : ''}
 <meta name="theme-color" content="${esc(config.seo.themeColor)}" />
 <meta property="og:site_name" content="${esc(config.name)}" />

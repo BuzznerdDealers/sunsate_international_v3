@@ -519,27 +519,7 @@ export function normaliseProp(entry, errors, seenKeys) {
   }
 
   if (type === 'list') {
-    const fields = [];
-    const seenFields = new Set();
-    for (const field of Array.isArray(entry.fields) ? entry.fields : []) {
-      const fk = String(field?.key || '').trim();
-      if (!KEY_RE.test(fk) || seenFields.has(fk)) continue;
-      seenFields.add(fk);
-      const ftype = PROP_TYPES.includes(field.type) && field.type !== 'list' ? field.type : 'text';
-      fields.push({
-        key: fk,
-        type: ftype,
-        label: String(field.label || fk).slice(0, 60),
-        ...(ftype === 'select' && Array.isArray(field.options)
-          ? {
-              options: field.options
-                .map((o) => (typeof o === 'string' ? { value: o, label: o } : o))
-                .filter((o) => o && typeof o.value === 'string')
-                .map((o) => ({ value: String(o.value), label: String(o.label || o.value) })),
-            }
-          : {}),
-      });
-    }
+    const fields = listFields(entry, key, errors, LIST_DEPTH);
     if (!fields.length) {
       errors.push(`prop "${key}" is a list with no fields`);
       return null;
@@ -548,6 +528,52 @@ export function normaliseProp(entry, errors, seenKeys) {
   }
 
   return prop;
+}
+
+/**
+ * How many lists may nest below a list prop. Two, because that is the deepest
+ * fact the data sources carry — a rooftop has departments (`hoursRows`) and a
+ * department has a week (`days`) — and also the deepest shape a dealer can fill
+ * in by hand on the inspector before the form stops being a form.
+ */
+const LIST_DEPTH = 2;
+
+/**
+ * A list's columns, any of which may itself be a list until `depth` runs out.
+ *
+ * Until this existed a list's fields were forced to scalars, so the resolver had
+ * no reason not to join hours into a sentence and a design had no way to declare
+ * the nesting even if it stopped. `repeat` itself was never the limit: it
+ * resolves each key against the row it sits inside, so a node repeating `days`
+ * inside a node repeating `hoursRows` already worked.
+ */
+function listFields(entry, key, errors, depth) {
+  const fields = [];
+  const seen = new Set();
+  for (const field of Array.isArray(entry.fields) ? entry.fields : []) {
+    const fk = String(field?.key || '').trim();
+    if (!KEY_RE.test(fk) || seen.has(fk)) continue;
+    seen.add(fk);
+    const wanted = PROP_TYPES.includes(field.type) ? field.type : 'text';
+    const ftype = wanted === 'list' && depth <= 0 ? 'text' : wanted;
+    const out = { key: fk, type: ftype, label: String(field.label || fk).slice(0, 60) };
+    if (ftype === 'select' && Array.isArray(field.options)) {
+      out.options = field.options
+        .map((o) => (typeof o === 'string' ? { value: o, label: o } : o))
+        .filter((o) => o && typeof o.value === 'string')
+        .map((o) => ({ value: String(o.value), label: String(o.label || o.value) }));
+    }
+    if (ftype === 'list') {
+      const nested = listFields(field, `${key}.${fk}`, errors, depth - 1);
+      if (!nested.length) {
+        errors.push(`prop "${key}.${fk}" is a list with no fields`);
+        continue;
+      }
+      out.fields = nested;
+    }
+    fields.push(out);
+  }
+  return fields;
 }
 
 /**

@@ -121,9 +121,7 @@ export function componentSampleValues(props, rows = 3) {
   const out = {};
   for (const prop of props || []) {
     if (prop.type === 'list') {
-      out[prop.key] = Array.from({ length: rows }, (_, i) =>
-        Object.fromEntries((prop.fields || []).map(f => [f.key, sample(f.type, f.label || f.key, i)])),
-      );
+      out[prop.key] = sampleList(prop.fields, rows);
       continue;
     }
     if (prop.default !== undefined && prop.default !== '') {
@@ -151,6 +149,23 @@ function sampleImage(label, index) {
       ),
     alt: caption,
   };
+}
+
+/**
+ * Rows for a list, including any list nested inside one.
+ *
+ * Two inner rows rather than three: enough to show the design repeats there,
+ * without an hours table turning one sample rooftop into twenty-one lines.
+ */
+function sampleList(fields, rows) {
+  return Array.from({ length: rows }, (_, i) =>
+    Object.fromEntries(
+      (fields || []).map(f => [
+        f.key,
+        f.type === 'list' ? sampleList(f.fields, 2) : sample(f.type, f.label || f.key, i),
+      ]),
+    ),
+  );
 }
 
 function sample(type, label, index) {

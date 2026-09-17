@@ -1,5 +1,5 @@
 {
-  "rendererVersion": "4.19.0",
+  "rendererVersion": "4.21.0",
   "documentVersion": 2,
   "gridColumns": 12,
   "tokenGroups": {
@@ -498,6 +498,158 @@
           "key": "phone3Url",
           "type": "url",
           "label": "Third phone link"
+        },
+        {
+          "key": "group",
+          "type": "text",
+          "label": "Group"
+        },
+        {
+          "key": "groupKey",
+          "type": "text",
+          "label": "Group key (for filtering)"
+        },
+        {
+          "key": "brandRows",
+          "type": "list",
+          "label": "Brands (one row each)",
+          "fields": [
+            {
+              "key": "name",
+              "type": "text",
+              "label": "Name"
+            },
+            {
+              "key": "key",
+              "type": "text",
+              "label": "Filter value"
+            }
+          ]
+        },
+        {
+          "key": "serviceRows",
+          "type": "list",
+          "label": "Services (one row each)",
+          "fields": [
+            {
+              "key": "name",
+              "type": "text",
+              "label": "Name"
+            },
+            {
+              "key": "description",
+              "type": "text",
+              "label": "Description"
+            }
+          ]
+        },
+        {
+          "key": "perkRows",
+          "type": "list",
+          "label": "Service options (one row each)",
+          "fields": [
+            {
+              "key": "label",
+              "type": "text",
+              "label": "Label"
+            },
+            {
+              "key": "key",
+              "type": "text",
+              "label": "Filter value"
+            }
+          ]
+        },
+        {
+          "key": "departmentRows",
+          "type": "list",
+          "label": "Departments (one row each)",
+          "fields": [
+            {
+              "key": "name",
+              "type": "text",
+              "label": "Name"
+            },
+            {
+              "key": "key",
+              "type": "text",
+              "label": "Code"
+            },
+            {
+              "key": "phone",
+              "type": "text",
+              "label": "Phone"
+            },
+            {
+              "key": "phoneUrl",
+              "type": "url",
+              "label": "Phone link"
+            },
+            {
+              "key": "email",
+              "type": "text",
+              "label": "Email"
+            },
+            {
+              "key": "hours",
+              "type": "text",
+              "label": "Hours, summarised"
+            }
+          ]
+        },
+        {
+          "key": "hoursRows",
+          "type": "list",
+          "label": "Opening hours, by department",
+          "fields": [
+            {
+              "key": "department",
+              "type": "text",
+              "label": "Department"
+            },
+            {
+              "key": "key",
+              "type": "text",
+              "label": "Code"
+            },
+            {
+              "key": "summary",
+              "type": "text",
+              "label": "Whole week, in one line"
+            },
+            {
+              "key": "days",
+              "type": "list",
+              "label": "Days",
+              "fields": [
+                {
+                  "key": "day",
+                  "type": "text",
+                  "label": "Day"
+                },
+                {
+                  "key": "hours",
+                  "type": "text",
+                  "label": "Open–close, or Closed"
+                },
+                {
+                  "key": "opensAt",
+                  "type": "text",
+                  "label": "Opens at"
+                },
+                {
+                  "key": "closesAt",
+                  "type": "text",
+                  "label": "Closes at"
+                },
+                {
+                  "key": "closed",
+                  "type": "boolean",
+                  "label": "Closed that day"
+                }
+              ]
+            }
+          ]
         }
       ]
     },

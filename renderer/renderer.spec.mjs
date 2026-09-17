@@ -1253,6 +1253,176 @@ test('a source with nothing baked publishes no rows, and shows the shape in the 
   assert.match(editing, /bz-col/, 'a band that vanishes on the canvas reads as broken');
 });
 
+/* ----------------------------------------------- a list inside a live row */
+
+/**
+ * What "the design should be flexible" comes down to for opening hours: a
+ * rooftop has departments and a department has a week. The resolver used to
+ * join that into one string, because a list field could not itself be a list,
+ * so no component could declare the shape even if the data arrived — and the
+ * only thing that could draw an hours table was the platform's own widget,
+ * which has no hours table. Both halves are lifted; this is the proof.
+ */
+const SCHEDULE = {
+  id: 'schedule',
+  props: [
+    {
+      key: 'spots',
+      type: 'list',
+      label: 'Locations',
+      fields: [
+        { key: 'name', type: 'text' },
+        {
+          key: 'hoursRows',
+          type: 'list',
+          label: 'Hours by department',
+          fields: [
+            { key: 'department', type: 'text' },
+            {
+              key: 'days',
+              type: 'list',
+              label: 'Days',
+              fields: [
+                { key: 'day', type: 'text' },
+                { key: 'hours', type: 'text' },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+  ],
+  nodes: [
+    {
+      id: 'band',
+      type: 'section',
+      children: [
+        {
+          id: 'row',
+          type: 'row',
+          children: [
+            {
+              id: 'card',
+              type: 'column',
+              props: { span: 6, repeat: 'spots' },
+              children: [
+                { id: 'who', type: 'heading', props: { text: '{{name}}' } },
+                {
+                  id: 'dept',
+                  type: 'row',
+                  props: { repeat: 'hoursRows' },
+                  children: [
+                    {
+                      id: 'week',
+                      type: 'column',
+                      props: { span: 12, repeat: 'days' },
+                      // `{{department}}` belongs to the row above this one. A
+                      // binding resolves against the innermost scope that has
+                      // the key, so the day rows can still name their own
+                      // department without it being copied onto every day.
+                      children: [
+                        { id: 'line', type: 'text', props: { text: '{{department}} {{day}} {{hours}}' } },
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+  ],
+};
+
+const SCHEDULE_LIVE = [
+  {
+    slug: 'ogden',
+    name: 'Ogden',
+    hoursRows: [
+      {
+        department: 'Sales',
+        days: [
+          { day: 'Mon', hours: '8 AM – 6 PM' },
+          { day: 'Sun', hours: 'Closed' },
+        ],
+      },
+      { department: 'Service', days: [{ day: 'Mon', hours: '7 AM – 5 PM' }] },
+    ],
+  },
+];
+
+test('a list inside a live row repeats, and reaches the row it sits inside', () => {
+  const html = renderDocument(
+    {
+      nodes: [
+        {
+          id: 'ref',
+          type: 'sharedSection',
+          props: {
+            sectionId: 'schedule',
+            values: { spots: { source: 'locations' } },
+            data: { spots: SCHEDULE_LIVE },
+          },
+        },
+      ],
+    },
+    { ...CTX, sections: { schedule: SCHEDULE } },
+  );
+  assert.match(html, /Sales Mon 8 AM – 6 PM/);
+  assert.match(html, /Sales Sun Closed/, 'a closed day is the answer the buyer came for');
+  assert.match(html, /Service Mon 7 AM – 5 PM/);
+  // Two departments, three days between them — not one row, and not six.
+  assert.equal(html.match(/Mon|Sun/g).length, 3);
+  // Ids stay unique through every level — the suffix accumulates one segment per
+  // enclosing repeat, so a day is `-<rooftop>-<department>-<day>`. Without that
+  // the canvas would treat Sales Monday and Service Monday as the same node.
+  assert.match(html, /data-bz-node="line-1-1-1"/);
+  assert.match(html, /data-bz-node="line-1-1-2"/);
+  assert.match(html, /data-bz-node="line-1-2-1"/);
+});
+
+test('a list field may be a list, once, and no deeper', () => {
+  const [spots] = parseComponentProps(SCHEDULE.props);
+  const hours = spots.fields.find((f) => f.key === 'hoursRows');
+  assert.equal(hours.type, 'list', 'a department list inside a rooftop row');
+  assert.equal(hours.fields.find((f) => f.key === 'days').type, 'list');
+
+  // Two lists below the row is the deepest fact the sources carry and the
+  // deepest form a dealer can fill in by hand, so a third is flattened to text
+  // rather than accepted.
+  const [deep] = parseComponentProps([
+    {
+      key: 'a',
+      type: 'list',
+      fields: [
+        {
+          key: 'b',
+          type: 'list',
+          fields: [
+            {
+              key: 'c',
+              type: 'list',
+              fields: [{ key: 'd', type: 'list', fields: [{ key: 'e', type: 'text' }] }],
+            },
+          ],
+        },
+      ],
+    },
+  ]);
+  assert.equal(deep.fields[0].type, 'list', 'one below the row');
+  assert.equal(deep.fields[0].fields[0].type, 'list', 'two below the row');
+  assert.equal(deep.fields[0].fields[0].fields[0].type, 'text', 'three is too deep');
+});
+
+test('the canvas sample of a nested source shows repetition at both levels', () => {
+  const [row] = resolveDataBinding({ source: 'locations' }, null, { sample: true, sampleRows: 1 });
+  assert.ok(Array.isArray(row.hoursRows), 'an hours table has nothing to draw against a string');
+  assert.ok(Array.isArray(row.hoursRows[0].days));
+  assert.ok(row.hoursRows[0].days.length > 1, 'one sample day looks like a scalar');
+  assert.equal(typeof row.group, 'string', 'a rooftop knows which group it is in');
+});
+
 test('an overlay adds the editorial fields the platform does not hold', () => {
   const rows = resolveDataBinding(
     { source: 'locations', overlay: [{ slug: 'provo', badge: 'New' }] },
@@ -2334,6 +2504,35 @@ test('the renderer version is a page fact, named by whoever wants it', () => {
   // Never a literal, or it drifts per dealer the moment a renderer ships.
   const doesNot = analyticsHead(withProviders([oneProvider], '4.11.0'), { pageType: 'Home' });
   assert.equal(doesNot.slice(doesNot.indexOf('window.dm=')).includes('4.11.0'), false);
+});
+
+test('meta keywords is emitted only when a page asks for one', () => {
+  const shell = (extra) =>
+    renderShell({
+      config: withProviders(null),
+      fontsHref: '',
+      chrome: {},
+      title: 'T',
+      description: 'D',
+      canonical: 'https://example.com/',
+      bodyHtml: '<main></main>',
+      storefrontPrefix: 'store',
+      ...extra,
+    });
+
+  // A site that never opts in carries no empty tag, which is the difference
+  // between "this dealer chose not to" and "this dealer set it to nothing".
+  assert.equal(shell({}).includes('name="keywords"'), false);
+  assert.equal(shell({ keywords: [] }).includes('name="keywords"'), false);
+  assert.equal(shell({ keywords: ['  ', ''] }).includes('name="keywords"'), false);
+
+  assert.match(
+    shell({ keywords: ['used trucks', ' tampa ', '', 'fleet service'] }),
+    /<meta name="keywords" content="used trucks, tampa, fleet service" \/>/,
+  );
+  // Same escaping as every other meta: a quote in a keyword must not end the
+  // attribute and open an injection point.
+  assert.match(shell({ keywords: ['24" wheels'] }), /content="24&quot; wheels"/);
 });
 
 test('the shell puts the whole analytics burst in the head, in order', () => {
