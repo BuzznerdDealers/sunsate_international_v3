@@ -22,3 +22,48 @@
 [data-bz-node="news-summary"] > .bz-section { padding-block: 80px 0px; }
 [data-bz-node="news-faq"].bz-section,
 [data-bz-node="news-faq"] > .bz-section { padding-block: 90px 90px; }
+
+/* --- The coverage wall -----------------------------------------------------
+   Fourteen press assets of wildly different proportions share one grid: event
+   photographs at 710×470 and 1080×463 next to wordmarks declared 540×146 and
+   432×55. `.bz-card img { width: 100% }` in the platform sheet leaves the
+   height to each file's own attributes, so every card drew a different height
+   and a row read as four unrelated boxes rather than one wall. The tile owns
+   the geometry and the artwork is contained inside it — the same treatment the
+   partner wall on Community Involvement uses, so the two pages match. */
+[data-bz-node="nc-grid"] .bz-sechead { display: none; }
+[data-bz-node="nc-grid"] .bz-grid { gap: 20px; }
+[data-bz-node="nc-grid"] .bz-card {
+  display: flex; flex-direction: column;
+  background: var(--card); border: 1px solid var(--line);
+}
+/* `flex: 1 1 auto` so the frame, not a gap, takes whatever height the tallest
+   tile in the row adds: the artwork stays centred in its own tile instead of
+   sitting against a band of white above the caption rule. */
+[data-bz-node="nc-grid"] .bz-card img {
+  width: 100%; height: 168px; flex: 1 1 auto;
+  padding: 26px 30px; box-sizing: border-box;
+  object-fit: contain; object-position: center; display: block;
+  max-width: 100%; margin: 0 auto;
+}
+/* The caption strip is ruled off the artwork and pinned to the tile's floor, so
+   every tile in a row ends on the same line however long the headline is. Two
+   lines of the caption face are reserved at four-up, where "Florida Trends" sits
+   beside a headline that wraps to four; a `min-height` rather than a height, so
+   a long one grows the tile instead of being clipped. */
+[data-bz-node="nc-grid"] .bz-card__body {
+  margin-top: auto; border-top: 1px solid var(--line);
+  padding: 18px 20px; gap: 0;
+}
+@media (min-width: 1101px) {
+  [data-bz-node="nc-grid"] .bz-card__body { min-height: 71px; box-sizing: border-box; }
+}
+[data-bz-node="nc-grid"] .bz-card__t {
+  font: 700 12px/1.45 var(--font-body);
+  letter-spacing: .06em; text-transform: uppercase; color: var(--ink);
+}
+
+@media (max-width: 640px) {
+  [data-bz-node="nc-grid"] .bz-card img { height: 132px; padding: 20px 22px; }
+  [data-bz-node="nc-grid"] .bz-card__body { padding: 14px 16px; }
+}
