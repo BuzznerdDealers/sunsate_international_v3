@@ -1,5 +1,5 @@
 {
-  "rendererVersion": "4.18.0",
+  "rendererVersion": "4.19.0",
   "documentVersion": 2,
   "gridColumns": 12,
   "tokenGroups": {
@@ -124,6 +124,7 @@
     "page",
     "post",
     "inventory",
+    "location",
     "url",
     "label"
   ],
@@ -172,6 +173,13 @@
       "specificity": 350
     },
     {
+      "id": "allLocations",
+      "label": "Location pages",
+      "description": "Every page built from the one-page-per-location template. Generated slugs do not exist until a location does, so a specific-page condition cannot reach them.",
+      "ref": null,
+      "specificity": 300
+    },
+    {
       "id": "pageGroup",
       "label": "A group of pages",
       "description": "Every page tagged with one group.",
@@ -190,6 +198,13 @@
       "label": "A specific post",
       "description": "",
       "ref": "post",
+      "specificity": 500
+    },
+    {
+      "id": "location",
+      "label": "One location’s page",
+      "description": "The generated page for a single location, by its slug.",
+      "ref": "location",
       "specificity": 500
     }
   ],

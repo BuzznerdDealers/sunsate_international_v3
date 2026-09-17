@@ -1,0 +1,79 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "loc-hero",
+      "type": "hero",
+      "props": {
+        "eyebrow": "SUN STATE INTERNATIONAL",
+        "heading": "{{name}}",
+        "body": "{{streetAddress}}, {{city}}, {{region}} {{postalCode}}",
+        "background": "ink",
+        "align": "start"
+      }
+    },
+    {
+      "id": "loc-summary",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "location-summary",
+        "values": {
+          "eyebrow": "STORE MAP",
+          "name": "Sun State International Trucks, LLC.",
+          "noticeEyebrow": "NOW OFFERING",
+          "noticeTitle": "After hours service",
+          "noticeBody": "8:00 PM \u2013 5:00 AM via Certified Fleet.",
+          "noticeLinkLabel": "Certified Fleet \u2014 (863) 880-2206",
+          "noticeLinkUrl": "tel:+18638802206",
+          "anchor": "tpa-summary",
+          "background": "card"
+        }
+      }
+    },
+    {
+      "id": "loc-hours",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "hours-grid",
+        "values": {
+          "eyebrow": "DEPARTMENT HOURS",
+          "heading": "When each department is open.",
+          "note": "Saturday service coverage varies. Call (813) 521-8053 to confirm before bringing a unit in on a Saturday.",
+          "anchor": "tpa-hours",
+          "background": "card"
+        }
+      }
+    },
+    {
+      "id": "loc-others",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "location-grid",
+        "values": {
+          "eyebrow": "FIND A LOCATION",
+          "heading": "Other Sun State locations.",
+          "body": "Ready to find the right commercial trucks for your business? Visit us at our convenient locations across Central and Southwest Florida.",
+          "background": "paper",
+          "showMap": false
+        }
+      }
+    },
+    {
+      "id": "loc-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "CONTACT US",
+          "heading": "Ready to get on the road?",
+          "body": "Contact us to explore our trucks and experience nothing less than the dedicated care you deserve.",
+          "primaryLabel": "Call (813) 621-1331",
+          "primaryUrl": "tel:+18136211331",
+          "secondaryLabel": "Schedule service",
+          "secondaryUrl": "/service-appointment",
+          "background": "ink"
+        }
+      }
+    }
+  ]
+}

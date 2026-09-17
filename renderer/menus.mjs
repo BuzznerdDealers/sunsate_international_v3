@@ -22,7 +22,7 @@
 import { esc, href, isExternal, join } from './html.mjs';
 
 /** Where a menu item can point. */
-export const MENU_ITEM_TYPES = ['page', 'post', 'inventory', 'url', 'label'];
+export const MENU_ITEM_TYPES = ['page', 'post', 'inventory', 'location', 'url', 'label'];
 
 /** How deep a menu may nest. Beyond this the tree is flattened, not dropped. */
 export const MAX_MENU_DEPTH = 3;
@@ -139,6 +139,17 @@ function destinationOf(item, ctx) {
         ctx.warn(`Menu item "${item.label}" points at "${page.title}", which is not published.`);
       }
       return page.path;
+    }
+    case 'location': {
+      // `ref` is the location's slug in Admin, not a page slug, because the page
+      // it lands on is generated and has no slug of its own until that location
+      // exists. Written as a `page` item it would break the day a branch was
+      // renamed, and as a `url` it would hardcode the pattern.
+      const path = (ctx.locationPages ?? []).find(p => p.slug === item.ref)?.path;
+      if (!path && ctx.warn) {
+        ctx.warn(`Menu item "${item.label}" points at a location that is not published.`);
+      }
+      return path ?? null;
     }
     case 'post':
       return `${ctx.blogBasePath ?? '/blog'}/${item.ref}`;

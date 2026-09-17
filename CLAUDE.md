@@ -112,11 +112,18 @@ The authoritative list of every block, every prop and every allowed value is
 **`renderer/block-schemas.json`** (regenerate with `npm run schemas`). Read it
 rather than guessing. Today's catalogue:
 
-- **basic** — `heading` `text` `image` `buttons` `list` `spacer` `divider` `customHtml`
+- **basic** — `heading` `text` `image` `video` `buttons` `list` `spacer` `divider` `customHtml`
 - **navigation** — `logo` `menu`
 - **forms** — `form`
 - **dealer data** — `widget` (live inventory, locations, hours, phones, FAQ, staff)
 - **prebuilt sections** — `hero` `splitHero` `iconGrid` `categoryGrid` `statBand` `serviceGrid` `testimonials` `logoStrip` `postsList` `locationsMap` `footer`
+
+**Video** is one `src` field on the `video` block: a file from the media library,
+or a YouTube/Vimeo link, told apart by the renderer. Give an uploaded file a
+`poster` — without one the block is black until someone presses play, and the
+editing canvas has nothing to draw. A clip *behind* a band is the section's
+`backgroundVideo` prop, never a `backgroundImage` style: `background-image`
+cannot play a video and the renderer drops one, so that route is a blank hero.
 
 **Avoid `customHtml`.** It renders, but it is opaque to the editor, cannot be
 restyled from the design system, fails analytics tagging, and has its scripts and
@@ -149,6 +156,39 @@ site/blog/posts/<slug>.json  One post (may carry its own css/js) → Posts
 site/custom-code.json        Site-wide css/js + head/body slots  → Design → Custom code
 ```
 
+### One page per location
+
+A dealer's branches are records in Admin, so the pages for them are **generated,
+not written**. One entry in `site/pages.json`, one page directory, and the build
+emits a page per location:
+
+```json
+{ "slug": "location-detail", "title": "{{name}}", "path": "/locations/:slug",
+  "out": "locations/:slug/index.html", "dir": "location-detail",
+  "group": "locations", "forEach": "locations" }
+```
+
+Write the page once, in `site/pages/location-detail/page.json`, and **leave
+`locationSlug` off every widget on it** — the page *is* one location and the
+build fills the slug in per page. A widget that does name a slug keeps it, which
+is how a deliberate cross-reference to another branch survives.
+
+`{{name}}`, `{{city}}`, `{{region}}`, `{{streetAddress}}`, `{{postalCode}}` and
+`{{phone}}` work in the entry's `title` and `description`, and in a `hero`'s
+text. Publishing bakes the locations into the page document; before the first
+publish the page emits nothing and `npm run validate` says so as a note.
+
+**Do not hand-write a directory per branch.** Six copies validate and build, and
+then the set of pages is the one part of the site Admin does not drive: opening a
+seventh branch puts it on every map, list and rail automatically and still leaves
+its own page a 404.
+
+Two consequences for the rest of the site. Chrome for these pages comes from an
+`allLocations` template (or `location` with a slug for one branch) — a `page`
+condition cannot name a slug that does not exist until the branch does. And a
+menu item that links to a branch is `{"type":"location","ref":"tampa"}`, where
+`ref` is the **Admin slug**, not a page slug.
+
 ### Templates and display conditions
 
 A template is a full layout — header, a `contentArea`, footer — and **display
@@ -163,9 +203,10 @@ unknown condition type and warns when no template covers the site.
   "nodes": [ /* header … */ { "id": "content", "type": "contentArea", "props": {} } /* … footer */ ] }
 ```
 
-Nine condition types, least to most specific: `entireSite`, `allPages`, `allPosts`,
-`blog`, `inventory`, `parts`, `pageGroup` (`ref` = a group name), `page` / `post`
-(`ref` = a slug). The most specific match wins, so a homepage with its own
+Eleven condition types, least to most specific: `entireSite`, `allPages`,
+`allPosts`, `blog`, `inventory`, `parts`, `allLocations`, `pageGroup` (`ref` = a
+group name), `page` / `post` (`ref` = a slug), `location` (`ref` = an Admin
+location slug). The most specific match wins, so a homepage with its own
 treatment is a second template with `{ "type": "page", "ref": "home" }` — not a
 copy of the default with one section changed.
 
@@ -230,6 +271,71 @@ of one list with N items.
 `sharedSection` is expanded. On a page node it is inert — the validator accepts
 it and the build ignores it, which is a silent way to ship the copies you were
 trying to avoid.
+
+### Your card design, the platform's data
+
+Options 2 and 3 used to be a choice you had to make. A `widget` node is live and
+draws **the platform's** card; a component with `repeat` draws **your** card over
+rows you typed, which are a copy and are wrong the day a rooftop moves. Sites
+built here kept splitting the difference — placing `locations-map` for its map
+with its list hidden in CSS, and hand-feeding the real tiles beside it.
+
+**A placement can point a list prop at live data instead of typing rows.**
+
+```json
+{ "id": "rail", "type": "sharedSection", "props": {
+  "sectionId": "location-rail",
+  "values": {
+    "locations": {
+      "source": "locations",
+      "config": { "pagePathPrefix": "/locations" },
+      "overlay": [{ "slug": "davenport", "dot1": "#EE2D24", "tag1": "Curbside pickup" }]
+    }
+  }
+}}
+```
+
+Two sources today, and `renderer/data-sources.mjs` is the authoritative list:
+
+| `source` | Rows | Keyed on | `config` | Fields you may bind to |
+|---|---|---|---|---|
+| `locations` | Every active rooftop | `slug` | `locationSlug`, `pagePathPrefix` | **Identity** `id` `name` `slug` `num` `href`<br>**Address** `streetAddress` `city` `region` `postalCode` `country` `latitude` `longitude` `mapUrl`<br>**Contact** `phone` `phoneUrl` `email` `phone2` `phone2Url` `phone3` `phone3Url`<br>**The record** `brands` `services` `perks` `departments` `hours`<br>**Filter keys** `brandKeys` `perkKeys` `perk1` `perk2` `perk3` |
+| `staff` | The team directory | `name` | `locationSlug`, `departmentCode` | `name` `title` `phone` `phoneUrl` `photo` |
+
+Bind to **those** field names. `{{state}}` and `{{url}}` are not among them —
+`{{region}}` and `{{mapUrl}}` are — and a name the source does not carry renders
+empty forever, which on the canvas reads as "the data is not arriving".
+
+The last four groups are the ones worth knowing about, because they read like a
+card's editorial copy and are not. **`brands`, `services`, `perks`, `departments`
+and `hours` are dealer records**, edited on Admin → Locations → the rooftop's own
+tabs, and they arrive as one ` · `-joined string apiece because a binding
+resolves to a scalar. `brandKeys` and `perkKeys` are the same two as machine
+keys, space separated, for a `filter` behaviour's `data-` attributes — match a
+control's value against those, never against the display copy. `perk1`–`perk3`
+exist for a card that shows service options as separate pills.
+
+**`overlay` is for what the platform does not hold at all**, and only that: a
+brand swatch, an award badge. Each row names the source's key field and carries
+the extras. Restating a field the source owns is refused — an address typed there
+beats Admin and goes stale with nothing to say so.
+
+**An overlay keyed to six slugs is not a middle ground; it is a typed list in a
+costume.** It goes stale exactly as fast, and nothing warns you. Before writing
+one, check the field list above: if the fact is anywhere on the location's
+screens in Admin, it is on a row already. What is genuinely left is small.
+
+Reach for a source whenever the rows are facts the dealer maintains in Admin. A
+typed list is right for genuinely editorial content: awards, campaign copy.
+If the source exists and you type the rows anyway, you have built the thing this
+repo's whole JSON model exists to avoid.
+
+Two things to expect. A binding with nothing published yet shows sample rows on
+the canvas and **no rows** on the built page — the platform bakes them on
+publish, and inventing addresses in static HTML would be worse than an empty
+band. And the dealer sees this as a "Typed in here / From Locations" switch on
+the placement's inspector, so say *that* in your summary rather than "a source
+binding".
 
 `npm run validate` names every group of three or more identical siblings it
 finds, with their ids. Treat those notes as work, not noise — each one is a
@@ -302,6 +408,7 @@ copied three times.
 | `page` | `ref` = a page **slug** | That page's current path. Rename the page and the link follows. |
 | `post` | `ref` = a post slug | The post under the blog's base path. |
 | `inventory` | `ref` = a storefront route (below) | That route under the storefront prefix (`/store`). |
+| `location` | `ref` = a location's **Admin slug** | That branch's generated page. Never a `page` item — the page has no slug of its own. |
 | `url` | `url` | Verbatim — external links, `tel:`, `mailto:`, `#anchor`. |
 | `label` | — | **Not a link.** A heading inside a panel. |
 

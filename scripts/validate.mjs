@@ -34,11 +34,14 @@ import {
   DATA_SOURCES,
   MENU_ITEM_TYPES,
   RENDERER_VERSION,
+  SLUG_TOKEN,
   allWidgetIds,
   blockCatalogue,
   dataSource,
   isDataBinding,
+  isLocationPage,
   listMenus,
+  locationIndex,
   parseComponentProps,
   parseMenus,
   parseTemplate,
@@ -208,6 +211,29 @@ if (!existsSync(pagesPath)) {
           if (paths.has(page.path)) fail('site/pages.json', `${at}.path`, `"${page.path}" appears twice`);
           paths.add(page.path);
         }
+        // One authored page standing for many. Its `path` is a pattern and its
+        // `out` is derived per location, so the fixed-path rules below cannot
+        // apply — and the two ways of getting it wrong are both silent: a path
+        // with no :slug writes every location over the same file, and a page
+        // nobody has published yet emits nothing at all.
+        if (isLocationPage(page)) {
+          if (page?.path && !page.path.includes(SLUG_TOKEN)) {
+            fail(
+              'site/pages.json',
+              `${at}.path`,
+              `builds one page per location but has no "${SLUG_TOKEN}" in "${page.path}", so every location would overwrite the same file`,
+              `Use a path like "/locations/${SLUG_TOKEN}".`,
+            );
+          }
+          const doc = readJson(join(SITE, 'pages', page.dir ?? '', 'page.json')).value;
+          if (!locationIndex(doc).length) {
+            note(
+              'site/pages.json',
+              `"${page.slug}" builds one page per location and has no locations baked into it yet, so it emits nothing. Publishing writes them in.`,
+            );
+          }
+          continue;
+        }
         // `path` is the address a visitor types; `out` is the file written for it.
         // They are separate fields and nothing else checks that they agree, so a
         // page can be listed at /financing and written to about/index.html.
@@ -257,6 +283,13 @@ if (!existsSync(pagesPath)) {
 
 const CONDITION_IDS = CONDITION_TYPES.map(c => c.id);
 const pageSlugs = new Set(pages.map(p => p.slug));
+/** The Admin location slugs publish has baked into this repo, if any. */
+const bakedLocationSlugs = new Set(
+  pages
+    .filter(isLocationPage)
+    .flatMap(p => locationIndex(readJson(join(SITE, 'pages', p.dir ?? '', 'page.json')).value))
+    .map(l => l.slug),
+);
 let sitewideTemplate = false;
 
 /* Component ids have to exist before pages and templates are checked — a
@@ -516,6 +549,16 @@ if (existsSync(menusPath)) {
           if (!item?.label) fail('site/menus.json', at, 'every item needs a label');
           if (item?.type && !MENU_ITEM_TYPES.includes(item.type)) {
             fail('site/menus.json', `${at}.type`, `"${item.type}" is not one of ${MENU_ITEM_TYPES.join(', ')}`);
+          }
+          // A location item's `ref` is an Admin slug, and which slugs exist is a
+          // fact about the dealer's account rather than about this repo. Warned,
+          // never failed: a repo that has not been published yet knows of none,
+          // and refusing to validate it would make the feature unusable offline.
+          if (item?.type === 'location' && item.ref && !bakedLocationSlugs.has(item.ref)) {
+            note(
+              'site/menus.json',
+              `${at}.ref points at location "${item.ref}", which is not in the locations baked into this repo. It will resolve once that location is published, and link nowhere until then.`,
+            );
           }
           if (item?.type === 'page' && item.ref && !pageSlugs.has(item.ref)) {
             fail('site/menus.json', `${at}.ref`, `no page with slug "${item.ref}"`, 'Menu items point at a page by slug, not by address.');

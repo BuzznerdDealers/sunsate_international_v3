@@ -18,6 +18,20 @@
 // Zero runtime dependencies, ESM, Node 20 and modern browsers. It is imported by
 // a zero-dependency static build, so it may not add a bundler requirement to it.
 
+// 4.19.0 — one authored page builds one page per location. A manifest entry
+// declaring `forEach: "locations"` with `:slug` in its path is expanded by the
+// build from the locations publish baked into the page document, and its
+// widgets are pointed at each location in turn. Until now the set of location
+// pages was the one part of a dealer's site Admin did not drive: opening a
+// branch put it on every map, list and rail automatically and still left
+// `/locations/<slug>` a 404 until somebody hand-built a directory, and the six
+// copies that produced drifted apart on every wording change. Two template
+// conditions come with it — `allLocations` and `location` — because the
+// generated slugs do not exist until a location does, so a specific-page
+// condition cannot reach them; and a `location` menu item type, whose `ref` is
+// the Admin slug rather than a page slug, for the same reason.
+//
+
 // 4.18.0 — `locations-map` draws static OpenStreetMap tiles unless a placement
 // asks for an interactive provider. The old default was the openstreetmap
 // iframe, which is the one output that cannot appear in three of the four
@@ -110,8 +124,22 @@
 // person or a model hand-writes. `anchor` and `scope` join them as declared
 // universal props: the renderer always read those off any node's wrapper while no
 // widget declared them, so the validator refused edits the build would render.
-export const RENDERER_VERSION = '4.18.0';
+export const RENDERER_VERSION = '4.19.0';
 
+
+export {
+  LOCATION_SOURCE,
+  SLUG_TOKEN,
+  applyLocationSlug,
+  applyLocationSnapshots,
+  fillTokens,
+  isLocationPage,
+  locationIndex,
+  locationOut,
+  locationPageNodes,
+  locationPath,
+  locationSnapshots,
+} from './location-pages.mjs';
 export { isValidPageType, pageTypeOptions } from './analytics-vocab.mjs';
 export { analyticsConfig, analyticsHead, missingIdentity } from './analytics.mjs';
 

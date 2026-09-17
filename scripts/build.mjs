@@ -39,6 +39,12 @@ import {
   componentCode,
   documentStyles,
   rooftopFrom,
+  isLocationPage,
+  locationIndex,
+  locationOut,
+  locationPageNodes,
+  locationPath,
+  fillTokens,
 } from '../renderer/index.mjs';
 
 const ROOT = process.cwd();
@@ -199,6 +205,10 @@ const renderCtx = {
   // Menu items point at a page by slug rather than by address, so the manifest
   // has to be in context for a link to resolve.
   pages,
+  // The generated location pages, by Admin slug. A `location` menu item resolves
+  // through this, so the day a branch is renamed the link follows rather than
+  // pointing at a page that no longer exists.
+  locationPages: locationPageIndex(pages),
   warn,
 };
 
@@ -459,13 +469,69 @@ if (blogSettings.enabled && existsSync(join(BLOG, 'posts'))) {
 renderCtx.posts = posts;
 renderCtx.blogBasePath = blogBase;
 
+/** Every generated location page's address, by the location's slug in Admin. */
+function locationPageIndex(entries) {
+  const out = [];
+  for (const p of entries) {
+    if (!isLocationPage(p)) continue;
+    const document = readJsonIf(join(SITE, 'pages', p.dir, 'page.json'), {});
+    for (const location of locationIndex(document)) {
+      out.push({ slug: location.slug, name: location.name, path: locationPath(p.path, location.slug) });
+    }
+  }
+  return out;
+}
+
+/**
+ * One `forEach: "locations"` entry becomes one entry per location.
+ *
+ * The locations come from the page document's own baked index, written by
+ * publish — never fetched here, because a dealer site builds with no network and
+ * no credentials. A page whose index is empty emits nothing and says so: that is
+ * a repo nobody has published yet, not a broken build.
+ */
+function expandLocationPages(entries) {
+  const out = [];
+  for (const p of entries) {
+    if (!isLocationPage(p)) {
+      out.push(p);
+      continue;
+    }
+    const document = readJsonIf(join(SITE, 'pages', p.dir, 'page.json'), {});
+    const locations = locationIndex(document);
+    if (!locations.length) {
+      warn(
+        `page "${p.slug}" builds one page per location, and no locations have been published yet — no location pages emitted`,
+      );
+      continue;
+    }
+    for (const location of locations) {
+      const path = locationPath(p.path, location.slug);
+      out.push({
+        ...p,
+        document,
+        location,
+        slug: `${p.slug}--${location.slug}`,
+        path,
+        out: locationOut(path),
+        locationSlug: location.slug,
+        title: fillTokens(p.title, location),
+        description: fillTokens(p.description, location),
+      });
+    }
+  }
+  return out;
+}
+
 const emitted = [];
-for (const p of pages) {
+for (const p of expandLocationPages(pages)) {
   const status = p.status || 'published';
   if (status === 'archived') continue;
 
   const dir = join(SITE, 'pages', p.dir);
-  const nodes = pageNodes(dir, p.slug);
+  const nodes = p.location
+    ? locationPageNodes(pageNodes(dir, p.slug), p.document, p.location.slug)
+    : pageNodes(dir, p.slug);
   const css = readText(join(dir, 'style.css'));
 
   let pageJs = null;
@@ -474,7 +540,12 @@ for (const p of pages) {
     write(`scripts/pages/${p.dir}.js`, readText(join(dir, 'script.js')));
   }
 
-  const target = { kind: 'page', slug: p.slug, group: p.group };
+  // `location` rather than `page` when this is one of many, so a template can
+  // dress every location page without naming each generated slug — which is the
+  // whole point, since those slugs do not exist until a location does.
+  const target = p.location
+    ? { kind: 'location', slug: p.slug, group: p.group, location: p.location.slug }
+    : { kind: 'page', slug: p.slug, group: p.group };
   const rendered = renderWithTemplate(target, nodes);
   const noindex = status !== 'published' || !!(p.seo && p.seo.noindex);
 

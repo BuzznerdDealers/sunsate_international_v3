@@ -181,20 +181,20 @@
                 {
                   "id": "pt-tampa",
                   "label": "Tampa",
-                  "type": "page",
-                  "ref": "tampa-location"
+                  "type": "location",
+                  "ref": "tampa"
                 },
                 {
                   "id": "pt-brooksville",
-                  "label": "Truck & Trailer Parts — Brooksville",
-                  "type": "page",
-                  "ref": "brooksville-location"
+                  "label": "Truck & Trailer Parts \u2014 Brooksville",
+                  "type": "location",
+                  "ref": "brooksville"
                 },
                 {
                   "id": "pt-aftermarket-parts",
-                  "label": "Aftermarket Parts — Tampa",
-                  "type": "page",
-                  "ref": "aftermarket-parts-location"
+                  "label": "Aftermarket Parts \u2014 Tampa",
+                  "type": "location",
+                  "ref": "aftermarket-parts"
                 }
               ]
             },
@@ -244,7 +244,7 @@
                 },
                 {
                   "id": "sv-after",
-                  "label": "After hours — (863) 880-2206",
+                  "label": "After hours \u2014 (863) 880-2206",
                   "type": "url",
                   "url": "tel:+18638802206"
                 }
@@ -283,20 +283,20 @@
                 {
                   "id": "sv-tampa",
                   "label": "Tampa",
-                  "type": "page",
-                  "ref": "tampa-location"
+                  "type": "location",
+                  "ref": "tampa"
                 },
                 {
                   "id": "sv-sarasota",
                   "label": "Sarasota",
-                  "type": "page",
-                  "ref": "sarasota-location"
+                  "type": "location",
+                  "ref": "sarasota"
                 },
                 {
                   "id": "sv-davenport",
                   "label": "Davenport",
-                  "type": "page",
-                  "ref": "davenport-location"
+                  "type": "location",
+                  "ref": "davenport"
                 }
               ]
             }
@@ -399,20 +399,20 @@
                 {
                   "id": "lo-tampa",
                   "label": "Tampa",
-                  "type": "page",
-                  "ref": "tampa-location"
+                  "type": "location",
+                  "ref": "tampa"
                 },
                 {
                   "id": "lo-davenport",
                   "label": "Davenport",
-                  "type": "page",
-                  "ref": "davenport-location"
+                  "type": "location",
+                  "ref": "davenport"
                 },
                 {
                   "id": "lo-sarasota",
                   "label": "Sarasota",
-                  "type": "page",
-                  "ref": "sarasota-location"
+                  "type": "location",
+                  "ref": "sarasota"
                 }
               ]
             },
@@ -423,21 +423,21 @@
               "children": [
                 {
                   "id": "lo-brooksville",
-                  "label": "Truck & Trailer Parts — Brooksville",
-                  "type": "page",
-                  "ref": "brooksville-location"
+                  "label": "Truck & Trailer Parts \u2014 Brooksville",
+                  "type": "location",
+                  "ref": "brooksville"
                 },
                 {
                   "id": "lo-aftermarket",
-                  "label": "Aftermarket Parts — Tampa",
-                  "type": "page",
-                  "ref": "aftermarket-parts-location"
+                  "label": "Aftermarket Parts \u2014 Tampa",
+                  "type": "location",
+                  "ref": "aftermarket-parts"
                 },
                 {
                   "id": "lo-trailer",
-                  "label": "Trailer Sales — Tampa",
-                  "type": "page",
-                  "ref": "trailer-sales-location"
+                  "label": "Trailer Sales \u2014 Tampa",
+                  "type": "location",
+                  "ref": "trailer-sales"
                 }
               ]
             },
@@ -507,38 +507,38 @@
         {
           "id": "u-tampa",
           "label": "Tampa",
-          "type": "page",
-          "ref": "tampa-location"
+          "type": "location",
+          "ref": "tampa"
         },
         {
           "id": "u-sarasota",
           "label": "Sarasota",
-          "type": "page",
-          "ref": "sarasota-location"
+          "type": "location",
+          "ref": "sarasota"
         },
         {
           "id": "u-davenport",
           "label": "Davenport",
-          "type": "page",
-          "ref": "davenport-location"
+          "type": "location",
+          "ref": "davenport"
         },
         {
           "id": "u-brooksville",
           "label": "Brooksville",
-          "type": "page",
-          "ref": "brooksville-location"
+          "type": "location",
+          "ref": "brooksville"
         },
         {
           "id": "u-aftermarket",
           "label": "Aftermarket",
-          "type": "page",
-          "ref": "aftermarket-parts-location"
+          "type": "location",
+          "ref": "aftermarket-parts"
         },
         {
           "id": "u-trailers",
           "label": "Trailers",
-          "type": "page",
-          "ref": "trailer-sales-location"
+          "type": "location",
+          "ref": "trailer-sales"
         },
         {
           "id": "u-centers",
@@ -550,7 +550,7 @@
     },
     {
       "id": "footer-brands",
-      "name": "Footer — Brands",
+      "name": "Footer \u2014 Brands",
       "items": [
         {
           "id": "fb-international",
@@ -580,7 +580,7 @@
     },
     {
       "id": "footer-shop",
-      "name": "Footer — Shop",
+      "name": "Footer \u2014 Shop",
       "items": [
         {
           "id": "fs-new-trucks",
@@ -646,7 +646,7 @@
     },
     {
       "id": "footer-company",
-      "name": "Footer — Company",
+      "name": "Footer \u2014 Company",
       "items": [
         {
           "id": "fc-about",
@@ -866,31 +866,31 @@
       "items": [
         {
           "id": "cql-appt",
-          "label": "Schedule a service appointment →",
+          "label": "Schedule a service appointment \u2192",
           "type": "page",
           "ref": "service-appointment"
         },
         {
           "id": "cql-parts",
-          "label": "Order parts online →",
+          "label": "Order parts online \u2192",
           "type": "url",
           "url": "https://www.sunstateparts.com/login"
         },
         {
           "id": "cql-finance",
-          "label": "Financing and credit applications →",
+          "label": "Financing and credit applications \u2192",
           "type": "page",
           "ref": "financing"
         },
         {
           "id": "cql-careers",
-          "label": "Careers at Sun State →",
+          "label": "Careers at Sun State \u2192",
           "type": "page",
           "ref": "careers"
         },
         {
           "id": "cql-locations",
-          "label": "All locations and hours →",
+          "label": "All locations and hours \u2192",
           "type": "page",
           "ref": "locations"
         }
@@ -898,7 +898,7 @@
     },
     {
       "id": "policies-toc",
-      "name": "Policies — on this page",
+      "name": "Policies \u2014 on this page",
       "items": [
         {
           "id": "po-toc-0",
@@ -946,7 +946,7 @@
     },
     {
       "id": "privacy-toc",
-      "name": "Privacy Policy — on this page",
+      "name": "Privacy Policy \u2014 on this page",
       "items": [
         {
           "id": "pp-toc-0",
@@ -1066,7 +1066,7 @@
     },
     {
       "id": "terms-toc",
-      "name": "Terms and Conditions — on this page",
+      "name": "Terms and Conditions \u2014 on this page",
       "items": [
         {
           "id": "tc-toc-0",

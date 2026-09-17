@@ -294,94 +294,14 @@
     }
   },
   {
-    "slug": "tampa-location",
-    "title": "Tampa",
-    "description": "Hours, directions and department phone numbers for Sun State International Tampa, 6020 Adamo Drive.",
-    "path": "/locations/tampa",
-    "out": "locations/tampa/index.html",
-    "dir": "locations/tampa",
-    "status": "published",
+    "slug": "location-detail",
+    "title": "{{name}}",
+    "description": "Hours, address, departments and contacts for Sun State International in {{city}}, {{region}}.",
+    "path": "/locations/:slug",
+    "out": "locations/:slug/index.html",
+    "dir": "location-detail",
     "group": "locations",
-    "locationSlug": "tampa",
-    "seo": {
-      "ogImage": null,
-      "noindex": false
-    }
-  },
-  {
-    "slug": "davenport-location",
-    "title": "Davenport",
-    "description": "Hours, directions and department phone numbers for Sun State International Davenport, 41609 Hwy 27.",
-    "path": "/locations/davenport",
-    "out": "locations/davenport/index.html",
-    "dir": "locations/davenport",
-    "status": "published",
-    "group": "locations",
-    "locationSlug": "davenport",
-    "seo": {
-      "ogImage": null,
-      "noindex": false
-    }
-  },
-  {
-    "slug": "sarasota-location",
-    "title": "Sarasota",
-    "description": "Hours, directions and department phone numbers for Sun State International Sarasota, 1000 Sarasota Center Blvd.",
-    "path": "/locations/sarasota",
-    "out": "locations/sarasota/index.html",
-    "dir": "locations/sarasota",
-    "status": "published",
-    "group": "locations",
-    "locationSlug": "sarasota",
-    "seo": {
-      "ogImage": null,
-      "noindex": false
-    }
-  },
-  {
-    "slug": "brooksville-location",
-    "title": "Brooksville",
-    "description": "Hours, directions and phone numbers for Truck & Trailer Parts, Brooksville, 17127 Runway Drive.",
-    "path": "/locations/brooksville",
-    "out": "locations/brooksville/index.html",
-    "dir": "locations/brooksville",
-    "status": "published",
-    "group": "locations",
-    "locationSlug": "brooksville",
-    "seo": {
-      "ogImage": null,
-      "noindex": false
-    }
-  },
-  {
-    "slug": "trailer-sales-location",
-    "title": "Trailer Sales",
-    "description": "Hours, directions and phone numbers for Sun State Trailers Trailer Sales, 6020 Adamo Drive, Tampa.",
-    "path": "/locations/trailer-sales",
-    "out": "locations/trailer-sales/index.html",
-    "dir": "locations/trailer-sales",
-    "status": "published",
-    "group": "locations",
-    "locationSlug": "trailer-sales",
-    "seo": {
-      "ogImage": null,
-      "noindex": false
-    }
-  },
-  {
-    "slug": "aftermarket-parts-location",
-    "title": "Aftermarket Parts",
-    "description": "Hours, directions and phone numbers for Sun State Aftermarket Parts, 7105 East 6th Ave, Tampa.",
-    "path": "/locations/aftermarket-parts",
-    "out": "locations/aftermarket-parts/index.html",
-    "dir": "locations/aftermarket-parts",
-    "status": "published",
-    "group": "locations",
-    "locationSlug": "aftermarket-parts",
-    "seo": {
-      "ogImage": null,
-      "noindex": false
-    }
+    "forEach": "locations"
   },
   {
     "slug": "contact-us",

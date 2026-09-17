@@ -2605,3 +2605,80 @@ test('rooftopFrom reads a snapshot placed through a component', () => {
   assert.equal(found.schedules[0].heading, 'Sales');
   assert.equal(rooftopFrom(nodes, 'davenport'), null);
 });
+
+/* ------------------------------------------------- one page, many locations */
+
+import {
+  applyLocationSlug,
+  fillTokens,
+  isLocationPage,
+  locationIndex,
+  locationOut,
+  locationPageNodes,
+  locationPath,
+} from './location-pages.mjs';
+
+const LOC_DOC = {
+  version: 2,
+  locations: [
+    { slug: 'tampa', name: 'Tampa', city: 'Tampa', region: 'FL' },
+    { slug: 'davenport', name: 'Davenport', city: 'Davenport', region: 'FL' },
+  ],
+  locationSnapshots: {
+    tampa: { hrs: { snapshot: { schedules: [{ heading: 'Sales', hours: [] }] } } },
+    davenport: { hrs: { snapshot: { schedules: [{ heading: 'Parts', hours: [] }] } } },
+  },
+  nodes: [{ id: 'hrs', type: 'widget', props: { widget: 'hours', config: {} } }],
+};
+
+test('a location page names the locations it will build', () => {
+  assert.deepEqual(
+    locationIndex(LOC_DOC).map((l) => l.slug),
+    ['tampa', 'davenport'],
+  );
+  // A repo nobody has published has no index, and that must read as "none yet"
+  // rather than throwing — the build has to survive it.
+  assert.deepEqual(locationIndex({ version: 2, nodes: [] }), []);
+  assert.equal(isLocationPage({ forEach: 'locations' }), true);
+  assert.equal(isLocationPage({ forEach: 'staff' }), false);
+});
+
+test('each location gets its own slug, snapshot and URL', () => {
+  const tampa = locationPageNodes(LOC_DOC.nodes, LOC_DOC, 'tampa');
+  const dav = locationPageNodes(LOC_DOC.nodes, LOC_DOC, 'davenport');
+
+  assert.equal(tampa[0].props.config.locationSlug, 'tampa');
+  assert.equal(dav[0].props.config.locationSlug, 'davenport');
+  assert.equal(tampa[0].props.snapshot.schedules[0].heading, 'Sales');
+  assert.equal(dav[0].props.snapshot.schedules[0].heading, 'Parts');
+
+  // The authored document is rendered once per location and must survive each
+  // pass untouched, or the second location inherits the first's data.
+  assert.equal(LOC_DOC.nodes[0].props.snapshot, undefined);
+  assert.deepEqual(LOC_DOC.nodes[0].props.config, {});
+
+  assert.equal(locationPath('/locations/:slug', 'tampa'), '/locations/tampa');
+  assert.equal(locationOut('/locations/tampa'), 'locations/tampa/index.html');
+  assert.equal(fillTokens('{{name}}, {{region}}', LOC_DOC.locations[0]), 'Tampa, FL');
+  // An unknown token must not reach a <title> as literal braces.
+  assert.equal(fillTokens('{{nope}}!', LOC_DOC.locations[0]), '!');
+});
+
+test('a widget that names a location keeps it', () => {
+  // A deliberate cross-reference — "parts counter is at Tampa" — must not be
+  // rewritten to the current page, or one link becomes six wrong ones.
+  const nodes = [{ id: 'x', type: 'widget', props: { widget: 'hours', config: { locationSlug: 'tampa' } } }];
+  applyLocationSlug(nodes, 'davenport');
+  assert.equal(nodes[0].props.config.locationSlug, 'tampa');
+});
+
+test('a template can dress every location page without naming a slug', () => {
+  const target = { kind: 'location', slug: 'location-detail--tampa', group: 'locations', location: 'tampa' };
+  assert.equal(conditionMatches({ type: 'allLocations' }, target), true);
+  assert.equal(conditionMatches({ type: 'location', ref: 'tampa' }, target), true);
+  assert.equal(conditionMatches({ type: 'location', ref: 'davenport' }, target), false);
+  // A site whose only template is "all pages" must still frame these.
+  assert.equal(conditionMatches({ type: 'allPages' }, target), true);
+  assert.equal(conditionMatches({ type: 'pageGroup', ref: 'locations' }, target), true);
+  assert.equal(conditionMatches({ type: 'allLocations' }, { kind: 'page', slug: 'home' }), false);
+});
