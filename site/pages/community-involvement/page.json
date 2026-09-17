@@ -153,12 +153,12 @@
               "children": [
                 {
                   "id": "ci-logos",
-                  "type": "logoStrip",
+                  "type": "categoryGrid",
                   "props": {
                     "headingLevel": 3,
-                    "logos": [
+                    "items": [
                       {
-                        "name": "Community Foundation Tampa Bay",
+                        "label": "Community Foundation Tampa Bay",
                         "image": {
                           "src": "https://vendure.buzznerdrv.com/assets/source/9b/community-foundation-tb.png",
                           "alt": "Community Foundation Tampa Bay logo — a Sun State International community partner",
@@ -167,16 +167,16 @@
                         }
                       },
                       {
-                        "name": "Academy Prep",
+                        "label": "Academy Prep",
                         "image": {
                           "src": "https://vendure.buzznerdrv.com/assets/source/cc/academy-prep.png",
                           "alt": "Academy Prep logo — a Sun State International community partner",
-                          "width": 200,
-                          "height": 120
+                          "width": 182,
+                          "height": 223
                         }
                       },
                       {
-                        "name": "The Bank of Tampa",
+                        "label": "The Bank of Tampa",
                         "image": {
                           "src": "https://vendure.buzznerdrv.com/assets/source/58/bank-of-tampa.png",
                           "alt": "The Bank of Tampa logo — a Sun State International community partner",
@@ -185,7 +185,7 @@
                         }
                       },
                       {
-                        "name": "USF",
+                        "label": "USF",
                         "image": {
                           "src": "https://vendure.buzznerdrv.com/assets/source/30/usf.png",
                           "alt": "USF logo — a Sun State International community partner",
@@ -194,7 +194,7 @@
                         }
                       },
                       {
-                        "name": "Corporation To Develop Communities",
+                        "label": "Corporation To Develop Communities",
                         "image": {
                           "src": "https://vendure.buzznerdrv.com/assets/source/58/cdc-tampa.png",
                           "alt": "Corporation To Develop Communities logo — a Sun State International community partner",
@@ -203,7 +203,7 @@
                         }
                       },
                       {
-                        "name": "Tampa General Hospital",
+                        "label": "Tampa General Hospital",
                         "image": {
                           "src": "https://vendure.buzznerdrv.com/assets/source/2f/tampa-general-hospital.jpg",
                           "alt": "Tampa General Hospital logo — a Sun State International community partner",
@@ -212,7 +212,7 @@
                         }
                       },
                       {
-                        "name": "Goodwill",
+                        "label": "Goodwill",
                         "image": {
                           "src": "https://vendure.buzznerdrv.com/assets/source/4c/goodwill.png",
                           "alt": "Goodwill logo — a Sun State International community partner",
@@ -221,7 +221,7 @@
                         }
                       },
                       {
-                        "name": "Boys & Girls Club of Tampa Bay",
+                        "label": "Boys & Girls Club of Tampa Bay",
                         "image": {
                           "src": "https://vendure.buzznerdrv.com/assets/source/2e/boys-and-girls-club.png",
                           "alt": "Boys & Girls Club of Tampa Bay logo — a Sun State International community partner",
@@ -230,7 +230,7 @@
                         }
                       },
                       {
-                        "name": "Abe Brown Ministries, Inc",
+                        "label": "Abe Brown Ministries, Inc",
                         "image": {
                           "src": "https://vendure.buzznerdrv.com/assets/source/40/abe-brown.png",
                           "alt": "Abe Brown Ministries, Inc logo — a Sun State International community partner",
@@ -239,7 +239,7 @@
                         }
                       },
                       {
-                        "name": "Federal Reserve Bank of Atlanta",
+                        "label": "Federal Reserve Bank of Atlanta",
                         "image": {
                           "src": "https://vendure.buzznerdrv.com/assets/source/40/bank-of-atl.png",
                           "alt": "Federal Reserve Bank of Atlanta logo — a Sun State International community partner",
@@ -248,7 +248,7 @@
                         }
                       },
                       {
-                        "name": "Feeding Tampa Bay",
+                        "label": "Feeding Tampa Bay",
                         "image": {
                           "src": "https://vendure.buzznerdrv.com/assets/source/c6/feeding-tb-logo-1.png",
                           "alt": "Feeding Tampa Bay logo — a Sun State International community partner",
