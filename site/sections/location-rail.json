@@ -3,7 +3,7 @@
   "id": "location-rail",
   "name": "Find a location",
   "css": "/* The \"Find a location\" band: a map, two facet filters and a scrolling row of\n   location cards. The pills and the cards are coded widgets because the\n   platform filter behaviour matches a card's facets from its own data-\n   attributes, and no block prop emits those; the behaviour itself is declared\n   on the section, so the filtering is not scripted. */\n\n/* The handoff gives this band 120px of air top and bottom. */\n[data-bz-section=\"location-rail\"] > .bz-section { padding-block: 120px }\n[data-bz-section=\"location-rail\"] .bz-block { padding-block: 0 }\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-head-col\"] .bz-block + .bz-block { padding-block-start: 18px }\n[data-bz-section=\"location-rail\"] h2 { font-size: 38px; margin: 0 }\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-body\"] .bz-text { max-width: 640px }\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-body\"] p { font-size: 16px; line-height: 1.6; color: var(--body-text); margin: 0 }\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-head\"] { margin-bottom: 40px }\n\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-map\"] .bz-map {\n  width: 100%; aspect-ratio: auto; min-height: 460px;\n  background: var(--paper); border: 1px solid var(--line); margin: 0;\n  border-radius: 0;\n}\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-map\"] .bz-loclist { display: none }\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-map\"] .bz-widget__empty { display: none }\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-map-row\"] { margin-bottom: 44px }\n\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-brands\"] { margin-bottom: 18px }\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-perks\"] { margin-bottom: 0 }\n\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-nav-row\"] { margin-block: 44px 20px }\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-nav\"] .bz-btns { margin-block: 0; justify-content: flex-end; gap: 8px }\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-nav\"] .bz-btn {\n  width: 38px; height: 38px; min-height: 0; padding: 0;\n  border: 1px solid var(--line); background: var(--card); color: var(--ink);\n  font-family: var(--font-body); font-weight: 400; font-size: 15px;\n}\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-nav\"] .bz-btn:hover { border-color: var(--muted) }\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-nav\"] { display: flex; justify-content: flex-end; align-items: center; gap: 8px }\n[data-bz-section=\"location-rail\"] [data-bz-node=\"lr-nav\"] .bz-block { padding-block: 0 }\n@media (max-width: 640px) {\n  /* The handoff keeps the rail arrows on a phone. */\n  [data-bz-section=\"location-rail\"] .ss-filter__l { flex-basis: auto; padding-top: 0 }\n}",
-  "js": "/* Arrow scrolling for the location rail.\n *\n * The filtering itself is the platform `filter` behaviour declared on the\n * section \u2014 nothing here touches it. The rail's own horizontal scroll is a\n * plain overflow container, correct with no script at all; these two buttons\n * only page it, and they are real links until this runs.\n */\n(function () {\n  document.querySelectorAll('[data-bz-section=\"location-rail\"]').forEach(function (band) {\n    var track = band.querySelector('.ss-locrail__track');\n    if (!track) return;\n    function page(dir) {\n      var card = track.querySelector('.ss-loc:not([hidden])');\n      var step = card ? card.offsetWidth + 20 : track.clientWidth;\n      track.scrollBy({ left: dir * step, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });\n    }\n    ['lr-prev', 'lr-next'].forEach(function (id, i) {\n      var host = band.querySelector('[data-bz-node=\"' + id + '\"]');\n      var control = host && host.querySelector('a, button');\n      if (!control) return;\n      control.addEventListener('click', function (event) {\n        event.preventDefault();\n        page(i === 0 ? -1 : 1);\n      });\n    });\n  });\n})();",
+  "js": "/* Arrow scrolling for the location rail.\n *\n * The filtering itself is the platform `filter` behaviour declared on the\n * section — nothing here touches it. The rail's own horizontal scroll is a\n * plain overflow container, correct with no script at all; these two buttons\n * only page it, and they are real links until this runs.\n */\n(function () {\n  document.querySelectorAll('[data-bz-section=\"location-rail\"]').forEach(function (band) {\n    var track = band.querySelector('.ss-locrail__track');\n    if (!track) return;\n    function page(dir) {\n      var card = track.querySelector('.ss-loc:not([hidden])');\n      var step = card ? card.offsetWidth + 20 : track.clientWidth;\n      track.scrollBy({ left: dir * step, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });\n    }\n    ['lr-prev', 'lr-next'].forEach(function (id, i) {\n      var host = band.querySelector('[data-bz-node=\"' + id + '\"]');\n      var control = host && host.querySelector('a, button');\n      if (!control) return;\n      control.addEventListener('click', function (event) {\n        event.preventDefault();\n        page(i === 0 ? -1 : 1);\n      });\n    });\n  });\n})();",
   "props": [
     {
       "key": "eyebrow",
@@ -239,10 +239,42 @@
                     "snapshot": {
                       "locations": [
                         {
+                          "id": "16",
+                          "name": "Location 2",
+                          "slug": "location-2",
+                          "num": "01",
+                          "href": "/locations/location-2",
+                          "streetAddress": null,
+                          "city": "",
+                          "region": "",
+                          "postalCode": "",
+                          "country": null,
+                          "latitude": null,
+                          "longitude": null,
+                          "phone": "",
+                          "phoneUrl": null,
+                          "mapUrl": null,
+                          "email": null,
+                          "brands": "",
+                          "services": "",
+                          "perks": "",
+                          "brandKeys": "",
+                          "perkKeys": "",
+                          "perk1": null,
+                          "perk2": null,
+                          "perk3": null,
+                          "departments": "",
+                          "hours": "",
+                          "phone2": null,
+                          "phone2Url": null,
+                          "phone3": null,
+                          "phone3Url": null
+                        },
+                        {
                           "id": "15",
                           "name": "sudip1 location",
                           "slug": "main",
-                          "num": "01",
+                          "num": "02",
                           "href": "/locations/main",
                           "streetAddress": "sdfdsf werewr",
                           "city": "",
@@ -255,7 +287,7 @@
                           "phoneUrl": null,
                           "mapUrl": "https://www.google.com/maps/search/?api=1&query=40.7258,-111.961",
                           "email": null,
-                          "brands": "Brand1 \u00b7 Brand 2 \u00b7 Brand 3",
+                          "brands": "Brand1 · Brand 2 · Brand 3",
                           "services": "",
                           "perks": "",
                           "brandKeys": "brand1 brand-2 brand-3",
@@ -263,7 +295,7 @@
                           "perk1": null,
                           "perk2": null,
                           "perk3": null,
-                          "departments": "Sales \u00b7 Used Sales \u00b7 Service \u00b7 Parts \u00b7 Body Shop \u00b7 Tire \u00b7 Rental \u00b7 Leasing \u00b7 Finance \u00b7 Ecommerce Ops \u00b7 Office \u00b7 Warehouse",
+                          "departments": "Sales · Used Sales · Service · Parts · Body Shop · Tire · Rental · Leasing · Finance · Ecommerce Ops · Office · Warehouse",
                           "hours": "",
                           "phone2": null,
                           "phone2Url": null,
@@ -373,7 +405,7 @@
                     "align": "left",
                     "items": [
                       {
-                        "label": "\u2039",
+                        "label": "‹",
                         "url": "#",
                         "style": "secondary",
                         "intent": "carousel-prev"
@@ -389,7 +421,7 @@
                     "align": "left",
                     "items": [
                       {
-                        "label": "\u203a",
+                        "label": "›",
                         "url": "#",
                         "style": "secondary",
                         "intent": "carousel-next"
