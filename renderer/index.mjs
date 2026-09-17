@@ -31,7 +31,6 @@
 // condition cannot reach them; and a `location` menu item type, whose `ref` is
 // the Admin slug rather than a page slug, for the same reason.
 //
-
 // 4.18.0 — `locations-map` draws static OpenStreetMap tiles unless a placement
 // asks for an interactive provider. The old default was the openstreetmap
 // iframe, which is the one output that cannot appear in three of the four
@@ -125,7 +124,6 @@
 // universal props: the renderer always read those off any node's wrapper while no
 // widget declared them, so the validator refused edits the build would render.
 export const RENDERER_VERSION = '4.19.0';
-
 
 export {
   LOCATION_SOURCE,
