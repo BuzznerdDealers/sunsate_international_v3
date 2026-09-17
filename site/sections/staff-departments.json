@@ -15,9 +15,14 @@
           "label": "Anchor id"
         },
         {
+          "key": "code",
+          "type": "text",
+          "label": "Department code (sales, parts, service, …)"
+        },
+        {
           "key": "label",
           "type": "text",
-          "label": "Department name (must match the Staff module)"
+          "label": "Department name"
         },
         {
           "key": "blurb",
@@ -94,7 +99,7 @@
                     "widget": "staff",
                     "config": {
                       "heading": "",
-                      "department": "{{label}}"
+                      "departmentCode": "{{code}}"
                     }
                   }
                 }
