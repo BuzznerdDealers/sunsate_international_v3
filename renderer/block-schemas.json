@@ -1,5 +1,5 @@
 {
-  "rendererVersion": "4.23.0",
+  "rendererVersion": "4.22.0",
   "documentVersion": 2,
   "gridColumns": 12,
   "tokenGroups": {
@@ -691,84 +691,6 @@
       "config": [
         "locationSlug"
       ],
-      "fields": [
-        {
-          "key": "label",
-          "type": "text",
-          "label": "Label"
-        },
-        {
-          "key": "value",
-          "type": "text",
-          "label": "Filter value"
-        }
-      ]
-    },
-    {
-      "id": "posts",
-      "label": "Blog posts",
-      "description": "Every published post, newest first, from Posts. A post published in the dashboard joins the list on the next build.",
-      "local": true,
-      "match": "slug",
-      "config": [
-        "topic",
-        "limit"
-      ],
-      "fields": [
-        {
-          "key": "slug",
-          "type": "text",
-          "label": "Slug"
-        },
-        {
-          "key": "title",
-          "type": "text",
-          "label": "Title"
-        },
-        {
-          "key": "href",
-          "type": "url",
-          "label": "Post link"
-        },
-        {
-          "key": "date",
-          "type": "text",
-          "label": "Date"
-        },
-        {
-          "key": "dateISO",
-          "type": "text",
-          "label": "Date (machine readable)"
-        },
-        {
-          "key": "excerpt",
-          "type": "textarea",
-          "label": "Excerpt"
-        },
-        {
-          "key": "topic",
-          "type": "text",
-          "label": "Topic"
-        },
-        {
-          "key": "topicKey",
-          "type": "text",
-          "label": "Topic (filter value)"
-        },
-        {
-          "key": "coverImage",
-          "type": "image",
-          "label": "Cover image"
-        }
-      ]
-    },
-    {
-      "id": "post-topics",
-      "label": "Post topics (filter options)",
-      "description": "One row per topic at least one published post carries.",
-      "local": true,
-      "match": "value",
-      "config": [],
       "fields": [
         {
           "key": "label",
