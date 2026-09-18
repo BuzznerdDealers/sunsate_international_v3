@@ -227,10 +227,290 @@
           "lg-map-w": {
             "locations": [
               {
+                "id": "20",
+                "name": "Brooksville",
+                "slug": "brooksville",
+                "num": "01",
+                "href": null,
+                "streetAddress": null,
+                "city": null,
+                "region": null,
+                "postalCode": null,
+                "country": null,
+                "latitude": null,
+                "longitude": null,
+                "phone": null,
+                "phoneUrl": null,
+                "mapUrl": null,
+                "email": null,
+                "brands": "",
+                "services": "",
+                "perks": "",
+                "brandKeys": "",
+                "perkKeys": "",
+                "perk1": null,
+                "perk2": null,
+                "perk3": null,
+                "departments": "",
+                "hours": "",
+                "phone2": null,
+                "phone2Url": null,
+                "phone3": null,
+                "phone3Url": null,
+                "group": null,
+                "groupKey": null,
+                "photo": {
+                  "src": "",
+                  "alt": ""
+                },
+                "brandRows": [],
+                "serviceRows": [],
+                "perkRows": [],
+                "departmentRows": [],
+                "hoursRows": []
+              },
+              {
+                "id": "19",
+                "name": "Davenport",
+                "slug": "davenport",
+                "num": "02",
+                "href": null,
+                "streetAddress": "41609 Hwy 27",
+                "city": "Davenport",
+                "region": "FL",
+                "postalCode": "33837",
+                "country": null,
+                "latitude": null,
+                "longitude": null,
+                "phone": "(863) 424-2411",
+                "phoneUrl": "tel:8634242411",
+                "mapUrl": "https://www.google.com/maps/search/?api=1&query=41609%20Hwy%2027%2C%20Davenport%2C%20FL%2C%2033837",
+                "email": null,
+                "brands": "",
+                "services": "",
+                "perks": "",
+                "brandKeys": "",
+                "perkKeys": "",
+                "perk1": null,
+                "perk2": null,
+                "perk3": null,
+                "departments": "Sales · Service · Parts",
+                "hours": "Sales: 07:00–17:00 Mon–Sat\n\nService: 07:00–17:00 Mon–Sat\n\nParts: 07:00–17:00 Mon–Fri, 07:00–12:00 Sat",
+                "phone2": null,
+                "phone2Url": null,
+                "phone3": null,
+                "phone3Url": null,
+                "group": null,
+                "groupKey": null,
+                "photo": {
+                  "src": "",
+                  "alt": ""
+                },
+                "brandRows": [],
+                "serviceRows": [],
+                "perkRows": [],
+                "departmentRows": [
+                  {
+                    "name": "Sales",
+                    "key": "sales",
+                    "phone": null,
+                    "phoneUrl": null,
+                    "email": null,
+                    "hours": "07:00–17:00 Mon–Sat"
+                  },
+                  {
+                    "name": "Service",
+                    "key": "service",
+                    "phone": null,
+                    "phoneUrl": null,
+                    "email": null,
+                    "hours": "07:00–17:00 Mon–Sat"
+                  },
+                  {
+                    "name": "Parts",
+                    "key": "parts",
+                    "phone": null,
+                    "phoneUrl": null,
+                    "email": null,
+                    "hours": "07:00–17:00 Mon–Fri, 07:00–12:00 Sat"
+                  }
+                ],
+                "hoursRows": [
+                  {
+                    "department": "Sales",
+                    "key": "sales",
+                    "summary": "07:00–17:00 Mon–Sat",
+                    "days": [
+                      {
+                        "day": "Sunday",
+                        "hours": "Closed",
+                        "opensAt": null,
+                        "closesAt": null,
+                        "closed": true
+                      },
+                      {
+                        "day": "Monday",
+                        "hours": "07:00–17:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Tuesday",
+                        "hours": "07:00–17:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Wednesday",
+                        "hours": "07:00–17:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Thursday",
+                        "hours": "07:00–17:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Friday",
+                        "hours": "07:00–17:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Saturday",
+                        "hours": "07:00–17:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      }
+                    ]
+                  },
+                  {
+                    "department": "Service",
+                    "key": "service",
+                    "summary": "07:00–17:00 Mon–Sat",
+                    "days": [
+                      {
+                        "day": "Sunday",
+                        "hours": "Closed",
+                        "opensAt": null,
+                        "closesAt": null,
+                        "closed": true
+                      },
+                      {
+                        "day": "Monday",
+                        "hours": "07:00–17:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Tuesday",
+                        "hours": "07:00–17:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Wednesday",
+                        "hours": "07:00–17:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Thursday",
+                        "hours": "07:00–17:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Friday",
+                        "hours": "07:00–17:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Saturday",
+                        "hours": "07:00–17:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      }
+                    ]
+                  },
+                  {
+                    "department": "Parts",
+                    "key": "parts",
+                    "summary": "07:00–17:00 Mon–Fri, 07:00–12:00 Sat",
+                    "days": [
+                      {
+                        "day": "Sunday",
+                        "hours": "Closed",
+                        "opensAt": null,
+                        "closesAt": null,
+                        "closed": true
+                      },
+                      {
+                        "day": "Monday",
+                        "hours": "07:00–17:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Tuesday",
+                        "hours": "07:00–17:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Wednesday",
+                        "hours": "07:00–17:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Thursday",
+                        "hours": "07:00–17:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Friday",
+                        "hours": "07:00–17:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Saturday",
+                        "hours": "07:00–12:00",
+                        "opensAt": "07:00",
+                        "closesAt": "12:00",
+                        "closed": false
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
                 "id": "18",
                 "name": "Sarasota",
                 "slug": "sarasota",
-                "num": "01",
+                "num": "03",
                 "href": null,
                 "streetAddress": "1000 Sarasota Center Blvd.",
                 "city": "Sarasota",
@@ -467,7 +747,7 @@
                 "id": "17",
                 "name": "Tampa",
                 "slug": "tampa",
-                "num": "02",
+                "num": "04",
                 "href": null,
                 "streetAddress": "6020 Adamo Drive",
                 "city": "Tampa",
