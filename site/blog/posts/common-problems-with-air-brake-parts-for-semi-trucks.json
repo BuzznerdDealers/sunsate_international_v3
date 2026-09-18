@@ -24,6 +24,13 @@
           }
         },
         {
+          "id": "spacer",
+          "type": "spacer",
+          "props": {
+            "size": 6
+          }
+        },
+        {
           "id": "intro-row",
           "type": "row",
           "props": {
@@ -38,15 +45,24 @@
               },
               "children": [
                 {
+                  "id": "heading",
+                  "type": "heading",
+                  "props": {
+                    "headingLevel": 4,
+                    "align": "left",
+                    "text": "Commercial Trucks"
+                  }
+                },
+                {
                   "id": "intro-text",
                   "type": "text",
                   "props": {
                     "width": "prose",
-                    "text": "Commercial Trucks\n\nCommercial trucks depend on reliable braking performance every mile they travel. Whether you’re hauling freight across Florida or making local deliveries, your air brake system is one of the most important safety components on your truck. When even one part begins to wear out or fail, it can lead to longer stopping distances, unexpected downtime, expensive repairs, and failed inspections. Understanding the most common problems with air brake parts can help you recognize issues early and keep your trucks operating safely."
+                    "text": "Commercial trucks depend on reliable braking performance every mile they travel. Whether you’re hauling freight across Florida or making local deliveries, your air brake system is one of the most important safety components on your truck. When even one part begins to wear out or fail, it can lead to longer stopping distances, unexpected downtime, expensive repairs, and failed inspections. Understanding the most common problems with air brake parts can help you recognize issues early and keep your trucks operating safely."
                   }
                 },
                 {
-                  "id": "spacer",
+                  "id": "spacer-2",
                   "type": "spacer",
                   "props": {
                     "size": 6
@@ -57,7 +73,7 @@
           ]
         },
         {
-          "id": "heading",
+          "id": "heading-2",
           "type": "heading",
           "props": {
             "headingLevel": 2,
@@ -65,7 +81,7 @@
           }
         },
         {
-          "id": "heading-2",
+          "id": "heading-3",
           "type": "heading",
           "props": {
             "headingLevel": 2,
@@ -83,14 +99,14 @@
           }
         },
         {
-          "id": "spacer-2",
+          "id": "spacer-3",
           "type": "spacer",
           "props": {
             "size": 6
           }
         },
         {
-          "id": "heading-3",
+          "id": "heading-4",
           "type": "heading",
           "props": {
             "headingLevel": 2,
@@ -108,14 +124,14 @@
           }
         },
         {
-          "id": "spacer-3",
+          "id": "spacer-4",
           "type": "spacer",
           "props": {
             "size": 6
           }
         },
         {
-          "id": "heading-4",
+          "id": "heading-5",
           "type": "heading",
           "props": {
             "headingLevel": 2,
@@ -133,14 +149,14 @@
           }
         },
         {
-          "id": "spacer-4",
+          "id": "spacer-5",
           "type": "spacer",
           "props": {
             "size": 6
           }
         },
         {
-          "id": "heading-5",
+          "id": "heading-6",
           "type": "heading",
           "props": {
             "headingLevel": 2,
@@ -158,14 +174,14 @@
           }
         },
         {
-          "id": "spacer-5",
+          "id": "spacer-6",
           "type": "spacer",
           "props": {
             "size": 6
           }
         },
         {
-          "id": "heading-6",
+          "id": "heading-7",
           "type": "heading",
           "props": {
             "headingLevel": 2,
@@ -183,14 +199,14 @@
           }
         },
         {
-          "id": "spacer-6",
+          "id": "spacer-7",
           "type": "spacer",
           "props": {
             "size": 6
           }
         },
         {
-          "id": "heading-7",
+          "id": "heading-8",
           "type": "heading",
           "props": {
             "headingLevel": 2,
@@ -208,14 +224,14 @@
           }
         },
         {
-          "id": "spacer-7",
+          "id": "spacer-8",
           "type": "spacer",
           "props": {
             "size": 6
           }
         },
         {
-          "id": "heading-8",
+          "id": "heading-9",
           "type": "heading",
           "props": {
             "headingLevel": 2,
@@ -233,14 +249,14 @@
           }
         },
         {
-          "id": "spacer-8",
+          "id": "spacer-9",
           "type": "spacer",
           "props": {
             "size": 6
           }
         },
         {
-          "id": "heading-9",
+          "id": "heading-10",
           "type": "heading",
           "props": {
             "headingLevel": 2,
@@ -258,14 +274,14 @@
           }
         },
         {
-          "id": "spacer-9",
+          "id": "spacer-10",
           "type": "spacer",
           "props": {
             "size": 6
           }
         },
         {
-          "id": "heading-10",
+          "id": "heading-11",
           "type": "heading",
           "props": {
             "headingLevel": 2,
@@ -283,14 +299,14 @@
           }
         },
         {
-          "id": "spacer-10",
+          "id": "spacer-11",
           "type": "spacer",
           "props": {
             "size": 6
           }
         },
         {
-          "id": "heading-11",
+          "id": "heading-12",
           "type": "heading",
           "props": {
             "headingLevel": 2,
@@ -308,14 +324,14 @@
           }
         },
         {
-          "id": "spacer-11",
+          "id": "spacer-12",
           "type": "spacer",
           "props": {
             "size": 6
           }
         },
         {
-          "id": "heading-12",
+          "id": "heading-13",
           "type": "heading",
           "props": {
             "headingLevel": 2,
