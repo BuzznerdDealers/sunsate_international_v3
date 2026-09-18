@@ -833,12 +833,30 @@
       return matchAny ? results.some(Boolean) : results.every(Boolean);
     }
 
+    // An item inside a `data-bz-reveal="dim"` subtree stays in the page when it
+    // does not match, and only reports whether it did. That is how one chip row
+    // drives two views of the same set: the cards below go away, and the pins on
+    // the map light up and dim without the map losing its shape.
+    var dimmed = items.map(function (item) {
+      var host = item.closest && item.closest('[data-bz-reveal]');
+      return !!host && host.getAttribute('data-bz-reveal') === 'dim';
+    });
+    // The count is a count of locations, not of elements that represent one. A
+    // dimmed pin is the same rooftop as the card below it, so counting both would
+    // say twelve. When everything is dimmed there is no second view and the
+    // dimmed items are the set.
+    var counted = dimmed.some(function (d) { return !d; })
+      ? function (i) { return !dimmed[i]; }
+      : function () { return true; };
+
     function apply() {
       var shown = 0;
-      items.forEach(function (item) {
+      items.forEach(function (item, i) {
         var visible = matches(item);
-        item.hidden = !visible;
-        if (visible) shown += 1;
+        if (dimmed[i]) item.removeAttribute('hidden');
+        else item.hidden = !visible;
+        item.setAttribute('data-bz-match', visible ? '1' : '0');
+        if (visible && counted(i)) shown += 1;
       });
       if (countHost) {
         var template = countHost.getAttribute('data-bz-count-template');
