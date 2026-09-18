@@ -6,15 +6,15 @@
   "rewrites": [
     {
       "source": "/store",
-      "destination": "https://vikas-group.buzznerdrv.com/store"
+      "destination": "https://sudip-dealer.buzznerdsubsite.loc/store"
     },
     {
       "source": "/store/",
-      "destination": "https://vikas-group.buzznerdrv.com/store/"
+      "destination": "https://sudip-dealer.buzznerdsubsite.loc/store/"
     },
     {
       "source": "/store/:path*",
-      "destination": "https://vikas-group.buzznerdrv.com/store/:path*"
+      "destination": "https://sudip-dealer.buzznerdsubsite.loc/store/:path*"
     }
   ],
   "headers": [
