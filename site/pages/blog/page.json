@@ -70,12 +70,62 @@
           "countTemplate": "{n} articles",
           "moreLabel": "Read more →",
           "emptyText": "No posts in this topic yet.",
-          "posts": {
-            "source": "posts"
-          },
-          "topics": {
-            "source": "post-topics"
-          }
+          "posts": [
+            {
+              "topic": "Service",
+              "topicKey": "service",
+              "date": "Jul 30, 2026",
+              "dateISO": "2026-07-30",
+              "title": "When to Schedule Semi Truck Alignment Near Me",
+              "href": "/blog/posts/when-to-schedule-semi-truck-alignment-near-me",
+              "excerpt": "Maybe your truck pulls to one side, your steering wheel feels off-center, or your tires are wearing unevenly. While these may seem like minor issues at first, they can quickly turn into expensive repairs, poor fuel economy, and unnecessary downtime."
+            },
+            {
+              "topic": "Diagnostics",
+              "topicKey": "diagnostics",
+              "date": "Jul 13, 2026",
+              "dateISO": "2026-07-13",
+              "title": "How Electrical Diagnostic Tools Prevent Breakdowns",
+              "href": "/blog/posts/how-electrical-diagnostic-tools-prevent-breakdowns",
+              "excerpt": "With today’s heavy-duty vehicles relying on dozens of sensors, electronic control modules, wiring harnesses, and onboard computers, even a small electrical issue can quickly turn into unexpected downtime. That’s why professional electrical diagnostic tools have become essential for keeping trucks on the road."
+            },
+            {
+              "topic": "Parts",
+              "topicKey": "parts",
+              "date": "Jun 25, 2026",
+              "dateISO": "2026-06-25",
+              "title": "Common Problems With Air Brake Parts for Semi Trucks",
+              "href": "/blog/posts/common-problems-with-air-brake-parts-for-semi-trucks",
+              "excerpt": "When even one part begins to wear out or fail, it can lead to longer stopping distances, unexpected downtime, expensive repairs, and failed inspections. Understanding the most common problems with air brake parts can help you recognize issues early and keep your trucks operating safely."
+            },
+            {
+              "topic": "Maintenance",
+              "topicKey": "maintenance",
+              "date": "Jun 14, 2026",
+              "dateISO": "2026-06-14",
+              "title": "Commercial Truck Oil Change Mistakes That Cost You",
+              "href": "/blog/posts/commercial-truck-oil-change-mistakes-that-cost-you",
+              "excerpt": "For owner-operators and fleet managers alike, routine maintenance isn’t just another item on the calendar. It’s one of the smartest investments you can make in your equipment."
+            }
+          ],
+          "topics": [
+            {
+              "label": "Service",
+              "value": "service"
+            },
+            {
+              "label": "Diagnostics",
+              "value": "diagnostics"
+            },
+            {
+              "label": "Parts",
+              "value": "parts"
+            },
+            {
+              "label": "Maintenance",
+              "value": "maintenance"
+            }
+          ]
         }
       }
     },
