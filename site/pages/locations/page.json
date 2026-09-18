@@ -118,10 +118,10 @@
                           "phoneUrl": "tel:8136273282",
                           "mapUrl": "https://www.google.com/maps/search/?api=1&query=105%20East%206th%20Ave.%2C%20Tampa%2C%20FL%2C%2033619",
                           "email": null,
-                          "brands": "",
+                          "brands": "Hyundai",
                           "services": "",
                           "perks": "",
-                          "brandKeys": "",
+                          "brandKeys": "hyundai",
                           "perkKeys": "",
                           "perk1": null,
                           "perk2": null,
@@ -138,7 +138,12 @@
                             "src": "",
                             "alt": ""
                           },
-                          "brandRows": [],
+                          "brandRows": [
+                            {
+                              "name": "Hyundai",
+                              "key": "hyundai"
+                            }
+                          ],
                           "serviceRows": [],
                           "perkRows": [],
                           "departmentRows": [
@@ -1079,7 +1084,12 @@
                           "hoursRows": []
                         }
                       ],
-                      "brandFacets": [],
+                      "brandFacets": [
+                        {
+                          "value": "hyundai",
+                          "label": "Hyundai"
+                        }
+                      ],
                       "perkFacets": []
                     }
                   }
@@ -1134,10 +1144,10 @@
               "phoneUrl": "tel:8136273282",
               "mapUrl": "https://www.google.com/maps/search/?api=1&query=105%20East%206th%20Ave.%2C%20Tampa%2C%20FL%2C%2033619",
               "email": null,
-              "brands": "",
+              "brands": "Hyundai",
               "services": "",
               "perks": "",
-              "brandKeys": "",
+              "brandKeys": "hyundai",
               "perkKeys": "",
               "perk1": null,
               "perk2": null,
@@ -1154,7 +1164,12 @@
                 "src": "",
                 "alt": ""
               },
-              "brandRows": [],
+              "brandRows": [
+                {
+                  "name": "Hyundai",
+                  "key": "hyundai"
+                }
+              ],
               "serviceRows": [],
               "perkRows": [],
               "departmentRows": [
@@ -2117,10 +2132,10 @@
                 "phoneUrl": "tel:8136273282",
                 "mapUrl": "https://www.google.com/maps/search/?api=1&query=105%20East%206th%20Ave.%2C%20Tampa%2C%20FL%2C%2033619",
                 "email": null,
-                "brands": "",
+                "brands": "Hyundai",
                 "services": "",
                 "perks": "",
-                "brandKeys": "",
+                "brandKeys": "hyundai",
                 "perkKeys": "",
                 "perk1": null,
                 "perk2": null,
@@ -2137,7 +2152,12 @@
                   "src": "",
                   "alt": ""
                 },
-                "brandRows": [],
+                "brandRows": [
+                  {
+                    "name": "Hyundai",
+                    "key": "hyundai"
+                  }
+                ],
                 "serviceRows": [],
                 "perkRows": [],
                 "departmentRows": [
@@ -3078,7 +3098,12 @@
                 "hoursRows": []
               }
             ],
-            "brandFacets": [],
+            "brandFacets": [
+              {
+                "value": "hyundai",
+                "label": "Hyundai"
+              }
+            ],
             "perkFacets": []
           }
         }
