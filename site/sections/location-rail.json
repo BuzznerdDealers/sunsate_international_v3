@@ -239,10 +239,119 @@
                     "snapshot": {
                       "locations": [
                         {
+                          "id": "17",
+                          "name": "Tampa",
+                          "slug": "tampa",
+                          "num": "01",
+                          "href": "/locations/tampa",
+                          "streetAddress": null,
+                          "city": null,
+                          "region": null,
+                          "postalCode": null,
+                          "country": null,
+                          "latitude": null,
+                          "longitude": null,
+                          "phone": null,
+                          "phoneUrl": null,
+                          "mapUrl": null,
+                          "email": null,
+                          "brands": "",
+                          "services": "",
+                          "perks": "",
+                          "brandKeys": "",
+                          "perkKeys": "",
+                          "perk1": null,
+                          "perk2": null,
+                          "perk3": null,
+                          "departments": "Sales",
+                          "hours": "Sales: 10:00–16:00 Sun, 07:00–17:00 Mon–Sat",
+                          "phone2": null,
+                          "phone2Url": null,
+                          "phone3": null,
+                          "phone3Url": null,
+                          "group": null,
+                          "groupKey": null,
+                          "photo": {
+                            "src": "",
+                            "alt": ""
+                          },
+                          "brandRows": [],
+                          "serviceRows": [],
+                          "perkRows": [],
+                          "departmentRows": [
+                            {
+                              "name": "Sales",
+                              "key": "sales",
+                              "phone": null,
+                              "phoneUrl": null,
+                              "email": null,
+                              "hours": "10:00–16:00 Sun, 07:00–17:00 Mon–Sat"
+                            }
+                          ],
+                          "hoursRows": [
+                            {
+                              "department": "Sales",
+                              "key": "sales",
+                              "summary": "10:00–16:00 Sun, 07:00–17:00 Mon–Sat",
+                              "days": [
+                                {
+                                  "day": "Sunday",
+                                  "hours": "10:00–16:00",
+                                  "opensAt": "10:00",
+                                  "closesAt": "16:00",
+                                  "closed": false
+                                },
+                                {
+                                  "day": "Monday",
+                                  "hours": "07:00–17:00",
+                                  "opensAt": "07:00",
+                                  "closesAt": "17:00",
+                                  "closed": false
+                                },
+                                {
+                                  "day": "Tuesday",
+                                  "hours": "07:00–17:00",
+                                  "opensAt": "07:00",
+                                  "closesAt": "17:00",
+                                  "closed": false
+                                },
+                                {
+                                  "day": "Wednesday",
+                                  "hours": "07:00–17:00",
+                                  "opensAt": "07:00",
+                                  "closesAt": "17:00",
+                                  "closed": false
+                                },
+                                {
+                                  "day": "Thursday",
+                                  "hours": "07:00–17:00",
+                                  "opensAt": "07:00",
+                                  "closesAt": "17:00",
+                                  "closed": false
+                                },
+                                {
+                                  "day": "Friday",
+                                  "hours": "07:00–17:00",
+                                  "opensAt": "07:00",
+                                  "closesAt": "17:00",
+                                  "closed": false
+                                },
+                                {
+                                  "day": "Saturday",
+                                  "hours": "07:00–17:00",
+                                  "opensAt": "07:00",
+                                  "closesAt": "17:00",
+                                  "closed": false
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
                           "id": "15",
                           "name": "Vikas Loc1",
                           "slug": "main",
-                          "num": "01",
+                          "num": "02",
                           "href": "/locations/main",
                           "streetAddress": null,
                           "city": null,
