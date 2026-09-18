@@ -727,6 +727,19 @@
                   "ref": "inventory?type=truck&condition=used"
                 },
                 {
+                  "id": "nm-trucks-deal",
+                  "label": "Deal of the week",
+                  "type": "page",
+                  "ref": "deal-of-the-week"
+                }
+              ]
+            },
+            {
+              "id": "nm-trucks-body",
+              "label": "By body style",
+              "type": "label",
+              "children": [
+                {
                   "id": "nm-trucks-sleeper",
                   "label": "Sleeper cabs",
                   "type": "inventory",
@@ -743,18 +756,12 @@
                   "label": "Capacity yard trucks",
                   "type": "page",
                   "ref": "capacity-yard-trucks"
-                },
-                {
-                  "id": "nm-trucks-deal",
-                  "label": "Deal of the week",
-                  "type": "page",
-                  "ref": "deal-of-the-week"
                 }
               ]
             },
             {
-              "id": "nm-trucks-models",
-              "label": "Truck models",
+              "id": "nm-trucks-onhwy",
+              "label": "On-highway",
               "type": "label",
               "children": [
                 {
@@ -774,7 +781,14 @@
                   "label": "LoneStar",
                   "type": "page",
                   "ref": "brochures-and-s13-powertrain"
-                },
+                }
+              ]
+            },
+            {
+              "id": "nm-trucks-voc",
+              "label": "Vocational & electric",
+              "type": "label",
+              "children": [
                 {
                   "id": "nm-trucks-hx",
                   "label": "HX Series",
@@ -804,12 +818,6 @@
                   "label": "eMV Series",
                   "type": "page",
                   "ref": "brochures-and-s13-powertrain"
-                },
-                {
-                  "id": "nm-trucks-s13",
-                  "label": "S13 integrated powertrain",
-                  "type": "page",
-                  "ref": "brochures-and-s13-powertrain"
                 }
               ]
             },
@@ -827,6 +835,12 @@
                 {
                   "id": "nm-trucks-broch",
                   "label": "Brochures & specifications",
+                  "type": "page",
+                  "ref": "brochures-and-s13-powertrain"
+                },
+                {
+                  "id": "nm-trucks-s13",
+                  "label": "S13 integrated powertrain",
                   "type": "page",
                   "ref": "brochures-and-s13-powertrain"
                 },
