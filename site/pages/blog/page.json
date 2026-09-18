@@ -64,55 +64,9 @@
         "width": "boxed",
         "paddingY": 8,
         "background": "card",
-        "anchor": "bl-posts",
-        "behaviour": "filter"
+        "anchor": "bl-posts"
       },
       "children": [
-        {
-          "id": "bp-chips-row",
-          "type": "row",
-          "props": {
-            "gap": 5
-          },
-          "children": [
-            {
-              "id": "bp-chips-col",
-              "type": "column",
-              "props": {
-                "span": 12
-              },
-              "children": [
-                {
-                  "id": "bp-chips",
-                  "type": "filter-pills",
-                  "props": {
-                    "label": "",
-                    "facet": "topic",
-                    "allLabel": "All",
-                    "options": [
-                      {
-                        "label": "Service",
-                        "value": "Service"
-                      },
-                      {
-                        "label": "Diagnostics",
-                        "value": "Diagnostics"
-                      },
-                      {
-                        "label": "Parts",
-                        "value": "Parts"
-                      },
-                      {
-                        "label": "Maintenance",
-                        "value": "Maintenance"
-                      }
-                    ]
-                  }
-                }
-              ]
-            }
-          ]
-        },
         {
           "id": "bp-head-row",
           "type": "row",
@@ -124,7 +78,7 @@
               "id": "bp-head-col",
               "type": "column",
               "props": {
-                "span": 8
+                "span": 12
               },
               "children": [
                 {
@@ -133,23 +87,6 @@
                   "props": {
                     "text": "Latest posts",
                     "headingLevel": 2
-                  }
-                }
-              ]
-            },
-            {
-              "id": "bp-count-col",
-              "type": "column",
-              "props": {
-                "span": 4
-              },
-              "children": [
-                {
-                  "id": "bp-count",
-                  "type": "result-count",
-                  "props": {
-                    "template": "{n} articles",
-                    "initial": "4 articles"
                   }
                 }
               ]
@@ -172,40 +109,10 @@
               "children": [
                 {
                   "id": "bp-list",
-                  "type": "post-cards",
+                  "type": "postsList",
                   "props": {
-                    "moreLabel": "Read more →",
-                    "emptyText": "No posts in this topic yet.",
-                    "posts": [
-                      {
-                        "topic": "Service",
-                        "date": "Jul 30, 2026",
-                        "title": "When to Schedule Semi Truck Alignment Near Me",
-                        "url": "/blog/posts/when-to-schedule-semi-truck-alignment-near-me",
-                        "excerpt": "Maybe your truck pulls to one side, your steering wheel feels off-center, or your tires are wearing unevenly. While these may seem like minor issues at first, they can quickly turn into expensive repairs, poor fuel economy, and unnecessary downtime."
-                      },
-                      {
-                        "topic": "Diagnostics",
-                        "date": "Jul 13, 2026",
-                        "title": "How Electrical Diagnostic Tools Prevent Breakdowns",
-                        "url": "/blog/posts/how-electrical-diagnostic-tools-prevent-breakdowns",
-                        "excerpt": "With today’s heavy-duty vehicles relying on dozens of sensors, electronic control modules, wiring harnesses, and onboard computers, even a small electrical issue can quickly turn into unexpected downtime. That’s why professional electrical diagnostic tools have become essential for keeping trucks on the road."
-                      },
-                      {
-                        "topic": "Parts",
-                        "date": "Jun 25, 2026",
-                        "title": "Common Problems With Air Brake Parts for Semi Trucks",
-                        "url": "/blog/posts/common-problems-with-air-brake-parts-for-semi-trucks",
-                        "excerpt": "When even one part begins to wear out or fail, it can lead to longer stopping distances, unexpected downtime, expensive repairs, and failed inspections. Understanding the most common problems with air brake parts can help you recognize issues early and keep your trucks operating safely."
-                      },
-                      {
-                        "topic": "Maintenance",
-                        "date": "Jun 14, 2026",
-                        "title": "Commercial Truck Oil Change Mistakes That Cost You",
-                        "url": "/blog/posts/commercial-truck-oil-change-mistakes-that-cost-you",
-                        "excerpt": "For owner-operators and fleet managers alike, routine maintenance isn’t just another item on the calendar. It’s one of the smartest investments you can make in your equipment."
-                      }
-                    ]
+                    "count": 6,
+                    "showDates": true
                   }
                 }
               ]
