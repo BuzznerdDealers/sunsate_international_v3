@@ -59,66 +59,35 @@
     },
     {
       "id": "bl-posts",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-rail",
+        "values": {
+          "heading": "Latest posts",
+          "anchor": "bl-posts",
+          "background": "card",
+          "allLabel": "All",
+          "countTemplate": "{n} articles",
+          "moreLabel": "Read more →",
+          "emptyText": "No posts in this topic yet.",
+          "posts": {
+            "source": "posts"
+          },
+          "topics": {
+            "source": "post-topics"
+          }
+        }
+      }
+    },
+    {
+      "id": "bl-pager",
       "type": "section",
       "props": {
         "width": "boxed",
         "paddingY": 8,
-        "background": "card",
-        "anchor": "bl-posts"
+        "background": "card"
       },
       "children": [
-        {
-          "id": "bp-head-row",
-          "type": "row",
-          "props": {
-            "gap": 5
-          },
-          "children": [
-            {
-              "id": "bp-head-col",
-              "type": "column",
-              "props": {
-                "span": 12
-              },
-              "children": [
-                {
-                  "id": "bp-head-h",
-                  "type": "heading",
-                  "props": {
-                    "text": "Latest posts",
-                    "headingLevel": 2
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "bp-row",
-          "type": "row",
-          "props": {
-            "gap": 5
-          },
-          "children": [
-            {
-              "id": "bp-col",
-              "type": "column",
-              "props": {
-                "span": 12
-              },
-              "children": [
-                {
-                  "id": "bp-list",
-                  "type": "postsList",
-                  "props": {
-                    "count": 6,
-                    "showDates": true
-                  }
-                }
-              ]
-            }
-          ]
-        },
         {
           "id": "bp-pager-row",
           "type": "row",

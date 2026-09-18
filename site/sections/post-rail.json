@@ -1,0 +1,141 @@
+{
+  "version": 2,
+  "id": "post-rail",
+  "name": "Post grid",
+  "props": [
+    { "key": "heading", "type": "text", "label": "Heading", "default": "Latest posts" },
+    { "key": "eyebrow", "type": "text", "label": "Eyebrow", "default": "" },
+    { "key": "anchor", "type": "text", "label": "Anchor id", "default": "" },
+    {
+      "key": "background",
+      "type": "select",
+      "label": "Band background",
+      "default": "card",
+      "options": [
+        { "value": "card", "label": "White" },
+        { "value": "paper", "label": "Paper" }
+      ]
+    },
+    { "key": "allLabel", "type": "text", "label": "Reset chip label", "default": "All" },
+    { "key": "countTemplate", "type": "text", "label": "Result count", "default": "{n} articles" },
+    { "key": "moreLabel", "type": "text", "label": "Card link label", "default": "Read more →" },
+    { "key": "emptyText", "type": "text", "label": "Message when a topic has no posts", "default": "No posts in this topic yet." },
+    {
+      "key": "topics",
+      "type": "list",
+      "label": "Topic chips",
+      "fields": [
+        { "key": "label", "type": "text", "label": "Label" },
+        { "key": "value", "type": "text", "label": "Filter value" }
+      ]
+    },
+    {
+      "key": "posts",
+      "type": "list",
+      "label": "Posts",
+      "fields": [
+        { "key": "topic", "type": "text", "label": "Topic" },
+        { "key": "topicKey", "type": "text", "label": "Topic — the value a chip matches" },
+        { "key": "date", "type": "text", "label": "Date" },
+        { "key": "dateISO", "type": "text", "label": "Date (machine readable)" },
+        { "key": "title", "type": "text", "label": "Title" },
+        { "key": "href", "type": "url", "label": "Post link" },
+        { "key": "excerpt", "type": "textarea", "label": "Excerpt" },
+        { "key": "coverImage", "type": "image", "label": "Cover image" }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "pr",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "{{background}}",
+        "anchor": "{{anchor}}",
+        "behaviour": "filter"
+      },
+      "children": [
+        {
+          "id": "pr-chips-row",
+          "type": "row",
+          "props": { "gap": 5 },
+          "children": [
+            {
+              "id": "pr-chips-col",
+              "type": "column",
+              "props": { "span": 12 },
+              "children": [
+                {
+                  "id": "pr-chips",
+                  "type": "filter-pills",
+                  "props": {
+                    "label": "",
+                    "facet": "topic",
+                    "allLabel": "{{allLabel}}",
+                    "options": "{{topics}}"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pr-head-row",
+          "type": "row",
+          "props": { "gap": 5 },
+          "children": [
+            {
+              "id": "pr-head-col",
+              "type": "column",
+              "props": { "span": 8 },
+              "children": [
+                {
+                  "id": "pr-head-h",
+                  "type": "heading",
+                  "props": { "text": "{{heading}}", "eyebrow": "{{eyebrow}}", "headingLevel": 2 }
+                }
+              ]
+            },
+            {
+              "id": "pr-count-col",
+              "type": "column",
+              "props": { "span": 4 },
+              "children": [
+                {
+                  "id": "pr-count",
+                  "type": "result-count",
+                  "props": { "template": "{{countTemplate}}" }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pr-row",
+          "type": "row",
+          "props": { "gap": 5 },
+          "children": [
+            {
+              "id": "pr-col",
+              "type": "column",
+              "props": { "span": 12 },
+              "children": [
+                {
+                  "id": "pr-cards",
+                  "type": "post-cards",
+                  "props": {
+                    "posts": "{{posts}}",
+                    "moreLabel": "{{moreLabel}}",
+                    "emptyText": "{{emptyText}}"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

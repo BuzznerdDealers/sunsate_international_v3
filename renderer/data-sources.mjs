@@ -184,6 +184,57 @@ export const DATA_SOURCES = [
       { key: 'value', type: 'text', label: 'Filter value' },
     ],
   },
+  // The blog, as rows a design can repeat over.
+  //
+  // Unlike every source above it, this one is not Vendure's to answer: the posts
+  // are files in this repo, already loaded and sorted by the time any node
+  // renders. So it resolves locally, from the render context, and needs nothing
+  // baked into the placement — a post published today is on the next build with
+  // no publish round-trip. `local` is what says so.
+  //
+  // `postsList` covers the common teaser and will keep covering it. This exists
+  // for the case that block cannot reach: a dealer's own card, with their topic
+  // pill and their grid, over posts that are never a typed copy.
+  {
+    id: 'posts',
+    label: 'Blog posts',
+    description:
+      'Every published post, newest first, from Posts. A post published in the dashboard joins the list on the next build.',
+    local: true,
+    match: 'slug',
+    config: ['topic', 'limit'],
+    fields: [
+      { key: 'slug', type: 'text', label: 'Slug' },
+      { key: 'title', type: 'text', label: 'Title' },
+      { key: 'href', type: 'url', label: 'Post link' },
+      // Two spellings of the same instant: one to print, one for <time> and for
+      // sorting in a filter behaviour. A card that needs neither ignores both.
+      { key: 'date', type: 'text', label: 'Date' },
+      { key: 'dateISO', type: 'text', label: 'Date (machine readable)' },
+      { key: 'excerpt', type: 'textarea', label: 'Excerpt' },
+      // The post's own field, so the pill on a card and the post it belongs to
+      // can no longer disagree. Edited on Posts, beside the title.
+      { key: 'topic', type: 'text', label: 'Topic' },
+      { key: 'topicKey', type: 'text', label: 'Topic (filter value)' },
+      { key: 'coverImage', type: 'image', label: 'Cover image' },
+    ],
+  },
+  // The chips above a post grid, for the same reason `location-brands` exists: a
+  // control for a topic nothing carries hides every card when pressed, which
+  // reads as a broken page. Typed chips also miss the topic a post introduces
+  // tomorrow, silently — the staleness the cards themselves just stopped having.
+  {
+    id: 'post-topics',
+    label: 'Post topics (filter options)',
+    description: 'One row per topic at least one published post carries.',
+    local: true,
+    match: 'value',
+    config: [],
+    fields: [
+      { key: 'label', type: 'text', label: 'Label' },
+      { key: 'value', type: 'text', label: 'Filter value' },
+    ],
+  },
   {
     id: 'staff',
     label: 'Staff',
@@ -233,7 +284,14 @@ export function resolveDataBinding(binding, resolved, opts = {}) {
   const source = dataSource(binding.source);
   if (!source) return [];
 
-  const rows = Array.isArray(resolved) ? resolved : null;
+  // A local source answers from the render context, so it has rows on an
+  // ordinary build with nothing baked. The baked value still wins when there is
+  // one: a placement the platform has resolved is the platform's answer.
+  const rows = Array.isArray(resolved)
+    ? resolved
+    : source.local
+      ? localRows(source, binding, opts.ctx)
+      : null;
   if (!rows) return opts.sample ? sampleRows(source, opts.sampleRows || 3) : [];
 
   const overlay = Array.isArray(binding.overlay) ? binding.overlay : [];
@@ -261,6 +319,79 @@ export function resolveDataBinding(binding, resolved, opts = {}) {
     const extra = extras.get(String(row?.[source.match]));
     return extra ? { ...row, ...extra } : row;
   });
+}
+
+/**
+ * Rows for a source the renderer can answer itself.
+ *
+ * Only `posts` today. The context already holds them published-only and newest
+ * first, so this maps them onto the source's field names and applies the two
+ * knobs a placement may set. A context with no posts at all is a repo whose blog
+ * is off — no rows, and the canvas falls through to samples.
+ */
+function localRows(source, binding, ctx) {
+  const posts = ctx && Array.isArray(ctx.posts) ? ctx.posts : null;
+  if (!posts) return null;
+  if (source.id === 'post-topics') return topicRows(posts);
+  if (source.id !== 'posts') return null;
+
+  const config = binding.config && typeof binding.config === 'object' ? binding.config : {};
+  const wanted = topicKey(config.topic);
+  const limit = Number(config.limit);
+  const base = String((ctx && ctx.blogBasePath) || '/blog').replace(/\/$/, '');
+
+  let rows = posts.map((post) => ({
+    slug: post.slug || '',
+    title: post.title || '',
+    href: post.slug ? `${base}/${post.slug}` : '',
+    date: formatRowDate(post.date),
+    dateISO: post.date ? String(post.date) : '',
+    excerpt: post.description || '',
+    topic: post.topic || '',
+    topicKey: topicKey(post.topic),
+    // An image prop wants `{ src, alt }`; a post with no cover gives an empty
+    // src, which every image path here already draws as a placeholder.
+    coverImage: { src: post.coverImage || '', alt: post.title || '' },
+  }));
+
+  if (wanted) rows = rows.filter((row) => row.topicKey === wanted);
+  if (Number.isFinite(limit) && limit > 0) rows = rows.slice(0, limit);
+  return rows;
+}
+
+/**
+ * The topics in play, newest post first and each one once.
+ *
+ * Ordered by the posts rather than alphabetically: the chips then lead with what
+ * the dealer is currently writing about, and a topic retired a year ago falls to
+ * the end on its own.
+ */
+function topicRows(posts) {
+  const seen = new Map();
+  for (const post of posts) {
+    const label = String(post?.topic || '').trim();
+    if (!label) continue;
+    const value = topicKey(label);
+    if (!value || seen.has(value)) continue;
+    seen.set(value, { label, value });
+  }
+  return [...seen.values()];
+}
+
+/** A topic as a filter value: what a control matches on, never the display copy. */
+function topicKey(value) {
+  return String(value || '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+/** The same date the rest of the blog prints, so a card and a post agree. */
+function formatRowDate(value) {
+  if (!value) return '';
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return String(value);
+  return date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
 }
 
 /** Placeholder rows, so a source binding has a shape on a canvas before it is published. */
