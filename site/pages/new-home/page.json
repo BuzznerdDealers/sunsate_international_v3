@@ -43,7 +43,7 @@
                     "text": "Your trusted partner for trucks, trailers, and more.",
                     "headingLevel": 1,
                     "align": "center",
-                    "eyebrow": "CELEBRATING 25 YEARS \u00b7 TAMPA \u00b7 DAVENPORT \u00b7 SARASOTA \u00b7 BROOKSVILLE, FL"
+                    "eyebrow": "CELEBRATING 25 YEARS · TAMPA · DAVENPORT · SARASOTA · BROOKSVILLE, FL"
                   }
                 },
                 {
@@ -65,10 +65,15 @@
                   "props": {
                     "widget": "inventory-search",
                     "config": {
-                      "placeholder": "Search trucks, trailers and yard trucks\u2026"
+                      "placeholder": "Search trucks, trailers and yard trucks…"
                     },
                     "snapshot": {
-                      "types": []
+                      "types": [
+                        {
+                          "slug": "truck",
+                          "label": "Truck"
+                        }
+                      ]
                     }
                   },
                   "styles": {
@@ -103,8 +108,8 @@
         "values": {
           "eyebrow": "GOING THE EXTRA MILE",
           "heading": "More than a dealership.",
-          "body": "At Sun State International, we're more than just a dealership \u2014 we're industry experts who understand the challenges of the road. Our culture is built on accountability, action, and a commitment to doing what's right. From our parts and service teams to our finance specialists, every member of the Sun State family is dedicated to helping you succeed.",
-          "ctaLabel": "Read more \u2192",
+          "body": "At Sun State International, we're more than just a dealership — we're industry experts who understand the challenges of the road. Our culture is built on accountability, action, and a commitment to doing what's right. From our parts and service teams to our finance specialists, every member of the Sun State family is dedicated to helping you succeed.",
+          "ctaLabel": "Read more →",
           "ctaUrl": "/about-us",
           "ctaStyle": "link",
           "background": "paper",
@@ -133,56 +138,56 @@
             {
               "image": {
                 "src": "/img/photo-placeholder.svg",
-                "alt": "International Sleeper Cabs \u2014 photograph to be supplied",
+                "alt": "International Sleeper Cabs — photograph to be supplied",
                 "width": 1600,
                 "height": 900
               },
               "label": "International Sleeper Cabs",
-              "ctaLabel": "Buy Now \u2192",
+              "ctaLabel": "Buy Now →",
               "ctaUrl": "/store/inventory?category=sleeper-cabs"
             },
             {
               "image": {
                 "src": "/img/photo-placeholder.svg",
-                "alt": "International Dump Trucks \u2014 photograph to be supplied",
+                "alt": "International Dump Trucks — photograph to be supplied",
                 "width": 1600,
                 "height": 900
               },
               "label": "International Dump Trucks",
-              "ctaLabel": "Buy Now \u2192",
+              "ctaLabel": "Buy Now →",
               "ctaUrl": "/store/inventory?category=dump-trucks"
             },
             {
               "image": {
                 "src": "/img/photo-placeholder.svg",
-                "alt": "International Trucks \u2014 photograph to be supplied",
+                "alt": "International Trucks — photograph to be supplied",
                 "width": 1600,
                 "height": 900
               },
               "label": "International Trucks",
-              "ctaLabel": "Buy Now \u2192",
+              "ctaLabel": "Buy Now →",
               "ctaUrl": "/store/inventory?type=truck"
             },
             {
               "image": {
                 "src": "/img/photo-placeholder.svg",
-                "alt": "IC Bus \u2014 photograph to be supplied",
+                "alt": "IC Bus — photograph to be supplied",
                 "width": 1600,
                 "height": 900
               },
               "label": "IC Bus",
-              "ctaLabel": "Buy Now \u2192",
+              "ctaLabel": "Buy Now →",
               "ctaUrl": "/store/inventory?type=bus"
             },
             {
               "image": {
                 "src": "/img/photo-placeholder.svg",
-                "alt": "Capacity Yard Trucks \u2014 photograph to be supplied",
+                "alt": "Capacity Yard Trucks — photograph to be supplied",
                 "width": 1600,
                 "height": 900
               },
               "label": "Capacity Yard Trucks",
-              "ctaLabel": "Buy Now \u2192",
+              "ctaLabel": "Buy Now →",
               "ctaUrl": "/capacity-yard-trucks"
             }
           ],
@@ -248,7 +253,7 @@
                 "perk2": null,
                 "perk3": null,
                 "departments": "Store",
-                "hours": "Store: 07:00\u201316:00 Mon\u2013Fri",
+                "hours": "Store: 07:00–16:00 Mon–Fri",
                 "phone2": null,
                 "phone2Url": null,
                 "phone3": null,
@@ -269,14 +274,14 @@
                     "phone": null,
                     "phoneUrl": null,
                     "email": null,
-                    "hours": "07:00\u201316:00 Mon\u2013Fri"
+                    "hours": "07:00–16:00 Mon–Fri"
                   }
                 ],
                 "hoursRows": [
                   {
                     "department": "Store",
                     "key": "store",
-                    "summary": "07:00\u201316:00 Mon\u2013Fri",
+                    "summary": "07:00–16:00 Mon–Fri",
                     "days": [
                       {
                         "day": "Sunday",
@@ -287,35 +292,35 @@
                       },
                       {
                         "day": "Monday",
-                        "hours": "07:00\u201316:00",
+                        "hours": "07:00–16:00",
                         "opensAt": "07:00",
                         "closesAt": "16:00",
                         "closed": false
                       },
                       {
                         "day": "Tuesday",
-                        "hours": "07:00\u201316:00",
+                        "hours": "07:00–16:00",
                         "opensAt": "07:00",
                         "closesAt": "16:00",
                         "closed": false
                       },
                       {
                         "day": "Wednesday",
-                        "hours": "07:00\u201316:00",
+                        "hours": "07:00–16:00",
                         "opensAt": "07:00",
                         "closesAt": "16:00",
                         "closed": false
                       },
                       {
                         "day": "Thursday",
-                        "hours": "07:00\u201316:00",
+                        "hours": "07:00–16:00",
                         "opensAt": "07:00",
                         "closesAt": "16:00",
                         "closed": false
                       },
                       {
                         "day": "Friday",
-                        "hours": "07:00\u201316:00",
+                        "hours": "07:00–16:00",
                         "opensAt": "07:00",
                         "closesAt": "16:00",
                         "closed": false
@@ -357,7 +362,7 @@
                 "perk2": null,
                 "perk3": null,
                 "departments": "Store",
-                "hours": "Store: 07:00\u201317:00 Mon\u2013Fri",
+                "hours": "Store: 07:00–17:00 Mon–Fri",
                 "phone2": null,
                 "phone2Url": null,
                 "phone3": null,
@@ -378,14 +383,14 @@
                     "phone": null,
                     "phoneUrl": null,
                     "email": null,
-                    "hours": "07:00\u201317:00 Mon\u2013Fri"
+                    "hours": "07:00–17:00 Mon–Fri"
                   }
                 ],
                 "hoursRows": [
                   {
                     "department": "Store",
                     "key": "store",
-                    "summary": "07:00\u201317:00 Mon\u2013Fri",
+                    "summary": "07:00–17:00 Mon–Fri",
                     "days": [
                       {
                         "day": "Sunday",
@@ -396,35 +401,35 @@
                       },
                       {
                         "day": "Monday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Tuesday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Wednesday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Thursday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Friday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
@@ -465,8 +470,8 @@
                 "perk1": null,
                 "perk2": null,
                 "perk3": null,
-                "departments": "Sales \u00b7 Service \u00b7 Parts",
-                "hours": "Sales: 07:00\u201317:00 Mon\u2013Sat\n\nService: 07:00\u201317:00 Mon\u2013Sat\n\nParts: 07:00\u201317:00 Mon\u2013Fri, 07:00\u201312:00 Sat",
+                "departments": "Sales · Service · Parts",
+                "hours": "Sales: 07:00–17:00 Mon–Sat\n\nService: 07:00–17:00 Mon–Sat\n\nParts: 07:00–17:00 Mon–Fri, 07:00–12:00 Sat",
                 "phone2": null,
                 "phone2Url": null,
                 "phone3": null,
@@ -487,7 +492,7 @@
                     "phone": null,
                     "phoneUrl": null,
                     "email": null,
-                    "hours": "07:00\u201317:00 Mon\u2013Sat"
+                    "hours": "07:00–17:00 Mon–Sat"
                   },
                   {
                     "name": "Service",
@@ -495,7 +500,7 @@
                     "phone": null,
                     "phoneUrl": null,
                     "email": null,
-                    "hours": "07:00\u201317:00 Mon\u2013Sat"
+                    "hours": "07:00–17:00 Mon–Sat"
                   },
                   {
                     "name": "Parts",
@@ -503,14 +508,14 @@
                     "phone": null,
                     "phoneUrl": null,
                     "email": null,
-                    "hours": "07:00\u201317:00 Mon\u2013Fri, 07:00\u201312:00 Sat"
+                    "hours": "07:00–17:00 Mon–Fri, 07:00–12:00 Sat"
                   }
                 ],
                 "hoursRows": [
                   {
                     "department": "Sales",
                     "key": "sales",
-                    "summary": "07:00\u201317:00 Mon\u2013Sat",
+                    "summary": "07:00–17:00 Mon–Sat",
                     "days": [
                       {
                         "day": "Sunday",
@@ -521,42 +526,42 @@
                       },
                       {
                         "day": "Monday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Tuesday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Wednesday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Thursday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Friday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Saturday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
@@ -566,7 +571,7 @@
                   {
                     "department": "Service",
                     "key": "service",
-                    "summary": "07:00\u201317:00 Mon\u2013Sat",
+                    "summary": "07:00–17:00 Mon–Sat",
                     "days": [
                       {
                         "day": "Sunday",
@@ -577,42 +582,42 @@
                       },
                       {
                         "day": "Monday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Tuesday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Wednesday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Thursday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Friday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Saturday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
@@ -622,7 +627,7 @@
                   {
                     "department": "Parts",
                     "key": "parts",
-                    "summary": "07:00\u201317:00 Mon\u2013Fri, 07:00\u201312:00 Sat",
+                    "summary": "07:00–17:00 Mon–Fri, 07:00–12:00 Sat",
                     "days": [
                       {
                         "day": "Sunday",
@@ -633,42 +638,42 @@
                       },
                       {
                         "day": "Monday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Tuesday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Wednesday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Thursday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Friday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Saturday",
-                        "hours": "07:00\u201312:00",
+                        "hours": "07:00–12:00",
                         "opensAt": "07:00",
                         "closesAt": "12:00",
                         "closed": false
@@ -702,8 +707,8 @@
                 "perk1": null,
                 "perk2": null,
                 "perk3": null,
-                "departments": "Sales \u00b7 Service \u00b7 Parts",
-                "hours": "Sales: 07:00\u201317:00 Mon\u2013Sat\n\nService: 07:00\u201317:00 Mon\u2013Sat\n\nParts: 07:00\u201317:00 Mon\u2013Sat",
+                "departments": "Sales · Service · Parts",
+                "hours": "Sales: 07:00–17:00 Mon–Sat\n\nService: 07:00–17:00 Mon–Sat\n\nParts: 07:00–17:00 Mon–Sat",
                 "phone2": null,
                 "phone2Url": null,
                 "phone3": null,
@@ -724,7 +729,7 @@
                     "phone": null,
                     "phoneUrl": null,
                     "email": null,
-                    "hours": "07:00\u201317:00 Mon\u2013Sat"
+                    "hours": "07:00–17:00 Mon–Sat"
                   },
                   {
                     "name": "Service",
@@ -732,7 +737,7 @@
                     "phone": null,
                     "phoneUrl": null,
                     "email": null,
-                    "hours": "07:00\u201317:00 Mon\u2013Sat"
+                    "hours": "07:00–17:00 Mon–Sat"
                   },
                   {
                     "name": "Parts",
@@ -740,14 +745,14 @@
                     "phone": null,
                     "phoneUrl": null,
                     "email": null,
-                    "hours": "07:00\u201317:00 Mon\u2013Sat"
+                    "hours": "07:00–17:00 Mon–Sat"
                   }
                 ],
                 "hoursRows": [
                   {
                     "department": "Sales",
                     "key": "sales",
-                    "summary": "07:00\u201317:00 Mon\u2013Sat",
+                    "summary": "07:00–17:00 Mon–Sat",
                     "days": [
                       {
                         "day": "Sunday",
@@ -758,42 +763,42 @@
                       },
                       {
                         "day": "Monday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Tuesday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Wednesday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Thursday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Friday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Saturday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
@@ -803,7 +808,7 @@
                   {
                     "department": "Service",
                     "key": "service",
-                    "summary": "07:00\u201317:00 Mon\u2013Sat",
+                    "summary": "07:00–17:00 Mon–Sat",
                     "days": [
                       {
                         "day": "Sunday",
@@ -814,42 +819,42 @@
                       },
                       {
                         "day": "Monday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Tuesday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Wednesday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Thursday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Friday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Saturday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
@@ -859,7 +864,7 @@
                   {
                     "department": "Parts",
                     "key": "parts",
-                    "summary": "07:00\u201317:00 Mon\u2013Sat",
+                    "summary": "07:00–17:00 Mon–Sat",
                     "days": [
                       {
                         "day": "Sunday",
@@ -870,42 +875,42 @@
                       },
                       {
                         "day": "Monday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Tuesday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Wednesday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Thursday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Friday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Saturday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
@@ -939,8 +944,8 @@
                 "perk1": null,
                 "perk2": null,
                 "perk3": null,
-                "departments": "Sales \u00b7 Service \u00b7 Parts",
-                "hours": "Sales: 07:00\u201317:00 Sun\u2013Sat\n\nService: 07:00\u201317:00 Sun\u2013Sat\n\nParts: 07:00\u201317:00 Mon\u2013Sat",
+                "departments": "Sales · Service · Parts",
+                "hours": "Sales: 07:00–17:00 Sun–Sat\n\nService: 07:00–17:00 Sun–Sat\n\nParts: 07:00–17:00 Mon–Sat",
                 "phone2": null,
                 "phone2Url": null,
                 "phone3": null,
@@ -961,7 +966,7 @@
                     "phone": null,
                     "phoneUrl": null,
                     "email": null,
-                    "hours": "07:00\u201317:00 Sun\u2013Sat"
+                    "hours": "07:00–17:00 Sun–Sat"
                   },
                   {
                     "name": "Service",
@@ -969,7 +974,7 @@
                     "phone": null,
                     "phoneUrl": null,
                     "email": null,
-                    "hours": "07:00\u201317:00 Sun\u2013Sat"
+                    "hours": "07:00–17:00 Sun–Sat"
                   },
                   {
                     "name": "Parts",
@@ -977,60 +982,60 @@
                     "phone": null,
                     "phoneUrl": null,
                     "email": null,
-                    "hours": "07:00\u201317:00 Mon\u2013Sat"
+                    "hours": "07:00–17:00 Mon–Sat"
                   }
                 ],
                 "hoursRows": [
                   {
                     "department": "Sales",
                     "key": "sales",
-                    "summary": "07:00\u201317:00 Sun\u2013Sat",
+                    "summary": "07:00–17:00 Sun–Sat",
                     "days": [
                       {
                         "day": "Sunday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Monday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Tuesday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Wednesday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Thursday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Friday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Saturday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
@@ -1040,53 +1045,53 @@
                   {
                     "department": "Service",
                     "key": "service",
-                    "summary": "07:00\u201317:00 Sun\u2013Sat",
+                    "summary": "07:00–17:00 Sun–Sat",
                     "days": [
                       {
                         "day": "Sunday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Monday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Tuesday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Wednesday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Thursday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Friday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Saturday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
@@ -1096,7 +1101,7 @@
                   {
                     "department": "Parts",
                     "key": "parts",
-                    "summary": "07:00\u201317:00 Mon\u2013Sat",
+                    "summary": "07:00–17:00 Mon–Sat",
                     "days": [
                       {
                         "day": "Sunday",
@@ -1107,42 +1112,42 @@
                       },
                       {
                         "day": "Monday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Tuesday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Wednesday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Thursday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Friday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Saturday",
-                        "hours": "07:00\u201317:00",
+                        "hours": "07:00–17:00",
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
@@ -1198,6 +1203,984 @@
             "brandFacets": [],
             "perkFacets": []
           }
+        },
+        "data": {
+          "brands": [],
+          "perks": [],
+          "locations": [
+            {
+              "id": "21",
+              "name": "Aftermarket Business Tampa, FL",
+              "slug": "aftermarket-business-tampa-fl",
+              "num": "01",
+              "href": "/locations/aftermarket-business-tampa-fl",
+              "streetAddress": "105 East 6th Ave.",
+              "city": "Tampa",
+              "region": "FL",
+              "postalCode": "33619",
+              "country": null,
+              "latitude": null,
+              "longitude": null,
+              "phone": "(813) 627-3282",
+              "phoneUrl": "tel:8136273282",
+              "mapUrl": "https://www.google.com/maps/search/?api=1&query=105%20East%206th%20Ave.%2C%20Tampa%2C%20FL%2C%2033619",
+              "email": null,
+              "brands": "",
+              "services": "",
+              "perks": "",
+              "brandKeys": "",
+              "perkKeys": "",
+              "perk1": null,
+              "perk2": null,
+              "perk3": null,
+              "departments": "Store",
+              "hours": "Store: 07:00–16:00 Mon–Fri",
+              "phone2": null,
+              "phone2Url": null,
+              "phone3": null,
+              "phone3Url": null,
+              "group": null,
+              "groupKey": null,
+              "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "brandRows": [],
+              "serviceRows": [],
+              "perkRows": [],
+              "departmentRows": [
+                {
+                  "name": "Store",
+                  "key": "store",
+                  "phone": null,
+                  "phoneUrl": null,
+                  "email": null,
+                  "hours": "07:00–16:00 Mon–Fri"
+                }
+              ],
+              "hoursRows": [
+                {
+                  "department": "Store",
+                  "key": "store",
+                  "summary": "07:00–16:00 Mon–Fri",
+                  "days": [
+                    {
+                      "day": "Sunday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    },
+                    {
+                      "day": "Monday",
+                      "hours": "07:00–16:00",
+                      "opensAt": "07:00",
+                      "closesAt": "16:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Tuesday",
+                      "hours": "07:00–16:00",
+                      "opensAt": "07:00",
+                      "closesAt": "16:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Wednesday",
+                      "hours": "07:00–16:00",
+                      "opensAt": "07:00",
+                      "closesAt": "16:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Thursday",
+                      "hours": "07:00–16:00",
+                      "opensAt": "07:00",
+                      "closesAt": "16:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Friday",
+                      "hours": "07:00–16:00",
+                      "opensAt": "07:00",
+                      "closesAt": "16:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Saturday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "20",
+              "name": "Brooksville",
+              "slug": "brooksville",
+              "num": "02",
+              "href": "/locations/brooksville",
+              "streetAddress": "17127 Runway Drive",
+              "city": "Brooksville",
+              "region": "FL",
+              "postalCode": "34604",
+              "country": null,
+              "latitude": null,
+              "longitude": null,
+              "phone": "(352) 277-0221",
+              "phoneUrl": "tel:3522770221",
+              "mapUrl": "https://www.google.com/maps/search/?api=1&query=17127%20Runway%20Drive%2C%20Brooksville%2C%20FL%2C%2034604",
+              "email": null,
+              "brands": "",
+              "services": "",
+              "perks": "",
+              "brandKeys": "",
+              "perkKeys": "",
+              "perk1": null,
+              "perk2": null,
+              "perk3": null,
+              "departments": "Store",
+              "hours": "Store: 07:00–17:00 Mon–Fri",
+              "phone2": null,
+              "phone2Url": null,
+              "phone3": null,
+              "phone3Url": null,
+              "group": null,
+              "groupKey": null,
+              "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "brandRows": [],
+              "serviceRows": [],
+              "perkRows": [],
+              "departmentRows": [
+                {
+                  "name": "Store",
+                  "key": "store",
+                  "phone": null,
+                  "phoneUrl": null,
+                  "email": null,
+                  "hours": "07:00–17:00 Mon–Fri"
+                }
+              ],
+              "hoursRows": [
+                {
+                  "department": "Store",
+                  "key": "store",
+                  "summary": "07:00–17:00 Mon–Fri",
+                  "days": [
+                    {
+                      "day": "Sunday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    },
+                    {
+                      "day": "Monday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Tuesday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Wednesday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Thursday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Friday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Saturday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "19",
+              "name": "Davenport",
+              "slug": "davenport",
+              "num": "03",
+              "href": "/locations/davenport",
+              "streetAddress": "41609 Hwy 27",
+              "city": "Davenport",
+              "region": "FL",
+              "postalCode": "33837",
+              "country": null,
+              "latitude": null,
+              "longitude": null,
+              "phone": "(863) 424-2411",
+              "phoneUrl": "tel:8634242411",
+              "mapUrl": "https://www.google.com/maps/search/?api=1&query=41609%20Hwy%2027%2C%20Davenport%2C%20FL%2C%2033837",
+              "email": null,
+              "brands": "",
+              "services": "",
+              "perks": "",
+              "brandKeys": "",
+              "perkKeys": "",
+              "perk1": null,
+              "perk2": null,
+              "perk3": null,
+              "departments": "Sales · Service · Parts",
+              "hours": "Sales: 07:00–17:00 Mon–Sat\n\nService: 07:00–17:00 Mon–Sat\n\nParts: 07:00–17:00 Mon–Fri, 07:00–12:00 Sat",
+              "phone2": null,
+              "phone2Url": null,
+              "phone3": null,
+              "phone3Url": null,
+              "group": null,
+              "groupKey": null,
+              "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "brandRows": [],
+              "serviceRows": [],
+              "perkRows": [],
+              "departmentRows": [
+                {
+                  "name": "Sales",
+                  "key": "sales",
+                  "phone": null,
+                  "phoneUrl": null,
+                  "email": null,
+                  "hours": "07:00–17:00 Mon–Sat"
+                },
+                {
+                  "name": "Service",
+                  "key": "service",
+                  "phone": null,
+                  "phoneUrl": null,
+                  "email": null,
+                  "hours": "07:00–17:00 Mon–Sat"
+                },
+                {
+                  "name": "Parts",
+                  "key": "parts",
+                  "phone": null,
+                  "phoneUrl": null,
+                  "email": null,
+                  "hours": "07:00–17:00 Mon–Fri, 07:00–12:00 Sat"
+                }
+              ],
+              "hoursRows": [
+                {
+                  "department": "Sales",
+                  "key": "sales",
+                  "summary": "07:00–17:00 Mon–Sat",
+                  "days": [
+                    {
+                      "day": "Sunday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    },
+                    {
+                      "day": "Monday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Tuesday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Wednesday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Thursday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Friday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Saturday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    }
+                  ]
+                },
+                {
+                  "department": "Service",
+                  "key": "service",
+                  "summary": "07:00–17:00 Mon–Sat",
+                  "days": [
+                    {
+                      "day": "Sunday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    },
+                    {
+                      "day": "Monday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Tuesday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Wednesday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Thursday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Friday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Saturday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    }
+                  ]
+                },
+                {
+                  "department": "Parts",
+                  "key": "parts",
+                  "summary": "07:00–17:00 Mon–Fri, 07:00–12:00 Sat",
+                  "days": [
+                    {
+                      "day": "Sunday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    },
+                    {
+                      "day": "Monday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Tuesday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Wednesday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Thursday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Friday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Saturday",
+                      "hours": "07:00–12:00",
+                      "opensAt": "07:00",
+                      "closesAt": "12:00",
+                      "closed": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "18",
+              "name": "Sarasota",
+              "slug": "sarasota",
+              "num": "04",
+              "href": "/locations/sarasota",
+              "streetAddress": "1000 Sarasota Center Blvd.",
+              "city": "Sarasota",
+              "region": "FL",
+              "postalCode": "34240",
+              "country": null,
+              "latitude": null,
+              "longitude": null,
+              "phone": "(941) 355-7681",
+              "phoneUrl": "tel:9413557681",
+              "mapUrl": "https://www.google.com/maps/search/?api=1&query=1000%20Sarasota%20Center%20Blvd.%2C%20Sarasota%2C%20FL%2C%2034240",
+              "email": null,
+              "brands": "",
+              "services": "",
+              "perks": "",
+              "brandKeys": "",
+              "perkKeys": "",
+              "perk1": null,
+              "perk2": null,
+              "perk3": null,
+              "departments": "Sales · Service · Parts",
+              "hours": "Sales: 07:00–17:00 Mon–Sat\n\nService: 07:00–17:00 Mon–Sat\n\nParts: 07:00–17:00 Mon–Sat",
+              "phone2": null,
+              "phone2Url": null,
+              "phone3": null,
+              "phone3Url": null,
+              "group": null,
+              "groupKey": null,
+              "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "brandRows": [],
+              "serviceRows": [],
+              "perkRows": [],
+              "departmentRows": [
+                {
+                  "name": "Sales",
+                  "key": "sales",
+                  "phone": null,
+                  "phoneUrl": null,
+                  "email": null,
+                  "hours": "07:00–17:00 Mon–Sat"
+                },
+                {
+                  "name": "Service",
+                  "key": "service",
+                  "phone": null,
+                  "phoneUrl": null,
+                  "email": null,
+                  "hours": "07:00–17:00 Mon–Sat"
+                },
+                {
+                  "name": "Parts",
+                  "key": "parts",
+                  "phone": null,
+                  "phoneUrl": null,
+                  "email": null,
+                  "hours": "07:00–17:00 Mon–Sat"
+                }
+              ],
+              "hoursRows": [
+                {
+                  "department": "Sales",
+                  "key": "sales",
+                  "summary": "07:00–17:00 Mon–Sat",
+                  "days": [
+                    {
+                      "day": "Sunday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    },
+                    {
+                      "day": "Monday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Tuesday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Wednesday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Thursday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Friday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Saturday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    }
+                  ]
+                },
+                {
+                  "department": "Service",
+                  "key": "service",
+                  "summary": "07:00–17:00 Mon–Sat",
+                  "days": [
+                    {
+                      "day": "Sunday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    },
+                    {
+                      "day": "Monday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Tuesday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Wednesday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Thursday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Friday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Saturday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    }
+                  ]
+                },
+                {
+                  "department": "Parts",
+                  "key": "parts",
+                  "summary": "07:00–17:00 Mon–Sat",
+                  "days": [
+                    {
+                      "day": "Sunday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    },
+                    {
+                      "day": "Monday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Tuesday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Wednesday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Thursday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Friday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Saturday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "17",
+              "name": "Tampa",
+              "slug": "tampa",
+              "num": "05",
+              "href": "/locations/tampa",
+              "streetAddress": "6020 Adamo Drive",
+              "city": "Tampa",
+              "region": "FL",
+              "postalCode": "33619",
+              "country": null,
+              "latitude": 27.95298,
+              "longitude": -82.38591,
+              "phone": "(813) 621-1331",
+              "phoneUrl": "tel:8136211331",
+              "mapUrl": "https://www.google.com/maps/search/?api=1&query=27.95298,-82.38591",
+              "email": null,
+              "brands": "",
+              "services": "",
+              "perks": "",
+              "brandKeys": "",
+              "perkKeys": "",
+              "perk1": null,
+              "perk2": null,
+              "perk3": null,
+              "departments": "Sales · Service · Parts",
+              "hours": "Sales: 07:00–17:00 Sun–Sat\n\nService: 07:00–17:00 Sun–Sat\n\nParts: 07:00–17:00 Mon–Sat",
+              "phone2": null,
+              "phone2Url": null,
+              "phone3": null,
+              "phone3Url": null,
+              "group": null,
+              "groupKey": null,
+              "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "brandRows": [],
+              "serviceRows": [],
+              "perkRows": [],
+              "departmentRows": [
+                {
+                  "name": "Sales",
+                  "key": "sales",
+                  "phone": null,
+                  "phoneUrl": null,
+                  "email": null,
+                  "hours": "07:00–17:00 Sun–Sat"
+                },
+                {
+                  "name": "Service",
+                  "key": "service",
+                  "phone": null,
+                  "phoneUrl": null,
+                  "email": null,
+                  "hours": "07:00–17:00 Sun–Sat"
+                },
+                {
+                  "name": "Parts",
+                  "key": "parts",
+                  "phone": null,
+                  "phoneUrl": null,
+                  "email": null,
+                  "hours": "07:00–17:00 Mon–Sat"
+                }
+              ],
+              "hoursRows": [
+                {
+                  "department": "Sales",
+                  "key": "sales",
+                  "summary": "07:00–17:00 Sun–Sat",
+                  "days": [
+                    {
+                      "day": "Sunday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Monday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Tuesday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Wednesday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Thursday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Friday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Saturday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    }
+                  ]
+                },
+                {
+                  "department": "Service",
+                  "key": "service",
+                  "summary": "07:00–17:00 Sun–Sat",
+                  "days": [
+                    {
+                      "day": "Sunday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Monday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Tuesday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Wednesday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Thursday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Friday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Saturday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    }
+                  ]
+                },
+                {
+                  "department": "Parts",
+                  "key": "parts",
+                  "summary": "07:00–17:00 Mon–Sat",
+                  "days": [
+                    {
+                      "day": "Sunday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    },
+                    {
+                      "day": "Monday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Tuesday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Wednesday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Thursday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Friday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Saturday",
+                      "hours": "07:00–17:00",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "22",
+              "name": "Trailer Sales",
+              "slug": "trailer-sales",
+              "num": "06",
+              "href": "/locations/trailer-sales",
+              "streetAddress": "Trailer Sales, 6020 Adamo Drive",
+              "city": "Tampa",
+              "region": "FL",
+              "postalCode": "33619",
+              "country": null,
+              "latitude": null,
+              "longitude": null,
+              "phone": "(813) 621-1331",
+              "phoneUrl": "tel:8136211331",
+              "mapUrl": "https://www.google.com/maps/search/?api=1&query=Trailer%20Sales%2C%206020%20Adamo%20Drive%2C%20Tampa%2C%20FL%2C%2033619",
+              "email": null,
+              "brands": "",
+              "services": "",
+              "perks": "",
+              "brandKeys": "",
+              "perkKeys": "",
+              "perk1": null,
+              "perk2": null,
+              "perk3": null,
+              "departments": "",
+              "hours": "",
+              "phone2": null,
+              "phone2Url": null,
+              "phone3": null,
+              "phone3Url": null,
+              "group": null,
+              "groupKey": null,
+              "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "brandRows": [],
+              "serviceRows": [],
+              "perkRows": [],
+              "departmentRows": [],
+              "hoursRows": []
+            }
+          ]
         }
       },
       "children": []
@@ -1218,49 +2201,49 @@
               "num": "01",
               "title": "Trucks",
               "body": "Shop our wide selection of new and International trucks built to handle any job, equipped with advanced telematics via OnCommand Connection for real-time fleet insights.",
-              "linkLabel": "Browse trucks \u2192",
+              "linkLabel": "Browse trucks →",
               "linkUrl": "/store/inventory?type=truck"
             },
             {
               "num": "02",
               "title": "Trailers",
               "body": "Explore our diverse inventory of trailers, including flatbeds, dump trailers, and reefers, from trusted brands like Hyundai Translead and Globe Trailers.",
-              "linkLabel": "Browse trailers \u2192",
+              "linkLabel": "Browse trailers →",
               "linkUrl": "/store/inventory?type=trailer"
             },
             {
               "num": "03",
               "title": "IC Bus",
               "body": "Built for safety and reliability, our IC Bus selection offers top-of-the-line school and commercial buses from industry-leading manufacturers.",
-              "linkLabel": "Browse buses \u2192",
+              "linkLabel": "Browse buses →",
               "linkUrl": "/store/inventory?type=bus"
             },
             {
               "num": "04",
               "title": "Capacity Yard Trucks",
               "body": "Capacity yard trucks deliver the reliability and power your business needs to run smoothly day after day.",
-              "linkLabel": "Explore models \u2192",
+              "linkLabel": "Explore models →",
               "linkUrl": "/capacity-yard-trucks"
             },
             {
               "num": "05",
               "title": "Service",
               "body": "We offer full-service repairs for trucks and trailers at our Diamond Edge certified service centers, plus mobile maintenance support so we come to you.",
-              "linkLabel": "Schedule service \u2192",
+              "linkLabel": "Schedule service →",
               "linkUrl": "/service-appointment"
             },
             {
               "num": "06",
               "title": "Parts",
               "body": "Order genuine parts online or in-store, with same-day pickup at our Aftermarket Parts and Truck & Trailer Parts locations.",
-              "linkLabel": "Order parts \u2192",
+              "linkLabel": "Order parts →",
               "linkUrl": "/parts"
             },
             {
               "num": "07",
               "title": "Financing",
               "body": "Get financing options for your next truck or trailer purchase, with a team ready to walk you through it.",
-              "linkLabel": "Learn more \u2192",
+              "linkLabel": "Learn more →",
               "linkUrl": "/financing"
             }
           ]
@@ -1329,7 +2312,34 @@
                       "limit": 4
                     },
                     "snapshot": {
-                      "listings": []
+                      "listings": [
+                        {
+                          "slug": "8-2026-kenworth-t880",
+                          "href": "products/8-2026-kenworth-t880",
+                          "title": "2026 Kenworth T880",
+                          "price": "$0",
+                          "facts": [
+                            {
+                              "label": "Condition",
+                              "value": "new"
+                            },
+                            {
+                              "label": "Make",
+                              "value": "PACCAR"
+                            },
+                            {
+                              "label": "Model",
+                              "value": "T880"
+                            }
+                          ],
+                          "image": {
+                            "src": "preview/a9/1.1__03__preview.jpg",
+                            "alt": "2026 Kenworth T880",
+                            "width": 600,
+                            "height": 400
+                          }
+                        }
+                      ]
                     }
                   }
                 },
@@ -1339,7 +2349,7 @@
                   "props": {
                     "items": [
                       {
-                        "label": "View all inventory \u2192",
+                        "label": "View all inventory →",
                         "url": "/inventory",
                         "style": "link",
                         "intent": "browse-inventory"
@@ -1390,7 +2400,7 @@
         "values": {
           "eyebrow": "ABOUT OUR BRANDS",
           "heading": "Built by industry leaders.",
-          "body": "At Sun State, we offer only the best quality for the best price \u2014 International trucks, IC Bus, and trailers from industry leaders like Hyundai Translead and Globe Trailers. When you choose a truck or trailer through Sun State, you're investing in durability, reliability, and innovation.",
+          "body": "At Sun State, we offer only the best quality for the best price — International trucks, IC Bus, and trailers from industry leaders like Hyundai Translead and Globe Trailers. When you choose a truck or trailer through Sun State, you're investing in durability, reliability, and innovation.",
           "ctaLabel": "Globe Trailers",
           "ctaUrl": "/store/inventory?brand=globe-trailers",
           "ctaStyle": "primary",
@@ -1491,7 +2501,7 @@
           "primaryUrl": "/contact",
           "secondaryLabel": "",
           "secondaryUrl": "",
-          "note": "Call us today \u00b7 813.521.8148",
+          "note": "Call us today · 813.521.8148",
           "background": "ink"
         }
       },
