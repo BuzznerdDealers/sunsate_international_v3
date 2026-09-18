@@ -16,6 +16,45 @@ export const FIELD_TYPES = {
   identity: ['first_name', 'last_name', 'full_name'],
 };
 
+/**
+ * Where a hidden field's value comes from.
+ *
+ * A hidden field is still a field: it never reaches the visitor, but it is
+ * stored on the submission and is available to conditions and to notification
+ * rules. `static` is the dealer's own constant; the rest are captured from the
+ * page by the platform client at load.
+ *
+ * `productId` is the one the server must not believe. The client fills it so the
+ * dealer can see it on the submission, and the server re-resolves it from the
+ * page's product context before anything reads it as a listing — a hidden input
+ * is a field, and a field is something a bot can rewrite.
+ */
+export const VALUE_SOURCES = [
+  'static',
+  'query',
+  'referrer',
+  'pageUrl',
+  'utmSource',
+  'utmCampaign',
+  'utmMedium',
+  'productId',
+];
+
+/**
+ * Condition sources a form embedded on a product page gets in addition to its
+ * own fields, so a form can route by the listing rather than by an answer.
+ *
+ * Prefixed rather than bare, because a rule names one flat space and a dealer
+ * may well have a field of their own called `location`. The values arrive with
+ * the submission's product context, never from the browser.
+ */
+export const SPEC_SOURCES = [
+  { id: 'spec:location', label: 'Spec: Location' },
+  { id: 'spec:department', label: 'Spec: Department' },
+  { id: 'spec:type', label: 'Spec: Product type' },
+  { id: 'spec:category', label: 'Spec: Category' },
+];
+
 const INPUT_TYPE = {
   single_line: 'text',
   email: 'email',
@@ -45,10 +84,27 @@ export function operatorsForFieldType(type) {
   return ['is', 'is_not', 'contains', 'is_empty', 'is_not_empty'];
 }
 
+/**
+ * The confirmation shown when nothing conditional matches.
+ *
+ * Confirmations are ordered and first-match-wins, and the server decides which
+ * one fired. This is the copy the page carries before it has an answer: the
+ * first entry with no rules, because that is the one that would have matched had
+ * the visitor answered nothing at all. A list whose entries are all conditional
+ * has no such entry, and the form's own `successMessage` stands in.
+ */
+export function defaultConfirmation(form) {
+  const list = (form && form.confirmations) || [];
+  for (const entry of list) {
+    if (!entry || (entry.rules && entry.rules.length)) continue;
+    return entry;
+  }
+  return null;
+}
+
 function fieldName(field) {
   return field.name || field.id;
 }
-
 /**
  * A form's or a field's analytics annotations, as they reach the browser.
  *
@@ -110,7 +166,38 @@ ${join(
   )}</div>`;
 }
 
+
+/**
+ * A field the visitor never sees.
+ *
+ * Rendered rather than dropped, because the payload is the point: the value is
+ * stored on the submission, it is available to conditional logic, and it is what
+ * a notification rule routes on. Dropping it from the markup would leave the
+ * dealer a routing rule against a field that never arrives.
+ *
+ * Only `static` carries its value in the HTML. The rest are captured by the
+ * platform client from the page at load, which is why the input ships empty with
+ * a source marker on it: baking a page URL or a UTM parameter into a static
+ * build would bake in whichever page happened to be built first.
+ */
+function renderHiddenField(field) {
+  const name = fieldName(field);
+  const source = VALUE_SOURCES.includes(field.valueSource) ? field.valueSource : 'static';
+  return `<input type="hidden"${attrs({
+    id: field.id,
+    name,
+    value: source === 'static' ? field.defaultValue || '' : null,
+    'data-bz-field': field.id,
+    'data-bz-hidden-field': true,
+    'data-bz-source': source === 'static' ? null : source,
+    'data-bz-param': source === 'query' ? field.queryParam || null : null,
+    'data-bz-field-analytics': analyticsBag(field.analytics),
+  })} />`;
+}
+
 function renderField(field) {
+  if (field.hidden) return renderHiddenField(field);
+
   const name = fieldName(field);
   // What this field reports as, per provider. Absent when the dealer has not
   // mapped it, and the runtime then falls back to the input's own name rather
@@ -143,7 +230,12 @@ function renderField(field) {
   // is a JSON edit rather than a code change in a dealer repo.
   const logic = field.logic && field.logic.rules && field.logic.rules.length ? field.logic : null;
 
-  return `<div class="bz-field"${attrs({
+  // Half width is a pairing, not a column: two adjacent halves sit side by side
+  // and an unpaired one still fills the row, so removing the field beside it
+  // cannot leave a gap the dealer has to notice.
+  const half = field.width === 'half';
+
+  return `<div class="bz-field${half ? ' bz-field--half' : ''}"${attrs({
     'data-bz-field': field.id,
     'data-bz-field-analytics': analyticsName,
     'data-bz-logic': logic ? JSON.stringify(logic) : null,
@@ -171,11 +263,23 @@ export function renderForm(form, ctx) {
         )} /><span>${esc(form.consent.text || 'I agree to be contacted about this enquiry.')}</span></label></div>`
       : '';
 
+  // The unconditional confirmation, baked in so the page has an answer before
+  // the server gives it one — the no-JS redirect, and the canvas, both need
+  // copy to show. The server's own answer wins at runtime, because only the
+  // server has the submitted values the conditional entries are judged against.
+  const fallback = defaultConfirmation(form);
+  const successMessage =
+    (fallback && fallback.type !== 'redirect' && fallback.message) ||
+    form.successMessage ||
+    'Thanks — we will be in touch shortly.';
+  const redirectUrl =
+    (fallback && fallback.type === 'redirect' && fallback.redirectUrl) || form.redirectUrl || null;
+
   return `<form class="bz-form" method="post" action="/${esc(prefix)}/forms/${esc(form.id)}"${attrs({
     id: `form-${form.id}`,
     'data-bz-form': form.id,
-    'data-bz-success': form.successMessage || 'Thanks — we will be in touch shortly.',
-    'data-bz-redirect': form.redirectUrl || null,
+    'data-bz-success': successMessage,
+    'data-bz-redirect': redirectUrl,
     // The form's analytics annotations ride on the element rather than being
     // looked up by the runtime: the runtime has no access to the form
     // definition, and a second copy of the mapping is a second thing to get
@@ -187,6 +291,13 @@ export function renderForm(form, ctx) {
     // from the page's product context. Not hidden inputs: a hidden field is a
     // field, and a bot can rewrite one. The server re-resolves it anyway.
     'data-bz-vehicle': form.vehicle ? JSON.stringify(form.vehicle) : null,
+    // The listing's own specs, for a form whose conditions route by the product
+    // rather than by an answer. Supplied by the surface that knows the listing;
+    // absent on a static brand-site page, which has no product. Read by the
+    // client so a `spec:` rule resolves the same way it will server-side, and
+    // never posted — the server re-resolves it from the submission's product
+    // context for the same reason `data-bz-vehicle` is not an input.
+    'data-bz-spec': specBag(ctx),
     ...tagAttrs('form', form.intent || `form-${form.id}`),
   })}>
   <p class="bz-form__t">${esc(form.name || 'Contact us')}</p>
@@ -202,4 +313,19 @@ ${consent}
   )}>${esc(form.submitLabel || 'Submit')}</button>
   <p class="bz-form__status" role="status" aria-live="polite"></p>
 </form>`;
+}
+
+/** The `spec:` values for this render, as the client reads them back. */
+function specBag(ctx) {
+  const source = ctx && ctx.productContext;
+  if (!source || typeof source !== 'object' || Array.isArray(source)) return null;
+  const out = {};
+  let any = false;
+  for (const { id } of SPEC_SOURCES) {
+    const value = source[id.slice('spec:'.length)];
+    if (typeof value !== 'string' || value === '') continue;
+    out[id] = value;
+    any = true;
+  }
+  return any ? JSON.stringify(out) : null;
 }

@@ -59,6 +59,8 @@ import {
   validateTemplate,
 } from './index.mjs';
 
+import { defaultConfirmation } from './forms.mjs';
+
 import tokens from '../site/tokens.json' with { type: 'json' };
 import menus from '../site/menus.json' with { type: 'json' };
 
@@ -920,6 +922,92 @@ test('a form renders its fields with the tagging attributes analytics needs', ()
   const html = renderForm(CTX.forms.contact, CTX);
   assert.match(html, /data-bz-el="form"/);
   assert.match(html, /name="name"/);
+});
+
+test('a hidden field is still in the payload, marked with where its value comes from', () => {
+  const html = renderForm(
+    {
+      id: 'lead',
+      name: 'Lead',
+      status: 'live',
+      fields: [
+        { id: 'email', type: 'email', label: 'Email', required: true },
+        { id: 'src', type: 'single_line', label: 'Source', hidden: true, valueSource: 'query', queryParam: 'promo' },
+        { id: 'team', type: 'single_line', label: 'Team', hidden: true, defaultValue: 'fleet' },
+      ],
+    },
+    CTX,
+  );
+  // Never a visible control, and never a label — but it is an input, so it posts.
+  assert.match(html, /<input type="hidden"[^>]*name="src"[^>]*data-bz-source="query"[^>]*data-bz-param="promo"/);
+  assert.equal(/<label[^>]*for="src"/.test(html), false);
+  // A static hidden field carries its value; a captured one ships empty, because
+  // a static build cannot know which page the visitor will arrive on.
+  assert.match(html, /<input type="hidden"[^>]*name="team"[^>]*value="fleet"/);
+  assert.equal(/name="src"[^>]*value=/.test(html), false);
+});
+
+test('a paired field is half width, and an unpaired one still fills the row', () => {
+  const html = renderForm(
+    {
+      id: 'names',
+      name: 'Names',
+      status: 'live',
+      fields: [
+        { id: 'first', type: 'first_name', label: 'First', width: 'half' },
+        { id: 'last', type: 'last_name', label: 'Last', width: 'half' },
+        { id: 'email', type: 'email', label: 'Email' },
+      ],
+    },
+    CTX,
+  );
+  assert.equal((html.match(/class="bz-field bz-field--half"/g) ?? []).length, 2);
+  assert.match(html, /class="bz-field"[^>]*data-bz-field="email"/);
+});
+
+test('the page bakes in the unconditional confirmation, not the first one', () => {
+  const form = {
+    id: 'quote',
+    name: 'Quote',
+    status: 'live',
+    successMessage: 'Old copy',
+    confirmations: [
+      { id: 'fleet', name: 'Fleet', rules: [{ fieldId: 'size', operator: 'is', value: 'fleet' }], type: 'message', message: 'A fleet specialist will call.' },
+      { id: 'default', name: 'Default', rules: [], type: 'message', message: 'Thanks — we will be in touch.' },
+    ],
+    fields: [{ id: 'size', type: 'dropdown', label: 'Size', options: [{ label: 'fleet' }] }],
+  };
+  const html = renderForm(form, CTX);
+  // The conditional entry is the server's to choose; the page can only show the
+  // one that matches an unanswered form.
+  assert.match(html, /data-bz-success="Thanks — we will be in touch\."/);
+  assert.equal(/A fleet specialist/.test(html), false);
+  assert.equal(defaultConfirmation(form).id, 'default');
+});
+
+test('a confirmation that redirects becomes the form\'s baked-in redirect', () => {
+  const html = renderForm(
+    {
+      id: 'rsvp',
+      name: 'RSVP',
+      status: 'live',
+      confirmations: [{ id: 'd', name: 'Default', rules: [], type: 'redirect', redirectUrl: '/thank-you' }],
+      fields: [{ id: 'n', type: 'full_name', label: 'Name' }],
+    },
+    CTX,
+  );
+  assert.match(html, /data-bz-redirect="\/thank-you"/);
+});
+
+test('a form with no product context carries no spec bag', () => {
+  const form = { id: 'f', name: 'F', status: 'live', pdpContext: true, fields: [{ id: 'n', type: 'full_name', label: 'Name' }] };
+  assert.equal(/data-bz-spec/.test(renderForm(form, CTX)), false);
+  // The surface that knows the listing supplies it; the renderer never invents one.
+  const withProduct = renderForm(form, { ...CTX, productContext: { location: 'Chicago', type: 'Trucks' } });
+  assert.deepEqual(JSON.parse(withProduct.match(/data-bz-spec="([^"]*)"/)[1].replace(/&quot;/g, '"')), {
+    'spec:location': 'Chicago',
+    'spec:type': 'Trucks',
+  });
 });
 
 /* --------------------------------------------------------- shared sections */

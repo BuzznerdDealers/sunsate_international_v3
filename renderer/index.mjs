@@ -141,7 +141,17 @@
 // where a renamed page's old address goes. The redirects file is the dealer's,
 // in `site/`, because `vercel.json` is rebuilt from the template on every engine
 // sync; the platform composes one into the other when it bakes.
-export const RENDERER_VERSION = '4.22.0';
+// 4.23.0 — a form's confirmations and its hidden fields. `confirmations` is an
+// ordered, first-match-wins list of what the visitor sees next, so a form can
+// thank a fleet enquiry differently from a general one without being two forms;
+// the page bakes in the unconditional entry and the server's answer wins at
+// runtime, because only the server has the values the conditional entries are
+// judged against. A field marked `hidden` is still a field — never rendered to
+// the visitor, still stored, still available to conditions and routing — and its
+// `valueSource` says where the client captures it from. `spec:` condition
+// sources let a form embedded on a product page route by the listing instead of
+// by an answer; the surface that knows the listing supplies them.
+export const RENDERER_VERSION = '4.23.0';
 
 export {
   LOCATION_SOURCE,
@@ -277,7 +287,14 @@ export {
   PROP_TYPES,
 } from './custom-widgets.mjs';
 
-export { renderForm, operatorsForFieldType, FIELD_TYPES } from './forms.mjs';
+export {
+  renderForm,
+  operatorsForFieldType,
+  defaultConfirmation,
+  FIELD_TYPES,
+  SPEC_SOURCES,
+  VALUE_SOURCES,
+} from './forms.mjs';
 export { renderWidget, staticWidgetIds, rooftopFrom, BEHAVIOUR_ONLY } from './widgets.mjs';
 
 /* -------------------------------------------------------- menus + templates */

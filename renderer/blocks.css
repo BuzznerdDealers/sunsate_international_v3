@@ -397,10 +397,14 @@ a.bz-loc__c:hover { color: var(--accent); }
   padding: var(--space-3) var(--space-4); min-height: 44px;
 }
 .bz-input::placeholder { color: var(--muted); }
-.bz-form { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius-card); padding: var(--space-5); display: flex; flex-direction: column; gap: var(--space-4); max-width: 34rem; }
+.bz-form { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius-card); padding: var(--space-5); display: flex; flex-wrap: wrap; gap: var(--space-4); max-width: 34rem; }
+.bz-form > * { flex: 1 1 100%; min-width: 0; }
 .bz-form__t { font: 700 var(--text-h3) / 1.2 var(--font-heading); margin: 0; }
 .bz-field { display: flex; flex-direction: column; gap: var(--space-2); }
 .bz-field[hidden] { display: none; }
+/* Two adjacent halves make a pair. One on its own still fills the row, so
+   deleting the field beside it cannot leave a gap nobody notices. */
+.bz-field--half { flex: 1 1 calc(50% - (var(--space-4) / 2)); min-width: 11rem; }
 .bz-field--hp { position: absolute; left: -9999px; }
 .bz-label { font: 700 var(--text-small) / 1.2 var(--font-heading); color: var(--ink); }
 .bz-req { color: var(--bad); }
