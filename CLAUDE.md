@@ -299,7 +299,7 @@ with its list hidden in CSS, and hand-feeding the real tiles beside it.
 
 | `source` | Rows | Keyed on | `config` | Fields you may bind to |
 |---|---|---|---|---|
-| `locations` | Every active rooftop | `slug` | `locationSlug`, `pagePathPrefix` | **Identity** `id` `name` `slug` `num` `href`<br>**Address** `streetAddress` `city` `region` `postalCode` `country` `latitude` `longitude` `mapUrl`<br>**Contact** `phone` `phoneUrl` `email` `phone2` `phone2Url` `phone3` `phone3Url`<br>**The record** `brands` `services` `perks` `departments` `hours`<br>**Filter keys** `brandKeys` `perkKeys` `perk1` `perk2` `perk3` |
+| `locations` | Every active rooftop | `slug` | `locationSlug`, `pagePathPrefix` | **Identity** `id` `name` `subtitle` `slug` `num` `href`<br>**Address** `streetAddress` `city` `region` `postalCode` `country` `latitude` `longitude` `mapUrl`<br>**Contact** `phone` `phoneUrl` `email` `phone2` `phone2Url` `phone3` `phone3Url`<br>**The record** `brands` `services` `perks` `departments` `hours`<br>**Filter keys** `brandKeys` `perkKeys` `perk1` `perk2` `perk3` |
 | `staff` | The team directory | `name` | `locationSlug`, `departmentCode` | `name` `title` `phone` `phoneUrl` `photo` |
 | `posts` | Every published post, newest first | `slug` | `topic`, `limit` | `slug` `title` `href` `date` `dateISO` `excerpt` `topic` `topicKey` `coverImage` |
 
@@ -316,6 +316,11 @@ keys, space separated, for a `filter` behaviour's `data-` attributes — match a
 control's value against those, never against the display copy. `perk1`–`perk3`
 exist for a card that shows service options as separate pills.
 
+`name` is the place — "Brooksville" — and `subtitle` is the business under it,
+which differs per branch: one trades as "Truck & Trailer Parts" and the next as
+the parent company. Use both on a card and neither as a stand-in for the other.
+The organisation's own name is the same on every card and is not this.
+
 **The blog is the one source that needs no publish.** `posts` (and `post-topics`, one row per
 topic in play, for a `filter` behaviour's chips) resolve from the repo's own post files at
 build time, so a post written and published on the Posts screen is on the page in the next
@@ -327,6 +332,91 @@ Bind a card's filter attribute to `topicKey`, not `topic`: the key is derived
 
 `postsList` is still the right answer for an ordinary teaser — one node, no component. Reach
 for the source when the card is your own design.
+
+**`overlay` is for what the platform does not hold at all**, and only that: a
+brand swatch, an award badge. Each row names the source's key field and carries
+the extras. Restating a field the source owns is refused — an address typed there
+beats Admin and goes stale with nothing to say so.
+
+**An overlay keyed to six slugs is not a middle ground; it is a typed list in a
+costume.** It goes stale exactly as fast, and nothing warns you. Before writing
+one, check the field list above: if the fact is anywhere on the location's
+screens in Admin, it is on a row already. What is genuinely left is small.
+
+Reach for a source whenever the rows are facts the dealer maintains in Admin. A
+typed list is right for genuinely editorial content: awards, campaign copy.
+If the source exists and you type the rows anyway, you have built the thing this
+repo's whole JSON model exists to avoid.
+
+Two things to expect. A binding with nothing published yet shows sample rows on
+the canvas and **no rows** on the built page — the platform bakes them on
+publish, and inventing addresses in static HTML would be worse than an empty
+band. And the dealer sees this as a "Typed in here / From Locations" switch on
+the placement's inspector, so say *that* in your summary rather than "a source
+binding".
+
+`npm run validate` names every group of three or more identical siblings it
+finds, with their ids. Treat those notes as work, not noise — each one is a
+section the dealer cannot extend without an engineer.
+
+### The map of the estate is a widget, not a picture you place
+
+A "find a location" band is a map of the dealer's territory with a pin per
+rooftop, a row of brand and perk chips, and the cards below. **Every part of that
+is already built**, and the one part you cannot compose is the map:
+
+```json
+{ "id": "find", "type": "section", "props": {
+    "behaviour": "filter", "behaviourOptions": "{\"match\":\"includes\"}" },
+  "children": [
+    { "id": "find-map", "type": "widget", "props": { "widget": "locations-pinmap",
+        "config": { "pagePathPrefix": "/locations" } } },
+    { "id": "find-row", "type": "row", "props": {}, "children": [ /* chips, part: "control" */ ] },
+    { "id": "find-cards", "type": "row", "props": {}, "children": [ /* cards, part: "item" */ ] }
+  ]}
+```
+
+`locations-pinmap` takes **the dealer's own artwork** as an image prop and two
+calibration points, and places each rooftop from the coordinates on its record. So
+a branch that opens appears on the map without anyone touching the picture, and
+the pins are in the built HTML rather than added by a script — which is what makes
+them draw on the Design canvas and in the first paint.
+
+The three things to get right:
+
+- **Do not hand-build it.** An `<img>` of a map with absolutely positioned dots
+  over it is the same trap as the hand-rolled carousel in §5: the dots are wrong
+  the day a rooftop moves, they cannot filter, and nobody can edit them. There is
+  also no `mapProvider` here — `locations-pinmap` is the dealer's art, and
+  `locations-map` is a generated street map. They are different sections.
+- **One `filter` behaviour covers the map and the cards.** The widget marks every
+  pin `part: "item"` and carries the same `brandKeys` and `perkKeys` the cards do,
+  so one chip row filters the list and lights up the map. The pins are *dimmed*
+  rather than removed, because a map that drops a pin has lost the comparison it
+  is there for. You do not opt into that and cannot switch it off.
+- **The artwork and the calibration are the dealer's, set in the dashboard.** Do
+  not commit a basemap to `public/` and reference it: the block's inspector takes
+  the image from the Media Bin and the two points beside it, so swapping the art
+  is a no-code change. Leave the props empty and say in your summary that the
+  dealer uploads the map on that block.
+
+A rooftop with no coordinates cannot be pinned and is left off rather than dropped
+at 0,0. `npm run validate` and the build both say how many, by name — if a pin is
+missing, that rooftop needs coordinates on Admin → Locations, and nothing about
+the page is wrong.
+
+### A branch's photograph
+
+On a generated location page, the picture of that branch is
+`{"type":"widget","props":{"widget":"location-photo"}}` — no `locationSlug`, the
+same rule as every other widget on that page. It draws the photo from the
+rooftop's record, and **nothing at all** when that rooftop has no photo yet.
+
+That gap is deliberate. A generated street map standing in for a missing
+photograph is a different section wearing this one's clothes — it says "here is
+the building" and shows a road junction. An empty slot tells the dealer what to
+do, which is to upload a photo on Admin → Locations. Do not fill it with
+`locations-map`, and do not put a placeholder image in `public/`.
 
 **`overlay` is for what the platform does not hold at all**, and only that: a
 brand swatch, an award badge. Each row names the source's key field and carries
