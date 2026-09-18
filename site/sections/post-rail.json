@@ -3,30 +3,79 @@
   "id": "post-rail",
   "name": "Post grid",
   "props": [
-    { "key": "heading", "type": "text", "label": "Heading", "default": "Latest posts" },
-    { "key": "eyebrow", "type": "text", "label": "Eyebrow", "default": "" },
-    { "key": "anchor", "type": "text", "label": "Anchor id", "default": "" },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": "Latest posts"
+    },
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Eyebrow",
+      "default": ""
+    },
+    {
+      "key": "anchor",
+      "type": "text",
+      "label": "Anchor id",
+      "default": ""
+    },
     {
       "key": "background",
       "type": "select",
       "label": "Band background",
       "default": "card",
       "options": [
-        { "value": "card", "label": "White" },
-        { "value": "paper", "label": "Paper" }
+        {
+          "value": "card",
+          "label": "White"
+        },
+        {
+          "value": "paper",
+          "label": "Paper"
+        }
       ]
     },
-    { "key": "allLabel", "type": "text", "label": "Reset chip label", "default": "All" },
-    { "key": "countTemplate", "type": "text", "label": "Result count", "default": "{n} articles" },
-    { "key": "moreLabel", "type": "text", "label": "Card link label", "default": "Read more →" },
-    { "key": "emptyText", "type": "text", "label": "Message when a topic has no posts", "default": "No posts in this topic yet." },
+    {
+      "key": "allLabel",
+      "type": "text",
+      "label": "Reset chip label",
+      "default": "All"
+    },
+    {
+      "key": "countTemplate",
+      "type": "text",
+      "label": "Result count",
+      "default": "{n} articles"
+    },
+    {
+      "key": "moreLabel",
+      "type": "text",
+      "label": "Card link label",
+      "default": "Read more →"
+    },
+    {
+      "key": "emptyText",
+      "type": "text",
+      "label": "Message when a topic has no posts",
+      "default": "No posts in this topic yet."
+    },
     {
       "key": "topics",
       "type": "list",
       "label": "Topic chips",
       "fields": [
-        { "key": "label", "type": "text", "label": "Label" },
-        { "key": "value", "type": "text", "label": "Filter value" }
+        {
+          "key": "label",
+          "type": "text",
+          "label": "Label"
+        },
+        {
+          "key": "value",
+          "type": "text",
+          "label": "Filter value"
+        }
       ]
     },
     {
@@ -34,14 +83,46 @@
       "type": "list",
       "label": "Posts",
       "fields": [
-        { "key": "topic", "type": "text", "label": "Topic" },
-        { "key": "topicKey", "type": "text", "label": "Topic — the value a chip matches" },
-        { "key": "date", "type": "text", "label": "Date" },
-        { "key": "dateISO", "type": "text", "label": "Date (machine readable)" },
-        { "key": "title", "type": "text", "label": "Title" },
-        { "key": "href", "type": "url", "label": "Post link" },
-        { "key": "excerpt", "type": "textarea", "label": "Excerpt" },
-        { "key": "coverImage", "type": "image", "label": "Cover image" }
+        {
+          "key": "topic",
+          "type": "text",
+          "label": "Topic"
+        },
+        {
+          "key": "topicKey",
+          "type": "text",
+          "label": "Topic — the value a chip matches"
+        },
+        {
+          "key": "date",
+          "type": "text",
+          "label": "Date"
+        },
+        {
+          "key": "dateISO",
+          "type": "text",
+          "label": "Date (machine readable)"
+        },
+        {
+          "key": "title",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "key": "href",
+          "type": "url",
+          "label": "Post link"
+        },
+        {
+          "key": "excerpt",
+          "type": "textarea",
+          "label": "Excerpt"
+        },
+        {
+          "key": "coverImage",
+          "type": "image",
+          "label": "Cover image"
+        }
       ]
     }
   ],
@@ -60,12 +141,16 @@
         {
           "id": "pr-chips-row",
           "type": "row",
-          "props": { "gap": 5 },
+          "props": {
+            "gap": 5
+          },
           "children": [
             {
               "id": "pr-chips-col",
               "type": "column",
-              "props": { "span": 12 },
+              "props": {
+                "span": 12
+              },
               "children": [
                 {
                   "id": "pr-chips",
@@ -84,29 +169,41 @@
         {
           "id": "pr-head-row",
           "type": "row",
-          "props": { "gap": 5 },
+          "props": {
+            "gap": 5
+          },
           "children": [
             {
               "id": "pr-head-col",
               "type": "column",
-              "props": { "span": 8 },
+              "props": {
+                "span": 8
+              },
               "children": [
                 {
                   "id": "pr-head-h",
                   "type": "heading",
-                  "props": { "text": "{{heading}}", "eyebrow": "{{eyebrow}}", "headingLevel": 2 }
+                  "props": {
+                    "text": "{{heading}}",
+                    "eyebrow": "{{eyebrow}}",
+                    "headingLevel": 2
+                  }
                 }
               ]
             },
             {
               "id": "pr-count-col",
               "type": "column",
-              "props": { "span": 4 },
+              "props": {
+                "span": 4
+              },
               "children": [
                 {
                   "id": "pr-count",
                   "type": "result-count",
-                  "props": { "template": "{{countTemplate}}" }
+                  "props": {
+                    "template": "{{countTemplate}}"
+                  }
                 }
               ]
             }
@@ -115,12 +212,16 @@
         {
           "id": "pr-row",
           "type": "row",
-          "props": { "gap": 5 },
+          "props": {
+            "gap": 5
+          },
           "children": [
             {
               "id": "pr-col",
               "type": "column",
-              "props": { "span": 12 },
+              "props": {
+                "span": 12
+              },
               "children": [
                 {
                   "id": "pr-cards",
@@ -137,5 +238,6 @@
         }
       ]
     }
-  ]
+  ],
+  "css": "/* The band's own geometry, measured from the handoff. It lives here rather than\n   on the blog page because the parts it styles are this component's: a page that\n   places the grid gets the rule with it, and renaming a node here can no longer\n   leave a rule behind on a page that never mentioned it. */\n\n/* --- Topic chips ---------------------------------------------------------\n   The hairline above the chips is what separates them from the intro copy, and\n   the 40px below is what stops them crowding the results header. */\n[data-bz-node=\"pr-chips\"] .bz-block { padding-block: 0; }\n[data-bz-node=\"pr-chips-col\"] { border-top: 1px solid var(--line); padding-top: 22px; }\n[data-bz-node=\"pr-chips-row\"] { margin-bottom: 40px; }\n[data-bz-node=\"pr-chips\"] .ss-filter__pills { flex-wrap: wrap; overflow: visible; padding-bottom: 0; }\n[data-bz-node=\"pr-chips\"] .ss-pill {\n  border-width: 1px;\n  font-size: 13px;\n  letter-spacing: 0;\n  text-transform: none;\n  color: var(--body-text);\n}\n[data-bz-node=\"pr-chips\"] .ss-pill:hover { border-color: var(--ink); color: var(--ink); }\n[data-bz-node=\"pr-chips\"] .ss-pill[aria-pressed=\"true\"] { border-color: var(--accent); color: #fff; }\n\n/* --- Results header ------------------------------------------------------\n   Title and count sit on one baseline, the count pushed to the far edge. */\n[data-bz-node=\"pr-head-row\"] { align-items: baseline; margin-bottom: 26px; }\n[data-bz-node=\"pr-head-row\"] .bz-block { padding-block: 0; }\n[data-bz-node=\"pr-head-h\"] h2 { font-size: 30px; margin: 0; }\n[data-bz-node=\"pr-count-col\"] { text-align: right; }\n\n/* --- Cards ---------------------------------------------------------------\n   The card design is the Post cards component and its rules travel with it;\n   only the block's own padding is the band's business. */\n[data-bz-node=\"pr-cards\"] .bz-block { padding-block: 0; }\n\n@media (max-width: 640px) {\n  [data-bz-node=\"pr-head-h\"] h2 { font-size: 26px; }\n  [data-bz-node=\"pr-head-col\"], [data-bz-node=\"pr-count-col\"] { text-align: left; }\n}\n"
 }
