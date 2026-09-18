@@ -76,6 +76,10 @@ export const DATA_SOURCES = [
       // for a `filter` behaviour's data- attributes.
       { key: 'group', type: 'text', label: 'Group' },
       { key: 'groupKey', type: 'text', label: 'Group key (for filtering)' },
+      // Edited on Admin → Locations → the rooftop, not typed into a page: one
+      // authored location page stands for every branch, so a photo on the page
+      // would be the same photo on all of them.
+      { key: 'photo', type: 'image', label: 'Photo' },
       // The same facts as `brands`, `services`, `perks`, `departments` and
       // `hours` above, kept as lists instead of joined into one string apiece.
       // Those stay, because sites are bound to them; reach for these whenever

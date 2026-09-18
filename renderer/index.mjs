@@ -123,6 +123,11 @@
 // person or a model hand-writes. `anchor` and `scope` join them as declared
 // universal props: the renderer always read those off any node's wrapper while no
 // widget declared them, so the validator refused edits the build would render.
+// 4.22.0 — a rooftop carries its own `photo`, edited on Admin → Locations. It
+// exists because generated location pages took the old place for one away: a
+// photo on the authored page is the same photo on every branch, and the only
+// alternative was going back to a hand-written page per rooftop.
+//
 // 4.21.0 — a list prop's field may itself be a list, two deep, and the
 // `locations` source stops flattening. `brandRows`, `serviceRows`, `perkRows`,
 // `departmentRows` and `hoursRows` (departments, each with a seven-day week)
@@ -136,7 +141,7 @@
 // where a renamed page's old address goes. The redirects file is the dealer's,
 // in `site/`, because `vercel.json` is rebuilt from the template on every engine
 // sync; the platform composes one into the other when it bakes.
-export const RENDERER_VERSION = '4.21.0';
+export const RENDERER_VERSION = '4.22.0';
 
 export {
   LOCATION_SOURCE,

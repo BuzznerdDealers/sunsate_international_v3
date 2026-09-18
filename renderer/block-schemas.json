@@ -1,5 +1,5 @@
 {
-  "rendererVersion": "4.21.0",
+  "rendererVersion": "4.22.0",
   "documentVersion": 2,
   "gridColumns": 12,
   "tokenGroups": {
@@ -508,6 +508,11 @@
           "key": "groupKey",
           "type": "text",
           "label": "Group key (for filtering)"
+        },
+        {
+          "key": "photo",
+          "type": "image",
+          "label": "Photo"
         },
         {
           "key": "brandRows",
