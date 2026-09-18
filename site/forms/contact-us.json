@@ -2,7 +2,9 @@
   "id": "contact-us",
   "name": "Contact us",
   "status": "live",
-  "surfaces": ["page"],
+  "surfaces": [
+    "page"
+  ],
   "intent": "contact-dealer",
   "submitLabel": "Send message",
   "successMessage": "Thanks — your message is with the right department. We answer messages sent during business hours the same business day.",
@@ -12,24 +14,60 @@
     "text": "I agree to be contacted about this enquiry by phone, text or email."
   },
   "fields": [
-    { "id": "cu-name", "type": "full_name", "label": "Full name", "required": true },
-    { "id": "cu-company", "type": "single_line", "label": "Company or fleet", "required": false },
-    { "id": "cu-phone", "type": "phone", "label": "Phone", "required": true },
-    { "id": "cu-email", "type": "email", "label": "Email", "required": true },
+    {
+      "id": "cu-name",
+      "type": "full_name",
+      "label": "Full name",
+      "required": true
+    },
+    {
+      "id": "cu-company",
+      "type": "single_line",
+      "label": "Company or fleet",
+      "required": false
+    },
+    {
+      "id": "cu-phone",
+      "type": "phone",
+      "label": "Phone",
+      "required": true
+    },
+    {
+      "id": "cu-email",
+      "type": "email",
+      "label": "Email",
+      "required": true
+    },
     {
       "id": "cu-dept",
       "type": "dropdown",
       "label": "Department",
       "required": true,
       "options": [
-        { "value": "sales-trucks", "label": "Sales — trucks" },
-        { "value": "sales-trailers", "label": "Sales — trailers" },
-        { "value": "parts", "label": "Parts" },
-        { "value": "service", "label": "Service" },
-        { "value": "aftermarket", "label": "Aftermarket & modifications" },
-        { "value": "financing", "label": "Financing & credit" },
-        { "value": "careers", "label": "Careers" },
-        { "value": "other", "label": "Something else" }
+        {
+          "label": "Sales — Trucks"
+        },
+        {
+          "label": "Sales — Trailers"
+        },
+        {
+          "label": "Parts"
+        },
+        {
+          "label": "Service"
+        },
+        {
+          "label": "Aftermarket & modifications"
+        },
+        {
+          "label": "Financing & credit"
+        },
+        {
+          "label": "Careers"
+        },
+        {
+          "label": "Something else"
+        }
       ]
     },
     {
@@ -38,13 +76,34 @@
       "label": "Location",
       "required": true,
       "options": [
-        { "value": "tampa", "label": "Tampa — 6020 Adamo Drive" },
-        { "value": "davenport", "label": "Davenport — 41609 Hwy 27" },
-        { "value": "sarasota", "label": "Sarasota — 1000 Sarasota Center Blvd." },
-        { "value": "brooksville", "label": "Brooksville — 17127 Runway Drive" },
-        { "value": "aftermarket-parts", "label": "Aftermarket — 7105 East 6th Ave., Tampa" },
-        { "value": "trailer-sales", "label": "Trailer Sales — 6020 Adamo Drive, Tampa" },
-        { "value": "no-preference", "label": "No preference" }
+        {
+          "value": "tampa",
+          "label": "Tampa — 6020 Adamo Drive"
+        },
+        {
+          "value": "davenport",
+          "label": "Davenport — 41609 Hwy 27"
+        },
+        {
+          "value": "sarasota",
+          "label": "Sarasota — 1000 Sarasota Center Blvd."
+        },
+        {
+          "value": "brooksville",
+          "label": "Brooksville — 17127 Runway Drive"
+        },
+        {
+          "value": "aftermarket-parts",
+          "label": "Aftermarket — 7105 East 6th Ave., Tampa"
+        },
+        {
+          "value": "trailer-sales",
+          "label": "Trailer Sales — 6020 Adamo Drive, Tampa"
+        },
+        {
+          "value": "no-preference",
+          "label": "No preference"
+        }
       ]
     },
     {
@@ -62,8 +121,16 @@
       "name": "Sales enquiries",
       "logic": "OR",
       "rules": [
-        { "fieldId": "cu-dept", "operator": "is", "value": "sales-trucks" },
-        { "fieldId": "cu-dept", "operator": "is", "value": "sales-trailers" }
+        {
+          "fieldId": "cu-dept",
+          "operator": "is",
+          "value": "sales-trucks"
+        },
+        {
+          "fieldId": "cu-dept",
+          "operator": "is",
+          "value": "sales-trailers"
+        }
       ],
       "targetType": "role",
       "roleId": "salesperson",
@@ -73,7 +140,13 @@
       "id": "cu-service",
       "name": "Service enquiries",
       "logic": "AND",
-      "rules": [{ "fieldId": "cu-dept", "operator": "is", "value": "service" }],
+      "rules": [
+        {
+          "fieldId": "cu-dept",
+          "operator": "is",
+          "value": "service"
+        }
+      ],
       "targetType": "role",
       "roleId": "service-advisor",
       "scopeMode": "dynamic"
@@ -83,8 +156,16 @@
       "name": "Parts enquiries",
       "logic": "OR",
       "rules": [
-        { "fieldId": "cu-dept", "operator": "is", "value": "parts" },
-        { "fieldId": "cu-dept", "operator": "is", "value": "aftermarket" }
+        {
+          "fieldId": "cu-dept",
+          "operator": "is",
+          "value": "parts"
+        },
+        {
+          "fieldId": "cu-dept",
+          "operator": "is",
+          "value": "aftermarket"
+        }
       ],
       "targetType": "role",
       "roleId": "parts-advisor",
