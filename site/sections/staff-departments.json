@@ -1,58 +1,213 @@
 {
   "version": 2,
   "id": "staff-departments",
-  "name": "Staff by department",
-  "css": "[data-bz-section=\"staff-departments\"] [data-bz-node^=\"sd-band\"] { border-top: 1px solid var(--line) }\n[data-bz-section=\"staff-departments\"] .bz-widget__empty { color: var(--muted) }",
+  "name": "Team by department",
+  "css": "[data-bz-section=\"staff-departments\"] .bz-block { padding-block: 0 }\n[data-bz-section=\"staff-departments\"] .bz-row + .bz-row { margin-top: 0 }\n[data-bz-section=\"staff-departments\"] [data-bz-node=\"sd-controls\"] { padding-bottom: 22px }\n[data-bz-section=\"staff-departments\"] [data-bz-node=\"sd-meta\"] { border-top: 1px solid var(--line); padding-top: 18px }\n[data-bz-section=\"staff-departments\"] [data-bz-node=\"sd-note\"] p { font-size: 12px; color: var(--muted); margin: 0; text-align: right }\n/* The handoff's active pill is the dark chrome, not the accent the shared pill widget defaults to. */\n[data-bz-section=\"staff-departments\"] .ss-pill[aria-pressed=\"true\"] { background: var(--ink); color: #fff }\n[data-bz-section=\"staff-departments\"] [data-bz-type=\"row\"][data-bz-node^=\"sd-band-\"] { padding-top: 54px }\n[data-bz-section=\"staff-departments\"] h2 { font-size: 26px; margin: 0 0 10px }\n[data-bz-section=\"staff-departments\"] [data-bz-node^=\"sd-b-\"] p { font-size: 13px; line-height: 1.6; color: var(--muted); margin: 0 0 28px }\n/* A band whose every card is filtered out takes its heading with it. Written as a\n   real rule rather than a script so the Design canvas — which runs no site JS and\n   so hides nothing — still shows all six bands. */\n[data-bz-section=\"staff-departments\"] [data-bz-type=\"row\"][data-bz-node^=\"sd-band-\"]:not(:has(.ss-team__i:not([hidden]))) { display: none }\n@media (max-width: 640px) { [data-bz-section=\"staff-departments\"] [data-bz-node=\"sd-note\"] p { text-align: left } }",
   "props": [
+    {
+      "key": "background",
+      "type": "select",
+      "label": "Band background",
+      "default": "card",
+      "options": [
+        {
+          "value": "card",
+          "label": "White"
+        },
+        {
+          "value": "paper",
+          "label": "Paper"
+        },
+        {
+          "value": "none",
+          "label": "None"
+        }
+      ]
+    },
+    {
+      "key": "anchor",
+      "type": "text",
+      "label": "Anchor id",
+      "default": ""
+    },
+    {
+      "key": "allLabel",
+      "type": "text",
+      "label": "Reset pill label",
+      "default": "ALL"
+    },
+    {
+      "key": "countTemplate",
+      "type": "text",
+      "label": "Count line — {n} is replaced with how many are showing",
+      "default": "SHOWING {n} TEAM MEMBERS"
+    },
+    {
+      "key": "countInitial",
+      "type": "text",
+      "label": "Count line before any filter is applied",
+      "default": ""
+    },
+    {
+      "key": "note",
+      "type": "text",
+      "label": "Note beside the count",
+      "default": ""
+    },
     {
       "key": "departments",
       "type": "list",
       "label": "Departments",
       "fields": [
         {
-          "key": "id",
+          "key": "value",
           "type": "text",
-          "label": "Anchor id"
-        },
-        {
-          "key": "code",
-          "type": "text",
-          "label": "Department code (sales, parts, service, …)"
+          "label": "Key — the anchor and the filter value"
         },
         {
           "key": "label",
           "type": "text",
-          "label": "Department name"
+          "label": "Filter pill label"
+        },
+        {
+          "key": "heading",
+          "type": "text",
+          "label": "Band heading"
         },
         {
           "key": "blurb",
           "type": "textarea",
           "label": "Intro"
+        },
+        {
+          "key": "people",
+          "type": "list",
+          "label": "People",
+          "fields": [
+            {
+              "key": "name",
+              "type": "text",
+              "label": "Name"
+            },
+            {
+              "key": "title",
+              "type": "text",
+              "label": "Job title"
+            },
+            {
+              "key": "photo",
+              "type": "image",
+              "label": "Portrait"
+            },
+            {
+              "key": "initials",
+              "type": "text",
+              "label": "Initials — drawn on a dark tile when there is no portrait"
+            },
+            {
+              "key": "badge",
+              "type": "text",
+              "label": "Corner badge, e.g. Trailers"
+            }
+          ]
         }
       ]
     }
   ],
   "nodes": [
     {
-      "id": "sd-band",
+      "id": "sd",
       "type": "section",
       "props": {
         "width": "boxed",
-        "background": "card",
+        "background": "{{background}}",
         "paddingY": 9,
-        "anchor": "{{id}}",
-        "repeat": "departments"
+        "anchor": "{{anchor}}",
+        "behaviour": "filter"
       },
       "children": [
         {
-          "id": "sd-head",
+          "id": "sd-controls",
           "type": "row",
           "props": {
-            "gap": 5
+            "gap": 4
           },
           "children": [
             {
-              "id": "sd-head-col",
+              "id": "sd-controls-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "sd-pills",
+                  "type": "filter-pills",
+                  "props": {
+                    "facet": "dept",
+                    "allLabel": "{{allLabel}}",
+                    "options": "{{departments}}"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sd-meta",
+          "type": "row",
+          "props": {
+            "gap": 4,
+            "align": "center",
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "sd-meta-count",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "sd-count",
+                  "type": "result-count",
+                  "props": {
+                    "template": "{{countTemplate}}",
+                    "initial": "{{countInitial}}"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "sd-meta-note",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "sd-note",
+                  "type": "text",
+                  "props": {
+                    "text": "{{note}}"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sd-band",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "repeat": "departments",
+            "anchor": "{{value}}"
+          },
+          "children": [
+            {
+              "id": "sd-band-col",
               "type": "column",
               "props": {
                 "span": 12
@@ -62,7 +217,7 @@
                   "id": "sd-h",
                   "type": "heading",
                   "props": {
-                    "text": "{{label}}",
+                    "text": "{{heading}}",
                     "headingLevel": 2
                   }
                 },
@@ -73,35 +228,32 @@
                     "text": "{{blurb}}",
                     "width": "prose"
                   }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "sd-row",
-          "type": "row",
-          "props": {
-            "gap": 5
-          },
-          "children": [
-            {
-              "id": "sd-col",
-              "type": "column",
-              "props": {
-                "span": 12
-              },
-              "children": [
+                },
                 {
-                  "id": "sd-staff",
-                  "type": "widget",
+                  "id": "sd-grid",
+                  "type": "row",
                   "props": {
-                    "widget": "staff",
-                    "config": {
-                      "heading": "",
-                      "departmentCode": "{{code}}"
+                    "gap": 5
+                  },
+                  "children": [
+                    {
+                      "id": "sd-grid-col",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "children": [
+                        {
+                          "id": "sd-cards",
+                          "type": "team-cards",
+                          "props": {
+                            "deptKey": "{{value}}",
+                            "people": "{{people}}"
+                          }
+                        }
+                      ]
                     }
-                  }
+                  ]
                 }
               ]
             }

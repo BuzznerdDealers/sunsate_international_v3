@@ -1,12 +1,3 @@
-[data-bz-node="jump-menu"] .bz-nav { justify-content: center; gap: 10px; flex-wrap: wrap; }
-[data-bz-node="jump-menu"] .bz-navitem > a {
-  display: inline-flex; align-items: center;
-  padding: 10px 16px; border: 1.5px solid var(--line); background: var(--card);
-  font-size: 13px; font-weight: 700; letter-spacing: .04em;
-}
-[data-bz-node="jump-menu"] .bz-navitem > a:hover { background: var(--accent); border-color: transparent; color: #fff; }
-[data-bz-node="jump-note"] p { color: var(--muted); font-size: 13px; }
-
 /* --- Hero geometry, measured from the handoff --- */
 .bz-block--hero { padding-block: 100px; }
 .bz-block--hero h1 { font-size: 52px; line-height: 1.1; margin-bottom: 20px; }
@@ -29,9 +20,5 @@
 /* --- Band rhythm, measured from the handoff --------------------------------
    Each band's own padding, read off the section it is drawn as. The build
    was using the 90px house rhythm where the handoff sets its own. */
-[data-bz-node="team-jump"].bz-section,
-[data-bz-node="team-jump"] > .bz-section { padding-block: 56px 0px; }
 [data-bz-node="team-departments"].bz-section,
 [data-bz-node="team-departments"] > .bz-section { padding-block: 40px 90px; }
-[data-bz-node="team-departments"].bz-section,
-[data-bz-node="team-departments"] > .bz-section { padding-block: 72px 72px; }
