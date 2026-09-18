@@ -38,6 +38,13 @@
                   }
                 },
                 {
+                  "id": "spacer",
+                  "type": "spacer",
+                  "props": {
+                    "size": 6
+                  }
+                },
+                {
                   "id": "intro-text",
                   "type": "text",
                   "props": {
@@ -46,7 +53,7 @@
                   }
                 },
                 {
-                  "id": "spacer",
+                  "id": "spacer-2",
                   "type": "spacer",
                   "props": {
                     "size": 6
@@ -75,7 +82,7 @@
           }
         },
         {
-          "id": "spacer-2",
+          "id": "spacer-3",
           "type": "spacer",
           "props": {
             "size": 6
@@ -100,7 +107,7 @@
           }
         },
         {
-          "id": "spacer-3",
+          "id": "spacer-4",
           "type": "spacer",
           "props": {
             "size": 6
@@ -125,7 +132,7 @@
           }
         },
         {
-          "id": "spacer-4",
+          "id": "spacer-5",
           "type": "spacer",
           "props": {
             "size": 6
@@ -150,7 +157,7 @@
           }
         },
         {
-          "id": "spacer-5",
+          "id": "spacer-6",
           "type": "spacer",
           "props": {
             "size": 6
@@ -177,7 +184,7 @@
       }
     },
     {
-      "id": "spacer-6",
+      "id": "spacer-7",
       "type": "spacer",
       "props": {
         "size": 6
@@ -202,7 +209,7 @@
       }
     },
     {
-      "id": "spacer-7",
+      "id": "spacer-8",
       "type": "spacer",
       "props": {
         "size": 6
@@ -227,7 +234,7 @@
       }
     },
     {
-      "id": "spacer-8",
+      "id": "spacer-9",
       "type": "spacer",
       "props": {
         "size": 6
