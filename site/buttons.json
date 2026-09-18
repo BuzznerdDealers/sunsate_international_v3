@@ -36,5 +36,9 @@
   { "id": "all-posts", "label": "See all posts →", "url": "/blog/posts", "style": "secondary", "intent": "read-post", "newTab": false, "active": true },
   { "id": "truck-configurator", "label": "Build your truck", "url": "/truck-configurator", "style": "primary", "intent": "build-truck", "newTab": false, "active": true },
   { "id": "view-specifications", "label": "Brochures & spec sheets →", "url": "/specifications", "style": "link", "intent": "browse-inventory", "newTab": false, "active": true },
-  { "id": "deal-of-the-week", "label": "See this week's deal", "url": "/deal-of-the-week", "style": "primary", "intent": "browse-inventory", "newTab": false, "active": true }
+  { "id": "deal-of-the-week", "label": "See this week's deal", "url": "/deal-of-the-week", "style": "primary", "intent": "browse-inventory", "newTab": false, "active": true },
+  { "id": "browse-new-trucks", "label": "Browse new trucks", "url": "/store/inventory?condition=new", "style": "primary", "intent": "browse-inventory", "newTab": false, "active": true },
+  { "id": "get-financing", "label": "Get financing", "url": "/financing", "style": "secondary", "intent": "get-financing", "newTab": false, "active": true },
+  { "id": "truck-configurator-link", "label": "Truck Configurator →", "url": "/truck-configurator", "style": "link", "intent": "build-truck", "newTab": false, "active": true },
+  { "id": "s13-powertrain", "label": "S13 Integrated Powertrain & brochures →", "url": "/specifications", "style": "link", "intent": "learn-more", "newTab": false, "active": true }
 ]

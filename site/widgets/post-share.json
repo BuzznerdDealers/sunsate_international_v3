@@ -1,0 +1,37 @@
+{
+  "id": "post-share",
+  "label": "Share row",
+  "description": "The bordered share chips under a post's body. Each row is a network and the address it hands the post to, so nothing here guesses the page's own URL.",
+  "props": [
+    {
+      "key": "label",
+      "type": "text",
+      "label": "Row label",
+      "default": "Share"
+    },
+    {
+      "key": "items",
+      "type": "list",
+      "label": "Destinations",
+      "fields": [
+        {
+          "key": "label",
+          "type": "text",
+          "label": "Network"
+        },
+        {
+          "key": "url",
+          "type": "url",
+          "label": "Share URL"
+        },
+        {
+          "key": "newTab",
+          "type": "boolean",
+          "label": "Open in a new tab"
+        }
+      ]
+    }
+  ],
+  "html": "<div class=\"ss-share\">{{#if label}}<span class=\"ss-share__l\">{{label}}</span>{{/if}}{{#each items}}<a class=\"ss-share__a\" href=\"{{link url}}\"{{#if newTab}} target=\"_blank\" rel=\"noopener\"{{/if}}>{{label}}</a>{{/each}}</div>",
+  "css": ".ss-share{display:flex;gap:14px;align-items:center;flex-wrap:wrap;border-top:1px solid var(--line);margin-top:44px;padding-top:22px}\n.ss-share__l{font:700 var(--text-eyebrow)/1 var(--font-body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}\n.ss-share__a{font-size:13px;font-weight:700;color:var(--body-text);border:1px solid var(--line);padding:8px 14px;text-decoration:none}\n.ss-share__a:hover{border-color:var(--accent);color:var(--accent)}"
+}
