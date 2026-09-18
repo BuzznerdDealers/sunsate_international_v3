@@ -18,105 +18,265 @@
       }
     },
     {
-      "id": "team-jump",
-      "type": "section",
-      "props": {
-        "width": "boxed",
-        "paddingY": 6,
-        "background": "card"
-      },
-      "children": [
-        {
-          "id": "jump-row",
-          "type": "row",
-          "props": {
-            "gap": 5
-          },
-          "children": [
-            {
-              "id": "jump-col",
-              "type": "column",
-              "props": {
-                "span": 12,
-                "align": "center"
-              },
-              "children": [
-                {
-                  "id": "jump-menu",
-                  "type": "menu",
-                  "props": {
-                    "menuId": "team-departments",
-                    "layout": "horizontal",
-                    "align": "center",
-                    "depth": 1
-                  }
-                },
-                {
-                  "id": "jump-note",
-                  "type": "text",
-                  "props": {
-                    "text": "Trucks, trailers, parts and service — one team across six Florida locations.",
-                    "align": "center"
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "team-departments",
       "type": "sharedSection",
       "props": {
         "sectionId": "staff-departments",
         "values": {
+          "background": "card",
+          "allLabel": "All 38",
+          "countTemplate": "SHOWING {n} OF 38 TEAM MEMBERS",
+          "countInitial": "SHOWING 38 OF 38 TEAM MEMBERS",
+          "note": "Trucks, trailers, parts and service — one team across six Florida locations.",
           "departments": [
             {
-              "id": "executive-staff",
-              "label": "Executive Staff",
+              "value": "executive-staff",
+              "heading": "Executive Staff",
               "blurb": "Leadership across both Sun State International Trucks and Sun State Trailers.",
-              "code": "executive"
+              "people": [
+                {
+                  "name": "Oscar Horton",
+                  "title": "CEO",
+                  "initials": "OH"
+                },
+                {
+                  "name": "Miriam Horton",
+                  "title": "VP",
+                  "initials": "MH"
+                },
+                {
+                  "name": "Anthony Martell",
+                  "title": "COO",
+                  "photo": {
+                    "src": "/img/team-tony-martell.png",
+                    "alt": "Anthony Martell, Chief Operating Officer",
+                    "width": 1512,
+                    "height": 2016
+                  }
+                },
+                {
+                  "name": "Elizabeth Lopez",
+                  "title": "CFO, Dealer Operations",
+                  "initials": "EL"
+                },
+                {
+                  "name": "Robert Bennett",
+                  "initials": "RB"
+                },
+                {
+                  "name": "Steve Jirak",
+                  "title": "VP, Parts Sales",
+                  "initials": "SJ"
+                },
+                {
+                  "name": "Paul Dearth",
+                  "title": "VP, Wholegoods",
+                  "initials": "PD"
+                },
+                {
+                  "name": "Joan Gates",
+                  "title": "VP, Human Resources",
+                  "initials": "JG"
+                },
+                {
+                  "name": "Kelli Horton",
+                  "title": "VP, Marketing",
+                  "initials": "KH"
+                },
+                {
+                  "name": "Gregg Drury",
+                  "title": "VP, Fixed Operations",
+                  "initials": "GD"
+                }
+              ],
+              "label": "Executive Staff 10"
             },
             {
-              "id": "wholegoods-sales-rental",
-              "label": "Wholegoods Sales & Rental",
+              "value": "wholegoods-sales-rental",
+              "heading": "Wholegoods Sales & Rental",
               "blurb": "New and used trucks, Globe and Hyundai Translead trailers, rental and finance.",
-              "code": "sales"
+              "people": [
+                {
+                  "name": "Scott Anderson",
+                  "title": "Truck & Trailer Sales Manager",
+                  "initials": "SA",
+                  "badge": "Trailers"
+                },
+                {
+                  "name": "Mike Couch",
+                  "title": "Senior Sales Representative",
+                  "initials": "MC"
+                },
+                {
+                  "name": "Dave Metcalf",
+                  "title": "Fleet Truck Sales Representative",
+                  "initials": "DM"
+                },
+                {
+                  "name": "Chris Harris",
+                  "title": "Truck Sales Representative",
+                  "initials": "CH"
+                },
+                {
+                  "name": "Manny Neira",
+                  "title": "Truck Sales Representative",
+                  "initials": "MN"
+                },
+                {
+                  "name": "Mark Joel",
+                  "title": "Truck Sales Representative",
+                  "initials": "MJ"
+                },
+                {
+                  "name": "Debbie Hall",
+                  "title": "New Truck & Globe Trailer Sales",
+                  "initials": "DH",
+                  "badge": "Trailers"
+                },
+                {
+                  "name": "Michelle Coulombe",
+                  "title": "Rental Dept. Operations Manager",
+                  "initials": "MC"
+                },
+                {
+                  "name": "Courtney Drouillette",
+                  "title": "Marketing and Fleet Relations Manager",
+                  "initials": "CD"
+                },
+                {
+                  "name": "Lynn DeJesus",
+                  "title": "Finance Manager",
+                  "initials": "LD"
+                }
+              ],
+              "label": "Wholegoods Sales & Rental 10"
             },
             {
-              "id": "parts",
-              "label": "Parts",
+              "value": "parts",
+              "heading": "Parts",
               "blurb": "Genuine OEM, Diamond Advantage and all-makes parts for trucks and trailers.",
-              "code": "parts"
+              "people": [
+                {
+                  "name": "Matthew Belmore",
+                  "title": "Parts Director",
+                  "initials": "MB"
+                },
+                {
+                  "name": "Scott Riddick",
+                  "title": "Aftermarket Parts Manager",
+                  "initials": "SR"
+                },
+                {
+                  "name": "Jason Velez",
+                  "title": "Parts and Service Operations Manager, Tampa",
+                  "initials": "JV"
+                },
+                {
+                  "name": "Allen Evans",
+                  "title": "Parts Manager, Sarasota",
+                  "initials": "AE"
+                },
+                {
+                  "name": "Roymel Bryant",
+                  "title": "Parts Manager, Davenport",
+                  "initials": "RB"
+                }
+              ],
+              "label": "Parts 5"
             },
             {
-              "id": "parts-sales-team",
-              "label": "Parts Sales Team",
+              "value": "parts-sales-team",
+              "heading": "Parts Sales Team",
               "blurb": "Territory parts representatives across Tampa, Sarasota, Brooksville and Davenport.",
-              "code": "parts"
+              "people": [
+                {
+                  "name": "Jerri Garcia",
+                  "title": "Tampa Territory",
+                  "initials": "JG"
+                },
+                {
+                  "name": "Jason Zier",
+                  "title": "Tampa",
+                  "initials": "JZ"
+                },
+                {
+                  "name": "Keith Grant",
+                  "title": "Sarasota",
+                  "initials": "KG"
+                },
+                {
+                  "name": "Bruce Twombly",
+                  "title": "Brooksville",
+                  "initials": "BT"
+                },
+                {
+                  "name": "Kim Donohue",
+                  "title": "Davenport",
+                  "initials": "KD"
+                }
+              ],
+              "label": "Parts Sales Team 5"
             },
             {
-              "id": "service",
-              "label": "Service",
+              "value": "service",
+              "heading": "Service",
               "blurb": "Diamond Edge certified service, aftermarket modifications and mobile maintenance.",
-              "code": "service"
+              "people": [
+                {
+                  "name": "JJ Wilmoth",
+                  "title": "Service Manager, Tampa",
+                  "initials": "JW"
+                },
+                {
+                  "name": "Mark Staton",
+                  "title": "Service Manager, Davenport",
+                  "initials": "MS"
+                },
+                {
+                  "name": "Dennis Gillespie",
+                  "title": "Service Manager, Sarasota",
+                  "initials": "DG"
+                },
+                {
+                  "name": "Jullian Beckmann",
+                  "title": "Aftermarket Service Manager",
+                  "initials": "JB"
+                }
+              ],
+              "label": "Service 4"
             },
             {
-              "id": "store-managers",
-              "label": "Store Managers",
+              "value": "store-managers",
+              "heading": "Store Managers",
               "blurb": "Parts and service operations leadership at each Sun State location.",
-              "code": "office"
+              "people": [
+                {
+                  "name": "Ronnie Jones",
+                  "title": "Parts and Service Operations Manager, Brooksville",
+                  "initials": "RJ"
+                },
+                {
+                  "name": "Paul Royals",
+                  "title": "Parts and Service Operations Manager, Davenport",
+                  "initials": "PR"
+                },
+                {
+                  "name": "Mike Velez",
+                  "title": "Parts and Service Operations Manager, Sarasota",
+                  "initials": "MV"
+                },
+                {
+                  "name": "Damian Groene",
+                  "title": "Parts and Service Operations Manager, Aftermarket",
+                  "initials": "DG"
+                }
+              ],
+              "label": "Store Managers 4"
             }
-          ],
-          "background": "card"
-        },
-        "snapshots": {
-          "sd-staff": {
-            "staff": []
-          }
+          ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "team-faq",
