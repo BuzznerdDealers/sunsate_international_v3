@@ -83,7 +83,41 @@
           "props": {
             "align": "left",
             "width": "prose",
-            "text": "Every manufacturer recommends a diesel truck maintenance schedule for a reason. Oil gradually loses its ability to lubricate engine components as contaminants, soot, and debris accumulate. Waiting too long between services increases engine wear and can reduce fuel efficiency.\n\nFactors that may require more frequent service include:\n\n✓\tFrequent stop-and-go driving<br>\n✓\tHeavy hauling<br>\n✓\tIdling for extended periods<br>\n✓\tDusty job sites<br>\n✓\tExtreme temperatures\n\nFollowing a consistent diesel truck maintenance schedule helps protect one of your fleet’s biggest investments."
+            "text": "Every manufacturer recommends a diesel truck maintenance schedule for a reason. Oil gradually loses its ability to lubricate engine components as contaminants, soot, and debris accumulate. Waiting too long between services increases engine wear and can reduce fuel efficiency.\n\nFactors that may require more frequent service include:"
+          }
+        },
+        {
+          "id": "text-factors",
+          "type": "list",
+          "props": {
+            "headingLevel": 3,
+            "columns": 2,
+            "items": [
+              {
+                "label": "Frequent stop-and-go driving"
+              },
+              {
+                "label": "Heavy hauling"
+              },
+              {
+                "label": "Idling for extended periods"
+              },
+              {
+                "label": "Dusty job sites"
+              },
+              {
+                "label": "Extreme temperatures"
+              }
+            ]
+          }
+        },
+        {
+          "id": "text-b",
+          "type": "text",
+          "props": {
+            "align": "left",
+            "width": "prose",
+            "text": "Following a consistent diesel truck maintenance schedule helps protect one of your fleet’s biggest investments."
           }
         },
         {
@@ -99,7 +133,7 @@
           "props": {
             "headingLevel": 2,
             "align": "left",
-            "text": "Mistake #2: Ignoring Other Systems During Routine Maintenance\n"
+            "text": "Mistake #2: Ignoring Other Systems During Routine Maintenance"
           }
         },
         {
@@ -108,7 +142,47 @@
           "props": {
             "align": "left",
             "width": "prose",
-            "text": "An oil change is one of the best opportunities to inspect other critical truck components. Experienced technicians don’t simply drain the oil and send you on your way. They look for early warning signs that could become larger issues later.\n\nThis includes inspecting:\n\n✓\tBelts and hoses<br>\n✓\tBrake components<br>\n✓\tSuspension<br>\n✓\tBatteries<br>\n✓\tFilters<br>\n✓\tFluid levels<br>\n✓\tTires\n\nRoutine inspections often identify worn truck cooling system parts before overheating leads to engine damage. Likewise, inspecting diesel fuel system parts helps prevent fuel delivery issues that can affect performance and efficiency. Catching these problems early is far less expensive than roadside repairs."
+            "text": "An oil change is one of the best opportunities to inspect other critical truck components. Experienced technicians don’t simply drain the oil and send you on your way. They look for early warning signs that could become larger issues later.\n\nThis includes inspecting:"
+          }
+        },
+        {
+          "id": "text-2-checks",
+          "type": "list",
+          "props": {
+            "headingLevel": 3,
+            "columns": 2,
+            "items": [
+              {
+                "label": "Belts and hoses"
+              },
+              {
+                "label": "Brake components"
+              },
+              {
+                "label": "Suspension"
+              },
+              {
+                "label": "Batteries"
+              },
+              {
+                "label": "Filters"
+              },
+              {
+                "label": "Fluid levels"
+              },
+              {
+                "label": "Tires"
+              }
+            ]
+          }
+        },
+        {
+          "id": "text-2-b",
+          "type": "text",
+          "props": {
+            "align": "left",
+            "width": "prose",
+            "text": "Routine inspections often identify worn truck cooling system parts before overheating leads to engine damage. Likewise, inspecting diesel fuel system parts helps prevent fuel delivery issues that can affect performance and efficiency. Catching these problems early is far less expensive than roadside repairs."
           }
         },
         {
@@ -147,7 +221,7 @@
           "id": "heading-4",
           "type": "heading",
           "props": {
-            "headingLevel": 4,
+            "headingLevel": 2,
             "align": "left",
             "text": "Need Genuine Parts?"
           }
@@ -172,7 +246,7 @@
           "id": "image-2",
           "type": "image",
           "props": {
-            "width": "full",
+            "width": "prose",
             "image": {
               "src": "https://vendure.buzznerdrv.com/assets/source/45/4.2.jpg",
               "alt": "4.2.jpg",
@@ -228,7 +302,32 @@
           "props": {
             "align": "left",
             "width": "prose",
-            "text": "Many expensive engine repairs begin with small issues that could have been caught during preventive maintenance. Leaks, worn filters, contaminated fluids, or failing components rarely happen overnight. Regular inspections and scheduled commercial truck oil change services allow technicians to identify developing problems before they lead to breakdowns. Preventive maintenance is one of the most effective ways to reduce truck downtime services across your fleet.\n\nLess downtime means:\n\n✓\tMore deliveries completed<br>\n✓\tFewer emergency repairs<br>\n✓\tBetter customer satisfaction<br>\n✓\tLower operating costs<br>\n✓\tLonger equipment life<br>"
+            "text": "Many expensive engine repairs begin with small issues that could have been caught during preventive maintenance. Leaks, worn filters, contaminated fluids, or failing components rarely happen overnight. Regular inspections and scheduled commercial truck oil change services allow technicians to identify developing problems before they lead to breakdowns. Preventive maintenance is one of the most effective ways to reduce truck downtime services across your fleet.\n\nLess downtime means:"
+          }
+        },
+        {
+          "id": "text-6-gains",
+          "type": "list",
+          "props": {
+            "headingLevel": 3,
+            "columns": 2,
+            "items": [
+              {
+                "label": "More deliveries completed"
+              },
+              {
+                "label": "Fewer emergency repairs"
+              },
+              {
+                "label": "Better customer satisfaction"
+              },
+              {
+                "label": "Lower operating costs"
+              },
+              {
+                "label": "Longer equipment life"
+              }
+            ]
           }
         },
         {
@@ -278,7 +377,7 @@
           "props": {
             "align": "left",
             "width": "prose",
-            "text": "Keeping commercial trucks on the road requires more than changing oil. It requires technicians who understand heavy-duty equipment, access to genuine parts, and a service department committed to your uptime. At Sun State International, we know every hour your truck sits in the shop affects your business. That’s why our team focuses on efficient diagnostics, quality repairs, and proactive maintenance designed to keep you moving.\n\nWhether you’re servicing one truck or an entire fleet, we’re here to provide dependable support every step of the way.\n\n"
+            "text": "Keeping commercial trucks on the road requires more than changing oil. It requires technicians who understand heavy-duty equipment, access to genuine parts, and a service department committed to your uptime. At Sun State International, we know every hour your truck sits in the shop affects your business. That’s why our team focuses on efficient diagnostics, quality repairs, and proactive maintenance designed to keep you moving.\n\nWhether you’re servicing one truck or an entire fleet, we’re here to provide dependable support every step of the way."
           }
         },
         {
@@ -292,7 +391,7 @@
           "id": "image-3",
           "type": "image",
           "props": {
-            "width": "full",
+            "width": "prose",
             "image": {
               "src": "https://vendure.buzznerdrv.com/assets/source/fd/4.3.jpg",
               "alt": "4.3.jpg",
