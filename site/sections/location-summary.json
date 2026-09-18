@@ -188,7 +188,13 @@
                   "type": "widget",
                   "props": {
                     "widget": "location-photo",
-                    "config": {}
+                    "config": {},
+                    "snapshot": {
+                      "photo": {
+                        "src": "",
+                        "alt": ""
+                      }
+                    }
                   }
                 }
               ]
