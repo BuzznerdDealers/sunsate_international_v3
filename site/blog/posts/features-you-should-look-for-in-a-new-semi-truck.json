@@ -29,8 +29,10 @@
           "readTime": "5 min read",
           "author": "Sun State International",
           "image": {
-            "src": "/img/photo-placeholder.svg",
-            "alt": "Photograph to be supplied — a new International tractor at the dealership"
+            "src": "https://vendure.buzznerdrv.com/assets/source/dc/5.1.jpg",
+            "alt": "Photograph to be supplied — a new International tractor at the dealership",
+            "width": 2000,
+            "height": 1333
           }
         }
       },
@@ -552,7 +554,8 @@
                           "a": "Sun State International sells new International trucks from locations in Tampa, Sarasota, Davenport and Brooksville, Florida, with financing, parts and service support. Call 800-741-7566."
                         }
                       ]
-                    }
+                    },
+                    "snapshot": null
                   }
                 }
               ]
