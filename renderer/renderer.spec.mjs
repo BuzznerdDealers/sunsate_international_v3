@@ -1457,6 +1457,84 @@ test('an unknown source is empty rather than fatal, and only a list can carry on
   assert.deepEqual(values.heading, { source: 'locations' });
 });
 
+const BLOG_CTX = {
+  blogBasePath: '/blog/posts',
+  posts: [
+    { slug: 'alignment', title: 'Alignment', date: '2026-07-30', description: 'One', topic: 'Service' },
+    { slug: 'brakes', title: 'Brakes', date: '2026-06-25', description: 'Two', topic: 'Air Brakes', coverImage: '/b.jpg' },
+    { slug: 'oil', title: 'Oil', date: '2026-06-14', description: 'Three', topic: 'Service' },
+  ],
+};
+
+test('the blog source answers from the repo, with nothing baked into the placement', () => {
+  // Every other source needs the platform to resolve it on publish. The posts
+  // are already here, so a build with no snapshot still draws them — which is
+  // the whole point: publishing a post is the only step.
+  const rows = resolveDataBinding({ source: 'posts' }, null, { ctx: BLOG_CTX });
+  assert.equal(rows.length, 3);
+  assert.equal(rows[0].title, 'Alignment', 'newest first, as the context holds them');
+  assert.equal(rows[0].href, '/blog/posts/alignment', 'the link follows the blog base path');
+  assert.equal(rows[0].date, 'Jul 30, 2026');
+  assert.equal(rows[0].dateISO, '2026-07-30', 'the machine spelling survives for <time>');
+  assert.deepEqual(rows[1].coverImage, { src: '/b.jpg', alt: 'Brakes' }, 'an image prop wants src + alt');
+  assert.equal(rows[0].coverImage.src, '', 'a post with no cover still has the shape');
+});
+
+test('a post topic arrives as both display copy and a filter value', () => {
+  // A filter control matches on the key. Matching on "Air Brakes" would break
+  // the day someone retitles it, and nothing would say so.
+  const rows = resolveDataBinding({ source: 'posts' }, null, { ctx: BLOG_CTX });
+  assert.equal(rows[1].topic, 'Air Brakes');
+  assert.equal(rows[1].topicKey, 'air-brakes');
+});
+
+test('a blog placement can narrow to one topic and cap how many it draws', () => {
+  const service = resolveDataBinding(
+    { source: 'posts', config: { topic: 'Service' } },
+    null,
+    { ctx: BLOG_CTX },
+  );
+  assert.deepEqual(service.map(r => r.slug), ['alignment', 'oil']);
+
+  const capped = resolveDataBinding({ source: 'posts', config: { limit: 2 } }, null, { ctx: BLOG_CTX });
+  assert.equal(capped.length, 2);
+});
+
+test('a blog binding falls through to samples when there is no blog to read', () => {
+  // A canvas has no posts in context. Returning nothing there would make the
+  // band vanish the moment a dealer pointed it at the blog.
+  assert.deepEqual(resolveDataBinding({ source: 'posts' }, null, {}), []);
+  const sample = resolveDataBinding({ source: 'posts' }, null, { sample: true, sampleRows: 2 });
+  assert.equal(sample.length, 2);
+  assert.equal(typeof sample[0].title, 'string');
+});
+
+test('the topic chips come from the posts, so a control always matches something', () => {
+  const rows = resolveDataBinding({ source: 'post-topics' }, null, { ctx: BLOG_CTX });
+  assert.deepEqual(rows, [
+    { label: 'Service', value: 'service' },
+    { label: 'Air Brakes', value: 'air-brakes' },
+  ], 'each topic once, in the order the posts introduce it');
+
+  // The value is the key the cards carry, not the words on the chip.
+  const posts = resolveDataBinding({ source: 'posts' }, null, { ctx: BLOG_CTX });
+  const carried = new Set(posts.map(p => p.topicKey));
+  for (const row of rows) assert.ok(carried.has(row.value), `nothing carries "${row.value}"`);
+});
+
+test('a post with no topic contributes no chip', () => {
+  const rows = resolveDataBinding({ source: 'post-topics' }, null, {
+    ctx: { posts: [{ slug: 'a', title: 'A' }, { slug: 'b', title: 'B', topic: '  ' }] },
+  });
+  assert.deepEqual(rows, []);
+});
+
+test('a baked snapshot still wins over the repo, if the platform ever resolves posts', () => {
+  const baked = [{ slug: 'x', title: 'Baked', href: '/blog/posts/x' }];
+  const rows = resolveDataBinding({ source: 'posts' }, baked, { ctx: BLOG_CTX });
+  assert.deepEqual(rows, baked);
+});
+
 test('the editor keeps the binding, so saving does not freeze live rows into the file', () => {
   const props = parseComponentProps(ROOFTOPS.props);
   const stored = componentValues(props, { spots: { source: 'locations' } });

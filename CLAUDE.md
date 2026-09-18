@@ -295,12 +295,13 @@ with its list hidden in CSS, and hand-feeding the real tiles beside it.
 }}
 ```
 
-Two sources today, and `renderer/data-sources.mjs` is the authoritative list:
+`renderer/data-sources.mjs` is the authoritative list. The three worth knowing:
 
 | `source` | Rows | Keyed on | `config` | Fields you may bind to |
 |---|---|---|---|---|
 | `locations` | Every active rooftop | `slug` | `locationSlug`, `pagePathPrefix` | **Identity** `id` `name` `slug` `num` `href`<br>**Address** `streetAddress` `city` `region` `postalCode` `country` `latitude` `longitude` `mapUrl`<br>**Contact** `phone` `phoneUrl` `email` `phone2` `phone2Url` `phone3` `phone3Url`<br>**The record** `brands` `services` `perks` `departments` `hours`<br>**Filter keys** `brandKeys` `perkKeys` `perk1` `perk2` `perk3` |
 | `staff` | The team directory | `name` | `locationSlug`, `departmentCode` | `name` `title` `phone` `phoneUrl` `photo` |
+| `posts` | Every published post, newest first | `slug` | `topic`, `limit` | `slug` `title` `href` `date` `dateISO` `excerpt` `topic` `topicKey` `coverImage` |
 
 Bind to **those** field names. `{{state}}` and `{{url}}` are not among them —
 `{{region}}` and `{{mapUrl}}` are — and a name the source does not carry renders
@@ -314,6 +315,18 @@ resolves to a scalar. `brandKeys` and `perkKeys` are the same two as machine
 keys, space separated, for a `filter` behaviour's `data-` attributes — match a
 control's value against those, never against the display copy. `perk1`–`perk3`
 exist for a card that shows service options as separate pills.
+
+**The blog is the one source that needs no publish.** `posts` (and `post-topics`, one row per
+topic in play, for a `filter` behaviour's chips) resolve from the repo's own post files at
+build time, so a post written and published on the Posts screen is on the page in the next
+build — cards, cover image and chip together. Everything the card shows is the post's, so
+there is nothing to retype and nothing to go stale.
+
+Bind a card's filter attribute to `topicKey`, not `topic`: the key is derived
+(`Air Brakes` → `air-brakes`) and the display copy is what someone retitles later.
+
+`postsList` is still the right answer for an ordinary teaser — one node, no component. Reach
+for the source when the card is your own design.
 
 **`overlay` is for what the platform does not hold at all**, and only that: a
 brand swatch, an award badge. Each row names the source's key field and carries

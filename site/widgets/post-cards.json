@@ -1,7 +1,7 @@
 {
   "id": "post-cards",
   "label": "Post cards",
-  "description": "The blog's post grid. Each card carries the topic the platform filter behaviour reads, so the topic chips need no script, and the grid owns the “no posts in this topic” message the behaviour reveals when a chip matches nothing. A card with no thumbnail set draws an empty placeholder the same size as the photograph, so adding one later does not move the card. The cards mirror site/blog/posts/ — add one here when a post is published.",
+  "description": "The blog's post grid. Its rows come from the Posts screen through the placement's “From Posts” switch, so publishing a post adds a card and nothing here is retyped. Each card carries its topic as a machine key, which is what the filter behaviour's chips match on — never the display copy, which changes. A post with no cover draws an empty placeholder the same size as the photograph, so adding one later does not move the card.",
   "props": [
     {
       "key": "moreLabel",
@@ -23,7 +23,12 @@
         {
           "key": "topic",
           "type": "text",
-          "label": "Topic — must match a chip value"
+          "label": "Topic"
+        },
+        {
+          "key": "topicKey",
+          "type": "text",
+          "label": "Topic — the value a chip matches"
         },
         {
           "key": "date",
@@ -31,12 +36,17 @@
           "label": "Date"
         },
         {
+          "key": "dateISO",
+          "type": "text",
+          "label": "Date (machine readable)"
+        },
+        {
           "key": "title",
           "type": "text",
           "label": "Title"
         },
         {
-          "key": "url",
+          "key": "href",
           "type": "url",
           "label": "Post link"
         },
@@ -46,13 +56,13 @@
           "label": "Excerpt"
         },
         {
-          "key": "image",
+          "key": "coverImage",
           "type": "image",
-          "label": "Thumbnail"
+          "label": "Cover image"
         }
       ]
     }
   ],
-  "html": "<div class=\"ss-posts\">{{#each posts}}<article class=\"ss-post\" data-bz-part=\"item\" data-topic=\"{{topic}}\"><a class=\"ss-post__media\" href=\"{{link url}}\" data-bz-el=\"link\" data-bz-intent=\"read-post\">{{#if image}}{{img image}}{{else}}<span class=\"ss-post__ph\"><span class=\"ss-post__ph-l\">Image</span></span>{{/if}}</a><div class=\"ss-post__body\"><div class=\"ss-post__meta\">{{#if topic}}<span class=\"ss-post__topic\">{{topic}}</span>{{/if}}{{#if date}}<span class=\"ss-post__date\">{{date}}</span>{{/if}}</div><h3 class=\"ss-post__title\"><a href=\"{{link url}}\" data-bz-el=\"link\" data-bz-intent=\"read-post\">{{title}}</a></h3>{{#if excerpt}}<p class=\"ss-post__excerpt\">{{excerpt}}</p>{{/if}}<a class=\"ss-post__more\" href=\"{{link url}}\" data-bz-el=\"link\" data-bz-intent=\"read-post\">{{moreLabel}}</a></div></article>{{/each}}</div><p class=\"ss-posts__empty\" data-bz-part=\"empty\" hidden>{{emptyText}}</p>",
-  "css": ".ss-posts{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}\n.ss-post{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line)}\n.ss-post[hidden]{display:none}\n.ss-post__media{display:block;position:relative;height:190px;background:var(--paper);overflow:hidden}\n.ss-post__media img,.ss-post__media .bz-photo{width:100%;height:100%;object-fit:cover;display:block}\n.ss-post__body{display:flex;flex-direction:column;flex:1;padding:24px 22px 26px}\n.ss-post__meta{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;margin-bottom:12px}\n.ss-post__topic{font:700 10px/1.3 var(--font-body);letter-spacing:.14em;color:var(--accent)}\n.ss-post__date{font-size:12px;color:var(--muted)}\n.ss-post__title{font:700 19px/1.3 var(--font-heading);margin:0 0 12px}\n.ss-post__title a{color:var(--ink);text-decoration:none}\n.ss-post__title a:hover{color:var(--accent)}\n.ss-post__excerpt{font-size:14px;line-height:1.7;color:var(--body-text);margin:0 0 18px}\n.ss-post__more{font-size:14px;font-weight:700;color:var(--accent);text-decoration:none;margin-top:auto}\n.ss-post__more:hover{text-decoration:underline}\n.ss-posts__empty{font-size:15px;color:var(--muted);border-top:1px solid var(--line);padding-top:22px;margin:24px 0 0}\n.ss-posts__empty[hidden]{display:none}\n@media (max-width:1100px){.ss-posts{grid-template-columns:repeat(2,1fr)}}\n@media (max-width:640px){.ss-posts{grid-template-columns:1fr}}\n.ss-post__ph{display:flex;align-items:center;justify-content:center;width:100%;height:100%;background:var(--paper);border:1px dashed var(--line);box-sizing:border-box}\n.ss-post__ph-l{font:700 10px/1 var(--font-body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}\n.ss-post__media:hover .ss-post__ph{border-color:var(--muted)}"
+  "html": "<div class=\"ss-posts\">{{#each posts}}<article class=\"ss-post\" data-bz-part=\"item\" data-topic=\"{{topicKey}}\"><a class=\"ss-post__media\" href=\"{{link href}}\" data-bz-el=\"link\" data-bz-intent=\"read-post\">{{#if coverImage.src}}{{img coverImage}}{{else}}<span class=\"ss-post__ph\"><span class=\"ss-post__ph-l\">Image</span></span>{{/if}}</a><div class=\"ss-post__body\"><div class=\"ss-post__meta\">{{#if topic}}<span class=\"ss-post__topic\">{{topic}}</span>{{/if}}{{#if date}}<time class=\"ss-post__date\" datetime=\"{{dateISO}}\">{{date}}</time>{{/if}}</div><h3 class=\"ss-post__title\"><a href=\"{{link href}}\" data-bz-el=\"link\" data-bz-intent=\"read-post\">{{title}}</a></h3>{{#if excerpt}}<p class=\"ss-post__excerpt\">{{excerpt}}</p>{{/if}}<a class=\"ss-post__more\" href=\"{{link href}}\" data-bz-el=\"link\" data-bz-intent=\"read-post\">{{moreLabel}}</a></div></article>{{/each}}</div><p class=\"ss-posts__empty\" data-bz-part=\"empty\" hidden>{{emptyText}}</p>",
+  "css": ".ss-posts{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}\n.ss-post{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line)}\n.ss-post[hidden]{display:none}\n.ss-post__media{display:block;position:relative;height:190px;background:var(--paper);overflow:hidden}\n.ss-post__media img,.ss-post__media .bz-photo{width:100%;height:100%;object-fit:cover;display:block}\n.ss-post__body{display:flex;flex-direction:column;flex:1;padding:24px 22px 26px}\n.ss-post__meta{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;margin-bottom:12px}\n.ss-post__topic{font:700 10px/1.3 var(--font-body);letter-spacing:.14em;color:var(--accent)}\n.ss-post__date{font-size:12px;color:var(--muted)}\n.ss-post__title{font:700 19px/1.3 var(--font-heading);margin:0 0 12px}\n.ss-post__title a{color:var(--ink);text-decoration:none}\n.ss-post__title a:hover{color:var(--accent)}\n.ss-post__excerpt{font-size:14px;line-height:1.7;color:var(--body-text);margin:0 0 18px}\n.ss-post__more{font-size:14px;font-weight:700;color:var(--accent);text-decoration:none;margin-top:auto}\n.ss-post__more:hover{text-decoration:underline}\n.ss-posts__empty{font-size:15px;color:var(--muted);border-top:1px solid var(--line);padding-top:22px;margin:24px 0 0}\n.ss-posts__empty[hidden]{display:none}\n@media (max-width:1100px){.ss-posts{grid-template-columns:repeat(2,1fr)}}\n@media (max-width:640px){.ss-posts{grid-template-columns:1fr}}\n.ss-post__ph{display:flex;align-items:center;justify-content:center;width:100%;height:100%;background:var(--paper);border:1px dashed var(--line);box-sizing:border-box}\n.ss-post__ph-l{font:700 10px/1 var(--font-body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}\n.ss-post__media:hover .ss-post__ph{border-color:var(--muted)}"
 }

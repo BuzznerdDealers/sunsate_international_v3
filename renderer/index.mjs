@@ -123,6 +123,15 @@
 // person or a model hand-writes. `anchor` and `scope` join them as declared
 // universal props: the renderer always read those off any node's wrapper while no
 // widget declared them, so the validator refused edits the build would render.
+// 4.23.0 — a `posts` data source, so a dealer's own post card can be drawn over
+// the blog instead of typed beside it. Until now the only live option was the
+// `postsList` block, whose card is the platform's: three columns, six posts, no
+// topic. Anything else — a four-across grid, a topic pill, a read-more link —
+// meant typing the cards into a list and retyping them on every publish, which
+// is the copy a data source exists to end. It is the first source the renderer
+// answers itself: the posts are files in the repo, already loaded, so a post
+// published in the dashboard is on the next build with nothing baked.
+//
 // 4.22.0 — a rooftop carries its own `photo`, edited on Admin → Locations. It
 // exists because generated location pages took the old place for one away: a
 // photo on the authored page is the same photo on every branch, and the only
@@ -141,7 +150,7 @@
 // where a renamed page's old address goes. The redirects file is the dealer's,
 // in `site/`, because `vercel.json` is rebuilt from the template on every engine
 // sync; the platform composes one into the other when it bakes.
-export const RENDERER_VERSION = '4.22.0';
+export const RENDERER_VERSION = '4.23.0';
 
 export {
   LOCATION_SOURCE,

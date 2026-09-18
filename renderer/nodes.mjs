@@ -426,6 +426,9 @@ export const LAYOUT_REGISTRY = {
         // section that vanishes the moment a dealer points it at live data, so
         // there it shows the shape instead.
         sample: !!(ctx && ctx.editing),
+        // A local source (the blog) answers from here rather than from anything
+        // the platform baked, so the binding needs the context to read.
+        ctx,
       });
 
       expanding.add(id);
