@@ -430,6 +430,31 @@ a.bz-loc__c:hover { color: var(--accent); }
 .bz-map__g { display: grid; grid-template-columns: repeat(var(--bz-map-cols, 4), 1fr); position: absolute; inset: 0; margin: auto; width: 100%; height: 100%; }
 .bz-map__t { display: block; width: 100%; height: 100%; object-fit: cover; }
 .bz-map__a { position: absolute; right: 4px; bottom: 4px; font-size: 10px; line-height: 1.4; padding: 1px 5px; border-radius: 3px; background: rgb(255 255 255 / .8); color: #333; text-decoration: none; }
+
+/* The dealer's own map art with a pin per rooftop. No aspect-ratio of its own: the
+   artwork sets it, because the pins are placed at percentages of this box and a box
+   that is not the artwork's shape puts every one of them somewhere else. */
+.bz-pinmap { position: relative; }
+.bz-pinmap__art { display: block; width: 100%; height: auto; }
+.bz-pins { position: absolute; inset: 0; margin: 0; padding: 0; list-style: none; }
+/* Positioned by the widget's inline left/top, then pulled back by half its own size
+   so the dot's centre lands on the coordinate rather than its top-left corner. */
+.bz-pin { position: absolute; transform: translate(-50%, -50%); }
+.bz-pin__a { display: flex; flex-direction: column; align-items: center; gap: var(--space-1); text-decoration: none; color: inherit; }
+.bz-pin__dot { display: block; width: var(--bz-pin-size, 14px); height: var(--bz-pin-size, 14px); border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 3px var(--card); }
+.bz-pin__l { font-size: var(--text-small); white-space: nowrap; }
+/* Dimmed, never removed — see `data-bz-reveal` in client/widgets.js. A map that drops
+   a pin when a chip is pressed has lost the comparison the map is there to make. */
+.bz-pin[data-bz-match='0'] { opacity: .28; }
+.bz-pin[data-bz-match='1'] { opacity: 1; }
+@media (prefers-reduced-motion: no-preference) {
+  .bz-pin { transition: opacity 200ms ease; }
+}
+
+/* A rooftop with no photograph yet. Holds the design's shape and says nothing:
+   published copy explaining that an image is missing is worse than the gap. */
+.bz-locphoto__empty { aspect-ratio: 4 / 3; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius-card); }
+.bz-widget--location-photo img { display: block; width: 100%; height: auto; border-radius: var(--radius-card); }
 .bz-people { display: grid; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr)); gap: var(--space-5); }
 .bz-person { display: flex; flex-direction: column; align-items: center; gap: var(--space-2); text-align: center; }
 .bz-person img, .bz-person .bz-photo { width: 96px; height: 96px; border-radius: var(--radius-chip); object-fit: cover; aspect-ratio: 1; }

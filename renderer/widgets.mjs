@@ -214,6 +214,198 @@ function locationsMap(config, snapshot, ctx) {
   );
 }
 
+/**
+ * One rooftop's photograph, and nothing else.
+ *
+ * Deliberately not a fallback map. On a generated location page the right-hand
+ * slot is the branch's own picture, and a street map standing in for a missing
+ * one is a different section wearing its clothes: it says "here is the building"
+ * and shows a road junction. An empty slot is the honest state and it tells the
+ * dealer what to do — upload a photo on Admin → Locations.
+ *
+ * `locationSlug` is filled in per page by `applyLocationSlug`, so one authored
+ * node is six photographs.
+ */
+function locationPhoto(config, snapshot) {
+  const photo = (snapshot && snapshot.photo) || null;
+  const src = photo && typeof photo === 'object' ? photo.src : photo;
+  return shell(
+    'location-photo',
+    config,
+    `${config.heading ? `<p class="bz-widget__h">${esc(config.heading)}</p>` : ''}${
+      src
+        ? image(photo, { alt: config.alt || '', eager: config.eager === true })
+        : // No placeholder copy. This box is the design's own shape and a band of
+          // grey with words in it would be published as if it were content.
+          '<div class="bz-locphoto__empty" aria-hidden="true"></div>'
+    }`,
+    { class: 'bz-locphoto' },
+  );
+}
+
+/**
+ * Two known points are enough to place every rooftop on a piece of artwork.
+ *
+ * Longitude is linear in a Mercator projection and latitude is not, so the
+ * vertical scale is derived against `mercatorY` rather than the raw degrees. Very
+ * nearly all state- and country-outline art is Mercator or close enough that the
+ * error inside one state is under a pixel.
+ *
+ * Returns null when the anchors cannot describe a projection — the same two
+ * points twice, or a pair sharing a latitude or longitude — because the
+ * alternative is dividing by zero and stacking every pin in one corner.
+ */
+function mercatorY(lat) {
+  const clamped = Math.max(-85, Math.min(85, Number(lat)));
+  return Math.log(Math.tan(Math.PI / 4 + (clamped * Math.PI) / 360));
+}
+
+export function makeProjection(anchors) {
+  const pair = (anchors || [])
+    .map((a) => ({
+      lat: Number(a && a.lat),
+      lng: Number(a && a.lng),
+      x: Number(a && a.x),
+      y: Number(a && a.y),
+    }))
+    .filter((a) => [a.lat, a.lng, a.x, a.y].every((n) => Number.isFinite(n)));
+  if (pair.length < 2) return null;
+
+  const [a, b] = pair;
+  const ay = mercatorY(a.lat);
+  const by = mercatorY(b.lat);
+  if (b.lng === a.lng || by === ay) return null;
+
+  const sx = (b.x - a.x) / (b.lng - a.lng);
+  const sy = (b.y - a.y) / (by - ay);
+  if (!Number.isFinite(sx) || !Number.isFinite(sy) || sx === 0 || sy === 0) return null;
+
+  return (lng, lat) => ({
+    x: a.x + (Number(lng) - a.lng) * sx,
+    y: a.y + (mercatorY(lat) - ay) * sy,
+  });
+}
+
+/**
+ * The dealer's own map art with a pin per rooftop on top of it.
+ *
+ * Why this is platform markup rather than a component a designer composes: a
+ * pin's position is *computed* from the rooftop's coordinates, and a `{{binding}}`
+ * resolves a value — it cannot run a projection. The pins also have to carry the
+ * brand and service-option keys as `data-` attributes for the `filter` behaviour
+ * to reach them, and no node prop emits those. So the widget owns exactly two
+ * things, position and facets, and everything visible about it is the dealer's:
+ * the artwork, and CSS against the classes below.
+ *
+ * Deliberately not an inline `<svg>`. Inlining a designer's file means parsing and
+ * sanitising it, and the pins do not need to share its coordinate space: the art
+ * is one `<img>` at its natural aspect ratio and each pin is a sibling placed at a
+ * percentage. That percentage is computed here, at build time, so the pins are in
+ * the served HTML — which is what makes them draw on the Design canvas, in the
+ * first paint, and with JavaScript switched off.
+ *
+ * A rooftop with no coordinates is left out rather than dropped at 0,0 — the Gulf
+ * of Guinea is not in this dealer's estate. The count of those is reported so
+ * "one pin short" is diagnosable.
+ */
+function locationsPinmap(config, snapshot, ctx) {
+  const locations = (snapshot && snapshot.locations) || [];
+  const project = makeProjection(config.anchors);
+  const art = config.basemap && typeof config.basemap === 'object' ? config.basemap : null;
+
+  if (!art || !art.src) {
+    if (ctx && ctx.warn) {
+      ctx.warn('locations-pinmap has no basemap image — upload the artwork on the block.');
+    }
+  }
+  if (art && art.src && !project) {
+    if (ctx && ctx.warn) {
+      ctx.warn(
+        'locations-pinmap needs two calibration points with different latitudes and longitudes — no pins drawn.',
+      );
+    }
+  }
+
+  // The space the anchors were measured in. Normally the artwork's own pixel
+  // dimensions, which the Media Bin already records — `artWidth`/`artHeight` exist
+  // for art whose calibration was taken against a viewBox that is not its size.
+  const artWidth = Number(config.artWidth) || Number(art && art.width) || 1000;
+  const artHeight = Number(config.artHeight) || Number(art && art.height) || 1000;
+
+  const placed = [];
+  let unplaceable = 0;
+  for (const l of locations) {
+    const lat = Number(l.latitude);
+    const lng = Number(l.longitude);
+    if (!Number.isFinite(lat) || !Number.isFinite(lng)) {
+      unplaceable++;
+      continue;
+    }
+    if (!project) continue;
+    const { x, y } = project(lng, lat);
+    placed.push({
+      location: l,
+      left: (x / artWidth) * 100,
+      top: (y / artHeight) * 100,
+    });
+  }
+
+  if (unplaceable && ctx && ctx.warn) {
+    ctx.warn(
+      `locations-pinmap: ${unplaceable} rooftop(s) have no coordinates and cannot be pinned — set them on Admin → Locations.`,
+    );
+  }
+
+  // `part="item"` so the page's own `filter` behaviour reaches the pins with the
+  // chips that already filter the cards. One declaration, both views.
+  const pins = placed.map((p) => {
+    const l = p.location;
+    const label = esc(l.name || l.city || '');
+    const inner = `<span class="bz-pin__dot"></span><span class="bz-pin__l">${label}</span>`;
+    const body = l.href
+      ? `<a class="bz-pin__a" href="${esc(href(l.href, ctx))}"${attrs(
+          tagAttrs('link', 'find-location'),
+        )}>${inner}</a>`
+      : inner;
+    return `<li class="bz-pin"${attrs({
+      'data-bz-part': 'item',
+      'data-bz-pin': l.slug || null,
+      'data-brand': l.brandKeys || null,
+      'data-perk': l.perkKeys || null,
+      'data-group': l.groupKey || null,
+      style: `left:${p.left.toFixed(3)}%;top:${p.top.toFixed(3)}%`,
+    })}>${body}</li>`;
+  });
+
+  // `data-bz-reveal="dim"` tells the page's `filter` behaviour to leave these in
+  // place and mark them instead of hiding them. A map that loses a pin when a chip
+  // is pressed has lost the comparison the map is for.
+  const layer = pins.length
+    ? `<ul class="bz-pins bz-bare"${attrs({ 'data-bz-reveal': 'dim' })}>${join(pins, '')}</ul>`
+    : '';
+
+  return shell(
+    'locations-pinmap',
+    config,
+    `${config.heading ? `<p class="bz-widget__h">${esc(config.heading)}</p>` : ''}<div class="bz-pinmap"${attrs(
+      { 'data-bz-pinmap': '', role: 'group', 'aria-label': config.label || 'Map of our locations' },
+    )}>${
+      art && art.src
+        ? image(art, {
+            alt: art.alt || '',
+            class: 'bz-pinmap__art',
+            // The pins are placed at percentages of this box, so the box has to
+            // hold the artwork's aspect ratio before the image loads or every pin
+            // lands somewhere else on first paint.
+            width: artWidth,
+            height: artHeight,
+            ctx,
+          })
+        : ''
+    }${layer}</div>`,
+  );
+}
+
 function staff(config, snapshot) {
   const people = (snapshot && snapshot.staff) || [];
   const cards = people.map(
@@ -401,6 +593,8 @@ function inventorySearch(config, snapshot, ctx) {
 
 const PLACEHOLDERS = {
   'locations-map': locationsMap,
+  'locations-pinmap': locationsPinmap,
+  'location-photo': locationPhoto,
   staff,
   faq,
   'phone-numbers': phoneNumbers,

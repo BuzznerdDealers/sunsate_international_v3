@@ -151,7 +151,19 @@
 // `valueSource` says where the client captures it from. `spec:` condition
 // sources let a form embedded on a product page route by the listing instead of
 // by an answer; the surface that knows the listing supplies them.
-export const RENDERER_VERSION = '4.23.0';
+// 4.24.0 — the dealer's own map art, with a pin per rooftop on top of it.
+// `locations-pinmap` takes the artwork as an image prop and two calibration points,
+// derives a Mercator projection from them, and places each location by its
+// coordinates at build time — so the pins are in the served HTML and draw on the
+// Design canvas, in the first paint and with JavaScript off. The pins carry the same
+// brand and service-option keys the cards do and are `part: "item"`, so one `filter`
+// behaviour lights up the map and filters the list below it from one chip row; they
+// are marked rather than hidden, because a map that drops a pin has lost the
+// comparison it exists to make. `location-photo` draws a rooftop's own picture and
+// nothing when there is none — never a generated street map, which would be a
+// different section wearing this one's clothes. A location also carries a `subtitle`,
+// the name it trades under, because `name` is the place and a card wants both.
+export const RENDERER_VERSION = '4.24.0';
 
 export {
   LOCATION_SOURCE,
@@ -295,7 +307,13 @@ export {
   SPEC_SOURCES,
   VALUE_SOURCES,
 } from './forms.mjs';
-export { renderWidget, staticWidgetIds, rooftopFrom, BEHAVIOUR_ONLY } from './widgets.mjs';
+export {
+  renderWidget,
+  staticWidgetIds,
+  rooftopFrom,
+  makeProjection,
+  BEHAVIOUR_ONLY,
+} from './widgets.mjs';
 
 /* -------------------------------------------------------- menus + templates */
 
