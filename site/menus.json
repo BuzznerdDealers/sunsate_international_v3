@@ -694,6 +694,602 @@
       ]
     },
     {
+      "id": "main-mega",
+      "name": "Main navigation \u2014 mega (New Home)",
+      "items": [
+        {
+          "id": "nm-trucks",
+          "label": "Trucks",
+          "type": "inventory",
+          "ref": "inventory?type=truck",
+          "children": [
+            {
+              "id": "nm-trucks-shop",
+              "label": "Shop trucks",
+              "type": "label",
+              "children": [
+                {
+                  "id": "nm-trucks-all",
+                  "label": "All truck inventory",
+                  "type": "inventory",
+                  "ref": "inventory?type=truck"
+                },
+                {
+                  "id": "nm-trucks-new",
+                  "label": "New trucks",
+                  "type": "inventory",
+                  "ref": "inventory?type=truck&condition=new"
+                },
+                {
+                  "id": "nm-trucks-used",
+                  "label": "Used trucks",
+                  "type": "inventory",
+                  "ref": "inventory?type=truck&condition=used"
+                },
+                {
+                  "id": "nm-trucks-deal",
+                  "label": "Deal of the week",
+                  "type": "page",
+                  "ref": "deal-of-the-week"
+                }
+              ]
+            },
+            {
+              "id": "nm-trucks-body",
+              "label": "By body style",
+              "type": "label",
+              "children": [
+                {
+                  "id": "nm-trucks-sleeper",
+                  "label": "Sleeper cabs",
+                  "type": "inventory",
+                  "ref": "inventory?category=sleeper-cabs"
+                },
+                {
+                  "id": "nm-trucks-dump",
+                  "label": "Dump trucks",
+                  "type": "inventory",
+                  "ref": "inventory?category=dump-trucks"
+                },
+                {
+                  "id": "nm-trucks-yard",
+                  "label": "Capacity yard trucks",
+                  "type": "page",
+                  "ref": "capacity-yard-trucks"
+                }
+              ]
+            },
+            {
+              "id": "nm-trucks-onhwy",
+              "label": "On-highway",
+              "type": "label",
+              "children": [
+                {
+                  "id": "nm-trucks-lt",
+                  "label": "LT Series",
+                  "type": "page",
+                  "ref": "brochures-and-s13-powertrain"
+                },
+                {
+                  "id": "nm-trucks-rh",
+                  "label": "RH Series",
+                  "type": "page",
+                  "ref": "brochures-and-s13-powertrain"
+                },
+                {
+                  "id": "nm-trucks-lonestar",
+                  "label": "LoneStar",
+                  "type": "page",
+                  "ref": "brochures-and-s13-powertrain"
+                }
+              ]
+            },
+            {
+              "id": "nm-trucks-voc",
+              "label": "Vocational & electric",
+              "type": "label",
+              "children": [
+                {
+                  "id": "nm-trucks-hx",
+                  "label": "HX Series",
+                  "type": "page",
+                  "ref": "brochures-and-s13-powertrain"
+                },
+                {
+                  "id": "nm-trucks-hv",
+                  "label": "HV Series",
+                  "type": "page",
+                  "ref": "brochures-and-s13-powertrain"
+                },
+                {
+                  "id": "nm-trucks-mv",
+                  "label": "MV Series",
+                  "type": "page",
+                  "ref": "brochures-and-s13-powertrain"
+                },
+                {
+                  "id": "nm-trucks-cv",
+                  "label": "CV Series",
+                  "type": "page",
+                  "ref": "brochures-and-s13-powertrain"
+                },
+                {
+                  "id": "nm-trucks-emv",
+                  "label": "eMV Series",
+                  "type": "page",
+                  "ref": "brochures-and-s13-powertrain"
+                }
+              ]
+            },
+            {
+              "id": "nm-trucks-build",
+              "label": "Build & finance",
+              "type": "label",
+              "children": [
+                {
+                  "id": "nm-trucks-config",
+                  "label": "Truck configurator",
+                  "type": "page",
+                  "ref": "truck-configurator"
+                },
+                {
+                  "id": "nm-trucks-broch",
+                  "label": "Brochures & specifications",
+                  "type": "page",
+                  "ref": "brochures-and-s13-powertrain"
+                },
+                {
+                  "id": "nm-trucks-s13",
+                  "label": "S13 integrated powertrain",
+                  "type": "page",
+                  "ref": "brochures-and-s13-powertrain"
+                },
+                {
+                  "id": "nm-trucks-finance",
+                  "label": "Financing & credit",
+                  "type": "page",
+                  "ref": "financing"
+                },
+                {
+                  "id": "nm-trucks-quote",
+                  "label": "Request a quote",
+                  "type": "page",
+                  "ref": "contact-us"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "nm-trailers",
+          "label": "Trailers & Bus",
+          "type": "inventory",
+          "ref": "inventory?type=trailer",
+          "children": [
+            {
+              "id": "nm-trailers-shop",
+              "label": "Shop trailers",
+              "type": "label",
+              "children": [
+                {
+                  "id": "nm-trailers-all",
+                  "label": "All trailer inventory",
+                  "type": "inventory",
+                  "ref": "inventory?type=trailer"
+                },
+                {
+                  "id": "nm-trailers-new",
+                  "label": "New trailers",
+                  "type": "inventory",
+                  "ref": "inventory?type=trailer&condition=new"
+                },
+                {
+                  "id": "nm-trailers-used",
+                  "label": "Used trailers",
+                  "type": "inventory",
+                  "ref": "inventory?type=trailer&condition=used"
+                },
+                {
+                  "id": "nm-trailers-rental",
+                  "label": "Rental & lease",
+                  "type": "inventory",
+                  "ref": "inventory?type=trailer&condition=rental"
+                }
+              ]
+            },
+            {
+              "id": "nm-trailers-type",
+              "label": "By type",
+              "type": "label",
+              "children": [
+                {
+                  "id": "nm-trailers-dryvan",
+                  "label": "Dry van trailers",
+                  "type": "inventory",
+                  "ref": "inventory?type=trailer&category=dry-van"
+                },
+                {
+                  "id": "nm-trailers-reefer",
+                  "label": "Refrigerated trailers",
+                  "type": "inventory",
+                  "ref": "inventory?type=trailer&category=refrigerated"
+                },
+                {
+                  "id": "nm-trailers-flat",
+                  "label": "Flatbed trailers",
+                  "type": "inventory",
+                  "ref": "inventory?type=trailer&category=flatbed"
+                }
+              ]
+            },
+            {
+              "id": "nm-trailers-brands",
+              "label": "Brands & bus",
+              "type": "label",
+              "children": [
+                {
+                  "id": "nm-trailers-hyundai",
+                  "label": "Hyundai Translead",
+                  "type": "inventory",
+                  "ref": "inventory?brand=hyundai-translead"
+                },
+                {
+                  "id": "nm-trailers-globe",
+                  "label": "Globe Trailers",
+                  "type": "inventory",
+                  "ref": "inventory?brand=globe-trailers"
+                },
+                {
+                  "id": "nm-trailers-sales",
+                  "label": "Trailer Sales \u2014 Tampa",
+                  "type": "location",
+                  "ref": "trailer-sales"
+                },
+                {
+                  "id": "nm-bus-all",
+                  "label": "All IC Bus inventory",
+                  "type": "inventory",
+                  "ref": "inventory?brand=ic-bus"
+                },
+                {
+                  "id": "nm-bus-type",
+                  "label": "School & commercial buses",
+                  "type": "inventory",
+                  "ref": "inventory?type=bus"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "nm-parts",
+          "label": "Parts",
+          "type": "page",
+          "ref": "parts",
+          "children": [
+            {
+              "id": "nm-parts-shop",
+              "label": "Shop parts",
+              "type": "label",
+              "children": [
+                {
+                  "id": "nm-parts-cat",
+                  "label": "Parts catalogue",
+                  "type": "inventory",
+                  "ref": "parts"
+                },
+                {
+                  "id": "nm-parts-online",
+                  "label": "Order parts online",
+                  "type": "url",
+                  "url": "https://www.sunstateparts.com/login"
+                },
+                {
+                  "id": "nm-parts-dept",
+                  "label": "Parts department",
+                  "type": "page",
+                  "ref": "parts"
+                }
+              ]
+            },
+            {
+              "id": "nm-parts-after",
+              "label": "Aftermarket",
+              "type": "label",
+              "children": [
+                {
+                  "id": "nm-parts-mods",
+                  "label": "Modifications & alterations",
+                  "type": "page",
+                  "ref": "aftermarket"
+                },
+                {
+                  "id": "nm-parts-afloc",
+                  "label": "Aftermarket Parts \u2014 Tampa",
+                  "type": "location",
+                  "ref": "aftermarket-parts"
+                }
+              ]
+            },
+            {
+              "id": "nm-parts-counters",
+              "label": "Parts counters",
+              "type": "label",
+              "children": [
+                {
+                  "id": "nm-parts-tampa",
+                  "label": "Tampa",
+                  "type": "location",
+                  "ref": "tampa"
+                },
+                {
+                  "id": "nm-parts-brook",
+                  "label": "Truck & Trailer Parts \u2014 Brooksville",
+                  "type": "location",
+                  "ref": "brooksville"
+                },
+                {
+                  "id": "nm-parts-hours",
+                  "label": "All locations & hours",
+                  "type": "page",
+                  "ref": "locations"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "nm-service",
+          "label": "Service",
+          "type": "page",
+          "ref": "service",
+          "children": [
+            {
+              "id": "nm-service-book",
+              "label": "Book service",
+              "type": "label",
+              "children": [
+                {
+                  "id": "nm-service-appt",
+                  "label": "Schedule an appointment",
+                  "type": "page",
+                  "ref": "service-appointment"
+                },
+                {
+                  "id": "nm-service-mobile",
+                  "label": "Mobile service",
+                  "type": "page",
+                  "ref": "mobile-service"
+                },
+                {
+                  "id": "nm-service-after",
+                  "label": "After hours \u2014 (863) 880-2206",
+                  "type": "url",
+                  "url": "tel:+18638802206"
+                }
+              ]
+            },
+            {
+              "id": "nm-service-depts",
+              "label": "Departments",
+              "type": "label",
+              "children": [
+                {
+                  "id": "nm-service-repair",
+                  "label": "Service & repair",
+                  "type": "page",
+                  "ref": "service"
+                },
+                {
+                  "id": "nm-service-extended",
+                  "label": "Extended service contracts",
+                  "type": "page",
+                  "ref": "extended-service"
+                },
+                {
+                  "id": "nm-service-parts",
+                  "label": "Parts department",
+                  "type": "page",
+                  "ref": "parts"
+                }
+              ]
+            },
+            {
+              "id": "nm-service-centers",
+              "label": "Service centers",
+              "type": "label",
+              "children": [
+                {
+                  "id": "nm-service-tampa",
+                  "label": "Tampa",
+                  "type": "location",
+                  "ref": "tampa"
+                },
+                {
+                  "id": "nm-service-sara",
+                  "label": "Sarasota",
+                  "type": "location",
+                  "ref": "sarasota"
+                },
+                {
+                  "id": "nm-service-daven",
+                  "label": "Davenport",
+                  "type": "location",
+                  "ref": "davenport"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "nm-about",
+          "label": "About",
+          "type": "page",
+          "ref": "our-story",
+          "children": [
+            {
+              "id": "nm-about-company",
+              "label": "The company",
+              "type": "label",
+              "children": [
+                {
+                  "id": "nm-about-story",
+                  "label": "Our Story",
+                  "type": "page",
+                  "ref": "our-story"
+                },
+                {
+                  "id": "nm-about-team",
+                  "label": "Meet the Team",
+                  "type": "page",
+                  "ref": "meet-the-team"
+                },
+                {
+                  "id": "nm-about-careers",
+                  "label": "Careers",
+                  "type": "url",
+                  "url": "https://sunstateinternationaltrucks.hireology.careers/"
+                }
+              ]
+            },
+            {
+              "id": "nm-about-community",
+              "label": "In the community",
+              "type": "label",
+              "children": [
+                {
+                  "id": "nm-about-comm",
+                  "label": "Community Involvement",
+                  "type": "page",
+                  "ref": "community-involvement"
+                },
+                {
+                  "id": "nm-about-reviews",
+                  "label": "Reviews",
+                  "type": "page",
+                  "ref": "reviews"
+                }
+              ]
+            },
+            {
+              "id": "nm-about-media",
+              "label": "News & media",
+              "type": "label",
+              "children": [
+                {
+                  "id": "nm-about-news",
+                  "label": "News",
+                  "type": "page",
+                  "ref": "news-and-press"
+                },
+                {
+                  "id": "nm-about-videos",
+                  "label": "Videos",
+                  "type": "page",
+                  "ref": "videos"
+                },
+                {
+                  "id": "nm-about-blog",
+                  "label": "Blog",
+                  "type": "page",
+                  "ref": "blog"
+                },
+                {
+                  "id": "nm-about-press",
+                  "label": "Press Kit",
+                  "type": "page",
+                  "ref": "press-kit"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "nm-locations",
+          "label": "Locations",
+          "type": "page",
+          "ref": "locations",
+          "children": [
+            {
+              "id": "nm-loc-full",
+              "label": "Trucks, parts & service",
+              "type": "label",
+              "children": [
+                {
+                  "id": "nm-loc-tampa",
+                  "label": "Tampa",
+                  "type": "location",
+                  "ref": "tampa"
+                },
+                {
+                  "id": "nm-loc-daven",
+                  "label": "Davenport",
+                  "type": "location",
+                  "ref": "davenport"
+                },
+                {
+                  "id": "nm-loc-sara",
+                  "label": "Sarasota",
+                  "type": "location",
+                  "ref": "sarasota"
+                }
+              ]
+            },
+            {
+              "id": "nm-loc-parts",
+              "label": "Parts & trailers",
+              "type": "label",
+              "children": [
+                {
+                  "id": "nm-loc-brook",
+                  "label": "Truck & Trailer Parts \u2014 Brooksville",
+                  "type": "location",
+                  "ref": "brooksville"
+                },
+                {
+                  "id": "nm-loc-after",
+                  "label": "Aftermarket Parts \u2014 Tampa",
+                  "type": "location",
+                  "ref": "aftermarket-parts"
+                },
+                {
+                  "id": "nm-loc-trailer",
+                  "label": "Trailer Sales \u2014 Tampa",
+                  "type": "location",
+                  "ref": "trailer-sales"
+                }
+              ]
+            },
+            {
+              "id": "nm-loc-visit",
+              "label": "Plan a visit",
+              "type": "label",
+              "children": [
+                {
+                  "id": "nm-loc-all",
+                  "label": "All locations & hours",
+                  "type": "page",
+                  "ref": "locations"
+                },
+                {
+                  "id": "nm-loc-service",
+                  "label": "Schedule service",
+                  "type": "page",
+                  "ref": "service-appointment"
+                },
+                {
+                  "id": "nm-loc-contact",
+                  "label": "Contact us",
+                  "type": "page",
+                  "ref": "contact-us"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "hero-brands",
       "name": "Hero brand row",
       "items": [

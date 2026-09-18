@@ -1,0 +1,1501 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "home-hero",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "ink",
+        "align": "center",
+        "minHeight": "half",
+        "backgroundVideo": {
+          "src": "https://vendure.buzznerdrv.com/assets/source/d6/lakeside-hero-720__05.mp4",
+          "poster": "https://vendure.buzznerdrv.com/assets/source/61/international-12-scaled.jpg"
+        }
+      },
+      "styles": {
+        "base": {
+          "backgroundImage": "https://vendure.buzznerdrv.com/assets/source/4d/lakeside-hero-720__02.mp4"
+        }
+      },
+      "children": [
+        {
+          "id": "hero-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "hero-col",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "hero-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Your trusted partner for trucks, trailers, and more.",
+                    "headingLevel": 1,
+                    "align": "center",
+                    "eyebrow": "CELEBRATING 25 YEARS \u00b7 TAMPA \u00b7 DAVENPORT \u00b7 SARASOTA \u00b7 BROOKSVILLE, FL"
+                  }
+                },
+                {
+                  "id": "hero-brand-lockup",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/img/brand-logos.png",
+                      "alt": "International, IC Bus, Hyundai Translead and Globe Trailers",
+                      "width": 1400,
+                      "height": 120
+                    },
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "hero-search",
+                  "type": "widget",
+                  "props": {
+                    "widget": "inventory-search",
+                    "config": {
+                      "placeholder": "Search trucks, trailers and yard trucks\u2026"
+                    },
+                    "snapshot": {
+                      "types": []
+                    }
+                  },
+                  "styles": {
+                    "base": {
+                      "alignItems": "center",
+                      "justifyContent": "center",
+                      "display": "flex"
+                    }
+                  }
+                },
+                {
+                  "id": "hero-brands",
+                  "type": "menu",
+                  "props": {
+                    "menuId": "hero-brands",
+                    "layout": "horizontal",
+                    "align": "center",
+                    "depth": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "home-about",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "media-band",
+        "values": {
+          "eyebrow": "GOING THE EXTRA MILE",
+          "heading": "More than a dealership.",
+          "body": "At Sun State International, we're more than just a dealership \u2014 we're industry experts who understand the challenges of the road. Our culture is built on accountability, action, and a commitment to doing what's right. From our parts and service teams to our finance specialists, every member of the Sun State family is dedicated to helping you succeed.",
+          "ctaLabel": "Read more \u2192",
+          "ctaUrl": "/about-us",
+          "ctaStyle": "link",
+          "background": "paper",
+          "anchor": "about",
+          "image": {
+            "src": "https://vendure.buzznerdrv.com/assets/source/6a/trust.jpg",
+            "alt": "Sun State International dealership ",
+            "width": 1500,
+            "height": 600
+          },
+          "width": "full"
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "home-types",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "type-rail",
+        "values": {
+          "heading": "Choose a type to explore",
+          "anchor": "truck-types",
+          "span": 3,
+          "items": [
+            {
+              "image": {
+                "src": "/img/photo-placeholder.svg",
+                "alt": "International Sleeper Cabs \u2014 photograph to be supplied",
+                "width": 1600,
+                "height": 900
+              },
+              "label": "International Sleeper Cabs",
+              "ctaLabel": "Buy Now \u2192",
+              "ctaUrl": "/store/inventory?category=sleeper-cabs"
+            },
+            {
+              "image": {
+                "src": "/img/photo-placeholder.svg",
+                "alt": "International Dump Trucks \u2014 photograph to be supplied",
+                "width": 1600,
+                "height": 900
+              },
+              "label": "International Dump Trucks",
+              "ctaLabel": "Buy Now \u2192",
+              "ctaUrl": "/store/inventory?category=dump-trucks"
+            },
+            {
+              "image": {
+                "src": "/img/photo-placeholder.svg",
+                "alt": "International Trucks \u2014 photograph to be supplied",
+                "width": 1600,
+                "height": 900
+              },
+              "label": "International Trucks",
+              "ctaLabel": "Buy Now \u2192",
+              "ctaUrl": "/store/inventory?type=truck"
+            },
+            {
+              "image": {
+                "src": "/img/photo-placeholder.svg",
+                "alt": "IC Bus \u2014 photograph to be supplied",
+                "width": 1600,
+                "height": 900
+              },
+              "label": "IC Bus",
+              "ctaLabel": "Buy Now \u2192",
+              "ctaUrl": "/store/inventory?type=bus"
+            },
+            {
+              "image": {
+                "src": "/img/photo-placeholder.svg",
+                "alt": "Capacity Yard Trucks \u2014 photograph to be supplied",
+                "width": 1600,
+                "height": 900
+              },
+              "label": "Capacity Yard Trucks",
+              "ctaLabel": "Buy Now \u2192",
+              "ctaUrl": "/capacity-yard-trucks"
+            }
+          ],
+          "background": "ink"
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "home-locations",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "location-rail",
+        "values": {
+          "eyebrow": "FIND A LOCATION",
+          "heading": "Find a location",
+          "body": "Ready to find the right commercial trucks for your business? Visit us at one of our convenient locations across Southwest Florida to find the perfect trucks and trailers for your needs.",
+          "anchor": "locations",
+          "background": "card",
+          "brandLabel": "BRAND",
+          "brands": {
+            "source": "location-brands",
+            "config": {}
+          },
+          "perkLabel": "PERKS",
+          "perks": {
+            "source": "location-service-options",
+            "config": {}
+          },
+          "locations": {
+            "source": "locations",
+            "config": {
+              "pagePathPrefix": "/locations"
+            }
+          }
+        },
+        "snapshots": {
+          "lr-map": {
+            "locations": [
+              {
+                "id": "21",
+                "name": "Aftermarket Business Tampa, FL",
+                "slug": "aftermarket-business-tampa-fl",
+                "num": "01",
+                "href": "/locations/aftermarket-business-tampa-fl",
+                "streetAddress": "105 East 6th Ave.",
+                "city": "Tampa",
+                "region": "FL",
+                "postalCode": "33619",
+                "country": null,
+                "latitude": null,
+                "longitude": null,
+                "phone": "(813) 627-3282",
+                "phoneUrl": "tel:8136273282",
+                "mapUrl": "https://www.google.com/maps/search/?api=1&query=105%20East%206th%20Ave.%2C%20Tampa%2C%20FL%2C%2033619",
+                "email": null,
+                "brands": "",
+                "services": "",
+                "perks": "",
+                "brandKeys": "",
+                "perkKeys": "",
+                "perk1": null,
+                "perk2": null,
+                "perk3": null,
+                "departments": "Store",
+                "hours": "Store: 07:00\u201316:00 Mon\u2013Fri",
+                "phone2": null,
+                "phone2Url": null,
+                "phone3": null,
+                "phone3Url": null,
+                "group": null,
+                "groupKey": null,
+                "photo": {
+                  "src": "",
+                  "alt": ""
+                },
+                "brandRows": [],
+                "serviceRows": [],
+                "perkRows": [],
+                "departmentRows": [
+                  {
+                    "name": "Store",
+                    "key": "store",
+                    "phone": null,
+                    "phoneUrl": null,
+                    "email": null,
+                    "hours": "07:00\u201316:00 Mon\u2013Fri"
+                  }
+                ],
+                "hoursRows": [
+                  {
+                    "department": "Store",
+                    "key": "store",
+                    "summary": "07:00\u201316:00 Mon\u2013Fri",
+                    "days": [
+                      {
+                        "day": "Sunday",
+                        "hours": "Closed",
+                        "opensAt": null,
+                        "closesAt": null,
+                        "closed": true
+                      },
+                      {
+                        "day": "Monday",
+                        "hours": "07:00\u201316:00",
+                        "opensAt": "07:00",
+                        "closesAt": "16:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Tuesday",
+                        "hours": "07:00\u201316:00",
+                        "opensAt": "07:00",
+                        "closesAt": "16:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Wednesday",
+                        "hours": "07:00\u201316:00",
+                        "opensAt": "07:00",
+                        "closesAt": "16:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Thursday",
+                        "hours": "07:00\u201316:00",
+                        "opensAt": "07:00",
+                        "closesAt": "16:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Friday",
+                        "hours": "07:00\u201316:00",
+                        "opensAt": "07:00",
+                        "closesAt": "16:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Saturday",
+                        "hours": "Closed",
+                        "opensAt": null,
+                        "closesAt": null,
+                        "closed": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "20",
+                "name": "Brooksville",
+                "slug": "brooksville",
+                "num": "02",
+                "href": "/locations/brooksville",
+                "streetAddress": "17127 Runway Drive",
+                "city": "Brooksville",
+                "region": "FL",
+                "postalCode": "34604",
+                "country": null,
+                "latitude": null,
+                "longitude": null,
+                "phone": "(352) 277-0221",
+                "phoneUrl": "tel:3522770221",
+                "mapUrl": "https://www.google.com/maps/search/?api=1&query=17127%20Runway%20Drive%2C%20Brooksville%2C%20FL%2C%2034604",
+                "email": null,
+                "brands": "",
+                "services": "",
+                "perks": "",
+                "brandKeys": "",
+                "perkKeys": "",
+                "perk1": null,
+                "perk2": null,
+                "perk3": null,
+                "departments": "Store",
+                "hours": "Store: 07:00\u201317:00 Mon\u2013Fri",
+                "phone2": null,
+                "phone2Url": null,
+                "phone3": null,
+                "phone3Url": null,
+                "group": null,
+                "groupKey": null,
+                "photo": {
+                  "src": "",
+                  "alt": ""
+                },
+                "brandRows": [],
+                "serviceRows": [],
+                "perkRows": [],
+                "departmentRows": [
+                  {
+                    "name": "Store",
+                    "key": "store",
+                    "phone": null,
+                    "phoneUrl": null,
+                    "email": null,
+                    "hours": "07:00\u201317:00 Mon\u2013Fri"
+                  }
+                ],
+                "hoursRows": [
+                  {
+                    "department": "Store",
+                    "key": "store",
+                    "summary": "07:00\u201317:00 Mon\u2013Fri",
+                    "days": [
+                      {
+                        "day": "Sunday",
+                        "hours": "Closed",
+                        "opensAt": null,
+                        "closesAt": null,
+                        "closed": true
+                      },
+                      {
+                        "day": "Monday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Tuesday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Wednesday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Thursday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Friday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Saturday",
+                        "hours": "Closed",
+                        "opensAt": null,
+                        "closesAt": null,
+                        "closed": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "19",
+                "name": "Davenport",
+                "slug": "davenport",
+                "num": "03",
+                "href": "/locations/davenport",
+                "streetAddress": "41609 Hwy 27",
+                "city": "Davenport",
+                "region": "FL",
+                "postalCode": "33837",
+                "country": null,
+                "latitude": null,
+                "longitude": null,
+                "phone": "(863) 424-2411",
+                "phoneUrl": "tel:8634242411",
+                "mapUrl": "https://www.google.com/maps/search/?api=1&query=41609%20Hwy%2027%2C%20Davenport%2C%20FL%2C%2033837",
+                "email": null,
+                "brands": "",
+                "services": "",
+                "perks": "",
+                "brandKeys": "",
+                "perkKeys": "",
+                "perk1": null,
+                "perk2": null,
+                "perk3": null,
+                "departments": "Sales \u00b7 Service \u00b7 Parts",
+                "hours": "Sales: 07:00\u201317:00 Mon\u2013Sat\n\nService: 07:00\u201317:00 Mon\u2013Sat\n\nParts: 07:00\u201317:00 Mon\u2013Fri, 07:00\u201312:00 Sat",
+                "phone2": null,
+                "phone2Url": null,
+                "phone3": null,
+                "phone3Url": null,
+                "group": null,
+                "groupKey": null,
+                "photo": {
+                  "src": "",
+                  "alt": ""
+                },
+                "brandRows": [],
+                "serviceRows": [],
+                "perkRows": [],
+                "departmentRows": [
+                  {
+                    "name": "Sales",
+                    "key": "sales",
+                    "phone": null,
+                    "phoneUrl": null,
+                    "email": null,
+                    "hours": "07:00\u201317:00 Mon\u2013Sat"
+                  },
+                  {
+                    "name": "Service",
+                    "key": "service",
+                    "phone": null,
+                    "phoneUrl": null,
+                    "email": null,
+                    "hours": "07:00\u201317:00 Mon\u2013Sat"
+                  },
+                  {
+                    "name": "Parts",
+                    "key": "parts",
+                    "phone": null,
+                    "phoneUrl": null,
+                    "email": null,
+                    "hours": "07:00\u201317:00 Mon\u2013Fri, 07:00\u201312:00 Sat"
+                  }
+                ],
+                "hoursRows": [
+                  {
+                    "department": "Sales",
+                    "key": "sales",
+                    "summary": "07:00\u201317:00 Mon\u2013Sat",
+                    "days": [
+                      {
+                        "day": "Sunday",
+                        "hours": "Closed",
+                        "opensAt": null,
+                        "closesAt": null,
+                        "closed": true
+                      },
+                      {
+                        "day": "Monday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Tuesday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Wednesday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Thursday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Friday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Saturday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      }
+                    ]
+                  },
+                  {
+                    "department": "Service",
+                    "key": "service",
+                    "summary": "07:00\u201317:00 Mon\u2013Sat",
+                    "days": [
+                      {
+                        "day": "Sunday",
+                        "hours": "Closed",
+                        "opensAt": null,
+                        "closesAt": null,
+                        "closed": true
+                      },
+                      {
+                        "day": "Monday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Tuesday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Wednesday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Thursday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Friday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Saturday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      }
+                    ]
+                  },
+                  {
+                    "department": "Parts",
+                    "key": "parts",
+                    "summary": "07:00\u201317:00 Mon\u2013Fri, 07:00\u201312:00 Sat",
+                    "days": [
+                      {
+                        "day": "Sunday",
+                        "hours": "Closed",
+                        "opensAt": null,
+                        "closesAt": null,
+                        "closed": true
+                      },
+                      {
+                        "day": "Monday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Tuesday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Wednesday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Thursday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Friday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Saturday",
+                        "hours": "07:00\u201312:00",
+                        "opensAt": "07:00",
+                        "closesAt": "12:00",
+                        "closed": false
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "18",
+                "name": "Sarasota",
+                "slug": "sarasota",
+                "num": "04",
+                "href": "/locations/sarasota",
+                "streetAddress": "1000 Sarasota Center Blvd.",
+                "city": "Sarasota",
+                "region": "FL",
+                "postalCode": "34240",
+                "country": null,
+                "latitude": null,
+                "longitude": null,
+                "phone": "(941) 355-7681",
+                "phoneUrl": "tel:9413557681",
+                "mapUrl": "https://www.google.com/maps/search/?api=1&query=1000%20Sarasota%20Center%20Blvd.%2C%20Sarasota%2C%20FL%2C%2034240",
+                "email": null,
+                "brands": "",
+                "services": "",
+                "perks": "",
+                "brandKeys": "",
+                "perkKeys": "",
+                "perk1": null,
+                "perk2": null,
+                "perk3": null,
+                "departments": "Sales \u00b7 Service \u00b7 Parts",
+                "hours": "Sales: 07:00\u201317:00 Mon\u2013Sat\n\nService: 07:00\u201317:00 Mon\u2013Sat\n\nParts: 07:00\u201317:00 Mon\u2013Sat",
+                "phone2": null,
+                "phone2Url": null,
+                "phone3": null,
+                "phone3Url": null,
+                "group": null,
+                "groupKey": null,
+                "photo": {
+                  "src": "",
+                  "alt": ""
+                },
+                "brandRows": [],
+                "serviceRows": [],
+                "perkRows": [],
+                "departmentRows": [
+                  {
+                    "name": "Sales",
+                    "key": "sales",
+                    "phone": null,
+                    "phoneUrl": null,
+                    "email": null,
+                    "hours": "07:00\u201317:00 Mon\u2013Sat"
+                  },
+                  {
+                    "name": "Service",
+                    "key": "service",
+                    "phone": null,
+                    "phoneUrl": null,
+                    "email": null,
+                    "hours": "07:00\u201317:00 Mon\u2013Sat"
+                  },
+                  {
+                    "name": "Parts",
+                    "key": "parts",
+                    "phone": null,
+                    "phoneUrl": null,
+                    "email": null,
+                    "hours": "07:00\u201317:00 Mon\u2013Sat"
+                  }
+                ],
+                "hoursRows": [
+                  {
+                    "department": "Sales",
+                    "key": "sales",
+                    "summary": "07:00\u201317:00 Mon\u2013Sat",
+                    "days": [
+                      {
+                        "day": "Sunday",
+                        "hours": "Closed",
+                        "opensAt": null,
+                        "closesAt": null,
+                        "closed": true
+                      },
+                      {
+                        "day": "Monday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Tuesday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Wednesday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Thursday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Friday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Saturday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      }
+                    ]
+                  },
+                  {
+                    "department": "Service",
+                    "key": "service",
+                    "summary": "07:00\u201317:00 Mon\u2013Sat",
+                    "days": [
+                      {
+                        "day": "Sunday",
+                        "hours": "Closed",
+                        "opensAt": null,
+                        "closesAt": null,
+                        "closed": true
+                      },
+                      {
+                        "day": "Monday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Tuesday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Wednesday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Thursday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Friday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Saturday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      }
+                    ]
+                  },
+                  {
+                    "department": "Parts",
+                    "key": "parts",
+                    "summary": "07:00\u201317:00 Mon\u2013Sat",
+                    "days": [
+                      {
+                        "day": "Sunday",
+                        "hours": "Closed",
+                        "opensAt": null,
+                        "closesAt": null,
+                        "closed": true
+                      },
+                      {
+                        "day": "Monday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Tuesday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Wednesday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Thursday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Friday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Saturday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "17",
+                "name": "Tampa",
+                "slug": "tampa",
+                "num": "05",
+                "href": "/locations/tampa",
+                "streetAddress": "6020 Adamo Drive",
+                "city": "Tampa",
+                "region": "FL",
+                "postalCode": "33619",
+                "country": null,
+                "latitude": 27.95298,
+                "longitude": -82.38591,
+                "phone": "(813) 621-1331",
+                "phoneUrl": "tel:8136211331",
+                "mapUrl": "https://www.google.com/maps/search/?api=1&query=27.95298,-82.38591",
+                "email": null,
+                "brands": "",
+                "services": "",
+                "perks": "",
+                "brandKeys": "",
+                "perkKeys": "",
+                "perk1": null,
+                "perk2": null,
+                "perk3": null,
+                "departments": "Sales \u00b7 Service \u00b7 Parts",
+                "hours": "Sales: 07:00\u201317:00 Sun\u2013Sat\n\nService: 07:00\u201317:00 Sun\u2013Sat\n\nParts: 07:00\u201317:00 Mon\u2013Sat",
+                "phone2": null,
+                "phone2Url": null,
+                "phone3": null,
+                "phone3Url": null,
+                "group": null,
+                "groupKey": null,
+                "photo": {
+                  "src": "",
+                  "alt": ""
+                },
+                "brandRows": [],
+                "serviceRows": [],
+                "perkRows": [],
+                "departmentRows": [
+                  {
+                    "name": "Sales",
+                    "key": "sales",
+                    "phone": null,
+                    "phoneUrl": null,
+                    "email": null,
+                    "hours": "07:00\u201317:00 Sun\u2013Sat"
+                  },
+                  {
+                    "name": "Service",
+                    "key": "service",
+                    "phone": null,
+                    "phoneUrl": null,
+                    "email": null,
+                    "hours": "07:00\u201317:00 Sun\u2013Sat"
+                  },
+                  {
+                    "name": "Parts",
+                    "key": "parts",
+                    "phone": null,
+                    "phoneUrl": null,
+                    "email": null,
+                    "hours": "07:00\u201317:00 Mon\u2013Sat"
+                  }
+                ],
+                "hoursRows": [
+                  {
+                    "department": "Sales",
+                    "key": "sales",
+                    "summary": "07:00\u201317:00 Sun\u2013Sat",
+                    "days": [
+                      {
+                        "day": "Sunday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Monday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Tuesday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Wednesday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Thursday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Friday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Saturday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      }
+                    ]
+                  },
+                  {
+                    "department": "Service",
+                    "key": "service",
+                    "summary": "07:00\u201317:00 Sun\u2013Sat",
+                    "days": [
+                      {
+                        "day": "Sunday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Monday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Tuesday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Wednesday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Thursday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Friday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Saturday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      }
+                    ]
+                  },
+                  {
+                    "department": "Parts",
+                    "key": "parts",
+                    "summary": "07:00\u201317:00 Mon\u2013Sat",
+                    "days": [
+                      {
+                        "day": "Sunday",
+                        "hours": "Closed",
+                        "opensAt": null,
+                        "closesAt": null,
+                        "closed": true
+                      },
+                      {
+                        "day": "Monday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Tuesday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Wednesday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Thursday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Friday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Saturday",
+                        "hours": "07:00\u201317:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "22",
+                "name": "Trailer Sales",
+                "slug": "trailer-sales",
+                "num": "06",
+                "href": "/locations/trailer-sales",
+                "streetAddress": "Trailer Sales, 6020 Adamo Drive",
+                "city": "Tampa",
+                "region": "FL",
+                "postalCode": "33619",
+                "country": null,
+                "latitude": null,
+                "longitude": null,
+                "phone": "(813) 621-1331",
+                "phoneUrl": "tel:8136211331",
+                "mapUrl": "https://www.google.com/maps/search/?api=1&query=Trailer%20Sales%2C%206020%20Adamo%20Drive%2C%20Tampa%2C%20FL%2C%2033619",
+                "email": null,
+                "brands": "",
+                "services": "",
+                "perks": "",
+                "brandKeys": "",
+                "perkKeys": "",
+                "perk1": null,
+                "perk2": null,
+                "perk3": null,
+                "departments": "",
+                "hours": "",
+                "phone2": null,
+                "phone2Url": null,
+                "phone3": null,
+                "phone3Url": null,
+                "group": null,
+                "groupKey": null,
+                "photo": {
+                  "src": "",
+                  "alt": ""
+                },
+                "brandRows": [],
+                "serviceRows": [],
+                "perkRows": [],
+                "departmentRows": [],
+                "hoursRows": []
+              }
+            ],
+            "brandFacets": [],
+            "perkFacets": []
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "home-services",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "service-rows",
+        "values": {
+          "eyebrow": "OUR INVENTORY",
+          "heading": "Everything to keep you moving.",
+          "body": "We make finding the right equipment from reputable brands easier than ever at Sun State International. Whether you need a commercial truck, trailer, or school bus, we have the equipment you need to keep your business moving.",
+          "background": "paper",
+          "anchor": "services",
+          "items": [
+            {
+              "num": "01",
+              "title": "Trucks",
+              "body": "Shop our wide selection of new and International trucks built to handle any job, equipped with advanced telematics via OnCommand Connection for real-time fleet insights.",
+              "linkLabel": "Browse trucks \u2192",
+              "linkUrl": "/store/inventory?type=truck"
+            },
+            {
+              "num": "02",
+              "title": "Trailers",
+              "body": "Explore our diverse inventory of trailers, including flatbeds, dump trailers, and reefers, from trusted brands like Hyundai Translead and Globe Trailers.",
+              "linkLabel": "Browse trailers \u2192",
+              "linkUrl": "/store/inventory?type=trailer"
+            },
+            {
+              "num": "03",
+              "title": "IC Bus",
+              "body": "Built for safety and reliability, our IC Bus selection offers top-of-the-line school and commercial buses from industry-leading manufacturers.",
+              "linkLabel": "Browse buses \u2192",
+              "linkUrl": "/store/inventory?type=bus"
+            },
+            {
+              "num": "04",
+              "title": "Capacity Yard Trucks",
+              "body": "Capacity yard trucks deliver the reliability and power your business needs to run smoothly day after day.",
+              "linkLabel": "Explore models \u2192",
+              "linkUrl": "/capacity-yard-trucks"
+            },
+            {
+              "num": "05",
+              "title": "Service",
+              "body": "We offer full-service repairs for trucks and trailers at our Diamond Edge certified service centers, plus mobile maintenance support so we come to you.",
+              "linkLabel": "Schedule service \u2192",
+              "linkUrl": "/service-appointment"
+            },
+            {
+              "num": "06",
+              "title": "Parts",
+              "body": "Order genuine parts online or in-store, with same-day pickup at our Aftermarket Parts and Truck & Trailer Parts locations.",
+              "linkLabel": "Order parts \u2192",
+              "linkUrl": "/parts"
+            },
+            {
+              "num": "07",
+              "title": "Financing",
+              "body": "Get financing options for your next truck or trailer purchase, with a team ready to walk you through it.",
+              "linkLabel": "Learn more \u2192",
+              "linkUrl": "/financing"
+            }
+          ]
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "home-featured",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 10,
+        "background": "card",
+        "anchor": "featured-inventory"
+      },
+      "children": [
+        {
+          "id": "feat-head-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "feat-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "feat-head-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Featured listings",
+                    "headingLevel": 2,
+                    "eyebrow": "INVENTORY"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "feat-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "feat-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "feat-inventory",
+                  "type": "widget",
+                  "props": {
+                    "widget": "inventory-carousel",
+                    "config": {
+                      "heading": "",
+                      "limit": 4
+                    },
+                    "snapshot": {
+                      "listings": []
+                    }
+                  }
+                },
+                {
+                  "id": "feat-all",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "View all inventory \u2192",
+                        "url": "/inventory",
+                        "style": "link",
+                        "intent": "browse-inventory"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "home-trailers",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "media-band",
+        "values": {
+          "eyebrow": "NEW & USED TRAILERS",
+          "heading": "The same trailers, every time.",
+          "body": "At Sun State Trailers, customer service is our priority. With quality products, quick service, and dedicated care, we provide everything you need for your business to succeed. Explore our diverse selection of new and used trailers to find the equipment you're looking for.",
+          "ctaLabel": "See what's available now",
+          "ctaStyle": "primary",
+          "background": "card",
+          "image": {
+            "src": "https://vendure.buzznerdrv.com/assets/source/9b/whatsapp-image-2026-09-16-at-10.44.39-pm.jpeg",
+            "alt": "Sun State trailers on the lot ",
+            "width": 1600,
+            "height": 900
+          },
+          "width": "boxed",
+          "ctaUrl": "#"
+        }
+      },
+      "styles": {
+        "base": {
+          "height": 600
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "home-brands",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "media-band",
+        "values": {
+          "eyebrow": "ABOUT OUR BRANDS",
+          "heading": "Built by industry leaders.",
+          "body": "At Sun State, we offer only the best quality for the best price \u2014 International trucks, IC Bus, and trailers from industry leaders like Hyundai Translead and Globe Trailers. When you choose a truck or trailer through Sun State, you're investing in durability, reliability, and innovation.",
+          "ctaLabel": "Globe Trailers",
+          "ctaUrl": "/store/inventory?brand=globe-trailers",
+          "ctaStyle": "primary",
+          "background": "card",
+          "anchor": "brands",
+          "image": {
+            "src": "https://vendure.buzznerdrv.com/assets/source/41/whatsapp-image-2026-09-16-at-10.46.17-pm.jpeg",
+            "alt": "International and IC Bus brand vehicles",
+            "width": 1600,
+            "height": 900
+          },
+          "width": "boxed"
+        }
+      },
+      "styles": {
+        "base": {
+          "height": 600
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "home-testimonials",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10,
+        "anchor": "testimonials"
+      },
+      "children": [
+        {
+          "id": "test-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "test-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "test-head",
+                  "type": "heading",
+                  "props": {
+                    "text": "What our customers say.",
+                    "eyebrow": "TESTIMONIALS",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "test-block",
+                  "type": "testimonials",
+                  "props": {
+                    "headingLevel": 2,
+                    "items": [
+                      {
+                        "quote": "The team at Sun State International kept our fleet on the road with fast, reliable service.",
+                        "name": "Fleet Manager",
+                        "role": "Tampa, FL",
+                        "rating": 5
+                      },
+                      {
+                        "quote": "Great selection of trucks and trailers, and the parts team always comes through same-day.",
+                        "name": "Owner-Operator",
+                        "role": "Sarasota, FL",
+                        "rating": 5
+                      },
+                      {
+                        "quote": "Dedicated care from sales through financing. They made the whole process easy.",
+                        "name": "Business Owner",
+                        "role": "Davenport, FL",
+                        "rating": 5
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "home-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-compact",
+        "values": {
+          "eyebrow": "",
+          "heading": "Ready to get on the road?",
+          "body": "Contact us to explore our trucks and experience nothing less than the dedicated care you deserve.",
+          "primaryLabel": "Contact us",
+          "primaryUrl": "/contact",
+          "secondaryLabel": "",
+          "secondaryUrl": "",
+          "note": "Call us today \u00b7 813.521.8148",
+          "background": "ink"
+        }
+      },
+      "children": []
+    }
+  ]
+}
