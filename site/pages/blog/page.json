@@ -50,6 +50,13 @@
                     "text": "Truck posts come from our International service and parts teams; trailer posts come from Sun State Trailers. If something here applies to a unit you run, call <a href=\"tel:+18007417566\">800.741.7566</a> and we'll look at the specific truck instead of the general case.",
                     "width": "prose"
                   }
+                },
+                {
+                  "id": "spacer",
+                  "type": "spacer",
+                  "props": {
+                    "size": 2
+                  }
                 }
               ]
             }
@@ -127,7 +134,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "bl-pager",
@@ -360,7 +368,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "bl-faq",
@@ -437,7 +446,8 @@
                           "a": "Yes. Call 800.741.7566 or submit a service appointment request, and a service advisor will look at the specific unit rather than the general case."
                         }
                       ]
-                    }
+                    },
+                    "snapshot": null
                   }
                 }
               ]
@@ -461,7 +471,8 @@
           "secondaryUrl": "/contact#contact-form",
           "background": "ink"
         }
-      }
+      },
+      "children": []
     }
   ]
 }
