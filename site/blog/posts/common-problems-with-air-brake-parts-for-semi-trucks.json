@@ -20,7 +20,12 @@
           "type": "image",
           "props": {
             "width": "full",
-            "image": {}
+            "image": {
+              "src": "https://vendure.buzznerdrv.com/assets/source/00/3.1.jpg",
+              "alt": "3.3.jpg",
+              "width": 2000,
+              "height": 1333
+            }
           }
         },
         {
@@ -281,6 +286,26 @@
           }
         },
         {
+          "id": "image-3",
+          "type": "image",
+          "props": {
+            "width": "full",
+            "image": {
+              "src": "https://vendure.buzznerdrv.com/assets/source/4c/3.2.jpg",
+              "alt": "3.2.jpg",
+              "height": 1000,
+              "width": 1150
+            }
+          }
+        },
+        {
+          "id": "spacer-11",
+          "type": "spacer",
+          "props": {
+            "size": 6
+          }
+        },
+        {
           "id": "heading-11",
           "type": "heading",
           "props": {
@@ -299,7 +324,27 @@
           }
         },
         {
-          "id": "spacer-11",
+          "id": "spacer-12",
+          "type": "spacer",
+          "props": {
+            "size": 6
+          }
+        },
+        {
+          "id": "image-4",
+          "type": "image",
+          "props": {
+            "width": "full",
+            "image": {
+              "src": "https://vendure.buzznerdrv.com/assets/source/21/3.3.jpg",
+              "alt": "3.3.jpg",
+              "width": 1050,
+              "height": 1000
+            }
+          }
+        },
+        {
+          "id": "spacer-13",
           "type": "spacer",
           "props": {
             "size": 6
@@ -324,7 +369,7 @@
           }
         },
         {
-          "id": "spacer-12",
+          "id": "spacer-14",
           "type": "spacer",
           "props": {
             "size": 6
