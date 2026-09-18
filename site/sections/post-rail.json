@@ -124,6 +124,18 @@
           "label": "Cover image"
         }
       ]
+    },
+    {
+      "key": "newerLabel",
+      "type": "text",
+      "label": "Newer entries link",
+      "default": "← Newer entries"
+    },
+    {
+      "key": "olderLabel",
+      "type": "text",
+      "label": "Older entries link",
+      "default": "Older entries →"
     }
   ],
   "nodes": [
@@ -235,9 +247,67 @@
               ]
             }
           ]
+        },
+        {
+          "id": "pr-nav-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "pr-nav-newer",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "pr-newer",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "label": "{{newerLabel}}",
+                        "url": "#{{anchor}}",
+                        "style": "secondary",
+                        "intent": "read-post"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "pr-nav-older",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "pr-older",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "label": "{{olderLabel}}",
+                        "url": "#{{anchor}}",
+                        "style": "secondary",
+                        "intent": "read-post"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     }
   ],
-  "css": "/* The band's own geometry, measured from the handoff. It lives here rather than\n   on the blog page because the parts it styles are this component's: a page that\n   places the grid gets the rule with it, and renaming a node here can no longer\n   leave a rule behind on a page that never mentioned it. */\n\n/* --- Topic chips ---------------------------------------------------------\n   The hairline above the chips is what separates them from the intro copy, and\n   the 40px below is what stops them crowding the results header. */\n[data-bz-node=\"pr-chips\"] .bz-block { padding-block: 0; }\n[data-bz-node=\"pr-chips-col\"] { border-top: 1px solid var(--line); padding-top: 22px; }\n[data-bz-node=\"pr-chips-row\"] { margin-bottom: 40px; }\n[data-bz-node=\"pr-chips\"] .ss-filter__pills { flex-wrap: wrap; overflow: visible; padding-bottom: 0; }\n[data-bz-node=\"pr-chips\"] .ss-pill {\n  border-width: 1px;\n  font-size: 13px;\n  letter-spacing: 0;\n  text-transform: none;\n  color: var(--body-text);\n}\n[data-bz-node=\"pr-chips\"] .ss-pill:hover { border-color: var(--ink); color: var(--ink); }\n[data-bz-node=\"pr-chips\"] .ss-pill[aria-pressed=\"true\"] { border-color: var(--accent); color: #fff; }\n\n/* --- Results header ------------------------------------------------------\n   Title and count sit on one baseline, the count pushed to the far edge. */\n[data-bz-node=\"pr-head-row\"] { align-items: baseline; margin-bottom: 26px; }\n[data-bz-node=\"pr-head-row\"] .bz-block { padding-block: 0; }\n[data-bz-node=\"pr-head-h\"] h2 { font-size: 30px; margin: 0; }\n[data-bz-node=\"pr-count-col\"] { text-align: right; }\n\n/* --- Cards ---------------------------------------------------------------\n   The card design is the Post cards component and its rules travel with it;\n   only the block's own padding is the band's business. */\n[data-bz-node=\"pr-cards\"] .bz-block { padding-block: 0; }\n\n@media (max-width: 640px) {\n  [data-bz-node=\"pr-head-h\"] h2 { font-size: 26px; }\n  [data-bz-node=\"pr-head-col\"], [data-bz-node=\"pr-count-col\"] { text-align: left; }\n}\n"
+  "css": "/* The band's own geometry, measured from the handoff. It lives here rather than\n   on the blog page because the parts it styles are this component's: a page that\n   places the grid gets the rule with it, and renaming a node here can no longer\n   leave a rule behind on a page that never mentioned it. */\n\n/* --- Topic chips ---------------------------------------------------------\n   The hairline above the chips is what separates them from the intro copy, and\n   the 40px below is what stops them crowding the results header. */\n[data-bz-node=\"pr-chips\"] .bz-block { padding-block: 0; }\n[data-bz-node=\"pr-chips-col\"] { border-top: 1px solid var(--line); padding-top: 22px; }\n[data-bz-node=\"pr-chips-row\"] { margin-bottom: 40px; }\n[data-bz-node=\"pr-chips\"] .ss-filter__pills { flex-wrap: wrap; overflow: visible; padding-bottom: 0; }\n[data-bz-node=\"pr-chips\"] .ss-pill {\n  border-width: 1px;\n  font-size: 13px;\n  letter-spacing: 0;\n  text-transform: none;\n  color: var(--body-text);\n}\n[data-bz-node=\"pr-chips\"] .ss-pill:hover { border-color: var(--ink); color: var(--ink); }\n[data-bz-node=\"pr-chips\"] .ss-pill[aria-pressed=\"true\"] { border-color: var(--accent); color: #fff; }\n\n/* --- Results header ------------------------------------------------------\n   Title and count sit on one baseline, the count pushed to the far edge. */\n[data-bz-node=\"pr-head-row\"] { align-items: baseline; margin-bottom: 26px; }\n[data-bz-node=\"pr-head-row\"] .bz-block { padding-block: 0; }\n[data-bz-node=\"pr-head-h\"] h2 { font-size: 30px; margin: 0; }\n[data-bz-node=\"pr-count-col\"] { text-align: right; }\n\n/* --- Cards ---------------------------------------------------------------\n   The card design is the Post cards component and its rules travel with it;\n   only the block's own padding is the band's business. */\n[data-bz-node=\"pr-cards\"] .bz-block { padding-block: 0; }\n\n@media (max-width: 640px) {\n  [data-bz-node=\"pr-head-h\"] h2 { font-size: 26px; }\n  [data-bz-node=\"pr-head-col\"], [data-bz-node=\"pr-count-col\"] { text-align: left; }\n}\n\n/* --- Older / newer ---------------------------------------------------------\n   The nav is in flow and visible before any script runs, so the canvas can\n   select and reword it. The script hides it when there is only one page. */\n[data-bz-node=\"pr-nav-row\"] { margin-top: 44px; align-items: center; }\n[data-bz-node=\"pr-nav-row\"] .bz-block { padding-block: 0; }\n[data-bz-node=\"pr-nav-row\"][hidden] { display: none; }\n[data-bz-node=\"pr-newer\"] .bz-btns { justify-content: flex-start; margin-block: 0; }\n[data-bz-node=\"pr-older\"] .bz-btns { justify-content: flex-end; margin-block: 0; }\n[data-bz-node=\"pr-nav-row\"] .bz-btn { min-height: 46px; padding: 0 24px; }\n[data-bz-node=\"pr-nav-row\"] .bz-btn[aria-disabled=\"true\"] {\n  opacity: 0.35;\n  pointer-events: none;\n}\n\n@media (max-width: 640px) {\n  [data-bz-node=\"pr-newer\"] .bz-btns,\n  [data-bz-node=\"pr-older\"] .bz-btns { justify-content: center; }\n}\n",
+  "js": "/* Older / newer paging over the post grid.\n *\n * Not a behaviour: the eight are carousel, filter, dropdown, drawer, rotator,\n * scrollstate, dependentselect and mapsync, and none of them pages a list. The\n * band already declares `filter` for its topic chips, so this rides on top of\n * that rather than replacing it.\n *\n * The one thing to get right is whose `hidden` is whose. The filter sets\n * `item.hidden` on every card each time it applies, so a card hidden because it\n * is on page 2 is indistinguishable from one hidden because it is the wrong\n * topic — unless the matched set is read at the one moment it is trustworthy,\n * which is immediately after the filter has run and before this touches\n * anything. That is what `bz:filter` marks, and what `matched` below holds. */\n(function () {\n  var PER_PAGE = 12; /* the design's four across, three rows down */\n\n  function setup(band) {\n    var grid = band.querySelector('[data-bz-part=\"item\"]');\n    if (!grid) return;\n    var items = Array.prototype.slice.call(band.querySelectorAll('[data-bz-part=\"item\"]'));\n    var newer = band.querySelector('[data-bz-node^=\"pr-newer\"] .bz-btn');\n    var older = band.querySelector('[data-bz-node^=\"pr-older\"] .bz-btn');\n    if (!newer || !older || !items.length) return;\n\n    var matched = items.slice();\n    var page = 0;\n\n    function pages() {\n      return Math.max(1, Math.ceil(matched.length / PER_PAGE));\n    }\n\n    function draw() {\n      var start = page * PER_PAGE;\n      matched.forEach(function (item, i) {\n        item.hidden = i < start || i >= start + PER_PAGE;\n      });\n      /* An anchor cannot be `disabled`, so the state is announced rather than\n         implied, and the CSS greys it from the same attribute. */\n      arrive(newer, page > 0);\n      arrive(older, page < pages() - 1);\n      /* Nothing to page through is nothing to show: one page of results should\n         not carry a nav that does nothing. */\n      var nav = band.querySelector('[data-bz-node=\"pr-nav-row\"]');\n      if (nav) nav.hidden = matched.length <= PER_PAGE;\n    }\n\n    function arrive(link, on) {\n      link.setAttribute('aria-disabled', String(!on));\n      link.tabIndex = on ? 0 : -1;\n    }\n\n    function go(delta, event) {\n      event.preventDefault();\n      var next = Math.min(pages() - 1, Math.max(0, page + delta));\n      if (next === page) return;\n      page = next;\n      draw();\n      band.scrollIntoView({\n        behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',\n        block: 'start',\n      });\n    }\n\n    newer.addEventListener('click', function (e) { go(-1, e); });\n    older.addEventListener('click', function (e) { go(1, e); });\n\n    /* The filter runs its first pass while widgets.js loads, which is before\n       this script exists — so the opening state is read here rather than waited\n       for, and only later changes arrive as events. */\n    function resync() {\n      matched = items.filter(function (item) { return !item.hidden; });\n      page = 0;\n      draw();\n    }\n    resync();\n    band.addEventListener('bz:filter', resync);\n  }\n\n  var bands = document.querySelectorAll('[data-bz-section=\"post-rail\"]');\n  Array.prototype.forEach.call(bands, setup);\n})();\n"
 }
