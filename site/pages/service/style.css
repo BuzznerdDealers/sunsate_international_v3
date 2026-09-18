@@ -22,8 +22,8 @@
 [data-bz-node="svc-hours"] [data-bz-type="column"][data-bz-node="fg-card-4"][data-bz-node] {
   background: var(--ink); border-color: var(--ink);
 }
-[data-bz-node="svc-hours"] [data-bz-node="fg-card-h4"] h3 { color: #fff; }
-[data-bz-node="svc-hours"] [data-bz-node="fg-card-b4"] p { color: var(--chrome-body); }
+[data-bz-node="svc-hours"] [data-bz-node="fg-card-h-4"] h3 { color: #fff; }
+[data-bz-node="svc-hours"] [data-bz-node="fg-card-b-4"] p { color: var(--chrome-body); }
 
 @media (max-width: 640px) {
   .bz-block--hero { padding-block: 72px; }
