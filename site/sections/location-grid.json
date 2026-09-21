@@ -704,8 +704,8 @@
                           "perk1": null,
                           "perk2": null,
                           "perk3": null,
-                          "departments": "Sales · Used Sales · Service · Parts",
-                          "hours": "Sales: 07:00–17:00 Mon–Sat\n\nUsed Sales: 09:00–17:00 Mon–Fri\n\nService: 07:00–17:00 Mon–Sat\n\nParts: 07:00–17:00 Mon–Sat",
+                          "departments": "Sales · Used Sales · Parts",
+                          "hours": "Sales: 07:00–17:00 Mon–Sat\n\nUsed Sales: 09:00–17:00 Mon–Fri\n\nParts: 07:00–17:00 Mon–Sat",
                           "phone2": null,
                           "phone2Url": null,
                           "phone3": null,
@@ -735,14 +735,6 @@
                               "phoneUrl": null,
                               "email": null,
                               "hours": "09:00–17:00 Mon–Fri"
-                            },
-                            {
-                              "name": "Service",
-                              "key": "service",
-                              "phone": null,
-                              "phoneUrl": null,
-                              "email": null,
-                              "hours": "07:00–17:00 Mon–Sat"
                             },
                             {
                               "name": "Parts",
@@ -863,62 +855,6 @@
                                   "opensAt": null,
                                   "closesAt": null,
                                   "closed": true
-                                }
-                              ]
-                            },
-                            {
-                              "department": "Service",
-                              "key": "service",
-                              "summary": "07:00–17:00 Mon–Sat",
-                              "days": [
-                                {
-                                  "day": "Sunday",
-                                  "hours": "Closed",
-                                  "opensAt": null,
-                                  "closesAt": null,
-                                  "closed": true
-                                },
-                                {
-                                  "day": "Monday",
-                                  "hours": "07:00–17:00",
-                                  "opensAt": "07:00",
-                                  "closesAt": "17:00",
-                                  "closed": false
-                                },
-                                {
-                                  "day": "Tuesday",
-                                  "hours": "07:00–17:00",
-                                  "opensAt": "07:00",
-                                  "closesAt": "17:00",
-                                  "closed": false
-                                },
-                                {
-                                  "day": "Wednesday",
-                                  "hours": "07:00–17:00",
-                                  "opensAt": "07:00",
-                                  "closesAt": "17:00",
-                                  "closed": false
-                                },
-                                {
-                                  "day": "Thursday",
-                                  "hours": "07:00–17:00",
-                                  "opensAt": "07:00",
-                                  "closesAt": "17:00",
-                                  "closed": false
-                                },
-                                {
-                                  "day": "Friday",
-                                  "hours": "07:00–17:00",
-                                  "opensAt": "07:00",
-                                  "closesAt": "17:00",
-                                  "closed": false
-                                },
-                                {
-                                  "day": "Saturday",
-                                  "hours": "07:00–17:00",
-                                  "opensAt": "07:00",
-                                  "closesAt": "17:00",
-                                  "closed": false
                                 }
                               ]
                             },
