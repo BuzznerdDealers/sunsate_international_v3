@@ -367,8 +367,8 @@
                 "perk1": null,
                 "perk2": null,
                 "perk3": null,
-                "departments": "Store",
-                "hours": "Store: 07:00–17:00 Mon–Fri",
+                "departments": "Leasing · Store",
+                "hours": "Leasing: 09:00–17:00 Mon–Fri\n\nStore: 07:00–17:00 Mon–Fri",
                 "phone2": null,
                 "phone2Url": null,
                 "phone3": null,
@@ -384,6 +384,14 @@
                 "perkRows": [],
                 "departmentRows": [
                   {
+                    "name": "Leasing",
+                    "key": "leasing",
+                    "phone": null,
+                    "phoneUrl": null,
+                    "email": null,
+                    "hours": "09:00–17:00 Mon–Fri"
+                  },
+                  {
                     "name": "Store",
                     "key": "store",
                     "phone": null,
@@ -393,6 +401,62 @@
                   }
                 ],
                 "hoursRows": [
+                  {
+                    "department": "Leasing",
+                    "key": "leasing",
+                    "summary": "09:00–17:00 Mon–Fri",
+                    "days": [
+                      {
+                        "day": "Sunday",
+                        "hours": "Closed",
+                        "opensAt": null,
+                        "closesAt": null,
+                        "closed": true
+                      },
+                      {
+                        "day": "Monday",
+                        "hours": "09:00–17:00",
+                        "opensAt": "09:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Tuesday",
+                        "hours": "09:00–17:00",
+                        "opensAt": "09:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Wednesday",
+                        "hours": "09:00–17:00",
+                        "opensAt": "09:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Thursday",
+                        "hours": "09:00–17:00",
+                        "opensAt": "09:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Friday",
+                        "hours": "09:00–17:00",
+                        "opensAt": "09:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Saturday",
+                        "hours": "Closed",
+                        "opensAt": null,
+                        "closesAt": null,
+                        "closed": true
+                      }
+                    ]
+                  },
                   {
                     "department": "Store",
                     "key": "store",
