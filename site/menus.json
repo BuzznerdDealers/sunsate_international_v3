@@ -1083,15 +1083,6 @@
               "newTab": false,
               "children": [
                 {
-                  "id": "nm-parts-cat",
-                  "label": "Parts catalogue",
-                  "type": "inventory",
-                  "ref": "parts",
-                  "url": null,
-                  "newTab": false,
-                  "children": []
-                },
-                {
                   "id": "nm-parts-online",
                   "label": "Order parts online",
                   "type": "url",
