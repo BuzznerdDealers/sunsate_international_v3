@@ -120,56 +120,33 @@
       "id": "cu-sales",
       "name": "Sales enquiries",
       "logic": "OR",
-      "rules": [
-        {
-          "fieldId": "cu-dept",
-          "operator": "is",
-          "value": "sales-trucks"
-        },
-        {
-          "fieldId": "cu-dept",
-          "operator": "is",
-          "value": "sales-trailers"
-        }
-      ],
-      "targetType": "role",
+      "rules": [],
+      "targetType": "email",
       "roleId": "salesperson",
-      "scopeMode": "dynamic"
+      "scopeMode": "dynamic",
+      "email": "e-contact@sunstateintl.com",
+      "contactName": "Sun State e Contact"
     },
     {
       "id": "cu-service",
       "name": "Service enquiries",
       "logic": "AND",
-      "rules": [
-        {
-          "fieldId": "cu-dept",
-          "operator": "is",
-          "value": "service"
-        }
-      ],
-      "targetType": "role",
+      "rules": [],
+      "targetType": "email",
       "roleId": "service-advisor",
-      "scopeMode": "dynamic"
+      "scopeMode": "dynamic",
+      "email": "e-contact@sunstateintl.com"
     },
     {
       "id": "cu-parts",
       "name": "Parts enquiries",
       "logic": "OR",
-      "rules": [
-        {
-          "fieldId": "cu-dept",
-          "operator": "is",
-          "value": "parts"
-        },
-        {
-          "fieldId": "cu-dept",
-          "operator": "is",
-          "value": "aftermarket"
-        }
-      ],
-      "targetType": "role",
+      "rules": [],
+      "targetType": "email",
       "roleId": "parts-manager",
-      "scopeMode": "dynamic"
+      "scopeMode": "dynamic",
+      "email": "e-contact@sunstateintl.com"
     }
-  ]
+  ],
+  "updatedAt": "2026-09-21T17:16:04.067Z"
 }
