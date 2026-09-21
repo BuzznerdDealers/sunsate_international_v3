@@ -727,19 +727,6 @@
                   "ref": "inventory?type=truck&condition=used"
                 },
                 {
-                  "id": "nm-trucks-deal",
-                  "label": "Deal of the week",
-                  "type": "page",
-                  "ref": "deal-of-the-week"
-                }
-              ]
-            },
-            {
-              "id": "nm-trucks-body",
-              "label": "By body style",
-              "type": "label",
-              "children": [
-                {
                   "id": "nm-trucks-sleeper",
                   "label": "Sleeper cabs",
                   "type": "inventory",
@@ -756,6 +743,12 @@
                   "label": "Capacity yard trucks",
                   "type": "page",
                   "ref": "capacity-yard-trucks"
+                },
+                {
+                  "id": "nm-trucks-deal",
+                  "label": "Deal of the week",
+                  "type": "page",
+                  "ref": "deal-of-the-week"
                 }
               ]
             },
