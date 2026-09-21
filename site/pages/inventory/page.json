@@ -815,8 +815,8 @@
                 "perk1": null,
                 "perk2": null,
                 "perk3": null,
-                "departments": "Sales · Used Sales",
-                "hours": "Sales: 07:00–17:00 Mon–Sat\n\nUsed Sales: 09:00–17:00 Mon–Fri",
+                "departments": "Sales · Service · Body Shop",
+                "hours": "Sales: 07:00–17:00 Mon–Sat\n\nService: 07:00–17:00 Mon–Sat\n\nBody Shop: 08:00–17:00 Mon–Fri",
                 "phone2": null,
                 "phone2Url": null,
                 "phone3": null,
@@ -840,12 +840,20 @@
                     "hours": "07:00–17:00 Mon–Sat"
                   },
                   {
-                    "name": "Used Sales",
-                    "key": "used_sales",
+                    "name": "Service",
+                    "key": "service",
                     "phone": null,
                     "phoneUrl": null,
                     "email": null,
-                    "hours": "09:00–17:00 Mon–Fri"
+                    "hours": "07:00–17:00 Mon–Sat"
+                  },
+                  {
+                    "name": "Body Shop",
+                    "key": "body",
+                    "phone": null,
+                    "phoneUrl": null,
+                    "email": null,
+                    "hours": "08:00–17:00 Mon–Fri"
                   }
                 ],
                 "hoursRows": [
@@ -906,9 +914,9 @@
                     ]
                   },
                   {
-                    "department": "Used Sales",
-                    "key": "used_sales",
-                    "summary": "09:00–17:00 Mon–Fri",
+                    "department": "Service",
+                    "key": "service",
+                    "summary": "07:00–17:00 Mon–Sat",
                     "days": [
                       {
                         "day": "Sunday",
@@ -919,36 +927,92 @@
                       },
                       {
                         "day": "Monday",
-                        "hours": "09:00–17:00",
-                        "opensAt": "09:00",
+                        "hours": "07:00–17:00",
+                        "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Tuesday",
-                        "hours": "09:00–17:00",
-                        "opensAt": "09:00",
+                        "hours": "07:00–17:00",
+                        "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Wednesday",
-                        "hours": "09:00–17:00",
-                        "opensAt": "09:00",
+                        "hours": "07:00–17:00",
+                        "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Thursday",
-                        "hours": "09:00–17:00",
-                        "opensAt": "09:00",
+                        "hours": "07:00–17:00",
+                        "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Friday",
-                        "hours": "09:00–17:00",
-                        "opensAt": "09:00",
+                        "hours": "07:00–17:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Saturday",
+                        "hours": "07:00–17:00",
+                        "opensAt": "07:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      }
+                    ]
+                  },
+                  {
+                    "department": "Body Shop",
+                    "key": "body",
+                    "summary": "08:00–17:00 Mon–Fri",
+                    "days": [
+                      {
+                        "day": "Sunday",
+                        "hours": "Closed",
+                        "opensAt": null,
+                        "closesAt": null,
+                        "closed": true
+                      },
+                      {
+                        "day": "Monday",
+                        "hours": "08:00–17:00",
+                        "opensAt": "08:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Tuesday",
+                        "hours": "08:00–17:00",
+                        "opensAt": "08:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Wednesday",
+                        "hours": "08:00–17:00",
+                        "opensAt": "08:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Thursday",
+                        "hours": "08:00–17:00",
+                        "opensAt": "08:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Friday",
+                        "hours": "08:00–17:00",
+                        "opensAt": "08:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
@@ -975,16 +1039,16 @@
                 "region": "FL",
                 "postalCode": "33619",
                 "country": null,
-                "latitude": 27.95298,
-                "longitude": -82.38591,
+                "latitude": null,
+                "longitude": null,
                 "phone": "(813) 621-1331",
                 "phoneUrl": "tel:8136211331",
-                "mapUrl": "https://www.google.com/maps/search/?api=1&query=27.95298,-82.38591",
+                "mapUrl": "https://www.google.com/maps/search/?api=1&query=6020%20Adamo%20Drive%2C%20Tampa%2C%20FL%2C%2033619",
                 "email": null,
-                "brands": "",
+                "brands": "Globe · Hyundai · International · IC Bus",
                 "services": "",
                 "perks": "",
-                "brandKeys": "",
+                "brandKeys": "globe hyundai international ic-bus",
                 "perkKeys": "",
                 "perk1": null,
                 "perk2": null,
@@ -1001,7 +1065,24 @@
                   "src": "",
                   "alt": ""
                 },
-                "brandRows": [],
+                "brandRows": [
+                  {
+                    "name": "Globe",
+                    "key": "globe"
+                  },
+                  {
+                    "name": "Hyundai",
+                    "key": "hyundai"
+                  },
+                  {
+                    "name": "International",
+                    "key": "international"
+                  },
+                  {
+                    "name": "IC Bus",
+                    "key": "ic-bus"
+                  }
+                ],
                 "serviceRows": [],
                 "perkRows": [],
                 "departmentRows": [
@@ -1248,8 +1329,20 @@
             ],
             "brandFacets": [
               {
+                "value": "globe",
+                "label": "Globe"
+              },
+              {
                 "value": "hyundai",
                 "label": "Hyundai"
+              },
+              {
+                "value": "ic-bus",
+                "label": "IC Bus"
+              },
+              {
+                "value": "international",
+                "label": "International"
               }
             ],
             "perkFacets": []
