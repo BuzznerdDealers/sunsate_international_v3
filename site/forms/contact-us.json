@@ -118,15 +118,21 @@
   "notifications": [
     {
       "id": "n-mubimeoi1",
-      "name": "Default",
+      "name": "Default , e-contact@sunstateintl.com",
       "logic": "AND",
-      "rules": [],
+      "rules": [
+        {
+          "fieldId": "cu-name",
+          "operator": "is",
+          "value": ""
+        }
+      ],
       "targetType": "email",
       "roleId": "",
       "scopeMode": "dynamic",
       "contactName": "Sunstate E-Contact ",
-      "email": "e-contact@sunstateintl.com"
+      "email": "ash@buzznerd.com, av@buzznerd.com"
     }
   ],
-  "updatedAt": "2026-09-21T17:31:52.494Z"
+  "updatedAt": "2026-09-21T18:33:26.430Z"
 }
