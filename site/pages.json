@@ -403,7 +403,7 @@
   },
   {
     "slug": "new-home-dark",
-    "title": "New Home (copy)",
+    "title": "New Home Dark",
     "description": "Draft rebuild of the Sun State International home page, carrying the new International-style mega navigation.",
     "path": "/new-home-dark",
     "out": "new-home-dark/index.html",
@@ -412,7 +412,8 @@
     "group": "entry",
     "seo": {
       "ogImage": null,
-      "noindex": true
+      "noindex": true,
+      "keywords": []
     }
   }
 ]
