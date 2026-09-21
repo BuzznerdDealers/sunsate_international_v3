@@ -309,9 +309,34 @@
 
   /* --------------------------------------------------------------- forms */
 
+  /* The listing a `spec:` rule is judged against, read back from the form. Only
+   * a surface that knows the product emits it; a static brand-site page has no
+   * product and every `spec:` rule then evaluates against an empty string, which
+   * is the same answer the server gives for a submission with no product
+   * context. */
+  function specBag(form) {
+    if (form.__bzSpec) return form.__bzSpec;
+    var raw = form.getAttribute('data-bz-spec');
+    var parsed = {};
+    if (raw) {
+      try {
+        parsed = JSON.parse(raw) || {};
+      } catch (e) {
+        parsed = {};
+      }
+    }
+    form.__bzSpec = parsed;
+    return parsed;
+  }
+
   function fieldValue(form, fieldId) {
+    if (fieldId && fieldId.indexOf('spec:') === 0) return specBag(form)[fieldId] || '';
     var wrap = form.querySelector('[data-bz-field="' + fieldId + '"]');
     if (!wrap) return '';
+    // A hidden field is the input, not a wrapper around one.
+    if (wrap.tagName === 'INPUT' || wrap.tagName === 'SELECT' || wrap.tagName === 'TEXTAREA') {
+      return wrap.value || '';
+    }
     var checked = wrap.querySelectorAll('input[type=checkbox]:checked, input[type=radio]:checked');
     if (checked.length) {
       return Array.prototype.map
@@ -320,6 +345,50 @@
     }
     var input = wrap.querySelector('input, select, textarea');
     return input ? input.value : '';
+  }
+
+  /* Where a hidden field's value is captured from. `static` carries its value in
+   * the markup and is absent here; everything else is a fact about the page the
+   * visitor arrived on, which a static build cannot know. */
+  var CAPTURE = {
+    query: function (form, param) { return param ? param_(param) : ''; },
+    referrer: function () { return document.referrer || ''; },
+    pageUrl: function () { return location.href; },
+    utmSource: function () { return param_('utm_source'); },
+    utmCampaign: function () { return param_('utm_campaign'); },
+    utmMedium: function () { return param_('utm_medium'); },
+    /* Filled so the dealer sees it on the submission. The server re-resolves it
+     * from the page's product context before anything treats it as a listing:
+     * a hidden input is a field, and a bot can rewrite one. */
+    productId: function (form) {
+      var raw = form.getAttribute('data-bz-vehicle');
+      if (!raw) return '';
+      try {
+        var vehicle = JSON.parse(raw) || {};
+        return String(vehicle.id || vehicle.productId || '');
+      } catch (e) {
+        return '';
+      }
+    },
+  };
+
+  function param_(name) {
+    try {
+      return new URLSearchParams(location.search).get(name) || '';
+    } catch (e) {
+      return '';
+    }
+  }
+
+  /** Fill the hidden fields whose value comes from the page rather than the JSON. */
+  function captureHidden(form) {
+    var inputs = form.querySelectorAll('[data-bz-hidden-field][data-bz-source]');
+    Array.prototype.forEach.call(inputs, function (input) {
+      var capture = CAPTURE[input.getAttribute('data-bz-source')];
+      if (!capture) return;
+      var value = capture(form, input.getAttribute('data-bz-param'));
+      if (value) input.value = value;
+    });
   }
 
   var OPERATORS = {
@@ -419,7 +488,15 @@
           form.setAttribute('data-state', 'sent');
           if (status) {
             status.setAttribute('data-state', 'ok');
-            status.textContent = form.getAttribute('data-bz-success') || 'Thanks — we will be in touch.';
+            /* The server's answer first: confirmations are ordered and
+             * first-match-wins, and only the server has the submitted values the
+             * conditional entries are judged against. The baked-in copy is the
+             * unconditional entry, which is what shows when the server has
+             * nothing more specific to say. */
+            status.textContent =
+              (res && res.message) ||
+              form.getAttribute('data-bz-success') ||
+              'Thanks — we will be in touch.';
           }
           /* Announced rather than tracked here: this file knows the lead landed
            * and what id it was given, and analytics.js knows how to report it.
@@ -434,7 +511,7 @@
           });
           /* Only after the lead is safely recorded, and only after the event is
            * dispatched — navigating first would lose both. */
-          var redirect = form.getAttribute('data-bz-redirect') || (res && res.redirectUrl);
+          var redirect = (res && res.redirectUrl) || form.getAttribute('data-bz-redirect');
           if (redirect) setTimeout(function () { location.assign(redirect); }, 150);
           return;
         }
@@ -451,6 +528,7 @@
   }
 
   function bindForm(form) {
+    captureHidden(form);
     applyLogic(form);
     form.addEventListener('input', function () { applyLogic(form); });
     form.addEventListener('change', function () { applyLogic(form); });
@@ -755,12 +833,30 @@
       return matchAny ? results.some(Boolean) : results.every(Boolean);
     }
 
+    // An item inside a `data-bz-reveal="dim"` subtree stays in the page when it
+    // does not match, and only reports whether it did. That is how one chip row
+    // drives two views of the same set: the cards below go away, and the pins on
+    // the map light up and dim without the map losing its shape.
+    var dimmed = items.map(function (item) {
+      var host = item.closest && item.closest('[data-bz-reveal]');
+      return !!host && host.getAttribute('data-bz-reveal') === 'dim';
+    });
+    // The count is a count of locations, not of elements that represent one. A
+    // dimmed pin is the same rooftop as the card below it, so counting both would
+    // say twelve. When everything is dimmed there is no second view and the
+    // dimmed items are the set.
+    var counted = dimmed.some(function (d) { return !d; })
+      ? function (i) { return !dimmed[i]; }
+      : function () { return true; };
+
     function apply() {
       var shown = 0;
-      items.forEach(function (item) {
+      items.forEach(function (item, i) {
         var visible = matches(item);
-        item.hidden = !visible;
-        if (visible) shown += 1;
+        if (dimmed[i]) item.removeAttribute('hidden');
+        else item.hidden = !visible;
+        item.setAttribute('data-bz-match', visible ? '1' : '0');
+        if (visible && counted(i)) shown += 1;
       });
       if (countHost) {
         var template = countHost.getAttribute('data-bz-count-template');

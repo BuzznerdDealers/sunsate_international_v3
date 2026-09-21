@@ -38,6 +38,7 @@ import {
   parseTemplates,
   parseWidgetDefinition,
   getBlock,
+  makeProjection,
   BEHAVIOURS,
   BEHAVIOUR_PARTS,
   PARTS,
@@ -58,6 +59,8 @@ import {
   validateDocument,
   validateTemplate,
 } from './index.mjs';
+
+import { defaultConfirmation } from './forms.mjs';
 
 import tokens from '../site/tokens.json' with { type: 'json' };
 import menus from '../site/menus.json' with { type: 'json' };
@@ -922,6 +925,92 @@ test('a form renders its fields with the tagging attributes analytics needs', ()
   assert.match(html, /name="name"/);
 });
 
+test('a hidden field is still in the payload, marked with where its value comes from', () => {
+  const html = renderForm(
+    {
+      id: 'lead',
+      name: 'Lead',
+      status: 'live',
+      fields: [
+        { id: 'email', type: 'email', label: 'Email', required: true },
+        { id: 'src', type: 'single_line', label: 'Source', hidden: true, valueSource: 'query', queryParam: 'promo' },
+        { id: 'team', type: 'single_line', label: 'Team', hidden: true, defaultValue: 'fleet' },
+      ],
+    },
+    CTX,
+  );
+  // Never a visible control, and never a label — but it is an input, so it posts.
+  assert.match(html, /<input type="hidden"[^>]*name="src"[^>]*data-bz-source="query"[^>]*data-bz-param="promo"/);
+  assert.equal(/<label[^>]*for="src"/.test(html), false);
+  // A static hidden field carries its value; a captured one ships empty, because
+  // a static build cannot know which page the visitor will arrive on.
+  assert.match(html, /<input type="hidden"[^>]*name="team"[^>]*value="fleet"/);
+  assert.equal(/name="src"[^>]*value=/.test(html), false);
+});
+
+test('a paired field is half width, and an unpaired one still fills the row', () => {
+  const html = renderForm(
+    {
+      id: 'names',
+      name: 'Names',
+      status: 'live',
+      fields: [
+        { id: 'first', type: 'first_name', label: 'First', width: 'half' },
+        { id: 'last', type: 'last_name', label: 'Last', width: 'half' },
+        { id: 'email', type: 'email', label: 'Email' },
+      ],
+    },
+    CTX,
+  );
+  assert.equal((html.match(/class="bz-field bz-field--half"/g) ?? []).length, 2);
+  assert.match(html, /class="bz-field"[^>]*data-bz-field="email"/);
+});
+
+test('the page bakes in the unconditional confirmation, not the first one', () => {
+  const form = {
+    id: 'quote',
+    name: 'Quote',
+    status: 'live',
+    successMessage: 'Old copy',
+    confirmations: [
+      { id: 'fleet', name: 'Fleet', rules: [{ fieldId: 'size', operator: 'is', value: 'fleet' }], type: 'message', message: 'A fleet specialist will call.' },
+      { id: 'default', name: 'Default', rules: [], type: 'message', message: 'Thanks — we will be in touch.' },
+    ],
+    fields: [{ id: 'size', type: 'dropdown', label: 'Size', options: [{ label: 'fleet' }] }],
+  };
+  const html = renderForm(form, CTX);
+  // The conditional entry is the server's to choose; the page can only show the
+  // one that matches an unanswered form.
+  assert.match(html, /data-bz-success="Thanks — we will be in touch\."/);
+  assert.equal(/A fleet specialist/.test(html), false);
+  assert.equal(defaultConfirmation(form).id, 'default');
+});
+
+test('a confirmation that redirects becomes the form\'s baked-in redirect', () => {
+  const html = renderForm(
+    {
+      id: 'rsvp',
+      name: 'RSVP',
+      status: 'live',
+      confirmations: [{ id: 'd', name: 'Default', rules: [], type: 'redirect', redirectUrl: '/thank-you' }],
+      fields: [{ id: 'n', type: 'full_name', label: 'Name' }],
+    },
+    CTX,
+  );
+  assert.match(html, /data-bz-redirect="\/thank-you"/);
+});
+
+test('a form with no product context carries no spec bag', () => {
+  const form = { id: 'f', name: 'F', status: 'live', pdpContext: true, fields: [{ id: 'n', type: 'full_name', label: 'Name' }] };
+  assert.equal(/data-bz-spec/.test(renderForm(form, CTX)), false);
+  // The surface that knows the listing supplies it; the renderer never invents one.
+  const withProduct = renderForm(form, { ...CTX, productContext: { location: 'Chicago', type: 'Trucks' } });
+  assert.deepEqual(JSON.parse(withProduct.match(/data-bz-spec="([^"]*)"/)[1].replace(/&quot;/g, '"')), {
+    'spec:location': 'Chicago',
+    'spec:type': 'Trucks',
+  });
+});
+
 /* --------------------------------------------------------- shared sections */
 
 const SHARED_CTX = {
@@ -1699,6 +1788,195 @@ test('a locations-map snapshot with coordinates draws the map in the HTML', () =
   assert.match(html, /data-bz-map/);
   assert.match(html, /openstreetmap\.org\/export\/embed/);
   assert.match(html, /27\.95/);
+});
+
+// The calibration anchors below are the corners of a 1256x528 Florida outline:
+// Pensacola at the north-west and Miami at the south-east.
+const FL_ANCHORS = [
+  { lng: -87.63, lat: 30.99, x: 118, y: 86 },
+  { lng: -80.14, lat: 25.13, x: 1181, y: 479 },
+];
+
+function pinmap(config, locations) {
+  return renderDocument(
+    {
+      nodes: [
+        {
+          id: 'pm',
+          type: 'widget',
+          props: {
+            widget: 'locations-pinmap',
+            config: {
+              basemap: { src: '/maps/florida.svg', alt: 'Florida', width: 1256, height: 528 },
+              anchors: FL_ANCHORS,
+              ...config,
+            },
+            snapshot: { locations },
+          },
+        },
+      ],
+    },
+    CTX,
+  );
+}
+
+test('the projection puts a rooftop where the artwork says it is', () => {
+  const project = makeProjection(FL_ANCHORS);
+  // Both anchors must land back on themselves, or the fit is not a fit.
+  for (const a of FL_ANCHORS) {
+    const { x, y } = project(a.lng, a.lat);
+    assert.ok(Math.abs(x - a.x) < 0.001, `anchor x ${x} != ${a.x}`);
+    assert.ok(Math.abs(y - a.y) < 0.001, `anchor y ${y} != ${a.y}`);
+  }
+  // Tampa, which is neither anchor, has to land inside the outline and in the
+  // right half of it — the check that catches a projection that happens to fit
+  // its own two points and nothing else.
+  const tampa = project(-82.45, 27.95);
+  assert.ok(tampa.x > 850 && tampa.x < 1050, `Tampa x ${tampa.x}`);
+  assert.ok(tampa.y > 230 && tampa.y < 330, `Tampa y ${tampa.y}`);
+});
+
+test('latitude is projected through Mercator, not linearly', () => {
+  // The give-away for a linear fit: with anchors 5.86 degrees apart, the midpoint
+  // latitude does not sit at the midpoint of the vertical span. Getting this wrong
+  // is a map that looks plausible and is wrong by tens of pixels in the middle.
+  const project = makeProjection(FL_ANCHORS);
+  const mid = project(-83.885, (30.99 + 25.13) / 2);
+  const linear = (86 + 479) / 2;
+  assert.ok(Math.abs(mid.y - linear) > 1, `Mercator midpoint ${mid.y} is the linear one`);
+});
+
+test('two anchors that cannot describe a projection yield none', () => {
+  assert.equal(makeProjection([]), null);
+  assert.equal(makeProjection([FL_ANCHORS[0]]), null);
+  // Same longitude: no horizontal scale to derive.
+  assert.equal(
+    makeProjection([FL_ANCHORS[0], { ...FL_ANCHORS[1], lng: FL_ANCHORS[0].lng }]),
+    null,
+  );
+  // Same latitude: no vertical scale.
+  assert.equal(
+    makeProjection([FL_ANCHORS[0], { ...FL_ANCHORS[1], lat: FL_ANCHORS[0].lat }]),
+    null,
+  );
+});
+
+test('a pinmap puts its pins in the served HTML, positioned and filterable', () => {
+  const html = pinmap({}, [
+    {
+      name: 'Tampa',
+      slug: 'tampa',
+      href: '/locations/tampa',
+      latitude: 27.95,
+      longitude: -82.45,
+      brandKeys: 'international ic-bus',
+      perkKeys: 'curbside_pickup',
+    },
+  ]);
+  // In the markup, not added by a script: this is what makes it draw on the Design
+  // canvas, in the first paint, and with JavaScript off.
+  assert.match(html, /data-bz-pin="tampa"/);
+  assert.match(html, /left:\d+\.\d+%;top:\d+\.\d+%/);
+  assert.match(html, /data-brand="international ic-bus"/);
+  assert.match(html, /data-perk="curbside_pickup"/);
+  // `part: "item"`, so the page's own filter behaviour reaches the pins with the
+  // same chips that filter the cards.
+  assert.match(html, /data-bz-part="item"/);
+  // Marked rather than hidden, so a chip dims the map instead of emptying it.
+  assert.match(html, /data-bz-reveal="dim"/);
+  assert.match(html, /\/maps\/florida\.svg/);
+});
+
+test('a rooftop with no coordinates is left off the map, not dropped at 0,0', () => {
+  const warnings = [];
+  const html = renderDocument(
+    {
+      nodes: [
+        {
+          id: 'pm',
+          type: 'widget',
+          props: {
+            widget: 'locations-pinmap',
+            config: {
+              basemap: { src: '/maps/florida.svg', width: 1256, height: 528 },
+              anchors: FL_ANCHORS,
+            },
+            snapshot: {
+              locations: [
+                { name: 'Tampa', slug: 'tampa', latitude: 27.95, longitude: -82.45 },
+                { name: 'Nowhere', slug: 'nowhere' },
+              ],
+            },
+          },
+        },
+      ],
+    },
+    { ...CTX, warn: (m) => warnings.push(m) },
+  );
+  assert.match(html, /data-bz-pin="tampa"/);
+  assert.doesNotMatch(html, /data-bz-pin="nowhere"/);
+  // Silence here reads as "the map is broken". Say which rooftop and where to fix it.
+  assert.ok(
+    warnings.some((w) => /1 rooftop\(s\) have no coordinates/.test(w)),
+    warnings.join(' | '),
+  );
+});
+
+test('a pinmap with no calibration draws the art and no pins', () => {
+  const warnings = [];
+  const html = renderDocument(
+    {
+      nodes: [
+        {
+          id: 'pm',
+          type: 'widget',
+          props: {
+            widget: 'locations-pinmap',
+            config: { basemap: { src: '/maps/florida.svg', width: 1256, height: 528 } },
+            snapshot: { locations: [{ name: 'Tampa', slug: 'tampa', latitude: 27.95, longitude: -82.45 }] },
+          },
+        },
+      ],
+    },
+    { ...CTX, warn: (m) => warnings.push(m) },
+  );
+  assert.match(html, /\/maps\/florida\.svg/);
+  assert.doesNotMatch(html, /data-bz-pin=/);
+  assert.ok(warnings.some((w) => /two calibration points/.test(w)), warnings.join(' | '));
+});
+
+test('a location photo is the rooftop\'s own, and nothing when there is none', () => {
+  const withPhoto = renderDocument(
+    {
+      nodes: [
+        {
+          id: 'p',
+          type: 'widget',
+          props: {
+            widget: 'location-photo',
+            config: {},
+            snapshot: { photo: { src: '/media/tampa.jpg', alt: 'The Tampa branch' } },
+          },
+        },
+      ],
+    },
+    CTX,
+  );
+  assert.match(withPhoto, /\/media\/tampa\.jpg/);
+  assert.match(withPhoto, /The Tampa branch/);
+
+  const without = renderDocument(
+    {
+      nodes: [
+        { id: 'p', type: 'widget', props: { widget: 'location-photo', config: {}, snapshot: { photo: { src: '', alt: '' } } } },
+      ],
+    },
+    CTX,
+  );
+  // Never a generated street map standing in for a missing photograph, and no
+  // placeholder copy either — an empty slot is the honest state.
+  assert.match(without, /bz-locphoto__empty/);
+  assert.doesNotMatch(without, /tile|openstreetmap|data-bz-map\b/);
 });
 
 test('the static map provider draws tiles, not an iframe', () => {

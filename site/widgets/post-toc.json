@@ -1,0 +1,32 @@
+{
+  "id": "post-toc",
+  "label": "Post contents",
+  "description": "The “On this page” rail that runs beside a long post. Each row names a heading on the same page, so the anchors are the ids the post's own heading blocks carry. The post's script marks the section being read; the column it is placed in is what makes the rail stick.",
+  "props": [
+    {
+      "key": "label",
+      "type": "text",
+      "label": "Rail label",
+      "default": "On this page"
+    },
+    {
+      "key": "items",
+      "type": "list",
+      "label": "Sections",
+      "fields": [
+        {
+          "key": "label",
+          "type": "text",
+          "label": "Label"
+        },
+        {
+          "key": "href",
+          "type": "text",
+          "label": "Anchor, e.g. #camera-systems"
+        }
+      ]
+    }
+  ],
+  "html": "<nav class=\"ss-toc\" data-toc aria-label=\"Table of contents\">{{#if label}}<p class=\"ss-toc__l\">{{label}}</p>{{/if}}<div class=\"ss-toc__list\">{{#each items}}<a class=\"ss-toc__link\" href=\"{{link href}}\">{{label}}</a>{{/each}}</div></nav>",
+  "css": "/* The rail itself is in normal flow: what sticks is the column that places it,\n   because anything else in that column — a promo card under the list — has to\n   travel with it rather than be slid over. */\n.ss-toc{position:relative}\n.ss-toc__l{font:700 var(--text-eyebrow)/1 var(--font-body);letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:0 0 18px}\n.ss-toc__list{display:flex;flex-direction:column;border-top:1px solid var(--line)}\n.ss-toc__link{font-size:13px;font-weight:600;line-height:1.45;color:var(--body-text);border-bottom:1px solid var(--line);padding:11px 0;text-decoration:none}\n.ss-toc__link:hover{color:var(--accent)}\n/* The script adds .is-current; until it runs — and forever on the Design\n   canvas, which runs no site JS — the rail is a plain list of links. */\n.ss-toc__link.is-current{color:var(--accent);box-shadow:inset 3px 0 0 var(--accent);padding-left:10px}\n@media (max-width:1100px){.ss-toc__link{padding:13px 0}}"
+}

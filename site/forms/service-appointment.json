@@ -2,7 +2,10 @@
   "id": "service-appointment",
   "name": "Service appointment request",
   "status": "live",
-  "surfaces": ["page", "pdp"],
+  "surfaces": [
+    "page",
+    "pdp"
+  ],
   "intent": "book-service",
   "submitLabel": "Submit service request",
   "successMessage": "Request received. Submitting a request does not confirm an appointment — a service advisor will contact you by phone or email to confirm the date, time and scope of work.",
@@ -12,46 +15,140 @@
     "text": "I agree to be contacted about this service request by phone, text or email."
   },
   "fields": [
-    { "id": "appt-name", "type": "full_name", "label": "Full name", "required": true },
-    { "id": "appt-company", "type": "single_line", "label": "Company or fleet", "required": false },
-    { "id": "appt-phone", "type": "phone", "label": "Phone", "required": true },
-    { "id": "appt-email", "type": "email", "label": "Email", "required": true },
+    {
+      "id": "appt-name",
+      "type": "full_name",
+      "label": "Full name",
+      "required": true
+    },
+    {
+      "id": "appt-company",
+      "type": "single_line",
+      "label": "Company or fleet",
+      "required": false
+    },
+    {
+      "id": "appt-phone",
+      "type": "phone",
+      "label": "Phone",
+      "required": true
+    },
+    {
+      "id": "appt-email",
+      "type": "email",
+      "label": "Email",
+      "required": true
+    },
     {
       "id": "appt-unittype",
       "type": "dropdown",
       "label": "Unit type",
       "required": true,
       "options": [
-        { "value": "heavy-duty-truck", "label": "Heavy-duty truck" },
-        { "value": "medium-duty-truck", "label": "Medium-duty truck" },
-        { "value": "trailer", "label": "Trailer" },
-        { "value": "ic-bus", "label": "IC Bus" },
-        { "value": "yard-truck", "label": "Capacity yard truck" },
-        { "value": "other", "label": "Other commercial vehicle" }
+        {
+          "value": "heavy-duty-truck",
+          "label": "Heavy-duty truck"
+        },
+        {
+          "value": "medium-duty-truck",
+          "label": "Medium-duty truck"
+        },
+        {
+          "value": "trailer",
+          "label": "Trailer"
+        },
+        {
+          "value": "ic-bus",
+          "label": "IC Bus"
+        },
+        {
+          "value": "yard-truck",
+          "label": "Capacity yard truck"
+        },
+        {
+          "value": "other",
+          "label": "Other commercial vehicle"
+        }
       ]
     },
-    { "id": "appt-ymm", "type": "single_line", "label": "Year, make & model", "required": false },
-    { "id": "appt-vin", "type": "single_line", "label": "VIN or unit number", "required": false },
-    { "id": "appt-mileage", "type": "single_line", "label": "Mileage or engine hours", "required": false },
-    { "id": "appt-faults", "type": "single_line", "label": "Active fault codes", "required": false },
+    {
+      "id": "appt-ymm",
+      "type": "single_line",
+      "label": "Year, make & model",
+      "required": false
+    },
+    {
+      "id": "appt-vin",
+      "type": "single_line",
+      "label": "VIN or unit number",
+      "required": false
+    },
+    {
+      "id": "appt-mileage",
+      "type": "single_line",
+      "label": "Mileage or engine hours",
+      "required": false
+    },
+    {
+      "id": "appt-faults",
+      "type": "single_line",
+      "label": "Active fault codes",
+      "required": false
+    },
     {
       "id": "appt-work",
       "type": "checkboxes",
       "label": "What do you need? Select all that apply",
       "required": false,
       "options": [
-        { "value": "pm", "label": "Preventative maintenance" },
-        { "value": "engine-diagnostics", "label": "Engine diagnostics" },
-        { "value": "warranty", "label": "Warranty repair" },
-        { "value": "dot", "label": "DOT safety inspection" },
-        { "value": "brakes", "label": "Brakes & suspension" },
-        { "value": "alignment", "label": "Alignment" },
-        { "value": "drivetrain", "label": "Transmission & drivetrain" },
-        { "value": "electrical", "label": "Electrical & aftertreatment" },
-        { "value": "trailer-repair", "label": "Trailer repair" },
-        { "value": "liftgate", "label": "Liftgate service" },
-        { "value": "fabrication", "label": "Fabrication & welding" },
-        { "value": "body", "label": "Body or collision repair" }
+        {
+          "value": "pm",
+          "label": "Preventative maintenance"
+        },
+        {
+          "value": "engine-diagnostics",
+          "label": "Engine diagnostics"
+        },
+        {
+          "value": "warranty",
+          "label": "Warranty repair"
+        },
+        {
+          "value": "dot",
+          "label": "DOT safety inspection"
+        },
+        {
+          "value": "brakes",
+          "label": "Brakes & suspension"
+        },
+        {
+          "value": "alignment",
+          "label": "Alignment"
+        },
+        {
+          "value": "drivetrain",
+          "label": "Transmission & drivetrain"
+        },
+        {
+          "value": "electrical",
+          "label": "Electrical & aftertreatment"
+        },
+        {
+          "value": "trailer-repair",
+          "label": "Trailer repair"
+        },
+        {
+          "value": "liftgate",
+          "label": "Liftgate service"
+        },
+        {
+          "value": "fabrication",
+          "label": "Fabrication & welding"
+        },
+        {
+          "value": "body",
+          "label": "Body or collision repair"
+        }
       ]
     },
     {
@@ -67,26 +164,64 @@
       "label": "Location",
       "required": true,
       "options": [
-        { "value": "tampa", "label": "Tampa — 6020 E Adamo Dr" },
-        { "value": "sarasota", "label": "Sarasota — 1000 Sarasota Center Blvd" },
-        { "value": "davenport", "label": "Davenport — 41609 Hwy 27" },
-        { "value": "brooksville", "label": "Brooksville — 17127 Runway Drive" },
-        { "value": "aftermarket-parts", "label": "Aftermarket Parts — 7105 E 6th Ave, Tampa" },
-        { "value": "mobile", "label": "Mobile service at my location" }
+        {
+          "value": "tampa",
+          "label": "Tampa — 6020 E Adamo Dr"
+        },
+        {
+          "value": "sarasota",
+          "label": "Sarasota — 1000 Sarasota Center Blvd"
+        },
+        {
+          "value": "davenport",
+          "label": "Davenport — 41609 Hwy 27"
+        },
+        {
+          "value": "brooksville",
+          "label": "Brooksville — 17127 Runway Drive"
+        },
+        {
+          "value": "aftermarket-parts",
+          "label": "Aftermarket Parts — 7105 E 6th Ave, Tampa"
+        },
+        {
+          "value": "mobile",
+          "label": "Mobile service at my location"
+        }
       ]
     },
-    { "id": "appt-date", "type": "date", "label": "Preferred date", "required": false },
+    {
+      "id": "appt-date",
+      "type": "date",
+      "label": "Preferred date",
+      "required": false
+    },
     {
       "id": "appt-time",
       "type": "dropdown",
       "label": "Preferred drop-off",
       "required": false,
       "options": [
-        { "value": "morning", "label": "Morning (7:00–11:00 AM)" },
-        { "value": "midday", "label": "Midday (11:00 AM–2:00 PM)" },
-        { "value": "afternoon", "label": "Afternoon (2:00–5:00 PM)" },
-        { "value": "evening", "label": "Evening drop-off" },
-        { "value": "first-available", "label": "First available" }
+        {
+          "value": "morning",
+          "label": "Morning (7:00–11:00 AM)"
+        },
+        {
+          "value": "midday",
+          "label": "Midday (11:00 AM–2:00 PM)"
+        },
+        {
+          "value": "afternoon",
+          "label": "Afternoon (2:00–5:00 PM)"
+        },
+        {
+          "value": "evening",
+          "label": "Evening drop-off"
+        },
+        {
+          "value": "first-available",
+          "label": "First available"
+        }
       ]
     },
     {
@@ -98,19 +233,28 @@
       "logic": {
         "logic": "OR",
         "action": "show",
-        "rules": [{ "fieldId": "appt-location", "operator": "is", "value": "mobile" }]
+        "rules": [
+          {
+            "fieldId": "appt-location",
+            "operator": "is",
+            "value": "mobile"
+          }
+        ]
       }
     }
   ],
   "notifications": [
     {
-      "id": "appt-service",
-      "name": "Service department",
+      "id": "n-mubiw37f2",
+      "name": "Default",
       "logic": "AND",
       "rules": [],
-      "targetType": "role",
-      "roleId": "service-advisor",
-      "scopeMode": "dynamic"
+      "targetType": "email",
+      "roleId": "",
+      "scopeMode": "dynamic",
+      "email": "ash@buzznerd.com,av@buzznerd.com",
+      "contactName": "Service Appointment "
     }
-  ]
+  ],
+  "updatedAt": "2026-09-21T18:57:10.989Z"
 }

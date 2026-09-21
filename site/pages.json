@@ -20,7 +20,7 @@
     "path": "/new-home",
     "out": "new-home/index.html",
     "dir": "new-home",
-    "status": "draft",
+    "status": "published",
     "group": "entry",
     "seo": {
       "ogImage": null,
@@ -38,7 +38,8 @@
     "group": "entry",
     "seo": {
       "ogImage": null,
-      "noindex": true
+      "noindex": true,
+      "keywords": []
     }
   },
   {

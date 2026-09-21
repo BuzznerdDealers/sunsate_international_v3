@@ -89,119 +89,10 @@
             ]
           },
           "ls-map-w": {
-            "locations": [
-              {
-                "id": "21",
-                "name": "Aftermarket Business Tampa, FL",
-                "slug": "aftermarket-business-tampa-fl",
-                "num": "01",
-                "href": null,
-                "streetAddress": "105 East 6th Ave.",
-                "city": "Tampa",
-                "region": "FL",
-                "postalCode": "33619",
-                "country": null,
-                "latitude": null,
-                "longitude": null,
-                "phone": "(813) 627-3282",
-                "phoneUrl": "tel:8136273282",
-                "mapUrl": "https://www.google.com/maps/search/?api=1&query=105%20East%206th%20Ave.%2C%20Tampa%2C%20FL%2C%2033619",
-                "email": null,
-                "brands": "",
-                "services": "",
-                "perks": "",
-                "brandKeys": "",
-                "perkKeys": "",
-                "perk1": null,
-                "perk2": null,
-                "perk3": null,
-                "departments": "Store",
-                "hours": "Store: 07:00–16:00 Mon–Fri",
-                "phone2": null,
-                "phone2Url": null,
-                "phone3": null,
-                "phone3Url": null,
-                "group": null,
-                "groupKey": null,
-                "photo": {
-                  "src": "",
-                  "alt": ""
-                },
-                "brandRows": [],
-                "serviceRows": [],
-                "perkRows": [],
-                "departmentRows": [
-                  {
-                    "name": "Store",
-                    "key": "store",
-                    "phone": null,
-                    "phoneUrl": null,
-                    "email": null,
-                    "hours": "07:00–16:00 Mon–Fri"
-                  }
-                ],
-                "hoursRows": [
-                  {
-                    "department": "Store",
-                    "key": "store",
-                    "summary": "07:00–16:00 Mon–Fri",
-                    "days": [
-                      {
-                        "day": "Sunday",
-                        "hours": "Closed",
-                        "opensAt": null,
-                        "closesAt": null,
-                        "closed": true
-                      },
-                      {
-                        "day": "Monday",
-                        "hours": "07:00–16:00",
-                        "opensAt": "07:00",
-                        "closesAt": "16:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Tuesday",
-                        "hours": "07:00–16:00",
-                        "opensAt": "07:00",
-                        "closesAt": "16:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Wednesday",
-                        "hours": "07:00–16:00",
-                        "opensAt": "07:00",
-                        "closesAt": "16:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Thursday",
-                        "hours": "07:00–16:00",
-                        "opensAt": "07:00",
-                        "closesAt": "16:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Friday",
-                        "hours": "07:00–16:00",
-                        "opensAt": "07:00",
-                        "closesAt": "16:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Saturday",
-                        "hours": "Closed",
-                        "opensAt": null,
-                        "closesAt": null,
-                        "closed": true
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "brandFacets": [],
-            "perkFacets": []
+            "photo": {
+              "src": "",
+              "alt": ""
+            }
           }
         }
       },
@@ -313,6 +204,7 @@
               {
                 "id": "21",
                 "name": "Aftermarket Business Tampa, FL",
+                "subtitle": "",
                 "slug": "aftermarket-business-tampa-fl",
                 "num": "01",
                 "href": null,
@@ -327,10 +219,10 @@
                 "phoneUrl": "tel:8136273282",
                 "mapUrl": "https://www.google.com/maps/search/?api=1&query=105%20East%206th%20Ave.%2C%20Tampa%2C%20FL%2C%2033619",
                 "email": null,
-                "brands": "",
+                "brands": "Hyundai",
                 "services": "",
                 "perks": "",
-                "brandKeys": "",
+                "brandKeys": "hyundai",
                 "perkKeys": "",
                 "perk1": null,
                 "perk2": null,
@@ -347,7 +239,12 @@
                   "src": "",
                   "alt": ""
                 },
-                "brandRows": [],
+                "brandRows": [
+                  {
+                    "name": "Hyundai",
+                    "key": "hyundai"
+                  }
+                ],
                 "serviceRows": [],
                 "perkRows": [],
                 "departmentRows": [
@@ -422,6 +319,7 @@
               {
                 "id": "20",
                 "name": "Brooksville",
+                "subtitle": "",
                 "slug": "brooksville",
                 "num": "02",
                 "href": null,
@@ -531,6 +429,7 @@
               {
                 "id": "19",
                 "name": "Davenport",
+                "subtitle": "",
                 "slug": "davenport",
                 "num": "03",
                 "href": null,
@@ -768,6 +667,7 @@
               {
                 "id": "18",
                 "name": "Sarasota",
+                "subtitle": "",
                 "slug": "sarasota",
                 "num": "04",
                 "href": null,
@@ -790,8 +690,8 @@
                 "perk1": null,
                 "perk2": null,
                 "perk3": null,
-                "departments": "Sales · Service · Parts",
-                "hours": "Sales: 07:00–17:00 Mon–Sat\n\nService: 07:00–17:00 Mon–Sat\n\nParts: 07:00–17:00 Mon–Sat",
+                "departments": "Sales · Service · Body Shop",
+                "hours": "Sales: 07:00–17:00 Mon–Sat\n\nService: 07:00–17:00 Mon–Sat\n\nBody Shop: 08:00–17:00 Mon–Fri",
                 "phone2": null,
                 "phone2Url": null,
                 "phone3": null,
@@ -823,12 +723,12 @@
                     "hours": "07:00–17:00 Mon–Sat"
                   },
                   {
-                    "name": "Parts",
-                    "key": "parts",
+                    "name": "Body Shop",
+                    "key": "body",
                     "phone": null,
                     "phoneUrl": null,
                     "email": null,
-                    "hours": "07:00–17:00 Mon–Sat"
+                    "hours": "08:00–17:00 Mon–Fri"
                   }
                 ],
                 "hoursRows": [
@@ -945,9 +845,9 @@
                     ]
                   },
                   {
-                    "department": "Parts",
-                    "key": "parts",
-                    "summary": "07:00–17:00 Mon–Sat",
+                    "department": "Body Shop",
+                    "key": "body",
+                    "summary": "08:00–17:00 Mon–Fri",
                     "days": [
                       {
                         "day": "Sunday",
@@ -958,45 +858,45 @@
                       },
                       {
                         "day": "Monday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
+                        "hours": "08:00–17:00",
+                        "opensAt": "08:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Tuesday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
+                        "hours": "08:00–17:00",
+                        "opensAt": "08:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Wednesday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
+                        "hours": "08:00–17:00",
+                        "opensAt": "08:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Thursday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
+                        "hours": "08:00–17:00",
+                        "opensAt": "08:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Friday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
+                        "hours": "08:00–17:00",
+                        "opensAt": "08:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Saturday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
+                        "hours": "Closed",
+                        "opensAt": null,
+                        "closesAt": null,
+                        "closed": true
                       }
                     ]
                   }
@@ -1005,6 +905,7 @@
               {
                 "id": "17",
                 "name": "Tampa",
+                "subtitle": "",
                 "slug": "tampa",
                 "num": "05",
                 "href": null,
@@ -1013,16 +914,16 @@
                 "region": "FL",
                 "postalCode": "33619",
                 "country": null,
-                "latitude": 27.95298,
-                "longitude": -82.38591,
+                "latitude": null,
+                "longitude": null,
                 "phone": "(813) 621-1331",
                 "phoneUrl": "tel:8136211331",
-                "mapUrl": "https://www.google.com/maps/search/?api=1&query=27.95298,-82.38591",
+                "mapUrl": "https://www.google.com/maps/search/?api=1&query=6020%20Adamo%20Drive%2C%20Tampa%2C%20FL%2C%2033619",
                 "email": null,
-                "brands": "",
+                "brands": "Globe · Hyundai · International · IC Bus",
                 "services": "",
                 "perks": "",
-                "brandKeys": "",
+                "brandKeys": "globe hyundai international ic-bus",
                 "perkKeys": "",
                 "perk1": null,
                 "perk2": null,
@@ -1036,10 +937,27 @@
                 "group": null,
                 "groupKey": null,
                 "photo": {
-                  "src": "",
-                  "alt": ""
+                  "src": "https://vendure.buzznerdrv.com/assets/source/96/6020_e_adamo_dr_tampa_fl_map.svg",
+                  "alt": "6020_e_adamo_dr_tampa_fl_map.svg"
                 },
-                "brandRows": [],
+                "brandRows": [
+                  {
+                    "name": "Globe",
+                    "key": "globe"
+                  },
+                  {
+                    "name": "Hyundai",
+                    "key": "hyundai"
+                  },
+                  {
+                    "name": "International",
+                    "key": "international"
+                  },
+                  {
+                    "name": "IC Bus",
+                    "key": "ic-bus"
+                  }
+                ],
                 "serviceRows": [],
                 "perkRows": [],
                 "departmentRows": [
@@ -1242,6 +1160,7 @@
               {
                 "id": "22",
                 "name": "Trailer Sales",
+                "subtitle": "",
                 "slug": "trailer-sales",
                 "num": "06",
                 "href": null,
@@ -1283,7 +1202,24 @@
                 "hoursRows": []
               }
             ],
-            "brandFacets": [],
+            "brandFacets": [
+              {
+                "value": "globe",
+                "label": "Globe"
+              },
+              {
+                "value": "hyundai",
+                "label": "Hyundai"
+              },
+              {
+                "value": "ic-bus",
+                "label": "IC Bus"
+              },
+              {
+                "value": "international",
+                "label": "International"
+              }
+            ],
             "perkFacets": []
           }
         }
@@ -1301,119 +1237,10 @@
             ]
           },
           "ls-map-w": {
-            "locations": [
-              {
-                "id": "20",
-                "name": "Brooksville",
-                "slug": "brooksville",
-                "num": "01",
-                "href": null,
-                "streetAddress": "17127 Runway Drive",
-                "city": "Brooksville",
-                "region": "FL",
-                "postalCode": "34604",
-                "country": null,
-                "latitude": null,
-                "longitude": null,
-                "phone": "(352) 277-0221",
-                "phoneUrl": "tel:3522770221",
-                "mapUrl": "https://www.google.com/maps/search/?api=1&query=17127%20Runway%20Drive%2C%20Brooksville%2C%20FL%2C%2034604",
-                "email": null,
-                "brands": "",
-                "services": "",
-                "perks": "",
-                "brandKeys": "",
-                "perkKeys": "",
-                "perk1": null,
-                "perk2": null,
-                "perk3": null,
-                "departments": "Store",
-                "hours": "Store: 07:00–17:00 Mon–Fri",
-                "phone2": null,
-                "phone2Url": null,
-                "phone3": null,
-                "phone3Url": null,
-                "group": null,
-                "groupKey": null,
-                "photo": {
-                  "src": "",
-                  "alt": ""
-                },
-                "brandRows": [],
-                "serviceRows": [],
-                "perkRows": [],
-                "departmentRows": [
-                  {
-                    "name": "Store",
-                    "key": "store",
-                    "phone": null,
-                    "phoneUrl": null,
-                    "email": null,
-                    "hours": "07:00–17:00 Mon–Fri"
-                  }
-                ],
-                "hoursRows": [
-                  {
-                    "department": "Store",
-                    "key": "store",
-                    "summary": "07:00–17:00 Mon–Fri",
-                    "days": [
-                      {
-                        "day": "Sunday",
-                        "hours": "Closed",
-                        "opensAt": null,
-                        "closesAt": null,
-                        "closed": true
-                      },
-                      {
-                        "day": "Monday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Tuesday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Wednesday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Thursday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Friday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Saturday",
-                        "hours": "Closed",
-                        "opensAt": null,
-                        "closesAt": null,
-                        "closed": true
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "brandFacets": [],
-            "perkFacets": []
+            "photo": {
+              "src": "",
+              "alt": ""
+            }
           }
         }
       },
@@ -1525,6 +1352,7 @@
               {
                 "id": "21",
                 "name": "Aftermarket Business Tampa, FL",
+                "subtitle": "",
                 "slug": "aftermarket-business-tampa-fl",
                 "num": "01",
                 "href": null,
@@ -1539,10 +1367,10 @@
                 "phoneUrl": "tel:8136273282",
                 "mapUrl": "https://www.google.com/maps/search/?api=1&query=105%20East%206th%20Ave.%2C%20Tampa%2C%20FL%2C%2033619",
                 "email": null,
-                "brands": "",
+                "brands": "Hyundai",
                 "services": "",
                 "perks": "",
-                "brandKeys": "",
+                "brandKeys": "hyundai",
                 "perkKeys": "",
                 "perk1": null,
                 "perk2": null,
@@ -1559,7 +1387,12 @@
                   "src": "",
                   "alt": ""
                 },
-                "brandRows": [],
+                "brandRows": [
+                  {
+                    "name": "Hyundai",
+                    "key": "hyundai"
+                  }
+                ],
                 "serviceRows": [],
                 "perkRows": [],
                 "departmentRows": [
@@ -1634,6 +1467,7 @@
               {
                 "id": "20",
                 "name": "Brooksville",
+                "subtitle": "",
                 "slug": "brooksville",
                 "num": "02",
                 "href": null,
@@ -1743,6 +1577,7 @@
               {
                 "id": "19",
                 "name": "Davenport",
+                "subtitle": "",
                 "slug": "davenport",
                 "num": "03",
                 "href": null,
@@ -1980,6 +1815,7 @@
               {
                 "id": "18",
                 "name": "Sarasota",
+                "subtitle": "",
                 "slug": "sarasota",
                 "num": "04",
                 "href": null,
@@ -2002,8 +1838,8 @@
                 "perk1": null,
                 "perk2": null,
                 "perk3": null,
-                "departments": "Sales · Service · Parts",
-                "hours": "Sales: 07:00–17:00 Mon–Sat\n\nService: 07:00–17:00 Mon–Sat\n\nParts: 07:00–17:00 Mon–Sat",
+                "departments": "Sales · Service · Body Shop",
+                "hours": "Sales: 07:00–17:00 Mon–Sat\n\nService: 07:00–17:00 Mon–Sat\n\nBody Shop: 08:00–17:00 Mon–Fri",
                 "phone2": null,
                 "phone2Url": null,
                 "phone3": null,
@@ -2035,12 +1871,12 @@
                     "hours": "07:00–17:00 Mon–Sat"
                   },
                   {
-                    "name": "Parts",
-                    "key": "parts",
+                    "name": "Body Shop",
+                    "key": "body",
                     "phone": null,
                     "phoneUrl": null,
                     "email": null,
-                    "hours": "07:00–17:00 Mon–Sat"
+                    "hours": "08:00–17:00 Mon–Fri"
                   }
                 ],
                 "hoursRows": [
@@ -2157,9 +1993,9 @@
                     ]
                   },
                   {
-                    "department": "Parts",
-                    "key": "parts",
-                    "summary": "07:00–17:00 Mon–Sat",
+                    "department": "Body Shop",
+                    "key": "body",
+                    "summary": "08:00–17:00 Mon–Fri",
                     "days": [
                       {
                         "day": "Sunday",
@@ -2170,45 +2006,45 @@
                       },
                       {
                         "day": "Monday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
+                        "hours": "08:00–17:00",
+                        "opensAt": "08:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Tuesday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
+                        "hours": "08:00–17:00",
+                        "opensAt": "08:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Wednesday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
+                        "hours": "08:00–17:00",
+                        "opensAt": "08:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Thursday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
+                        "hours": "08:00–17:00",
+                        "opensAt": "08:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Friday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
+                        "hours": "08:00–17:00",
+                        "opensAt": "08:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Saturday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
+                        "hours": "Closed",
+                        "opensAt": null,
+                        "closesAt": null,
+                        "closed": true
                       }
                     ]
                   }
@@ -2217,6 +2053,7 @@
               {
                 "id": "17",
                 "name": "Tampa",
+                "subtitle": "",
                 "slug": "tampa",
                 "num": "05",
                 "href": null,
@@ -2225,16 +2062,16 @@
                 "region": "FL",
                 "postalCode": "33619",
                 "country": null,
-                "latitude": 27.95298,
-                "longitude": -82.38591,
+                "latitude": null,
+                "longitude": null,
                 "phone": "(813) 621-1331",
                 "phoneUrl": "tel:8136211331",
-                "mapUrl": "https://www.google.com/maps/search/?api=1&query=27.95298,-82.38591",
+                "mapUrl": "https://www.google.com/maps/search/?api=1&query=6020%20Adamo%20Drive%2C%20Tampa%2C%20FL%2C%2033619",
                 "email": null,
-                "brands": "",
+                "brands": "Globe · Hyundai · International · IC Bus",
                 "services": "",
                 "perks": "",
-                "brandKeys": "",
+                "brandKeys": "globe hyundai international ic-bus",
                 "perkKeys": "",
                 "perk1": null,
                 "perk2": null,
@@ -2248,10 +2085,27 @@
                 "group": null,
                 "groupKey": null,
                 "photo": {
-                  "src": "",
-                  "alt": ""
+                  "src": "https://vendure.buzznerdrv.com/assets/source/96/6020_e_adamo_dr_tampa_fl_map.svg",
+                  "alt": "6020_e_adamo_dr_tampa_fl_map.svg"
                 },
-                "brandRows": [],
+                "brandRows": [
+                  {
+                    "name": "Globe",
+                    "key": "globe"
+                  },
+                  {
+                    "name": "Hyundai",
+                    "key": "hyundai"
+                  },
+                  {
+                    "name": "International",
+                    "key": "international"
+                  },
+                  {
+                    "name": "IC Bus",
+                    "key": "ic-bus"
+                  }
+                ],
                 "serviceRows": [],
                 "perkRows": [],
                 "departmentRows": [
@@ -2454,6 +2308,7 @@
               {
                 "id": "22",
                 "name": "Trailer Sales",
+                "subtitle": "",
                 "slug": "trailer-sales",
                 "num": "06",
                 "href": null,
@@ -2495,7 +2350,24 @@
                 "hoursRows": []
               }
             ],
-            "brandFacets": [],
+            "brandFacets": [
+              {
+                "value": "globe",
+                "label": "Globe"
+              },
+              {
+                "value": "hyundai",
+                "label": "Hyundai"
+              },
+              {
+                "value": "ic-bus",
+                "label": "IC Bus"
+              },
+              {
+                "value": "international",
+                "label": "International"
+              }
+            ],
             "perkFacets": []
           }
         }
@@ -2513,247 +2385,10 @@
             ]
           },
           "ls-map-w": {
-            "locations": [
-              {
-                "id": "19",
-                "name": "Davenport",
-                "slug": "davenport",
-                "num": "01",
-                "href": null,
-                "streetAddress": "41609 Hwy 27",
-                "city": "Davenport",
-                "region": "FL",
-                "postalCode": "33837",
-                "country": null,
-                "latitude": null,
-                "longitude": null,
-                "phone": "(863) 424-2411",
-                "phoneUrl": "tel:8634242411",
-                "mapUrl": "https://www.google.com/maps/search/?api=1&query=41609%20Hwy%2027%2C%20Davenport%2C%20FL%2C%2033837",
-                "email": null,
-                "brands": "",
-                "services": "",
-                "perks": "",
-                "brandKeys": "",
-                "perkKeys": "",
-                "perk1": null,
-                "perk2": null,
-                "perk3": null,
-                "departments": "Sales · Service · Parts",
-                "hours": "Sales: 07:00–17:00 Mon–Sat\n\nService: 07:00–17:00 Mon–Sat\n\nParts: 07:00–17:00 Mon–Fri, 07:00–12:00 Sat",
-                "phone2": null,
-                "phone2Url": null,
-                "phone3": null,
-                "phone3Url": null,
-                "group": null,
-                "groupKey": null,
-                "photo": {
-                  "src": "",
-                  "alt": ""
-                },
-                "brandRows": [],
-                "serviceRows": [],
-                "perkRows": [],
-                "departmentRows": [
-                  {
-                    "name": "Sales",
-                    "key": "sales",
-                    "phone": null,
-                    "phoneUrl": null,
-                    "email": null,
-                    "hours": "07:00–17:00 Mon–Sat"
-                  },
-                  {
-                    "name": "Service",
-                    "key": "service",
-                    "phone": null,
-                    "phoneUrl": null,
-                    "email": null,
-                    "hours": "07:00–17:00 Mon–Sat"
-                  },
-                  {
-                    "name": "Parts",
-                    "key": "parts",
-                    "phone": null,
-                    "phoneUrl": null,
-                    "email": null,
-                    "hours": "07:00–17:00 Mon–Fri, 07:00–12:00 Sat"
-                  }
-                ],
-                "hoursRows": [
-                  {
-                    "department": "Sales",
-                    "key": "sales",
-                    "summary": "07:00–17:00 Mon–Sat",
-                    "days": [
-                      {
-                        "day": "Sunday",
-                        "hours": "Closed",
-                        "opensAt": null,
-                        "closesAt": null,
-                        "closed": true
-                      },
-                      {
-                        "day": "Monday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Tuesday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Wednesday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Thursday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Friday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Saturday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      }
-                    ]
-                  },
-                  {
-                    "department": "Service",
-                    "key": "service",
-                    "summary": "07:00–17:00 Mon–Sat",
-                    "days": [
-                      {
-                        "day": "Sunday",
-                        "hours": "Closed",
-                        "opensAt": null,
-                        "closesAt": null,
-                        "closed": true
-                      },
-                      {
-                        "day": "Monday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Tuesday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Wednesday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Thursday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Friday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Saturday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      }
-                    ]
-                  },
-                  {
-                    "department": "Parts",
-                    "key": "parts",
-                    "summary": "07:00–17:00 Mon–Fri, 07:00–12:00 Sat",
-                    "days": [
-                      {
-                        "day": "Sunday",
-                        "hours": "Closed",
-                        "opensAt": null,
-                        "closesAt": null,
-                        "closed": true
-                      },
-                      {
-                        "day": "Monday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Tuesday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Wednesday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Thursday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Friday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Saturday",
-                        "hours": "07:00–12:00",
-                        "opensAt": "07:00",
-                        "closesAt": "12:00",
-                        "closed": false
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "brandFacets": [],
-            "perkFacets": []
+            "photo": {
+              "src": "",
+              "alt": ""
+            }
           }
         }
       },
@@ -2959,6 +2594,7 @@
               {
                 "id": "21",
                 "name": "Aftermarket Business Tampa, FL",
+                "subtitle": "",
                 "slug": "aftermarket-business-tampa-fl",
                 "num": "01",
                 "href": null,
@@ -2973,10 +2609,10 @@
                 "phoneUrl": "tel:8136273282",
                 "mapUrl": "https://www.google.com/maps/search/?api=1&query=105%20East%206th%20Ave.%2C%20Tampa%2C%20FL%2C%2033619",
                 "email": null,
-                "brands": "",
+                "brands": "Hyundai",
                 "services": "",
                 "perks": "",
-                "brandKeys": "",
+                "brandKeys": "hyundai",
                 "perkKeys": "",
                 "perk1": null,
                 "perk2": null,
@@ -2993,7 +2629,12 @@
                   "src": "",
                   "alt": ""
                 },
-                "brandRows": [],
+                "brandRows": [
+                  {
+                    "name": "Hyundai",
+                    "key": "hyundai"
+                  }
+                ],
                 "serviceRows": [],
                 "perkRows": [],
                 "departmentRows": [
@@ -3068,6 +2709,7 @@
               {
                 "id": "20",
                 "name": "Brooksville",
+                "subtitle": "",
                 "slug": "brooksville",
                 "num": "02",
                 "href": null,
@@ -3177,6 +2819,7 @@
               {
                 "id": "19",
                 "name": "Davenport",
+                "subtitle": "",
                 "slug": "davenport",
                 "num": "03",
                 "href": null,
@@ -3414,6 +3057,7 @@
               {
                 "id": "18",
                 "name": "Sarasota",
+                "subtitle": "",
                 "slug": "sarasota",
                 "num": "04",
                 "href": null,
@@ -3436,8 +3080,8 @@
                 "perk1": null,
                 "perk2": null,
                 "perk3": null,
-                "departments": "Sales · Service · Parts",
-                "hours": "Sales: 07:00–17:00 Mon–Sat\n\nService: 07:00–17:00 Mon–Sat\n\nParts: 07:00–17:00 Mon–Sat",
+                "departments": "Sales · Service · Body Shop",
+                "hours": "Sales: 07:00–17:00 Mon–Sat\n\nService: 07:00–17:00 Mon–Sat\n\nBody Shop: 08:00–17:00 Mon–Fri",
                 "phone2": null,
                 "phone2Url": null,
                 "phone3": null,
@@ -3469,12 +3113,12 @@
                     "hours": "07:00–17:00 Mon–Sat"
                   },
                   {
-                    "name": "Parts",
-                    "key": "parts",
+                    "name": "Body Shop",
+                    "key": "body",
                     "phone": null,
                     "phoneUrl": null,
                     "email": null,
-                    "hours": "07:00–17:00 Mon–Sat"
+                    "hours": "08:00–17:00 Mon–Fri"
                   }
                 ],
                 "hoursRows": [
@@ -3591,9 +3235,9 @@
                     ]
                   },
                   {
-                    "department": "Parts",
-                    "key": "parts",
-                    "summary": "07:00–17:00 Mon–Sat",
+                    "department": "Body Shop",
+                    "key": "body",
+                    "summary": "08:00–17:00 Mon–Fri",
                     "days": [
                       {
                         "day": "Sunday",
@@ -3604,45 +3248,45 @@
                       },
                       {
                         "day": "Monday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
+                        "hours": "08:00–17:00",
+                        "opensAt": "08:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Tuesday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
+                        "hours": "08:00–17:00",
+                        "opensAt": "08:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Wednesday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
+                        "hours": "08:00–17:00",
+                        "opensAt": "08:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Thursday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
+                        "hours": "08:00–17:00",
+                        "opensAt": "08:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Friday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
+                        "hours": "08:00–17:00",
+                        "opensAt": "08:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Saturday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
+                        "hours": "Closed",
+                        "opensAt": null,
+                        "closesAt": null,
+                        "closed": true
                       }
                     ]
                   }
@@ -3651,6 +3295,7 @@
               {
                 "id": "17",
                 "name": "Tampa",
+                "subtitle": "",
                 "slug": "tampa",
                 "num": "05",
                 "href": null,
@@ -3659,16 +3304,16 @@
                 "region": "FL",
                 "postalCode": "33619",
                 "country": null,
-                "latitude": 27.95298,
-                "longitude": -82.38591,
+                "latitude": null,
+                "longitude": null,
                 "phone": "(813) 621-1331",
                 "phoneUrl": "tel:8136211331",
-                "mapUrl": "https://www.google.com/maps/search/?api=1&query=27.95298,-82.38591",
+                "mapUrl": "https://www.google.com/maps/search/?api=1&query=6020%20Adamo%20Drive%2C%20Tampa%2C%20FL%2C%2033619",
                 "email": null,
-                "brands": "",
+                "brands": "Globe · Hyundai · International · IC Bus",
                 "services": "",
                 "perks": "",
-                "brandKeys": "",
+                "brandKeys": "globe hyundai international ic-bus",
                 "perkKeys": "",
                 "perk1": null,
                 "perk2": null,
@@ -3682,10 +3327,27 @@
                 "group": null,
                 "groupKey": null,
                 "photo": {
-                  "src": "",
-                  "alt": ""
+                  "src": "https://vendure.buzznerdrv.com/assets/source/96/6020_e_adamo_dr_tampa_fl_map.svg",
+                  "alt": "6020_e_adamo_dr_tampa_fl_map.svg"
                 },
-                "brandRows": [],
+                "brandRows": [
+                  {
+                    "name": "Globe",
+                    "key": "globe"
+                  },
+                  {
+                    "name": "Hyundai",
+                    "key": "hyundai"
+                  },
+                  {
+                    "name": "International",
+                    "key": "international"
+                  },
+                  {
+                    "name": "IC Bus",
+                    "key": "ic-bus"
+                  }
+                ],
                 "serviceRows": [],
                 "perkRows": [],
                 "departmentRows": [
@@ -3888,6 +3550,7 @@
               {
                 "id": "22",
                 "name": "Trailer Sales",
+                "subtitle": "",
                 "slug": "trailer-sales",
                 "num": "06",
                 "href": null,
@@ -3929,7 +3592,24 @@
                 "hoursRows": []
               }
             ],
-            "brandFacets": [],
+            "brandFacets": [
+              {
+                "value": "globe",
+                "label": "Globe"
+              },
+              {
+                "value": "hyundai",
+                "label": "Hyundai"
+              },
+              {
+                "value": "ic-bus",
+                "label": "IC Bus"
+              },
+              {
+                "value": "international",
+                "label": "International"
+              }
+            ],
             "perkFacets": []
           }
         }
@@ -3947,247 +3627,10 @@
             ]
           },
           "ls-map-w": {
-            "locations": [
-              {
-                "id": "18",
-                "name": "Sarasota",
-                "slug": "sarasota",
-                "num": "01",
-                "href": null,
-                "streetAddress": "1000 Sarasota Center Blvd.",
-                "city": "Sarasota",
-                "region": "FL",
-                "postalCode": "34240",
-                "country": null,
-                "latitude": null,
-                "longitude": null,
-                "phone": "(941) 355-7681",
-                "phoneUrl": "tel:9413557681",
-                "mapUrl": "https://www.google.com/maps/search/?api=1&query=1000%20Sarasota%20Center%20Blvd.%2C%20Sarasota%2C%20FL%2C%2034240",
-                "email": null,
-                "brands": "",
-                "services": "",
-                "perks": "",
-                "brandKeys": "",
-                "perkKeys": "",
-                "perk1": null,
-                "perk2": null,
-                "perk3": null,
-                "departments": "Sales · Service · Parts",
-                "hours": "Sales: 07:00–17:00 Mon–Sat\n\nService: 07:00–17:00 Mon–Sat\n\nParts: 07:00–17:00 Mon–Sat",
-                "phone2": null,
-                "phone2Url": null,
-                "phone3": null,
-                "phone3Url": null,
-                "group": null,
-                "groupKey": null,
-                "photo": {
-                  "src": "",
-                  "alt": ""
-                },
-                "brandRows": [],
-                "serviceRows": [],
-                "perkRows": [],
-                "departmentRows": [
-                  {
-                    "name": "Sales",
-                    "key": "sales",
-                    "phone": null,
-                    "phoneUrl": null,
-                    "email": null,
-                    "hours": "07:00–17:00 Mon–Sat"
-                  },
-                  {
-                    "name": "Service",
-                    "key": "service",
-                    "phone": null,
-                    "phoneUrl": null,
-                    "email": null,
-                    "hours": "07:00–17:00 Mon–Sat"
-                  },
-                  {
-                    "name": "Parts",
-                    "key": "parts",
-                    "phone": null,
-                    "phoneUrl": null,
-                    "email": null,
-                    "hours": "07:00–17:00 Mon–Sat"
-                  }
-                ],
-                "hoursRows": [
-                  {
-                    "department": "Sales",
-                    "key": "sales",
-                    "summary": "07:00–17:00 Mon–Sat",
-                    "days": [
-                      {
-                        "day": "Sunday",
-                        "hours": "Closed",
-                        "opensAt": null,
-                        "closesAt": null,
-                        "closed": true
-                      },
-                      {
-                        "day": "Monday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Tuesday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Wednesday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Thursday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Friday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Saturday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      }
-                    ]
-                  },
-                  {
-                    "department": "Service",
-                    "key": "service",
-                    "summary": "07:00–17:00 Mon–Sat",
-                    "days": [
-                      {
-                        "day": "Sunday",
-                        "hours": "Closed",
-                        "opensAt": null,
-                        "closesAt": null,
-                        "closed": true
-                      },
-                      {
-                        "day": "Monday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Tuesday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Wednesday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Thursday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Friday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Saturday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      }
-                    ]
-                  },
-                  {
-                    "department": "Parts",
-                    "key": "parts",
-                    "summary": "07:00–17:00 Mon–Sat",
-                    "days": [
-                      {
-                        "day": "Sunday",
-                        "hours": "Closed",
-                        "opensAt": null,
-                        "closesAt": null,
-                        "closed": true
-                      },
-                      {
-                        "day": "Monday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Tuesday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Wednesday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Thursday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Friday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Saturday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "brandFacets": [],
-            "perkFacets": []
+            "photo": {
+              "src": "",
+              "alt": ""
+            }
           }
         }
       },
@@ -4336,7 +3779,7 @@
                 ]
               },
               {
-                "heading": "Parts",
+                "heading": "Body Shop",
                 "hours": [
                   {
                     "day": "Sunday",
@@ -4346,39 +3789,39 @@
                   },
                   {
                     "day": "Monday",
-                    "hours": "07:00–17:00",
-                    "opensAt": "07:00",
+                    "hours": "08:00–17:00",
+                    "opensAt": "08:00",
                     "closesAt": "17:00"
                   },
                   {
                     "day": "Tuesday",
-                    "hours": "07:00–17:00",
-                    "opensAt": "07:00",
+                    "hours": "08:00–17:00",
+                    "opensAt": "08:00",
                     "closesAt": "17:00"
                   },
                   {
                     "day": "Wednesday",
-                    "hours": "07:00–17:00",
-                    "opensAt": "07:00",
+                    "hours": "08:00–17:00",
+                    "opensAt": "08:00",
                     "closesAt": "17:00"
                   },
                   {
                     "day": "Thursday",
-                    "hours": "07:00–17:00",
-                    "opensAt": "07:00",
+                    "hours": "08:00–17:00",
+                    "opensAt": "08:00",
                     "closesAt": "17:00"
                   },
                   {
                     "day": "Friday",
-                    "hours": "07:00–17:00",
-                    "opensAt": "07:00",
+                    "hours": "08:00–17:00",
+                    "opensAt": "08:00",
                     "closesAt": "17:00"
                   },
                   {
                     "day": "Saturday",
-                    "hours": "07:00–17:00",
-                    "opensAt": "07:00",
-                    "closesAt": "17:00"
+                    "hours": "Closed",
+                    "opensAt": null,
+                    "closesAt": null
                   }
                 ]
               }
@@ -4393,6 +3836,7 @@
               {
                 "id": "21",
                 "name": "Aftermarket Business Tampa, FL",
+                "subtitle": "",
                 "slug": "aftermarket-business-tampa-fl",
                 "num": "01",
                 "href": null,
@@ -4407,10 +3851,10 @@
                 "phoneUrl": "tel:8136273282",
                 "mapUrl": "https://www.google.com/maps/search/?api=1&query=105%20East%206th%20Ave.%2C%20Tampa%2C%20FL%2C%2033619",
                 "email": null,
-                "brands": "",
+                "brands": "Hyundai",
                 "services": "",
                 "perks": "",
-                "brandKeys": "",
+                "brandKeys": "hyundai",
                 "perkKeys": "",
                 "perk1": null,
                 "perk2": null,
@@ -4427,7 +3871,12 @@
                   "src": "",
                   "alt": ""
                 },
-                "brandRows": [],
+                "brandRows": [
+                  {
+                    "name": "Hyundai",
+                    "key": "hyundai"
+                  }
+                ],
                 "serviceRows": [],
                 "perkRows": [],
                 "departmentRows": [
@@ -4502,6 +3951,7 @@
               {
                 "id": "20",
                 "name": "Brooksville",
+                "subtitle": "",
                 "slug": "brooksville",
                 "num": "02",
                 "href": null,
@@ -4611,6 +4061,7 @@
               {
                 "id": "19",
                 "name": "Davenport",
+                "subtitle": "",
                 "slug": "davenport",
                 "num": "03",
                 "href": null,
@@ -4848,6 +4299,7 @@
               {
                 "id": "18",
                 "name": "Sarasota",
+                "subtitle": "",
                 "slug": "sarasota",
                 "num": "04",
                 "href": null,
@@ -4870,8 +4322,8 @@
                 "perk1": null,
                 "perk2": null,
                 "perk3": null,
-                "departments": "Sales · Service · Parts",
-                "hours": "Sales: 07:00–17:00 Mon–Sat\n\nService: 07:00–17:00 Mon–Sat\n\nParts: 07:00–17:00 Mon–Sat",
+                "departments": "Sales · Service · Body Shop",
+                "hours": "Sales: 07:00–17:00 Mon–Sat\n\nService: 07:00–17:00 Mon–Sat\n\nBody Shop: 08:00–17:00 Mon–Fri",
                 "phone2": null,
                 "phone2Url": null,
                 "phone3": null,
@@ -4903,12 +4355,12 @@
                     "hours": "07:00–17:00 Mon–Sat"
                   },
                   {
-                    "name": "Parts",
-                    "key": "parts",
+                    "name": "Body Shop",
+                    "key": "body",
                     "phone": null,
                     "phoneUrl": null,
                     "email": null,
-                    "hours": "07:00–17:00 Mon–Sat"
+                    "hours": "08:00–17:00 Mon–Fri"
                   }
                 ],
                 "hoursRows": [
@@ -5025,9 +4477,9 @@
                     ]
                   },
                   {
-                    "department": "Parts",
-                    "key": "parts",
-                    "summary": "07:00–17:00 Mon–Sat",
+                    "department": "Body Shop",
+                    "key": "body",
+                    "summary": "08:00–17:00 Mon–Fri",
                     "days": [
                       {
                         "day": "Sunday",
@@ -5038,45 +4490,45 @@
                       },
                       {
                         "day": "Monday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
+                        "hours": "08:00–17:00",
+                        "opensAt": "08:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Tuesday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
+                        "hours": "08:00–17:00",
+                        "opensAt": "08:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Wednesday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
+                        "hours": "08:00–17:00",
+                        "opensAt": "08:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Thursday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
+                        "hours": "08:00–17:00",
+                        "opensAt": "08:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Friday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
+                        "hours": "08:00–17:00",
+                        "opensAt": "08:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Saturday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
+                        "hours": "Closed",
+                        "opensAt": null,
+                        "closesAt": null,
+                        "closed": true
                       }
                     ]
                   }
@@ -5085,6 +4537,7 @@
               {
                 "id": "17",
                 "name": "Tampa",
+                "subtitle": "",
                 "slug": "tampa",
                 "num": "05",
                 "href": null,
@@ -5093,16 +4546,16 @@
                 "region": "FL",
                 "postalCode": "33619",
                 "country": null,
-                "latitude": 27.95298,
-                "longitude": -82.38591,
+                "latitude": null,
+                "longitude": null,
                 "phone": "(813) 621-1331",
                 "phoneUrl": "tel:8136211331",
-                "mapUrl": "https://www.google.com/maps/search/?api=1&query=27.95298,-82.38591",
+                "mapUrl": "https://www.google.com/maps/search/?api=1&query=6020%20Adamo%20Drive%2C%20Tampa%2C%20FL%2C%2033619",
                 "email": null,
-                "brands": "",
+                "brands": "Globe · Hyundai · International · IC Bus",
                 "services": "",
                 "perks": "",
-                "brandKeys": "",
+                "brandKeys": "globe hyundai international ic-bus",
                 "perkKeys": "",
                 "perk1": null,
                 "perk2": null,
@@ -5116,10 +4569,27 @@
                 "group": null,
                 "groupKey": null,
                 "photo": {
-                  "src": "",
-                  "alt": ""
+                  "src": "https://vendure.buzznerdrv.com/assets/source/96/6020_e_adamo_dr_tampa_fl_map.svg",
+                  "alt": "6020_e_adamo_dr_tampa_fl_map.svg"
                 },
-                "brandRows": [],
+                "brandRows": [
+                  {
+                    "name": "Globe",
+                    "key": "globe"
+                  },
+                  {
+                    "name": "Hyundai",
+                    "key": "hyundai"
+                  },
+                  {
+                    "name": "International",
+                    "key": "international"
+                  },
+                  {
+                    "name": "IC Bus",
+                    "key": "ic-bus"
+                  }
+                ],
                 "serviceRows": [],
                 "perkRows": [],
                 "departmentRows": [
@@ -5322,6 +4792,7 @@
               {
                 "id": "22",
                 "name": "Trailer Sales",
+                "subtitle": "",
                 "slug": "trailer-sales",
                 "num": "06",
                 "href": null,
@@ -5363,7 +4834,24 @@
                 "hoursRows": []
               }
             ],
-            "brandFacets": [],
+            "brandFacets": [
+              {
+                "value": "globe",
+                "label": "Globe"
+              },
+              {
+                "value": "hyundai",
+                "label": "Hyundai"
+              },
+              {
+                "value": "ic-bus",
+                "label": "IC Bus"
+              },
+              {
+                "value": "international",
+                "label": "International"
+              }
+            ],
             "perkFacets": []
           }
         }
@@ -5381,247 +4869,10 @@
             ]
           },
           "ls-map-w": {
-            "locations": [
-              {
-                "id": "17",
-                "name": "Tampa",
-                "slug": "tampa",
-                "num": "01",
-                "href": null,
-                "streetAddress": "6020 Adamo Drive",
-                "city": "Tampa",
-                "region": "FL",
-                "postalCode": "33619",
-                "country": null,
-                "latitude": 27.95298,
-                "longitude": -82.38591,
-                "phone": "(813) 621-1331",
-                "phoneUrl": "tel:8136211331",
-                "mapUrl": "https://www.google.com/maps/search/?api=1&query=27.95298,-82.38591",
-                "email": null,
-                "brands": "",
-                "services": "",
-                "perks": "",
-                "brandKeys": "",
-                "perkKeys": "",
-                "perk1": null,
-                "perk2": null,
-                "perk3": null,
-                "departments": "Sales · Service · Parts",
-                "hours": "Sales: 07:00–17:00 Sun–Sat\n\nService: 07:00–17:00 Sun–Sat\n\nParts: 07:00–17:00 Mon–Sat",
-                "phone2": null,
-                "phone2Url": null,
-                "phone3": null,
-                "phone3Url": null,
-                "group": null,
-                "groupKey": null,
-                "photo": {
-                  "src": "",
-                  "alt": ""
-                },
-                "brandRows": [],
-                "serviceRows": [],
-                "perkRows": [],
-                "departmentRows": [
-                  {
-                    "name": "Sales",
-                    "key": "sales",
-                    "phone": null,
-                    "phoneUrl": null,
-                    "email": null,
-                    "hours": "07:00–17:00 Sun–Sat"
-                  },
-                  {
-                    "name": "Service",
-                    "key": "service",
-                    "phone": null,
-                    "phoneUrl": null,
-                    "email": null,
-                    "hours": "07:00–17:00 Sun–Sat"
-                  },
-                  {
-                    "name": "Parts",
-                    "key": "parts",
-                    "phone": null,
-                    "phoneUrl": null,
-                    "email": null,
-                    "hours": "07:00–17:00 Mon–Sat"
-                  }
-                ],
-                "hoursRows": [
-                  {
-                    "department": "Sales",
-                    "key": "sales",
-                    "summary": "07:00–17:00 Sun–Sat",
-                    "days": [
-                      {
-                        "day": "Sunday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Monday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Tuesday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Wednesday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Thursday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Friday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Saturday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      }
-                    ]
-                  },
-                  {
-                    "department": "Service",
-                    "key": "service",
-                    "summary": "07:00–17:00 Sun–Sat",
-                    "days": [
-                      {
-                        "day": "Sunday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Monday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Tuesday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Wednesday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Thursday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Friday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Saturday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      }
-                    ]
-                  },
-                  {
-                    "department": "Parts",
-                    "key": "parts",
-                    "summary": "07:00–17:00 Mon–Sat",
-                    "days": [
-                      {
-                        "day": "Sunday",
-                        "hours": "Closed",
-                        "opensAt": null,
-                        "closesAt": null,
-                        "closed": true
-                      },
-                      {
-                        "day": "Monday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Tuesday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Wednesday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Thursday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Friday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      },
-                      {
-                        "day": "Saturday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "brandFacets": [],
-            "perkFacets": []
+            "photo": {
+              "src": "",
+              "alt": ""
+            }
           }
         }
       },
@@ -5827,6 +5078,7 @@
               {
                 "id": "21",
                 "name": "Aftermarket Business Tampa, FL",
+                "subtitle": "",
                 "slug": "aftermarket-business-tampa-fl",
                 "num": "01",
                 "href": null,
@@ -5841,10 +5093,10 @@
                 "phoneUrl": "tel:8136273282",
                 "mapUrl": "https://www.google.com/maps/search/?api=1&query=105%20East%206th%20Ave.%2C%20Tampa%2C%20FL%2C%2033619",
                 "email": null,
-                "brands": "",
+                "brands": "Hyundai",
                 "services": "",
                 "perks": "",
-                "brandKeys": "",
+                "brandKeys": "hyundai",
                 "perkKeys": "",
                 "perk1": null,
                 "perk2": null,
@@ -5861,7 +5113,12 @@
                   "src": "",
                   "alt": ""
                 },
-                "brandRows": [],
+                "brandRows": [
+                  {
+                    "name": "Hyundai",
+                    "key": "hyundai"
+                  }
+                ],
                 "serviceRows": [],
                 "perkRows": [],
                 "departmentRows": [
@@ -5936,6 +5193,7 @@
               {
                 "id": "20",
                 "name": "Brooksville",
+                "subtitle": "",
                 "slug": "brooksville",
                 "num": "02",
                 "href": null,
@@ -6045,6 +5303,7 @@
               {
                 "id": "19",
                 "name": "Davenport",
+                "subtitle": "",
                 "slug": "davenport",
                 "num": "03",
                 "href": null,
@@ -6282,6 +5541,7 @@
               {
                 "id": "18",
                 "name": "Sarasota",
+                "subtitle": "",
                 "slug": "sarasota",
                 "num": "04",
                 "href": null,
@@ -6304,8 +5564,8 @@
                 "perk1": null,
                 "perk2": null,
                 "perk3": null,
-                "departments": "Sales · Service · Parts",
-                "hours": "Sales: 07:00–17:00 Mon–Sat\n\nService: 07:00–17:00 Mon–Sat\n\nParts: 07:00–17:00 Mon–Sat",
+                "departments": "Sales · Service · Body Shop",
+                "hours": "Sales: 07:00–17:00 Mon–Sat\n\nService: 07:00–17:00 Mon–Sat\n\nBody Shop: 08:00–17:00 Mon–Fri",
                 "phone2": null,
                 "phone2Url": null,
                 "phone3": null,
@@ -6337,12 +5597,12 @@
                     "hours": "07:00–17:00 Mon–Sat"
                   },
                   {
-                    "name": "Parts",
-                    "key": "parts",
+                    "name": "Body Shop",
+                    "key": "body",
                     "phone": null,
                     "phoneUrl": null,
                     "email": null,
-                    "hours": "07:00–17:00 Mon–Sat"
+                    "hours": "08:00–17:00 Mon–Fri"
                   }
                 ],
                 "hoursRows": [
@@ -6459,9 +5719,9 @@
                     ]
                   },
                   {
-                    "department": "Parts",
-                    "key": "parts",
-                    "summary": "07:00–17:00 Mon–Sat",
+                    "department": "Body Shop",
+                    "key": "body",
+                    "summary": "08:00–17:00 Mon–Fri",
                     "days": [
                       {
                         "day": "Sunday",
@@ -6472,45 +5732,45 @@
                       },
                       {
                         "day": "Monday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
+                        "hours": "08:00–17:00",
+                        "opensAt": "08:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Tuesday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
+                        "hours": "08:00–17:00",
+                        "opensAt": "08:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Wednesday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
+                        "hours": "08:00–17:00",
+                        "opensAt": "08:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Thursday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
+                        "hours": "08:00–17:00",
+                        "opensAt": "08:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Friday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
+                        "hours": "08:00–17:00",
+                        "opensAt": "08:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Saturday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
+                        "hours": "Closed",
+                        "opensAt": null,
+                        "closesAt": null,
+                        "closed": true
                       }
                     ]
                   }
@@ -6519,6 +5779,7 @@
               {
                 "id": "17",
                 "name": "Tampa",
+                "subtitle": "",
                 "slug": "tampa",
                 "num": "05",
                 "href": null,
@@ -6527,16 +5788,16 @@
                 "region": "FL",
                 "postalCode": "33619",
                 "country": null,
-                "latitude": 27.95298,
-                "longitude": -82.38591,
+                "latitude": null,
+                "longitude": null,
                 "phone": "(813) 621-1331",
                 "phoneUrl": "tel:8136211331",
-                "mapUrl": "https://www.google.com/maps/search/?api=1&query=27.95298,-82.38591",
+                "mapUrl": "https://www.google.com/maps/search/?api=1&query=6020%20Adamo%20Drive%2C%20Tampa%2C%20FL%2C%2033619",
                 "email": null,
-                "brands": "",
+                "brands": "Globe · Hyundai · International · IC Bus",
                 "services": "",
                 "perks": "",
-                "brandKeys": "",
+                "brandKeys": "globe hyundai international ic-bus",
                 "perkKeys": "",
                 "perk1": null,
                 "perk2": null,
@@ -6550,10 +5811,27 @@
                 "group": null,
                 "groupKey": null,
                 "photo": {
-                  "src": "",
-                  "alt": ""
+                  "src": "https://vendure.buzznerdrv.com/assets/source/96/6020_e_adamo_dr_tampa_fl_map.svg",
+                  "alt": "6020_e_adamo_dr_tampa_fl_map.svg"
                 },
-                "brandRows": [],
+                "brandRows": [
+                  {
+                    "name": "Globe",
+                    "key": "globe"
+                  },
+                  {
+                    "name": "Hyundai",
+                    "key": "hyundai"
+                  },
+                  {
+                    "name": "International",
+                    "key": "international"
+                  },
+                  {
+                    "name": "IC Bus",
+                    "key": "ic-bus"
+                  }
+                ],
                 "serviceRows": [],
                 "perkRows": [],
                 "departmentRows": [
@@ -6756,6 +6034,7 @@
               {
                 "id": "22",
                 "name": "Trailer Sales",
+                "subtitle": "",
                 "slug": "trailer-sales",
                 "num": "06",
                 "href": null,
@@ -6797,7 +6076,24 @@
                 "hoursRows": []
               }
             ],
-            "brandFacets": [],
+            "brandFacets": [
+              {
+                "value": "globe",
+                "label": "Globe"
+              },
+              {
+                "value": "hyundai",
+                "label": "Hyundai"
+              },
+              {
+                "value": "ic-bus",
+                "label": "IC Bus"
+              },
+              {
+                "value": "international",
+                "label": "International"
+              }
+            ],
             "perkFacets": []
           }
         }
@@ -6815,53 +6111,10 @@
             ]
           },
           "ls-map-w": {
-            "locations": [
-              {
-                "id": "22",
-                "name": "Trailer Sales",
-                "slug": "trailer-sales",
-                "num": "01",
-                "href": null,
-                "streetAddress": "Trailer Sales, 6020 Adamo Drive",
-                "city": "Tampa",
-                "region": "FL",
-                "postalCode": "33619",
-                "country": null,
-                "latitude": null,
-                "longitude": null,
-                "phone": "(813) 621-1331",
-                "phoneUrl": "tel:8136211331",
-                "mapUrl": "https://www.google.com/maps/search/?api=1&query=Trailer%20Sales%2C%206020%20Adamo%20Drive%2C%20Tampa%2C%20FL%2C%2033619",
-                "email": null,
-                "brands": "",
-                "services": "",
-                "perks": "",
-                "brandKeys": "",
-                "perkKeys": "",
-                "perk1": null,
-                "perk2": null,
-                "perk3": null,
-                "departments": "",
-                "hours": "",
-                "phone2": null,
-                "phone2Url": null,
-                "phone3": null,
-                "phone3Url": null,
-                "group": null,
-                "groupKey": null,
-                "photo": {
-                  "src": "",
-                  "alt": ""
-                },
-                "brandRows": [],
-                "serviceRows": [],
-                "perkRows": [],
-                "departmentRows": [],
-                "hoursRows": []
-              }
-            ],
-            "brandFacets": [],
-            "perkFacets": []
+            "photo": {
+              "src": "",
+              "alt": ""
+            }
           }
         }
       },
@@ -6882,6 +6135,7 @@
               {
                 "id": "21",
                 "name": "Aftermarket Business Tampa, FL",
+                "subtitle": "",
                 "slug": "aftermarket-business-tampa-fl",
                 "num": "01",
                 "href": null,
@@ -6896,10 +6150,10 @@
                 "phoneUrl": "tel:8136273282",
                 "mapUrl": "https://www.google.com/maps/search/?api=1&query=105%20East%206th%20Ave.%2C%20Tampa%2C%20FL%2C%2033619",
                 "email": null,
-                "brands": "",
+                "brands": "Hyundai",
                 "services": "",
                 "perks": "",
-                "brandKeys": "",
+                "brandKeys": "hyundai",
                 "perkKeys": "",
                 "perk1": null,
                 "perk2": null,
@@ -6916,7 +6170,12 @@
                   "src": "",
                   "alt": ""
                 },
-                "brandRows": [],
+                "brandRows": [
+                  {
+                    "name": "Hyundai",
+                    "key": "hyundai"
+                  }
+                ],
                 "serviceRows": [],
                 "perkRows": [],
                 "departmentRows": [
@@ -6991,6 +6250,7 @@
               {
                 "id": "20",
                 "name": "Brooksville",
+                "subtitle": "",
                 "slug": "brooksville",
                 "num": "02",
                 "href": null,
@@ -7100,6 +6360,7 @@
               {
                 "id": "19",
                 "name": "Davenport",
+                "subtitle": "",
                 "slug": "davenport",
                 "num": "03",
                 "href": null,
@@ -7337,6 +6598,7 @@
               {
                 "id": "18",
                 "name": "Sarasota",
+                "subtitle": "",
                 "slug": "sarasota",
                 "num": "04",
                 "href": null,
@@ -7359,8 +6621,8 @@
                 "perk1": null,
                 "perk2": null,
                 "perk3": null,
-                "departments": "Sales · Service · Parts",
-                "hours": "Sales: 07:00–17:00 Mon–Sat\n\nService: 07:00–17:00 Mon–Sat\n\nParts: 07:00–17:00 Mon–Sat",
+                "departments": "Sales · Service · Body Shop",
+                "hours": "Sales: 07:00–17:00 Mon–Sat\n\nService: 07:00–17:00 Mon–Sat\n\nBody Shop: 08:00–17:00 Mon–Fri",
                 "phone2": null,
                 "phone2Url": null,
                 "phone3": null,
@@ -7392,12 +6654,12 @@
                     "hours": "07:00–17:00 Mon–Sat"
                   },
                   {
-                    "name": "Parts",
-                    "key": "parts",
+                    "name": "Body Shop",
+                    "key": "body",
                     "phone": null,
                     "phoneUrl": null,
                     "email": null,
-                    "hours": "07:00–17:00 Mon–Sat"
+                    "hours": "08:00–17:00 Mon–Fri"
                   }
                 ],
                 "hoursRows": [
@@ -7514,9 +6776,9 @@
                     ]
                   },
                   {
-                    "department": "Parts",
-                    "key": "parts",
-                    "summary": "07:00–17:00 Mon–Sat",
+                    "department": "Body Shop",
+                    "key": "body",
+                    "summary": "08:00–17:00 Mon–Fri",
                     "days": [
                       {
                         "day": "Sunday",
@@ -7527,45 +6789,45 @@
                       },
                       {
                         "day": "Monday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
+                        "hours": "08:00–17:00",
+                        "opensAt": "08:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Tuesday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
+                        "hours": "08:00–17:00",
+                        "opensAt": "08:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Wednesday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
+                        "hours": "08:00–17:00",
+                        "opensAt": "08:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Thursday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
+                        "hours": "08:00–17:00",
+                        "opensAt": "08:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Friday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
+                        "hours": "08:00–17:00",
+                        "opensAt": "08:00",
                         "closesAt": "17:00",
                         "closed": false
                       },
                       {
                         "day": "Saturday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
-                        "closed": false
+                        "hours": "Closed",
+                        "opensAt": null,
+                        "closesAt": null,
+                        "closed": true
                       }
                     ]
                   }
@@ -7574,6 +6836,7 @@
               {
                 "id": "17",
                 "name": "Tampa",
+                "subtitle": "",
                 "slug": "tampa",
                 "num": "05",
                 "href": null,
@@ -7582,16 +6845,16 @@
                 "region": "FL",
                 "postalCode": "33619",
                 "country": null,
-                "latitude": 27.95298,
-                "longitude": -82.38591,
+                "latitude": null,
+                "longitude": null,
                 "phone": "(813) 621-1331",
                 "phoneUrl": "tel:8136211331",
-                "mapUrl": "https://www.google.com/maps/search/?api=1&query=27.95298,-82.38591",
+                "mapUrl": "https://www.google.com/maps/search/?api=1&query=6020%20Adamo%20Drive%2C%20Tampa%2C%20FL%2C%2033619",
                 "email": null,
-                "brands": "",
+                "brands": "Globe · Hyundai · International · IC Bus",
                 "services": "",
                 "perks": "",
-                "brandKeys": "",
+                "brandKeys": "globe hyundai international ic-bus",
                 "perkKeys": "",
                 "perk1": null,
                 "perk2": null,
@@ -7605,10 +6868,27 @@
                 "group": null,
                 "groupKey": null,
                 "photo": {
-                  "src": "",
-                  "alt": ""
+                  "src": "https://vendure.buzznerdrv.com/assets/source/96/6020_e_adamo_dr_tampa_fl_map.svg",
+                  "alt": "6020_e_adamo_dr_tampa_fl_map.svg"
                 },
-                "brandRows": [],
+                "brandRows": [
+                  {
+                    "name": "Globe",
+                    "key": "globe"
+                  },
+                  {
+                    "name": "Hyundai",
+                    "key": "hyundai"
+                  },
+                  {
+                    "name": "International",
+                    "key": "international"
+                  },
+                  {
+                    "name": "IC Bus",
+                    "key": "ic-bus"
+                  }
+                ],
                 "serviceRows": [],
                 "perkRows": [],
                 "departmentRows": [
@@ -7811,6 +7091,7 @@
               {
                 "id": "22",
                 "name": "Trailer Sales",
+                "subtitle": "",
                 "slug": "trailer-sales",
                 "num": "06",
                 "href": null,
@@ -7852,7 +7133,24 @@
                 "hoursRows": []
               }
             ],
-            "brandFacets": [],
+            "brandFacets": [
+              {
+                "value": "globe",
+                "label": "Globe"
+              },
+              {
+                "value": "hyundai",
+                "label": "Hyundai"
+              },
+              {
+                "value": "ic-bus",
+                "label": "IC Bus"
+              },
+              {
+                "value": "international",
+                "label": "International"
+              }
+            ],
             "perkFacets": []
           }
         }

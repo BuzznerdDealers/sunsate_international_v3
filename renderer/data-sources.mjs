@@ -36,6 +36,11 @@ export const DATA_SOURCES = [
     fields: [
       { key: 'id', type: 'text', label: 'Id' },
       { key: 'name', type: 'text', label: 'Name' },
+      // A card's second line. `name` is the place — "Brooksville" — and this is the
+      // business under it, which differs per rooftop: one trades as "Truck & Trailer
+      // Parts" while the next is the parent company. Edited on Admin → Locations, not
+      // typed into a page, for the same reason `photo` is not.
+      { key: 'subtitle', type: 'text', label: 'Trading name' },
       { key: 'slug', type: 'text', label: 'Slug' },
       { key: 'href', type: 'url', label: 'Page link' },
       { key: 'streetAddress', type: 'text', label: 'Street address' },

@@ -3,7 +3,11 @@
   "name": "Check availability",
   "status": "live",
   "system": true,
-  "surfaces": ["pdp", "partsPdp", "page"],
+  "surfaces": [
+    "pdp",
+    "partsPdp",
+    "page"
+  ],
   "intent": "check-availability",
   "submitLabel": "Check availability",
   "successMessage": "Thanks — we will confirm availability shortly.",
@@ -13,22 +17,54 @@
     "text": "I agree to be contacted about this enquiry by phone, text or email."
   },
   "fields": [
-    { "id": "ca-name", "type": "full_name", "label": "Full name", "required": true },
-    { "id": "ca-email", "type": "email", "label": "Email", "required": true },
-    { "id": "ca-phone", "type": "phone", "label": "Phone", "required": false },
+    {
+      "id": "ca-name",
+      "type": "full_name",
+      "label": "Full name",
+      "required": true
+    },
+    {
+      "id": "ca-email",
+      "type": "email",
+      "label": "Email",
+      "required": true
+    },
+    {
+      "id": "ca-phone",
+      "type": "phone",
+      "label": "Phone",
+      "required": false
+    },
     {
       "id": "ca-when",
       "type": "dropdown",
       "label": "When do you need it?",
       "required": false,
       "options": [
-        { "value": "asap", "label": "As soon as possible" },
-        { "value": "30", "label": "Within 30 days" },
-        { "value": "90", "label": "Within 90 days" },
-        { "value": "browsing", "label": "Just browsing" }
+        {
+          "value": "asap",
+          "label": "As soon as possible"
+        },
+        {
+          "value": "30",
+          "label": "Within 30 days"
+        },
+        {
+          "value": "90",
+          "label": "Within 90 days"
+        },
+        {
+          "value": "browsing",
+          "label": "Just browsing"
+        }
       ]
     },
-    { "id": "ca-message", "type": "paragraph", "label": "Anything we should know?", "required": false }
+    {
+      "id": "ca-message",
+      "type": "paragraph",
+      "label": "Anything we should know?",
+      "required": false
+    }
   ],
   "notifications": [
     {
@@ -36,9 +72,12 @@
       "name": "Default",
       "logic": "AND",
       "rules": [],
-      "targetType": "role",
+      "targetType": "email",
       "roleId": "salesperson",
-      "scopeMode": "dynamic"
+      "scopeMode": "dynamic",
+      "contactName": "Sun State International",
+      "email": "leads@sunstateintl.com, e-contact@sunstateintl.com"
     }
-  ]
+  ],
+  "updatedAt": "2026-09-21T17:14:31.900Z"
 }

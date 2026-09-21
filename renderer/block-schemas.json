@@ -1,5 +1,5 @@
 {
-  "rendererVersion": "4.22.0",
+  "rendererVersion": "4.24.0",
   "documentVersion": 2,
   "gridColumns": 12,
   "tokenGroups": {
@@ -304,6 +304,8 @@
   ],
   "staticWidgets": [
     "locations-map",
+    "locations-pinmap",
+    "location-photo",
     "staff",
     "faq",
     "phone-numbers",
@@ -358,6 +360,11 @@
           "key": "name",
           "type": "text",
           "label": "Name"
+        },
+        {
+          "key": "subtitle",
+          "type": "text",
+          "label": "Trading name"
         },
         {
           "key": "slug",

@@ -2,7 +2,7 @@
   "version": 2,
   "id": "location-summary",
   "name": "Location summary",
-  "css": "[data-bz-section=\"location-summary\"] .bz-block { padding-block: 0 }\n[data-bz-section=\"location-summary\"] h2 { font-size: 30px; line-height: 1.6; margin: 0 0 18px }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-phones\"] .bz-phones { margin: 0 0 22px }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice\"] { border: 1px solid var(--line); background: var(--card); padding: 26px 24px; margin-top: 0 }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice\"] .bz-eyebrow { font-size: 10px; letter-spacing: .14em; margin-bottom: 12px }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice\"] h3 { font-size: 20px; line-height: 1.6; margin: 0 0 10px }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice\"] .bz-block + .bz-block { padding-block-start: 0 }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice-b\"] p { font-size: 15px; line-height: 1.7; margin: 0 0 12px }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice-cta\"] .bz-btns { margin-block: 0 }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice-cta\"] .bz-btn--link { font-size: 16px }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-map\"] .bz-map { width: 100%; min-height: 520px; aspect-ratio: auto; margin: 0; border-radius: 0 }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-map\"] .bz-loclist { display: none }",
+  "css": "[data-bz-section=\"location-summary\"] .bz-block { padding-block: 0 }\n[data-bz-section=\"location-summary\"] h2 { font-size: 30px; line-height: 1.6; margin: 0 0 18px }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-phones\"] .bz-phones { margin: 0 0 22px }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice\"] { border: 1px solid var(--line); background: var(--card); padding: 26px 24px; margin-top: 0 }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice\"] .bz-eyebrow { font-size: 10px; letter-spacing: .14em; margin-bottom: 12px }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice\"] h3 { font-size: 20px; line-height: 1.6; margin: 0 0 10px }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice\"] .bz-block + .bz-block { padding-block-start: 0 }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice-b\"] p { font-size: 15px; line-height: 1.7; margin: 0 0 12px }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice-cta\"] .bz-btns { margin-block: 0 }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice-cta\"] .bz-btn--link { font-size: 16px }\n/* The branch’s own photograph, from its record on Admin → Locations. No fixed\n   height — the photo keeps its own aspect ratio — and a rooftop with no photo\n   yet draws an empty box rather than a stand-in, so the gap reads as \"upload\n   one\" instead of being papered over with a street map. */\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-map\"] .bz-locphoto img { display: block; width: 100%; height: auto }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-map\"] .bz-locphoto__empty { aspect-ratio: 4 / 3; border-radius: 0 }",
   "props": [
     {
       "key": "eyebrow",
@@ -187,11 +187,13 @@
                   "id": "ls-map-w",
                   "type": "widget",
                   "props": {
-                    "widget": "locations-map",
-                    "config": {
-                      "showMap": true,
-                      "locationSlug": "{{locationSlug}}",
-                      "mapProvider": "static"
+                    "widget": "location-photo",
+                    "config": {},
+                    "snapshot": {
+                      "photo": {
+                        "src": "",
+                        "alt": ""
+                      }
                     }
                   }
                 }

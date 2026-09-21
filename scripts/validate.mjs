@@ -35,6 +35,8 @@ import {
   MENU_ITEM_TYPES,
   RENDERER_VERSION,
   SLUG_TOKEN,
+  SPEC_SOURCES,
+  VALUE_SOURCES,
   allWidgetIds,
   blockCatalogue,
   dataSource,
@@ -158,6 +160,148 @@ for (const file of listJson(join(SITE, 'forms'))) {
   for (const [i, field] of (value?.fields ?? []).entries()) {
     if (!field?.id) fail(rel(path), `fields[${i}].id`, 'every field needs a stable id');
     if (!field?.type) fail(rel(path), `fields[${i}].type`, 'every field needs a type');
+  }
+  checkFormRouting(rel(path), value);
+}
+
+/* ------------------------------------------------------- routing and replies */
+
+/**
+ * Notifications and confirmations: who hears about a submission, and what the
+ * visitor sees next.
+ *
+ * Both lists are ordered and first-match-wins, which is the rule most easily
+ * lost when a list is edited — an unconditional entry above a conditional one
+ * makes everything below it dead, and nothing about the JSON says so. That is a
+ * note rather than a failure because it builds and routes; it just does not do
+ * what whoever wrote the lower entry meant.
+ */
+function checkFormRouting(file, form) {
+  const fieldIds = new Set((form?.fields ?? []).map((f) => f?.id).filter(Boolean));
+  const specIds = new Set(SPEC_SOURCES.map((s) => s.id));
+
+  for (const [i, field] of (form?.fields ?? []).entries()) {
+    if (!field?.hidden) continue;
+    const source = field.valueSource ?? 'static';
+    if (!VALUE_SOURCES.includes(source)) {
+      fail(
+        file,
+        `fields[${i}].valueSource`,
+        `"${source}" is not a value source`,
+        `Use one of: ${VALUE_SOURCES.join(', ')}.`,
+      );
+    }
+    if (source === 'query' && !String(field.queryParam ?? '').trim()) {
+      fail(
+        file,
+        `fields[${i}].queryParam`,
+        'a hidden field reading a URL parameter has to say which one',
+        'Set queryParam to the parameter name, e.g. "promo" for ?promo=spring.',
+      );
+    }
+    if (field.required) {
+      note(
+        file,
+        `hidden field "${field.id}" is marked required, which nothing enforces — a field the ` +
+          'visitor cannot see is never part of the validation gate. Drop required, or show the field.',
+      );
+    }
+  }
+
+  const ruleSources = (where, rules) => {
+    for (const [j, rule] of (rules ?? []).entries()) {
+      const id = rule?.fieldId;
+      if (!id) {
+        fail(file, `${where}.rules[${j}].fieldId`, 'a rule has to name a field');
+        continue;
+      }
+      if (fieldIds.has(id)) continue;
+      if (specIds.has(id)) {
+        if (!form?.pdpContext) {
+          fail(
+            file,
+            `${where}.rules[${j}].fieldId`,
+            `"${id}" is a product-page source, and this form is not marked for product pages`,
+            'Set pdpContext to true, or route on one of the form\'s own fields.',
+          );
+        }
+        continue;
+      }
+      fail(file, `${where}.rules[${j}].fieldId`, `no field called "${id}" on this form`);
+    }
+  };
+
+  /** Everything above `i` that would swallow it first. */
+  const deadBelow = (list, i) =>
+    list.slice(0, i).some((entry) => !(entry?.rules ?? []).length);
+
+  const notifications = form?.notifications ?? [];
+  for (const [i, n] of notifications.entries()) {
+    const where = `notifications[${i}]`;
+    ruleSources(where, n?.rules);
+    const target = n?.targetType ?? 'role';
+    if (!['role', 'user', 'email'].includes(target)) {
+      fail(file, `${where}.targetType`, `"${target}" is not a target type`, 'Use role, user or email.');
+    }
+    if (target === 'role' && !String(n?.roleId ?? '').trim()) {
+      fail(file, `${where}.roleId`, 'a role notification has to name a role');
+    }
+    if (target === 'user' && !String(n?.administratorId ?? '').trim()) {
+      fail(file, `${where}.administratorId`, 'a person notification has to name one');
+    }
+    if (target === 'email' && !String(n?.email ?? '').trim()) {
+      fail(file, `${where}.email`, 'an external notification has to carry an address');
+    }
+    if (target === 'role' && n?.scopeMode === 'fixed') {
+      if (!['location', 'group', 'organisation'].includes(n?.scopeType)) {
+        fail(
+          file,
+          `${where}.scopeType`,
+          'a fixed scope has to say which kind',
+          'Use location, group or organisation — or scopeMode "dynamic" to follow the lead.',
+        );
+      } else if (n.scopeType !== 'organisation' && !String(n?.scopeId ?? '').trim()) {
+        fail(file, `${where}.scopeId`, `a fixed ${n.scopeType} scope has to name one`);
+      }
+    }
+    if (deadBelow(notifications, i)) {
+      note(
+        file,
+        `notification "${n?.name ?? n?.id ?? i}" can never fire: an unconditional notification ` +
+          'above it already matches everything, and the first match wins. Move it up, or give the ' +
+          'one above it conditions.',
+      );
+    }
+  }
+  if ((form?.status ?? 'live') === 'live' && !notifications.length) {
+    note(
+      file,
+      'a live form with no notifications stores the submission and tells nobody. Add one, or the ' +
+        'lead sits on the Leads screen until somebody thinks to look.',
+    );
+  }
+
+  const confirmations = form?.confirmations ?? [];
+  for (const [i, c] of confirmations.entries()) {
+    const where = `confirmations[${i}]`;
+    ruleSources(where, c?.rules);
+    const type = c?.type ?? 'message';
+    if (!['message', 'redirect'].includes(type)) {
+      fail(file, `${where}.type`, `"${type}" is not a confirmation type`, 'Use message or redirect.');
+    }
+    if (type === 'message' && !String(c?.message ?? '').trim()) {
+      fail(file, `${where}.message`, 'a confirmation that shows a message needs one');
+    }
+    if (type === 'redirect' && !String(c?.redirectUrl ?? '').trim()) {
+      fail(file, `${where}.redirectUrl`, 'a confirmation that redirects needs somewhere to go');
+    }
+    if (deadBelow(confirmations, i)) {
+      note(
+        file,
+        `confirmation "${c?.name ?? c?.id ?? i}" can never show: an unconditional confirmation ` +
+          'above it already matches everything, and the first match wins.',
+      );
+    }
   }
 }
 

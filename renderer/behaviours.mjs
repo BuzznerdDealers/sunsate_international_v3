@@ -88,6 +88,11 @@ export const PARTS = [
 export const BEHAVIOUR_OPTIONS = {
   carousel: { label: 'Accessible name for the rail.', perMove: 'Slides advanced per arrow press.' },
   rotator: { autoplay: 'Milliseconds between slides. Omit to require a click.' },
+  // `filter` also marks every item `data-bz-match="1|0"`, and leaves items inside a
+  // `data-bz-reveal="dim"` subtree in the page rather than hiding them. That subtree
+  // is emitted by a widget, not authored: it is how `locations-pinmap` has one chip
+  // row filter the cards and light up the pins. Not an option here, because the
+  // choice belongs to the thing being filtered and not to the filter.
   filter: { match: 'How a control value is compared: "exact" or "includes".' },
   dropdown: { trigger: '"hover" or "click".', closeOnOutside: 'Close when clicking elsewhere.' },
   drawer: { lockScroll: 'Freeze the page behind the panel.' },

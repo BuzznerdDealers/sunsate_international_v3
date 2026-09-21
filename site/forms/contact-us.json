@@ -117,59 +117,34 @@
   ],
   "notifications": [
     {
-      "id": "cu-sales",
-      "name": "Sales enquiries",
-      "logic": "OR",
-      "rules": [
-        {
-          "fieldId": "cu-dept",
-          "operator": "is",
-          "value": "sales-trucks"
-        },
-        {
-          "fieldId": "cu-dept",
-          "operator": "is",
-          "value": "sales-trailers"
-        }
-      ],
-      "targetType": "role",
-      "roleId": "salesperson",
-      "scopeMode": "dynamic"
-    },
-    {
-      "id": "cu-service",
-      "name": "Service enquiries",
+      "id": "n-mubimeoi1",
+      "name": "Default , e-contact@sunstateintl.com",
       "logic": "AND",
       "rules": [
         {
-          "fieldId": "cu-dept",
+          "fieldId": "cu-name",
           "operator": "is",
-          "value": "service"
+          "value": ""
         }
       ],
-      "targetType": "role",
-      "roleId": "service-advisor",
-      "scopeMode": "dynamic"
-    },
+      "targetType": "email",
+      "roleId": "",
+      "scopeMode": "dynamic",
+      "contactName": "Sunstate E-Contact ",
+      "email": "ash@buzznerd.com, av@buzznerd.com"
+    }
+  ],
+  "updatedAt": "2026-09-21T18:38:21.197Z",
+  "pdpContext": true,
+  "confirmations": [
     {
-      "id": "cu-parts",
-      "name": "Parts enquiries",
-      "logic": "OR",
-      "rules": [
-        {
-          "fieldId": "cu-dept",
-          "operator": "is",
-          "value": "parts"
-        },
-        {
-          "fieldId": "cu-dept",
-          "operator": "is",
-          "value": "aftermarket"
-        }
-      ],
-      "targetType": "role",
-      "roleId": "parts-advisor",
-      "scopeMode": "dynamic"
+      "id": "c-mubl8xmp1",
+      "name": "Default",
+      "logic": "AND",
+      "rules": [],
+      "type": "message",
+      "message": "Thanks — we will be in touch shortly.",
+      "redirectUrl": ""
     }
   ]
 }
