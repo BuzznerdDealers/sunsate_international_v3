@@ -134,6 +134,17 @@
       "email": "ash@buzznerd.com, av@buzznerd.com"
     }
   ],
-  "updatedAt": "2026-09-21T18:36:11.080Z",
-  "pdpContext": true
+  "updatedAt": "2026-09-21T18:38:21.197Z",
+  "pdpContext": true,
+  "confirmations": [
+    {
+      "id": "c-mubl8xmp1",
+      "name": "Default",
+      "logic": "AND",
+      "rules": [],
+      "type": "message",
+      "message": "Thanks — we will be in touch shortly.",
+      "redirectUrl": ""
+    }
+  ]
 }
