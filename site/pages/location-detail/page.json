@@ -690,8 +690,8 @@
                 "perk1": null,
                 "perk2": null,
                 "perk3": null,
-                "departments": "Sales · Service · Parts",
-                "hours": "Sales: 07:00–17:00 Mon–Sat\n\nService: 07:00–17:00 Mon–Sat\n\nParts: 07:00–17:00 Mon–Sat",
+                "departments": "Sales · Used Sales · Service · Parts",
+                "hours": "Sales: 07:00–17:00 Mon–Sat\n\nUsed Sales: 09:00–17:00 Mon–Fri\n\nService: 07:00–17:00 Mon–Sat\n\nParts: 07:00–17:00 Mon–Sat",
                 "phone2": null,
                 "phone2Url": null,
                 "phone3": null,
@@ -713,6 +713,14 @@
                     "phoneUrl": null,
                     "email": null,
                     "hours": "07:00–17:00 Mon–Sat"
+                  },
+                  {
+                    "name": "Used Sales",
+                    "key": "used_sales",
+                    "phone": null,
+                    "phoneUrl": null,
+                    "email": null,
+                    "hours": "09:00–17:00 Mon–Fri"
                   },
                   {
                     "name": "Service",
@@ -785,6 +793,62 @@
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
+                      }
+                    ]
+                  },
+                  {
+                    "department": "Used Sales",
+                    "key": "used_sales",
+                    "summary": "09:00–17:00 Mon–Fri",
+                    "days": [
+                      {
+                        "day": "Sunday",
+                        "hours": "Closed",
+                        "opensAt": null,
+                        "closesAt": null,
+                        "closed": true
+                      },
+                      {
+                        "day": "Monday",
+                        "hours": "09:00–17:00",
+                        "opensAt": "09:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Tuesday",
+                        "hours": "09:00–17:00",
+                        "opensAt": "09:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Wednesday",
+                        "hours": "09:00–17:00",
+                        "opensAt": "09:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Thursday",
+                        "hours": "09:00–17:00",
+                        "opensAt": "09:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Friday",
+                        "hours": "09:00–17:00",
+                        "opensAt": "09:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Saturday",
+                        "hours": "Closed",
+                        "opensAt": null,
+                        "closesAt": null,
+                        "closed": true
                       }
                     ]
                   },
@@ -1809,8 +1873,8 @@
                 "perk1": null,
                 "perk2": null,
                 "perk3": null,
-                "departments": "Sales · Service · Parts",
-                "hours": "Sales: 07:00–17:00 Mon–Sat\n\nService: 07:00–17:00 Mon–Sat\n\nParts: 07:00–17:00 Mon–Sat",
+                "departments": "Sales · Used Sales · Service · Parts",
+                "hours": "Sales: 07:00–17:00 Mon–Sat\n\nUsed Sales: 09:00–17:00 Mon–Fri\n\nService: 07:00–17:00 Mon–Sat\n\nParts: 07:00–17:00 Mon–Sat",
                 "phone2": null,
                 "phone2Url": null,
                 "phone3": null,
@@ -1832,6 +1896,14 @@
                     "phoneUrl": null,
                     "email": null,
                     "hours": "07:00–17:00 Mon–Sat"
+                  },
+                  {
+                    "name": "Used Sales",
+                    "key": "used_sales",
+                    "phone": null,
+                    "phoneUrl": null,
+                    "email": null,
+                    "hours": "09:00–17:00 Mon–Fri"
                   },
                   {
                     "name": "Service",
@@ -1904,6 +1976,62 @@
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
+                      }
+                    ]
+                  },
+                  {
+                    "department": "Used Sales",
+                    "key": "used_sales",
+                    "summary": "09:00–17:00 Mon–Fri",
+                    "days": [
+                      {
+                        "day": "Sunday",
+                        "hours": "Closed",
+                        "opensAt": null,
+                        "closesAt": null,
+                        "closed": true
+                      },
+                      {
+                        "day": "Monday",
+                        "hours": "09:00–17:00",
+                        "opensAt": "09:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Tuesday",
+                        "hours": "09:00–17:00",
+                        "opensAt": "09:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Wednesday",
+                        "hours": "09:00–17:00",
+                        "opensAt": "09:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Thursday",
+                        "hours": "09:00–17:00",
+                        "opensAt": "09:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Friday",
+                        "hours": "09:00–17:00",
+                        "opensAt": "09:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Saturday",
+                        "hours": "Closed",
+                        "opensAt": null,
+                        "closesAt": null,
+                        "closed": true
                       }
                     ]
                   },
@@ -3022,8 +3150,8 @@
                 "perk1": null,
                 "perk2": null,
                 "perk3": null,
-                "departments": "Sales · Service · Parts",
-                "hours": "Sales: 07:00–17:00 Mon–Sat\n\nService: 07:00–17:00 Mon–Sat\n\nParts: 07:00–17:00 Mon–Sat",
+                "departments": "Sales · Used Sales · Service · Parts",
+                "hours": "Sales: 07:00–17:00 Mon–Sat\n\nUsed Sales: 09:00–17:00 Mon–Fri\n\nService: 07:00–17:00 Mon–Sat\n\nParts: 07:00–17:00 Mon–Sat",
                 "phone2": null,
                 "phone2Url": null,
                 "phone3": null,
@@ -3045,6 +3173,14 @@
                     "phoneUrl": null,
                     "email": null,
                     "hours": "07:00–17:00 Mon–Sat"
+                  },
+                  {
+                    "name": "Used Sales",
+                    "key": "used_sales",
+                    "phone": null,
+                    "phoneUrl": null,
+                    "email": null,
+                    "hours": "09:00–17:00 Mon–Fri"
                   },
                   {
                     "name": "Service",
@@ -3117,6 +3253,62 @@
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
+                      }
+                    ]
+                  },
+                  {
+                    "department": "Used Sales",
+                    "key": "used_sales",
+                    "summary": "09:00–17:00 Mon–Fri",
+                    "days": [
+                      {
+                        "day": "Sunday",
+                        "hours": "Closed",
+                        "opensAt": null,
+                        "closesAt": null,
+                        "closed": true
+                      },
+                      {
+                        "day": "Monday",
+                        "hours": "09:00–17:00",
+                        "opensAt": "09:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Tuesday",
+                        "hours": "09:00–17:00",
+                        "opensAt": "09:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Wednesday",
+                        "hours": "09:00–17:00",
+                        "opensAt": "09:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Thursday",
+                        "hours": "09:00–17:00",
+                        "opensAt": "09:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Friday",
+                        "hours": "09:00–17:00",
+                        "opensAt": "09:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Saturday",
+                        "hours": "Closed",
+                        "opensAt": null,
+                        "closesAt": null,
+                        "closed": true
                       }
                     ]
                   },
@@ -3641,6 +3833,53 @@
                     "hours": "07:00–17:00",
                     "opensAt": "07:00",
                     "closesAt": "17:00"
+                  }
+                ]
+              },
+              {
+                "heading": "Used Sales",
+                "hours": [
+                  {
+                    "day": "Sunday",
+                    "hours": "Closed",
+                    "opensAt": null,
+                    "closesAt": null
+                  },
+                  {
+                    "day": "Monday",
+                    "hours": "09:00–17:00",
+                    "opensAt": "09:00",
+                    "closesAt": "17:00"
+                  },
+                  {
+                    "day": "Tuesday",
+                    "hours": "09:00–17:00",
+                    "opensAt": "09:00",
+                    "closesAt": "17:00"
+                  },
+                  {
+                    "day": "Wednesday",
+                    "hours": "09:00–17:00",
+                    "opensAt": "09:00",
+                    "closesAt": "17:00"
+                  },
+                  {
+                    "day": "Thursday",
+                    "hours": "09:00–17:00",
+                    "opensAt": "09:00",
+                    "closesAt": "17:00"
+                  },
+                  {
+                    "day": "Friday",
+                    "hours": "09:00–17:00",
+                    "opensAt": "09:00",
+                    "closesAt": "17:00"
+                  },
+                  {
+                    "day": "Saturday",
+                    "hours": "Closed",
+                    "opensAt": null,
+                    "closesAt": null
                   }
                 ]
               },
@@ -4235,8 +4474,8 @@
                 "perk1": null,
                 "perk2": null,
                 "perk3": null,
-                "departments": "Sales · Service · Parts",
-                "hours": "Sales: 07:00–17:00 Mon–Sat\n\nService: 07:00–17:00 Mon–Sat\n\nParts: 07:00–17:00 Mon–Sat",
+                "departments": "Sales · Used Sales · Service · Parts",
+                "hours": "Sales: 07:00–17:00 Mon–Sat\n\nUsed Sales: 09:00–17:00 Mon–Fri\n\nService: 07:00–17:00 Mon–Sat\n\nParts: 07:00–17:00 Mon–Sat",
                 "phone2": null,
                 "phone2Url": null,
                 "phone3": null,
@@ -4258,6 +4497,14 @@
                     "phoneUrl": null,
                     "email": null,
                     "hours": "07:00–17:00 Mon–Sat"
+                  },
+                  {
+                    "name": "Used Sales",
+                    "key": "used_sales",
+                    "phone": null,
+                    "phoneUrl": null,
+                    "email": null,
+                    "hours": "09:00–17:00 Mon–Fri"
                   },
                   {
                     "name": "Service",
@@ -4330,6 +4577,62 @@
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
+                      }
+                    ]
+                  },
+                  {
+                    "department": "Used Sales",
+                    "key": "used_sales",
+                    "summary": "09:00–17:00 Mon–Fri",
+                    "days": [
+                      {
+                        "day": "Sunday",
+                        "hours": "Closed",
+                        "opensAt": null,
+                        "closesAt": null,
+                        "closed": true
+                      },
+                      {
+                        "day": "Monday",
+                        "hours": "09:00–17:00",
+                        "opensAt": "09:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Tuesday",
+                        "hours": "09:00–17:00",
+                        "opensAt": "09:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Wednesday",
+                        "hours": "09:00–17:00",
+                        "opensAt": "09:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Thursday",
+                        "hours": "09:00–17:00",
+                        "opensAt": "09:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Friday",
+                        "hours": "09:00–17:00",
+                        "opensAt": "09:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Saturday",
+                        "hours": "Closed",
+                        "opensAt": null,
+                        "closesAt": null,
+                        "closed": true
                       }
                     ]
                   },
@@ -5448,8 +5751,8 @@
                 "perk1": null,
                 "perk2": null,
                 "perk3": null,
-                "departments": "Sales · Service · Parts",
-                "hours": "Sales: 07:00–17:00 Mon–Sat\n\nService: 07:00–17:00 Mon–Sat\n\nParts: 07:00–17:00 Mon–Sat",
+                "departments": "Sales · Used Sales · Service · Parts",
+                "hours": "Sales: 07:00–17:00 Mon–Sat\n\nUsed Sales: 09:00–17:00 Mon–Fri\n\nService: 07:00–17:00 Mon–Sat\n\nParts: 07:00–17:00 Mon–Sat",
                 "phone2": null,
                 "phone2Url": null,
                 "phone3": null,
@@ -5471,6 +5774,14 @@
                     "phoneUrl": null,
                     "email": null,
                     "hours": "07:00–17:00 Mon–Sat"
+                  },
+                  {
+                    "name": "Used Sales",
+                    "key": "used_sales",
+                    "phone": null,
+                    "phoneUrl": null,
+                    "email": null,
+                    "hours": "09:00–17:00 Mon–Fri"
                   },
                   {
                     "name": "Service",
@@ -5543,6 +5854,62 @@
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
+                      }
+                    ]
+                  },
+                  {
+                    "department": "Used Sales",
+                    "key": "used_sales",
+                    "summary": "09:00–17:00 Mon–Fri",
+                    "days": [
+                      {
+                        "day": "Sunday",
+                        "hours": "Closed",
+                        "opensAt": null,
+                        "closesAt": null,
+                        "closed": true
+                      },
+                      {
+                        "day": "Monday",
+                        "hours": "09:00–17:00",
+                        "opensAt": "09:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Tuesday",
+                        "hours": "09:00–17:00",
+                        "opensAt": "09:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Wednesday",
+                        "hours": "09:00–17:00",
+                        "opensAt": "09:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Thursday",
+                        "hours": "09:00–17:00",
+                        "opensAt": "09:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Friday",
+                        "hours": "09:00–17:00",
+                        "opensAt": "09:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Saturday",
+                        "hours": "Closed",
+                        "opensAt": null,
+                        "closesAt": null,
+                        "closed": true
                       }
                     ]
                   },
@@ -6476,8 +6843,8 @@
                 "perk1": null,
                 "perk2": null,
                 "perk3": null,
-                "departments": "Sales · Service · Parts",
-                "hours": "Sales: 07:00–17:00 Mon–Sat\n\nService: 07:00–17:00 Mon–Sat\n\nParts: 07:00–17:00 Mon–Sat",
+                "departments": "Sales · Used Sales · Service · Parts",
+                "hours": "Sales: 07:00–17:00 Mon–Sat\n\nUsed Sales: 09:00–17:00 Mon–Fri\n\nService: 07:00–17:00 Mon–Sat\n\nParts: 07:00–17:00 Mon–Sat",
                 "phone2": null,
                 "phone2Url": null,
                 "phone3": null,
@@ -6499,6 +6866,14 @@
                     "phoneUrl": null,
                     "email": null,
                     "hours": "07:00–17:00 Mon–Sat"
+                  },
+                  {
+                    "name": "Used Sales",
+                    "key": "used_sales",
+                    "phone": null,
+                    "phoneUrl": null,
+                    "email": null,
+                    "hours": "09:00–17:00 Mon–Fri"
                   },
                   {
                     "name": "Service",
@@ -6571,6 +6946,62 @@
                         "opensAt": "07:00",
                         "closesAt": "17:00",
                         "closed": false
+                      }
+                    ]
+                  },
+                  {
+                    "department": "Used Sales",
+                    "key": "used_sales",
+                    "summary": "09:00–17:00 Mon–Fri",
+                    "days": [
+                      {
+                        "day": "Sunday",
+                        "hours": "Closed",
+                        "opensAt": null,
+                        "closesAt": null,
+                        "closed": true
+                      },
+                      {
+                        "day": "Monday",
+                        "hours": "09:00–17:00",
+                        "opensAt": "09:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Tuesday",
+                        "hours": "09:00–17:00",
+                        "opensAt": "09:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Wednesday",
+                        "hours": "09:00–17:00",
+                        "opensAt": "09:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Thursday",
+                        "hours": "09:00–17:00",
+                        "opensAt": "09:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Friday",
+                        "hours": "09:00–17:00",
+                        "opensAt": "09:00",
+                        "closesAt": "17:00",
+                        "closed": false
+                      },
+                      {
+                        "day": "Saturday",
+                        "hours": "Closed",
+                        "opensAt": null,
+                        "closesAt": null,
+                        "closed": true
                       }
                     ]
                   },
