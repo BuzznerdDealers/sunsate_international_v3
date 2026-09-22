@@ -415,5 +415,22 @@
       "ogImage": null,
       "noindex": false
     }
+  },
+  {
+    "slug": "showroom",
+    "dir": "showroom",
+    "title": "Showroom",
+    "path": "/showroom",
+    "out": "showroom/index.html",
+    "status": "draft",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]
