@@ -367,6 +367,11 @@
                         "intent": "call-dealer"
                       }
                     ]
+                  },
+                  "styles": {
+                    "base": {
+                      "buttonRadius": 8
+                    }
                   }
                 }
               ]
@@ -520,6 +525,11 @@
           "secondaryLabel": "",
           "secondaryUrl": "",
           "background": "ink"
+        }
+      },
+      "styles": {
+        "base": {
+          "buttonRadius": 8
         }
       },
       "children": []
