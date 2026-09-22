@@ -4,8 +4,8 @@
   "name": "New Home template",
   "conditions": [
     {
-      "type": "entireSite",
-      "ref": null
+      "type": "page",
+      "ref": "new-home"
     }
   ],
   "nodes": [
