@@ -731,7 +731,9 @@
       },
       "styles": {
         "base": {
-          "buttonRadius": 8
+          "buttonRadius": 8,
+          "buttonBackground": "#ffffff",
+          "buttonTextColor": "#000000"
         }
       },
       "children": []
