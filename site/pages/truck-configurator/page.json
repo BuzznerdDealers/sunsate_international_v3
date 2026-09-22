@@ -29,6 +29,11 @@
           "width": 2048,
           "height": 1024
         }
+      },
+      "styles": {
+        "base": {
+          "buttonRadius": 8
+        }
       }
     },
     {
@@ -371,6 +376,11 @@
           "secondaryLabel": "Send your build",
           "secondaryUrl": "/contact",
           "background": "ink"
+        }
+      },
+      "styles": {
+        "base": {
+          "buttonRadius": 8
         }
       },
       "children": []
