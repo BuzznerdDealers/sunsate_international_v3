@@ -29,6 +29,11 @@
           "width": 1600,
           "height": 900
         }
+      },
+      "styles": {
+        "base": {
+          "buttonRadius": 8
+        }
       }
     },
     {
@@ -561,6 +566,11 @@
           "secondaryLabel": "Apply for credit",
           "secondaryUrl": "#credit-applications",
           "background": "ink"
+        }
+      },
+      "styles": {
+        "base": {
+          "buttonRadius": 21
         }
       },
       "children": []
