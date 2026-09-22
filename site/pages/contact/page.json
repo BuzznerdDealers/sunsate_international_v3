@@ -29,6 +29,11 @@
           "width": 1600,
           "height": 900
         }
+      },
+      "styles": {
+        "base": {
+          "buttonRadius": 8
+        }
       }
     },
     {
@@ -145,6 +150,11 @@
                   "type": "form",
                   "props": {
                     "formId": "contact-us"
+                  },
+                  "styles": {
+                    "base": {
+                      "buttonRadius": 8
+                    }
                   }
                 }
               ]
@@ -1604,6 +1614,11 @@
           "secondaryLabel": "e-contact@sunstateintl.com",
           "secondaryUrl": "mailto:e-contact@sunstateintl.com",
           "background": "ink"
+        }
+      },
+      "styles": {
+        "base": {
+          "buttonRadius": 8
         }
       },
       "children": []
