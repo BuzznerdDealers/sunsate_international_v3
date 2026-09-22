@@ -34,7 +34,8 @@
         "base": {
           "textTransform": "uppercase",
           "backgroundImage": "https://vendure.buzznerdrv.com/assets/source/ac/aftermarket-2.jpg",
-          "backgroundSize": "cover"
+          "backgroundSize": "cover",
+          "buttonRadius": 8
         }
       }
     },
@@ -1562,6 +1563,11 @@
           "secondaryLabel": "Request an appointment",
           "secondaryUrl": "/service-appointment",
           "background": "ink"
+        }
+      },
+      "styles": {
+        "base": {
+          "buttonRadius": 8
         }
       },
       "children": []
