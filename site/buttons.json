@@ -1,44 +1,383 @@
 [
-  { "id": "browse-inventory", "label": "See what's available", "url": "/store/inventory", "style": "primary", "intent": "browse-inventory", "newTab": false, "active": true },
-  { "id": "view-all-inventory", "label": "View all inventory →", "url": "/store/inventory", "style": "link", "intent": "browse-inventory", "newTab": false, "active": true },
-  { "id": "browse-trucks", "label": "Browse trucks →", "url": "/store/inventory?type=truck", "style": "link", "intent": "browse-inventory", "newTab": false, "active": true },
-  { "id": "browse-trailers", "label": "Browse trailers →", "url": "/store/inventory?type=trailer", "style": "link", "intent": "browse-inventory", "newTab": false, "active": true },
-  { "id": "browse-buses", "label": "Browse buses →", "url": "/store/inventory?type=bus", "style": "link", "intent": "browse-inventory", "newTab": false, "active": true },
-  { "id": "explore-yard-trucks", "label": "Explore models →", "url": "/capacity-yard-trucks", "style": "link", "intent": "browse-inventory", "newTab": false, "active": true },
-  { "id": "browse-trailers-now", "label": "See what's available now", "url": "/store/inventory?type=trailer", "style": "primary", "intent": "browse-inventory", "newTab": false, "active": true },
-  { "id": "globe-trailers", "label": "Globe Trailers", "url": "/store/inventory?brand=globe-trailers", "style": "primary", "intent": "browse-inventory", "newTab": false, "active": true },
-  { "id": "read-our-story", "label": "Read more →", "url": "/about-us", "style": "link", "intent": "about", "newTab": false, "active": true },
-  { "id": "contact-us", "label": "Contact us", "url": "/contact", "style": "primary", "intent": "contact-dealer", "newTab": false, "active": true },
-  { "id": "send-a-message", "label": "Send a message", "url": "/contact#contact-form", "style": "secondary", "intent": "contact-dealer", "newTab": false, "active": true },
-  { "id": "call-main", "label": "Call 800.741.7566", "url": "tel:+18007417566", "style": "primary", "intent": "call-dealer", "newTab": false, "active": true },
-  { "id": "call-main-secondary", "label": "Call 800.741.7566", "url": "tel:+18007417566", "style": "secondary", "intent": "call-dealer", "newTab": false, "active": true },
-  { "id": "call-tampa", "label": "Call (813) 521-8148", "url": "tel:+18135218148", "style": "primary", "intent": "call-dealer", "newTab": false, "active": true },
-  { "id": "header-phone", "label": "☎ 813.521.8148", "url": "tel:+18135218148", "style": "primary", "intent": "call-dealer", "newTab": false, "active": true },
-  { "id": "email-us", "label": "info@sunstateintl.com", "url": "mailto:info@sunstateintl.com", "style": "secondary", "intent": "email-dealer", "newTab": false, "active": true },
-  { "id": "schedule-service", "label": "Schedule service", "url": "/service-appointment", "style": "primary", "intent": "book-service", "newTab": false, "active": true },
-  { "id": "request-appointment", "label": "Request an appointment", "url": "/service-appointment#appointment-form", "style": "primary", "intent": "book-service", "newTab": false, "active": true },
-  { "id": "service-department", "label": "Service Department →", "url": "/service", "style": "link", "intent": "book-service", "newTab": false, "active": true },
-  { "id": "mobile-service", "label": "Learn more about mobile service →", "url": "/mobile-service", "style": "link", "intent": "book-service", "newTab": false, "active": true },
-  { "id": "extended-service", "label": "Extended Service →", "url": "/extended-service", "style": "link", "intent": "book-service", "newTab": false, "active": true },
-  { "id": "parts-department", "label": "Parts Department →", "url": "/parts", "style": "link", "intent": "browse-parts", "newTab": false, "active": true },
-  { "id": "order-parts-online", "label": "Order parts online →", "url": "https://www.sunstateparts.com/login", "style": "secondary", "intent": "browse-parts", "newTab": true, "active": true },
-  { "id": "aftermarket-capabilities", "label": "Aftermarket capabilities →", "url": "/aftermarket", "style": "link", "intent": "browse-parts", "newTab": false, "active": true },
-  { "id": "apply-for-credit", "label": "Apply for credit", "url": "/financing#credit-applications", "style": "primary", "intent": "get-financing", "newTab": false, "active": true },
-  { "id": "financing", "label": "Financing →", "url": "/financing", "style": "link", "intent": "get-financing", "newTab": false, "active": true },
-  { "id": "all-locations", "label": "All locations →", "url": "/locations", "style": "link", "intent": "find-location", "newTab": false, "active": true },
-  { "id": "find-a-location", "label": "Find a location", "url": "/locations", "style": "secondary", "intent": "find-location", "newTab": false, "active": true },
-  { "id": "request-quote", "label": "Request a quote", "url": null, "formId": "request-a-quote", "style": "primary", "intent": "get-quote", "newTab": false, "active": true },
-  { "id": "check-availability", "label": "Check availability", "url": null, "formId": "check-availability", "style": "primary", "intent": "check-availability", "newTab": false, "active": true },
-  { "id": "request-info", "label": "Request info", "url": null, "formId": "request-info", "style": "secondary", "intent": "request-info", "newTab": false, "active": true },
-  { "id": "view-careers", "label": "See open roles", "url": "/careers", "style": "primary", "intent": "careers", "newTab": false, "active": true },
-  { "id": "meet-the-team", "label": "Meet the team →", "url": "/meet-the-team", "style": "link", "intent": "about", "newTab": false, "active": true },
-  { "id": "read-reviews", "label": "Read reviews →", "url": "/reviews", "style": "link", "intent": "about", "newTab": false, "active": true },
-  { "id": "all-posts", "label": "See all posts →", "url": "/blog/posts", "style": "secondary", "intent": "read-post", "newTab": false, "active": true },
-  { "id": "truck-configurator", "label": "Build your truck", "url": "/truck-configurator", "style": "primary", "intent": "build-truck", "newTab": false, "active": true },
-  { "id": "view-specifications", "label": "Brochures & spec sheets →", "url": "/specifications", "style": "link", "intent": "browse-inventory", "newTab": false, "active": true },
-  { "id": "deal-of-the-week", "label": "See this week's deal", "url": "/deal-of-the-week", "style": "primary", "intent": "browse-inventory", "newTab": false, "active": true },
-  { "id": "browse-new-trucks", "label": "Browse new trucks", "url": "/store/inventory?condition=new", "style": "primary", "intent": "browse-inventory", "newTab": false, "active": true },
-  { "id": "get-financing", "label": "Get financing", "url": "/financing", "style": "secondary", "intent": "get-financing", "newTab": false, "active": true },
-  { "id": "truck-configurator-link", "label": "Truck Configurator →", "url": "/truck-configurator", "style": "link", "intent": "build-truck", "newTab": false, "active": true },
-  { "id": "s13-powertrain", "label": "S13 Integrated Powertrain & brochures →", "url": "/specifications", "style": "link", "intent": "learn-more", "newTab": false, "active": true }
+  {
+    "id": "browse-inventory",
+    "label": "See what's available",
+    "url": "/store/inventory",
+    "style": "primary",
+    "intent": "browse-inventory",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "view-all-inventory",
+    "label": "View all inventory →",
+    "url": "/store/inventory",
+    "style": "link",
+    "intent": "browse-inventory",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "browse-trucks",
+    "label": "Browse trucks →",
+    "url": "/store/inventory?type=truck",
+    "style": "link",
+    "intent": "browse-inventory",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "browse-trailers",
+    "label": "Browse trailers →",
+    "url": "/store/inventory?type=trailer",
+    "style": "link",
+    "intent": "browse-inventory",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "browse-buses",
+    "label": "Browse buses →",
+    "url": "/store/inventory?type=bus",
+    "style": "link",
+    "intent": "browse-inventory",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "explore-yard-trucks",
+    "label": "Explore models →",
+    "url": "/capacity-yard-trucks",
+    "style": "link",
+    "intent": "browse-inventory",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "browse-trailers-now",
+    "label": "See what's available now",
+    "url": "/store/inventory?type=trailer",
+    "style": "primary",
+    "intent": "browse-inventory",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "globe-trailers",
+    "label": "Globe Trailers",
+    "url": "/store/inventory?brand=globe-trailers",
+    "style": "primary",
+    "intent": "browse-inventory",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "read-our-story",
+    "label": "Read more →",
+    "url": "/about-us",
+    "style": "link",
+    "intent": "about",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "contact-us",
+    "label": "Contact us",
+    "url": "/contact",
+    "style": "primary",
+    "intent": "contact-dealer",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "send-a-message",
+    "label": "Send a message",
+    "url": "/contact#contact-form",
+    "style": "secondary",
+    "intent": "contact-dealer",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "call-main",
+    "label": "Call 800.741.7566",
+    "url": "tel:+18007417566",
+    "style": "primary",
+    "intent": "call-dealer",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "call-main-secondary",
+    "label": "Call 800.741.7566",
+    "url": "tel:+18007417566",
+    "style": "secondary",
+    "intent": "call-dealer",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "call-tampa",
+    "label": "Call (813) 521-8148",
+    "url": "tel:+18135218148",
+    "style": "primary",
+    "intent": "call-dealer",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "header-phone",
+    "label": "<img src=\"https://vendure.buzznerdrv.com/assets/source/e6/international_icon_phone_black-1.svg\">813.521.8148",
+    "url": "tel:+18135218148",
+    "style": "primary",
+    "intent": "call-dealer",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "email-us",
+    "label": "info@sunstateintl.com",
+    "url": "mailto:info@sunstateintl.com",
+    "style": "secondary",
+    "intent": "email-dealer",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "schedule-service",
+    "label": "Schedule service",
+    "url": "/service-appointment",
+    "style": "primary",
+    "intent": "book-service",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "request-appointment",
+    "label": "Request an appointment",
+    "url": "/service-appointment#appointment-form",
+    "style": "primary",
+    "intent": "book-service",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "service-department",
+    "label": "Service Department →",
+    "url": "/service",
+    "style": "link",
+    "intent": "book-service",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "mobile-service",
+    "label": "Learn more about mobile service →",
+    "url": "/mobile-service",
+    "style": "link",
+    "intent": "book-service",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "extended-service",
+    "label": "Extended Service →",
+    "url": "/extended-service",
+    "style": "link",
+    "intent": "book-service",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "parts-department",
+    "label": "Parts Department →",
+    "url": "/parts",
+    "style": "link",
+    "intent": "browse-parts",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "order-parts-online",
+    "label": "Order parts online →",
+    "url": "https://www.sunstateparts.com/login",
+    "style": "secondary",
+    "intent": "browse-parts",
+    "newTab": true,
+    "active": true
+  },
+  {
+    "id": "aftermarket-capabilities",
+    "label": "Aftermarket capabilities →",
+    "url": "/aftermarket",
+    "style": "link",
+    "intent": "browse-parts",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "apply-for-credit",
+    "label": "Apply for credit",
+    "url": "/financing#credit-applications",
+    "style": "primary",
+    "intent": "get-financing",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "financing",
+    "label": "Financing →",
+    "url": "/financing",
+    "style": "link",
+    "intent": "get-financing",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "all-locations",
+    "label": "All locations →",
+    "url": "/locations",
+    "style": "link",
+    "intent": "find-location",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "find-a-location",
+    "label": "Find a location",
+    "url": "/locations",
+    "style": "secondary",
+    "intent": "find-location",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "request-quote",
+    "label": "Request a quote",
+    "url": null,
+    "formId": "request-a-quote",
+    "style": "primary",
+    "intent": "get-quote",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "check-availability",
+    "label": "Check availability",
+    "url": null,
+    "formId": "check-availability",
+    "style": "primary",
+    "intent": "check-availability",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "request-info",
+    "label": "Request info",
+    "url": null,
+    "formId": "request-info",
+    "style": "secondary",
+    "intent": "request-info",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "view-careers",
+    "label": "See open roles",
+    "url": "/careers",
+    "style": "primary",
+    "intent": "careers",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "meet-the-team",
+    "label": "Meet the team →",
+    "url": "/meet-the-team",
+    "style": "link",
+    "intent": "about",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "read-reviews",
+    "label": "Read reviews →",
+    "url": "/reviews",
+    "style": "link",
+    "intent": "about",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "all-posts",
+    "label": "See all posts →",
+    "url": "/blog/posts",
+    "style": "secondary",
+    "intent": "read-post",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "truck-configurator",
+    "label": "Build your truck",
+    "url": "/truck-configurator",
+    "style": "primary",
+    "intent": "build-truck",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "view-specifications",
+    "label": "Brochures & spec sheets →",
+    "url": "/specifications",
+    "style": "link",
+    "intent": "browse-inventory",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "deal-of-the-week",
+    "label": "See this week's deal",
+    "url": "/deal-of-the-week",
+    "style": "primary",
+    "intent": "browse-inventory",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "browse-new-trucks",
+    "label": "Browse new trucks",
+    "url": "/store/inventory?condition=new",
+    "style": "primary",
+    "intent": "browse-inventory",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "get-financing",
+    "label": "Get financing",
+    "url": "/financing",
+    "style": "secondary",
+    "intent": "get-financing",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "truck-configurator-link",
+    "label": "Truck Configurator →",
+    "url": "/truck-configurator",
+    "style": "link",
+    "intent": "build-truck",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "s13-powertrain",
+    "label": "S13 Integrated Powertrain & brochures →",
+    "url": "/specifications",
+    "style": "link",
+    "intent": "learn-more",
+    "newTab": false,
+    "active": true
+  }
 ]
