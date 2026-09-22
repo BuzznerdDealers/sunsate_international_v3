@@ -1,0 +1,21 @@
+{
+  "id": "check-list",
+  "label": "Checkmark list",
+  "description": "A ruled list with an accent checkmark opening each row — the handoff's inline \"spec table\" for what a service covers or what a customer gets. A real <ul>, so each row is one item the dealer edits, adds or reorders.",
+  "props": [
+    {
+      "key": "items",
+      "type": "list",
+      "label": "Items",
+      "fields": [
+        {
+          "key": "text",
+          "type": "text",
+          "label": "Item"
+        }
+      ]
+    }
+  ],
+  "html": "<ul class=\"ss-check\">{{#each items}}<li class=\"ss-check__i\"><span class=\"ss-check__m\" aria-hidden=\"true\">✓</span><span class=\"ss-check__t\">{{text}}</span></li>{{/each}}</ul>",
+  "css": ".ss-check{list-style:none;margin:8px 0 20px;padding:0}\n.ss-check__i{display:grid;grid-template-columns:auto minmax(0,1fr);border-bottom:1px solid var(--line)}\n.ss-check__m{padding:12px 14px;color:var(--accent);font-weight:800;font-size:15px;line-height:1.5}\n.ss-check__t{padding:12px 14px;font-size:15px;line-height:1.5;color:var(--body-text)}"
+}
