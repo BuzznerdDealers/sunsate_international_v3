@@ -34,7 +34,8 @@
         "base": {
           "backgroundImage": "https://vendure.buzznerdrv.com/assets/source/37/075.jpg",
           "backgroundSize": "cover",
-          "backgroundPosition": "center"
+          "backgroundPosition": "center",
+          "buttonRadius": 8
         }
       }
     },
@@ -623,6 +624,11 @@
           "secondaryLabel": "View Capacity inventory",
           "secondaryUrl": "/store/inventory?brand=capacity",
           "background": "ink"
+        }
+      },
+      "styles": {
+        "base": {
+          "buttonRadius": 8
         }
       },
       "children": []
