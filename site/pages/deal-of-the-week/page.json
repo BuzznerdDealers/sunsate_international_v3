@@ -29,6 +29,11 @@
           "width": 2000,
           "height": 1000
         }
+      },
+      "styles": {
+        "base": {
+          "buttonRadius": 8
+        }
       }
     },
     {
@@ -339,6 +344,11 @@
           "secondaryLabel": "Send a message",
           "secondaryUrl": "/contact",
           "background": "ink"
+        }
+      },
+      "styles": {
+        "base": {
+          "buttonRadius": 8
         }
       },
       "children": []
