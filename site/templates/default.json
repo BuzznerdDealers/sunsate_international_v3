@@ -2,7 +2,12 @@
   "version": 2,
   "id": "default",
   "name": "Site template",
-  "conditions": [],
+  "conditions": [
+    {
+      "type": "entireSite",
+      "ref": null
+    }
+  ],
   "nodes": [
     {
       "id": "utility-bar",
