@@ -369,7 +369,8 @@
                           "a": "We will notify you by email. If the shipment is scheduled more than 30 days after the order date we will email you and give you a cancellation option. Backorders are filled before new orders when the items become available."
                         }
                       ]
-                    }
+                    },
+                    "snapshot": null
                   }
                 }
               ]
@@ -393,7 +394,13 @@
           "secondaryUrl": "/parts",
           "background": "ink"
         }
-      }
+      },
+      "styles": {
+        "base": {
+          "buttonRadius": 8
+        }
+      },
+      "children": []
     }
   ]
 }
