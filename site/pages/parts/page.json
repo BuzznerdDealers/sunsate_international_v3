@@ -38,6 +38,11 @@
           "width": "full"
         }
       },
+      "styles": {
+        "base": {
+          "buttonRadius": 8
+        }
+      },
       "children": []
     },
     {
@@ -553,6 +558,11 @@
                         "intent": "contact-dealer"
                       }
                     ]
+                  },
+                  "styles": {
+                    "base": {
+                      "buttonRadius": 8
+                    }
                   }
                 }
               ]
@@ -1735,6 +1745,11 @@
           "secondaryLabel": "",
           "secondaryUrl": "",
           "background": "ink"
+        }
+      },
+      "styles": {
+        "base": {
+          "buttonRadius": 8
         }
       },
       "children": []
