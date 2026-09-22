@@ -23,6 +23,11 @@
           "width": 1600,
           "height": 900
         }
+      },
+      "styles": {
+        "base": {
+          "buttonRadius": 8
+        }
       }
     },
     {
@@ -476,6 +481,11 @@
               "props": {
                 "span": 12
               },
+              "styles": {
+                "base": {
+                  "buttonRadius": 8
+                }
+              },
               "children": [
                 {
                   "id": "svc-contact-phones",
@@ -501,6 +511,11 @@
                         "intent": "call-department"
                       }
                     ]
+                  },
+                  "styles": {
+                    "base": {
+                      "buttonRadius": 8
+                    }
                   }
                 },
                 {
