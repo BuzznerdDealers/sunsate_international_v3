@@ -286,3 +286,44 @@ The FAQ blocks on each rooftop page still spell out that branch's address and ho
 editorial prose. That is dealer-maintained copy, not live data: if a rooftop moves or
 changes its hours, those answers have to be edited on the Pages screen. Everything above
 them updates itself.
+---
+
+## 8. `SS_International_7` — the trailer-parts post
+
+The handoff is one page: the blog post *Why Go to Sun State Trailers for Semi Trailer Parts*.
+Its header, utility bar, footer and tokens are the ones already built here, so the chrome was
+left as the dealer last saved it and only the post was added.
+
+| Handoff | Here |
+|---|---|
+| `.hero--post` | the **Post hero** component, as on the other long-form posts |
+| `.toc` + `.toc__aside` | the **Post contents** coded widget and a bordered promo column (`parts-and-service` button) |
+| `.answer` | the quick-answer column (`#post-answer` on its text block, `#post-lede` on the lede) |
+| `.grid--2` of `.card` lists | a two-column row, each column a **Prose list** |
+| `.spec-table` checkmark rows | the new **Checkmark list** coded widget (`site/widgets/check-list.json`) — a real `<ul>` |
+| `.figure` | image blocks cropped to 380px (240px at phone width) in the post's CSS |
+| `.callout`, `.article__actions` | buttons from the library: `get-support`, `trailer-parts-get-started`, `contact-us-outline` |
+| `.share` | the **Share row** coded widget |
+| FAQ accordion + FAQPage schema | the platform `faq` widget, which emits the schema from the same items |
+| related posts | the platform **Latest posts** block, with an `all-blog-posts` link |
+| dark CTA band | the **Contact CTA band** component |
+
+Body copy is the handoff's verbatim. The three photographs are the handoff's placeholders,
+re-encoded as JPEG under `public/img/blog/` with the live post's filenames, so the real
+images can replace them one for one (or be swapped on the post in the dashboard).
+
+What the platform could not express, and what was changed:
+
+- **Related posts are the latest posts, not three chosen Parts posts.** The Latest posts
+  block has no topic filter and cannot leave out the post being read, so it asks for four
+  and the post's CSS hides its own card, or the fourth. The handoff's three related titles
+  do not exist as posts in this repo. Cards show a "Cover" placeholder until each post gets a
+  cover image on the Posts screen.
+- **The first FAQ answer opens closed**, as on every other FAQ band here.
+- **`BlogPosting`, `BreadcrumbList` and `speakable` JSON-LD are not emitted** — the build
+  writes the FAQ and dealer nodes for a post, not an article node. Worth reporting.
+- **Share links and inline links** point at this site's routes (`/parts`, `/service`,
+  `/locations/trailer-sales`), not the handoff's `sunstatetrailers.com` URLs. The
+  `/locations/trailer-sales` link resolves once that rooftop is published from Admin.
+- A **column cannot carry an anchor** (only sections and blocks render one), which is why
+  `#post-answer` sits on the answer's text block.
