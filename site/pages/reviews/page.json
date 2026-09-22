@@ -302,6 +302,11 @@
                         "intent": "leave-review"
                       }
                     ]
+                  },
+                  "styles": {
+                    "base": {
+                      "buttonRadius": 8
+                    }
                   }
                 }
               ]
@@ -350,6 +355,11 @@
           "secondaryLabel": "Shop Pre-Owned",
           "secondaryUrl": "/inventory",
           "background": "ink"
+        }
+      },
+      "styles": {
+        "base": {
+          "buttonRadius": 8
         }
       },
       "children": []
