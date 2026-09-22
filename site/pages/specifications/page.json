@@ -29,6 +29,11 @@
           "width": 1600,
           "height": 900
         }
+      },
+      "styles": {
+        "base": {
+          "buttonRadius": 8
+        }
       }
     },
     {
@@ -722,6 +727,11 @@
           "secondaryLabel": "Contact us",
           "secondaryUrl": "/contact",
           "background": "ink"
+        }
+      },
+      "styles": {
+        "base": {
+          "buttonRadius": 8
         }
       },
       "children": []
