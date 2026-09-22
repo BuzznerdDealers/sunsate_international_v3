@@ -29,6 +29,11 @@
           "width": 2000,
           "height": 1333
         }
+      },
+      "styles": {
+        "base": {
+          "buttonRadius": 8
+        }
       }
     },
     {
@@ -136,6 +141,11 @@
                   "type": "form",
                   "props": {
                     "formId": "service-appointment"
+                  },
+                  "styles": {
+                    "base": {
+                      "buttonRadius": 0
+                    }
                   }
                 },
                 {
@@ -1633,6 +1643,11 @@
           "secondaryLabel": "Request an appointment",
           "secondaryUrl": "#appointment-form",
           "background": "ink"
+        }
+      },
+      "styles": {
+        "base": {
+          "buttonRadius": 8
         }
       },
       "children": []
