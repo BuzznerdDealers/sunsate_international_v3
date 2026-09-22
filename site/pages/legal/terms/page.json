@@ -277,7 +277,8 @@
                           "a": "Yes. These Terms and Conditions apply to the Sun State International Trucks and Sun State Trailers websites, alongside our Policies and Privacy Policy."
                         }
                       ]
-                    }
+                    },
+                    "snapshot": null
                   }
                 }
               ]
@@ -301,7 +302,13 @@
           "secondaryUrl": "/contact",
           "background": "ink"
         }
-      }
+      },
+      "styles": {
+        "base": {
+          "buttonRadius": 8
+        }
+      },
+      "children": []
     }
   ]
 }
