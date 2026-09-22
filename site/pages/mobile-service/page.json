@@ -29,6 +29,11 @@
           "width": 2000,
           "height": 1333
         }
+      },
+      "styles": {
+        "base": {
+          "buttonRadius": 8
+        }
       }
     },
     {
@@ -260,6 +265,11 @@
           "width": "full"
         }
       },
+      "styles": {
+        "base": {
+          "buttonRadius": 8
+        }
+      },
       "children": []
     },
     {
@@ -373,6 +383,11 @@
           "secondaryLabel": "Request mobile service",
           "secondaryUrl": "/service-appointment#appointment-form",
           "background": "ink"
+        }
+      },
+      "styles": {
+        "base": {
+          "buttonRadius": 8
         }
       },
       "children": []
