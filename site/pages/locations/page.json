@@ -87,6 +87,13 @@
       ]
     },
     {
+      "id": "spacer",
+      "type": "spacer",
+      "props": {
+        "size": 6
+      }
+    },
+    {
       "id": "loc-list",
       "type": "sharedSection",
       "props": {
