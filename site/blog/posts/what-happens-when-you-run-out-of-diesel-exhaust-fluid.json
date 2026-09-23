@@ -1,0 +1,822 @@
+{
+  "slug": "what-happens-when-you-run-out-of-diesel-exhaust-fluid",
+  "title": "What Happens When You Run Out of Diesel Exhaust Fluid?",
+  "date": "2026-05-11",
+  "description": "What happens when you run out of diesel exhaust fluid? Learn the risks and schedule diesel service with Sun State International.",
+  "status": "published",
+  "coverImage": "/img/blog/what-happens-when-you-run-out-of-diesel-exhaust-fluid/hero.jpg",
+  "topic": "Service",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Service",
+          "title": "What Happens When You Run Out of Diesel Exhaust Fluid?",
+          "topic": "Service",
+          "date": "May 11, 2026",
+          "readTime": "5 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/what-happens-when-you-run-out-of-diesel-exhaust-fluid/hero.jpg",
+            "width": 1280,
+            "height": 851,
+            "alt": "Semi truck DEF and air line connections beneath the cab"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "What Is Diesel Exhaust Fluid?",
+                        "href": "#what-is-def"
+                      },
+                      {
+                        "label": "What Happens When You Run Out",
+                        "href": "#what-happens"
+                      },
+                      {
+                        "label": "Why DEF Problems Should Never Be Ignored",
+                        "href": "#why-never-ignore"
+                      },
+                      {
+                        "label": "Signs You Need Repair",
+                        "href": "#signs-need-repair"
+                      },
+                      {
+                        "label": "Preventing DEF System Problems",
+                        "href": "#preventing-def"
+                      },
+                      {
+                        "label": "Choosing the Right Diesel Mechanic",
+                        "href": "#choosing-mechanic"
+                      },
+                      {
+                        "label": "Keep Your Fleet Moving",
+                        "href": "#keep-moving"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "NEED SERVICE?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Schedule diesel diagnostics or DEF system repair.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "schedule-service",
+                                "label": "Schedule Service →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "If you operate a commercial truck, you've probably seen the warning lights that come on when diesel exhaust fluid levels get low. It's easy to think you can push it a little longer before refilling, especially during a busy workweek.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "But running out of diesel exhaust fluid can create much bigger problems than most drivers expect. Modern diesel trucks rely heavily on emissions systems to operate properly. Ignoring low DEF warnings can lead to reduced engine performance, forced speed limitations, and expensive downtime that hurts your business. Understanding what happens when you run out of diesel exhaust fluid can help you avoid unnecessary repairs and keep your fleet moving efficiently.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-what-is-def",
+                  "type": "heading",
+                  "props": {
+                    "text": "What Is Diesel Exhaust Fluid?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "what-is-def"
+                  }
+                },
+                {
+                  "id": "p-what-is-def-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Diesel exhaust fluid, commonly called DEF, is a solution made from purified water and urea. It works alongside your truck's Selective Catalytic Reduction (SCR) system to reduce harmful nitrogen oxide emissions produced by diesel engines. DEF is stored in a separate tank from diesel fuel and is automatically injected into the exhaust system while the truck is running.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-what-is-def-2",
+                  "type": "text",
+                  "props": {
+                    "text": "This process helps commercial trucks meet federal emissions regulations established by the Environmental Protection Agency (EPA). Without DEF, modern diesel trucks cannot properly control emissions, which is why manufacturers build in safeguards that limit vehicle performance when DEF levels get too low.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-what-happens",
+                  "type": "heading",
+                  "props": {
+                    "text": "What Happens When You Run Out of Diesel Exhaust Fluid?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "what-happens"
+                  }
+                },
+                {
+                  "id": "p-what-happens-1",
+                  "type": "text",
+                  "props": {
+                    "text": "The short answer is simple: your truck will eventually stop operating normally. What actually happens depends on the make, model, and system settings of your truck, but most commercial trucks follow a similar progression.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-what-happens-2",
+                  "type": "heading",
+                  "props": {
+                    "text": "Warning Lights and Alerts",
+                    "headingLevel": 3,
+                    "align": "left",
+                    "anchor": "warning-lights"
+                  }
+                },
+                {
+                  "id": "p-what-happens-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Before the DEF tank runs completely empty, drivers usually receive multiple warnings through the dashboard system. These alerts often include:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-what-happens-4",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Low DEF warning lights"
+                      },
+                      {
+                        "text": "Countdown mileage notifications"
+                      },
+                      {
+                        "text": "Reduced power warnings"
+                      },
+                      {
+                        "text": "Emissions system alerts"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-what-happens-5",
+                  "type": "text",
+                  "props": {
+                    "text": "Ignoring these warnings can quickly lead to operational restrictions.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-what-happens-6",
+                  "type": "heading",
+                  "props": {
+                    "text": "Engine Derate Mode",
+                    "headingLevel": 3,
+                    "align": "left",
+                    "anchor": "derate-mode"
+                  }
+                },
+                {
+                  "id": "p-what-happens-7",
+                  "type": "text",
+                  "props": {
+                    "text": "Once DEF levels become critically low or empty, most trucks enter what's called \"derate mode.\" In derate mode, the engine's power and speed are automatically reduced to encourage the driver to refill the DEF tank. Depending on the truck, you may notice:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-what-happens-8",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Reduced acceleration"
+                      },
+                      {
+                        "text": "Lower maximum speed"
+                      },
+                      {
+                        "text": "Poor engine performance"
+                      },
+                      {
+                        "text": "Limited RPMs"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-what-happens-9",
+                  "type": "text",
+                  "props": {
+                    "text": "For fleet owners, this creates major operational challenges, especially during long hauls or tight delivery schedules.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-what-happens-10",
+                  "type": "heading",
+                  "props": {
+                    "text": "The Truck May Eventually Fail to Restart",
+                    "headingLevel": 3,
+                    "align": "left",
+                    "anchor": "wont-restart"
+                  }
+                },
+                {
+                  "id": "p-what-happens-11",
+                  "type": "text",
+                  "props": {
+                    "text": "One of the biggest misconceptions is that trucks simply keep running without DEF. In many cases, once the truck is shut off after DEF depletion, the engine may not restart until the system is refilled properly. That's where downtime becomes expensive.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-why-never-ignore",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why DEF Problems Should Never Be Ignored",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "why-never-ignore"
+                  }
+                },
+                {
+                  "id": "p-why-never-ignore-1",
+                  "type": "text",
+                  "props": {
+                    "text": "DEF issues are not always caused by an empty tank alone. Sometimes drivers experience problems because of:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-why-never-ignore-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Contaminated DEF fluid"
+                      },
+                      {
+                        "text": "Frozen DEF systems"
+                      },
+                      {
+                        "text": "Sensor failures"
+                      },
+                      {
+                        "text": "SCR system malfunctions"
+                      },
+                      {
+                        "text": "DEF injector issues"
+                      },
+                      {
+                        "text": "Crystallization buildup"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-why-never-ignore-3",
+                  "type": "text",
+                  "props": {
+                    "text": "When these issues occur, professional diesel exhaust system repair is often necessary to prevent larger engine or emissions problems. Modern diesel emissions systems are complex, and trying to diagnose them without proper equipment can waste valuable time. That's why working with an experienced diesel mechanic for semi trucks matters.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-why-never-ignore-4-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-why-never-ignore-4",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-why-never-ignore-4-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "schedule-service",
+                                "label": "Get Expert Service for Your Fleet →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/what-happens-when-you-run-out-of-diesel-exhaust-fluid/1.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Diesel mechanic performing diagnostics on a semi truck emissions system"
+                    }
+                  }
+                },
+                {
+                  "id": "h-signs-need-repair",
+                  "type": "heading",
+                  "props": {
+                    "text": "Signs Your Truck May Need Diesel Exhaust System Repair",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "signs-need-repair"
+                  }
+                },
+                {
+                  "id": "p-signs-need-repair-1",
+                  "type": "text",
+                  "props": {
+                    "text": "In addition to DEF warnings, there are several signs your truck may need professional service. Common symptoms include:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-signs-need-repair-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Check engine lights"
+                      },
+                      {
+                        "text": "Excessive exhaust smoke"
+                      },
+                      {
+                        "text": "Loss of power"
+                      },
+                      {
+                        "text": "Frequent regeneration cycles"
+                      },
+                      {
+                        "text": "Poor fuel economy"
+                      },
+                      {
+                        "text": "Trouble accelerating"
+                      },
+                      {
+                        "text": "Fault codes related to emissions systems"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-signs-need-repair-3",
+                  "type": "text",
+                  "props": {
+                    "text": "These issues can sometimes overlap with problems involving diesel fuel system parts, sensors, or engine performance components, which is why accurate diagnostics are critical. At Sun State International, our technicians are trained to diagnose and repair commercial diesel systems efficiently so you can avoid extended downtime.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-preventing-def",
+                  "type": "heading",
+                  "props": {
+                    "text": "Preventing DEF System Problems",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "preventing-def"
+                  }
+                },
+                {
+                  "id": "p-preventing-def-1",
+                  "type": "text",
+                  "props": {
+                    "text": "The best way to avoid major DEF-related repairs is through regular maintenance and proactive inspections. Here are some of the best practices for DEF maintenance:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-preventing-def-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "title": "Keep DEF Levels Monitored",
+                        "text": "Never ignore low DEF warnings. Refilling early is far easier than dealing with a derated truck on the road."
+                      },
+                      {
+                        "title": "Use High-Quality DEF",
+                        "text": "Poor-quality DEF can contaminate the system and damage components."
+                      },
+                      {
+                        "title": "Store DEF Properly",
+                        "text": "DEF should be stored in temperature-controlled conditions whenever possible to prevent contamination or breakdown."
+                      },
+                      {
+                        "title": "Schedule Routine Service",
+                        "text": "Preventative maintenance allows technicians to inspect emissions systems before small issues become expensive repairs."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "fig-2",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/what-happens-when-you-run-out-of-diesel-exhaust-fluid/2.jpg",
+                      "width": 1280,
+                      "height": 851,
+                      "alt": "Technician using a wrench during commercial truck diesel repair service"
+                    }
+                  }
+                },
+                {
+                  "id": "h-need-service",
+                  "type": "heading",
+                  "props": {
+                    "text": "Need Reliable Commercial Truck Service?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "need-service"
+                  }
+                },
+                {
+                  "id": "p-need-service-1",
+                  "type": "text",
+                  "props": {
+                    "text": "When DEF issues happen, speed matters. Waiting days for diagnostics or parts can put your business behind schedule and create unnecessary stress for drivers and fleet managers. At Sun State International, we provide dependable support for fleets and owner-operators across Florida through our parts and service department. Whether you need diesel exhaust system repair, diagnostics, or replacement diesel fuel system parts, our team is here to help.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-need-service-2-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-need-service-2",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-need-service-2-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "service-department",
+                                "label": "Explore Our Service Department →"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-choosing-mechanic",
+                  "type": "heading",
+                  "props": {
+                    "text": "Choosing the Right Diesel Mechanic for Semi Trucks",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "choosing-mechanic"
+                  }
+                },
+                {
+                  "id": "p-choosing-mechanic-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Not every repair shop is equipped to handle today's commercial diesel technology. Emissions systems, DEF components, and diagnostic software require specialized training and equipment. When searching for commercial truck service near me, it's important to choose a dealership that understands both the technical side of repairs and the realities of running a trucking business.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-keep-moving",
+                  "type": "heading",
+                  "props": {
+                    "text": "Keep Your Fleet Moving With Sun State International",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "keep-moving"
+                  }
+                },
+                {
+                  "id": "p-keep-moving-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Running out of diesel exhaust fluid can lead to reduced performance, emissions system problems, and costly downtime. The good news is that most DEF-related issues are preventable with proper maintenance and quick attention to warning signs. From preventative maintenance to complete diesel exhaust system repair, our service department is equipped to support owner-operators and commercial fleets throughout Florida. Schedule your service appointment today and keep your trucks moving forward with confidence.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-keep-moving-2",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "parts-department",
+                        "label": "Explore Our Parts Department",
+                        "style": "primary"
+                      },
+                      {
+                        "ctaId": "schedule-service",
+                        "label": "Schedule Service With Sun State",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-share",
+                  "type": "post-share",
+                  "props": {
+                    "label": "Share",
+                    "items": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhat-happens-when-you-run-out-of-diesel-exhaust-fluid",
+                        "newTab": true
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhat-happens-when-you-run-out-of-diesel-exhaust-fluid&text=What%20Happens%20When%20You%20Run%20Out%20of%20Diesel%20Exhaust%20Fluid%3F",
+                        "newTab": true
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhat-happens-when-you-run-out-of-diesel-exhaust-fluid",
+                        "newTab": true
+                      },
+                      {
+                        "label": "Email",
+                        "url": "mailto:?subject=What%20Happens%20When%20You%20Run%20Out%20of%20Diesel%20Exhaust%20Fluid%3F&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhat-happens-when-you-run-out-of-diesel-exhaust-fluid",
+                        "newTab": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Need def or diesel system service?",
+          "heading": "Let's keep your fleet moving.",
+          "body": "Call 800.741.7566 and our service teams in Tampa, Sarasota, Davenport or Brooksville will get you back on the road.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/what-happens-when-you-run-out-of-diesel-exhaust-fluid\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/what-happens-when-you-run-out-of-diesel-exhaust-fluid\"])) > .bz-card:nth-child(n+4) { display: none; }\n"
+}

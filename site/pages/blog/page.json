@@ -8,7 +8,13 @@
         "headingLevel": 1,
         "eyebrow": "HOME / BLOG",
         "headline": "Blog",
-        "subhead": "Maintenance, diagnostics and fleet advice from the people who work on these trucks and trailers every day."
+        "subhead": "Maintenance, diagnostics and fleet advice from the people who work on these trucks and trailers every day.",
+        "image": {
+          "src": "/img/blog/blog-hero.jpg",
+          "alt": "A technician on a creeper under a white International truck with its hood raised in the Sun State service bay",
+          "width": 1280,
+          "height": 853
+        }
       }
     },
     {
@@ -94,6 +100,21 @@
               }
             },
             {
+              "topic": "Parts",
+              "topicKey": "parts",
+              "date": "Jul 15, 2026",
+              "dateISO": "2026-07-15",
+              "title": "Why Go to Sun State Trailers for Semi Trailer Parts",
+              "href": "/blog/posts/why-go-to-sun-state-trailers-for-semi-trailer-parts",
+              "excerpt": "When a trailer goes down, your business slows down with it. Whether you're hauling freight across Florida or managing an entire fleet, having access to reliable semi trailer parts and experienced service can make…",
+              "coverImage": {
+                "src": "/img/blog/why-go-to-sun-state-trailers-for-semi-trailer-parts/hero.jpg",
+                "alt": "Why Go to Sun State Trailers for Semi Trailer Parts",
+                "width": 1280,
+                "height": 853
+              }
+            },
+            {
               "topic": "Diagnostics",
               "topicKey": "diagnostics",
               "date": "Jul 13, 2026",
@@ -109,18 +130,33 @@
               }
             },
             {
-              "topic": "Parts",
-              "topicKey": "parts",
+              "topic": "Commercial trucks",
+              "topicKey": "commercial-trucks",
               "date": "Jun 25, 2026",
               "dateISO": "2026-06-25",
               "title": "Common Problems With Air Brake Parts for Semi Trucks",
               "href": "/blog/posts/common-problems-with-air-brake-parts-for-semi-trucks",
-              "excerpt": "When even one part begins to wear out or fail, it can lead to longer stopping distances, unexpected downtime, expensive repairs, and failed inspections. Understanding the most common problems with air brake parts can help you recognize issues early and keep your trucks operating safely.",
+              "excerpt": "Commercial trucks depend on reliable braking performance every mile they travel. Whether you're hauling freight across Florida or making local deliveries, your air brake system is one of the most important safety…",
               "coverImage": {
                 "src": "https://vendure.buzznerdrv.com/assets/source/c2/3.1__02.jpg",
                 "alt": "3.1__02.jpg",
                 "width": 2000,
                 "height": 1333
+              }
+            },
+            {
+              "topic": "Service",
+              "topicKey": "service",
+              "date": "Jun 19, 2026",
+              "dateISO": "2026-06-19",
+              "title": "What to Expect From an International Truck Service Center",
+              "href": "/blog/posts/what-to-expect-from-an-international-truck-service-center",
+              "excerpt": "When your truck is your livelihood, every hour it spends off the road matters. Whether you operate a single truck or manage an entire fleet, choosing the right International truck service center can make a…",
+              "coverImage": {
+                "src": "/img/blog/what-to-expect-from-an-international-truck-service-center/hero.jpg",
+                "alt": "What to Expect From an International Truck Service Center",
+                "width": 1280,
+                "height": 853
               }
             },
             {
@@ -130,12 +166,87 @@
               "dateISO": "2026-06-14",
               "title": "Commercial Truck Oil Change Mistakes That Cost You",
               "href": "/blog/posts/commercial-truck-oil-change-mistakes-that-cost-you",
-              "excerpt": "For owner-operators and fleet managers alike, routine maintenance isn’t just another item on the calendar. It’s one of the smartest investments you can make in your equipment.",
+              "excerpt": "Every mile your truck travels puts stress on its engine. While a commercial truck oil change may seem like one of the simplest maintenance tasks, overlooking it or cutting corners can lead to expensive repairs,…",
               "coverImage": {
                 "src": "https://vendure.buzznerdrv.com/assets/source/8f/4.1__02.jpg",
                 "alt": "4.1__02.jpg",
                 "width": 2000,
                 "height": 1333
+              }
+            },
+            {
+              "topic": "Maintenance",
+              "topicKey": "maintenance",
+              "date": "Jun 9, 2026",
+              "dateISO": "2026-06-09",
+              "title": "Why Fuel Filter Pressure in Your Semi Truck Matters",
+              "href": "/blog/posts/why-fuel-filter-pressure-in-your-semi-truck-matters",
+              "excerpt": "If your semi truck has started losing power, hesitating under load, or becoming harder to start, the problem may not be your engine. It could be something much simpler: your fuel filters.",
+              "coverImage": {
+                "src": "/img/blog/why-fuel-filter-pressure-in-your-semi-truck-matters/hero.jpg",
+                "alt": "Why Fuel Filter Pressure in Your Semi Truck Matters",
+                "width": 1280,
+                "height": 853
+              }
+            },
+            {
+              "topic": "Parts",
+              "topicKey": "parts",
+              "date": "Jun 2, 2026",
+              "dateISO": "2026-06-02",
+              "title": "How to Choose a Service and Truck Parts Dealer",
+              "href": "/blog/posts/how-to-choose-a-service-and-truck-parts-dealers",
+              "excerpt": "When your trucks are your livelihood, choosing the right truck parts dealer isn't a small decision. It's a business decision.",
+              "coverImage": {
+                "src": "/img/blog/how-to-choose-a-service-and-truck-parts-dealers/hero.jpg",
+                "alt": "How to Choose a Service and Truck Parts Dealer",
+                "width": 1280,
+                "height": 853
+              }
+            },
+            {
+              "topic": "Parts",
+              "topicKey": "parts",
+              "date": "May 12, 2026",
+              "dateISO": "2026-05-12",
+              "title": "Heavy Duty Truck Parts Tampa: What to Replace First",
+              "href": "/blog/posts/heavy-duty-truck-parts-tampa",
+              "excerpt": "Every commercial truck owner knows one thing for certain: parts wear out. The challenge is knowing which components need attention first before they create expensive breakdowns or unexpected downtime.",
+              "coverImage": {
+                "src": "/img/blog/heavy-duty-truck-parts-tampa/hero.jpg",
+                "alt": "Heavy Duty Truck Parts Tampa: What to Replace First",
+                "width": 1280,
+                "height": 853
+              }
+            },
+            {
+              "topic": "Service",
+              "topicKey": "service",
+              "date": "May 11, 2026",
+              "dateISO": "2026-05-11",
+              "title": "What Happens When You Run Out of Diesel Exhaust Fluid?",
+              "href": "/blog/posts/what-happens-when-you-run-out-of-diesel-exhaust-fluid",
+              "excerpt": "If you operate a commercial truck, you've probably seen the warning lights that come on when diesel exhaust fluid levels get low. It's easy to think you can push it a little longer before refilling, especially…",
+              "coverImage": {
+                "src": "/img/blog/what-happens-when-you-run-out-of-diesel-exhaust-fluid/hero.jpg",
+                "alt": "What Happens When You Run Out of Diesel Exhaust Fluid?",
+                "width": 1280,
+                "height": 851
+              }
+            },
+            {
+              "topic": "Service",
+              "topicKey": "service",
+              "date": "May 1, 2026",
+              "dateISO": "2026-05-01",
+              "title": "How to Choose the Right Truck Parts and Service Dealer",
+              "href": "/blog/posts/how-to-choose-the-right-truck-parts-and-service-dealer",
+              "excerpt": "When your trucks are your livelihood, downtime is more than an inconvenience. It costs money, delays deliveries, and puts pressure on your drivers and customers.",
+              "coverImage": {
+                "src": "/img/blog/how-to-choose-the-right-truck-parts-and-service-dealer/hero.jpg",
+                "alt": "How to Choose the Right Truck Parts and Service Dealer",
+                "width": 1280,
+                "height": 853
               }
             },
             {
@@ -145,7 +256,7 @@
               "dateISO": "2025-02-28",
               "title": "Features You Should Look for In a New Semi Truck",
               "href": "/blog/posts/features-you-should-look-for-in-a-new-semi-truck",
-              "excerpt": "Purchasing a new semi truck? Here are the features you should look for to get the most from your investment — camera systems, adaptive cruise control, fuel efficiency, emergency braking, ergonomics, tire pressure monitoring, warranties and OnCommand Connection fleet health monitoring.",
+              "excerpt": "When you're adding a new semi truck to your fleet, you want to make sure you're getting the best value for your investment. You can save money in the long run by prioritizing safety, efficiency, and reliability.…",
               "coverImage": {
                 "src": "https://vendure.buzznerdrv.com/assets/source/dc/5.1.jpg",
                 "alt": "5.1.jpg"
@@ -154,24 +265,44 @@
           ],
           "topics": [
             {
-              "label": "Service",
-              "value": "service"
-            },
-            {
-              "label": "Diagnostics",
-              "value": "diagnostics"
-            },
-            {
               "label": "Parts",
               "value": "parts"
+            },
+            {
+              "label": "Commercial trucks",
+              "value": "commercial-trucks"
+            },
+            {
+              "label": "Service",
+              "value": "service"
             },
             {
               "label": "Maintenance",
               "value": "maintenance"
             },
             {
+              "label": "Company",
+              "value": "company"
+            },
+            {
+              "label": "Sales",
+              "value": "sales"
+            },
+            {
               "label": "Trucks",
               "value": "trucks"
+            },
+            {
+              "label": "Parts & Service",
+              "value": "parts-and-service"
+            },
+            {
+              "label": "Fleet",
+              "value": "fleet"
+            },
+            {
+              "label": "Diagnostics",
+              "value": "diagnostics"
             }
           ]
         }

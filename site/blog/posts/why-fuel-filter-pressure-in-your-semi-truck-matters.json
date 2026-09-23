@@ -1,60 +1,827 @@
 {
   "slug": "why-fuel-filter-pressure-in-your-semi-truck-matters",
-  "title": "Why Fuel Filter Pressure In Your Semi Truck Matters",
+  "title": "Why Fuel Filter Pressure in Your Semi Truck Matters",
   "date": "2026-06-09",
-  "description": "Fuel filters are responsible for removing dirt, debris, water, and contaminants before they reach sensitive fuel system components. For owner-operators and fleet managers, understanding how fuel filter pressure affects performance can help prevent unexpected downtime and extend the life of your truck.",
-  "status": "draft",
-  "coverImage": null,
+  "description": "Learn why fuel filter pressure in semi truck systems matters. Protect performance with expert parts and service from Sun State International.",
+  "status": "published",
+  "coverImage": "/img/blog/why-fuel-filter-pressure-in-your-semi-truck-matters/hero.jpg",
   "topic": "Maintenance",
   "nodes": [
     {
-      "id": "intro",
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Maintenance",
+          "title": "Why Fuel Filter Pressure in Your Semi Truck Matters",
+          "topic": "Maintenance",
+          "date": "June 9, 2026",
+          "readTime": "5 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/why-fuel-filter-pressure-in-your-semi-truck-matters/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Technicians inspecting a commercial truck engine bay at Sun State International"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
       "type": "section",
       "props": {
         "width": "boxed",
-        "paddingY": 7
+        "background": "card",
+        "paddingY": 8
       },
       "children": [
         {
-          "id": "intro-row",
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "How Pressure Affects Your Engine",
+                        "href": "#how-it-affects"
+                      },
+                      {
+                        "label": "What Causes Pressure Problems",
+                        "href": "#causes"
+                      },
+                      {
+                        "label": "Primary & Secondary Filters",
+                        "href": "#primary-secondary"
+                      },
+                      {
+                        "label": "Signs to Replace Your Filter",
+                        "href": "#signs"
+                      },
+                      {
+                        "label": "Preventive Maintenance",
+                        "href": "#one-part"
+                      },
+                      {
+                        "label": "Why OEM Filters Matter",
+                        "href": "#oem-matters"
+                      },
+                      {
+                        "label": "Professional Maintenance",
+                        "href": "#professional-maintenance"
+                      },
+                      {
+                        "label": "Keep Your Trucks Running Strong",
+                        "href": "#keep-running"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "NEED SERVICE?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Schedule an appointment with our factory-trained technicians.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "schedule-service",
+                                "label": "Service Appointment →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "If your semi truck has started losing power, hesitating under load, or becoming harder to start, the problem may not be your engine. It could be something much simpler: your fuel filters.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Maintaining proper fuel filter pressure in your semi truck is essential for keeping your engine running efficiently. Fuel filters are responsible for removing dirt, debris, water, and contaminants before they reach sensitive fuel system components. For owner-operators and fleet managers, understanding how fuel filter pressure affects performance can help prevent unexpected downtime and extend the life of your truck.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-how-it-affects",
+                  "type": "heading",
+                  "props": {
+                    "text": "How Fuel Filter Pressure Can Affect Your Engine",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "how-it-affects"
+                  }
+                },
+                {
+                  "id": "p-how-it-affects-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Modern diesel engines rely on consistent fuel pressure to operate efficiently. When fuel cannot flow freely through the filter, the entire fuel system is affected.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-how-it-affects-2",
+                  "type": "text",
+                  "props": {
+                    "text": "A restricted filter can cause:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-how-it-affects-3",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Reduced engine power"
+                      },
+                      {
+                        "text": "Poor fuel economy"
+                      },
+                      {
+                        "text": "Hard starting"
+                      },
+                      {
+                        "text": "Rough idle"
+                      },
+                      {
+                        "text": "Loss of acceleration"
+                      },
+                      {
+                        "text": "Increased strain on the fuel pump"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-how-it-affects-4",
+                  "type": "text",
+                  "props": {
+                    "text": "If ignored for too long, low fuel pressure can damage expensive components like injectors and high-pressure fuel pumps. Replacing filters before they become restricted is one of the simplest ways to avoid major repairs.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-causes",
+                  "type": "heading",
+                  "props": {
+                    "text": "What Causes Fuel Filter Pressure Problems?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "causes"
+                  }
+                },
+                {
+                  "id": "p-causes-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Fuel filters naturally collect contaminants over time. That's exactly what they're designed to do. However, once enough debris builds up, fuel flow becomes restricted.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-causes-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Common causes include:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-causes-3",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Dirty fuel"
+                      },
+                      {
+                        "text": "Water contamination"
+                      },
+                      {
+                        "text": "Normal filter wear"
+                      },
+                      {
+                        "text": "Poor maintenance intervals"
+                      },
+                      {
+                        "text": "Biological growth inside fuel tanks"
+                      },
+                      {
+                        "text": "Sediment from aging tanks"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-causes-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Florida's heat and humidity can also contribute to fuel contamination if tanks aren't maintained properly. Following a consistent diesel truck maintenance schedule helps catch these issues before they lead to breakdowns.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-primary-secondary",
+                  "type": "heading",
+                  "props": {
+                    "text": "Understanding Primary and Secondary Fuel Filters",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "primary-secondary"
+                  }
+                },
+                {
+                  "id": "p-primary-secondary-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Many heavy-duty diesel engines use two fuel filters.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-primary-secondary-2",
+                  "type": "heading",
+                  "props": {
+                    "text": "Semi Truck Pre-Filters",
+                    "headingLevel": 3,
+                    "align": "left",
+                    "anchor": "pre-filters"
+                  }
+                },
+                {
+                  "id": "p-primary-secondary-3",
+                  "type": "text",
+                  "props": {
+                    "text": "The first stage is often referred to as the semi-truck pre-filter or primary fuel filter. Its job is to remove larger contaminants and separate water before fuel reaches the engine. Replacing this filter regularly protects the rest of the fuel system from unnecessary wear.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-primary-secondary-4",
+                  "type": "heading",
+                  "props": {
+                    "text": "Secondary Fuel Filters",
+                    "headingLevel": 3,
+                    "align": "left",
+                    "anchor": "secondary-filters"
+                  }
+                },
+                {
+                  "id": "p-primary-secondary-5",
+                  "type": "text",
+                  "props": {
+                    "text": "The secondary filter captures much finer particles before fuel reaches the injectors. Because today's diesel injection systems operate under extremely high pressure, even microscopic contaminants can cause expensive damage.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-primary-secondary-6",
+                  "type": "text",
+                  "props": {
+                    "text": "Replacing both filters at the recommended intervals helps maintain proper fuel filter pressure in your semi truck while protecting critical engine components.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-primary-secondary-7",
+                  "type": "heading",
+                  "props": {
+                    "text": "Need Replacement Fuel Filters?",
+                    "headingLevel": 3,
+                    "align": "left",
+                    "anchor": "need-filters"
+                  }
+                },
+                {
+                  "id": "p-primary-secondary-8",
+                  "type": "text",
+                  "props": {
+                    "text": "Sun State International stocks quality OEM and aftermarket semi truck oil filters, fuel filters, and other maintenance parts to keep your fleet operating at peak performance. Visit our Parts Department to find the right filters for your truck.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-primary-secondary-9-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-primary-secondary-9",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-primary-secondary-9-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "order-parts-online",
+                                "label": "Get the Parts You Need →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/why-fuel-filter-pressure-in-your-semi-truck-matters/1.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Sun State International team members reviewing fleet service in the shop"
+                    }
+                  }
+                },
+                {
+                  "id": "h-signs",
+                  "type": "heading",
+                  "props": {
+                    "text": "Signs It's Time to Replace Your Fuel Filter",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "signs"
+                  }
+                },
+                {
+                  "id": "p-signs-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Fuel filters rarely fail without warning. Watch for these common symptoms:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-signs-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Loss of power climbing hills"
+                      },
+                      {
+                        "text": "Engine hesitation"
+                      },
+                      {
+                        "text": "Longer crank times"
+                      },
+                      {
+                        "text": "Check engine light"
+                      },
+                      {
+                        "text": "Reduced fuel economy"
+                      },
+                      {
+                        "text": "Difficulty maintaining highway speeds"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-signs-3",
+                  "type": "text",
+                  "props": {
+                    "text": "These symptoms often appear gradually, making them easy to overlook. Routine inspections during scheduled maintenance help identify restricted filters before performance suffers.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-one-part",
+                  "type": "heading",
+                  "props": {
+                    "text": "Fuel Filters Are Just One Part of Preventive Maintenance",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "one-part"
+                  }
+                },
+                {
+                  "id": "p-one-part-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Fuel filters work alongside several other components that protect your engine. A complete preventive maintenance program should also include:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-one-part-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Engine oil changes"
+                      },
+                      {
+                        "text": "Oil filter replacement"
+                      },
+                      {
+                        "text": "Air filter inspections"
+                      },
+                      {
+                        "text": "Coolant checks"
+                      },
+                      {
+                        "text": "Fuel system inspections"
+                      },
+                      {
+                        "text": "Belt and hose inspections"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-one-part-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Regular commercial truck oil change services are another critical part of keeping your diesel engine healthy. Clean oil and clean fuel work together to reduce wear, improve efficiency, and maximize engine life. Keeping up with routine maintenance costs far less than replacing injectors, fuel pumps, or major engine components.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-oem-matters",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why OEM Filters Make a Difference",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "oem-matters"
+                  }
+                },
+                {
+                  "id": "p-oem-matters-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Not every filter is built to the same standards. High-quality filters provide:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-oem-matters-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Better filtration efficiency"
+                      },
+                      {
+                        "text": "Proper fuel flow"
+                      },
+                      {
+                        "text": "Correct pressure ratings"
+                      },
+                      {
+                        "text": "Longer service life"
+                      },
+                      {
+                        "text": "Improved engine protection"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-oem-matters-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Using filters designed for your specific engine helps maintain proper fuel pressure and ensures reliable performance. At Sun State International, our parts specialists help customers choose filters that meet manufacturer specifications, so you can feel confident you're installing the right components every time.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-professional-maintenance",
+                  "type": "heading",
+                  "props": {
+                    "text": "Professional Maintenance Helps Protect Your Investment",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "professional-maintenance"
+                  }
+                },
+                {
+                  "id": "p-professional-maintenance-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Replacing a fuel filter may seem like a simple job, but today's diesel engines are more sophisticated than ever.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-professional-maintenance-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Modern fuel systems require:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-professional-maintenance-3",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Proper priming procedures"
+                      },
+                      {
+                        "text": "Correct installation"
+                      },
+                      {
+                        "text": "Inspection for contamination"
+                      },
+                      {
+                        "text": "Fuel pressure verification"
+                      },
+                      {
+                        "text": "System diagnostics when needed"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-professional-maintenance-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Our factory-trained technicians don't simply replace filters. They inspect the entire fuel system to identify potential issues before they become expensive repairs.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-2",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/why-fuel-filter-pressure-in-your-semi-truck-matters/2.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Technician reviewing parts records for fleet maintenance at Sun State International"
+                    }
+                  }
+                },
+                {
+                  "id": "h-keep-running",
+                  "type": "heading",
+                  "props": {
+                    "text": "Keep Your Trucks Running Strong With Sun State International",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "keep-running"
+                  }
+                },
+                {
+                  "id": "p-keep-running-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, we understand that every hour your truck spends in the shop is time it isn't earning revenue. That's why we focus on providing dependable parts, quick turnaround times, and customer service that puts your business first. Whether you need replacement filters, routine maintenance, or expert diagnostics, our experienced team is here to help keep your trucks operating at their best. <a href=\"/service-appointment\">Schedule service with Sun State International</a> today and keep your fuel system performing the way it was designed to.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-keep-running-2",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "schedule-service",
+                        "label": "Schedule Your Service"
+                      },
+                      {
+                        "ctaId": "order-parts-online",
+                        "label": "Shop for Parts"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-share",
+                  "type": "post-share",
+                  "props": {
+                    "label": "Share",
+                    "items": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhy-fuel-filter-pressure-in-your-semi-truck-matters",
+                        "newTab": true
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhy-fuel-filter-pressure-in-your-semi-truck-matters&text=Why%20Fuel%20Filter%20Pressure%20in%20Your%20Semi%20Truck%20Matters",
+                        "newTab": true
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhy-fuel-filter-pressure-in-your-semi-truck-matters",
+                        "newTab": true
+                      },
+                      {
+                        "label": "Email",
+                        "url": "mailto:?subject=Why%20Fuel%20Filter%20Pressure%20in%20Your%20Semi%20Truck%20Matters&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhy-fuel-filter-pressure-in-your-semi-truck-matters",
+                        "newTab": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
           "type": "row",
           "props": {
             "gap": 5
           },
           "children": [
             {
-              "id": "intro-col",
+              "id": "related-col",
               "type": "column",
               "props": {
                 "span": 12
               },
               "children": [
                 {
-                  "id": "intro-text",
-                  "type": "text",
+                  "id": "related-h",
+                  "type": "heading",
                   "props": {
-                    "text": "Fuel filters are responsible for removing dirt, debris, water, and contaminants before they reach sensitive fuel system components. For owner-operators and fleet managers, understanding how fuel filter pressure affects performance can help prevent unexpected downtime and extend the life of your truck.",
-                    "width": "full"
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
                   }
                 },
                 {
-                  "id": "intro-note",
-                  "type": "text",
+                  "id": "related-posts",
+                  "type": "postsList",
                   "props": {
-                    "text": "The full article was published on sunstateintl.com. Paste the migrated body here in Posts → this post, and the card on the blog index updates with it.",
-                    "width": "full"
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
                   }
                 },
                 {
-                  "id": "intro-cta",
+                  "id": "related-cta",
                   "type": "buttons",
                   "props": {
+                    "align": "left",
                     "items": [
                       {
-                        "label": "Read the original article →",
-                        "url": "https://www.sunstateintl.com/why-fuel-filter-pressure-in-your-semi-truck-matters/",
-                        "style": "link",
-                        "intent": "read-post"
+                        "ctaId": "all-blog-posts"
                       }
                     ]
                   }
@@ -67,62 +834,21 @@
     },
     {
       "id": "post-cta",
-      "type": "section",
+      "type": "sharedSection",
       "props": {
-        "width": "boxed",
-        "background": "paper",
-        "paddingY": 8
-      },
-      "children": [
-        {
-          "id": "post-cta-row",
-          "type": "row",
-          "props": {
-            "gap": 5
-          },
-          "children": [
-            {
-              "id": "post-cta-col",
-              "type": "column",
-              "props": {
-                "span": 12
-              },
-              "children": [
-                {
-                  "id": "post-cta-h",
-                  "type": "heading",
-                  "props": {
-                    "text": "Got the same symptom on a unit you run?",
-                    "headingLevel": 2
-                  }
-                },
-                {
-                  "id": "post-cta-b",
-                  "type": "text",
-                  "props": {
-                    "text": "Call 800.741.7566 and we'll look at the specific truck or trailer instead of the general case.",
-                    "width": "full"
-                  }
-                },
-                {
-                  "id": "post-cta-btn",
-                  "type": "buttons",
-                  "props": {
-                    "items": [
-                      {
-                        "ctaId": "request-appointment"
-                      },
-                      {
-                        "ctaId": "call-main-secondary"
-                      }
-                    ]
-                  }
-                }
-              ]
-            }
-          ]
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Ready to minimize downtime?",
+          "heading": "Let's get you back on the road.",
+          "body": "Call 800.741.7566 and our service team in Tampa, Sarasota, Davenport or Brooksville will get your appointment scheduled.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact"
         }
-      ]
+      },
+      "children": []
     }
-  ]
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/why-fuel-filter-pressure-in-your-semi-truck-matters\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/why-fuel-filter-pressure-in-your-semi-truck-matters\"])) > .bz-card:nth-child(n+4) { display: none; }\n"
 }

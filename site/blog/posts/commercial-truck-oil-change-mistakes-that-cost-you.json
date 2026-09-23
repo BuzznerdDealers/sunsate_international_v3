@@ -2,487 +2,617 @@
   "slug": "commercial-truck-oil-change-mistakes-that-cost-you",
   "title": "Commercial Truck Oil Change Mistakes That Cost You",
   "date": "2026-06-14",
-  "description": "For owner-operators and fleet managers alike, routine maintenance isn’t just another item on the calendar. It’s one of the smartest investments you can make in your equipment.",
+  "description": "Commercial truck oil change tips that help prevent costly repairs. Protect your fleet and schedule service with Sun State International.",
   "status": "published",
-  "coverImage": null,
+  "coverImage": "/img/blog/commercial-truck-oil-change-mistakes-that-cost-you/hero.jpg",
   "topic": "Maintenance",
   "nodes": [
     {
-      "id": "intro",
-      "type": "section",
+      "id": "hero",
+      "type": "sharedSection",
       "props": {
-        "width": "boxed",
-        "paddingY": 0
-      },
-      "children": [
-        {
-          "id": "image",
-          "type": "image",
-          "props": {
-            "width": "full",
-            "image": {
-              "src": "https://vendure.buzznerdrv.com/assets/source/bc/4.1.jpg",
-              "alt": "4.3.jpg",
-              "width": 2000,
-              "height": 1333
-            }
-          }
-        },
-        {
-          "id": "intro-row",
-          "type": "row",
-          "props": {
-            "gap": 5
-          },
-          "children": [
-            {
-              "id": "intro-col",
-              "type": "column",
-              "props": {
-                "span": 12
-              },
-              "children": [
-                {
-                  "id": "spacer",
-                  "type": "spacer",
-                  "props": {
-                    "size": 6
-                  }
-                },
-                {
-                  "id": "intro-text",
-                  "type": "text",
-                  "props": {
-                    "width": "full",
-                    "text": "Every mile your truck travels puts stress on its engine. While a commercial truck oil change may seem like one of the simplest maintenance tasks, overlooking it or cutting corners can lead to expensive repairs, unnecessary downtime, and a shorter engine lifespan.\n\nFor owner-operators and fleet managers alike, routine maintenance isn’t just another item on the calendar. It’s one of the smartest investments you can make in your equipment."
-                  }
-                },
-                {
-                  "id": "spacer-2",
-                  "type": "spacer",
-                  "props": {
-                    "size": 6
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "heading",
-          "type": "heading",
-          "props": {
-            "headingLevel": 2,
-            "align": "left",
-            "text": "Mistake #1: Waiting Too Long Between Oil Changes"
-          }
-        },
-        {
-          "id": "text",
-          "type": "text",
-          "props": {
-            "align": "left",
-            "width": "full",
-            "text": "Every manufacturer recommends a diesel truck maintenance schedule for a reason. Oil gradually loses its ability to lubricate engine components as contaminants, soot, and debris accumulate. Waiting too long between services increases engine wear and can reduce fuel efficiency.\n\nFactors that may require more frequent service include:"
-          }
-        },
-        {
-          "id": "text-factors",
-          "type": "list",
-          "props": {
-            "headingLevel": 3,
-            "columns": 2,
-            "items": [
-              {
-                "label": "Frequent stop-and-go driving"
-              },
-              {
-                "label": "Heavy hauling"
-              },
-              {
-                "label": "Idling for extended periods"
-              },
-              {
-                "label": "Dusty job sites"
-              },
-              {
-                "label": "Extreme temperatures"
-              }
-            ]
-          }
-        },
-        {
-          "id": "text-b",
-          "type": "text",
-          "props": {
-            "align": "left",
-            "width": "full",
-            "text": "Following a consistent diesel truck maintenance schedule helps protect one of your fleet’s biggest investments."
-          }
-        },
-        {
-          "id": "spacer-3",
-          "type": "spacer",
-          "props": {
-            "size": 6
-          }
-        },
-        {
-          "id": "heading-2",
-          "type": "heading",
-          "props": {
-            "headingLevel": 2,
-            "align": "left",
-            "text": "Mistake #2: Ignoring Other Systems During Routine Maintenance"
-          }
-        },
-        {
-          "id": "text-2",
-          "type": "text",
-          "props": {
-            "align": "left",
-            "width": "full",
-            "text": "An oil change is one of the best opportunities to inspect other critical truck components. Experienced technicians don’t simply drain the oil and send you on your way. They look for early warning signs that could become larger issues later.\n\nThis includes inspecting:"
-          }
-        },
-        {
-          "id": "text-2-checks",
-          "type": "list",
-          "props": {
-            "headingLevel": 3,
-            "columns": 2,
-            "items": [
-              {
-                "label": "Belts and hoses"
-              },
-              {
-                "label": "Brake components"
-              },
-              {
-                "label": "Suspension"
-              },
-              {
-                "label": "Batteries"
-              },
-              {
-                "label": "Filters"
-              },
-              {
-                "label": "Fluid levels"
-              },
-              {
-                "label": "Tires"
-              }
-            ]
-          }
-        },
-        {
-          "id": "text-2-b",
-          "type": "text",
-          "props": {
-            "align": "left",
-            "width": "full",
-            "text": "Routine inspections often identify worn truck cooling system parts before overheating leads to engine damage. Likewise, inspecting diesel fuel system parts helps prevent fuel delivery issues that can affect performance and efficiency. Catching these problems early is far less expensive than roadside repairs."
-          }
-        },
-        {
-          "id": "spacer-4",
-          "type": "spacer",
-          "props": {
-            "size": 6
-          }
-        },
-        {
-          "id": "heading-3",
-          "type": "heading",
-          "props": {
-            "headingLevel": 2,
-            "align": "left",
-            "text": "Mistake #3: Using Low-Quality Parts"
-          }
-        },
-        {
-          "id": "text-3",
-          "type": "text",
-          "props": {
-            "align": "left",
-            "width": "full",
-            "text": "Not every oil filter or replacement component is built to manufacturer standards. Quality filters help remove contaminants while maintaining proper oil flow throughout the engine. The same is true for replacement cooling system parts and diesel fuel system parts. Choosing genuine or high-quality OEM components helps ensure proper fit, reliable performance, and longer service life."
-          }
-        },
-        {
-          "id": "spacer-10",
-          "type": "spacer",
-          "props": {
-            "size": 4
-          }
-        },
-        {
-          "id": "heading-4",
-          "type": "heading",
-          "props": {
-            "headingLevel": 2,
-            "align": "left",
-            "text": "Need Genuine Parts?"
-          }
-        },
-        {
-          "id": "text-4",
-          "type": "text",
-          "props": {
-            "align": "left",
-            "width": "full",
-            "text": "Sun State International’s online parts store makes it easy to order genuine commercial truck parts backed by trusted manufacturers. Whether you need filters, cooling system components, or replacement fuel system parts, we’re here to help keep your trucks moving. Visit the Sun State International Online Parts Store to order genuine truck parts today."
-          }
-        },
-        {
-          "id": "spacer-5",
-          "type": "spacer",
-          "props": {
-            "size": 6
-          }
-        },
-        {
-          "id": "image-2",
-          "type": "image",
-          "props": {
-            "width": "full",
-            "image": {
-              "src": "https://vendure.buzznerdrv.com/assets/source/45/4.2.jpg",
-              "alt": "4.2.jpg",
-              "height": 1000,
-              "width": 1150
-            }
-          }
-        },
-        {
-          "id": "spacer-6",
-          "type": "spacer",
-          "props": {
-            "size": 6
-          }
-        },
-        {
-          "id": "heading-5",
-          "type": "heading",
-          "props": {
-            "headingLevel": 2,
-            "align": "left",
-            "text": "Mistake #4: Treating Every Truck the Same"
-          }
-        },
-        {
-          "id": "text-5",
-          "type": "text",
-          "props": {
-            "align": "left",
-            "width": "full",
-            "text": "No two fleets operate exactly alike. A regional delivery truck has different maintenance needs than a long-haul tractor or construction vehicle. Mileage, engine hours, terrain, payload, and operating conditions all affect maintenance intervals. Working with experienced technicians allows you to build a maintenance plan based on how your trucks are actually used instead of relying on a one-size-fits-all schedule. That personalized approach helps improve reliability while reducing unnecessary service costs."
-          }
-        },
-        {
-          "id": "spacer-7",
-          "type": "spacer",
-          "props": {
-            "size": 6
-          }
-        },
-        {
-          "id": "heading-6",
-          "type": "heading",
-          "props": {
-            "headingLevel": 2,
-            "align": "left",
-            "text": "Mistake #5: Waiting Until Something Breaks"
-          }
-        },
-        {
-          "id": "text-6",
-          "type": "text",
-          "props": {
-            "align": "left",
-            "width": "full",
-            "text": "Many expensive engine repairs begin with small issues that could have been caught during preventive maintenance. Leaks, worn filters, contaminated fluids, or failing components rarely happen overnight. Regular inspections and scheduled commercial truck oil change services allow technicians to identify developing problems before they lead to breakdowns. Preventive maintenance is one of the most effective ways to reduce truck downtime services across your fleet.\n\nLess downtime means:"
-          }
-        },
-        {
-          "id": "text-6-gains",
-          "type": "list",
-          "props": {
-            "headingLevel": 3,
-            "columns": 2,
-            "items": [
-              {
-                "label": "More deliveries completed"
-              },
-              {
-                "label": "Fewer emergency repairs"
-              },
-              {
-                "label": "Better customer satisfaction"
-              },
-              {
-                "label": "Lower operating costs"
-              },
-              {
-                "label": "Longer equipment life"
-              }
-            ]
-          }
-        },
-        {
-          "id": "spacer-9",
-          "type": "spacer",
-          "props": {
-            "size": 6
-          }
-        },
-        {
-          "id": "heading-7",
-          "type": "heading",
-          "props": {
-            "headingLevel": 2,
-            "align": "left",
-            "text": "Why a Commercial Truck Oil Change Matters More Than You Think"
-          }
-        },
-        {
-          "id": "text-7",
-          "type": "text",
-          "props": {
-            "align": "left",
-            "width": "full",
-            "text": "Heavy-duty diesel engines operate under extreme conditions every day. Long hauls, stop-and-go traffic, heavy payloads, and Florida’s heat all accelerate engine wear. Fresh oil lubricates critical engine components, reduces friction, controls heat, and helps remove contaminants before they damage expensive internal parts. Skipping a scheduled commercial truck oil change doesn’t save money. It often creates much larger repair bills later. Preventive maintenance is one of the most effective ways to control those costs while keeping trucks on the road."
-          }
-        },
-        {
-          "id": "spacer-8",
-          "type": "spacer",
-          "props": {
-            "size": 6
-          }
-        },
-        {
-          "id": "heading-8",
-          "type": "heading",
-          "props": {
-            "headingLevel": 2,
-            "align": "left",
-            "text": "Partner With a Service Team That Understands Your Business"
-          }
-        },
-        {
-          "id": "text-8",
-          "type": "text",
-          "props": {
-            "align": "left",
-            "width": "full",
-            "text": "Keeping commercial trucks on the road requires more than changing oil. It requires technicians who understand heavy-duty equipment, access to genuine parts, and a service department committed to your uptime. At Sun State International, we know every hour your truck sits in the shop affects your business. That’s why our team focuses on efficient diagnostics, quality repairs, and proactive maintenance designed to keep you moving.\n\nWhether you’re servicing one truck or an entire fleet, we’re here to provide dependable support every step of the way."
-          }
-        },
-        {
-          "id": "spacer-11",
-          "type": "spacer",
-          "props": {
-            "size": 6
-          }
-        },
-        {
-          "id": "image-3",
-          "type": "image",
-          "props": {
-            "width": "full",
-            "image": {
-              "src": "https://vendure.buzznerdrv.com/assets/source/fd/4.3.jpg",
-              "alt": "4.3.jpg",
-              "height": 1000,
-              "width": 1150
-            }
-          }
-        },
-        {
-          "id": "spacer-12",
-          "type": "spacer",
-          "props": {
-            "size": 6
-          }
-        },
-        {
-          "id": "heading-9",
-          "type": "heading",
-          "props": {
-            "headingLevel": 2,
-            "align": "left",
-            "text": "Protect Your Investment With Preventive Maintenance"
-          }
-        },
-        {
-          "id": "text-9",
-          "type": "text",
-          "props": {
-            "align": "left",
-            "width": "full",
-            "text": "A routine commercial truck oil change is one of the simplest services you can schedule, but it plays a major role in protecting your engine, reducing repair costs, and extending the life of your truck. Combined with regular inspections, quality truck cooling system parts, reliable diesel fuel system parts, and a customized diesel truck maintenance schedule, preventive maintenance helps keep your fleet productive year-round. If you’re looking for trusted service and expert support, Sun State International is ready to help. Schedule your next service appointment with Sun State International and keep your trucks operating at their best."
-          }
-        },
-        {
-          "id": "spacer-13",
-          "type": "spacer",
-          "props": {
-            "size": 6
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Maintenance",
+          "title": "Commercial Truck Oil Change Mistakes That Cost You",
+          "topic": "Maintenance",
+          "date": "June 14, 2026",
+          "readTime": "4 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/commercial-truck-oil-change-mistakes-that-cost-you/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Sun State International Trucks facility with a lineup of International commercial trucks in Florida"
           }
         }
-      ]
+      },
+      "children": []
     },
     {
-      "id": "post-cta",
+      "id": "article",
       "type": "section",
       "props": {
         "width": "boxed",
-        "background": "paper",
+        "background": "card",
         "paddingY": 8
       },
       "children": [
         {
-          "id": "post-cta-row",
+          "id": "art-row",
           "type": "row",
           "props": {
-            "gap": 5
+            "gap": 8
           },
           "children": [
             {
-              "id": "post-cta-col",
+              "id": "art-side",
               "type": "column",
               "props": {
-                "span": 12
+                "span": 3
               },
               "children": [
                 {
-                  "id": "post-cta-h",
-                  "type": "heading",
+                  "id": "art-toc",
+                  "type": "post-toc",
                   "props": {
-                    "text": "Got the same symptom on a unit you run?",
-                    "headingLevel": 2
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "Mistake #1: Waiting Too Long",
+                        "href": "#mistake-1"
+                      },
+                      {
+                        "label": "Mistake #2: Ignoring Other Systems",
+                        "href": "#mistake-2"
+                      },
+                      {
+                        "label": "Mistake #3: Low-Quality Parts",
+                        "href": "#mistake-3"
+                      },
+                      {
+                        "label": "Mistake #4: One-Size-Fits-All",
+                        "href": "#mistake-4"
+                      },
+                      {
+                        "label": "Mistake #5: Waiting Until It Breaks",
+                        "href": "#mistake-5"
+                      },
+                      {
+                        "label": "Why Oil Changes Matter",
+                        "href": "#why-it-matters"
+                      },
+                      {
+                        "label": "A Service Partner You Can Trust",
+                        "href": "#partner"
+                      },
+                      {
+                        "label": "Protect Your Investment",
+                        "href": "#protect"
+                      }
+                    ]
                   }
                 },
                 {
-                  "id": "post-cta-b",
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "NEED SERVICE?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Schedule an appointment with our factory-trained technicians.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "schedule-service",
+                                "label": "Service Appointment →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
                   "type": "text",
                   "props": {
-                    "text": "Call 800.741.7566 and we'll look at the specific truck or trailer instead of the general case.",
+                    "text": "Every mile your truck travels puts stress on its engine. While a commercial truck oil change may seem like one of the simplest maintenance tasks, overlooking it or cutting corners can lead to expensive repairs, unnecessary downtime, and a shorter engine lifespan.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "For owner-operators and fleet managers alike, routine maintenance isn't just another item on the calendar. It's one of the smartest investments you can make in your equipment.",
+                    "align": "left",
                     "width": "full"
                   }
                 },
                 {
-                  "id": "post-cta-btn",
-                  "type": "buttons",
+                  "id": "h-mistake-1",
+                  "type": "heading",
+                  "props": {
+                    "text": "Mistake #1: Waiting Too Long Between Oil Changes",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "mistake-1"
+                  }
+                },
+                {
+                  "id": "p-mistake-1-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Every manufacturer recommends a diesel truck maintenance schedule for a reason. Oil gradually loses its ability to lubricate engine components as contaminants, soot, and debris accumulate. Waiting too long between services increases engine wear and can reduce fuel efficiency.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-mistake-1-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Factors that may require more frequent service include:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-mistake-1-3",
+                  "type": "check-list",
                   "props": {
                     "items": [
                       {
-                        "ctaId": "request-appointment"
+                        "text": "Frequent stop-and-go driving"
                       },
                       {
-                        "ctaId": "call-main-secondary"
+                        "text": "Heavy hauling"
+                      },
+                      {
+                        "text": "Idling for extended periods"
+                      },
+                      {
+                        "text": "Dusty job sites"
+                      },
+                      {
+                        "text": "Extreme temperatures"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-mistake-1-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Following a consistent diesel truck maintenance schedule helps protect one of your fleet's biggest investments.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-mistake-2",
+                  "type": "heading",
+                  "props": {
+                    "text": "Mistake #2: Ignoring Other Systems During Routine Maintenance",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "mistake-2"
+                  }
+                },
+                {
+                  "id": "p-mistake-2-1",
+                  "type": "text",
+                  "props": {
+                    "text": "An oil change is one of the best opportunities to inspect other critical truck components. Experienced technicians don't simply drain the oil and send you on your way. They look for early warning signs that could become larger issues later.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-mistake-2-2",
+                  "type": "text",
+                  "props": {
+                    "text": "This includes inspecting:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-mistake-2-3",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Belts and hoses"
+                      },
+                      {
+                        "text": "Brake components"
+                      },
+                      {
+                        "text": "Suspension"
+                      },
+                      {
+                        "text": "Batteries"
+                      },
+                      {
+                        "text": "Filters"
+                      },
+                      {
+                        "text": "Fluid levels"
+                      },
+                      {
+                        "text": "Tires"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-mistake-2-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Routine inspections often identify worn truck cooling system parts before overheating leads to engine damage. Likewise, inspecting diesel fuel system parts helps prevent fuel delivery issues that can affect performance and efficiency. Catching these problems early is far less expensive than roadside repairs.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-mistake-3",
+                  "type": "heading",
+                  "props": {
+                    "text": "Mistake #3: Using Low-Quality Parts",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "mistake-3"
+                  }
+                },
+                {
+                  "id": "p-mistake-3-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Not every oil filter or replacement component is built to manufacturer standards. Quality filters help remove contaminants while maintaining proper oil flow throughout the engine. The same is true for replacement cooling system parts and diesel fuel system parts. Choosing genuine or high-quality OEM components helps ensure proper fit, reliable performance, and longer service life.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-mistake-3-2",
+                  "type": "heading",
+                  "props": {
+                    "text": "Need Genuine Parts?",
+                    "headingLevel": 3,
+                    "align": "left",
+                    "anchor": "need-parts-fast"
+                  }
+                },
+                {
+                  "id": "p-mistake-3-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Sun State International's online parts store makes it easy to order genuine commercial truck parts backed by trusted manufacturers. Whether you need filters, cooling system components, or replacement fuel system parts, we're here to help keep your trucks moving. Visit the Sun State International Online Parts Store to order genuine truck parts today.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-mistake-3-4-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-mistake-3-4",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-mistake-3-4-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "order-parts-online",
+                                "label": "Find the Parts You Need →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/commercial-truck-oil-change-mistakes-that-cost-you/1.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Diesel oil filter replacement for a commercial truck at Sun State International"
+                    }
+                  }
+                },
+                {
+                  "id": "h-mistake-4",
+                  "type": "heading",
+                  "props": {
+                    "text": "Mistake #4: Treating Every Truck the Same",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "mistake-4"
+                  }
+                },
+                {
+                  "id": "p-mistake-4-1",
+                  "type": "text",
+                  "props": {
+                    "text": "No two fleets operate exactly alike. A regional delivery truck has different maintenance needs than a long-haul tractor or construction vehicle. Mileage, engine hours, terrain, payload, and operating conditions all affect maintenance intervals. Working with experienced technicians allows you to build a maintenance plan based on how your trucks are actually used instead of relying on a one-size-fits-all schedule. That personalized approach helps improve reliability while reducing unnecessary service costs.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-mistake-5",
+                  "type": "heading",
+                  "props": {
+                    "text": "Mistake #5: Waiting Until Something Breaks",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "mistake-5"
+                  }
+                },
+                {
+                  "id": "p-mistake-5-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Many expensive engine repairs begin with small issues that could have been caught during preventive maintenance. Leaks, worn filters, contaminated fluids, or failing components rarely happen overnight. Regular inspections and scheduled commercial truck oil change services allow technicians to identify developing problems before they lead to breakdowns. Preventive maintenance is one of the most effective ways to reduce truck downtime services across your fleet.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-mistake-5-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Less downtime means:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-mistake-5-3",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "More deliveries completed"
+                      },
+                      {
+                        "text": "Fewer emergency repairs"
+                      },
+                      {
+                        "text": "Better customer satisfaction"
+                      },
+                      {
+                        "text": "Lower operating costs"
+                      },
+                      {
+                        "text": "Longer equipment life"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-why-it-matters",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why a Commercial Truck Oil Change Matters More Than You Think",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "why-it-matters"
+                  }
+                },
+                {
+                  "id": "p-why-it-matters-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Heavy-duty diesel engines operate under extreme conditions every day. Long hauls, stop-and-go traffic, heavy payloads, and Florida's heat all accelerate engine wear. Fresh oil lubricates critical engine components, reduces friction, controls heat, and helps remove contaminants before they damage expensive internal parts. Skipping a scheduled commercial truck oil change doesn't save money. It often creates much larger repair bills later. Preventive maintenance is one of the most effective ways to control those costs while keeping trucks on the road.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-2",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/commercial-truck-oil-change-mistakes-that-cost-you/2.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Sun State International fleet maintenance service for commercial trucks in Florida"
+                    }
+                  }
+                },
+                {
+                  "id": "h-partner",
+                  "type": "heading",
+                  "props": {
+                    "text": "Partner With a Service Team That Understands Your Business",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "partner"
+                  }
+                },
+                {
+                  "id": "p-partner-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Keeping commercial trucks on the road requires more than changing oil. It requires technicians who understand heavy-duty equipment, access to genuine parts, and a service department committed to your uptime. At Sun State International, we know every hour your truck sits in the shop affects your business. That's why our team focuses on efficient diagnostics, quality repairs, and proactive maintenance designed to keep you moving.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-partner-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Whether you're servicing one truck or an entire fleet, we're here to provide dependable support every step of the way.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-protect",
+                  "type": "heading",
+                  "props": {
+                    "text": "Protect Your Investment With Preventive Maintenance",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "protect"
+                  }
+                },
+                {
+                  "id": "p-protect-1",
+                  "type": "text",
+                  "props": {
+                    "text": "A routine commercial truck oil change is one of the simplest services you can schedule, but it plays a major role in protecting your engine, reducing repair costs, and extending the life of your truck. Combined with regular inspections, quality truck cooling system parts, reliable diesel fuel system parts, and a customized diesel truck maintenance schedule, preventive maintenance helps keep your fleet productive year-round. If you're looking for trusted service and expert support, Sun State International is ready to help. <a href=\"/service-appointment\">Schedule your next service appointment with Sun State International</a> and keep your trucks operating at their best.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-protect-2",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "schedule-service",
+                        "label": "Schedule Service Appointment"
+                      },
+                      {
+                        "ctaId": "order-parts-online",
+                        "label": "Shop the Online Parts Store"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-share",
+                  "type": "post-share",
+                  "props": {
+                    "label": "Share",
+                    "items": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fcommercial-truck-oil-change-mistakes-that-cost-you",
+                        "newTab": true
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fcommercial-truck-oil-change-mistakes-that-cost-you&text=Commercial%20Truck%20Oil%20Change%20Mistakes%20That%20Cost%20You",
+                        "newTab": true
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fcommercial-truck-oil-change-mistakes-that-cost-you",
+                        "newTab": true
+                      },
+                      {
+                        "label": "Email",
+                        "url": "mailto:?subject=Commercial%20Truck%20Oil%20Change%20Mistakes%20That%20Cost%20You&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fcommercial-truck-oil-change-mistakes-that-cost-you",
+                        "newTab": false
                       }
                     ]
                   }
@@ -492,6 +622,84 @@
           ]
         }
       ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Ready to minimize downtime?",
+          "heading": "Let's get you back on the road.",
+          "body": "Call 800.741.7566 and our service team in Tampa, Sarasota, Davenport or Brooksville will get your appointment scheduled.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact"
+        }
+      },
+      "children": []
     }
-  ]
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/commercial-truck-oil-change-mistakes-that-cost-you\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/commercial-truck-oil-change-mistakes-that-cost-you\"])) > .bz-card:nth-child(n+4) { display: none; }\n"
 }

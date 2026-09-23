@@ -2,59 +2,666 @@
   "slug": "what-to-expect-from-an-international-truck-service-center",
   "title": "What to Expect From an International Truck Service Center",
   "date": "2026-06-19",
-  "description": "Whether you operate a single truck or manage an entire fleet, choosing the right International truck service center can make a significant difference in your uptime, operating costs, and overall peace of mind.",
-  "status": "draft",
-  "coverImage": null,
+  "description": "Our International truck service center offers expert repairs, genuine parts, and fast service. Schedule your appointment today.",
+  "status": "published",
+  "coverImage": "/img/blog/what-to-expect-from-an-international-truck-service-center/hero.jpg",
   "topic": "Service",
   "nodes": [
     {
-      "id": "intro",
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Service Center",
+          "title": "What to Expect From an International Truck Service Center",
+          "topic": "Service",
+          "date": "June 19, 2026",
+          "readTime": "4 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/what-to-expect-from-an-international-truck-service-center/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Sun State International Trucks and Transportation Center facility exterior in Florida"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
       "type": "section",
       "props": {
         "width": "boxed",
-        "paddingY": 7
+        "background": "card",
+        "paddingY": 8
       },
       "children": [
         {
-          "id": "intro-row",
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "Why It Matters",
+                        "href": "#why-it-matters"
+                      },
+                      {
+                        "label": "Factory-Trained Technicians",
+                        "href": "#factory-trained"
+                      },
+                      {
+                        "label": "Genuine Parts",
+                        "href": "#genuine-parts"
+                      },
+                      {
+                        "label": "Comprehensive Service",
+                        "href": "#comprehensive-service"
+                      },
+                      {
+                        "label": "Communication You Can Count On",
+                        "href": "#communication"
+                      },
+                      {
+                        "label": "A Long-Term Service Partner",
+                        "href": "#long-term-partner"
+                      },
+                      {
+                        "label": "Keep Your Trucks Moving",
+                        "href": "#keep-moving"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "NEED SERVICE?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Schedule an appointment with our factory-trained technicians.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "schedule-service",
+                                "label": "Service Appointment →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "When your truck is your livelihood, every hour it spends off the road matters. Whether you operate a single truck or manage an entire fleet, choosing the right International truck service center can make a significant difference in your uptime, operating costs, and overall peace of mind.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, we know your priorities are simple: quality repairs, honest communication, and getting back on the road as quickly as possible. That's why our service teams focus on keeping commercial vehicles operating safely and efficiently, backed by factory-trained technicians and genuine parts. This customer-first approach reflects Sun State International's mission of providing quality transportation products, parts, and services while building lasting relationships through dependable service.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-why-it-matters",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Choosing the Right International Truck Service Center Matters",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "why-it-matters"
+                  }
+                },
+                {
+                  "id": "p-why-it-matters-1",
+                  "type": "text",
+                  "props": {
+                    "text": "A commercial truck experiences far more wear and tear than the average passenger vehicle. From heavy loads and long highway miles to Florida's heat and unpredictable weather, every component is under constant stress. Vehicle maintenance and repair remain one of the largest operating expenses for trucking companies, making preventive service one of the smartest investments a fleet can make. An experienced International truck service center doesn't simply fix problems; it helps prevent them before they become expensive breakdowns.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-why-it-matters-2",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "schedule-service",
+                        "label": "Schedule Service at Sun State International"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-factory-trained",
+                  "type": "heading",
+                  "props": {
+                    "text": "Factory-Trained Technicians Who Know International Trucks",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "factory-trained"
+                  }
+                },
+                {
+                  "id": "p-factory-trained-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Not every repair shop has the expertise to properly diagnose today's commercial trucks. An experienced International truck dealer service department works specifically with International trucks every day. Factory-trained technicians understand the latest engines, electrical systems, emissions technology, diagnostics, and manufacturer repair procedures.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-factory-trained-2",
+                  "type": "text",
+                  "props": {
+                    "text": "That specialized knowledge means:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-factory-trained-3",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Faster diagnostics"
+                      },
+                      {
+                        "text": "More accurate repairs"
+                      },
+                      {
+                        "text": "Fewer repeat visits"
+                      },
+                      {
+                        "text": "Less unexpected downtime"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-factory-trained-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Instead of guessing at the problem, experienced technicians can quickly identify the root cause and recommend the right repair the first time.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/what-to-expect-from-an-international-truck-service-center/1.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Sun State International technician working at a toolbox in the service bay"
+                    }
+                  }
+                },
+                {
+                  "id": "h-genuine-parts",
+                  "type": "heading",
+                  "props": {
+                    "text": "Genuine Parts Make a Difference",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "genuine-parts"
+                  }
+                },
+                {
+                  "id": "p-genuine-parts-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Quality repairs depend on quality parts. One advantage of working with an International truck dealer service department is immediate access to genuine OEM parts designed specifically for your truck.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-genuine-parts-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Using the correct components helps maintain:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-genuine-parts-3",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Performance"
+                      },
+                      {
+                        "text": "Reliability"
+                      },
+                      {
+                        "text": "Safety"
+                      },
+                      {
+                        "text": "Manufacturer specifications"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h3-genuine-parts-4",
+                  "type": "heading",
+                  "props": {
+                    "text": "Need Parts Fast?",
+                    "headingLevel": 3,
+                    "align": "left",
+                    "anchor": "need-parts-fast"
+                  }
+                },
+                {
+                  "id": "p-genuine-parts-5",
+                  "type": "text",
+                  "props": {
+                    "text": "Whether you're handling routine maintenance or replacing a worn component, Sun State International's online parts store makes ordering genuine truck parts simple and convenient. You can quickly find the parts you need and get your truck back to work faster. Visit our Online Parts Store to order genuine International truck parts today.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-genuine-parts-6-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-genuine-parts-6",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-genuine-parts-6-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "order-parts-online",
+                                "label": "Find the parts you need →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "fig-2",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/what-to-expect-from-an-international-truck-service-center/2.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Sun State International parts team pulling genuine truck parts from warehouse shelving"
+                    }
+                  }
+                },
+                {
+                  "id": "h-comprehensive-service",
+                  "type": "heading",
+                  "props": {
+                    "text": "Comprehensive Commercial Truck Service",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "comprehensive-service"
+                  }
+                },
+                {
+                  "id": "p-comprehensive-service-1",
+                  "type": "text",
+                  "props": {
+                    "text": "A trusted commercial truck service near me should be able to handle more than oil changes. At Sun State International, our service departments are equipped to perform a wide range of maintenance and repairs for all makes and models, including:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-comprehensive-service-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Preventive maintenance"
+                      },
+                      {
+                        "text": "DOT inspections"
+                      },
+                      {
+                        "text": "Brake repairs"
+                      },
+                      {
+                        "text": "Suspension service"
+                      },
+                      {
+                        "text": "Cooling system repairs"
+                      },
+                      {
+                        "text": "Electrical diagnostics"
+                      },
+                      {
+                        "text": "Engine diagnostics"
+                      },
+                      {
+                        "text": "Transmission repairs"
+                      },
+                      {
+                        "text": "Air conditioning repairs"
+                      },
+                      {
+                        "text": "Warranty repairs"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-comprehensive-service-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Having sales, parts, and service all under one roof helps simplify your maintenance experience and reduces the time spent coordinating repairs.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-communication",
+                  "type": "heading",
+                  "props": {
+                    "text": "Communication You Can Count On",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "communication"
+                  }
+                },
+                {
+                  "id": "p-communication-1",
+                  "type": "text",
+                  "props": {
+                    "text": "One of the biggest frustrations for fleet managers isn't just unexpected repairs; it's not knowing what's happening. At Sun State International, clear communication is part of every service visit. Our team keeps customers informed throughout the repair process, explains recommended services, and works to minimize downtime whenever possible. That straightforward approach is part of what has helped Sun State International earn long-term relationships with customers across Florida.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-3",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/what-to-expect-from-an-international-truck-service-center/3.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Sun State International service team communicating with a customer at the front desk"
+                    }
+                  }
+                },
+                {
+                  "id": "h-long-term-partner",
+                  "type": "heading",
+                  "props": {
+                    "text": "More Than Repairs, A Long-Term Service Partner",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "long-term-partner"
+                  }
+                },
+                {
+                  "id": "p-long-term-partner-1",
+                  "type": "text",
+                  "props": {
+                    "text": "The best International truck service center isn't just there when something breaks. It becomes a long-term partner that helps you plan maintenance schedules, reduce unexpected failures, and keep your fleet operating efficiently throughout the year. For owner-operators, every day on the road matters. For fleet managers, every truck in service contributes to profitability. Working with a trusted service partner helps protect both.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-keep-moving",
+                  "type": "heading",
+                  "props": {
+                    "text": "Keep Your Trucks Moving With Sun State International",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "keep-moving"
+                  }
+                },
+                {
+                  "id": "p-keep-moving-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Finding the right commercial truck service near me means choosing a team that understands your business, values your time, and delivers dependable repairs you can trust. At Sun State International, we're committed to helping owner-operators and fleets stay productive with expert technicians, genuine parts, and responsive customer service. Whether you need routine maintenance or heavy-duty truck repair in Florida, our team is ready to help. Ready to minimize downtime? <a href=\"/service-appointment\">Schedule your next service appointment with Sun State International today</a> and let our experienced technicians keep your trucks performing at their best.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-keep-moving-2",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "schedule-service",
+                        "label": "Schedule Your Service Appointment"
+                      },
+                      {
+                        "ctaId": "service-department",
+                        "label": "Service Department",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-share",
+                  "type": "post-share",
+                  "props": {
+                    "label": "Share",
+                    "items": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhat-to-expect-from-an-international-truck-service-center",
+                        "newTab": true
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhat-to-expect-from-an-international-truck-service-center&text=What%20to%20Expect%20From%20an%20International%20Truck%20Service%20Center",
+                        "newTab": true
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhat-to-expect-from-an-international-truck-service-center",
+                        "newTab": true
+                      },
+                      {
+                        "label": "Email",
+                        "url": "mailto:?subject=What%20to%20Expect%20From%20an%20International%20Truck%20Service%20Center&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhat-to-expect-from-an-international-truck-service-center",
+                        "newTab": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
           "type": "row",
           "props": {
             "gap": 5
           },
           "children": [
             {
-              "id": "intro-col",
+              "id": "related-col",
               "type": "column",
               "props": {
                 "span": 12
               },
               "children": [
                 {
-                  "id": "intro-text",
-                  "type": "text",
+                  "id": "related-h",
+                  "type": "heading",
                   "props": {
-                    "text": "Whether you operate a single truck or manage an entire fleet, choosing the right International truck service center can make a significant difference in your uptime, operating costs, and overall peace of mind.",
-                    "width": "full"
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
                   }
                 },
                 {
-                  "id": "intro-note",
-                  "type": "text",
+                  "id": "related-posts",
+                  "type": "postsList",
                   "props": {
-                    "text": "The full article was published on sunstateintl.com. Paste the migrated body here in Posts → this post, and the card on the blog index updates with it.",
-                    "width": "full"
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
                   }
                 },
                 {
-                  "id": "intro-cta",
+                  "id": "related-cta",
                   "type": "buttons",
                   "props": {
+                    "align": "left",
                     "items": [
                       {
-                        "label": "Read the original article →",
-                        "url": "https://www.sunstateintl.com/what-to-expect-from-an-international-truck-service-center/",
-                        "style": "link",
-                        "intent": "read-post"
+                        "ctaId": "all-blog-posts"
                       }
                     ]
                   }
@@ -67,62 +674,21 @@
     },
     {
       "id": "post-cta",
-      "type": "section",
+      "type": "sharedSection",
       "props": {
-        "width": "boxed",
-        "background": "paper",
-        "paddingY": 8
-      },
-      "children": [
-        {
-          "id": "post-cta-row",
-          "type": "row",
-          "props": {
-            "gap": 5
-          },
-          "children": [
-            {
-              "id": "post-cta-col",
-              "type": "column",
-              "props": {
-                "span": 12
-              },
-              "children": [
-                {
-                  "id": "post-cta-h",
-                  "type": "heading",
-                  "props": {
-                    "text": "Got the same symptom on a unit you run?",
-                    "headingLevel": 2
-                  }
-                },
-                {
-                  "id": "post-cta-b",
-                  "type": "text",
-                  "props": {
-                    "text": "Call 800.741.7566 and we'll look at the specific truck or trailer instead of the general case.",
-                    "width": "full"
-                  }
-                },
-                {
-                  "id": "post-cta-btn",
-                  "type": "buttons",
-                  "props": {
-                    "items": [
-                      {
-                        "ctaId": "request-appointment"
-                      },
-                      {
-                        "ctaId": "call-main-secondary"
-                      }
-                    ]
-                  }
-                }
-              ]
-            }
-          ]
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Ready to minimize downtime?",
+          "heading": "Let's get you back on the road.",
+          "body": "Call 800.741.7566 and our service team in Tampa, Sarasota, Davenport or Brooksville will get your appointment scheduled.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact"
         }
-      ]
+      },
+      "children": []
     }
-  ]
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/what-to-expect-from-an-international-truck-service-center\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/what-to-expect-from-an-international-truck-service-center\"])) > .bz-card:nth-child(n+4) { display: none; }\n"
 }
