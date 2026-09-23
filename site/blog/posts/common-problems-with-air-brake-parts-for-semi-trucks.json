@@ -2,734 +2,877 @@
   "slug": "common-problems-with-air-brake-parts-for-semi-trucks",
   "title": "Common Problems With Air Brake Parts for Semi Trucks",
   "date": "2026-06-25",
-  "description": "When even one part begins to wear out or fail, it can lead to longer stopping distances, unexpected downtime, expensive repairs, and failed inspections. Understanding the most common problems with air brake parts can help you recognize issues early and keep your trucks operating safely.",
+  "description": "Learn the most common problems with air brake parts and keep your fleet safe. Visit Sun State International for quality parts and expert service.",
   "status": "published",
-  "coverImage": null,
-  "topic": "Parts",
+  "coverImage": "/img/blog/common-problems-with-air-brake-parts-for-semi-trucks/hero.jpg",
+  "topic": "Commercial trucks",
   "nodes": [
     {
-      "id": "intro",
-      "type": "section",
+      "id": "hero",
+      "type": "sharedSection",
       "props": {
-        "width": "boxed",
-        "paddingY": 0
-      },
-      "children": [
-        {
-          "id": "image",
-          "type": "image",
-          "props": {
-            "width": "full",
-            "image": {
-              "src": "https://vendure.buzznerdrv.com/assets/source/00/3.1.jpg",
-              "alt": "A Sun State International technician working under the raised hood of a red semi truck in a service bay",
-              "width": 2000,
-              "height": 1333
-            }
-          }
-        },
-        {
-          "id": "spacer",
-          "type": "spacer",
-          "props": {
-            "size": 6
-          }
-        },
-        {
-          "id": "intro-row",
-          "type": "row",
-          "props": {
-            "gap": 5
-          },
-          "children": [
-            {
-              "id": "intro-col",
-              "type": "column",
-              "props": {
-                "span": 12
-              },
-              "children": [
-                {
-                  "id": "heading",
-                  "type": "heading",
-                  "props": {
-                    "headingLevel": 4,
-                    "align": "left",
-                    "text": "Commercial Trucks"
-                  }
-                },
-                {
-                  "id": "intro-text",
-                  "type": "text",
-                  "props": {
-                    "width": "full",
-                    "text": "Commercial trucks depend on reliable braking performance every mile they travel. Whether you’re hauling freight across Florida or making local deliveries, your air brake system is one of the most important safety components on your truck. When even one part begins to wear out or fail, it can lead to longer stopping distances, unexpected downtime, expensive repairs, and failed inspections. Understanding the most common problems with air brake parts can help you recognize issues early and keep your trucks operating safely."
-                  }
-                },
-                {
-                  "id": "spacer-2",
-                  "type": "spacer",
-                  "props": {
-                    "size": 6
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "heading-3",
-          "type": "heading",
-          "props": {
-            "headingLevel": 2,
-            "align": "left",
-            "text": "1. Air Leaks"
-          }
-        },
-        {
-          "id": "text",
-          "type": "text",
-          "props": {
-            "align": "left",
-            "width": "full",
-            "text": "Air leaks are one of the most common problems affecting air brake systems. Leaks often develop from:"
-          }
-        },
-        {
-          "id": "text-leaks",
-          "type": "list",
-          "props": {
-            "headingLevel": 3,
-            "columns": 2,
-            "items": [
-              {
-                "label": "Worn air lines"
-              },
-              {
-                "label": "Damaged fittings"
-              },
-              {
-                "label": "Cracked hoses"
-              },
-              {
-                "label": "Faulty valves"
-              }
-            ]
-          }
-        },
-        {
-          "id": "text-leaks-b",
-          "type": "text",
-          "props": {
-            "align": "left",
-            "width": "full",
-            "text": "Even a small leak forces the compressor to work harder and can reduce available braking pressure over time. Signs of an air leak include:"
-          }
-        },
-        {
-          "id": "text-leak-signs",
-          "type": "list",
-          "props": {
-            "headingLevel": 3,
-            "columns": 2,
-            "items": [
-              {
-                "label": "Constant compressor cycling"
-              },
-              {
-                "label": "Low air pressure warnings"
-              },
-              {
-                "label": "Audible hissing sounds"
-              },
-              {
-                "label": "Longer brake application times"
-              }
-            ]
-          }
-        },
-        {
-          "id": "text-leaks-c",
-          "type": "text",
-          "props": {
-            "align": "left",
-            "width": "full",
-            "text": "Ignoring an air leak can quickly turn a minor repair into a much larger problem."
-          }
-        },
-        {
-          "id": "spacer-3",
-          "type": "spacer",
-          "props": {
-            "size": 6
-          }
-        },
-        {
-          "id": "heading-4",
-          "type": "heading",
-          "props": {
-            "headingLevel": 2,
-            "align": "left",
-            "text": "2. Worn Brake Shoes and Brake Drums"
-          }
-        },
-        {
-          "id": "text-2",
-          "type": "text",
-          "props": {
-            "align": "left",
-            "width": "full",
-            "text": "Brake shoes naturally wear down every time the brakes are applied. Over time, worn friction material reduces braking performance and places additional stress on the rest of the braking system.\n\nSimilarly, brake drums can become:"
-          }
-        },
-        {
-          "id": "text-2-drums",
-          "type": "list",
-          "props": {
-            "headingLevel": 3,
-            "columns": 2,
-            "items": [
-              {
-                "label": "Heat checked"
-              },
-              {
-                "label": "Scored"
-              },
-              {
-                "label": "Out of round"
-              },
-              {
-                "label": "Cracked"
-              }
-            ]
-          }
-        },
-        {
-          "id": "text-2-b",
-          "type": "text",
-          "props": {
-            "align": "left",
-            "width": "full",
-            "text": "These conditions reduce stopping performance and increase repair costs if left unaddressed. Routine inspections help identify wear before it creates larger safety concerns."
-          }
-        },
-        {
-          "id": "spacer-4",
-          "type": "spacer",
-          "props": {
-            "size": 6
-          }
-        },
-        {
-          "id": "heading-5",
-          "type": "heading",
-          "props": {
-            "headingLevel": 2,
-            "align": "left",
-            "text": "3. Failing Brake Chambers"
-          }
-        },
-        {
-          "id": "text-3",
-          "type": "text",
-          "props": {
-            "align": "left",
-            "width": "full",
-            "text": "Brake chambers convert compressed air into mechanical force. When diaphragms wear out or chambers become damaged by corrosion, braking force can decrease significantly.\n\nCommon symptoms include:"
-          }
-        },
-        {
-          "id": "text-3-symptoms",
-          "type": "list",
-          "props": {
-            "headingLevel": 3,
-            "columns": 2,
-            "items": [
-              {
-                "label": "Uneven braking"
-              },
-              {
-                "label": "Air leaks around the chamber"
-              },
-              {
-                "label": "Reduced stopping power"
-              },
-              {
-                "label": "Parking brake issues"
-              }
-            ]
-          }
-        },
-        {
-          "id": "text-3-b",
-          "type": "text",
-          "props": {
-            "align": "left",
-            "width": "full",
-            "text": "Because brake chambers are critical safety components, replacement should always be performed by experienced technicians."
-          }
-        },
-        {
-          "id": "spacer-5",
-          "type": "spacer",
-          "props": {
-            "size": 6
-          }
-        },
-        {
-          "id": "heading-6",
-          "type": "heading",
-          "props": {
-            "headingLevel": 2,
-            "align": "left",
-            "text": "4. Slack Adjuster Problems"
-          }
-        },
-        {
-          "id": "text-4",
-          "type": "text",
-          "props": {
-            "align": "left",
-            "width": "full",
-            "text": "Slack adjusters help maintain proper brake adjustment. Although automatic slack adjusters reduce maintenance, they still require regular inspection.\n\nWhen slack adjusters fail, drivers may notice:"
-          }
-        },
-        {
-          "id": "text-4-signs",
-          "type": "list",
-          "props": {
-            "headingLevel": 3,
-            "columns": 2,
-            "items": [
-              {
-                "label": "Excessive pushrod travel"
-              },
-              {
-                "label": "Uneven brake wear"
-              },
-              {
-                "label": "Poor braking response"
-              },
-              {
-                "label": "Out-of-service inspection violations"
-              }
-            ]
-          }
-        },
-        {
-          "id": "text-4-b",
-          "type": "text",
-          "props": {
-            "align": "left",
-            "width": "full",
-            "text": "Many brake issues that appear to involve other components actually begin with improper adjustment."
-          }
-        },
-        {
-          "id": "spacer-6",
-          "type": "spacer",
-          "props": {
-            "size": 6
-          }
-        },
-        {
-          "id": "heading-7",
-          "type": "heading",
-          "props": {
-            "headingLevel": 2,
-            "align": "left",
-            "text": "5. Contaminated Air Systems"
-          }
-        },
-        {
-          "id": "text-5",
-          "type": "text",
-          "props": {
-            "align": "left",
-            "width": "full",
-            "text": "Moisture is one of the biggest enemies of any air brake system. That’s why air dryers play such an important role. When air dryers fail, moisture enters the system and causes:"
-          }
-        },
-        {
-          "id": "text-5-causes",
-          "type": "list",
-          "props": {
-            "headingLevel": 3,
-            "columns": 2,
-            "items": [
-              {
-                "label": "Internal corrosion"
-              },
-              {
-                "label": "Frozen air lines during colder weather"
-              },
-              {
-                "label": "Valve failures"
-              },
-              {
-                "label": "Reduced component life"
-              }
-            ]
-          }
-        },
-        {
-          "id": "text-5-b",
-          "type": "text",
-          "props": {
-            "align": "left",
-            "width": "full",
-            "text": "Replacing filters and servicing air dryers on schedule helps protect the entire brake system."
-          }
-        },
-        {
-          "id": "spacer-7",
-          "type": "spacer",
-          "props": {
-            "size": 6
-          }
-        },
-        {
-          "id": "heading-8",
-          "type": "heading",
-          "props": {
-            "headingLevel": 2,
-            "align": "left",
-            "text": "Why Air Brake Parts Matter"
-          }
-        },
-        {
-          "id": "text-6",
-          "type": "text",
-          "props": {
-            "align": "left",
-            "width": "full",
-            "text": "Unlike hydraulic braking systems found on passenger vehicles, commercial trucks rely on compressed air to activate the brakes. Because every component works together, a single worn or damaged part can affect the entire system.\n\nThe primary parts of an air brake system include:"
-          }
-        },
-        {
-          "id": "text-6-parts",
-          "type": "list",
-          "props": {
-            "headingLevel": 3,
-            "columns": 2,
-            "items": [
-              {
-                "label": "Air compressor"
-              },
-              {
-                "label": "Air dryer"
-              },
-              {
-                "label": "Air tanks"
-              },
-              {
-                "label": "Brake chambers"
-              },
-              {
-                "label": "Slack adjusters"
-              },
-              {
-                "label": "Brake drums and shoes"
-              },
-              {
-                "label": "Valves"
-              },
-              {
-                "label": "Air lines and hoses"
-              }
-            ]
-          }
-        },
-        {
-          "id": "text-6-b",
-          "type": "text",
-          "props": {
-            "align": "left",
-            "width": "full",
-            "text": "Routine inspections and preventive maintenance help ensure these components continue performing as designed."
-          }
-        },
-        {
-          "id": "spacer-8",
-          "type": "spacer",
-          "props": {
-            "size": 6
-          }
-        },
-        {
-          "id": "heading-9",
-          "type": "heading",
-          "props": {
-            "headingLevel": 2,
-            "align": "left",
-            "text": "Don’t Ignore Small Brake Problems"
-          }
-        },
-        {
-          "id": "text-7",
-          "type": "text",
-          "props": {
-            "align": "left",
-            "width": "full",
-            "text": "Many drivers continue operating with minor brake concerns because the truck still seems to stop normally. Unfortunately, brake problems rarely improve on their own. What starts as:"
-          }
-        },
-        {
-          "id": "text-7-starts",
-          "type": "list",
-          "props": {
-            "headingLevel": 3,
-            "columns": 2,
-            "items": [
-              {
-                "label": "A slow air leak"
-              },
-              {
-                "label": "Slight brake drag"
-              },
-              {
-                "label": "Minor vibration"
-              },
-              {
-                "label": "Uneven braking"
-              }
-            ]
-          }
-        },
-        {
-          "id": "text-7-b",
-          "type": "text",
-          "props": {
-            "align": "left",
-            "width": "full",
-            "text": "…can eventually become an expensive repair—or worse, a safety issue that puts your drivers and others on the road at risk."
-          }
-        },
-        {
-          "id": "spacer-9",
-          "type": "spacer",
-          "props": {
-            "size": 6
-          }
-        },
-        {
-          "id": "heading-10",
-          "type": "heading",
-          "props": {
-            "headingLevel": 2,
-            "align": "left",
-            "text": "Need Replacement Air Brake Parts?"
-          }
-        },
-        {
-          "id": "text-8",
-          "type": "text",
-          "props": {
-            "align": "left",
-            "width": "full",
-            "text": "Sun State International carries a wide selection of quality brake components designed for all makes and models of heavy-duty trucks. Our knowledgeable parts team can help you find exactly what your truck needs to minimize downtime. Visit our Parts Department to find the right air brake parts for your truck."
-          }
-        },
-        {
-          "id": "spacer-10",
-          "type": "spacer",
-          "props": {
-            "size": 6
-          }
-        },
-        {
-          "id": "image-3",
-          "type": "image",
-          "props": {
-            "width": "full",
-            "image": {
-              "src": "https://vendure.buzznerdrv.com/assets/source/4c/3.2.jpg",
-              "alt": "3.2.jpg",
-              "height": 1000,
-              "width": 1050
-            }
-          }
-        },
-        {
-          "id": "spacer-11",
-          "type": "spacer",
-          "props": {
-            "size": 6
-          }
-        },
-        {
-          "id": "heading-11",
-          "type": "heading",
-          "props": {
-            "headingLevel": 2,
-            "align": "left",
-            "text": "Professional Semi Truck Brake Service Matters"
-          }
-        },
-        {
-          "id": "text-9",
-          "type": "text",
-          "props": {
-            "align": "left",
-            "width": "full",
-            "text": "While replacing some parts may seem straightforward, diagnosing an air brake system requires specialized knowledge and equipment.\n\nEvery repair should include:"
-          }
-        },
-        {
-          "id": "text-9-checks",
-          "type": "list",
-          "props": {
-            "headingLevel": 3,
-            "columns": 2,
-            "items": [
-              {
-                "label": "Complete air system inspection"
-              },
-              {
-                "label": "Brake adjustment verification"
-              },
-              {
-                "label": "Leak testing"
-              },
-              {
-                "label": "Component inspection"
-              },
-              {
-                "label": "DOT compliance checks"
-              }
-            ]
-          }
-        },
-        {
-          "id": "text-9-b",
-          "type": "text",
-          "props": {
-            "align": "left",
-            "width": "full",
-            "text": "Professional semi truck brake service helps ensure every component is functioning properly before your truck returns to the road. At Sun State International, our technicians understand heavy-duty brake systems inside and out. Whether your truck needs routine maintenance or a complete brake repair, we’ll identify the problem correctly the first time."
-          }
-        },
-        {
-          "id": "spacer-12",
-          "type": "spacer",
-          "props": {
-            "size": 6
-          }
-        },
-        {
-          "id": "image-4",
-          "type": "image",
-          "props": {
-            "width": "full",
-            "image": {
-              "src": "https://vendure.buzznerdrv.com/assets/source/21/3.3.jpg",
-              "alt": "3.3.jpg",
-              "width": 1050,
-              "height": 1000
-            }
-          }
-        },
-        {
-          "id": "spacer-13",
-          "type": "spacer",
-          "props": {
-            "size": 6
-          }
-        },
-        {
-          "id": "heading-12",
-          "type": "heading",
-          "props": {
-            "headingLevel": 2,
-            "align": "left",
-            "text": "Choosing Quality Commercial Truck Brake Parts"
-          }
-        },
-        {
-          "id": "text-10",
-          "type": "text",
-          "props": {
-            "align": "left",
-            "width": "full",
-            "text": "Not all replacement parts offer the same performance or longevity. Choosing quality commercial truck brake parts helps reduce repeat repairs, improve safety, and maximize uptime. Our parts specialists work with fleets and owner-operators every day to recommend components that meet manufacturer specifications and keep trucks operating reliably.\n\nCombined with expert installation, quality parts help lower long-term maintenance costs while protecting one of your fleet’s most important safety systems.\n\n"
-          }
-        },
-        {
-          "id": "spacer-14",
-          "type": "spacer",
-          "props": {
-            "size": 6
-          }
-        },
-        {
-          "id": "heading-13",
-          "type": "heading",
-          "props": {
-            "headingLevel": 2,
-            "align": "left",
-            "text": "Keep Your Trucks Moving With Sun State International"
-          }
-        },
-        {
-          "id": "text-11",
-          "type": "text",
-          "props": {
-            "align": "left",
-            "width": "full",
-            "text": "As a full-service commercial truck dealership, we know your goal is simple: keep your trucks on the road and your business moving forward. That commitment to customer success is at the core of everything we do. Whether you’re looking for replacement air brake parts, preventative maintenance, or complete heavy-duty truck repair Florida businesses rely on, our team is ready to help. Schedule service with Sun State International today and let our experienced technicians keep your air brake system performing at its best."
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Air Brake Parts",
+          "title": "Common Problems With Air Brake Parts for Semi Trucks",
+          "topic": "Commercial Trucks",
+          "date": "June 25, 2026",
+          "readTime": "4 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/common-problems-with-air-brake-parts-for-semi-trucks/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Technician inspecting a Coca-Cola beverage delivery semi truck in the Sun State International shop"
           }
         }
-      ]
+      },
+      "children": []
     },
     {
-      "id": "post-cta",
+      "id": "article",
       "type": "section",
       "props": {
         "width": "boxed",
-        "background": "paper",
+        "background": "card",
         "paddingY": 8
       },
       "children": [
         {
-          "id": "post-cta-row",
+          "id": "art-row",
           "type": "row",
           "props": {
-            "gap": 5
+            "gap": 8
           },
           "children": [
             {
-              "id": "post-cta-col",
+              "id": "art-side",
               "type": "column",
               "props": {
-                "span": 12
+                "span": 3
               },
               "children": [
                 {
-                  "id": "post-cta-h",
-                  "type": "heading",
+                  "id": "art-toc",
+                  "type": "post-toc",
                   "props": {
-                    "text": "Got the same symptom on a unit you run?",
-                    "headingLevel": 2
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "1. Air Leaks",
+                        "href": "#air-leaks"
+                      },
+                      {
+                        "label": "2. Worn Brake Shoes & Drums",
+                        "href": "#brake-shoes-drums"
+                      },
+                      {
+                        "label": "3. Failing Brake Chambers",
+                        "href": "#brake-chambers"
+                      },
+                      {
+                        "label": "4. Slack Adjuster Problems",
+                        "href": "#slack-adjusters"
+                      },
+                      {
+                        "label": "5. Contaminated Air Systems",
+                        "href": "#contaminated-air"
+                      },
+                      {
+                        "label": "Why Air Brake Parts Matter",
+                        "href": "#why-parts-matter"
+                      },
+                      {
+                        "label": "Don't Ignore Small Problems",
+                        "href": "#dont-ignore"
+                      },
+                      {
+                        "label": "Professional Brake Service",
+                        "href": "#professional-service"
+                      },
+                      {
+                        "label": "Choosing Quality Parts",
+                        "href": "#choosing-quality-parts"
+                      },
+                      {
+                        "label": "Keep Your Trucks Moving",
+                        "href": "#keep-moving"
+                      }
+                    ]
                   }
                 },
                 {
-                  "id": "post-cta-b",
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "NEED PARTS?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Our parts team stocks air brake components for all makes and models.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "parts-department"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
                   "type": "text",
                   "props": {
-                    "text": "Call 800.741.7566 and we'll look at the specific truck or trailer instead of the general case.",
+                    "text": "Commercial trucks depend on reliable braking performance every mile they travel. Whether you're hauling freight across Florida or making local deliveries, your air brake system is one of the most important safety components on your truck. When even one part begins to wear out or fail, it can lead to longer stopping distances, unexpected downtime, expensive repairs, and failed inspections. Understanding the most common problems with air brake parts can help you recognize issues early and keep your trucks operating safely.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "h-air-leaks",
+                  "type": "heading",
+                  "props": {
+                    "text": "1. Air Leaks",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "air-leaks"
+                  }
+                },
+                {
+                  "id": "p-air-leaks-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Air leaks are one of the most common problems affecting air brake systems. Leaks often develop from:",
+                    "align": "left",
                     "width": "full"
                   }
                 },
                 {
-                  "id": "post-cta-btn",
-                  "type": "buttons",
+                  "id": "list-air-leaks-2",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Worn air lines"
+                      },
+                      {
+                        "text": "Damaged fittings"
+                      },
+                      {
+                        "text": "Cracked hoses"
+                      },
+                      {
+                        "text": "Faulty valves"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-air-leaks-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Even a small leak forces the compressor to work harder and can reduce available braking pressure over time. Signs of an air leak include:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-air-leaks-4",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Constant compressor cycling"
+                      },
+                      {
+                        "text": "Low air pressure warnings"
+                      },
+                      {
+                        "text": "Audible hissing sounds"
+                      },
+                      {
+                        "text": "Longer brake application times"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-air-leaks-5",
+                  "type": "text",
+                  "props": {
+                    "text": "Ignoring an air leak can quickly turn a minor repair into a much larger problem.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/common-problems-with-air-brake-parts-for-semi-trucks/1.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Technician working on a heavy-duty brake drum and air line in the shop"
+                    }
+                  }
+                },
+                {
+                  "id": "h-brake-shoes-drums",
+                  "type": "heading",
+                  "props": {
+                    "text": "2. Worn Brake Shoes and Brake Drums",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "brake-shoes-drums"
+                  }
+                },
+                {
+                  "id": "p-brake-shoes-drums-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Brake shoes naturally wear down every time the brakes are applied. Over time, worn friction material reduces braking performance and places additional stress on the rest of the braking system.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-brake-shoes-drums-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Similarly, brake drums can become:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-brake-shoes-drums-3",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Heat checked"
+                      },
+                      {
+                        "text": "Scored"
+                      },
+                      {
+                        "text": "Out of round"
+                      },
+                      {
+                        "text": "Cracked"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-brake-shoes-drums-4",
+                  "type": "text",
+                  "props": {
+                    "text": "These conditions reduce stopping performance and increase repair costs if left unaddressed. Routine inspections help identify wear before it creates larger safety concerns.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-brake-chambers",
+                  "type": "heading",
+                  "props": {
+                    "text": "3. Failing Brake Chambers",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "brake-chambers"
+                  }
+                },
+                {
+                  "id": "p-brake-chambers-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Brake chambers convert compressed air into mechanical force. When diaphragms wear out or chambers become damaged by corrosion, braking force can decrease significantly.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-brake-chambers-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Common symptoms include:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-brake-chambers-3",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Uneven braking"
+                      },
+                      {
+                        "text": "Air leaks around the chamber"
+                      },
+                      {
+                        "text": "Reduced stopping power"
+                      },
+                      {
+                        "text": "Parking brake issues"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-brake-chambers-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Because brake chambers are critical safety components, replacement should always be performed by experienced technicians.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-slack-adjusters",
+                  "type": "heading",
+                  "props": {
+                    "text": "4. Slack Adjuster Problems",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "slack-adjusters"
+                  }
+                },
+                {
+                  "id": "p-slack-adjusters-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Slack adjusters help maintain proper brake adjustment. Although automatic slack adjusters reduce maintenance, they still require regular inspection.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-slack-adjusters-2",
+                  "type": "text",
+                  "props": {
+                    "text": "When slack adjusters fail, drivers may notice:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-slack-adjusters-3",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Excessive pushrod travel"
+                      },
+                      {
+                        "text": "Uneven brake wear"
+                      },
+                      {
+                        "text": "Poor braking response"
+                      },
+                      {
+                        "text": "Out-of-service inspection violations"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-slack-adjusters-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Many brake issues that appear to involve other components actually begin with improper adjustment.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-contaminated-air",
+                  "type": "heading",
+                  "props": {
+                    "text": "5. Contaminated Air Systems",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "contaminated-air"
+                  }
+                },
+                {
+                  "id": "p-contaminated-air-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Moisture is one of the biggest enemies of any air brake system. That's why air dryers play such an important role. When air dryers fail, moisture enters the system and causes:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-contaminated-air-2",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Internal corrosion"
+                      },
+                      {
+                        "text": "Frozen air lines during colder weather"
+                      },
+                      {
+                        "text": "Valve failures"
+                      },
+                      {
+                        "text": "Reduced component life"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-contaminated-air-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Replacing filters and servicing air dryers on schedule helps protect the entire brake system.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-why-parts-matter",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Air Brake Parts Matter",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "why-parts-matter"
+                  }
+                },
+                {
+                  "id": "p-why-parts-matter-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Unlike hydraulic braking systems found on passenger vehicles, commercial trucks rely on compressed air to activate the brakes. Because every component works together, a single worn or damaged part can affect the entire system.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-why-parts-matter-2",
+                  "type": "text",
+                  "props": {
+                    "text": "The primary parts of an air brake system include:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-why-parts-matter-3",
+                  "type": "check-list",
                   "props": {
                     "items": [
                       {
-                        "ctaId": "request-appointment"
+                        "text": "Air compressor"
                       },
                       {
-                        "ctaId": "call-main-secondary"
+                        "text": "Air dryer"
+                      },
+                      {
+                        "text": "Air tanks"
+                      },
+                      {
+                        "text": "Brake chambers"
+                      },
+                      {
+                        "text": "Slack adjusters"
+                      },
+                      {
+                        "text": "Brake drums and shoes"
+                      },
+                      {
+                        "text": "Valves"
+                      },
+                      {
+                        "text": "Air lines and hoses"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-why-parts-matter-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Routine inspections and preventive maintenance help ensure these components continue performing as designed.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-2",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/common-problems-with-air-brake-parts-for-semi-trucks/2.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Rows of labeled parts shelves stocked with brake and lighting components at Sun State International"
+                    }
+                  }
+                },
+                {
+                  "id": "h-dont-ignore",
+                  "type": "heading",
+                  "props": {
+                    "text": "Don't Ignore Small Brake Problems",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "dont-ignore"
+                  }
+                },
+                {
+                  "id": "p-dont-ignore-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Many drivers continue operating with minor brake concerns because the truck still seems to stop normally. Unfortunately, brake problems rarely improve on their own. What starts as:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-dont-ignore-2",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "A slow air leak"
+                      },
+                      {
+                        "text": "Slight brake drag"
+                      },
+                      {
+                        "text": "Minor vibration"
+                      },
+                      {
+                        "text": "Uneven braking"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-dont-ignore-3",
+                  "type": "text",
+                  "props": {
+                    "text": "…can eventually become an expensive repair—or worse, a safety issue that puts your drivers and others on the road at risk.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-dont-ignore-4-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-dont-ignore-4",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 34,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-dont-ignore-4-label",
+                          "type": "text",
+                          "props": {
+                            "text": "NEED REPLACEMENT AIR BRAKE PARTS?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "co-dont-ignore-4-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Sun State International carries a wide selection of quality brake components designed for all makes and models of heavy-duty trucks. Our knowledgeable parts team can help you find exactly what your truck needs to minimize downtime.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 15,
+                              "lineHeight": 1.7,
+                              "marginBottom": 12
+                            }
+                          }
+                        },
+                        {
+                          "id": "co-dont-ignore-4-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "parts-department",
+                                "label": "Find the parts you need →"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-professional-service",
+                  "type": "heading",
+                  "props": {
+                    "text": "Professional Semi Truck Brake Service Matters",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "professional-service"
+                  }
+                },
+                {
+                  "id": "p-professional-service-1",
+                  "type": "text",
+                  "props": {
+                    "text": "While replacing some parts may seem straightforward, diagnosing an air brake system requires specialized knowledge and equipment.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-professional-service-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Every repair should include:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-professional-service-3",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Complete air system inspection"
+                      },
+                      {
+                        "text": "Brake adjustment verification"
+                      },
+                      {
+                        "text": "Leak testing"
+                      },
+                      {
+                        "text": "Component inspection"
+                      },
+                      {
+                        "text": "DOT compliance checks"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-professional-service-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Professional semi truck brake service helps ensure every component is functioning properly before your truck returns to the road. At Sun State International, our technicians understand heavy-duty brake systems inside and out. Whether your truck needs routine maintenance or a complete brake repair, we'll identify the problem correctly the first time.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-choosing-quality-parts",
+                  "type": "heading",
+                  "props": {
+                    "text": "Choosing Quality Commercial Truck Brake Parts",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "choosing-quality-parts"
+                  }
+                },
+                {
+                  "id": "p-choosing-quality-parts-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Not all replacement parts offer the same performance or longevity. Choosing quality commercial truck brake parts helps reduce repeat repairs, improve safety, and maximize uptime. Our parts specialists work with fleets and owner-operators every day to recommend components that meet manufacturer specifications and keep trucks operating reliably.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-choosing-quality-parts-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Combined with expert installation, quality parts help lower long-term maintenance costs while protecting one of your fleet's most important safety systems.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-keep-moving",
+                  "type": "heading",
+                  "props": {
+                    "text": "Keep Your Trucks Moving With Sun State International",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "keep-moving"
+                  }
+                },
+                {
+                  "id": "p-keep-moving-1",
+                  "type": "text",
+                  "props": {
+                    "text": "As a full-service commercial truck dealership, we know your goal is simple: keep your trucks on the road and your business moving forward. That commitment to customer success is at the core of everything we do. Whether you're looking for replacement air brake parts, preventative maintenance, or complete heavy-duty truck repair Florida businesses rely on, our team is ready to help. <a href=\"/service-appointment\">Schedule service with Sun State International today</a> and let our experienced technicians keep your air brake system performing at its best.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-keep-moving-2",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "parts-department",
+                        "label": "Explore Parts Department",
+                        "style": "primary"
+                      },
+                      {
+                        "ctaId": "schedule-service",
+                        "label": "Schedule with Service",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-share",
+                  "type": "post-share",
+                  "props": {
+                    "label": "Share",
+                    "items": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fcommon-problems-with-air-brake-parts-for-semi-trucks",
+                        "newTab": true
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fcommon-problems-with-air-brake-parts-for-semi-trucks&text=Common%20Problems%20With%20Air%20Brake%20Parts%20for%20Semi%20Trucks",
+                        "newTab": true
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fcommon-problems-with-air-brake-parts-for-semi-trucks",
+                        "newTab": true
+                      },
+                      {
+                        "label": "Email",
+                        "url": "mailto:?subject=Common%20Problems%20With%20Air%20Brake%20Parts%20for%20Semi%20Trucks&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fcommon-problems-with-air-brake-parts-for-semi-trucks",
+                        "newTab": false
                       }
                     ]
                   }
@@ -739,6 +882,84 @@
           ]
         }
       ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Brakes acting up?",
+          "heading": "Don't wait on a small problem.",
+          "body": "Call 800.741.7566 and our team in Tampa, Sarasota, Davenport or Brooksville will get your air brake system inspected and back on the road.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact"
+        }
+      },
+      "children": []
     }
-  ]
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/common-problems-with-air-brake-parts-for-semi-trucks\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/common-problems-with-air-brake-parts-for-semi-trucks\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n/* This article's lists run at a looser 1.8 leading than the other posts'. */\n[data-bz-node=\"art-body\"] .ss-prose-list li { line-height: 1.8; }\n"
 }

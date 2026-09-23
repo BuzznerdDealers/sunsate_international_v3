@@ -290,6 +290,9 @@ them updates itself.
 
 ## 8. `SS_International_7` — the trailer-parts post
 
+> Superseded by §9: the blog handoff redraws this post without the quick answer and FAQ,
+> with its own photographs, on the shared post layout.
+
 The handoff is one page: the blog post *Why Go to Sun State Trailers for Semi Trailer Parts*.
 Its header, utility bar, footer and tokens are the ones already built here, so the chrome was
 left as the dealer last saved it and only the post was added.
@@ -327,3 +330,73 @@ What the platform could not express, and what was changed:
   `/locations/trailer-sales` link resolves once that rooftop is published from Admin.
 - A **column cannot carry an anchor** (only sections and blocks render one), which is why
   `#post-answer` sits on the answer's text block.
+
+---
+
+## 9. Blog handoff, Part 1 of 6 — the blog page and nine posts
+
+`design_handoff_blog_parts/sunstate-blog-handoff-part-1`: `blog.html` and nine article pages.
+Parts 2–6 carry the other 45 posts on the same design.
+
+**The posts.** Four are new (*Heavy Duty Truck Parts Tampa*, *How to Choose a Service and Truck
+Parts Dealer*, *How to Choose the Right Truck Parts and Service Dealer*, *What Happens When You
+Run Out of Diesel Exhaust Fluid?*), and five replace what was here: the air-brake and oil-change
+posts (short migrations with no hero or rail) and three drafts that held only an excerpt
+(*What to Expect From an International Truck Service Center*, *Why Fuel Filter Pressure…*),
+now published. *Why Go to Sun State Trailers…* is redrawn on the same layout. Body copy
+matches the handoff word for word — checked mechanically against every post.
+
+Each post is the same tree: the **Post hero** component, an `article` section holding
+`art-side` (the **Post contents** rail and a promo card) and `art-body`, then `related`
+(Latest posts) and the **Contact CTA band**. In the body: text and heading blocks, the
+**Prose list**, the **Checkmark list** (now with an optional bold title per row), image blocks,
+bordered callouts, button rows and the **Share row**.
+
+`tools/blog-handoff/convert.py` builds every post from its handoff page, so Parts 2–6 come
+out with the same ids, the same buttons and the same styling. It fails on any element it does
+not recognise rather than dropping it, and it also rewrites the blog page's cards.
+
+**Where the styling lives.**
+
+- The article layout — the grid, the sticky rail, prose type, the photo crop, the button
+  pair, the Keep reading cards — is written **once**, in *Design → Custom code*, under
+  "Long-form posts", keyed to those five node ids. It used to be ~150 lines repeated in each
+  post. The contents rail's scroll-spy moved there too.
+- Every box inside a post (callouts, the rail's promo card, the two-column cards, the quick
+  answer on *Features…*) carries its border, padding and label type as **node styles**, so it
+  is restyled in the inspector and keeps its look when duplicated on the canvas.
+- A post's own CSS is now one rule: hiding its own card from Keep reading. The air-brake post
+  adds its looser list leading, the only per-post rule the handoff has.
+
+**Buttons.** Every callout, rail link and button pair places an existing library button for its
+destination — `schedule-service`, `parts-department`, `order-parts-online`,
+`service-department`, `contact-us`, `all-blog-posts` — with the post's own wording as a
+label override. The four single-use buttons §8 added were removed.
+
+**The blog page** keeps its structure and copy (they already matched). Changed: the hero
+photograph, the topic chips (the handoff's nine, plus *Diagnostics* for the post that uses
+it), a three-column grid, and the cards — one per published post, with the handoff's topics
+and excerpts. Cards that already had a Media Bin cover keep it.
+
+**What differs from the handoff, and why.**
+
+- **The design system.** The dealer changed the tokens on 22 September: `accent` is now
+  `#272623` (not the handoff's red `#EE2D24`), `accentDark` `#ff7144`, `paper` `#e8e8e8`,
+  and the type scale moved. Everything here uses the tokens, so posts follow whatever the
+  Design system says; the handoff's red appears only once `accent` is set back.
+- **Keep reading shows the latest posts**, not the three the handoff picks by hand: Latest
+  posts has no way to choose posts or skip the one being read (worth reporting).
+- **The blog page's cards are typed rows.** This renderer has no `posts` data source, so a post
+  published on the Posts screen does not appear on the blog page until its card is added.
+  The converter adds them; a data source would remove the step (worth reporting).
+- **Dates.** The handoff's post pages and its listing disagree by a day on four posts (oil
+  change, both parts-dealer posts, DEF). The post page, the page metadata and the handoff
+  README agree, so those dates are used throughout.
+- **Photographs** are the handoff's 1280px exports in `public/img/blog/<slug>/`. The Media
+  Bin already holds full-size originals for some of these posts; they could not be matched
+  from here, so swapping them in is a dashboard edit.
+- *How Electrical Diagnostic Tools…* and *When to Schedule Semi Truck Alignment…* are
+  published here but not among the handoff's 54 posts. They were left as they are.
+- The header and footer are the dealer's current template, not the handoff's; and the
+  article JSON-LD (`BlogPosting`, `BreadcrumbList`) is still not emitted for posts.
+

@@ -1,0 +1,852 @@
+{
+  "slug": "heavy-duty-truck-parts-tampa",
+  "title": "Heavy Duty Truck Parts Tampa: What to Replace First",
+  "date": "2026-05-12",
+  "description": "Need heavy duty truck parts in Tampa? Learn what parts wear out first and schedule service with Sun State International.",
+  "status": "published",
+  "coverImage": "/img/blog/heavy-duty-truck-parts-tampa/hero.jpg",
+  "topic": "Parts",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Parts",
+          "title": "Heavy Duty Truck Parts Tampa: What to Replace First",
+          "topic": "Parts",
+          "date": "May 12, 2026",
+          "readTime": "5 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/heavy-duty-truck-parts-tampa/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Red International truck with hood open inside the Sun State International service shop"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "Why Preventive Maintenance Matters",
+                        "href": "#why-preventive"
+                      },
+                      {
+                        "label": "Parts That Wear Out First",
+                        "href": "#what-wears-first"
+                      },
+                      {
+                        "label": "How Quality Parts Reduce Downtime",
+                        "href": "#quality-parts"
+                      },
+                      {
+                        "label": "Need Parts in Tampa?",
+                        "href": "#need-parts"
+                      },
+                      {
+                        "label": "Why the Right Dealer Matters",
+                        "href": "#right-dealer"
+                      },
+                      {
+                        "label": "Keep Your Fleet Running Strong",
+                        "href": "#keep-running"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "NEED PARTS?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Order online or talk to our parts team today.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "order-parts-online",
+                                "label": "Shop Parts →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Every commercial truck owner knows one thing for certain: parts wear out. The challenge is knowing which components need attention first before they create expensive breakdowns or unexpected downtime.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "For owner-operators and fleet managers alike, staying ahead of maintenance is one of the best ways to protect your investment and keep trucks operating efficiently. Replacing worn heavy-duty truck parts before failure can save money, improve safety, and reduce disruptions to your business.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-why-preventive",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Preventive Maintenance Matters",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "why-preventive"
+                  }
+                },
+                {
+                  "id": "p-why-preventive-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Commercial trucks put thousands of miles on the road every month. Over time, daily wear affects critical systems including brakes, suspension, cooling systems, driveline components, and filters. The problem is that many part failures start small. Ignoring minor wear can quickly lead to larger mechanical issues that take trucks off the road for days instead of hours.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-why-preventive-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Following a proper diesel truck maintenance schedule helps reduce:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-why-preventive-3",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Unexpected breakdowns"
+                      },
+                      {
+                        "text": "Emergency repair costs"
+                      },
+                      {
+                        "text": "Driver delays"
+                      },
+                      {
+                        "text": "Missed delivery schedules"
+                      },
+                      {
+                        "text": "Fuel inefficiency"
+                      },
+                      {
+                        "text": "Excessive tire wear"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/heavy-duty-truck-parts-tampa/1.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Technician inspecting heavy duty truck engine components during a maintenance check"
+                    }
+                  }
+                },
+                {
+                  "id": "h-what-wears-first",
+                  "type": "heading",
+                  "props": {
+                    "text": "Heavy Duty Truck Parts That Typically Wear Out First",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "what-wears-first"
+                  }
+                },
+                {
+                  "id": "p-what-wears-first-1",
+                  "type": "text",
+                  "props": {
+                    "text": "While every fleet is different, some components experience more wear than others due to constant use and heavy loads. Here are some of the most common heavy duty truck parts that should be inspected and replaced regularly.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-what-wears-first-2",
+                  "type": "heading",
+                  "props": {
+                    "text": "Filters and Fluids",
+                    "headingLevel": 3,
+                    "align": "left",
+                    "anchor": "filters"
+                  }
+                },
+                {
+                  "id": "p-what-wears-first-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Filters are often overlooked until performance problems begin showing up. Common filters that need routine replacement include:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-what-wears-first-4",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Fuel filters"
+                      },
+                      {
+                        "text": "Oil filters"
+                      },
+                      {
+                        "text": "Air filters"
+                      },
+                      {
+                        "text": "Cabin air filters"
+                      },
+                      {
+                        "text": "DEF filters"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-what-wears-first-5",
+                  "type": "text",
+                  "props": {
+                    "text": "Dirty or clogged filters reduce efficiency and place extra strain on engines and fuel systems. Skipping filter replacements can eventually lead to fuel delivery problems, overheating, or engine damage.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-what-wears-first-6",
+                  "type": "heading",
+                  "props": {
+                    "text": "Brake Components",
+                    "headingLevel": 3,
+                    "align": "left",
+                    "anchor": "brakes"
+                  }
+                },
+                {
+                  "id": "p-what-wears-first-7",
+                  "type": "text",
+                  "props": {
+                    "text": "Brake systems take constant abuse on commercial trucks, especially in stop-and-go traffic, heavy hauling situations, or long-distance driving. Brake components that wear frequently:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-what-wears-first-8",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Brake pads"
+                      },
+                      {
+                        "text": "Rotors"
+                      },
+                      {
+                        "text": "Brake drums"
+                      },
+                      {
+                        "text": "Air brake components"
+                      },
+                      {
+                        "text": "Slack adjusters"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-what-wears-first-9",
+                  "type": "text",
+                  "props": {
+                    "text": "Drivers may notice squealing, vibration, pulling, or longer stopping distances when brakes begin wearing out. Routine inspections help catch brake wear before it creates safety concerns or larger repair bills.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-what-wears-first-10",
+                  "type": "heading",
+                  "props": {
+                    "text": "Suspension Components",
+                    "headingLevel": 3,
+                    "align": "left",
+                    "anchor": "suspension"
+                  }
+                },
+                {
+                  "id": "p-what-wears-first-11",
+                  "type": "text",
+                  "props": {
+                    "text": "Suspension systems help absorb road shock, protect cargo, and maintain steering stability. Over time, suspension wear can lead to rough rides, uneven tire wear, poor handling, and steering instability.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-what-wears-first-12",
+                  "type": "text",
+                  "props": {
+                    "text": "Frequently replaced suspension parts include:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-what-wears-first-13",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Bushings"
+                      },
+                      {
+                        "text": "Shocks"
+                      },
+                      {
+                        "text": "Airbags"
+                      },
+                      {
+                        "text": "Torque rods"
+                      },
+                      {
+                        "text": "Leaf springs"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-what-wears-first-14",
+                  "type": "text",
+                  "props": {
+                    "text": "Addressing suspension wear early can help prevent damage to tires and driveline systems.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-what-wears-first-15",
+                  "type": "heading",
+                  "props": {
+                    "text": "Driveline Components",
+                    "headingLevel": 3,
+                    "align": "left",
+                    "anchor": "driveline"
+                  }
+                },
+                {
+                  "id": "p-what-wears-first-16",
+                  "type": "text",
+                  "props": {
+                    "text": "Your driveline system transfers power from the engine to the wheels. When driveline parts wear out, trucks may experience vibration, clunking noises, or power transfer issues. Common driveline parts for commercial trucks that require maintenance include:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-what-wears-first-17",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "U-joints"
+                      },
+                      {
+                        "text": "Driveshafts"
+                      },
+                      {
+                        "text": "Carrier bearings"
+                      },
+                      {
+                        "text": "Differentials"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-what-wears-first-18",
+                  "type": "text",
+                  "props": {
+                    "text": "Ignoring driveline issues can lead to major mechanical failures and extended downtime.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-what-wears-first-19",
+                  "type": "heading",
+                  "props": {
+                    "text": "Cooling System Parts",
+                    "headingLevel": 3,
+                    "align": "left",
+                    "anchor": "cooling"
+                  }
+                },
+                {
+                  "id": "p-what-wears-first-20",
+                  "type": "text",
+                  "props": {
+                    "text": "Florida heat can be hard on commercial truck cooling systems. Radiators, hoses, thermostats, water pumps, and coolant lines all play an important role in preventing engine overheating. Warning signs of cooling system problems include:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-what-wears-first-21",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Rising engine temperatures"
+                      },
+                      {
+                        "text": "Coolant leaks"
+                      },
+                      {
+                        "text": "Steam from the engine compartment"
+                      },
+                      {
+                        "text": "Frequent overheating warnings"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-what-wears-first-22",
+                  "type": "text",
+                  "props": {
+                    "text": "Cooling system failures can quickly turn into major engine repairs if not addressed early.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-what-wears-first-23",
+                  "type": "heading",
+                  "props": {
+                    "text": "Tires and Alignment Components",
+                    "headingLevel": 3,
+                    "align": "left",
+                    "anchor": "tires"
+                  }
+                },
+                {
+                  "id": "p-what-wears-first-24",
+                  "type": "text",
+                  "props": {
+                    "text": "Tire wear often tells a larger story about truck health. Uneven wear patterns may indicate problems with suspension systems, steering components, or alignment settings.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-what-wears-first-25",
+                  "type": "text",
+                  "props": {
+                    "text": "Scheduling regular truck alignment service helps improve tire life, fuel efficiency, and overall handling. For fleets operating daily routes, alignment inspections are one of the easiest ways to reduce unnecessary operating costs.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-2",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/heavy-duty-truck-parts-tampa/2.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Shelves of genuine truck parts organized and labeled in the Sun State International parts department"
+                    }
+                  }
+                },
+                {
+                  "id": "h-quality-parts",
+                  "type": "heading",
+                  "props": {
+                    "text": "How Quality Parts Help Reduce Downtime",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "quality-parts"
+                  }
+                },
+                {
+                  "id": "p-quality-parts-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Cheap or low-quality replacement parts often cost more in the long run. Frequent failures create repeat repairs, unexpected breakdowns, and additional labor costs. Using dependable OEM or trusted aftermarket heavy-duty truck parts helps fleets operate more reliably while minimizing disruptions. That's especially important for companies focused on reducing truck downtime and preventative maintenance planning. At Sun State International, we help customers find quality parts designed to support long-term performance and reliability.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-need-parts",
+                  "type": "heading",
+                  "props": {
+                    "text": "Need Heavy Duty Truck Parts in Tampa?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "need-parts"
+                  }
+                },
+                {
+                  "id": "p-need-parts-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Finding the right parts quickly matters when your trucks are your business. Sun State International's parts department provides access to dependable truck parts for all makes and models that Tampa fleets and owner-operators rely on every day. From filters and brake components to driveline and suspension parts, our team is here to help you find what you need without unnecessary delays. Visit the Sun State International parts department for OEM and aftermarket heavy-duty truck parts backed by dependable customer support and fast turnaround times.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-need-parts-2-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-need-parts-2",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-need-parts-2-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "order-parts-online",
+                                "label": "Explore Sun State's Parts Department →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "fig-3",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/heavy-duty-truck-parts-tampa/3.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Sun State International warehouse team pulling and checking parts orders"
+                    }
+                  }
+                },
+                {
+                  "id": "h-right-dealer",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Choosing the Right Truck Parts and Service Dealer Matters",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "right-dealer"
+                  }
+                },
+                {
+                  "id": "p-right-dealer-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Not every truck parts and service dealer offers the same experience. Beyond having inventory available, the right dealership should understand the urgency behind every repair and maintenance appointment. At Sun State International, we believe customer service matters just as much as the parts themselves. Our team works hard to provide straightforward communication, experienced support, and dependable service for all makes and models that helps businesses stay on schedule.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-keep-running",
+                  "type": "heading",
+                  "props": {
+                    "text": "Keep Your Fleet Running Strong With Sun State International",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "keep-running"
+                  }
+                },
+                {
+                  "id": "p-keep-running-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Commercial trucks experience wear every single day, but staying ahead of maintenance can help prevent major breakdowns and costly downtime. From international truck filters and brake components to cooling systems and driveline repairs, replacing worn parts early is one of the smartest ways to protect your fleet. Whether your trucks need preventative maintenance, diagnostics, or replacement parts, Sun State International is here to help. Schedule a service appointment today and let our experienced team help keep your fleet operating at its best.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-keep-running-2",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "order-parts-online",
+                        "label": "Shop for Parts",
+                        "style": "primary"
+                      },
+                      {
+                        "ctaId": "schedule-service",
+                        "label": "Schedule Service",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-share",
+                  "type": "post-share",
+                  "props": {
+                    "label": "Share",
+                    "items": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fheavy-duty-truck-parts-tampa",
+                        "newTab": true
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fheavy-duty-truck-parts-tampa&text=Heavy%20Duty%20Truck%20Parts%20Tampa%3A%20What%20to%20Replace%20First",
+                        "newTab": true
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fheavy-duty-truck-parts-tampa",
+                        "newTab": true
+                      },
+                      {
+                        "label": "Email",
+                        "url": "mailto:?subject=Heavy%20Duty%20Truck%20Parts%20Tampa%3A%20What%20to%20Replace%20First&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fheavy-duty-truck-parts-tampa",
+                        "newTab": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Need parts or service in tampa?",
+          "heading": "Let's keep your fleet moving.",
+          "body": "Call 800.741.7566 and our parts and service teams in Tampa, Sarasota, Davenport or Brooksville will get you what you need.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/heavy-duty-truck-parts-tampa\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/heavy-duty-truck-parts-tampa\"])) > .bz-card:nth-child(n+4) { display: none; }\n"
+}

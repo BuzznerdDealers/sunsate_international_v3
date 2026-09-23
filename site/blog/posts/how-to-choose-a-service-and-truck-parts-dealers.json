@@ -1,0 +1,898 @@
+{
+  "slug": "how-to-choose-a-service-and-truck-parts-dealers",
+  "title": "How to Choose a Service and Truck Parts Dealer",
+  "date": "2026-06-02",
+  "description": "Choose the right truck parts dealer for reliable parts and service. Keep your fleet running. Shop parts or schedule service today.",
+  "status": "published",
+  "coverImage": "/img/blog/how-to-choose-a-service-and-truck-parts-dealers/hero.jpg",
+  "topic": "Parts",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Parts",
+          "title": "How to Choose a Service and Truck Parts Dealer",
+          "topic": "Parts",
+          "date": "June 2, 2026",
+          "readTime": "5 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/how-to-choose-a-service-and-truck-parts-dealers/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Sun State International dealership building with a lineup of trucks and trailers outside"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "What a Dealer Provides",
+                        "href": "#what-they-provide"
+                      },
+                      {
+                        "label": "Why Your Choice Matters",
+                        "href": "#why-it-matters"
+                      },
+                      {
+                        "label": "Key Factors to Look For",
+                        "href": "#key-factors"
+                      },
+                      {
+                        "label": "Signs You Found the Right One",
+                        "href": "#signs"
+                      },
+                      {
+                        "label": "Mistakes to Avoid",
+                        "href": "#mistakes"
+                      },
+                      {
+                        "label": "How the Right Dealer Supports Growth",
+                        "href": "#growth"
+                      },
+                      {
+                        "label": "Partner With a Team You Can Count On",
+                        "href": "#partner"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "NEED PARTS?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Order online or talk to our parts team today.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "order-parts-online",
+                                "label": "Shop Parts →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "When your trucks are your livelihood, choosing the right truck parts dealer isn't a small decision. It's a business decision.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "For owner-operators and fleet managers, the wrong partner means delays, repeat repairs, and unnecessary costs. The right one keeps your operation moving, your drivers working, and your bottom line protected. At Sun State International, we understand that you're not just buying parts, you're investing in reliability. So let's walk through what actually matters when choosing a truck parts dealer, and how to make the right call for your business.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-what-they-provide",
+                  "type": "heading",
+                  "props": {
+                    "text": "What Does a Truck Parts Dealer Really Provide?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "what-they-provide"
+                  }
+                },
+                {
+                  "id": "p-what-they-provide-1",
+                  "type": "text",
+                  "props": {
+                    "text": "A dependable truck parts dealer does more than sell components. They become part of your operation. That includes:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-what-they-provide-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Access to quality semi truck parts"
+                      },
+                      {
+                        "text": "Fast turnaround on orders"
+                      },
+                      {
+                        "text": "Knowledgeable support when something isn't clear"
+                      },
+                      {
+                        "text": "Service capabilities when installation or diagnostics are needed"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-why-it-matters",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Your Choice Matters More Than You Think",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "why-it-matters"
+                  }
+                },
+                {
+                  "id": "p-why-it-matters-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Every hour your truck is off the road costs you money. Downtime can cost fleets hundreds of dollars per day per truck. That number adds up quickly when parts are delayed or installed incorrectly.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-why-it-matters-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Choosing the right dealer helps you:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-why-it-matters-3",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Avoid repeat repairs"
+                      },
+                      {
+                        "text": "Reduce downtime"
+                      },
+                      {
+                        "text": "Keep your drivers on schedule"
+                      },
+                      {
+                        "text": "Protect your equipment long-term"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/how-to-choose-a-service-and-truck-parts-dealers/1.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Technicians working on semi truck cabs and parts inside the Sun State International service shop"
+                    }
+                  }
+                },
+                {
+                  "id": "h-key-factors",
+                  "type": "heading",
+                  "props": {
+                    "text": "Key Factors to Look for in a Truck Parts Dealer",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "key-factors"
+                  }
+                },
+                {
+                  "id": "h3-key-factors-1",
+                  "type": "heading",
+                  "props": {
+                    "text": "1. Inventory Availability and Speed",
+                    "headingLevel": 3,
+                    "align": "left",
+                    "anchor": "inventory"
+                  }
+                },
+                {
+                  "id": "p-key-factors-2",
+                  "type": "text",
+                  "props": {
+                    "text": "You shouldn't have to wait days for a basic part. A strong truck parts dealer will have:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-key-factors-3",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "A wide inventory of International truck parts"
+                      },
+                      {
+                        "text": "Access to OEM and high-quality replacement parts"
+                      },
+                      {
+                        "text": "Quick turnaround times"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-key-factors-4",
+                  "type": "text",
+                  "props": {
+                    "text": "The goal is simple: get you what you need, when you need it.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-key-factors-5",
+                  "type": "heading",
+                  "props": {
+                    "text": "2. OEM vs Aftermarket Knowledge",
+                    "headingLevel": 3,
+                    "align": "left",
+                    "anchor": "oem-aftermarket"
+                  }
+                },
+                {
+                  "id": "p-key-factors-6",
+                  "type": "text",
+                  "props": {
+                    "text": "Not all parts are created equal. A knowledgeable International truck parts dealer will help you understand:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-key-factors-7",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "When OEM parts are the better investment"
+                      },
+                      {
+                        "text": "When aftermarket options make sense"
+                      },
+                      {
+                        "text": "How each choice impacts performance and longevity"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-key-factors-8",
+                  "type": "text",
+                  "props": {
+                    "text": "This kind of guidance saves you money and prevents unnecessary wear on your truck.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-key-factors-9",
+                  "type": "heading",
+                  "props": {
+                    "text": "3. Service Department Support",
+                    "headingLevel": 3,
+                    "align": "left",
+                    "anchor": "service-support"
+                  }
+                },
+                {
+                  "id": "p-key-factors-10",
+                  "type": "text",
+                  "props": {
+                    "text": "Parts are only half the equation. If something goes wrong, you need a team that can diagnose and fix the issue, not just sell you another part. Look for a dealer that offers:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-key-factors-11",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "On-site service and diagnostics"
+                      },
+                      {
+                        "text": "Preventative maintenance support"
+                      },
+                      {
+                        "text": "Experienced technicians who know your equipment"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-key-factors-12",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, our parts and service teams work together, so you're not bouncing between providers to get the job done.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-key-factors-13",
+                  "type": "heading",
+                  "props": {
+                    "text": "4. Easy Access to Online Truck Parts",
+                    "headingLevel": 3,
+                    "align": "left",
+                    "anchor": "online-parts"
+                  }
+                },
+                {
+                  "id": "p-key-factors-14",
+                  "type": "text",
+                  "props": {
+                    "text": "In today's industry, convenience matters. A reliable dealer should offer access to online truck parts so you can:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-key-factors-15",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Order parts anytime"
+                      },
+                      {
+                        "text": "Check availability in real time"
+                      },
+                      {
+                        "text": "Reduce time spent on calls and follow-ups"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-key-factors-16",
+                  "type": "text",
+                  "props": {
+                    "text": "This is especially valuable when you're managing multiple trucks or working long hours.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-key-factors-17",
+                  "type": "heading",
+                  "props": {
+                    "text": "5. Clear Communication and Straightforward Service",
+                    "headingLevel": 3,
+                    "align": "left",
+                    "anchor": "communication"
+                  }
+                },
+                {
+                  "id": "p-key-factors-18",
+                  "type": "text",
+                  "props": {
+                    "text": "You shouldn't have to chase updates or deal with confusion. The best dealers communicate clearly about timelines, provide honest recommendations, and respect your time.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-key-factors-19",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, being straightforward isn't just part of the process, it's part of how we do business. We know that delays and miscommunication don't just frustrate you, they affect your entire operation.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-key-factors-20",
+                  "type": "heading",
+                  "props": {
+                    "text": "6. Long-Term Relationship, Not One-Time Sales",
+                    "headingLevel": 3,
+                    "align": "left",
+                    "anchor": "long-term"
+                  }
+                },
+                {
+                  "id": "p-key-factors-21",
+                  "type": "text",
+                  "props": {
+                    "text": "A good truck parts dealer isn't focused on one transaction. They're focused on building a relationship. That means understanding your fleet and usage, recommending solutions that make sense for your business, and being there when you need support.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-key-factors-22",
+                  "type": "text",
+                  "props": {
+                    "text": "Sun State International has built its reputation by focusing on customer relationships and consistent service, not just sales.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-key-factors-23-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-key-factors-23",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-key-factors-23-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "order-parts-online",
+                                "label": "Get the Parts You Need →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-signs",
+                  "type": "heading",
+                  "props": {
+                    "text": "Signs You've Found the Right Truck Parts Dealer",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "signs"
+                  }
+                },
+                {
+                  "id": "p-signs-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Not sure if you've found the right fit? Here are a few signs:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-signs-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "You're not constantly dealing with repeat issues"
+                      },
+                      {
+                        "text": "Parts arrive when expected"
+                      },
+                      {
+                        "text": "Service appointments are efficient and organized"
+                      },
+                      {
+                        "text": "You feel confident in their recommendations"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-signs-3",
+                  "type": "text",
+                  "props": {
+                    "text": "When your dealer is doing their job right, your day runs smoother.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-2",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/how-to-choose-a-service-and-truck-parts-dealers/2.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Sun State International staff assisting a customer at the parts and service counter"
+                    }
+                  }
+                },
+                {
+                  "id": "h-mistakes",
+                  "type": "heading",
+                  "props": {
+                    "text": "Mistakes to Avoid When Searching for Semi Truck Parts",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "mistakes"
+                  }
+                },
+                {
+                  "id": "h3-mistakes-1",
+                  "type": "heading",
+                  "props": {
+                    "text": "Choosing Based on Price Alone",
+                    "headingLevel": 3,
+                    "align": "left",
+                    "anchor": "price-alone"
+                  }
+                },
+                {
+                  "id": "p-mistakes-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Cheaper parts can lead to faster wear and tear, more frequent repairs, and higher long-term costs. The better investment is quality and reliability.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-mistakes-3",
+                  "type": "heading",
+                  "props": {
+                    "text": "Working with Multiple Vendors",
+                    "headingLevel": 3,
+                    "align": "left",
+                    "anchor": "multiple-vendors"
+                  }
+                },
+                {
+                  "id": "p-mistakes-4",
+                  "type": "text",
+                  "props": {
+                    "text": "While it might seem flexible, working with multiple providers often leads to miscommunication, delays in service, and a lack of accountability. Having one trusted partner simplifies everything.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-mistakes-5",
+                  "type": "heading",
+                  "props": {
+                    "text": "Ignoring Preventive Maintenance",
+                    "headingLevel": 3,
+                    "align": "left",
+                    "anchor": "ignoring-maintenance"
+                  }
+                },
+                {
+                  "id": "p-mistakes-6",
+                  "type": "text",
+                  "props": {
+                    "text": "Even the best parts won't help if maintenance is inconsistent. A strong dealer will help you stay ahead with service reminders, maintenance scheduling, and ongoing support.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-growth",
+                  "type": "heading",
+                  "props": {
+                    "text": "How the Right Dealer Supports Your Growth",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "growth"
+                  }
+                },
+                {
+                  "id": "p-growth-1",
+                  "type": "text",
+                  "props": {
+                    "text": "As your business grows, your needs change. A dependable truck parts dealer grows with you by scaling inventory access, supporting larger fleets, and providing consistent service across locations.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-growth-2",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, our goal is to provide everything you need, from parts to service, so you can focus on running your business.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-partner",
+                  "type": "heading",
+                  "props": {
+                    "text": "Partner with a Team You Can Count On",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "partner"
+                  }
+                },
+                {
+                  "id": "p-partner-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At the end of the day, choosing a truck parts dealer comes down to trust. You need a partner who shows up when they say they will, provides quality parts and service, and keeps your business moving forward. Visit the <a href=\"https://www.sunstateparts.com/login\">Online Parts Store</a> to get the parts you need today. <a href=\"/service-appointment\">Schedule a Service Appointment</a> with Sun State International and keep your fleet running strong.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-partner-2",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "order-parts-online",
+                        "label": "Shop for Parts",
+                        "style": "primary"
+                      },
+                      {
+                        "ctaId": "schedule-service",
+                        "label": "Schedule Service",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-share",
+                  "type": "post-share",
+                  "props": {
+                    "label": "Share",
+                    "items": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fhow-to-choose-a-service-and-truck-parts-dealers",
+                        "newTab": true
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fhow-to-choose-a-service-and-truck-parts-dealers&text=How%20to%20Choose%20a%20Service%20and%20Truck%20Parts%20Dealer",
+                        "newTab": true
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fhow-to-choose-a-service-and-truck-parts-dealers",
+                        "newTab": true
+                      },
+                      {
+                        "label": "Email",
+                        "url": "mailto:?subject=How%20to%20Choose%20a%20Service%20and%20Truck%20Parts%20Dealer&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fhow-to-choose-a-service-and-truck-parts-dealers",
+                        "newTab": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Ready to partner with a team you can count on?",
+          "heading": "Let's keep your fleet moving.",
+          "body": "Call 800.741.7566 and our parts and service teams in Tampa, Sarasota, Davenport or Brooksville will get you what you need.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/how-to-choose-a-service-and-truck-parts-dealers\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/how-to-choose-a-service-and-truck-parts-dealers\"])) > .bz-card:nth-child(n+4) { display: none; }\n"
+}
