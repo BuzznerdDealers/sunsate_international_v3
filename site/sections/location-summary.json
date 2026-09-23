@@ -23,6 +23,64 @@
       "default": ""
     },
     {
+      "key": "rooftop",
+      "type": "list",
+      "label": "This branch (from Locations)",
+      "fields": [
+        {
+          "key": "name",
+          "type": "text",
+          "label": "Name"
+        },
+        {
+          "key": "subtitle",
+          "type": "text",
+          "label": "Trading as"
+        },
+        {
+          "key": "streetAddress",
+          "type": "text",
+          "label": "Street"
+        },
+        {
+          "key": "city",
+          "type": "text",
+          "label": "City"
+        },
+        {
+          "key": "region",
+          "type": "text",
+          "label": "State"
+        },
+        {
+          "key": "postalCode",
+          "type": "text",
+          "label": "ZIP"
+        },
+        {
+          "key": "phone",
+          "type": "text",
+          "label": "Phone"
+        },
+        {
+          "key": "phoneUrl",
+          "type": "url",
+          "label": "Phone link"
+        },
+        {
+          "key": "email",
+          "type": "text",
+          "label": "Email"
+        },
+        {
+          "key": "mapUrl",
+          "type": "url",
+          "label": "Directions"
+        }
+      ],
+      "default": []
+    },
+    {
       "key": "noticeEyebrow",
       "type": "text",
       "label": "Notice eyebrow",
@@ -107,13 +165,62 @@
               },
               "children": [
                 {
-                  "id": "ls-h",
-                  "type": "heading",
+                  "id": "ls-id",
+                  "type": "row",
                   "props": {
-                    "text": "{{name}}",
-                    "eyebrow": "{{eyebrow}}",
-                    "headingLevel": 2
-                  }
+                    "gap": 3,
+                    "repeat": "rooftop"
+                  },
+                  "children": [
+                    {
+                      "id": "ls-id-col",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "children": [
+                        {
+                          "id": "ls-h",
+                          "type": "heading",
+                          "props": {
+                            "text": "{{name}}",
+                            "eyebrow": "{{eyebrow}}",
+                            "headingLevel": 1
+                          }
+                        },
+                        {
+                          "id": "ls-sub",
+                          "type": "text",
+                          "props": {
+                            "text": "{{subtitle}}",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "ls-addr",
+                          "type": "text",
+                          "props": {
+                            "text": "{{streetAddress}}, {{city}}, {{region}} {{postalCode}}",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "ls-dir",
+                          "type": "buttons",
+                          "props": {
+                            "items": [
+                              {
+                                "label": "Get directions",
+                                "url": "{{mapUrl}}",
+                                "style": "link",
+                                "intent": "find-location"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
                 },
                 {
                   "id": "ls-phones",
@@ -188,7 +295,9 @@
                   "type": "widget",
                   "props": {
                     "widget": "location-photo",
-                    "config": {},
+                    "config": {
+                      "locationSlug": "{{locationSlug}}"
+                    },
                     "snapshot": {
                       "photo": {
                         "src": "",

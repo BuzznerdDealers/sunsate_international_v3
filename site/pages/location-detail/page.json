@@ -2,31 +2,25 @@
   "version": 2,
   "nodes": [
     {
-      "id": "loc-hero",
-      "type": "hero",
-      "props": {
-        "eyebrow": "SUN STATE INTERNATIONAL",
-        "heading": "{{name}}",
-        "body": "{{streetAddress}}, {{city}}, {{region}} {{postalCode}}",
-        "background": "ink",
-        "align": "start"
-      }
-    },
-    {
       "id": "loc-summary",
       "type": "sharedSection",
       "props": {
         "sectionId": "location-summary",
         "values": {
-          "eyebrow": "STORE MAP",
-          "name": "Sun State International Trucks, LLC.",
+          "eyebrow": "SUN STATE INTERNATIONAL",
           "noticeEyebrow": "NOW OFFERING",
           "noticeTitle": "After hours service",
           "noticeBody": "8:00 PM – 5:00 AM via Certified Fleet.",
           "noticeLinkLabel": "Certified Fleet — (863) 880-2206",
           "noticeLinkUrl": "tel:+18638802206",
           "anchor": "tpa-summary",
-          "background": "card"
+          "background": "card",
+          "rooftop": {
+            "source": "locations",
+            "config": {
+              "locationSlug": "{{locationSlug}}"
+            }
+          }
         }
       }
     },
