@@ -2,7 +2,7 @@
   "version": 2,
   "id": "location-summary",
   "name": "Location summary",
-  "css": "[data-bz-section=\"location-summary\"] .bz-block { padding-block: 0 }\n[data-bz-section=\"location-summary\"] h2 { font-size: 30px; line-height: 1.6; margin: 0 0 18px }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-phones\"] .bz-phones { margin: 0 0 22px }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice\"] { border: 1px solid var(--line); background: var(--card); padding: 26px 24px; margin-top: 0 }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice\"] .bz-eyebrow { font-size: 10px; letter-spacing: .14em; margin-bottom: 12px }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice\"] h3 { font-size: 20px; line-height: 1.6; margin: 0 0 10px }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice\"] .bz-block + .bz-block { padding-block-start: 0 }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice-b\"] p { font-size: 15px; line-height: 1.7; margin: 0 0 12px }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice-cta\"] .bz-btns { margin-block: 0 }\n/* The branch’s own photograph, from its record on Admin → Locations. No fixed\n   height — the photo keeps its own aspect ratio — and a rooftop with no photo\n   yet draws an empty box rather than a stand-in, so the gap reads as \"upload\n   one\" instead of being papered over with a street map. */\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-map\"] .bz-locphoto img { display: block; width: 100%; height: auto }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-map\"] .bz-locphoto__empty { aspect-ratio: 4 / 3; border-radius: 0 }\n@media (max-width: 640px) {\n  [data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice\"] .bz-eyebrow { font-size: 12px; }\n}",
+  "css": "[data-bz-section=\"location-summary\"] .bz-block { padding-block: 0 }\n[data-bz-section=\"location-summary\"] h2 { font-size: 30px; line-height: 1.6; margin: 0 0 18px }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-phones\"] .bz-phones { margin: 0 0 22px }\n[data-bz-section=\"location-summary\"] [data-bz-node^=\"ls-addr\"] p { font-size: 16px; line-height: 1.75; margin: 0 0 4px }\n[data-bz-section=\"location-summary\"] [data-bz-node^=\"ls-phone\"] { margin: 16px 0 8px }\n[data-bz-section=\"location-summary\"] [data-bz-node^=\"ls-phone\"] p { font-size: 15px; font-weight: 700; margin: 0; border-top: 1px solid var(--line); padding-top: 12px }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice\"] { background: var(--ink); color: #fff; padding: 28px; margin-top: 8px }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice\"] .bz-eyebrow { font-size: 10px; letter-spacing: .14em; color: var(--accent); margin-bottom: 12px }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice\"] h3 { font-size: 20px; line-height: 1.4; color: #fff; margin: 0 0 10px }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice\"] p,\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice\"] a { color: #fff }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice\"] .bz-block + .bz-block { padding-block-start: 0 }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice-b\"] p { font-size: 15px; line-height: 1.7; margin: 0 0 12px }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice-cta\"] .bz-btns { margin-block: 0 }\n/* The branch’s own photograph, from its record on Admin → Locations. No fixed\n   height — the photo keeps its own aspect ratio — and a rooftop with no photo\n   yet draws an empty box rather than a stand-in, so the gap reads as \"upload\n   one\" instead of being papered over with a street map. */\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-map\"] .bz-locphoto img { display: block; width: 100%; height: auto }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-map\"] .bz-locphoto__empty { aspect-ratio: 4 / 3; border-radius: 0 }\n@media (max-width: 640px) {\n  [data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice\"] .bz-eyebrow { font-size: 12px; }\n}",
   "props": [
     {
       "key": "eyebrow",
@@ -161,7 +161,7 @@
               "id": "ls-copy",
               "type": "column",
               "props": {
-                "span": 6
+                "span": 7
               },
               "children": [
                 {
@@ -185,7 +185,7 @@
                           "props": {
                             "text": "{{name}}",
                             "eyebrow": "{{eyebrow}}",
-                            "headingLevel": 1
+                            "headingLevel": 2
                           }
                         },
                         {
@@ -200,7 +200,15 @@
                           "id": "ls-addr",
                           "type": "text",
                           "props": {
-                            "text": "{{streetAddress}}, {{city}}, {{region}} {{postalCode}}",
+                            "text": "{{streetAddress}}\n\n{{city}}, {{region}} {{postalCode}}",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "ls-phone",
+                          "type": "text",
+                          "props": {
+                            "text": "<strong>MAIN</strong> <a href=\"{{phoneUrl}}\">{{phone}}</a>",
                             "width": "full"
                           }
                         },
@@ -287,7 +295,7 @@
               "id": "ls-map",
               "type": "column",
               "props": {
-                "span": 6
+                "span": 5
               },
               "children": [
                 {

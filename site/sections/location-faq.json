@@ -1,0 +1,79 @@
+{
+  "version": 2,
+  "id": "location-faq",
+  "name": "Location questions",
+  "css": "[data-bz-section=\"location-faq\"] .bz-block { padding-block: 0 }\n[data-bz-section=\"location-faq\"] h2 { margin: 0 0 22px }\n[data-bz-section=\"location-faq\"] .bz-faq { border-top: 1px solid var(--line) }\n[data-bz-section=\"location-faq\"] .bz-faq summary { padding: 16px 0; font-weight: 700; cursor: pointer }\n[data-bz-section=\"location-faq\"] .bz-faq__a { padding: 0 0 16px; line-height: 1.6 }",
+  "props": [
+    {
+      "key": "locationSlug",
+      "type": "text",
+      "label": "Location",
+      "default": ""
+    },
+    {
+      "key": "rooftop",
+      "type": "list",
+      "label": "This location",
+      "fields": [
+        { "key": "city", "type": "text", "label": "City" },
+        { "key": "region", "type": "text", "label": "Region" },
+        { "key": "name", "type": "text", "label": "Name" }
+      ],
+      "default": []
+    }
+  ],
+  "nodes": [
+    {
+      "id": "lf",
+      "type": "section",
+      "props": { "width": "boxed", "background": "card", "paddingY": 8, "anchor": "faq" },
+      "children": [
+        {
+          "id": "lf-head",
+          "type": "row",
+          "props": { "gap": 3, "repeat": "rooftop" },
+          "children": [
+            {
+              "id": "lf-head-col",
+              "type": "column",
+              "props": { "span": 8 },
+              "children": [
+                {
+                  "id": "lf-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Common questions.",
+                    "eyebrow": "{{city}} location FAQs",
+                    "headingLevel": 2
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lf-row",
+          "type": "row",
+          "props": { "gap": 4 },
+          "children": [
+            {
+              "id": "lf-col",
+              "type": "column",
+              "props": { "span": 8 },
+              "children": [
+                {
+                  "id": "lf-faq",
+                  "type": "widget",
+                  "props": {
+                    "widget": "faq",
+                    "config": { "locationSlug": "{{locationSlug}}" }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

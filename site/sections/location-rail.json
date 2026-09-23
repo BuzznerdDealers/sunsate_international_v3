@@ -233,7 +233,12 @@
                     "widget": "locations-pinmap",
                     "config": {
                       "pagePathPrefix": "/locations",
-                      "basemap": {},
+                      "basemap": {
+                        "src": "https://vendure.buzznerdrv.com/assets/source/14/sun-state-6020_e_adamo_dr_tampa_fl_map.svg",
+                        "alt": "dms-11044973876__02.jpg",
+                        "width": 720,
+                        "height": 1280
+                      },
                       "anchors": []
                     },
                     "snapshot": {
