@@ -1,0 +1,113 @@
+{
+  "version": 2,
+  "id": "location-hero",
+  "name": "Location hero",
+  "css": "[data-bz-section=\"location-hero\"] { position: relative; overflow: hidden; min-height: 460px; display: flex; align-items: center; background: #111; color: #fff; text-align: center }\n[data-bz-section=\"location-hero\"] [data-bz-node^=\"lh-photo\"],\n[data-bz-section=\"location-hero\"] [data-bz-node^=\"lh-banner\"] { position: absolute; inset: 0; z-index: 0; margin: 0 }\n[data-bz-section=\"location-hero\"] [data-bz-node^=\"lh-photo\"] img,\n[data-bz-section=\"location-hero\"] [data-bz-node^=\"lh-banner\"] img { width: 100%; height: 100%; object-fit: cover }\n[data-bz-section=\"location-hero\"] .bz-photo--empty { display: none }\n[data-bz-section=\"location-hero\"]::after { content: \"\"; position: absolute; inset: 0; background: rgba(0,0,0,.45); z-index: 1; pointer-events: none }\n[data-bz-section=\"location-hero\"] > .bz-container,\n[data-bz-section=\"location-hero\"] .bz-row { position: relative; z-index: 2; width: 100% }\n[data-bz-section=\"location-hero\"] h1 { color: #fff; font-size: clamp(32px, 4vw, 52px); line-height: 1.15; letter-spacing: -0.02em; margin: 0 0 18px }\n[data-bz-section=\"location-hero\"] [data-bz-node^=\"lh-crumb\"] { margin-bottom: 18px }\n[data-bz-section=\"location-hero\"] [data-bz-node^=\"lh-crumb\"] p { font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #e2e2e2; margin: 0 }\n[data-bz-section=\"location-hero\"] [data-bz-node^=\"lh-crumb\"] a { color: #e2e2e2 }\n[data-bz-section=\"location-hero\"] [data-bz-node^=\"lh-sub\"] p { color: #e2e2e2; font-size: 18px; line-height: 1.6; max-width: 700px; margin: 0 auto 28px }\n[data-bz-section=\"location-hero\"] .bz-btns { justify-content: center }\n[data-bz-section=\"location-hero\"] .bz-btn--secondary { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,.75) }",
+  "props": [
+    {
+      "key": "locationSlug",
+      "type": "text",
+      "label": "Location",
+      "default": ""
+    },
+    {
+      "key": "rooftop",
+      "type": "list",
+      "label": "This location",
+      "fields": [
+        { "key": "name", "type": "text", "label": "Name" },
+        { "key": "streetAddress", "type": "text", "label": "Street" },
+        { "key": "city", "type": "text", "label": "City" },
+        { "key": "region", "type": "text", "label": "Region" },
+        { "key": "postalCode", "type": "text", "label": "Postal code" },
+        { "key": "phone", "type": "text", "label": "Phone" },
+        { "key": "phoneUrl", "type": "url", "label": "Phone link" },
+        { "key": "mapUrl", "type": "url", "label": "Directions" },
+        { "key": "photo", "type": "image", "label": "Photo" },
+        { "key": "banner", "type": "image", "label": "Page banner" }
+      ],
+      "default": []
+    }
+  ],
+  "nodes": [
+    {
+      "id": "lh",
+      "type": "section",
+      "props": { "width": "full", "background": "ink", "paddingY": 8 },
+      "children": [
+        {
+          "id": "lh-row",
+          "type": "row",
+          "props": { "gap": 4, "repeat": "rooftop" },
+          "children": [
+            {
+              "id": "lh-col",
+              "type": "column",
+              "props": { "span": 12 },
+              "children": [
+                {
+                  "id": "lh-photo",
+                  "type": "image",
+                  "props": { "image": "{{photo}}" }
+                },
+                {
+                  "id": "lh-banner",
+                  "type": "image",
+                  "props": { "image": "{{banner}}" }
+                },
+                {
+                  "id": "lh-crumb",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"/\">Home</a> / <a href=\"/locations\">Locations</a> / {{city}}, {{region}}",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "lh-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Hours & Location of {{name}}",
+                    "headingLevel": 1,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "lh-sub",
+                  "type": "text",
+                  "props": {
+                    "text": "{{streetAddress}}, {{city}}, {{region}} {{postalCode}}",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "lh-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "center",
+                    "items": [
+                      {
+                        "label": "Call {{phone}}",
+                        "url": "{{phoneUrl}}",
+                        "style": "primary",
+                        "intent": "call"
+                      },
+                      {
+                        "label": "Get directions",
+                        "url": "{{mapUrl}}",
+                        "style": "secondary",
+                        "intent": "find-location"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -59,6 +59,12 @@
       "default": ""
     },
     {
+      "key": "locationSlug",
+      "type": "text",
+      "label": "Location",
+      "default": ""
+    },
+    {
       "key": "locations",
       "type": "list",
       "label": "Locations",

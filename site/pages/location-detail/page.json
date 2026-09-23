@@ -2,12 +2,25 @@
   "version": 2,
   "nodes": [
     {
+      "id": "loc-hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "location-hero",
+        "values": {
+          "rooftop": {
+            "source": "locations",
+            "config": { "locationSlug": "{{locationSlug}}" }
+          }
+        }
+      }
+    },
+    {
       "id": "loc-summary",
       "type": "sharedSection",
       "props": {
         "sectionId": "location-summary",
         "values": {
-          "eyebrow": "SUN STATE INTERNATIONAL",
+          "eyebrow": "STORE MAP",
           "noticeEyebrow": "NOW OFFERING",
           "noticeTitle": "After hours service",
           "noticeBody": "8:00 PM – 5:00 AM via Certified Fleet.",
@@ -48,7 +61,27 @@
           "heading": "Other Sun State locations.",
           "body": "Ready to find the right commercial trucks for your business? Visit us at our convenient locations across Central and Southwest Florida.",
           "background": "paper",
-          "showMap": false
+          "showMap": false,
+          "locations": {
+            "source": "locations",
+            "config": {
+              "excludeSlug": "{{locationSlug}}",
+              "pagePathPrefix": "/locations"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "loc-faq",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "location-faq",
+        "values": {
+          "rooftop": {
+            "source": "locations",
+            "config": { "locationSlug": "{{locationSlug}}" }
+          }
         }
       }
     },
