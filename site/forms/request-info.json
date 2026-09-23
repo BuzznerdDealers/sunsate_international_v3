@@ -3,7 +3,12 @@
   "name": "Request info",
   "status": "live",
   "system": true,
-  "surfaces": ["pdp", "partsPdp", "page", "blog"],
+  "surfaces": [
+    "pdp",
+    "partsPdp",
+    "page",
+    "blog"
+  ],
   "intent": "request-info",
   "submitLabel": "Send request",
   "successMessage": "Thanks — someone from the team will be in touch.",
@@ -13,19 +18,48 @@
     "text": "I agree to be contacted about this enquiry by phone, text or email."
   },
   "fields": [
-    { "id": "ri-first", "type": "first_name", "label": "First name", "required": true },
-    { "id": "ri-last", "type": "last_name", "label": "Last name", "required": true },
-    { "id": "ri-email", "type": "email", "label": "Email", "required": true },
-    { "id": "ri-phone", "type": "phone", "label": "Phone", "required": false },
+    {
+      "id": "ri-first",
+      "type": "first_name",
+      "label": "First name",
+      "required": true
+    },
+    {
+      "id": "ri-last",
+      "type": "last_name",
+      "label": "Last name",
+      "required": true
+    },
+    {
+      "id": "ri-email",
+      "type": "email",
+      "label": "Email",
+      "required": true
+    },
+    {
+      "id": "ri-phone",
+      "type": "phone",
+      "label": "Phone",
+      "required": false
+    },
     {
       "id": "ri-topic",
       "type": "radio",
       "label": "What is this about?",
       "required": true,
       "options": [
-        { "value": "sales", "label": "Sales" },
-        { "value": "service", "label": "Service" },
-        { "value": "parts", "label": "Parts" }
+        {
+          "value": "sales",
+          "label": "Sales"
+        },
+        {
+          "value": "service",
+          "label": "Service"
+        },
+        {
+          "value": "parts",
+          "label": "Parts"
+        }
       ]
     },
     {
@@ -37,31 +71,38 @@
         "logic": "OR",
         "action": "show",
         "rules": [
-          { "fieldId": "ri-topic", "operator": "is", "value": "parts" },
-          { "fieldId": "ri-topic", "operator": "is", "value": "service" }
+          {
+            "fieldId": "ri-topic",
+            "operator": "is",
+            "value": "parts"
+          },
+          {
+            "fieldId": "ri-topic",
+            "operator": "is",
+            "value": "service"
+          }
         ]
       }
     },
-    { "id": "ri-message", "type": "paragraph", "label": "Message", "required": false }
+    {
+      "id": "ri-message",
+      "type": "paragraph",
+      "label": "Message",
+      "required": false
+    }
   ],
   "notifications": [
     {
-      "id": "ri-sales",
-      "name": "Sales enquiries",
+      "id": "n-mue610022",
+      "name": "Default",
       "logic": "AND",
-      "rules": [{ "fieldId": "ri-topic", "operator": "is", "value": "sales" }],
-      "targetType": "role",
-      "roleId": "salesperson",
-      "scopeMode": "dynamic"
-    },
-    {
-      "id": "ri-service",
-      "name": "Service enquiries",
-      "logic": "AND",
-      "rules": [{ "fieldId": "ri-topic", "operator": "is", "value": "service" }],
-      "targetType": "role",
-      "roleId": "service-advisor",
-      "scopeMode": "dynamic"
+      "rules": [],
+      "targetType": "email",
+      "roleId": "",
+      "scopeMode": "dynamic",
+      "contactName": "Buzznerds",
+      "email": "sharma@buzznerd.com,av@buzznerd.com"
     }
-  ]
+  ],
+  "updatedAt": "2026-09-23T13:55:46.526Z"
 }
