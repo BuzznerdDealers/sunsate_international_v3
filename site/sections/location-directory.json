@@ -2,7 +2,7 @@
   "version": 2,
   "id": "location-directory",
   "name": "Location directory",
-  "css": "[data-bz-section=\"location-directory\"] .bz-block { padding-block: 0 }\n[data-bz-section=\"location-directory\"] .bz-block + .bz-block { padding-block-start: 0 }\n[data-bz-section=\"location-directory\"] h2 { margin: 0 0 16px }\n[data-bz-section=\"location-directory\"] [data-bz-node=\"ld-body\"] p { font-size: 16px; line-height: 1.7; color: var(--body-text); margin: 0 0 40px; max-width: 760px }\n\n/* The card: the rooftop's legal name, then the town as the accent micro-label\n   the handoff sets it in. Both come off the location record, so neither can\n   drift from Admin. */\n[data-bz-section=\"location-directory\"] .bz-col[data-bz-node^=\"ld-card-\"] { display: flex; flex-direction: column; gap: 12px }\n[data-bz-section=\"location-directory\"] [data-bz-node^=\"ld-card-h\"] h3 { font: 800 17px/1.35 var(--font-heading); margin: 0 }\n[data-bz-section=\"location-directory\"] [data-bz-node^=\"ld-card-h\"] .bz-eyebrow { font-size: 11px; line-height: 1; letter-spacing: .14em; color: var(--accent); margin: 0 0 12px }\n[data-bz-section=\"location-directory\"] [data-bz-node^=\"ld-card-hours\"] p { font-size: 14px; line-height: 1.7; color: var(--body-text); margin: 0 }\n[data-bz-section=\"location-directory\"] [data-bz-node^=\"ld-card-perks\"] p { font-size: 14px; line-height: 1.7; color: var(--body-text); margin: 0 }\n/* The links sit on the card floor, so a row of cards with different amounts of\n   copy still lines its phone numbers up. */\n[data-bz-section=\"location-directory\"] [data-bz-node^=\"ld-card-cta\"] { margin-top: auto; padding-top: 8px }\n[data-bz-section=\"location-directory\"] .bz-btns { margin-block: 0; gap: 6px; flex-direction: column; align-items: flex-start }\n[data-bz-section=\"location-directory\"] .bz-btn--link { font-size: 14px; line-height: 1.6 }\n[data-bz-section=\"location-directory\"] [data-bz-node^=\"ld-card-link\"] .bz-btn--link { font-weight: 700 }",
+  "css": "[data-bz-section=\"location-directory\"] .bz-block { padding-block: 0 }\n[data-bz-section=\"location-directory\"] .bz-block + .bz-block { padding-block-start: 0 }\n[data-bz-section=\"location-directory\"] h2 { margin: 0 0 16px }\n[data-bz-section=\"location-directory\"] [data-bz-node=\"ld-body\"] p { font-size: 16px; line-height: 1.7; color: var(--body-text); margin: 0 0 40px; max-width: 760px }\n\n/* The card: the rooftop's legal name, then the town as the accent micro-label\n   the handoff sets it in. Both come off the location record, so neither can\n   drift from Admin. */\n[data-bz-section=\"location-directory\"] .bz-col[data-bz-node^=\"ld-card-\"] { display: flex; flex-direction: column; gap: 12px }\n[data-bz-section=\"location-directory\"] [data-bz-node^=\"ld-card-h\"] h3 { font: 800 17px/1.35 var(--font-heading); margin: 0 }\n[data-bz-section=\"location-directory\"] [data-bz-node^=\"ld-card-h\"] .bz-eyebrow { font-size: 11px; line-height: 1; letter-spacing: .14em; color: var(--accent); margin: 0 0 12px }\n[data-bz-section=\"location-directory\"] [data-bz-node^=\"ld-card-hours\"] p { font-size: 14px; line-height: 1.7; color: var(--body-text); margin: 0 }\n[data-bz-section=\"location-directory\"] [data-bz-node^=\"ld-card-perks\"] p { font-size: 14px; line-height: 1.7; color: var(--body-text); margin: 0 }\n/* The links sit on the card floor, so a row of cards with different amounts of\n   copy still lines its phone numbers up. */\n[data-bz-section=\"location-directory\"] [data-bz-node^=\"ld-card-cta\"] { margin-top: auto; padding-top: 8px }\n[data-bz-section=\"location-directory\"] .bz-btns { margin-block: 0; gap: 6px; flex-direction: column; align-items: flex-start }\n[data-bz-section=\"location-directory\"] .bz-btn--link { line-height: 1.6 }",
   "props": [
     {
       "key": "eyebrow",
@@ -34,10 +34,22 @@
       "label": "Band background",
       "default": "paper",
       "options": [
-        { "value": "paper", "label": "Paper" },
-        { "value": "card", "label": "White" },
-        { "value": "ink", "label": "Dark chrome" },
-        { "value": "none", "label": "None" }
+        {
+          "value": "paper",
+          "label": "Paper"
+        },
+        {
+          "value": "card",
+          "label": "White"
+        },
+        {
+          "value": "ink",
+          "label": "Dark chrome"
+        },
+        {
+          "value": "none",
+          "label": "None"
+        }
       ]
     },
     {
@@ -57,14 +69,46 @@
       "type": "list",
       "label": "Locations",
       "fields": [
-        { "key": "name", "type": "text", "label": "Name" },
-        { "key": "city", "type": "text", "label": "City" },
-        { "key": "region", "type": "text", "label": "State / region" },
-        { "key": "hours", "type": "text", "label": "Opening hours" },
-        { "key": "perks", "type": "text", "label": "Service options" },
-        { "key": "phone", "type": "text", "label": "Phone" },
-        { "key": "phoneUrl", "type": "url", "label": "Phone link" },
-        { "key": "href", "type": "url", "label": "Location page" }
+        {
+          "key": "name",
+          "type": "text",
+          "label": "Name"
+        },
+        {
+          "key": "city",
+          "type": "text",
+          "label": "City"
+        },
+        {
+          "key": "region",
+          "type": "text",
+          "label": "State / region"
+        },
+        {
+          "key": "hours",
+          "type": "text",
+          "label": "Opening hours"
+        },
+        {
+          "key": "perks",
+          "type": "text",
+          "label": "Service options"
+        },
+        {
+          "key": "phone",
+          "type": "text",
+          "label": "Phone"
+        },
+        {
+          "key": "phoneUrl",
+          "type": "url",
+          "label": "Phone link"
+        },
+        {
+          "key": "href",
+          "type": "url",
+          "label": "Location page"
+        }
       ]
     }
   ],
@@ -82,12 +126,16 @@
         {
           "id": "ld-head",
           "type": "row",
-          "props": { "gap": 5 },
+          "props": {
+            "gap": 5
+          },
           "children": [
             {
               "id": "ld-head-col",
               "type": "column",
-              "props": { "span": 12 },
+              "props": {
+                "span": 12
+              },
               "children": [
                 {
                   "id": "ld-h",
@@ -101,7 +149,10 @@
                 {
                   "id": "ld-body",
                   "type": "text",
-                  "props": { "text": "{{body}}", "width": "prose" }
+                  "props": {
+                    "text": "{{body}}",
+                    "width": "prose"
+                  }
                 }
               ]
             }
@@ -110,12 +161,18 @@
         {
           "id": "ld-grid",
           "type": "row",
-          "props": { "gap": 5, "align": "stretch" },
+          "props": {
+            "gap": 5,
+            "align": "stretch"
+          },
           "children": [
             {
               "id": "ld-card",
               "type": "column",
-              "props": { "span": "{{span}}", "repeat": "locations" },
+              "props": {
+                "span": "{{span}}",
+                "repeat": "locations"
+              },
               "styles": {
                 "base": {
                   "background": "card",
@@ -141,12 +198,18 @@
                 {
                   "id": "ld-card-hours",
                   "type": "text",
-                  "props": { "text": "{{hours}}", "width": "full" }
+                  "props": {
+                    "text": "{{hours}}",
+                    "width": "full"
+                  }
                 },
                 {
                   "id": "ld-card-perks",
                   "type": "text",
-                  "props": { "text": "{{perks}}", "width": "full" }
+                  "props": {
+                    "text": "{{perks}}",
+                    "width": "full"
+                  }
                 },
                 {
                   "id": "ld-card-cta",

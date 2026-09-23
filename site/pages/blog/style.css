@@ -48,12 +48,11 @@
 /* The trailer links are a hairline-topped stack, as the handoff draws them. */
 [data-bz-node="bn-tr-links"] .bz-btns { flex-direction: column; align-items: stretch; gap: 10px; margin-block: 0 22px; }
 [data-bz-node="bn-tr-links"] .bz-btn--link {
-  justify-content: flex-start; text-align: left;
-  font-size: 15px; font-weight: 700; text-decoration: none;
+  justify-content: flex-start; text-align: left; text-decoration: none;
   border-top: 1px solid var(--line); padding: 10px 0 0;
 }
 [data-bz-node="bn-tr-more"] .bz-btns { margin-block: 0; }
-[data-bz-node="bn-tr-more"] .bz-btn--link { font-size: 15px; font-weight: 700; text-decoration: none; }
+[data-bz-node="bn-tr-more"] .bz-btn--link { text-decoration: none; }
 
 /* The dark panel sets its own colours rather than tinting every descendant,
    so the kicker keeps the accent and the body keeps the chrome scale. */
@@ -61,7 +60,7 @@
 [data-bz-node="bn-ap-b"] p { color: var(--chrome-body); }
 [data-bz-node="bn-ap-links"] .bz-btns { flex-direction: column; align-items: flex-start; gap: 10px; margin-block: 0; }
 [data-bz-node="bn-ap-links"] .bz-btn--link {
-  padding: 0; font-size: 15px; font-weight: 700;
+  padding: 0;
   color: var(--chrome-text); text-decoration: none;
 }
 [data-bz-node="bn-ap-links"] .bz-btn--link:hover { color: var(--accent); }
