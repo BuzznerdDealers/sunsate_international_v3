@@ -6,7 +6,7 @@
       "type": "hero",
       "props": {
         "headingLevel": 1,
-        "eyebrow": "HOME / BROCHURES & S13 POWERTRAIN",
+        "eyebrow": "HOME / S13 Integrated Powertrain & Brochures",
         "headline": "S13 Integrated Powertrain & Brochures",
         "subhead": "International specification sheets by series, S13 powertrain documentation and competitive comparisons — every one a free PDF download.",
         "ctas": [
@@ -157,6 +157,11 @@
                     ],
                     "grid": true,
                     "onDark": true
+                  },
+                  "styles": {
+                    "base": {
+                      "textColor": "#ffffff"
+                    }
                   }
                 }
               ]
@@ -233,6 +238,11 @@
                     ],
                     "grid": true,
                     "onDark": true
+                  },
+                  "styles": {
+                    "base": {
+                      "textColor": "#ffffff"
+                    }
                   }
                 }
               ]
