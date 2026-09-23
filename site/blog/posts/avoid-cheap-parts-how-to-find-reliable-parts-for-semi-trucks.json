@@ -1,0 +1,759 @@
+{
+  "slug": "avoid-cheap-parts-how-to-find-reliable-parts-for-semi-trucks",
+  "title": "Avoid Cheap Parts—How to Find Reliable Parts for Semi-Trucks",
+  "date": "2026-01-09",
+  "description": "Choosing the right parts for semi-trucks protects uptime and ROI. Learn OEM vs aftermarket differences with Sun State International.",
+  "status": "published",
+  "coverImage": "/img/blog/avoid-cheap-parts-how-to-find-reliable-parts-for-semi-trucks/hero.jpg",
+  "topic": "Parts",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Parts",
+          "title": "Avoid Cheap Parts—How to Find Reliable Parts for Semi-Trucks",
+          "topic": "Parts",
+          "date": "January 9, 2026",
+          "readTime": "5 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/avoid-cheap-parts-how-to-find-reliable-parts-for-semi-trucks/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Aisles of stocked parts shelving inside the Sun State International parts warehouse"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "Why Parts Matter More Than You Think",
+                        "href": "#why-parts-matter"
+                      },
+                      {
+                        "label": "The Real Cost of Cheap Parts",
+                        "href": "#real-cost"
+                      },
+                      {
+                        "label": "OEM vs Aftermarket Truck Parts",
+                        "href": "#oem-vs-aftermarket"
+                      },
+                      {
+                        "label": "How Quality Parts Protect ROI",
+                        "href": "#long-term-roi"
+                      },
+                      {
+                        "label": "Why the Supplier Matters",
+                        "href": "#supplier-matters"
+                      },
+                      {
+                        "label": "Parts and Service Together",
+                        "href": "#parts-and-service"
+                      },
+                      {
+                        "label": "Smart Parts Choices Pay Off",
+                        "href": "#smart-choices"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "NEED PARTS?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Order from our online parts store today.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "order-parts-online",
+                                "label": "Shop Parts →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "When it comes to running a profitable trucking operation, every decision matters, but few choices have as much long-term impact as the parts for semi-trucks you install.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At first glance, cheaper parts may seem like a smart way to cut costs. But over time, those short-term savings often lead to higher repair bills, more downtime, and reduced reliability.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-intro-2",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, we work closely with owner-operators and fleet managers across Florida who've learned this lesson the hard way. The reality is simple: not all truck parts are created equal, and choosing the wrong ones can quietly drain your operation's profitability.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-intro-3",
+                  "type": "text",
+                  "props": {
+                    "text": "We break down the real costs behind cheap components, explain OEM vs aftermarket truck parts, and help you make smarter decisions that protect your truck, your schedule, and your bottom line.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-why-parts-matter",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Parts for Semi-Trucks Matter More Than You Think",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "why-parts-matter"
+                  }
+                },
+                {
+                  "id": "p-why-parts-matter-1",
+                  "type": "text",
+                  "props": {
+                    "text": "A semi truck isn't just a vehicle; it's a revenue-producing asset. Every hour it's off the road costs money. That's why truck parts reliability plays such a critical role in overall performance and operating costs. Low-quality or mismatched parts can lead to:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-why-parts-matter-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Premature failures"
+                      },
+                      {
+                        "text": "Repeat repairs"
+                      },
+                      {
+                        "text": "Additional damage to surrounding components"
+                      },
+                      {
+                        "text": "Increased labor costs"
+                      },
+                      {
+                        "text": "Unplanned downtime"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-why-parts-matter-3",
+                  "type": "text",
+                  "props": {
+                    "text": "While cutting corners on parts may reduce the upfront invoice, it often increases the total cost of ownership over the life of the truck.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-real-cost",
+                  "type": "heading",
+                  "props": {
+                    "text": "The Real Cost of Cheap Semi Truck Replacement Parts",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "real-cost"
+                  }
+                },
+                {
+                  "id": "p-real-cost-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Cheap parts tend to fail faster. That means you're not just paying for the part; you're paying for labor, lost driving time, and sometimes towing or roadside repairs. Unplanned downtime can cost fleets hundreds of dollars per hour per truck when you factor in labor, missed loads, and cascading delays. Even for owner-operators, a single breakdown can disrupt an entire week's schedule. This is where the hidden costs add up:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-real-cost-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "A lower-priced part that lasts half as long"
+                      },
+                      {
+                        "text": "Additional labor to install replacements"
+                      },
+                      {
+                        "text": "Increased stress on other systems"
+                      },
+                      {
+                        "text": "Reduced confidence in your equipment"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-real-cost-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Over time, these issues outweigh the initial savings and drive up long-term operating costs.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/avoid-cheap-parts-how-to-find-reliable-parts-for-semi-trucks/1.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Sun State International parts team pulling and verifying components at the parts counter"
+                    }
+                  }
+                },
+                {
+                  "id": "h-oem-vs-aftermarket",
+                  "type": "heading",
+                  "props": {
+                    "text": "OEM vs Aftermarket Truck Parts: What's the Difference?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "oem-vs-aftermarket"
+                  }
+                },
+                {
+                  "id": "p-oem-vs-aftermarket-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Understanding OEM vs aftermarket truck parts is key to making informed decisions.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-oem-vs-aftermarket-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "compare",
+                    "items": [
+                      {
+                        "title": "OEM (Original Equipment Manufacturer) Parts",
+                        "points": [
+                          {
+                            "text": "Proven fit and compatibility"
+                          },
+                          {
+                            "text": "Consistent performance"
+                          },
+                          {
+                            "text": "Often longer service life"
+                          },
+                          {
+                            "text": "Better support for warranties"
+                          }
+                        ],
+                        "intro": "OEM parts are built to the exact specifications of your truck's original components. They're designed to fit precisely, perform consistently, and meet manufacturer standards."
+                      },
+                      {
+                        "title": "Aftermarket Truck Parts",
+                        "points": [
+                          {
+                            "text": "The manufacturer is reputable"
+                          },
+                          {
+                            "text": "The application is non-critical"
+                          },
+                          {
+                            "text": "The part meets or exceeds OEM specifications"
+                          }
+                        ],
+                        "intro": "Aftermarket parts are produced by third-party manufacturers. Some offer excellent value and performance, while others prioritize price over durability. Aftermarket parts can be a good option when:"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-oem-vs-aftermarket-3",
+                  "type": "text",
+                  "props": {
+                    "text": "The key is knowing which aftermarket parts are reliable, and which ones to avoid.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-long-term-roi",
+                  "type": "heading",
+                  "props": {
+                    "text": "How Quality Truck Parts Protect Long-Term ROI",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "long-term-roi"
+                  }
+                },
+                {
+                  "id": "p-long-term-roi-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Choosing quality truck parts isn't about buying the most expensive option; it's about buying the right option. Reliable parts reduce repeat repairs, protect major systems, and help maintain consistent performance. High-quality heavy-duty truck parts contribute to:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-long-term-roi-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Fewer breakdowns"
+                      },
+                      {
+                        "text": "More predictable maintenance schedules"
+                      },
+                      {
+                        "text": "Improved driver confidence"
+                      },
+                      {
+                        "text": "Higher resale value"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-long-term-roi-3",
+                  "type": "text",
+                  "props": {
+                    "text": "In other words, quality parts help your truck stay productive longer, which is exactly what owner-operators and fleets need to stay competitive.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-long-term-roi-4-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-long-term-roi-4",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-long-term-roi-4-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "order-parts-online",
+                                "label": "Explore the Online Parts Store →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-supplier-matters",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Truck Parts Reliability Depends on the Supplier",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "supplier-matters"
+                  }
+                },
+                {
+                  "id": "p-supplier-matters-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Even the best parts won't perform well if they're improperly matched or installed. That's why working with a trusted parts supplier matters just as much as the part itself. At Sun State International, our parts team understands how real-world trucking works. We help customers:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-supplier-matters-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Match parts to specific truck applications"
+                      },
+                      {
+                        "text": "Choose between OEM and high-quality aftermarket options"
+                      },
+                      {
+                        "text": "Avoid compatibility issues that cause premature failures"
+                      },
+                      {
+                        "text": "Reduce downtime by getting the right part quickly"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-supplier-matters-3",
+                  "type": "text",
+                  "props": {
+                    "text": "This consultative approach helps operators make confident decisions instead of costly guesses.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-parts-and-service",
+                  "type": "heading",
+                  "props": {
+                    "text": "When Parts and Service Work Better Together",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "parts-and-service"
+                  }
+                },
+                {
+                  "id": "p-parts-and-service-1",
+                  "type": "text",
+                  "props": {
+                    "text": "There's a strong connection between parts selection and service quality. When parts and service teams work together, problems are diagnosed more accurately and repairs last longer. Reliable service backed by quality semi truck replacement parts means:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-parts-and-service-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Faster turnaround times"
+                      },
+                      {
+                        "text": "Fewer comebacks"
+                      },
+                      {
+                        "text": "Better preventive maintenance outcomes"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-parts-and-service-3",
+                  "type": "text",
+                  "props": {
+                    "text": "This integrated approach is especially valuable for fleets managing multiple trucks and tight schedules. If you're ready to improve truck parts reliability and reduce unexpected repairs, our experienced technicians are here to help.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-2",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/avoid-cheap-parts-how-to-find-reliable-parts-for-semi-trucks/2.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Sun State International service technician installing quality replacement parts on an International truck engine"
+                    }
+                  }
+                },
+                {
+                  "id": "h-smart-choices",
+                  "type": "heading",
+                  "props": {
+                    "text": "Smart Parts Choices Pay Off",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "smart-choices"
+                  }
+                },
+                {
+                  "id": "p-smart-choices-1",
+                  "type": "text",
+                  "props": {
+                    "text": "The hidden costs of cheap parts don't always show up right away, but they always show up eventually. Choosing the right parts for semi-trucks means balancing cost, quality, and application with long-term performance in mind.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-smart-choices-2",
+                  "type": "text",
+                  "props": {
+                    "text": "By understanding the differences between OEM and aftermarket options, working with knowledgeable professionals, and prioritizing reliability, you protect more than just your truck; you protect your livelihood. That's the kind of straightforward, dependable support Sun State International is built to deliver, mile after mile.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-smart-choices-3",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "order-parts-online",
+                        "label": "Shop Parts Online",
+                        "style": "primary"
+                      },
+                      {
+                        "ctaId": "schedule-service",
+                        "label": "Schedule Your Service Appointment",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-share",
+                  "type": "post-share",
+                  "props": {
+                    "label": "Share",
+                    "items": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Favoid-cheap-parts-how-to-find-reliable-parts-for-semi-trucks",
+                        "newTab": true
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Favoid-cheap-parts-how-to-find-reliable-parts-for-semi-trucks&text=Avoid%20Cheap%20Parts%E2%80%94How%20to%20Find%20Reliable%20Parts%20for%20Semi-Trucks",
+                        "newTab": true
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Favoid-cheap-parts-how-to-find-reliable-parts-for-semi-trucks",
+                        "newTab": true
+                      },
+                      {
+                        "label": "Email",
+                        "url": "mailto:?subject=Avoid%20Cheap%20Parts%E2%80%94How%20to%20Find%20Reliable%20Parts%20for%20Semi-Trucks&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Favoid-cheap-parts-how-to-find-reliable-parts-for-semi-trucks",
+                        "newTab": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Need a part fast?",
+          "heading": "Let's keep your fleet moving.",
+          "body": "Call 800.741.7566 and our parts teams in Tampa, Sarasota, Davenport or Brooksville will get you what you need.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/avoid-cheap-parts-how-to-find-reliable-parts-for-semi-trucks\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/avoid-cheap-parts-how-to-find-reliable-parts-for-semi-trucks\"])) > .bz-card:nth-child(n+4) { display: none; }\n"
+}

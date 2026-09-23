@@ -1,0 +1,640 @@
+{
+  "slug": "how-a-routine-dot-inspection-keeps-your-fleet-on-the-road",
+  "title": "How a Routine DOT Inspection Keeps Your Fleet on the Road",
+  "date": "2025-12-12",
+  "description": "Stay DOT inspection ready with a clear checklist and expert service. Keep your fleet safe and compliant. Schedule your service today.",
+  "status": "published",
+  "coverImage": "/img/blog/how-a-routine-dot-inspection-keeps-your-fleet-on-the-road/hero.jpg",
+  "topic": "Service",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Service",
+          "title": "How a Routine DOT Inspection Keeps Your Fleet on the Road",
+          "topic": "Service",
+          "date": "December 12, 2025",
+          "readTime": "5 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/how-a-routine-dot-inspection-keeps-your-fleet-on-the-road/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Sun State International technician inspecting a trailer's electrical and pneumatic connections"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "What Is a DOT Inspection?",
+                        "href": "#what-is-it"
+                      },
+                      {
+                        "label": "DOT Inspection Checklist",
+                        "href": "#checklist"
+                      },
+                      {
+                        "label": "The Hidden Value of Inspections",
+                        "href": "#hidden-value"
+                      },
+                      {
+                        "label": "How to Prepare Your Fleet",
+                        "href": "#prepare"
+                      },
+                      {
+                        "label": "Why a Trusted Partner Matters",
+                        "href": "#trusted-partner"
+                      },
+                      {
+                        "label": "Get Your DOT Inspection",
+                        "href": "#get-inspection"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "READY FOR INSPECTION?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Schedule your DOT inspection with our service team.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "schedule-service",
+                                "label": "Schedule Service →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "If you run a trucking business, you already know the importance of staying compliant, safe, and ready for the road. A DOT inspection isn't just a regulatory box to check; it's one of the most effective ways to protect your drivers, your equipment, and your bottom line.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, we see firsthand how a thorough commercial truck inspection helps prevent unexpected breakdowns, costly fines, and unnecessary downtime. And for a hardworking owner-operator or fleet manager, few things matter more than keeping business moving.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-intro-2",
+                  "type": "text",
+                  "props": {
+                    "text": "As a company built on dependability, Sun State International is committed to helping you stay confident and prepared for every mile ahead. Whether you're managing a growing fleet or operating your own truck, understanding what goes into an inspection, and how to prepare for it, can make DOT compliance a whole lot smoother.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-what-is-it",
+                  "type": "heading",
+                  "props": {
+                    "text": "What Is a DOT Inspection and Why Does It Matter?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "what-is-it"
+                  }
+                },
+                {
+                  "id": "p-what-is-it-1",
+                  "type": "text",
+                  "props": {
+                    "text": "A DOT inspection is a federally mandated fleet safety inspection designed to ensure your commercial vehicles meet all DOT compliance and FMCSA safety standards. These annual checks verify that your truck is safe to operate and that critical components, such as brakes, tires, lights, coupling devices, and more, are functioning properly. For fleets trying to stay ahead of unexpected repairs, the annual truck inspection is one of the most powerful preventive tools you have.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-checklist",
+                  "type": "heading",
+                  "props": {
+                    "text": "A DOT Inspection Checklist: What Inspectors Look For",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "checklist"
+                  }
+                },
+                {
+                  "id": "p-checklist-1",
+                  "type": "text",
+                  "props": {
+                    "text": "While every level of DOT inspection varies, most follow a structured process. A well-organized DOT inspection checklist can help you ensure your truck is ready long before an inspector arrives. Key areas examined include:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "features-checklist-2",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 2,
+                    "columns": 4,
+                    "items": [
+                      {
+                        "label": "Brakes",
+                        "desc": "Brake trouble is one of the most common causes of out-of-service orders. Inspectors look for worn components, damaged hoses, and proper adjustment."
+                      },
+                      {
+                        "label": "Tires & Wheels",
+                        "desc": "Uneven tread, worn tires, damaged rims, or improper inflation can immediately trigger a violation."
+                      },
+                      {
+                        "label": "Lighting & Electrical",
+                        "desc": "Headlights, brake lights, turn signals, warning lights, and wiring. Electrical issues are easy to overlook, yet extremely common."
+                      },
+                      {
+                        "label": "Steering & Suspension",
+                        "desc": "Anything affecting maneuverability or stability will be flagged."
+                      },
+                      {
+                        "label": "Fuel Systems",
+                        "desc": "Leaks, unsecured tanks, or improper caps can result in serious fines."
+                      },
+                      {
+                        "label": "Coupling Devices",
+                        "desc": "These components must be in top condition to ensure trailer and truck connection integrity."
+                      },
+                      {
+                        "label": "Emergency Equipment",
+                        "desc": "Fire extinguishers, reflectors, and required safety gear must be present and functional."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-checklist-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Staying ahead of these areas not only keeps your truck compliant; it protects your investment.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/how-a-routine-dot-inspection-keeps-your-fleet-on-the-road/1.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Sun State International technician working under a truck cab during a service bay inspection"
+                    }
+                  }
+                },
+                {
+                  "id": "h-hidden-value",
+                  "type": "heading",
+                  "props": {
+                    "text": "The Hidden Value of Routine Commercial Truck Inspections",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "hidden-value"
+                  }
+                },
+                {
+                  "id": "p-hidden-value-1",
+                  "type": "text",
+                  "props": {
+                    "text": "A DOT inspection isn't just an annual requirement; it's a chance to extend the life of your equipment and avoid costly downtime. At Sun State International, many of our service customers tell us the same thing: catching something early is always cheaper than losing days on the road. Routine checks also support:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-hidden-value-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Greater safety for drivers"
+                      },
+                      {
+                        "text": "More predictable operating costs"
+                      },
+                      {
+                        "text": "Stronger customer trust"
+                      },
+                      {
+                        "text": "Higher resale value"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-hidden-value-3",
+                  "type": "text",
+                  "props": {
+                    "text": "A safer truck protects the people who work hardest for your company. Unexpected repairs cost more than routine maintenance, both in money and lost miles. And a well-maintained truck holds value significantly better than one with spotty repair records.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-hidden-value-4-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-hidden-value-4",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-hidden-value-4-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "order-parts-online",
+                                "label": "Shop Truck Parts Online →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-prepare",
+                  "type": "heading",
+                  "props": {
+                    "text": "How to Prepare Your Fleet for an Annual DOT Inspection",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "prepare"
+                  }
+                },
+                {
+                  "id": "p-prepare-1",
+                  "type": "text",
+                  "props": {
+                    "text": "To stay ahead of violations and keep your trucks performing at their best, consider building a consistent inspection routine into your operations.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-prepare-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Review the DOT inspection checklist monthly"
+                      },
+                      {
+                        "text": "Keep detailed maintenance records"
+                      },
+                      {
+                        "text": "Conduct internal commercial vehicle inspections"
+                      },
+                      {
+                        "text": "Use high-quality parts"
+                      },
+                      {
+                        "text": "Stay informed on DOT regulatory updates"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-prepare-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Early detection prevents last-minute surprises, documentation supports compliance and resale value, and brief weekly checks help teams spot issues between service visits. Cheap components may pass today but fail when it matters most, and FMCSA rules change, so partnering with an expert helps you stay compliant.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-trusted-partner",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why DOT Compliance Is Easier with a Trusted Service Partner",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "trusted-partner"
+                  }
+                },
+                {
+                  "id": "p-trusted-partner-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, our service team works with fleets across Florida to prepare for annual truck inspections, troubleshoot issues, and keep vehicles road-ready between routine evaluations. The trucking industry depends heavily on reliable partners, and Sun State International has built its reputation on care, professionalism, and decades of hands-on expertise.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-trusted-partner-2",
+                  "type": "text",
+                  "props": {
+                    "text": "What sets us apart is what our customers feel from the moment they walk in: straightforward service, honest communication, and a team that treats your business like it matters. Because to us, it does. We support your DOT readiness through:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-trusted-partner-3",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Certified technicians trained to meet and exceed International® standards"
+                      },
+                      {
+                        "text": "Thorough fleet safety inspections aligned with FMCSA requirements"
+                      },
+                      {
+                        "text": "OEM and genuine parts that support long-term reliability"
+                      },
+                      {
+                        "text": "Preventive maintenance scheduling designed to reduce downtime"
+                      },
+                      {
+                        "text": "Quick, dependable turnaround because every hour your truck isn't running is money lost"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-trusted-partner-4",
+                  "type": "text",
+                  "props": {
+                    "text": "This level of service reflects who we are: a dependable, reputable, customer-first dealership built on transparency and care.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-2",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/how-a-routine-dot-inspection-keeps-your-fleet-on-the-road/2.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Sun State International customers scheduling service at the front desk"
+                    }
+                  }
+                },
+                {
+                  "id": "h-get-inspection",
+                  "type": "heading",
+                  "props": {
+                    "text": "Get Your DOT Inspection with Sun State International",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "get-inspection"
+                  }
+                },
+                {
+                  "id": "p-get-inspection-1",
+                  "type": "text",
+                  "props": {
+                    "text": "A DOT inspection doesn't have to be stressful. With the right support, it becomes part of a dependable rhythm that keeps your fleet safe, compliant, and on the road. Whether you need preventive maintenance, a full commercial truck inspection, or high-quality parts, our team is here to help.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-get-inspection-2",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "schedule-service",
+                        "label": "Schedule Your Service Appointment"
+                      },
+                      {
+                        "ctaId": "order-parts-online",
+                        "label": "Shop Parts Online"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Stay compliant",
+          "heading": "Let's get your fleet inspection-ready.",
+          "body": "Call 800.741.7566 and our service teams in Tampa, Sarasota, Davenport or Brooksville will get you scheduled.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/how-a-routine-dot-inspection-keeps-your-fleet-on-the-road\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/how-a-routine-dot-inspection-keeps-your-fleet-on-the-road\"])) > .bz-card:nth-child(n+4) { display: none; }\n"
+}

@@ -26,6 +26,7 @@ LINK_MAP = {
     "https://www.sunstateintl.com/maps-and-directions-hours-trailer/": "/locations/trailer-sales",
     "https://www.sunstateintl.com/contact-call-email-internationals-trucks-dealerships-florida-xcontact/": "/contact",
     "https://www.sunstateparts.com/login": "https://www.sunstateparts.com/login",
+    "https://www.sunstateintl.com/mobile-service-flyer/": "/mobile-service",
     "tel:8007417566": "tel:+18007417566",
 }
 INTENT = {
@@ -39,7 +40,7 @@ def map_href(h):
     if h.endswith("blog.html"):
         return "/blog"
     if h.endswith(".html") and ("/posts/" in h or "/" not in h):
-        return "/blog/posts/" + h.rsplit("/", 1)[1][:-5]
+        return "/blog/posts/" + h.rsplit("/", 1)[-1][:-5]
     if h not in LINK_MAP:
         raise SystemExit(f"unmapped link: {h}")
     return LINK_MAP[h]
@@ -65,7 +66,7 @@ def slugify(s):
 DEST = {
     "/service-appointment": "schedule-service", "/parts": "parts-department",
     "https://www.sunstateparts.com/login": "order-parts-online", "/service": "service-department",
-    "/contact": "contact-us", "/blog": "all-blog-posts",
+    "/contact": "contact-us", "/blog": "all-blog-posts", "tel:+18007417566": "call-main", "/mobile-service": "mobile-service",
 }
 lib = {b["id"]: b for b in buttons}
 
@@ -157,6 +158,19 @@ LABEL = {"fontSize": 10, "fontWeight": "700", "letterSpacing": 1, "textTransform
          "textColor": "accent", "marginBottom": 10}
 
 
+POST_LINK = {"fontSize": 15, "fontWeight": "700"}
+
+
+def arrow_link(id, a):
+    """A callout's arrow link. To another article it is a text link — a read-next
+    pointer is content, not a call to action with its own library button; to a
+    service, a department or the parts store it is that destination's button."""
+    url = map_href(a["href"])
+    if url.startswith("/blog/posts/"):
+        return text(id, f'<a href="{url}">{inline_html(a)}</a>', styles=POST_LINK)
+    return n(id, "buttons", {"align": "left", "items": [cta(plain(a), url, "link")]})
+
+
 def margins(style):
     """Top and bottom of an inline `margin:` shorthand — `34px 0` or `8px 0 34px`."""
     m = re.search(r"margin:\s*([0-9]+)px(?:\s+0)?\s*([0-9]+)?px?", style)
@@ -176,7 +190,7 @@ def callout(cid, box, style):
         elif c.name == "p":
             kids.append(text(f"{cid}-body", inline_html(c), styles={"fontSize": 15, "lineHeight": 1.7, "marginBottom": 12}))
         elif c.name == "a":
-            kids.append(n(f"{cid}-cta", "buttons", {"align": "left", "items": [cta(plain(c), map_href(c["href"]), "link")]}))
+            kids.append(arrow_link(f"{cid}-cta", c))
         else:
             raise SystemExit(f"callout child <{c.name}>")
     top, bottom = margins(style)
@@ -270,10 +284,13 @@ def convert(path):
             # A row of arrow links, not a button pair: its own column so it keeps the
             # margins the design gives it rather than the button pair's.
             cid = nid("links")
-            its = [cta(plain(a), map_href(a["href"]), "link") for a in el.find_all("a")]
+            anchors = el.find_all("a")
+            if any(map_href(a["href"]).startswith("/blog/posts/") for a in anchors):
+                kids = [arrow_link(f"{cid}-{i+1}", a) for i, a in enumerate(anchors)]
+            else:
+                kids = [n(f"{cid}-cta", "buttons", {"align": "left", "items": [cta(plain(a), map_href(a["href"]), "link") for a in anchors]})]
             top, bottom = margins(st)
-            out.append(row(f"{cid}-row", [col(cid, [n(f"{cid}-cta", "buttons", {"align": "left", "items": its})],
-                                              styles={"marginTop": top, "marginBottom": bottom})]))
+            out.append(row(f"{cid}-row", [col(cid, kids, styles={"marginTop": top, "marginBottom": bottom})]))
         elif el.name == "div" and "display: flex" in st:
             its = []
             for a in el.find_all("a"):
@@ -291,6 +308,39 @@ def convert(path):
             assert all(len(r) == 3 for r in rows), rows
             out.append(n(nid("compare"), "compare-table", {"headA": heads[0], "headB": heads[1], "headC": heads[2],
                                                           "rows": [{"a": a, "b": b, "c": c} for a, b, c in rows]}))
+        elif el.name == "div" and "grid-4" in cls:
+            # Title-and-sentence cards four across: the platform's Feature list.
+            items = []
+            for card in el.find_all("div", class_="factor-card", recursive=False):
+                h, p = [x for x in card.children if isinstance(x, Tag)]
+                assert h.name == "h3" and p.name == "p", (h.name, p.name)
+                items.append({"label": plain(h), "desc": plain(p)})
+            out.append(n(nid("features"), "list", {"headingLevel": 2, "columns": 4, "items": items}))
+        elif el.name == "div" and ("compare-grid" in cls or "pm-grid" in cls):
+            # Titled cards each holding a list: the Card lists widget, one item per card.
+            items = []
+            for card in [x for x in el.children if isinstance(x, Tag)]:
+                it = {"title": "", "points": []}
+                for x in [x for x in card.children if isinstance(x, Tag)]:
+                    if x.name == "h3": it["title"] = plain(x)
+                    elif x.name == "p": it["intro"] = plain(x)
+                    elif x.name == "ul": it["points"] = [{"text": plain(li)} for li in x.find_all("li")]
+                    else: raise SystemExit(f"card child <{x.name}>")
+                items.append(it)
+            out.append(n(nid("cards"), "card-lists", {"variant": "compare" if "compare-grid" in cls else "group", "items": items}))
+        elif el.name == "div" and "stat-band" in cls:
+            stats = []
+            for cell in el.find_all("div", class_="stat-cell", recursive=False):
+                v, l = [x for x in cell.children if isinstance(x, Tag)]
+                stats.append({"value": plain(v), "label": plain(l)})
+            out.append(n(nid("stats"), "statBand", {"stats": stats}))
+        elif el.name == "div" and el.find("img") and "margin: 8px 0 24px" in st:
+            # A photograph shown whole rather than cropped, with its own margins.
+            fig += 1
+            img = el.find("img")
+            out.append(row(f"fig-{fig}-row", [col(f"fig-{fig}-col", [
+                n(f"fig-{fig}", "image", {"width": "full", "image": {**place_image(slug, img["src"], str(fig)), "alt": img.get("alt", "")}})
+            ], styles={"marginTop": 8, "marginBottom": 24, "radius": 4, "overflow": "hidden"})]))
         elif el.name == "div" and "checklist-group" in cls:
             cid = nid("group")
             label, ul = [c for c in el.children if isinstance(c, Tag)]

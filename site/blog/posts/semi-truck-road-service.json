@@ -1,0 +1,894 @@
+{
+  "slug": "semi-truck-road-service",
+  "title": "Semi Truck Road Service: What to Do When Stuck on the Highway",
+  "date": "2026-01-23",
+  "description": "Need semi truck road service fast? Learn what to do during a breakdown and how to get help quickly. Get parts or schedule service today.",
+  "status": "published",
+  "coverImage": "/img/blog/semi-truck-road-service/hero.jpg",
+  "topic": "Service",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Service",
+          "title": "Semi Truck Road Service: What to Do When Stuck on the Highway",
+          "topic": "Service",
+          "date": "January 23, 2026",
+          "readTime": "5 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/semi-truck-road-service/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Driver inspecting the underside of a trailer during a roadside check"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "What Is Semi Truck Road Service?",
+                        "href": "#what-is-road-service"
+                      },
+                      {
+                        "label": "Staying Safe While Waiting",
+                        "href": "#staying-safe"
+                      },
+                      {
+                        "label": "When to Call for Emergency Repair",
+                        "href": "#when-to-call"
+                      },
+                      {
+                        "label": "Why Road Service Matters to Your Bottom Line",
+                        "href": "#bottom-line"
+                      },
+                      {
+                        "label": "What to Expect",
+                        "href": "#what-to-expect"
+                      },
+                      {
+                        "label": "24-Hour Semi Truck Service",
+                        "href": "#24-hour-service"
+                      },
+                      {
+                        "label": "How Preventive Maintenance Helps",
+                        "href": "#preventive-reduces"
+                      },
+                      {
+                        "label": "Choosing the Right Partner",
+                        "href": "#right-partner"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "STUCK ON THE ROAD?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Call our Mobile Service team now.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "call-main",
+                                "label": "Call 800.741.7566 →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Few situations are more stressful than being broken down on the side of the highway with a loaded trailer, a tight delivery window, and traffic flying by.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "For owner-operators and fleet drivers alike, a breakdown isn't just an inconvenience; it's lost income, delayed customers, and mounting pressure by the minute.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-intro-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Knowing how semi truck road service works, when to call for help, and what to expect can make a difficult situation far more manageable. At Sun State International, our goal is simple: help drivers get back on the road safely, efficiently, and with as little downtime as possible.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-what-is-road-service",
+                  "type": "heading",
+                  "props": {
+                    "text": "What Is Semi Truck Road Service?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "what-is-road-service"
+                  }
+                },
+                {
+                  "id": "p-what-is-road-service-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Semi truck road service provides on-site assistance when a commercial truck experiences a mechanical issue away from the shop. Instead of towing the vehicle immediately, trained technicians assess the problem and complete repairs roadside when possible. This type of roadside truck service is especially valuable for issues that don't require full-shop equipment but still stop you from continuing your route.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-what-is-road-service-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Common services include:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-what-is-road-service-3",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Battery replacement or jump-starts"
+                      },
+                      {
+                        "text": "Air line and hose repairs"
+                      },
+                      {
+                        "text": "Electrical diagnostics"
+                      },
+                      {
+                        "text": "Minor brake repairs"
+                      },
+                      {
+                        "text": "Belt, clamp, or sensor replacements"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-what-is-road-service-4",
+                  "type": "text",
+                  "props": {
+                    "text": "For many drivers, road service is the difference between hours of downtime and getting back on schedule.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-staying-safe",
+                  "type": "heading",
+                  "props": {
+                    "text": "Staying Safe While Waiting for Truck Breakdown Assistance",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "staying-safe"
+                  }
+                },
+                {
+                  "id": "p-staying-safe-1",
+                  "type": "text",
+                  "props": {
+                    "text": "While waiting for truck breakdown assistance, safety should always come first:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-staying-safe-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Pull as far off the roadway as possible"
+                      },
+                      {
+                        "text": "Activate hazard lights immediately"
+                      },
+                      {
+                        "text": "Set reflective triangles if conditions allow"
+                      },
+                      {
+                        "text": "Stay inside the cab unless it's unsafe"
+                      },
+                      {
+                        "text": "Communicate your exact location clearly"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-staying-safe-3",
+                  "type": "text",
+                  "props": {
+                    "text": "A prepared driver is safer and easier for service teams to reach.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/semi-truck-road-service/1.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Sun State International service and parts location where road service teams are dispatched from"
+                    }
+                  }
+                },
+                {
+                  "id": "h-when-to-call",
+                  "type": "heading",
+                  "props": {
+                    "text": "When to Call for Emergency Truck Repair",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "when-to-call"
+                  }
+                },
+                {
+                  "id": "p-when-to-call-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Not every issue can, or should, be handled roadside. Knowing when to call for emergency truck repair helps protect both your truck and your safety. You should request road service if:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-when-to-call-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Warning lights indicate a non-catastrophic fault"
+                      },
+                      {
+                        "text": "The truck won't start due to electrical or battery issues"
+                      },
+                      {
+                        "text": "You experience air leaks affecting braking or suspension"
+                      },
+                      {
+                        "text": "Minor mechanical issues prevent safe operation"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-when-to-call-3",
+                  "type": "text",
+                  "props": {
+                    "text": "If there's major engine damage, severe brake failure, or a safety risk, towing to a service facility is often the best option. A professional road service team can help make that call quickly.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-bottom-line",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Roadside Truck Service Matters to Your Bottom Line",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "bottom-line"
+                  }
+                },
+                {
+                  "id": "p-bottom-line-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Unplanned vehicle downtime can cost trucking operations hundreds of dollars per hour when factoring in lost productivity, labor, and missed loads. For owner-operators, that impact is even more personal.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-bottom-line-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Reliable truck breakdown assistance helps:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-bottom-line-3",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Minimize delivery delays"
+                      },
+                      {
+                        "text": "Reduce towing expenses"
+                      },
+                      {
+                        "text": "Protect long-term equipment health"
+                      },
+                      {
+                        "text": "Keep drivers safer in high-traffic areas"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-bottom-line-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Road service isn't just about fixing the problem; it's about limiting the ripple effect that breakdowns cause.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-what-to-expect",
+                  "type": "heading",
+                  "props": {
+                    "text": "What to Expect From Professional Mobile Truck Repair",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "what-to-expect"
+                  }
+                },
+                {
+                  "id": "p-what-to-expect-1",
+                  "type": "text",
+                  "props": {
+                    "text": "A dependable mobile truck repair provider arrives prepared. Technicians travel with diagnostic tools, commonly needed replacement parts, and the experience to troubleshoot quickly. A typical service call includes:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-what-to-expect-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Initial assessment and diagnostics"
+                      },
+                      {
+                        "text": "Clear explanation of the issue and options"
+                      },
+                      {
+                        "text": "On-site repair when possible"
+                      },
+                      {
+                        "text": "Recommendation for follow-up service if needed"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-what-to-expect-3",
+                  "type": "text",
+                  "props": {
+                    "text": "This transparency matters, especially for drivers who value straightforward communication and no wasted time. If you need roadside assistance fast, reach out to our Mobile Service department at Sun State International.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-what-to-expect-4-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-what-to-expect-4",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-what-to-expect-4-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "mobile-service",
+                                "label": "Contact Our Mobile Service Department →"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-24-hour-service",
+                  "type": "heading",
+                  "props": {
+                    "text": "24-Hour Semi Truck Service: Why Availability Counts",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "24-hour-service"
+                  }
+                },
+                {
+                  "id": "p-24-hour-service-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Breakdowns don't follow a 9–5 schedule. Nights, weekends, and early mornings are often when help is hardest to find, yet when it's needed most. Access to 24-hour semi truck service means:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-24-hour-service-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Faster response times"
+                      },
+                      {
+                        "text": "Reduced overnight delays"
+                      },
+                      {
+                        "text": "Fewer missed delivery windows"
+                      },
+                      {
+                        "text": "Peace of mind on long routes"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-24-hour-service-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Even when a full repair can't be completed roadside, timely assistance helps secure the vehicle and move the situation forward quickly.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-2",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/semi-truck-road-service/2.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Technician performing a roadside repair check on an International truck engine"
+                    }
+                  }
+                },
+                {
+                  "id": "h-preventive-reduces",
+                  "type": "heading",
+                  "props": {
+                    "text": "How Preventive Maintenance Reduces Roadside Emergencies",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "preventive-reduces"
+                  }
+                },
+                {
+                  "id": "p-preventive-reduces-1",
+                  "type": "text",
+                  "props": {
+                    "text": "While road service is essential, prevention is still the best strategy. Many roadside calls stem from issues that routine inspections can catch early: batteries, hoses, belts, and electrical components among them.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-preventive-reduces-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Pairing regular maintenance with reliable road service support creates a stronger safety net:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-preventive-reduces-3",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Fewer unexpected stops"
+                      },
+                      {
+                        "text": "Lower long-term repair costs"
+                      },
+                      {
+                        "text": "More predictable operations"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-preventive-reduces-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Sun State International supports both sides of that equation: preventive care and responsive service when you need it most.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-preventive-reduces-5-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-preventive-reduces-5",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-preventive-reduces-5-cta",
+                          "type": "text",
+                          "props": {
+                            "text": "<a href=\"/blog/posts/preventive-maintenance-for-semi-trucks\">Read: Preventive Maintenance for Semi Trucks Explained →</a>",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 15,
+                              "fontWeight": "700"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-right-partner",
+                  "type": "heading",
+                  "props": {
+                    "text": "Choosing the Right Road Service Partner",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "right-partner"
+                  }
+                },
+                {
+                  "id": "p-right-partner-1",
+                  "type": "text",
+                  "props": {
+                    "text": "When you're stuck on the highway, you don't just need help; you need the right help. Look for a provider that values:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-right-partner-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Clear communication"
+                      },
+                      {
+                        "text": "Realistic timelines"
+                      },
+                      {
+                        "text": "Quality parts"
+                      },
+                      {
+                        "text": "Respect for your schedule"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-right-partner-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Those values matter when every minute counts. If your truck needs professional attention beyond roadside repair, schedule a service appointment with Sun State International and work with a team that understands what downtime really costs.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-confidence-on-road",
+                  "type": "heading",
+                  "props": {
+                    "text": "Confidence on the Road Starts With Support You Trust",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "confidence-on-road"
+                  }
+                },
+                {
+                  "id": "p-confidence-on-road-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Breakdowns happen, even to well-maintained trucks. What matters is how quickly and professionally they're handled. Knowing when to call for semi truck road service, what to expect, and who to trust can turn a stressful situation into a manageable one. At Sun State International, we're committed to helping drivers stay safe, productive, and supported, whether that means parts, service, or guidance when you need it most.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-confidence-on-road-2",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "order-parts-online",
+                        "label": "Find the Part You Need Online",
+                        "style": "primary"
+                      },
+                      {
+                        "ctaId": "schedule-service",
+                        "label": "Schedule Your Service Appointment",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-share",
+                  "type": "post-share",
+                  "props": {
+                    "label": "Share",
+                    "items": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fsemi-truck-road-service",
+                        "newTab": true
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fsemi-truck-road-service&text=Semi%20Truck%20Road%20Service%3A%20What%20to%20Do%20When%20Stuck%20on%20the%20Highway",
+                        "newTab": true
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fsemi-truck-road-service",
+                        "newTab": true
+                      },
+                      {
+                        "label": "Email",
+                        "url": "mailto:?subject=Semi%20Truck%20Road%20Service%3A%20What%20to%20Do%20When%20Stuck%20on%20the%20Highway&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fsemi-truck-road-service",
+                        "newTab": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Stuck on the highway?",
+          "heading": "Let's get you moving again.",
+          "body": "Call 800.741.7566 and our Mobile Service team will get you back on the road.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/semi-truck-road-service\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/semi-truck-road-service\"])) > .bz-card:nth-child(n+4) { display: none; }\n"
+}

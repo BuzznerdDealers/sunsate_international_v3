@@ -1,0 +1,698 @@
+{
+  "slug": "why-florida-fleets-choose-us-for-fleet-management-support",
+  "title": "Why Florida Fleets Choose Us for Fleet Management Support",
+  "date": "2025-12-19",
+  "description": "Looking for smarter fleet management in Florida? See how Sun State International supports fleets with parts and service.",
+  "status": "published",
+  "coverImage": "/img/blog/why-florida-fleets-choose-us-for-fleet-management-support/hero.jpg",
+  "topic": "Company",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Company",
+          "title": "Why Florida Fleets Choose Us for Fleet Management Support",
+          "topic": "Company",
+          "date": "December 19, 2025",
+          "readTime": "4 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/why-florida-fleets-choose-us-for-fleet-management-support/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Sun State International dealership exterior with a lineup of trucks and trailers"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "What Fleet Management Means",
+                        "href": "#what-it-means"
+                      },
+                      {
+                        "label": "Fleet Maintenance Programs",
+                        "href": "#maintenance-programs"
+                      },
+                      {
+                        "label": "Support Beyond the Sale",
+                        "href": "#beyond-the-sale"
+                      },
+                      {
+                        "label": "Fleet Parts Supply",
+                        "href": "#parts-supply"
+                      },
+                      {
+                        "label": "Built for Florida Conditions",
+                        "href": "#built-for-florida"
+                      },
+                      {
+                        "label": "Why Fleets Choose Us",
+                        "href": "#why-fleets-choose-us"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "MANAGE A FLEET?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Talk with our team about fleet parts and service support.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "contact-us",
+                                "label": "Contact Us →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "For fleet owners and operators across Florida, fleet management isn't a buzzword. It's the difference between trucks running on schedule and trucks sitting in a yard costing money.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Between heat, humidity, heavy loads, and tight delivery windows, managing a fleet takes more than good intentions. It takes the right partners.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-intro-2",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, fleet management support goes beyond selling trucks. It's about helping fleets stay productive through dependable vehicles, reliable parts access, and service teams that understand how downtime affects real businesses.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-what-it-means",
+                  "type": "heading",
+                  "props": {
+                    "text": "What Fleet Management Really Means for Florida Operations",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "what-it-means"
+                  }
+                },
+                {
+                  "id": "p-what-it-means-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At its core, fleet management is about control: controlling costs, maintenance schedules, parts availability, and vehicle performance. In Florida, those challenges are amplified by climate and mileage demands. Effective fleet management solutions should:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-what-it-means-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Reduce unexpected breakdowns"
+                      },
+                      {
+                        "text": "Extend vehicle lifespan"
+                      },
+                      {
+                        "text": "Simplify maintenance planning"
+                      },
+                      {
+                        "text": "Improve operational efficiency"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-what-it-means-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Fleet owners don't need more complexity. They need systems and partners that make day-to-day operations easier.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-maintenance-programs",
+                  "type": "heading",
+                  "props": {
+                    "text": "Fleet Maintenance Programs That Prevent Costly Downtime",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "maintenance-programs"
+                  }
+                },
+                {
+                  "id": "p-maintenance-programs-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Preventive care is one of the most overlooked aspects of fleet success. Strong fleet maintenance programs focus on catching small issues before they become expensive failures.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-maintenance-programs-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Unplanned downtime can cost fleets thousands of dollars per vehicle each year when lost productivity, repairs, and missed deadlines are factored in. Proactive service schedules significantly reduce those losses. At Sun State International, maintenance support is built around real-world fleet demands:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-maintenance-programs-3",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Scheduled inspections"
+                      },
+                      {
+                        "text": "Service recommendations based on usage"
+                      },
+                      {
+                        "text": "Access to technicians who understand International trucks"
+                      },
+                      {
+                        "text": "Service locations positioned to support Florida routes"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-maintenance-programs-4",
+                  "type": "text",
+                  "props": {
+                    "text": "When maintenance is predictable, budgets are easier to manage, and drivers spend more time on the road where they belong.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/why-florida-fleets-choose-us-for-fleet-management-support/1.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Fleet manager and Sun State International team member reviewing a route map on a tablet"
+                    }
+                  }
+                },
+                {
+                  "id": "h-beyond-the-sale",
+                  "type": "heading",
+                  "props": {
+                    "text": "Truck Fleet Support That Goes Beyond the Sale",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "beyond-the-sale"
+                  }
+                },
+                {
+                  "id": "p-beyond-the-sale-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Many dealers focus on the transaction. Truck fleet support focuses on what happens after the keys are handed over. Sun State International works with fleets of all sizes, from growing regional operations to established multi-vehicle fleets, providing ongoing support that adapts as businesses evolve. That includes guidance on:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-beyond-the-sale-2",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Spec'ing trucks for Florida routes"
+                      },
+                      {
+                        "text": "Planning replacement cycles"
+                      },
+                      {
+                        "text": "Aligning service schedules across multiple units"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-beyond-the-sale-3",
+                  "type": "text",
+                  "props": {
+                    "text": "If you're evaluating long-term fleet needs, contact Sun State International to talk with a team that understands both the equipment and the operation behind it.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-parts-supply",
+                  "type": "heading",
+                  "props": {
+                    "text": "Fleet Parts Supply That Keeps Trucks Moving",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "parts-supply"
+                  }
+                },
+                {
+                  "id": "p-parts-supply-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Even the best maintenance plans fall apart if parts aren't available when they're needed. Reliable fleet parts supply is essential to minimizing downtime and avoiding rushed, expensive fixes. Sun State International's parts department is designed to support fleet operations with:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-parts-supply-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Fast access to OEM and approved components"
+                      },
+                      {
+                        "text": "Knowledgeable staff who understand fleet urgency"
+                      },
+                      {
+                        "text": "Inventory planning for high-use parts"
+                      },
+                      {
+                        "text": "Online and in-person stores to find the parts you need"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-parts-supply-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Instead of sourcing parts from multiple vendors, fleets benefit from a single, dependable point of contact, saving time and reducing logistical headaches.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-parts-supply-4-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-parts-supply-4",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-parts-supply-4-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "order-parts-online",
+                                "label": "Visit Our Parts Department →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-built-for-florida",
+                  "type": "heading",
+                  "props": {
+                    "text": "Florida Fleet Services Built for Real-World Conditions",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "built-for-florida"
+                  }
+                },
+                {
+                  "id": "p-built-for-florida-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Not all fleet strategies translate well to Florida. Heat, weather swings, and long-haul mileage require region-specific experience. That's where Florida fleet services make a difference. Sun State International's presence across key Florida markets allows fleets to:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-built-for-florida-2",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Access service and parts locally"
+                      },
+                      {
+                        "text": "Maintain consistency across locations"
+                      },
+                      {
+                        "text": "Reduce travel time for service needs"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-built-for-florida-3",
+                  "type": "text",
+                  "props": {
+                    "text": "This regional support model helps fleets stay flexible without sacrificing reliability.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-why-fleets-choose-us",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Fleets Choose Sun State International as Their Dealer Partner",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "why-fleets-choose-us"
+                  }
+                },
+                {
+                  "id": "p-why-fleets-choose-us-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Fleet owners value trust, accountability, and efficiency. They want partners who understand that every decision impacts drivers, schedules, and revenue. Sun State International stands out because:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-why-fleets-choose-us-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "We operate as a full-service truck dealer"
+                      },
+                      {
+                        "text": "Parts and service teams work together, not in silos"
+                      },
+                      {
+                        "text": "Support is straightforward and responsive"
+                      },
+                      {
+                        "text": "Relationships are built for the long term, not one-time sales"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-why-fleets-choose-us-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Fleet management isn't about chasing the lowest upfront cost. It's about maximizing return over the life of every vehicle, something Sun State International helps fleets do every day.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-2",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/why-florida-fleets-choose-us-for-fleet-management-support/2.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Sun State International team members collaborating at the front desk"
+                    }
+                  }
+                },
+                {
+                  "id": "h-smarter-approach",
+                  "type": "heading",
+                  "props": {
+                    "text": "A Smarter Approach to Fleet Management Starts with the Right Dealer",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "smarter-approach"
+                  }
+                },
+                {
+                  "id": "p-smarter-approach-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Strong fleet management strategies rely on dependable equipment, consistent maintenance, and responsive support. By integrating parts, service, and dealership expertise, Sun State International helps fleets reduce downtime, manage costs, and plan for growth with confidence.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-smarter-approach-2",
+                  "type": "text",
+                  "props": {
+                    "text": "If you're ready to simplify fleet management and work with a dealer that understands Florida fleet operations, contact Sun State International today to start the conversation.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-smarter-approach-3",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "contact-us",
+                        "label": "Talk With a Member of Our Team"
+                      },
+                      {
+                        "ctaId": "schedule-service",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Manage a fleet in florida?",
+          "heading": "Let's talk fleet support.",
+          "body": "Call 800.741.7566 and our team in Tampa, Sarasota, Davenport or Brooksville will help you build a plan.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/why-florida-fleets-choose-us-for-fleet-management-support\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/why-florida-fleets-choose-us-for-fleet-management-support\"])) > .bz-card:nth-child(n+4) { display: none; }\n"
+}
