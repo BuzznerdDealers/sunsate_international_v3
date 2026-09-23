@@ -112,14 +112,11 @@
           "span": 4,
           "map": [
             {
-              "show": "yes"
+              "show": false
             }
           ],
           "locations": {
-            "source": "locations",
-            "config": {
-              "pagePathPrefix": "/locations"
-            }
+            "source": "locations"
           }
         },
         "snapshots": {
