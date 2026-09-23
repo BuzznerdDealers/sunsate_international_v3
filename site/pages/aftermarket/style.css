@@ -38,7 +38,7 @@
 /* Doubled attribute so this outranks blocks.css `.bz-block + .bz-block`. */
 [data-bz-node="aft-lines-cta"][data-bz-node] { padding-block-start: 22px; }
 [data-bz-node="aft-lines-cta"] .bz-btns { margin-block: 0; gap: 26px; }
-[data-bz-node="aft-lines-cta"] .bz-btn--link { font-size: 15px; line-height: 1.7; }
+[data-bz-node="aft-lines-cta"] .bz-btn--link { line-height: 1.7; }
 
 /* Trailers: two bordered cards at 36/32, each a 24px display heading. */
 [data-bz-node="aft-trailers"] > .bz-section { padding-block: 90px; }
@@ -51,7 +51,7 @@
    blocks would add to them. */
 [data-bz-node="aft-trailers"] .bz-block + .bz-block { padding-block-start: 0; }
 [data-bz-node="aft-trailers"] .bz-btns { margin-block: 0; gap: 26px; }
-[data-bz-node="aft-trailers"] .bz-btn--link { font-size: 15px; line-height: 1.7; }
+[data-bz-node="aft-trailers"] .bz-btn--link { line-height: 1.7; }
 
 /* Locations: a 1280px well, four 28px cards, the aftermarket one on ink. */
 [data-bz-node="aft-location"] > .bz-section { padding-block: 90px; }
@@ -68,7 +68,7 @@
 [data-bz-node="aft-location"] [data-bz-node^="lg-card-hours"] .bz-text { gap: 0; margin-bottom: 0; }
 /* .loc__phone carries 8px under it before the card closes. */
 [data-bz-node="aft-location"] [data-bz-node^="lg-card-cta"] { padding-block: 14px 8px; }
-[data-bz-node="aft-location"] .bz-btn--link { font-size: 15px; line-height: 1.7; font-weight: 700; }
+[data-bz-node="aft-location"] .bz-btn--link { line-height: 1.7; }
 /* The aftermarket card itself is on ink. */
 /* The handoff's dark card carries no border at all, so it stands 2px shorter
    than the three outlined ones would make it. */

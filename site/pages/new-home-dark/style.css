@@ -126,19 +126,9 @@
 /* The handoff's "Read more" is its ghost button: the body face at 600, with a
    standing underline 3px clear of the text — not the site's plain text link. */
 [data-bz-node="home-about"] .bz-btn--link {
-  font-weight: 600;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
-
-/* The handoff sets its filled buttons in the display face — only the ghost
-   link and its inline text links use the body face, which is what the site
-   default is tuned for. These four are real .btn primaries in the design. */
-[data-bz-node="hero-search"] .bz-btn--primary,
-[data-bz-node="home-trailers"] .bz-btn--primary,
-[data-bz-node="home-brands"] .bz-btn--primary,
-[data-bz-section="cta-compact"] .bz-btn--primary,
-[data-bz-section="cta-compact"] .bz-btn--secondary { font-family: var(--font-heading); }
 
 /* ---------------------------------------------------------------------------
    Mobile, taken from home.html's own @media (max-width: 640px) block. The

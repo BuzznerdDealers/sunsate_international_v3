@@ -32,7 +32,7 @@
 [data-bz-node="tcf-build-col"] { display: grid; grid-template-columns: 1fr auto; align-items: baseline; }
 [data-bz-node="tcf-build-h"] h2 { font-size: 32px; margin: 0; }
 [data-bz-node="tcf-build-open"] .bz-btns { margin-block: 0; justify-content: flex-end; }
-[data-bz-node="tcf-build-open"] .bz-btn { min-height: 0; padding: 0; background: none; color: var(--accent); font: 700 15px/1.6 var(--font-body); }
+[data-bz-node="tcf-build-open"] .bz-btn { min-height: 0; padding: 0; background: none; color: var(--accent); }
 [data-bz-node="tcf-build-frame"], [data-bz-node="tcf-build-note"] { grid-column: 1 / -1; }
 [data-bz-node="tcf-build-note"] p { font-size: 13px; line-height: 1.7; color: var(--muted); margin-top: 16px; }
 [data-bz-node="tcf-build"] { padding-block: 0 20px; }
