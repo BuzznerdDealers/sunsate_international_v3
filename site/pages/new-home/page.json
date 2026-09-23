@@ -2696,7 +2696,7 @@
       },
       "styles": {
         "base": {
-          "height": 6
+          "minHeight": 600
         }
       },
       "children": []
@@ -2726,12 +2726,10 @@
       },
       "styles": {
         "base": {
-          "minHeight": 600,
-          "height": 600
+          "minHeight": 600
         },
         "mobile": {
-          "minHeight": 500,
-          "height": 800
+          "minHeight": 500
         }
       },
       "children": []
