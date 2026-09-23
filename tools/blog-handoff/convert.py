@@ -36,7 +36,9 @@ INTENT = {
 
 
 def map_href(h):
-    if h.startswith("../posts/") or h.startswith("posts/") or "/posts/" in h and h.endswith(".html"):
+    if h.endswith("blog.html"):
+        return "/blog"
+    if h.endswith(".html") and ("/posts/" in h or "/" not in h):
         return "/blog/posts/" + h.rsplit("/", 1)[1][:-5]
     if h not in LINK_MAP:
         raise SystemExit(f"unmapped link: {h}")
@@ -155,6 +157,14 @@ LABEL = {"fontSize": 10, "fontWeight": "700", "letterSpacing": 1, "textTransform
          "textColor": "accent", "marginBottom": 10}
 
 
+def margins(style):
+    """Top and bottom of an inline `margin:` shorthand — `34px 0` or `8px 0 34px`."""
+    m = re.search(r"margin:\s*([0-9]+)px(?:\s+0)?\s*([0-9]+)?px?", style)
+    top = int(m.group(1)) if m else 34
+    bottom = int(m.group(2)) if m and m.group(2) else top
+    return top, bottom
+
+
 def callout(cid, box, style):
     """A bordered callout: an optional micro-label, an optional paragraph, a link."""
     kids = []
@@ -169,9 +179,7 @@ def callout(cid, box, style):
             kids.append(n(f"{cid}-cta", "buttons", {"align": "left", "items": [cta(plain(c), map_href(c["href"]), "link")]}))
         else:
             raise SystemExit(f"callout child <{c.name}>")
-    m = re.search(r"margin:\s*([0-9]+)px(?:\s+0)?\s*([0-9]+)?px?", style)
-    top = int(m.group(1)) if m else 34
-    bottom = int(m.group(2)) if m and m.group(2) else top
+    top, bottom = margins(style)
     return row(f"{cid}-row", [col(cid, kids, styles={**BOX, "paddingTop": 26, "paddingRight": 28, "paddingBottom": 26,
                                                       "paddingLeft": 28, "marginTop": top, "marginBottom": bottom})])
 
@@ -258,12 +266,40 @@ def convert(path):
             out.append(callout(nid("co"), el, st))
         elif el.name == "div" and "border-top" in st and "display: flex" in st:
             share = el
+        elif el.name == "div" and "display: flex" in st and not el.select(".hv-2, .hv-3"):
+            # A row of arrow links, not a button pair: its own column so it keeps the
+            # margins the design gives it rather than the button pair's.
+            cid = nid("links")
+            its = [cta(plain(a), map_href(a["href"]), "link") for a in el.find_all("a")]
+            top, bottom = margins(st)
+            out.append(row(f"{cid}-row", [col(cid, [n(f"{cid}-cta", "buttons", {"align": "left", "items": its})],
+                                              styles={"marginTop": top, "marginBottom": bottom})]))
         elif el.name == "div" and "display: flex" in st:
             its = []
             for a in el.find_all("a"):
                 style = "primary" if "hv-2" in a.get("class", []) else "secondary"
                 its.append(cta(plain(a), map_href(a["href"]), style))
             out.append(n(nid("actions"), "buttons", {"align": "left", "items": its}))
+        elif el.name == "table" and "smoke-table" in cls:
+            # Label and detail, ruled: the site's Definition rows, set to the post's measure.
+            out.append(n(nid("defs"), "def-rows", {"rows": [
+                {"label": plain(tr.find_all("td")[0]), "text": plain(tr.find_all("td")[1])} for tr in el.select("tr")]}))
+        elif el.name == "table" and "compare-table" in cls:
+            heads = [plain(th) for th in el.select("thead th")]
+            assert len(heads) == 3, heads
+            rows = [[plain(td) for td in tr.find_all("td")] for tr in el.select("tbody tr")]
+            assert all(len(r) == 3 for r in rows), rows
+            out.append(n(nid("compare"), "compare-table", {"headA": heads[0], "headB": heads[1], "headC": heads[2],
+                                                          "rows": [{"a": a, "b": b, "c": c} for a, b, c in rows]}))
+        elif el.name == "div" and "checklist-group" in cls:
+            cid = nid("group")
+            label, ul = [c for c in el.children if isinstance(c, Tag)]
+            assert label.name == "div" and ul.name == "ul"
+            out.append(row(f"{cid}-row", [col(cid, [
+                text(f"{cid}-label", plain(label), styles={"fontSize": 12, "fontWeight": "700", "letterSpacing": 1,
+                                                          "textColor": "ink", "marginBottom": 10}),
+                n(f"{cid}-list", "prose-list", {"ordered": False, "items": [{"text": inline_html(li)} for li in ul.find_all("li")]}),
+            ], styles={**BOX, "paddingTop": 20, "paddingRight": 22, "paddingBottom": 20, "paddingLeft": 22, "marginBottom": 16})]))
         elif el.name == "div" and "grid-2" in cls:
             cid = nid("cards"); cols = []
             for i, card in enumerate(el.find_all("div", class_="factor-card", recursive=False)):

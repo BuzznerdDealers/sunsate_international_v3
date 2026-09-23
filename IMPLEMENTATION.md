@@ -400,3 +400,27 @@ and excerpts. Cards that already had a Media Bin cover keep it.
 - The header and footer are the dealer's current template, not the handoff's; and the
   article JSON-LD (`BlogPosting`, `BreadcrumbList`) is still not emitted for posts.
 
+---
+
+## 10. Blog handoff, Part 2 of 6 — nine more posts
+
+Nine new posts, built by `tools/blog-handoff/convert.py` on the §9 layout: *Fleet Maintenance
+Programs vs One-Off Repairs*, *Where to Go For New and Used Truck Parts in Tampa, FL*, *Truck
+Alignment Service: When It's Worth the Cost*, *Why OEM International Truck Parts Matter
+Long-Term*, *Common Causes of Heavy-Duty Truck Transmission Failure*, *What to Expect From a
+Truck PM Service Visit*, *How Fleet Truck Maintenance Services Reduce Downtime*, *International
+Truck Parts Near Me*, and *Common Signs You Need a Diesel Engine Diagnostic*. Body copy and
+contents rails match the handoff word for word; the blog page now carries 21 cards.
+
+Part 2 draws four shapes Part 1 did not, and the converter now handles each:
+
+| Handoff | Here |
+|---|---|
+| `.smoke-table` (label / detail) | the existing **Definition rows** widget, set to the post's measure in the shared post CSS |
+| `.compare-table` (factor / option / option) | a new **Comparison table** coded widget (`site/widgets/compare-table.json`) |
+| `.checklist-group` | a bordered column (node styles) with a label and a **Prose list** |
+| a row of arrow links | a column holding a buttons block of link-style library buttons |
+
+Links between posts point at `/blog/posts/<slug>`; every one in this part resolves to a built
+post.
+

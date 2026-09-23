@@ -1,0 +1,824 @@
+{
+  "slug": "oem-international-truck-parts",
+  "title": "Why OEM International Truck Parts Matter Long-Term",
+  "date": "2026-03-20",
+  "description": "OEM International truck parts improve uptime and reliability. Order parts or schedule service with Sun State International today.",
+  "status": "published",
+  "coverImage": "/img/blog/oem-international-truck-parts/hero.jpg",
+  "topic": "Parts",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Parts",
+          "title": "Why OEM International Truck Parts Matter Long-Term",
+          "topic": "Parts",
+          "date": "March 20, 2026",
+          "readTime": "5 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/oem-international-truck-parts/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Aisle of shelved genuine truck parts in the Sun State International parts warehouse"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "What Are OEM Parts?",
+                        "href": "#what-are-oem"
+                      },
+                      {
+                        "label": "Long-Term Value of OEM",
+                        "href": "#long-term-value"
+                      },
+                      {
+                        "label": "OEM vs Aftermarket",
+                        "href": "#oem-vs-aftermarket"
+                      },
+                      {
+                        "label": "When OEM Makes the Biggest Impact",
+                        "href": "#biggest-impact"
+                      },
+                      {
+                        "label": "The Role of Service",
+                        "href": "#role-of-service"
+                      },
+                      {
+                        "label": "Keep Your Truck Running Strong",
+                        "href": "#keep-running-strong"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "NEED PARTS?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Order OEM International parts online today.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "order-parts-online",
+                                "label": "Shop Parts →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "When your truck is your livelihood, every decision you make comes down to one thing: reliability. You don't have time for guesswork, and you definitely don't have time for breakdowns caused by the wrong parts.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "That's why choosing OEM International truck parts isn't just a preference; it's a long-term business decision. At Sun State International, we've worked with owner-operators and fleet managers across Florida long enough to know what matters most. You need parts that fit right, perform consistently, and keep your truck on the road where it belongs.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-what-are-oem",
+                  "type": "heading",
+                  "props": {
+                    "text": "What Are OEM International Truck Parts?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "what-are-oem"
+                  }
+                },
+                {
+                  "id": "p-what-are-oem-1",
+                  "type": "text",
+                  "props": {
+                    "text": "OEM stands for \"Original Equipment Manufacturer.\" That means International truck OEM parts are built specifically for your truck by the same company that designed it. These aren't generic replacements. They're engineered to match your truck's exact specifications, ensuring:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-what-are-oem-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Proper fit and alignment"
+                      },
+                      {
+                        "text": "Consistent performance"
+                      },
+                      {
+                        "text": "Long-term durability"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-what-are-oem-3",
+                  "type": "text",
+                  "props": {
+                    "text": "When you browse an international truck parts catalog, OEM parts are the ones designed to work seamlessly with your system, not just \"fit well enough.\"",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-what-are-oem-4-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-what-are-oem-4",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-what-are-oem-4-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "order-parts-online",
+                                "label": "Shop OEM Parts Online →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-long-term-value",
+                  "type": "heading",
+                  "props": {
+                    "text": "The Long-Term Value of OEM Parts",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "long-term-value"
+                  }
+                },
+                {
+                  "id": "h3-long-term-value-1",
+                  "type": "heading",
+                  "props": {
+                    "text": "1. Better Reliability = Less Downtime",
+                    "headingLevel": 3,
+                    "align": "left",
+                    "anchor": "reliability"
+                  }
+                },
+                {
+                  "id": "p-long-term-value-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Downtime is one of the biggest threats to your business. Every hour your truck is off the road is money lost. OEM international truck parts reduce the risk of unexpected failures because they're built to perform under the same conditions your truck was designed for. Unplanned downtime can cost fleets hundreds of dollars per day per truck, depending on lost revenue and delays. That's why cutting corners on parts rarely pays off in the long run.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-long-term-value-3",
+                  "type": "heading",
+                  "props": {
+                    "text": "2. Designed for Your Truck, Not Just \"Compatible\"",
+                    "headingLevel": 3,
+                    "align": "left",
+                    "anchor": "designed-for-your-truck"
+                  }
+                },
+                {
+                  "id": "p-long-term-value-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Aftermarket parts are often built to fit multiple models. That flexibility can lead to compromises. International OEM parts, on the other hand, are designed with precision. Every component works in sync with your engine, drivetrain, and systems. That means:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-long-term-value-5",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Less wear and tear"
+                      },
+                      {
+                        "text": "Improved fuel efficiency"
+                      },
+                      {
+                        "text": "Fewer repeat repairs"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h3-long-term-value-6",
+                  "type": "heading",
+                  "props": {
+                    "text": "3. Protects Your Investment",
+                    "headingLevel": 3,
+                    "align": "left",
+                    "anchor": "protects-investment"
+                  }
+                },
+                {
+                  "id": "p-long-term-value-7",
+                  "type": "text",
+                  "props": {
+                    "text": "Your truck isn't just equipment. It's your business. Using the right international parts helps maintain the integrity of your vehicle over time. That can impact:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-long-term-value-8",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Resale value"
+                      },
+                      {
+                        "text": "Warranty protection"
+                      },
+                      {
+                        "text": "Long-term performance"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-long-term-value-9",
+                  "type": "text",
+                  "props": {
+                    "text": "Cutting costs upfront with cheaper parts often leads to higher repair costs down the line.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/oem-international-truck-parts/1.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Sun State International technician installing OEM truck parts on a service bay engine"
+                    }
+                  }
+                },
+                {
+                  "id": "h-oem-vs-aftermarket",
+                  "type": "heading",
+                  "props": {
+                    "text": "OEM vs Aftermarket: What's the Real Difference?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "oem-vs-aftermarket"
+                  }
+                },
+                {
+                  "id": "p-oem-vs-aftermarket-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Here's a straightforward comparison:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "compare-oem-vs-aftermarket-2",
+                  "type": "compare-table",
+                  "props": {
+                    "headA": "Factor",
+                    "headB": "OEM International Truck Parts",
+                    "headC": "Aftermarket Parts",
+                    "rows": [
+                      {
+                        "a": "Fit",
+                        "b": "Exact factory fit",
+                        "c": "Varies"
+                      },
+                      {
+                        "a": "Reliability",
+                        "b": "Consistent",
+                        "c": "Inconsistent"
+                      },
+                      {
+                        "a": "Longevity",
+                        "b": "Built for long-term use",
+                        "c": "May wear faster"
+                      },
+                      {
+                        "a": "Warranty Support",
+                        "b": "Often included",
+                        "c": "Limited"
+                      },
+                      {
+                        "a": "Performance",
+                        "b": "Optimized for your truck",
+                        "c": "Generalized"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-oem-vs-aftermarket-3",
+                  "type": "text",
+                  "props": {
+                    "text": "At the end of the day, the difference comes down to confidence. With OEM, you know what you're getting.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-biggest-impact",
+                  "type": "heading",
+                  "props": {
+                    "text": "When OEM Parts Make the Biggest Impact",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "biggest-impact"
+                  }
+                },
+                {
+                  "id": "p-biggest-impact-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Not every part carries the same level of risk. But there are certain components where OEM is the clear choice:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-biggest-impact-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Engine components"
+                      },
+                      {
+                        "text": "Electrical systems"
+                      },
+                      {
+                        "text": "Emissions systems"
+                      },
+                      {
+                        "text": "Braking systems"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-biggest-impact-3",
+                  "type": "text",
+                  "props": {
+                    "text": "These are areas where performance and safety matter most. Using OEM international truck parts helps you avoid costly mistakes.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-get-parts-fast",
+                  "type": "heading",
+                  "props": {
+                    "text": "Get the Right Parts, Fast",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "get-parts-fast"
+                  }
+                },
+                {
+                  "id": "p-get-parts-fast-1",
+                  "type": "text",
+                  "props": {
+                    "text": "When you need parts, you shouldn't have to wait or second-guess your purchase. Order OEM International truck parts directly from Sun State International's Online Parts Store. Get the right fit, backed by a team that understands your truck and your business.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-get-parts-fast-2-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-get-parts-fast-2",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-get-parts-fast-2-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "order-parts-online",
+                                "label": "Find the OEM Parts You Need →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-parts-catalog",
+                  "type": "heading",
+                  "props": {
+                    "text": "Accessing the Right International Truck Parts Catalog",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "parts-catalog"
+                  }
+                },
+                {
+                  "id": "p-parts-catalog-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Finding the right part shouldn't be complicated. At Sun State International, we help simplify the process by giving you access to a trusted international truck parts catalog and a knowledgeable team that can guide you.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-parts-catalog-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Instead of sorting through endless options, you can:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-parts-catalog-3",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Get recommendations based on your exact truck model"
+                      },
+                      {
+                        "text": "Confirm compatibility before you buy"
+                      },
+                      {
+                        "text": "Avoid ordering the wrong part"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-parts-catalog-4",
+                  "type": "text",
+                  "props": {
+                    "text": "That's time saved and fewer headaches down the road.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-role-of-service",
+                  "type": "heading",
+                  "props": {
+                    "text": "The Role of Service in Long-Term Performance",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "role-of-service"
+                  }
+                },
+                {
+                  "id": "p-role-of-service-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Parts are only one piece of the equation. Proper installation and maintenance matter just as much. Even the best international OEM parts won't perform the way they should if they're installed incorrectly or not maintained over time. That's why having a dependable service partner matters. At Sun State International, parts and service go hand in hand. Our goal isn't just to sell you a part. It's to make sure your truck is ready for the road ahead.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-2",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/oem-international-truck-parts/2.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Exterior of the Sun State International accelerated service and express diagnostics bays"
+                    }
+                  }
+                },
+                {
+                  "id": "h-keep-running-strong",
+                  "type": "heading",
+                  "props": {
+                    "text": "Keep Your Truck Running Strong",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "keep-running-strong"
+                  }
+                },
+                {
+                  "id": "p-keep-running-strong-1",
+                  "type": "text",
+                  "props": {
+                    "text": "If you're serious about keeping your truck reliable long-term, it starts with the right parts and the right support. Schedule a Service Appointment with Sun State International today. Our team will help you install and maintain the OEM parts your truck was built to run on.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-keep-running-strong-2",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "order-parts-online",
+                        "label": "Shop OEM International Parts",
+                        "style": "primary"
+                      },
+                      {
+                        "ctaId": "schedule-service",
+                        "label": "Schedule Your Service Appointment",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-share",
+                  "type": "post-share",
+                  "props": {
+                    "label": "Share",
+                    "items": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Foem-international-truck-parts",
+                        "newTab": true
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Foem-international-truck-parts&text=Why%20OEM%20International%20Truck%20Parts%20Matter%20Long-Term",
+                        "newTab": true
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Foem-international-truck-parts",
+                        "newTab": true
+                      },
+                      {
+                        "label": "Email",
+                        "url": "mailto:?subject=Why%20OEM%20International%20Truck%20Parts%20Matter%20Long-Term&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Foem-international-truck-parts",
+                        "newTab": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Need oem parts?",
+          "heading": "Let's keep your fleet moving.",
+          "body": "Call 800.741.7566 and our parts and service teams in Tampa, Sarasota, Davenport or Brooksville will get you what you need.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/oem-international-truck-parts\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/oem-international-truck-parts\"])) > .bz-card:nth-child(n+4) { display: none; }\n"
+}

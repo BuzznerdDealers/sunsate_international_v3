@@ -1,0 +1,842 @@
+{
+  "slug": "international-truck-parts-near-me",
+  "title": "International Truck Parts Near Me: What to Look For",
+  "date": "2026-02-20",
+  "description": "Searching International truck parts near me? Learn what to look for in quality parts and service. Order online or schedule service.",
+  "status": "published",
+  "coverImage": "/img/blog/international-truck-parts-near-me/hero.jpg",
+  "topic": "Parts",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Parts",
+          "title": "International Truck Parts Near Me: What to Look For",
+          "topic": "Parts",
+          "date": "February 20, 2026",
+          "readTime": "5 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/international-truck-parts-near-me/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Sun State International parts staff pulling components from warehouse shelving"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "1. Specializes in International Parts",
+                        "href": "#specialized-supplier"
+                      },
+                      {
+                        "label": "2. A Wide Inventory of Parts",
+                        "href": "#wide-inventory"
+                      },
+                      {
+                        "label": "3. Easy Online Ordering",
+                        "href": "#online-ordering"
+                      },
+                      {
+                        "label": "4. Service Support",
+                        "href": "#service-support"
+                      },
+                      {
+                        "label": "5. Values Relationships",
+                        "href": "#values-relationships"
+                      },
+                      {
+                        "label": "Finding the Right Parts Near You",
+                        "href": "#finding-right-parts"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "NEED PARTS?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Order from our online parts store today.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "order-parts-online",
+                                "label": "Shop Parts →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "When a truck goes down, time becomes the most valuable resource in your business. Every hour a truck isn't moving means lost revenue, delayed deliveries, and frustrated customers.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "That's why so many fleet managers and owner-operators start their search with one simple phrase: \"International truck parts near me.\" But finding parts quickly isn't enough. What really matters is finding the right supplier, one that offers reliable International truck parts, knowledgeable support, and service that gets you back on the road fast. As a trusted International truck dealership and parts provider, our goal is simple: help keep your trucks running and your business moving forward. If you're looking for International truck parts locally, here's what to look for before choosing where to buy.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-specialized-supplier",
+                  "type": "heading",
+                  "props": {
+                    "text": "1. A Supplier That Specializes in International Truck Parts",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "specialized-supplier"
+                  }
+                },
+                {
+                  "id": "p-specialized-supplier-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Not all parts suppliers are the same. Some carry general semi truck parts, while others specialize in specific brands. When you search for International truck parts, prioritize dealerships or suppliers that work directly with the International brand. These providers understand the engineering behind International trucks and can recommend the right components faster.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-specialized-supplier-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Benefits of buying from a specialized dealer include:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-specialized-supplier-3",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Access to OEM International truck parts"
+                      },
+                      {
+                        "text": "Accurate part matching"
+                      },
+                      {
+                        "text": "Expert recommendations"
+                      },
+                      {
+                        "text": "Faster ordering and delivery"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-specialized-supplier-4",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, our parts team works with International equipment every day. That experience allows us to quickly identify the exact part you need and get it ordered without unnecessary delays. For drivers and fleet owners, that expertise can mean the difference between a quick repair and days of downtime.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-specialized-supplier-5-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-specialized-supplier-5",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-specialized-supplier-5-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "service-department",
+                                "label": "Learn More About Our Parts and Service →"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-wide-inventory",
+                  "type": "heading",
+                  "props": {
+                    "text": "2. A Wide Inventory of New and Used International Truck Parts and All-Makes Parts",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "wide-inventory"
+                  }
+                },
+                {
+                  "id": "p-wide-inventory-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Availability matters when your truck needs a repair today. A reliable supplier should carry a wide selection of International truck parts, including both new and used International truck parts, for customers looking to manage costs.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-wide-inventory-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Common parts drivers often need include:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-wide-inventory-3",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Brake components"
+                      },
+                      {
+                        "text": "Filters and belts"
+                      },
+                      {
+                        "text": "Engine components"
+                      },
+                      {
+                        "text": "Cooling system parts"
+                      },
+                      {
+                        "text": "Electrical systems"
+                      },
+                      {
+                        "text": "Suspension components"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-wide-inventory-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Having these parts readily available allows repairs to happen faster and reduces the risk of extended downtime. Many owner-operators prefer working with a supplier that stocks parts locally rather than ordering everything from a warehouse. When parts are nearby, repairs happen faster, and your truck gets back on the road sooner.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/international-truck-parts-near-me/1.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Shelves of labeled International truck parts organized inside the Sun State International warehouse"
+                    }
+                  }
+                },
+                {
+                  "id": "h-online-ordering",
+                  "type": "heading",
+                  "props": {
+                    "text": "3. Easy Online Ordering for Truck Parts",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "online-ordering"
+                  }
+                },
+                {
+                  "id": "p-online-ordering-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Modern trucking businesses don't always have time to visit a dealership in person. That's why online ordering has become one of the most important features when searching for international truck parts near me.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-online-ordering-2",
+                  "type": "text",
+                  "props": {
+                    "text": "A quality supplier should allow you to:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-online-ordering-3",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Browse parts online"
+                      },
+                      {
+                        "text": "Order quickly"
+                      },
+                      {
+                        "text": "Schedule pickup"
+                      },
+                      {
+                        "text": "Coordinate service repairs if needed"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-online-ordering-4",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, drivers and fleet managers can quickly find the International truck parts they need through our online parts store. Ordering online saves time and helps you avoid unnecessary downtime, especially when your schedule is already tight.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-online-ordering-5-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-online-ordering-5",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-online-ordering-5-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "order-parts-online",
+                                "label": "Order from the Online Parts Store →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-service-support",
+                  "type": "heading",
+                  "props": {
+                    "text": "4. Service Support That Works With Your Parts Purchase",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "service-support"
+                  }
+                },
+                {
+                  "id": "p-service-support-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Sometimes buying a part is only half the job. Installation, diagnostics, and preventative maintenance are just as important. When choosing where to buy commercial truck parts, look for a dealership that also offers a full-service department. This ensures that if the repair becomes more complex than expected, help is already available.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-service-support-2",
+                  "type": "text",
+                  "props": {
+                    "text": "A dependable service department can assist with:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-service-support-3",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Diagnostics and troubleshooting"
+                      },
+                      {
+                        "text": "Scheduled maintenance"
+                      },
+                      {
+                        "text": "Engine repairs"
+                      },
+                      {
+                        "text": "Electrical repairs"
+                      },
+                      {
+                        "text": "Preventative inspections"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-service-support-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Fast parts access combined with professional service support can make a significant difference in keeping your fleet productive. If your truck needs more than just a replacement part, the service team at Sun State International is ready to help.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-service-support-5-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-service-support-5",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-service-support-5-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "schedule-service",
+                                "label": "Schedule Service With Experienced Technicians →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "fig-2",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/international-truck-parts-near-me/2.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Sun State International parts specialist matching a fitting from stocked bins"
+                    }
+                  }
+                },
+                {
+                  "id": "h-values-relationships",
+                  "type": "heading",
+                  "props": {
+                    "text": "5. A Dealer That Values Relationships, Not Just Sales",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "values-relationships"
+                  }
+                },
+                {
+                  "id": "p-values-relationships-1",
+                  "type": "text",
+                  "props": {
+                    "text": "The trucking industry runs on trust. Drivers and fleet managers rely on dependable partners who respect their time, communicate clearly, and follow through on what they promise. At Sun State International, customer service is more than a department; it's part of our culture. Our mission is to provide quality transportation products, parts, and services with an unwavering commitment to our customers' success.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-values-relationships-2",
+                  "type": "text",
+                  "props": {
+                    "text": "That means:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-values-relationships-3",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Straightforward communication"
+                      },
+                      {
+                        "text": "Fast service"
+                      },
+                      {
+                        "text": "Knowledgeable staff"
+                      },
+                      {
+                        "text": "Long-term relationships with customers"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-values-relationships-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Our team believes that when your trucks succeed, your business succeeds. That philosophy guides everything we do, from helping you find the right International truck parts to making sure repairs are handled quickly and professionally.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-finding-right-parts",
+                  "type": "heading",
+                  "props": {
+                    "text": "Finding the Right Truck Parts Near You",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "finding-right-parts"
+                  }
+                },
+                {
+                  "id": "p-finding-right-parts-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Searching for truck parts is often the first step when something goes wrong with a truck. But the supplier you choose can make a big difference in how quickly you recover.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-finding-right-parts-2",
+                  "type": "text",
+                  "props": {
+                    "text": "The best parts provider will offer:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-finding-right-parts-3",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Expertise in International truck parts"
+                      },
+                      {
+                        "text": "A wide inventory of parts and used International truck parts"
+                      },
+                      {
+                        "text": "Convenient online ordering"
+                      },
+                      {
+                        "text": "Reliable service support"
+                      },
+                      {
+                        "text": "A team that values long-term relationships"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-finding-right-parts-4",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, we're committed to providing dependable parts, professional service, and straightforward support so your trucks can stay on the road where they belong. Whether you need replacement components, preventative maintenance parts, or expert service support, our team is here to help.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-finding-right-parts-5",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "order-parts-online",
+                        "label": "Shop the Online Parts Store",
+                        "style": "primary"
+                      },
+                      {
+                        "ctaId": "schedule-service",
+                        "label": "Schedule Your Service Appointment",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-share",
+                  "type": "post-share",
+                  "props": {
+                    "label": "Share",
+                    "items": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Finternational-truck-parts-near-me",
+                        "newTab": true
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Finternational-truck-parts-near-me&text=International%20Truck%20Parts%20Near%20Me%3A%20What%20to%20Look%20For",
+                        "newTab": true
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Finternational-truck-parts-near-me",
+                        "newTab": true
+                      },
+                      {
+                        "label": "Email",
+                        "url": "mailto:?subject=International%20Truck%20Parts%20Near%20Me%3A%20What%20to%20Look%20For&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Finternational-truck-parts-near-me",
+                        "newTab": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Need a part fast?",
+          "heading": "Let's keep your fleet moving.",
+          "body": "Call 800.741.7566 and our parts teams in Tampa, Sarasota, Davenport or Brooksville will get you what you need.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/international-truck-parts-near-me\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/international-truck-parts-near-me\"])) > .bz-card:nth-child(n+4) { display: none; }\n"
+}
