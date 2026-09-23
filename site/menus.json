@@ -927,19 +927,10 @@
                 },
                 {
                   "id": "nm-bus-all",
-                  "label": "All IC Bus inventory",
-                  "type": "inventory",
-                  "ref": "inventory?brand=ic-bus",
-                  "url": null,
-                  "newTab": false,
-                  "children": []
-                },
-                {
-                  "id": "nm-bus-type",
-                  "label": "School & commercial buses",
-                  "type": "inventory",
-                  "ref": "inventory?type=bus",
-                  "url": null,
+                  "label": " Bus",
+                  "type": "url",
+                  "ref": null,
+                  "url": "https://www.sunstatebuscenters.com/",
                   "newTab": false,
                   "children": []
                 }
