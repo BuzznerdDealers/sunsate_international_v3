@@ -2,19 +2,13 @@
   "version": 2,
   "id": "location-summary",
   "name": "Location summary",
-  "css": "[data-bz-section=\"location-summary\"] .bz-block { padding-block: 0 }\n[data-bz-section=\"location-summary\"] h2 { font-size: 30px; line-height: 1.6; margin: 0 0 18px }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-phones\"] .bz-phones { margin: 0 0 22px }\n[data-bz-section=\"location-summary\"] [data-bz-node^=\"ls-addr\"] p { font-size: 16px; line-height: 1.75; margin: 0 0 4px }\n[data-bz-section=\"location-summary\"] [data-bz-node^=\"ls-phone\"] { margin: 16px 0 8px }\n[data-bz-section=\"location-summary\"] [data-bz-node^=\"ls-phone\"] p { font-size: 15px; font-weight: 700; margin: 0; border-top: 1px solid var(--line); padding-top: 12px }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice\"] { background: var(--ink); color: #fff; padding: 28px; margin-top: 8px }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice\"] .bz-eyebrow { font-size: 10px; letter-spacing: .14em; color: var(--accent); margin-bottom: 12px }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice\"] h3 { font-size: 20px; line-height: 1.4; color: #fff; margin: 0 0 10px }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice\"] p,\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice\"] a { color: #fff }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice\"] .bz-block + .bz-block { padding-block-start: 0 }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice-b\"] p { font-size: 15px; line-height: 1.7; margin: 0 0 12px }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice-cta\"] .bz-btns { margin-block: 0 }\n/* The branch’s own photograph, from its record on Admin → Locations. No fixed\n   height — the photo keeps its own aspect ratio — and a rooftop with no photo\n   yet draws an empty box rather than a stand-in, so the gap reads as \"upload\n   one\" instead of being papered over with a street map. */\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-map\"] .bz-locphoto img { display: block; width: 100%; height: auto }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-map\"] .bz-locphoto__empty { aspect-ratio: 4 / 3; border-radius: 0 }\n@media (max-width: 640px) {\n  [data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice\"] .bz-eyebrow { font-size: 12px; }\n}",
+  "css": "[data-bz-section=\"location-summary\"] .bz-block { padding-block: 0 }\n[data-bz-section=\"location-summary\"] .bz-block + .bz-block { padding-block-start: 0 }\n/* Handoff .split: 1.5fr / 1fr with a 48px gutter, both columns top-aligned; stacks at 1100px. */\n@media (min-width: 1101px) {\n  [data-bz-section=\"location-summary\"] [data-bz-node=\"ls-row\"] { grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 48px; align-items: start }\n  [data-bz-section=\"location-summary\"] [data-bz-node=\"ls-row\"] > .bz-col { grid-column: auto }\n}\n@media (max-width: 1100px) { [data-bz-section=\"location-summary\"] [data-bz-node=\"ls-row\"] { gap: 40px } }\n[data-bz-section=\"location-summary\"] [data-bz-node^=\"ls-id\"] { margin: 0 }\n/* The heading is the business the branch trades as (Admin → Locations → the rooftop's trading name),\n   and the branch name when that is not filled in: the name heading only shows while the first is empty. */\n[data-bz-section=\"location-summary\"] [data-bz-node^=\"ls-h-\"]:has(h2) + [data-bz-node^=\"ls-name-\"] { display: none }\n[data-bz-section=\"location-summary\"] [data-bz-node^=\"ls-name-\"] h2 { margin-top: 0 }\n[data-bz-section=\"location-summary\"] h2 { font-size: 30px; line-height: 1.7; font-weight: 800; margin: 0 0 18px }\n/* The eyebrow can be the heading block's only line (no trading name yet), where the base :last-child rule would drop its margin. */\n[data-bz-section=\"location-summary\"] [data-bz-node^=\"ls-h-\"] p.bz-eyebrow { margin-bottom: 18px }\n[data-bz-section=\"location-summary\"] [data-bz-node^=\"ls-addr\"] p { font-size: 16px; line-height: 1.75; color: var(--body-text); margin: 0 0 22px }\n/* Handoff .phone-list: hairline-ruled rows, a 128px tracked label column and the number beside it. */\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-phones\"] .bz-phones { gap: 8px; margin: 0 0 22px; padding: 0; list-style: none }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-phones\"] .bz-phone { display: flex; justify-content: flex-start; align-items: baseline; flex-wrap: wrap; gap: 12px; border-top: 1px solid var(--line); border-bottom: 0; padding: 12px 0 0; font-size: 16px; line-height: 1.7 }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-phones\"] .bz-phone__l { font: 700 10px / 1.4 var(--font-body); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); min-width: 128px }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-phones\"] .bz-phone a, [data-bz-section=\"location-summary\"] [data-bz-node=\"ls-phones\"] .bz-phone > span + span { font-size: 15px; font-weight: 700; line-height: 1.7; color: var(--ink); text-decoration: none }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-phones\"] .bz-phone a:hover { text-decoration: underline }\n/* Handoff .notice: a dark inset block, 26px in. */\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice\"] { background: var(--ink); color: #fff; padding: 26px; margin: 0 }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice\"] .bz-eyebrow { font-size: 10px; line-height: 1.3; letter-spacing: .14em; color: var(--accent-dark); margin: 0 0 18px }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice\"] h3 { font-size: 20px; line-height: 1.7; font-weight: 800; color: #fff; margin: 0 0 12px }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice-b\"] p { font-size: 15px; line-height: 1.7; color: var(--chrome-body); margin: 0 0 14px }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice-cta\"] .bz-btns { margin-block: 0 }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice-cta\"] .bz-btn--link { font: 700 16px / 1.7 var(--font-body); color: #fff; text-transform: none; letter-spacing: 0 }\n/* Handoff .map: a fixed-height framed box beside the contact block. It holds the branch's own photo from\n   Admin → Locations; a branch with none yet shows the empty frame, which says \"upload one\". */\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-map-w\"] .bz-locphoto { position: relative; height: 520px; border: 1px solid var(--line); background: var(--paper); overflow: hidden; border-radius: 0 }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-map-w\"] .bz-locphoto img { display: block; width: 100%; height: 100%; object-fit: cover }\n[data-bz-section=\"location-summary\"] [data-bz-node=\"ls-map-w\"] .bz-locphoto__empty { height: 100%; aspect-ratio: auto; border: 0; border-radius: 0; background: none }\n@media (max-width: 640px) {\n  [data-bz-section=\"location-summary\"] h2 { font-size: 26px }\n  [data-bz-section=\"location-summary\"] [data-bz-node=\"ls-map-w\"] .bz-locphoto { height: 320px }\n  [data-bz-section=\"location-summary\"] [data-bz-node=\"ls-notice\"] .bz-eyebrow { font-size: 12px }\n}",
   "props": [
     {
       "key": "eyebrow",
       "type": "text",
       "label": "Eyebrow",
       "default": "STORE MAP"
-    },
-    {
-      "key": "name",
-      "type": "text",
-      "label": "Heading",
-      "default": ""
     },
     {
       "key": "locationSlug",
@@ -153,7 +147,7 @@
           "type": "row",
           "props": {
             "gap": 7,
-            "align": "stretch",
+            "align": "start",
             "stackOn": "tablet"
           },
           "children": [
@@ -183,47 +177,25 @@
                           "id": "ls-h",
                           "type": "heading",
                           "props": {
-                            "text": "{{name}}",
+                            "text": "{{subtitle}}",
                             "eyebrow": "{{eyebrow}}",
                             "headingLevel": 2
                           }
                         },
                         {
-                          "id": "ls-sub",
-                          "type": "text",
+                          "id": "ls-name",
+                          "type": "heading",
                           "props": {
-                            "text": "{{subtitle}}",
-                            "width": "full"
+                            "text": "{{name}}",
+                            "headingLevel": 2
                           }
                         },
                         {
                           "id": "ls-addr",
                           "type": "text",
                           "props": {
-                            "text": "{{streetAddress}}\n\n{{city}}, {{region}} {{postalCode}}",
+                            "text": "{{streetAddress}}<br>{{city}}, {{region}} {{postalCode}}",
                             "width": "full"
-                          }
-                        },
-                        {
-                          "id": "ls-phone",
-                          "type": "text",
-                          "props": {
-                            "text": "<strong>MAIN</strong> <a href=\"{{phoneUrl}}\">{{phone}}</a>",
-                            "width": "full"
-                          }
-                        },
-                        {
-                          "id": "ls-dir",
-                          "type": "buttons",
-                          "props": {
-                            "items": [
-                              {
-                                "label": "Get directions",
-                                "url": "{{mapUrl}}",
-                                "style": "link",
-                                "intent": "find-location"
-                              }
-                            ]
                           }
                         }
                       ]

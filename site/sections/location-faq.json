@@ -2,7 +2,7 @@
   "version": 2,
   "id": "location-faq",
   "name": "Location questions",
-  "css": "[data-bz-section=\"location-faq\"] .bz-block { padding-block: 0 }\n[data-bz-section=\"location-faq\"] h2 { margin: 0 0 22px }\n[data-bz-section=\"location-faq\"] .bz-faq { border-top: 1px solid var(--line) }\n[data-bz-section=\"location-faq\"] .bz-faq summary { padding: 16px 0; font-weight: 700; cursor: pointer }\n[data-bz-section=\"location-faq\"] .bz-faq__a { padding: 0 0 16px; line-height: 1.6 }",
+  "css": "[data-bz-section=\"location-faq\"] .bz-block { padding-block: 0 }\n[data-bz-section=\"location-faq\"] .bz-block + .bz-block { padding-block-start: 0 }\n[data-bz-section=\"location-faq\"] .bz-row + .bz-row { margin-top: 0 }\n/* Handoff FAQ band: a 900px well (gutter included), 90px of band above and below, the list at the well's full width. */\n.bz-sharedsection[data-bz-section=\"location-faq\"] > .bz-section { padding-block: 90px }\n.bz-sharedsection[data-bz-section=\"location-faq\"] > .bz-section > .bz-container { max-width: 900px }\n[data-bz-section=\"location-faq\"] .bz-col { grid-column: 1 / -1 }\n.bz-sharedsection[data-bz-section=\"location-faq\"] .bz-block h2 { font-size: 34px; line-height: 1.7; margin: 0 0 40px }\n[data-bz-section=\"location-faq\"] .bz-eyebrow { margin-bottom: 18px }\n@media (max-width: 640px) { .bz-sharedsection[data-bz-section=\"location-faq\"] > .bz-section { padding-block: 64px } .bz-sharedsection[data-bz-section=\"location-faq\"] .bz-block h2 { font-size: 26px } }\n.bz-sharedsection[data-bz-section=\"location-faq\"] .bz-faq > summary { line-height: 22px }",
   "props": [
     {
       "key": "locationSlug",
@@ -15,9 +15,21 @@
       "type": "list",
       "label": "This location",
       "fields": [
-        { "key": "city", "type": "text", "label": "City" },
-        { "key": "region", "type": "text", "label": "Region" },
-        { "key": "name", "type": "text", "label": "Name" }
+        {
+          "key": "city",
+          "type": "text",
+          "label": "City"
+        },
+        {
+          "key": "region",
+          "type": "text",
+          "label": "Region"
+        },
+        {
+          "key": "name",
+          "type": "text",
+          "label": "Name"
+        }
       ],
       "default": []
     }
@@ -26,17 +38,27 @@
     {
       "id": "lf",
       "type": "section",
-      "props": { "width": "boxed", "background": "card", "paddingY": 8, "anchor": "faq" },
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 10,
+        "anchor": "faq"
+      },
       "children": [
         {
           "id": "lf-head",
           "type": "row",
-          "props": { "gap": 3, "repeat": "rooftop" },
+          "props": {
+            "gap": 3,
+            "repeat": "rooftop"
+          },
           "children": [
             {
               "id": "lf-head-col",
               "type": "column",
-              "props": { "span": 8 },
+              "props": {
+                "span": 12
+              },
               "children": [
                 {
                   "id": "lf-h",
@@ -54,19 +76,25 @@
         {
           "id": "lf-row",
           "type": "row",
-          "props": { "gap": 4 },
+          "props": {
+            "gap": 4
+          },
           "children": [
             {
               "id": "lf-col",
               "type": "column",
-              "props": { "span": 8 },
+              "props": {
+                "span": 12
+              },
               "children": [
                 {
                   "id": "lf-faq",
                   "type": "widget",
                   "props": {
                     "widget": "faq",
-                    "config": { "locationSlug": "{{locationSlug}}" }
+                    "config": {
+                      "locationSlug": "{{locationSlug}}"
+                    }
                   }
                 }
               ]
@@ -75,5 +103,6 @@
         }
       ]
     }
-  ]
+  ],
+  "js": "// The handoff opens the first answer. The faq widget draws native <details>, all closed; open the first\n// one once, on the published page only. Every answer stays reachable without this.\ndocument.querySelectorAll('[data-bz-section=\"location-faq\"]').forEach(function (band) {\n  var first = band.querySelector('details.bz-faq');\n  if (first && !band.querySelector('details.bz-faq[open]')) first.open = true;\n});"
 }

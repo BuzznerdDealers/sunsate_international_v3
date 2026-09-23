@@ -1,0 +1,226 @@
+{
+  "version": 2,
+  "id": "location-others",
+  "name": "Location — other branches",
+  "css": "[data-bz-section=\"location-others\"] .bz-block { padding-block: 0 }\n/* This handoff keeps its grey and dark bands to the same 1280px well as its white ones. */\n.bz-sharedsection[data-bz-section=\"location-others\"] > .bz-section > .bz-container { max-width: var(--container) }\n[data-bz-section=\"location-others\"] .bz-block + .bz-block { padding-block-start: 0 }\n[data-bz-section=\"location-others\"] .bz-row + .bz-row { margin-top: 0 }\n[data-bz-section=\"location-others\"] h2 { font-size: 34px; line-height: 1.7; margin: 0 0 18px }\n[data-bz-section=\"location-others\"] [data-bz-node=\"lo2-body\"] p { font-size: 16px; line-height: 1.75; color: var(--body-text); margin: 0 0 40px; max-width: 880px }\n/* Handoff .loc: white cards on the grey band, four across, two at 1100px, one at 640px. */\n[data-bz-section=\"location-others\"] .bz-row[data-bz-node=\"lo2-grid\"] { gap: 24px }\n[data-bz-section=\"location-others\"] .bz-col[data-bz-node^=\"lo2-card-\"] { background: var(--card); border: 1px solid var(--line); padding: 28px }\n[data-bz-section=\"location-others\"] [data-bz-node^=\"lo2-card-h\"] .bz-eyebrow { font-size: 10px; line-height: 1.3; letter-spacing: .14em; color: var(--accent); margin: 0 0 12px }\n[data-bz-section=\"location-others\"] [data-bz-node^=\"lo2-card-h\"] h3 { font-size: 18px; line-height: 1.7; font-weight: 800; margin: 0 0 12px }\n[data-bz-section=\"location-others\"] [data-bz-node^=\"lo2-card-meta\"] p { font-size: 14px; line-height: 1.5; color: var(--body-text); margin: 0 }\n[data-bz-section=\"location-others\"] [data-bz-node^=\"lo2-card-meta\"] .bz-text { margin-bottom: 14px }\n[data-bz-section=\"location-others\"] .bz-btns { margin-block: 0; flex-direction: column; align-items: flex-start; gap: 8px }\n[data-bz-section=\"location-others\"] .bz-btn--link { font: 700 15px / 1.7 var(--font-body); color: var(--accent); text-transform: none; letter-spacing: 0 }\n[data-bz-section=\"location-others\"] [data-bz-node^=\"lo2-card-cta\"] { margin-bottom: 8px }\n@media (min-width: 641px) and (max-width: 1100px) { [data-bz-section=\"location-others\"] .bz-col[data-bz-node^=\"lo2-card-\"] { grid-column: span 6 } }\n@media (max-width: 640px) { [data-bz-section=\"location-others\"] h2 { font-size: 26px } }",
+  "props": [
+    {
+      "key": "locationSlug",
+      "type": "text",
+      "label": "Location",
+      "default": ""
+    },
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Eyebrow",
+      "default": "FIND A LOCATION"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": "Other Sun State locations."
+    },
+    {
+      "key": "body",
+      "type": "textarea",
+      "label": "Intro",
+      "default": ""
+    },
+    {
+      "key": "linkLabel",
+      "type": "text",
+      "label": "Card link label",
+      "default": "View location →"
+    },
+    {
+      "key": "background",
+      "type": "select",
+      "label": "Band background",
+      "default": "paper",
+      "options": [
+        {
+          "value": "paper",
+          "label": "Paper"
+        },
+        {
+          "value": "card",
+          "label": "White"
+        }
+      ]
+    },
+    {
+      "key": "locations",
+      "type": "list",
+      "label": "Branches (from Locations, this one left out)",
+      "fields": [
+        {
+          "key": "name",
+          "type": "text",
+          "label": "Name"
+        },
+        {
+          "key": "departments",
+          "type": "text",
+          "label": "Departments"
+        },
+        {
+          "key": "streetAddress",
+          "type": "text",
+          "label": "Street"
+        },
+        {
+          "key": "city",
+          "type": "text",
+          "label": "City"
+        },
+        {
+          "key": "region",
+          "type": "text",
+          "label": "State"
+        },
+        {
+          "key": "postalCode",
+          "type": "text",
+          "label": "ZIP"
+        },
+        {
+          "key": "hours",
+          "type": "text",
+          "label": "Hours"
+        },
+        {
+          "key": "phone",
+          "type": "text",
+          "label": "Phone"
+        },
+        {
+          "key": "phoneUrl",
+          "type": "url",
+          "label": "Phone link"
+        },
+        {
+          "key": "href",
+          "type": "url",
+          "label": "Page link"
+        }
+      ],
+      "default": []
+    }
+  ],
+  "nodes": [
+    {
+      "id": "lo2",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "{{background}}",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "lo2-head",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "lo2-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "lo2-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "eyebrow": "{{eyebrow}}",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "lo2-body",
+                  "type": "text",
+                  "props": {
+                    "text": "{{body}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lo2-grid",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "align": "stretch",
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "lo2-card",
+              "type": "column",
+              "props": {
+                "span": 3,
+                "repeat": "locations"
+              },
+              "children": [
+                {
+                  "id": "lo2-card-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{name}}",
+                    "eyebrow": "{{departments}}",
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "lo2-card-meta",
+                  "type": "text",
+                  "props": {
+                    "text": "{{streetAddress}}, {{city}}, {{region}} {{postalCode}}\n\n{{hours}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "lo2-card-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "{{phone}}",
+                        "url": "{{phoneUrl}}",
+                        "style": "link",
+                        "intent": "call-location"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "lo2-card-link",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "{{linkLabel}}",
+                        "url": "{{href}}",
+                        "style": "link",
+                        "intent": "find-location"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

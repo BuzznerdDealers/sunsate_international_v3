@@ -2,7 +2,7 @@
   "version": 2,
   "id": "hours-grid",
   "name": "Department hours",
-  "css": "[data-bz-section=\"hours-grid\"] .bz-block { padding-block: 0 }\n[data-bz-section=\"hours-grid\"] .bz-block + .bz-block { padding-block-start: 0 }\n[data-bz-section=\"hours-grid\"] h2 { margin: 0 0 40px }\n[data-bz-section=\"hours-grid\"] [data-bz-node=\"hg-hours\"] .bz-hours { background: var(--card); border: 1px solid var(--line); padding: 26px }\n[data-bz-section=\"hours-grid\"] [data-bz-node=\"hg-note\"] p { font-size: 13px; color: var(--muted); margin-top: 28px }",
+  "css": "[data-bz-section=\"hours-grid\"] .bz-block { padding-block: 0 }\n[data-bz-section=\"hours-grid\"] .bz-block + .bz-block { padding-block-start: 0 }\n/* The handoff runs this band straight on from the store block above it, with no top padding of its own. */\n[data-bz-section=\"hours-grid\"] > .bz-section { padding-top: 0 }\n[data-bz-section=\"hours-grid\"] .bz-row + .bz-row { margin-top: 0 }\n[data-bz-section=\"hours-grid\"] h2 { font-size: 34px; line-height: 1.7; margin: 0 0 40px }\n/* Handoff .card + .hours: one bordered card per department, a ruled row per day. */\n[data-bz-section=\"hours-grid\"] .bz-row[data-bz-node^=\"hg-cards\"] { gap: 24px }\n[data-bz-section=\"hours-grid\"] .bz-col[data-bz-node^=\"hg-card-\"] { display: flex; flex-direction: column; gap: 8px; border: 1px solid var(--line); background: var(--card); padding: 30px 26px }\n[data-bz-section=\"hours-grid\"] [data-bz-node^=\"hg-card-h\"] { order: -1 }\n[data-bz-section=\"hours-grid\"] [data-bz-node^=\"hg-card-h\"] h3 { font-size: 20px; line-height: 1.7; font-weight: 800; margin: 0 0 10px }\n/* Admin sends the week Sunday first; the handoff reads Monday to Sunday, so Sunday goes to the foot. */\n[data-bz-section=\"hours-grid\"] [data-bz-node^=\"hg-day-\"]:nth-child(2) { order: 1 }\n[data-bz-section=\"hours-grid\"] [data-bz-node^=\"hg-day-\"] p { display: flex; justify-content: space-between; gap: 18px; margin: 0; border-top: 1px solid var(--line); padding-top: 8px; font-size: 14px; line-height: 1.5 }\n[data-bz-section=\"hours-grid\"] [data-bz-node^=\"hg-day-\"] strong { font-weight: 700; color: var(--ink) }\n[data-bz-section=\"hours-grid\"] [data-bz-node^=\"hg-day-\"] small { font-size: inherit; color: var(--body-text); text-align: right }\n[data-bz-section=\"hours-grid\"] [data-bz-node=\"hg-note\"] p { font-size: 14px; line-height: 1.7; color: var(--muted); margin: 22px 0 0; max-width: 860px }\n@media (min-width: 641px) and (max-width: 1100px) { [data-bz-section=\"hours-grid\"] .bz-col[data-bz-node^=\"hg-card-\"] { grid-column: span 6 } }\n@media (max-width: 640px) { [data-bz-section=\"hours-grid\"] h2 { font-size: 26px } }",
   "props": [
     {
       "key": "eyebrow",
@@ -23,6 +23,43 @@
       "default": ""
     },
     {
+      "key": "rooftop",
+      "type": "list",
+      "label": "This branch (from Locations)",
+      "fields": [
+        {
+          "key": "hoursRows",
+          "type": "list",
+          "label": "Opening hours, by department",
+          "fields": [
+            {
+              "key": "department",
+              "type": "text",
+              "label": "Department"
+            },
+            {
+              "key": "days",
+              "type": "list",
+              "label": "Days",
+              "fields": [
+                {
+                  "key": "day",
+                  "type": "text",
+                  "label": "Day"
+                },
+                {
+                  "key": "hours",
+                  "type": "text",
+                  "label": "Open–close, or Closed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "default": []
+    },
+    {
       "key": "note",
       "type": "textarea",
       "label": "Note under the tables",
@@ -40,8 +77,14 @@
       "label": "Band background",
       "default": "card",
       "options": [
-        { "value": "card", "label": "White" },
-        { "value": "paper", "label": "Paper" }
+        {
+          "value": "card",
+          "label": "White"
+        },
+        {
+          "value": "paper",
+          "label": "Paper"
+        }
       ]
     }
   ],
@@ -59,12 +102,16 @@
         {
           "id": "hg-head",
           "type": "row",
-          "props": { "gap": 5 },
+          "props": {
+            "gap": 5
+          },
           "children": [
             {
               "id": "hg-head-col",
               "type": "column",
-              "props": { "span": 12 },
+              "props": {
+                "span": 12
+              },
               "children": [
                 {
                   "id": "hg-h",
@@ -80,21 +127,38 @@
           ]
         },
         {
-          "id": "hg-hours-row",
+          "id": "hg-cards",
           "type": "row",
-          "props": { "gap": 5 },
+          "props": {
+            "gap": 5,
+            "align": "stretch",
+            "stackOn": "mobile",
+            "repeat": "rooftop"
+          },
           "children": [
             {
-              "id": "hg-hours-col",
+              "id": "hg-card",
               "type": "column",
-              "props": { "span": 12 },
+              "props": {
+                "span": 4,
+                "repeat": "hoursRows"
+              },
               "children": [
                 {
-                  "id": "hg-hours",
-                  "type": "widget",
+                  "id": "hg-card-h",
+                  "type": "heading",
                   "props": {
-                    "widget": "hours",
-                    "config": { "locationSlug": "{{locationSlug}}" }
+                    "text": "{{department}} Hours",
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "hg-day",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>{{day}}</strong><small>{{hours}}</small>",
+                    "width": "full",
+                    "repeat": "days"
                   }
                 }
               ]
@@ -104,17 +168,24 @@
         {
           "id": "hg-note-row",
           "type": "row",
-          "props": { "gap": 5 },
+          "props": {
+            "gap": 5
+          },
           "children": [
             {
               "id": "hg-note-col",
               "type": "column",
-              "props": { "span": 12 },
+              "props": {
+                "span": 12
+              },
               "children": [
                 {
                   "id": "hg-note",
                   "type": "text",
-                  "props": { "text": "{{note}}", "width": "full" }
+                  "props": {
+                    "text": "{{note}}",
+                    "width": "full"
+                  }
                 }
               ]
             }
