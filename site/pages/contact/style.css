@@ -39,4 +39,10 @@
 @media (max-width: 640px) {
   .bz-block--hero { padding-block: 72px; }
   .bz-block--hero h1 { font-size: 30px; }
+  /* This page's own rules load after the site layer, so the quick-link columns
+     need their touch targets stated here. */
+  [data-bz-node="cu-links"] .bz-navitem > a,
+  [data-bz-node="cu-social"] .bz-navitem > a { display: block; padding-block: 10px; }
+  [data-bz-node="cu-links"] .bz-nav,
+  [data-bz-node="cu-social"] .bz-nav { gap: 0; }
 }

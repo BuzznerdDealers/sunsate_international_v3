@@ -17,6 +17,6 @@
       ]
     }
   ],
-  "html": "<table class=\"ss-cmp\"><thead><tr><th scope=\"col\">{{headA}}</th><th scope=\"col\">{{headB}}</th><th scope=\"col\">{{headC}}</th></tr></thead><tbody>{{#each rows}}<tr><th scope=\"row\">{{a}}</th><td>{{b}}</td><td>{{c}}</td></tr>{{/each}}</tbody></table>",
-  "css": ".ss-cmp{width:100%;border-collapse:collapse;margin:8px 0 28px}\n.ss-cmp th,.ss-cmp td{padding:12px 14px;border-bottom:1px solid var(--line);font-size:14.5px;line-height:1.7;text-align:left;vertical-align:top;color:var(--body-text)}\n.ss-cmp thead th{font:700 11px/1 var(--font-body);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}\n.ss-cmp tbody th{width:30%;font-weight:700;color:var(--ink)}\n@media (max-width:640px){.ss-cmp th,.ss-cmp td{padding:8px;font-size:13px}}"
+  "html": "<div class=\"ss-cmp__w\"><table class=\"ss-cmp\"><thead><tr><th scope=\"col\">{{headA}}</th><th scope=\"col\">{{headB}}</th><th scope=\"col\">{{headC}}</th></tr></thead><tbody>{{#each rows}}<tr><th scope=\"row\">{{a}}</th><td>{{b}}</td><td>{{c}}</td></tr>{{/each}}</tbody></table></div>",
+  "css": ".ss-cmp__w{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:8px 0 28px}\n.ss-cmp{width:100%;border-collapse:collapse;margin:0}\n.ss-cmp th,.ss-cmp td{padding:12px 14px;border-bottom:1px solid var(--line);font-size:14.5px;line-height:1.7;text-align:left;vertical-align:top;color:var(--body-text)}\n.ss-cmp thead th{font:700 11px/1 var(--font-body);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}\n.ss-cmp tbody th{width:30%;font-weight:700;color:var(--ink)}\n@media (max-width:640px){.ss-cmp th,.ss-cmp td{padding:8px;font-size:13px}}"
 }
