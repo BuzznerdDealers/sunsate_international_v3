@@ -1,0 +1,140 @@
+{
+  "version": 2,
+  "id": "location-cta",
+  "name": "Location — contact band",
+  "css": "[data-bz-section=\"location-cta\"] .bz-block { padding-block: 0 }\n/* This handoff keeps its grey and dark bands to the same 1280px well as its white ones. */\n.bz-sharedsection[data-bz-section=\"location-cta\"] > .bz-section > .bz-container { max-width: var(--container) }\n[data-bz-section=\"location-cta\"] .bz-block + .bz-block { padding-block-start: 0 }\n/* Handoff .section--dark: the ink band, centred. The call button dials this branch. */\n[data-bz-section=\"location-cta\"] > .bz-section { padding-block: 90px; text-align: center }\n[data-bz-section=\"location-cta\"] .bz-eyebrow { color: var(--chrome-meta); text-align: center; margin: 0 0 18px }\n[data-bz-section=\"location-cta\"] h2 { font-size: 34px; line-height: 1.7; font-weight: 800; margin: 0 0 18px; color: #fff; text-align: center }\n[data-bz-section=\"location-cta\"] [data-bz-node^=\"lc-body\"] .bz-text { margin-inline: auto; max-width: 620px }\n[data-bz-section=\"location-cta\"] [data-bz-node^=\"lc-body\"] p { color: var(--chrome-body); font-size: 15px; line-height: 1.7; margin: 0 auto 30px }\n[data-bz-section=\"location-cta\"] .bz-btns { justify-content: center; margin-block: 0; gap: 14px }\n[data-bz-section=\"location-cta\"] .bz-btn { min-height: 48px; padding: 0 26px; border-radius: 0; font: 700 14px / 1.2 var(--font-body); letter-spacing: 0; text-transform: none }\n[data-bz-section=\"location-cta\"] .bz-btn--primary { background: var(--accent-dark); color: #fff; border: 1px solid transparent }\n[data-bz-section=\"location-cta\"] .bz-btn--primary:hover { background: var(--accent-dark); filter: brightness(.9) }\n[data-bz-section=\"location-cta\"] .bz-btn--secondary { background: transparent; color: #fff; border: 1px solid #fff }\n[data-bz-section=\"location-cta\"] .bz-btn--secondary:hover { background: #fff; color: var(--chrome) }\n@media (max-width: 640px) { [data-bz-section=\"location-cta\"] > .bz-section { padding-block: 64px } [data-bz-section=\"location-cta\"] h2 { font-size: 26px } }",
+  "props": [
+    {
+      "key": "locationSlug",
+      "type": "text",
+      "label": "Location",
+      "default": ""
+    },
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Eyebrow",
+      "default": "CONTACT US"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": "Ready to get on the road?"
+    },
+    {
+      "key": "body",
+      "type": "textarea",
+      "label": "Text",
+      "default": ""
+    },
+    {
+      "key": "callLabel",
+      "type": "text",
+      "label": "Call button (the branch's number follows it)",
+      "default": "Call"
+    },
+    {
+      "key": "secondaryLabel",
+      "type": "text",
+      "label": "Second button label",
+      "default": "Schedule service"
+    },
+    {
+      "key": "secondaryUrl",
+      "type": "url",
+      "label": "Second button link",
+      "default": "/service-appointment"
+    },
+    {
+      "key": "rooftop",
+      "type": "list",
+      "label": "This branch (from Locations)",
+      "fields": [
+        {
+          "key": "phone",
+          "type": "text",
+          "label": "Phone"
+        },
+        {
+          "key": "phoneUrl",
+          "type": "url",
+          "label": "Phone link"
+        }
+      ],
+      "default": []
+    }
+  ],
+  "nodes": [
+    {
+      "id": "lc",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "ink",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "lc-row",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "repeat": "rooftop"
+          },
+          "children": [
+            {
+              "id": "lc-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "lc-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "eyebrow": "{{eyebrow}}",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "lc-body",
+                  "type": "text",
+                  "props": {
+                    "text": "{{body}}",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "lc-buttons",
+                  "type": "buttons",
+                  "props": {
+                    "align": "center",
+                    "items": [
+                      {
+                        "label": "{{callLabel}} {{phone}}",
+                        "url": "{{phoneUrl}}",
+                        "style": "primary",
+                        "intent": "call-dealer"
+                      },
+                      {
+                        "label": "{{secondaryLabel}}",
+                        "url": "{{secondaryUrl}}",
+                        "style": "secondary",
+                        "intent": "schedule-service"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

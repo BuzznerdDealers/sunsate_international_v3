@@ -1,0 +1,175 @@
+{
+  "version": 2,
+  "id": "location-onsite",
+  "name": "Location — what's on site",
+  "css": "[data-bz-section=\"location-onsite\"] .bz-block { padding-block: 0 }\n/* This handoff keeps its grey and dark bands to the same 1280px well as its white ones. */\n.bz-sharedsection[data-bz-section=\"location-onsite\"] > .bz-section > .bz-container { max-width: var(--container) }\n[data-bz-section=\"location-onsite\"] .bz-block + .bz-block { padding-block-start: 0 }\n[data-bz-section=\"location-onsite\"] .bz-row + .bz-row { margin-top: 0 }\n[data-bz-section=\"location-onsite\"] h2 { font-size: 34px; line-height: 1.7; margin: 0 0 40px }\n/* Handoff .feature: white cards on the grey band, four across, two at 1100px, one at 640px. */\n[data-bz-section=\"location-onsite\"] .bz-row[data-bz-node=\"lo-grid\"] { gap: 24px }\n[data-bz-section=\"location-onsite\"] .bz-col[data-bz-node^=\"lo-card-\"] { background: var(--card); border: 1px solid var(--line); padding: 28px }\n[data-bz-section=\"location-onsite\"] [data-bz-node^=\"lo-card-h\"] h3 { font-size: 18px; line-height: 1.7; font-weight: 800; margin: 0 0 12px }\n[data-bz-section=\"location-onsite\"] [data-bz-node^=\"lo-card-b\"] p { font-size: 14px; line-height: 1.7; color: var(--body-text); margin: 0 0 14px }\n[data-bz-section=\"location-onsite\"] .bz-btns { margin-block: 0 }\n[data-bz-section=\"location-onsite\"] .bz-btn--link { font: 700 15px / 1.7 var(--font-body); color: var(--accent); text-transform: none; letter-spacing: 0 }\n@media (min-width: 641px) and (max-width: 1100px) { [data-bz-section=\"location-onsite\"] .bz-col[data-bz-node^=\"lo-card-\"] { grid-column: span 6 } }\n@media (max-width: 640px) { [data-bz-section=\"location-onsite\"] h2 { font-size: 26px } }",
+  "props": [
+    {
+      "key": "locationSlug",
+      "type": "text",
+      "label": "Location",
+      "default": ""
+    },
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Eyebrow (the branch's city follows it)",
+      "default": "What's on site in"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": "One address, every department."
+    },
+    {
+      "key": "rooftop",
+      "type": "list",
+      "label": "This branch (from Locations)",
+      "fields": [
+        {
+          "key": "city",
+          "type": "text",
+          "label": "City"
+        }
+      ],
+      "default": []
+    },
+    {
+      "key": "features",
+      "type": "list",
+      "label": "Cards",
+      "fields": [
+        {
+          "key": "title",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "key": "body",
+          "type": "textarea",
+          "label": "Text"
+        },
+        {
+          "key": "linkLabel",
+          "type": "text",
+          "label": "Link label"
+        },
+        {
+          "key": "linkUrl",
+          "type": "url",
+          "label": "Link"
+        }
+      ],
+      "default": []
+    },
+    {
+      "key": "background",
+      "type": "select",
+      "label": "Band background",
+      "default": "paper",
+      "options": [
+        {
+          "value": "paper",
+          "label": "Paper"
+        },
+        {
+          "value": "card",
+          "label": "White"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "lo",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "{{background}}",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "lo-head",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "repeat": "rooftop"
+          },
+          "children": [
+            {
+              "id": "lo-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "lo-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "eyebrow": "{{eyebrow}} {{city}}",
+                    "headingLevel": 2
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lo-grid",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "align": "stretch",
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "lo-card",
+              "type": "column",
+              "props": {
+                "span": 3,
+                "repeat": "features"
+              },
+              "children": [
+                {
+                  "id": "lo-card-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{title}}",
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "lo-card-b",
+                  "type": "text",
+                  "props": {
+                    "text": "{{body}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "lo-card-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "{{linkLabel}}",
+                        "url": "{{linkUrl}}",
+                        "style": "link",
+                        "intent": "learn-more"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

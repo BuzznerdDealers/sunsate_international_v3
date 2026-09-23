@@ -1,0 +1,151 @@
+{
+  "version": 2,
+  "id": "location-panels",
+  "name": "Location — two-up panels",
+  "css": "[data-bz-section=\"location-panels\"] .bz-block { padding-block: 0 }\n[data-bz-section=\"location-panels\"] .bz-block + .bz-block { padding-block-start: 0 }\n/* Handoff .panel: two bordered panels, 28px apart, 36px / 32px in. */\n[data-bz-section=\"location-panels\"] .bz-row[data-bz-node=\"lp-grid\"] { gap: 28px }\n[data-bz-section=\"location-panels\"] .bz-col[data-bz-node^=\"lp-card-\"] { border: 1px solid var(--line); background: var(--card); padding: 36px 32px }\n[data-bz-section=\"location-panels\"] [data-bz-node^=\"lp-card-h\"] .bz-eyebrow { font-size: 10px; line-height: 1; letter-spacing: .14em; color: var(--accent); margin: 0 0 12px }\n[data-bz-section=\"location-panels\"] [data-bz-node^=\"lp-card-h\"] h2 { font-size: 24px; line-height: 1.7; font-weight: 800; margin: 0 0 18px }\n[data-bz-section=\"location-panels\"] [data-bz-node^=\"lp-card-b\"] p, [data-bz-section=\"location-panels\"] [data-bz-node^=\"lp-card-c-\"] p { font-size: 15px; line-height: 1.7; color: var(--body-text); margin: 0 0 18px }\n[data-bz-section=\"location-panels\"] [data-bz-node^=\"lp-card-c-\"] a { color: var(--accent); font-weight: 400; text-decoration: none }\n[data-bz-section=\"location-panels\"] [data-bz-node^=\"lp-card-c-\"] a:hover { text-decoration: underline }\n[data-bz-section=\"location-panels\"] .bz-btns { margin-block: 0; gap: 26px; flex-wrap: wrap }\n[data-bz-section=\"location-panels\"] .bz-btn--link { font: 700 15px / 1.7 var(--font-body); color: var(--accent); text-transform: none; letter-spacing: 0 }\n@media (max-width: 640px) { [data-bz-section=\"location-panels\"] .bz-col[data-bz-node^=\"lp-card-\"] { padding: 28px 22px } }",
+  "props": [
+    {
+      "key": "panels",
+      "type": "list",
+      "label": "Panels",
+      "fields": [
+        {
+          "key": "kicker",
+          "type": "text",
+          "label": "Kicker"
+        },
+        {
+          "key": "title",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "key": "body",
+          "type": "textarea",
+          "label": "Text"
+        },
+        {
+          "key": "contact",
+          "type": "textarea",
+          "label": "Contact line"
+        },
+        {
+          "key": "link1Label",
+          "type": "text",
+          "label": "First link label"
+        },
+        {
+          "key": "link1Url",
+          "type": "url",
+          "label": "First link"
+        },
+        {
+          "key": "link2Label",
+          "type": "text",
+          "label": "Second link label"
+        },
+        {
+          "key": "link2Url",
+          "type": "url",
+          "label": "Second link"
+        }
+      ],
+      "default": []
+    },
+    {
+      "key": "background",
+      "type": "select",
+      "label": "Band background",
+      "default": "card",
+      "options": [
+        {
+          "value": "card",
+          "label": "White"
+        },
+        {
+          "value": "paper",
+          "label": "Paper"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "lp",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "{{background}}",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "lp-grid",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "align": "stretch",
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "lp-card",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "repeat": "panels"
+              },
+              "children": [
+                {
+                  "id": "lp-card-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{title}}",
+                    "eyebrow": "{{kicker}}",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "lp-card-b",
+                  "type": "text",
+                  "props": {
+                    "text": "{{body}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "lp-card-c",
+                  "type": "text",
+                  "props": {
+                    "text": "{{contact}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "lp-card-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "{{link1Label}}",
+                        "url": "{{link1Url}}",
+                        "style": "link",
+                        "intent": "learn-more"
+                      },
+                      {
+                        "label": "{{link2Label}}",
+                        "url": "{{link2Url}}",
+                        "style": "link",
+                        "intent": "learn-more"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
