@@ -691,9 +691,9 @@
         {
           "id": "nm-trucks",
           "label": "Trucks",
-          "type": "inventory",
-          "ref": "inventory?type=truck",
-          "url": null,
+          "type": "url",
+          "ref": null,
+          "url": "#",
           "newTab": false,
           "children": [
             {
@@ -707,45 +707,45 @@
                 {
                   "id": "nm-trucks-all",
                   "label": "All truck inventory",
-                  "type": "inventory",
-                  "ref": "inventory?type=truck",
-                  "url": null,
+                  "type": "url",
+                  "ref": null,
+                  "url": "#",
                   "newTab": false,
                   "children": []
                 },
                 {
                   "id": "nm-trucks-new",
                   "label": "New trucks",
-                  "type": "inventory",
-                  "ref": "inventory?type=truck&condition=new",
-                  "url": null,
+                  "type": "url",
+                  "ref": null,
+                  "url": "#",
                   "newTab": false,
                   "children": []
                 },
                 {
                   "id": "nm-trucks-used",
                   "label": "Used trucks",
-                  "type": "inventory",
-                  "ref": "inventory?type=truck&condition=used",
-                  "url": null,
+                  "type": "url",
+                  "ref": null,
+                  "url": "#",
                   "newTab": false,
                   "children": []
                 },
                 {
                   "id": "nm-trucks-sleeper",
                   "label": "Sleeper cabs",
-                  "type": "inventory",
-                  "ref": "inventory?category=sleeper-cabs",
-                  "url": null,
+                  "type": "url",
+                  "ref": null,
+                  "url": "#",
                   "newTab": false,
                   "children": []
                 },
                 {
                   "id": "nm-trucks-dump",
                   "label": "Dump trucks",
-                  "type": "inventory",
-                  "ref": "inventory?category=dump-trucks",
-                  "url": null,
+                  "type": "url",
+                  "ref": null,
+                  "url": "#",
                   "newTab": false,
                   "children": []
                 },
@@ -811,9 +811,9 @@
         {
           "id": "nm-trailers",
           "label": "Trailers",
-          "type": "inventory",
-          "ref": "inventory?type=trailer",
-          "url": null,
+          "type": "url",
+          "ref": null,
+          "url": "#",
           "newTab": false,
           "children": [
             {
@@ -827,27 +827,27 @@
                 {
                   "id": "nm-trailers-all",
                   "label": "All trailer inventory",
-                  "type": "inventory",
-                  "ref": "inventory?type=trailer",
-                  "url": null,
+                  "type": "url",
+                  "ref": null,
+                  "url": "#",
                   "newTab": false,
                   "children": []
                 },
                 {
                   "id": "nm-trailers-new",
                   "label": "New trailers",
-                  "type": "inventory",
-                  "ref": "inventory?type=trailer&condition=new",
-                  "url": null,
+                  "type": "url",
+                  "ref": null,
+                  "url": "#",
                   "newTab": false,
                   "children": []
                 },
                 {
                   "id": "nm-trailers-used",
                   "label": "Used trailers",
-                  "type": "inventory",
-                  "ref": "inventory?type=trailer&condition=used",
-                  "url": null,
+                  "type": "url",
+                  "ref": null,
+                  "url": "#",
                   "newTab": false,
                   "children": []
                 }
@@ -864,27 +864,27 @@
                 {
                   "id": "nm-trailers-dryvan",
                   "label": "Dry van trailers",
-                  "type": "inventory",
-                  "ref": "inventory?type=trailer&category=dry-van",
-                  "url": null,
+                  "type": "url",
+                  "ref": null,
+                  "url": "#",
                   "newTab": false,
                   "children": []
                 },
                 {
                   "id": "nm-trailers-reefer",
                   "label": "Refrigerated trailers",
-                  "type": "inventory",
-                  "ref": "inventory?type=trailer&category=refrigerated",
-                  "url": null,
+                  "type": "url",
+                  "ref": null,
+                  "url": "#",
                   "newTab": false,
                   "children": []
                 },
                 {
                   "id": "nm-trailers-flat",
                   "label": "Flatbed trailers",
-                  "type": "inventory",
-                  "ref": "inventory?type=trailer&category=flatbed",
-                  "url": null,
+                  "type": "url",
+                  "ref": null,
+                  "url": "#",
                   "newTab": false,
                   "children": []
                 }
@@ -901,18 +901,18 @@
                 {
                   "id": "nm-trailers-hyundai",
                   "label": "Hyundai Translead",
-                  "type": "inventory",
-                  "ref": "inventory?brand=hyundai-translead",
-                  "url": null,
+                  "type": "url",
+                  "ref": null,
+                  "url": "#",
                   "newTab": false,
                   "children": []
                 },
                 {
                   "id": "nm-trailers-globe",
                   "label": "Globe Trailers",
-                  "type": "inventory",
-                  "ref": "inventory?brand=globe-trailers",
-                  "url": null,
+                  "type": "url",
+                  "ref": null,
+                  "url": "#",
                   "newTab": false,
                   "children": []
                 },

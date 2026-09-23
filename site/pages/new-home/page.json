@@ -140,7 +140,7 @@
               },
               "label": "International Sleeper Cabs",
               "ctaLabel": "Buy Now →",
-              "ctaUrl": "/store/inventory?category=sleeper-cabs"
+              "ctaUrl": "#"
             },
             {
               "image": {
@@ -151,7 +151,7 @@
               },
               "label": "International Dump Trucks",
               "ctaLabel": "Buy Now →",
-              "ctaUrl": "/store/inventory?category=dump-trucks"
+              "ctaUrl": "#"
             },
             {
               "image": {
@@ -162,7 +162,7 @@
               },
               "label": "International Trucks",
               "ctaLabel": "Buy Now →",
-              "ctaUrl": "/store/inventory?type=truck"
+              "ctaUrl": "#"
             },
             {
               "image": {
@@ -173,7 +173,7 @@
               },
               "label": "IC Bus",
               "ctaLabel": "Buy Now →",
-              "ctaUrl": "/store/inventory?type=bus"
+              "ctaUrl": "#"
             },
             {
               "image": {
@@ -263,6 +263,10 @@
                 "group": null,
                 "groupKey": null,
                 "photo": {
+                  "src": "",
+                  "alt": ""
+                },
+                "banner": {
                   "src": "",
                   "alt": ""
                 },
@@ -378,6 +382,10 @@
                 "group": null,
                 "groupKey": null,
                 "photo": {
+                  "src": "",
+                  "alt": ""
+                },
+                "banner": {
                   "src": "",
                   "alt": ""
                 },
@@ -552,8 +560,12 @@
                 "group": null,
                 "groupKey": null,
                 "photo": {
-                  "src": "",
-                  "alt": ""
+                  "src": "https://vendure.buzznerdrv.com/assets/source/44/dms-11044973853__02.jpg",
+                  "alt": "dms-11044973853__02.jpg"
+                },
+                "banner": {
+                  "src": "https://vendure.buzznerdrv.com/assets/source/56/dms-11044973869__02.jpg",
+                  "alt": "dms-11044973869__02.jpg"
                 },
                 "brandRows": [],
                 "serviceRows": [],
@@ -793,6 +805,10 @@
                   "src": "",
                   "alt": ""
                 },
+                "banner": {
+                  "src": "",
+                  "alt": ""
+                },
                 "brandRows": [],
                 "serviceRows": [],
                 "perkRows": [],
@@ -1028,6 +1044,10 @@
                 "group": null,
                 "groupKey": null,
                 "photo": {
+                  "src": "https://vendure.buzznerdrv.com/assets/source/43/4c11fa29-52da-45c4-87f5-450661ef9b37-1.jpeg",
+                  "alt": "4c11fa29-52da-45c4-87f5-450661ef9b37-1.jpeg"
+                },
+                "banner": {
                   "src": "https://vendure.buzznerdrv.com/assets/source/1e/dms-11044973879__03.jpg",
                   "alt": "dms-11044973879__03.jpg"
                 },
@@ -1286,6 +1306,10 @@
                   "src": "",
                   "alt": ""
                 },
+                "banner": {
+                  "src": "",
+                  "alt": ""
+                },
                 "brandRows": [],
                 "serviceRows": [],
                 "perkRows": [],
@@ -1370,6 +1394,10 @@
               "group": null,
               "groupKey": null,
               "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "banner": {
                 "src": "",
                 "alt": ""
               },
@@ -1485,6 +1513,10 @@
               "group": null,
               "groupKey": null,
               "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "banner": {
                 "src": "",
                 "alt": ""
               },
@@ -1659,8 +1691,12 @@
               "group": null,
               "groupKey": null,
               "photo": {
-                "src": "",
-                "alt": ""
+                "src": "https://vendure.buzznerdrv.com/assets/source/44/dms-11044973853__02.jpg",
+                "alt": "dms-11044973853__02.jpg"
+              },
+              "banner": {
+                "src": "https://vendure.buzznerdrv.com/assets/source/56/dms-11044973869__02.jpg",
+                "alt": "dms-11044973869__02.jpg"
               },
               "brandRows": [],
               "serviceRows": [],
@@ -1900,6 +1936,10 @@
                 "src": "",
                 "alt": ""
               },
+              "banner": {
+                "src": "",
+                "alt": ""
+              },
               "brandRows": [],
               "serviceRows": [],
               "perkRows": [],
@@ -2135,6 +2175,10 @@
               "group": null,
               "groupKey": null,
               "photo": {
+                "src": "https://vendure.buzznerdrv.com/assets/source/43/4c11fa29-52da-45c4-87f5-450661ef9b37-1.jpeg",
+                "alt": "4c11fa29-52da-45c4-87f5-450661ef9b37-1.jpeg"
+              },
+              "banner": {
                 "src": "https://vendure.buzznerdrv.com/assets/source/1e/dms-11044973879__03.jpg",
                 "alt": "dms-11044973879__03.jpg"
               },
@@ -2393,6 +2437,10 @@
                 "src": "",
                 "alt": ""
               },
+              "banner": {
+                "src": "",
+                "alt": ""
+              },
               "brandRows": [],
               "serviceRows": [],
               "perkRows": [],
@@ -2421,21 +2469,21 @@
               "title": "Trucks",
               "body": "Shop our wide selection of new and International trucks built to handle any job, equipped with advanced telematics via OnCommand Connection for real-time fleet insights.",
               "linkLabel": "Browse trucks →",
-              "linkUrl": "/store/inventory?type=truck"
+              "linkUrl": "#"
             },
             {
               "num": "02",
               "title": "Trailers",
               "body": "Explore our diverse inventory of trailers, including flatbeds, dump trailers, and reefers, from trusted brands like Hyundai Translead and Globe Trailers.",
               "linkLabel": "Browse trailers →",
-              "linkUrl": "/store/inventory?type=trailer"
+              "linkUrl": "#"
             },
             {
               "num": "03",
               "title": "IC Bus",
               "body": "Built for safety and reliability, our IC Bus selection offers top-of-the-line school and commercial buses from industry-leading manufacturers.",
               "linkLabel": "Browse buses →",
-              "linkUrl": "/store/inventory?type=bus"
+              "linkUrl": "#"
             },
             {
               "num": "04",
@@ -2649,6 +2697,9 @@
       "styles": {
         "base": {
           "minHeight": 600
+        },
+        "mobile": {
+          "height": 950
         }
       },
       "children": []
@@ -2679,6 +2730,10 @@
       "styles": {
         "base": {
           "minHeight": 600
+        },
+        "mobile": {
+          "minHeight": 500,
+          "height": 800
         }
       },
       "children": []

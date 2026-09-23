@@ -233,7 +233,12 @@
                     "widget": "locations-pinmap",
                     "config": {
                       "pagePathPrefix": "/locations",
-                      "basemap": {},
+                      "basemap": {
+                        "src": "https://vendure.buzznerdrv.com/assets/source/14/sun-state-6020_e_adamo_dr_tampa_fl_map.svg",
+                        "alt": "dms-11044973876__02.jpg",
+                        "width": 720,
+                        "height": 1280
+                      },
                       "anchors": []
                     },
                     "snapshot": {
@@ -273,6 +278,10 @@
                           "group": null,
                           "groupKey": null,
                           "photo": {
+                            "src": "",
+                            "alt": ""
+                          },
+                          "banner": {
                             "src": "",
                             "alt": ""
                           },
@@ -388,6 +397,10 @@
                           "group": null,
                           "groupKey": null,
                           "photo": {
+                            "src": "",
+                            "alt": ""
+                          },
+                          "banner": {
                             "src": "",
                             "alt": ""
                           },
@@ -562,8 +575,12 @@
                           "group": null,
                           "groupKey": null,
                           "photo": {
-                            "src": "",
-                            "alt": ""
+                            "src": "https://vendure.buzznerdrv.com/assets/source/44/dms-11044973853__02.jpg",
+                            "alt": "dms-11044973853__02.jpg"
+                          },
+                          "banner": {
+                            "src": "https://vendure.buzznerdrv.com/assets/source/56/dms-11044973869__02.jpg",
+                            "alt": "dms-11044973869__02.jpg"
                           },
                           "brandRows": [],
                           "serviceRows": [],
@@ -803,6 +820,10 @@
                             "src": "",
                             "alt": ""
                           },
+                          "banner": {
+                            "src": "",
+                            "alt": ""
+                          },
                           "brandRows": [],
                           "serviceRows": [],
                           "perkRows": [],
@@ -1038,6 +1059,10 @@
                           "group": null,
                           "groupKey": null,
                           "photo": {
+                            "src": "https://vendure.buzznerdrv.com/assets/source/43/4c11fa29-52da-45c4-87f5-450661ef9b37-1.jpeg",
+                            "alt": "4c11fa29-52da-45c4-87f5-450661ef9b37-1.jpeg"
+                          },
+                          "banner": {
                             "src": "https://vendure.buzznerdrv.com/assets/source/1e/dms-11044973879__03.jpg",
                             "alt": "dms-11044973879__03.jpg"
                           },
@@ -1293,6 +1318,10 @@
                           "group": null,
                           "groupKey": null,
                           "photo": {
+                            "src": "",
+                            "alt": ""
+                          },
+                          "banner": {
                             "src": "",
                             "alt": ""
                           },
