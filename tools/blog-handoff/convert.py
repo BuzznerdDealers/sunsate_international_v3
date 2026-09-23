@@ -27,6 +27,13 @@ LINK_MAP = {
     "https://www.sunstateintl.com/contact-call-email-internationals-trucks-dealerships-florida-xcontact/": "/contact",
     "https://www.sunstateparts.com/login": "https://www.sunstateparts.com/login",
     "https://www.sunstateintl.com/mobile-service-flyer/": "/mobile-service",
+    # The old storefront's new-truck listing, both of its addresses: the platform storefront, filtered.
+    "https://www.sunstateintltrucks.com/Inventory/?/listings/for-sale/trucks/27/?DSCompanyID=3352&dlr=1&settingscrmid=367933&condition=new": "/store/inventory?condition=new",
+    "https://www.sunstateintl.com/new-heavy-medium-duty-trucks-for-sale-tampa-florida-xnewinventoryatlight-duty-truckmedium-duty-truckheavy-duty-truck/": "/store/inventory?condition=new",
+    "https://www.sunstateintl.com/finance-trucks-trailers-tampa-orlando-florida-financing/": "/financing",
+    "https://www.sunstateintl.com/read-other-customers-comments-about-us-xtestimonials/": "/reviews",
+    "https://www.sunstateintl.com/about-us/": "/our-story",
+    "https://www.international.com/services/uptime-advocate": "https://www.international.com/services/uptime-advocate",
     "tel:8007417566": "tel:+18007417566",
 }
 INTENT = {
@@ -67,6 +74,7 @@ DEST = {
     "/service-appointment": "schedule-service", "/parts": "parts-department",
     "https://www.sunstateparts.com/login": "order-parts-online", "/service": "service-department",
     "/contact": "contact-us", "/blog": "all-blog-posts", "tel:+18007417566": "call-main", "/mobile-service": "mobile-service",
+    "/store/inventory?condition=new": "browse-new-trucks", "/financing": "financing", "/reviews": "read-reviews",
 }
 lib = {b["id"]: b for b in buttons}
 
@@ -110,7 +118,7 @@ def inline_html(el):
     out = []
     for c in el.children:
         if isinstance(c, NavigableString):
-            out.append(str(c).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;"))
+            out.append(str(c).replace("<", "&lt;").replace(">", "&gt;"))  # the text block escapes & itself
         elif c.name == "a":
             out.append(f'<a href="{map_href(c["href"])}">{inline_html(c)}</a>')
         elif c.name in ("strong", "b"):
@@ -198,9 +206,31 @@ def callout(cid, box, style):
                                                       "paddingLeft": 28, "marginTop": top, "marginBottom": bottom})])
 
 
+RUNS = {"problem-card": "stacked", "repair-card": "inline", "step-row": "steps", "faq-item": "qa"}
+
+
+def detail_card(card):
+    """A problem or repair card: title, sentence, then labelled notes."""
+    it = {"title": "", "body": "", "notes": []}
+    for x in [x for x in card.children if isinstance(x, Tag)]:
+        cls = x.get("class", [])
+        if x.name == "h3": it["title"] = plain(x)
+        elif x.name == "p" and not it["notes"] and not it["body"]: it["body"] = plain(x)
+        elif x.name == "div" and "label" in cls: it["notes"].append({"label": plain(x), "text": ""})
+        elif x.name == "p": it["notes"][-1]["text"] = plain(x)
+        elif x.name == "div" and "row" in cls:
+            tag, txt = x.find_all("span", recursive=False)
+            it["notes"].append({"label": plain(tag), "text": plain(txt)})
+        else: raise SystemExit(f"card child <{x.name} {cls}>")
+    return it
+
+
 def convert(path):
     slug = os.path.basename(path)[:-5]
-    s = BeautifulSoup(open(path).read(), "html.parser")
+    raw = open(path).read()
+    s = BeautifulSoup(raw, "html.parser")
+    own_style = re.search(r"<style>(.*?)</style>", raw, re.S).group(1)
+    extra_css = []
     main = s.find("main")
     hero = main.select_one("section.post-hero")
     hero_img = hero.find("img")
@@ -240,8 +270,28 @@ def convert(path):
         return f"{kind}-{sec}-{seq[sec]}"
 
     share = None
-    for el in body.children:
-        if not isinstance(el, Tag):
+    elements, run = [], None
+    for el in [x for x in body.children if isinstance(x, Tag)]:
+        kind = next((k for k in RUNS if k in el.get("class", [])), None)
+        if kind and run and run[0] == kind:
+            run[1].append(el)
+        elif kind:
+            run = (kind, [el]); elements.append(run)
+        else:
+            run = None; elements.append(el)
+    for el in elements:
+        if isinstance(el, tuple):
+            kind, els = el
+            if RUNS[kind] in ("stacked", "inline"):
+                out.append(n(nid("details"), "detail-cards", {"variant": RUNS[kind], "items": [detail_card(x) for x in els]}))
+            elif RUNS[kind] == "steps":
+                items = []
+                for x in els:
+                    num = plain(x.find("div", class_="step-num")); inner = x.find_all("div", recursive=False)[1]
+                    items.append({"num": num, "title": plain(inner.find("h3")), "text": plain(inner.find("p"))})
+                out.append(n(nid("steps"), "step-list", {"items": items}))
+            else:
+                out.append(n(nid("questions"), "qa-list", {"items": [{"q": plain(x.find("h3")), "a": plain(x.find("p"))} for x in els]}))
             continue
         st = el.get("style", "")
         cls = el.get("class", [])
@@ -271,7 +321,7 @@ def convert(path):
                     rows.append({"title": t, "text": plain(td)})
                 else:
                     rows.append({"text": plain(td)})
-            out.append(n(nid("checks"), "check-list", {"items": rows}))
+            out.append(n(nid("checks"), "check-list", {**({"mark": "cross"} if "redflag-table" in cls else {}), "items": rows}))
         elif el.name == "div" and el.find("img") and "position: relative" in st:
             fig += 1
             img = el.find("img")
@@ -316,13 +366,31 @@ def convert(path):
                 assert "mi" in mi.get("class", []) and ul.name == "ul"
                 items.append({"title": plain(mi), "points": [{"text": plain(li)} for li in ul.find_all("li")]})
             out.append(n(nid("cards"), "card-lists", {"variant": "interval", "items": items}))
-        elif el.name == "div" and "grid-2" in cls and all(
+        elif el.name == "div" and ("grid-2" in cls or "grid-3" in cls) and all(
                 [x.name for x in card.children if isinstance(x, Tag)] == ["h3", "p"]
                 for card in el.find_all("div", class_="factor-card", recursive=False)):
-            # Title-and-sentence cards two across: the Feature list, as the four-up grid is.
-            items = [{"label": plain(card.find("h3")), "desc": plain(card.find("p"))}
-                     for card in el.find_all("div", class_="factor-card", recursive=False)]
-            out.append(n(nid("features"), "list", {"headingLevel": 2, "columns": 2, "items": items}))
+            # Title-and-sentence cards two or three across: the Feature list, as the four-up
+            # grid is — unless a card's sentence carries a link, which a Feature list item
+            # cannot hold; those are Card lists in the feature style.
+            cards = el.find_all("div", class_="factor-card", recursive=False)
+            cols = 2 if "grid-2" in cls else 3
+            if any(card.find("p").find("a") for card in cards):
+                assert cols == 3
+                out.append(n(nid("cards"), "card-lists", {"variant": "feature", "items": [
+                    {"title": plain(card.find("h3")), "intro": inline_html(card.find("p")), "points": []} for card in cards]}))
+            else:
+                out.append(n(nid("features"), "list", {"headingLevel": 2, "columns": cols, "items": [
+                    {"label": plain(card.find("h3")), "desc": plain(card.find("p"))} for card in cards]}))
+            fs = re.search(r"font-size:\s*([0-9.]+)px", cards[0].find("p").get("style", ""))
+            if fs and fs.group(1) != "14.5":
+                extra_css.append(f'[data-bz-node="art-body"] .bz-block--list .bz-feature__d {{ font-size: {fs.group(1)}px; }}')
+        elif el.name == "div" and "grid-4" in cls and el.find("div", class_="feature-card", recursive=False):
+            # One-line feature tiles: a Feature list of titles only, set as plain text.
+            items = [{"label": plain(x)} for x in el.find_all("div", class_="feature-card", recursive=False)]
+            out.append(n(nid("features"), "list", {"headingLevel": 2, "columns": 4, "items": items}))
+            extra_css.append('/* Its four-up tiles are one line of body text each, not a title. */\n'
+                             '[data-bz-node="art-body"] .bz-block--list .bz-feature { padding: 22px; }\n'
+                             '[data-bz-node="art-body"] .bz-block--list .bz-feature__t { font: 400 16px / 1.7 var(--font-body); color: var(--body-text); margin: 0; }')
         elif el.name == "div" and "mistake-head" in cls:
             # A numbered section heading: the number badge and a real heading block side
             # by side, so the heading keeps its anchor for the rail and stays editable.
@@ -448,10 +516,16 @@ def convert(path):
             assert x["id"] not in seen, (slug, x["id"]); seen.add(x["id"]); walk(x.get("children", []))
     walk(nodes)
 
+    m = re.search(r"\.factor-card\{[^}]*padding:\s*([0-9]+)px", own_style)
+    if m and m.group(1) != "20" and any(x["type"] == "list" for x in out):
+        extra_css.append(f'[data-bz-node="art-body"] .bz-block--list .bz-feature {{ padding: {m.group(1)}px; }}')
+    if re.search(r"\.stat-band\{[^}]*grid-template-columns:\s*1fr;", own_style):
+        extra_css.append('/* Its stat band stacks the figures, one per row. */\n'
+                         '[data-bz-node="art-body"] .bz-block--statBand .bz-stats { grid-template-columns: minmax(0, 1fr); }')
     desc = s.find("meta", attrs={"name": "description"})["content"]
     pub = s.find("meta", attrs={"property": "article:published_time"})
     kw = re.search(r'"keywords":\s*"([^"]*)"', str(s))
-    return slug, {"title": h1, "description": desc, "coverImage": cover["src"],
+    return slug, {"css_extra": "".join("\n" + x + "\n" for x in dict.fromkeys(extra_css)), "title": h1, "description": desc, "coverImage": cover["src"],
                   "date": pub["content"][:10] if pub else None,
                   "keywords": [k.strip() for k in kw.group(1).split(",")] if kw else None,
                   "nodes": nodes}
@@ -547,7 +621,7 @@ if __name__ == "__main__":
         if kws:
             post["keywords"] = kws
         post["nodes"] = c["nodes"]
-        post["css"] = related_css(slug) + POST_CSS.get(slug, "")
+        post["css"] = related_css(slug) + POST_CSS.get(slug, "") + c["css_extra"]
         json.dump(post, open(p, "w"), indent=2, ensure_ascii=False); open(p, "a").write("\n")
         print(("updated " if old else "new     ") + slug)
     update_listing(meta)

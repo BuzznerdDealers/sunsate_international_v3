@@ -1,0 +1,747 @@
+{
+  "slug": "how-a-new-truck-can-help-grow-your-freight-trucking-business",
+  "title": "How a New Truck Can Help Grow Your Freight Trucking Business",
+  "date": "2025-07-25",
+  "description": "Ready to grow your freight trucking business? Learn how a new semi truck can reduce costs and unlock new hauling opportunities for your fleet.",
+  "status": "published",
+  "coverImage": "/img/blog/how-a-new-truck-can-help-grow-your-freight-trucking-business/hero.jpg",
+  "topic": "Sales",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Sales",
+          "title": "How a New Truck Can Help Grow Your Freight Trucking Business",
+          "topic": "Sales",
+          "date": "July 25, 2025",
+          "readTime": "5 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/how-a-new-truck-can-help-grow-your-freight-trucking-business/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Sun State International sales team walking a customer past International trucks on the lot"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "The Freight Landscape Today",
+                        "href": "#landscape"
+                      },
+                      {
+                        "label": "Supporting Business Growth",
+                        "href": "#growth"
+                      },
+                      {
+                        "label": "New Freight Opportunities",
+                        "href": "#versatility"
+                      },
+                      {
+                        "label": "Lower Operating Costs",
+                        "href": "#operating-costs"
+                      },
+                      {
+                        "label": "The Right Support",
+                        "href": "#support"
+                      },
+                      {
+                        "label": "Choosing the Right Truck",
+                        "href": "#choosing"
+                      },
+                      {
+                        "label": "The Bottom Line",
+                        "href": "#bottom-line"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "SHOPPING FOR A TRUCK?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "See our current new truck inventory, or ask about financing.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-new-trucks",
+                                "label": "View Inventory →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Running a successful freight trucking business takes more than grit and good drivers. It takes reliable equipment, strategic investment, and a partner that understands your goals.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Whether you’re a solo operator or managing a growing fleet, your trucks are the backbone of your business. Upgrading to new equipment can feel like a big decision, but it often comes with even bigger rewards. Let’s explore how adding a <a href=\"/store/inventory?condition=new\">new semi truck</a> to your operation can support growth, increase reliability, and help you scale smarter, not harder.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-landscape",
+                  "type": "heading",
+                  "props": {
+                    "text": "The Freight Trucking Landscape Today",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "landscape"
+                  }
+                },
+                {
+                  "id": "p-landscape-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Freight trucking is a highly competitive industry, especially in Florida, where demand is high and timelines are tight. Delays, maintenance issues, and inconsistent equipment can make or break your ability to win contracts and retain customers. Beyond that, here are some other reasons why up-to-date equipment matters:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-landscape-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Customer expectations are rising for on-time, trackable deliveries"
+                      },
+                      {
+                        "text": "Shippers prefer fleets that operate newer, more reliable trucks"
+                      },
+                      {
+                        "text": "Drivers are harder to recruit without modern, comfortable cabs"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-landscape-3",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"/financing\">Investing in new trucks</a> doesn’t just improve how your business runs today; it positions you for long-term success tomorrow.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-growth",
+                  "type": "heading",
+                  "props": {
+                    "text": "How a New Semi Truck Supports Business Growth",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "growth"
+                  }
+                },
+                {
+                  "id": "p-growth-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Every hour your truck is on the road is an opportunity to move freight, make money, and build your reputation. Here’s how a <a href=\"/store/inventory?condition=new\">new truck</a> helps boost your capacity and performance.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "features-growth-2",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 2,
+                    "columns": 2,
+                    "items": [
+                      {
+                        "label": "Improved Uptime",
+                        "desc": "Newer trucks experience fewer breakdowns and require fewer frequent repairs. This means more time hauling loads and less time in the shop."
+                      },
+                      {
+                        "label": "Better Fuel Efficiency",
+                        "desc": "Modern semi trucks are designed with fuel economy in mind. Over time, these savings add up and improve your margins, especially when fuel prices spike."
+                      },
+                      {
+                        "label": "Enhanced Safety & Compliance",
+                        "desc": "Features like lane assist, adaptive cruise control, and real-time diagnostics not only protect your drivers but also help you stay compliant with DOT regulations."
+                      },
+                      {
+                        "label": "Stronger Brand Reputation",
+                        "desc": "Shippers and brokers take notice of fleets that invest in new, clean, and professional-looking equipment. It reflects well on your business and builds trust."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "co-growth-3-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-growth-3",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-growth-3-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-new-trucks",
+                                "label": "See Our Inventory →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-versatility",
+                  "type": "heading",
+                  "props": {
+                    "text": "Versatility to Take on New Freight Opportunities",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "versatility"
+                  }
+                },
+                {
+                  "id": "p-versatility-1",
+                  "type": "text",
+                  "props": {
+                    "text": "With new equipment comes the ability to diversify your hauls. Different configurations and features allow you to bid on jobs you may not have qualified for with older or outdated trucks.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-versatility-2",
+                  "type": "heading",
+                  "props": {
+                    "text": "Expand Into Regional or Long-Haul Routes",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-versatility-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Upgrading to a sleeper cab opens the door to multi-day hauls, which typically pay more per mile. More options mean more revenue.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-versatility-4",
+                  "type": "heading",
+                  "props": {
+                    "text": "Meet Specialized Freight Needs",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-versatility-5",
+                  "type": "text",
+                  "props": {
+                    "text": "From temperature-sensitive goods to heavy equipment, today’s trucks can be outfitted for a wide range of applications.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-versatility-6",
+                  "type": "heading",
+                  "props": {
+                    "text": "Scale Your Fleet Strategically",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-versatility-7",
+                  "type": "text",
+                  "props": {
+                    "text": "Adding one or two new trucks at a time can help you expand without overextending. Paired with dependable service, you can grow at your own pace.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-operating-costs",
+                  "type": "heading",
+                  "props": {
+                    "text": "Reduce Operating Costs in the Long Run",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "operating-costs"
+                  }
+                },
+                {
+                  "id": "p-operating-costs-1",
+                  "type": "text",
+                  "props": {
+                    "text": "A common misconception is that <a href=\"/store/inventory?condition=new\">new trucks</a> are too expensive for smaller fleets or owner-operators. But when you factor in maintenance, fuel, and repair costs over time, newer models often prove to be the smarter financial choice.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-operating-costs-2",
+                  "type": "heading",
+                  "props": {
+                    "text": "Lower Maintenance Costs",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-operating-costs-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Fewer breakdowns mean fewer <a href=\"/service\">emergency repairs</a>. New trucks are covered under warranty and tend to have fewer issues overall.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-operating-costs-4",
+                  "type": "heading",
+                  "props": {
+                    "text": "Better Resale Value",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-operating-costs-5",
+                  "type": "text",
+                  "props": {
+                    "text": "When it comes time to trade in, new models retain value better, especially if they’re well-maintained.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-operating-costs-6",
+                  "type": "heading",
+                  "props": {
+                    "text": "Financing and Leasing Options",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-operating-costs-7",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, we offer flexible <a href=\"/financing\">financing solutions</a> to help make your next truck more affordable than you might think.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-support",
+                  "type": "heading",
+                  "props": {
+                    "text": "Work Smarter with the Right Support",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "support"
+                  }
+                },
+                {
+                  "id": "p-support-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Having a new truck is only part of the equation. What really sets your business up for success is having a dealer that backs you with ongoing support and trusted service.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-support-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "feature",
+                    "items": [
+                      {
+                        "title": "Expert Maintenance & Parts",
+                        "intro": "Our <a href=\"/service\">Parts & Service Department</a> is equipped to handle everything from oil changes to major repairs, all done by certified technicians who understand your schedule.",
+                        "points": []
+                      },
+                      {
+                        "title": "Personalized Service Plans",
+                        "intro": "We work with every customer to build a maintenance schedule that aligns with your routes, usage, and business goals.",
+                        "points": []
+                      },
+                      {
+                        "title": "Access to Reliable Inventory",
+                        "intro": "Sun State International offers a wide range of new trucks to fit different types of freight trucking operations, from local deliveries to cross-country hauls.",
+                        "points": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "co-support-3-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-support-3",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-support-3-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-new-trucks",
+                                "label": "See Our Inventory →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-choosing",
+                  "type": "heading",
+                  "props": {
+                    "text": "Choosing the Right Truck for Your Business",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "choosing"
+                  }
+                },
+                {
+                  "id": "p-choosing-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Not sure where to start? Our team will help you evaluate your business goals, driver needs, and hauling requirements to match you with a truck that makes sense now and years from now.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-choosing-2",
+                  "type": "heading",
+                  "props": {
+                    "text": "What We Consider:",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "checks-choosing-3",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "What types of freight do you haul?"
+                      },
+                      {
+                        "text": "Do you need short-haul, regional, or long-haul capabilities?"
+                      },
+                      {
+                        "text": "How many trucks are in your current fleet?"
+                      },
+                      {
+                        "text": "What are your growth goals over the next 3–5 years?"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-choosing-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Your truck should help you move more, earn more, and keep your operation running smoothly, and <a href=\"/our-story\">our team</a> will assist you in finding the equipment you need.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-bottom-line",
+                  "type": "heading",
+                  "props": {
+                    "text": "The Bottom Line",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "bottom-line"
+                  }
+                },
+                {
+                  "id": "p-bottom-line-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Freight trucking is an industry built on reliability. Every load, every mile, and every delivery adds to your reputation. Investing in new equipment isn’t just about having something shiny and new; it’s about building a business that’s ready for what’s next. At Sun State International, we’re proud to be Florida’s trusted truck dealership for hardworking businesses. <a href=\"/store/inventory?condition=new\">If you’re ready to grow your freight operation, we’re ready to help you do it.</a>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-bottom-line-2",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "browse-new-trucks",
+                        "label": "See Our Inventory"
+                      },
+                      {
+                        "ctaId": "contact-us",
+                        "label": "Contact Us",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Ready to grow?",
+          "heading": "Let's find your next truck.",
+          "body": "Call 800.741.7566 and our sales teams in Tampa, Sarasota, Davenport or Brooksville will help you find the right fit.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/how-a-new-truck-can-help-grow-your-freight-trucking-business\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/how-a-new-truck-can-help-grow-your-freight-trucking-business\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n[data-bz-node=\"art-body\"] .bz-block--list .bz-feature__d { font-size: 15px; }\n\n[data-bz-node=\"art-body\"] .bz-block--list .bz-feature { padding: 22px; }\n"
+}

@@ -1,0 +1,554 @@
+{
+  "slug": "why-florida-fleet-owners-choose-sun-state-international-for-truck-service-in-florida",
+  "title": "Why Florida Fleet Owners Choose Sun State International for Truck Service in Florida",
+  "date": "2025-09-05",
+  "description": "Trusted, dependable truck service in Florida. Sun State International keeps your fleet on the road with expert care and reliable parts.",
+  "status": "published",
+  "coverImage": "/img/blog/why-florida-fleet-owners-choose-sun-state-international-for-truck-service-in-florida/hero.jpg",
+  "topic": "Service",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Service",
+          "title": "Why Florida Fleet Owners Choose Sun State International for Truck Service in Florida",
+          "topic": "Service",
+          "date": "September 5, 2025",
+          "readTime": "4 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/why-florida-fleet-owners-choose-sun-state-international-for-truck-service-in-florida/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Sun State International driver at the wheel of an International truck"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "What You Get With Our Service",
+                        "href": "#what-you-get"
+                      },
+                      {
+                        "label": "Lowering Total Cost of Ownership",
+                        "href": "#lower-tco"
+                      },
+                      {
+                        "label": "Parts Availability",
+                        "href": "#parts-availability"
+                      },
+                      {
+                        "label": "How It Works",
+                        "href": "#how-it-works"
+                      },
+                      {
+                        "label": "FAQs for Florida Fleets",
+                        "href": "#faqs"
+                      },
+                      {
+                        "label": "Ready to Schedule?",
+                        "href": "#ready-to-schedule"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "NEED SERVICE?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Schedule service with our team today.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "schedule-service",
+                                "label": "Schedule Service →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "If your trucks are not moving, you are not earning. That is why Florida fleet owners look for truck service in Florida that is fast, reliable, and clear about timelines.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Sun State International builds every service interaction around uptime, from certified technicians to a wide range of in-stock parts and mobile support. Our goal is simple. Get you in, get it done right, and get you back on the road.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-what-you-get",
+                  "type": "heading",
+                  "props": {
+                    "text": "What You Get with Sun State International Service",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "what-you-get"
+                  }
+                },
+                {
+                  "id": "checks-what-you-get-1",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Diamond Edge Certified Service Centers: our shops meet International's Diamond Edge standards for speed and quality, reducing dwell time and improving communication at every step"
+                      },
+                      {
+                        "text": "Certified, factory-trained technicians: more than 60 certified techs handle everything from preventive maintenance to complex diagnostics for all makes and models"
+                      },
+                      {
+                        "text": "Convenient Florida coverage: service and parts support in Tampa, Davenport, and Sarasota, with clearly posted hours for quick scheduling"
+                      },
+                      {
+                        "text": "Mobile maintenance and after-hours options: select locations offer after-hours coverage through Certified Fleet from 8:00 p.m. to 5:00 a.m."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-what-you-get-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Need a repair plan now? Contact Sun State International to schedule service or request a callback.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-lower-tco",
+                  "type": "heading",
+                  "props": {
+                    "text": "Florida Fleet Maintenance That Lowers Total Cost of Ownership",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "lower-tco"
+                  }
+                },
+                {
+                  "id": "p-lower-tco-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Fleet managers measure partners by impact on total cost of ownership. Solid preventive programs reduce unplanned stops, protect fuel economy, and keep your CSA scores clean. No matter if you're running a small operation or a large fleet, every hour of avoided downtime matters. Our service department includes:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-lower-tco-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Quick check-in and consistent updates so your drivers are not waiting on answers"
+                      },
+                      {
+                        "text": "Preventative maintenance programs aligned to OEM intervals for International and all makes"
+                      },
+                      {
+                        "text": "Safety-first inspections that catch issues before they turn into road calls"
+                      },
+                      {
+                        "text": "Documentation you can use for compliance and warranty follow-up"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-lower-tco-3",
+                  "type": "text",
+                  "props": {
+                    "text": "These are the basics Florida fleets expect from fleet truck service in Florida. Our team delivers them with a hospitable, straightforward approach that respects your time.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-parts-availability",
+                  "type": "heading",
+                  "props": {
+                    "text": "Parts Availability That Keeps Repairs Moving",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "parts-availability"
+                  }
+                },
+                {
+                  "id": "p-parts-availability-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Even the most well-maintained truck stalls without the right part. Sun State International's parts department carries over $3 million in inventory with access to over 1 million unique parts, including OEM International and proven aftermarket options. If it is not on the shelf, we source it fast. What this means for you:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-parts-availability-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Fewer multi-day waits for common wear items"
+                      },
+                      {
+                        "text": "One counter for all-makes fleets, from filters and brakes to HVAC and electrical"
+                      },
+                      {
+                        "text": "Account options that streamline repeat purchases"
+                      },
+                      {
+                        "text": "Local pickup across multiple Florida locations to reduce travel time"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "co-parts-availability-3-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-parts-availability-3",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-parts-availability-3-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "parts-department",
+                                "label": "Find What You Need In Our Parts Department →"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-how-it-works",
+                  "type": "heading",
+                  "props": {
+                    "text": "How Florida Fleet Owners Work With Us",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "how-it-works"
+                  }
+                },
+                {
+                  "id": "steps-how-it-works-1",
+                  "type": "step-list",
+                  "props": {
+                    "items": [
+                      {
+                        "num": "1",
+                        "title": "Call or request a slot",
+                        "text": "Start with your preferred location and share unit details, symptoms, and urgency. Tampa, Davenport, and Sarasota run extended weekday service hours, and Brooksville focuses on parts support."
+                      },
+                      {
+                        "num": "2",
+                        "title": "Get a clear estimate",
+                        "text": "We explain findings in plain language with options that balance speed and cost. No surprises."
+                      },
+                      {
+                        "num": "3",
+                        "title": "Approve the repair plan",
+                        "text": "We move forward once you're confident in the scope and the cost, with clear communication throughout."
+                      },
+                      {
+                        "num": "4",
+                        "title": "Roll out with paperwork that helps",
+                        "text": "You leave with documentation for compliance, warranty, and internal reporting."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-faqs",
+                  "type": "heading",
+                  "props": {
+                    "text": "FAQs for Florida Fleets",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "faqs"
+                  }
+                },
+                {
+                  "id": "questions-faqs-1",
+                  "type": "qa-list",
+                  "props": {
+                    "items": [
+                      {
+                        "q": "Do you service non-International trucks?",
+                        "a": "Yes. We support all makes of fleets for preventative maintenance, diagnostics, and major repairs."
+                      },
+                      {
+                        "q": "Can you help reduce repeat breakdowns?",
+                        "a": "Yes. Our advisors will build a preventative maintenance schedule tied to your duty cycles and OEM guidance, then track outcomes so you can see the impact on uptime and cost per mile."
+                      },
+                      {
+                        "q": "What about emergency support?",
+                        "a": "Call your nearest location for immediate guidance. After-hours coverage is available through Certified Fleet in specific markets."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-ready-to-schedule",
+                  "type": "heading",
+                  "props": {
+                    "text": "Ready to Schedule Truck Service in Florida?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "ready-to-schedule"
+                  }
+                },
+                {
+                  "id": "p-ready-to-schedule-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Sun State International is family-owned and Florida-focused. Our expert team is trained to be hospitable, professional, and dependable, which shows up in faster turnarounds and straight answers. Keep your routes on time with a service partner that respects your schedule and your bottom line. Schedule your service now with Sun State International.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-ready-to-schedule-2",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "schedule-service"
+                      },
+                      {
+                        "ctaId": "contact-us",
+                        "label": "Prefer to Talk to a Person? Contact Us",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Ready when you are",
+          "heading": "Let's keep your fleet moving.",
+          "body": "Call 800.741.7566 and our service teams in Tampa, Sarasota, Davenport or Brooksville will get you scheduled.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/why-florida-fleet-owners-choose-sun-state-international-for-truck-service-in-florida\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/why-florida-fleet-owners-choose-sun-state-international-for-truck-service-in-florida\"])) > .bz-card:nth-child(n+4) { display: none; }\n"
+}

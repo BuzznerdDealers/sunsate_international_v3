@@ -1,0 +1,525 @@
+{
+  "slug": "fleet-truck-service-in-florida-how-sun-state-international-keeps-businesses-moving",
+  "title": "Fleet Truck Service in Florida: How Sun State International Keeps Businesses Moving",
+  "date": "2025-08-27",
+  "description": "Looking for a reliable partner for fleet truck service in Florida? See how Sun State International reduces downtime and keeps your business moving.",
+  "status": "published",
+  "coverImage": "/img/blog/fleet-truck-service-in-florida-how-sun-state-international-keeps-businesses-moving/hero.jpg",
+  "topic": "Service",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Service",
+          "title": "Fleet Truck Service in Florida: How Sun State International Keeps Businesses Moving",
+          "topic": "Service",
+          "date": "August 27, 2025",
+          "readTime": "4 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/fleet-truck-service-in-florida-how-sun-state-international-keeps-businesses-moving/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Close-up of a Sun State International Hyundai Translead trailer's air and electrical connections"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "The Sun State International Difference",
+                        "href": "#difference"
+                      },
+                      {
+                        "label": "Fleet Maintenance Built Around You",
+                        "href": "#maintenance-built"
+                      },
+                      {
+                        "label": "Why Florida Fleets Choose Us",
+                        "href": "#why-fleets-choose"
+                      },
+                      {
+                        "label": "Why Preventive Service Saves Money",
+                        "href": "#preventive-saves"
+                      },
+                      {
+                        "label": "Partnering With Sun State International",
+                        "href": "#partnering"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "NEED SERVICE?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Schedule service with our team today.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "schedule-service",
+                                "label": "Schedule Service →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Every day your fleet is on the road, Florida's economy keeps moving. But when one truck breaks down, everything from deliveries to drivers' schedules gets thrown off.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "A single truck breakdown can cost fleets hundreds per day in lost revenue. When you add in missed delivery windows, unhappy customers, and the stress placed on drivers, the true cost of downtime is much higher. That's why having a reliable partner for fleet truck service in Florida isn't just helpful; it's critical.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-intro-2",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, we're here to help you reduce downtime, extend the life of your trucks, and keep your business moving forward with our fleet repair services.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-difference",
+                  "type": "heading",
+                  "props": {
+                    "text": "The Sun State International Difference",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "difference"
+                  }
+                },
+                {
+                  "id": "p-difference-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Not all service providers are the same. While many shops can handle basic maintenance, few offer the professionalism, scale, and customer-first service that Sun State International delivers. Here's what sets us apart:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-difference-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Trained technicians: our team is trained directly by International®, giving us the expertise to handle everything from simple oil changes to complex engine diagnostics"
+                      },
+                      {
+                        "text": "OEM parts access: we stock and source genuine parts built to last, reducing the risk of repeat repairs and helping your fleet meet compliance standards"
+                      },
+                      {
+                        "text": "Multiple locations across Florida: service centers in Tampa, Sarasota, Davenport, and Brooksville"
+                      },
+                      {
+                        "text": "Transparent communication: we keep the process simple, straightforward, and focused on getting you back on the road quickly"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-maintenance-built",
+                  "type": "heading",
+                  "props": {
+                    "text": "Florida Fleet Maintenance Built Around You",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "maintenance-built"
+                  }
+                },
+                {
+                  "id": "p-maintenance-built-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Fleet managers and owner-operators don't just need repairs; they need a service partner who understands their day-to-day challenges. Whether you're running a handful of trucks or managing hundreds, our services are designed to scale with your business. Our fleet truck service in Florida includes:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-maintenance-built-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Preventive maintenance programs: tailored schedules that reduce unexpected breakdowns"
+                      },
+                      {
+                        "text": "Advanced diagnostics and repairs: identifying and fixing issues before they turn into major problems"
+                      },
+                      {
+                        "text": "Brake, tire, and safety inspections: ensuring your trucks stay compliant and safe on the road"
+                      },
+                      {
+                        "text": "Mobile service: when breakdowns happen on the road, we'll send a team out to you"
+                      },
+                      {
+                        "text": "After hours service: our Certified Fleet Team is there when you need us most"
+                      },
+                      {
+                        "text": "Custom service solutions: flexible programs for both small fleets and large corporations"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-maintenance-built-3",
+                  "type": "text",
+                  "props": {
+                    "text": "By working with Sun State International, you'll have the confidence that every truck in your fleet is receiving consistent, dependable care. Need reliable truck service in Florida today? Contact us here to schedule maintenance for your fleet.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-maintenance-built-4-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-maintenance-built-4",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-maintenance-built-4-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "schedule-service",
+                                "label": "Reduce Downtime. Get Back On the Road Today →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-why-fleets-choose",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Florida Fleets Choose Sun State International",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "why-fleets-choose"
+                  }
+                },
+                {
+                  "id": "p-why-fleets-choose-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Florida truckers come to Sun State International for more than quick fixes. They come for peace of mind. Whether it's national brands or Florida-based owner-operators, fleets choose us because of our reputation for professionalism, reliability, and hospitality.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-why-fleets-choose-2",
+                  "type": "text",
+                  "props": {
+                    "text": "For both owner-operators and fleet managers, Sun State International provides solutions that reduce costs and extend uptime. What our clients appreciate most is that we treat their business as if it were our own. We know that when your trucks are on the road, your business is thriving, and when they're not, you need answers fast.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-preventive-saves",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Preventive Fleet Repair Services Save Florida Fleets Money",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "preventive-saves"
+                  }
+                },
+                {
+                  "id": "p-preventive-saves-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Fleet service isn't just about fixing problems as they happen. It's about building long-term reliability into your operations. Preventive maintenance may feel like an expense up front, but it saves significantly in the long run.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-preventive-saves-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Sun State International works with Florida fleets to design maintenance schedules that match their business model, ensuring every truck is optimized for longevity and compliance. By focusing on safety, uptime, and cost savings, we help you protect your bottom line.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-partnering",
+                  "type": "heading",
+                  "props": {
+                    "text": "Partnering With Sun State International",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "partnering"
+                  }
+                },
+                {
+                  "id": "p-partnering-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, we know that choosing a service partner is about more than price. It's about trust, reliability, and the confidence that your trucks will be taken care of the right way, every time. With service centers across Florida and a legacy of helping fleets succeed, Sun State International is the partner you can trust to keep your business moving.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-partnering-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Ready to reduce downtime and improve fleet performance? With Sun State, you're not just choosing a service provider; you're choosing a partner who knows what's at stake.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-partnering-3",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "schedule-service",
+                        "label": "Schedule Your Service"
+                      },
+                      {
+                        "ctaId": "read-reviews",
+                        "label": "Read Our Reviews",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Ready when you are",
+          "heading": "Let's keep your fleet moving.",
+          "body": "Call 800.741.7566 and our service teams in Tampa, Sarasota, Davenport or Brooksville will get you scheduled.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/fleet-truck-service-in-florida-how-sun-state-international-keeps-businesses-moving\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/fleet-truck-service-in-florida-how-sun-state-international-keeps-businesses-moving\"])) > .bz-card:nth-child(n+4) { display: none; }\n"
+}

@@ -1,0 +1,625 @@
+{
+  "slug": "take-your-business-further-with-these-fleet-services",
+  "title": "Take Your Business Further With These Fleet Services",
+  "date": "2025-07-18",
+  "description": "Discover how Sun State International’s fleet services can help your business reduce downtime, improve reliability, and grow with confidence.",
+  "status": "published",
+  "coverImage": "/img/blog/take-your-business-further-with-these-fleet-services/hero.jpg",
+  "topic": "Service",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Service",
+          "title": "Take Your Business Further With These Fleet Services",
+          "topic": "Service",
+          "date": "July 18, 2025",
+          "readTime": "4 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/take-your-business-further-with-these-fleet-services/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Technician working under an International truck in the Sun State International service bay"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "Why Fleet Services Pay Off",
+                        "href": "#smart-investment"
+                      },
+                      {
+                        "label": "What Sets Us Apart",
+                        "href": "#sets-apart"
+                      },
+                      {
+                        "label": "Common Fleet Pitfalls",
+                        "href": "#pitfalls"
+                      },
+                      {
+                        "label": "Who Benefits",
+                        "href": "#who-benefits"
+                      },
+                      {
+                        "label": "Partner With Sun State",
+                        "href": "#partner"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "NEED FLEET SERVICE?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Book a service appointment at any of our Florida locations.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "schedule-service",
+                                "label": "Schedule Service →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Managing a fleet is about more than just keeping trucks on the road. It’s about creating a seamless, efficient operation that supports drivers, reduces downtime, and safeguards your bottom line.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Whether you’re overseeing a few trucks or managing a larger operation, <a href=\"/service\">the right fleet services</a> can streamline your business and unlock meaningful growth.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-intro-2",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, we know that reliability, performance, and value matter to every fleet owner. That’s why we offer full-service solutions tailored to meet the real-world demands of Florida’s trucking community. From preventative maintenance to cutting-edge telematics, our fleet services are built to keep your business moving safely, efficiently, and profitably.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-smart-investment",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Fleet Services Are a Smart Investment for Any Business",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "smart-investment"
+                  }
+                },
+                {
+                  "id": "p-smart-investment-1",
+                  "type": "text",
+                  "props": {
+                    "text": "If you’re thinking about expanding your fleet, replacing aging trucks, or simply trying to reduce operational headaches, comprehensive fleet services are a key advantage. Too many businesses wait until something breaks to address it. But with a proactive approach, you can solve problems before they start. Here are some benefits you can get from <a href=\"/service\">high-quality fleet services:</a>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-smart-investment-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "title": "Reduced downtime.",
+                        "text": "Trucks that are routinely serviced experience fewer breakdowns."
+                      },
+                      {
+                        "title": "Controlled costs.",
+                        "text": "Predictable service plans help manage repair budgets."
+                      },
+                      {
+                        "title": "Driver safety.",
+                        "text": "Regular inspections catch issues before they lead to accidents."
+                      },
+                      {
+                        "title": "Improved compliance.",
+                        "text": "DOT regulations are easier to manage when maintenance is scheduled and documented."
+                      },
+                      {
+                        "title": "Scalability.",
+                        "text": "Professional support gives you the confidence to grow your operation."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-smart-investment-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Fleet services don’t just protect your equipment; they protect your time, your money, and your reputation.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-sets-apart",
+                  "type": "heading",
+                  "props": {
+                    "text": "What Sets Sun State International’s Fleet Services Apart",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "sets-apart"
+                  }
+                },
+                {
+                  "id": "p-sets-apart-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, we do more than provide trucks. We provide long-term partnerships designed around your success. Our team works with you to create customized service programs that match your fleet size, industry, and operational needs.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-sets-apart-2",
+                  "type": "heading",
+                  "props": {
+                    "text": "Preventive Maintenance",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-sets-apart-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Routine maintenance keeps small issues from turning into big problems. Whether you need simple oil changes or full inspections, our <a href=\"/service\">Parts & Service Department</a> is staffed by certified technicians trained to get your vehicles back on the road fast. With our team, regular preventative maintenance will help extend the life of your trucks and minimize downtime.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-sets-apart-4",
+                  "type": "heading",
+                  "props": {
+                    "text": "Mobile Maintenance Options",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-sets-apart-5",
+                  "type": "text",
+                  "props": {
+                    "text": "We know your schedule is tight, and sometimes, the unexpected happens on the road. That’s why we offer <a href=\"/mobile-service\">mobile maintenance units</a> that can service trucks on-site. Oil changes, brake checks, tire rotations; you name it, we bring the shop to you.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-sets-apart-6",
+                  "type": "heading",
+                  "props": {
+                    "text": "Uptime Advocate Program",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-sets-apart-7",
+                  "type": "text",
+                  "props": {
+                    "text": "As a certified International® dealer, we offer access to the <a href=\"https://www.international.com/services/uptime-advocate\">Uptime Advocate Program</a>, a priority diagnostics and repair service that gets your trucks looked at faster and serviced sooner. It’s a smarter way to manage downtime.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-sets-apart-8",
+                  "type": "heading",
+                  "props": {
+                    "text": "Telematics & Data-Driven Insights",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-sets-apart-9",
+                  "type": "text",
+                  "props": {
+                    "text": "Want to know how your fleet is performing in real time? We offer <a href=\"/service\">telematics tools</a> that track everything from driver behavior to vehicle diagnostics, so you can make smarter business decisions.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-sets-apart-10",
+                  "type": "heading",
+                  "props": {
+                    "text": "Available For All Makes of Commercial Trucks",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-sets-apart-11",
+                  "type": "text",
+                  "props": {
+                    "text": "Sun State International doesn’t just service International trucks—we’re equipped to handle all makes and models of commercial trucks. This flexibility means you can bring your entire fleet to one trusted service provider instead of juggling multiple vendors. It’s all about keeping your business moving with fewer headaches, faster turnarounds, and service you can count on.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-sets-apart-12-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-sets-apart-12",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-sets-apart-12-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "contact-us",
+                                "label": "Get a Quote Today →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-pitfalls",
+                  "type": "heading",
+                  "props": {
+                    "text": "Avoiding Common Pitfalls in Fleet Management",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "pitfalls"
+                  }
+                },
+                {
+                  "id": "p-pitfalls-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Fleet owners know the pressure of keeping everything running smoothly. But even experienced managers can make mistakes that lead to inefficiencies or safety risks.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-pitfalls-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "feature",
+                    "items": [
+                      {
+                        "title": "Waiting Too Long to Schedule Maintenance",
+                        "intro": "Putting off service may seem like a time-saver, but it often results in breakdowns at the worst possible time. <a href=\"/service-appointment\">Scheduling maintenance</a> proactively saves time, money, and frustration.",
+                        "points": []
+                      },
+                      {
+                        "title": "Relying on Multiple Vendors",
+                        "intro": "When your fleet is serviced by several shops, tracking repairs and maintenance history becomes chaotic. With Sun State International, you get centralized records and consistent quality across every truck.",
+                        "points": []
+                      },
+                      {
+                        "title": "Skipping Driver Feedback",
+                        "intro": "Your drivers are often the first to notice unusual noises, poor performance, or handling issues. Create a feedback loop where drivers report problems quickly and get them addressed without delay.",
+                        "points": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-who-benefits",
+                  "type": "heading",
+                  "props": {
+                    "text": "Who Benefits from Fleet Services?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "who-benefits"
+                  }
+                },
+                {
+                  "id": "p-who-benefits-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Sun State International works with a wide range of customers across Florida, including:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-who-benefits-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Owner-operators who want to protect their investment and grow their business"
+                      },
+                      {
+                        "text": "Logistics managers oversee large fleets with tight delivery windows"
+                      },
+                      {
+                        "text": "Construction firms with specialized trucks that require attentive care"
+                      },
+                      {
+                        "text": "School districts that prioritize safe, consistent maintenance"
+                      },
+                      {
+                        "text": "And so many more."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-who-benefits-3",
+                  "type": "text",
+                  "props": {
+                    "text": "No matter your business size, our services are built to scale and support you as you grow.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-partner",
+                  "type": "heading",
+                  "props": {
+                    "text": "Partner with Sun State International and Drive Forward",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "partner"
+                  }
+                },
+                {
+                  "id": "p-partner-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At <a href=\"/our-story\">Sun State International</a>, we go beyond basic service. Our fleet programs are built around real customer needs: efficiency, accountability, and trust. We know every hour your trucks spend in the shop is an hour off the road. That’s why we act fast, communicate clearly, and put your business goals first. <a href=\"/contact\">If you’re ready to work with a dependable partner that knows Florida trucking, Sun State International is here to help.</a>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-partner-2",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "contact-us",
+                        "label": "Get a Quote Today"
+                      },
+                      {
+                        "ctaId": "schedule-service",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Ready to reduce downtime?",
+          "heading": "Let's build your fleet service plan.",
+          "body": "Call 800.741.7566 and our service teams in Tampa, Sarasota, Davenport or Brooksville will help you build a plan for your fleet.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/take-your-business-further-with-these-fleet-services\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/take-your-business-further-with-these-fleet-services\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n[data-bz-node=\"art-body\"] .bz-block--list .bz-feature__d { font-size: 15px; }\n"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "detail-cards",
+  "label": "Detail cards",
+  "description": "A stack of bordered cards, each a title, a sentence and a few labelled notes — the blog's engine-problem cards (warning signs, prevention) and repair cards (when to fix, when to replace). One card per item, each with its own notes, so a card or a note is added in the list editor.",
+  "props": [
+    {
+      "key": "variant",
+      "type": "select",
+      "label": "Note layout",
+      "default": "stacked",
+      "options": [
+        {
+          "value": "stacked",
+          "label": "Label above the note"
+        },
+        {
+          "value": "inline",
+          "label": "Label beside the note"
+        }
+      ]
+    },
+    {
+      "key": "items",
+      "type": "list",
+      "label": "Cards",
+      "fields": [
+        {
+          "key": "title",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "key": "body",
+          "type": "textarea",
+          "label": "Sentence"
+        },
+        {
+          "key": "notes",
+          "type": "list",
+          "label": "Notes",
+          "fields": [
+            {
+              "key": "label",
+              "type": "text",
+              "label": "Label"
+            },
+            {
+              "key": "text",
+              "type": "textarea",
+              "label": "Note"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "html": "<div class=\"ss-dc ss-dc--{{variant}}\">{{#each items}}<div class=\"ss-dc__card\"><h3 class=\"ss-dc__t\">{{title}}</h3><p class=\"ss-dc__p\">{{body}}</p>{{#each notes}}<div class=\"ss-dc__note\"><span class=\"ss-dc__l\">{{label}}</span><span class=\"ss-dc__n\">{{text}}</span></div>{{/each}}</div>{{/each}}</div>",
+  "css": ".ss-dc__card{border:1px solid var(--line);padding:24px;margin-bottom:20px}\n.ss-dc__t{font:800 19px/1.3 var(--font-heading);color:var(--ink);text-transform:none;margin:0 0 12px}\n.ss-dc__p{font-size:17px;line-height:1.8;color:var(--body-text);margin:0}\n.ss-dc__l{font:700 11px/1 var(--font-body);letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}\n.ss-dc__n{font-size:17px;line-height:1.8;color:var(--body-text)}\n.ss-dc--stacked .ss-dc__note{display:flex;flex-direction:column}\n.ss-dc--stacked .ss-dc__l{margin:14px 0 8px}\n.ss-dc--inline .ss-dc__note{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}\n.ss-dc--inline .ss-dc__l{font-size:11px;line-height:1.4;letter-spacing:.06em;flex-shrink:0;padding-top:3px}\n.ss-dc--inline .ss-dc__n{font-size:15px;line-height:1.7}"
+}

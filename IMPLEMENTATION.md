@@ -478,3 +478,36 @@ Two posts set their own type in the handoff, and carry it in their own CSS: the 
 sets its headings at 26px (21px at phone width) to suit seven numbered ones, and the
 aftermarket post rules its comparison in ink under sentence-case headings with roomier cells.
 
+---
+
+## 13. Blog handoff, Part 5 of 6 — nine more posts
+
+Nine new posts on the §9 layout: *Do Semi Truck Maintenance Costs Outweigh the Benefits?*,
+*Features to Look for in New Semi Trucks*, *Fleet Truck Service in Florida*, *How a New Truck
+Can Help Grow Your Freight Trucking Business*, *Semi Truck Engine Problems Every Driver Should
+Watch For*, *Take Your Business Further With These Fleet Services*, *What Are the Most Common
+Semi Truck Repairs and How to Handle Them*, *What You Should Look for in a Commercial Truck
+Trader* and *Why Florida Fleet Owners Choose Sun State International for Truck Service*. Body
+copy and contents rails match the handoff word for word; the blog page carries 48 cards.
+
+New shapes, and what they became — each run of repeated cards is one list:
+
+| Handoff | Here |
+|---|---|
+| a run of `.problem-card` (warning signs / prevention) | a new **Detail cards** coded widget, *label above the note* |
+| a run of `.repair-card` (when to fix / when to replace) | **Detail cards**, *label beside the note* |
+| a run of `.step-row` | a new **Numbered steps** coded widget |
+| a run of `.faq-item` | a new **Question list** coded widget. It is drawn open, as the design has it; the platform FAQ widget is an accordion, and the handoff declares no FAQ structured data for this post |
+| `.redflag-table` | the **Checkmark list** with a new *Mark* setting — ✕ in the design system's "bad" colour |
+| `.grid-3` of title-and-sentence cards | the **Feature list**, three across — or **Card lists** in a new *Feature* style when a card's sentence carries a link, which a Feature list item cannot hold |
+| `.grid-4` of one-line `.feature-card` tiles | the **Feature list**, titles only, set as body text in that post |
+
+Links: the old storefront's new-truck listing (`sunstateintltrucks.com`) and the old site's
+new-inventory page now point at `/store/inventory?condition=new` (the *Browse new trucks*
+button), financing at `/financing`, reviews at `/reviews`, about-us at `/our-story`.
+
+The converter now reads each post's own `<style>` block for the differences the handoff sets
+per post — card padding, card type size, a one-column stat band — and writes only those into
+that post's CSS. It also stopped escaping `&` in prose: the text block escapes it itself, so
+"Parts & Service" had been showing as `&amp;` in the three posts that use it.
+
