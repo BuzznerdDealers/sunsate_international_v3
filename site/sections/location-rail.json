@@ -570,12 +570,12 @@
                           "group": null,
                           "groupKey": null,
                           "photo": {
-                            "src": "",
-                            "alt": ""
+                            "src": "https://vendure.buzznerdrv.com/assets/source/44/dms-11044973853__02.jpg",
+                            "alt": "dms-11044973853__02.jpg"
                           },
                           "banner": {
-                            "src": "",
-                            "alt": ""
+                            "src": "https://vendure.buzznerdrv.com/assets/source/56/dms-11044973869__02.jpg",
+                            "alt": "dms-11044973869__02.jpg"
                           },
                           "brandRows": [],
                           "serviceRows": [],
@@ -1367,6 +1367,19 @@
                 "span": 12
               },
               "children": [
+                {
+                  "id": "image",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "https://vendure.buzznerdrv.com/assets/source/1e/dms-11044973879__03.jpg",
+                      "alt": "dms-11044973879__03.jpg",
+                      "width": 720,
+                      "height": 1280
+                    }
+                  }
+                },
                 {
                   "id": "lr-brands-pills",
                   "type": "filter-pills",
