@@ -1,0 +1,732 @@
+{
+  "slug": "preventive-maintenance-for-semi-trucks-why-it-saves-you-more-than-it-costs",
+  "title": "Preventive Maintenance for Semi Trucks: Why It Saves You More Than It Costs",
+  "date": "2025-10-10",
+  "description": "Preventive maintenance for semi trucks reduces downtime, prevents major repairs, and keeps your fleet running. Schedule service at Sun State.",
+  "status": "published",
+  "coverImage": "/img/blog/preventive-maintenance-for-semi-trucks-why-it-saves-you-more-than-it-costs/hero.jpg",
+  "topic": "Service",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Service",
+          "title": "Preventive Maintenance for Semi Trucks: Why It Saves You More Than It Costs",
+          "topic": "Service",
+          "date": "October 10, 2025",
+          "readTime": "5 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/preventive-maintenance-for-semi-trucks-why-it-saves-you-more-than-it-costs/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Sun State International technician performing preventive maintenance on a trailer"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "What Is Preventive Maintenance?",
+                        "href": "#what-is-it"
+                      },
+                      {
+                        "label": "How It Saves You Money",
+                        "href": "#how-it-saves"
+                      },
+                      {
+                        "label": "The Hidden Costs of Reactive Repairs",
+                        "href": "#hidden-costs"
+                      },
+                      {
+                        "label": "How Often to Schedule",
+                        "href": "#how-often"
+                      },
+                      {
+                        "label": "Warning Signs to Watch",
+                        "href": "#warning-signs"
+                      },
+                      {
+                        "label": "Why Choose Sun State International",
+                        "href": "#why-choose-us"
+                      },
+                      {
+                        "label": "Get Back On the Road",
+                        "href": "#get-back-on-road"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "READY FOR SERVICE?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Schedule preventive service with our team today.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "schedule-service",
+                                "label": "Schedule Service →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "In the trucking world, every mile matters, and every hour off the road costs money. That's why a preventive maintenance plan for semi trucks isn't just about taking care of your vehicle; it's about protecting your livelihood.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, we've seen firsthand how consistent maintenance saves drivers thousands in unexpected repair bills, fuel costs, and lost time. Whether you're managing a full fleet or a single rig, preventive care is one of the smartest investments you can make in your operation's bottom line.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-what-is-it",
+                  "type": "heading",
+                  "props": {
+                    "text": "What Is Preventive Maintenance?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "what-is-it"
+                  }
+                },
+                {
+                  "id": "p-what-is-it-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Preventive maintenance means servicing your truck on a schedule before issues arise rather than waiting for a breakdown. This includes regular inspections, part replacements, and fluid checks that keep your truck running at peak efficiency. Typical preventive maintenance tasks include:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-what-is-it-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Engine oil and filter changes"
+                      },
+                      {
+                        "text": "Brake system inspections and pad replacements"
+                      },
+                      {
+                        "text": "Tire rotations and tread checks"
+                      },
+                      {
+                        "text": "Transmission and coolant flushes"
+                      },
+                      {
+                        "text": "Battery and alternator testing"
+                      },
+                      {
+                        "text": "Replacing belts, hoses, and air filters"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-what-is-it-3",
+                  "type": "text",
+                  "props": {
+                    "text": "These may sound routine, but together they create the difference between dependable uptime and costly downtime.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-how-it-saves",
+                  "type": "heading",
+                  "props": {
+                    "text": "How Preventive Maintenance Saves You Money",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "how-it-saves"
+                  }
+                },
+                {
+                  "id": "p-how-it-saves-1",
+                  "type": "text",
+                  "props": {
+                    "text": "You might think you're saving time or money by skipping service visits, but neglecting preventive care can lead to exponential costs later.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "stats-how-it-saves-2",
+                  "type": "statBand",
+                  "props": {
+                    "stats": [
+                      {
+                        "value": "$334",
+                        "label": "Average cost of a roadside repair, per the American Trucking Associations"
+                      },
+                      {
+                        "value": "10,000–20,000 MI",
+                        "label": "Recommended interval for a basic preventive maintenance check"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-how-it-saves-3",
+                  "type": "text",
+                  "props": {
+                    "text": "If that happens often to multiple trucks over a single fleet, the costs can add up quick. Here are some ways that preventive maintenance can help you save instead:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-how-it-saves-4",
+                  "type": "heading",
+                  "props": {
+                    "text": "1. Reduces Major Repair Costs",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-how-it-saves-5",
+                  "type": "text",
+                  "props": {
+                    "text": "A minor oil leak or worn belt can easily turn into a total engine overhaul if ignored. Routine inspections help catch these issues early, allowing for small, affordable fixes instead of expensive emergency repairs.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-how-it-saves-6",
+                  "type": "heading",
+                  "props": {
+                    "text": "2. Extends Truck Life",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-how-it-saves-7",
+                  "type": "text",
+                  "props": {
+                    "text": "A truck that receives consistent maintenance lasts longer and performs better. Engines stay cleaner, parts wear evenly, and systems operate as intended, all of which increase your truck's resale value and lifespan.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-how-it-saves-8",
+                  "type": "heading",
+                  "props": {
+                    "text": "3. Boosts Fuel Efficiency",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-how-it-saves-9",
+                  "type": "text",
+                  "props": {
+                    "text": "Even a slight drop in fuel economy can add thousands to annual fuel costs. Replacing air filters, tuning engines, and maintaining tire pressure are small steps that lead to big fuel savings.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-how-it-saves-10",
+                  "type": "heading",
+                  "props": {
+                    "text": "4. Keeps You DOT-Compliant",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-how-it-saves-11",
+                  "type": "text",
+                  "props": {
+                    "text": "Fleet operators know the Department of Transportation (DOT) takes inspection failures seriously. Preventive maintenance helps you pass inspections and avoid costly fines or downtime from violations.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-hidden-costs",
+                  "type": "heading",
+                  "props": {
+                    "text": "The Hidden Costs of Reactive Repairs",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "hidden-costs"
+                  }
+                },
+                {
+                  "id": "p-hidden-costs-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Skipping scheduled maintenance doesn't just risk breakdowns; it hits you in ways that are easy to overlook. Reactive maintenance can cause:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-hidden-costs-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Lost loads or missed deadlines"
+                      },
+                      {
+                        "text": "Towing expenses and hotel costs for stranded drivers"
+                      },
+                      {
+                        "text": "Lower driver satisfaction and retention issues"
+                      },
+                      {
+                        "text": "Damaged reputation with clients relying on your reliability"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-hidden-costs-3",
+                  "type": "text",
+                  "props": {
+                    "text": "For fleet owners, those hours of lost productivity can mean the difference between a profitable month and one spent catching up. That's why partnering with a dependable service provider matters just as much as the maintenance itself.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-hidden-costs-4-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-hidden-costs-4",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-hidden-costs-4-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "order-parts-online",
+                                "label": "Shop Our Online Parts Store →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-how-often",
+                  "type": "heading",
+                  "props": {
+                    "text": "How Often Should You Schedule Preventive Maintenance?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "how-often"
+                  }
+                },
+                {
+                  "id": "p-how-often-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Your maintenance schedule depends on several factors: mileage, driving conditions, and truck age. As a rule of thumb, most semi trucks should undergo a basic preventive maintenance check every 10,000 to 20,000 miles or at least every three months for high-mileage fleets.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-how-often-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Sun State International's service team follows OEM and International® guidelines to tailor a maintenance plan that fits your specific operation. Whether you haul locally in Tampa or run long routes across the country, we'll help you create a schedule that maximizes uptime.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-warning-signs",
+                  "type": "heading",
+                  "props": {
+                    "text": "Signs Your Semi Truck Needs Immediate Service",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "warning-signs"
+                  }
+                },
+                {
+                  "id": "p-warning-signs-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Even with a maintenance plan in place, watch for warning signs that it's time for service:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-warning-signs-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Unusual engine noises or rough idling"
+                      },
+                      {
+                        "text": "Reduced fuel efficiency"
+                      },
+                      {
+                        "text": "Soft brakes or uneven braking"
+                      },
+                      {
+                        "text": "Warning lights that stay on"
+                      },
+                      {
+                        "text": "Oil or coolant leaks under the truck"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-warning-signs-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Catching these early can prevent small issues from turning into major downtime.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-why-choose-us",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Choose Sun State International for Preventive Maintenance",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "why-choose-us"
+                  }
+                },
+                {
+                  "id": "p-why-choose-us-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, we know how valuable your time and truck are. That's why our parts and service departments work together to make maintenance fast, transparent, and effective. Our customers trust us because we:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-why-choose-us-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Use genuine International® parts or verified aftermarket options"
+                      },
+                      {
+                        "text": "Offer five convenient locations across Tampa, Sarasota, Davenport, and Brooksville"
+                      },
+                      {
+                        "text": "Provide certified technicians who specialize in heavy-duty truck care"
+                      },
+                      {
+                        "text": "Deliver straightforward communication: no hidden fees, no guesswork"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-why-choose-us-3",
+                  "type": "text",
+                  "props": {
+                    "text": "We treat every truck that enters our bays like it's our own, because your success on the road is what drives ours.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/preventive-maintenance-for-semi-trucks-why-it-saves-you-more-than-it-costs/1.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Exterior of Sun State International Tampa service center"
+                    }
+                  }
+                },
+                {
+                  "id": "h-get-back-on-road",
+                  "type": "heading",
+                  "props": {
+                    "text": "Get Back On the Road With Confidence",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "get-back-on-road"
+                  }
+                },
+                {
+                  "id": "p-get-back-on-road-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Every mile you drive adds to your bottom line, but only if your truck is ready for the road ahead. A preventive maintenance plan ensures that you're not just reacting to problems but proactively protecting your business from them.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-get-back-on-road-2",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, we're here to help you minimize downtime, extend your truck's life, and keep your operations moving smoothly. Because when your truck runs better, your business does too.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-get-back-on-road-3",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "schedule-service",
+                        "label": "Schedule Your Service Appointment"
+                      },
+                      {
+                        "ctaId": "order-parts-online",
+                        "label": "Shop Parts Online"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Protect your investment",
+          "heading": "Let's plan your preventive maintenance.",
+          "body": "Call 800.741.7566 and our service teams in Tampa, Sarasota, Davenport or Brooksville will get you scheduled.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/preventive-maintenance-for-semi-trucks-why-it-saves-you-more-than-it-costs\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/preventive-maintenance-for-semi-trucks-why-it-saves-you-more-than-it-costs\"])) > .bz-card:nth-child(n+4) { display: none; }\n"
+}

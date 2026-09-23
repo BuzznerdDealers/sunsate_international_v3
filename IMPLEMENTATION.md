@@ -452,3 +452,29 @@ library. Re-running Parts 1 and 2 reproduces them, except that two posts dropped
 override: the dealer has since renamed `schedule-service` to "Schedule Service", which is the
 wording those posts wanted.
 
+---
+
+## 12. Blog handoff, Part 4 of 6 — nine more posts
+
+Nine new posts on the §9 layout: *Are Aftermarket Semi Truck Parts as Reliable as OEM?*,
+*International Truck Parts Benefits*, *Ordering Semi Truck Parts Online vs Local Service*,
+*Preventive Maintenance for Semi Trucks: Why It Saves You More Than It Costs*, *Preventive
+Maintenance Schedule for Semi Trucks*, *Semi Truck Brake Maintenance*, *Semi Truck Maintenance
+Mistakes That Cost Fleets Thousands*, *Signs It's Time to Replace Your Semi Truck Battery* and
+*Why You Need Reliable Semi Truck Service Centers Like Sun State International in Florida*. Body
+copy and contents rails match the handoff word for word, every rail link lands on its heading,
+and the blog page carries 39 cards.
+
+New shapes, and what they became:
+
+| Handoff | Here |
+|---|---|
+| `.mistake-head` (number badge + h2) | a row of two columns — a text block as the badge, a real heading block carrying the anchor — laid out by node styles |
+| `.pro-tip` | a text block in a column ruled in the accent down its left edge (node styles) |
+| `.grid-4` of `.interval-card` (mileage label + list) | **Card lists**, a new *Interval* card style, four across |
+| `.grid-2` of title-and-sentence cards | the **Feature list** block, two columns — one list rather than four copied boxes |
+
+Two posts set their own type in the handoff, and carry it in their own CSS: the mistakes post
+sets its headings at 26px (21px at phone width) to suit seven numbered ones, and the
+aftermarket post rules its comparison in ink under sentence-case headings with roomier cells.
+

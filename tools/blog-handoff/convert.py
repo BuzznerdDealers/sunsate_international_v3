@@ -308,6 +308,40 @@ def convert(path):
             assert all(len(r) == 3 for r in rows), rows
             out.append(n(nid("compare"), "compare-table", {"headA": heads[0], "headB": heads[1], "headC": heads[2],
                                                           "rows": [{"a": a, "b": b, "c": c} for a, b, c in rows]}))
+        elif el.name == "div" and "grid-4" in cls and el.find("div", class_="interval-card", recursive=False):
+            # Mileage cards: a small accent label over a list — Card lists, interval style.
+            items = []
+            for card in el.find_all("div", class_="interval-card", recursive=False):
+                mi, ul = [x for x in card.children if isinstance(x, Tag)]
+                assert "mi" in mi.get("class", []) and ul.name == "ul"
+                items.append({"title": plain(mi), "points": [{"text": plain(li)} for li in ul.find_all("li")]})
+            out.append(n(nid("cards"), "card-lists", {"variant": "interval", "items": items}))
+        elif el.name == "div" and "grid-2" in cls and all(
+                [x.name for x in card.children if isinstance(x, Tag)] == ["h3", "p"]
+                for card in el.find_all("div", class_="factor-card", recursive=False)):
+            # Title-and-sentence cards two across: the Feature list, as the four-up grid is.
+            items = [{"label": plain(card.find("h3")), "desc": plain(card.find("p"))}
+                     for card in el.find_all("div", class_="factor-card", recursive=False)]
+            out.append(n(nid("features"), "list", {"headingLevel": 2, "columns": 2, "items": items}))
+        elif el.name == "div" and "mistake-head" in cls:
+            # A numbered section heading: the number badge and a real heading block side
+            # by side, so the heading keeps its anchor for the rail and stays editable.
+            num, h = el.find("span", class_="mistake-num"), el.find("h2")
+            sec = h["id"]
+            out.append(row(f"mh-{sec}", [
+                col(f"mh-{sec}-badge", [text(f"mh-{sec}-num", plain(num), styles={
+                    "background": "accent", "textColor": "card", "fontSize": 16, "fontWeight": "800",
+                    "width": 36, "height": 36, "display": "flex", "alignItems": "center", "justifyContent": "center"})],
+                    span=1, styles={"flexShrink": 0, "marginRight": 12}),
+                col(f"mh-{sec}-col", [n(f"h-{sec}", "heading", {"text": plain(h), "headingLevel": 2, "align": "left", "anchor": sec})],
+                    span=11, styles={"flexGrow": 1}),
+            ], styles={"display": "flex", "alignItems": "center", "marginTop": 48, "marginBottom": 16}))
+        elif el.name == "div" and "pro-tip" in cls:
+            cid = nid("tip")
+            out.append(row(f"{cid}-row", [col(cid, [text(f"{cid}-text", inline_html(el))], styles={
+                "borderLeftWidth": 3, "borderTopWidth": 0, "borderRightWidth": 0, "borderBottomWidth": 0,
+                "borderStyle": "solid", "borderColor": "accent", "paddingTop": 4, "paddingBottom": 4,
+                "paddingLeft": 18, "marginBottom": 18, "fontSize": 15, "lineHeight": 1.8})]))
         elif el.name == "div" and "grid-4" in cls:
             # Title-and-sentence cards four across: the platform's Feature list.
             items = []
@@ -428,6 +462,23 @@ POST_CSS = {
     "common-problems-with-air-brake-parts-for-semi-trucks":
         "\n/* This article's lists run at a looser 1.8 leading than the other posts'. */\n"
         '[data-bz-node="art-body"] .ss-prose-list li { line-height: 1.8; }\n',
+    "semi-truck-maintenance-mistakes-that-cost-fleets-thousands":
+        "\n/* This article sets its headings a step smaller and closer, to suit seven numbered ones. */\n"
+        '[data-bz-node="art-body"] > .bz-block--heading h2,\n'
+        '[data-bz-node="art-body"] .bz-col > .bz-block--heading h2 { font-size: 26px; }\n'
+        '[data-bz-node="art-body"] > .bz-block--heading h2 { margin-top: 48px; }\n'
+        "@media (max-width: 640px) {\n"
+        '  [data-bz-node="art-body"] > .bz-block--heading h2,\n'
+        '  [data-bz-node="art-body"] .bz-col > .bz-block--heading h2 { font-size: 21px; }\n'
+        "}\n",
+    "are-aftermarket-semi-truck-parts-as-reliable-as-oem":
+        "\n/* This article's comparison is ruled in ink under sentence-case headings, with roomier cells. */\n"
+        '[data-bz-node="art-body"] .ss-cmp { margin-bottom: 34px; }\n'
+        '[data-bz-node="art-body"] .ss-cmp thead th { line-height: 1.3; text-transform: none; border-bottom: 2px solid var(--ink); }\n'
+        '[data-bz-node="art-body"] .ss-cmp tbody th,\n'
+        '[data-bz-node="art-body"] .ss-cmp td { padding: 14px; }\n'
+        '[data-bz-node="art-body"] .ss-cmp tbody th { width: auto; white-space: nowrap; }\n'
+        '@media (max-width: 640px) { [data-bz-node="art-body"] .ss-cmp th, [data-bz-node="art-body"] .ss-cmp td { font-size: 12.5px; } }\n',
 }
 
 
