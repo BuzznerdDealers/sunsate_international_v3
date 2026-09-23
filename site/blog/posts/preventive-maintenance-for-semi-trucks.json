@@ -1,0 +1,786 @@
+{
+  "slug": "preventive-maintenance-for-semi-trucks",
+  "title": "Preventive Maintenance for Semi Trucks Explained",
+  "date": "2026-02-06",
+  "description": "Preventive maintenance for semi trucks protects uptime and profits. Learn why it matters and schedule service today.",
+  "status": "published",
+  "coverImage": "/img/blog/preventive-maintenance-for-semi-trucks/hero.jpg",
+  "topic": "Service",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Service",
+          "title": "Preventive Maintenance for Semi Trucks Explained",
+          "topic": "Service",
+          "date": "February 6, 2026",
+          "readTime": "5 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/preventive-maintenance-for-semi-trucks/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Technician performing preventive maintenance inspection under an open International truck hood"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "What Is Preventive Maintenance?",
+                        "href": "#what-is-pm"
+                      },
+                      {
+                        "label": "Why Preventive Maintenance Matters",
+                        "href": "#why-pm-matters"
+                      },
+                      {
+                        "label": "Preventive Maintenance Examples",
+                        "href": "#pm-examples"
+                      },
+                      {
+                        "label": "Who Can Perform It",
+                        "href": "#who-performs"
+                      },
+                      {
+                        "label": "How Often It Should Be Done",
+                        "href": "#how-often"
+                      },
+                      {
+                        "label": "The Financial Side",
+                        "href": "#financial-side"
+                      },
+                      {
+                        "label": "Schedule Your Maintenance",
+                        "href": "#schedule-today"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "DUE FOR SERVICE?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Schedule your preventive maintenance visit today.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "schedule-service",
+                                "label": "Schedule Service →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "If you own or operate a semi truck, you already understand one thing: downtime is expensive.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "For fleet managers across Florida, every missed load, delayed delivery, or unexpected repair cuts directly into revenue. That's why preventive maintenance for semi trucks isn't optional. It's a strategy that protects your investment, your drivers, and your reputation.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-intro-2",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, we believe in doing things the right way. We don't wait for breakdowns to happen. We help our customers stay ahead of them. Let's walk through what preventive maintenance for semi trucks actually includes, who should perform them, and why they matter for your business.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-what-is-pm",
+                  "type": "heading",
+                  "props": {
+                    "text": "What Is Preventive Maintenance for Semi Trucks?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "what-is-pm"
+                  }
+                },
+                {
+                  "id": "p-what-is-pm-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Preventive maintenance for semi trucks is a structured plan of routine inspections, service, and part replacements designed to prevent major mechanical failures. Instead of reacting to breakdowns, you proactively:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-what-is-pm-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Inspect key systems"
+                      },
+                      {
+                        "text": "Replace wear components"
+                      },
+                      {
+                        "text": "Monitor performance"
+                      },
+                      {
+                        "text": "Document service history"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-what-is-pm-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Preventive maintenance is about controlling what you can. Think of it as protecting the engine, transmission, brakes, suspension, and emissions systems before small issues turn into costly repairs.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-why-pm-matters",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Preventive Maintenance Semi Truck Programs Matter",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "why-pm-matters"
+                  }
+                },
+                {
+                  "id": "p-why-pm-matters-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Preventive maintenance semi-truck programs help:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-why-pm-matters-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Extend engine life"
+                      },
+                      {
+                        "text": "Improve fuel efficiency"
+                      },
+                      {
+                        "text": "Reduce roadside breakdowns"
+                      },
+                      {
+                        "text": "Maintain warranty compliance"
+                      },
+                      {
+                        "text": "Protect resale value"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-why-pm-matters-3",
+                  "type": "text",
+                  "props": {
+                    "text": "When you treat maintenance as an investment instead of an expense, your truck works harder and longer for you. And at Sun State International, we respect your time. We make the process straightforward and efficient, so you're not juggling multiple vendors or waiting around for answers.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/preventive-maintenance-for-semi-trucks/1.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Technician performing a preventive maintenance inspection underneath a truck in the Sun State International service bay"
+                    }
+                  }
+                },
+                {
+                  "id": "h-pm-examples",
+                  "type": "heading",
+                  "props": {
+                    "text": "Preventive Maintenance Semi Truck Examples",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "pm-examples"
+                  }
+                },
+                {
+                  "id": "p-pm-examples-1",
+                  "type": "text",
+                  "props": {
+                    "text": "So what does a real maintenance plan look like? Here are common preventive maintenance semi-truck examples that should be part of a professional service schedule:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-pm-examples-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "group",
+                    "items": [
+                      {
+                        "title": "1. Engine and Fluid Services",
+                        "points": [
+                          {
+                            "text": "Oil and filter changes"
+                          },
+                          {
+                            "text": "Fuel filter replacement"
+                          },
+                          {
+                            "text": "Coolant system checks"
+                          },
+                          {
+                            "text": "Belt and hose inspections"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "2. Brake System Inspections",
+                        "points": [
+                          {
+                            "text": "Brake pad wear measurement"
+                          },
+                          {
+                            "text": "Air brake system testing"
+                          },
+                          {
+                            "text": "Slack adjuster checks"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "3. Tire and Suspension Checks",
+                        "points": [
+                          {
+                            "text": "Tire rotation and pressure monitoring"
+                          },
+                          {
+                            "text": "Alignment checks"
+                          },
+                          {
+                            "text": "Suspension component inspection"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "4. Electrical and Diagnostic Scans",
+                        "points": [
+                          {
+                            "text": "Battery testing"
+                          },
+                          {
+                            "text": "Alternator performance checks"
+                          },
+                          {
+                            "text": "Electronic control module scans"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-pm-examples-3",
+                  "type": "text",
+                  "props": {
+                    "text": "These routine inspections prevent the kind of failures that sideline trucks for days. If your truck needs replacement components during service, our team can quickly source high-quality parts.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-pm-examples-4-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-pm-examples-4",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-pm-examples-4-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "parts-department",
+                                "label": "Visit Our Parts Page →"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-who-performs",
+                  "type": "heading",
+                  "props": {
+                    "text": "Who Can Perform Preventive Maintenance Inspection on Semi Trucks?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "who-performs"
+                  }
+                },
+                {
+                  "id": "p-who-performs-1",
+                  "type": "text",
+                  "props": {
+                    "text": "This is a common question: who can perform preventive maintenance inspection on semi trucks? Technically, some routine inspections can be performed in-house by qualified fleet mechanics. However, for most owner-operators and many fleets, certified dealership technicians offer clear advantages:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-who-performs-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Access to manufacturer-grade diagnostic tools"
+                      },
+                      {
+                        "text": "Up-to-date technical bulletins"
+                      },
+                      {
+                        "text": "Warranty-safe service documentation"
+                      },
+                      {
+                        "text": "Specialized training on International® trucks"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-who-performs-3",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, our technicians understand commercial vehicles inside and out. We use advanced equipment and detailed inspection checklists to ensure nothing is overlooked.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-how-often",
+                  "type": "heading",
+                  "props": {
+                    "text": "How Often Should Preventive Maintenance Be Done?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "how-often"
+                  }
+                },
+                {
+                  "id": "p-how-often-1",
+                  "type": "text",
+                  "props": {
+                    "text": "The answer depends on:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-how-often-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Mileage"
+                      },
+                      {
+                        "text": "Load weight"
+                      },
+                      {
+                        "text": "Driving conditions"
+                      },
+                      {
+                        "text": "Engine type"
+                      },
+                      {
+                        "text": "Manufacturer recommendations"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-how-often-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Many preventive maintenance semi truck programs follow intervals such as:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-how-often-4",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Every 10,000–25,000 miles for oil service"
+                      },
+                      {
+                        "text": "Quarterly inspections for high-mileage trucks"
+                      },
+                      {
+                        "text": "Annual DOT inspections"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-how-often-5",
+                  "type": "text",
+                  "props": {
+                    "text": "If you operate in Florida's heat and humidity, you already know how tough the environment can be on engines and cooling systems. Preventive maintenance helps combat that wear. The key is consistency.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-financial-side",
+                  "type": "heading",
+                  "props": {
+                    "text": "The Financial Side of Preventive Maintenance",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "financial-side"
+                  }
+                },
+                {
+                  "id": "p-financial-side-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Skipping routine service might feel like saving money in the short term. But a failed turbo, blown head gasket, or major brake issue can cost thousands. More importantly, it costs time. When your truck sits in a repair bay unexpectedly, you're not hauling freight. You're not invoicing customers. You're not moving your business forward.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-financial-side-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Preventive maintenance for semi trucks reduces the likelihood of emergency repairs and gives you predictable operating costs. That predictability matters when you're managing payroll, fuel costs, and insurance.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-2",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/preventive-maintenance-for-semi-trucks/2.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Sun State International trailer back on the road after preventive maintenance service"
+                    }
+                  }
+                },
+                {
+                  "id": "h-schedule-today",
+                  "type": "heading",
+                  "props": {
+                    "text": "Schedule Your Preventive Maintenance Today",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "schedule-today"
+                  }
+                },
+                {
+                  "id": "p-schedule-today-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Preventive maintenance for semi trucks is one of the smartest investments you can make in your business. It protects your engine, income, and your reputation. Whether you operate one truck or manage an entire fleet, consistent preventive maintenance semi truck programs reduce downtime, improve reliability, and extend the life of your equipment.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-schedule-today-2",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, we believe your business deserves that level of care. If it's been a while since your last inspection, now is the time. Stay ahead of breakdowns. Protect your investment. And keep your truck working as hard as you do.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-schedule-today-3",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "schedule-service",
+                        "label": "Schedule Service Today"
+                      },
+                      {
+                        "ctaId": "parts-department",
+                        "label": "Explore Our Parts Department",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-share",
+                  "type": "post-share",
+                  "props": {
+                    "label": "Share",
+                    "items": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fpreventive-maintenance-for-semi-trucks",
+                        "newTab": true
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fpreventive-maintenance-for-semi-trucks&text=Preventive%20Maintenance%20for%20Semi%20Trucks%20Explained",
+                        "newTab": true
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fpreventive-maintenance-for-semi-trucks",
+                        "newTab": true
+                      },
+                      {
+                        "label": "Email",
+                        "url": "mailto:?subject=Preventive%20Maintenance%20for%20Semi%20Trucks%20Explained&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fpreventive-maintenance-for-semi-trucks",
+                        "newTab": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Stay ahead of breakdowns",
+          "heading": "Let's put your truck on a maintenance schedule.",
+          "body": "Call 800.741.7566 and our service teams in Tampa, Sarasota, Davenport or Brooksville will get you booked in.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/preventive-maintenance-for-semi-trucks\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/preventive-maintenance-for-semi-trucks\"])) > .bz-card:nth-child(n+4) { display: none; }\n"
+}

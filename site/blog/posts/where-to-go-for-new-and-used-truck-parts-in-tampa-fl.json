@@ -1,0 +1,494 @@
+{
+  "slug": "where-to-go-for-new-and-used-truck-parts-in-tampa-fl",
+  "title": "Where to Go For New and Used Truck Parts in Tampa, FL",
+  "date": "2026-04-04",
+  "description": "Looking for new or used truck parts in Tampa, FL? See what to look for and where Tampa fleets turn for dependable parts and service.",
+  "status": "published",
+  "coverImage": "/img/blog/where-to-go-for-new-and-used-truck-parts-in-tampa-fl/hero.jpg",
+  "topic": "Parts",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Parts",
+          "title": "Where to Go For New and Used Truck Parts in Tampa, FL",
+          "topic": "Parts",
+          "date": "April 4, 2026",
+          "readTime": "4 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/where-to-go-for-new-and-used-truck-parts-in-tampa-fl/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Sun State International team members reviewing parts paperwork at the parts counter"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "New Parts vs. Used Parts",
+                        "href": "#new-vs-used"
+                      },
+                      {
+                        "label": "What to Look For",
+                        "href": "#what-to-look-for"
+                      },
+                      {
+                        "label": "Why Sun State International",
+                        "href": "#why-sun-state"
+                      },
+                      {
+                        "label": "Get the Parts You Need",
+                        "href": "#get-what-you-need"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "NEED PARTS?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Order online or talk to our Tampa parts team today.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "order-parts-online",
+                                "label": "Shop Parts →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Tampa's commercial trucks don't get a break from the road, and their parts don't either. Whether you need a new OEM component or a reliable used part to keep an older truck running, finding the right source matters as much as finding the right part.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "For owner-operators and fleet managers in the Tampa area, that means knowing where to go before something breaks down, not scrambling to find it after. Here's what to look for and where Sun State International fits into that search.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-new-vs-used",
+                  "type": "heading",
+                  "props": {
+                    "text": "New Parts vs. Used Parts: What's the Difference?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "new-vs-used"
+                  }
+                },
+                {
+                  "id": "p-new-vs-used-1",
+                  "type": "text",
+                  "props": {
+                    "text": "New parts, whether OEM or aftermarket, come with predictable performance and a warranty behind them. They're the safer choice for critical systems like brakes, steering, and emissions components, where reliability isn't optional.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-new-vs-used-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Used parts can make sense for older trucks, discontinued models, or non-critical components where cost matters more than a warranty. The key is sourcing them from a dealer who inspects and verifies condition before selling, not a salvage yard with no accountability.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-what-to-look-for",
+                  "type": "heading",
+                  "props": {
+                    "text": "What to Look for in a Tampa Truck Parts Source",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "what-to-look-for"
+                  }
+                },
+                {
+                  "id": "checks-what-to-look-for-1",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "A large in-stock inventory of new and used parts for all makes and models"
+                      },
+                      {
+                        "text": "Staff who can verify fitment before you buy"
+                      },
+                      {
+                        "text": "Fast turnaround so your truck isn't sitting longer than it needs to"
+                      },
+                      {
+                        "text": "A service department that can install what they sell"
+                      },
+                      {
+                        "text": "Straightforward pricing and honest guidance on new vs. used"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-what-to-look-for-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Tampa fleets that skip this step often end up with the wrong part, a part that doesn't hold up, or a part with no support behind it if something goes wrong.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/where-to-go-for-new-and-used-truck-parts-in-tampa-fl/1.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Sun State International parts staff reviewing a customer order at the front desk"
+                    }
+                  }
+                },
+                {
+                  "id": "h-why-sun-state",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Sun State International",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "why-sun-state"
+                  }
+                },
+                {
+                  "id": "p-why-sun-state-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Sun State International's parts department serves Tampa and the surrounding area with access to OEM and aftermarket parts for all makes and models, not just International trucks. Our team can help you decide whether a new or used part is the right call for your situation, and our service department is right there to install it if you need us to.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-why-sun-state-2",
+                  "type": "text",
+                  "props": {
+                    "text": "You can also browse and order through our online parts store anytime, so you're not stuck waiting on a callback to know what's in stock.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-why-sun-state-3-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-why-sun-state-3",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-why-sun-state-3-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "order-parts-online",
+                                "label": "Shop Our Online Parts Store →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-get-what-you-need",
+                  "type": "heading",
+                  "props": {
+                    "text": "Get the Parts You Need, When You Need Them",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "get-what-you-need"
+                  }
+                },
+                {
+                  "id": "p-get-what-you-need-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Downtime in Tampa's heat and traffic isn't something any fleet can afford to wait out. Whether you're after a new component or a dependable used part, having a trusted source lined up before you need one is what keeps your trucks moving. Visit our Tampa parts department or order online, and schedule a service appointment if you need the part installed.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-get-what-you-need-2",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "order-parts-online",
+                        "label": "Shop for Parts",
+                        "style": "primary"
+                      },
+                      {
+                        "ctaId": "schedule-service",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-share",
+                  "type": "post-share",
+                  "props": {
+                    "label": "Share",
+                    "items": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhere-to-go-for-new-and-used-truck-parts-in-tampa-fl",
+                        "newTab": true
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhere-to-go-for-new-and-used-truck-parts-in-tampa-fl&text=Where%20to%20Go%20For%20New%20and%20Used%20Truck%20Parts%20in%20Tampa%2C%20FL",
+                        "newTab": true
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhere-to-go-for-new-and-used-truck-parts-in-tampa-fl",
+                        "newTab": true
+                      },
+                      {
+                        "label": "Email",
+                        "url": "mailto:?subject=Where%20to%20Go%20For%20New%20and%20Used%20Truck%20Parts%20in%20Tampa%2C%20FL&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhere-to-go-for-new-and-used-truck-parts-in-tampa-fl",
+                        "newTab": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Need parts in tampa?",
+          "heading": "Let's keep your fleet moving.",
+          "body": "Call 800.741.7566 and our parts and service teams in Tampa, Sarasota, Davenport or Brooksville will get you what you need.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/where-to-go-for-new-and-used-truck-parts-in-tampa-fl\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/where-to-go-for-new-and-used-truck-parts-in-tampa-fl\"])) > .bz-card:nth-child(n+4) { display: none; }\n"
+}

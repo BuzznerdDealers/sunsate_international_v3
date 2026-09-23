@@ -1,0 +1,1014 @@
+{
+  "slug": "common-causes-of-heavy-duty-truck-transmission-failure",
+  "title": "Common Causes of Heavy-Duty Truck Transmission Failure",
+  "date": "2026-03-13",
+  "description": "Learn common causes of heavy-duty truck transmission failure and how to prevent costly repairs.",
+  "status": "published",
+  "coverImage": "/img/blog/common-causes-of-heavy-duty-truck-transmission-failure/hero.jpg",
+  "topic": "Service",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Service",
+          "title": "Common Causes of Heavy-Duty Truck Transmission Failure",
+          "topic": "Service",
+          "date": "March 13, 2026",
+          "readTime": "5 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/common-causes-of-heavy-duty-truck-transmission-failure/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Red International truck with hood open inside the Sun State International service shop"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "Why Transmission Health Matters",
+                        "href": "#why-it-matters"
+                      },
+                      {
+                        "label": "Poor Maintenance & Fluid Issues",
+                        "href": "#poor-maintenance"
+                      },
+                      {
+                        "label": "Overloading the Truck",
+                        "href": "#overloading"
+                      },
+                      {
+                        "label": "Excessive Heat",
+                        "href": "#excessive-heat"
+                      },
+                      {
+                        "label": "Driver Shifting Habits",
+                        "href": "#shifting-habits"
+                      },
+                      {
+                        "label": "Worn Internal Components",
+                        "href": "#worn-components"
+                      },
+                      {
+                        "label": "Lack of Regular Inspections",
+                        "href": "#regular-inspections"
+                      },
+                      {
+                        "label": "Prevent Failure & Maximize Uptime",
+                        "href": "#prevent-failure"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "NEED SERVICE?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Schedule diagnostics or transmission repair today.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "schedule-service",
+                                "label": "Schedule Service →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "A heavy-duty truck transmission is built to handle enormous loads, long miles, and demanding road conditions. But even the most durable systems can fail when wear, maintenance issues, or driving conditions take their toll.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "For owner-operators and fleet managers, transmission problems can quickly turn into expensive downtime. When a truck isn't moving, neither is the business behind it. Understanding the common causes of heavy-duty truck transmission failure can help drivers catch problems early, protect their investment, and keep their trucks on the road longer.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-why-it-matters",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Transmission Health Matters for Heavy-Duty Trucks",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "why-it-matters"
+                  }
+                },
+                {
+                  "id": "p-why-it-matters-1",
+                  "type": "text",
+                  "props": {
+                    "text": "A heavy-duty truck transmission plays one of the most critical roles in the entire drivetrain. It transfers engine power to the wheels while managing torque and shifting across a wide range of speeds and loads.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-why-it-matters-2",
+                  "type": "text",
+                  "props": {
+                    "text": "When it fails, the results can be serious:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-why-it-matters-3",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Costly repair bills"
+                      },
+                      {
+                        "text": "Unexpected downtime"
+                      },
+                      {
+                        "text": "Missed delivery schedules"
+                      },
+                      {
+                        "text": "Reduced fuel efficiency"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-why-it-matters-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Drivetrain issues are among the most expensive repairs for trucks and fleets. Preventive maintenance and early diagnosis are the best ways to avoid these problems.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-why-it-matters-5",
+                  "type": "text",
+                  "props": {
+                    "text": "The best way to catch problems before they become costly issues is to schedule a service appointment with a reliable truck service provider. Schedule today with Sun State International to get a reliable expert opinion on your fleet's issues.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-why-it-matters-6-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-why-it-matters-6",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-why-it-matters-6-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "schedule-service",
+                                "label": "Diagnose Issues Early →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-poor-maintenance",
+                  "type": "heading",
+                  "props": {
+                    "text": "1. Poor Maintenance and Fluid Issues",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "poor-maintenance"
+                  }
+                },
+                {
+                  "id": "p-poor-maintenance-1",
+                  "type": "text",
+                  "props": {
+                    "text": "One of the most common causes of heavy-duty truck transmission failure is something surprisingly simple: neglected maintenance.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-poor-maintenance-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Transmission fluid plays several critical roles:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-poor-maintenance-3",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Lubricating gears"
+                      },
+                      {
+                        "text": "Preventing overheating"
+                      },
+                      {
+                        "text": "Reducing friction"
+                      },
+                      {
+                        "text": "Protecting internal components"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-poor-maintenance-4",
+                  "type": "text",
+                  "props": {
+                    "text": "When fluid becomes contaminated, low, or overheated, the transmission can quickly begin to suffer damage.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-poor-maintenance-5",
+                  "type": "text",
+                  "props": {
+                    "text": "Common maintenance mistakes include:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-poor-maintenance-6",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Skipping scheduled service intervals"
+                      },
+                      {
+                        "text": "Using the wrong transmission fluid"
+                      },
+                      {
+                        "text": "Ignoring fluid leaks"
+                      },
+                      {
+                        "text": "Running trucks with overheated systems"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-poor-maintenance-7",
+                  "type": "text",
+                  "props": {
+                    "text": "Routine inspections and preventative service go a long way toward protecting the life of a super heavy-duty truck transmission.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-overloading",
+                  "type": "heading",
+                  "props": {
+                    "text": "2. Overloading the Truck",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "overloading"
+                  }
+                },
+                {
+                  "id": "p-overloading-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Commercial trucks are designed to haul serious weight, but exceeding the recommended limits can place enormous stress on the drivetrain.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-overloading-2",
+                  "type": "text",
+                  "props": {
+                    "text": "When trucks are overloaded:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-overloading-3",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Gear components experience excessive strain"
+                      },
+                      {
+                        "text": "Heat builds up in the transmission system"
+                      },
+                      {
+                        "text": "Clutches wear down faster"
+                      },
+                      {
+                        "text": "Internal components begin to fail"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-overloading-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Over time, this can lead to premature failure and the need for heavy-duty truck transmission repair. Keeping loads within recommended limits not only protects the truck but also improves fuel efficiency and safety on the road.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-overloading-5",
+                  "type": "text",
+                  "props": {
+                    "text": "Keeping your truck running reliably starts with dependable parts. Sun State International's Parts Department carries quality components designed for heavy-duty trucks so you can repair problems quickly and get back on the road. Visit the Sun State International Parts Department to find the parts your truck needs today.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-overloading-6-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-overloading-6",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-overloading-6-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "order-parts-online",
+                                "label": "Shop Reliable Parts →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-excessive-heat",
+                  "type": "heading",
+                  "props": {
+                    "text": "3. Excessive Heat",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "excessive-heat"
+                  }
+                },
+                {
+                  "id": "p-excessive-heat-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Heat is one of the biggest enemies of any transmission system. Heavy-duty trucks often operate in demanding environments, including:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-excessive-heat-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Long highway routes"
+                      },
+                      {
+                        "text": "Stop-and-go city driving"
+                      },
+                      {
+                        "text": "Hot climates"
+                      },
+                      {
+                        "text": "Heavy cargo loads"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-excessive-heat-3",
+                  "type": "text",
+                  "props": {
+                    "text": "When temperatures climb too high, transmission fluid begins to break down. Without proper lubrication, gears and bearings wear down faster.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-excessive-heat-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Signs of overheating transmission systems may include:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-excessive-heat-5",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Burning smells"
+                      },
+                      {
+                        "text": "Delayed gear shifts"
+                      },
+                      {
+                        "text": "Slipping gears"
+                      },
+                      {
+                        "text": "Warning lights"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-excessive-heat-6",
+                  "type": "text",
+                  "props": {
+                    "text": "Catching these issues early can prevent a complete transmission breakdown.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-shifting-habits",
+                  "type": "heading",
+                  "props": {
+                    "text": "4. Driver Shifting Habits",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "shifting-habits"
+                  }
+                },
+                {
+                  "id": "p-shifting-habits-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Even the most advanced transmission systems rely on proper operation behind the wheel. Driver habits can significantly affect transmission lifespan.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-shifting-habits-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Common driving behaviors that contribute to failure include:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-shifting-habits-3",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Hard shifting between gears"
+                      },
+                      {
+                        "text": "Riding the clutch"
+                      },
+                      {
+                        "text": "Improper downshifting"
+                      },
+                      {
+                        "text": "Ignoring early signs of transmission trouble"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-shifting-habits-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Over thousands of miles, these habits place extra wear on internal components. For fleets and owner-operators alike, training drivers on proper shifting techniques can significantly extend the life of a heavy-duty truck transmission.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/common-causes-of-heavy-duty-truck-transmission-failure/1.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Sun State International team members reviewing a fleet truck in the service facility"
+                    }
+                  }
+                },
+                {
+                  "id": "h-worn-components",
+                  "type": "heading",
+                  "props": {
+                    "text": "5. Worn or Damaged Internal Components",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "worn-components"
+                  }
+                },
+                {
+                  "id": "p-worn-components-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Like any mechanical system, transmission parts eventually wear down.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-worn-components-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Key components that may fail over time include:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-worn-components-3",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Clutch assemblies"
+                      },
+                      {
+                        "text": "Bearings"
+                      },
+                      {
+                        "text": "Gear sets"
+                      },
+                      {
+                        "text": "Synchronizers"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-worn-components-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Heavy-duty trucks often accumulate hundreds of thousands of miles, so component wear is inevitable. However, catching early warning signs can prevent a small repair from turning into a full transmission replacement.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-worn-components-5",
+                  "type": "text",
+                  "props": {
+                    "text": "Common symptoms of transmission wear include:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-worn-components-6",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Grinding noises"
+                      },
+                      {
+                        "text": "Difficulty shifting"
+                      },
+                      {
+                        "text": "Slipping gears"
+                      },
+                      {
+                        "text": "Reduced power transfer"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-worn-components-7",
+                  "type": "text",
+                  "props": {
+                    "text": "If these issues appear, professional inspection and heavy-duty truck transmission repair should happen as soon as possible.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-regular-inspections",
+                  "type": "heading",
+                  "props": {
+                    "text": "6. Lack of Regular Inspections",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "regular-inspections"
+                  }
+                },
+                {
+                  "id": "p-regular-inspections-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Preventive inspections are one of the most effective ways to avoid major transmission problems.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-regular-inspections-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Routine service allows technicians to:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-regular-inspections-3",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Check fluid levels and condition"
+                      },
+                      {
+                        "text": "Inspect seals and gaskets"
+                      },
+                      {
+                        "text": "Evaluate clutch and gear wear"
+                      },
+                      {
+                        "text": "Identify early signs of failure"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-regular-inspections-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Many transmission failures begin as small issues that go unnoticed until they become major repairs. Regular service visits give technicians the opportunity to catch these problems early and protect the life of a super heavy-duty truck transmission.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-why-trust-us",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Truck Owners Trust Sun State International",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "why-trust-us"
+                  }
+                },
+                {
+                  "id": "p-why-trust-us-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Truck operators rely on their equipment every day, and when something goes wrong, they need a service team they can trust. Sun State International has built its reputation on dependable service, quality parts, and a commitment to supporting the success of its customers. From diagnostics to full heavy-duty truck transmission repair, Sun State International provides the support needed to keep trucks running at their best.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-2",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/common-causes-of-heavy-duty-truck-transmission-failure/2.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Sun State International service desk staff working at the front counter"
+                    }
+                  }
+                },
+                {
+                  "id": "h-prevent-failure",
+                  "type": "heading",
+                  "props": {
+                    "text": "Prevent Failure and Maximize Uptime",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "prevent-failure"
+                  }
+                },
+                {
+                  "id": "p-prevent-failure-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Transmission problems don't have to turn into costly breakdowns. If your truck is showing signs of trouble or is due for preventative maintenance, our experienced technicians are ready to help. Schedule service with Sun State International's Service Department and keep your truck running reliably mile after mile. Dependable trucks start with dependable service.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-prevent-failure-2",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "schedule-service",
+                        "label": "Schedule Service with Sun State International"
+                      },
+                      {
+                        "ctaId": "order-parts-online",
+                        "label": "Shop Parts"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-share",
+                  "type": "post-share",
+                  "props": {
+                    "label": "Share",
+                    "items": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fcommon-causes-of-heavy-duty-truck-transmission-failure",
+                        "newTab": true
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fcommon-causes-of-heavy-duty-truck-transmission-failure&text=Common%20Causes%20of%20Heavy-Duty%20Truck%20Transmission%20Failure",
+                        "newTab": true
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fcommon-causes-of-heavy-duty-truck-transmission-failure",
+                        "newTab": true
+                      },
+                      {
+                        "label": "Email",
+                        "url": "mailto:?subject=Common%20Causes%20of%20Heavy-Duty%20Truck%20Transmission%20Failure&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fcommon-causes-of-heavy-duty-truck-transmission-failure",
+                        "newTab": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Showing signs of transmission trouble?",
+          "heading": "Let's keep your fleet moving.",
+          "body": "Call 800.741.7566 and our service teams in Tampa, Sarasota, Davenport or Brooksville will get you back on the road.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/common-causes-of-heavy-duty-truck-transmission-failure\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/common-causes-of-heavy-duty-truck-transmission-failure\"])) > .bz-card:nth-child(n+4) { display: none; }\n"
+}

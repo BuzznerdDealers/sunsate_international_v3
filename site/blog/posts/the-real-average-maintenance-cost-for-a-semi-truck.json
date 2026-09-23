@@ -1,0 +1,735 @@
+{
+  "slug": "the-real-average-maintenance-cost-for-a-semi-truck",
+  "title": "The Real Average Maintenance Cost for a Semi Truck",
+  "date": "2026-01-02",
+  "description": "Learn the real average maintenance cost for a semi truck, and how smart parts and service decisions can lower it long-term.",
+  "status": "published",
+  "coverImage": "/img/blog/the-real-average-maintenance-cost-for-a-semi-truck/hero.jpg",
+  "topic": "Service",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Service",
+          "title": "The Real Average Maintenance Cost for a Semi Truck",
+          "topic": "Service",
+          "date": "January 2, 2026",
+          "readTime": "5 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/the-real-average-maintenance-cost-for-a-semi-truck/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Sun State International service bay with multiple heavy-duty trucks up on lifts for maintenance"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "What Is the Average Maintenance Cost?",
+                        "href": "#average-cost"
+                      },
+                      {
+                        "label": "Breaking Down Maintenance Costs",
+                        "href": "#cost-breakdown"
+                      },
+                      {
+                        "label": "Why Costs Vary So Much",
+                        "href": "#why-costs-vary"
+                      },
+                      {
+                        "label": "Preventive Maintenance",
+                        "href": "#preventive-maintenance"
+                      },
+                      {
+                        "label": "The Role of Parts Quality",
+                        "href": "#parts-quality"
+                      },
+                      {
+                        "label": "Why Service Expertise Matters",
+                        "href": "#service-expertise"
+                      },
+                      {
+                        "label": "How We Help Lower Costs",
+                        "href": "#how-we-help"
+                      },
+                      {
+                        "label": "A Well-Maintained Fleet",
+                        "href": "#well-maintained-fleet"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "NEED SERVICE?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Schedule a service appointment with our team today.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "schedule-service",
+                                "label": "Schedule Service →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "If you own or operate a semi truck, you already know one thing for certain: maintenance is not optional.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "It's one of the largest and most predictable expenses in your operation, and it directly impacts uptime, safety, and profitability. Yet many owner-operators and fleet managers still underestimate the average maintenance cost for a semi truck, or struggle to understand where those dollars really go.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-intro-2",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, we work with Florida-based owner-operators and fleets every day. One of the most common conversations we have is about controlling semi truck maintenance costs without cutting corners that lead to bigger problems later. Let's break down what maintenance truly costs, what drives those numbers, and how the right parts and service strategy can protect your long-term ROI.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-average-cost",
+                  "type": "heading",
+                  "props": {
+                    "text": "What Is the Average Maintenance Cost for a Semi Truck?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "average-cost"
+                  }
+                },
+                {
+                  "id": "p-average-cost-1",
+                  "type": "text",
+                  "props": {
+                    "text": "On average, the cost to maintain a semi truck ranges from <strong>$15,000 to $25,000 per year per truck</strong>, depending on mileage, usage, truck age, and service habits. For high-mileage trucks, annual maintenance can climb even higher, especially when preventive care is delayed or parts quality is compromised.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "stats-average-cost-2",
+                  "type": "statBand",
+                  "props": {
+                    "stats": [
+                      {
+                        "value": "$15,000–$25,000",
+                        "label": "Typical annual maintenance cost per truck"
+                      },
+                      {
+                        "value": "$15K vs $30K",
+                        "label": "The gap between two similar trucks often comes down to service decisions, not luck"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-average-cost-3",
+                  "type": "text",
+                  "props": {
+                    "text": "The key takeaway? Maintenance is unavoidable, but unplanned maintenance is what really hurts.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-cost-breakdown",
+                  "type": "heading",
+                  "props": {
+                    "text": "Breaking Down Semi Truck Maintenance Costs",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "cost-breakdown"
+                  }
+                },
+                {
+                  "id": "p-cost-breakdown-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Understanding your truck repair cost breakdown helps you plan smarter and avoid surprises. While every operation is different, most maintenance expenses fall into these core categories.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-cost-breakdown-2",
+                  "type": "heading",
+                  "props": {
+                    "text": "Preventive Maintenance and Inspections",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-cost-breakdown-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Routine services like oil changes, fluid checks, filters, DOT inspections, and basic adjustments are your first line of defense. These services are relatively affordable compared to major repairs, yet they have the biggest impact on long-term reliability. Skipping preventive maintenance often leads to higher fleet maintenance expenses down the road, especially when small issues turn into roadside breakdowns.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-cost-breakdown-4",
+                  "type": "heading",
+                  "props": {
+                    "text": "Wear-and-Tear Components",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-cost-breakdown-5",
+                  "type": "text",
+                  "props": {
+                    "text": "Brakes, tires, belts, hoses, and suspension parts wear out by design. These costs are predictable and should be budgeted annually. Proactive replacement keeps your truck safer and helps maintain fuel efficiency.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-cost-breakdown-6",
+                  "type": "heading",
+                  "props": {
+                    "text": "Major Repairs",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-cost-breakdown-7",
+                  "type": "text",
+                  "props": {
+                    "text": "Engine work, transmission issues, aftertreatment systems, and electrical diagnostics account for the most expensive portion of semi truck maintenance costs. These repairs often result from deferred service, improper parts, or inconsistent maintenance records.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/the-real-average-maintenance-cost-for-a-semi-truck/1.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Sun State International technician performing a preventive inspection on a semi truck's front axle"
+                    }
+                  }
+                },
+                {
+                  "id": "h-why-costs-vary",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Maintenance Costs Vary So Much",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "why-costs-vary"
+                  }
+                },
+                {
+                  "id": "p-why-costs-vary-1",
+                  "type": "text",
+                  "props": {
+                    "text": "No two trucks are maintained the same way. Several factors influence the true average maintenance cost for a semi truck.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "features-why-costs-vary-2",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 2,
+                    "columns": 4,
+                    "items": [
+                      {
+                        "label": "Mileage & Duty Cycle",
+                        "desc": "Long-haul trucks accumulate wear faster than regional or vocational units."
+                      },
+                      {
+                        "label": "Truck Age",
+                        "desc": "Older trucks typically require more frequent repairs."
+                      },
+                      {
+                        "label": "Driver Habits",
+                        "desc": "Aggressive driving increases wear on brakes, tires, and driveline components."
+                      },
+                      {
+                        "label": "Service Quality",
+                        "desc": "Experienced technicians catch problems earlier."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-why-costs-vary-3",
+                  "type": "text",
+                  "props": {
+                    "text": "And parts selection: OEM and high-quality aftermarket parts last longer and perform better. The difference between a $15,000 year and a $30,000 year often comes down to service decisions, not luck.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-preventive-maintenance",
+                  "type": "heading",
+                  "props": {
+                    "text": "Preventive Maintenance: The Most Effective Cost-Control Tool",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "preventive-maintenance"
+                  }
+                },
+                {
+                  "id": "p-preventive-maintenance-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Preventive maintenance isn't just good practice; it's the most reliable way to lower truck operating costs over time. Regular inspections help identify issues before they become expensive repairs, reduce downtime, and extend the life of major components.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-preventive-maintenance-2",
+                  "type": "text",
+                  "props": {
+                    "text": "If you're looking to stay ahead of repairs, our parts department carries the components you need to keep your trucks running right.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-preventive-maintenance-3-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-preventive-maintenance-3",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-preventive-maintenance-3-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "order-parts-online",
+                                "label": "Visit Our Parts Department →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-parts-quality",
+                  "type": "heading",
+                  "props": {
+                    "text": "The Role of Parts Quality in Long-Term Cost Control",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "parts-quality"
+                  }
+                },
+                {
+                  "id": "p-parts-quality-1",
+                  "type": "text",
+                  "props": {
+                    "text": "One of the most overlooked drivers of fleet maintenance expenses is parts quality. Cheaper parts may reduce upfront costs, but they often fail sooner, cause collateral damage, or require more labor to replace. Using reliable, properly matched parts helps:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-parts-quality-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Reduce repeat repairs"
+                      },
+                      {
+                        "text": "Protect major systems like engines and transmissions"
+                      },
+                      {
+                        "text": "Improve overall uptime"
+                      },
+                      {
+                        "text": "Lower lifetime cost to maintain a semi truck"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-parts-quality-3",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, our parts team works directly with technicians and customers to ensure the right part is used the first time, saving both time and money.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-service-expertise",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Service Expertise Matters More Than Ever",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "service-expertise"
+                  }
+                },
+                {
+                  "id": "p-service-expertise-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Modern semi trucks are more advanced than ever. Diagnostics, emissions systems, and integrated electronics require trained technicians who understand today's equipment. Choosing the right service partner can dramatically reduce unnecessary repairs and shorten downtime.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-service-expertise-2",
+                  "type": "text",
+                  "props": {
+                    "text": "A professional service department doesn't just fix problems; it helps you plan maintenance schedules, track trends, and make informed decisions that stabilize semi truck maintenance costs year over year.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-how-we-help",
+                  "type": "heading",
+                  "props": {
+                    "text": "How Sun State International Helps Lower Maintenance Costs",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "how-we-help"
+                  }
+                },
+                {
+                  "id": "p-how-we-help-1",
+                  "type": "text",
+                  "props": {
+                    "text": "We know that for owner-operators and fleets alike, every dollar matters. That's why Sun State International focuses on being more than a repair stop. Our parts and service teams are built to support long-term reliability, not just one-time fixes. We offer:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-how-we-help-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Experienced technicians who understand real-world trucking demands"
+                      },
+                      {
+                        "text": "A well-stocked parts department to reduce downtime"
+                      },
+                      {
+                        "text": "Straightforward communication and transparent service recommendations"
+                      },
+                      {
+                        "text": "Support for both individual trucks and growing fleets"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-how-we-help-3",
+                  "type": "text",
+                  "props": {
+                    "text": "If you're ready to take control of your truck operating costs, our Service Department is here to help.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-2",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/the-real-average-maintenance-cost-for-a-semi-truck/2.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Well-maintained Sun State International semi truck back on the road"
+                    }
+                  }
+                },
+                {
+                  "id": "h-well-maintained-fleet",
+                  "type": "heading",
+                  "props": {
+                    "text": "Support You Need for a Well-Maintained Fleet",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "well-maintained-fleet"
+                  }
+                },
+                {
+                  "id": "p-well-maintained-fleet-1",
+                  "type": "text",
+                  "props": {
+                    "text": "The average maintenance cost for a semi truck isn't just a number; it's a reflection of how well that truck is cared for over time. Preventive maintenance, quality parts, and expert service all work together to protect uptime and profitability.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-well-maintained-fleet-2",
+                  "type": "text",
+                  "props": {
+                    "text": "When maintenance is handled proactively, it becomes a predictable investment instead of a financial surprise. And that's exactly the kind of support Sun State International is built to provide: dependable, professional, and focused on keeping you moving forward.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-well-maintained-fleet-3",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "schedule-service"
+                      },
+                      {
+                        "ctaId": "order-parts-online",
+                        "label": "Shop Parts Online"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Take control of your costs",
+          "heading": "Let's plan your maintenance right.",
+          "body": "Call 800.741.7566 and our service teams in Tampa, Sarasota, Davenport or Brooksville will help you get ahead of repairs.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/the-real-average-maintenance-cost-for-a-semi-truck\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/the-real-average-maintenance-cost-for-a-semi-truck\"])) > .bz-card:nth-child(n+4) { display: none; }\n"
+}

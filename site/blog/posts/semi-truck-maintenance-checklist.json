@@ -1,0 +1,812 @@
+{
+  "slug": "semi-truck-maintenance-checklist",
+  "title": "Maintain Efficiency With a Semi Truck Maintenance Checklist",
+  "date": "2026-01-16",
+  "description": "Follow this semi truck maintenance checklist to reduce downtime, prevent repairs, and keep your fleet moving.",
+  "status": "published",
+  "coverImage": "/img/blog/semi-truck-maintenance-checklist/hero.jpg",
+  "topic": "Service",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Service",
+          "title": "Maintain Efficiency With a Semi Truck Maintenance Checklist",
+          "topic": "Service",
+          "date": "January 16, 2026",
+          "readTime": "4 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/semi-truck-maintenance-checklist/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Technician completing a semi truck maintenance checklist inspection in the trailer yard"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "Why Every Operation Needs a Checklist",
+                        "href": "#why-checklist"
+                      },
+                      {
+                        "label": "Daily Truck Inspection List",
+                        "href": "#daily-inspection"
+                      },
+                      {
+                        "label": "Weekly Preventive Maintenance Checklist",
+                        "href": "#weekly-checklist"
+                      },
+                      {
+                        "label": "Monthly Maintenance Guide",
+                        "href": "#monthly-guide"
+                      },
+                      {
+                        "label": "Quarterly and Seasonal Service Plan",
+                        "href": "#quarterly-plan"
+                      },
+                      {
+                        "label": "DOT Inspections & Compliance",
+                        "href": "#dot-compliance"
+                      },
+                      {
+                        "label": "The Role of Quality Parts",
+                        "href": "#quality-parts"
+                      },
+                      {
+                        "label": "When Professional Service Helps",
+                        "href": "#professional-service"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "NEED SERVICE?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Schedule your next maintenance visit today.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "schedule-service",
+                                "label": "Schedule Service →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Unexpected breakdowns rarely happen at a convenient time.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "For owner-operators and fleet managers, one missed delivery can quickly turn into lost revenue, frustrated customers, and added pressure on an already tight schedule. A well-structured semi truck maintenance checklist helps eliminate guesswork and gives you a clear plan to protect your equipment, your drivers, and your business.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-intro-2",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, we work with hardworking drivers across Florida who rely on consistency, honesty, and dependable service. This checklist is designed to support long-term reliability, not just pass inspections, but keep trucks performing day after day.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-why-checklist",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Every Operation Needs a Semi Truck Maintenance Checklist",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "why-checklist"
+                  }
+                },
+                {
+                  "id": "p-why-checklist-1",
+                  "type": "text",
+                  "props": {
+                    "text": "A proactive preventive maintenance checklist keeps small issues from becoming expensive repairs. Preventive maintenance can reduce vehicle downtime while extending overall equipment life. That kind of savings adds up quickly for owner-operators and small fleets trying to stay profitable. More importantly, routine maintenance builds confidence. When drivers trust their equipment, they drive safer, plan better routes, and avoid unnecessary stress.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-daily-inspection",
+                  "type": "heading",
+                  "props": {
+                    "text": "Daily Truck Inspection List: Start Every Trip Right",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "daily-inspection"
+                  }
+                },
+                {
+                  "id": "p-daily-inspection-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Daily inspections are your first line of defense. This truck inspection list should be completed before every trip:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-1-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "fig-1-col",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "marginTop": 8,
+                          "marginBottom": 24,
+                          "radius": 4,
+                          "overflow": "hidden"
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "fig-1",
+                          "type": "image",
+                          "props": {
+                            "width": "full",
+                            "image": {
+                              "src": "/img/blog/semi-truck-maintenance-checklist/1.jpg",
+                              "width": 1280,
+                              "height": 720,
+                              "alt": "Daily truck inspection list covering fluids, tires, lights, brakes, and mirrors"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "checks-daily-inspection-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "title": "Fluids",
+                        "text": "— Engine oil, coolant, DEF, windshield washer fluid"
+                      },
+                      {
+                        "title": "Tires",
+                        "text": "— Inflation, tread depth, sidewall damage"
+                      },
+                      {
+                        "title": "Lights & Electrical",
+                        "text": "— Headlights, brake lights, turn signals"
+                      },
+                      {
+                        "title": "Brakes",
+                        "text": "— Air pressure, warning indicators, audible leaks"
+                      },
+                      {
+                        "title": "Mirrors & Wipers",
+                        "text": "— Visibility and secure mounting"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-daily-inspection-3",
+                  "type": "text",
+                  "props": {
+                    "text": "These checks don't take long, but they help catch problems before they leave you stranded on the shoulder.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-weekly-checklist",
+                  "type": "heading",
+                  "props": {
+                    "text": "Weekly Preventive Maintenance Checklist",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "weekly-checklist"
+                  }
+                },
+                {
+                  "id": "p-weekly-checklist-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Weekly inspections allow you to dig a little deeper and spot wear early:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-weekly-checklist-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Battery connections and corrosion"
+                      },
+                      {
+                        "text": "Air filters and intake system"
+                      },
+                      {
+                        "text": "Suspension components and shocks"
+                      },
+                      {
+                        "text": "Visible fluid leaks"
+                      },
+                      {
+                        "text": "Exhaust and emission system indicators"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-weekly-checklist-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Following a weekly preventive maintenance checklist keeps your truck road-ready while reducing surprise service visits.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-monthly-guide",
+                  "type": "heading",
+                  "props": {
+                    "text": "Monthly Semi Truck Maintenance Guide",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "monthly-guide"
+                  }
+                },
+                {
+                  "id": "p-monthly-guide-1",
+                  "type": "text",
+                  "props": {
+                    "text": "A monthly semi truck maintenance guide focuses on performance-critical systems:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-monthly-guide-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Engine diagnostics and fault codes"
+                      },
+                      {
+                        "text": "Brake lining and drum wear"
+                      },
+                      {
+                        "text": "Transmission fluid levels"
+                      },
+                      {
+                        "text": "Steering alignment and handling"
+                      },
+                      {
+                        "text": "Cooling system condition"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-monthly-guide-3",
+                  "type": "text",
+                  "props": {
+                    "text": "This is also a good time to review service records and adjust your fleet truck service plan based on mileage, load weight, and driving conditions. Need parts you can trust? Visit the Sun State International Parts Department to get quality components that keep your maintenance plan on track.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-monthly-guide-4-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-monthly-guide-4",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-monthly-guide-4-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "parts-department",
+                                "label": "Visit the Parts Department →"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "fig-2",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/semi-truck-maintenance-checklist/2.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Technician retrieving quality parts from stocked bins at Sun State International"
+                    }
+                  }
+                },
+                {
+                  "id": "h-quarterly-plan",
+                  "type": "heading",
+                  "props": {
+                    "text": "Quarterly and Seasonal Fleet Truck Service Plan",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "quarterly-plan"
+                  }
+                },
+                {
+                  "id": "p-quarterly-plan-1",
+                  "type": "text",
+                  "props": {
+                    "text": "For businesses running multiple units, a structured fleet truck service plan ensures consistency across the entire operation. Quarterly or seasonal service should include:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-quarterly-plan-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Full engine and drivetrain inspection"
+                      },
+                      {
+                        "text": "Cooling system service before peak summer months"
+                      },
+                      {
+                        "text": "Brake system testing and adjustments"
+                      },
+                      {
+                        "text": "HVAC performance checks"
+                      },
+                      {
+                        "text": "Software and system updates"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-quarterly-plan-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Florida's heat, humidity, and stop-and-go traffic can accelerate wear, making seasonal maintenance especially important.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-dot-compliance",
+                  "type": "heading",
+                  "props": {
+                    "text": "DOT Inspections and Compliance Readiness",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "dot-compliance"
+                  }
+                },
+                {
+                  "id": "p-dot-compliance-1",
+                  "type": "text",
+                  "props": {
+                    "text": "A strong truck fleet maintenance checklist also supports DOT compliance. Regular inspections help ensure:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-dot-compliance-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Brake systems meet federal safety standards"
+                      },
+                      {
+                        "text": "Tires and wheels remain road-legal"
+                      },
+                      {
+                        "text": "Lighting and reflective markings are visible"
+                      },
+                      {
+                        "text": "Safety equipment is present and functional"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-dot-compliance-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Well-documented maintenance records make roadside inspections smoother and protect your operation from avoidable violations.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-quality-parts",
+                  "type": "heading",
+                  "props": {
+                    "text": "The Role of Quality Parts in Preventive Maintenance",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "quality-parts"
+                  }
+                },
+                {
+                  "id": "p-quality-parts-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Even the best checklist can fall short if low-quality parts are used. Reliable components reduce repeat repairs, improve safety, and protect long-term performance. While cheaper parts may look appealing upfront, they often lead to more downtime and higher labor costs. Sun State International offers dependable parts designed to meet heavy-duty demands, helping owner-operators stay focused on the road, not repeat repairs.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-professional-service",
+                  "type": "heading",
+                  "props": {
+                    "text": "When Professional Service Makes the Difference",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "professional-service"
+                  }
+                },
+                {
+                  "id": "p-professional-service-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Some maintenance tasks are best handled by trained technicians with the right diagnostic tools. Professional service is recommended for:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-professional-service-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Engine performance concerns"
+                      },
+                      {
+                        "text": "Brake system repairs"
+                      },
+                      {
+                        "text": "Transmission and driveline issues"
+                      },
+                      {
+                        "text": "Electrical and emissions diagnostics"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-professional-service-3",
+                  "type": "text",
+                  "props": {
+                    "text": "When it's time for expert support, schedule service with Sun State International and work with a team that respects your time, your truck, and your livelihood.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-long-term-advantage",
+                  "type": "heading",
+                  "props": {
+                    "text": "Turning a Checklist Into a Long-Term Advantage",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "long-term-advantage"
+                  }
+                },
+                {
+                  "id": "p-long-term-advantage-1",
+                  "type": "text",
+                  "props": {
+                    "text": "The most effective semi truck maintenance checklist is one that becomes part of your routine. Keep it simple, stay consistent, and document every service. Over time, maintenance trends emerge, helping you plan repairs, budget accurately, and avoid costly downtime.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-long-term-advantage-2",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, parts and service are about more than fixing problems. They're about helping drivers and fleets build something dependable, mile after mile. With the right checklist and the right support, your trucks can stay productive, safe, and ready for whatever the road brings.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-long-term-advantage-3",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "parts-department",
+                        "label": "Parts Department",
+                        "style": "primary"
+                      },
+                      {
+                        "ctaId": "schedule-service",
+                        "label": "Schedule Your Service Appointment",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-share",
+                  "type": "post-share",
+                  "props": {
+                    "label": "Share",
+                    "items": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fsemi-truck-maintenance-checklist",
+                        "newTab": true
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fsemi-truck-maintenance-checklist&text=Maintain%20Efficiency%20With%20a%20Semi%20Truck%20Maintenance%20Checklist",
+                        "newTab": true
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fsemi-truck-maintenance-checklist",
+                        "newTab": true
+                      },
+                      {
+                        "label": "Email",
+                        "url": "mailto:?subject=Maintain%20Efficiency%20With%20a%20Semi%20Truck%20Maintenance%20Checklist&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fsemi-truck-maintenance-checklist",
+                        "newTab": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Ready for your next service?",
+          "heading": "Let's keep your checklist on schedule.",
+          "body": "Call 800.741.7566 and our service teams in Tampa, Sarasota, Davenport or Brooksville will get you booked in.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/semi-truck-maintenance-checklist\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/semi-truck-maintenance-checklist\"])) > .bz-card:nth-child(n+4) { display: none; }\n"
+}

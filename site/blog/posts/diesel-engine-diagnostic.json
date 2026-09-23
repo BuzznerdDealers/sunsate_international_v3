@@ -1,0 +1,931 @@
+{
+  "slug": "diesel-engine-diagnostic",
+  "title": "Common Signs You Need a Diesel Engine Diagnostic",
+  "date": "2026-02-13",
+  "description": "Experiencing engine warning signs? Catch issues early. Schedule a diesel engine diagnostic with Sun State International today.",
+  "status": "published",
+  "coverImage": "/img/blog/diesel-engine-diagnostic/hero.jpg",
+  "topic": "Service",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Service",
+          "title": "Common Signs You Need a Diesel Engine Diagnostic",
+          "topic": "Service",
+          "date": "February 13, 2026",
+          "readTime": "5 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/diesel-engine-diagnostic/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Technician diagnosing an International truck engine under the hood"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "What Is a Diesel Engine Diagnostic?",
+                        "href": "#what-is-diagnostic"
+                      },
+                      {
+                        "label": "1. Check Engine Light",
+                        "href": "#check-engine-light"
+                      },
+                      {
+                        "label": "2. Loss of Power",
+                        "href": "#loss-of-power"
+                      },
+                      {
+                        "label": "3. Excessive Smoke",
+                        "href": "#excessive-smoke"
+                      },
+                      {
+                        "label": "4. Decreased Fuel Efficiency",
+                        "href": "#fuel-efficiency"
+                      },
+                      {
+                        "label": "5. Hard Starts or Rough Idling",
+                        "href": "#hard-starts"
+                      },
+                      {
+                        "label": "6. Unusual Engine Noises",
+                        "href": "#unusual-noises"
+                      },
+                      {
+                        "label": "Why Professional Diagnostics Matter",
+                        "href": "#why-professional-matters"
+                      },
+                      {
+                        "label": "When to Schedule",
+                        "href": "#when-to-schedule"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "NEED A DIAGNOSTIC?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Schedule service with our team today.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "schedule-service",
+                                "label": "Schedule Service →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "If you run a trucking business, you already know this: when a truck is down, money stops moving.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "For owner-operators and fleet managers alike, recognizing when you need a diesel engine diagnostic isn't just about avoiding inconvenience. It's about protecting your investment, your drivers, and your bottom line. Let's break down the most common signs your truck needs a professional diesel engine diagnostic, and why catching problems early matters.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-what-is-diagnostic",
+                  "type": "heading",
+                  "props": {
+                    "text": "What Is a Diesel Engine Diagnostic?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "what-is-diagnostic"
+                  }
+                },
+                {
+                  "id": "p-what-is-diagnostic-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Before we talk about warning signs, it helps to answer a common question: what is the diesel engine diagnostic tool? A diesel engine diagnostic involves connecting specialized diesel engine diagnostic tools to your truck's onboard computer system. Modern International® trucks and other heavy-duty vehicles rely on sensors and electronic control modules (ECMs) to monitor:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-what-is-diagnostic-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Fuel injection timing"
+                      },
+                      {
+                        "text": "Turbocharger performance"
+                      },
+                      {
+                        "text": "Exhaust aftertreatment systems"
+                      },
+                      {
+                        "text": "Engine temperature and pressure"
+                      },
+                      {
+                        "text": "Emissions systems"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-what-is-diagnostic-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Using advanced diesel engine diagnostics, technicians can quickly read fault codes, interpret live engine data, and complete a full diesel engine diagnostic sheet that identifies both active and pending issues.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-check-engine-light",
+                  "type": "heading",
+                  "props": {
+                    "text": "1. Check Engine Light or Warning Indicators",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "check-engine-light"
+                  }
+                },
+                {
+                  "id": "p-check-engine-light-1",
+                  "type": "text",
+                  "props": {
+                    "text": "This may seem obvious, but too many operators ignore a check engine light because \"the truck still runs fine.\" In diesel engines, that warning light can signal:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-check-engine-light-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Faulty injectors"
+                      },
+                      {
+                        "text": "DEF system issues"
+                      },
+                      {
+                        "text": "Turbocharger problems"
+                      },
+                      {
+                        "text": "EGR malfunctions"
+                      },
+                      {
+                        "text": "Sensor failures"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-check-engine-light-3",
+                  "type": "text",
+                  "props": {
+                    "text": "A professional diesel engine diagnostic can determine whether the issue is minor or something that could escalate into a major repair. Waiting costs more. Acting early protects your schedule and your revenue.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/diesel-engine-diagnostic/1.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Diesel engine bay open for diagnostic inspection on an International truck"
+                    }
+                  }
+                },
+                {
+                  "id": "h-loss-of-power",
+                  "type": "heading",
+                  "props": {
+                    "text": "2. Loss of Power or Poor Acceleration",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "loss-of-power"
+                  }
+                },
+                {
+                  "id": "p-loss-of-power-1",
+                  "type": "text",
+                  "props": {
+                    "text": "If your truck feels sluggish under load or struggles on grades, don't chalk it up to \"just a heavy day.\" Reduced power can be tied to:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-loss-of-power-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Fuel delivery problems"
+                      },
+                      {
+                        "text": "Turbo boost leaks"
+                      },
+                      {
+                        "text": "Clogged filters"
+                      },
+                      {
+                        "text": "Faulty mass airflow sensors"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-loss-of-power-3",
+                  "type": "text",
+                  "props": {
+                    "text": "A complete diesel engine diagnostic helps pinpoint exactly where performance is breaking down. Guessing wastes time. Diagnostics give you clarity. If you're noticing performance concerns, our Parts Department can quickly source quality replacement components to get you back on the road.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-loss-of-power-4-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-loss-of-power-4",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-loss-of-power-4-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "parts-department",
+                                "label": "Explore Our Parts Page →"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-excessive-smoke",
+                  "type": "heading",
+                  "props": {
+                    "text": "3. Excessive Smoke or Unusual Exhaust",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "excessive-smoke"
+                  }
+                },
+                {
+                  "id": "p-excessive-smoke-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Different smoke colors tell different stories:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "defs-excessive-smoke-2",
+                  "type": "def-rows",
+                  "props": {
+                    "rows": [
+                      {
+                        "label": "Black Smoke",
+                        "text": "Too much fuel or restricted airflow"
+                      },
+                      {
+                        "label": "Blue Smoke",
+                        "text": "Oil burning"
+                      },
+                      {
+                        "label": "White Smoke",
+                        "text": "Unburned fuel or coolant issues"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-excessive-smoke-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Modern diesel engine diagnostics allow technicians to examine injection timing, fuel pressure, and combustion efficiency using digital diesel engine diagnostic tools instead of relying on visual inspection alone. If your truck is producing abnormal exhaust, it's time to schedule service.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-fuel-efficiency",
+                  "type": "heading",
+                  "props": {
+                    "text": "4. Decreased Fuel Efficiency",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "fuel-efficiency"
+                  }
+                },
+                {
+                  "id": "p-fuel-efficiency-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Fuel is one of your largest operating expenses. If you're filling up more often but running the same routes, something is off. Common causes include:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-fuel-efficiency-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Injector inefficiency"
+                      },
+                      {
+                        "text": "Turbocharger problems"
+                      },
+                      {
+                        "text": "Sensor malfunctions"
+                      },
+                      {
+                        "text": "Emissions system restrictions"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-fuel-efficiency-3",
+                  "type": "text",
+                  "props": {
+                    "text": "A detailed diesel engine diagnostic sheet provides measurable data that explains where performance loss is occurring. Every extra gallon burned unnecessarily impacts take-home pay and employee wages. Diagnostics protect your bottom line.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-hard-starts",
+                  "type": "heading",
+                  "props": {
+                    "text": "5. Hard Starts or Rough Idling",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "hard-starts"
+                  }
+                },
+                {
+                  "id": "p-hard-starts-1",
+                  "type": "text",
+                  "props": {
+                    "text": "If you're experiencing long crank times, shaky idle, or inconsistent RPMs, that could be a clear sign that there is an issue with your engine. These symptoms often indicate:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-hard-starts-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Weak fuel pressure"
+                      },
+                      {
+                        "text": "Glow plug issues"
+                      },
+                      {
+                        "text": "Sensor faults"
+                      },
+                      {
+                        "text": "ECM communication errors"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-hard-starts-3",
+                  "type": "text",
+                  "props": {
+                    "text": "The right diesel engine diagnostic tools allow technicians to read real-time data and isolate root causes quickly. At Sun State International, we respect your time. We don't guess; we diagnose.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-unusual-noises",
+                  "type": "heading",
+                  "props": {
+                    "text": "6. Unusual Engine Noises",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "unusual-noises"
+                  }
+                },
+                {
+                  "id": "p-unusual-noises-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Knocking, whining, or hissing noises are never good to hear when coming from your engine. These sounds may indicate:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-unusual-noises-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Fuel injector problems"
+                      },
+                      {
+                        "text": "Air intake leaks"
+                      },
+                      {
+                        "text": "Turbo bearing issues"
+                      },
+                      {
+                        "text": "Mechanical wear"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-unusual-noises-3",
+                  "type": "text",
+                  "props": {
+                    "text": "The sooner a diesel engine diagnostic is performed, the more likely the repair will be smaller and less expensive. Ignoring early warning signs can lead to catastrophic engine failure and extended downtime that no trucking business can afford.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-2",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/diesel-engine-diagnostic/2.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Technician working at a diagnostic computer station inside the Sun State International service shop"
+                    }
+                  }
+                },
+                {
+                  "id": "h-why-professional-matters",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Professional Diesel Engine Diagnostics Matter",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "why-professional-matters"
+                  }
+                },
+                {
+                  "id": "p-why-professional-matters-1",
+                  "type": "text",
+                  "props": {
+                    "text": "You might wonder if a handheld scanner is enough. While basic code readers exist, heavy-duty diesel engines require specialized software and manufacturer-grade equipment. At Sun State International, our technicians use advanced diesel engine diagnostic tools designed specifically for commercial trucks.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-why-professional-matters-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Our service team understands International® engines inside and out. We know what your truck should sound like, feel like, and perform like. And because we are a full-service dealership, we can:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-why-professional-matters-3",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Diagnose the issue"
+                      },
+                      {
+                        "text": "Source genuine parts"
+                      },
+                      {
+                        "text": "Complete the repair"
+                      },
+                      {
+                        "text": "Get you back on the road quickly"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-why-professional-matters-4",
+                  "type": "text",
+                  "props": {
+                    "text": "No running between multiple vendors. No wasted time.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-why-professional-matters-5-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-why-professional-matters-5",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-why-professional-matters-5-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "service-department",
+                                "label": "Learn More About Our Service Department →"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-when-to-schedule",
+                  "type": "heading",
+                  "props": {
+                    "text": "When Should You Schedule a Diesel Engine Diagnostic?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "when-to-schedule"
+                  }
+                },
+                {
+                  "id": "p-when-to-schedule-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Don't wait for failure. You should schedule a diesel engine diagnostic if:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-when-to-schedule-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "You see warning lights"
+                      },
+                      {
+                        "text": "Performance drops"
+                      },
+                      {
+                        "text": "Fuel efficiency changes"
+                      },
+                      {
+                        "text": "Your truck is nearing major service intervals"
+                      },
+                      {
+                        "text": "You're preparing for long-haul travel"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-when-to-schedule-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Proactive diagnostics are cheaper than emergency repairs. For fleets, routine diesel engine diagnostics reduce unexpected downtime and extend engine life. For owner-operators, it protects your income and reputation with customers.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-get-back-on-road",
+                  "type": "heading",
+                  "props": {
+                    "text": "Quick, Easy Engine Diagnostic to Get Back on the Road",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "get-back-on-road"
+                  }
+                },
+                {
+                  "id": "p-get-back-on-road-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Your truck works hard. It deserves attention before small issues turn into major repairs. A professional diesel engine diagnostic gives you answers, protects your investment, and keeps your business moving forward. Whether you operate a single truck or manage a growing fleet, early detection saves money and stress.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-get-back-on-road-2",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, we believe in doing the job right the first time. We value relationships. We honor commitments. And we show up when you need us. If something feels off with your engine, trust your instincts, and trust the team that's built its reputation on dependable care. Your business matters to us. And we're here to help you stay on the road.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-get-back-on-road-3",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "schedule-service",
+                        "label": "Schedule Service Today"
+                      },
+                      {
+                        "ctaId": "parts-department",
+                        "label": "Explore Our Parts Department",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-share",
+                  "type": "post-share",
+                  "props": {
+                    "label": "Share",
+                    "items": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fdiesel-engine-diagnostic",
+                        "newTab": true
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fdiesel-engine-diagnostic&text=Common%20Signs%20You%20Need%20a%20Diesel%20Engine%20Diagnostic",
+                        "newTab": true
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fdiesel-engine-diagnostic",
+                        "newTab": true
+                      },
+                      {
+                        "label": "Email",
+                        "url": "mailto:?subject=Common%20Signs%20You%20Need%20a%20Diesel%20Engine%20Diagnostic&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fdiesel-engine-diagnostic",
+                        "newTab": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Something feel off?",
+          "heading": "Let's diagnose it before it becomes a breakdown.",
+          "body": "Call 800.741.7566 and our service teams in Tampa, Sarasota, Davenport or Brooksville will get your truck looked at.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/diesel-engine-diagnostic\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/diesel-engine-diagnostic\"])) > .bz-card:nth-child(n+4) { display: none; }\n"
+}

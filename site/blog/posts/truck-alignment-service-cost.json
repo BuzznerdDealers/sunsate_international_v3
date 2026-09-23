@@ -1,0 +1,767 @@
+{
+  "slug": "truck-alignment-service-cost",
+  "title": "Truck Alignment Service: When It's Worth the Cost",
+  "date": "2026-03-27",
+  "description": "Truck alignment service improves tire life and fuel efficiency. Schedule service with Sun State International today.",
+  "status": "published",
+  "coverImage": "/img/blog/truck-alignment-service-cost/hero.jpg",
+  "topic": "Service",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Service",
+          "title": "Truck Alignment Service: When It's Worth the Cost",
+          "topic": "Service",
+          "date": "March 27, 2026",
+          "readTime": "5 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/truck-alignment-service-cost/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Sun State International technician performing a wheel service on a semi truck"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "What Is a Truck Alignment Service?",
+                        "href": "#what-is-alignment"
+                      },
+                      {
+                        "label": "Signs You Need One",
+                        "href": "#signs-you-need"
+                      },
+                      {
+                        "label": "When It Is Worth the Cost",
+                        "href": "#worth-the-cost"
+                      },
+                      {
+                        "label": "The Cost of Skipping It",
+                        "href": "#cost-of-skipping"
+                      },
+                      {
+                        "label": "How Often to Get It",
+                        "href": "#how-often"
+                      },
+                      {
+                        "label": "Keep Your Truck Running Straight",
+                        "href": "#keep-running-straight"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "NEED SERVICE?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Schedule a truck alignment appointment today.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "schedule-service",
+                                "label": "Schedule Service →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "If you've ever felt your truck pulling slightly to one side or noticed uneven tire wear, you've probably asked yourself the same question most owner-operators do: Is a truck alignment service really worth it right now, or can it wait?",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "For many business owners, every expense has to make sense. You're not spending money just to spend it. You're investing in keeping your truck running efficiently, avoiding bigger problems, and protecting your bottom line. At Sun State International, we take a straightforward approach. Alignment isn't about upselling a service. It's about preventing issues that cost you far more down the road.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-what-is-alignment",
+                  "type": "heading",
+                  "props": {
+                    "text": "What Is a Truck Alignment Service?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "what-is-alignment"
+                  }
+                },
+                {
+                  "id": "p-what-is-alignment-1",
+                  "type": "text",
+                  "props": {
+                    "text": "A truck alignment service adjusts the angles of your wheels so they meet the manufacturer's specifications. This ensures your tires make proper contact with the road and your truck drives straight and stable.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-what-is-alignment-2",
+                  "type": "text",
+                  "props": {
+                    "text": "This applies across:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-what-is-alignment-3",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Standard truck alignment services"
+                      },
+                      {
+                        "text": "Semi truck alignment services"
+                      },
+                      {
+                        "text": "Even specialized needs like classic truck alignment service for older models"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-what-is-alignment-4",
+                  "type": "text",
+                  "props": {
+                    "text": "When alignment is off, your truck has to work harder to stay straight. That strain shows up in your tires, your fuel usage, and your overall performance.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-what-is-alignment-5-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-what-is-alignment-5",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-what-is-alignment-5-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "schedule-service",
+                                "label": "Schedule Professional Service →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-signs-you-need",
+                  "type": "heading",
+                  "props": {
+                    "text": "Signs You Need a Truck Alignment Service",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "signs-you-need"
+                  }
+                },
+                {
+                  "id": "p-signs-you-need-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Alignment issues don't always show up overnight. Most of the time, they build gradually. Here are a few signs to watch for:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-signs-you-need-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Your truck pulls to one side"
+                      },
+                      {
+                        "text": "The steering wheel feels off-center"
+                      },
+                      {
+                        "text": "Uneven or rapid tire wear"
+                      },
+                      {
+                        "text": "Reduced fuel efficiency"
+                      },
+                      {
+                        "text": "Vibration in the steering"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-signs-you-need-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Ignoring these signs can turn a manageable fix into a costly repair.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/truck-alignment-service-cost/1.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Wrenches and sockets laid out beside a truck wheel during alignment work"
+                    }
+                  }
+                },
+                {
+                  "id": "h-worth-the-cost",
+                  "type": "heading",
+                  "props": {
+                    "text": "When a Truck Alignment Service Is Worth the Cost",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "worth-the-cost"
+                  }
+                },
+                {
+                  "id": "h3-worth-the-cost-1",
+                  "type": "heading",
+                  "props": {
+                    "text": "1. When Tire Wear Starts Adding Up",
+                    "headingLevel": 3,
+                    "align": "left",
+                    "anchor": "tire-wear"
+                  }
+                },
+                {
+                  "id": "p-worth-the-cost-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Tires aren't cheap. And when alignment is off, they wear unevenly, forcing you to replace them sooner than expected. A simple truck alignment service can extend tire life significantly, saving you thousands over time.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-worth-the-cost-3",
+                  "type": "heading",
+                  "props": {
+                    "text": "2. When Fuel Costs Keep Rising",
+                    "headingLevel": 3,
+                    "align": "left",
+                    "anchor": "fuel-costs"
+                  }
+                },
+                {
+                  "id": "p-worth-the-cost-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Fuel is one of your biggest operating expenses. If your truck isn't aligned properly, it creates drag and resistance. That means:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-worth-the-cost-5",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "More fuel burned"
+                      },
+                      {
+                        "text": "Less efficiency"
+                      },
+                      {
+                        "text": "Higher operating costs"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-worth-the-cost-6",
+                  "type": "text",
+                  "props": {
+                    "text": "For an owner-operator running tight margins, even a small percentage increase in fuel efficiency makes a difference.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-worth-the-cost-7",
+                  "type": "heading",
+                  "props": {
+                    "text": "3. After Suspension or Steering Repairs",
+                    "headingLevel": 3,
+                    "align": "left",
+                    "anchor": "after-repairs"
+                  }
+                },
+                {
+                  "id": "p-worth-the-cost-8",
+                  "type": "text",
+                  "props": {
+                    "text": "Anytime you replace or adjust components in your suspension or steering system, alignment should follow. Without it, even new parts won't perform the way they should.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-worth-the-cost-9",
+                  "type": "heading",
+                  "props": {
+                    "text": "4. After Hitting a Pothole or Curb",
+                    "headingLevel": 3,
+                    "align": "left",
+                    "anchor": "after-pothole"
+                  }
+                },
+                {
+                  "id": "p-worth-the-cost-10",
+                  "type": "text",
+                  "props": {
+                    "text": "It doesn't take much to knock alignment out of place. A hard hit from a pothole or curb can shift your wheel angles enough to cause long-term issues. If something feels off after a hit, it's worth getting checked.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-cost-of-skipping",
+                  "type": "heading",
+                  "props": {
+                    "text": "The Cost of Skipping Truck Alignment Services",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "cost-of-skipping"
+                  }
+                },
+                {
+                  "id": "p-cost-of-skipping-1",
+                  "type": "text",
+                  "props": {
+                    "text": "It's easy to delay alignment when everything still feels \"good enough.\" But over time, the hidden costs start stacking up.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-cost-of-skipping-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "title": "Increased Tire Replacement Costs",
+                        "text": "Uneven wear means you're replacing tires sooner than expected."
+                      },
+                      {
+                        "title": "Higher Fuel Consumption",
+                        "text": "Misalignment creates resistance, which burns more fuel."
+                      },
+                      {
+                        "title": "Additional Component Wear",
+                        "text": "Alignment issues put stress on suspension and steering components, leading to more repairs."
+                      },
+                      {
+                        "title": "Reduced Driver Comfort and Safety",
+                        "text": "A truck that doesn't handle properly is harder to control, especially on long hauls."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-how-often",
+                  "type": "heading",
+                  "props": {
+                    "text": "How Often Should You Get a Truck Alignment Service?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "how-often"
+                  }
+                },
+                {
+                  "id": "p-how-often-1",
+                  "type": "text",
+                  "props": {
+                    "text": "There's no one-size-fits-all answer, but a good rule of thumb is:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-how-often-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Every 50,000 to 60,000 miles"
+                      },
+                      {
+                        "text": "After major repairs"
+                      },
+                      {
+                        "text": "When you notice handling issues"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-how-often-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Regular inspections can catch alignment issues early before they turn into bigger problems. At Sun State International, we focus on helping you stay ahead of those issues, not react to them.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-2",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/truck-alignment-service-cost/2.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Sun State International service department check-in counter with rates and specials board"
+                    }
+                  }
+                },
+                {
+                  "id": "h-why-sun-state",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Choose Sun State International for Truck Alignment Services",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "why-sun-state"
+                  }
+                },
+                {
+                  "id": "p-why-sun-state-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At the end of the day, alignment isn't just about equipment. It's about trust. You need a team that:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-why-sun-state-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Understands your truck"
+                      },
+                      {
+                        "text": "Respects your time"
+                      },
+                      {
+                        "text": "Gets the job done right"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-why-sun-state-3",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, parts and service are the backbone of what we do. We've built our reputation by providing straightforward recommendations, quality service without unnecessary upsells, and reliable turnaround times. We're here to make sure your truck is ready to work, not sitting in a shop longer than it needs to.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-keep-running-straight",
+                  "type": "heading",
+                  "props": {
+                    "text": "Keep Your Truck Running Straight",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "keep-running-straight"
+                  }
+                },
+                {
+                  "id": "p-keep-running-straight-1",
+                  "type": "text",
+                  "props": {
+                    "text": "A truck alignment service might not feel urgent, but it's one of the smartest investments you can make for your truck. If your truck isn't driving the way it should, don't wait until it becomes a bigger issue. Schedule a truck alignment service with Sun State International today. Our service team will get your truck aligned, efficient, and back on the road where it belongs.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-keep-running-straight-2",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "schedule-service",
+                        "label": "Schedule Your Truck Alignment"
+                      },
+                      {
+                        "ctaId": "order-parts-online",
+                        "label": "Shop Parts"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-share",
+                  "type": "post-share",
+                  "props": {
+                    "label": "Share",
+                    "items": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Ftruck-alignment-service-cost",
+                        "newTab": true
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Ftruck-alignment-service-cost&text=Truck%20Alignment%20Service%3A%20When%20It%27s%20Worth%20the%20Cost",
+                        "newTab": true
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Ftruck-alignment-service-cost",
+                        "newTab": true
+                      },
+                      {
+                        "label": "Email",
+                        "url": "mailto:?subject=Truck%20Alignment%20Service%3A%20When%20It%27s%20Worth%20the%20Cost&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Ftruck-alignment-service-cost",
+                        "newTab": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Time for an alignment check?",
+          "heading": "Let's keep your fleet moving.",
+          "body": "Call 800.741.7566 and our service teams in Tampa, Sarasota, Davenport or Brooksville will get you back on the road.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/truck-alignment-service-cost\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/truck-alignment-service-cost\"])) > .bz-card:nth-child(n+4) { display: none; }\n"
+}

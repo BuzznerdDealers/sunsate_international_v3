@@ -400,3 +400,55 @@ and excerpts. Cards that already had a Media Bin cover keep it.
 - The header and footer are the dealer's current template, not the handoff's; and the
   article JSON-LD (`BlogPosting`, `BreadcrumbList`) is still not emitted for posts.
 
+---
+
+## 10. Blog handoff, Part 2 of 6 — nine more posts
+
+Nine new posts, built by `tools/blog-handoff/convert.py` on the §9 layout: *Fleet Maintenance
+Programs vs One-Off Repairs*, *Where to Go For New and Used Truck Parts in Tampa, FL*, *Truck
+Alignment Service: When It's Worth the Cost*, *Why OEM International Truck Parts Matter
+Long-Term*, *Common Causes of Heavy-Duty Truck Transmission Failure*, *What to Expect From a
+Truck PM Service Visit*, *How Fleet Truck Maintenance Services Reduce Downtime*, *International
+Truck Parts Near Me*, and *Common Signs You Need a Diesel Engine Diagnostic*. Body copy and
+contents rails match the handoff word for word; the blog page now carries 21 cards.
+
+Part 2 draws four shapes Part 1 did not, and the converter now handles each:
+
+| Handoff | Here |
+|---|---|
+| `.smoke-table` (label / detail) | the existing **Definition rows** widget, set to the post's measure in the shared post CSS |
+| `.compare-table` (factor / option / option) | a new **Comparison table** coded widget (`site/widgets/compare-table.json`) |
+| `.checklist-group` | a bordered column (node styles) with a label and a **Prose list** |
+| a row of arrow links | a column holding a buttons block of link-style library buttons |
+
+Links between posts point at `/blog/posts/<slug>`; every one in this part resolves to a built
+post.
+
+---
+
+## 11. Blog handoff, Part 3 of 6 — nine more posts
+
+Nine new posts on the §9 layout: *Avoid Cheap Parts: How to Find Reliable Parts for Semi
+Trucks*, *How a Routine DOT Inspection Keeps Your Fleet on the Road*, *How to Choose the Best
+Semi Truck Tires for Long-Term Hauls*, *Preventive Maintenance for Semi Trucks*, *Semi Truck
+Maintenance Checklist*, *Semi Truck Road Service*, *The Real Average Maintenance Cost for a
+Semi Truck*, *Where to Find Reliable Truck and Trailer Parts in Tampa* and *Why Florida Fleets
+Choose Us for Fleet Management Support*. Body copy and contents rails match the handoff word
+for word, every link between posts resolves, and the blog page carries 30 cards.
+
+New shapes, and what they became:
+
+| Handoff | Here |
+|---|---|
+| `.grid-4` of title-and-sentence cards | the platform **Feature list** block, four columns, dressed as the design's bordered cards inside a post |
+| `.compare-grid`, `.pm-grid` (titled cards, each holding a list) | a new **Card lists** coded widget (`site/widgets/card-lists.json`) — one item per card, each with its own list of points; a *Card style* setting gives the comparison and the compact group spacing |
+| `.stat-band` | the platform **Stat band** block, drawn inside a post as two white cells on a hairline grid |
+| a photograph shown whole (the daily checklist) | an image in its own column with node styles, so it is not cropped to 380px |
+
+Converter changes: `tel:` links place `call-main`, the mobile-service flyer maps to the Mobile
+Service page, and a callout or link row that points at another post is a text link rather than
+a library button — a read-next pointer is content, and a button per article would fill the
+library. Re-running Parts 1 and 2 reproduces them, except that two posts dropped a label
+override: the dealer has since renamed `schedule-service` to "Schedule Service", which is the
+wording those posts wanted.
+

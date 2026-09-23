@@ -1,0 +1,22 @@
+{
+  "id": "compare-table",
+  "label": "Comparison table",
+  "description": "A three-column comparison: a factor down the left and how two options compare on it, under a row of small uppercase column headings — the blog's OEM-versus-aftermarket table. Each row is one item the dealer edits, adds or reorders.",
+  "props": [
+    { "key": "headA", "type": "text", "label": "First column heading", "default": "Factor" },
+    { "key": "headB", "type": "text", "label": "Second column heading", "default": "" },
+    { "key": "headC", "type": "text", "label": "Third column heading", "default": "" },
+    {
+      "key": "rows",
+      "type": "list",
+      "label": "Rows",
+      "fields": [
+        { "key": "a", "type": "text", "label": "Factor" },
+        { "key": "b", "type": "text", "label": "Second column" },
+        { "key": "c", "type": "text", "label": "Third column" }
+      ]
+    }
+  ],
+  "html": "<table class=\"ss-cmp\"><thead><tr><th scope=\"col\">{{headA}}</th><th scope=\"col\">{{headB}}</th><th scope=\"col\">{{headC}}</th></tr></thead><tbody>{{#each rows}}<tr><th scope=\"row\">{{a}}</th><td>{{b}}</td><td>{{c}}</td></tr>{{/each}}</tbody></table>",
+  "css": ".ss-cmp{width:100%;border-collapse:collapse;margin:8px 0 28px}\n.ss-cmp th,.ss-cmp td{padding:12px 14px;border-bottom:1px solid var(--line);font-size:14.5px;line-height:1.7;text-align:left;vertical-align:top;color:var(--body-text)}\n.ss-cmp thead th{font:700 11px/1 var(--font-body);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}\n.ss-cmp tbody th{width:30%;font-weight:700;color:var(--ink)}\n@media (max-width:640px){.ss-cmp th,.ss-cmp td{padding:8px;font-size:13px}}"
+}
