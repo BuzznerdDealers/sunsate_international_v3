@@ -1,3 +1,4 @@
+import { readFileSync } from 'node:fs';
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 
@@ -1922,6 +1923,23 @@ test('a rooftop with no coordinates is left off the map, not dropped at 0,0', ()
   );
 });
 
+test('a pinmap with no artwork is a box a dealer can click, not a blank gap', () => {
+  const html = renderDocument(
+    {
+      nodes: [
+        {
+          id: 'pm',
+          type: 'widget',
+          props: { widget: 'locations-pinmap', config: {} },
+        },
+      ],
+    },
+    CTX,
+  );
+  assert.match(html, /bz-pinmap__empty/);
+  assert.match(html, /Upload the map artwork/);
+});
+
 test('a pinmap with no calibration draws the art and no pins', () => {
   const warnings = [];
   const html = renderDocument(
@@ -3181,4 +3199,13 @@ test('a location menu item is a link before that location is baked', () => {
   // A site with no location page at all has nowhere to send it, and a heading
   // is then the honest render rather than a link to a URL that cannot exist.
   assert.match(renderMenu(menus, 'utility', {}), /bz-navlabel/);
+});
+
+test('a form submission and a behaviour event do not share one emit function', () => {
+  // Both were declared `function emit` in the same scope. The later declaration
+  // replaces the earlier one, so a successful submit called dispatchEvent on the
+  // event-name string and the confirmation was replaced by that exception.
+  const src = readFileSync(new URL('./client/widgets.js', import.meta.url), 'utf8');
+  assert.equal((src.match(/function emit\(/g) || []).length, 1);
+  assert.match(src, /function emitOn\(/);
 });

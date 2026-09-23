@@ -670,7 +670,11 @@
     return REDUCED ? 'auto' : 'smooth';
   }
 
-  function emit(node, name, detail) {
+  // Not `emit`. That name is the form helper above, and a second function
+  // declaration in this scope replaces it — a successful submit then calls
+  // dispatchEvent on the event name string and the confirmation never shows.
+  function emitOn(node, name, detail) {
+    if (!node || typeof node.dispatchEvent !== 'function') return;
     node.dispatchEvent(new CustomEvent('bz:' + name, { bubbles: true, detail: detail || {} }));
   }
 
@@ -871,7 +875,7 @@
         control.setAttribute('aria-pressed', String(on));
         setFlag(control, 'data-bz-active', on);
       });
-      emit(root, 'filter', { state: state, shown: shown, total: items.length });
+      emitOn(root, 'filter', { state: state, shown: shown, total: items.length });
     }
 
     controls.forEach(function (control) {
@@ -1139,7 +1143,7 @@
           child.disabled = kept.length <= 1 && !value;
           var stillThere = kept.some(function (option) { return option.value === previous; });
           child.value = stillThere ? previous : kept.length ? kept[0].value : '';
-          emit(child, 'dependentchange', { value: child.value });
+          emitOn(child, 'dependentchange', { value: child.value });
         });
     }
 
@@ -1199,7 +1203,7 @@
     window.addEventListener('message', function (event) {
       if (event.origin !== origin || !event.data || typeof event.data !== 'object') return;
       if (event.data.type !== 'bz:select') return;
-      emit(root, 'mapselect', event.data);
+      emitOn(root, 'mapselect', event.data);
     });
   }
 

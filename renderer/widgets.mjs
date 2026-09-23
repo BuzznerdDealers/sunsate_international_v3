@@ -401,7 +401,7 @@ function locationsPinmap(config, snapshot, ctx) {
             height: artHeight,
             ctx,
           })
-        : ''
+        : '<div class="bz-pinmap__empty">Upload the map artwork on this block.</div>'
     }${layer}</div>`,
   );
 }

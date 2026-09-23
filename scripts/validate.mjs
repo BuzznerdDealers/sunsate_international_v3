@@ -1141,6 +1141,21 @@ function checkDataBindings(file, at, props) {
       if (owned.has(field.key) || overlaid.has(field.key)) continue;
       note(file, `${where}: "${field.key}" is not in ${source.label} and no overlay row sets it — it renders empty`);
     }
+
+    // `{"locationSlug": "{{locationSlug}}"}` is how a generated location page
+    // scopes a band to its own branch. Only a declared prop reaches the binding,
+    // so an undeclared one is dropped and the platform bakes no rows at all.
+    for (const [key, raw] of Object.entries(value.config ?? {})) {
+      const binding = typeof raw === 'string' ? raw.trim().match(/^\{\{\s*([\w.-]+)\s*\}\}$/) : null;
+      if (!binding) continue;
+      if (!byKey.has(binding[1])) {
+        fail(
+          file,
+          `${where}.config.${key}`,
+          `"${props.sectionId}" declares no prop called "${binding[1]}" — the binding cannot be filled in and the band bakes empty`,
+        );
+      }
+    }
   }
 }
 

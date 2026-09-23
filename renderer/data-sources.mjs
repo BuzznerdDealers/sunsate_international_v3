@@ -32,7 +32,7 @@ export const DATA_SOURCES = [
     widget: 'locations-map',
     path: 'locations',
     match: 'slug',
-    config: ['locationSlug', 'pagePathPrefix'],
+    config: ['locationSlug', 'excludeSlug', 'pagePathPrefix'],
     fields: [
       { key: 'id', type: 'text', label: 'Id' },
       { key: 'name', type: 'text', label: 'Name' },
@@ -85,6 +85,11 @@ export const DATA_SOURCES = [
       // authored location page stands for every branch, so a photo on the page
       // would be the same photo on all of them.
       { key: 'photo', type: 'image', label: 'Photo' },
+      // The banner's wide crop, a different image from `photo` rather than the
+      // same one used twice: `photo` is the building beside the address, this
+      // one is full-bleed behind a heading, and neither crop survives the other
+      // job. Bind a section's `backgroundImage` to it on a generated page.
+      { key: 'banner', type: 'image', label: 'Page banner' },
       // The same facts as `brands`, `services`, `perks`, `departments` and
       // `hours` above, kept as lists instead of joined into one string apiece.
       // Those stay, because sites are bound to them; reach for these whenever

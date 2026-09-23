@@ -436,6 +436,20 @@ a.bz-loc__c:hover { color: var(--accent); }
    that is not the artwork's shape puts every one of them somewhere else. */
 .bz-pinmap { position: relative; }
 .bz-pinmap__art { display: block; width: 100%; height: auto; }
+/* No artwork yet. A zero-height box cannot be selected on the canvas, so the
+   dealer never reaches the upload that would fill it. */
+.bz-pinmap__empty {
+  aspect-ratio: 16 / 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  text-align: center;
+  background: var(--paper);
+  border: 1px dashed var(--line);
+  color: var(--muted);
+  font-size: var(--text-small);
+}
 .bz-pins { position: absolute; inset: 0; margin: 0; padding: 0; list-style: none; }
 /* Positioned by the widget's inline left/top, then pulled back by half its own size
    so the dot's centre lands on the coordinate rather than its top-left corner. */

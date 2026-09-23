@@ -348,6 +348,7 @@
       "match": "slug",
       "config": [
         "locationSlug",
+        "excludeSlug",
         "pagePathPrefix"
       ],
       "fields": [
@@ -520,6 +521,11 @@
           "key": "photo",
           "type": "image",
           "label": "Photo"
+        },
+        {
+          "key": "banner",
+          "type": "image",
+          "label": "Page banner"
         },
         {
           "key": "brandRows",
