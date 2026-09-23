@@ -1413,9 +1413,9 @@
         {
           "id": "hb-international",
           "label": "INTERNATIONAL",
-          "type": "inventory",
-          "ref": "#",
-          "url": null,
+          "type": "url",
+          "ref": null,
+          "url": "#",
           "newTab": false,
           "children": []
         },
@@ -1431,18 +1431,18 @@
         {
           "id": "hb-hyundai",
           "label": "HYUNDAI TRANSLEAD",
-          "type": "inventory",
-          "ref": "#",
-          "url": null,
+          "type": "url",
+          "ref": null,
+          "url": "#",
           "newTab": false,
           "children": []
         },
         {
           "id": "hb-globe",
           "label": "GLOBE TRAILERS",
-          "type": "inventory",
-          "ref": "#",
-          "url": null,
+          "type": "url",
+          "ref": null,
+          "url": "#",
           "newTab": false,
           "children": []
         }
