@@ -4,6 +4,22 @@
   "description": "A ruled list with an accent checkmark opening each row — the handoff's inline \"spec table\" for what a service covers or what a customer gets. A row may lead with a bold title, set on its own line above the text. A real <ul>, so each row is one item the dealer edits, adds or reorders.",
   "props": [
     {
+      "key": "mark",
+      "type": "select",
+      "label": "Mark",
+      "default": "check",
+      "options": [
+        {
+          "value": "check",
+          "label": "✓ Checkmark"
+        },
+        {
+          "value": "cross",
+          "label": "✕ Red flag"
+        }
+      ]
+    },
+    {
       "key": "items",
       "type": "list",
       "label": "Items",
@@ -21,6 +37,6 @@
       ]
     }
   ],
-  "html": "<ul class=\"ss-check\">{{#each items}}<li class=\"ss-check__i\"><span class=\"ss-check__m\" aria-hidden=\"true\">✓</span><span class=\"ss-check__t\">{{#if title}}<strong class=\"ss-check__h\">{{title}}</strong>{{/if}}{{text}}</span></li>{{/each}}</ul>",
-  "css": ".ss-check{list-style:none;margin:8px 0 20px;padding:0}\n.ss-check__i{display:grid;grid-template-columns:41px minmax(0,1fr);border-bottom:1px solid var(--line)}\n.ss-check__m{padding:12px 0 12px 14px;color:var(--accent);font-weight:800;font-size:15px;line-height:1.7}\n.ss-check__t{padding:12px 14px;font-size:15px;line-height:1.7;color:var(--body-text)}\n.ss-check__h{display:block;color:var(--ink);font-size:15px;margin-bottom:2px}"
+  "html": "<ul class=\"ss-check ss-check--{{mark}}\">{{#each items}}<li class=\"ss-check__i\"><span class=\"ss-check__m\" aria-hidden=\"true\"></span><span class=\"ss-check__t\">{{#if title}}<strong class=\"ss-check__h\">{{title}}</strong>{{/if}}{{text}}</span></li>{{/each}}</ul>",
+  "css": ".ss-check{list-style:none;margin:8px 0 20px;padding:0}\n.ss-check__i{display:grid;grid-template-columns:41px minmax(0,1fr);border-bottom:1px solid var(--line)}\n.ss-check__m{padding:12px 0 12px 14px;color:var(--accent);font-weight:800;font-size:15px;line-height:1.7}\n.ss-check__t{padding:12px 14px;font-size:15px;line-height:1.7;color:var(--body-text)}\n.ss-check__h{display:block;color:var(--ink);font-size:15px;margin-bottom:2px}\n.ss-check__m::before{content:\"\\2713\"}\n.ss-check--cross .ss-check__m{color:var(--bad)}\n.ss-check--cross .ss-check__m::before{content:\"\\2715\"}"
 }

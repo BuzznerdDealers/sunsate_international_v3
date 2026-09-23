@@ -1,0 +1,604 @@
+{
+  "slug": "international-truck-parts-benefits",
+  "title": "How International® Truck Parts Keep Your Fleet Running Longer",
+  "date": "2025-11-07",
+  "description": "Get more miles from your fleet with genuine International® truck parts. Learn how OEM quality keeps your trucks running longer.",
+  "status": "published",
+  "coverImage": "/img/blog/international-truck-parts-benefits/hero.jpg",
+  "topic": "Parts",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Parts",
+          "title": "How International® Truck Parts Keep Your Fleet Running Longer",
+          "topic": "Parts",
+          "date": "November 7, 2025",
+          "readTime": "4 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/international-truck-parts-benefits/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Sun State International dealership exterior with a lineup of International trucks"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "Why Choose Genuine Parts",
+                        "href": "#why-genuine"
+                      },
+                      {
+                        "label": "The Authorized Dealer Advantage",
+                        "href": "#dealer-advantage"
+                      },
+                      {
+                        "label": "OEM vs. Aftermarket",
+                        "href": "#oem-vs-aftermarket"
+                      },
+                      {
+                        "label": "Professional Service Matters",
+                        "href": "#professional-service"
+                      },
+                      {
+                        "label": "Why Fleets Trust Us",
+                        "href": "#why-trust-us"
+                      },
+                      {
+                        "label": "Get the Right Parts",
+                        "href": "#get-parts"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "NEED PARTS?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Order genuine International® parts online today.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "order-parts-online",
+                                "label": "Shop Parts →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "When you depend on your trucks to deliver every day, quality isn't optional; it's essential. Every mile, every load, and every stop adds up, and the smallest parts can make the biggest difference.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "For owner-operators and fleet managers, maintaining uptime starts with using genuine International® truck parts designed specifically for your vehicle.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-intro-2",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, Florida's exclusive International® truck dealer, we know what it takes to keep your fleet reliable and road-ready. From filters and brake systems to engines and electronics, OEM parts deliver the durability, safety, and performance your business depends on.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-why-genuine",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Choose Genuine International® Truck Parts",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "why-genuine"
+                  }
+                },
+                {
+                  "id": "p-why-genuine-1",
+                  "type": "text",
+                  "props": {
+                    "text": "When it comes to replacements, it's tempting to look for cheaper aftermarket options. But what might save a few dollars up front can cost far more down the road. Genuine OEM truck parts are built to the exact specifications of your International® truck, ensuring a perfect fit and optimal performance every time. Here's why OEM parts stand apart:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-why-genuine-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Precision engineering designed specifically for International® models"
+                      },
+                      {
+                        "text": "Proven reliability tested under extreme conditions"
+                      },
+                      {
+                        "text": "Warranty-backed protection through International®'s nationwide parts warranty"
+                      },
+                      {
+                        "text": "Long-term savings from fewer breakdowns and better fuel efficiency"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-why-genuine-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Using OEM parts isn't just about maintaining a truck; it's about protecting your investment and keeping your business on schedule.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-why-genuine-4-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-why-genuine-4",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-why-genuine-4-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "order-parts-online",
+                                "label": "Order Parts Online →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-dealer-advantage",
+                  "type": "heading",
+                  "props": {
+                    "text": "The Advantage of Partnering with an Authorized International® Truck Dealer",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "dealer-advantage"
+                  }
+                },
+                {
+                  "id": "p-dealer-advantage-1",
+                  "type": "text",
+                  "props": {
+                    "text": "When it comes to servicing and sourcing replacement parts, not all providers are created equal. Buying from an authorized International® truck dealer like Sun State International guarantees you're getting parts that meet the brand's exact standards for safety and performance.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-dealer-advantage-2",
+                  "type": "text",
+                  "props": {
+                    "text": "As the only authorized International® dealer in the Tampa Bay Area, our parts department has direct access to factory-backed inventory, ensuring quick turnaround times and dependable availability. Whether you manage a single truck or an entire fleet, our experienced team helps you find the right components fast, so your business keeps moving. We carry the full range of International® truck parts, including:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-dealer-advantage-3",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Engine components and filters"
+                      },
+                      {
+                        "text": "Brake and suspension systems"
+                      },
+                      {
+                        "text": "Lighting, mirrors, and electrical equipment"
+                      },
+                      {
+                        "text": "Transmission and driveline parts"
+                      },
+                      {
+                        "text": "HVAC and cab accessories"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-dealer-advantage-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Each part comes with the reassurance that it's backed by International®'s warranty and by the reliable, family-owned service you've come to expect from Sun State.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/international-truck-parts-benefits/1.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Sun State International service bay with a truck being serviced and parts inventory stocked nearby"
+                    }
+                  }
+                },
+                {
+                  "id": "h-oem-vs-aftermarket",
+                  "type": "heading",
+                  "props": {
+                    "text": "OEM Parts vs. Aftermarket: The Real Cost of Quality",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "oem-vs-aftermarket"
+                  }
+                },
+                {
+                  "id": "p-oem-vs-aftermarket-1",
+                  "type": "text",
+                  "props": {
+                    "text": "It's easy to underestimate the difference between OEM and aftermarket truck parts until something fails on the road. Aftermarket parts may not be built with the same materials or tested for the same durability. That means more wear, more breakdowns, and more unplanned downtime, costing you far more in the long run.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-oem-vs-aftermarket-2",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, we see it every day: owner-operators who switch back to OEM parts notice immediate improvements in performance and fuel efficiency. The right parts don't just repair your truck; they help it run like new.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-professional-service",
+                  "type": "heading",
+                  "props": {
+                    "text": "Maximize Performance with Professional International® Truck Service",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "professional-service"
+                  }
+                },
+                {
+                  "id": "p-professional-service-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Even the best parts need expert installation and maintenance. That's where our International® truck service team comes in. Sun State International's certified technicians know every system of your truck inside and out. They use diagnostic tools and repair procedures built for International® vehicles, ensuring precise and lasting results.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-professional-service-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Whether you need routine maintenance, warranty work, or complete engine diagnostics, our service department keeps you rolling with minimal downtime. Every service includes:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-professional-service-3",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Factory-trained technicians"
+                      },
+                      {
+                        "text": "Preventive maintenance inspections"
+                      },
+                      {
+                        "text": "Fast turnaround and transparent communication"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-professional-service-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Keeping up with regular International® truck maintenance helps you prevent costly repairs later, extends vehicle life, and ensures your trucks stay compliant with manufacturer standards.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-why-trust-us",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Fleets Trust Sun State International",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "why-trust-us"
+                  }
+                },
+                {
+                  "id": "p-why-trust-us-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, we believe your trucks deserve the same care you put into your business. We're proud to be Florida's trusted source for International® truck parts, service, and maintenance, backed by decades of experience and a reputation for integrity.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-why-trust-us-2",
+                  "type": "text",
+                  "props": {
+                    "text": "We understand the needs of hardworking operators who want straight answers, dependable support, and equipment that performs when it matters most. From Tampa to Sarasota, our customers rely on us for transparent pricing, quick service, and genuine care.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-get-parts",
+                  "type": "heading",
+                  "props": {
+                    "text": "Ready to Get the Right Parts the First Time?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "get-parts"
+                  }
+                },
+                {
+                  "id": "p-get-parts-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Our mission is simple: to keep you on the road with quality parts, expert service, and a commitment to your success. Trust your truck to the experts who know it best. Whether you need a quick replacement or complete service support, Sun State International has you covered.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-get-parts-2",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "order-parts-online",
+                        "label": "Online Parts Store",
+                        "style": "primary"
+                      },
+                      {
+                        "ctaId": "schedule-service",
+                        "label": "Schedule Service Appointment",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Get the right parts",
+          "heading": "Let's keep your fleet moving.",
+          "body": "Call 800.741.7566 and our parts teams in Tampa, Sarasota, Davenport or Brooksville will get you what you need.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/international-truck-parts-benefits\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/international-truck-parts-benefits\"])) > .bz-card:nth-child(n+4) { display: none; }\n"
+}

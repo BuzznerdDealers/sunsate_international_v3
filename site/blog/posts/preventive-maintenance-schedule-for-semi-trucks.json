@@ -1,0 +1,692 @@
+{
+  "slug": "preventive-maintenance-schedule-for-semi-trucks",
+  "title": "How Often Should You Service a Semi Truck? A Preventive Maintenance Schedule for Semi Trucks",
+  "date": "2025-11-14",
+  "description": "Preventive truck maintenance is key for long-term ROI. Keep your fleet running strong with our preventive maintenance schedule for semi trucks.",
+  "status": "published",
+  "coverImage": "/img/blog/preventive-maintenance-schedule-for-semi-trucks/hero.jpg",
+  "topic": "Service",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Service",
+          "title": "How Often Should You Service a Semi Truck? A Preventive Maintenance Schedule for Semi Trucks",
+          "topic": "Service",
+          "date": "November 14, 2025",
+          "readTime": "4 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/preventive-maintenance-schedule-for-semi-trucks/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Sun State International technician performing preventive maintenance on a semi truck engine"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "Why a Maintenance Schedule Matters",
+                        "href": "#why-it-matters"
+                      },
+                      {
+                        "label": "Recommended Service Intervals",
+                        "href": "#service-intervals"
+                      },
+                      {
+                        "label": "The Key to Reliability",
+                        "href": "#reliability"
+                      },
+                      {
+                        "label": "Common Signs It’s Time for Service",
+                        "href": "#signs"
+                      },
+                      {
+                        "label": "Why Sun State International",
+                        "href": "#why-us"
+                      },
+                      {
+                        "label": "Keep Your Fleet Moving",
+                        "href": "#keep-moving"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "NEED SERVICE?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Schedule preventive service with our team today.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "schedule-service",
+                                "label": "Schedule Service →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "For fleet managers across Florida, few things are more important than keeping trucks on the road and out of the shop.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Regular preventive maintenance isn't just about checking oil levels or replacing filters; it's the backbone of safe, efficient, and profitable operations.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-intro-2",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, we know downtime costs money. That's why our preventive maintenance schedule for semi trucks is designed to help drivers plan ahead, reduce breakdowns, and protect their investment mile after mile.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-why-it-matters",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why a Semi Truck Maintenance Schedule Matters",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "why-it-matters"
+                  }
+                },
+                {
+                  "id": "p-why-it-matters-1",
+                  "type": "text",
+                  "props": {
+                    "text": "A semi truck is more than a vehicle; it's a business asset. Neglecting routine service can lead to costly repairs, fuel inefficiency, and lost time on the road. A consistent semi truck maintenance schedule helps identify small problems before they become major issues. Whether you own a single truck or manage a full fleet, preventive truck maintenance ensures:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-why-it-matters-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Longer engine life and fewer unexpected breakdowns"
+                      },
+                      {
+                        "text": "Better fuel economy and performance"
+                      },
+                      {
+                        "text": "Compliance with FMCSA inspection and safety standards"
+                      },
+                      {
+                        "text": "Higher resale value and lower lifetime operating costs"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-service-intervals",
+                  "type": "heading",
+                  "props": {
+                    "text": "Recommended Semi Truck Service Intervals",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "service-intervals"
+                  }
+                },
+                {
+                  "id": "p-service-intervals-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Every truck operates under different conditions, so service intervals should reflect real-world usage. Here's a general truck maintenance guide based on mileage and hours of operation:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-service-intervals-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "interval",
+                    "items": [
+                      {
+                        "title": "5,000–10,000 MI",
+                        "points": [
+                          {
+                            "text": "Inspect and replace engine oil and filters"
+                          },
+                          {
+                            "text": "Check coolant levels and hoses"
+                          },
+                          {
+                            "text": "Inspect brakes and adjust slack as needed"
+                          },
+                          {
+                            "text": "Check tire pressure and tread wear"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "25,000 MI",
+                        "points": [
+                          {
+                            "text": "Replace fuel filters"
+                          },
+                          {
+                            "text": "Lubricate chassis and suspension points"
+                          },
+                          {
+                            "text": "Inspect steering components"
+                          },
+                          {
+                            "text": "Test battery health"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "50,000 MI",
+                        "points": [
+                          {
+                            "text": "Inspect belts, hoses, and driveline components"
+                          },
+                          {
+                            "text": "Check wheel alignment and suspension system"
+                          },
+                          {
+                            "text": "Service transmission and check differential fluid levels"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "100,000 MI",
+                        "points": [
+                          {
+                            "text": "Perform a full preventive service inspection"
+                          },
+                          {
+                            "text": "Replace air filters and hydraulic fluids"
+                          },
+                          {
+                            "text": "Conduct a complete diagnostic scan"
+                          },
+                          {
+                            "text": "Review maintenance logs and update service records"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-service-intervals-3",
+                  "type": "text",
+                  "props": {
+                    "text": "These intervals serve as a foundation, but the semi truck service frequency should also depend on environmental factors, driving routes, and load weights. For example, Florida's humid climate and stop-and-go city routes may require shorter service intervals than long-distance highway hauls.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-reliability",
+                  "type": "heading",
+                  "props": {
+                    "text": "Preventive Truck Maintenance: The Key to Reliability",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "reliability"
+                  }
+                },
+                {
+                  "id": "p-reliability-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Preventive maintenance isn't just about avoiding breakdowns; it's about keeping your business predictable. At Sun State International, our certified technicians follow manufacturer-recommended service schedules for International® trucks and all major brands.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-reliability-2",
+                  "type": "text",
+                  "props": {
+                    "text": "We combine professional inspection with advanced diagnostic technology to make sure your truck is always road-ready. From oil analysis and brake checks to electrical system testing and aftertreatment services, our preventive maintenance program is built to help you:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-reliability-3",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Catch early warning signs before they cause downtime"
+                      },
+                      {
+                        "text": "Extend equipment life cycles"
+                      },
+                      {
+                        "text": "Plan your service budget with confidence"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "co-reliability-4-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-reliability-4",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-reliability-4-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "schedule-service",
+                                "label": "Explore Our Truck Service Department →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-signs",
+                  "type": "heading",
+                  "props": {
+                    "text": "Common Signs It's Time for Service",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "signs"
+                  }
+                },
+                {
+                  "id": "p-signs-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Even with a reliable preventive maintenance schedule for semi trucks, certain warning signs mean it's time for service now, not later:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-signs-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Unusual engine sounds or vibrations"
+                      },
+                      {
+                        "text": "Reduced fuel efficiency"
+                      },
+                      {
+                        "text": "Difficulty shifting gears or sluggish acceleration"
+                      },
+                      {
+                        "text": "Brake squealing or longer stopping distances"
+                      },
+                      {
+                        "text": "Warning lights on the dashboard"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-signs-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Ignoring these signals can lead to expensive component failure. Regular checkups from trained technicians ensure your trucks meet the high standards you and your customers depend on.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/preventive-maintenance-schedule-for-semi-trucks/1.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Sun State International service advisor reviewing a maintenance work order"
+                    }
+                  }
+                },
+                {
+                  "id": "h-why-us",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Sun State International Is the Partner You Can Count On",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "why-us"
+                  }
+                },
+                {
+                  "id": "p-why-us-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, we know that for hardworking owners and operators, time is money. Our parts and service departments are designed around one simple goal: keeping your truck on the road. With convenient Florida locations, including Tampa, Sarasota, Davenport, and Brooksville, we offer:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-why-us-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "OEM-quality International® parts in stock and ready for pickup"
+                      },
+                      {
+                        "text": "Skilled technicians trained in preventive truck maintenance and repair"
+                      },
+                      {
+                        "text": "Fast, reliable turnaround to reduce downtime"
+                      },
+                      {
+                        "text": "Transparent communication every step of the way"
+                      },
+                      {
+                        "text": "Mobile service to meet you where you're at"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-why-us-3",
+                  "type": "text",
+                  "props": {
+                    "text": "When you service your truck with Sun State International, you're not just getting a repair; you're gaining a dependable partner who treats your business like their own.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-reliability-culture",
+                  "type": "heading",
+                  "props": {
+                    "text": "Building a Culture of Reliability",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "reliability-culture"
+                  }
+                },
+                {
+                  "id": "p-reliability-culture-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Preventive maintenance is more than a checklist; it's a mindset. It's about protecting the investment you've built and keeping your commitments to customers. Our team's dedication mirrors that of every driver we serve: hardworking, honest, and determined to keep moving forward. Whether you manage one truck or an entire fleet, the right maintenance partner makes all the difference.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-keep-moving",
+                  "type": "heading",
+                  "props": {
+                    "text": "Keep Your Fleet Moving with Sun State International",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "keep-moving"
+                  }
+                },
+                {
+                  "id": "p-keep-moving-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Your trucks are built to last, but only if you take care of them. Stay ahead of costly repairs and unplanned downtime with a customized preventive maintenance schedule designed for your specific routes and loads. Order genuine International® parts or schedule preventive service with Sun State International today and experience dependable care from a team that treats you like family.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-keep-moving-2",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "order-parts-online",
+                        "label": "Shop Parts Online",
+                        "style": "primary"
+                      },
+                      {
+                        "ctaId": "schedule-service",
+                        "label": "Schedule a Service Appointment",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Stay ahead of downtime",
+          "heading": "Let's build your maintenance plan.",
+          "body": "Call 800.741.7566 and our service teams in Tampa, Sarasota, Davenport or Brooksville will get you scheduled.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/preventive-maintenance-schedule-for-semi-trucks\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/preventive-maintenance-schedule-for-semi-trucks\"])) > .bz-card:nth-child(n+4) { display: none; }\n"
+}

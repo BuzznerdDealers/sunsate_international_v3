@@ -1,0 +1,642 @@
+{
+  "slug": "who-makes-international-trucks-lets-take-a-look-behind-the-international-brand-and-how-their-trucks-are-made",
+  "title": "Who Makes International Trucks? Let’s Take a Look Behind the International Brand and How Their Trucks Are Made",
+  "date": "2025-07-03",
+  "description": "Discover who makes International trucks, where they’re built, and why they’re trusted by drivers and fleet managers across the country.",
+  "status": "published",
+  "coverImage": "/img/blog/who-makes-international-trucks-lets-take-a-look-behind-the-international-brand-and-how-their-trucks-are-made/hero.jpg",
+  "topic": "Sales",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Sales",
+          "title": "Who Makes International Trucks? Let’s Take a Look Behind the International Brand and How Their Trucks Are Made",
+          "topic": "Sales",
+          "date": "July 3, 2025",
+          "readTime": "4 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/who-makes-international-trucks-lets-take-a-look-behind-the-international-brand-and-how-their-trucks-are-made/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "White International semi truck hauling a Sun State trailer past a new Florida development"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "Navistar International",
+                        "href": "#navistar"
+                      },
+                      {
+                        "label": "Where They’re Built",
+                        "href": "#where-built"
+                      },
+                      {
+                        "label": "What Makes Them Reliable",
+                        "href": "#reliable"
+                      },
+                      {
+                        "label": "The TRATON Partnership",
+                        "href": "#traton"
+                      },
+                      {
+                        "label": "Your Local Partner",
+                        "href": "#local-partner"
+                      },
+                      {
+                        "label": "Why Trust International",
+                        "href": "#trust"
+                      },
+                      {
+                        "label": "Ready to Learn More?",
+                        "href": "#learn-more"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "SHOPPING FOR A TRUCK?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Browse new International trucks in our current inventory.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-new-trucks",
+                                "label": "View Inventory →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "When you’re investing in a new commercial truck, you want to know where it comes from, who builds it, and why it’s worth your trust. For decades, <a href=\"/store/inventory?condition=new\">International® trucks</a> have been a go-to for reliability, innovation, and performance on the road. But who exactly makes International trucks, and what sets their manufacturing process apart?",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "We’ll take you behind the scenes of the International brand, where their trucks are made, how they’re engineered, and why so many drivers and fleet owners across Florida and beyond rely on them every day.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-navistar",
+                  "type": "heading",
+                  "props": {
+                    "text": "The Power Behind the Brand: Navistar International",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "navistar"
+                  }
+                },
+                {
+                  "id": "p-navistar-1",
+                  "type": "text",
+                  "props": {
+                    "text": "International trucks are manufactured by Navistar International Corporation, a global transportation leader with over a century of history in the commercial vehicle industry. Headquartered in Lisle, Illinois, Navistar produces some of the most respected trucks in the country under the International name. <a href=\"https://news.international.com/WeAreInternational\">Navistar announces rebrand and name change to International on September 25, 2024.</a>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-navistar-2",
+                  "type": "heading",
+                  "props": {
+                    "text": "A Quick History",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "checks-navistar-3",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Originally founded in 1902 as International Harvester"
+                      },
+                      {
+                        "text": "In 1909, the Auto Wagon was created, known as the forerunner of the modern pickup truck"
+                      },
+                      {
+                        "text": "Created the popular DT-466 engine in 1970"
+                      },
+                      {
+                        "text": "Rebranded as Navistar in 1986 to focus on transportation"
+                      },
+                      {
+                        "text": "Merged with TRATON Group (Volkswagen Group’s trucking division) in 2021 for global innovation and scale"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-navistar-4",
+                  "type": "text",
+                  "props": {
+                    "text": "This rich history reflects a deep commitment to American engineering, evolving technology, and long-term reliability.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-where-built",
+                  "type": "heading",
+                  "props": {
+                    "text": "Where International Trucks Are Built",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "where-built"
+                  }
+                },
+                {
+                  "id": "p-where-built-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Most International trucks <a href=\"https://www.international.com/our-company/locations/production-plants\">are manufactured right here</a> in the United States at the company’s state-of-the-art production facilities. One of the key facilities is located in San Antonio, Texas, where a modern assembly plant was opened in 2022 to boost production capacity and improve build quality.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-where-built-2",
+                  "type": "text",
+                  "props": {
+                    "text": "The San Antonio plant features advanced automation, robotics, and precision tooling for the best efficiency. It’s also staffed by skilled American workers who are committed to quality across the board. This location is designed to produce both diesel and electric models, supporting innovation in all areas. Altogether, the manufacturing process not only ensures consistency in every truck that rolls off the line but also shortens delivery timelines for customers across the southern U.S.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-reliable",
+                  "type": "heading",
+                  "props": {
+                    "text": "What Makes International Trucks So Reliable?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "reliable"
+                  }
+                },
+                {
+                  "id": "p-reliable-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Reliability isn’t just about where a truck is built; it’s about how it’s built. International trucks are known for their attention to detail, <a href=\"https://www.international.com/products/trucks/legacy-trucks\">advanced engineering</a>, and thoughtful design, all geared toward the needs of real-world drivers and fleet managers. Here are just a few of the ways the International brand stands out:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-reliable-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "spec",
+                    "items": [
+                      {
+                        "title": "Engineered for Performance",
+                        "points": [
+                          {
+                            "text": "<a href=\"https://www.international.com/products/trucks/features/engines-and-powertrains\">International A26 engines</a> are built with fuel efficiency and durability in mind."
+                          },
+                          {
+                            "text": "High-strength materials and advanced thermal management extend engine life."
+                          },
+                          {
+                            "text": "Integrated diagnostics help reduce downtime."
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Designed With Drivers in Mind",
+                        "points": [
+                          {
+                            "text": "Ergonomic interiors for comfort on long hauls."
+                          },
+                          {
+                            "text": "Includes Advanced Driver Assistance Systems (ADAS) for added safety."
+                          },
+                          {
+                            "text": "Can customize specs to fit vocational, regional, and long-haul needs."
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "co-reliable-3-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-reliable-3",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-reliable-3-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Ready to add an <a href=\"https://www.international.com/products/trucks\">International truck</a> to your fleet? Contact a member of our team today to <a href=\"/contact\">get a free quote</a> or to explore our available inventory.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 15,
+                              "lineHeight": 1.7,
+                              "marginBottom": 12
+                            }
+                          }
+                        },
+                        {
+                          "id": "co-reliable-3-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "contact-us",
+                                "label": "Get a Free Quote →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-traton",
+                  "type": "heading",
+                  "props": {
+                    "text": "Partnership with the TRATON Group: A Global Advantage",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "traton"
+                  }
+                },
+                {
+                  "id": "p-traton-1",
+                  "type": "text",
+                  "props": {
+                    "text": "In 2021, Navistar <a href=\"https://www.international.com/our-company\">joined forces with the TRATON Group</a>, which also owns brands like Scania and MAN. This partnership gives International access to world-class research and shared technology resources, strengthening their global reach while keeping manufacturing deeply rooted in America.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-traton-2",
+                  "type": "heading",
+                  "props": {
+                    "text": "What This Means for Customers:",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "checks-traton-3",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Enhanced fuel efficiency from shared R&D investments."
+                      },
+                      {
+                        "text": "A broader range of alternative fuel options."
+                      },
+                      {
+                        "text": "A growing focus on electric trucks and digital fleet solutions."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-local-partner",
+                  "type": "heading",
+                  "props": {
+                    "text": "Sun State International: Your Local International Truck Partner",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "local-partner"
+                  }
+                },
+                {
+                  "id": "p-local-partner-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At <a href=\"/\">Sun State International</a>, we don’t just sell International trucks; we believe in the brand. As Florida’s certified International dealer, we’ve worked with owner-operators and fleet managers for years to match them with vehicles that hold up under pressure. Our team understands the importance of uptime, comfort, and long-term ROI. That’s why we offer access to new International trucks along with dependable <a href=\"/service\">service and parts</a> to support your investment. Whether you’re running a local logistics fleet or managing cross-country deliveries, we’re here to make sure you get a truck that works as hard as you do.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-trust",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Trust the International Brand?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "trust"
+                  }
+                },
+                {
+                  "id": "p-trust-1",
+                  "type": "text",
+                  "props": {
+                    "text": "There are plenty of options when it comes to commercial trucks, but few combine <a href=\"https://www.international.com/our-company/vision-and-strategy\">quality, performance, and support</a> the way International does. When you choose an International truck, you get:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-trust-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "numbered",
+                    "items": [
+                      {
+                        "title": "01",
+                        "intro": "A product built in the U.S. by a company with over 100 years of experience",
+                        "points": []
+                      },
+                      {
+                        "title": "02",
+                        "intro": "The engineering support of a global leader",
+                        "points": []
+                      },
+                      {
+                        "title": "03",
+                        "intro": "A reputation for dependability across every industry",
+                        "points": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-trust-3",
+                  "type": "text",
+                  "props": {
+                    "text": "At the end of the day, your truck is a critical part of your business. You deserve a model that’s backed by experience, built with care, and supported by a team that understands your work.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-learn-more",
+                  "type": "heading",
+                  "props": {
+                    "text": "Ready to Learn More?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "learn-more"
+                  }
+                },
+                {
+                  "id": "p-learn-more-1",
+                  "type": "text",
+                  "props": {
+                    "text": "If you’re in the market for a <a href=\"/store/inventory?condition=new\">new truck</a> and want to work with a dealership that knows International inside and out, we’re here to help. Let’s talk about your business needs, explore our current inventory, and help you make an informed, confident decision.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-learn-more-2",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "contact-us",
+                        "label": "Get a Quote Today"
+                      },
+                      {
+                        "ctaId": "browse-new-trucks",
+                        "label": "See Our Inventory",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Ready to choose?",
+          "heading": "Let's find your next truck.",
+          "body": "Call 800.741.7566 and our sales teams in Tampa, Sarasota, Davenport or Brooksville will help you find the right fit.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/who-makes-international-trucks-lets-take-a-look-behind-the-international-brand-and-how-their-trucks-are-made\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/who-makes-international-trucks-lets-take-a-look-behind-the-international-brand-and-how-their-trucks-are-made\"])) > .bz-card:nth-child(n+4) { display: none; }\n"
+}

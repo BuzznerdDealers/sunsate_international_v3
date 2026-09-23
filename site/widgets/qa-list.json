@@ -1,0 +1,26 @@
+{
+  "id": "qa-list",
+  "label": "Question list",
+  "description": "Questions and answers set open, one after another and ruled underneath — the blog's in-article FAQ, drawn as a list rather than an accordion. For an accordion that also emits FAQ structured data, use the platform FAQ widget instead.",
+  "props": [
+    {
+      "key": "items",
+      "type": "list",
+      "label": "Questions",
+      "fields": [
+        {
+          "key": "q",
+          "type": "text",
+          "label": "Question"
+        },
+        {
+          "key": "a",
+          "type": "textarea",
+          "label": "Answer"
+        }
+      ]
+    }
+  ],
+  "html": "<div class=\"ss-qa\">{{#each items}}<div class=\"ss-qa__i\"><h3 class=\"ss-qa__q\">{{q}}</h3><p class=\"ss-qa__a\">{{a}}</p></div>{{/each}}</div>",
+  "css": ".ss-qa__i{border-bottom:1px solid var(--line);padding:20px 0}\n.ss-qa__q{font:800 17px/1.3 var(--font-heading);color:var(--ink);text-transform:none;margin:0 0 8px}\n.ss-qa__a{font-size:15.5px;line-height:1.8;color:var(--body-text);margin:0}"
+}

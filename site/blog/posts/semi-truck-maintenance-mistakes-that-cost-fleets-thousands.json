@@ -1,0 +1,1158 @@
+{
+  "slug": "semi-truck-maintenance-mistakes-that-cost-fleets-thousands",
+  "title": "Semi Truck Maintenance Mistakes That Cost Fleets Thousands",
+  "date": "2025-10-03",
+  "description": "Avoid costly downtime with smarter semi truck maintenance. Learn the top mistakes fleets make and how Sun State helps prevent them.",
+  "status": "published",
+  "coverImage": "/img/blog/semi-truck-maintenance-mistakes-that-cost-fleets-thousands/hero.jpg",
+  "topic": "Service",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Service",
+          "title": "Semi Truck Maintenance Mistakes That Cost Fleets Thousands",
+          "topic": "Service",
+          "date": "October 3, 2025",
+          "readTime": "5 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/semi-truck-maintenance-mistakes-that-cost-fleets-thousands/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Sun State International technician performing a tire and wheel maintenance check"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "1. Skipping Preventive Maintenance",
+                        "href": "#mistake-1"
+                      },
+                      {
+                        "label": "2. Overlooking Tire Maintenance",
+                        "href": "#mistake-2"
+                      },
+                      {
+                        "label": "3. Ignoring Warning Lights",
+                        "href": "#mistake-3"
+                      },
+                      {
+                        "label": "4. Using Low-Quality Parts",
+                        "href": "#mistake-4"
+                      },
+                      {
+                        "label": "5. Failing to Track Records",
+                        "href": "#mistake-5"
+                      },
+                      {
+                        "label": "6. Delaying Fluid Changes",
+                        "href": "#mistake-6"
+                      },
+                      {
+                        "label": "7. Skipping Professional Inspections",
+                        "href": "#mistake-7"
+                      },
+                      {
+                        "label": "Protect Your Bottom Line",
+                        "href": "#protect-bottom-line"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "AVOID COSTLY MISTAKES",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Schedule preventive service with our team today.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "schedule-service",
+                                "label": "Schedule Service →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Keeping your trucks on the road and out of the shop is essential to running a profitable operation. But even experienced fleet managers and owner-operators can overlook key maintenance practices that quietly eat into profits.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "A single preventable breakdown can cost thousands of dollars in repairs, not to mention the downtime and lost revenue while a truck sits idle.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-intro-2",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, we've seen it all, from worn-out brake systems to neglected oil changes, and we know how much difference the right maintenance plan can make. Here are the most common semi truck maintenance mistakes that cost fleets big money, and how to avoid them.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "mh-mistake-1",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "styles": {
+                    "base": {
+                      "display": "flex",
+                      "alignItems": "center",
+                      "marginTop": 48,
+                      "marginBottom": 16
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "mh-mistake-1-badge",
+                      "type": "column",
+                      "props": {
+                        "span": 1
+                      },
+                      "styles": {
+                        "base": {
+                          "flexShrink": 0,
+                          "marginRight": 12
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "mh-mistake-1-num",
+                          "type": "text",
+                          "props": {
+                            "text": "1",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "background": "accent",
+                              "textColor": "card",
+                              "fontSize": 16,
+                              "fontWeight": "800",
+                              "width": 36,
+                              "height": 36,
+                              "display": "flex",
+                              "alignItems": "center",
+                              "justifyContent": "center"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "mh-mistake-1-col",
+                      "type": "column",
+                      "props": {
+                        "span": 11
+                      },
+                      "styles": {
+                        "base": {
+                          "flexGrow": 1
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "h-mistake-1",
+                          "type": "heading",
+                          "props": {
+                            "text": "Skipping Routine Preventive Maintenance",
+                            "headingLevel": 2,
+                            "align": "left",
+                            "anchor": "mistake-1"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "p-mistake-1-1",
+                  "type": "text",
+                  "props": {
+                    "text": "It's easy to push back a scheduled service when trucks are busy. But neglecting preventive maintenance is one of the fastest ways to shorten a vehicle's lifespan. Simple checks like oil changes, coolant levels, and air filter replacements are designed to catch small problems before they become expensive ones.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-mistake-1-2",
+                  "type": "text",
+                  "props": {
+                    "text": "According to the American Transportation Research Institute, maintenance and repair costs account for roughly 9% of total fleet expenses, and much of that stems from preventable issues. Staying consistent with your maintenance schedule keeps your engines running smoothly, improves fuel efficiency, and reduces breakdown risk on the road.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "tip-mistake-1-3-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "tip-mistake-1-3",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderLeftWidth": 3,
+                          "borderTopWidth": 0,
+                          "borderRightWidth": 0,
+                          "borderBottomWidth": 0,
+                          "borderStyle": "solid",
+                          "borderColor": "accent",
+                          "paddingTop": 4,
+                          "paddingBottom": 4,
+                          "paddingLeft": 18,
+                          "marginBottom": 18,
+                          "fontSize": 15,
+                          "lineHeight": 1.8
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "tip-mistake-1-3-text",
+                          "type": "text",
+                          "props": {
+                            "text": "<strong>Pro Tip:</strong> Partner with a service center that offers tailored maintenance plans for your fleet. Sun State International's Service Department can provide anything from quick repairs to entire engine overhauls to help you maximize uptime.",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "mh-mistake-2",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "styles": {
+                    "base": {
+                      "display": "flex",
+                      "alignItems": "center",
+                      "marginTop": 48,
+                      "marginBottom": 16
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "mh-mistake-2-badge",
+                      "type": "column",
+                      "props": {
+                        "span": 1
+                      },
+                      "styles": {
+                        "base": {
+                          "flexShrink": 0,
+                          "marginRight": 12
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "mh-mistake-2-num",
+                          "type": "text",
+                          "props": {
+                            "text": "2",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "background": "accent",
+                              "textColor": "card",
+                              "fontSize": 16,
+                              "fontWeight": "800",
+                              "width": 36,
+                              "height": 36,
+                              "display": "flex",
+                              "alignItems": "center",
+                              "justifyContent": "center"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "mh-mistake-2-col",
+                      "type": "column",
+                      "props": {
+                        "span": 11
+                      },
+                      "styles": {
+                        "base": {
+                          "flexGrow": 1
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "h-mistake-2",
+                          "type": "heading",
+                          "props": {
+                            "text": "Overlooking Tire Maintenance",
+                            "headingLevel": 2,
+                            "align": "left",
+                            "anchor": "mistake-2"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "p-mistake-2-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Tires are one of the most expensive wear items on any semi truck, and one of the easiest to damage. Running with incorrect air pressure, ignoring tread wear, or skipping rotations can lead to blowouts and poor fuel economy. How to fix it:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-mistake-2-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Check tire pressure weekly and before long hauls"
+                      },
+                      {
+                        "text": "Rotate tires regularly to ensure even wear"
+                      },
+                      {
+                        "text": "Inspect tread depth and replace early to prevent safety risks"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-mistake-2-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Need replacements fast? Shop genuine International® truck parts and tires through Sun State International's Parts Department for quality you can count on.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "mh-mistake-3",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "styles": {
+                    "base": {
+                      "display": "flex",
+                      "alignItems": "center",
+                      "marginTop": 48,
+                      "marginBottom": 16
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "mh-mistake-3-badge",
+                      "type": "column",
+                      "props": {
+                        "span": 1
+                      },
+                      "styles": {
+                        "base": {
+                          "flexShrink": 0,
+                          "marginRight": 12
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "mh-mistake-3-num",
+                          "type": "text",
+                          "props": {
+                            "text": "3",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "background": "accent",
+                              "textColor": "card",
+                              "fontSize": 16,
+                              "fontWeight": "800",
+                              "width": 36,
+                              "height": 36,
+                              "display": "flex",
+                              "alignItems": "center",
+                              "justifyContent": "center"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "mh-mistake-3-col",
+                      "type": "column",
+                      "props": {
+                        "span": 11
+                      },
+                      "styles": {
+                        "base": {
+                          "flexGrow": 1
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "h-mistake-3",
+                          "type": "heading",
+                          "props": {
+                            "text": "Ignoring Warning Lights or Minor Issues",
+                            "headingLevel": 2,
+                            "align": "left",
+                            "anchor": "mistake-3"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "p-mistake-3-1",
+                  "type": "text",
+                  "props": {
+                    "text": "That small engine light might not seem urgent, until it becomes one. Ignoring dashboard warnings or minor performance issues often leads to major repairs later. Something as simple as a clogged fuel filter can put added strain on the entire system, leading to injector or turbocharger failure. Modern trucks are equipped with advanced diagnostics for a reason. When a light comes on, take it seriously. Early intervention saves both time and money.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "tip-mistake-3-2-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "tip-mistake-3-2",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderLeftWidth": 3,
+                          "borderTopWidth": 0,
+                          "borderRightWidth": 0,
+                          "borderBottomWidth": 0,
+                          "borderStyle": "solid",
+                          "borderColor": "accent",
+                          "paddingTop": 4,
+                          "paddingBottom": 4,
+                          "paddingLeft": 18,
+                          "marginBottom": 18,
+                          "fontSize": 15,
+                          "lineHeight": 1.8
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "tip-mistake-3-2-text",
+                          "type": "text",
+                          "props": {
+                            "text": "<strong>Quick Tip:</strong> Schedule inspections with trained International® technicians who can pinpoint the root cause and prevent recurring issues. Sun State International's certified service team uses manufacturer-grade diagnostics and parts to ensure long-term reliability.",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/semi-truck-maintenance-mistakes-that-cost-fleets-thousands/1.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Sun State International team silhouetted near red semi trucks at the shop entrance"
+                    }
+                  }
+                },
+                {
+                  "id": "mh-mistake-4",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "styles": {
+                    "base": {
+                      "display": "flex",
+                      "alignItems": "center",
+                      "marginTop": 48,
+                      "marginBottom": 16
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "mh-mistake-4-badge",
+                      "type": "column",
+                      "props": {
+                        "span": 1
+                      },
+                      "styles": {
+                        "base": {
+                          "flexShrink": 0,
+                          "marginRight": 12
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "mh-mistake-4-num",
+                          "type": "text",
+                          "props": {
+                            "text": "4",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "background": "accent",
+                              "textColor": "card",
+                              "fontSize": 16,
+                              "fontWeight": "800",
+                              "width": 36,
+                              "height": 36,
+                              "display": "flex",
+                              "alignItems": "center",
+                              "justifyContent": "center"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "mh-mistake-4-col",
+                      "type": "column",
+                      "props": {
+                        "span": 11
+                      },
+                      "styles": {
+                        "base": {
+                          "flexGrow": 1
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "h-mistake-4",
+                          "type": "heading",
+                          "props": {
+                            "text": "Using Non-Genuine or Low-Quality Parts",
+                            "headingLevel": 2,
+                            "align": "left",
+                            "anchor": "mistake-4"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "p-mistake-4-1",
+                  "type": "text",
+                  "props": {
+                    "text": "When budgets are tight, cheaper aftermarket parts can seem appealing, but they rarely hold up to OEM standards. Non-genuine parts often wear faster, void warranties, and lead to additional repairs down the road.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-mistake-4-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Fleet managers who prioritize short-term savings over long-term performance end up paying more in the end. Genuine International® parts are built to the exact specifications of your trucks, ensuring compatibility, safety, and efficiency. Why genuine matters:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-mistake-4-3",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Longer lifespan and reliability"
+                      },
+                      {
+                        "text": "Protected manufacturer warranties"
+                      },
+                      {
+                        "text": "Better performance and fuel economy"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-mistake-4-4",
+                  "type": "text",
+                  "props": {
+                    "text": "When you need a replacement part fast, Sun State International's Parts Department provides quick access to OEM inventory across Tampa, Sarasota, and Davenport.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "mh-mistake-5",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "styles": {
+                    "base": {
+                      "display": "flex",
+                      "alignItems": "center",
+                      "marginTop": 48,
+                      "marginBottom": 16
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "mh-mistake-5-badge",
+                      "type": "column",
+                      "props": {
+                        "span": 1
+                      },
+                      "styles": {
+                        "base": {
+                          "flexShrink": 0,
+                          "marginRight": 12
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "mh-mistake-5-num",
+                          "type": "text",
+                          "props": {
+                            "text": "5",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "background": "accent",
+                              "textColor": "card",
+                              "fontSize": 16,
+                              "fontWeight": "800",
+                              "width": 36,
+                              "height": 36,
+                              "display": "flex",
+                              "alignItems": "center",
+                              "justifyContent": "center"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "mh-mistake-5-col",
+                      "type": "column",
+                      "props": {
+                        "span": 11
+                      },
+                      "styles": {
+                        "base": {
+                          "flexGrow": 1
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "h-mistake-5",
+                          "type": "heading",
+                          "props": {
+                            "text": "Failing to Track Maintenance Records",
+                            "headingLevel": 2,
+                            "align": "left",
+                            "anchor": "mistake-5"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "p-mistake-5-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Without accurate maintenance logs, it's nearly impossible to identify recurring issues or anticipate upcoming repairs. Disorganized recordkeeping leads to inconsistent service, missed inspections, and unexpected downtime. Digital maintenance tracking is one of the easiest ways to improve efficiency and reduce costs. It helps fleet managers identify trends, schedule proactive service, and forecast expenses accurately.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "mh-mistake-6",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "styles": {
+                    "base": {
+                      "display": "flex",
+                      "alignItems": "center",
+                      "marginTop": 48,
+                      "marginBottom": 16
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "mh-mistake-6-badge",
+                      "type": "column",
+                      "props": {
+                        "span": 1
+                      },
+                      "styles": {
+                        "base": {
+                          "flexShrink": 0,
+                          "marginRight": 12
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "mh-mistake-6-num",
+                          "type": "text",
+                          "props": {
+                            "text": "6",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "background": "accent",
+                              "textColor": "card",
+                              "fontSize": 16,
+                              "fontWeight": "800",
+                              "width": 36,
+                              "height": 36,
+                              "display": "flex",
+                              "alignItems": "center",
+                              "justifyContent": "center"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "mh-mistake-6-col",
+                      "type": "column",
+                      "props": {
+                        "span": 11
+                      },
+                      "styles": {
+                        "base": {
+                          "flexGrow": 1
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "h-mistake-6",
+                          "type": "heading",
+                          "props": {
+                            "text": "Delaying Fluid Changes",
+                            "headingLevel": 2,
+                            "align": "left",
+                            "anchor": "mistake-6"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "p-mistake-6-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Oil and fluid changes aren't just routine; they're essential. Delayed oil changes can cause buildup and engine wear, while neglected coolant or transmission fluid can lead to overheating and costly internal damage. Every make and model has its own interval recommendations, and operating conditions (like Florida's heat) can shorten those timelines. Don't rely solely on mileage. Monitor condition, color, and viscosity. Recommended fluids to track:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-mistake-6-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Engine oil and filters"
+                      },
+                      {
+                        "text": "Coolant and radiator fluid"
+                      },
+                      {
+                        "text": "Transmission and brake fluid"
+                      },
+                      {
+                        "text": "Power steering and DEF"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-mistake-6-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Regular fluid analysis helps spot early signs of contamination or leaks before they impact performance.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "mh-mistake-7",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "styles": {
+                    "base": {
+                      "display": "flex",
+                      "alignItems": "center",
+                      "marginTop": 48,
+                      "marginBottom": 16
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "mh-mistake-7-badge",
+                      "type": "column",
+                      "props": {
+                        "span": 1
+                      },
+                      "styles": {
+                        "base": {
+                          "flexShrink": 0,
+                          "marginRight": 12
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "mh-mistake-7-num",
+                          "type": "text",
+                          "props": {
+                            "text": "7",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "background": "accent",
+                              "textColor": "card",
+                              "fontSize": 16,
+                              "fontWeight": "800",
+                              "width": 36,
+                              "height": 36,
+                              "display": "flex",
+                              "alignItems": "center",
+                              "justifyContent": "center"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "mh-mistake-7-col",
+                      "type": "column",
+                      "props": {
+                        "span": 11
+                      },
+                      "styles": {
+                        "base": {
+                          "flexGrow": 1
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "h-mistake-7",
+                          "type": "heading",
+                          "props": {
+                            "text": "Skipping Professional Inspections",
+                            "headingLevel": 2,
+                            "align": "left",
+                            "anchor": "mistake-7"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "p-mistake-7-1",
+                  "type": "text",
+                  "props": {
+                    "text": "DIY maintenance has limits. Even the most experienced owner-operators can miss hidden issues without professional tools or expertise. Certified technicians can identify small misalignments, worn seals, or calibration errors that lead to bigger failures if left unchecked. Partnering with a trusted service center ensures your trucks are always road-ready and DOT-compliant.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-mistake-7-2",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, our trained technicians perform comprehensive inspections and factory-level diagnostics to help you prevent breakdowns before they happen. Whether you manage one truck or an entire fleet, we treat your business like it's our own.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-protect-bottom-line",
+                  "type": "heading",
+                  "props": {
+                    "text": "Protect Your Bottom Line With Reliable Truck Care",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "protect-bottom-line"
+                  }
+                },
+                {
+                  "id": "p-protect-bottom-line-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Every mile matters. The key to lowering costs and improving uptime isn't just fixing what breaks; it's preventing problems before they start. From custom maintenance plans to fast access to genuine parts, Sun State International helps Florida's hardest-working drivers keep their businesses moving forward.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-protect-bottom-line-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Keep your fleet in top shape with our service team. Schedule a preventive maintenance appointment today.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-protect-bottom-line-3",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "schedule-service",
+                        "label": "Schedule Your Service Appointment"
+                      },
+                      {
+                        "ctaId": "order-parts-online",
+                        "label": "Explore Our Online Parts Store"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Avoid costly downtime",
+          "heading": "Let's protect your bottom line.",
+          "body": "Call 800.741.7566 and our service teams in Tampa, Sarasota, Davenport or Brooksville will get you scheduled.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/semi-truck-maintenance-mistakes-that-cost-fleets-thousands\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/semi-truck-maintenance-mistakes-that-cost-fleets-thousands\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n/* This article sets its headings a step smaller and closer, to suit seven numbered ones. */\n[data-bz-node=\"art-body\"] > .bz-block--heading h2,\n[data-bz-node=\"art-body\"] .bz-col > .bz-block--heading h2 { font-size: 26px; }\n[data-bz-node=\"art-body\"] > .bz-block--heading h2 { margin-top: 48px; }\n@media (max-width: 640px) {\n  [data-bz-node=\"art-body\"] > .bz-block--heading h2,\n  [data-bz-node=\"art-body\"] .bz-col > .bz-block--heading h2 { font-size: 21px; }\n}\n"
+}

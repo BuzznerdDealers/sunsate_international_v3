@@ -1,0 +1,552 @@
+{
+  "slug": "why-you-should-add-a-new-international-truck-to-your-fleet",
+  "title": "Why You Should Add a New International Truck to Your Fleet",
+  "date": "2025-06-16",
+  "description": "Thinking about upgrading your fleet? Discover why a new International truck offers the reliability, power, and technology your business needs",
+  "status": "published",
+  "coverImage": "/img/blog/why-you-should-add-a-new-international-truck-to-your-fleet/hero.jpg",
+  "topic": "Sales",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Sales",
+          "title": "Why You Should Add a New International Truck to Your Fleet",
+          "topic": "Sales",
+          "date": "June 16, 2025",
+          "readTime": "4 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/why-you-should-add-a-new-international-truck-to-your-fleet/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "New and used International trucks lined up on the Sun State International lot"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "Built for the Long Haul",
+                        "href": "#long-haul"
+                      },
+                      {
+                        "label": "Advanced Safety Features",
+                        "href": "#safety"
+                      },
+                      {
+                        "label": "Driver Comfort & Retention",
+                        "href": "#comfort"
+                      },
+                      {
+                        "label": "Smart Technology",
+                        "href": "#technology"
+                      },
+                      {
+                        "label": "A Network That Has Your Back",
+                        "href": "#network"
+                      },
+                      {
+                        "label": "Versatility Across Models",
+                        "href": "#models"
+                      },
+                      {
+                        "label": "Why It Pays to Invest",
+                        "href": "#invest"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "SHOPPING FOR A TRUCK?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Browse new International trucks in our current inventory.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-new-trucks",
+                                "label": "View Inventory →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "When it comes to running a dependable fleet, your trucks are more than just a tool; they’re the backbone of your operation. Whether you’re hauling across Florida or across the country, the trucks you invest in today will impact your bottom line tomorrow. That’s why choosing the right brand matters.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At <a href=\"/\">Sun State International</a>, we believe that International trucks are one of the smartest investments you can make for your business. Backed by decades of innovation and built for the long haul, <a href=\"/store/inventory?condition=new\">International trucks</a> deliver the performance, comfort, and uptime you need to stay competitive. Here’s why a new International truck deserves a place in your fleet.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-long-haul",
+                  "type": "heading",
+                  "props": {
+                    "text": "Built for the Long Haul",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "long-haul"
+                  }
+                },
+                {
+                  "id": "p-long-haul-1",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"/store/inventory?condition=new\">International trucks</a> are engineered to go the distance. With powerful engines, durable chassis designs, and optimized aerodynamics, they’re built to keep up with demanding workloads day in and day out. Whether you’re moving freight, hauling equipment, or navigating tough job sites, these trucks are designed to handle it all without compromising on efficiency.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-long-haul-2",
+                  "type": "text",
+                  "props": {
+                    "text": "The International® A26 engine, for example, is lightweight, fuel-efficient, and reliable. It’s designed with uptime in mind, featuring fewer moving parts, less weight, and reduced maintenance intervals. That means fewer breakdowns, fewer delays, and more time on the road.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-safety",
+                  "type": "heading",
+                  "props": {
+                    "text": "Advanced Safety Features That Protect Your Investment",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "safety"
+                  }
+                },
+                {
+                  "id": "p-safety-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Modern <a href=\"/store/inventory?condition=new\">International trucks</a> are equipped with cutting-edge safety systems that help protect your drivers and cargo. Features like collision mitigation, lane departure warning, electronic stability control, and predictive cruise control aren’t just perks—they’re essential tools for safer, smarter driving. By helping prevent accidents and reducing wear on your truck, these systems also help protect your bottom line. Fewer incidents mean lower insurance costs, less downtime, and happier, more confident drivers.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-comfort",
+                  "type": "heading",
+                  "props": {
+                    "text": "Driver Comfort That Boosts Retention",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "comfort"
+                  }
+                },
+                {
+                  "id": "p-comfort-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Driver turnover can cost your business thousands each year. But when you invest in trucks that prioritize driver comfort, you’re investing in retention. <a href=\"/store/inventory?condition=new\">International trucks</a> are known for their ergonomic designs, quiet cabs, and intuitive controls—all designed with the driver in mind. From adjustable seats to premium sound insulation, everything about the International cab is tailored for long-haul comfort. And with advanced infotainment systems, digital displays, and seamless connectivity, your drivers stay focused, informed, and comfortable on every trip.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-technology",
+                  "type": "heading",
+                  "props": {
+                    "text": "Smart Technology That Keeps You Ahead",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "technology"
+                  }
+                },
+                {
+                  "id": "p-technology-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Today’s <a href=\"/store/inventory?condition=new\">International trucks</a> aren’t just machines; they’re intelligent, connected assets. With the International® Diamond Logic® electrical system and OnCommand® Connection, fleet managers gain real-time insights into vehicle performance, diagnostics, and maintenance needs. These tools allow you to monitor engine health, schedule service proactively, and reduce the risk of unexpected breakdowns. You get more uptime, better visibility, and smarter decision-making, all from a single platform.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-technology-2-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-technology-2",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-technology-2-body",
+                          "type": "text",
+                          "props": {
+                            "text": "If you’re ready to upgrade your fleet and streamline your performance, buying an International truck can make all the difference. <a href=\"/store/inventory?condition=new\">Contact us to discuss our available inventory.</a>",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 15,
+                              "lineHeight": 1.7,
+                              "marginBottom": 12
+                            }
+                          }
+                        },
+                        {
+                          "id": "co-technology-2-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-new-trucks",
+                                "label": "View New Trucks →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-network",
+                  "type": "heading",
+                  "props": {
+                    "text": "A Network That Has Your Back",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "network"
+                  }
+                },
+                {
+                  "id": "p-network-1",
+                  "type": "text",
+                  "props": {
+                    "text": "When you invest in a <a href=\"/store/inventory?condition=new\">new International truck</a>, you’re not just buying a vehicle—you’re joining a nationwide support network. And at <a href=\"/\">Sun State International</a>, that support starts the moment you walk through our doors.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-network-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Our Tampa-based team offers expert guidance, on-site <a href=\"/service\">service</a>, genuine International <a href=\"/parts\">parts</a>, and ongoing fleet support. Whether you’re a one-truck operation or managing a regional fleet, we’re here to help you get the most out of your equipment. We also offer flexible <a href=\"/financing\">financing options</a> and <a href=\"/extended-service\">extended warranties</a> to make ownership easier and more affordable, with service plans that keep you covered long after the sale.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-models",
+                  "type": "heading",
+                  "props": {
+                    "text": "Versatility Across Models",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "models"
+                  }
+                },
+                {
+                  "id": "p-models-1",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"https://www.international.com/\">International trucks</a> offer a wide range of models suited for every job, including:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-models-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "series2",
+                    "items": [
+                      {
+                        "title": "INTERNATIONAL® LT SERIES",
+                        "intro": "Optimized for long-haul with superior fuel efficiency and driver comfort.",
+                        "points": []
+                      },
+                      {
+                        "title": "INTERNATIONAL® HX SERIES",
+                        "intro": "Built tough for heavy-duty jobs and extreme applications.",
+                        "points": []
+                      },
+                      {
+                        "title": "INTERNATIONAL® MV SERIES",
+                        "intro": "Perfect for regional delivery, utility work, and custom upfits.",
+                        "points": []
+                      },
+                      {
+                        "title": "INTERNATIONAL® CV SERIES",
+                        "intro": "A commercial-grade vehicle that bridges the gap between pickup and full-size truck.",
+                        "points": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-models-3",
+                  "type": "text",
+                  "props": {
+                    "text": "No matter your industry or operational demands, there’s an <a href=\"https://www.international.com/\">International truck</a> that fits your fleet.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-invest",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why It Pays to Invest in an International Truck",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "invest"
+                  }
+                },
+                {
+                  "id": "p-invest-1",
+                  "type": "text",
+                  "props": {
+                    "text": "The road ahead is unpredictable. But when your fleet is powered by <a href=\"https://www.international.com/\">International</a>, you’re prepared for whatever comes your way. With unmatched reliability, smart technology, and dedicated service from <a href=\"/\">Sun State International</a>, your investment in a <a href=\"/store/inventory?condition=new\">new International truck</a> is an investment in the long-term strength of your business. Ready to add a truck you can count on? <a href=\"/contact\">Schedule a test drive today and experience the difference the International brand can make.</a>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-invest-2",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "contact-us",
+                        "label": "Schedule a Test Drive"
+                      },
+                      {
+                        "ctaId": "browse-new-trucks",
+                        "label": "See Our Inventory",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Ready to choose?",
+          "heading": "Let's find your next truck.",
+          "body": "Call 800.741.7566 and our sales teams in Tampa, Sarasota, Davenport or Brooksville will help you find the right fit.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/why-you-should-add-a-new-international-truck-to-your-fleet\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/why-you-should-add-a-new-international-truck-to-your-fleet\"])) > .bz-card:nth-child(n+4) { display: none; }\n"
+}

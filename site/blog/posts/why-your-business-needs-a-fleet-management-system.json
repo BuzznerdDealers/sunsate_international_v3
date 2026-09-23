@@ -1,0 +1,864 @@
+{
+  "slug": "why-your-business-needs-a-fleet-management-system",
+  "title": "Why Your Business Needs a Fleet Management System",
+  "date": "2025-06-20",
+  "description": "A fleet management system can transform the way you run your business. Read how this technology helps improve safety, uptime, and efficiency.",
+  "status": "published",
+  "coverImage": "/img/blog/why-your-business-needs-a-fleet-management-system/hero.jpg",
+  "topic": "Fleet",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Fleet",
+          "title": "Why Your Business Needs a Fleet Management System",
+          "topic": "Fleet",
+          "date": "June 20, 2025",
+          "readTime": "4 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/why-your-business-needs-a-fleet-management-system/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "International sleeper and day cab tractors parked beside a Globe dump trailer"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "What Is Fleet Management?",
+                        "href": "#what-is"
+                      },
+                      {
+                        "label": "Key Benefits",
+                        "href": "#benefits"
+                      },
+                      {
+                        "label": "International + Fleet Management",
+                        "href": "#hand-in-hand"
+                      },
+                      {
+                        "label": "Ready to Run Smarter?",
+                        "href": "#run-smarter"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "BUILDING YOUR FLEET?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Browse connected International trucks in our current inventory.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-new-trucks",
+                                "label": "View Inventory →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Running a fleet isn’t just about putting trucks on the road; it’s about keeping them there, safely and efficiently. Whether you manage five vehicles or fifty, staying ahead of repairs, tracking performance, and protecting your drivers takes more than just good intentions; it takes the right tools. That’s where a fleet management system comes in.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At <a href=\"/\">Sun State International</a>, we don’t just sell trucks. We help you manage them better. When you invest in an <a href=\"https://www.international.com/\">International truck</a>, you’re getting access to one of the most advanced fleet management ecosystems in the industry. From real-time diagnostics to predictive maintenance and driver behavior insights, these systems are designed to give you the control and visibility your business needs to succeed. Here’s how a fleet management system can transform your operation—and why it makes sense to pair it with an <a href=\"https://www.international.com/\">International truck</a>.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-what-is",
+                  "type": "heading",
+                  "props": {
+                    "text": "What Is a Fleet Management System?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "what-is"
+                  }
+                },
+                {
+                  "id": "p-what-is-1",
+                  "type": "text",
+                  "props": {
+                    "text": "A fleet management system is a platform that helps you monitor, maintain, and optimize your fleet. It combines GPS tracking, telematics, vehicle diagnostics, maintenance scheduling, driver performance monitoring, and reporting all in one centralized interface. In simple terms, it gives you the information you need to make better decisions and keep your fleet running at its best.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-benefits",
+                  "type": "heading",
+                  "props": {
+                    "text": "Key Benefits of a Fleet Management System",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "benefits"
+                  }
+                },
+                {
+                  "id": "p-benefits-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Modern <a href=\"/store/inventory?condition=new\">International trucks</a> are equipped with cutting-edge safety systems that help protect your drivers and cargo. Features like collision mitigation, lane departure warning, electronic stability control, and predictive cruise control aren’t just perks—they’re essential tools for safer, smarter driving. By helping prevent accidents and reducing wear on your truck, these systems also help protect your bottom line. Fewer incidents mean lower insurance costs, less downtime, and happier, more confident drivers.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "numbered-benefits-2",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "styles": {
+                    "base": {
+                      "display": "grid",
+                      "gridColumns": "56px 1fr",
+                      "gap": 8,
+                      "borderTopWidth": 1,
+                      "borderStyle": "solid",
+                      "borderColor": "line",
+                      "borderLeftWidth": 0,
+                      "borderRightWidth": 0,
+                      "borderBottomWidth": 0,
+                      "paddingTop": 26,
+                      "marginTop": 26
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "numbered-benefits-2-num-col",
+                      "type": "column",
+                      "props": {
+                        "span": 1
+                      },
+                      "children": [
+                        {
+                          "id": "numbered-benefits-2-index",
+                          "type": "text",
+                          "props": {
+                            "text": "01",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 13,
+                              "fontWeight": "700",
+                              "letterSpacing": 2,
+                              "lineHeight": 1.6,
+                              "textColor": "accent"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "numbered-benefits-2-body",
+                      "type": "column",
+                      "props": {
+                        "span": 11
+                      },
+                      "children": [
+                        {
+                          "id": "numbered-benefits-2-h",
+                          "type": "heading",
+                          "props": {
+                            "text": "Prevent Downtime With Predictive Maintenance",
+                            "headingLevel": 3,
+                            "align": "left"
+                          }
+                        },
+                        {
+                          "id": "numbered-benefits-2-p1",
+                          "type": "text",
+                          "props": {
+                            "text": "Unexpected repairs cost more than just money; they cost time, customer satisfaction, and lost opportunities. With a fleet management system, you can identify small issues before they turn into expensive problems.",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "numbered-benefits-2-p2",
+                          "type": "text",
+                          "props": {
+                            "text": "International trucks equipped with OnCommand® Connection give you real-time access to diagnostic data, letting you schedule service before breakdowns happen. This predictive maintenance approach helps reduce downtime and extend the life of your vehicles.",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "numbered-benefits-3",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "styles": {
+                    "base": {
+                      "display": "grid",
+                      "gridColumns": "56px 1fr",
+                      "gap": 8,
+                      "borderTopWidth": 1,
+                      "borderStyle": "solid",
+                      "borderColor": "line",
+                      "borderLeftWidth": 0,
+                      "borderRightWidth": 0,
+                      "borderBottomWidth": 0,
+                      "paddingTop": 26,
+                      "marginTop": 26
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "numbered-benefits-3-num-col",
+                      "type": "column",
+                      "props": {
+                        "span": 1
+                      },
+                      "children": [
+                        {
+                          "id": "numbered-benefits-3-index",
+                          "type": "text",
+                          "props": {
+                            "text": "02",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 13,
+                              "fontWeight": "700",
+                              "letterSpacing": 2,
+                              "lineHeight": 1.6,
+                              "textColor": "accent"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "numbered-benefits-3-body",
+                      "type": "column",
+                      "props": {
+                        "span": 11
+                      },
+                      "children": [
+                        {
+                          "id": "numbered-benefits-3-h",
+                          "type": "heading",
+                          "props": {
+                            "text": "Improve Driver Safety and Accountability",
+                            "headingLevel": 3,
+                            "align": "left"
+                          }
+                        },
+                        {
+                          "id": "numbered-benefits-3-p1",
+                          "type": "text",
+                          "props": {
+                            "text": "Safety is non-negotiable. Fleet management systems monitor driver behavior like speeding, harsh braking, idling, and more, so you can coach your team on safer habits and reduce the risk of accidents.",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "numbered-benefits-3-p2",
+                          "type": "text",
+                          "props": {
+                            "text": "International’s built-in Diamond Logic® system enhances safety by integrating with sensors and controls to automate warnings, shutdowns, and other responses in real time. When paired with your fleet management system, it becomes a powerful way to keep your drivers protected and your assets secure.",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "numbered-benefits-4",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "styles": {
+                    "base": {
+                      "display": "grid",
+                      "gridColumns": "56px 1fr",
+                      "gap": 8,
+                      "borderTopWidth": 1,
+                      "borderStyle": "solid",
+                      "borderColor": "line",
+                      "borderLeftWidth": 0,
+                      "borderRightWidth": 0,
+                      "borderBottomWidth": 0,
+                      "paddingTop": 26,
+                      "marginTop": 26
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "numbered-benefits-4-num-col",
+                      "type": "column",
+                      "props": {
+                        "span": 1
+                      },
+                      "children": [
+                        {
+                          "id": "numbered-benefits-4-index",
+                          "type": "text",
+                          "props": {
+                            "text": "03",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 13,
+                              "fontWeight": "700",
+                              "letterSpacing": 2,
+                              "lineHeight": 1.6,
+                              "textColor": "accent"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "numbered-benefits-4-body",
+                      "type": "column",
+                      "props": {
+                        "span": 11
+                      },
+                      "children": [
+                        {
+                          "id": "numbered-benefits-4-h",
+                          "type": "heading",
+                          "props": {
+                            "text": "Lower Operational Costs",
+                            "headingLevel": 3,
+                            "align": "left"
+                          }
+                        },
+                        {
+                          "id": "numbered-benefits-4-p1",
+                          "type": "text",
+                          "props": {
+                            "text": "The insights you gain from a fleet management system can lead to significant cost savings. From improving fuel efficiency to identifying underperforming vehicles, you’ll know exactly where your money is going and how to save more of it. Fuel usage reports, idle time tracking, and route optimization features can all be used to tighten up inefficiencies and trim down overhead, making every dollar go further.",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "numbered-benefits-5",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "styles": {
+                    "base": {
+                      "display": "grid",
+                      "gridColumns": "56px 1fr",
+                      "gap": 8,
+                      "borderTopWidth": 1,
+                      "borderStyle": "solid",
+                      "borderColor": "line",
+                      "borderLeftWidth": 0,
+                      "borderRightWidth": 0,
+                      "borderBottomWidth": 0,
+                      "paddingTop": 26,
+                      "marginTop": 26
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "numbered-benefits-5-num-col",
+                      "type": "column",
+                      "props": {
+                        "span": 1
+                      },
+                      "children": [
+                        {
+                          "id": "numbered-benefits-5-index",
+                          "type": "text",
+                          "props": {
+                            "text": "04",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 13,
+                              "fontWeight": "700",
+                              "letterSpacing": 2,
+                              "lineHeight": 1.6,
+                              "textColor": "accent"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "numbered-benefits-5-body",
+                      "type": "column",
+                      "props": {
+                        "span": 11
+                      },
+                      "children": [
+                        {
+                          "id": "numbered-benefits-5-h",
+                          "type": "heading",
+                          "props": {
+                            "text": "Improve Compliance and Reporting",
+                            "headingLevel": 3,
+                            "align": "left"
+                          }
+                        },
+                        {
+                          "id": "numbered-benefits-5-p1",
+                          "type": "text",
+                          "props": {
+                            "text": "Between DOT regulations, hours-of-service tracking, and IFTA reporting, staying compliant is a full-time job on its own. A fleet management system automates these tasks and helps ensure your records are accurate and up to date. With International trucks and OnCommand® services, much of this compliance data is generated automatically, giving you peace of mind and fewer administrative headaches.",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "numbered-benefits-6",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "styles": {
+                    "base": {
+                      "display": "grid",
+                      "gridColumns": "56px 1fr",
+                      "gap": 8,
+                      "borderTopWidth": 1,
+                      "borderStyle": "solid",
+                      "borderColor": "line",
+                      "borderLeftWidth": 0,
+                      "borderRightWidth": 0,
+                      "borderBottomWidth": 0,
+                      "paddingTop": 26,
+                      "marginTop": 26
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "numbered-benefits-6-num-col",
+                      "type": "column",
+                      "props": {
+                        "span": 1
+                      },
+                      "children": [
+                        {
+                          "id": "numbered-benefits-6-index",
+                          "type": "text",
+                          "props": {
+                            "text": "05",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 13,
+                              "fontWeight": "700",
+                              "letterSpacing": 2,
+                              "lineHeight": 1.6,
+                              "textColor": "accent"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "numbered-benefits-6-body",
+                      "type": "column",
+                      "props": {
+                        "span": 11
+                      },
+                      "children": [
+                        {
+                          "id": "numbered-benefits-6-h",
+                          "type": "heading",
+                          "props": {
+                            "text": "Maximize Uptime With Real-Time Alerts",
+                            "headingLevel": 3,
+                            "align": "left"
+                          }
+                        },
+                        {
+                          "id": "numbered-benefits-6-p1",
+                          "type": "text",
+                          "props": {
+                            "text": "When a truck goes down, the clock starts ticking, and every minute matters. OnCommand® Connection provides instant alerts and remote diagnostics to help you react fast. You’ll know exactly what’s wrong, how urgent it is, and where to take the truck for service.",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "co-benefits-7-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-benefits-7",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-benefits-7-body",
+                          "type": "text",
+                          "props": {
+                            "text": "And if you’re running your operation through Sun State International, you’ve got a local team ready to get your truck back on the road quickly. Want to see how this works in action? <a href=\"/contact\">Schedule a free consultation with our team today.</a>",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 15,
+                              "lineHeight": 1.7,
+                              "marginBottom": 12
+                            }
+                          }
+                        },
+                        {
+                          "id": "co-benefits-7-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "contact-us",
+                                "label": "Schedule a Free Consultation →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-hand-in-hand",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why International Trucks and Fleet Management Go Hand-in-Hand",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "hand-in-hand"
+                  }
+                },
+                {
+                  "id": "p-hand-in-hand-1",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"https://www.international.com/\">International trucks</a> are built with uptime in mind. But when paired with fleet management technology, they become an even more powerful tool for your business. Here’s why:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-hand-in-hand-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "feature2",
+                    "items": [
+                      {
+                        "title": "Factory-Installed Telematics",
+                        "intro": "No aftermarket installs. No compatibility issues. International trucks come ready to connect.",
+                        "points": []
+                      },
+                      {
+                        "title": "OnCommand® Connection",
+                        "intro": "Gives you an overall diagnostic view of your entire fleet, accessible from any device.",
+                        "points": []
+                      },
+                      {
+                        "title": "Diamond Logic® System",
+                        "intro": "A powerful onboard system that links body and chassis electronics for safety and efficiency.",
+                        "points": []
+                      },
+                      {
+                        "title": "Support From Sun State International",
+                        "intro": "We’re not just a dealership—we’re your local partner for <a href=\"/service\">service</a>, training, and uptime support.",
+                        "points": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-run-smarter",
+                  "type": "heading",
+                  "props": {
+                    "text": "Ready to Run Smarter?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "run-smarter"
+                  }
+                },
+                {
+                  "id": "p-run-smarter-1",
+                  "type": "text",
+                  "props": {
+                    "text": "If you’re still managing your fleet with spreadsheets and guesswork, it’s time to upgrade. A modern fleet management system helps you save money, protect your people, and make smarter decisions every day. And when it’s built into the <a href=\"https://www.international.com/\">International trucks</a> available at <a href=\"/\">Sun State International</a>, you get the best of both worlds—advanced technology and reliable trucks that are ready to work. Ready to streamline your operations and improve your bottom line? <a href=\"/contact\">Contact Sun State International</a> and let’s build a smarter fleet together.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-run-smarter-2",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "contact-us",
+                        "label": "Get a Quote"
+                      },
+                      {
+                        "ctaId": "browse-new-trucks",
+                        "label": "See Our Inventory",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Ready to choose?",
+          "heading": "Let's find your next truck.",
+          "body": "Call 800.741.7566 and our sales teams in Tampa, Sarasota, Davenport or Brooksville will help you find the right fit.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/why-your-business-needs-a-fleet-management-system\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/why-your-business-needs-a-fleet-management-system\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n[data-bz-node=\"art-body\"] .bz-block--list .bz-feature__d { font-size: 15px; }\n"
+}

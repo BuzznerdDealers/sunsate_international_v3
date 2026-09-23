@@ -27,6 +27,19 @@ LINK_MAP = {
     "https://www.sunstateintl.com/contact-call-email-internationals-trucks-dealerships-florida-xcontact/": "/contact",
     "https://www.sunstateparts.com/login": "https://www.sunstateparts.com/login",
     "https://www.sunstateintl.com/mobile-service-flyer/": "/mobile-service",
+    # The old storefront's new-truck listing, both of its addresses: the platform storefront, filtered.
+    "https://www.sunstateintltrucks.com/Inventory/?/listings/for-sale/trucks/27/?DSCompanyID=3352&dlr=1&settingscrmid=367933&condition=new": "/store/inventory?condition=new",
+    "https://www.sunstateintl.com/new-heavy-medium-duty-trucks-for-sale-tampa-florida-xnewinventoryatlight-duty-truckmedium-duty-truckheavy-duty-truck/": "/store/inventory?condition=new",
+    "https://www.sunstateintl.com/finance-trucks-trailers-tampa-orlando-florida-financing/": "/financing",
+    "https://www.sunstateintl.com/read-other-customers-comments-about-us-xtestimonials/": "/reviews",
+    "https://www.sunstateintl.com/about-us/": "/our-story",
+    "https://www.sunstateintl.com/used-heavy-medium-duty-trucks-for-sale-tampa-florida-xpreownedinventoryatlight-duty-truckmedium-duty-truckheavy-duty-truck/": "/store/inventory?condition=used",
+    "https://www.sunstateintl.com/truck-configurator/": "/truck-configurator",
+    "https://www.sunstateintl.com/learn-more-about-s13-powertrain/": "/specifications",
+    "https://www.sunstateintl.com/extended-service/": "/extended-service",
+    "https://www.sunstateintl.com/maps-and-directions-hours-tampa-adamo/": "/locations/tampa",
+    "https://www.sunstateintl.com/maps-and-directions-hours-sarasota/": "/locations/sarasota",
+    "https://www.sunstateintl.com/maps-and-directions-hours-davenport/": "/locations/davenport",
     "tel:8007417566": "tel:+18007417566",
 }
 INTENT = {
@@ -41,6 +54,8 @@ def map_href(h):
         return "/blog"
     if h.endswith(".html") and ("/posts/" in h or "/" not in h):
         return "/blog/posts/" + h.rsplit("/", 1)[-1][:-5]
+    if re.match(r"https://([a-z]+\.)?international\.com(/|$)", h):
+        return h  # the manufacturer's own site: an outbound link, kept as written
     if h not in LINK_MAP:
         raise SystemExit(f"unmapped link: {h}")
     return LINK_MAP[h]
@@ -67,6 +82,8 @@ DEST = {
     "/service-appointment": "schedule-service", "/parts": "parts-department",
     "https://www.sunstateparts.com/login": "order-parts-online", "/service": "service-department",
     "/contact": "contact-us", "/blog": "all-blog-posts", "tel:+18007417566": "call-main", "/mobile-service": "mobile-service",
+    "/store/inventory?condition=new": "browse-new-trucks", "/financing": "financing", "/reviews": "read-reviews",
+    "/truck-configurator": "truck-configurator-link", "/specifications": "s13-powertrain", "/extended-service": "extended-service",
 }
 lib = {b["id"]: b for b in buttons}
 
@@ -110,7 +127,7 @@ def inline_html(el):
     out = []
     for c in el.children:
         if isinstance(c, NavigableString):
-            out.append(str(c).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;"))
+            out.append(str(c).replace("<", "&lt;").replace(">", "&gt;"))  # the text block escapes & itself
         elif c.name == "a":
             out.append(f'<a href="{map_href(c["href"])}">{inline_html(c)}</a>')
         elif c.name in ("strong", "b"):
@@ -198,9 +215,39 @@ def callout(cid, box, style):
                                                       "paddingLeft": 28, "marginTop": top, "marginBottom": bottom})])
 
 
+ID_ALIASES = {
+    "features-you-should-look-for-in-a-new-semi-truck": {
+        "co-increased-efficiency-2-row": "callout-row", "co-increased-efficiency-2": "callout",
+        "co-increased-efficiency-2-label": "callout-label", "co-increased-efficiency-2-body": "callout-body",
+        "co-increased-efficiency-2-cta": "callout-cta", "actions-get-the-equipment-2": "art-actions",
+    },
+}
+
+RUNS = {"problem-card": "stacked", "repair-card": "inline", "step-row": "steps", "faq-item": "qa"}
+
+
+def detail_card(card):
+    """A problem or repair card: title, sentence, then labelled notes."""
+    it = {"title": "", "body": "", "notes": []}
+    for x in [x for x in card.children if isinstance(x, Tag)]:
+        cls = x.get("class", [])
+        if x.name == "h3": it["title"] = plain(x)
+        elif x.name == "p" and not it["notes"] and not it["body"]: it["body"] = plain(x)
+        elif x.name == "div" and "label" in cls: it["notes"].append({"label": plain(x), "text": ""})
+        elif x.name == "p": it["notes"][-1]["text"] = plain(x)
+        elif x.name == "div" and "row" in cls:
+            tag, txt = x.find_all("span", recursive=False)
+            it["notes"].append({"label": plain(tag), "text": plain(txt)})
+        else: raise SystemExit(f"card child <{x.name} {cls}>")
+    return it
+
+
 def convert(path):
     slug = os.path.basename(path)[:-5]
-    s = BeautifulSoup(open(path).read(), "html.parser")
+    raw = open(path).read()
+    s = BeautifulSoup(raw, "html.parser")
+    own_style = re.search(r"<style>(.*?)</style>", raw, re.S).group(1)
+    extra_css = []
     main = s.find("main")
     hero = main.select_one("section.post-hero")
     hero_img = hero.find("img")
@@ -209,7 +256,16 @@ def convert(path):
     h1 = plain(hero.find("h1"))
     byline = [plain(x) for x in hero.find("h1").find_next_sibling("div").find_all("span") if plain(x) != "·"]
     topic_chip, date_txt, read_txt, author = byline
-    cover = place_image(slug, hero_img["src"], "hero")
+    existing = f"{REPO}/site/blog/posts/{slug}.json"
+    if hero_img is None:
+        # "Photo to be supplied" in the handoff: keep the photograph the post already has.
+        old = json.load(open(existing))
+        cover = {k: v for k, v in old["nodes"][0]["props"]["values"]["image"].items() if k != "alt"}
+        hero_img = {"alt": old["nodes"][0]["props"]["values"]["image"].get("alt", "")}
+        cover_src = old.get("coverImage") or cover["src"]
+    else:
+        cover = place_image(slug, hero_img["src"], "hero")
+        cover_src = cover["src"]
 
     title_case = lambda t: " ".join(w.capitalize() if w.isupper() else w for w in t.split())
     hero_node = n("hero", "sharedSection", {"sectionId": "post-hero", "values": {
@@ -240,8 +296,28 @@ def convert(path):
         return f"{kind}-{sec}-{seq[sec]}"
 
     share = None
-    for el in body.children:
-        if not isinstance(el, Tag):
+    elements, run = [], None
+    for el in [x for x in body.children if isinstance(x, Tag)]:
+        kind = next((k for k in RUNS if k in el.get("class", [])), None)
+        if kind and run and run[0] == kind:
+            run[1].append(el)
+        elif kind:
+            run = (kind, [el]); elements.append(run)
+        else:
+            run = None; elements.append(el)
+    for el in elements:
+        if isinstance(el, tuple):
+            kind, els = el
+            if RUNS[kind] in ("stacked", "inline"):
+                out.append(n(nid("details"), "detail-cards", {"variant": RUNS[kind], "items": [detail_card(x) for x in els]}))
+            elif RUNS[kind] == "steps":
+                items = []
+                for x in els:
+                    num = plain(x.find("div", class_="step-num")); inner = x.find_all("div", recursive=False)[1]
+                    items.append({"num": num, "title": plain(inner.find("h3")), "text": plain(inner.find("p"))})
+                out.append(n(nid("steps"), "step-list", {"items": items}))
+            else:
+                out.append(n(nid("questions"), "qa-list", {"items": [{"q": plain(x.find("h3")), "a": plain(x.find("p"))} for x in els]}))
             continue
         st = el.get("style", "")
         cls = el.get("class", [])
@@ -271,7 +347,7 @@ def convert(path):
                     rows.append({"title": t, "text": plain(td)})
                 else:
                     rows.append({"text": plain(td)})
-            out.append(n(nid("checks"), "check-list", {"items": rows}))
+            out.append(n(nid("checks"), "check-list", {**({"mark": "cross"} if "redflag-table" in cls else {}), "items": rows}))
         elif el.name == "div" and el.find("img") and "position: relative" in st:
             fig += 1
             img = el.find("img")
@@ -308,6 +384,108 @@ def convert(path):
             assert all(len(r) == 3 for r in rows), rows
             out.append(n(nid("compare"), "compare-table", {"headA": heads[0], "headB": heads[1], "headC": heads[2],
                                                           "rows": [{"a": a, "b": b, "c": c} for a, b, c in rows]}))
+        elif el.name == "div" and el.get("id") == "post-answer":
+            # The answer-engine block: an accent-ruled panel, same ids as the post has always used.
+            label, p = [x for x in el.children if isinstance(x, Tag)]
+            out.append(row("qa-row", [col("qa", [
+                text("qa-label", plain(label), styles={**LABEL, "marginBottom": 12}),
+                text("qa-body", inline_html(p), anchor="post-answer", styles={"fontSize": 16, "lineHeight": 1.75, "textColor": "ink"}),
+            ], styles={"background": "paper", "borderLeftWidth": 3, "borderTopWidth": 0, "borderRightWidth": 0,
+                       "borderBottomWidth": 0, "borderStyle": "solid", "borderColor": "accent", "paddingTop": 24,
+                       "paddingRight": 26, "paddingBottom": 24, "paddingLeft": 26, "marginBottom": 38})]))
+        elif el.name == "div" and el.find("a", class_="factor-card", recursive=False):
+            items = []
+            for a in el.find_all("a", class_="factor-card", recursive=False):
+                label, title = [x for x in a.children if isinstance(x, Tag)]
+                items.append({"label": plain(label), "title": plain(title), "url": map_href(a["href"]),
+                              "newTab": map_href(a["href"]).startswith("http")})
+            out.append(n(nid("links"), "link-cards", {"across": "3" if "grid-3" in cls else "2", "items": items}))
+        elif el.name == "div" and "grid-2" in cls and all(
+                [x.name for x in card.children if isinstance(x, Tag)] == ["h3", "ul"]
+                for card in el.find_all("div", class_="factor-card", recursive=False)):
+            # Titled cards of short bold-led points (cab types): Card lists, spec style.
+            out.append(n(nid("cards"), "card-lists", {"variant": "spec", "items": [
+                {"title": plain(card.find("h3")), "points": [{"text": inline_html(li)} for li in card.find_all("li")]}
+                for card in el.find_all("div", class_="factor-card", recursive=False)]}))
+        elif el.name == "div" and ("grid-2" in cls or "grid-3" in cls) and all(
+                [x.name for x in card.children if isinstance(x, Tag)] in (["div", "p"], ["div", "h3"])
+                for card in el.find_all("div", class_="factor-card", recursive=False)):
+            # An accent label over one line — model series ("LT® SERIES / Long-haul
+            # efficiency") or a numbered point ("01 / a short heading"): Card lists.
+            cards = el.find_all("div", class_="factor-card", recursive=False)
+            numbered = cards[0].find("h3", recursive=False) is not None
+            variant = "numbered" if numbered else ("series" if "grid-3" in cls else "series2")
+            out.append(n(nid("cards"), "card-lists", {"variant": variant, "items": [
+                {"title": plain(card.find("div")), "intro": inline_html(card.find(["p", "h3"], recursive=False)), "points": []}
+                for card in cards]}))
+        elif el.name == "div" and "grid-template-columns: 56px" in st:
+            # A numbered section ("01"): the number beside a real heading and its paragraphs,
+            # laid out by the row's node styles so the prose stays editable on the canvas.
+            num, inner = [x for x in el.children if isinstance(x, Tag)]
+            cid = nid("numbered")
+            kids = []
+            for j, x in enumerate([x for x in inner.children if isinstance(x, Tag)]):
+                if x.name == "h3": kids.append(n(f"{cid}-h", "heading", {"text": plain(x), "headingLevel": 3, "align": "left"}))
+                elif x.name == "p": kids.append(text(f"{cid}-p{j}", inline_html(x)))
+                elif x.name in ("ul", "ol"): kids.append(n(f"{cid}-list{j}", "prose-list", {"ordered": x.name == "ol", "items": [{"text": inline_html(li)} for li in x.find_all("li", recursive=False)]}))
+                else: raise SystemExit(f"numbered section child <{x.name}>")
+            out.append(row(cid, [
+                col(f"{cid}-num-col", [text(f"{cid}-index", plain(num), styles={"fontSize": 13, "fontWeight": "700", "letterSpacing": 2, "lineHeight": 1.6, "textColor": "accent"})], span=1),
+                col(f"{cid}-body", kids, span=11),
+            ], styles={"display": "grid", "gridColumns": "56px 1fr", "gap": 8, "borderTopWidth": 1, "borderStyle": "solid",
+                       "borderColor": "line", "borderLeftWidth": 0, "borderRightWidth": 0, "borderBottomWidth": 0,
+                       "paddingTop": 26, "marginTop": 26}))
+        elif el.name == "div" and "grid-4" in cls and el.find("div", class_="interval-card", recursive=False):
+            # Mileage cards: a small accent label over a list — Card lists, interval style.
+            items = []
+            for card in el.find_all("div", class_="interval-card", recursive=False):
+                mi, ul = [x for x in card.children if isinstance(x, Tag)]
+                assert "mi" in mi.get("class", []) and ul.name == "ul"
+                items.append({"title": plain(mi), "points": [{"text": plain(li)} for li in ul.find_all("li")]})
+            out.append(n(nid("cards"), "card-lists", {"variant": "interval", "items": items}))
+        elif el.name == "div" and ("grid-2" in cls or "grid-3" in cls) and all(
+                [x.name for x in card.children if isinstance(x, Tag)] == ["h3", "p"]
+                for card in el.find_all("div", class_="factor-card", recursive=False)):
+            # Title-and-sentence cards two or three across: the Feature list, as the four-up
+            # grid is — unless a card's sentence carries a link, which a Feature list item
+            # cannot hold; those are Card lists in the feature style.
+            cards = el.find_all("div", class_="factor-card", recursive=False)
+            cols = 2 if "grid-2" in cls else 3
+            if any(card.find("p").find("a") for card in cards):
+                out.append(n(nid("cards"), "card-lists", {"variant": "feature" if cols == 3 else "feature2", "items": [
+                    {"title": plain(card.find("h3")), "intro": inline_html(card.find("p")), "points": []} for card in cards]}))
+            else:
+                out.append(n(nid("features"), "list", {"headingLevel": 2, "columns": cols, "items": [
+                    {"label": plain(card.find("h3")), "desc": plain(card.find("p"))} for card in cards]}))
+            fs = re.search(r"font-size:\s*([0-9.]+)px", cards[0].find("p").get("style", ""))
+            if fs and fs.group(1) != "14.5":
+                extra_css.append(f'[data-bz-node="art-body"] .bz-block--list .bz-feature__d {{ font-size: {fs.group(1)}px; }}')
+        elif el.name == "div" and "grid-4" in cls and el.find("div", class_="feature-card", recursive=False):
+            # One-line feature tiles: a Feature list of titles only, set as plain text.
+            items = [{"label": plain(x)} for x in el.find_all("div", class_="feature-card", recursive=False)]
+            out.append(n(nid("features"), "list", {"headingLevel": 2, "columns": 4, "items": items}))
+            extra_css.append('/* Its four-up tiles are one line of body text each, not a title. */\n'
+                             '[data-bz-node="art-body"] .bz-block--list .bz-feature { padding: 22px; }\n'
+                             '[data-bz-node="art-body"] .bz-block--list .bz-feature__t { font: 400 16px / 1.7 var(--font-body); color: var(--body-text); margin: 0; }')
+        elif el.name == "div" and "mistake-head" in cls:
+            # A numbered section heading: the number badge and a real heading block side
+            # by side, so the heading keeps its anchor for the rail and stays editable.
+            num, h = el.find("span", class_="mistake-num"), el.find("h2")
+            sec = h["id"]
+            out.append(row(f"mh-{sec}", [
+                col(f"mh-{sec}-badge", [text(f"mh-{sec}-num", plain(num), styles={
+                    "background": "accent", "textColor": "card", "fontSize": 16, "fontWeight": "800",
+                    "width": 36, "height": 36, "display": "flex", "alignItems": "center", "justifyContent": "center"})],
+                    span=1, styles={"flexShrink": 0, "marginRight": 12}),
+                col(f"mh-{sec}-col", [n(f"h-{sec}", "heading", {"text": plain(h), "headingLevel": 2, "align": "left", "anchor": sec})],
+                    span=11, styles={"flexGrow": 1}),
+            ], styles={"display": "flex", "alignItems": "center", "marginTop": 48, "marginBottom": 16}))
+        elif el.name == "div" and "pro-tip" in cls:
+            cid = nid("tip")
+            out.append(row(f"{cid}-row", [col(cid, [text(f"{cid}-text", inline_html(el))], styles={
+                "borderLeftWidth": 3, "borderTopWidth": 0, "borderRightWidth": 0, "borderBottomWidth": 0,
+                "borderStyle": "solid", "borderColor": "accent", "paddingTop": 4, "paddingBottom": 4,
+                "paddingLeft": 18, "marginBottom": 18, "fontSize": 15, "lineHeight": 1.8})]))
         elif el.name == "div" and "grid-4" in cls:
             # Title-and-sentence cards four across: the platform's Feature list.
             items = []
@@ -406,7 +584,31 @@ def convert(path):
         "primaryLabel": plain(btns[0]), "primaryUrl": map_href(btns[0]["href"]),
         "secondaryLabel": plain(btns[1]), "secondaryUrl": map_href(btns[1]["href"])}}, [])
 
-    nodes = [hero_node, article, related, post_cta]
+    # A post's own FAQ: the platform FAQ widget, which draws the accordion the design
+    # draws and emits the FAQPage structured data from the same items.
+    faq_sec = main.select_one("section#post-faq")
+    faq = []
+    if faq_sec is not None:
+        eyebrow_el = faq_sec.find("div")
+        items = []
+        for trig in faq_sec.select("[data-disclosure]"):
+            panel = faq_sec.find(id=trig["aria-controls"])
+            items.append({"q": plain(trig.find("span")), "a": plain(panel)})
+        eb = plain(eyebrow_el)
+        faq = [n("faq", "section", {"width": "boxed", "background": "card", "paddingY": 0, "anchor": "post-faq"}, [
+            row("faq-row", [col("faq-col", [
+                n("faq-h", "heading", {"text": plain(faq_sec.find("h2")), "headingLevel": 2, "align": "left",
+                                       "eyebrow": eb.capitalize() if eb.isupper() else eb}),
+                n("faq-list", "widget", {"widget": "faq", "config": {"items": items}}),
+            ])], gap=5)])]
+    nodes = [hero_node, article, *faq, related, post_cta]
+    # A post built before the converter keeps its node ids where the converter names the
+    # same node differently: a changed id reads as delete-and-add, and loses the history.
+    alias = ID_ALIASES.get(slug, {})
+    def rename(ns):
+        for x in ns:
+            x["id"] = alias.get(x["id"], x["id"]); rename(x.get("children", []))
+    rename(nodes)
     # every id unique
     seen = set()
     def walk(ns):
@@ -414,10 +616,16 @@ def convert(path):
             assert x["id"] not in seen, (slug, x["id"]); seen.add(x["id"]); walk(x.get("children", []))
     walk(nodes)
 
+    m = re.search(r"\.factor-card\{[^}]*padding:\s*([0-9]+)px", own_style)
+    if m and m.group(1) != "20" and any(x["type"] == "list" for x in out):
+        extra_css.append(f'[data-bz-node="art-body"] .bz-block--list .bz-feature {{ padding: {m.group(1)}px; }}')
+    if re.search(r"\.stat-band\{[^}]*grid-template-columns:\s*1fr;", own_style):
+        extra_css.append('/* Its stat band stacks the figures, one per row. */\n'
+                         '[data-bz-node="art-body"] .bz-block--statBand .bz-stats { grid-template-columns: minmax(0, 1fr); }')
     desc = s.find("meta", attrs={"name": "description"})["content"]
     pub = s.find("meta", attrs={"property": "article:published_time"})
     kw = re.search(r'"keywords":\s*"([^"]*)"', str(s))
-    return slug, {"title": h1, "description": desc, "coverImage": cover["src"],
+    return slug, {"css_extra": "".join("\n" + x + "\n" for x in dict.fromkeys(extra_css)), "title": h1, "description": desc, "coverImage": cover_src,
                   "date": pub["content"][:10] if pub else None,
                   "keywords": [k.strip() for k in kw.group(1).split(",")] if kw else None,
                   "nodes": nodes}
@@ -428,6 +636,23 @@ POST_CSS = {
     "common-problems-with-air-brake-parts-for-semi-trucks":
         "\n/* This article's lists run at a looser 1.8 leading than the other posts'. */\n"
         '[data-bz-node="art-body"] .ss-prose-list li { line-height: 1.8; }\n',
+    "semi-truck-maintenance-mistakes-that-cost-fleets-thousands":
+        "\n/* This article sets its headings a step smaller and closer, to suit seven numbered ones. */\n"
+        '[data-bz-node="art-body"] > .bz-block--heading h2,\n'
+        '[data-bz-node="art-body"] .bz-col > .bz-block--heading h2 { font-size: 26px; }\n'
+        '[data-bz-node="art-body"] > .bz-block--heading h2 { margin-top: 48px; }\n'
+        "@media (max-width: 640px) {\n"
+        '  [data-bz-node="art-body"] > .bz-block--heading h2,\n'
+        '  [data-bz-node="art-body"] .bz-col > .bz-block--heading h2 { font-size: 21px; }\n'
+        "}\n",
+    "are-aftermarket-semi-truck-parts-as-reliable-as-oem":
+        "\n/* This article's comparison is ruled in ink under sentence-case headings, with roomier cells. */\n"
+        '[data-bz-node="art-body"] .ss-cmp { margin-bottom: 34px; }\n'
+        '[data-bz-node="art-body"] .ss-cmp thead th { line-height: 1.3; text-transform: none; border-bottom: 2px solid var(--ink); }\n'
+        '[data-bz-node="art-body"] .ss-cmp tbody th,\n'
+        '[data-bz-node="art-body"] .ss-cmp td { padding: 14px; }\n'
+        '[data-bz-node="art-body"] .ss-cmp tbody th { width: auto; white-space: nowrap; }\n'
+        '@media (max-width: 640px) { [data-bz-node="art-body"] .ss-cmp th, [data-bz-node="art-body"] .ss-cmp td { font-size: 12.5px; } }\n',
 }
 
 
@@ -496,7 +721,7 @@ if __name__ == "__main__":
         if kws:
             post["keywords"] = kws
         post["nodes"] = c["nodes"]
-        post["css"] = related_css(slug) + POST_CSS.get(slug, "")
+        post["css"] = related_css(slug) + POST_CSS.get(slug, "") + c["css_extra"]
         json.dump(post, open(p, "w"), indent=2, ensure_ascii=False); open(p, "a").write("\n")
         print(("updated " if old else "new     ") + slug)
     update_listing(meta)

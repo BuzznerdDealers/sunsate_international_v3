@@ -1,0 +1,557 @@
+{
+  "slug": "is-a-new-freight-truck-worth-the-cost-lets-break-down-the-benefits-of-buying-new",
+  "title": "Is a New Freight Truck Worth the Cost? Let’s Break Down the Benefits of Buying New",
+  "date": "2025-05-29",
+  "description": "Thinking about upgrading your fleet? Discover how investing in a new freight truck can deliver a strong ROI and long-term value.",
+  "status": "published",
+  "coverImage": "/img/blog/is-a-new-freight-truck-worth-the-cost-lets-break-down-the-benefits-of-buying-new/hero.jpg",
+  "topic": "Sales",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Sales",
+          "title": "Is a New Freight Truck Worth the Cost? Let’s Break Down the Benefits of Buying New",
+          "topic": "Sales",
+          "date": "May 29, 2025",
+          "readTime": "4 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/is-a-new-freight-truck-worth-the-cost-lets-break-down-the-benefits-of-buying-new/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Driver’s cockpit of a new International truck with steering wheel and dashboard controls"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "Lower Maintenance Costs",
+                        "href": "#maintenance"
+                      },
+                      {
+                        "label": "Reduced Downtime",
+                        "href": "#downtime"
+                      },
+                      {
+                        "label": "Better Fuel Efficiency",
+                        "href": "#fuel"
+                      },
+                      {
+                        "label": "Safer Trucks",
+                        "href": "#safety"
+                      },
+                      {
+                        "label": "Fleet Visibility & Control",
+                        "href": "#tech"
+                      },
+                      {
+                        "label": "Stronger Resale Value",
+                        "href": "#resale"
+                      },
+                      {
+                        "label": "Flexible Financing",
+                        "href": "#financing"
+                      },
+                      {
+                        "label": "Investing in a Smarter Future",
+                        "href": "#future"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "SHOPPING FOR A TRUCK?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Browse new freight trucks in our current inventory.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-new-trucks",
+                                "label": "View Inventory →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Investing in a new freight truck is a big decision. At first glance, the price tag might make a used model seem like the better choice. But when you break down the long-term costs and the long-term benefits, the value of going new starts to stand out. Time and again, owners come to the same conclusion: buying new is an investment that pays off in performance, uptime, and bottom-line returns. Here’s why purchasing a <a href=\"/store/inventory?condition=new\">new freight truck</a> could be the smartest move for your business.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "h-maintenance",
+                  "type": "heading",
+                  "props": {
+                    "text": "Lower Maintenance Costs and Fewer Surprises",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "maintenance"
+                  }
+                },
+                {
+                  "id": "p-maintenance-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Used trucks often come with hidden costs such as wear and tear, inconsistent service history, or outdated parts that are harder to replace. These issues can sneak up and turn into major expenses with little warning. On the flip side, <a href=\"/store/inventory?condition=new\">new trucks</a> offer peace of mind. With predictable maintenance schedules, comprehensive warranties, and genuine OEM parts, you can plan service in advance and avoid costly surprises.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-downtime",
+                  "type": "heading",
+                  "props": {
+                    "text": "Reduced Downtime Means More Time on the Road",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "downtime"
+                  }
+                },
+                {
+                  "id": "p-downtime-1",
+                  "type": "text",
+                  "props": {
+                    "text": "When a truck is off the road, your business loses time, money, and productivity. Older freight trucks are more likely to experience mechanical issues and unplanned maintenance problems that can quickly derail a delivery schedule or put a contract at risk.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-downtime-2",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"/store/inventory?condition=new\">New trucks</a> come with fresh components, longer service intervals, and factory warranties. When you buy new, you’re getting a reliable machine that’s built to perform day in and day out, with minimal interruptions. That translates to more deliveries, more satisfied customers, and more revenue.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-fuel",
+                  "type": "heading",
+                  "props": {
+                    "text": "Better Fuel Efficiency Adds Up Fast",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "fuel"
+                  }
+                },
+                {
+                  "id": "p-fuel-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Fuel is one of the largest ongoing costs in trucking, and even small gains in fuel efficiency can mean big savings over time. <a href=\"/store/inventory?condition=new\">New freight trucks</a>, especially International models like the LT® Series, are designed with fuel economy in mind, from lightweight materials to advanced aerodynamics and engine optimization. According to industry data, newer trucks can deliver up to 15–20% better fuel efficiency than older models. Over the lifespan of a vehicle, that can result in tens of thousands of dollars saved at the pump.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-safety",
+                  "type": "heading",
+                  "props": {
+                    "text": "Safer Trucks Help Protect Your Business",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "safety"
+                  }
+                },
+                {
+                  "id": "p-safety-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Safety doesn’t just protect your drivers, it also protects your brand, your insurance rates, and your business as a whole. New freight trucks come equipped with the latest safety technology, including:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-safety-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Collision mitigation systems"
+                      },
+                      {
+                        "text": "Lane departure warnings"
+                      },
+                      {
+                        "text": "Adaptive cruise control"
+                      },
+                      {
+                        "text": "Electronic stability control"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-safety-3",
+                  "type": "text",
+                  "props": {
+                    "text": "These features help reduce the risk of accidents, improve driver confidence, and lower liability exposure. And if an incident does occur, having modern safety systems on board can help demonstrate your commitment to responsible operations.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-tech",
+                  "type": "heading",
+                  "props": {
+                    "text": "Advanced Tech Improves Fleet Visibility and Control",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "tech"
+                  }
+                },
+                {
+                  "id": "p-tech-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Modern freight trucks don’t just drive better; they think better. Features like <a href=\"/store/inventory?condition=new\">International’s OnCommand® Connection</a> give you access to real-time diagnostics, predictive maintenance alerts, and performance monitoring across your fleet. This kind of visibility allows you to make faster, smarter decisions, such as catching issues early, optimizing routes, and improving driver performance. Having a system like this elevates your truck from just a vehicle to a connected tool that helps you run your business more efficiently.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-tech-2-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-tech-2",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-tech-2-body",
+                          "type": "text",
+                          "props": {
+                            "text": "If you’re looking for more control, better performance, and long-term value from your fleet, a new freight truck could be the right move. Our team is here to help you weigh your options, explore features, and find the best fit for your business. Schedule a free consultation or talk to a truck specialist today.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 15,
+                              "lineHeight": 1.7,
+                              "marginBottom": 12
+                            }
+                          }
+                        },
+                        {
+                          "id": "co-tech-2-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "contact-us",
+                                "label": "Schedule a Free Consultation →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-resale",
+                  "type": "heading",
+                  "props": {
+                    "text": "Stronger Resale Value in the Long Run",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "resale"
+                  }
+                },
+                {
+                  "id": "p-resale-1",
+                  "type": "text",
+                  "props": {
+                    "text": "It’s easy to focus on the upfront cost of a <a href=\"/store/inventory?condition=new\">new freight truck</a>, but it’s important to consider what you’ll get back when it’s time to upgrade again. <a href=\"/store/inventory?condition=new\">New trucks</a> can retain a higher value compared to used, especially if they’ve been well-maintained with a clear service record. That higher resale value can offset more of the initial investment than you might expect, giving you more flexibility when it’s time to expand or refresh your fleet again.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-financing",
+                  "type": "heading",
+                  "props": {
+                    "text": "Flexible Financing Options Make Buying Easier",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "financing"
+                  }
+                },
+                {
+                  "id": "p-financing-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At <a href=\"/\">Sun State International</a>, we understand that every business has different financial goals. That’s why we offer a variety of <a href=\"/financing\">financing plans</a>, <a href=\"/financing\">lease options</a>, and extended warranties to help make your investment more manageable. Whether you’re a growing regional fleet or an owner-operator looking to level up, we’ll work with you to find a financing solution that fits.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-future",
+                  "type": "heading",
+                  "props": {
+                    "text": "Investing in a Smarter Future",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "future"
+                  }
+                },
+                {
+                  "id": "p-future-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Buying a <a href=\"/store/inventory?condition=new\">new freight truck</a> isn’t just about getting from point A to point B—it’s about running a smarter, safer, and more profitable operation. From better fuel economy and uptime to advanced technology and long-term value, a <a href=\"/store/inventory?condition=new\">new truck</a> can deliver a return that far exceeds the initial cost.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-future-2",
+                  "type": "text",
+                  "props": {
+                    "text": "At <a href=\"/\">Sun State International</a>, we’ve helped countless businesses weigh the pros and cons of upgrading their fleet, and we’re here to help you make the right call for your business. Our team will walk you through <a href=\"/store/inventory?condition=new\">every model</a>, every spec, and <a href=\"/financing\">every financing option</a>, so you drive off with confidence. Ready to explore your next freight truck? <a href=\"/contact\">Contact us to learn more about the potential of buying new.</a>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-future-3",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "contact-us",
+                        "label": "Contact Us"
+                      },
+                      {
+                        "ctaId": "browse-new-trucks",
+                        "label": "See Our Inventory",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Ready to choose?",
+          "heading": "Let's find your next truck.",
+          "body": "Call 800.741.7566 and our sales teams in Tampa, Sarasota, Davenport or Brooksville will help you find the right fit.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/is-a-new-freight-truck-worth-the-cost-lets-break-down-the-benefits-of-buying-new\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/is-a-new-freight-truck-worth-the-cost-lets-break-down-the-benefits-of-buying-new\"])) > .bz-card:nth-child(n+4) { display: none; }\n"
+}

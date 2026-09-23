@@ -1,0 +1,584 @@
+{
+  "slug": "semi-truck-engine-problems-every-driver-should-watch-for",
+  "title": "Semi Truck Engine Problems Every Driver Should Watch For",
+  "date": "2025-09-19",
+  "description": "Spot common semi truck engine problems early. Learn warning signs, prevention tips, and how Sun State International keeps your fleet running.",
+  "status": "published",
+  "coverImage": "/img/blog/semi-truck-engine-problems-every-driver-should-watch-for/hero.jpg",
+  "topic": "Service",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Service",
+          "title": "Semi Truck Engine Problems Every Driver Should Watch For",
+          "topic": "Service",
+          "date": "September 19, 2025",
+          "readTime": "4 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/semi-truck-engine-problems-every-driver-should-watch-for/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Sun State International service bay with a truck engine bay open for repair"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "Common Engine Problems",
+                        "href": "#common-problems"
+                      },
+                      {
+                        "label": "Repair vs Replacement",
+                        "href": "#repair-vs-replace"
+                      },
+                      {
+                        "label": "Preventive Maintenance",
+                        "href": "#preventive-maintenance"
+                      },
+                      {
+                        "label": "Why Choose Sun State International",
+                        "href": "#why-choose-us"
+                      },
+                      {
+                        "label": "Ready to Protect Your Fleet?",
+                        "href": "#ready-to-protect"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "HAVING ENGINE ISSUES?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Schedule service with our team today.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "schedule-service",
+                                "label": "Schedule Service →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "For truck drivers and fleet owners, the engine is the lifeblood of every route. When semi truck engine problems arise, the costs aren't just mechanical; they ripple into downtime, lost deliveries, and frustrated customers.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "stats-intro-1",
+                  "type": "statBand",
+                  "props": {
+                    "stats": [
+                      {
+                        "value": "$2.270/mile",
+                        "label": "Average repair and maintenance cost per mile in 2023, per the American Transportation Research Institute"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-intro-2",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, we've seen firsthand how catching issues early saves Florida fleets thousands. Here are the most common engine problems drivers should never ignore, and how to handle them before they escalate.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-common-problems",
+                  "type": "heading",
+                  "props": {
+                    "text": "Common Semi Truck Engine Problems",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "common-problems"
+                  }
+                },
+                {
+                  "id": "details-common-problems-1",
+                  "type": "detail-cards",
+                  "props": {
+                    "variant": "stacked",
+                    "items": [
+                      {
+                        "title": "Overheating Engines",
+                        "body": "Overheating is one of the most frequent and costly engine problems in Florida, where high heat and heavy hauls push cooling systems to their limit. Worn belts, low coolant, or radiator leaks are often to blame.",
+                        "notes": [
+                          {
+                            "label": "WARNING SIGNS",
+                            "text": "Rising temperature gauge, steam from under the hood, loss of power."
+                          },
+                          {
+                            "label": "PREVENTION",
+                            "text": "Schedule cooling system inspections and replace hoses and belts before they fail."
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Fuel System Failures",
+                        "body": "Clogged filters, injector malfunctions, or contaminated fuel can cause reduced power and efficiency. Left unchecked, these issues can result in breakdowns or even catastrophic engine failure.",
+                        "notes": [
+                          {
+                            "label": "WARNING SIGNS",
+                            "text": "Hard starts or stalling, rough idling, drop in fuel economy."
+                          },
+                          {
+                            "label": "PREVENTION",
+                            "text": "Stick to fuel filter replacement schedules and monitor for contamination."
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Oil Leaks and Lubrication Issues",
+                        "body": "Engine lubrication keeps internal parts running smoothly. Oil leaks not only create environmental hazards but also lead to accelerated wear and eventual breakdowns.",
+                        "notes": [
+                          {
+                            "label": "WARNING SIGNS",
+                            "text": "Oil puddles under the truck, low oil pressure readings, smoke from the exhaust."
+                          },
+                          {
+                            "label": "PREVENTION",
+                            "text": "Regularly check seals, gaskets, and filters. Never delay oil changes."
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Turbocharger Failures",
+                        "body": "Turbochargers boost power and efficiency but operate under extreme pressure and heat. Failure often results from oil contamination or poor maintenance.",
+                        "notes": [
+                          {
+                            "label": "WARNING SIGNS",
+                            "text": "Loss of acceleration, excessive exhaust smoke, whining or grinding noises."
+                          },
+                          {
+                            "label": "PREVENTION",
+                            "text": "Use high-quality oil and maintain proper lubrication intervals."
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Electrical and Sensor Malfunctions",
+                        "body": "Today's engines depend on complex electronics to regulate performance. Failing sensors can throw off the entire system, leading to reduced fuel efficiency and compliance issues.",
+                        "notes": [
+                          {
+                            "label": "WARNING SIGNS",
+                            "text": "Check engine light, erratic power delivery, failed emissions tests."
+                          },
+                          {
+                            "label": "PREVENTION",
+                            "text": "Diagnostics during preventive maintenance can catch issues before they leave you stranded."
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-repair-vs-replace",
+                  "type": "heading",
+                  "props": {
+                    "text": "Repair Versus Replacement: Knowing The Difference",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "repair-vs-replace"
+                  }
+                },
+                {
+                  "id": "p-repair-vs-replace-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Not every engine issue requires a full replacement. A simple repair, such as replacing a fuel injector or gasket, may be enough to restore performance. But if failures are chronic or multiple systems are affected, a rebuild or overhaul becomes the smarter choice. Fleet managers should weigh:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-repair-vs-replace-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Cost per mile: Repeated small repairs can exceed the price of a replacement"
+                      },
+                      {
+                        "text": "Downtime impact: A rebuild may take longer but reduce long-term breakdowns"
+                      },
+                      {
+                        "text": "Truck lifecycle: Older units may justify full replacement, while newer trucks benefit from targeted repairs"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-repair-vs-replace-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Experiencing engine issues? Don't let unscheduled downtime keep you off the road. Schedule an appointment with our service team at Sun State International. We'll help get back on track ASAP.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-repair-vs-replace-4-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-repair-vs-replace-4",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-repair-vs-replace-4-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "schedule-service",
+                                "label": "Reduce Downtime. Get Back On the Road Today →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-preventive-maintenance",
+                  "type": "heading",
+                  "props": {
+                    "text": "Save Downtime With Preventive Maintenance",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "preventive-maintenance"
+                  }
+                },
+                {
+                  "id": "p-preventive-maintenance-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Most semi truck engine problems start small. Preventive maintenance helps fleets avoid major repairs by addressing issues before they cause costly downtime. Recommended PM checks:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-preventive-maintenance-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Oil and filter changes at OEM-recommended intervals"
+                      },
+                      {
+                        "text": "Cooling system flushes before peak summer months"
+                      },
+                      {
+                        "text": "Fuel filter replacements every 15,000–25,000 miles"
+                      },
+                      {
+                        "text": "Regular diagnostics on sensors and electrical systems"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-why-choose-us",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Choose Sun State International For Engine Service",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "why-choose-us"
+                  }
+                },
+                {
+                  "id": "p-why-choose-us-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Sun State International isn't just another shop. We are Florida's only International Truck dealer and a trusted partner for fleets across Tampa, Sarasota, and Davenport. What sets us apart:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-why-choose-us-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Certified technicians: factory-trained experts ready to handle simple fixes or complex overhauls"
+                      },
+                      {
+                        "text": "OEM and aftermarket parts: choose what fits your fleet's budget without sacrificing reliability"
+                      },
+                      {
+                        "text": "Fast turnaround: Diamond Edge Certified service centers prioritize efficiency and uptime"
+                      },
+                      {
+                        "text": "Straightforward communication: no guesswork, just clear answers and honest timelines"
+                      },
+                      {
+                        "text": "Family-owned commitment: we treat your business like part of ours"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-ready-to-protect",
+                  "type": "heading",
+                  "props": {
+                    "text": "Ready To Protect Your Fleet From Engine Problems?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "ready-to-protect"
+                  }
+                },
+                {
+                  "id": "p-ready-to-protect-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Downtime is expensive, but it's also preventable. By recognizing warning signs and partnering with a dependable service provider, you can keep your trucks, and your business, running strong. Ready to get back on the road? Explore our online part store for fast access to OEM and aftermarket solutions, or schedule an appointment with our service team!",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-ready-to-protect-2",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "schedule-service",
+                        "label": "Schedule Service for Your Semi Truck Engine"
+                      },
+                      {
+                        "ctaId": "order-parts-online",
+                        "label": "Shop Parts Online"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Don't let an issue escalate",
+          "heading": "Let's get your engine checked.",
+          "body": "Call 800.741.7566 and our service teams in Tampa, Sarasota, Davenport or Brooksville will get you scheduled.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/semi-truck-engine-problems-every-driver-should-watch-for\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/semi-truck-engine-problems-every-driver-should-watch-for\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n/* Its stat band stacks the figures, one per row. */\n[data-bz-node=\"art-body\"] .bz-block--statBand .bz-stats { grid-template-columns: minmax(0, 1fr); }\n"
+}

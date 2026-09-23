@@ -1,0 +1,665 @@
+{
+  "slug": "are-aftermarket-semi-truck-parts-as-reliable-as-oem",
+  "title": "Are Aftermarket Semi Truck Parts as Reliable as OEM?",
+  "date": "2025-10-17",
+  "description": "Learn how aftermarket semi truck parts compare to OEM for reliability, performance, and cost. Find trusted replacements at Sun State.",
+  "status": "published",
+  "coverImage": "/img/blog/are-aftermarket-semi-truck-parts-as-reliable-as-oem/hero.jpg",
+  "topic": "Parts",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Parts",
+          "title": "Are Aftermarket Semi Truck Parts as Reliable as OEM?",
+          "topic": "Parts",
+          "date": "October 17, 2025",
+          "readTime": "5 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/are-aftermarket-semi-truck-parts-as-reliable-as-oem/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Sun State International technician working at a service bay tool station"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "What Are Aftermarket Parts?",
+                        "href": "#what-are-aftermarket"
+                      },
+                      {
+                        "label": "The Benefits of Aftermarket Parts",
+                        "href": "#benefits"
+                      },
+                      {
+                        "label": "When OEM Still Makes Sense",
+                        "href": "#when-oem"
+                      },
+                      {
+                        "label": "OEM vs Aftermarket at a Glance",
+                        "href": "#at-a-glance"
+                      },
+                      {
+                        "label": "How to Choose the Right Option",
+                        "href": "#how-to-choose"
+                      },
+                      {
+                        "label": "Why Work with Sun State International",
+                        "href": "#why-work-with-us"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "NEED PARTS?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Order OEM or aftermarket parts online today.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "order-parts-online",
+                                "label": "Shop Parts →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Every fleet owner eventually faces this question: should you buy OEM or aftermarket semi truck parts?",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At first glance, OEM (original equipment manufacturer) parts might seem like the safer choice. After all, they're made by the same manufacturer as your truck. But today's aftermarket parts industry has come a long way, offering dependable quality, competitive pricing, and greater availability than ever before.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-intro-2",
+                  "type": "text",
+                  "props": {
+                    "text": "For drivers whose business depends on their trucks, the goal isn't just to find a part that fits; it's to find a part that lasts. That's where Sun State International steps in: helping you make smart, reliable choices that keep your truck and your bottom line moving forward.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-what-are-aftermarket",
+                  "type": "heading",
+                  "props": {
+                    "text": "What Are Aftermarket Semi Truck Parts?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "what-are-aftermarket"
+                  }
+                },
+                {
+                  "id": "p-what-are-aftermarket-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Aftermarket parts are built by third-party manufacturers, not the original truck maker, but they're designed to meet or even exceed OEM standards. They're used for everything from brake components and filters to engine parts and body replacements.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-what-are-aftermarket-2",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, our parts team carefully vets the aftermarket suppliers we carry, ensuring that every part meets the durability and safety standards you expect. When we recommend an aftermarket option, it's because we'd trust it in our own trucks.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-benefits",
+                  "type": "heading",
+                  "props": {
+                    "text": "The Benefits of Aftermarket Parts",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "benefits"
+                  }
+                },
+                {
+                  "id": "p-benefits-1",
+                  "type": "text",
+                  "props": {
+                    "text": "For many owner-operators and fleet managers, aftermarket parts make solid business sense. Here's why:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-benefits-2",
+                  "type": "heading",
+                  "props": {
+                    "text": "1. Lower Cost, Same Fit",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-benefits-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Aftermarket semi truck parts are generally less expensive than OEM parts, making them an attractive choice when you're managing tight margins or maintaining multiple vehicles. Lower cost doesn't have to mean lower quality, especially when you work with a reputable dealer like Sun State International.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-benefits-4",
+                  "type": "heading",
+                  "props": {
+                    "text": "2. Wider Availability",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-benefits-5",
+                  "type": "text",
+                  "props": {
+                    "text": "While OEM parts can sometimes take weeks to arrive, aftermarket options are typically in stock and ready to go. This faster turnaround means less downtime and fewer delays on the road, critical for drivers with delivery deadlines and service commitments.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-benefits-6",
+                  "type": "heading",
+                  "props": {
+                    "text": "3. Comparable Performance",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-benefits-7",
+                  "type": "text",
+                  "props": {
+                    "text": "Many aftermarket parts perform just as well as OEM counterparts. In fact, some are even enhanced to address known weaknesses in original designs. The key is choosing parts from trusted brands and certified dealerships, not from unverified online sellers.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-when-oem",
+                  "type": "heading",
+                  "props": {
+                    "text": "When OEM Still Makes Sense",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "when-oem"
+                  }
+                },
+                {
+                  "id": "p-when-oem-1",
+                  "type": "text",
+                  "props": {
+                    "text": "That said, OEM parts still have their place, particularly when your truck is under warranty or you're repairing major components like the engine, transmission, or emissions system. OEM parts are guaranteed to match the manufacturer's exact specifications, which can be essential for maintaining warranty coverage or long-term resale value.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-when-oem-2",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, we supply both OEM and high-quality aftermarket parts, helping you make the best decision for your truck's age, mileage, and workload.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-at-a-glance",
+                  "type": "heading",
+                  "props": {
+                    "text": "OEM vs Aftermarket Parts at a Glance",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "at-a-glance"
+                  }
+                },
+                {
+                  "id": "compare-at-a-glance-1",
+                  "type": "compare-table",
+                  "props": {
+                    "headA": "Feature",
+                    "headB": "OEM Parts",
+                    "headC": "Aftermarket Parts",
+                    "rows": [
+                      {
+                        "a": "Manufacturer",
+                        "b": "Made by the original truck manufacturer (e.g., International®)",
+                        "c": "Made by third-party manufacturers to fit OEM specifications"
+                      },
+                      {
+                        "a": "Cost",
+                        "b": "Higher price point",
+                        "c": "Typically 20–40% less expensive"
+                      },
+                      {
+                        "a": "Availability",
+                        "b": "May require special order or longer lead times",
+                        "c": "Widely available, often in stock"
+                      },
+                      {
+                        "a": "Warranty Coverage",
+                        "b": "Guaranteed fit and may be required for warranty repairs",
+                        "c": "Some brands offer warranties, but not always linked to factory coverage"
+                      },
+                      {
+                        "a": "Quality & Performance",
+                        "b": "Guaranteed to match original design and specs",
+                        "c": "Quality varies by manufacturer; top-tier brands often equal or exceed OEM"
+                      },
+                      {
+                        "a": "Best For",
+                        "b": "New trucks, warranty repairs, or critical systems",
+                        "c": "Older trucks, budget-conscious maintenance, or non-critical replacements"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/are-aftermarket-semi-truck-parts-as-reliable-as-oem/1.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Close-up of Sun State International OEM and aftermarket parts storage bins"
+                    }
+                  }
+                },
+                {
+                  "id": "h-how-to-choose",
+                  "type": "heading",
+                  "props": {
+                    "text": "How to Choose the Right Option for Your Fleet",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "how-to-choose"
+                  }
+                },
+                {
+                  "id": "p-how-to-choose-1",
+                  "type": "text",
+                  "props": {
+                    "text": "The right choice depends on your goals:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-how-to-choose-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Looking for savings? Choose trusted aftermarket options to cut costs without sacrificing performance."
+                      },
+                      {
+                        "text": "Under warranty or brand-new truck? Stick with OEM to stay compliant."
+                      },
+                      {
+                        "text": "Running older models? Aftermarket parts often make more sense financially, especially for non-critical systems."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-how-to-choose-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Our experienced service advisors can help you evaluate which parts align with your truck's condition, workload, and maintenance schedule. Shop our Online Parts Store to browse our full inventory of OEM and aftermarket truck parts available across Tampa, Sarasota, Davenport, and Brooksville.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-how-to-choose-4-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-how-to-choose-4",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-how-to-choose-4-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "order-parts-online",
+                                "label": "Shop Parts Online →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-why-work-with-us",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Work with Sun State International",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "why-work-with-us"
+                  }
+                },
+                {
+                  "id": "p-why-work-with-us-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Our customers trust us because we've earned that trust over decades. As Florida's only authorized International® truck dealer, we bring a reputation built on reliability, transparency, and care. When you source your semi truck parts through us, you're not just buying a component; you're gaining a dependable partner who values your uptime and safety above all else.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-why-work-with-us-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Certified technicians with hands-on experience in International engines"
+                      },
+                      {
+                        "text": "Multiple locations across Tampa, Sarasota, Davenport, and Brooksville for convenient access"
+                      },
+                      {
+                        "text": "In-house financing options for qualified customers"
+                      },
+                      {
+                        "text": "Online ordering and pickup to simplify your maintenance schedule"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-why-work-with-us-3",
+                  "type": "text",
+                  "props": {
+                    "text": "No matter what you drive, our goal is to keep you moving with the right part, at the right price, installed by the right people.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-dependable-parts",
+                  "type": "heading",
+                  "props": {
+                    "text": "Dependable Parts. Exceptional Service.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "dependable-parts"
+                  }
+                },
+                {
+                  "id": "p-dependable-parts-1",
+                  "type": "text",
+                  "props": {
+                    "text": "When it comes to aftermarket semi truck parts, reliability depends on one thing: who you buy from. That's why Sun State International's service department treats every truck like it's our own. Whether you're replacing a part, scheduling preventive maintenance, or deciding between OEM and aftermarket, our promise is the same: dependable parts, honest service, and a team that keeps your business moving forward.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-dependable-parts-2",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Need expert help diagnosing a part or scheduling a repair?</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-dependable-parts-3",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "schedule-service",
+                        "label": "Schedule a Service Appointment"
+                      },
+                      {
+                        "ctaId": "order-parts-online",
+                        "label": "Explore Our Parts Department"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Not sure which to choose?",
+          "heading": "Let's find the right part.",
+          "body": "Call 800.741.7566 and our parts teams in Tampa, Sarasota, Davenport or Brooksville will help you decide.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/are-aftermarket-semi-truck-parts-as-reliable-as-oem\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/are-aftermarket-semi-truck-parts-as-reliable-as-oem\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n/* This article's comparison is ruled in ink under sentence-case headings, with roomier cells. */\n[data-bz-node=\"art-body\"] .ss-cmp { margin-bottom: 34px; }\n[data-bz-node=\"art-body\"] .ss-cmp thead th { line-height: 1.3; text-transform: none; border-bottom: 2px solid var(--ink); }\n[data-bz-node=\"art-body\"] .ss-cmp tbody th,\n[data-bz-node=\"art-body\"] .ss-cmp td { padding: 14px; }\n[data-bz-node=\"art-body\"] .ss-cmp tbody th { width: auto; white-space: nowrap; }\n@media (max-width: 640px) { [data-bz-node=\"art-body\"] .ss-cmp th, [data-bz-node=\"art-body\"] .ss-cmp td { font-size: 12.5px; } }\n"
+}

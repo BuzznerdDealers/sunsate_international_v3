@@ -1,0 +1,622 @@
+{
+  "slug": "do-semi-truck-maintenance-costs-outweigh-the-benefits-the-benefits-of-buying-new-over-used",
+  "title": "Do Semi Truck Maintenance Costs Outweigh the Benefits? The Benefits of Buying New Over Used",
+  "date": "2025-08-01",
+  "description": "Wondering if semi truck maintenance costs are worth it? Discover why buying new can save you more in the long run.",
+  "status": "published",
+  "coverImage": "/img/blog/do-semi-truck-maintenance-costs-outweigh-the-benefits-the-benefits-of-buying-new-over-used/hero.jpg",
+  "topic": "Sales",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Sales",
+          "title": "Do Semi Truck Maintenance Costs Outweigh the Benefits? The Benefits of Buying New Over Used",
+          "topic": "Sales",
+          "date": "August 1, 2025",
+          "readTime": "4 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/do-semi-truck-maintenance-costs-outweigh-the-benefits-the-benefits-of-buying-new-over-used/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Row of new and used International trucks lined up at Sun State International"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "The Maintenance Trade-Off With Used",
+                        "href": "#used-tradeoff"
+                      },
+                      {
+                        "label": "Why New Could Be Smarter",
+                        "href": "#why-new"
+                      },
+                      {
+                        "label": "Built-In Diagnostics",
+                        "href": "#diagnostics"
+                      },
+                      {
+                        "label": "Fuel Economy Savings",
+                        "href": "#fuel-economy"
+                      },
+                      {
+                        "label": "Emissions Compliance",
+                        "href": "#emissions"
+                      },
+                      {
+                        "label": "Other Long-Term Benefits",
+                        "href": "#other-benefits"
+                      },
+                      {
+                        "label": "Is New Right for You?",
+                        "href": "#right-move"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "SHOPPING FOR A TRUCK?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "See our current new truck inventory.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-new-trucks",
+                                "label": "View Inventory →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "If you're running a trucking business, every dollar matters. And when it comes to expanding or replacing your fleet, one of the biggest questions is whether to buy new or used.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "On paper, a used truck might look like the more affordable option, but once you factor in semi truck maintenance costs, it could be better to buy new.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-intro-2",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, we work with Florida's truck owners every day to help them make smart, long-term decisions. Let's break down what really goes into the cost of ownership, and how a new semi truck can actually save you money in the long run.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-used-tradeoff",
+                  "type": "heading",
+                  "props": {
+                    "text": "Understanding the Maintenance Trade-Off with Used Trucks",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "used-tradeoff"
+                  }
+                },
+                {
+                  "id": "p-used-tradeoff-1",
+                  "type": "text",
+                  "props": {
+                    "text": "There's no doubt that used trucks can be a smart solution for many owner-operators, especially when purchased from a trusted dealer with a strong inspection and service process. However, older trucks naturally come with more miles and more wear on major components. Over time, that can lead to more frequent repairs, from brakes and transmissions to electrical systems. These aren't always deal-breakers, but they do require budgeting and planning.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-used-tradeoff-2",
+                  "type": "text",
+                  "props": {
+                    "text": "One of the biggest challenges is the risk of downtime. Every hour a truck is off the road is time that isn't generating revenue, and depending on the size of your operation, that can quickly impact schedules and customer satisfaction. For some, those extra maintenance windows are manageable. But for others, especially businesses without backup units or extra capacity, even a couple of unexpected breakdowns a year can disrupt operations and margins.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-why-new",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why New Semi Trucks Could Be a Smarter Investment",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "why-new"
+                  }
+                },
+                {
+                  "id": "p-why-new-1",
+                  "type": "text",
+                  "props": {
+                    "text": "New trucks are built for performance and reliability. With a factory-fresh engine, brand-new components, and no history of wear, maintenance costs are significantly lower in the first few years. Here's what you can expect:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-why-new-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Fewer roadside breakdowns"
+                      },
+                      {
+                        "text": "Longer intervals between services"
+                      },
+                      {
+                        "text": "Lower cost of ownership over time"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-why-new-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Plus, many of the new International® models available at Sun State International include factory warranties that cover key repairs, giving you peace of mind while protecting your investment.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-why-new-4-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-why-new-4",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-why-new-4-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-new-trucks",
+                                "label": "See Our Inventory →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-diagnostics",
+                  "type": "heading",
+                  "props": {
+                    "text": "Built-In Efficiency and Advanced Diagnostics",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "diagnostics"
+                  }
+                },
+                {
+                  "id": "p-diagnostics-1",
+                  "type": "text",
+                  "props": {
+                    "text": "New trucks aren't just cleaner under the hood, they're smarter, too. Today's models come equipped with systems that monitor performance in real time. That means:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-diagnostics-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Early alerts for engine or brake issues"
+                      },
+                      {
+                        "text": "Data-driven maintenance scheduling"
+                      },
+                      {
+                        "text": "Easier diagnostics and quicker repairs"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-diagnostics-3",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, we offer International® models with OnCommand® Connection, a cutting-edge fleet management system that helps you stay ahead of potential problems. The result? Less guesswork, fewer surprises, and more time on the road.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-fuel-economy",
+                  "type": "heading",
+                  "props": {
+                    "text": "Better Fuel Economy Means Bigger Savings",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "fuel-economy"
+                  }
+                },
+                {
+                  "id": "p-fuel-economy-1",
+                  "type": "text",
+                  "props": {
+                    "text": "While the sticker price on a new truck may be higher, the fuel savings over time can be substantial. Most newer models are designed to meet stricter EPA standards and feature aerodynamic upgrades, lightweight components, and fuel-efficient engines.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-fuel-economy-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Fuel efficiency gains can save fleet owners thousands per truck each year, depending on routes and usage. When you're trying to make every load count, a few extra miles per gallon can make all the difference.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-emissions",
+                  "type": "heading",
+                  "props": {
+                    "text": "Emissions Compliance Made Easy",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "emissions"
+                  }
+                },
+                {
+                  "id": "p-emissions-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Staying compliant with state and federal emissions regulations isn't optional, and older trucks may require costly upgrades to meet evolving standards. New trucks are already built to spec, which means one less thing on your plate. If you're hauling in or around urban areas with tighter environmental regulations, that compliance could even open the door to more business opportunities.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-emissions-2-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-emissions-2",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-emissions-2-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-new-trucks",
+                                "label": "See Our Inventory →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-other-benefits",
+                  "type": "heading",
+                  "props": {
+                    "text": "Other Long-Term Benefits of Buying New",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "other-benefits"
+                  }
+                },
+                {
+                  "id": "features-other-benefits-1",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 2,
+                    "columns": 2,
+                    "items": [
+                      {
+                        "label": "Higher Resale Value",
+                        "desc": "New trucks naturally retain more value, especially when well-maintained. If your business grows or pivots and you decide to offload a unit, a newer truck will likely bring in a higher resale or trade-in value than a high-mileage used rig."
+                      },
+                      {
+                        "label": "Driver Retention and Morale",
+                        "desc": "Drivers notice when you invest in better equipment. A clean, quiet, comfortable ride goes a long way in helping you retain skilled drivers, especially in a competitive market. Advanced safety features, upgraded sleepers, or better suspension systems can pay off in stronger retention."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-right-move",
+                  "type": "heading",
+                  "props": {
+                    "text": "Is a New Truck the Right Move for Your Business?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "right-move"
+                  }
+                },
+                {
+                  "id": "p-right-move-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, we understand that cost is a major factor, but it's not the only one. When you break down semi truck maintenance costs and consider the time, money, and stress that older equipment can bring, the benefits of buying new speak for themselves.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-right-move-2",
+                  "type": "text",
+                  "props": {
+                    "text": "From longer uptime to fewer headaches, new trucks offer a clearer path to profitability. And with our expert team, in-house financing, and statewide service centers, we make the process straightforward and supportive from day one. Explore our inventory of new International® trucks and discover the right fit for your business.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-right-move-3",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "browse-new-trucks",
+                        "label": "See Our Inventory"
+                      },
+                      {
+                        "ctaId": "contact-us",
+                        "label": "Contact Us",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Ready to invest in new?",
+          "heading": "Let's find your next truck.",
+          "body": "Call 800.741.7566 and our sales teams in Tampa, Sarasota, Davenport or Brooksville will help you find the right fit.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/do-semi-truck-maintenance-costs-outweigh-the-benefits-the-benefits-of-buying-new-over-used\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/do-semi-truck-maintenance-costs-outweigh-the-benefits-the-benefits-of-buying-new-over-used\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n[data-bz-node=\"art-body\"] .bz-block--list .bz-feature__d { font-size: 15px; }\n\n[data-bz-node=\"art-body\"] .bz-block--list .bz-feature { padding: 22px; }\n"
+}

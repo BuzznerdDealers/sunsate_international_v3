@@ -1,0 +1,625 @@
+{
+  "slug": "what-are-the-most-common-semi-truck-repairs-and-how-to-handle-them",
+  "title": "What Are the Most Common Semi Truck Repairs and How to Handle Them",
+  "date": "2025-09-12",
+  "description": "Learn the most common semi truck repairs, when to fix vs. replace, and how Sun State International keeps your fleet moving.",
+  "status": "published",
+  "coverImage": "/img/blog/what-are-the-most-common-semi-truck-repairs-and-how-to-handle-them/hero.jpg",
+  "topic": "Service",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Service",
+          "title": "What Are the Most Common Semi Truck Repairs and How to Handle Them",
+          "topic": "Service",
+          "date": "September 12, 2025",
+          "readTime": "5 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/what-are-the-most-common-semi-truck-repairs-and-how-to-handle-them/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Sun State International service bay with a truck cab tilted for repair"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "Top Semi Truck Repairs",
+                        "href": "#top-repairs"
+                      },
+                      {
+                        "label": "When to Repair vs. Replace",
+                        "href": "#repair-vs-replace"
+                      },
+                      {
+                        "label": "How We Handle Repairs",
+                        "href": "#how-we-handle"
+                      },
+                      {
+                        "label": "Proactive Maintenance",
+                        "href": "#proactive-maintenance"
+                      },
+                      {
+                        "label": "Ready to Minimize Downtime?",
+                        "href": "#ready-to-minimize"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "NEED A REPAIR?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Schedule service with our team today.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "schedule-service",
+                                "label": "Schedule Service →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Whether you run a small family fleet or manage dozens of rigs across Florida, unexpected semi truck repairs are inevitable.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Knowing which issues appear most often, and how to address them, can mean the difference between costly downtime and a smooth-running operation.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-intro-2",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, we see the same core problems come through our service bays time and again. From electrical issues to brake wear, these repairs are a normal part of trucking life. What matters most is how quickly and effectively you address them.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-top-repairs",
+                  "type": "heading",
+                  "props": {
+                    "text": "The Top Semi Truck Repairs Fleet Owners Face",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "top-repairs"
+                  }
+                },
+                {
+                  "id": "details-top-repairs-1",
+                  "type": "detail-cards",
+                  "props": {
+                    "variant": "inline",
+                    "items": [
+                      {
+                        "title": "Brake Wear and Failure",
+                        "body": "Brakes are the most common repair across the industry. According to the Federal Motor Carrier Safety Administration (FMCSA), brake issues are responsible for 29% of large truck crashes. That makes regular brake inspections and timely replacement one of the most important safety steps you can take.",
+                        "notes": [
+                          {
+                            "label": "WHEN TO FIX:",
+                            "text": "Brake pads and drums should be routinely replaced."
+                          },
+                          {
+                            "label": "WHEN TO REPLACE:",
+                            "text": "Trucks should undergo a full brake system overhaul if components are cracked, leaking, or beyond safe wear limits."
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Electrical System Issues",
+                        "body": "Semi trucks today rely heavily on electrical systems for diagnostics, sensors, and engine performance. Corroded wiring, dead batteries, and alternator problems often trigger warning lights or no-start situations.",
+                        "notes": [
+                          {
+                            "label": "WHEN TO FIX:",
+                            "text": "Repair wiring, replace fuses, or swap batteries when you start to notice issues."
+                          },
+                          {
+                            "label": "WHEN TO REPLACE:",
+                            "text": "If failures are persistent or damage is widespread, you might need to replace entire harnesses or alternators."
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Engine Overheating and Cooling System Repairs",
+                        "body": "Florida's heat puts extra strain on cooling systems. Radiator leaks, worn belts, and faulty thermostats can lead to overheating, breakdowns, or even engine failure if ignored.",
+                        "notes": [
+                          {
+                            "label": "WHEN TO FIX:",
+                            "text": "Small fixes include swapping out minor hoses or belts, radiator flushes, and coolant top-offs."
+                          },
+                          {
+                            "label": "WHEN TO REPLACE:",
+                            "text": "When repairs no longer prevent overheating, you may need to replace radiators, water pumps, or head gaskets."
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Transmission and Clutch Repairs",
+                        "body": "Hard shifting, grinding gears, or slipping clutches are signs your transmission needs attention. This is one of the most expensive repairs, which makes it more important to diagnose issues early.",
+                        "notes": [
+                          {
+                            "label": "WHEN TO FIX:",
+                            "text": "Some transmission issues can be fixed by adjusting linkage, replacing fluids, or repairing seals."
+                          },
+                          {
+                            "label": "WHEN TO REPLACE:",
+                            "text": "If minor repairs don't fix your issues, then it's time for a full transmission or clutch replacement."
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Suspension and Tire Wear",
+                        "body": "Florida roads aren't always kind to heavy-duty trucks. Potholes, uneven loads, and constant long-haul travel cause suspension wear and uneven tire tread.",
+                        "notes": [
+                          {
+                            "label": "WHEN TO FIX:",
+                            "text": "Minor repairs can include routine tire rotation or shock and bushing replacement."
+                          },
+                          {
+                            "label": "WHEN TO REPLACE:",
+                            "text": "When tread separation or frame damage is present, then you'll need to replace full suspension components or tire sets."
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-repair-vs-replace",
+                  "type": "heading",
+                  "props": {
+                    "text": "When To Repair Versus Replace",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "repair-vs-replace"
+                  }
+                },
+                {
+                  "id": "p-repair-vs-replace-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Knowing when to repair versus replace is key to cost control. A repair often makes sense when:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-repair-vs-replace-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "The part is relatively new"
+                      },
+                      {
+                        "text": "Diagnostics show a targeted, isolated issue"
+                      },
+                      {
+                        "text": "It doesn't affect other critical systems"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-repair-vs-replace-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Replacement is smarter when:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-repair-vs-replace-4",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "The repair is temporary and won't solve the root problem"
+                      },
+                      {
+                        "text": "Safety is at risk"
+                      },
+                      {
+                        "text": "Long-term costs of repeated repairs outweigh replacement"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "stats-repair-vs-replace-5",
+                  "type": "statBand",
+                  "props": {
+                    "stats": [
+                      {
+                        "value": "$2.27/mile",
+                        "label": "Average total trucking cost in 2023 after a 3.1% rise in maintenance and repair costs, per the American Transportation Research Institute"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-repair-vs-replace-6",
+                  "type": "text",
+                  "props": {
+                    "text": "Investing in replacements at the right time prevents hidden costs that stack up over months.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-repair-vs-replace-7-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-repair-vs-replace-7",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-repair-vs-replace-7-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "order-parts-online",
+                                "label": "Explore Our Parts Department →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-how-we-handle",
+                  "type": "heading",
+                  "props": {
+                    "text": "How Sun State International Handles Semi Truck Repairs",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "how-we-handle"
+                  }
+                },
+                {
+                  "id": "p-how-we-handle-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Sun State International is more than a service provider; we're a fleet partner. Our service departments across Tampa, Sarasota, and Davenport are equipped to handle everything from semi-truck repairs to preventive maintenance. Here's how we keep downtime low and quality high:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-how-we-handle-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Diamond Edge Certified technicians for faster check-in, accurate diagnostics, and priority turnaround"
+                      },
+                      {
+                        "text": "OEM and aftermarket options to fit your fleet's budget without sacrificing quality"
+                      },
+                      {
+                        "text": "Straightforward communication: clear estimates and honest timelines"
+                      },
+                      {
+                        "text": "Dependable parts access: over $3 million in inventory means the part you need is usually in stock"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-proactive-maintenance",
+                  "type": "heading",
+                  "props": {
+                    "text": "Proactive Maintenance Prevents Repairs",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "proactive-maintenance"
+                  }
+                },
+                {
+                  "id": "p-proactive-maintenance-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Most common repairs start as small issues that were overlooked. Preventive maintenance is the most effective way to avoid breakdowns. By building preventative maintenance schedules based on mileage, duty cycles, and OEM guidelines, fleets save money and improve uptime. Consider adding:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-proactive-maintenance-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Brake checks every 25,000 miles"
+                      },
+                      {
+                        "text": "Electrical inspections before long hauls"
+                      },
+                      {
+                        "text": "Cooling system flushes before the summer months"
+                      },
+                      {
+                        "text": "Quarterly tire and suspension checks"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-proactive-maintenance-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Need help managing a regular schedule? Our service team can help fleets customize preventative maintenance programs that prevent expensive roadside calls and keep trucks compliant.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-ready-to-minimize",
+                  "type": "heading",
+                  "props": {
+                    "text": "Ready To Minimize Downtime?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "ready-to-minimize"
+                  }
+                },
+                {
+                  "id": "p-ready-to-minimize-1",
+                  "type": "text",
+                  "props": {
+                    "text": "When it comes to semi truck repairs, you don't just need a shop; you need a partner who understands the pressures of Florida trucking. Sun State International is Florida's only International Truck dealer, but what truly sets us apart is how we care for our customers. As a family-owned business, we prioritize hospitable service, professional care, and straightforward support. Work with a business whose reputation is built on results, and schedule your service with our expert service team today.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-ready-to-minimize-2",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "schedule-service",
+                        "label": "Schedule Service with Certified Technicians"
+                      },
+                      {
+                        "ctaId": "order-parts-online",
+                        "label": "Shop Parts Online"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Minimize your downtime",
+          "heading": "Let's get your truck repaired right.",
+          "body": "Call 800.741.7566 and our service teams in Tampa, Sarasota, Davenport or Brooksville will get you scheduled.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/what-are-the-most-common-semi-truck-repairs-and-how-to-handle-them\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/what-are-the-most-common-semi-truck-repairs-and-how-to-handle-them\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n/* Its stat band stacks the figures, one per row. */\n[data-bz-node=\"art-body\"] .bz-block--statBand .bz-stats { grid-template-columns: minmax(0, 1fr); }\n"
+}

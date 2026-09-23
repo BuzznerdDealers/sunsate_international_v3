@@ -1,0 +1,707 @@
+{
+  "slug": "semi-truck-brake-maintenance",
+  "title": "What Every Fleet Should Know About Semi Truck Brake Maintenance",
+  "date": "2025-10-24",
+  "description": "Learn how to keep your fleet safe and running smoothly with proper semi truck brake maintenance. Expert tips and service from Sun State.",
+  "status": "published",
+  "coverImage": "/img/blog/semi-truck-brake-maintenance/hero.jpg",
+  "topic": "Service",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Service",
+          "title": "What Every Fleet Should Know About Semi Truck Brake Maintenance",
+          "topic": "Service",
+          "date": "October 24, 2025",
+          "readTime": "5 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/semi-truck-brake-maintenance/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Sun State International service bay with a truck hood raised for brake system service"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "Why Brake Maintenance Matters",
+                        "href": "#why-it-matters"
+                      },
+                      {
+                        "label": "Signs Your Brakes Need Service",
+                        "href": "#signs"
+                      },
+                      {
+                        "label": "Florida Conditions and Brake Wear",
+                        "href": "#florida-conditions"
+                      },
+                      {
+                        "label": "How Often to Schedule Maintenance",
+                        "href": "#how-often"
+                      },
+                      {
+                        "label": "OEM vs. Aftermarket Brake Parts",
+                        "href": "#oem-vs-aftermarket"
+                      },
+                      {
+                        "label": "Professional Inspections and Service",
+                        "href": "#professional-service"
+                      },
+                      {
+                        "label": "Partner With Sun State International",
+                        "href": "#partner"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "NEED BRAKE SERVICE?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Schedule a brake inspection with our team today.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "schedule-service",
+                                "label": "Schedule Service →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "If you own or manage a fleet in Florida, you know that keeping your trucks on the road safely is non-negotiable. One of the most crucial, and most overlooked, aspects of vehicle safety is semi truck brake maintenance.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Your brakes are your first line of defense against accidents, costly downtime, and unexpected repairs.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-intro-2",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, we understand how much your trucks mean to your business. Our parts and service departments are built around helping you protect your investment, keep your drivers safe, and extend the lifespan of your equipment.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-why-it-matters",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Brake Maintenance Matters for Your Fleet",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "why-it-matters"
+                  }
+                },
+                {
+                  "id": "p-why-it-matters-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Brake systems on semi trucks face extreme wear and tear. Between heavy loads, long miles, and Florida's unpredictable weather, your brakes are constantly under pressure.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "stats-why-it-matters-2",
+                  "type": "statBand",
+                  "props": {
+                    "stats": [
+                      {
+                        "value": "25%",
+                        "label": "Of all truck out-of-service violations are brake-related, per the Commercial Vehicle Safety Alliance"
+                      },
+                      {
+                        "value": "25,000–30,000 MI",
+                        "label": "General rule of thumb for brake inspection intervals on active fleets"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-why-it-matters-3",
+                  "type": "text",
+                  "props": {
+                    "text": "That means poor brake performance isn't just a safety hazard; it can also take your truck off the road, cutting into productivity and profits. Routine brake maintenance helps prevent:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-why-it-matters-4",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Uneven wear and costly replacements"
+                      },
+                      {
+                        "text": "Increased stopping distances"
+                      },
+                      {
+                        "text": "Brake fade or overheating on long hauls"
+                      },
+                      {
+                        "text": "Unexpected breakdowns and roadside delays"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-why-it-matters-5",
+                  "type": "text",
+                  "props": {
+                    "text": "Your fleet can't afford that kind of downtime, and neither can your bottom line.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-signs",
+                  "type": "heading",
+                  "props": {
+                    "text": "Signs Your Semi Truck Brakes Need Service",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "signs"
+                  }
+                },
+                {
+                  "id": "p-signs-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Knowing when to schedule maintenance can make all the difference. Look out for these warning signs:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-signs-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Pulling to one side when braking"
+                      },
+                      {
+                        "text": "Grinding or squealing noises"
+                      },
+                      {
+                        "text": "Soft or spongy brake pedal feel"
+                      },
+                      {
+                        "text": "Increased stopping distance"
+                      },
+                      {
+                        "text": "Visible wear on brake pads, drums, or rotors"
+                      },
+                      {
+                        "text": "Air leaks in pneumatic brake systems"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-signs-3",
+                  "type": "text",
+                  "props": {
+                    "text": "If any of these issues sound familiar, it's time to schedule a brake inspection at Sun State International. Our certified technicians are trained to spot small issues before they become big problems.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-florida-conditions",
+                  "type": "heading",
+                  "props": {
+                    "text": "Florida Driving Conditions and Brake Wear",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "florida-conditions"
+                  }
+                },
+                {
+                  "id": "p-florida-conditions-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Florida's climate can be tough on trucks. High humidity, heavy rain, and coastal salt air can accelerate corrosion and rust on brake components. Add in long stretches of stop-and-go traffic or tight delivery routes, and your braking system is under constant strain. The last thing you'll want as a fleet operator is to have one of your drivers stranded on the side of the road.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-florida-conditions-2",
+                  "type": "text",
+                  "props": {
+                    "text": "That's why preventive brake maintenance isn't optional; it's essential. At Sun State International, we help fleets adapt to these local conditions with maintenance plans tailored to how and where your trucks operate.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-how-often",
+                  "type": "heading",
+                  "props": {
+                    "text": "How Often Should You Schedule Brake Maintenance for Your Semi Trucks?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "how-often"
+                  }
+                },
+                {
+                  "id": "p-how-often-1",
+                  "type": "text",
+                  "props": {
+                    "text": "A good rule of thumb is to inspect your brakes every 25,000 to 30,000 miles, or at least twice a year for active fleets. However, your schedule may vary depending on:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-how-often-2",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Load weight and frequency"
+                      },
+                      {
+                        "text": "Terrain and driving conditions"
+                      },
+                      {
+                        "text": "Type of braking system (air or hydraulic)"
+                      },
+                      {
+                        "text": "Driver habits"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-how-often-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Sun State International's service advisors can help you set up a custom maintenance plan that fits your fleet's schedule and keeps every truck road-ready.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-oem-vs-aftermarket",
+                  "type": "heading",
+                  "props": {
+                    "text": "OEM vs. Aftermarket Brake Parts",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "oem-vs-aftermarket"
+                  }
+                },
+                {
+                  "id": "p-oem-vs-aftermarket-1",
+                  "type": "text",
+                  "props": {
+                    "text": "When it comes time to replace brake components, quality matters. Using OEM (Original Equipment Manufacturer) parts ensures that your trucks maintain factory-level performance, durability, and safety.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-oem-vs-aftermarket-2",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, we carry genuine International Truck parts designed to fit your model perfectly; no guesswork, no shortcuts. Our parts specialists will help you find the right components faster, so you can get your trucks back on the road with confidence.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-oem-vs-aftermarket-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Need quality replacement parts? Visit our Parts Department to order genuine International brake parts or speak with our Tampa, Sarasota, Davenport, or Brooksville teams. If you can't make it to one of our locations, we also offer parts online so you can get what you need fast.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-oem-vs-aftermarket-4-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-oem-vs-aftermarket-4",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-oem-vs-aftermarket-4-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "order-parts-online",
+                                "label": "Shop Our Online Parts Store →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-professional-service",
+                  "type": "heading",
+                  "props": {
+                    "text": "Professional Brake Inspections and Service",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "professional-service"
+                  }
+                },
+                {
+                  "id": "p-professional-service-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Brake systems are complex, and when they fail, the results can be catastrophic. That's why you should always trust professionals who know your truck inside and out. Our technicians at Sun State International are factory-trained and certified to service all International Truck models, as well as other major brands. Whether you need a quick inspection, a full brake overhaul, or advanced diagnostics, we provide straightforward, dependable service backed by years of expertise. We handle:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-professional-service-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Brake pad, rotor, and drum replacements"
+                      },
+                      {
+                        "text": "Air brake system inspections"
+                      },
+                      {
+                        "text": "Hydraulic system maintenance"
+                      },
+                      {
+                        "text": "Leak detection and line replacement"
+                      },
+                      {
+                        "text": "Anti-lock braking system (ABS) repairs"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-professional-service-3",
+                  "type": "text",
+                  "props": {
+                    "text": "No upselling. No hidden costs. Just professional, honest care you can count on. Ready to book your next service? Schedule through our Service Department today and keep your fleet rolling safely.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/semi-truck-brake-maintenance/1.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Sun State International team member working at a service desk"
+                    }
+                  }
+                },
+                {
+                  "id": "h-partner",
+                  "type": "heading",
+                  "props": {
+                    "text": "Partner With Sun State International for Long-Term Fleet Health",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "partner"
+                  }
+                },
+                {
+                  "id": "p-partner-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Brake maintenance is more than a box to check; it's a commitment to safety and reliability. By partnering with Sun State International, you get:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-partner-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Access to five Florida locations for parts and service"
+                      },
+                      {
+                        "text": "Maintenance plans tailored to your business and schedule"
+                      },
+                      {
+                        "text": "Support from a family-owned dealership that values honesty and dependability"
+                      },
+                      {
+                        "text": "A team that treats your trucks and your success like our own"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-partner-3",
+                  "type": "text",
+                  "props": {
+                    "text": "At the end of the day, your drivers deserve safe, reliable trucks. And you deserve a service partner who makes that easy. Visit a Sun State International location today to experience the difference of working with a team that truly cares about your fleet.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-partner-4",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "schedule-service"
+                      },
+                      {
+                        "ctaId": "order-parts-online",
+                        "label": "Shop Parts Online"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Safety first",
+          "heading": "Let's get your brakes inspected.",
+          "body": "Call 800.741.7566 and our service teams in Tampa, Sarasota, Davenport or Brooksville will get you scheduled.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/semi-truck-brake-maintenance\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/semi-truck-brake-maintenance\"])) > .bz-card:nth-child(n+4) { display: none; }\n"
+}

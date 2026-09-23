@@ -1,0 +1,664 @@
+{
+  "slug": "features-to-look-for-in-new-semi-trucks",
+  "title": "Features to Look For in New Semi Trucks",
+  "date": "2025-08-08",
+  "description": "Looking at new semi trucks? Discover the must-have safety, comfort, and tech features that help Florida trucking businesses run smoothly.",
+  "status": "published",
+  "coverImage": "/img/blog/features-to-look-for-in-new-semi-trucks/hero.jpg",
+  "topic": "Sales",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Sales",
+          "title": "Features to Look For in New Semi Trucks",
+          "topic": "Sales",
+          "date": "August 8, 2025",
+          "readTime": "4 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/features-to-look-for-in-new-semi-trucks/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Driver behind the wheel of a new International semi truck at Sun State International"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "Putting Driver Safety First",
+                        "href": "#driver-safety"
+                      },
+                      {
+                        "label": "Better Braking and Stability",
+                        "href": "#braking"
+                      },
+                      {
+                        "label": "Better Cab Design",
+                        "href": "#cab-comfort"
+                      },
+                      {
+                        "label": "Sleeper Amenities",
+                        "href": "#sleeper-amenities"
+                      },
+                      {
+                        "label": "Smart Telematics",
+                        "href": "#telematics"
+                      },
+                      {
+                        "label": "Touchscreen Interfaces",
+                        "href": "#tech-interfaces"
+                      },
+                      {
+                        "label": "Fuel Efficiency",
+                        "href": "#fuel-efficiency"
+                      },
+                      {
+                        "label": "Environmental Compliance",
+                        "href": "#compliance"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "SHOPPING FOR A TRUCK?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "See our current new truck inventory.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-new-trucks",
+                                "label": "View Inventory →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Buying a new semi truck isn't just a purchase; it's an investment in your business, your drivers, and your long-term success.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Whether you're adding to your fleet or replacing an older rig, the decision comes down to more than horsepower and price. Today's semi trucks offer advanced safety, comfort, and tech features that can make a major difference in performance and profitability.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-intro-2",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, we know that when you're in the market for a new truck, you're not just looking for a vehicle; you're looking for something dependable that supports your business. Here's a breakdown of the most important features to look for when shopping for new semi trucks.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-driver-safety",
+                  "type": "heading",
+                  "props": {
+                    "text": "Putting Driver Safety First",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "driver-safety"
+                  }
+                },
+                {
+                  "id": "p-driver-safety-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Safety is non-negotiable in the trucking world. A single incident on the road can put your business and your people at risk. That's why today's best new semi trucks are equipped with advanced driver-assistance features designed to prevent accidents before they happen. Look for features like:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-driver-safety-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Collision mitigation systems that monitor road conditions and automatically apply brakes if a crash is imminent"
+                      },
+                      {
+                        "text": "Lane departure warning that alerts the driver if the truck starts to drift out of its lane"
+                      },
+                      {
+                        "text": "Adaptive cruise control that maintains a safe following distance and adjusts speed based on traffic"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-driver-safety-3",
+                  "type": "text",
+                  "props": {
+                    "text": "These systems are especially helpful for long-haul routes where fatigue can become a factor. At Sun State International, many of the new International® models we carry include these safety enhancements standard or as upgrade options.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-braking",
+                  "type": "heading",
+                  "props": {
+                    "text": "Better Braking and Stability",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "braking"
+                  }
+                },
+                {
+                  "id": "p-braking-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Modern braking systems are faster and more responsive than ever. Air disc brakes offer improved stopping power and reduced maintenance costs over traditional drum brakes. In addition, features like electronic stability control (ESC) can help prevent rollovers and jackknifes by automatically adjusting throttle and braking. If you're planning to expand your fleet, these features can help protect both your drivers and your bottom line.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-braking-2-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-braking-2",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-braking-2-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-new-trucks",
+                                "label": "See Our Inventory →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-cab-comfort",
+                  "type": "heading",
+                  "props": {
+                    "text": "Better Cab Design for Driver Comfort",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "cab-comfort"
+                  }
+                },
+                {
+                  "id": "p-cab-comfort-1",
+                  "type": "text",
+                  "props": {
+                    "text": "A comfortable driver is a productive driver. That's why cab ergonomics have become a major selling point for new semi trucks. From adjustable air-ride seats to intuitive dashboard layouts, manufacturers are designing interiors with real drivers in mind.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-cab-comfort-2",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, we've seen how thoughtful cab design directly impacts job satisfaction and retention, especially for smaller fleets where every team member counts. Look for:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "features-cab-comfort-3",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 2,
+                    "columns": 4,
+                    "items": [
+                      {
+                        "label": "Heated and ventilated seats"
+                      },
+                      {
+                        "label": "Noise-reducing insulation"
+                      },
+                      {
+                        "label": "Customizable dash displays"
+                      },
+                      {
+                        "label": "Smart storage for tools and personal items"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-sleeper-amenities",
+                  "type": "heading",
+                  "props": {
+                    "text": "Sleeper Amenities for Long-Haul Routes",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "sleeper-amenities"
+                  }
+                },
+                {
+                  "id": "p-sleeper-amenities-1",
+                  "type": "text",
+                  "props": {
+                    "text": "If your drivers are spending days or even weeks on the road, a well-equipped sleeper can make a huge difference. Today's sleeper cabs are more like mobile apartments, offering:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-sleeper-amenities-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Spacious beds"
+                      },
+                      {
+                        "text": "Climate control"
+                      },
+                      {
+                        "text": "Flat-screen mount options"
+                      },
+                      {
+                        "text": "Refrigerator and microwave prep"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-sleeper-amenities-3",
+                  "type": "text",
+                  "props": {
+                    "text": "A new truck with a premium sleeper setup can help you retain quality drivers and reduce the wear and tear that comes from uncomfortable travel.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-telematics",
+                  "type": "heading",
+                  "props": {
+                    "text": "Smart Telematics and Fleet Management Tools",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "telematics"
+                  }
+                },
+                {
+                  "id": "p-telematics-1",
+                  "type": "text",
+                  "props": {
+                    "text": "New semi trucks now come with integrated telematics systems that help you monitor performance, plan maintenance, and optimize routes. This data can be essential for improving fuel economy, reducing downtime, and managing your fleet more efficiently.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-telematics-2",
+                  "type": "text",
+                  "props": {
+                    "text": "For example, many of the new International® models offered at Sun State International include OnCommand® Connection, a fleet management platform that tracks real-time diagnostics and performance. These tools can save you thousands annually and help keep your trucks on the road.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-tech-interfaces",
+                  "type": "heading",
+                  "props": {
+                    "text": "Touchscreen Interfaces and Voice Commands",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "tech-interfaces"
+                  }
+                },
+                {
+                  "id": "p-tech-interfaces-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Truck tech is finally catching up to the rest of the automotive world. Features like touchscreen infotainment systems, Bluetooth connectivity, and even voice-activated controls are now becoming standard. These not only make life easier for the driver, but they also reduce distractions, keeping everyone safer.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-fuel-efficiency",
+                  "type": "heading",
+                  "props": {
+                    "text": "Fuel Efficiency For Lower Costs",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "fuel-efficiency"
+                  }
+                },
+                {
+                  "id": "p-fuel-efficiency-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Fuel is one of the biggest operating costs in any trucking business. That's why the best new semi trucks are built with fuel efficiency in mind, without sacrificing power. Key things to look for:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-fuel-efficiency-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Aerodynamic cab design"
+                      },
+                      {
+                        "text": "Automated manual transmissions (AMTs)"
+                      },
+                      {
+                        "text": "Engine idle management systems"
+                      },
+                      {
+                        "text": "Lightweight materials"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-fuel-efficiency-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Choosing the right combination of specs can save you serious money over the life of your truck. Our team at Sun State International can walk you through different fuel-saving options available across our new inventory.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-compliance",
+                  "type": "heading",
+                  "props": {
+                    "text": "Meets Environmental Compliance",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "compliance"
+                  }
+                },
+                {
+                  "id": "p-compliance-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Today's engines must meet strict EPA standards, and staying compliant means fewer fines and easier inspections. New International® trucks are engineered to meet current environmental standards without compromising performance, so you can stay focused on the job ahead.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-explore",
+                  "type": "heading",
+                  "props": {
+                    "text": "Explore New Semi Trucks at Sun State International",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "explore"
+                  }
+                },
+                {
+                  "id": "p-explore-1",
+                  "type": "text",
+                  "props": {
+                    "text": "If you're in the market for a truck that works hard and keeps your business moving, we're here to help. At Sun State International, we offer a full lineup of new International® semi trucks designed with your safety, comfort, and efficiency in mind.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-explore-2",
+                  "type": "text",
+                  "props": {
+                    "text": "With locations in Tampa, Sarasota, Davenport, and beyond, we're proud to serve Florida's hardworking truckers. From in-stock units to custom factory orders, we'll make sure you get the right truck for the job, and the service to match. Let's find your next truck.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-explore-3",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "browse-new-trucks",
+                        "label": "See Our Inventory"
+                      },
+                      {
+                        "ctaId": "contact-us",
+                        "label": "Contact Us",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Find your next truck",
+          "heading": "Let's talk about your fleet.",
+          "body": "Call 800.741.7566 and our sales teams in Tampa, Sarasota, Davenport or Brooksville will help you find the right fit.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/features-to-look-for-in-new-semi-trucks\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/features-to-look-for-in-new-semi-trucks\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n/* Its four-up tiles are one line of body text each, not a title. */\n[data-bz-node=\"art-body\"] .bz-block--list .bz-feature { padding: 22px; }\n[data-bz-node=\"art-body\"] .bz-block--list .bz-feature__t { font: 400 16px / 1.7 var(--font-body); color: var(--body-text); margin: 0; }\n"
+}

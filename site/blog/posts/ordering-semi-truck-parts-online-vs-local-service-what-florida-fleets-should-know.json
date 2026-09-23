@@ -1,0 +1,710 @@
+{
+  "slug": "ordering-semi-truck-parts-online-vs-local-service-what-florida-fleets-should-know",
+  "title": "Ordering Semi Truck Parts Online vs. Local Service: What Florida Fleets Should Know",
+  "date": "2025-09-26",
+  "description": "Discover the pros and cons of ordering semi truck parts online versus local service in Florida. Find the best option for your fleet today.",
+  "status": "published",
+  "coverImage": "/img/blog/ordering-semi-truck-parts-online-vs-local-service-what-florida-fleets-should-know/hero.jpg",
+  "topic": "Parts",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Parts",
+          "title": "Ordering Semi Truck Parts Online vs. Local Service: What Florida Fleets Should Know",
+          "topic": "Parts",
+          "date": "September 26, 2025",
+          "readTime": "4 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/ordering-semi-truck-parts-online-vs-local-service-what-florida-fleets-should-know/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Exterior of Sun State International's parts and service center"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "The Case for Ordering Online",
+                        "href": "#case-for-online"
+                      },
+                      {
+                        "label": "The Value of Local Service",
+                        "href": "#value-of-local"
+                      },
+                      {
+                        "label": "Key Factors to Consider",
+                        "href": "#key-factors"
+                      },
+                      {
+                        "label": "Hybrid Strategy",
+                        "href": "#hybrid-strategy"
+                      },
+                      {
+                        "label": "How We Support Both",
+                        "href": "#how-we-support"
+                      },
+                      {
+                        "label": "Ready to Choose?",
+                        "href": "#ready-to-choose"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "NEED PARTS?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Order online or visit a location near you.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "order-parts-online",
+                                "label": "Shop Parts →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "In trucking, the right part at the right time can mean the difference between making a delivery or losing a contract.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "For Florida fleets, the decision often comes down to two choices: ordering semi truck parts online or relying on local dealership service and parts counters. Both have their place, but knowing when to choose each option helps fleet owners balance cost, speed, and reliability.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-intro-2",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, we serve customers who depend on both. This guide breaks down the advantages and trade-offs so you can make smarter, faster choices for your business.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-case-for-online",
+                  "type": "heading",
+                  "props": {
+                    "text": "The Case For Ordering Semi Truck Parts Online",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "case-for-online"
+                  }
+                },
+                {
+                  "id": "h3-case-for-online-1",
+                  "type": "heading",
+                  "props": {
+                    "text": "Convenience And Speed",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-case-for-online-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Ordering semi truck parts online allows fleet managers to shop from anywhere, anytime. No waiting in line, no phone tag; just quick searches and instant orders. This works especially well for common wear items that can be ordered in advance like filters, lights, and brake pads.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-case-for-online-3",
+                  "type": "heading",
+                  "props": {
+                    "text": "Broader Selection",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-case-for-online-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Online catalogs often provide access to a massive range of OEM and aftermarket parts. That means fleets running mixed brands can often source everything in one order.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-case-for-online-5",
+                  "type": "heading",
+                  "props": {
+                    "text": "Price Transparency",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-case-for-online-6",
+                  "type": "text",
+                  "props": {
+                    "text": "With online ordering, you see costs up front and can compare options across vendors. This transparency helps control budgets, especially when managing dozens of units.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-case-for-online-7",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Best for:</strong> Routine replacements, bulk orders, and non-urgent needs.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-case-for-online-8",
+                  "type": "text",
+                  "props": {
+                    "text": "If there's a part you need ASAP, check out our online parts store. We offer a wide range of truck parts online so you can find what you need without leaving the office.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-case-for-online-9-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-case-for-online-9",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-case-for-online-9-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "order-parts-online",
+                                "label": "Shop Semi Truck Parts Online →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-value-of-local",
+                  "type": "heading",
+                  "props": {
+                    "text": "The Value Of Local Service And Parts Departments",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "value-of-local"
+                  }
+                },
+                {
+                  "id": "h3-value-of-local-1",
+                  "type": "heading",
+                  "props": {
+                    "text": "Expert Guidance",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-value-of-local-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Local service counters offer what websites cannot: experienced advisors who know your trucks and your routes. They can recommend the right part the first time, avoiding costly mistakes.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-value-of-local-3",
+                  "type": "heading",
+                  "props": {
+                    "text": "Immediate Availability",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-value-of-local-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Even with fast shipping, waiting for parts can sideline trucks. At Sun State International, we have access to over 1 million parts, so fleets often get what they need the same day.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-value-of-local-5",
+                  "type": "heading",
+                  "props": {
+                    "text": "Integrated Service Support",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-value-of-local-6",
+                  "type": "text",
+                  "props": {
+                    "text": "When you source parts locally, you also gain access to certified technicians who can install them correctly and quickly. This combination reduces downtime and ensures repairs meet OEM standards.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-value-of-local-7",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Best for:</strong> Urgent repairs, complex components, and when downtime is not an option.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-value-of-local-8",
+                  "type": "text",
+                  "props": {
+                    "text": "Need expert help? Come to one of our parts and service locations in Sarasota, Tampa, or Davenport.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-key-factors",
+                  "type": "heading",
+                  "props": {
+                    "text": "Key Factors To Consider Before Choosing",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "key-factors"
+                  }
+                },
+                {
+                  "id": "p-key-factors-1",
+                  "type": "text",
+                  "props": {
+                    "text": "When deciding between ordering semi truck parts online or buying locally, Florida fleet owners should weigh:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-key-factors-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Urgency: Is this part needed today, or can it wait for shipping?"
+                      },
+                      {
+                        "text": "Complexity: Can your team install it, or does it require certified technicians?"
+                      },
+                      {
+                        "text": "Cost vs. Downtime: Is the cheaper online option worth the potential delay?"
+                      },
+                      {
+                        "text": "Trust: Do you know the vendor is reliable and the part will fit your truck?"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "stats-key-factors-3",
+                  "type": "statBand",
+                  "props": {
+                    "stats": [
+                      {
+                        "value": "$850–$1,000/day",
+                        "label": "Estimated cost of an out-of-service vehicle, per FleetOwner, factoring in missed revenue, driver pay, and penalties"
+                      },
+                      {
+                        "value": "1M+",
+                        "label": "Parts Sun State International has access to for same-day availability"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-key-factors-4",
+                  "type": "text",
+                  "props": {
+                    "text": "In that context, saving a few dollars on parts may not outweigh the cost of waiting.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-hybrid-strategy",
+                  "type": "heading",
+                  "props": {
+                    "text": "Hybrid Strategy: The Best Of Both Worlds",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "hybrid-strategy"
+                  }
+                },
+                {
+                  "id": "p-hybrid-strategy-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Smart fleets don't choose one option exclusively; they use both strategically.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-hybrid-strategy-2",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Use online ordering for planned maintenance, bulk orders, and non-critical items."
+                      },
+                      {
+                        "text": "Use local parts and service when you need expert advice, urgent turnaround, or integrated installation."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-hybrid-strategy-3",
+                  "type": "text",
+                  "props": {
+                    "text": "This hybrid approach helps fleets control costs without sacrificing uptime.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-how-we-support",
+                  "type": "heading",
+                  "props": {
+                    "text": "How Sun State International Supports Both Approaches",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "how-we-support"
+                  }
+                },
+                {
+                  "id": "p-how-we-support-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Sun State International understands that no two fleets are alike. That's why we've built solutions to support both online and local needs.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-how-we-support-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "compare",
+                    "items": [
+                      {
+                        "title": "Robust Parts Inventory",
+                        "points": [],
+                        "intro": "Stocked with OEM International and trusted aftermarket options."
+                      },
+                      {
+                        "title": "Online Access",
+                        "points": [],
+                        "intro": "Customers can browse and order directly from our website for fast fulfillment."
+                      },
+                      {
+                        "title": "Multiple Florida Locations",
+                        "points": [],
+                        "intro": "Tampa, Sarasota, Davenport, and Brooksville ensure statewide coverage."
+                      },
+                      {
+                        "title": "Certified Service Centers",
+                        "points": [],
+                        "intro": "Diamond Edge Certified technicians reduce dwell time and guarantee quality repairs."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-why-trust-us",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Fleets Trust Sun State International",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "why-trust-us"
+                  }
+                },
+                {
+                  "id": "p-why-trust-us-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Sun State International is more than a dealer; we're a partner for Florida's hardest-working fleets. As a family-owned business, we combine professionalism with personal care. Our values guide everything we do. From parts to service, we provide the support fleets need to stay profitable and safe.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-ready-to-choose",
+                  "type": "heading",
+                  "props": {
+                    "text": "Ready To Make Smarter Parts Decisions?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "ready-to-choose"
+                  }
+                },
+                {
+                  "id": "p-ready-to-choose-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Balancing online convenience with local expertise is the key to keeping Florida fleets efficient and profitable. Sun State International offers both, so you never have to choose between cost savings and uptime.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-ready-to-choose-2",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "order-parts-online",
+                        "label": "Order Semi Truck Parts Online",
+                        "style": "primary"
+                      },
+                      {
+                        "ctaId": "schedule-service",
+                        "label": "Book Service With Certified Technicians",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Need a part fast?",
+          "heading": "Let's keep your fleet moving.",
+          "body": "Call 800.741.7566 and our parts teams in Tampa, Sarasota, Davenport or Brooksville will get you what you need.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/ordering-semi-truck-parts-online-vs-local-service-what-florida-fleets-should-know\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/ordering-semi-truck-parts-online-vs-local-service-what-florida-fleets-should-know\"])) > .bz-card:nth-child(n+4) { display: none; }\n"
+}
