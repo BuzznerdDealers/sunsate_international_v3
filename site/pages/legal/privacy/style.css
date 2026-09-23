@@ -15,12 +15,17 @@
 .bz-block--hero .bz-eyebrow { color: #A0A0A0; }
 .bz-block--hero .bz-hero__sub { font-size: 15px; line-height: 1.7; color: #C7C1B4; max-width: none; margin: 0; }
 
-/* --- The handoff sets the legal pages in a 900px measure --- */
-.bz-section > .bz-container { max-width: 900px; }
-.bz-block h2 { font-size: 24px; line-height: 1.6; margin: 0 0 16px; }
-.bz-block h2 + * { margin-top: 0; }
-.bz-block p { font-size: 16px; line-height: 1.75; color: var(--body-text); margin: 0 0 14px; }
-.bz-block p:last-child { margin-bottom: 0; }
+/* --- The handoff sets the legal pages in a 900px measure ---
+   Scoped to main. Unscoped, these reached the header and footer as well, which
+   sit outside it: the footer was squeezed from 1376px to 900px and its type was
+   restyled with the page's own — 16px paragraphs in #3f3f3f on a #141414 band,
+   and 24px column headings — so the footer on these three pages did not match
+   the rest of the site. */
+main .bz-section > .bz-container { max-width: 900px; }
+main .bz-block h2 { font-size: 24px; line-height: 1.6; margin: 0 0 16px; }
+main .bz-block h2 + * { margin-top: 0; }
+main .bz-block p { font-size: 16px; line-height: 1.75; color: var(--body-text); margin: 0 0 14px; }
+main .bz-block p:last-child { margin-bottom: 0; }
 
 [data-bz-node="pp-intro"] { padding-block: 72px 0; }
 [data-bz-node="pp-body"] { padding-block: 44px 90px; }
