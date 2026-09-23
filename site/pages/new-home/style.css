@@ -213,8 +213,12 @@
    top and bottom. The 120px that used to sit below this one stacked on top of
    that and on the 96px above the band under it, leaving 312px of white between
    the two cards where the rest of the page runs about 200. */
+/* 100px above and below the card. The band's own padding and the component's
+   90px container rhythm were stacking to 190px above it. The rhythm is stated
+   once, on the container, so the two numbers cannot double up again. */
 [data-bz-node="home-trailers"].bz-section,
-[data-bz-node="home-trailers"] > .bz-section { padding-block: 100px 0; }
+[data-bz-node="home-trailers"] > .bz-section { padding-block: 0; }
+[data-bz-node="home-trailers"] > .bz-section > .bz-container { padding-block: 100px; }
 [data-bz-node="home-brands"].bz-section,
 [data-bz-node="home-brands"] > .bz-section { padding-block: 0px 0; }
 
