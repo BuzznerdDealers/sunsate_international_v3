@@ -210,6 +210,10 @@
    Each band's own padding, read off the section it is drawn as. The build
    was using the 90px house rhythm where the handoff sets its own. */
 [data-bz-node="home-trailers"].bz-section,
-[data-bz-node="home-trailers"] > .bz-section { padding-block: 100px 120px; }
+/* The boxed media band already carries 96px of rhythm on its own container,
+   top and bottom. The 120px below this one stacked on top of that and on the
+   96px above the band under it, leaving 312px of white between the two cards
+   where the rest of the page runs about 200. */
+[data-bz-node="home-trailers"] > .bz-section { padding-block: 100px 0; }
 [data-bz-node="home-brands"].bz-section,
-[data-bz-node="home-brands"] > .bz-section { padding-block: 0px 120px; }
+[data-bz-node="home-brands"] > .bz-section { padding-block: 0px 0; }
