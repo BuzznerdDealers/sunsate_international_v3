@@ -796,28 +796,10 @@
                   "children": []
                 },
                 {
-                  "id": "nm-trucks-s13",
-                  "label": "S13 integrated powertrain",
-                  "type": "page",
-                  "ref": "brochures-and-s13-powertrain",
-                  "url": null,
-                  "newTab": false,
-                  "children": []
-                },
-                {
                   "id": "nm-trucks-finance",
                   "label": "Financing & credit",
                   "type": "page",
                   "ref": "financing",
-                  "url": null,
-                  "newTab": false,
-                  "children": []
-                },
-                {
-                  "id": "nm-trucks-quote",
-                  "label": "Request a quote",
-                  "type": "page",
-                  "ref": "contact-us",
                   "url": null,
                   "newTab": false,
                   "children": []
@@ -828,7 +810,7 @@
         },
         {
           "id": "nm-trailers",
-          "label": "Trailers & Bus",
+          "label": "Trailers",
           "type": "inventory",
           "ref": "inventory?type=trailer",
           "url": null,
@@ -865,15 +847,6 @@
                   "label": "Used trailers",
                   "type": "inventory",
                   "ref": "inventory?type=trailer&condition=used",
-                  "url": null,
-                  "newTab": false,
-                  "children": []
-                },
-                {
-                  "id": "nm-trailers-rental",
-                  "label": "Rental & lease",
-                  "type": "inventory",
-                  "ref": "inventory?type=trailer&condition=rental",
                   "url": null,
                   "newTab": false,
                   "children": []
