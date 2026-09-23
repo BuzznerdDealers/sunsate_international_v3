@@ -1423,17 +1423,17 @@
           "id": "hb-international",
           "label": "INTERNATIONAL",
           "type": "inventory",
-          "ref": "inventory?brand=international",
+          "ref": "#",
           "url": null,
           "newTab": false,
           "children": []
         },
         {
           "id": "hb-icbus",
-          "label": "IC BUS",
-          "type": "inventory",
-          "ref": "inventory?brand=ic-bus",
-          "url": null,
+          "label": "CAPACITY YARD TRUCK",
+          "type": "url",
+          "ref": null,
+          "url": "#",
           "newTab": false,
           "children": []
         },
@@ -1441,7 +1441,7 @@
           "id": "hb-hyundai",
           "label": "HYUNDAI TRANSLEAD",
           "type": "inventory",
-          "ref": "inventory?brand=hyundai-translead",
+          "ref": "#",
           "url": null,
           "newTab": false,
           "children": []
@@ -1450,7 +1450,7 @@
           "id": "hb-globe",
           "label": "GLOBE TRAILERS",
           "type": "inventory",
-          "ref": "inventory?brand=globe-trailers",
+          "ref": "#",
           "url": null,
           "newTab": false,
           "children": []
