@@ -1,0 +1,516 @@
+{
+  "slug": "why-sun-state-international-is-the-go-to-dealership-for-truck-equipment-in-tampa-florida",
+  "title": "Why Sun State International is the Go-To Dealership for Truck Equipment in Tampa, Florida",
+  "date": "2025-05-23",
+  "description": "Looking for truck equipment in Tampa, Florida? Discover why Sun State International is the trusted dealership for local businesses.",
+  "status": "published",
+  "coverImage": "/img/blog/why-sun-state-international-is-the-go-to-dealership-for-truck-equipment-in-tampa-florida/hero.jpg",
+  "topic": "Parts & Service",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Parts & Service",
+          "title": "Why Sun State International is the Go-To Dealership for Truck Equipment in Tampa, Florida",
+          "topic": "Parts & Service",
+          "date": "May 23, 2025",
+          "readTime": "4 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/why-sun-state-international-is-the-go-to-dealership-for-truck-equipment-in-tampa-florida/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Sun State parts counter team member helping a customer with an order"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "A Wide Range of Equipment",
+                        "href": "#range"
+                      },
+                      {
+                        "label": "Locally Owned",
+                        "href": "#local"
+                      },
+                      {
+                        "label": "Expert Technicians",
+                        "href": "#technicians"
+                      },
+                      {
+                        "label": "A One-Stop Shop",
+                        "href": "#one-stop"
+                      },
+                      {
+                        "label": "Fast Turnaround",
+                        "href": "#turnaround"
+                      },
+                      {
+                        "label": "Trusted Across Florida",
+                        "href": "#trusted"
+                      },
+                      {
+                        "label": "Building Your Success",
+                        "href": "#success"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "NEED A PART?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Order OEM and aftermarket parts online or from any location.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "order-parts-online",
+                                "label": "Order Parts Online →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "When you’re running a business that depends on trucks, the equipment you choose isn’t just important—it’s essential. Whether you’re hauling freight, managing logistic operations, or expanding a service fleet, the right truck equipment can mean the difference between profit and downtime. In Florida, one name continues to stand out for quality, service, and long-term reliability: <a href=\"/\">Sun State International</a>.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "We’re more than just a dealership. We’re a trusted partner to businesses across Central and Southwest Florida, offering a wide selection of <a href=\"/parts\">parts</a>, <a href=\"/service\">service</a>, and <a href=\"/parts\">truck equipment</a> that keeps your operation moving forward. Here’s why fleet owners, independent operators, and business leaders turn to <a href=\"/\">Sun State International</a> when it comes to <a href=\"/parts\">truck equipment</a> in Tampa, Florida.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-range",
+                  "type": "heading",
+                  "props": {
+                    "text": "A Wide Range of Equipment That Works as Hard as You Do",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "range"
+                  }
+                },
+                {
+                  "id": "p-range-1",
+                  "type": "text",
+                  "props": {
+                    "text": "No two operations are the same. Whether you’re hauling refrigerated freight or running flatbed deliveries, the needs of your fleet vary—and so should your equipment options. That’s why <a href=\"/\">Sun State International</a> carries a diverse selection of <a href=\"/parts\">truck equipment</a> to support every kind of job. Our parts and <a href=\"/service\">service department</a> can locate any piece of equipment you need, whether it’s OEM or aftermarket; we’ve got you covered. If we don’t have it at one of our locations, we can find it for you. Our experienced team works closely with you to make sure you get the right solution, every time.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-local",
+                  "type": "heading",
+                  "props": {
+                    "text": "Locally Owned, Nationally Trusted",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "local"
+                  }
+                },
+                {
+                  "id": "p-local-1",
+                  "type": "text",
+                  "props": {
+                    "text": "We’re proud to be a locally owned and operated business in Tampa. That means when you work with <a href=\"/\">Sun State</a>, you’re not calling a corporate call center or submitting tickets to a faceless portal. You’re talking to real people who know your industry, your trucks, and your needs. We’ve built our reputation through consistent service, honest communication, and a hands-on approach to every sales and service job. Customers stick with us because they know we stand behind everything we sell and install. In a world of automated processes and mass suppliers, that level of support still matters.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-technicians",
+                  "type": "heading",
+                  "props": {
+                    "text": "Expert Technicians With Decades of Experience",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "technicians"
+                  }
+                },
+                {
+                  "id": "p-technicians-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Truck equipment is only as good as its installation, and at Sun State International, we don’t cut corners. Our technicians are factory-trained, certified, and experienced in working on all major brands and models. Whether you’re outfitting a new truck or modifying an older one, you can trust our team to get it done right. It’s not about just selling equipment—we make sure it’s installed into your truck correctly, tested thoroughly, and ready to go the distance. That’s the level of professionalism you get when you work with a dealership that’s committed to your success.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-one-stop",
+                  "type": "heading",
+                  "props": {
+                    "text": "A One-Stop Shop for All Your Fleet Needs",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "one-stop"
+                  }
+                },
+                {
+                  "id": "p-one-stop-1",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"/\">Sun State International</a> isn’t just the place to find <a href=\"/parts\">reliable truck equipment</a> in Tampa, Florida—we’re a full-service dealership offering everything you need to support your fleet.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-one-stop-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Need a new or used International® truck? Looking for a reliable repair? We’ve got the <a href=\"/store/inventory?condition=new\">inventory</a>, <a href=\"/parts\">tools</a>, and <a href=\"/service\">technicians</a> to keep your business running strong. Our <a href=\"/store/inventory?condition=new\">onsite fleet inventory</a>, <a href=\"/parts\">parts department</a>, and <a href=\"/service\">service center</a> are here to make your life easier, so you can focus on the road ahead instead of chasing down vendors.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "links-one-stop-3",
+                  "type": "link-cards",
+                  "props": {
+                    "across": "3",
+                    "items": [
+                      {
+                        "label": "INVENTORY",
+                        "title": "Fleet Inventory →",
+                        "url": "/store/inventory?condition=new",
+                        "newTab": false
+                      },
+                      {
+                        "label": "PARTS",
+                        "title": "Parts Department →",
+                        "url": "/parts",
+                        "newTab": false
+                      },
+                      {
+                        "label": "SERVICE",
+                        "title": "Service Center →",
+                        "url": "/service",
+                        "newTab": false
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-turnaround",
+                  "type": "heading",
+                  "props": {
+                    "text": "Fast Turnaround, Minimal Downtime",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "turnaround"
+                  }
+                },
+                {
+                  "id": "p-turnaround-1",
+                  "type": "text",
+                  "props": {
+                    "text": "We understand the pressures fleet managers face. Every hour a truck is out of commission is money lost. That’s why we prioritize fast turnaround and efficient service on all <a href=\"/service\">truck equipment installations and repairs</a>. From the moment you bring your vehicle in, we’ll communicate clearly, get to work promptly, and keep you informed every step of the way. We’re here to keep your business moving without unnecessary delays.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-turnaround-2-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-turnaround-2",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-turnaround-2-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "schedule-service",
+                                "label": "Schedule a Service Appointment →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-trusted",
+                  "type": "heading",
+                  "props": {
+                    "text": "Trusted by Businesses Across Florida",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "trusted"
+                  }
+                },
+                {
+                  "id": "p-trusted-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Over the years, we’ve built strong relationships with contractors, logistics companies, government agencies, and independent drivers throughout the region. Why? Because they know we deliver on our word. When customers come to <a href=\"/\">Sun State International</a>, they’re not just looking for equipment—they’re looking for a dealership they can count on. And that’s exactly what we provide: dependable service, high-quality gear, and long-term support that makes a difference.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-success",
+                  "type": "heading",
+                  "props": {
+                    "text": "Building Your Success Mile After Mile",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "success"
+                  }
+                },
+                {
+                  "id": "p-success-1",
+                  "type": "text",
+                  "props": {
+                    "text": "If you’re searching for reliable, professional, and customer-first support for <a href=\"/parts\">truck equipment</a> in Tampa, Florida, look no further than <a href=\"/\">Sun State International</a>. Whether you’re expanding your fleet, upgrading your trucks, or just need the right equipment for the job, our team is here to help you move forward. When you work with <a href=\"/\">Sun State</a>, you’re not just buying parts—you’re building a partnership that supports your success mile after mile. Ready to outfit your fleet? <a href=\"/contact\">Contact Sun State International</a> today or stop by one of our <a href=\"/locations/tampa\">Tampa</a>, <a href=\"/locations/sarasota\">Sarasota</a>, or <a href=\"/locations/davenport\">Davenport</a> locations to see how we can help.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-success-2",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "contact-us",
+                        "label": "Contact Us"
+                      },
+                      {
+                        "ctaId": "browse-new-trucks",
+                        "label": "See Our Inventory",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Ready to choose?",
+          "heading": "Let's find your next truck.",
+          "body": "Call 800.741.7566 and our sales teams in Tampa, Sarasota, Davenport or Brooksville will help you find the right fit.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/why-sun-state-international-is-the-go-to-dealership-for-truck-equipment-in-tampa-florida\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/why-sun-state-international-is-the-go-to-dealership-for-truck-equipment-in-tampa-florida\"])) > .bz-card:nth-child(n+4) { display: none; }\n"
+}

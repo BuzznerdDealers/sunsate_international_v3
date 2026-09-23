@@ -1,0 +1,669 @@
+{
+  "slug": "which-semi-truck-is-right-for-your-business-our-comprehensive-guide",
+  "title": "Which Semi Truck is Right For Your Business? Our Comprehensive Guide",
+  "date": "2025-07-11",
+  "description": "Not sure which semi truck is right for you? Here’s how to choose the best model for your business from Sun State International.",
+  "status": "published",
+  "coverImage": "/img/blog/which-semi-truck-is-right-for-your-business-our-comprehensive-guide/hero.jpg",
+  "topic": "Sales",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Sales",
+          "title": "Which Semi Truck is Right For Your Business? Our Comprehensive Guide",
+          "topic": "Sales",
+          "date": "July 11, 2025",
+          "readTime": "4 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/which-semi-truck-is-right-for-your-business-our-comprehensive-guide/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Row of new International semi trucks lined up at Sun State International"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "Know Your Needs",
+                        "href": "#know-needs"
+                      },
+                      {
+                        "label": "Types of Semi Trucks",
+                        "href": "#types"
+                      },
+                      {
+                        "label": "Engine, Transmission & Fuel",
+                        "href": "#powertrain"
+                      },
+                      {
+                        "label": "Comfort, Safety & Drivers",
+                        "href": "#comfort"
+                      },
+                      {
+                        "label": "Costly Mistakes to Avoid",
+                        "href": "#mistakes"
+                      },
+                      {
+                        "label": "Making the Right Choice",
+                        "href": "#right-choice"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "SHOPPING FOR A TRUCK?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Compare day cabs, sleepers and more in our current inventory.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-new-trucks",
+                                "label": "View Inventory →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "When it comes to growing your trucking business, the equipment you choose matters, especially your semi trucks. These vehicles are more than just a means of transportation; they’re workhorses that support your team, protect your cargo, and impact your bottom line.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "But not every semi truck is created equal. Whether you’re managing a local delivery operation, expanding a regional fleet, or launching your first long-haul route, choosing the right truck can make all the difference.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-intro-2",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, we understand how high the stakes are. That’s why we created this comprehensive guide to help you <a href=\"/store/inventory?condition=new\">explore your options</a>, understand what matters most, and move forward with confidence.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-know-needs",
+                  "type": "heading",
+                  "props": {
+                    "text": "Know Your Needs Before You Shop",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "know-needs"
+                  }
+                },
+                {
+                  "id": "p-know-needs-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Before you look at <a href=\"/store/inventory?condition=new\">specs or compare brands</a>, get clear on your business model. What works for one operation may not suit another. Start by answering these questions:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-know-needs-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "What kind of cargo do you haul most often?"
+                      },
+                      {
+                        "text": "Are your routes mostly local, regional, or cross-country?"
+                      },
+                      {
+                        "text": "How important are driver comfort and tech features to your business?"
+                      },
+                      {
+                        "text": "Are you purchasing one truck or building a fleet?"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-know-needs-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Once you understand how the truck will be used, you’ll be better equipped to choose between cab styles, engine types, and overall builds.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-types",
+                  "type": "heading",
+                  "props": {
+                    "text": "Types of Semi Trucks and What They’re Built For",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "types"
+                  }
+                },
+                {
+                  "id": "p-types-1",
+                  "type": "text",
+                  "props": {
+                    "text": "There are a variety of <a href=\"/store/inventory?condition=new\">semi-truck configurations available</a>. Here are the most common types you’ll come across, along with their best use cases.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-types-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "spec",
+                    "items": [
+                      {
+                        "title": "Day Cab",
+                        "points": [
+                          {
+                            "text": "<strong>Best for:</strong> Local routes, tight loading docks, and city deliveries"
+                          },
+                          {
+                            "text": "<strong>Perks:</strong> Great visibility, tight turning radius, lower weight"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Sleeper Cab",
+                        "points": [
+                          {
+                            "text": "<strong>Best for:</strong> Regional and long-haul freight"
+                          },
+                          {
+                            "text": "<strong>Perks:</strong> Comfortable resting space, improves driver satisfaction and retention"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Extended Sleeper Cab",
+                        "points": [
+                          {
+                            "text": "<strong>Best for:</strong> Team drivers, coast-to-coast runs, premium freight services"
+                          },
+                          {
+                            "text": "<strong>Perks:</strong> Amenities like built-in refrigerators, upgraded mattresses, and storage"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Medium-Duty vs. Heavy-Duty",
+                        "points": [
+                          {
+                            "text": "<strong>Medium-duty trucks</strong> like the International® MV™ Series are designed for delivery and service work within cities and suburbs."
+                          },
+                          {
+                            "text": "<strong>Heavy-duty trucks</strong> such as the International® LT™ Series are built for power and endurance across longer hauls."
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-powertrain",
+                  "type": "heading",
+                  "props": {
+                    "text": "Engine, Transmission, and Fuel Options: What Powers Your Fleet",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "powertrain"
+                  }
+                },
+                {
+                  "id": "p-powertrain-1",
+                  "type": "text",
+                  "props": {
+                    "text": "The engine and drivetrain impact everything from fuel efficiency to how much you can haul. Here are a few points to keep in mind.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-powertrain-2",
+                  "type": "heading",
+                  "props": {
+                    "text": "Engine Selection",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-powertrain-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Look for engines that offer both <a href=\"https://www.international.com/products/trucks/features/engines-and-powertrains\">power and reliability</a>. The International® A26 engine, for example, is a lightweight option with a strong track record for fuel economy and uptime. The <a href=\"/specifications\">S13 Powertrain</a> is another advanced option that improves fuel efficiency and sustainability for the best performance.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-powertrain-4",
+                  "type": "heading",
+                  "props": {
+                    "text": "Transmission Type",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-powertrain-5",
+                  "type": "text",
+                  "props": {
+                    "text": "Manual transmission offers full control but requires skilled drivers. On the other hand, Automated Manual Transmission (AMT) blends manual performance with automatic ease, ideal for reducing driver fatigue.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-powertrain-6",
+                  "type": "heading",
+                  "props": {
+                    "text": "Fuel Type",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-powertrain-7",
+                  "type": "text",
+                  "props": {
+                    "text": "Diesel remains the most common and infrastructure-supported option. Other alternatives like Electric and CNG are growing, but infrastructure and route planning should be carefully considered.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-powertrain-8",
+                  "type": "text",
+                  "props": {
+                    "text": "Ready to find the equipment to fit your needs? <a href=\"/store/inventory?condition=new\">Check out our inventory to find reliable semi trucks that can help take your business forward.</a>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-powertrain-9-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-powertrain-9",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-powertrain-9-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-new-trucks",
+                                "label": "See Our Inventory →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-comfort",
+                  "type": "heading",
+                  "props": {
+                    "text": "Comfort, Safety, and Driver Experience",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "comfort"
+                  }
+                },
+                {
+                  "id": "p-comfort-1",
+                  "type": "text",
+                  "props": {
+                    "text": "A semi truck isn’t just a machine; it’s a workspace. Driver satisfaction has a direct impact on productivity and retention. Here are features worth prioritizing:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-comfort-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Advanced Driver Assistance Systems (ADAS) for lane assist and collision mitigation"
+                      },
+                      {
+                        "text": "Ergonomic seating and cabin layout"
+                      },
+                      {
+                        "text": "Telematics integration for tracking performance, fuel use, and diagnostics"
+                      },
+                      {
+                        "text": "Climate control and quiet cabin design for comfort in Florida heat"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-comfort-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Sun State International proudly offers trucks with these features and more, supporting both your drivers and your bottom line.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-mistakes",
+                  "type": "heading",
+                  "props": {
+                    "text": "Avoiding Costly Mistakes When Buying a Semi Truck",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "mistakes"
+                  }
+                },
+                {
+                  "id": "p-mistakes-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Even experienced fleet managers can make missteps when upgrading or expanding. Here are some common pitfalls:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-mistakes-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "feature2",
+                    "items": [
+                      {
+                        "title": "Only focusing on price",
+                        "intro": "Lower upfront costs can lead to higher long-term expenses.",
+                        "points": []
+                      },
+                      {
+                        "title": "Skipping after-sales support",
+                        "intro": "Always choose a dealer that offers dependable <a href=\"/parts\">parts</a> and <a href=\"/service\">service</a> options.",
+                        "points": []
+                      },
+                      {
+                        "title": "Ignoring warranty and maintenance plans",
+                        "intro": "These can make or break your ROI.",
+                        "points": []
+                      },
+                      {
+                        "title": "Failing to test drive",
+                        "intro": "You need to feel how it handles under your specific conditions.",
+                        "points": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-right-choice",
+                  "type": "heading",
+                  "props": {
+                    "text": "Making the Right Choice with Sun State International",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "right-choice"
+                  }
+                },
+                {
+                  "id": "p-right-choice-1",
+                  "type": "text",
+                  "props": {
+                    "text": "You don’t need to make this decision alone. Our team at Sun State International is here to help you weigh your options, compare models, and find the right solution for your business. As Florida’s trusted <a href=\"/\">International® truck dealer</a>, we combine expert guidance with top-tier inventory and a commitment to service that doesn’t end after the sale. <a href=\"/store/inventory?condition=new\">Explore our available models and discover which truck is right for your fleet.</a>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-right-choice-2",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "browse-new-trucks",
+                        "label": "See Our Inventory"
+                      },
+                      {
+                        "ctaId": "contact-us",
+                        "label": "Contact Us",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Ready to choose?",
+          "heading": "Let's find your next truck.",
+          "body": "Call 800.741.7566 and our sales teams in Tampa, Sarasota, Davenport or Brooksville will help you find the right fit.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/which-semi-truck-is-right-for-your-business-our-comprehensive-guide\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/which-semi-truck-is-right-for-your-business-our-comprehensive-guide\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n[data-bz-node=\"art-body\"] .bz-block--list .bz-feature__d { font-size: 15px; }\n"
+}

@@ -22,7 +22,7 @@
       "props": {
         "sectionId": "post-hero",
         "values": {
-          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / New semi truck features",
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / New Semi Truck Features",
           "title": "Features You Should Look for In a New Semi Truck",
           "topic": "Trucks",
           "date": "February 28, 2025",
@@ -30,9 +30,9 @@
           "author": "Sun State International",
           "image": {
             "src": "https://vendure.buzznerdrv.com/assets/source/dc/5.1.jpg",
-            "alt": "Photograph to be supplied — a new International tractor at the dealership",
             "width": 2000,
-            "height": 1333
+            "height": 1333,
+            "alt": "Photograph to be supplied — a new International tractor at the dealership"
           }
         }
       },
@@ -123,12 +123,24 @@
                       "props": {
                         "span": 12
                       },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
                       "children": [
                         {
                           "id": "aside-label",
                           "type": "text",
                           "props": {
-                            "text": "Shopping new?",
+                            "text": "SHOPPING NEW?",
                             "align": "left",
                             "width": "full"
                           },
@@ -147,7 +159,7 @@
                           "id": "aside-body",
                           "type": "text",
                           "props": {
-                            "text": "Spec a truck with the features below, or call and we’ll build it with you.",
+                            "text": "Spec a truck with the features below, or call and we'll build it with you.",
                             "align": "left",
                             "width": "full"
                           },
@@ -171,19 +183,7 @@
                             ]
                           }
                         }
-                      ],
-                      "styles": {
-                        "base": {
-                          "borderWidth": 1,
-                          "borderStyle": "solid",
-                          "borderColor": "line",
-                          "paddingTop": 20,
-                          "paddingRight": 20,
-                          "paddingBottom": 20,
-                          "paddingLeft": 20,
-                          "marginTop": 26
-                        }
-                      }
+                      ]
                     }
                   ]
                 }
@@ -207,15 +207,30 @@
                       "id": "qa",
                       "type": "column",
                       "props": {
-                        "span": 12,
-                        "anchor": "post-answer"
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "background": "paper",
+                          "borderLeftWidth": 3,
+                          "borderTopWidth": 0,
+                          "borderRightWidth": 0,
+                          "borderBottomWidth": 0,
+                          "borderStyle": "solid",
+                          "borderColor": "accent",
+                          "paddingTop": 24,
+                          "paddingRight": 26,
+                          "paddingBottom": 24,
+                          "paddingLeft": 26,
+                          "marginBottom": 38
+                        }
                       },
                       "children": [
                         {
                           "id": "qa-label",
                           "type": "text",
                           "props": {
-                            "text": "Quick answer",
+                            "text": "QUICK ANSWER",
                             "align": "left",
                             "width": "full"
                           },
@@ -226,7 +241,7 @@
                               "letterSpacing": 1,
                               "textTransform": "uppercase",
                               "textColor": "accent",
-                              "marginBottom": 10
+                              "marginBottom": 12
                             }
                           }
                         },
@@ -236,7 +251,8 @@
                           "props": {
                             "text": "Prioritize safety, efficiency and reliability: advanced camera and collision avoidance systems, adaptive cruise control, a fuel-efficient engine with electronic logging, modern emergency air brake systems, ergonomic seating and cabin layout, tire pressure monitoring, a strong manufacturer warranty, and OnCommand Connection fleet health monitoring.",
                             "align": "left",
-                            "width": "full"
+                            "width": "full",
+                            "anchor": "post-answer"
                           },
                           "styles": {
                             "base": {
@@ -246,23 +262,7 @@
                             }
                           }
                         }
-                      ],
-                      "styles": {
-                        "base": {
-                          "background": "paper",
-                          "borderLeftWidth": 3,
-                          "borderStyle": "solid",
-                          "borderColor": "accent",
-                          "borderTopWidth": 0,
-                          "borderRightWidth": 0,
-                          "borderBottomWidth": 0,
-                          "paddingTop": 24,
-                          "paddingRight": 26,
-                          "paddingBottom": 24,
-                          "paddingLeft": 26,
-                          "marginBottom": 38
-                        }
-                      }
+                      ]
                     }
                   ]
                 },
@@ -270,7 +270,7 @@
                   "id": "lede",
                   "type": "text",
                   "props": {
-                    "text": "When you’re adding a <a href=\"/store/inventory\">new semi truck</a> to your fleet, you want to make sure you’re getting the best value for your investment. You can save money in the long run by prioritizing safety, efficiency, and reliability. That means choosing a truck that meets your business’s needs and comes equipped with modern technology and safety advancements. The better the features your truck has now, the less you’ll have to worry about costly repairs, downtime, or potential risks in the future. Here are some features that can help ensure your driver’s safety and long-lasting efficiency.",
+                    "text": "When you're adding a <a href=\"/store/inventory?condition=new\">new semi truck</a> to your fleet, you want to make sure you're getting the best value for your investment. You can save money in the long run by prioritizing safety, efficiency, and reliability. That means choosing a truck that meets your business's needs and comes equipped with modern technology and safety advancements. The better the features your truck has now, the less you'll have to worry about costly repairs, downtime, or potential risks in the future. Here are some features that can help ensure your driver's safety and long-lasting efficiency.",
                     "align": "left",
                     "width": "full",
                     "anchor": "post-lede"
@@ -290,7 +290,7 @@
                   "id": "p-camera-systems-1",
                   "type": "text",
                   "props": {
-                    "text": "Advanced camera systems are a must-have for any <a href=\"/store/inventory\">new semi truck</a>. These systems enhance safety, reduce blind spots, and provide additional awareness for drivers. Backup cameras are essential for navigating tight spaces and avoiding obstacles when reversing. Dash cameras record the road ahead and protect against fraudulent claims in case of accidents, while blind spot monitors use sensors and cameras to detect vehicles in hard-to-see areas.",
+                    "text": "Advanced camera systems are a must-have for any <a href=\"/store/inventory?condition=new\">new semi truck</a>. These systems enhance safety, reduce blind spots, and provide additional awareness for drivers. Backup cameras are essential for navigating tight spaces and avoiding obstacles when reversing. Dash cameras record the road ahead and protect against fraudulent claims in case of accidents, while blind spot monitors use sensors and cameras to detect vehicles in hard-to-see areas.",
                     "align": "left",
                     "width": "full"
                   }
@@ -355,12 +355,25 @@
                       "props": {
                         "span": 12
                       },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 34,
+                          "marginBottom": 34
+                        }
+                      },
                       "children": [
                         {
                           "id": "callout-label",
                           "type": "text",
                           "props": {
-                            "text": "Related",
+                            "text": "RELATED",
                             "align": "left",
                             "width": "full"
                           },
@@ -379,7 +392,7 @@
                           "id": "callout-body",
                           "type": "text",
                           "props": {
-                            "text": "The S13 Integrated Powertrain is International’s current answer to fuel efficiency and emissions — engine, transmission and aftertreatment engineered as one system.",
+                            "text": "The S13 Integrated Powertrain is International's current answer to fuel efficiency and emissions — engine, transmission and aftertreatment engineered as one system.",
                             "align": "left",
                             "width": "full"
                           },
@@ -403,20 +416,7 @@
                             ]
                           }
                         }
-                      ],
-                      "styles": {
-                        "base": {
-                          "borderWidth": 1,
-                          "borderStyle": "solid",
-                          "borderColor": "line",
-                          "paddingTop": 26,
-                          "paddingRight": 28,
-                          "paddingBottom": 26,
-                          "paddingLeft": 28,
-                          "marginTop": 34,
-                          "marginBottom": 34
-                        }
-                      }
+                      ]
                     }
                   ]
                 },
@@ -434,7 +434,7 @@
                   "id": "p-emergency-braking-1",
                   "type": "text",
                   "props": {
-                    "text": "Braking reliability is a critical feature for <a href=\"/store/inventory\">semi trucks</a>, and modern emergency braking systems offer the highest level of safety. Air brakes use compressed air instead of hydraulic fluid, making them more reliable and efficient. If air pressure drops too low, there is a failsafe mechanism that automatically stops the vehicle and prevents brake failure. Additionally, integrated sensors and cameras help detect potential hazards and react before an accident occurs.",
+                    "text": "Braking reliability is a critical feature for <a href=\"/store/inventory?condition=new\">semi trucks</a>, and modern emergency braking systems offer the highest level of safety. Air brakes use compressed air instead of hydraulic fluid, making them more reliable and efficient. If air pressure drops too low, there is a failsafe mechanism that automatically stops the vehicle and prevents brake failure. Additionally, integrated sensors and cameras help detect potential hazards and react before an accident occurs.",
                     "align": "left",
                     "width": "full"
                   }
@@ -453,7 +453,7 @@
                   "id": "p-ergonomic-design-1",
                   "type": "text",
                   "props": {
-                    "text": "Long-haul drivers spend hours on the road, so comfort and usability are key considerations when selecting a <a href=\"/store/inventory\">new semi truck</a>. Ergonomically designed seats reduce fatigue and prevent long-term injuries. Improved cabin layouts, including a well-designed driver’s seat and control panel, increase efficiency and ease of use. The more you prioritize comfort, the better your drivers will feel, helping them stay focused and alert for longer trips.",
+                    "text": "Long-haul drivers spend hours on the road, so comfort and usability are key considerations when selecting a <a href=\"/store/inventory?condition=new\">new semi truck</a>. Ergonomically designed seats reduce fatigue and prevent long-term injuries. Improved cabin layouts, including a well-designed driver's seat and control panel, increase efficiency and ease of use. The more you prioritize comfort, the better your drivers will feel, helping them stay focused and alert for longer trips.",
                     "align": "left",
                     "width": "full"
                   }
@@ -491,7 +491,7 @@
                   "id": "p-warranties-1",
                   "type": "text",
                   "props": {
-                    "text": "A <a href=\"/store/inventory\">new semi truck</a> is a major investment, and a strong warranty ensures that you’re protected in case anything goes wrong. Manufacturer warranties cover essential repairs and component replacements, while some warranties include service and parts assistance or membership programs that provide additional support. Having a reliable warranty offers peace of mind by reducing financial risk and unexpected expenses.",
+                    "text": "A <a href=\"/store/inventory?condition=new\">new semi truck</a> is a major investment, and a strong warranty ensures that you're protected in case anything goes wrong. Manufacturer warranties cover essential repairs and component replacements, while some warranties include service and parts assistance or membership programs that provide additional support. Having a reliable warranty offers peace of mind by reducing financial risk and unexpected expenses.",
                     "align": "left",
                     "width": "full"
                   }
@@ -510,7 +510,7 @@
                   "id": "p-oncommand-connection-1",
                   "type": "text",
                   "props": {
-                    "text": "A helpful feature included in International Trucks is OnCommand Connection Fleet Health Monitoring, which is compatible with all makes, models, and engines. This system integrates data from over 28 telematics service providers, linking directly to OnCommand Connection for detailed health reports and Fault Code Action Plans that provide guidance on addressing any issues. By focusing on key areas that often lead to unexpected downtime—such as coolant, diesel particulate filter (DPF), diesel exhaust fluid (DEF), and oil issues—this system helps ensure your trucks remain in peak condition. Additionally, fleet managers can receive weekly reports via email or through an online portal, giving them valuable insights into their vehicles’ performance and maintenance needs.",
+                    "text": "A helpful feature included in International Trucks is OnCommand Connection Fleet Health Monitoring, which is compatible with all makes, models, and engines. This system integrates data from over 28 telematics service providers, linking directly to OnCommand Connection for detailed health reports and Fault Code Action Plans that provide guidance on addressing any issues. By focusing on key areas that often lead to unexpected downtime—such as coolant, diesel particulate filter (DPF), diesel exhaust fluid (DEF), and oil issues—this system helps ensure your trucks remain in peak condition. Additionally, fleet managers can receive weekly reports via email or through an online portal, giving them valuable insights into their vehicles' performance and maintenance needs.",
                     "align": "left",
                     "width": "full"
                   }
@@ -529,7 +529,7 @@
                   "id": "p-get-the-equipment-1",
                   "type": "text",
                   "props": {
-                    "text": "At <a href=\"/\">Sun State International</a>, we are committed to providing the highest quality semi trucks with the latest technology and safety features. Whether you’re looking to upgrade your fleet or purchase your first truck, we have the expertise and inventory to help you find the right fit for your business. Our team is dedicated to making your purchasing experience seamless, with financing options, parts, and service support to keep your truck running smoothly. Ready to find your <a href=\"/store/inventory\">next semi-truck</a>? <a href=\"/contact\">Contact us today to explore our selection and discover the perfect truck for your needs.</a>",
+                    "text": "At <a href=\"/\">Sun State International</a>, we are committed to providing the highest quality semi trucks with the latest technology and safety features. Whether you're looking to upgrade your fleet or purchase your first truck, we have the expertise and inventory to help you find the right fit for your business. Our team is dedicated to making your purchasing experience seamless, with financing options, parts, and service support to keep your truck running smoothly. Ready to find your <a href=\"/store/inventory?condition=new\">next semi-truck</a>? <a href=\"/contact\">Contact us today to explore our selection and discover the perfect truck for your needs.</a>",
                     "align": "left",
                     "width": "full"
                   }
@@ -544,7 +544,9 @@
                         "ctaId": "browse-new-trucks"
                       },
                       {
-                        "ctaId": "get-financing"
+                        "ctaId": "financing",
+                        "label": "Get financing",
+                        "style": "secondary"
                       }
                     ]
                   }
@@ -646,8 +648,7 @@
                           "a": "Sun State International sells new International trucks from locations in Tampa, Sarasota, Davenport and Brooksville, Florida, with financing, parts and service support. Call 800-741-7566."
                         }
                       ]
-                    },
-                    "snapshot": null
+                    }
                   }
                 }
               ]
@@ -705,7 +706,7 @@
                     "align": "left",
                     "items": [
                       {
-                        "ctaId": "all-posts"
+                        "ctaId": "all-blog-posts"
                       }
                     ]
                   }
@@ -723,12 +724,12 @@
         "sectionId": "cta-band",
         "values": {
           "eyebrow": "Ready to spec a truck?",
-          "heading": "Tell us the route, we’ll tell you the build.",
+          "heading": "Tell us the route, we'll tell you the build.",
           "body": "Call 800.741.7566 and a sales consultant in Tampa, Sarasota, Davenport or Brooksville will walk through options, financing and delivery.",
           "primaryLabel": "Call 800.741.7566",
           "primaryUrl": "tel:+18007417566",
           "secondaryLabel": "Send a message",
-          "secondaryUrl": "/contact#contact-form"
+          "secondaryUrl": "/contact"
         }
       },
       "children": []

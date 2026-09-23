@@ -33,7 +33,13 @@ LINK_MAP = {
     "https://www.sunstateintl.com/finance-trucks-trailers-tampa-orlando-florida-financing/": "/financing",
     "https://www.sunstateintl.com/read-other-customers-comments-about-us-xtestimonials/": "/reviews",
     "https://www.sunstateintl.com/about-us/": "/our-story",
-    "https://www.international.com/services/uptime-advocate": "https://www.international.com/services/uptime-advocate",
+    "https://www.sunstateintl.com/used-heavy-medium-duty-trucks-for-sale-tampa-florida-xpreownedinventoryatlight-duty-truckmedium-duty-truckheavy-duty-truck/": "/store/inventory?condition=used",
+    "https://www.sunstateintl.com/truck-configurator/": "/truck-configurator",
+    "https://www.sunstateintl.com/learn-more-about-s13-powertrain/": "/specifications",
+    "https://www.sunstateintl.com/extended-service/": "/extended-service",
+    "https://www.sunstateintl.com/maps-and-directions-hours-tampa-adamo/": "/locations/tampa",
+    "https://www.sunstateintl.com/maps-and-directions-hours-sarasota/": "/locations/sarasota",
+    "https://www.sunstateintl.com/maps-and-directions-hours-davenport/": "/locations/davenport",
     "tel:8007417566": "tel:+18007417566",
 }
 INTENT = {
@@ -48,6 +54,8 @@ def map_href(h):
         return "/blog"
     if h.endswith(".html") and ("/posts/" in h or "/" not in h):
         return "/blog/posts/" + h.rsplit("/", 1)[-1][:-5]
+    if re.match(r"https://([a-z]+\.)?international\.com(/|$)", h):
+        return h  # the manufacturer's own site: an outbound link, kept as written
     if h not in LINK_MAP:
         raise SystemExit(f"unmapped link: {h}")
     return LINK_MAP[h]
@@ -75,6 +83,7 @@ DEST = {
     "https://www.sunstateparts.com/login": "order-parts-online", "/service": "service-department",
     "/contact": "contact-us", "/blog": "all-blog-posts", "tel:+18007417566": "call-main", "/mobile-service": "mobile-service",
     "/store/inventory?condition=new": "browse-new-trucks", "/financing": "financing", "/reviews": "read-reviews",
+    "/truck-configurator": "truck-configurator-link", "/specifications": "s13-powertrain", "/extended-service": "extended-service",
 }
 lib = {b["id"]: b for b in buttons}
 
@@ -206,6 +215,14 @@ def callout(cid, box, style):
                                                       "paddingLeft": 28, "marginTop": top, "marginBottom": bottom})])
 
 
+ID_ALIASES = {
+    "features-you-should-look-for-in-a-new-semi-truck": {
+        "co-increased-efficiency-2-row": "callout-row", "co-increased-efficiency-2": "callout",
+        "co-increased-efficiency-2-label": "callout-label", "co-increased-efficiency-2-body": "callout-body",
+        "co-increased-efficiency-2-cta": "callout-cta", "actions-get-the-equipment-2": "art-actions",
+    },
+}
+
 RUNS = {"problem-card": "stacked", "repair-card": "inline", "step-row": "steps", "faq-item": "qa"}
 
 
@@ -239,7 +256,16 @@ def convert(path):
     h1 = plain(hero.find("h1"))
     byline = [plain(x) for x in hero.find("h1").find_next_sibling("div").find_all("span") if plain(x) != "·"]
     topic_chip, date_txt, read_txt, author = byline
-    cover = place_image(slug, hero_img["src"], "hero")
+    existing = f"{REPO}/site/blog/posts/{slug}.json"
+    if hero_img is None:
+        # "Photo to be supplied" in the handoff: keep the photograph the post already has.
+        old = json.load(open(existing))
+        cover = {k: v for k, v in old["nodes"][0]["props"]["values"]["image"].items() if k != "alt"}
+        hero_img = {"alt": old["nodes"][0]["props"]["values"]["image"].get("alt", "")}
+        cover_src = old.get("coverImage") or cover["src"]
+    else:
+        cover = place_image(slug, hero_img["src"], "hero")
+        cover_src = cover["src"]
 
     title_case = lambda t: " ".join(w.capitalize() if w.isupper() else w for w in t.split())
     hero_node = n("hero", "sharedSection", {"sectionId": "post-hero", "values": {
@@ -358,6 +384,57 @@ def convert(path):
             assert all(len(r) == 3 for r in rows), rows
             out.append(n(nid("compare"), "compare-table", {"headA": heads[0], "headB": heads[1], "headC": heads[2],
                                                           "rows": [{"a": a, "b": b, "c": c} for a, b, c in rows]}))
+        elif el.name == "div" and el.get("id") == "post-answer":
+            # The answer-engine block: an accent-ruled panel, same ids as the post has always used.
+            label, p = [x for x in el.children if isinstance(x, Tag)]
+            out.append(row("qa-row", [col("qa", [
+                text("qa-label", plain(label), styles={**LABEL, "marginBottom": 12}),
+                text("qa-body", inline_html(p), anchor="post-answer", styles={"fontSize": 16, "lineHeight": 1.75, "textColor": "ink"}),
+            ], styles={"background": "paper", "borderLeftWidth": 3, "borderTopWidth": 0, "borderRightWidth": 0,
+                       "borderBottomWidth": 0, "borderStyle": "solid", "borderColor": "accent", "paddingTop": 24,
+                       "paddingRight": 26, "paddingBottom": 24, "paddingLeft": 26, "marginBottom": 38})]))
+        elif el.name == "div" and el.find("a", class_="factor-card", recursive=False):
+            items = []
+            for a in el.find_all("a", class_="factor-card", recursive=False):
+                label, title = [x for x in a.children if isinstance(x, Tag)]
+                items.append({"label": plain(label), "title": plain(title), "url": map_href(a["href"]),
+                              "newTab": map_href(a["href"]).startswith("http")})
+            out.append(n(nid("links"), "link-cards", {"across": "3" if "grid-3" in cls else "2", "items": items}))
+        elif el.name == "div" and "grid-2" in cls and all(
+                [x.name for x in card.children if isinstance(x, Tag)] == ["h3", "ul"]
+                for card in el.find_all("div", class_="factor-card", recursive=False)):
+            # Titled cards of short bold-led points (cab types): Card lists, spec style.
+            out.append(n(nid("cards"), "card-lists", {"variant": "spec", "items": [
+                {"title": plain(card.find("h3")), "points": [{"text": inline_html(li)} for li in card.find_all("li")]}
+                for card in el.find_all("div", class_="factor-card", recursive=False)]}))
+        elif el.name == "div" and ("grid-2" in cls or "grid-3" in cls) and all(
+                [x.name for x in card.children if isinstance(x, Tag)] in (["div", "p"], ["div", "h3"])
+                for card in el.find_all("div", class_="factor-card", recursive=False)):
+            # An accent label over one line — model series ("LT® SERIES / Long-haul
+            # efficiency") or a numbered point ("01 / a short heading"): Card lists.
+            cards = el.find_all("div", class_="factor-card", recursive=False)
+            numbered = cards[0].find("h3", recursive=False) is not None
+            variant = "numbered" if numbered else ("series" if "grid-3" in cls else "series2")
+            out.append(n(nid("cards"), "card-lists", {"variant": variant, "items": [
+                {"title": plain(card.find("div")), "intro": inline_html(card.find(["p", "h3"], recursive=False)), "points": []}
+                for card in cards]}))
+        elif el.name == "div" and "grid-template-columns: 56px" in st:
+            # A numbered section ("01"): the number beside a real heading and its paragraphs,
+            # laid out by the row's node styles so the prose stays editable on the canvas.
+            num, inner = [x for x in el.children if isinstance(x, Tag)]
+            cid = nid("numbered")
+            kids = []
+            for j, x in enumerate([x for x in inner.children if isinstance(x, Tag)]):
+                if x.name == "h3": kids.append(n(f"{cid}-h", "heading", {"text": plain(x), "headingLevel": 3, "align": "left"}))
+                elif x.name == "p": kids.append(text(f"{cid}-p{j}", inline_html(x)))
+                elif x.name in ("ul", "ol"): kids.append(n(f"{cid}-list{j}", "prose-list", {"ordered": x.name == "ol", "items": [{"text": inline_html(li)} for li in x.find_all("li", recursive=False)]}))
+                else: raise SystemExit(f"numbered section child <{x.name}>")
+            out.append(row(cid, [
+                col(f"{cid}-num-col", [text(f"{cid}-index", plain(num), styles={"fontSize": 13, "fontWeight": "700", "letterSpacing": 2, "lineHeight": 1.6, "textColor": "accent"})], span=1),
+                col(f"{cid}-body", kids, span=11),
+            ], styles={"display": "grid", "gridColumns": "56px 1fr", "gap": 8, "borderTopWidth": 1, "borderStyle": "solid",
+                       "borderColor": "line", "borderLeftWidth": 0, "borderRightWidth": 0, "borderBottomWidth": 0,
+                       "paddingTop": 26, "marginTop": 26}))
         elif el.name == "div" and "grid-4" in cls and el.find("div", class_="interval-card", recursive=False):
             # Mileage cards: a small accent label over a list — Card lists, interval style.
             items = []
@@ -375,8 +452,7 @@ def convert(path):
             cards = el.find_all("div", class_="factor-card", recursive=False)
             cols = 2 if "grid-2" in cls else 3
             if any(card.find("p").find("a") for card in cards):
-                assert cols == 3
-                out.append(n(nid("cards"), "card-lists", {"variant": "feature", "items": [
+                out.append(n(nid("cards"), "card-lists", {"variant": "feature" if cols == 3 else "feature2", "items": [
                     {"title": plain(card.find("h3")), "intro": inline_html(card.find("p")), "points": []} for card in cards]}))
             else:
                 out.append(n(nid("features"), "list", {"headingLevel": 2, "columns": cols, "items": [
@@ -508,7 +584,31 @@ def convert(path):
         "primaryLabel": plain(btns[0]), "primaryUrl": map_href(btns[0]["href"]),
         "secondaryLabel": plain(btns[1]), "secondaryUrl": map_href(btns[1]["href"])}}, [])
 
-    nodes = [hero_node, article, related, post_cta]
+    # A post's own FAQ: the platform FAQ widget, which draws the accordion the design
+    # draws and emits the FAQPage structured data from the same items.
+    faq_sec = main.select_one("section#post-faq")
+    faq = []
+    if faq_sec is not None:
+        eyebrow_el = faq_sec.find("div")
+        items = []
+        for trig in faq_sec.select("[data-disclosure]"):
+            panel = faq_sec.find(id=trig["aria-controls"])
+            items.append({"q": plain(trig.find("span")), "a": plain(panel)})
+        eb = plain(eyebrow_el)
+        faq = [n("faq", "section", {"width": "boxed", "background": "card", "paddingY": 0, "anchor": "post-faq"}, [
+            row("faq-row", [col("faq-col", [
+                n("faq-h", "heading", {"text": plain(faq_sec.find("h2")), "headingLevel": 2, "align": "left",
+                                       "eyebrow": eb.capitalize() if eb.isupper() else eb}),
+                n("faq-list", "widget", {"widget": "faq", "config": {"items": items}}),
+            ])], gap=5)])]
+    nodes = [hero_node, article, *faq, related, post_cta]
+    # A post built before the converter keeps its node ids where the converter names the
+    # same node differently: a changed id reads as delete-and-add, and loses the history.
+    alias = ID_ALIASES.get(slug, {})
+    def rename(ns):
+        for x in ns:
+            x["id"] = alias.get(x["id"], x["id"]); rename(x.get("children", []))
+    rename(nodes)
     # every id unique
     seen = set()
     def walk(ns):
@@ -525,7 +625,7 @@ def convert(path):
     desc = s.find("meta", attrs={"name": "description"})["content"]
     pub = s.find("meta", attrs={"property": "article:published_time"})
     kw = re.search(r'"keywords":\s*"([^"]*)"', str(s))
-    return slug, {"css_extra": "".join("\n" + x + "\n" for x in dict.fromkeys(extra_css)), "title": h1, "description": desc, "coverImage": cover["src"],
+    return slug, {"css_extra": "".join("\n" + x + "\n" for x in dict.fromkeys(extra_css)), "title": h1, "description": desc, "coverImage": cover_src,
                   "date": pub["content"][:10] if pub else None,
                   "keywords": [k.strip() for k in kw.group(1).split(",")] if kw else None,
                   "nodes": nodes}

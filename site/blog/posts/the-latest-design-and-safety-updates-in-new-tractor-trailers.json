@@ -1,0 +1,555 @@
+{
+  "slug": "the-latest-design-and-safety-updates-in-new-tractor-trailers",
+  "title": "The Latest Design and Safety Updates in New Tractor-Trailers",
+  "date": "2025-06-06",
+  "description": "Today’s new tractor-trailers are built smarter, stronger, and safer than ever. Discover the latest design and safety innovations.",
+  "status": "published",
+  "coverImage": "/img/blog/the-latest-design-and-safety-updates-in-new-tractor-trailers/hero.jpg",
+  "topic": "Sales",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Sales",
+          "title": "The Latest Design and Safety Updates in New Tractor-Trailers",
+          "topic": "Sales",
+          "date": "June 6, 2025",
+          "readTime": "4 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/the-latest-design-and-safety-updates-in-new-tractor-trailers/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "New International LT sleeper and day cab outside the Sun State International dealership"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "Lighter Materials",
+                        "href": "#materials"
+                      },
+                      {
+                        "label": "Aerodynamic Enhancements",
+                        "href": "#aero"
+                      },
+                      {
+                        "label": "Braking & Stability",
+                        "href": "#braking"
+                      },
+                      {
+                        "label": "Telematics & Smart Sensors",
+                        "href": "#telematics"
+                      },
+                      {
+                        "label": "LED Lighting & Visibility",
+                        "href": "#lighting"
+                      },
+                      {
+                        "label": "Underride Protection",
+                        "href": "#underride"
+                      },
+                      {
+                        "label": "Driver-Friendly Features",
+                        "href": "#access"
+                      },
+                      {
+                        "label": "Innovation That Pays Off",
+                        "href": "#innovation"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "UPGRADING YOUR FLEET?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Browse the latest tractors and trailers in our current inventory.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-new-trucks",
+                                "label": "View Inventory →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "In the world of commercial trucking, progress isn’t optional—it’s essential. Every year, new technologies, materials, and regulations reshape how fleets operate, and <a href=\"/store/inventory?condition=new\">new tractor-trailers</a> are at the center of that evolution. Whether you’re focused on maximizing efficiency, improving safety, or meeting tighter delivery timelines, today’s trailers are built to do more with less hassle, fewer risks, and better results. Here’s a closer look at the most important design and safety advancements you’ll find in the <a href=\"/store/inventory?condition=new\">newest tractor-trailers on the market.</a>",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "h-materials",
+                  "type": "heading",
+                  "props": {
+                    "text": "Lighter Materials, Greater Strength",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "materials"
+                  }
+                },
+                {
+                  "id": "p-materials-1",
+                  "type": "text",
+                  "props": {
+                    "text": "One of the biggest shifts in trailer design is the move toward lighter, high-strength materials. Manufacturers are investing in aluminum alloys, composite sidewalls, and high-tensile steel that reduce trailer weight without compromising durability.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-materials-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Why does that matter? Less weight means more payload capacity and better fuel efficiency—two critical factors in reducing operating costs and increasing profits. Lighter trailers also place less strain on the tractor, leading to reduced wear and tear and improved overall vehicle longevity.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-aero",
+                  "type": "heading",
+                  "props": {
+                    "text": "Aerodynamic Enhancements That Drive Efficiency",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "aero"
+                  }
+                },
+                {
+                  "id": "p-aero-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Fuel economy is top of mind for every fleet owner, and the latest <a href=\"/store/inventory?condition=new\">new tractor-trailers</a> are built to help. From side skirts and rear fairings to contoured nose designs and underbody airflow systems, today’s trailers are optimized to reduce drag and improve mileage.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-aero-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Some tractors now include active aerodynamic systems that automatically deploy or adjust based on speed, wind resistance, and other driving conditions. These innovations don’t just save fuel; they also help reduce emissions, supporting sustainability goals and compliance with evolving EPA standards.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-braking",
+                  "type": "heading",
+                  "props": {
+                    "text": "Advanced Braking and Stability Systems",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "braking"
+                  }
+                },
+                {
+                  "id": "p-braking-1",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"/store/inventory?condition=new\">Modern trailers</a> don’t just follow the lead; they actively contribute to safer handling and braking. Systems like ABS (Anti-lock Braking Systems) and Roll Stability Support have become standard on many models, giving drivers greater control in sudden stops or sharp turns.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-braking-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Some new models are also incorporating electronic braking systems (EBS), which use electronic signals instead of pneumatic pressure to deliver faster, more consistent brake response. This results in reduced stopping distances and smoother coordination with the tractor unit.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-telematics",
+                  "type": "heading",
+                  "props": {
+                    "text": "Integrated Telematics and Smart Sensors",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "telematics"
+                  }
+                },
+                {
+                  "id": "p-telematics-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Today’s <a href=\"/store/inventory?condition=new\">new tractor-trailers</a> are equipped with smart sensors and telematics systems that provide real-time data on tire pressure, brake wear, cargo weight, door status, and more. These systems can be linked with fleet management platforms, allowing dispatchers and maintenance teams to monitor performance, schedule service, and catch potential issues before they lead to costly breakdowns. Predictive maintenance is becoming the new standard, and that means better uptime for your business.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-telematics-2-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-telematics-2",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-telematics-2-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Curious about upgrading your fleet with the latest safety and efficiency features? <a href=\"/contact\">Contact Sun State International for a personalized consultation.</a>",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 15,
+                              "lineHeight": 1.7,
+                              "marginBottom": 12
+                            }
+                          }
+                        },
+                        {
+                          "id": "co-telematics-2-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "contact-us",
+                                "label": "Request a Consultation →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-lighting",
+                  "type": "heading",
+                  "props": {
+                    "text": "Enhanced LED Lighting and Visibility Features",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "lighting"
+                  }
+                },
+                {
+                  "id": "p-lighting-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Lighting isn’t just about meeting DOT requirements anymore; it’s a critical safety feature that improves visibility in all weather and road conditions. New trailers are equipped with high-efficiency LED lighting systems, including enhanced brake lights, side markers, and backup lighting. Some models even feature dynamic lighting systems that adjust brightness based on environmental conditions or communicate alerts (such as sudden braking or open doors) to surrounding drivers, reducing the risk of roadside incidents.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-underride",
+                  "type": "heading",
+                  "props": {
+                    "text": "Stronger Rear Impact Guards (Underride Protection)",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "underride"
+                  }
+                },
+                {
+                  "id": "p-underride-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Rear-end collisions are a significant concern for any fleet. That’s why the <a href=\"/store/inventory?condition=new\">latest generation of tractor-trailers</a> now includes upgraded rear impact guards designed to meet or exceed federal underride protection standards.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-underride-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Many models now come with energy-absorbing structures and wider guard coverage, dramatically increasing safety for both your drivers and other motorists. These features not only save lives but also reduce liability in the event of an accident.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-access",
+                  "type": "heading",
+                  "props": {
+                    "text": "Easier Access and Driver-Friendly Features",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "access"
+                  }
+                },
+                {
+                  "id": "p-access-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Efficiency doesn’t stop with the load. The latest designs focus heavily on driver usability, offering easier cargo access, automated liftgates, anti-slip flooring, and adjustable dock levels. These improvements help reduce injuries, speed up loading and unloading, and create a safer environment for drivers at every step. It’s part of a larger trend: making trailers as smart, safe, and driver-friendly as the tractors that pull them.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-innovation",
+                  "type": "heading",
+                  "props": {
+                    "text": "Innovation That Pays Off",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "innovation"
+                  }
+                },
+                {
+                  "id": "p-innovation-1",
+                  "type": "text",
+                  "props": {
+                    "text": "The trucking industry is changing fast, and the equipment you use needs to keep up. From lighter frames and smarter sensors to better braking systems and enhanced safety features, today’s <a href=\"/store/inventory?condition=new\">new tractor-trailers</a> are designed to work harder, last longer, and protect your team better.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-innovation-2",
+                  "type": "text",
+                  "props": {
+                    "text": "At <a href=\"/\">Sun State International</a>, we’re here to help you find the right equipment for your fleet. We partner with top manufacturers to offer the latest models, and our team is always available to walk you through your options, <a href=\"/financing\">financing plans</a>, and long-term fleet strategies. Looking to upgrade? Contact <a href=\"/contact\">Sun State International today</a> to explore available models, get expert advice, and find the best trailer for your business.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-innovation-3",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "contact-us",
+                        "label": "Contact Us"
+                      },
+                      {
+                        "ctaId": "browse-new-trucks",
+                        "label": "See Our Inventory",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Ready to choose?",
+          "heading": "Let's find your next truck.",
+          "body": "Call 800.741.7566 and our sales teams in Tampa, Sarasota, Davenport or Brooksville will help you find the right fit.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/the-latest-design-and-safety-updates-in-new-tractor-trailers\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/the-latest-design-and-safety-updates-in-new-tractor-trailers\"])) > .bz-card:nth-child(n+4) { display: none; }\n"
+}

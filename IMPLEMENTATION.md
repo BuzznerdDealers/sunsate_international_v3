@@ -511,3 +511,45 @@ per post — card padding, card type size, a one-column stat band — and writes
 that post's CSS. It also stopped escaping `&` in prose: the text block escapes it itself, so
 "Parts & Service" had been showing as `&amp;` in the three posts that use it.
 
+---
+
+## 14. Blog handoff, Part 6 of 6 — the last nine posts
+
+Eight new posts and one rebuilt: *Is a New Freight Truck Worth the Cost?*, *Searching for an
+International Truck Dealer?*, *The Latest Design and Safety Updates in New Tractor-Trailers*,
+*Which Semi Truck Is Right for Your Business?*, *Who Makes International Trucks?*, *Why Sun
+State International Is the Go-To Dealership for Truck Equipment in Tampa*, *Why You Should Add
+a New International Truck to Your Fleet*, *Why Your Business Needs a Fleet Management System*,
+and *Features You Should Look for In a New Semi Truck*, rebuilt on the shared layer. Body copy,
+contents rails and the Features FAQ match the handoff word for word.
+
+**The handoff is complete.** All 54 of its posts are published and on the blog page (56 cards:
+the 54 and the two posts this repo had that the handoff does not list — *How Electrical
+Diagnostic Tools Prevent Breakdowns* and *When to Schedule Semi Truck Alignment Near Me*). Three
+older draft stubs the handoff also does not list are left as drafts: *Why Visit Your Local
+International Truck Service Department*, *Signs You Need to Replace Your Semi Truck Suspension
+Parts* and *Why Sun State Is One of the Top Fleet Service Providers*.
+
+*Features…* was built by hand before the converter existed. The rebuild keeps all 54 of its node
+ids — the converter's names for its callout and button row are mapped back — and its hero
+photograph, cover, keywords and FAQ; the handoff draws the hero as "photo to be supplied", so the
+dealer's own photo stays. Its quick answer and its FAQ (the platform FAQ widget, which emits the
+FAQPage data the handoff declares) are now produced by the converter too.
+
+New shapes, and what they became:
+
+| Handoff | Here |
+|---|---|
+| a whole card that is one link (New / Pre-owned; Inventory / Parts / Service) | a new **Link cards** coded widget |
+| titled cards of bold-led points (cab types) | **Card lists**, *Spec* style — its points may now carry bold |
+| an accent label over one line (model series), two or three across | **Card lists**, *Series* styles |
+| a small number over a short heading ("01 / Built in the U.S.") | **Card lists**, *Numbered* style |
+| title-and-sentence cards two across where a card carries a link | **Card lists**, *Feature, two across* |
+| a numbered section ("01" beside a heading and paragraphs) | a row of real blocks — the number, then the heading and its paragraphs — on a 56px / 1fr grid set by node styles |
+| the quick answer | the accent-ruled column, with the ids the post always had |
+
+Links: international.com and its subdomains stay outbound; the old site's used-truck listing
+goes to `/store/inventory?condition=used`, its configurator, S13 and extended-service pages to
+`/truck-configurator`, `/specifications` and `/extended-service`, and its Tampa, Sarasota and
+Davenport directions pages to those rooftops' generated pages.
+
