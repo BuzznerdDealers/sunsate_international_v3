@@ -1,35 +1,94 @@
 
 
-[data-bz-node="loc-sum-head-h"] h2 { margin-bottom: 18px; }
+[data-bz-node="loc-sum-head-h"] h2 { font-size: 34px; line-height: 1.7; margin-bottom: 18px; }
 [data-bz-node="loc-sum-head-b"] .bz-text { max-width: 820px; }
-[data-bz-node="loc-sum-head-b"] p { margin: 0 0 40px; }
-[data-bz-node="loc-map"] .bz-map { width: 100%; aspect-ratio: auto; min-height: 460px; background: var(--paper); border: 1px solid var(--line); margin-bottom: 44px; }
+/* .bz-block p:last-child outranks a bare node selector, so this one carries the
+   :last-child too. */
+[data-bz-node="loc-sum-head-b"] .bz-text p:last-child { margin: 0 0 40px; line-height: 1.75; color: var(--body-text); }
+
+/* --- Map frame, measured from the handoff's .map--wide ---------------------
+   A 460px hairline frame; the dealer's map art sits centred in it at 80% of its
+   height, the band the handoff's projection fits Florida into. The pin layer is
+   placed at percentages of the art, so the art keeps its own aspect ratio. */
+[data-bz-node="loc-map"] .bz-widget {
+  height: 460px; border: 1px solid var(--line); background: var(--paper);
+  display: flex; align-items: center; justify-content: center; overflow: hidden;
+}
+[data-bz-node="loc-map"] .bz-pinmap { height: 80%; }
+[data-bz-node="loc-map"] .bz-pinmap__art { height: 100%; width: auto; max-width: 100%; }
+[data-bz-node="loc-map"] .bz-pinmap:has(.bz-pinmap__empty) { width: 100%; height: 100%; }
+[data-bz-node="loc-map"] .bz-pinmap__empty { height: 100%; aspect-ratio: auto; border: 0; background: none; }
+@media (max-width: 640px) { [data-bz-node="loc-map"] .bz-widget { height: 320px; } }
 
 /* --- Hero geometry, measured from the handoff --- */
 .bz-block--hero { padding-block: 88px; }
-.bz-block--hero h1 { font-size: 46px; line-height: 1.12; margin-bottom: 20px; }
-.bz-block--hero .bz-hero__copy { max-width: 940px; }
+.bz-block--hero h1 { font-size: 44px; line-height: 1.14; margin-bottom: 22px; }
+.bz-block--hero .bz-hero__copy { max-width: 960px; }
 .bz-block--hero .bz-hero__sub { font-size: 17px; max-width: 700px; margin-bottom: 30px; }
 
 /* --- Card treatment, measured from the handoff --- */
 /* The handoff rules this grid at the top rather than boxing each card. */
 [data-bz-node="loc-departments"] [data-bz-type="column"][data-bz-node^="fg-card-"][data-bz-node] {
   background: none; border: 0; border-top: 3px solid var(--ink);
-  padding: 20px 0 0;
+  padding: 18px 0 0;
 }
+[data-bz-node="loc-departments"][data-bz-section] h2 { font-size: 34px; line-height: 1.7; }
+[data-bz-node="loc-departments"][data-bz-section] [data-bz-node^="fg-card-"] h3 { font: 700 17px/1.7 var(--font-heading); margin: 0 0 10px; }
+[data-bz-node="loc-departments"][data-bz-section] [data-bz-node^="fg-card-"] .bz-block + .bz-block { padding-block-start: 0; }
+[data-bz-node="loc-departments"][data-bz-section] [data-bz-node^="fg-card-"] .bz-text p:last-child { font-size: 14px; line-height: 1.65; color: var(--body-text); margin: 0; }
 
-/* The handoff runs the card grid straight on from the map band, with no
-   heading of its own and 90px of air below it. */
-[data-bz-node="loc-list"] > .bz-section { padding-block: 0 90px; }
-[data-bz-type="column"][data-bz-node^="lg-card-"][data-bz-node] { padding: 30px 26px; }
 
 @media (max-width: 640px) {
   .bz-block--hero { padding-block: 72px; }
-  .bz-block--hero h1 { font-size: 32px; }
+  .bz-block--hero h1 { font-size: 30px; }
 }
 
 /* --- Band rhythm, measured from the handoff --------------------------------
    Each band's own padding, read off the section it is drawn as. The build
    was using the 90px house rhythm where the handoff sets its own. */
 [data-bz-node="loc-summary"].bz-section,
-[data-bz-node="loc-summary"] > .bz-section { padding-block: 76px 0px; }
+[data-bz-node="loc-summary"] > .bz-section { padding-block: 90px 0; }
+
+
+/* --- After-hours band, measured from the handoff's .band ------------------
+   The copy sets the band's height and the photo fills whatever that is, so a
+   portrait upload cannot stretch the band to its own height. */
+[data-bz-node="loc-afterhours"][data-bz-section] [data-bz-node="mb-row"] { min-height: 380px; }
+[data-bz-node="loc-afterhours"][data-bz-section] > .bz-section > [data-bz-node="mb-row"] > [data-bz-node="mb-copy"] {
+  display: flex; flex-direction: column; justify-content: center;
+  padding: 64px 40px 64px max(var(--container-pad), calc((100vw - var(--container)) / 2 + var(--container-pad)));
+}
+[data-bz-node="loc-afterhours"][data-bz-section] h2 { font-size: 32px; line-height: 1.2; }
+[data-bz-node="loc-afterhours"][data-bz-section] [data-bz-node="mb-body"] .bz-text p { font-size: 15px; line-height: 1.75; margin: 0 0 14px; }
+[data-bz-node="loc-afterhours"][data-bz-section] [data-bz-node="mb-body"] .bz-text p:last-child { margin-bottom: 0; }
+[data-bz-node="loc-afterhours"][data-bz-section] [data-bz-node="mb-cta"] { padding-block-start: 22px; }
+[data-bz-node="loc-afterhours"][data-bz-section] .bz-btns { gap: 26px; }
+[data-bz-node="loc-afterhours"][data-bz-section] .bz-btn--link { font: 700 15px/1.7 var(--font-body); letter-spacing: 0; text-transform: none; color: var(--accent); }
+[data-bz-node="loc-afterhours"][data-bz-section] > .bz-section > [data-bz-node="mb-row"] > [data-bz-node="mb-media"] { position: relative; min-height: 0; }
+[data-bz-node="loc-afterhours"][data-bz-section] [data-bz-node="mb-img"] { position: absolute; inset: 0; }
+@media (max-width: 1100px) {
+  [data-bz-node="loc-afterhours"][data-bz-section] > .bz-section > [data-bz-node="mb-row"] > [data-bz-node="mb-copy"] { padding: 64px var(--container-pad-tablet); }
+  [data-bz-node="loc-afterhours"][data-bz-section] > .bz-section > [data-bz-node="mb-row"] > [data-bz-node="mb-media"] { min-height: 260px; }
+}
+
+/* --- Questions, measured from the handoff's #loc-faq ----------------------
+   This page's well is 900px including the gutter, not 900px of copy. */
+[data-bz-node="loc-faq"].bz-section { padding-block: 90px; }
+[data-bz-node="loc-faq"].bz-section > .bz-container { max-width: 900px; }
+[data-bz-node="loc-faq"].bz-section .bz-block h2 { font-size: 34px; line-height: 1.7; margin-bottom: 40px; }
+[data-bz-node="loc-faq"].bz-section .bz-faq > summary { line-height: 1.3; }
+[data-bz-node="loc-faq"].bz-section .bz-block .bz-faq__a { padding-bottom: 22px; }
+
+/* --- Contact band, measured from the handoff's .section--dark -------------- */
+[data-bz-node="loc-cta"][data-bz-section] > .bz-section { padding-block: 90px; }
+[data-bz-node="loc-cta"][data-bz-section] h2 { font-size: 34px; line-height: 1.7; }
+
+@media (max-width: 640px) {
+  [data-bz-node="loc-sum-head-h"] h2,
+  [data-bz-node="loc-departments"][data-bz-section] h2,
+  [data-bz-node="loc-faq"].bz-section .bz-block h2,
+  [data-bz-node="loc-cta"][data-bz-section] h2 { font-size: 26px; }
+  [data-bz-node="loc-afterhours"][data-bz-section] h2 { font-size: 26px; }
+  [data-bz-node="loc-afterhours"][data-bz-section] > .bz-section > [data-bz-node="mb-row"] > [data-bz-node="mb-copy"] { padding: 64px var(--container-pad-mobile); }
+  [data-bz-node="loc-cta"][data-bz-section] > .bz-section { padding-block: 90px; }
+}

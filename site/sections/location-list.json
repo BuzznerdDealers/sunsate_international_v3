@@ -1,0 +1,284 @@
+{
+  "version": 2,
+  "id": "location-list",
+  "name": "Location list — full cards",
+  "props": [
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading (read by screen readers only)",
+      "default": "All locations"
+    },
+    {
+      "key": "background",
+      "type": "select",
+      "label": "Band background",
+      "default": "card",
+      "options": [
+        {
+          "value": "card",
+          "label": "White"
+        },
+        {
+          "value": "paper",
+          "label": "Paper"
+        },
+        {
+          "value": "none",
+          "label": "None"
+        }
+      ]
+    },
+    {
+      "key": "anchor",
+      "type": "text",
+      "label": "Anchor id",
+      "default": ""
+    },
+    {
+      "key": "span",
+      "type": "number",
+      "label": "Card width in grid columns",
+      "default": 4
+    },
+    {
+      "key": "directionsLabel",
+      "type": "text",
+      "label": "Directions link label",
+      "default": "Directions →"
+    },
+    {
+      "key": "pageLinkLabel",
+      "type": "text",
+      "label": "Location page link label (leave empty to hide)",
+      "default": ""
+    },
+    {
+      "key": "locations",
+      "type": "list",
+      "label": "Locations",
+      "fields": [
+        {
+          "key": "departments",
+          "type": "text",
+          "label": "Departments line"
+        },
+        {
+          "key": "name",
+          "type": "text",
+          "label": "Name"
+        },
+        {
+          "key": "streetAddress",
+          "type": "text",
+          "label": "Street address"
+        },
+        {
+          "key": "city",
+          "type": "text",
+          "label": "City"
+        },
+        {
+          "key": "region",
+          "type": "text",
+          "label": "State"
+        },
+        {
+          "key": "postalCode",
+          "type": "text",
+          "label": "ZIP"
+        },
+        {
+          "key": "hours",
+          "type": "textarea",
+          "label": "Hours (one department per paragraph)"
+        },
+        {
+          "key": "perks",
+          "type": "text",
+          "label": "Service options line"
+        },
+        {
+          "key": "phone",
+          "type": "text",
+          "label": "Phone (as displayed)"
+        },
+        {
+          "key": "phoneUrl",
+          "type": "url",
+          "label": "Phone link (tel:)"
+        },
+        {
+          "key": "phone2",
+          "type": "text",
+          "label": "Second phone (as displayed)"
+        },
+        {
+          "key": "phone2Url",
+          "type": "url",
+          "label": "Second phone link"
+        },
+        {
+          "key": "phone3",
+          "type": "text",
+          "label": "Third phone (as displayed)"
+        },
+        {
+          "key": "phone3Url",
+          "type": "url",
+          "label": "Third phone link"
+        },
+        {
+          "key": "mapUrl",
+          "type": "url",
+          "label": "Directions link"
+        },
+        {
+          "key": "href",
+          "type": "url",
+          "label": "Location page"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ll",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "{{background}}",
+        "paddingY": 10,
+        "anchor": "{{anchor}}"
+      },
+      "children": [
+        {
+          "id": "ll-head",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "ll-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "ll-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ll-grid",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "align": "stretch"
+          },
+          "children": [
+            {
+              "id": "ll-card",
+              "type": "column",
+              "props": {
+                "span": "{{span}}",
+                "repeat": "locations"
+              },
+              "children": [
+                {
+                  "id": "ll-card-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{name}}",
+                    "eyebrow": "{{departments}}",
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "ll-card-addr",
+                  "type": "text",
+                  "props": {
+                    "text": "{{streetAddress}}, {{city}}, {{region}} {{postalCode}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "ll-card-hours",
+                  "type": "text",
+                  "props": {
+                    "text": "{{hours}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "ll-card-perks",
+                  "type": "text",
+                  "props": {
+                    "text": "{{perks}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "ll-card-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "{{phone}}",
+                        "url": "{{phoneUrl}}",
+                        "style": "link",
+                        "intent": "call-location"
+                      },
+                      {
+                        "label": "{{phone2}}",
+                        "url": "{{phone2Url}}",
+                        "style": "link",
+                        "intent": "call-location"
+                      },
+                      {
+                        "label": "{{phone3}}",
+                        "url": "{{phone3Url}}",
+                        "style": "link",
+                        "intent": "call-location"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "ll-card-links",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "{{directionsLabel}}",
+                        "url": "{{mapUrl}}",
+                        "style": "link",
+                        "intent": "find-location"
+                      },
+                      {
+                        "label": "{{pageLinkLabel}}",
+                        "url": "{{href}}",
+                        "style": "link",
+                        "intent": "find-location"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "/* The handoff's full location card, measured from its .loc--full rules. Colours\n   are the design-system roles the handoff names: its red is `accent`. */\n[data-bz-section=\"location-list\"] > .bz-section { padding-block: 90px }\n[data-bz-section=\"location-list\"] .bz-block { padding-block: 0 }\n[data-bz-section=\"location-list\"] .bz-block + .bz-block { padding-block-start: 0 }\n[data-bz-section=\"location-list\"] .bz-row + .bz-row { margin-top: 0 }\n\n/* The band's heading is for screen readers only: the handoff runs the cards\n   straight on from the map above, and the h2 keeps the outline h2 → h3. */\n[data-bz-section=\"location-list\"] [data-bz-node=\"ll-head\"] {\n  position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;\n  overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; border: 0;\n}\n\n[data-bz-section=\"location-list\"] [data-bz-node=\"ll-grid\"] { --bz-gap: 24px }\n[data-bz-section=\"location-list\"] .bz-col[data-bz-node^=\"ll-card-\"] {\n  display: flex; flex-direction: column;\n  background: var(--card); border: 1px solid var(--line); border-radius: 0; padding: 30px 26px;\n}\n[data-bz-section=\"location-list\"] [data-bz-node^=\"ll-card-h\"] .bz-eyebrow {\n  font: 700 10px/1.3 var(--font-body); letter-spacing: .14em; text-transform: uppercase;\n  color: var(--accent); margin: 0 0 12px;\n}\n[data-bz-section=\"location-list\"] [data-bz-node^=\"ll-card-h\"] h3 {\n  font: 800 21px/1.7 var(--font-heading); letter-spacing: 0; color: var(--ink); margin: 0 0 6px;\n}\n[data-bz-section=\"location-list\"] [data-bz-node^=\"ll-card-addr\"] p {\n  font-size: 14px; line-height: 1.6; color: var(--muted); margin: 0 0 18px;\n}\n/* One paragraph per department, each ruled off above like the handoff's list. */\n[data-bz-section=\"location-list\"] [data-bz-node^=\"ll-card-hours\"] .bz-text {\n  display: flex; flex-direction: column; gap: 8px; margin: 0 0 18px;\n}\n[data-bz-section=\"location-list\"] [data-bz-node^=\"ll-card-hours\"] p {\n  font-size: 14px; line-height: 1.5; color: var(--body-text); margin: 0;\n  border-top: 1px solid var(--line); padding-top: 8px;\n}\n[data-bz-section=\"location-list\"] [data-bz-node^=\"ll-card-perks\"] p {\n  font-size: 13px; line-height: 1.55; color: var(--muted); margin: 0 0 18px;\n}\n/* Phones and directions sit on the card floor, so a row of cards with\n   different amounts of copy lines its links up. */\n[data-bz-section=\"location-list\"] [data-bz-node^=\"ll-card-cta\"] { margin-top: auto }\n[data-bz-section=\"location-list\"] [data-bz-node^=\"ll-card-cta\"] + [data-bz-node^=\"ll-card-links\"] { padding-block-start: 8px }\n[data-bz-section=\"location-list\"] [data-bz-node^=\"ll-card-links\"]:only-child,\n[data-bz-section=\"location-list\"] [data-bz-node^=\"ll-card-perks\"] + [data-bz-node^=\"ll-card-links\"],\n[data-bz-section=\"location-list\"] [data-bz-node^=\"ll-card-hours\"] + [data-bz-node^=\"ll-card-links\"],\n[data-bz-section=\"location-list\"] [data-bz-node^=\"ll-card-addr\"] + [data-bz-node^=\"ll-card-links\"] { margin-top: auto }\n[data-bz-section=\"location-list\"] .bz-btns {\n  margin-block: 0; gap: 8px; flex-direction: column; align-items: flex-start;\n}\n[data-bz-section=\"location-list\"] .bz-btn--link {\n  font: 700 15px/1.7 var(--font-body); letter-spacing: 0; text-transform: none;\n  color: var(--accent); text-decoration: none;\n}\n[data-bz-section=\"location-list\"] .bz-btn--link:hover { text-decoration: underline; text-underline-offset: 3px }\n\n@media (max-width: 1100px) {\n  [data-bz-section=\"location-list\"] .bz-col[data-bz-node^=\"ll-card-\"] { grid-column: span 6 / span 6 }\n}\n@media (max-width: 640px) {\n  [data-bz-section=\"location-list\"] .bz-col[data-bz-node^=\"ll-card-\"] { grid-column: 1 / -1 }\n}\n"
+}
