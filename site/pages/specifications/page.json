@@ -150,7 +150,7 @@
                   "id": "br-s13-docs",
                   "type": "doc-group",
                   "props": {
-                    "title": "S13 spec sheets",
+                    "title": "",
                     "meta": "LT · RH · HX",
                     "docs": [
                       {
@@ -163,7 +163,9 @@
                         "url": "https://vendure.buzznerdrv.com/assets/source/ad/int-s13-spec-sheet-hx-2024-9-23-2-1.pdf",
                         "kind": "PDF"
                       }
-                    ]
+                    ],
+                    "grid": true,
+                    "onDark": true
                   }
                 }
               ]
@@ -219,7 +221,7 @@
                   "id": "br-s13-compare-docs",
                   "type": "doc-group",
                   "props": {
-                    "title": "Competitive comparisons",
+                    "title": "",
                     "meta": "3 DOCUMENTS",
                     "docs": [
                       {
@@ -237,7 +239,9 @@
                         "url": "https://vendure.buzznerdrv.com/assets/source/bf/lt_04_24_2026_10_41_05.pdf",
                         "kind": "PDF"
                       }
-                    ]
+                    ],
+                    "grid": true,
+                    "onDark": true
                   }
                 }
               ]
@@ -295,7 +299,7 @@
               "id": "col-br-mv",
               "type": "column",
               "props": {
-                "span": 6,
+                "span": 12,
                 "anchor": "br-mv"
               },
               "children": [
@@ -341,7 +345,8 @@
                         "url": "https://vendure.buzznerdrv.com/assets/source/6b/int24-pm-mv-series-snowplow-spec-sheet-final.pdf",
                         "kind": "PDF"
                       }
-                    ]
+                    ],
+                    "grid": true
                   }
                 }
               ]
@@ -350,7 +355,7 @@
               "id": "col-br-emv",
               "type": "column",
               "props": {
-                "span": 6,
+                "span": 12,
                 "anchor": "br-emv"
               },
               "children": [
@@ -376,7 +381,8 @@
                         "url": "https://vendure.buzznerdrv.com/assets/source/fe/pm_international_specsheet-epower_2024-final-web.pdf",
                         "kind": "PDF"
                       }
-                    ]
+                    ],
+                    "grid": true
                   }
                 }
               ]
@@ -385,7 +391,7 @@
               "id": "col-br-hv",
               "type": "column",
               "props": {
-                "span": 6,
+                "span": 12,
                 "anchor": "br-hv"
               },
               "children": [
@@ -416,7 +422,8 @@
                         "url": "https://vendure.buzznerdrv.com/assets/source/c0/int_hv-series-specs-615-2024-9-23-2.pdf",
                         "kind": "PDF"
                       }
-                    ]
+                    ],
+                    "grid": true
                   }
                 }
               ]
@@ -425,7 +432,7 @@
               "id": "col-br-lt",
               "type": "column",
               "props": {
-                "span": 6,
+                "span": 12,
                 "anchor": "br-lt"
               },
               "children": [
@@ -451,7 +458,8 @@
                         "url": "https://vendure.buzznerdrv.com/assets/source/2a/int_ltseries-sleeperspecs-2024-9-23-1.pdf",
                         "kind": "PDF"
                       }
-                    ]
+                    ],
+                    "grid": true
                   }
                 }
               ]
@@ -460,7 +468,7 @@
               "id": "col-br-rh",
               "type": "column",
               "props": {
-                "span": 6,
+                "span": 12,
                 "anchor": "br-rh"
               },
               "children": [
@@ -486,7 +494,8 @@
                         "url": "https://vendure.buzznerdrv.com/assets/source/e0/int_rhseries-sleeperspecs-2024-9-23-1.pdf",
                         "kind": "PDF"
                       }
-                    ]
+                    ],
+                    "grid": true
                   }
                 }
               ]
@@ -495,7 +504,7 @@
               "id": "col-br-hx",
               "type": "column",
               "props": {
-                "span": 6,
+                "span": 12,
                 "anchor": "br-hx"
               },
               "children": [
@@ -521,7 +530,8 @@
                         "url": "https://vendure.buzznerdrv.com/assets/source/f2/int_hx620specs-2024-9-23-2.pdf",
                         "kind": "PDF"
                       }
-                    ]
+                    ],
+                    "grid": true
                   }
                 }
               ]
@@ -530,7 +540,7 @@
               "id": "col-br-cv",
               "type": "column",
               "props": {
-                "span": 6,
+                "span": 12,
                 "anchor": "br-cv"
               },
               "children": [
@@ -546,7 +556,8 @@
                         "url": "https://vendure.buzznerdrv.com/assets/source/9a/int_cv-series-brochure-9-23-2.pdf",
                         "kind": "PDF"
                       }
-                    ]
+                    ],
+                    "grid": true
                   }
                 }
               ]
@@ -555,7 +566,7 @@
               "id": "col-br-lonestar",
               "type": "column",
               "props": {
-                "span": 6,
+                "span": 12,
                 "anchor": "br-lonestar"
               },
               "children": [
@@ -581,7 +592,8 @@
                         "url": "https://vendure.buzznerdrv.com/assets/source/7b/lonestar_sleeper.pdf",
                         "kind": "PDF"
                       }
-                    ]
+                    ],
+                    "grid": true
                   }
                 }
               ]
