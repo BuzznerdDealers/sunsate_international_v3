@@ -117,24 +117,18 @@
   ],
   "notifications": [
     {
-      "id": "n-mubimeoi1",
-      "name": "Default , e-contact@sunstateintl.com",
+      "id": "n-mue5vk8v1",
+      "name": "Default",
       "logic": "AND",
-      "rules": [
-        {
-          "fieldId": "cu-name",
-          "operator": "is",
-          "value": ""
-        }
-      ],
+      "rules": [],
       "targetType": "email",
       "roleId": "",
       "scopeMode": "dynamic",
-      "contactName": "Sunstate E-Contact ",
-      "email": "sharma@buzznerd.com, ash@buzznerd.com, av@buzznerd.com"
+      "contactName": "Buzznerds",
+      "email": "sharma@buzznerd.com,ash@buzznerd.com,av@buzznerd.com"
     }
   ],
-  "updatedAt": "2026-09-22T13:40:34.149Z",
+  "updatedAt": "2026-09-23T13:51:56.327Z",
   "pdpContext": true,
   "confirmations": [
     {
