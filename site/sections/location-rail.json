@@ -234,7 +234,7 @@
                     "config": {
                       "pagePathPrefix": "/locations",
                       "basemap": {
-                        "src": "https://vendure.buzznerdrv.com/assets/source/fe/map-2.svg",
+                        "src": "https://vendure.buzznerdrv.com/assets/source/2b/map_all_locations_zoomed_1200x500.svg",
                         "alt": "dms-11044973876__02.jpg",
                         "width": 1000,
                         "height": 902
@@ -1435,18 +1435,7 @@
               "props": {
                 "span": 12
               },
-              "children": [
-                {
-                  "id": "lr-perks-pills",
-                  "type": "filter-pills",
-                  "props": {
-                    "label": "{{perkLabel}}",
-                    "facet": "perk",
-                    "allLabel": "ALL",
-                    "options": "{{perks}}"
-                  }
-                }
-              ]
+              "children": []
             }
           ]
         },
