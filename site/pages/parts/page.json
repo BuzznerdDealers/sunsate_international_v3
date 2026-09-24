@@ -1154,7 +1154,7 @@
                 "perk2": null,
                 "perk3": null,
                 "departments": "Sales · Service · Parts",
-                "hours": "Sales: 08:00–17:00 Mon–Fri\n\nService: 07:00–17:00 Mon–Fri\n\nParts: 08:00–17:00 Mon–Fri, 07:00–17:00 Sat",
+                "hours": "Sales: 08:00–17:00 Mon–Fri\n\nService: 07:00–17:00 Mon–Fri\n\nParts: 08:00–17:00 Mon–Fri, 08:00–12:00 Sat",
                 "phone2": null,
                 "phone2Url": null,
                 "phone3": null,
@@ -1195,7 +1195,7 @@
                     "phone": null,
                     "phoneUrl": null,
                     "email": null,
-                    "hours": "08:00–17:00 Mon–Fri, 07:00–17:00 Sat"
+                    "hours": "08:00–17:00 Mon–Fri, 08:00–12:00 Sat"
                   }
                 ],
                 "hoursRows": [
@@ -1314,7 +1314,7 @@
                   {
                     "department": "Parts",
                     "key": "parts",
-                    "summary": "08:00–17:00 Mon–Fri, 07:00–17:00 Sat",
+                    "summary": "08:00–17:00 Mon–Fri, 08:00–12:00 Sat",
                     "days": [
                       {
                         "day": "Sunday",
@@ -1360,9 +1360,9 @@
                       },
                       {
                         "day": "Saturday",
-                        "hours": "07:00–17:00",
-                        "opensAt": "07:00",
-                        "closesAt": "17:00",
+                        "hours": "08:00–12:00",
+                        "opensAt": "08:00",
+                        "closesAt": "12:00",
                         "closed": false
                       }
                     ]
