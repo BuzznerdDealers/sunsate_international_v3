@@ -18,49 +18,6 @@
       }
     },
     {
-      "id": "videos-summary",
-      "type": "section",
-      "props": {
-        "width": "boxed",
-        "paddingY": 9,
-        "background": "card",
-        "anchor": "videos-summary"
-      },
-      "children": [
-        {
-          "id": "vs-row",
-          "type": "row",
-          "props": {
-            "gap": 5
-          },
-          "children": [
-            {
-              "id": "vs-col",
-              "type": "column",
-              "props": {
-                "span": 12
-              },
-              "children": [
-                {
-                  "id": "vs-t",
-                  "type": "text",
-                  "props": {
-                    "text": "Seven videos in total: six from the Sun State International YouTube channel and the Sun State Trailers feature that ran on the trailers site. Start with Welcome to Sun State for an introduction to the company, its people and its six Florida locations.",
-                    "width": "full"
-                  },
-                  "styles": {
-                    "base": {
-                      "fontSize": 18
-                    }
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "videos-featured",
       "type": "section",
       "props": {
