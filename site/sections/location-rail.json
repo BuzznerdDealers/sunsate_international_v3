@@ -380,10 +380,10 @@
                           "phoneUrl": "tel:3522770221",
                           "mapUrl": "https://www.google.com/maps/search/?api=1&query=17127%20Runway%20Drive%2C%20Brooksville%2C%20FL%2C%2034604",
                           "email": null,
-                          "brands": "",
+                          "brands": "Globe · Hyundai · IC Bus · International",
                           "services": "",
                           "perks": "",
-                          "brandKeys": "",
+                          "brandKeys": "globe hyundai ic-bus international",
                           "perkKeys": "",
                           "perk1": null,
                           "perk2": null,
@@ -404,7 +404,24 @@
                             "src": "",
                             "alt": ""
                           },
-                          "brandRows": [],
+                          "brandRows": [
+                            {
+                              "name": "Globe",
+                              "key": "globe"
+                            },
+                            {
+                              "name": "Hyundai",
+                              "key": "hyundai"
+                            },
+                            {
+                              "name": "IC Bus",
+                              "key": "ic-bus"
+                            },
+                            {
+                              "name": "International",
+                              "key": "international"
+                            }
+                          ],
                           "serviceRows": [],
                           "perkRows": [],
                           "departmentRows": [
@@ -494,10 +511,10 @@
                           "phoneUrl": "tel:8634242411",
                           "mapUrl": "https://www.google.com/maps/search/?api=1&query=41609%20Hwy%2027%2C%20Davenport%2C%20FL%2C%2033837",
                           "email": null,
-                          "brands": "",
+                          "brands": "Globe · Hyundai · IC Bus · International",
                           "services": "",
                           "perks": "",
-                          "brandKeys": "",
+                          "brandKeys": "globe hyundai ic-bus international",
                           "perkKeys": "",
                           "perk1": null,
                           "perk2": null,
@@ -518,7 +535,24 @@
                             "src": "",
                             "alt": ""
                           },
-                          "brandRows": [],
+                          "brandRows": [
+                            {
+                              "name": "Globe",
+                              "key": "globe"
+                            },
+                            {
+                              "name": "Hyundai",
+                              "key": "hyundai"
+                            },
+                            {
+                              "name": "IC Bus",
+                              "key": "ic-bus"
+                            },
+                            {
+                              "name": "International",
+                              "key": "international"
+                            }
+                          ],
                           "serviceRows": [],
                           "perkRows": [],
                           "departmentRows": [
@@ -744,8 +778,8 @@
                           "perk1": null,
                           "perk2": null,
                           "perk3": null,
-                          "departments": "Sales · Service · Body Shop",
-                          "hours": "Sales: 07:00–17:00 Mon–Sat\n\nService: 07:00–17:00 Mon–Sat\n\nBody Shop: 08:00–17:00 Mon–Fri",
+                          "departments": "Sales · Service · Parts",
+                          "hours": "Sales: 08:00–17:00 Mon–Fri\n\nService: 07:00–17:00 Mon–Fri\n\nParts: 08:00–17:00 Mon–Fri, 07:00–17:00 Sat",
                           "phone2": null,
                           "phone2Url": null,
                           "phone3": null,
@@ -770,7 +804,7 @@
                               "phone": null,
                               "phoneUrl": null,
                               "email": null,
-                              "hours": "07:00–17:00 Mon–Sat"
+                              "hours": "08:00–17:00 Mon–Fri"
                             },
                             {
                               "name": "Service",
@@ -778,133 +812,21 @@
                               "phone": null,
                               "phoneUrl": null,
                               "email": null,
-                              "hours": "07:00–17:00 Mon–Sat"
+                              "hours": "07:00–17:00 Mon–Fri"
                             },
                             {
-                              "name": "Body Shop",
-                              "key": "body",
+                              "name": "Parts",
+                              "key": "parts",
                               "phone": null,
                               "phoneUrl": null,
                               "email": null,
-                              "hours": "08:00–17:00 Mon–Fri"
+                              "hours": "08:00–17:00 Mon–Fri, 07:00–17:00 Sat"
                             }
                           ],
                           "hoursRows": [
                             {
                               "department": "Sales",
                               "key": "sales",
-                              "summary": "07:00–17:00 Mon–Sat",
-                              "days": [
-                                {
-                                  "day": "Sunday",
-                                  "hours": "Closed",
-                                  "opensAt": null,
-                                  "closesAt": null,
-                                  "closed": true
-                                },
-                                {
-                                  "day": "Monday",
-                                  "hours": "07:00–17:00",
-                                  "opensAt": "07:00",
-                                  "closesAt": "17:00",
-                                  "closed": false
-                                },
-                                {
-                                  "day": "Tuesday",
-                                  "hours": "07:00–17:00",
-                                  "opensAt": "07:00",
-                                  "closesAt": "17:00",
-                                  "closed": false
-                                },
-                                {
-                                  "day": "Wednesday",
-                                  "hours": "07:00–17:00",
-                                  "opensAt": "07:00",
-                                  "closesAt": "17:00",
-                                  "closed": false
-                                },
-                                {
-                                  "day": "Thursday",
-                                  "hours": "07:00–17:00",
-                                  "opensAt": "07:00",
-                                  "closesAt": "17:00",
-                                  "closed": false
-                                },
-                                {
-                                  "day": "Friday",
-                                  "hours": "07:00–17:00",
-                                  "opensAt": "07:00",
-                                  "closesAt": "17:00",
-                                  "closed": false
-                                },
-                                {
-                                  "day": "Saturday",
-                                  "hours": "07:00–17:00",
-                                  "opensAt": "07:00",
-                                  "closesAt": "17:00",
-                                  "closed": false
-                                }
-                              ]
-                            },
-                            {
-                              "department": "Service",
-                              "key": "service",
-                              "summary": "07:00–17:00 Mon–Sat",
-                              "days": [
-                                {
-                                  "day": "Sunday",
-                                  "hours": "Closed",
-                                  "opensAt": null,
-                                  "closesAt": null,
-                                  "closed": true
-                                },
-                                {
-                                  "day": "Monday",
-                                  "hours": "07:00–17:00",
-                                  "opensAt": "07:00",
-                                  "closesAt": "17:00",
-                                  "closed": false
-                                },
-                                {
-                                  "day": "Tuesday",
-                                  "hours": "07:00–17:00",
-                                  "opensAt": "07:00",
-                                  "closesAt": "17:00",
-                                  "closed": false
-                                },
-                                {
-                                  "day": "Wednesday",
-                                  "hours": "07:00–17:00",
-                                  "opensAt": "07:00",
-                                  "closesAt": "17:00",
-                                  "closed": false
-                                },
-                                {
-                                  "day": "Thursday",
-                                  "hours": "07:00–17:00",
-                                  "opensAt": "07:00",
-                                  "closesAt": "17:00",
-                                  "closed": false
-                                },
-                                {
-                                  "day": "Friday",
-                                  "hours": "07:00–17:00",
-                                  "opensAt": "07:00",
-                                  "closesAt": "17:00",
-                                  "closed": false
-                                },
-                                {
-                                  "day": "Saturday",
-                                  "hours": "07:00–17:00",
-                                  "opensAt": "07:00",
-                                  "closesAt": "17:00",
-                                  "closed": false
-                                }
-                              ]
-                            },
-                            {
-                              "department": "Body Shop",
-                              "key": "body",
                               "summary": "08:00–17:00 Mon–Fri",
                               "days": [
                                 {
@@ -955,6 +877,118 @@
                                   "opensAt": null,
                                   "closesAt": null,
                                   "closed": true
+                                }
+                              ]
+                            },
+                            {
+                              "department": "Service",
+                              "key": "service",
+                              "summary": "07:00–17:00 Mon–Fri",
+                              "days": [
+                                {
+                                  "day": "Sunday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Monday",
+                                  "hours": "07:00–17:00",
+                                  "opensAt": "07:00",
+                                  "closesAt": "17:00",
+                                  "closed": false
+                                },
+                                {
+                                  "day": "Tuesday",
+                                  "hours": "07:00–17:00",
+                                  "opensAt": "07:00",
+                                  "closesAt": "17:00",
+                                  "closed": false
+                                },
+                                {
+                                  "day": "Wednesday",
+                                  "hours": "07:00–17:00",
+                                  "opensAt": "07:00",
+                                  "closesAt": "17:00",
+                                  "closed": false
+                                },
+                                {
+                                  "day": "Thursday",
+                                  "hours": "07:00–17:00",
+                                  "opensAt": "07:00",
+                                  "closesAt": "17:00",
+                                  "closed": false
+                                },
+                                {
+                                  "day": "Friday",
+                                  "hours": "07:00–17:00",
+                                  "opensAt": "07:00",
+                                  "closesAt": "17:00",
+                                  "closed": false
+                                },
+                                {
+                                  "day": "Saturday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                }
+                              ]
+                            },
+                            {
+                              "department": "Parts",
+                              "key": "parts",
+                              "summary": "08:00–17:00 Mon–Fri, 07:00–17:00 Sat",
+                              "days": [
+                                {
+                                  "day": "Sunday",
+                                  "hours": "Closed",
+                                  "opensAt": null,
+                                  "closesAt": null,
+                                  "closed": true
+                                },
+                                {
+                                  "day": "Monday",
+                                  "hours": "08:00–17:00",
+                                  "opensAt": "08:00",
+                                  "closesAt": "17:00",
+                                  "closed": false
+                                },
+                                {
+                                  "day": "Tuesday",
+                                  "hours": "08:00–17:00",
+                                  "opensAt": "08:00",
+                                  "closesAt": "17:00",
+                                  "closed": false
+                                },
+                                {
+                                  "day": "Wednesday",
+                                  "hours": "08:00–17:00",
+                                  "opensAt": "08:00",
+                                  "closesAt": "17:00",
+                                  "closed": false
+                                },
+                                {
+                                  "day": "Thursday",
+                                  "hours": "08:00–17:00",
+                                  "opensAt": "08:00",
+                                  "closesAt": "17:00",
+                                  "closed": false
+                                },
+                                {
+                                  "day": "Friday",
+                                  "hours": "08:00–17:00",
+                                  "opensAt": "08:00",
+                                  "closesAt": "17:00",
+                                  "closed": false
+                                },
+                                {
+                                  "day": "Saturday",
+                                  "hours": "07:00–17:00",
+                                  "opensAt": "07:00",
+                                  "closesAt": "17:00",
+                                  "closed": false
                                 }
                               ]
                             }
