@@ -3,6 +3,7 @@
   "title": "Dry Van vs Reefer Trailer: Which Makes Sense?",
   "date": "2026-03-29",
   "description": "Dry van vs reefer trailer explained. Compare costs, uses, and benefits to find the right trailer for your fleet today.",
+  "excerpt": "When expanding your fleet, one of the most common questions trucking businesses face is \"dry van vs reefer trailer, which one makes more sense?\" Both trailer types are essential to the freight industry, but…",
   "status": "published",
   "coverImage": "/img/blog/dry-van-vs-reefer-trailer/hero.jpg",
   "topic": "Trailer Sales",
@@ -568,11 +569,13 @@
                             "items": [
                               {
                                 "ctaId": "browse-new-trailers",
-                                "label": "Shop New Trailers"
+                                "label": "Shop New Trailers",
+                                "style": "primary"
                               },
                               {
                                 "ctaId": "browse-used-trailers",
-                                "label": "Used Trailers"
+                                "label": "Used Trailers",
+                                "style": "secondary"
                               }
                             ]
                           }

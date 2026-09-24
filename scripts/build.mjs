@@ -474,7 +474,11 @@ if (blogSettings.enabled && existsSync(join(BLOG, 'posts'))) {
     if ((post.status || 'published') !== 'published') continue;
     posts.push(post);
   }
-  posts.sort((a, b) => (a.date < b.date ? 1 : -1));
+  // Newest first; posts sharing a date go by slug, so the order — and which page
+  // of nine a post lands on — does not depend on how the file system lists them.
+  posts.sort((a, b) =>
+    a.date === b.date ? String(a.slug).localeCompare(String(b.slug)) : a.date < b.date ? 1 : -1,
+  );
 }
 renderCtx.posts = posts;
 renderCtx.blogBasePath = blogBase;

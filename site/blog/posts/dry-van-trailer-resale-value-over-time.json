@@ -3,6 +3,7 @@
   "title": "Dry Van Trailer Resale Value Over Time",
   "date": "2026-04-28",
   "description": "Explore the ins and outs of dry van trailer resale value. Learn what impacts value and explore inventory options today.",
+  "excerpt": "If you're thinking long-term, understanding dry van trailer resale value is just as important as the initial purchase price. Whether you're running a small fleet or managing multiple units, the ability to…",
   "status": "published",
   "coverImage": "/img/blog/dry-van-trailer-resale-value-over-time/hero.jpg",
   "topic": "Trailer Sales",
@@ -497,11 +498,13 @@
                             "items": [
                               {
                                 "ctaId": "browse-trailers",
-                                "label": "Explore Inventory"
+                                "label": "Explore Inventory",
+                                "style": "primary"
                               },
                               {
                                 "ctaId": "browse-trailers",
-                                "label": "Download Trailer Specifications"
+                                "label": "Download Trailer Specifications",
+                                "style": "secondary"
                               }
                             ]
                           }
@@ -602,11 +605,13 @@
                             "items": [
                               {
                                 "ctaId": "browse-trailers",
-                                "label": "Explore Inventory"
+                                "label": "Explore Inventory",
+                                "style": "primary"
                               },
                               {
                                 "ctaId": "browse-trailers",
-                                "label": "Download Trailer Specifications"
+                                "label": "Download Trailer Specifications",
+                                "style": "secondary"
                               }
                             ]
                           }

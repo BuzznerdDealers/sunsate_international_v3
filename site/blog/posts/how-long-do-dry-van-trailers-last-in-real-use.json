@@ -3,6 +3,7 @@
   "title": "How Long Do Dry Van Trailers Last in Real Use?",
   "date": "2026-04-24",
   "description": "How long do dry van trailers last? Learn lifespan, maintenance tips, and find new or used trailers today.",
+  "excerpt": "If you're asking how long do dry van trailers last, the honest answer is: it depends on how they're used and how well they're maintained. On average, a dry van trailer can last anywhere from 10 to 30 years…",
   "status": "published",
   "coverImage": "/img/blog/how-long-do-dry-van-trailers-last-in-real-use/hero.jpg",
   "topic": "Trailer Sales",
@@ -506,11 +507,13 @@
                             "items": [
                               {
                                 "ctaId": "browse-new-trailers",
-                                "label": "New Trailers"
+                                "label": "New Trailers",
+                                "style": "primary"
                               },
                               {
                                 "ctaId": "browse-used-trailers",
-                                "label": "Used Trailers"
+                                "label": "Used Trailers",
+                                "style": "secondary"
                               }
                             ]
                           }
@@ -589,11 +592,13 @@
                             "items": [
                               {
                                 "ctaId": "browse-new-trailers",
-                                "label": "New Trailers"
+                                "label": "New Trailers",
+                                "style": "primary"
                               },
                               {
                                 "ctaId": "browse-used-trailers",
-                                "label": "Used Trailers"
+                                "label": "Used Trailers",
+                                "style": "secondary"
                               }
                             ]
                           }

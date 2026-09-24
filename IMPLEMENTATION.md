@@ -648,3 +648,67 @@ this site, the rules below go on **Storefront → 301 Redirects** in Admin (it i
 | `/new-trailers/new-vs-used-dry-van-trailer/` | `/blog/posts/new-vs-used-dry-van-trailer` |
 | `/new-trailers/standard-size-of-a-dry-van-trailer/` | `/blog/posts/standard-size-of-a-dry-van-trailer` |
 
+
+## 17. Blog handoff, batch 3 — three new posts, three repeats
+
+Six prototype pages in the §15 format. Three are new posts, each on its live sunstateintl.com
+permalink (the page's own `rel="canonical"`), not the shortened file name:
+
+| Handoff file | Post | Topic, date |
+|---|---|---|
+| `5-benefits-of-used-dry-freight-truck-bodies` | `5-benefits-of-shopping-for-used-dry-freight-truck-bodies` | Sales, Apr 25, 2025 |
+| `benefit-from-new-dry-freight-truck-bodies` | `how-your-business-can-benefit-from-new-dry-freight-truck-bodies` | Sales, Apr 18, 2025 |
+| `8-things-for-the-best-fleet-maintenance` | `8-things-you-need-to-know-for-the-best-fleet-maintenance` | Fleet, Apr 11, 2025 |
+
+The other three repeat, word for word, posts already on the site: *Are Aftermarket Semi Truck
+Parts as Reliable as OEM?*, *The Real Average Maintenance Cost for a Semi Truck* and *How to
+Choose the Best Semi Truck Tires for Long-Term Hauls*. **They are left as they are**: the repeat
+ships 1000px photographs against the 1280px ones already there and no contents rail, so
+re-converting it would only lose something. The converter lists them as repeats and skips them.
+
+Body copy and rails of the new posts match the handoff word for word; the blog page carries 67
+cards.
+
+New shapes:
+
+| Handoff | Here |
+|---|---|
+| an accent label over a bold name, three across ("INTERNATIONAL / MV Series", "01 / Cost per mile") | **Card lists**, *Numbered* style, sized to the handoff on that node |
+| an `h2` led by a small accent index ("01  Build Your Fleet…") | a row: the index as text beside a real heading, which keeps the rail's anchor |
+| a pull statement — display face, ruled above and below | text in a ruled column (the rules, padding and size are node styles) |
+| a bordered callout holding a label and a two-across run of names | the callout, with the names as a **Feature list** of titles, untiled |
+| a button pair spelled out inline (48px, filled then outlined) | the site's primary and secondary buttons |
+
+That last one was already in batches 1 and 2, where the pair had come out as two text links.
+Those twelve posts now carry the filled / outlined styles too — a style change on each button,
+with every node id kept.
+
+Links and the library:
+
+- A new library button, **Browse used trucks** (`/store/inventory?condition=used`), for "Shop
+  Used Truck Bodies". It is edited on **Buttons** like the rest.
+- *Service*, *Mobile Service* and *Extended Service* design pages go to those pages; *Tampa /
+  Sarasota / Davenport Location* go to the branch's generated page.
+- sunstatetrailers.com's home ("Globe and Hyundai trailers") goes to the trailer listings, and
+  its `/new-trailers/` to new trailers. hyundaitranslead.com, the body maker's own site, stays
+  an outbound link, as international.com does.
+- A converter bug fixed on the way: a plain `margin: 28px 0` was read as the 34px default. It
+  changed no earlier post.
+
+**Dropped / to supply.**
+
+- *5 Benefits of Shopping for Used Dry Freight Truck Bodies* names a hero photograph the
+  handoff did not ship (`pasted-1790169124717-0.jpg`, a team member opening a truck body's
+  rear doors). The post uses the Post hero's own "photograph to be supplied" slot and its blog
+  card the empty image box, so the gap shows. Upload the photo on the post's hero (Posts →
+  the post → canvas), and on that post's card on the Blog page (Pages → Blog → the post cards).
+- The handoff's hand-picked "Keep reading" cards are the latest-posts list, as on every post.
+
+**Old addresses.** The three new posts keep their sunstateintl.com path under `/blog/posts/`.
+If the old domain is pointed at this site, these go on **Storefront → 301 Redirects** in Admin:
+
+| Old path on sunstateintl.com | New path |
+|---|---|
+| `/5-benefits-of-shopping-for-used-dry-freight-truck-bodies/` | `/blog/posts/5-benefits-of-shopping-for-used-dry-freight-truck-bodies` |
+| `/how-your-business-can-benefit-from-new-dry-freight-truck-bodies/` | `/blog/posts/how-your-business-can-benefit-from-new-dry-freight-truck-bodies` |
+| `/8-things-you-need-to-know-for-the-best-fleet-maintenance/` | `/blog/posts/8-things-you-need-to-know-for-the-best-fleet-maintenance` |

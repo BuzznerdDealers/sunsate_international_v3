@@ -34,6 +34,9 @@ LINK_MAP = {
     "https://www.sunstateintl.com/read-other-customers-comments-about-us-xtestimonials/": "/reviews",
     "https://www.sunstateintl.com/about-us/": "/our-story",
     "https://www.sunstateintl.com/used-heavy-medium-duty-trucks-for-sale-tampa-florida-xpreownedinventoryatlight-duty-truckmedium-duty-truckheavy-duty-truck/": "/store/inventory?condition=used",
+    # The old trailer site's home, linked from "Globe and Hyundai trailers": the trailer listings.
+    "https://sunstatetrailers.com/": "/store/inventory?type=trailer",
+    "https://sunstatetrailers.com/new-trailers/": "/store/inventory?type=trailer&condition=new",
     "https://www.sunstateintl.com/truck-configurator/": "/truck-configurator",
     "https://www.sunstateintl.com/learn-more-about-s13-powertrain/": "/specifications",
     "https://www.sunstateintl.com/extended-service/": "/extended-service",
@@ -56,9 +59,15 @@ INTENT = {
 DC_PAGES = {
     "Home.dc.html": "/", "Blog.dc.html": "/blog", "Contact Us.dc.html": "/contact",
     "Financing.dc.html": "/financing", "Service Appointment.dc.html": "/service-appointment",
+    "Service.dc.html": "/service", "Mobile Service.dc.html": "/mobile-service", "Extended Service.dc.html": "/extended-service",
     # No trailer-specifications page exists on this site; each listing carries its specs.
     "Trailer Specifications.dc.html": "/store/inventory?type=trailer",
 }
+# Pages a later handoff repeats, word for word, from an earlier one. The post already built
+# from the first handoff stands: the repeat ships smaller photographs and no rail.
+REPEATS = {"batch-3": {"are-aftermarket-semi-truck-parts-as-reliable-as-oem.html",
+                       "average-maintenance-cost-for-a-semi-truck.html",
+                       "best-semi-truck-tires-for-long-term-hauls.html"}}
 POST_TITLES = {}  # "Blog Post - <title>.dc.html" -> slug, filled from the handoff's own pages
 
 
@@ -66,6 +75,9 @@ def dc_href(h, label):
     name = urllib.parse.unquote(h.rsplit("/", 1)[-1])
     if name in DC_PAGES:
         return DC_PAGES[name]
+    m = re.fullmatch(r"(Tampa|Sarasota|Davenport|Brooksville) Location\.dc\.html", name)
+    if m:
+        return "/locations/" + m.group(1).lower()  # the branch's generated page, by its Admin slug
     if name == "Trailer Sales Location.dc.html":
         l = (label or "").lower()
         if "new trailers" in l: return "/store/inventory?type=trailer&condition=new"
@@ -89,7 +101,7 @@ def map_href(h, label=None):
         return "/blog"
     if h.endswith(".html") and ("/posts/" in h or "/" not in h):
         return "/blog/posts/" + h.rsplit("/", 1)[-1][:-5]
-    if re.match(r"https://([a-z]+\.)?international\.com(/|$)", h):
+    if re.match(r"https://([a-z]+\.)?(international|hyundaitranslead)\.com(/|$)", h):
         return h  # the manufacturer's own site: an outbound link, kept as written
     if h not in LINK_MAP:
         raise SystemExit(f"unmapped link: {h}")
@@ -117,7 +129,7 @@ DEST = {
     "/service-appointment": "schedule-service", "/parts": "parts-department",
     "https://www.sunstateparts.com/login": "order-parts-online", "/service": "service-department",
     "/contact": "contact-us", "/blog": "all-blog-posts", "tel:+18007417566": "call-main", "/mobile-service": "mobile-service",
-    "/store/inventory?condition=new": "browse-new-trucks",
+    "/store/inventory?condition=new": "browse-new-trucks", "/store/inventory?condition=used": "browse-used-trucks",
     "/store/inventory?type=trailer": "browse-trailers",
     "/locations/trailer-sales": "trailer-sales-location",
     "/store/inventory?type=trailer&condition=new": "browse-new-trailers",
@@ -234,19 +246,30 @@ def arrow_link(id, a):
 
 def margins(style):
     """Top and bottom of an inline `margin:` shorthand — `34px 0` or `8px 0 34px`."""
-    m = re.search(r"margin:\s*([0-9]+)px(?:\s+0)?\s*([0-9]+)?px?", style)
+    m = re.search(r"(?<![-\w])margin:\s*([0-9]+)px(?:\s+0)?(?:\s+([0-9]+)px)?", style)
     top = int(m.group(1)) if m else 34
     bottom = int(m.group(2)) if m and m.group(2) else top
     return top, bottom
 
 
-def callout(cid, box, style):
-    """A bordered callout: an optional micro-label, an optional paragraph, a link."""
+def callout(cid, box, style, css=None):
+    """A bordered callout: an optional micro-label, an optional paragraph, a link — or a
+    two-across run of bold names under the label, which is a Feature list of titles."""
     kids = []
     for c in box.children:
         if not isinstance(c, Tag):
             continue
-        if c.name == "div":
+        if c.name == "div" and "grid-2" in c.get("class", []):
+            names = [x for x in c.children if isinstance(x, Tag)]
+            assert all(x.name == "div" and not [y for y in x.children if isinstance(y, Tag)] for x in names), c
+            kids.append(n(f"{cid}-names", "list", {"headingLevel": 3, "columns": 2, "items": [{"label": plain(x)} for x in names]}))
+            fs = re.search(r"font-size:\s*([0-9.]+)px", names[0].get("style", ""))
+            css.append(f'/* The callout\'s names are a plain two-across run: no tile, no rule. */\n'
+                       f'[data-bz-node="art-body"] .bz-block--list[data-bz-node="{cid}-names"] {{ margin: 0; padding-block: 0; }}\n'
+                       f'[data-bz-node="art-body"] [data-bz-node="{cid}-names"] .bz-grid {{ gap: 10px 24px; }}\n'
+                       f'[data-bz-node="art-body"] [data-bz-node="{cid}-names"] .bz-feature {{ padding: 0; border: 0; background: none; }}\n'
+                       f'[data-bz-node="art-body"] [data-bz-node="{cid}-names"] .bz-feature__t {{ font: 800 {fs.group(1) if fs else 17}px / 1.3 var(--font-heading); color: var(--ink); margin: 0; }}')
+        elif c.name == "div":
             kids.append(text(f"{cid}-label", plain(c), styles=LABEL))
         elif c.name == "p":
             kids.append(text(f"{cid}-body", inline_html(c), styles={"fontSize": 15, "lineHeight": 1.7, "marginBottom": 12}))
@@ -286,10 +309,18 @@ def detail_card(card):
     return it
 
 
+def page_slug(path, raw=None):
+    """A sunstateintl.com article keeps its live permalink as its slug — the file may carry a
+    shortened name (batch 3 does), and the permalink is the address search engines hold."""
+    raw = raw if raw is not None else open(path).read()
+    m = re.search(r'rel="canonical" href="https://www\.sunstateintl\.com/([^"/]+)/?"', raw)
+    return m.group(1) if m else os.path.basename(path)[:-5]
+
+
 def convert(path):
     global PAGE_DIR
     PAGE_DIR = os.path.dirname(path)
-    slug = os.path.basename(path)[:-5]
+    slug = page_slug(path)
     raw = open(path).read()
     s = BeautifulSoup(raw, "html.parser")
     own_style = re.search(r"<style>(.*?)</style>", raw, re.S).group(1)
@@ -309,6 +340,19 @@ def convert(path):
         cover = {k: v for k, v in old["nodes"][0]["props"]["values"]["image"].items() if k != "alt"}
         hero_img = {"alt": old["nodes"][0]["props"]["values"]["image"].get("alt", "")}
         cover_src = old.get("coverImage") or cover["src"]
+    elif not os.path.exists(os.path.join(PAGE_DIR, hero_img["src"])) and os.path.exists(existing) \
+            and json.load(open(existing))["nodes"][0]["props"]["values"]["image"]["src"] != "/img/photo-placeholder.svg":
+        # The page names a photograph its handoff did not ship: a post that already has
+        # one keeps it.
+        old = json.load(open(existing))
+        cover = {k: v for k, v in old["nodes"][0]["props"]["values"]["image"].items() if k != "alt"}
+        cover_src = old.get("coverImage") or cover["src"]
+    elif not os.path.exists(os.path.join(PAGE_DIR, hero_img["src"])):
+        # ...and a new post takes the component's own "to be supplied" slot rather than
+        # someone else's photograph, so the gap is visible on the canvas and in the card.
+        print(f"  MISSING hero photograph for {slug}: {hero_img['src']} — placeholder used")
+        cover = {"src": "/img/photo-placeholder.svg"}
+        cover_src = None
     else:
         cover = place_image(slug, hero_img["src"], "hero")
         cover_src = cover["src"]
@@ -420,6 +464,20 @@ def convert(path):
         if el.name == "p":
             if el.get("id") == "post-lede":
                 out.append(text("lede", inline_html(el), anchor="post-lede"))
+            elif "font-family: var(--font-display)" in st and "border-top" in st:
+                # A pull statement: the display face, ruled above and below. The rules, measure
+                # and size are node styles; only the face has no style field.
+                cid = nid("pull")
+                fs = re.search(r"font-size:\s*([0-9.]+)px", st)
+                top, bottom = margins(st)
+                # The ruled box is a column, as a callout's is: the long-form layout zeroes a
+                # block's own padding, not a column's.
+                out.append(row(f"{cid}-row", [col(cid, [text(f"{cid}-text", inline_html(el), styles={
+                    "fontSize": int(float(fs.group(1))) if fs else 22, "fontWeight": "800", "lineHeight": 1.4, "textColor": "ink"})],
+                    styles={"borderTopWidth": 1, "borderBottomWidth": 1, "borderLeftWidth": 0, "borderRightWidth": 0,
+                            "borderStyle": "solid", "borderColor": "line", "paddingTop": 24, "paddingBottom": 24,
+                            "marginTop": top, "marginBottom": bottom})]))
+                extra_css.append(f'[data-bz-node="art-body"] .bz-col [data-bz-node="{cid}-text"].bz-block--text p {{ font-family: var(--font-heading); font-size: inherit; line-height: 1.4; font-weight: inherit; color: inherit; margin: 0; max-width: none; }}')
             elif pending_anchor:
                 out.append(text(nid("p"), inline_html(el), anchor=pending_anchor)); pending_anchor = None
             else:
@@ -428,6 +486,19 @@ def convert(path):
             # An empty, hidden heading kept only as the rail's link target: the anchor moves
             # to the paragraph it introduces, so the link still lands and no blank heading ships.
             sec = el["id"]; pending_anchor = sec
+        elif el.name == "h2" and [x.name for x in el.children if isinstance(x, Tag)] == ["span", "span"] \
+                and re.fullmatch(r"\d+", plain(el.find("span"))):
+            # A heading led by a small accent index ("01  Build Your Fleet…"), the pair on one
+            # baseline: the index as text beside a real heading block, which keeps the anchor.
+            sec = el["id"]
+            num, h = el.find_all("span", recursive=False)
+            out.append(row(f"nh-{sec}", [
+                col(f"nh-{sec}-lead", [text(f"nh-{sec}-index", plain(num), styles={
+                    "fontSize": 13, "fontWeight": "700", "letterSpacing": 2, "lineHeight": 1, "textColor": "accent"})],
+                    span=1, styles={"flexShrink": 0, "marginRight": 16}),
+                col(f"nh-{sec}-col", [n(f"h-{sec}", "heading", {"text": plain(h), "headingLevel": 2, "align": "left", "anchor": sec})],
+                    span=11, styles={"flexGrow": 1}),
+            ], styles={"display": "flex", "alignItems": "baseline", "marginTop": 52, "marginBottom": 16}))
         elif el.name == "h2":
             sec = el["id"]
             out.append(n(f"h-{sec}", "heading", {"text": plain(el), "headingLevel": 2, "align": "left", "anchor": sec}))
@@ -455,7 +526,7 @@ def convert(path):
             img = el.find("img")
             out.append(n(f"fig-{fig}", "image", {"width": "full", "image": {**place_image(slug, img["src"], str(fig)), "alt": img.get("alt", "")}}))
         elif el.name == "div" and "border: 1px" in st:
-            out.append(callout(nid("co"), el, st))
+            out.append(callout(nid("co"), el, st, extra_css))
         elif el.name == "div" and "border-top" in st and "display: flex" in st:
             share = el
         elif el.name == "div" and "display: flex" in st and not el.select(".hv-2, .hv-3"):
@@ -466,7 +537,12 @@ def convert(path):
             if any(href_of(a).startswith("/blog/posts/") for a in anchors):
                 kids = [arrow_link(f"{cid}-{i+1}", a) for i, a in enumerate(anchors)]
             else:
-                kids = [n(f"{cid}-cta", "buttons", {"align": "left", "items": [cta(plain(a), href_of(a), "link") for a in anchors]})]
+                # A button pair spelled out inline (batch 2 and 3: 48px tall, the first filled,
+                # the rest outlined) keeps this row — the ids already shipped with it — and
+                # takes the filled/outlined styles; anything else is a row of arrow links.
+                style_of = lambda a: ("link" if "height: 48px" not in a.get("style", "") else
+                                      "primary" if "background: var(--color-accent" in a.get("style", "") else "secondary")
+                kids = [n(f"{cid}-cta", "buttons", {"align": "left", "items": [cta(plain(a), href_of(a), style_of(a)) for a in anchors]})]
             top, bottom = margins(st)
             out.append(row(f"{cid}-row", [col(cid, kids, styles={"marginTop": top, "marginBottom": bottom})]))
         elif el.name == "div" and "display: flex" in st:
@@ -510,6 +586,21 @@ def convert(path):
             out.append(n(nid("cards"), "card-lists", {"variant": "spec", "items": [
                 {"title": plain(card.find("h3")), "points": [{"text": inline_html(li)} for li in card.find_all("li")]}
                 for card in el.find_all("div", class_="factor-card", recursive=False)]}))
+        elif el.name == "div" and "grid-3" in cls and all(
+                [x.name for x in card.children if isinstance(x, Tag)] == ["div", "div"]
+                for card in el.find_all("div", class_="factor-card", recursive=False)) and el.find("div", class_="factor-card", recursive=False):
+            # An accent label over a bold name set as a plain div ("INTERNATIONAL / MV Series",
+            # "01 / Cost per mile"): the numbered Card lists, which draw exactly that pair.
+            cards = el.find_all("div", class_="factor-card", recursive=False)
+            cid = nid("cards")
+            out.append(n(cid, "card-lists", {"variant": "numbered", "items": [
+                {"title": plain(card.find_all("div", recursive=False)[0]),
+                 "intro": inline_html(card.find_all("div", recursive=False)[1]), "points": []} for card in cards]}))
+            fs = re.search(r"font-size:\s*([0-9.]+)px", cards[0].find_all("div", recursive=False)[1].get("style", ""))
+            pad = re.search(r"\.factor-card\s*\{[^}]*padding:\s*([0-9]+)px", own_style)
+            extra_css.append(f'[data-bz-node="art-body"] [data-bz-node="{cid}"] .ss-cl__t {{ margin-bottom: 10px; }}'
+                             + (f' [data-bz-node="art-body"] [data-bz-node="{cid}"] .ss-cl__card {{ padding: {pad.group(1)}px; }}' if pad and pad.group(1) != "20" else "")
+                             + (f' [data-bz-node="art-body"] [data-bz-node="{cid}"] .ss-cl__p {{ font-size: {fs.group(1)}px; }}' if fs and fs.group(1) != "17" else ""))
         elif el.name == "div" and ("grid-2" in cls or "grid-3" in cls) and all(
                 [x.name for x in card.children if isinstance(x, Tag)] in (["div", "p"], ["div", "h3"])
                 for card in el.find_all("div", class_="factor-card", recursive=False)) and el.find("div", class_="factor-card", recursive=False):
@@ -841,42 +932,28 @@ POST_CSS = {
 
 
 def update_listing(meta):
-    """The blog page's Latest posts rail: one card per published post, newest first.
+    """The blog page's Latest posts rail and its topic chips.
 
-    The cards are typed rows because this renderer has no `posts` data source yet.
-    A card that already has a cover image keeps it — that is the dealer's choice
-    from the Media Bin — and a new one takes the post's hero photograph."""
+    The cards are not written here: the rail's `posts` list is bound to the
+    renderer's `posts` source with paging, so every published post is a card —
+    title, date, topic and cover from the post file, and the listing's excerpt
+    from the post's own `excerpt`, which convert() writes. Only the chips are
+    typed, and they are derived from the topics in play so a new topic gets one."""
     p = f"{REPO}/site/pages/blog/page.json"
     page = json.load(open(p))
     rail = [x for x in page["nodes"] if x["id"] == "bl-posts"][0]
-    old = {r["href"].rsplit("/", 1)[1]: r for r in rail["props"]["values"]["posts"]}
     key = lambda t: re.sub(r"[^a-z0-9]+", "-", t.lower().replace("&", "and")).strip("-")
-    rows = []
+    topics = set()
     for f in glob.glob(f"{REPO}/site/blog/posts/*.json"):
         d = json.load(open(f))
-        if d.get("status", "published") != "published":
-            continue
-        slug, o = d["slug"], old.get(d["slug"], {})
-        y, m, dd = map(int, d["date"].split("-"))
-        import datetime
-        dt = datetime.date(y, m, dd)
-        row = {"topic": d["topic"], "topicKey": key(d["topic"]), "date": f"{dt:%b} {dt.day}, {dt:%Y}",
-               "dateISO": d["date"], "title": d["title"], "href": "/blog/posts/" + slug,
-               "excerpt": meta[slug]["excerpt"] if slug in meta else o.get("excerpt", "")}
-        if o.get("coverImage"):
-            row["coverImage"] = o["coverImage"]
-        elif d.get("coverImage"):
-            hero = d["nodes"][0]["props"].get("values", {}).get("image", {})
-            row["coverImage"] = {"src": d["coverImage"], "alt": d["title"],
-                                 **({"width": hero["width"], "height": hero["height"]} if hero.get("src") == d["coverImage"] else {})}
-        rows.append(row)
-    rows.sort(key=lambda r: r["dateISO"], reverse=True)
-    rail["props"]["values"]["posts"] = rows
+        if d.get("status", "published") == "published":
+            topics.add(d["topic"])
+    rail["props"]["values"]["posts"] = {"source": "posts", "config": {"paginate": True}}
     chips = ["Parts", "Commercial trucks", "Service", "Maintenance", "Company", "Sales", "Trucks", "Parts & Service", "Fleet"]
-    chips += sorted({r["topic"] for r in rows} - set(chips))
+    chips += sorted(topics - set(chips))
     rail["props"]["values"]["topics"] = [{"label": t, "value": key(t)} for t in chips]
     json.dump(page, open(p, "w"), indent=2, ensure_ascii=False); open(p, "a").write("\n")
-    print(f"blog page: {len(rows)} cards")
+    print(f"blog page: {len(topics)} topics; cards come from the posts source")
 
 
 def related_css(slug):
@@ -895,10 +972,13 @@ if __name__ == "__main__":
         f for f in glob.glob(f"{PART}/*.html") if os.path.basename(f) != "index.html")
     for f in files:
         h1 = BeautifulSoup(open(f).read(), "html.parser").select_one("section.post-hero h1")
-        POST_TITLES[plain(h1)] = os.path.basename(f)[:-5]
+        POST_TITLES[plain(h1)] = page_slug(f)
         # the design page's file name is the title without its question mark or subtitle
-        POST_TITLES[plain(h1).split("?")[0].split(":")[0].strip()] = os.path.basename(f)[:-5]
+        POST_TITLES[plain(h1).split("?")[0].split(":")[0].strip()] = page_slug(f)
     for f in files:
+        if os.path.basename(PART.rstrip("/")) in REPEATS and os.path.basename(f) in REPEATS[os.path.basename(PART.rstrip("/"))]:
+            print(f"kept    {page_slug(f)} (a repeat of the earlier handoff's page)")
+            continue
         slug, c = convert(f)
         p = f"{REPO}/site/blog/posts/{slug}.json"
         old = json.load(open(p)) if os.path.exists(p) else {}
@@ -910,9 +990,12 @@ if __name__ == "__main__":
         card = meta[slug]
         post = {
             "slug": slug, "title": c["title"], "date": c["date"],
-            "description": c["description"], "status": old.get("status", "published"), "coverImage": c["coverImage"],
+            "description": c["description"], "excerpt": card["excerpt"],
+            "status": old.get("status", "published"), "coverImage": c["coverImage"],
             "topic": card["topic"],
         }
+        if not post["coverImage"]:
+            del post["coverImage"]
         kws = c["keywords"] or old.get("keywords")
         if kws:
             post["keywords"] = kws

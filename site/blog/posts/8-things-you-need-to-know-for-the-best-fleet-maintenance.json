@@ -1,0 +1,660 @@
+{
+  "slug": "8-things-you-need-to-know-for-the-best-fleet-maintenance",
+  "title": "8 Things You Need to Know for the Best Fleet Maintenance",
+  "date": "2025-04-11",
+  "description": "Fleet maintenance is the key to a well-run and long-lasting fleet of trailers. Here’s what you need to know.",
+  "excerpt": "Maintaining a well-functioning fleet is all about prevention. With the right care early on, you can prevent breakdowns, lower operating costs, and avoid costly delays. A proactive fleet maintenance strategy…",
+  "status": "published",
+  "coverImage": "/img/blog/8-things-you-need-to-know-for-the-best-fleet-maintenance/hero.jpg",
+  "topic": "Fleet",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Fleet",
+          "title": "8 Things You Need to Know for the Best Fleet Maintenance",
+          "topic": "Fleet",
+          "date": "Apr 11, 2025",
+          "readTime": "4 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/8-things-you-need-to-know-for-the-best-fleet-maintenance/hero.jpg",
+            "width": 1000,
+            "height": 667,
+            "alt": "Row of International trucks, led by a black International MV, parked on the Sun State lot"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "1. Inspection Schedule",
+                        "href": "#inspection"
+                      },
+                      {
+                        "label": "2. Communicate With Drivers",
+                        "href": "#drivers"
+                      },
+                      {
+                        "label": "3. The Right Vehicle",
+                        "href": "#vehicle"
+                      },
+                      {
+                        "label": "4. Fleet Metrics",
+                        "href": "#metrics"
+                      },
+                      {
+                        "label": "5. Guide Your Drivers",
+                        "href": "#guide"
+                      },
+                      {
+                        "label": "6. Keep Vehicles Clean",
+                        "href": "#clean"
+                      },
+                      {
+                        "label": "7. Industry Trends",
+                        "href": "#trends"
+                      },
+                      {
+                        "label": "8. Fleet Management Service",
+                        "href": "#fms"
+                      },
+                      {
+                        "label": "The Right Equipment",
+                        "href": "#equipment"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "KEEP YOUR FLEET RUNNING",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Book inspections and repairs with our service team in Tampa, Sarasota or Davenport.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "schedule-service",
+                                "label": "Schedule Service →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Maintaining a well-functioning fleet is all about prevention. With the right care early on, you can prevent breakdowns, lower operating costs, and avoid costly delays. A proactive fleet maintenance strategy ensures your vehicles stay in top shape, helping you save money while keeping operations running smoothly. Here are eight essential steps to maintaining a reliable and efficient fleet.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "h-inspection",
+                  "type": "heading",
+                  "props": {
+                    "text": "1. Establish an Inspection Schedule",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "inspection"
+                  }
+                },
+                {
+                  "id": "p-inspection-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Regular inspections are the foundation of a strong fleet <a href=\"/service\">maintenance plan</a>. Implement a thorough and consistent inspection schedule to catch minor issues before they become major problems. Routine maintenance should include oil changes, tire rotations, checking tire pressure, engine cleaning, mileage checks, and more. Regular inspections not only keep your vehicles operating as they should but also ensure compliance with local, state, and federal regulations.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-drivers",
+                  "type": "heading",
+                  "props": {
+                    "text": "2. Communicate Regularly With Your Drivers",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "drivers"
+                  }
+                },
+                {
+                  "id": "p-drivers-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Your drivers are on the front lines, spending the most time with your vehicles. They are often the first to notice when something isn’t quite right. Establish a structured system for drivers to report issues, whether through a checklist, digital platform, or scheduled check-ins. Encouraging open communication can help you address small problems before they escalate into expensive repairs.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-vehicle",
+                  "type": "heading",
+                  "props": {
+                    "text": "3. Choose the Right Vehicle For Your Operations",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "vehicle"
+                  }
+                },
+                {
+                  "id": "p-vehicle-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Selecting the right vehicles for your specific operations is key to reducing unnecessary wear and tear. Consider factors such as travel distance, cargo type, delivery frequency, and operating environment before purchasing vehicles. Investing in the right equipment from the start helps extend vehicle lifespan and reduces maintenance costs.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-metrics",
+                  "type": "heading",
+                  "props": {
+                    "text": "4. Use Fleet Metrics",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "metrics"
+                  }
+                },
+                {
+                  "id": "p-metrics-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Keeping a close eye on fleet performance through key metrics allows for better decision-making and cost control. Some essential data points to monitor include:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-metrics-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "numbered",
+                    "items": [
+                      {
+                        "title": "01",
+                        "intro": "Cost per mile",
+                        "points": []
+                      },
+                      {
+                        "title": "02",
+                        "intro": "Total cost trends",
+                        "points": []
+                      },
+                      {
+                        "title": "03",
+                        "intro": "Overall operating costs",
+                        "points": []
+                      },
+                      {
+                        "title": "04",
+                        "intro": "Utilization and downtime percentage",
+                        "points": []
+                      },
+                      {
+                        "title": "05",
+                        "intro": "Cost of vehicle downtime",
+                        "points": []
+                      },
+                      {
+                        "title": "06",
+                        "intro": "Maintenance cost per unit",
+                        "points": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-metrics-3",
+                  "type": "text",
+                  "props": {
+                    "text": "By tracking these metrics, you can identify inefficiencies, adjust maintenance schedules, and optimize your fleet’s overall performance.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-guide",
+                  "type": "heading",
+                  "props": {
+                    "text": "5. Guide Your Drivers",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "guide"
+                  }
+                },
+                {
+                  "id": "p-guide-1",
+                  "type": "text",
+                  "props": {
+                    "text": "How your drivers operate their vehicles directly impacts fleet maintenance. Implement driver training programs that emphasize:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-guide-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Efficient driving habits"
+                      },
+                      {
+                        "text": "Compliance with safety regulations"
+                      },
+                      {
+                        "text": "Regular vehicle maintenance checks"
+                      },
+                      {
+                        "text": "Proper tire pressure monitoring"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-guide-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Setting clear performance expectations and goals for drivers ensures they contribute to keeping your fleet in <a href=\"/service\">excellent condition</a>, ultimately reducing long-term maintenance costs.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-clean",
+                  "type": "heading",
+                  "props": {
+                    "text": "6. Keep Your Vehicles Clean",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "clean"
+                  }
+                },
+                {
+                  "id": "p-clean-1",
+                  "type": "text",
+                  "props": {
+                    "text": "A clean vehicle is not just about appearances—it plays a crucial role in maintenance. Regular cleaning helps prevent rust, deterioration, and corrosion, extending the life of your trucks and trailers. Additionally, maintaining a professional-looking fleet can boost company reputation and employee morale.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-trends",
+                  "type": "heading",
+                  "props": {
+                    "text": "7. Track Industry Trends and New Technology",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "trends"
+                  }
+                },
+                {
+                  "id": "p-trends-1",
+                  "type": "text",
+                  "props": {
+                    "text": "The transportation industry is constantly evolving, and staying informed about new technologies and best practices can give your fleet an edge. Attend industry conferences, engage with other fleet managers, and read up on advancements in fleet management solutions. Integrating the latest technology can improve accuracy in fleet data, reduce inefficiencies, and enhance overall performance.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-fms",
+                  "type": "heading",
+                  "props": {
+                    "text": "8. Invest in Fleet Management Service",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "fms"
+                  }
+                },
+                {
+                  "id": "p-fms-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Investing in a comprehensive fleet management system can optimize productivity, improve fuel efficiency, and enhance driver safety. At Sun State International, we offer advanced fleet management solutions to help businesses run smoothly. One of the key features of International Trucks is OnCommand Connection Fleet Health Monitoring. This system is compatible with all makes, models, and engines, providing detailed health reports and Fault Code Action Plans.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-fms-2-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-fms-2",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 20
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-fms-2-label",
+                          "type": "text",
+                          "props": {
+                            "text": "ONCOMMAND CONNECTION MONITORS",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "co-fms-2-names",
+                          "type": "list",
+                          "props": {
+                            "headingLevel": 3,
+                            "columns": 2,
+                            "items": [
+                              {
+                                "label": "Coolant levels"
+                              },
+                              {
+                                "label": "DPF performance"
+                              },
+                              {
+                                "label": "DEF efficiency"
+                              },
+                              {
+                                "label": "Oil health"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "p-fms-3",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"/service\">By addressing common maintenance issues</a>—such as coolant levels, diesel particulate filter (DPF) performance, diesel exhaust fluid (DEF) efficiency, and oil health—OnCommand Connection helps fleet managers stay ahead of potential problems. Additionally, managers can receive weekly reports via email or access real-time data through an online portal, ensuring full visibility into fleet performance.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-equipment",
+                  "type": "heading",
+                  "props": {
+                    "text": "A Trustworthy Fleet Starts With the Right Equipment",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "equipment"
+                  }
+                },
+                {
+                  "id": "p-equipment-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, we understand that maintaining a reliable fleet starts with investing in high-quality vehicles. Whether you’re looking to expand your fleet or upgrade your current trucks, we offer a wide selection of top-tier commercial vehicles designed for durability and efficiency. Visit our locations in <a href=\"/locations/tampa\">Tampa</a>, <a href=\"/locations/sarasota\">Sarasota</a>, or <a href=\"/locations/davenport\">Davenport</a> to explore our truck inventory and fleet management solutions. Let’s work together to keep your business moving forward.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "links-equipment-2-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "links-equipment-2",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "marginTop": 40,
+                          "marginBottom": 8
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "links-equipment-2-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "contact-us",
+                                "label": "Get a Quote"
+                              },
+                              {
+                                "ctaId": "financing",
+                                "label": "Get Financing",
+                                "style": "secondary"
+                              },
+                              {
+                                "ctaId": "browse-new-trucks",
+                                "label": "See Our Inventory",
+                                "style": "secondary"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Ready to get on the road?",
+          "heading": "Let's keep your fleet moving.",
+          "body": "Call 800.741.7566 and our sales and service teams in Tampa, Sarasota, Davenport or Brooksville will help you find the right fit.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/8-things-you-need-to-know-for-the-best-fleet-maintenance\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/8-things-you-need-to-know-for-the-best-fleet-maintenance\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n[data-bz-node=\"art-body\"] [data-bz-node=\"cards-metrics-2\"] .ss-cl__t { margin-bottom: 10px; } [data-bz-node=\"art-body\"] [data-bz-node=\"cards-metrics-2\"] .ss-cl__card { padding: 22px; }\n\n/* The callout's names are a plain two-across run: no tile, no rule. */\n[data-bz-node=\"art-body\"] .bz-block--list[data-bz-node=\"co-fms-2-names\"] { margin: 0; padding-block: 0; }\n[data-bz-node=\"art-body\"] [data-bz-node=\"co-fms-2-names\"] .bz-grid { gap: 10px 24px; }\n[data-bz-node=\"art-body\"] [data-bz-node=\"co-fms-2-names\"] .bz-feature { padding: 0; border: 0; background: none; }\n[data-bz-node=\"art-body\"] [data-bz-node=\"co-fms-2-names\"] .bz-feature__t { font: 800 17px / 1.3 var(--font-heading); color: var(--ink); margin: 0; }\n"
+}
