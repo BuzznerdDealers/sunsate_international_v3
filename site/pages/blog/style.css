@@ -32,9 +32,10 @@
    own parts, so their rules live in site/sections/post-rail.json and travel
    with it. The 4-up grid is now the Post cards component's own default. */
 
-/* --- Pager --------------------------------------------------------------- */
-[data-bz-node="bp-pager"] .bz-btns { justify-content: center; margin-block: 40px 0; }
-[data-bz-node="bp-pager"] .bz-btn { min-height: 46px; padding: 0 24px; }
+/* --- Pager ---------------------------------------------------------------
+   « Older Entries / Next Entries » under the grid; the build writes page 2
+   onwards at /blog/page/2 and up, nine posts a page. */
+[data-bz-node="bp-nav"] .bz-pager { margin-top: 40px; }
 
 /* --- Two-up promo panels ------------------------------------------------- */
 [data-bz-node="bl-panels"] .bz-block { padding-block: 0; }

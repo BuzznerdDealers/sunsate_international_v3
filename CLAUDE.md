@@ -240,6 +240,15 @@ This is the difference between a site a dealer can run and a pretty dead end.
 | A hardcoded hex, font size or spacing value | A token in `site/tokens.json` | One edit restyles the whole site. Hardcoded values are what make a site un-rebrandable. |
 | Hand-maintained "latest news" cards | `postsList` | Resolves real posts at build time; cards never go stale. |
 
+**A blog archive is `postsList` with `paginate: true`**, not a typed rail of post cards.
+It draws every published post, nine a page in three columns, with « Older Entries on the
+left and Next Entries » on the right; the build writes page 2 onwards at `<page path>/page/N`
+and the page count follows the posts. The blog index at `site/blog/settings.json`'s
+`basePath` pages the same way. When the cards are your own design, bind the component's
+list to `{"source":"posts","config":{"paginate":true}}` and place a `postsPager` block under
+it instead — same pages, your card. The `posts` source resolves from the post files at build
+time and carries `slug` `title` `href` `date` `dateISO` `excerpt` `topic` `topicKey` `coverImage`.
+
 If a library item you need does not exist, **create it** (a button in
 `buttons.json`, a menu in `menus.json`, a form in `site/forms/`) and then
 reference it. Do not inline it because the library is empty.

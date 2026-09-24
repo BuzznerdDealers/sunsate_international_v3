@@ -943,42 +943,28 @@ POST_CSS = {
 
 
 def update_listing(meta):
-    """The blog page's Latest posts rail: one card per published post, newest first.
+    """The blog page's Latest posts rail and its topic chips.
 
-    The cards are typed rows because this renderer has no `posts` data source yet.
-    A card that already has a cover image keeps it — that is the dealer's choice
-    from the Media Bin — and a new one takes the post's hero photograph."""
+    The cards are not written here: the rail's `posts` list is bound to the
+    renderer's `posts` source with paging, so every published post is a card —
+    title, date, topic and cover from the post file, and the listing's excerpt
+    from the post's own `excerpt`, which convert() writes. Only the chips are
+    typed, and they are derived from the topics in play so a new topic gets one."""
     p = f"{REPO}/site/pages/blog/page.json"
     page = json.load(open(p))
     rail = [x for x in page["nodes"] if x["id"] == "bl-posts"][0]
-    old = {r["href"].rsplit("/", 1)[1]: r for r in rail["props"]["values"]["posts"]}
     key = lambda t: re.sub(r"[^a-z0-9]+", "-", t.lower().replace("&", "and")).strip("-")
-    rows = []
+    topics = set()
     for f in glob.glob(f"{REPO}/site/blog/posts/*.json"):
         d = json.load(open(f))
-        if d.get("status", "published") != "published":
-            continue
-        slug, o = d["slug"], old.get(d["slug"], {})
-        y, m, dd = map(int, d["date"].split("-"))
-        import datetime
-        dt = datetime.date(y, m, dd)
-        row = {"topic": d["topic"], "topicKey": key(d["topic"]), "date": f"{dt:%b} {dt.day}, {dt:%Y}",
-               "dateISO": d["date"], "title": d["title"], "href": "/blog/posts/" + slug,
-               "excerpt": meta[slug]["excerpt"] if slug in meta else o.get("excerpt", "")}
-        if o.get("coverImage"):
-            row["coverImage"] = o["coverImage"]
-        elif d.get("coverImage"):
-            hero = d["nodes"][0]["props"].get("values", {}).get("image", {})
-            row["coverImage"] = {"src": d["coverImage"], "alt": d["title"],
-                                 **({"width": hero["width"], "height": hero["height"]} if hero.get("src") == d["coverImage"] else {})}
-        rows.append(row)
-    rows.sort(key=lambda r: r["dateISO"], reverse=True)
-    rail["props"]["values"]["posts"] = rows
+        if d.get("status", "published") == "published":
+            topics.add(d["topic"])
+    rail["props"]["values"]["posts"] = {"source": "posts", "config": {"paginate": True}}
     chips = ["Parts", "Commercial trucks", "Service", "Maintenance", "Company", "Sales", "Trucks", "Parts & Service", "Fleet"]
-    chips += sorted({r["topic"] for r in rows} - set(chips))
+    chips += sorted(topics - set(chips))
     rail["props"]["values"]["topics"] = [{"label": t, "value": key(t)} for t in chips]
     json.dump(page, open(p, "w"), indent=2, ensure_ascii=False); open(p, "a").write("\n")
-    print(f"blog page: {len(rows)} cards")
+    print(f"blog page: {len(topics)} topics; cards come from the posts source")
 
 
 def related_css(slug):
@@ -1015,7 +1001,8 @@ if __name__ == "__main__":
         card = meta[slug]
         post = {
             "slug": slug, "title": c["title"], "date": c["date"],
-            "description": c["description"], "status": old.get("status", "published"), "coverImage": c["coverImage"],
+            "description": c["description"], "excerpt": card["excerpt"],
+            "status": old.get("status", "published"), "coverImage": c["coverImage"],
             "topic": card["topic"],
         }
         if not post["coverImage"]:

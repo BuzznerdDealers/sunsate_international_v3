@@ -3209,3 +3209,164 @@ test('a form submission and a behaviour event do not share one emit function', (
   assert.equal((src.match(/function emit\(/g) || []).length, 1);
   assert.match(src, /function emitOn\(/);
 });
+
+/* ------------------------------------------------------------- blog paging */
+
+import {
+  clampPostsPage,
+  pagedOut,
+  pagedPath,
+  pagerHeadLinks,
+  placesPaginatedPosts,
+  postsPageCount,
+  postsPageSlice,
+  renderPager,
+} from './index.mjs';
+
+const manyPosts = (n) =>
+  Array.from({ length: n }, (_, i) => ({
+    slug: `post-${i + 1}`,
+    title: `Post ${i + 1}`,
+    date: `2026-01-${String((i % 28) + 1).padStart(2, '0')}`,
+    status: 'published',
+  }));
+
+test('blog paging: nine a page, and the count follows the posts', () => {
+  assert.equal(postsPageCount(0), 1);
+  assert.equal(postsPageCount(9), 1);
+  assert.equal(postsPageCount(10), 2);
+  assert.equal(postsPageCount(71), 8);
+  assert.equal(clampPostsPage(99, 8), 8);
+  assert.equal(clampPostsPage(0, 8), 1);
+  const posts = manyPosts(20);
+  assert.deepEqual(postsPageSlice(posts, 1).map((p) => p.slug), posts.slice(0, 9).map((p) => p.slug));
+  assert.deepEqual(postsPageSlice(posts, 3).map((p) => p.slug), ['post-19', 'post-20']);
+});
+
+test('blog paging: page 1 keeps its address, page N sits under it', () => {
+  assert.equal(pagedPath('/blog', 1), '/blog');
+  assert.equal(pagedPath('/blog/', 2), '/blog/page/2');
+  assert.equal(pagedPath('/', 3), '/page/3');
+  assert.equal(pagedOut('blog/index.html', 1), 'blog/index.html');
+  assert.equal(pagedOut('blog/index.html', 2), 'blog/page/2/index.html');
+  assert.equal(pagedOut('index.html', 2), 'page/2/index.html');
+});
+
+test('blog pager: older on the left, newer on the right, each end disabled', () => {
+  const first = renderPager({ page: 1, totalPages: 3, pagePath: '/blog' });
+  assert.match(first, /<a class="bz-pager__link bz-pager__older" href="\/blog\/page\/2" rel="next">« Older Entries<\/a>/);
+  assert.match(first, /<span class="bz-pager__link bz-pager__newer" aria-disabled="true">Next Entries »<\/span>/);
+  assert.ok(first.indexOf('Older Entries') < first.indexOf('Next Entries'), 'older is drawn first, on the left');
+
+  const middle = renderPager({ page: 2, totalPages: 3, pagePath: '/blog' });
+  assert.match(middle, /href="\/blog\/page\/3" rel="next">« Older Entries/);
+  assert.match(middle, /href="\/blog" rel="prev">Next Entries »/);
+
+  const last = renderPager({ page: 3, totalPages: 3, pagePath: '/blog' });
+  assert.match(last, /<span class="bz-pager__link bz-pager__older" aria-disabled="true">« Older Entries<\/span>/);
+  assert.match(last, /href="\/blog\/page\/2" rel="prev">Next Entries »/);
+  assert.match(last, /Page 3 of 3/);
+
+  assert.equal(renderPager({ page: 1, totalPages: 1, pagePath: '/blog' }), '', 'one page needs no pager');
+  assert.equal(
+    pagerHeadLinks({ page: 2, totalPages: 3, pagePath: '/blog', origin: 'https://x.test' }),
+    '\n<link rel="prev" href="https://x.test/blog" />\n<link rel="next" href="https://x.test/blog/page/3" />',
+  );
+});
+
+test('postsList paginate: draws the requested page three across, with the pager', () => {
+  const posts = manyPosts(20);
+  const doc = { nodes: [{ id: 'grid', type: 'postsList', props: { paginate: true } }] };
+  const page1 = renderDocument(doc, { ...CTX, posts, blogBasePath: '/blog/posts', pagePath: '/blog', postsPage: 1 });
+  assert.equal((page1.match(/class="bz-card bz-post"/g) || []).length, 9);
+  assert.match(page1, /bz-grid bz-grid--3/);
+  assert.match(page1, /href="\/blog\/posts\/post-1"/);
+  assert.match(page1, /href="\/blog\/page\/2" rel="next">« Older Entries/);
+
+  const page3 = renderDocument(doc, { ...CTX, posts, blogBasePath: '/blog/posts', pagePath: '/blog', postsPage: 3 });
+  assert.equal((page3.match(/class="bz-card bz-post"/g) || []).length, 2);
+  assert.match(page3, /bz-grid bz-grid--3/, 'the short last page keeps three columns');
+  assert.match(page3, /href="\/blog\/posts\/post-20"/);
+  assert.doesNotMatch(page3, /post-9"/);
+
+  const teaser = renderDocument(
+    { nodes: [{ id: 'teaser', type: 'postsList', props: { count: 3 } }] },
+    { ...CTX, posts, blogBasePath: '/blog' },
+  );
+  assert.equal((teaser.match(/class="bz-card bz-post"/g) || []).length, 3);
+  assert.doesNotMatch(teaser, /bz-pager/, 'an unpaged teaser has no pager');
+});
+
+test('placesPaginatedPosts finds a paged grid on the page or inside a component', () => {
+  const sections = {
+    archive: { id: 'archive', nodes: [{ id: 'g', type: 'postsList', props: { paginate: true } }] },
+  };
+  assert.equal(placesPaginatedPosts([[{ id: 'g', type: 'postsList', props: { paginate: true } }]]), true);
+  assert.equal(placesPaginatedPosts([[{ id: 'g', type: 'postsList', props: { count: 3 } }]]), false);
+  assert.equal(
+    placesPaginatedPosts([[{ id: 's', type: 'sharedSection', props: { sectionId: 'archive' } }]], { sections }),
+    true,
+  );
+});
+
+import { postExcerpt, postRows, topicKeyOf } from './index.mjs';
+
+test('posts source: rows come from the post files, a page at a time when asked', () => {
+  const posts = manyPosts(12).map((p, i) => ({ ...p, topic: i % 2 ? 'Parts & Service' : 'Trailer Sales' }));
+  const all = postRows(posts, {}, { blogBasePath: '/blog/posts' });
+  assert.equal(all.length, 12);
+  assert.deepEqual(
+    { href: all[0].href, topic: all[0].topic, topicKey: all[0].topicKey, dateISO: all[0].dateISO },
+    { href: '/blog/posts/post-1', topic: 'Trailer Sales', topicKey: 'trailer-sales', dateISO: '2026-01-01' },
+  );
+  assert.equal(all[0].date, 'Jan 1, 2026');
+  assert.equal(topicKeyOf('Parts & Service'), 'parts-and-service');
+  assert.equal(postRows(posts, { paginate: true }, { postsPage: 2 }).length, 3);
+  assert.equal(postRows(posts, { topic: 'parts-and-service' }).length, 6);
+  assert.equal(postRows(posts, { limit: 4 }).length, 4);
+  assert.equal(postRows([{ ...posts[0], status: 'draft' }]).length, 0, 'drafts are never cards');
+});
+
+test('posts source: the excerpt is the opening paragraph, not a label, cut at a word', () => {
+  const long = 'When a trailer goes down, your business slows down with it. '.repeat(6).trim();
+  const post = {
+    slug: 'x',
+    title: 'X',
+    nodes: [
+      { id: 'label', type: 'text', props: { text: 'QUICK ANSWER' } },
+      { id: 'lede', type: 'text', props: { text: `<p>${long}</p>` } },
+    ],
+  };
+  const excerpt = postExcerpt(post);
+  assert.ok(excerpt.startsWith('When a trailer goes down'));
+  assert.ok(excerpt.endsWith('…') && excerpt.length <= 211, excerpt);
+  assert.equal(postExcerpt({ ...post, excerpt: 'Typed.' }), 'Typed.');
+  assert.equal(postExcerpt({ slug: 'y', title: 'Y', description: 'Only this.' }), 'Only this.');
+});
+
+test('a component bound to posts draws the build’s page, and the pager steps through it', () => {
+  const sections = {
+    rail: {
+      id: 'rail',
+      props: [{ key: 'posts', type: 'list', fields: [{ key: 'title', type: 'text' }, { key: 'href', type: 'url' }] }],
+      nodes: [
+        { id: 'card', type: 'text', props: { repeat: 'posts', text: '{{title}} at {{href}}' } },
+      ],
+    },
+  };
+  const doc = {
+    nodes: [
+      { id: 'r', type: 'sharedSection', props: { sectionId: 'rail', values: { posts: { source: 'posts', config: { paginate: true } } } } },
+      { id: 'pg', type: 'postsPager', props: {} },
+    ],
+  };
+  const ctx = { ...CTX, sections, posts: manyPosts(20), blogBasePath: '/blog/posts', pagePath: '/blog' };
+  const page2 = renderDocument(doc, { ...ctx, postsPage: 2 });
+  assert.match(page2, /Post 10 at \/blog\/posts\/post-10</);
+  assert.doesNotMatch(page2, /Post 9 at/);
+  assert.match(page2, /href="\/blog\/page\/3" rel="next">« Older Entries/);
+  assert.match(page2, /href="\/blog" rel="prev">Next Entries »/);
+  assert.match(page2, /data-bz-posts-total="20"/, 'the pager carries the whole blog’s count');
+  assert.equal(placesPaginatedPosts([doc.nodes]), true);
+  assert.equal(placesPaginatedPosts([[doc.nodes[0]]]), true, 'the binding alone pages the page');
+});
