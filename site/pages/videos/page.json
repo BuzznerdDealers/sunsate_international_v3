@@ -45,8 +45,13 @@
                   "id": "vs-t",
                   "type": "text",
                   "props": {
-                    "text": "Seven videos in total: six from the Sun State International YouTube channel and the Sun State Trailers feature that ran on the trailers site. Start with Welcome to Sun State for an introduction to the company, its people and its six Florida locations.\n\nTitles and descriptions are pending for the remaining videos — send them over and we'll label each card.",
-                    "width": "prose"
+                    "text": "Seven videos in total: six from the Sun State International YouTube channel and the Sun State Trailers feature that ran on the trailers site. Start with Welcome to Sun State for an introduction to the company, its people and its six Florida locations.",
+                    "width": "full"
+                  },
+                  "styles": {
+                    "base": {
+                      "fontSize": 18
+                    }
                   }
                 }
               ]
