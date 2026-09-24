@@ -67,7 +67,10 @@ DC_PAGES = {
 # from the first handoff stands: the repeat ships smaller photographs and no rail.
 REPEATS = {"batch-3": {"are-aftermarket-semi-truck-parts-as-reliable-as-oem.html",
                        "average-maintenance-cost-for-a-semi-truck.html",
-                       "best-semi-truck-tires-for-long-term-hauls.html"}}
+                       "best-semi-truck-tires-for-long-term-hauls.html"},
+           "batch-4": {"commercial-truck-oil-change-mistakes.html", "common-air-brake-problems.html",
+                       "diesel-engine-diagnostic.html", "diesel-exhaust-fluid.html",
+                       "do-semi-truck-maintenance-costs-outweigh-the-benefits.html"}}
 POST_TITLES = {}  # "Blog Post - <title>.dc.html" -> slug, filled from the handoff's own pages
 
 
@@ -220,7 +223,15 @@ def place_image(slug, src, name):
     os.makedirs(IMG_DST + slug, exist_ok=True)
     dst = f"{IMG_DST}{slug}/{name}.jpg"
     assert source.lower().endswith((".jpg", ".jpeg")), source
-    shutil.copyfile(source, dst)
+    with open(source, "rb") as f:
+        is_jpeg = f.read(2) == b"\xff\xd8"
+    if is_jpeg:
+        shutil.copyfile(source, dst)
+    else:
+        # Batch 4 ships its photographs as opaque RGBA PNGs under a .jpg name, at ~1.3 MB
+        # each. Served as they are, the file lies about its type; transcode to a real JPEG.
+        from PIL import Image  # pip install pillow — only needed for such a batch
+        Image.open(source).convert("RGB").save(dst, "JPEG", quality=85, optimize=True, progressive=False)
     w, h = jpeg_size(dst)
     return {"src": f"/img/blog/{slug}/{name}.jpg", "width": w, "height": h}
 
