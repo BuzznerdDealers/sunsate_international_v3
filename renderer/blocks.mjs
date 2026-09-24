@@ -968,7 +968,10 @@ const BLOCKS = {
       // the width of the eight above it rather than stretching.
       const cols = paginate ? 3 : Math.min(3, posts.length);
       const pager = paginate
-        ? renderPager({ page, totalPages, pagePath: ctx.pagePath || ctx.blogBasePath || '/blog' }, ctx)
+        ? renderPager(
+            { page, totalPages, pagePath: ctx.pagePath || ctx.blogBasePath || '/blog', total: published.length },
+            ctx,
+          )
         : '';
       return container(
         `<div class="bz-sechead">${heading(levelOf(props), props.heading)}${renderCtas(
@@ -998,7 +1001,12 @@ const BLOCKS = {
       // dealer can see and select what they placed.
       const totalPages = ctx.editing ? Math.max(2, postsPageCount(published.length)) : postsPageCount(published.length);
       const pager = renderPager(
-        { page: ctx.postsPage || 1, totalPages, pagePath: ctx.pagePath || ctx.blogBasePath || '/blog' },
+        {
+          page: ctx.postsPage || 1,
+          totalPages,
+          pagePath: ctx.pagePath || ctx.blogBasePath || '/blog',
+          total: published.length,
+        },
         ctx,
       );
       return pager ? container(pager) : '';

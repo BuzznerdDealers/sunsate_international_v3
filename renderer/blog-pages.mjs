@@ -54,15 +54,20 @@ export function pagedOut(out, page) {
 /**
  * The older / newer links under the grid, or nothing for a blog that fits on
  * one page — two disabled controls and "Page 1 of 1" say nothing a reader needs.
+ * `total`, when given, is how many posts the pages hold between them.
  */
-export function renderPager({ page, totalPages, pagePath }, ctx = {}) {
+export function renderPager({ page, totalPages, pagePath, total = null }, ctx = {}) {
   if (!(totalPages > 1)) return '';
   const current = clampPostsPage(page, totalPages);
   const step = (label, target, rel, cls) =>
     target
       ? `<a class="bz-pager__link ${cls}" href="${esc(href(pagedPath(pagePath, target), ctx))}"${attrs({ rel })}>${esc(label)}</a>`
       : `<span class="bz-pager__link ${cls}" aria-disabled="true">${esc(label)}</span>`;
-  return `<nav class="bz-pager" aria-label="Blog pages">${step(
+  // The whole blog's count rides on the pager, because a page's own cards are
+  // only nine of it: a heading that says "64 articles" reads it from here.
+  return `<nav class="bz-pager" aria-label="Blog pages"${attrs({
+    'data-bz-posts-total': total == null ? null : String(total),
+  })}>${step(
     '« Older Entries',
     current < totalPages ? current + 1 : null,
     'next',

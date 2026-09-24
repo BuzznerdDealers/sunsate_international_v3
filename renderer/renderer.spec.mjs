@@ -3366,6 +3366,7 @@ test('a component bound to posts draws the build’s page, and the pager steps t
   assert.doesNotMatch(page2, /Post 9 at/);
   assert.match(page2, /href="\/blog\/page\/3" rel="next">« Older Entries/);
   assert.match(page2, /href="\/blog" rel="prev">Next Entries »/);
+  assert.match(page2, /data-bz-posts-total="20"/, 'the pager carries the whole blog’s count');
   assert.equal(placesPaginatedPosts([doc.nodes]), true);
   assert.equal(placesPaginatedPosts([[doc.nodes[0]]]), true, 'the binding alone pages the page');
 });
