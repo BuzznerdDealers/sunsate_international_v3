@@ -116,3 +116,22 @@ export function componentCode(nodeLists, ctx = {}) {
 
   return { css: css.join('\n'), scripts };
 }
+
+/**
+ * Whether a set of trees places a `postsList` that pages — directly, or inside
+ * a designed component. The build asks this of every page, because a page that
+ * does is written once per page of posts (`/blog`, `/blog/page/2` …) and one
+ * that does not is written once.
+ */
+export function placesPaginatedPosts(nodeLists, ctx = {}) {
+  const trees = [...(Array.isArray(nodeLists) ? nodeLists : [])];
+  walkComponents(nodeLists, (ctx && ctx.sections) || {}, (_id, _section, bound) => trees.push(bound));
+  const pages = (nodes) =>
+    (Array.isArray(nodes) ? nodes : []).some(
+      (node) =>
+        node &&
+        typeof node === 'object' &&
+        ((node.type === 'postsList' && node.props && node.props.paginate === true) || pages(node.children)),
+    );
+  return trees.some(pages);
+}

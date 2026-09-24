@@ -1,5 +1,5 @@
 {
-  "rendererVersion": "4.24.0",
+  "rendererVersion": "4.25.0",
   "documentVersion": 2,
   "gridColumns": 12,
   "tokenGroups": {
@@ -3101,6 +3101,11 @@
             "type": "boolean",
             "description": "Show each post’s date.",
             "default": true
+          },
+          "paginate": {
+            "type": "boolean",
+            "description": "Show every post, nine a page in three columns, with « Older Entries / Next Entries » under the grid. The build writes page 2 onwards under this page’s address (/blog/page/2). Ignores `count`.",
+            "default": false
           },
           "cta": {
             "type": "object",

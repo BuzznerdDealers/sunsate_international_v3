@@ -13,10 +13,8 @@
 /* --- Band rhythm, read off the handoff's own sections -------------------- */
 [data-bz-node="bl-intro"].bz-section,
 [data-bz-node="bl-intro"] > .bz-section { padding-block: 70px 0; }
-[data-bz-node="bl-posts"].bz-section,
-[data-bz-node="bl-posts"] > .bz-section { padding-block: 0; }
-[data-bz-node="bl-pager"].bz-section,
-[data-bz-node="bl-pager"] > .bz-section { padding-block: 0 20px; }
+[data-bz-node="bl-grid"].bz-section,
+[data-bz-node="bl-grid"] > .bz-section { padding-block: 0 20px; }
 [data-bz-node="bl-panels"].bz-section,
 [data-bz-node="bl-panels"] > .bz-section { padding-block: 80px; }
 [data-bz-node="bl-faq"].bz-section,
@@ -28,13 +26,10 @@
 [data-bz-node="bi-lead"] p { font-size: 17px; line-height: 1.75; color: var(--ink); margin: 0 0 20px; }
 [data-bz-node="bi-body"] p { font-size: 16px; line-height: 1.75; color: var(--body-text); margin: 0 0 40px; }
 
-/* Topic chips, results header and the card grid are the Post grid component's
-   own parts, so their rules live in site/sections/post-rail.json and travel
-   with it. The 4-up grid is now the Post cards component's own default. */
-
-/* --- Pager --------------------------------------------------------------- */
-[data-bz-node="bp-pager"] .bz-btns { justify-content: center; margin-block: 40px 0; }
-[data-bz-node="bp-pager"] .bz-btn { min-height: 46px; padding: 0 24px; }
+/* --- Posts --------------------------------------------------------------
+   Every published post, nine a page in three columns, with « Older Entries /
+   Next Entries » under the grid. The cards and the pager are the Latest posts
+   block's own; the build writes page 2 onwards at /blog/page/2 and up. */
 
 /* --- Two-up promo panels ------------------------------------------------- */
 [data-bz-node="bl-panels"] .bz-block { padding-block: 0; }

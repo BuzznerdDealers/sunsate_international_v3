@@ -15,6 +15,7 @@
 //     exactly one h1 no matter which blocks it is assembled from.
 
 import { attrs, cls, esc, heading, href, image, isExternal, join, tagAttrs, video } from './html.mjs';
+import { POSTS_PER_PAGE, clampPostsPage, postsPageCount, postsPageSlice, renderPager } from './blog-pages.mjs';
 import { compileWidgets } from './custom-widgets.mjs';
 import { renderForm } from './forms.mjs';
 import { renderMenu } from './menus.mjs';
@@ -124,6 +125,28 @@ function formatPostDate(value) {
   const date = new Date(value);
   if (Number.isNaN(date.getTime())) return String(value);
   return date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+}
+
+/**
+ * One post as a card: cover, date, title, description. Shared by the Latest
+ * posts block and the blog index, so the teaser on the home page and the
+ * archive it links to draw the same card. A post without a slug (the editor's
+ * sample rows) is drawn but links nowhere.
+ */
+export function renderPostCard(post, ctx = {}, { showDate = true } = {}) {
+  const base = ctx.blogBasePath || '/blog';
+  const body =
+    `${image(post.coverImage ? { src: post.coverImage, alt: post.title } : null, { placeholder: 'Cover' })}` +
+    `<div class="bz-card__body">${
+      showDate && post.date ? `<span class="bz-card__m">${esc(formatPostDate(post.date))}</span>` : ''
+    }<span class="bz-card__t">${esc(post.title)}</span>${
+      post.description ? `<span class="bz-post__d">${esc(post.description)}</span>` : ''
+    }</div>`;
+  return post.slug
+    ? `<a class="bz-card bz-post" href="${esc(href(`${base}/${post.slug}`, ctx))}"${attrs(
+        tagAttrs('link', 'read-post'),
+      )}>${body}</a>`
+    : `<div class="bz-card bz-post">${body}</div>`;
 }
 
 /**
@@ -907,15 +930,27 @@ const BLOCKS = {
         headingLevel: HEADING_LEVEL,
         count: int('How many recent posts to show.', { minimum: 1, maximum: 6, default: 3 }),
         showDates: { type: 'boolean', description: 'Show each post’s date.', default: true },
+        paginate: {
+          type: 'boolean',
+          description:
+            'Show every post, nine a page in three columns, with « Older Entries / Next Entries » under the grid. ' +
+            'The build writes page 2 onwards under this page’s address (/blog/page/2). Ignores `count`.',
+          default: false,
+        },
         cta: CTA_SCHEMA,
       },
     },
     render(props, ctx) {
-      const base = ctx.blogBasePath || '/blog';
-      const count = Math.min(6, Math.max(1, Number(props.count) || 3));
-      let posts = (Array.isArray(ctx.posts) ? ctx.posts : [])
-        .filter((p) => p && p.slug && p.title && (p.status ?? 'published') === 'published')
-        .slice(0, count);
+      const paginate = props.paginate === true;
+      const count = paginate ? POSTS_PER_PAGE : Math.min(6, Math.max(1, Number(props.count) || 3));
+      const published = (Array.isArray(ctx.posts) ? ctx.posts : []).filter(
+        (p) => p && p.slug && p.title && (p.status ?? 'published') === 'published',
+      );
+      // Paged, the build renders this block once per page and says which one it
+      // is drawing; the page count comes from the posts, never from the props.
+      const totalPages = paginate ? postsPageCount(published.length) : 1;
+      const page = paginate ? clampPostsPage(ctx.postsPage, totalPages) : 1;
+      let posts = paginate ? postsPageSlice(published, page) : published.slice(0, count);
       // The editor must show the shape even before the first post exists; a
       // build with no posts renders nothing rather than an empty band.
       if (!posts.length) {
@@ -928,27 +963,18 @@ const BLOCKS = {
           coverImage: null,
         }));
       }
-      const cards = posts.map((post) => {
-        const body =
-          `${image(post.coverImage ? { src: post.coverImage, alt: post.title } : null, { placeholder: 'Cover' })}` +
-          `<div class="bz-card__body">${
-            props.showDates !== false && post.date
-              ? `<span class="bz-card__m">${esc(formatPostDate(post.date))}</span>`
-              : ''
-          }<span class="bz-card__t">${esc(post.title)}</span>${
-            post.description ? `<span class="bz-post__d">${esc(post.description)}</span>` : ''
-          }</div>`;
-        return post.slug
-          ? `<a class="bz-card bz-post" href="${esc(href(`${base}/${post.slug}`, ctx))}"${attrs(
-              tagAttrs('link', 'read-post'),
-            )}>${body}</a>`
-          : `<div class="bz-card bz-post">${body}</div>`;
-      });
+      const cards = posts.map((post) => renderPostCard(post, ctx, { showDate: props.showDates !== false }));
+      // A paged grid is always three across, so the last page's odd card keeps
+      // the width of the eight above it rather than stretching.
+      const cols = paginate ? 3 : Math.min(3, posts.length);
+      const pager = paginate
+        ? renderPager({ page, totalPages, pagePath: ctx.pagePath || ctx.blogBasePath || '/blog' }, ctx)
+        : '';
       return container(
         `<div class="bz-sechead">${heading(levelOf(props), props.heading)}${renderCtas(
           props.cta ? [props.cta] : [],
           ctx,
-        )}</div><div class="bz-grid bz-grid--${Math.min(3, posts.length)}">${join(cards, '')}</div>`,
+        )}</div><div class="bz-grid bz-grid--${cols}">${join(cards, '')}</div>${pager}`,
       );
     },
   },
