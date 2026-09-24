@@ -23,6 +23,7 @@
 // its resolver, and `npm run schemas` carries it into the block catalogue.
 
 import { postRows } from './blog-pages.mjs';
+import { displayRow } from './display-time.mjs';
 
 /** The field an overlay row matches on, and the fields the source owns. */
 export const DATA_SOURCES = [
@@ -278,7 +279,8 @@ export function resolveDataBinding(binding, resolved, opts = {}) {
         ? postRows(opts.posts, binding.config || {}, opts)
         : null
       : Array.isArray(resolved)
-        ? resolved
+        ? // Hours copy reads 12-hour on the page whatever form it was baked in.
+          resolved.map(displayRow)
         : null;
   if (!rows) return opts.sample ? sampleRows(source, opts.sampleRows || 3) : [];
 
