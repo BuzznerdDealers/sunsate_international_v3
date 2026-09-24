@@ -43,14 +43,14 @@
   ],
   "redirects": [
     {
-      "source": "/about-us",
+      "source": "/about-us{/}?",
       "destination": "/our-story",
-      "permanent": true
+      "statusCode": 301
     },
     {
-      "source": "/new-home-copy",
+      "source": "/new-home-copy{/}?",
       "destination": "/new-home-dark",
-      "permanent": true
+      "statusCode": 301
     }
   ]
 }
