@@ -49,7 +49,42 @@ INTENT = {
 }
 
 
-def map_href(h):
+# Prototype-format handoffs (Claude Design `.dc.html`) link to their sibling design pages by
+# file name. Those resolve to this site's routes by what the link says, not only by which
+# page it names: the design sends every inventory call to action to its Trailer Sales page,
+# and on this site trailer inventory is the platform storefront.
+DC_PAGES = {
+    "Home.dc.html": "/", "Blog.dc.html": "/blog", "Contact Us.dc.html": "/contact",
+    "Financing.dc.html": "/financing",
+    # No trailer-specifications page exists on this site; each listing carries its specs.
+    "Trailer Specifications.dc.html": "/store/inventory?type=trailer",
+}
+POST_TITLES = {}  # "Blog Post - <title>.dc.html" -> slug, filled from the handoff's own pages
+
+
+def dc_href(h, label):
+    name = urllib.parse.unquote(h.rsplit("/", 1)[-1])
+    if name in DC_PAGES:
+        return DC_PAGES[name]
+    if name == "Trailer Sales Location.dc.html":
+        l = (label or "").lower()
+        if "new trailers" in l: return "/store/inventory?type=trailer&condition=new"
+        if "used trailers" in l: return "/store/inventory?type=trailer&condition=used"
+        if re.search(r"inventory|in stock|available|options|trailers we have", l): return "/store/inventory?type=trailer"
+        return "/locations/trailer-sales"  # the business itself, named in the prose
+    if name.startswith("Blog Post - "):
+        title = name[len("Blog Post - "):-len(".dc.html")]
+        if title in POST_TITLES: return "/blog/posts/" + POST_TITLES[title]
+    raise SystemExit(f"unmapped design-page link: {h} ({label})")
+
+
+def href_of(a):
+    return map_href(a["href"], plain(a))
+
+
+def map_href(h, label=None):
+    if h.endswith(".dc.html"):
+        return dc_href(h, label)
     if h.endswith("blog.html"):
         return "/blog"
     if h.endswith(".html") and ("/posts/" in h or "/" not in h):
@@ -82,7 +117,11 @@ DEST = {
     "/service-appointment": "schedule-service", "/parts": "parts-department",
     "https://www.sunstateparts.com/login": "order-parts-online", "/service": "service-department",
     "/contact": "contact-us", "/blog": "all-blog-posts", "tel:+18007417566": "call-main", "/mobile-service": "mobile-service",
-    "/store/inventory?condition=new": "browse-new-trucks", "/financing": "financing", "/reviews": "read-reviews",
+    "/store/inventory?condition=new": "browse-new-trucks",
+    "/store/inventory?type=trailer": "browse-trailers",
+    "/locations/trailer-sales": "trailer-sales-location",
+    "/store/inventory?type=trailer&condition=new": "browse-new-trailers",
+    "/store/inventory?type=trailer&condition=used": "browse-used-trailers", "/financing": "financing", "/reviews": "read-reviews",
     "/truck-configurator": "truck-configurator-link", "/specifications": "s13-powertrain", "/extended-service": "extended-service",
 }
 lib = {b["id"]: b for b in buttons}
@@ -129,7 +168,7 @@ def inline_html(el):
         if isinstance(c, NavigableString):
             out.append(str(c).replace("<", "&lt;").replace(">", "&gt;"))  # the text block escapes & itself
         elif c.name == "a":
-            out.append(f'<a href="{map_href(c["href"])}">{inline_html(c)}</a>')
+            out.append(f'<a href="{href_of(c)}">{inline_html(c)}</a>')
         elif c.name in ("strong", "b"):
             out.append(f"<strong>{inline_html(c)}</strong>")
         elif c.name in ("em", "i"):
@@ -160,11 +199,16 @@ IMG_SRC = f"{PART}/assets/img/posts/"
 IMG_DST = f"{REPO}/public/img/blog/"
 
 
+PAGE_DIR = None  # the handoff page being converted; its images resolve against it
+
+
 def place_image(slug, src, name):
     fname = os.path.basename(src)
+    source = os.path.join(PAGE_DIR, src) if PAGE_DIR and os.path.exists(os.path.join(PAGE_DIR, src)) else IMG_SRC + fname
     os.makedirs(IMG_DST + slug, exist_ok=True)
     dst = f"{IMG_DST}{slug}/{name}.jpg"
-    shutil.copyfile(IMG_SRC + fname, dst)
+    assert source.lower().endswith((".jpg", ".jpeg")), source
+    shutil.copyfile(source, dst)
     w, h = jpeg_size(dst)
     return {"src": f"/img/blog/{slug}/{name}.jpg", "width": w, "height": h}
 
@@ -182,7 +226,7 @@ def arrow_link(id, a):
     """A callout's arrow link. To another article it is a text link — a read-next
     pointer is content, not a call to action with its own library button; to a
     service, a department or the parts store it is that destination's button."""
-    url = map_href(a["href"])
+    url = href_of(a)
     if url.startswith("/blog/posts/"):
         return text(id, f'<a href="{url}">{inline_html(a)}</a>', styles=POST_LINK)
     return n(id, "buttons", {"align": "left", "items": [cta(plain(a), url, "link")]})
@@ -223,7 +267,7 @@ ID_ALIASES = {
     },
 }
 
-RUNS = {"problem-card": "stacked", "repair-card": "inline", "step-row": "steps", "faq-item": "qa"}
+RUNS = {"stage-row": "stages", "problem-card": "stacked", "repair-card": "inline", "step-row": "steps", "faq-item": "qa"}
 
 
 def detail_card(card):
@@ -243,6 +287,8 @@ def detail_card(card):
 
 
 def convert(path):
+    global PAGE_DIR
+    PAGE_DIR = os.path.dirname(path)
     slug = os.path.basename(path)[:-5]
     raw = open(path).read()
     s = BeautifulSoup(raw, "html.parser")
@@ -276,13 +322,14 @@ def convert(path):
 
     # --- the rail
     toc = main.select_one("aside.post-toc")
-    items = [{"label": plain(a), "href": a["href"]} for a in toc.select("a.toc__link")]
+    # the rail's own in-page links (a prototype batch does not class them toc__link)
+    items = [{"label": plain(a), "href": a["href"]} for a in toc.select("nav a[href^='#']")]
     box = toc.find("div", style=re.compile("margin-top: 26px"))
     bparts = [c for c in box.children if isinstance(c, Tag)]
     aside = col("art-aside", [
         text("aside-label", plain(bparts[0]), styles=LABEL),
         text("aside-body", inline_html(bparts[1]), styles={"fontSize": 14, "lineHeight": 1.65, "marginBottom": 14}),
-        n("aside-cta", "buttons", {"align": "left", "items": [cta(plain(bparts[2]), map_href(bparts[2]["href"]), "link")]}),
+        n("aside-cta", "buttons", {"align": "left", "items": [cta(plain(bparts[2]), href_of(bparts[2]), "link")]}),
     ], styles={**BOX, "paddingTop": 20, "paddingRight": 20, "paddingBottom": 20, "paddingLeft": 20, "marginTop": 26})
     side = col("art-side", [n("art-toc", "post-toc", {"label": "On this page", "items": items}),
                             row("art-aside-row", [aside])], span=3)
@@ -296,8 +343,17 @@ def convert(path):
         return f"{kind}-{sec}-{seq[sec]}"
 
     share = None
+    pending_anchor = None
     elements, run = [], None
-    for el in [x for x in body.children if isinstance(x, Tag)]:
+    flat = []
+    for x in [x for x in body.children if isinstance(x, Tag)]:
+        kids = [k for k in x.children if isinstance(k, Tag)]
+        # A plain wrapper around a run of stage rows is the run itself.
+        if x.name == "div" and not x.get("class") and kids and all("stage-row" in k.get("class", []) for k in kids):
+            flat.extend(kids)
+        else:
+            flat.append(x)
+    for el in flat:
         kind = next((k for k in RUNS if k in el.get("class", [])), None)
         if kind and run and run[0] == kind:
             run[1].append(el)
@@ -310,6 +366,14 @@ def convert(path):
             kind, els = el
             if RUNS[kind] in ("stacked", "inline"):
                 out.append(n(nid("details"), "detail-cards", {"variant": RUNS[kind], "items": [detail_card(x) for x in els]}))
+            elif RUNS[kind] == "stages":
+                items = []
+                for x in els:
+                    yrs = x.find("div", class_="yrs"); rest = [y for y in x.children if isinstance(y, Tag) and y is not yrs]
+                    inner = rest[0] if rest[0].name == "div" else x
+                    h3 = inner.find("h3"); p_ = inner.find("p")
+                    items.append({"label": plain(yrs), **({"title": plain(h3)} if h3 else {}), "text": plain(p_)})
+                out.append(n(nid("stages"), "stage-list", {"items": items}))
             elif RUNS[kind] == "steps":
                 items = []
                 for x in els:
@@ -324,8 +388,14 @@ def convert(path):
         if el.name == "p":
             if el.get("id") == "post-lede":
                 out.append(text("lede", inline_html(el), anchor="post-lede"))
+            elif pending_anchor:
+                out.append(text(nid("p"), inline_html(el), anchor=pending_anchor)); pending_anchor = None
             else:
                 out.append(text(nid("p"), inline_html(el)))
+        elif el.name == "h2" and not plain(el) and "display:none" in st.replace(" ", ""):
+            # An empty, hidden heading kept only as the rail's link target: the anchor moves
+            # to the paragraph it introduces, so the link still lands and no blank heading ships.
+            sec = el["id"]; pending_anchor = sec
         elif el.name == "h2":
             sec = el["id"]
             out.append(n(f"h-{sec}", "heading", {"text": plain(el), "headingLevel": 2, "align": "left", "anchor": sec}))
@@ -361,17 +431,17 @@ def convert(path):
             # margins the design gives it rather than the button pair's.
             cid = nid("links")
             anchors = el.find_all("a")
-            if any(map_href(a["href"]).startswith("/blog/posts/") for a in anchors):
+            if any(href_of(a).startswith("/blog/posts/") for a in anchors):
                 kids = [arrow_link(f"{cid}-{i+1}", a) for i, a in enumerate(anchors)]
             else:
-                kids = [n(f"{cid}-cta", "buttons", {"align": "left", "items": [cta(plain(a), map_href(a["href"]), "link") for a in anchors]})]
+                kids = [n(f"{cid}-cta", "buttons", {"align": "left", "items": [cta(plain(a), href_of(a), "link") for a in anchors]})]
             top, bottom = margins(st)
             out.append(row(f"{cid}-row", [col(cid, kids, styles={"marginTop": top, "marginBottom": bottom})]))
         elif el.name == "div" and "display: flex" in st:
             its = []
             for a in el.find_all("a"):
                 style = "primary" if "hv-2" in a.get("class", []) else "secondary"
-                its.append(cta(plain(a), map_href(a["href"]), style))
+                its.append(cta(plain(a), href_of(a), style))
             out.append(n(nid("actions"), "buttons", {"align": "left", "items": its}))
         elif el.name == "table" and "smoke-table" in cls:
             # Label and detail, ruled: the site's Definition rows, set to the post's measure.
@@ -397,19 +467,19 @@ def convert(path):
             items = []
             for a in el.find_all("a", class_="factor-card", recursive=False):
                 label, title = [x for x in a.children if isinstance(x, Tag)]
-                items.append({"label": plain(label), "title": plain(title), "url": map_href(a["href"]),
-                              "newTab": map_href(a["href"]).startswith("http")})
+                items.append({"label": plain(label), "title": plain(title), "url": href_of(a),
+                              "newTab": href_of(a).startswith("http")})
             out.append(n(nid("links"), "link-cards", {"across": "3" if "grid-3" in cls else "2", "items": items}))
         elif el.name == "div" and "grid-2" in cls and all(
                 [x.name for x in card.children if isinstance(x, Tag)] == ["h3", "ul"]
-                for card in el.find_all("div", class_="factor-card", recursive=False)):
+                for card in el.find_all("div", class_="factor-card", recursive=False)) and el.find("div", class_="factor-card", recursive=False):
             # Titled cards of short bold-led points (cab types): Card lists, spec style.
             out.append(n(nid("cards"), "card-lists", {"variant": "spec", "items": [
                 {"title": plain(card.find("h3")), "points": [{"text": inline_html(li)} for li in card.find_all("li")]}
                 for card in el.find_all("div", class_="factor-card", recursive=False)]}))
         elif el.name == "div" and ("grid-2" in cls or "grid-3" in cls) and all(
                 [x.name for x in card.children if isinstance(x, Tag)] in (["div", "p"], ["div", "h3"])
-                for card in el.find_all("div", class_="factor-card", recursive=False)):
+                for card in el.find_all("div", class_="factor-card", recursive=False)) and el.find("div", class_="factor-card", recursive=False):
             # An accent label over one line — model series ("LT® SERIES / Long-haul
             # efficiency") or a numbered point ("01 / a short heading"): Card lists.
             cards = el.find_all("div", class_="factor-card", recursive=False)
@@ -418,6 +488,36 @@ def convert(path):
             out.append(n(nid("cards"), "card-lists", {"variant": variant, "items": [
                 {"title": plain(card.find("div")), "intro": inline_html(card.find(["p", "h3"], recursive=False)), "points": []}
                 for card in cards]}))
+        elif el.name == "div" and el.find("div", class_=["type-card", "option-card"], recursive=False):
+            # Titled cards: a sentence, a bold lead-in or a BEST FOR label, then a list — Card lists.
+            cards = el.find_all("div", class_=["type-card", "option-card"], recursive=False)
+            variant = "option" if "option-card" in cards[0].get("class", []) else "type"
+            items = []
+            for card in cards:
+                it = {"title": "", "points": []}
+                for x in [x for x in card.children if isinstance(x, Tag)]:
+                    if x.name == "h3": it["title"] = plain(x)
+                    elif x.name == "p" and "intro" not in it and not (x.get("style") and "font-weight: 700" in x["style"]): it["intro"] = inline_html(x)
+                    elif x.name in ("p", "div") and not it["points"]: it["lead"] = plain(x)
+                    elif x.name == "ul": it["points"] = [{"text": inline_html(li)} for li in x.find_all("li")]
+                    else: raise SystemExit(f"card child <{x.name}>")
+                items.append(it)
+            out.append(n(nid("cards"), "card-lists", {"variant": variant, "items": items}))
+            if variant == "type" and re.search(r"\.type-card ul li\s*\{\s*font-size:\s*14px", own_style):
+                extra_css.append('[data-bz-node="art-body"] .ss-cl--type .ss-cl__list { margin: 0; }\n'
+                                 '[data-bz-node="art-body"] .ss-cl--type .ss-cl__list li { font-size: 14px; }')
+        elif el.name == "div" and el.find("div", class_="reason-card", recursive=False) and all(
+                [x.name for x in card.children if isinstance(x, Tag)] == ["h3", "p"]
+                for card in el.find_all("div", class_="reason-card", recursive=False)):
+            # Reasons, three across: the Feature list, carded the way this batch cards them.
+            cards = el.find_all("div", class_="reason-card", recursive=False)
+            out.append(n(nid("features"), "list", {"headingLevel": 2, "columns": 3, "items": [
+                {"label": plain(x.find("h3")), "desc": plain(x.find("p"))} for x in cards]}))
+            extra_css.append('/* Its reason cards: roomier, 24px apart, the sentence at 15px. */\n'
+                             '[data-bz-node="art-body"] .bz-block--list .bz-grid { gap: 24px; }\n'
+                             '[data-bz-node="art-body"] .bz-block--list .bz-feature { padding: 24px; }\n'
+                             '[data-bz-node="art-body"] .bz-block--list .bz-feature__t { margin: 0 0 10px; }\n'
+                             '[data-bz-node="art-body"] .bz-block--list .bz-feature__d { font-size: 15px; line-height: 1.7; }')
         elif el.name == "div" and "grid-template-columns: 56px" in st:
             # A numbered section ("01"): the number beside a real heading and its paragraphs,
             # laid out by the row's node styles so the prose stays editable on the canvas.
@@ -445,7 +545,7 @@ def convert(path):
             out.append(n(nid("cards"), "card-lists", {"variant": "interval", "items": items}))
         elif el.name == "div" and ("grid-2" in cls or "grid-3" in cls) and all(
                 [x.name for x in card.children if isinstance(x, Tag)] == ["h3", "p"]
-                for card in el.find_all("div", class_="factor-card", recursive=False)):
+                for card in el.find_all("div", class_="factor-card", recursive=False)) and el.find("div", class_="factor-card", recursive=False):
             # Title-and-sentence cards two or three across: the Feature list, as the four-up
             # grid is — unless a card's sentence carries a link, which a Feature list item
             # cannot hold; those are Card lists in the feature style.
@@ -581,8 +681,8 @@ def convert(path):
     btns = band.find_all("a")
     post_cta = n("post-cta", "sharedSection", {"sectionId": "cta-band", "values": {
         "eyebrow": eyebrow.capitalize() if eyebrow.isupper() else eyebrow, "heading": heading, "body": bodyp,
-        "primaryLabel": plain(btns[0]), "primaryUrl": map_href(btns[0]["href"]),
-        "secondaryLabel": plain(btns[1]), "secondaryUrl": map_href(btns[1]["href"])}}, [])
+        "primaryLabel": plain(btns[0]), "primaryUrl": href_of(btns[0]),
+        "secondaryLabel": plain(btns[1]), "secondaryUrl": href_of(btns[1])}}, [])
 
     # A post's own FAQ: the platform FAQ widget, which draws the accordion the design
     # draws and emits the FAQPage structured data from the same items.
@@ -616,16 +716,31 @@ def convert(path):
             assert x["id"] not in seen, (slug, x["id"]); seen.add(x["id"]); walk(x.get("children", []))
     walk(nodes)
 
-    m = re.search(r"\.factor-card\{[^}]*padding:\s*([0-9]+)px", own_style)
+    if re.search(r"\.factor-card p\s*\{[^}]*line-height:\s*1\.7", own_style) and any(x["type"] == "list" for x in out):
+        extra_css.append('[data-bz-node="art-body"] .bz-block--list .bz-feature__t { margin: 0 0 8px; }\n'
+                         '[data-bz-node="art-body"] .bz-block--list .bz-feature__d { line-height: 1.7; }')
+    m = re.search(r"\.factor-card\s*\{[^}]*padding:\s*([0-9]+)px", own_style)
     if m and m.group(1) != "20" and any(x["type"] == "list" for x in out):
         extra_css.append(f'[data-bz-node="art-body"] .bz-block--list .bz-feature {{ padding: {m.group(1)}px; }}')
+    if (slug not in POST_CSS and any(x["type"] == "compare-table" for x in out)
+            and re.search(r"\.compare-table th\s*\{[^}]*border-bottom:\s*2px solid var\(--color-ink\)", own_style)):
+        extra_css.append("/* Its comparison is ruled in ink under sentence-case headings, with roomier cells. */\n"
+                         '[data-bz-node="art-body"] .ss-cmp { margin-bottom: 20px; }\n'
+                         '[data-bz-node="art-body"] .ss-cmp thead th { letter-spacing: .1em; text-transform: none; border-bottom: 2px solid var(--ink); }\n'
+                         '[data-bz-node="art-body"] .ss-cmp tbody th,\n'
+                         '[data-bz-node="art-body"] .ss-cmp td { padding: 14px; font-size: 15px; line-height: 1.3; }\n'
+                         '[data-bz-node="art-body"] .ss-cmp tbody th { width: auto; }\n'
+                         '@media (max-width: 640px) { [data-bz-node="art-body"] .ss-cmp th, [data-bz-node="art-body"] .ss-cmp td { font-size: 13px; } }')
     if re.search(r"\.stat-band\{[^}]*grid-template-columns:\s*1fr;", own_style):
         extra_css.append('/* Its stat band stacks the figures, one per row. */\n'
                          '[data-bz-node="art-body"] .bz-block--statBand .bz-stats { grid-template-columns: minmax(0, 1fr); }')
     desc = s.find("meta", attrs={"name": "description"})["content"]
     pub = s.find("meta", attrs={"property": "article:published_time"})
     kw = re.search(r'"keywords":\s*"([^"]*)"', str(s))
-    return slug, {"css_extra": "".join("\n" + x + "\n" for x in dict.fromkeys(extra_css)), "title": h1, "description": desc, "coverImage": cover_src,
+    lede = body.select_one("#post-lede") or body.find("p")
+    lede_text = plain(lede)
+    excerpt = lede_text if len(lede_text) <= 210 else lede_text[:210].rsplit(" ", 1)[0].rstrip(",;:") + "…"
+    return slug, {"topic": topic_chip.title().replace("&Amp;", "&"), "excerpt": excerpt, "css_extra": "".join("\n" + x + "\n" for x in dict.fromkeys(extra_css)), "title": h1, "description": desc, "coverImage": cover_src,
                   "date": pub["content"][:10] if pub else None,
                   "keywords": [k.strip() for k in kw.group(1).split(",")] if kw else None,
                   "nodes": nodes}
@@ -706,15 +821,27 @@ def related_css(slug):
 if __name__ == "__main__":
     # Topic, date and excerpt per post, as the handoff's blog.html (Part 1) lists them.
     meta = json.load(open(os.path.join(os.path.dirname(__file__), "blog-cards.json")))
-    files = sorted(glob.glob(f"{PART}/posts/*.html"))
+    # Parts 1-6 keep their articles in posts/; a prototype batch keeps them beside index.html.
+    files = sorted(glob.glob(f"{PART}/posts/*.html")) or sorted(
+        f for f in glob.glob(f"{PART}/*.html") if os.path.basename(f) != "index.html")
+    for f in files:
+        h1 = BeautifulSoup(open(f).read(), "html.parser").select_one("section.post-hero h1")
+        POST_TITLES[plain(h1)] = os.path.basename(f)[:-5]
+        # the design page's file name is the title without its question mark or subtitle
+        POST_TITLES[plain(h1).split("?")[0].split(":")[0].strip()] = os.path.basename(f)[:-5]
     for f in files:
         slug, c = convert(f)
         p = f"{REPO}/site/blog/posts/{slug}.json"
         old = json.load(open(p)) if os.path.exists(p) else {}
+        if slug not in meta:
+            # Not in the Part 1 listing: the card's topic, date and excerpt come from the page —
+            # the hero's topic chip, the publish date, and the lede cut the way the listing cuts it.
+            meta[slug] = {"topic": c["topic"], "dateISO": c["date"], "excerpt": c["excerpt"]}
+            json.dump(meta, open(os.path.join(os.path.dirname(__file__), "blog-cards.json"), "w"), indent=1, ensure_ascii=False)
         card = meta[slug]
         post = {
             "slug": slug, "title": c["title"], "date": c["date"],
-            "description": c["description"], "status": "published", "coverImage": c["coverImage"],
+            "description": c["description"], "status": old.get("status", "published"), "coverImage": c["coverImage"],
             "topic": card["topic"],
         }
         kws = c["keywords"] or old.get("keywords")

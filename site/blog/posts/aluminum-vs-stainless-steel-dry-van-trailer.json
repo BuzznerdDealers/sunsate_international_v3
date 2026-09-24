@@ -1,0 +1,748 @@
+{
+  "slug": "aluminum-vs-stainless-steel-dry-van-trailer",
+  "title": "Aluminum vs Stainless Steel Dry Van Trailer Comparison",
+  "date": "2026-03-20",
+  "description": "Researching for a stainless steel dry van trailer? Compare durability, cost, and performance. Explore inventory today.",
+  "status": "published",
+  "coverImage": "/img/blog/aluminum-vs-stainless-steel-dry-van-trailer/hero.jpg",
+  "topic": "Trailer Sales",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Trailer Sales",
+          "title": "Aluminum vs Stainless Steel Dry Van Trailer Comparison",
+          "topic": "Trailer Sales",
+          "date": "March 20, 2026",
+          "readTime": "5 min read",
+          "author": "Sun State Trailers",
+          "image": {
+            "src": "/img/blog/aluminum-vs-stainless-steel-dry-van-trailer/hero.jpg",
+            "width": 1000,
+            "height": 667,
+            "alt": "Row of Hyundai Translead dry van trailers at Sun State Trailers"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "Why Material Matters",
+                        "href": "#why-material"
+                      },
+                      {
+                        "label": "Stainless Steel: Built for Strength",
+                        "href": "#steel"
+                      },
+                      {
+                        "label": "Aluminum: Built for Efficiency",
+                        "href": "#aluminum"
+                      },
+                      {
+                        "label": "Side-by-Side Comparison",
+                        "href": "#side-by-side"
+                      },
+                      {
+                        "label": "Cost vs ROI",
+                        "href": "#cost-roi"
+                      },
+                      {
+                        "label": "Choosing the Right Trailer",
+                        "href": "#choosing"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "STILL COMPARING?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Review real specs and see what's in stock before you decide.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-trailers",
+                                "label": "Explore Inventory →"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "If you're researching a stainless steel dry van trailer, you're already thinking ahead about durability, longevity, and how your equipment holds up over time. But here's where most buyers pause: should you go with stainless steel or aluminum? It's not just a material question. It's a business decision that affects maintenance costs, fuel efficiency, and long-term ROI.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At <a href=\"/locations/trailer-sales\">Sun State Trailers</a>, we work with owner-operators and fleet owners every day who are weighing these options. The goal is simple: to help you choose a trailer that works as hard as you do.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-why-material",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Material Matters in a Dry Van Trailer",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "why-material"
+                  }
+                },
+                {
+                  "id": "p-why-material-1",
+                  "type": "text",
+                  "props": {
+                    "text": "A dry van trailer is built to handle consistent freight, long miles, and changing conditions. The material it's built from plays a major role in structural durability, weight and fuel efficiency, maintenance requirements, and overall lifespan. When you're comparing an aluminum vs steel dry van trailer, you're really comparing two different approaches to performance.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-why-material-2-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-why-material-2",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-why-material-2-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-trailers",
+                                "label": "See Dry Van Trailers We Have in Stock →"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-steel",
+                  "type": "heading",
+                  "props": {
+                    "text": "Stainless Steel Dry Van Trailer: Built for Strength",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "steel"
+                  }
+                },
+                {
+                  "id": "p-steel-1",
+                  "type": "text",
+                  "props": {
+                    "text": "A stainless steel dry van trailer is known for its strength and resistance to damage. It's designed to handle tougher environments and heavier wear over time.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-steel-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "type",
+                    "items": [
+                      {
+                        "title": "Benefits",
+                        "points": [
+                          {
+                            "text": "<strong>High Durability:</strong> Handles impact and rough loading conditions well"
+                          },
+                          {
+                            "text": "<strong>Corrosion Resistance:</strong> Performs better in humid or coastal climates"
+                          },
+                          {
+                            "text": "<strong>Long Lifespan:</strong> Holds structural integrity over years of use"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Tradeoffs to Consider",
+                        "points": [
+                          {
+                            "text": "Heavier than aluminum"
+                          },
+                          {
+                            "text": "Slightly lower fuel efficiency"
+                          },
+                          {
+                            "text": "Higher upfront cost in some cases"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-steel-3",
+                  "type": "text",
+                  "props": {
+                    "text": "For Florida-based operators, this matters. Between heat, humidity, and coastal exposure, equipment takes a beating. Still, many operators see stainless steel as a long-term investment, especially for demanding routes.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/aluminum-vs-stainless-steel-dry-van-trailer/1.jpg",
+                      "width": 1000,
+                      "height": 667,
+                      "alt": "Sun State team member checking a dry van trailer's rear door and panel construction"
+                    }
+                  }
+                },
+                {
+                  "id": "h-aluminum",
+                  "type": "heading",
+                  "props": {
+                    "text": "Aluminum Dry Van Trailer: Built for Efficiency",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "aluminum"
+                  }
+                },
+                {
+                  "id": "p-aluminum-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Aluminum trailers are widely used across the industry, and for good reason.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-aluminum-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "type",
+                    "items": [
+                      {
+                        "title": "Key Benefits",
+                        "points": [
+                          {
+                            "text": "<strong>Lighter Weight:</strong> Improves fuel efficiency"
+                          },
+                          {
+                            "text": "<strong>Higher Payload Capacity:</strong> Carry more per load"
+                          },
+                          {
+                            "text": "<strong>Lower Upfront Cost</strong> in some cases"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Tradeoffs to Consider",
+                        "points": [
+                          {
+                            "text": "Less resistant to dents and impact"
+                          },
+                          {
+                            "text": "May require more frequent repairs in high-use environments"
+                          },
+                          {
+                            "text": "Can wear faster under heavy-duty conditions"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-aluminum-3",
+                  "type": "text",
+                  "props": {
+                    "text": "For fleets focused on maximizing every mile, aluminum can be a strong option.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-aluminum-4-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-aluminum-4",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-aluminum-4-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-trailers",
+                                "label": "Explore Your Options →"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-side-by-side",
+                  "type": "heading",
+                  "props": {
+                    "text": "Aluminum vs Stainless Steel Dry Van Trailer: Side-by-Side",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "side-by-side"
+                  }
+                },
+                {
+                  "id": "p-side-by-side-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Here's a straightforward comparison to help you evaluate your options:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "compare-side-by-side-2",
+                  "type": "compare-table",
+                  "props": {
+                    "headA": "Feature",
+                    "headB": "Stainless Steel",
+                    "headC": "Aluminum",
+                    "rows": [
+                      {
+                        "a": "Durability",
+                        "b": "High, impact-resistant",
+                        "c": "Moderate"
+                      },
+                      {
+                        "a": "Weight",
+                        "b": "Heavier",
+                        "c": "Lightweight"
+                      },
+                      {
+                        "a": "Fuel Efficiency",
+                        "b": "Lower",
+                        "c": "Higher"
+                      },
+                      {
+                        "a": "Maintenance",
+                        "b": "Lower long-term",
+                        "c": "Potentially higher over time"
+                      },
+                      {
+                        "a": "Lifespan",
+                        "b": "Long-lasting",
+                        "c": "Moderate to long"
+                      },
+                      {
+                        "a": "Best For",
+                        "b": "Heavy-duty, long-term use",
+                        "c": "Fuel savings, lighter loads"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-side-by-side-3",
+                  "type": "text",
+                  "props": {
+                    "text": "The right choice depends on how you operate, not just what looks good on paper.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-side-by-side-4",
+                  "type": "heading",
+                  "props": {
+                    "text": "When a Stainless Steel Dry Van Trailer Makes Sense",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-side-by-side-5",
+                  "type": "text",
+                  "props": {
+                    "text": "A stainless steel dry van trailer for sale is often the better choice if you're running long-haul routes, your loads involve heavier or rougher freight, you operate in high-humidity or coastal environments, or you want fewer long-term repairs. This option is built for consistency, and for many operators, consistency is what keeps customers happy and revenue steady.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-side-by-side-6",
+                  "type": "heading",
+                  "props": {
+                    "text": "When Aluminum Is the Better Fit",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-side-by-side-7",
+                  "type": "text",
+                  "props": {
+                    "text": "An aluminum dry van trailer for sale may be the right move if fuel efficiency is a top priority, you're running lighter freight, you want to maximize payload capacity, or you're scaling your fleet quickly. If your margins depend on efficiency per mile, aluminum can give you an edge.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-2",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/aluminum-vs-stainless-steel-dry-van-trailer/2.jpg",
+                      "width": 1000,
+                      "height": 667,
+                      "alt": "Sun State technician checking a dry van trailer's rear locking hardware"
+                    }
+                  }
+                },
+                {
+                  "id": "h-cost-roi",
+                  "type": "heading",
+                  "props": {
+                    "text": "Cost vs ROI: What Really Matters",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "cost-roi"
+                  }
+                },
+                {
+                  "id": "p-cost-roi-1",
+                  "type": "text",
+                  "props": {
+                    "text": "It's easy to focus on upfront cost, but the smarter question is: what will this trailer cost you over time? A stainless steel dry van for sale may come with a higher initial investment, but it may require fewer repairs, it can last longer under heavy use, and it reduces downtime. On the other hand, aluminum may save money upfront and improve fuel efficiency, but could require more attention depending on how it's used.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-3",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/aluminum-vs-stainless-steel-dry-van-trailer/3.jpg",
+                      "width": 1000,
+                      "height": 667,
+                      "alt": "Close-up of a dry van trailer's rear lighting and structural detail"
+                    }
+                  }
+                },
+                {
+                  "id": "h-choosing",
+                  "type": "heading",
+                  "props": {
+                    "text": "Choosing the Right Stainless Steel Dry Van Trailer",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "choosing"
+                  }
+                },
+                {
+                  "id": "p-choosing-1",
+                  "type": "text",
+                  "props": {
+                    "text": "When comparing an aluminum vs stainless steel dry van trailer, there's no one-size-fits-all answer. If your priority is durability, longevity, and reduced downtime, a stainless steel dry van trailer is a strong investment. If your focus is fuel efficiency and maximizing payload, aluminum may be the better option.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-choosing-2",
+                  "type": "text",
+                  "props": {
+                    "text": "The right choice comes down to how you run your business and what you need your equipment to deliver every day. Ready to find the right trailer for your operation? <a href=\"/locations/trailer-sales\">Sun State Trailers</a> is here to help you choose equipment you can count on, mile after mile.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "links-choosing-3-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "links-choosing-3",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "marginTop": 40,
+                          "marginBottom": 8
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "links-choosing-3-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-trailers",
+                                "label": "Check Out Our Available Inventory"
+                              },
+                              {
+                                "ctaId": "browse-trailers",
+                                "label": "Compare Trailer Specifications"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Trailer sales",
+          "heading": "Choose equipment you can count on.",
+          "body": "Call 800.741.7566 to compare aluminum and stainless steel dry van options at any Sun State location in Florida.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Browse trailer inventory",
+          "secondaryUrl": "/store/inventory?type=trailer"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/aluminum-vs-stainless-steel-dry-van-trailer\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/aluminum-vs-stainless-steel-dry-van-trailer\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n/* Its comparison is ruled in ink under sentence-case headings, with roomier cells. */\n[data-bz-node=\"art-body\"] .ss-cmp { margin-bottom: 20px; }\n[data-bz-node=\"art-body\"] .ss-cmp thead th { letter-spacing: .1em; text-transform: none; border-bottom: 2px solid var(--ink); }\n[data-bz-node=\"art-body\"] .ss-cmp tbody th,\n[data-bz-node=\"art-body\"] .ss-cmp td { padding: 14px; font-size: 15px; line-height: 1.3; }\n[data-bz-node=\"art-body\"] .ss-cmp tbody th { width: auto; }\n@media (max-width: 640px) { [data-bz-node=\"art-body\"] .ss-cmp th, [data-bz-node=\"art-body\"] .ss-cmp td { font-size: 13px; } }\n"
+}

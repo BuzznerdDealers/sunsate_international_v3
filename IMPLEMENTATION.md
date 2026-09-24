@@ -553,3 +553,53 @@ goes to `/store/inventory?condition=used`, its configurator, S13 and extended-se
 `/truck-configurator`, `/specifications` and `/extended-service`, and its Tampa, Sarasota and
 Davenport directions pages to those rooftops' generated pages.
 
+---
+
+## 15. Sun State Trailers blog, batch 1 of 2 — six dry-van posts
+
+A Claude Design prototype handoff (`handoff/batch-1`): six Sun State Trailers articles on the
+same post design as §9 — *Why Choose Hyundai Dry Van Trailer Dealers*, *Dry Van Trailer Resale
+Value Over Time*, *How Long Do Dry Van Trailers Last in Real Use?*, *Dry Van Trailer Financing
+at Sun State Trailers*, *Dry Van vs Reefer Trailer* and *Aluminum vs Stainless Steel Dry Van
+Trailer Comparison*. Built by `tools/blog-handoff/convert.py`; body copy and contents rails
+match the handoff word for word, and every rail link lands.
+
+**What was translated and what was not.** The pages run inside the prototype runtime
+(`support.js`, `<x-dc>`, `<helmet>`, `style-hover`, `<sc-for>` menus) and ship a `_ds/` design
+system for an unrelated inventory widget ("Syyo", orange and cream). Per CLAUDE.md §7 none of
+that is carried over: the article markup is read, the chrome is the site's own template, and
+the tokens stay the site's. The photographs were PNGs named `.jpg`; they are re-encoded as real
+JPEGs (2.7 MB for 25) under `public/img/blog/<slug>/`.
+
+**Links.** The prototype links to its sibling design pages by file name. The converter maps
+them by what each link says: inventory calls to action ("Browse / Explore / See … inventory")
+go to the storefront's trailer listings, "New Trailers" and "Used Trailers" to those listings
+filtered by condition, "Sun State Trailers" in prose to the Trailer Sales rooftop page,
+Contact and Financing to their pages. Three buttons were added to the library for this:
+`browse-new-trailers`, `browse-used-trailers` and `trailer-sales-location`.
+*Trailer Specifications* has no page on this site (the Specifications page is the truck
+brochure library), so its two buttons go to the trailer listings, where each unit carries its
+specs — worth revisiting if a trailer specifications page is built.
+
+**Cards and metadata.** These posts are not in the Part 1 listing, so the converter takes each
+card's topic, date and excerpt from the page itself — the hero's topic chip ("Trailer Sales",
+a new chip on the blog page), the publish date, and the lede cut the way the listing cuts it —
+and records them in `tools/blog-handoff/blog-cards.json`. The blog page now carries 58 cards.
+It no longer lists the four posts the dealer set to draft on 24 September (oil change, air
+brakes, electrical diagnostics, alignment), whose typed cards had been linking to pages that
+no longer build, nor the *Diagnostics* chip only one of them used.
+
+New shapes:
+
+| Handoff | Here |
+|---|---|
+| `.type-card` (title, sentence, bold lead-in, list) | **Card lists**, new *Type* style, with a new optional lead-in field |
+| `.option-card` (title, sentence, BEST FOR label, list) | **Card lists**, new *Option* style |
+| `.reason-card` (title and sentence, three across) | the **Feature list**, carded as this batch cards them |
+| a run of `.stage-row` ("0–5 yrs" beside a sentence) | a new **Stage list** coded widget |
+| an empty hidden `h2` kept as a rail target | no heading; its anchor moves to the paragraph it introduces |
+
+**Converter changes, all backwards compatible** (Parts 1–6 re-run to the same output): it keeps
+a post's existing status instead of re-publishing it, reads a page's own ink-ruled comparison
+style, resolves images against the page, and finds a prototype batch's pages beside its index.
+

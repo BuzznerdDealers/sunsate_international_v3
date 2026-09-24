@@ -388,5 +388,32 @@
     "intent": "read-post",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "browse-new-trailers",
+    "label": "New Trailers →",
+    "url": "/store/inventory?type=trailer&condition=new",
+    "style": "link",
+    "intent": "browse-inventory",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "browse-used-trailers",
+    "label": "Used Trailers →",
+    "url": "/store/inventory?type=trailer&condition=used",
+    "style": "link",
+    "intent": "browse-inventory",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "trailer-sales-location",
+    "label": "Sun State Trailers — Tampa →",
+    "url": "/locations/trailer-sales",
+    "style": "link",
+    "intent": "find-location",
+    "newTab": false,
+    "active": true
   }
 ]

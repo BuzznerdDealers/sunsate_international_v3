@@ -1,0 +1,31 @@
+{
+  "id": "stage-list",
+  "label": "Stage list",
+  "description": "A ruled list of stages, each a short accent label down the left (an age band, a step) beside an optional title and a sentence — the blog's trailer-age and value stages. One item per stage.",
+  "props": [
+    {
+      "key": "items",
+      "type": "list",
+      "label": "Stages",
+      "fields": [
+        {
+          "key": "label",
+          "type": "text",
+          "label": "Label, e.g. 0–5 yrs"
+        },
+        {
+          "key": "title",
+          "type": "text",
+          "label": "Title (optional)"
+        },
+        {
+          "key": "text",
+          "type": "textarea",
+          "label": "Sentence"
+        }
+      ]
+    }
+  ],
+  "html": "<div class=\"ss-stages\">{{#each items}}<div class=\"ss-stage\"><div class=\"ss-stage__l\">{{label}}</div><div>{{#if title}}<h3 class=\"ss-stage__t\">{{title}}</h3>{{/if}}<p class=\"ss-stage__p\">{{text}}</p></div></div>{{/each}}</div>",
+  "css": ".ss-stages{margin-bottom:20px}\n.ss-stage{display:grid;grid-template-columns:90px minmax(0,1fr);gap:4px 22px;border-top:1px solid var(--line);padding:20px 0}\n.ss-stage:last-child{border-bottom:1px solid var(--line)}\n.ss-stage__l{font:800 15px/1.3 var(--font-heading);color:var(--accent)}\n.ss-stage__t{font:800 19px/1.3 var(--font-heading);color:var(--ink);text-transform:none;margin:0 0 6px}\n.ss-stage__p{font-size:15px;line-height:1.7;color:var(--body-text);margin:0}\n@media (max-width:640px){.ss-stage{grid-template-columns:minmax(0,1fr);gap:6px}}"
+}
