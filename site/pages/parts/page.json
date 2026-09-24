@@ -246,33 +246,6 @@
               ]
             }
           ]
-        },
-        {
-          "id": "parts-jump-row",
-          "type": "row",
-          "props": {
-            "gap": 5
-          },
-          "children": [
-            {
-              "id": "parts-jump-col",
-              "type": "column",
-              "props": {
-                "span": 12
-              },
-              "children": [
-                {
-                  "id": "parts-jump",
-                  "type": "menu",
-                  "props": {
-                    "menuId": "parts-topics",
-                    "layout": "horizontal",
-                    "depth": 1
-                  }
-                }
-              ]
-            }
-          ]
         }
       ]
     },
