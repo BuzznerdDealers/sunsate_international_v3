@@ -1,6 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
+import { clockText, displayRow } from './display-time.mjs';
 
 import {
   accepts,
@@ -3369,4 +3370,64 @@ test('a component bound to posts draws the build’s page, and the pager steps t
   assert.match(page2, /data-bz-posts-total="20"/, 'the pager carries the whole blog’s count');
   assert.equal(placesPaginatedPosts([doc.nodes]), true);
   assert.equal(placesPaginatedPosts([[doc.nodes[0]]]), true, 'the binding alone pages the page');
+});
+
+test('hours copy reads 12-hour, with no leading zero, whatever form it was baked in', () => {
+  assert.equal(clockText('07:00–17:00'), '7:00 AM – 5:00 PM');
+  assert.equal(clockText('Store: 07:00–16:00 Mon–Fri'), 'Store: 7:00 AM – 4:00 PM Mon–Fri');
+  assert.equal(
+    clockText('Parts: 07:00–17:00 Mon–Fri, 08:00–12:00 Sat'),
+    'Parts: 7:00 AM – 5:00 PM Mon–Fri, 8:00 AM – 12:00 PM Sat',
+  );
+  assert.equal(clockText('00:00 – 00:30'), '12:00 AM – 12:30 AM');
+  assert.equal(clockText('open until 19:00'), 'open until 7:00 PM');
+  // Already 12-hour, or not a time at all, is left exactly as it was.
+  assert.equal(clockText('7:00 AM – 5:00 PM'), '7:00 AM – 5:00 PM');
+  assert.equal(clockText('12:00 PM'), '12:00 PM');
+  assert.equal(clockText('Closed'), 'Closed');
+  assert.equal(clockText('2026-09-24T17:03:00Z'), '2026-09-24T17:03:00Z');
+});
+
+test('a baked location row shows 12-hour hours and keeps the raw HH:mm pair', () => {
+  const baked = {
+    slug: 'tampa',
+    hours: 'Store: 07:00–16:00 Mon–Fri',
+    hoursRows: [
+      {
+        summary: '07:00–16:00 Mon–Fri',
+        days: [{ day: 'Monday', hours: '07:00–16:00', opensAt: '07:00', closesAt: '16:00' }],
+      },
+    ],
+    departmentRows: [{ name: 'Store', hours: '07:00–16:00 Mon–Fri' }],
+  };
+  const [row] = resolveDataBinding({ source: 'locations' }, [baked]);
+  assert.equal(row.hours, 'Store: 7:00 AM – 4:00 PM Mon–Fri');
+  assert.equal(row.hoursRows[0].summary, '7:00 AM – 4:00 PM Mon–Fri');
+  assert.equal(row.hoursRows[0].days[0].hours, '7:00 AM – 4:00 PM');
+  assert.equal(row.hoursRows[0].days[0].opensAt, '07:00');
+  assert.equal(row.hoursRows[0].days[0].closesAt, '16:00');
+  assert.equal(row.departmentRows[0].hours, '7:00 AM – 4:00 PM Mon–Fri');
+  assert.equal(baked.hours, 'Store: 07:00–16:00 Mon–Fri', 'the baked document is not mutated');
+  const plain = { slug: 'x', name: 'Ogden' };
+  assert.equal(displayRow(plain), plain);
+});
+
+test('the hours widget draws 12-hour times from a 24-hour snapshot', () => {
+  const html = renderDocument(
+    {
+      nodes: [
+        {
+          id: 'h',
+          type: 'widget',
+          props: {
+            widget: 'hours',
+            snapshot: { schedules: [{ heading: 'Service', hours: [{ day: 'Monday', hours: '07:00–19:00' }] }] },
+          },
+        },
+      ],
+    },
+    CTX,
+  );
+  assert.match(html, /<td>7:00 AM – 7:00 PM<\/td>/);
+  assert.doesNotMatch(html, /07:00/);
 });
