@@ -405,7 +405,8 @@
                             "items": [
                               {
                                 "ctaId": "browse-trailers",
-                                "label": "View Dry Van Trailer Specifications"
+                                "label": "View Dry Van Trailer Specifications",
+                                "style": "primary"
                               }
                             ]
                           }
@@ -607,7 +608,8 @@
                             "items": [
                               {
                                 "ctaId": "browse-trailers",
-                                "label": "View Available Trailer Inventory"
+                                "label": "View Available Trailer Inventory",
+                                "style": "secondary"
                               }
                             ]
                           }
@@ -744,11 +746,13 @@
                             "items": [
                               {
                                 "ctaId": "browse-trailers",
-                                "label": "Explore Inventory"
+                                "label": "Explore Inventory",
+                                "style": "primary"
                               },
                               {
                                 "ctaId": "browse-trailers",
-                                "label": "Download Trailer Specifications"
+                                "label": "Download Trailer Specifications",
+                                "style": "secondary"
                               }
                             ]
                           }

@@ -507,7 +507,8 @@
                             "items": [
                               {
                                 "ctaId": "browse-trailers",
-                                "label": "Compare Dry Van Specs"
+                                "label": "Compare Dry Van Specs",
+                                "style": "primary"
                               }
                             ]
                           }
@@ -699,11 +700,13 @@
                             "items": [
                               {
                                 "ctaId": "browse-trailers",
-                                "label": "Explore Inventory"
+                                "label": "Explore Inventory",
+                                "style": "primary"
                               },
                               {
                                 "ctaId": "browse-trailers",
-                                "label": "Download Trailer Specifications"
+                                "label": "Download Trailer Specifications",
+                                "style": "secondary"
                               }
                             ]
                           }

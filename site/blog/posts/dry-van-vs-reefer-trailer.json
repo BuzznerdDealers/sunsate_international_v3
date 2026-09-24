@@ -568,11 +568,13 @@
                             "items": [
                               {
                                 "ctaId": "browse-new-trailers",
-                                "label": "Shop New Trailers"
+                                "label": "Shop New Trailers",
+                                "style": "primary"
                               },
                               {
                                 "ctaId": "browse-used-trailers",
-                                "label": "Used Trailers"
+                                "label": "Used Trailers",
+                                "style": "secondary"
                               }
                             ]
                           }

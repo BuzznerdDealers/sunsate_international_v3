@@ -440,8 +440,7 @@
                             "items": [
                               {
                                 "ctaId": "contact-us",
-                                "label": "Explore Available Trailers",
-                                "style": "link"
+                                "label": "Explore Available Trailers"
                               }
                             ]
                           }
@@ -641,12 +640,12 @@
                             "items": [
                               {
                                 "ctaId": "contact-us",
-                                "label": "Connect With Our Team",
-                                "style": "link"
+                                "label": "Connect With Our Team"
                               },
                               {
                                 "ctaId": "browse-trailers",
-                                "label": "Browse Trailer Inventory"
+                                "label": "Browse Trailer Inventory",
+                                "style": "secondary"
                               }
                             ]
                           }

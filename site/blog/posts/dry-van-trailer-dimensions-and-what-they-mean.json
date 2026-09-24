@@ -535,7 +535,8 @@
                             "items": [
                               {
                                 "ctaId": "browse-trailers",
-                                "label": "Explore Our Trailer Specifications"
+                                "label": "Explore Our Trailer Specifications",
+                                "style": "primary"
                               }
                             ]
                           }
@@ -664,11 +665,13 @@
                             "items": [
                               {
                                 "ctaId": "browse-new-trailers",
-                                "label": "New Trailers"
+                                "label": "New Trailers",
+                                "style": "primary"
                               },
                               {
                                 "ctaId": "browse-used-trailers",
-                                "label": "Used Trailers"
+                                "label": "Used Trailers",
+                                "style": "secondary"
                               }
                             ]
                           }
@@ -796,11 +799,13 @@
                             "items": [
                               {
                                 "ctaId": "browse-new-trailers",
-                                "label": "New Trailers"
+                                "label": "New Trailers",
+                                "style": "primary"
                               },
                               {
                                 "ctaId": "browse-used-trailers",
-                                "label": "Used Trailers"
+                                "label": "Used Trailers",
+                                "style": "secondary"
                               }
                             ]
                           }
