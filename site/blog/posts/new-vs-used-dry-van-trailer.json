@@ -1,0 +1,913 @@
+{
+  "slug": "new-vs-used-dry-van-trailer",
+  "title": "New vs Used Dry Van Trailer: What to Know",
+  "date": "2026-03-13",
+  "description": "Searching for new vs used dry van trailer? Compare costs, reliability, and ROI. Find the right fit and explore inventory today.",
+  "status": "published",
+  "coverImage": "/img/blog/new-vs-used-dry-van-trailer/hero.jpg",
+  "topic": "Trailer Sales",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Trailer Sales",
+          "title": "New vs Used Dry Van Trailer: What to Know",
+          "topic": "Trailer Sales",
+          "date": "March 13, 2026",
+          "readTime": "5 min read",
+          "author": "Sun State Trailers",
+          "image": {
+            "src": "/img/blog/new-vs-used-dry-van-trailer/hero.jpg",
+            "width": 1000,
+            "height": 667,
+            "alt": "Sun State team member and customer talking beside International trucks at the dealership"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "Key Differences",
+                        "href": "#key-differences"
+                      },
+                      {
+                        "label": "When Used Makes Sense",
+                        "href": "#used-makes-sense"
+                      },
+                      {
+                        "label": "When to Buy New",
+                        "href": "#new-makes-sense"
+                      },
+                      {
+                        "label": "Cost Breakdown",
+                        "href": "#cost-breakdown"
+                      },
+                      {
+                        "label": "How to Choose",
+                        "href": "#how-to-choose"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "READY TO DECIDE?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Compare real new and used inventory side by side.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-trailers",
+                                "label": "Explore Inventory →"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "If you're deciding between a new vs used dry van trailer, you're not alone. It's one of the most common questions for owner-operators and fleet managers looking to grow without unnecessary risk. At the end of the day, this decision comes down to more than price. It's about uptime, long-term costs, and making sure your investment supports your business, not slows it down.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At <a href=\"/locations/trailer-sales\">Sun State Trailers</a>, we work with drivers and fleet owners every day who are weighing these exact options. The goal isn't to push one over the other. It's to help you make a decision that keeps your trucks moving and your business profitable.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-understanding-role-1",
+                  "type": "text",
+                  "props": {
+                    "text": "A dry van trailer is one of the most versatile pieces of equipment in the industry. It's designed to haul non-perishable freight safely and efficiently, making it a go-to for industries ranging from retail to manufacturing. Because of that versatility, demand stays high, which is why it's important to choose the right trailer.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "understanding-role"
+                  }
+                },
+                {
+                  "id": "h-key-differences",
+                  "type": "heading",
+                  "props": {
+                    "text": "New vs Used Dry Van Trailer: Key Differences",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "key-differences"
+                  }
+                },
+                {
+                  "id": "diff-key-differences-1-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "diff-key-differences-1",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderTopWidth": 1,
+                          "borderLeftWidth": 0,
+                          "borderRightWidth": 0,
+                          "borderBottomWidth": 0,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 22,
+                          "paddingBottom": 22
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "diff-key-differences-1-h",
+                          "type": "heading",
+                          "props": {
+                            "text": "1. Upfront Cost vs Long-Term Value",
+                            "headingLevel": 3,
+                            "align": "left"
+                          }
+                        },
+                        {
+                          "id": "diff-key-differences-1-p1",
+                          "type": "text",
+                          "props": {
+                            "text": "A used dry van trailer is typically more affordable upfront. For newer owner-operators or smaller fleets, this can make it easier to expand without taking on heavy financing. But there's a tradeoff. A new dry van trailer comes with a higher initial cost, but you're getting:",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "diff-key-differences-1-list2",
+                          "type": "prose-list",
+                          "props": {
+                            "ordered": false,
+                            "items": [
+                              {
+                                "text": "Factory-fresh components"
+                              },
+                              {
+                                "text": "Warranty coverage"
+                              },
+                              {
+                                "text": "Lower risk of immediate repairs"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "diff-key-differences-2-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "diff-key-differences-2",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderTopWidth": 1,
+                          "borderLeftWidth": 0,
+                          "borderRightWidth": 0,
+                          "borderBottomWidth": 0,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 22,
+                          "paddingBottom": 22
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "diff-key-differences-2-h",
+                          "type": "heading",
+                          "props": {
+                            "text": "2. Maintenance and Downtime",
+                            "headingLevel": 3,
+                            "align": "left"
+                          }
+                        },
+                        {
+                          "id": "diff-key-differences-2-p1",
+                          "type": "text",
+                          "props": {
+                            "text": "This is where the difference becomes real. With a used dry van trailer, you need to account for:",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "diff-key-differences-2-list2",
+                          "type": "prose-list",
+                          "props": {
+                            "ordered": false,
+                            "items": [
+                              {
+                                "text": "Wear and tear from previous use"
+                              },
+                              {
+                                "text": "Potential repairs sooner than expected"
+                              },
+                              {
+                                "text": "Unknown maintenance history"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "id": "diff-key-differences-2-p3",
+                          "type": "text",
+                          "props": {
+                            "text": "A new dry van trailer gives you a clean starting point. That means fewer surprises and more predictable maintenance schedules. And in this industry, downtime costs more than repairs. Every hour your trailer isn't moving is lost revenue.",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "diff-key-differences-3-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "diff-key-differences-3",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderTopWidth": 1,
+                          "borderLeftWidth": 0,
+                          "borderRightWidth": 0,
+                          "borderBottomWidth": 0,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 22,
+                          "paddingBottom": 22
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "diff-key-differences-3-h",
+                          "type": "heading",
+                          "props": {
+                            "text": "3. Technology and Efficiency",
+                            "headingLevel": 3,
+                            "align": "left"
+                          }
+                        },
+                        {
+                          "id": "diff-key-differences-3-p1",
+                          "type": "text",
+                          "props": {
+                            "text": "Newer trailers are built with advancements that can directly impact your bottom line, including:",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "diff-key-differences-3-list2",
+                          "type": "prose-list",
+                          "props": {
+                            "ordered": false,
+                            "items": [
+                              {
+                                "text": "Improved aerodynamics for fuel efficiency"
+                              },
+                              {
+                                "text": "Lighter materials for higher payload capacity"
+                              },
+                              {
+                                "text": "Better braking and safety systems"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "id": "diff-key-differences-3-p3",
+                          "type": "text",
+                          "props": {
+                            "text": "If you're running a growing fleet, these improvements can add up quickly. That said, a well-maintained used dry van trailer can still perform reliably.",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "co-key-differences-4-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-key-differences-4",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 28,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-key-differences-4-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-trailers",
+                                "label": "Explore Your Options →"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/new-vs-used-dry-van-trailer/1.jpg",
+                      "width": 1000,
+                      "height": 667,
+                      "alt": "Row of dry van trailers side by side at Sun State Trailers showing condition differences"
+                    }
+                  }
+                },
+                {
+                  "id": "h-used-makes-sense",
+                  "type": "heading",
+                  "props": {
+                    "text": "When a Used Dry Van Trailer Makes Sense",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "used-makes-sense"
+                  }
+                },
+                {
+                  "id": "p-used-makes-sense-1",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>A used dry van trailer can be the right choice if:</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-used-makes-sense-2",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "You're expanding quickly and need to manage cash flow"
+                      },
+                      {
+                        "text": "You've found a well-maintained unit"
+                      },
+                      {
+                        "text": "Your routes are shorter or less demanding"
+                      },
+                      {
+                        "text": "You're looking for a backup trailer to support your fleet"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-used-makes-sense-3",
+                  "type": "text",
+                  "props": {
+                    "text": "The key is knowing what you're buying. At Sun State Trailers, we're here to help you find the right trailer so you're not taking unnecessary risks. Because at the end of the day, saving money upfront shouldn't cost you more later.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-new-makes-sense",
+                  "type": "heading",
+                  "props": {
+                    "text": "When to Buy a New Dry Van Trailer",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "new-makes-sense"
+                  }
+                },
+                {
+                  "id": "p-new-makes-sense-1",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>A new dry van trailer for sale is often the better fit if:</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-new-makes-sense-2",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "You prioritize reliability and uptime"
+                      },
+                      {
+                        "text": "You're running long-haul routes"
+                      },
+                      {
+                        "text": "You want predictable maintenance costs"
+                      },
+                      {
+                        "text": "You're investing in long-term growth"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-new-makes-sense-3",
+                  "type": "text",
+                  "props": {
+                    "text": "A new trailer supports that by reducing risk and giving you confidence on every load.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-2",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/new-vs-used-dry-van-trailer/2.jpg",
+                      "width": 1000,
+                      "height": 667,
+                      "alt": "Lineup of Hyundai Translead dry van trailers ready for purchase and delivery at Sun State Trailers"
+                    }
+                  }
+                },
+                {
+                  "id": "h-cost-breakdown",
+                  "type": "heading",
+                  "props": {
+                    "text": "Cost Breakdown: What You're Really Paying For",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "cost-breakdown"
+                  }
+                },
+                {
+                  "id": "p-cost-breakdown-1",
+                  "type": "text",
+                  "props": {
+                    "text": "When comparing new vs used dry van trailer options, it helps to look beyond the sticker price.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-cost-breakdown-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "type",
+                    "items": [
+                      {
+                        "title": "New Trailer Costs",
+                        "points": [
+                          {
+                            "text": "Higher upfront investment"
+                          },
+                          {
+                            "text": "Lower early maintenance costs"
+                          },
+                          {
+                            "text": "Warranty protection"
+                          },
+                          {
+                            "text": "Better fuel efficiency over time"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Used Trailer Costs",
+                        "points": [
+                          {
+                            "text": "Lower initial price"
+                          },
+                          {
+                            "text": "Higher potential maintenance costs"
+                          },
+                          {
+                            "text": "Shorter remaining lifespan"
+                          },
+                          {
+                            "text": "Possible downtime if issues arise"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-cost-breakdown-3",
+                  "type": "text",
+                  "props": {
+                    "text": "If your business depends on tight schedules and consistent delivery, reliability often outweighs initial savings. If you're currently weighing your options, it helps to see what's actually available. Looking at real inventory and specs makes it easier to compare features, pricing, and availability side by side.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "links-cost-breakdown-4-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "links-cost-breakdown-4",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "links-cost-breakdown-4-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-trailers",
+                                "label": "Explore Inventory"
+                              },
+                              {
+                                "ctaId": "browse-trailers",
+                                "label": "Download Trailer Specifications"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-how-to-choose",
+                  "type": "heading",
+                  "props": {
+                    "text": "How to Choose the Right Dry Van Trailer for Your Business",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "how-to-choose"
+                  }
+                },
+                {
+                  "id": "p-how-to-choose-1",
+                  "type": "text",
+                  "props": {
+                    "text": "There's no one-size-fits-all answer. The right choice depends on your operation.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-how-to-choose-2",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Ask yourself:</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-how-to-choose-3",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "How often will this trailer be used?"
+                      },
+                      {
+                        "text": "What kind of routes am I running?"
+                      },
+                      {
+                        "text": "Can I afford unexpected downtime?"
+                      },
+                      {
+                        "text": "Am I focused on short-term savings or long-term ROI?"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-how-to-choose-4",
+                  "type": "text",
+                  "props": {
+                    "text": "For many owner-operators, it comes down to balancing risk and reward. If you're trying to buy a semi-trailer that will support steady growth, reliability becomes a bigger priority.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-3",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/new-vs-used-dry-van-trailer/3.jpg",
+                      "width": 1000,
+                      "height": 667,
+                      "alt": "Sun State Leasing and Rental branding on the corner of a Hyundai Translead dry van trailer"
+                    }
+                  }
+                },
+                {
+                  "id": "p-wrap-up-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Choosing between a new vs used dry van trailer comes down to your priorities. If you're focused on lower upfront costs and flexibility, a used trailer can be a smart move. If you're focused on reliability, efficiency, and long-term performance, a new trailer is often the better investment. Either way, the goal stays the same: keep your business moving without unnecessary setbacks. Ready to find the right fit for your operation? <a href=\"/locations/trailer-sales\">Sun State Trailers</a> is here to help you make a decision that supports your business today and keeps it running strong tomorrow.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "wrap-up"
+                  }
+                },
+                {
+                  "id": "links-wrap-up-2-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "links-wrap-up-2",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "marginTop": 40,
+                          "marginBottom": 8
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "links-wrap-up-2-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-trailers",
+                                "label": "Explore Our Dry Van Inventory"
+                              },
+                              {
+                                "ctaId": "browse-trailers",
+                                "label": "Compare Trailer Specifications"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Trailer sales",
+          "heading": "Find the right fit for your fleet.",
+          "body": "Call 800.741.7566 to compare new and used dry van trailers at any Sun State location in Florida.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Browse trailer inventory",
+          "secondaryUrl": "/store/inventory?type=trailer"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/new-vs-used-dry-van-trailer\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/new-vs-used-dry-van-trailer\"])) > .bz-card:nth-child(n+4) { display: none; }\n"
+}

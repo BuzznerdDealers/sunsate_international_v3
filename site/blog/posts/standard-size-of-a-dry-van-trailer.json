@@ -1,0 +1,791 @@
+{
+  "slug": "standard-size-of-a-dry-van-trailer",
+  "title": "What is the Standard Size of a Dry Van Trailer?",
+  "date": "2026-03-06",
+  "description": "Questions about the standard size of a dry van trailer? Learn 53 ft, 48 ft, and 28 ft dry van specs, and find the right trailer today.",
+  "status": "published",
+  "coverImage": "/img/blog/standard-size-of-a-dry-van-trailer/hero.jpg",
+  "topic": "Trailer Sales",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Trailer Sales",
+          "title": "What is the Standard Size of a Dry Van Trailer?",
+          "topic": "Trailer Sales",
+          "date": "March 6, 2026",
+          "readTime": "7 min read",
+          "author": "Sun State Trailers",
+          "image": {
+            "src": "/img/blog/standard-size-of-a-dry-van-trailer/hero.jpg",
+            "width": 1000,
+            "height": 667,
+            "alt": "Sun State technician working on trailer components beneath a dry van trailer in the service bay"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "The 53 ft Standard",
+                        "href": "#standard-size"
+                      },
+                      {
+                        "label": "Why 53 ft Is So Common",
+                        "href": "#why-53ft"
+                      },
+                      {
+                        "label": "When 48 ft Makes Sense",
+                        "href": "#48ft"
+                      },
+                      {
+                        "label": "The Role of 28 ft Trailers",
+                        "href": "#28ft"
+                      },
+                      {
+                        "label": "How to Choose",
+                        "href": "#choosing-size"
+                      },
+                      {
+                        "label": "Sizes at a Glance",
+                        "href": "#at-a-glance"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "NOT SURE WHICH SIZE?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "We help fleets match trailer size to routes and freight type.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-trailers",
+                                "label": "Explore Inventory →"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Dry van trailers are the backbone of the freight industry. From consumer goods and retail shipments to industrial supplies, they move a significant portion of the country's cargo every day. If you're expanding your fleet or starting a trucking operation, you may be wondering about the standard size of a dry van trailer and which option makes the most sense for your routes and freight.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "h-standard-size",
+                  "type": "heading",
+                  "props": {
+                    "text": "The Standard Size of a Dry Van Trailer",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "standard-size"
+                  }
+                },
+                {
+                  "id": "p-standard-size-1",
+                  "type": "text",
+                  "props": {
+                    "text": "When people talk about the standard size of a dry van trailer, they're usually referring to the 53 ft dry van trailer. This size has become the industry standard for long-haul freight because it offers the best balance between cargo capacity and road regulations.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-standard-size-2",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>A typical 53 ft dry van trailer offers:</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-standard-size-3",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "53 feet"
+                      },
+                      {
+                        "text": "About 100–102 inches"
+                      },
+                      {
+                        "text": "Roughly 110 inches"
+                      },
+                      {
+                        "text": "Up to 45,000 pounds, depending on configuration"
+                      },
+                      {
+                        "text": "Generally around 26 standard pallets"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-standard-size-4",
+                  "type": "text",
+                  "props": {
+                    "text": "The extra length compared to smaller trailers allows carriers to move more freight per trip, which can significantly improve revenue and reduce cost per mile. For many owner-operators, investing in a 53 ft dry van trailer for sale is one of the most practical decisions when building or expanding a freight operation.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-standard-size-5-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-standard-size-5",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-standard-size-5-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-trailers",
+                                "label": "Explore Our New Trailer Options →"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-why-53ft",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why are 53 ft Dry Van Trailers so Common?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "why-53ft"
+                  }
+                },
+                {
+                  "id": "p-why-53ft-1",
+                  "type": "text",
+                  "props": {
+                    "text": "The reason the 53 ft dry van trailer became the industry standard is simple: efficiency. Long-haul trucking companies and independent operators need equipment that maximizes capacity while staying compliant with federal highway regulations. The 53-foot design does exactly that.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-why-53ft-2",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Advantages of a 53 ft dry van trailer include:</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "features-why-53ft-3",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 2,
+                    "columns": 2,
+                    "items": [
+                      {
+                        "label": "Higher Cargo Volume",
+                        "desc": "More space means you can haul more freight in a single trip."
+                      },
+                      {
+                        "label": "Better Revenue Potential",
+                        "desc": "With more pallet capacity, each load can generate higher income."
+                      },
+                      {
+                        "label": "Versatility Across Industries",
+                        "desc": "Retail goods, packaged foods, furniture, electronics, and manufacturing supplies all move in dry vans."
+                      },
+                      {
+                        "label": "Wide Industry Acceptance",
+                        "desc": "Most shippers and distribution centers are built to accommodate 53-foot trailers."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-why-53ft-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Because of these advantages, many businesses searching for a 53 ft dry van trailer for sale are looking for equipment that will remain useful for years to come.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/standard-size-of-a-dry-van-trailer/1.jpg",
+                      "width": 1000,
+                      "height": 667,
+                      "alt": "Sun State service bay with a dry van trailer and fire trucks in for maintenance"
+                    }
+                  }
+                },
+                {
+                  "id": "h-48ft",
+                  "type": "heading",
+                  "props": {
+                    "text": "When 48 ft Dry Van Trailers Make Sense",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "48ft"
+                  }
+                },
+                {
+                  "id": "p-48ft-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Before the 53-foot model became dominant, the 48 ft dry van trailer was considered the industry standard. While they're less common today, 48 ft dry van trailers for sale still serve an important role in certain operations.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-48ft-2",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>A 48 ft dry van trailer typically provides:</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-48ft-3",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Cargo space for about 24 pallets"
+                      },
+                      {
+                        "text": "Easier maneuverability in tight urban areas"
+                      },
+                      {
+                        "text": "Slightly lighter overall weight compared to longer trailers"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-48ft-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Many regional fleets and businesses operating in cities prefer this size because it can be easier to handle in tighter loading docks or congested routes. If your operation focuses on regional deliveries rather than long-haul freight, a 48 ft dry van trailer can still be a practical and dependable option.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-28ft",
+                  "type": "heading",
+                  "props": {
+                    "text": "The Role of 28 ft Dry Van Trailers",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "28ft"
+                  }
+                },
+                {
+                  "id": "p-28ft-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At the other end of the spectrum is the 28 ft dry van trailer, often called a pup trailer. You'll most commonly see these in less-than-truckload (LTL) freight operations where flexibility and efficiency are essential.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-28ft-2",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Typical uses for a 28 ft dry van trailer for sale include:</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-28ft-3",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "LTL shipping operations"
+                      },
+                      {
+                        "text": "Double trailer configurations"
+                      },
+                      {
+                        "text": "Short regional deliveries"
+                      },
+                      {
+                        "text": "Hub-and-spoke distribution networks"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-28ft-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Because two 28-foot trailers can be pulled in tandem in certain situations, they offer flexibility that larger trailers cannot. For carriers that handle multiple small shipments instead of full truckloads, 28 ft dry van trailers can be an important part of a fleet.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-2",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/standard-size-of-a-dry-van-trailer/2.jpg",
+                      "width": 1000,
+                      "height": 667,
+                      "alt": "Sun State service bay doors with vehicles in for maintenance"
+                    }
+                  }
+                },
+                {
+                  "id": "h-choosing-size",
+                  "type": "heading",
+                  "props": {
+                    "text": "How to Choose the Right Dry Van Trailer Size",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "choosing-size"
+                  }
+                },
+                {
+                  "id": "p-choosing-size-1",
+                  "type": "text",
+                  "props": {
+                    "text": "When deciding between trailer sizes, it's important to look beyond the specs and think about your day-to-day operation.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-choosing-size-2",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Here are a few factors to consider:</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "features-choosing-size-3",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 2,
+                    "columns": 2,
+                    "items": [
+                      {
+                        "label": "Freight Type",
+                        "desc": "Different cargo types require different trailer capacities. If your loads typically fill an entire trailer, a 53 ft dry van trailer could be the best choice."
+                      },
+                      {
+                        "label": "Route Type",
+                        "desc": "If you're primarily driving urban routes, you may prefer a more maneuverable option like a 48 ft trailer, while 53 ft models are better for long highway routes."
+                      },
+                      {
+                        "label": "Business Growth",
+                        "desc": "Choosing a trailer size that supports future contracts can help avoid costly upgrades later."
+                      },
+                      {
+                        "label": "Budget and Availability",
+                        "desc": "Depending on your needs, used trailer options may be a practical way to expand capacity without high upfront costs."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-choosing-size-4",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State Trailers, we work with customers to evaluate these factors so they can invest in equipment that truly supports their business.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-at-a-glance",
+                  "type": "heading",
+                  "props": {
+                    "text": "Differences Between 53ft, 48ft, and 28ft Trailers At A Glance",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "at-a-glance"
+                  }
+                },
+                {
+                  "id": "compare-at-a-glance-1",
+                  "type": "compare-table",
+                  "props": {
+                    "headA": "Feature",
+                    "headB": "53 ft",
+                    "headC": "48 ft",
+                    "headD": "28 ft",
+                    "rows": [
+                      {
+                        "a": "Length",
+                        "b": "53 feet",
+                        "c": "48 feet",
+                        "d": "28 feet"
+                      },
+                      {
+                        "a": "Pallet Capacity",
+                        "b": "~26 pallets",
+                        "c": "~24 pallets",
+                        "d": "~14 pallets"
+                      },
+                      {
+                        "a": "Cargo Capacity",
+                        "b": "Up to ~45,000 lbs",
+                        "c": "Slightly less than 53 ft",
+                        "d": "Lower capacity"
+                      },
+                      {
+                        "a": "Best Use",
+                        "b": "Long-haul, high-volume loads",
+                        "c": "Regional routes, tighter spaces",
+                        "d": "LTL freight, short hauls"
+                      },
+                      {
+                        "a": "Maneuverability",
+                        "b": "Moderate",
+                        "c": "Easier than 53 ft",
+                        "d": "Highest"
+                      },
+                      {
+                        "a": "Common Industries",
+                        "b": "Retail, manufacturing, distribution",
+                        "c": "Regional delivery, mixed freight",
+                        "d": "LTL, parcel, hub-and-spoke"
+                      },
+                      {
+                        "a": "Availability",
+                        "b": "Most common",
+                        "c": "Moderately available",
+                        "d": "Specialized use"
+                      },
+                      {
+                        "a": "ROI Potential",
+                        "b": "Highest for full loads",
+                        "c": "Strong for regional ops",
+                        "d": "Best for flexible loads"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-at-a-glance-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Understanding the standard size of a dry van trailer is an important first step, but choosing the right equipment ultimately comes down to how your business operates. For most long-haul operations, the 53 ft dry van trailer continues to be the industry's preferred option because of its capacity and versatility. However, 48 ft and 28 ft dry van trailers still play an important role in specialized freight operations.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-at-a-glance-3",
+                  "type": "text",
+                  "props": {
+                    "text": "The key is working with a dealership that understands the trucking industry and can help you choose equipment that fits your goals. At <a href=\"/locations/trailer-sales\">Sun State Trailers</a>, we're committed to providing straightforward guidance and dependable equipment so you can keep your business moving forward.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-3",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/standard-size-of-a-dry-van-trailer/3.jpg",
+                      "width": 1000,
+                      "height": 667,
+                      "alt": "Row of dry van trailers parked at Sun State Trailers dealership lot"
+                    }
+                  }
+                },
+                {
+                  "id": "p-ready-to-find-1",
+                  "type": "text",
+                  "props": {
+                    "text": "If you're searching for a 53 ft dry van trailer for sale, exploring 48 ft dry van trailers for sale, or considering a 28 ft dry van trailer for sale, the team at Sun State Trailers is here to help. Browse available equipment or speak with a local trailer specialist today. The right trailer can make a major difference in the efficiency and profitability of your fleet.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "ready-to-find"
+                  }
+                },
+                {
+                  "id": "links-ready-to-find-2-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "links-ready-to-find-2",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "marginTop": 40,
+                          "marginBottom": 8
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "links-ready-to-find-2-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-new-trailers",
+                                "label": "New Trailers"
+                              },
+                              {
+                                "ctaId": "browse-used-trailers",
+                                "label": "Used Trailers"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Trailer sales",
+          "heading": "Find the right size for your fleet.",
+          "body": "Call 800.741.7566 to talk with our team about 53 ft, 48 ft and 28 ft dry van options at any Sun State location in Florida.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Browse trailer inventory",
+          "secondaryUrl": "/store/inventory?type=trailer"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/standard-size-of-a-dry-van-trailer\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/standard-size-of-a-dry-van-trailer\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n[data-bz-node=\"art-body\"] .bz-block--list .bz-feature { padding: 22px; }\n\n/* Its comparison is ruled in ink under sentence-case headings, with roomier cells. */\n[data-bz-node=\"art-body\"] .ss-cmp { margin-bottom: 20px; }\n[data-bz-node=\"art-body\"] .ss-cmp thead th { letter-spacing: .1em; text-transform: none; border-bottom: 2px solid var(--ink); }\n[data-bz-node=\"art-body\"] .ss-cmp tbody th,\n[data-bz-node=\"art-body\"] .ss-cmp td { padding: 14px; font-size: 15px; line-height: 1.3; }\n[data-bz-node=\"art-body\"] .ss-cmp tbody th { width: auto; }\n@media (max-width: 640px) { [data-bz-node=\"art-body\"] .ss-cmp th, [data-bz-node=\"art-body\"] .ss-cmp td { font-size: 13px; } }\n"
+}

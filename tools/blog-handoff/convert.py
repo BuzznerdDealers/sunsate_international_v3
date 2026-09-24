@@ -55,7 +55,7 @@ INTENT = {
 # and on this site trailer inventory is the platform storefront.
 DC_PAGES = {
     "Home.dc.html": "/", "Blog.dc.html": "/blog", "Contact Us.dc.html": "/contact",
-    "Financing.dc.html": "/financing",
+    "Financing.dc.html": "/financing", "Service Appointment.dc.html": "/service-appointment",
     # No trailer-specifications page exists on this site; each listing carries its specs.
     "Trailer Specifications.dc.html": "/store/inventory?type=trailer",
 }
@@ -267,7 +267,7 @@ ID_ALIASES = {
     },
 }
 
-RUNS = {"stage-row": "stages", "problem-card": "stacked", "repair-card": "inline", "step-row": "steps", "faq-item": "qa"}
+RUNS = {"stage-row": "stages", "cost-card": "cost", "diff-row": "diff", "problem-card": "stacked", "repair-card": "inline", "step-row": "steps", "faq-item": "qa"}
 
 
 def detail_card(card):
@@ -349,7 +349,8 @@ def convert(path):
     for x in [x for x in body.children if isinstance(x, Tag)]:
         kids = [k for k in x.children if isinstance(k, Tag)]
         # A plain wrapper around a run of stage rows is the run itself.
-        if x.name == "div" and not x.get("class") and kids and all("stage-row" in k.get("class", []) for k in kids):
+        if x.name == "div" and not x.get("class") and kids and (
+                all("stage-row" in k.get("class", []) for k in kids) or all("faq-item" in k.get("class", []) for k in kids)):
             flat.extend(kids)
         else:
             flat.append(x)
@@ -366,6 +367,31 @@ def convert(path):
             kind, els = el
             if RUNS[kind] in ("stacked", "inline"):
                 out.append(n(nid("details"), "detail-cards", {"variant": RUNS[kind], "items": [detail_card(x) for x in els]}))
+            elif RUNS[kind] == "cost":
+                # Cost cards, one per row: title, sentence, list, a closing note — Card lists.
+                items = []
+                for x in els:
+                    it = {"title": "", "points": []}
+                    for y in [y for y in x.children if isinstance(y, Tag)]:
+                        if y.name == "h3": it["title"] = plain(y)
+                        elif y.name == "p" and not it["points"]: it["intro"] = inline_html(y)
+                        elif y.name == "ul": it["points"] = [{"text": inline_html(li)} for li in y.find_all("li")]
+                        elif y.name == "p": it["outro"] = plain(y)
+                        else: raise SystemExit(f"cost card child <{y.name}>")
+                    items.append(it)
+                out.append(n(nid("cards"), "card-lists", {"variant": "cost", "items": items}))
+            elif RUNS[kind] == "diff":
+                # Ruled sections (heading, text, list), one after another: real blocks in a column
+                # ruled across the top by node styles, so the prose stays editable.
+                for x in els:
+                    cid = nid("diff"); kids = []
+                    for j, y in enumerate([y for y in x.children if isinstance(y, Tag)]):
+                        if y.name == "h3": kids.append(n(f"{cid}-h", "heading", {"text": plain(y), "headingLevel": 3, "align": "left"}))
+                        elif y.name == "p": kids.append(text(f"{cid}-p{j}", inline_html(y)))
+                        elif y.name in ("ul", "ol"): kids.append(n(f"{cid}-list{j}", "prose-list", {"ordered": y.name == "ol", "items": [{"text": inline_html(li)} for li in y.find_all("li", recursive=False)]}))
+                        else: raise SystemExit(f"diff row child <{y.name}>")
+                    out.append(row(f"{cid}-row", [col(cid, kids, styles={"borderTopWidth": 1, "borderLeftWidth": 0, "borderRightWidth": 0,
+                        "borderBottomWidth": 0, "borderStyle": "solid", "borderColor": "line", "paddingTop": 22, "paddingBottom": 22})]))
             elif RUNS[kind] == "stages":
                 items = []
                 for x in els:
@@ -381,6 +407,12 @@ def convert(path):
                     items.append({"num": num, "title": plain(inner.find("h3")), "text": plain(inner.find("p"))})
                 out.append(n(nid("steps"), "step-list", {"items": items}))
             else:
+                if re.search(r"\.faq-item\s*\{[^}]*border-top", own_style):
+                    extra_css.append("/* Its questions are ruled above each, and closed off below the last. */\n"
+                                     '[data-bz-node="art-body"] .ss-qa { margin-bottom: 20px; }\n'
+                                     '[data-bz-node="art-body"] .ss-qa__i { border-bottom: 0; border-top: 1px solid var(--line); }\n'
+                                     '[data-bz-node="art-body"] .ss-qa__i:last-child { border-bottom: 1px solid var(--line); }\n'
+                                     '[data-bz-node="art-body"] .ss-qa__a { font-size: 15px; }')
                 out.append(n(nid("questions"), "qa-list", {"items": [{"q": plain(x.find("h3")), "a": plain(x.find("p"))} for x in els]}))
             continue
         st = el.get("style", "")
@@ -449,11 +481,12 @@ def convert(path):
                 {"label": plain(tr.find_all("td")[0]), "text": plain(tr.find_all("td")[1])} for tr in el.select("tr")]}))
         elif el.name == "table" and "compare-table" in cls:
             heads = [plain(th) for th in el.select("thead th")]
-            assert len(heads) == 3, heads
+            assert len(heads) in (3, 4), heads
             rows = [[plain(td) for td in tr.find_all("td")] for tr in el.select("tbody tr")]
-            assert all(len(r) == 3 for r in rows), rows
-            out.append(n(nid("compare"), "compare-table", {"headA": heads[0], "headB": heads[1], "headC": heads[2],
-                                                          "rows": [{"a": a, "b": b, "c": c} for a, b, c in rows]}))
+            assert all(len(r) == len(heads) for r in rows), rows
+            keys = "abcd"
+            out.append(n(nid("compare"), "compare-table", {**{f"head{k.upper()}": h for k, h in zip(keys, heads)},
+                                                          "rows": [dict(zip(keys, r)) for r in rows]}))
         elif el.name == "div" and el.get("id") == "post-answer":
             # The answer-engine block: an accent-ruled panel, same ids as the post has always used.
             label, p = [x for x in el.children if isinstance(x, Tag)]
@@ -491,14 +524,30 @@ def convert(path):
         elif el.name == "div" and el.find("div", class_=["type-card", "option-card"], recursive=False):
             # Titled cards: a sentence, a bold lead-in or a BEST FOR label, then a list — Card lists.
             cards = el.find_all("div", class_=["type-card", "option-card"], recursive=False)
-            variant = "option" if "option-card" in cards[0].get("class", []) else "type"
+            if any(len(card.find_all("ul", recursive=False)) > 1 for card in cards):
+                # A card holding two labelled lists ("Benefits" / "Ideal for") nests deeper than a
+                # list widget allows: real blocks in bordered columns instead, one per card.
+                cid = nid("cards"); cols = []
+                for i, card in enumerate(cards):
+                    kids = []
+                    for j, y in enumerate([y for y in card.children if isinstance(y, Tag)]):
+                        if y.name == "h3": kids.append(n(f"{cid}-{i+1}-h", "heading", {"text": plain(y), "headingLevel": 3, "align": "left"}))
+                        elif y.name == "p": kids.append(text(f"{cid}-{i+1}-l{j}", plain(y), styles={"fontSize": 13, "fontWeight": "700", "letterSpacing": 1,
+                                                        "textTransform": "uppercase", "textColor": "ink", "marginTop": 10, "marginBottom": 6}))
+                        elif y.name == "ul": kids.append(n(f"{cid}-{i+1}-list{j}", "prose-list", {"ordered": False, "items": [{"text": inline_html(li)} for li in y.find_all("li")]}))
+                        else: raise SystemExit(f"card child <{y.name}>")
+                    cols.append(col(f"{cid}-{i+1}", kids, span=12 // len(cards), styles={**BOX, "paddingTop": 24, "paddingRight": 24, "paddingBottom": 24, "paddingLeft": 24}))
+                out.append(row(cid, cols, gap=4, styles={"marginBottom": 20}))
+                continue
+            variant = "option" if "option-card" in cards[0].get("class", []) else ("type3" if "grid-3" in cls else "type")
             items = []
             for card in cards:
                 it = {"title": "", "points": []}
                 for x in [x for x in card.children if isinstance(x, Tag)]:
                     if x.name == "h3": it["title"] = plain(x)
-                    elif x.name == "p" and "intro" not in it and not (x.get("style") and "font-weight: 700" in x["style"]): it["intro"] = inline_html(x)
+                    elif x.name == "p" and "intro" not in it and not it["points"] and not (x.get("style") and "font-weight: 700" in x["style"]): it["intro"] = inline_html(x)
                     elif x.name in ("p", "div") and not it["points"]: it["lead"] = plain(x)
+                    elif x.name == "p" and it["points"]: it["outro"] = plain(x)
                     elif x.name == "ul": it["points"] = [{"text": inline_html(li)} for li in x.find_all("li")]
                     else: raise SystemExit(f"card child <{x.name}>")
                 items.append(it)
@@ -506,6 +555,21 @@ def convert(path):
             if variant == "type" and re.search(r"\.type-card ul li\s*\{\s*font-size:\s*14px", own_style):
                 extra_css.append('[data-bz-node="art-body"] .ss-cl--type .ss-cl__list { margin: 0; }\n'
                                  '[data-bz-node="art-body"] .ss-cl--type .ss-cl__list li { font-size: 14px; }')
+        elif el.name == "div" and ("num-card" in cls or el.find("div", class_="num-card", recursive=False)):
+            # A large number over a title and a sentence or list: Card lists, numbered — two
+            # across in a grid, full width when a card stands alone.
+            cards = [el] if "num-card" in cls else el.find_all("div", class_="num-card", recursive=False)
+            items = []
+            for card in cards:
+                it = {"points": []}
+                for y in [y for y in card.children if isinstance(y, Tag)]:
+                    if "n" in y.get("class", []): it["num"] = plain(y)
+                    elif y.name == "h3": it["title"] = plain(y)
+                    elif y.name == "p": it["intro"] = inline_html(y)
+                    elif y.name == "ul": it["points"] = [{"text": inline_html(li)} for li in y.find_all("li")]
+                    else: raise SystemExit(f"number card child <{y.name}>")
+                items.append(it)
+            out.append(n(nid("cards"), "card-lists", {"variant": "num-wide" if "num-card" in cls else "num", "items": items}))
         elif el.name == "div" and el.find("div", class_="reason-card", recursive=False) and all(
                 [x.name for x in card.children if isinstance(x, Tag)] == ["h3", "p"]
                 for card in el.find_all("div", class_="reason-card", recursive=False)):
@@ -751,6 +815,11 @@ POST_CSS = {
     "common-problems-with-air-brake-parts-for-semi-trucks":
         "\n/* This article's lists run at a looser 1.8 leading than the other posts'. */\n"
         '[data-bz-node="art-body"] .ss-prose-list li { line-height: 1.8; }\n',
+    "dry-van-trailer-specifications-explained-simply":
+        "\n/* Its type cards set their sentences small, and their lists at 14px. */\n"
+        '[data-bz-node="art-body"] .ss-cl--type3 .ss-cl__p { font-size: 13px; line-height: 1.8; letter-spacing: .04em; margin: 0 0 6px; }\n'
+        '[data-bz-node="art-body"] .bz-col .ss-prose-list { padding-left: 18px; }\n'
+        '[data-bz-node="art-body"] .bz-col .ss-prose-list li { font-size: 14px; }\n',
     "semi-truck-maintenance-mistakes-that-cost-fleets-thousands":
         "\n/* This article sets its headings a step smaller and closer, to suit seven numbered ones. */\n"
         '[data-bz-node="art-body"] > .bz-block--heading h2,\n'
