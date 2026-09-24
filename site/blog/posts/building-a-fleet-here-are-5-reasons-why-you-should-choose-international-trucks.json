@@ -1,0 +1,926 @@
+{
+  "slug": "building-a-fleet-here-are-5-reasons-why-you-should-choose-international-trucks",
+  "title": "Building a Fleet? Here are 5 Reasons Why You Should Choose International Trucks",
+  "date": "2025-04-30",
+  "description": "The best businesses use only the most reliable equipment. Here’s why you should choose International Trucks to build your fleet.",
+  "status": "published",
+  "coverImage": "/img/blog/building-a-fleet-here-are-5-reasons-why-you-should-choose-international-trucks/hero.jpg",
+  "topic": "Sales",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Sales",
+          "title": "Building a Fleet? Here are 5 Reasons Why You Should Choose International Trucks",
+          "topic": "Sales",
+          "date": "Apr 30, 2025",
+          "readTime": "4 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/building-a-fleet-here-are-5-reasons-why-you-should-choose-international-trucks/hero.jpg",
+            "width": 1000,
+            "height": 667,
+            "alt": "Sun State sales rep reviewing a clipboard with a customer beside a row of International trucks"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "Performance and Longevity",
+                        "href": "#performance"
+                      },
+                      {
+                        "label": "Advanced Technology",
+                        "href": "#technology"
+                      },
+                      {
+                        "label": "Support and Service Network",
+                        "href": "#support"
+                      },
+                      {
+                        "label": "Financing and Leasing",
+                        "href": "#financing"
+                      },
+                      {
+                        "label": "Customer Satisfaction",
+                        "href": "#satisfaction"
+                      },
+                      {
+                        "label": "A Brand with Proven Trust",
+                        "href": "#trust"
+                      },
+                      {
+                        "label": "Ready to Build Your Fleet?",
+                        "href": "#ready"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "BUILDING A FLEET?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Browse new and used International trucks across our Florida locations.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-new-trucks",
+                                "label": "See Our Inventory →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "If you’re building a fleet, choosing the right trucks is one of the most important decisions you’ll make. At <a href=\"/\">Sun State International</a>, we believe International Trucks offer the ideal combination of durability, innovation, and long-term value for businesses across Florida and beyond. Whether you’re launching a new operation or expanding an existing one, here are five compelling reasons why International Trucks should be at the heart of your fleet strategy.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "nh-performance",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "styles": {
+                    "base": {
+                      "display": "flex",
+                      "alignItems": "baseline",
+                      "marginTop": 52,
+                      "marginBottom": 16
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "nh-performance-lead",
+                      "type": "column",
+                      "props": {
+                        "span": 1
+                      },
+                      "styles": {
+                        "base": {
+                          "flexShrink": 0,
+                          "marginRight": 16
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "nh-performance-index",
+                          "type": "text",
+                          "props": {
+                            "text": "01",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 13,
+                              "fontWeight": "700",
+                              "letterSpacing": 2,
+                              "lineHeight": 1,
+                              "textColor": "accent"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "nh-performance-col",
+                      "type": "column",
+                      "props": {
+                        "span": 11
+                      },
+                      "styles": {
+                        "base": {
+                          "flexGrow": 1
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "h-performance",
+                          "type": "heading",
+                          "props": {
+                            "text": "Built for Performance and Longevity",
+                            "headingLevel": 2,
+                            "align": "left",
+                            "anchor": "performance"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "p-performance-1",
+                  "type": "text",
+                  "props": {
+                    "text": "International Trucks are engineered to handle the toughest jobs across industries—from long-haul freight to construction, waste management, and final-mile delivery. Models like the LT® Series are designed with both power and efficiency in mind, offering advanced aerodynamics and a bold, durable interior that stands up to daily wear and tear. The HX® Series, built for heavy-duty applications, features a rugged structure and enhanced comfort, ensuring drivers can perform at their best even in demanding conditions.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-performance-2",
+                  "type": "text",
+                  "props": {
+                    "text": "With International Trucks, you’re investing in vehicles that are built to last, reducing the need for frequent replacements and keeping your fleet on the road longer. This kind of longevity means fewer disruptions, improved ROI, and a stronger foundation for your growing business.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "nh-technology",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "styles": {
+                    "base": {
+                      "display": "flex",
+                      "alignItems": "baseline",
+                      "marginTop": 52,
+                      "marginBottom": 16
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "nh-technology-lead",
+                      "type": "column",
+                      "props": {
+                        "span": 1
+                      },
+                      "styles": {
+                        "base": {
+                          "flexShrink": 0,
+                          "marginRight": 16
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "nh-technology-index",
+                          "type": "text",
+                          "props": {
+                            "text": "02",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 13,
+                              "fontWeight": "700",
+                              "letterSpacing": 2,
+                              "lineHeight": 1,
+                              "textColor": "accent"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "nh-technology-col",
+                      "type": "column",
+                      "props": {
+                        "span": 11
+                      },
+                      "styles": {
+                        "base": {
+                          "flexGrow": 1
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "h-technology",
+                          "type": "heading",
+                          "props": {
+                            "text": "Advanced Technology for Smarter Operations",
+                            "headingLevel": 2,
+                            "align": "left",
+                            "anchor": "technology"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "p-technology-1",
+                  "type": "text",
+                  "props": {
+                    "text": "International Trucks are equipped with cutting-edge technology designed to enhance safety, efficiency, and fleet management. The Diamond Logic® electrical system offers advanced diagnostics and customizable features, allowing for better control and monitoring of vehicle functions. This technology not only supports safe operations but also enables proactive maintenance, helping to reduce unexpected repairs.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-technology-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Additionally, the <a href=\"/service-appointment\">International® 360</a> platform provides real-time data and insights, enabling fleet managers to make informed decisions and address maintenance needs before they become bigger problems. With tools like remote diagnostics and predictive maintenance tracking, you can minimize downtime and keep your trucks running smoothly.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "nh-support",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "styles": {
+                    "base": {
+                      "display": "flex",
+                      "alignItems": "baseline",
+                      "marginTop": 52,
+                      "marginBottom": 16
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "nh-support-lead",
+                      "type": "column",
+                      "props": {
+                        "span": 1
+                      },
+                      "styles": {
+                        "base": {
+                          "flexShrink": 0,
+                          "marginRight": 16
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "nh-support-index",
+                          "type": "text",
+                          "props": {
+                            "text": "03",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 13,
+                              "fontWeight": "700",
+                              "letterSpacing": 2,
+                              "lineHeight": 1,
+                              "textColor": "accent"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "nh-support-col",
+                      "type": "column",
+                      "props": {
+                        "span": 11
+                      },
+                      "styles": {
+                        "base": {
+                          "flexGrow": 1
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "h-support",
+                          "type": "heading",
+                          "props": {
+                            "text": "Comprehensive Support and Service Network",
+                            "headingLevel": 2,
+                            "align": "left",
+                            "anchor": "support"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "p-support-1",
+                  "type": "text",
+                  "props": {
+                    "text": "When you choose International Trucks, you’re not just getting a vehicle—you’re gaining access to a vast support network. With dealer locations all across North America, including <a href=\"/\">Sun State International’s</a> full-service facilities in <a href=\"/locations/tampa\">Tampa</a>, <a href=\"/locations/sarasota\">Sarasota</a>, and <a href=\"/locations/davenport\">Davenport</a>, you can count on expert service wherever your routes take you.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-support-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Our certified technicians are trained to handle everything from routine maintenance to complex repairs. With programs like Fleet Charge® Advantage, you benefit from guaranteed parts pricing, consolidated billing, and instant credit recognition, simplifying the management of your fleet’s service needs. No matter where your trucks are or what they need, support is never far away.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "links-support-3",
+                  "type": "link-cards",
+                  "props": {
+                    "across": "3",
+                    "items": [
+                      {
+                        "label": "LOCATION",
+                        "title": "Tampa, FL →",
+                        "url": "/locations/tampa",
+                        "newTab": false
+                      },
+                      {
+                        "label": "LOCATION",
+                        "title": "Sarasota, FL →",
+                        "url": "/locations/sarasota",
+                        "newTab": false
+                      },
+                      {
+                        "label": "LOCATION",
+                        "title": "Davenport, FL →",
+                        "url": "/locations/davenport",
+                        "newTab": false
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "nh-financing",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "styles": {
+                    "base": {
+                      "display": "flex",
+                      "alignItems": "baseline",
+                      "marginTop": 52,
+                      "marginBottom": 16
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "nh-financing-lead",
+                      "type": "column",
+                      "props": {
+                        "span": 1
+                      },
+                      "styles": {
+                        "base": {
+                          "flexShrink": 0,
+                          "marginRight": 16
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "nh-financing-index",
+                          "type": "text",
+                          "props": {
+                            "text": "04",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 13,
+                              "fontWeight": "700",
+                              "letterSpacing": 2,
+                              "lineHeight": 1,
+                              "textColor": "accent"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "nh-financing-col",
+                      "type": "column",
+                      "props": {
+                        "span": 11
+                      },
+                      "styles": {
+                        "base": {
+                          "flexGrow": 1
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "h-financing",
+                          "type": "heading",
+                          "props": {
+                            "text": "Flexible Financing and Leasing Options",
+                            "headingLevel": 2,
+                            "align": "left",
+                            "anchor": "financing"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "p-financing-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At <a href=\"/\">Sun State International</a>, we understand that every business has unique financial needs. That’s why we offer a range of flexible financing and leasing options tailored to your specific requirements. Whether you’re looking to purchase new trucks, lease vehicles, or explore rental solutions, our experienced finance team is here to help you find the best fit for your budget. Our goal is to make it as easy as possible for you to build a fleet that delivers long-term value, without straining your financial resources.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-financing-2-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-financing-2",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-financing-2-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "financing",
+                                "label": "Explore Financing Options →"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "nh-satisfaction",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "styles": {
+                    "base": {
+                      "display": "flex",
+                      "alignItems": "baseline",
+                      "marginTop": 52,
+                      "marginBottom": 16
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "nh-satisfaction-lead",
+                      "type": "column",
+                      "props": {
+                        "span": 1
+                      },
+                      "styles": {
+                        "base": {
+                          "flexShrink": 0,
+                          "marginRight": 16
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "nh-satisfaction-index",
+                          "type": "text",
+                          "props": {
+                            "text": "05",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 13,
+                              "fontWeight": "700",
+                              "letterSpacing": 2,
+                              "lineHeight": 1,
+                              "textColor": "accent"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "nh-satisfaction-col",
+                      "type": "column",
+                      "props": {
+                        "span": 11
+                      },
+                      "styles": {
+                        "base": {
+                          "flexGrow": 1
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "h-satisfaction",
+                          "type": "heading",
+                          "props": {
+                            "text": "Commitment to Customer Satisfaction",
+                            "headingLevel": 2,
+                            "align": "left",
+                            "anchor": "satisfaction"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "p-satisfaction-1",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"/\">Sun State International</a> is more than just a dealership—we’re your partner in success. Our commitment to customer satisfaction is evident in every aspect of our business, from our knowledgeable sales team to our dedicated service professionals. We take the time to understand your unique needs and provide personalized solutions that drive results.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-satisfaction-2",
+                  "type": "text",
+                  "props": {
+                    "text": "We believe in building lasting relationships with our customers by delivering consistent, high-quality support at every touchpoint. Whether you’re buying one truck or an entire fleet, you can trust that we’ll be there to help you every step of the way.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-trust",
+                  "type": "heading",
+                  "props": {
+                    "text": "A Brand with Proven Trust",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "trust"
+                  }
+                },
+                {
+                  "id": "p-trust-1",
+                  "type": "text",
+                  "props": {
+                    "text": "International Trucks have been a staple in the trucking industry for over a century, known for their reliability and resilience. This long-standing reputation means you’re not just buying a truck—you’re investing in a brand trusted by thousands of businesses across North America.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "pull-trust-2-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "pull-trust-2",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderTopWidth": 1,
+                          "borderBottomWidth": 1,
+                          "borderLeftWidth": 0,
+                          "borderRightWidth": 0,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 24,
+                          "paddingBottom": 24,
+                          "marginTop": 28,
+                          "marginBottom": 28
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "pull-trust-2-text",
+                          "type": "text",
+                          "props": {
+                            "text": "When your fleet wears the International name, it sends a message of dependability and professionalism to your clients and partners.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 22,
+                              "fontWeight": "800",
+                              "lineHeight": 1.4,
+                              "textColor": "ink"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-ready",
+                  "type": "heading",
+                  "props": {
+                    "text": "Ready to Build Your Fleet with International Trucks?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "ready"
+                  }
+                },
+                {
+                  "id": "p-ready-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Whether you’re starting from scratch or expanding your existing operations, International Trucks offers the performance, technology, and support you need to succeed. At <a href=\"/\">Sun State International</a>, we’re proud to help Florida businesses take their fleets to the next level. <a href=\"/contact\">Contact us today to learn more about our current inventory, financing options, and how we can help you build a fleet that drives your business forward!</a>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "links-ready-2-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "links-ready-2",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "marginTop": 40,
+                          "marginBottom": 8
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "links-ready-2-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "contact-us",
+                                "label": "Contact Us"
+                              },
+                              {
+                                "ctaId": "browse-new-trucks",
+                                "label": "See Our Inventory",
+                                "style": "secondary"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Ready to expand?",
+          "heading": "Let's find your next truck.",
+          "body": "Call 800.741.7566 and our sales teams in Tampa, Sarasota, Davenport or Brooksville will help you find the right fit.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Send a message",
+          "secondaryUrl": "/contact"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/building-a-fleet-here-are-5-reasons-why-you-should-choose-international-trucks\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/building-a-fleet-here-are-5-reasons-why-you-should-choose-international-trucks\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n[data-bz-node=\"art-body\"] .bz-col [data-bz-node=\"pull-trust-2-text\"].bz-block--text p { font-family: var(--font-heading); font-size: inherit; line-height: 1.4; font-weight: inherit; color: inherit; margin: 0; max-width: none; }\n"
+}

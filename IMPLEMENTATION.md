@@ -712,3 +712,44 @@ If the old domain is pointed at this site, these go on **Storefront → 301 Redi
 | `/5-benefits-of-shopping-for-used-dry-freight-truck-bodies/` | `/blog/posts/5-benefits-of-shopping-for-used-dry-freight-truck-bodies` |
 | `/how-your-business-can-benefit-from-new-dry-freight-truck-bodies/` | `/blog/posts/how-your-business-can-benefit-from-new-dry-freight-truck-bodies` |
 | `/8-things-you-need-to-know-for-the-best-fleet-maintenance/` | `/blog/posts/8-things-you-need-to-know-for-the-best-fleet-maintenance` |
+
+---
+
+## 18. Blog handoff, batch 4 — one new post, five repeats
+
+Six prototype pages in the §15 format. One is a new post, on its live sunstateintl.com
+permalink:
+
+| Handoff file | Post | Topic, date |
+|---|---|---|
+| `building-a-fleet-5-reasons-to-choose-international-trucks` | `building-a-fleet-here-are-5-reasons-why-you-should-choose-international-trucks` | Sales, Apr 30, 2025 |
+
+The other five repeat posts already on the site word for word (every paragraph, list item and
+heading checked against the existing post): *Commercial Truck Oil Change Mistakes That Cost
+You*, *Common Problems With Air Brake Parts for Semi Trucks*, *Common Signs You Need a Diesel
+Engine Diagnostic*, *What Happens When You Run Out of Diesel Exhaust Fluid?* and *Do Semi Truck
+Maintenance Costs Outweigh the Benefits?*. **They are left as they are**, for the same reason as
+§17: the repeats ship 1000px photographs against the 1280px ones already there. The converter
+lists them as repeats and skips them.
+
+The new post uses only shapes earlier batches already handle: the index-led headings, three
+**Link cards** (Tampa / Sarasota / Davenport, to each branch's generated page), a bordered
+callout with the *Financing* button, a ruled pull statement and the filled / outlined button
+pair (*Contact us*, *Browse new trucks*). Body copy and rail match the handoff; the blog page
+carries 68 cards.
+
+**Photographs.** This batch's `.jpg` files are really opaque RGBA PNGs (~1.3 MB each). The
+converter now transcodes such a file to a real JPEG (quality 85, ~100 KB) instead of copying
+it under a name that lies about its type. It needs Pillow (`pip install pillow`) only for a
+batch like this one.
+
+**Dropped / as elsewhere.** The handoff's hand-picked "Keep reading" cards are the latest-posts
+list, as on every post. *International® 360* links to the service-appointment page, as the
+handoff's own link does.
+
+**Old address.** If the old domain is pointed at this site, this goes on **Storefront → 301
+Redirects** in Admin:
+
+| Old path on sunstateintl.com | New path |
+|---|---|
+| `/building-a-fleet-here-are-5-reasons-why-you-should-choose-international-trucks/` | `/blog/posts/building-a-fleet-here-are-5-reasons-why-you-should-choose-international-trucks` |
