@@ -75,6 +75,14 @@
       ]
     },
     {
+      "id": "tcf-build-h",
+      "type": "heading",
+      "props": {
+        "text": "Build your truck.",
+        "headingLevel": 2
+      }
+    },
+    {
       "id": "tcf-build",
       "type": "section",
       "props": {
@@ -99,14 +107,6 @@
               },
               "children": [
                 {
-                  "id": "tcf-build-h",
-                  "type": "heading",
-                  "props": {
-                    "text": "Build your truck.",
-                    "headingLevel": 2
-                  }
-                },
-                {
                   "id": "tcf-build-open",
                   "type": "buttons",
                   "props": {
@@ -125,7 +125,7 @@
                       "paddingRight": 295
                     },
                     "mobile": {
-                      "paddingRight": 0
+                      "paddingRight": 34
                     }
                   }
                 },
