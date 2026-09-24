@@ -3308,3 +3308,64 @@ test('placesPaginatedPosts finds a paged grid on the page or inside a component'
     true,
   );
 });
+
+import { postExcerpt, postRows, topicKeyOf } from './index.mjs';
+
+test('posts source: rows come from the post files, a page at a time when asked', () => {
+  const posts = manyPosts(12).map((p, i) => ({ ...p, topic: i % 2 ? 'Parts & Service' : 'Trailer Sales' }));
+  const all = postRows(posts, {}, { blogBasePath: '/blog/posts' });
+  assert.equal(all.length, 12);
+  assert.deepEqual(
+    { href: all[0].href, topic: all[0].topic, topicKey: all[0].topicKey, dateISO: all[0].dateISO },
+    { href: '/blog/posts/post-1', topic: 'Trailer Sales', topicKey: 'trailer-sales', dateISO: '2026-01-01' },
+  );
+  assert.equal(all[0].date, 'Jan 1, 2026');
+  assert.equal(topicKeyOf('Parts & Service'), 'parts-and-service');
+  assert.equal(postRows(posts, { paginate: true }, { postsPage: 2 }).length, 3);
+  assert.equal(postRows(posts, { topic: 'parts-and-service' }).length, 6);
+  assert.equal(postRows(posts, { limit: 4 }).length, 4);
+  assert.equal(postRows([{ ...posts[0], status: 'draft' }]).length, 0, 'drafts are never cards');
+});
+
+test('posts source: the excerpt is the opening paragraph, not a label, cut at a word', () => {
+  const long = 'When a trailer goes down, your business slows down with it. '.repeat(6).trim();
+  const post = {
+    slug: 'x',
+    title: 'X',
+    nodes: [
+      { id: 'label', type: 'text', props: { text: 'QUICK ANSWER' } },
+      { id: 'lede', type: 'text', props: { text: `<p>${long}</p>` } },
+    ],
+  };
+  const excerpt = postExcerpt(post);
+  assert.ok(excerpt.startsWith('When a trailer goes down'));
+  assert.ok(excerpt.endsWith('…') && excerpt.length <= 211, excerpt);
+  assert.equal(postExcerpt({ ...post, excerpt: 'Typed.' }), 'Typed.');
+  assert.equal(postExcerpt({ slug: 'y', title: 'Y', description: 'Only this.' }), 'Only this.');
+});
+
+test('a component bound to posts draws the build’s page, and the pager steps through it', () => {
+  const sections = {
+    rail: {
+      id: 'rail',
+      props: [{ key: 'posts', type: 'list', fields: [{ key: 'title', type: 'text' }, { key: 'href', type: 'url' }] }],
+      nodes: [
+        { id: 'card', type: 'text', props: { repeat: 'posts', text: '{{title}} at {{href}}' } },
+      ],
+    },
+  };
+  const doc = {
+    nodes: [
+      { id: 'r', type: 'sharedSection', props: { sectionId: 'rail', values: { posts: { source: 'posts', config: { paginate: true } } } } },
+      { id: 'pg', type: 'postsPager', props: {} },
+    ],
+  };
+  const ctx = { ...CTX, sections, posts: manyPosts(20), blogBasePath: '/blog/posts', pagePath: '/blog' };
+  const page2 = renderDocument(doc, { ...ctx, postsPage: 2 });
+  assert.match(page2, /Post 10 at \/blog\/posts\/post-10</);
+  assert.doesNotMatch(page2, /Post 9 at/);
+  assert.match(page2, /href="\/blog\/page\/3" rel="next">« Older Entries/);
+  assert.match(page2, /href="\/blog" rel="prev">Next Entries »/);
+  assert.equal(placesPaginatedPosts([doc.nodes]), true);
+  assert.equal(placesPaginatedPosts([[doc.nodes[0]]]), true, 'the binding alone pages the page');
+});

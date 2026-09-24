@@ -979,6 +979,32 @@ const BLOCKS = {
     },
   },
 
+  /**
+   * « Older Entries / Next Entries » on its own, for a page whose post cards are
+   * the dealer's design — a component bound to the `posts` source with
+   * `paginate` — rather than the Latest posts block's. Placing it is what makes
+   * the build write page 2 onwards under this page's address; the page count
+   * comes from the published posts.
+   */
+  postsPager: {
+    label: 'Blog pager',
+    category: 'prebuilt',
+    schema: { type: 'object', properties: {} },
+    render(_props, ctx) {
+      const published = (Array.isArray(ctx.posts) ? ctx.posts : []).filter(
+        (p) => p && p.slug && p.title && (p.status ?? 'published') === 'published',
+      );
+      // The canvas shows the control even on a blog that fits one page, so a
+      // dealer can see and select what they placed.
+      const totalPages = ctx.editing ? Math.max(2, postsPageCount(published.length)) : postsPageCount(published.length);
+      const pager = renderPager(
+        { page: ctx.postsPage || 1, totalPages, pagePath: ctx.pagePath || ctx.blogBasePath || '/blog' },
+        ctx,
+      );
+      return pager ? container(pager) : '';
+    },
+  },
+
   locationsMap: {
     label: 'Locations + map',
     category: 'prebuilt',

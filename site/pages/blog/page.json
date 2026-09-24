@@ -71,24 +71,102 @@
       ]
     },
     {
-      "id": "bl-grid",
+      "id": "bl-posts",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-rail",
+        "values": {
+          "heading": "Latest posts",
+          "anchor": "bl-posts",
+          "background": "card",
+          "allLabel": "All",
+          "countTemplate": "{n} articles",
+          "moreLabel": "Read more →",
+          "emptyText": "No posts in this topic yet.",
+          "posts": {
+            "source": "posts",
+            "config": {
+              "paginate": true
+            }
+          },
+          "topics": [
+            {
+              "label": "Parts",
+              "value": "parts"
+            },
+            {
+              "label": "Commercial trucks",
+              "value": "commercial-trucks"
+            },
+            {
+              "label": "Service",
+              "value": "service"
+            },
+            {
+              "label": "Maintenance",
+              "value": "maintenance"
+            },
+            {
+              "label": "Company",
+              "value": "company"
+            },
+            {
+              "label": "Sales",
+              "value": "sales"
+            },
+            {
+              "label": "Trucks",
+              "value": "trucks"
+            },
+            {
+              "label": "Parts & Service",
+              "value": "parts-and-service"
+            },
+            {
+              "label": "Fleet",
+              "value": "fleet"
+            },
+            {
+              "label": "Trailer Sales",
+              "value": "trailer-sales"
+            }
+          ]
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "bl-pager",
       "type": "section",
       "props": {
         "width": "boxed",
         "paddingY": 8,
-        "background": "card",
-        "anchor": "bl-posts"
+        "background": "card"
       },
       "children": [
         {
-          "id": "bl-grid-list",
-          "type": "postsList",
+          "id": "bp-pager-row",
+          "type": "row",
           "props": {
-            "heading": "Latest posts",
-            "headingLevel": 2,
-            "showDates": true,
-            "paginate": true
-          }
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "bp-pager-col",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "bp-nav",
+                  "type": "postsPager",
+                  "props": {}
+                }
+              ]
+            }
+          ]
         }
       ]
     },

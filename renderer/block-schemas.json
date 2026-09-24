@@ -755,6 +755,67 @@
           "label": "Photo"
         }
       ]
+    },
+    {
+      "id": "posts",
+      "label": "Blog posts",
+      "description": "Every published post, newest first, from the Posts screen. `paginate` gives the build’s current page of nine.",
+      "widget": null,
+      "path": null,
+      "resolvesAt": "build",
+      "match": "slug",
+      "config": [
+        "topic",
+        "limit",
+        "paginate"
+      ],
+      "fields": [
+        {
+          "key": "slug",
+          "type": "text",
+          "label": "Slug"
+        },
+        {
+          "key": "title",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "key": "href",
+          "type": "url",
+          "label": "Post link"
+        },
+        {
+          "key": "date",
+          "type": "text",
+          "label": "Date"
+        },
+        {
+          "key": "dateISO",
+          "type": "text",
+          "label": "Date (machine readable)"
+        },
+        {
+          "key": "excerpt",
+          "type": "textarea",
+          "label": "Excerpt"
+        },
+        {
+          "key": "topic",
+          "type": "text",
+          "label": "Topic"
+        },
+        {
+          "key": "topicKey",
+          "type": "text",
+          "label": "Topic key (for filtering)"
+        },
+        {
+          "key": "coverImage",
+          "type": "image",
+          "label": "Cover image"
+        }
+      ]
     }
   ],
   "styleBuckets": [
@@ -3139,6 +3200,17 @@
             }
           }
         }
+      }
+    },
+    {
+      "id": "postsPager",
+      "label": "Blog pager",
+      "category": "prebuilt",
+      "group": "prebuilt",
+      "autoTagged": true,
+      "schema": {
+        "type": "object",
+        "properties": {}
       }
     },
     {

@@ -83,3 +83,99 @@ export function pagerHeadLinks({ page, totalPages, pagePath, origin = '' }) {
   if (page < totalPages) links.push(`<link rel="next" href="${esc(origin + pagedPath(pagePath, page + 1))}" />`);
   return links.map((l) => `\n${l}`).join('');
 }
+
+/* ---------------------------------------------------------- posts as rows */
+
+/**
+ * `Air Brakes` → `air-brakes`, `Parts & Service` → `parts-and-service`. The key a
+ * topic chip filters on, derived rather than typed so a retitled topic keeps
+ * matching its chip.
+ */
+export function topicKeyOf(topic) {
+  return String(topic || '')
+    .toLowerCase()
+    .replace(/&/g, ' and ')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+/** `2026-07-15` → `Jul 15, 2026`, read in UTC so the build server's zone cannot move the day. */
+function cardDate(value) {
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return String(value || '');
+  return date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' });
+}
+
+const EXCERPT_LENGTH = 210;
+// A paragraph shorter than this is a label ("QUICK ANSWER") or an aside, not
+// the opening of the post.
+const EXCERPT_MIN = 80;
+
+const plain = (html) =>
+  String(html || '')
+    .replace(/<[^>]*>/g, '')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&amp;/g, '&')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;|&rsquo;/g, '’')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/\s+/g, ' ')
+    .trim();
+
+function firstParagraph(nodes) {
+  for (const node of Array.isArray(nodes) ? nodes : []) {
+    if (!node || typeof node !== 'object') continue;
+    if (node.type === 'text') {
+      const text = plain(node.props && node.props.text);
+      if (text.length >= EXCERPT_MIN) return text;
+    }
+    const inner = firstParagraph(node.children);
+    if (inner) return inner;
+  }
+  return '';
+}
+
+/**
+ * A card's teaser: the post's own `excerpt` when it has one, else its opening
+ * paragraph cut at a word near 210 characters, else its description.
+ */
+export function postExcerpt(post) {
+  if (post && post.excerpt) return String(post.excerpt);
+  const text = firstParagraph(post && (post.nodes || post.blocks)) || plain(post && post.body);
+  if (!text) return String((post && post.description) || '');
+  if (text.length <= EXCERPT_LENGTH) return text;
+  const cut = text.slice(0, EXCERPT_LENGTH);
+  const space = cut.lastIndexOf(' ');
+  return `${(space > EXCERPT_LENGTH * 0.6 ? cut.slice(0, space) : cut).replace(/[\s,;:.–—-]+$/, '')}…`;
+}
+
+/**
+ * The `posts` data source's rows: published posts, newest first, in the field
+ * names a component binds to. `config.topic` keeps one topic (by name or key),
+ * `config.limit` caps the list, and `config.paginate` hands back the build's
+ * current page of nine — the same slice a paged Latest posts block draws.
+ */
+export function postRows(posts, config = {}, { blogBasePath = '/blog', postsPage = 1 } = {}) {
+  const base = String(blogBasePath || '/blog').replace(/\/+$/, '');
+  let list = (Array.isArray(posts) ? posts : []).filter(
+    (p) => p && p.slug && p.title && (p.status ?? 'published') === 'published',
+  );
+  const topic = config && config.topic ? topicKeyOf(config.topic) : '';
+  if (topic) list = list.filter((p) => topicKeyOf(p.topic) === topic);
+  const paginate = config && (config.paginate === true || config.paginate === 'true');
+  if (paginate) list = postsPageSlice(list, clampPostsPage(postsPage, postsPageCount(list.length)));
+  const limit = Number(config && config.limit);
+  if (limit > 0) list = list.slice(0, limit);
+  return list.map((p) => ({
+    slug: p.slug,
+    title: p.title,
+    href: `${base}/${p.slug}`,
+    date: cardDate(p.date),
+    dateISO: String(p.date || '').slice(0, 10),
+    excerpt: postExcerpt(p),
+    topic: p.topic || '',
+    topicKey: topicKeyOf(p.topic),
+    coverImage: p.coverImage ? { src: p.coverImage, alt: p.title } : { src: '', alt: '' },
+  }));
+}

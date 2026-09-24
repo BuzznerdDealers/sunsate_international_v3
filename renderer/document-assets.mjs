@@ -117,11 +117,26 @@ export function componentCode(nodeLists, ctx = {}) {
   return { css: css.join('\n'), scripts };
 }
 
+/** A component placement whose list comes from the `posts` source, a page at a time. */
+function pagedBinding(node) {
+  if (node.type !== 'sharedSection') return false;
+  const values = (node.props && node.props.values) || {};
+  return Object.values(values).some(
+    (v) =>
+      v &&
+      typeof v === 'object' &&
+      v.source === 'posts' &&
+      v.config &&
+      (v.config.paginate === true || v.config.paginate === 'true'),
+  );
+}
+
 /**
- * Whether a set of trees places a `postsList` that pages — directly, or inside
- * a designed component. The build asks this of every page, because a page that
- * does is written once per page of posts (`/blog`, `/blog/page/2` …) and one
- * that does not is written once.
+ * Whether a set of trees places something that pages through the posts — a
+ * paged `postsList`, a `postsPager`, or a component bound to the `posts` source
+ * with `paginate` — directly or inside a designed component.
+ * The build asks this of every page, because a page that does is written once
+ * per page of posts (`/blog`, `/blog/page/2` …) and one that does not, once.
  */
 export function placesPaginatedPosts(nodeLists, ctx = {}) {
   const trees = [...(Array.isArray(nodeLists) ? nodeLists : [])];
@@ -131,7 +146,10 @@ export function placesPaginatedPosts(nodeLists, ctx = {}) {
       (node) =>
         node &&
         typeof node === 'object' &&
-        ((node.type === 'postsList' && node.props && node.props.paginate === true) || pages(node.children)),
+        (node.type === 'postsPager' ||
+          (node.type === 'postsList' && node.props && node.props.paginate === true) ||
+          pagedBinding(node) ||
+          pages(node.children)),
     );
   return trees.some(pages);
 }

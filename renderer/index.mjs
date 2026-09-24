@@ -210,8 +210,11 @@ export {
   pagedPath,
   pagerHeadLinks,
   postsPageCount,
+  postExcerpt,
+  postRows,
   postsPageSlice,
   renderPager,
+  topicKeyOf,
 } from './blog-pages.mjs';
 export {
   esc,
