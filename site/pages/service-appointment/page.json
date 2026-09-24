@@ -225,7 +225,7 @@
                   "id": "appt-phone-note",
                   "type": "text",
                   "props": {
-                    "text": "After-hours service via Certified Fleet, 5:00 PM to 8:00 AM."
+                    "text": "After-hours service via Certified Fleet, 17:00 to 08:00."
                   }
                 },
                 {
@@ -317,7 +317,7 @@
               "tag": "TRUCKS · TRAILERS · PARTS",
               "city": "Tampa",
               "address": "6020 E Adamo Dr, Tampa, FL 33619",
-              "hours": "Service 7 AM – 7 PM M–F, 7 AM – 12 PM Sat · Parts 7 AM – 7 PM M–F · Sales 7 AM – 7 PM M–F",
+              "hours": "Service 07:00 – 19:00 M–F, 07:00 – 12:00 Sat · Parts 07:00 – 19:00 M–F · Sales 07:00 – 19:00 M–F",
               "phone": "(813) 521-8053",
               "phoneUrl": "tel:+18135218053",
               "url": "/locations/tampa"
@@ -326,7 +326,7 @@
               "tag": "TRUCKS · TRAILERS · PARTS",
               "city": "Davenport",
               "address": "41609 Hwy 27, Davenport, FL 33837",
-              "hours": "Service 7 AM – 7 PM M–F, 7 AM – 12 PM Sat · Parts 7 AM – 5 PM M–F · Sales 8 AM – 4:30 PM M–F",
+              "hours": "Service 07:00 – 19:00 M–F, 07:00 – 12:00 Sat · Parts 07:00 – 17:00 M–F · Sales 08:00 – 16:30 M–F",
               "phone": "(863) 238-2939",
               "phoneUrl": "tel:+18632382939",
               "url": "/locations/davenport"
@@ -335,7 +335,7 @@
               "tag": "TRUCKS · TRAILERS · PARTS",
               "city": "Sarasota",
               "address": "1000 Sarasota Center Blvd, Sarasota, FL 34240",
-              "hours": "Service 7 AM – 5 PM M–F · Parts 7 AM – 5 PM M–F · Sales 8 AM – 5 PM M–F",
+              "hours": "Service 07:00 – 17:00 M–F · Parts 07:00 – 17:00 M–F · Sales 08:00 – 17:00 M–F",
               "phone": "(941) 541-3251",
               "phoneUrl": "tel:+19415413251",
               "url": "/locations/sarasota"
@@ -344,7 +344,7 @@
               "tag": "PARTS",
               "city": "Truck & Trailer Parts — Brooksville",
               "address": "17127 Runway Drive, Brooksville, FL 34604",
-              "hours": "Store 7 AM – 5 PM M–F",
+              "hours": "Store 07:00 – 17:00 M–F",
               "phone": "(352) 277-0221",
               "phoneUrl": "tel:+13522770221",
               "url": "/locations/brooksville"
@@ -353,7 +353,7 @@
               "tag": "AFTERMARKET PARTS",
               "city": "Sun State Aftermarket Parts — Tampa",
               "address": "7105 East 6th Ave, Tampa, FL 33619",
-              "hours": "Store 7 AM – 4 PM M–F",
+              "hours": "Store 07:00 – 16:00 M–F",
               "phone": "(813) 627-3282",
               "phoneUrl": "tel:+18136273282",
               "url": "/locations/aftermarket-parts"
@@ -362,7 +362,7 @@
               "tag": "TRAILER SALES",
               "city": "Trailer Sales — Tampa",
               "address": "6020 E Adamo Dr, Tampa, FL 33619",
-              "hours": "Store 8 AM – 5 PM M–F",
+              "hours": "Store 08:00 – 17:00 M–F",
               "phone": "(813) 621-1331",
               "phoneUrl": "tel:+18136211331",
               "url": "/locations/trailer-sales"
@@ -1672,7 +1672,7 @@
                         },
                         {
                           "q": "What if my truck breaks down after hours?",
-                          "a": "Certified Fleet provides after-hours support from 5:00 PM to 8:00 AM. Call 800-741-7566 for assistance outside of service department hours."
+                          "a": "Certified Fleet provides after-hours support from 17:00 to 08:00. Call 800-741-7566 for assistance outside of service department hours."
                         },
                         {
                           "q": "How soon will I hear back?",
@@ -1699,7 +1699,7 @@
         "values": {
           "eyebrow": "DOWN NOW?",
           "heading": "Call us and we'll get you in.",
-          "body": "Service scheduling is available during department hours, with after-hours support through Certified Fleet from 5:00 PM to 8:00 AM.",
+          "body": "Service scheduling is available during department hours, with after-hours support through Certified Fleet from 17:00 to 08:00.",
           "primaryLabel": "Call 800.741.7566",
           "primaryUrl": "tel:+18007417566",
           "secondaryLabel": "Request an appointment",
