@@ -647,11 +647,13 @@
                             "items": [
                               {
                                 "ctaId": "browse-trailers",
-                                "label": "Check Out Our Available Inventory"
+                                "label": "Check Out Our Available Inventory",
+                                "style": "primary"
                               },
                               {
                                 "ctaId": "browse-trailers",
-                                "label": "Compare Trailer Specifications"
+                                "label": "Compare Trailer Specifications",
+                                "style": "secondary"
                               }
                             ]
                           }

@@ -457,7 +457,8 @@
                             "items": [
                               {
                                 "ctaId": "browse-trailers",
-                                "label": "View Our Trailer Specifications"
+                                "label": "View Our Trailer Specifications",
+                                "style": "primary"
                               }
                             ]
                           }
@@ -925,11 +926,13 @@
                             "items": [
                               {
                                 "ctaId": "browse-new-trailers",
-                                "label": "New Trailers"
+                                "label": "New Trailers",
+                                "style": "primary"
                               },
                               {
                                 "ctaId": "browse-used-trailers",
-                                "label": "Used Trailers"
+                                "label": "Used Trailers",
+                                "style": "secondary"
                               }
                             ]
                           }

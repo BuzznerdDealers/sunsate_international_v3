@@ -354,6 +354,15 @@
     "active": true
   },
   {
+    "id": "browse-used-trucks",
+    "label": "Browse used trucks",
+    "url": "/store/inventory?condition=used",
+    "style": "primary",
+    "intent": "browse-inventory",
+    "newTab": false,
+    "active": true
+  },
+  {
     "id": "get-financing",
     "label": "Get financing",
     "url": "/financing",
