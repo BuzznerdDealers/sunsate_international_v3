@@ -1,0 +1,706 @@
+{
+  "slug": "dry-van-trailer-financing-at-sun-state-trailers",
+  "title": "Dry Van Trailer Financing at Sun State Trailers",
+  "date": "2026-04-11",
+  "description": "Dry van trailer financing made simple. Get the trailer you need with flexible options. Contact Sun State Trailers today.",
+  "status": "published",
+  "coverImage": "/img/blog/dry-van-trailer-financing-at-sun-state-trailers/hero.jpg",
+  "topic": "Trailer Sales",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Trailer Sales",
+          "title": "Dry Van Trailer Financing at Sun State Trailers",
+          "topic": "Trailer Sales",
+          "date": "April 11, 2026",
+          "readTime": "5 min read",
+          "author": "Sun State Trailers",
+          "image": {
+            "src": "/img/blog/dry-van-trailer-financing-at-sun-state-trailers/hero.jpg",
+            "width": 1000,
+            "height": 667,
+            "alt": "Sun State team member with a clipboard inspecting dry van trailers before financing"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "Why Financing Makes Sense",
+                        "href": "#why-finance"
+                      },
+                      {
+                        "label": "Understanding Your Options",
+                        "href": "#options"
+                      },
+                      {
+                        "label": "What Lenders Look For",
+                        "href": "#lenders-look-for"
+                      },
+                      {
+                        "label": "How We Make It Simple",
+                        "href": "#how-simple"
+                      },
+                      {
+                        "label": "Get Started Today",
+                        "href": "#get-started"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "READY TO FINANCE?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Talk to our team about flexible dry van financing built around your business.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "financing",
+                                "label": "Explore Financing Options →"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "If you're in the market for a dry van trailer, chances are you're thinking beyond the purchase price. You're thinking about cash flow, long-term value, and how this decision impacts your business. That's where dry van trailer financing comes in. Instead of tying up capital in a full purchase, financing gives you the flexibility to get the equipment you need now while keeping your business moving forward.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "For owner-operators and fleet managers alike, it's often the difference between waiting and growing. At <a href=\"/locations/trailer-sales\">Sun State Trailers</a>, financing isn't treated like a side option. It's part of helping you make a practical, well-informed decision that supports your operation long-term.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-why-finance",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Financing a Dry Van Trailer Makes Sense",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "why-finance"
+                  }
+                },
+                {
+                  "id": "p-why-finance-1",
+                  "type": "text",
+                  "props": {
+                    "text": "There's a reason more businesses are turning to dry van trailer finance options instead of paying up front. Here's how your business can benefit:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "features-why-finance-2",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 2,
+                    "columns": 3,
+                    "items": [
+                      {
+                        "label": "Preserve Cash Flow",
+                        "desc": "Running a trucking business means constant expenses: fuel, maintenance, and payroll. Financing a dry van trailer allows you to keep cash on hand for those day-to-day needs."
+                      },
+                      {
+                        "label": "Scale at the Right Time",
+                        "desc": "When demand picks up, waiting to save for a full purchase can cost you opportunities. Financing helps you grow your fleet when your business needs it, not months later."
+                      },
+                      {
+                        "label": "Predictable Payments",
+                        "desc": "With structured financing, you know exactly what to expect each month. That kind of consistency makes it easier to plan and manage your business."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/dry-van-trailer-financing-at-sun-state-trailers/1.jpg",
+                      "width": 1000,
+                      "height": 667,
+                      "alt": "Sun State technician checking a dry van trailer's rear door hardware and locking mechanism"
+                    }
+                  }
+                },
+                {
+                  "id": "h-options",
+                  "type": "heading",
+                  "props": {
+                    "text": "Understanding Your Dry Van Trailer Financing Options",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "options"
+                  }
+                },
+                {
+                  "id": "p-options-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Not all dry van trailer financing options are created equal. The right choice depends on your business goals, budget, and how you plan to use the trailer.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-options-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "option",
+                    "items": [
+                      {
+                        "title": "Equipment Financing",
+                        "points": [
+                          {
+                            "text": "Long-term ownership"
+                          },
+                          {
+                            "text": "Businesses planning to keep trailers for years"
+                          },
+                          {
+                            "text": "Owner-operators building equity in their equipment"
+                          }
+                        ],
+                        "intro": "This is the most common option. You finance the trailer itself, make monthly payments, and own it at the end of the term.",
+                        "lead": "BEST FOR"
+                      },
+                      {
+                        "title": "Lease-to-Own",
+                        "points": [
+                          {
+                            "text": "Businesses that want lower upfront costs"
+                          },
+                          {
+                            "text": "Operators testing growth before committing fully"
+                          }
+                        ],
+                        "intro": "This structure gives you flexibility. You make payments like a lease, but with the option to own the trailer at the end.",
+                        "lead": "BEST FOR"
+                      },
+                      {
+                        "title": "Traditional Leasing",
+                        "points": [
+                          {
+                            "text": "Seasonal demand"
+                          },
+                          {
+                            "text": "Short-term contracts"
+                          },
+                          {
+                            "text": "Businesses that rotate equipment frequently"
+                          }
+                        ],
+                        "intro": "If you're focused on short-term flexibility, leasing may be the better fit. You use the trailer without committing to full ownership.",
+                        "lead": "BEST FOR"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-options-3",
+                  "type": "text",
+                  "props": {
+                    "text": "The key is working with a team that helps you understand what fits, not just what's available.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-options-4-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-options-4",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-options-4-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "financing",
+                                "label": "Explore Your Financing Options →"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "fig-2",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/dry-van-trailer-financing-at-sun-state-trailers/2.jpg",
+                      "width": 1000,
+                      "height": 667,
+                      "alt": "Row of Hyundai Translead dry van trailers ready for purchase or financing at Sun State Trailers"
+                    }
+                  }
+                },
+                {
+                  "id": "h-lenders-look-for",
+                  "type": "heading",
+                  "props": {
+                    "text": "What Lenders Look for in Dry Van Trailer Financing",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "lenders-look-for"
+                  }
+                },
+                {
+                  "id": "p-lenders-look-for-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Before you apply for dry van trailer finance, it helps to understand what lenders typically evaluate.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-lenders-look-for-2",
+                  "type": "heading",
+                  "props": {
+                    "text": "Credit Profile",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-lenders-look-for-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Your credit history gives lenders a sense of reliability. Strong credit can lead to better terms, but there are still options available for a range of credit situations.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-lenders-look-for-4",
+                  "type": "heading",
+                  "props": {
+                    "text": "Time in Business",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-lenders-look-for-5",
+                  "type": "text",
+                  "props": {
+                    "text": "Established businesses often have an easier time securing financing, but newer operations can still qualify depending on other factors.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-lenders-look-for-6",
+                  "type": "heading",
+                  "props": {
+                    "text": "Revenue and Cash Flow",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-lenders-look-for-7",
+                  "type": "text",
+                  "props": {
+                    "text": "Lenders want to know your business can handle monthly payments comfortably.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-lenders-look-for-8",
+                  "type": "text",
+                  "props": {
+                    "text": "This is where working with a trusted dealer matters. Sun State Trailers helps guide you through the process so you're not left guessing what comes next.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-how-simple",
+                  "type": "heading",
+                  "props": {
+                    "text": "How Sun State Trailers Makes Financing Simple",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "how-simple"
+                  }
+                },
+                {
+                  "id": "p-how-simple-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Financing shouldn't feel like a roadblock. It should feel like a tool. At Sun State Trailers, the process is designed to be:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-how-simple-2",
+                  "type": "heading",
+                  "props": {
+                    "text": "Straightforward",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-how-simple-3",
+                  "type": "text",
+                  "props": {
+                    "text": "No unnecessary complexity. Just clear options and honest answers so you can make the right call.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-how-simple-4",
+                  "type": "heading",
+                  "props": {
+                    "text": "Supportive",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-how-simple-5",
+                  "type": "text",
+                  "props": {
+                    "text": "You're not navigating this alone. The team works with you to find a solution that fits your business.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-how-simple-6",
+                  "type": "heading",
+                  "props": {
+                    "text": "Built Around Your Needs",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-how-simple-7",
+                  "type": "text",
+                  "props": {
+                    "text": "Every operation is different. Financing should reflect that.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-how-simple-8",
+                  "type": "text",
+                  "props": {
+                    "text": "That approach comes from a larger commitment: putting customers first and focusing on long-term relationships, not just transactions.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-3",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/dry-van-trailer-financing-at-sun-state-trailers/3.jpg",
+                      "width": 1000,
+                      "height": 667,
+                      "alt": "Sun State Trailers dealership building exterior signage in Florida"
+                    }
+                  }
+                },
+                {
+                  "id": "h-get-started",
+                  "type": "heading",
+                  "props": {
+                    "text": "Get Started with Dry Van Trailer Financing Today",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "get-started"
+                  }
+                },
+                {
+                  "id": "p-get-started-1",
+                  "type": "text",
+                  "props": {
+                    "text": "If you're ready to invest in a dry van trailer, financing can help you do it without slowing your business down. <a href=\"/locations/trailer-sales\">Sun State Trailers</a> is here to help you find the right equipment and the right financing structure, so you can grow your business without feeling held back. Contact us today to explore dry van trailer financing and available trailers.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "links-get-started-2-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "links-get-started-2",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "marginTop": 40,
+                          "marginBottom": 8
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "links-get-started-2-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "contact-us",
+                                "label": "Finance Your Fleet With Sun State",
+                                "style": "link"
+                              },
+                              {
+                                "ctaId": "financing",
+                                "label": "Explore Financing"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Trailer sales",
+          "heading": "Grow your fleet without slowing down.",
+          "body": "Call 800.741.7566 to talk with our team about flexible dry van trailer financing at any Sun State location in Florida.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Explore financing",
+          "secondaryUrl": "/financing"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/dry-van-trailer-financing-at-sun-state-trailers\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/dry-van-trailer-financing-at-sun-state-trailers\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n/* Its reason cards: roomier, 24px apart, the sentence at 15px. */\n[data-bz-node=\"art-body\"] .bz-block--list .bz-grid { gap: 24px; }\n[data-bz-node=\"art-body\"] .bz-block--list .bz-feature { padding: 24px; }\n[data-bz-node=\"art-body\"] .bz-block--list .bz-feature__t { margin: 0 0 10px; }\n[data-bz-node=\"art-body\"] .bz-block--list .bz-feature__d { font-size: 15px; line-height: 1.7; }\n"
+}

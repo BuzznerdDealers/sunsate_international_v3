@@ -1,0 +1,703 @@
+{
+  "slug": "dry-van-trailer-resale-value-over-time",
+  "title": "Dry Van Trailer Resale Value Over Time",
+  "date": "2026-04-28",
+  "description": "Explore the ins and outs of dry van trailer resale value. Learn what impacts value and explore inventory options today.",
+  "status": "published",
+  "coverImage": "/img/blog/dry-van-trailer-resale-value-over-time/hero.jpg",
+  "topic": "Trailer Sales",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Trailer Sales",
+          "title": "Dry Van Trailer Resale Value Over Time",
+          "topic": "Trailer Sales",
+          "date": "April 28, 2026",
+          "readTime": "5 min read",
+          "author": "Sun State Trailers",
+          "image": {
+            "src": "/img/blog/dry-van-trailer-resale-value-over-time/hero.jpg",
+            "width": 1000,
+            "height": 667,
+            "alt": "View from a truck cab across a row of parked Hyundai Translead dry van trailers"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "What Impacts Resale Value",
+                        "href": "#impacts"
+                      },
+                      {
+                        "label": "How Value Changes Over Time",
+                        "href": "#stages"
+                      },
+                      {
+                        "label": "Protecting Resale Value",
+                        "href": "#protect"
+                      },
+                      {
+                        "label": "When to Sell or Trade",
+                        "href": "#sell-or-trade"
+                      },
+                      {
+                        "label": "Why Dry Vans Hold Value",
+                        "href": "#why-hold-value"
+                      },
+                      {
+                        "label": "Still Comparing Options?",
+                        "href": "#comparing"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "PLANNING A PURCHASE?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Explore our dry van inventory or download trailer specs before you buy.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-trailers",
+                                "label": "Explore Inventory →"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "If you're thinking long-term, understanding dry van trailer resale value is just as important as the initial purchase price. Whether you're running a small fleet or managing multiple units, the ability to recover value from your equipment can make a real difference in your overall profitability. Most dry van trailers retain a meaningful portion of their value over time, especially when they're well-maintained.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "h-impacts",
+                  "type": "heading",
+                  "props": {
+                    "text": "What Impacts Dry Van Trailer Resale Value?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "impacts"
+                  }
+                },
+                {
+                  "id": "p-impacts-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Not all trailers depreciate the same way. Several key factors determine how strong your resale value will be when it's time to sell or trade in.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "features-impacts-2",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 2,
+                    "columns": 3,
+                    "items": [
+                      {
+                        "label": "Age",
+                        "desc": "Age plays a major role, but it's not the only factor. A newer trailer will typically command a higher price, but a well-kept older unit can still perform strongly in the resale market."
+                      },
+                      {
+                        "label": "Specifications and Build Quality",
+                        "desc": "Certain specs hold value better than others. A 53 ft dry van trailer is often in high demand because it fits the most common freight needs. Durable construction, quality flooring, and reliable components all contribute to long-term value."
+                      },
+                      {
+                        "label": "Market Demand",
+                        "desc": "Supply and demand always play a role. When trailer inventory is tight, resale values tend to rise. When the market is saturated, prices may soften."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-stages",
+                  "type": "heading",
+                  "props": {
+                    "text": "How Dry Van Trailer Resale Value Changes Over Time",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "stages"
+                  }
+                },
+                {
+                  "id": "p-stages-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Understanding depreciation helps you make smarter buying and selling decisions.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "stages-stages-2",
+                  "type": "stage-list",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Years 0–3",
+                        "title": "Highest Value Retention",
+                        "text": "New trailers lose value fastest in the first few years, but they still hold strong resale potential. At this stage, the condition is typically excellent, making them attractive to buyers."
+                      },
+                      {
+                        "label": "Years 4–8",
+                        "title": "Stable Mid-Life Value",
+                        "text": "This is where many trailers hit their sweet spot. They're more affordable than new units but still offer reliable performance. A well-maintained trailer in this range can hold solid resale value."
+                      },
+                      {
+                        "label": "Years 9–15+",
+                        "title": "Value Becomes Condition-Based",
+                        "text": "At this stage, resale value depends heavily on condition and maintenance history. Some trailers still perform well and attract buyers, while others may see significant depreciation."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-stages-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Have a trailer in mind? Explore our trailer inventory to find the right match for your fleet's hauling needs.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-stages-4-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-stages-4",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-stages-4-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-trailers",
+                                "label": "Explore Our Dry Van Trailer Inventory →"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/dry-van-trailer-resale-value-over-time/1.jpg",
+                      "width": 1000,
+                      "height": 667,
+                      "alt": "Technician inspecting a dry van trailer's rear hitch and undercarriage before resale"
+                    }
+                  }
+                },
+                {
+                  "id": "h-protect",
+                  "type": "heading",
+                  "props": {
+                    "text": "How to Protect Your Trailer's Resale Value",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "protect"
+                  }
+                },
+                {
+                  "id": "p-protect-1",
+                  "type": "text",
+                  "props": {
+                    "text": "If resale value matters to your business, it's something you need to plan for from day one. Here's what makes the biggest difference:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-protect-2",
+                  "type": "heading",
+                  "props": {
+                    "text": "Stay Consistent With Maintenance",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-protect-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Keep up with inspections, address small issues early, and maintain brakes, tires, and flooring.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-protect-4",
+                  "type": "heading",
+                  "props": {
+                    "text": "Avoid Overloading",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-protect-5",
+                  "type": "text",
+                  "props": {
+                    "text": "Pushing a trailer beyond its intended limits accelerates wear and reduces long-term value.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-protect-6",
+                  "type": "heading",
+                  "props": {
+                    "text": "Store Equipment Properly",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-protect-7",
+                  "type": "text",
+                  "props": {
+                    "text": "Whenever possible, protect trailers from excessive exposure to the elements.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-protect-8",
+                  "type": "text",
+                  "props": {
+                    "text": "At <a href=\"/locations/trailer-sales\">Sun State Trailers</a>, we've seen firsthand how these habits extend both lifespan and resale value. It's not complicated, but it does require consistency.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-sell-or-trade",
+                  "type": "heading",
+                  "props": {
+                    "text": "When Is the Right Time to Sell or Trade?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "sell-or-trade"
+                  }
+                },
+                {
+                  "id": "p-sell-or-trade-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Here's a straightforward comparison to help you evaluate your options:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-sell-or-trade-2",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Repair costs start increasing"
+                      },
+                      {
+                        "text": "Downtime becomes more frequent"
+                      },
+                      {
+                        "text": "Market demand is strong for used equipment"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-sell-or-trade-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Selling too late can reduce your return, while selling at the right time helps you reinvest into newer, more reliable equipment.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-finding-right-1",
+                  "type": "text",
+                  "props": {
+                    "text": "If resale value is part of your strategy, choosing the right trailer upfront matters. Whether you're searching for a dry van trailer for sale or evaluating a 53 ft dry van trailer, you want equipment that holds up over time and stays in demand. That's where working with the right partner makes a difference.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "finding-right"
+                  }
+                },
+                {
+                  "id": "links-finding-right-2-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "links-finding-right-2",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "links-finding-right-2-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-trailers",
+                                "label": "Explore Inventory"
+                              },
+                              {
+                                "ctaId": "browse-trailers",
+                                "label": "Download Trailer Specifications"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "fig-2",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/dry-van-trailer-resale-value-over-time/2.jpg",
+                      "width": 1000,
+                      "height": 667,
+                      "alt": "Sun State Trailers branded 53 ft dry van trailer parked in dealership inventory lot"
+                    }
+                  }
+                },
+                {
+                  "id": "h-why-hold-value",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Dry Van Trailers Continue to Hold Value",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "why-hold-value"
+                  }
+                },
+                {
+                  "id": "p-why-hold-value-1",
+                  "type": "text",
+                  "props": {
+                    "text": "There's a reason dry van trailers remain one of the most common trailer types on the road. They're versatile, reliable, and used across multiple industries. From retail goods to non-perishable freight, demand stays consistent. That steady demand helps support resale value, even as trailers age. It also means there's always a market when you're ready to sell or upgrade.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-3",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/dry-van-trailer-resale-value-over-time/3.jpg",
+                      "width": 1000,
+                      "height": 667,
+                      "alt": "Close-up of a Hyundai Translead dry van trailer rear corner and logo detail"
+                    }
+                  }
+                },
+                {
+                  "id": "h-comparing",
+                  "type": "heading",
+                  "props": {
+                    "text": "Still Comparing Options?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "comparing"
+                  }
+                },
+                {
+                  "id": "p-comparing-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Understanding dry van trailer resale value gives you an edge. It helps you plan smarter, spend wisely, and get more out of every piece of equipment you own. If you do that, your trailer won't just serve your business today; it will continue to deliver value when it's time for your next move. If you're ready to make a purchase, we're here to help. At <a href=\"/locations/trailer-sales\">Sun State Trailers</a>, we don't just focus on the sale. We focus on helping you make the right decision for your business, both now and down the road.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "links-comparing-2-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "links-comparing-2",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "marginTop": 40,
+                          "marginBottom": 8
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "links-comparing-2-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-trailers",
+                                "label": "Explore Inventory"
+                              },
+                              {
+                                "ctaId": "browse-trailers",
+                                "label": "Download Trailer Specifications"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Trailer sales",
+          "heading": "Protect your investment from day one.",
+          "body": "Call 800.741.7566 to talk with our team about new and used dry van inventory built to hold its value.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Browse trailer inventory",
+          "secondaryUrl": "/store/inventory?type=trailer"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/dry-van-trailer-resale-value-over-time\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/dry-van-trailer-resale-value-over-time\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n/* Its reason cards: roomier, 24px apart, the sentence at 15px. */\n[data-bz-node=\"art-body\"] .bz-block--list .bz-grid { gap: 24px; }\n[data-bz-node=\"art-body\"] .bz-block--list .bz-feature { padding: 24px; }\n[data-bz-node=\"art-body\"] .bz-block--list .bz-feature__t { margin: 0 0 10px; }\n[data-bz-node=\"art-body\"] .bz-block--list .bz-feature__d { font-size: 15px; line-height: 1.7; }\n"
+}

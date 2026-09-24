@@ -1,0 +1,845 @@
+{
+  "slug": "dry-van-trailer-weight-capacity-and-payload-basics",
+  "title": "Dry Van Trailer Weight Capacity and Payload Basics",
+  "date": "2026-02-20",
+  "description": "Learn dry van trailer weight capacity, sizes, and payload limits. Compare specs and explore Sun State Trailers' inventory today.",
+  "status": "published",
+  "coverImage": "/img/blog/dry-van-trailer-weight-capacity-and-payload-basics/hero.jpg",
+  "topic": "Trailer Sales",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Trailer Sales",
+          "title": "Dry Van Trailer Weight Capacity and Payload Basics",
+          "topic": "Trailer Sales",
+          "date": "February 20, 2026",
+          "readTime": "5 min read",
+          "author": "Sun State Trailers",
+          "image": {
+            "src": "/img/blog/dry-van-trailer-weight-capacity-and-payload-basics/hero.jpg",
+            "width": 1000,
+            "height": 667,
+            "alt": "Row of Hyundai Translead and Sun State dry van trailers parked at the dealership lot"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "What Is Weight Capacity",
+                        "href": "#what-is"
+                      },
+                      {
+                        "label": "Common Sizes and Capacities",
+                        "href": "#sizes"
+                      },
+                      {
+                        "label": "Factors That Affect Capacity",
+                        "href": "#factors"
+                      },
+                      {
+                        "label": "Dry Vans Compared",
+                        "href": "#compared"
+                      },
+                      {
+                        "label": "Why Weight Matters for ROI",
+                        "href": "#roi"
+                      },
+                      {
+                        "label": "Choosing the Right Trailer",
+                        "href": "#choosing"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "NEED HELP WITH SPECS?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "We help operators match payload needs to the right trailer.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-trailers",
+                                "label": "Explore Inventory →"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "When you're choosing the right trailer for your operation, dry van trailer weight capacity is one of the most important specifications to understand. For owner-operators and fleet managers, the wrong capacity can cost time, fuel efficiency, and ultimately revenue. A trailer that's too light limits what you can haul. One that's too heavy may reduce payload potential and increase operating costs.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Understanding the basics of dry van sizes, semi-trailer capacity, and utility dry van weight helps you choose equipment that keeps your trucks productive and profitable. At Sun State Trailers, our goal is simple: help you find the equipment that works for your business today and holds its value long-term.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-what-is",
+                  "type": "heading",
+                  "props": {
+                    "text": "What Is Dry Van Trailer Weight Capacity?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "what-is"
+                  }
+                },
+                {
+                  "id": "p-what-is-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Weight capacity refers to the maximum amount of cargo a trailer can safely carry. To calculate it, you subtract the trailer's empty weight from its gross vehicle weight rating (GVWR).",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-what-is-2",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Typical numbers look like this:</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-what-is-3",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "~65,000 lbs"
+                      },
+                      {
+                        "text": "13,000–16,000 lbs"
+                      },
+                      {
+                        "text": "45,000–52,000 lbs"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-what-is-4",
+                  "type": "text",
+                  "props": {
+                    "text": "This payload capacity determines how much freight you can legally and safely haul. Many operators pay close attention to utility dry van weight because even a small difference in trailer weight can increase or decrease payload capacity.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-what-is-5-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-what-is-5",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-what-is-5-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "trailer-sales-location",
+                                "label": "Explore Our Dry Van Trailers →"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-sizes",
+                  "type": "heading",
+                  "props": {
+                    "text": "Common Dry Van Sizes and Capacities",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "sizes"
+                  }
+                },
+                {
+                  "id": "p-sizes-1",
+                  "type": "text",
+                  "props": {
+                    "text": "When comparing dry van sizes, most trailers fall into a few standard categories.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-sizes-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "type3",
+                    "items": [
+                      {
+                        "title": "53-Foot Dry Van",
+                        "points": [
+                          {
+                            "text": "Interior length: ~53 feet"
+                          },
+                          {
+                            "text": "Interior width: ~102 inches"
+                          },
+                          {
+                            "text": "Interior height: ~110 inches"
+                          },
+                          {
+                            "text": "Payload capacity: ~45,000–48,000 lbs"
+                          }
+                        ],
+                        "intro": "The most common option in North America."
+                      },
+                      {
+                        "title": "48-Foot Dry Van",
+                        "points": [
+                          {
+                            "text": "Easier maneuverability"
+                          },
+                          {
+                            "text": "Lower empty weight"
+                          },
+                          {
+                            "text": "Good capacity for regional routes"
+                          },
+                          {
+                            "text": "Payload: ~46,000–50,000 lbs"
+                          }
+                        ],
+                        "intro": "Slightly smaller but still widely used."
+                      },
+                      {
+                        "title": "Lightweight Dry Van",
+                        "points": [
+                          {
+                            "text": "Aluminum components"
+                          },
+                          {
+                            "text": "Composite panels"
+                          },
+                          {
+                            "text": "Reinforced flooring systems"
+                          }
+                        ],
+                        "intro": "Designed to maximize payload by reducing utility weight."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-sizes-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Because of its balance between space and efficiency, the 53-foot model is often the preferred choice for long-haul freight. A lighter trailer can allow operators to haul additional freight without exceeding weight limits.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "links-sizes-4-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "links-sizes-4",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "links-sizes-4-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-trailers",
+                                "label": "View Dry Van Trailer Specifications"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/dry-van-trailer-weight-capacity-and-payload-basics/1.jpg",
+                      "width": 1000,
+                      "height": 667,
+                      "alt": "Sun State technician inspecting the interior wall of a dry van trailer with a clipboard"
+                    }
+                  }
+                },
+                {
+                  "id": "h-factors",
+                  "type": "heading",
+                  "props": {
+                    "text": "Factors That Affect Semi Trailer Capacity",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "factors"
+                  }
+                },
+                {
+                  "id": "p-factors-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Even if two trailers are the same length, their semi trailer capacity can vary significantly. Several factors influence how much cargo a trailer can carry.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-factors-2",
+                  "type": "heading",
+                  "props": {
+                    "text": "1. Trailer Construction",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-factors-3",
+                  "type": "text",
+                  "props": {
+                    "text": "The materials used in a trailer directly impact its empty weight. Common construction options include steel frame trailers, aluminum frame trailers, and composite wall designs. Lightweight construction often increases payload capacity while maintaining durability.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-factors-4",
+                  "type": "heading",
+                  "props": {
+                    "text": "2. Flooring Strength",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-factors-5",
+                  "type": "text",
+                  "props": {
+                    "text": "Freight type matters. High-strength flooring systems are designed to handle beverage loads and industrial equipment. A reinforced floor may increase durability but slightly increase overall weight.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-factors-6",
+                  "type": "heading",
+                  "props": {
+                    "text": "3. Freight Type",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-factors-7",
+                  "type": "text",
+                  "props": {
+                    "text": "Different freight types affect how payload capacity is used, including consumer goods, retail products, food distribution, and manufacturing components. The goal is maximizing load efficiency without exceeding weight limits.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-compared",
+                  "type": "heading",
+                  "props": {
+                    "text": "Dry Vans Compared to Other Types of Trailers for Trucks",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "compared"
+                  }
+                },
+                {
+                  "id": "p-compared-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Dry vans are one of the most widely used types of trailers for trucks, but they aren't the only option. Understanding the differences helps operators choose the right equipment.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-compared-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "type3",
+                    "items": [
+                      {
+                        "title": "Dry Van Trailers",
+                        "points": [
+                          {
+                            "text": "Weather protection"
+                          },
+                          {
+                            "text": "Secure cargo transport"
+                          },
+                          {
+                            "text": "Versatile freight compatibility"
+                          }
+                        ],
+                        "intro": "Best for enclosed freight such as retail products, electronics, or packaged goods."
+                      },
+                      {
+                        "title": "Refrigerated (Reefer)",
+                        "points": [
+                          {
+                            "text": "Food distribution"
+                          },
+                          {
+                            "text": "Perishable goods"
+                          }
+                        ],
+                        "intro": "Designed for temperature-controlled cargo."
+                      },
+                      {
+                        "title": "Flatbed Trailers",
+                        "points": [
+                          {
+                            "text": "Construction materials"
+                          },
+                          {
+                            "text": "Machinery"
+                          },
+                          {
+                            "text": "Industrial equipment"
+                          }
+                        ],
+                        "intro": "Ideal for oversized freight."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-compared-3",
+                  "type": "text",
+                  "props": {
+                    "text": "For many operators, dry vans remain the most versatile and cost-effective trailer option.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "links-compared-4-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "links-compared-4",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "links-compared-4-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-trailers",
+                                "label": "View Available Trailer Inventory"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "fig-2",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/dry-van-trailer-weight-capacity-and-payload-basics/2.jpg",
+                      "width": 1000,
+                      "height": 667,
+                      "alt": "Row of dry van trailer rear doors and connections at Sun State Trailers"
+                    }
+                  }
+                },
+                {
+                  "id": "h-roi",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Trailer Weight Matters for Long-Term ROI",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "roi"
+                  }
+                },
+                {
+                  "id": "p-roi-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Choosing the right dry van trailer weight capacity isn't just about compliance; it's about long-term profitability.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-roi-2",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>A trailer with optimized weight and capacity can help operators:</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-roi-3",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Haul more freight per trip"
+                      },
+                      {
+                        "text": "Improve fuel efficiency"
+                      },
+                      {
+                        "text": "Reduce strain on equipment"
+                      },
+                      {
+                        "text": "Maintain higher resale value"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-roi-4",
+                  "type": "text",
+                  "props": {
+                    "text": "When your equipment works efficiently, every load becomes more valuable. That's why many owner-operators focus closely on semi-trailer capacity and dry van sizes before making a purchase.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-choosing",
+                  "type": "heading",
+                  "props": {
+                    "text": "Choosing the Right Dry Van Trailer",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "choosing"
+                  }
+                },
+                {
+                  "id": "p-choosing-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Every trucking operation has different needs. Some operators prioritize maximum payload capacity, lightweight construction, long-haul durability, or ease of maintenance. At Sun State Trailers, we help operators evaluate the options that make the most sense for their routes, freight types, and business goals. Because when your trailer works as hard as you do, the whole operation runs smoother.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-find-right-1",
+                  "type": "text",
+                  "props": {
+                    "text": "If you're comparing dry van trailer weight capacity, sizes, and payload specifications, the best next step is reviewing real equipment options. At <a href=\"/locations/trailer-sales\">Sun State Trailers</a>, you can explore a wide selection of dependable trailers designed to keep your trucks moving and your business profitable.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "find-right"
+                  }
+                },
+                {
+                  "id": "links-find-right-2-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "links-find-right-2",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "marginTop": 40,
+                          "marginBottom": 8
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "links-find-right-2-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-trailers",
+                                "label": "Explore Inventory"
+                              },
+                              {
+                                "ctaId": "browse-trailers",
+                                "label": "Download Trailer Specifications"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Trailer sales",
+          "heading": "Match your trailer to your payload.",
+          "body": "Call 800.741.7566 to talk with our team about dry van weight capacity and specs at any Sun State location in Florida.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Browse trailer inventory",
+          "secondaryUrl": "/store/inventory?type=trailer"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/dry-van-trailer-weight-capacity-and-payload-basics\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/dry-van-trailer-weight-capacity-and-payload-basics\"])) > .bz-card:nth-child(n+4) { display: none; }\n"
+}

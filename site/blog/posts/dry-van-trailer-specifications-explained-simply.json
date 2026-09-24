@@ -1,0 +1,1026 @@
+{
+  "slug": "dry-van-trailer-specifications-explained-simply",
+  "title": "Dry Van Trailer Specifications Explained Simply",
+  "date": "2026-02-06",
+  "description": "Dry van trailer dimensions explained for real-world hauling. Compare sizes & capacity. Explore new, used & rental trailers today.",
+  "status": "published",
+  "coverImage": "/img/blog/dry-van-trailer-specifications-explained-simply/hero.jpg",
+  "topic": "Trailer Sales",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Trailer Sales",
+          "title": "Dry Van Trailer Specifications Explained Simply",
+          "topic": "Trailer Sales",
+          "date": "February 6, 2026",
+          "readTime": "6 min read",
+          "author": "Sun State Trailers",
+          "image": {
+            "src": "/img/blog/dry-van-trailer-specifications-explained-simply/hero.jpg",
+            "width": 1000,
+            "height": 667,
+            "alt": "Sun State technician checking a dry van trailer's rear hitch between trailers in the lot"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "Why Specs Matter",
+                        "href": "#why-matter"
+                      },
+                      {
+                        "label": "Standard 53 ft Dimensions",
+                        "href": "#standard-dims"
+                      },
+                      {
+                        "label": "Key Specifications",
+                        "href": "#key-specs"
+                      },
+                      {
+                        "label": "How Specs Affect ROI",
+                        "href": "#roi"
+                      },
+                      {
+                        "label": "Choosing the Right Trailer",
+                        "href": "#choosing"
+                      },
+                      {
+                        "label": "New vs Used",
+                        "href": "#new-vs-used"
+                      },
+                      {
+                        "label": "Common Questions",
+                        "href": "#faq"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "WANT THE FULL SHEET?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "View detailed specifications before you compare trailers.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-trailers",
+                                "label": "View Our Trailer Specifications →"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "When you're investing in equipment for your business, you don't have time to sift through complicated charts or unclear details. You need straightforward answers. That's why understanding dry van trailer specifications matters. The right information helps you protect your bottom line, maximize payload, and make a confident purchase.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At <a href=\"/locations/trailer-sales\">Sun State Trailers</a>, we work with owner-operators and fleet managers across Florida who want dependable equipment without unnecessary hassle. Whether you're expanding your fleet or replacing an aging unit, we can break down the key dry van trailer specifications in plain language.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-why-matter",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Dry Van Trailer Specifications Matter",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "why-matter"
+                  }
+                },
+                {
+                  "id": "p-why-matter-1",
+                  "type": "text",
+                  "props": {
+                    "text": "A dry van trailer is one of the most versatile and widely used trailer types in the trucking industry. A significant portion of freight rides in dry vans because they protect cargo from weather and theft while offering flexible capacity. But not all dry vans are built the same.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-why-matter-2",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>The wrong trailer size or weight rating can:</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-why-matter-3",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Reduce your legal payload"
+                      },
+                      {
+                        "text": "Increase maintenance costs"
+                      },
+                      {
+                        "text": "Limit the types of freight you can haul"
+                      },
+                      {
+                        "text": "Cut into your trailer ROI"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-why-matter-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Understanding specifications before you buy ensures you get equipment that works for your routes, customers, and long-term business goals.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-why-matter-5-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-why-matter-5",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-why-matter-5-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-trailers",
+                                "label": "Explore Our Dry Van Inventory →"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-standard-dims",
+                  "type": "heading",
+                  "props": {
+                    "text": "Standard 53ft Dry Van Dimensions",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "standard-dims"
+                  }
+                },
+                {
+                  "id": "p-standard-dims-1",
+                  "type": "text",
+                  "props": {
+                    "text": "The most common configuration today is the 53ft dry van. Here's what you can typically expect:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-standard-dims-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "53 feet"
+                      },
+                      {
+                        "text": "102 inches (8.5 feet)"
+                      },
+                      {
+                        "text": "About 100 inches"
+                      },
+                      {
+                        "text": "Around 110 inches"
+                      },
+                      {
+                        "text": "Approximately 13.5 feet"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-standard-dims-3",
+                  "type": "text",
+                  "props": {
+                    "text": "These 53ft dry van dimensions allow you to haul up to 26 standard pallets, depending on loading configuration. For many Florida-based carriers, this size offers the best balance between capacity and efficiency. It maximizes freight volume while staying compliant with federal and state regulations.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/dry-van-trailer-specifications-explained-simply/1.jpg",
+                      "width": 1000,
+                      "height": 667,
+                      "alt": "Sun State branded dry van trailer parked next to an International tractor at the dealership lot"
+                    }
+                  }
+                },
+                {
+                  "id": "h-key-specs",
+                  "type": "heading",
+                  "props": {
+                    "text": "Key Specifications to Know",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "key-specs"
+                  }
+                },
+                {
+                  "id": "cards-key-specs-1",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "num",
+                    "items": [
+                      {
+                        "points": [],
+                        "num": "1",
+                        "title": "Gross Vehicle Weight Rating (GVWR)",
+                        "intro": "Most standard dry van trailers have a GVWR of 65,000 to 68,000 pounds. This determines how much total weight the trailer can legally carry, including its own weight. If you consistently haul heavier freight, this number directly impacts your profitability."
+                      },
+                      {
+                        "points": [],
+                        "num": "2",
+                        "title": "Trailer Weight",
+                        "intro": "The trailer weight is the empty weight of the trailer. Lighter trailers mean more payload capacity. Modern composite panel designs and high-strength steel components help reduce trailer weight without sacrificing durability."
+                      },
+                      {
+                        "points": [],
+                        "num": "3",
+                        "title": "Floor Type",
+                        "intro": "Most dry vans use hardwood floors, laminated floors, or aluminum floor systems. If you regularly haul heavy palletized freight, floor strength ratings matter. A 16-inch or 12-inch cross-member spacing can significantly impact durability."
+                      },
+                      {
+                        "points": [],
+                        "num": "4",
+                        "title": "Door Type",
+                        "intro": "You'll typically choose between swing doors and roll-up doors. Swing doors are more common and lighter, while roll-up doors are convenient for dock operations."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "cards-key-specs-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "num-wide",
+                    "items": [
+                      {
+                        "points": [
+                          {
+                            "text": "Smoother transport"
+                          },
+                          {
+                            "text": "Better cargo protection"
+                          },
+                          {
+                            "text": "Reduced maintenance stress"
+                          }
+                        ],
+                        "num": "5",
+                        "title": "Suspension System",
+                        "intro": "Air ride suspension is standard on most modern dry vans, providing:"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "links-key-specs-3-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "links-key-specs-3",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "links-key-specs-3-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-trailers",
+                                "label": "View Our Trailer Specifications"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-roi",
+                  "type": "heading",
+                  "props": {
+                    "text": "How Dry Van Specifications Affect Trailer ROI",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "roi"
+                  }
+                },
+                {
+                  "id": "p-roi-1",
+                  "type": "text",
+                  "props": {
+                    "text": "For owner-operators who carefully manage every dollar in their trucking business, they know that equipment decisions affect long-term profitability.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-roi-2",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "A trailer that's too heavy reduces payload."
+                      },
+                      {
+                        "text": "A trailer with weak flooring increases repair costs."
+                      },
+                      {
+                        "text": "A poorly built unit can cause downtime."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-roi-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Smart buyers look at dry van dimensions, structural materials, and manufacturer reputation to protect their trailer ROI. At Sun State Trailers, we help you think beyond the sticker price. We walk through how the trailer fits your routes, freight type, and growth plans so you're not just buying a trailer; you're making a sound business investment.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-choosing",
+                  "type": "heading",
+                  "props": {
+                    "text": "Choosing the Right Dry Van Trailer for Your Operation",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "choosing"
+                  }
+                },
+                {
+                  "id": "p-choosing-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Every operation is different. Here are a few scenarios:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-choosing-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "type3",
+                    "items": [
+                      {
+                        "title": "Regional Freight Haulers",
+                        "points": [],
+                        "intro": "A standard 53ft dry van with air ride suspension and durable flooring typically provides the versatility needed for consistent regional routes."
+                      },
+                      {
+                        "title": "High-Volume Distribution",
+                        "points": [],
+                        "intro": "Lightweight panel construction can increase payload capacity, improving margins over time."
+                      },
+                      {
+                        "title": "Expanding Fleets",
+                        "points": [],
+                        "intro": "If cash flow flexibility is important, rental or lease options can preserve capital while meeting demand."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-choosing-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Our team will walk you through specifications clearly and honestly, so you know exactly what you're getting.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-2",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/dry-van-trailer-specifications-explained-simply/2.jpg",
+                      "width": 1000,
+                      "height": 667,
+                      "alt": "Sun State team members greeting a customer beside International trucks at the dealership"
+                    }
+                  }
+                },
+                {
+                  "id": "h-new-vs-used",
+                  "type": "heading",
+                  "props": {
+                    "text": "New vs. Used Dry Vans",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "new-vs-used"
+                  }
+                },
+                {
+                  "id": "cards-new-vs-used-1",
+                  "type": "row",
+                  "props": {
+                    "gap": 4
+                  },
+                  "styles": {
+                    "base": {
+                      "marginBottom": 20
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "cards-new-vs-used-1-1",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 24,
+                          "paddingRight": 24,
+                          "paddingBottom": 24,
+                          "paddingLeft": 24
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "cards-new-vs-used-1-1-h",
+                          "type": "heading",
+                          "props": {
+                            "text": "New Dry Van Trailer",
+                            "headingLevel": 3,
+                            "align": "left"
+                          }
+                        },
+                        {
+                          "id": "cards-new-vs-used-1-1-l1",
+                          "type": "text",
+                          "props": {
+                            "text": "Benefits",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 13,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "ink",
+                              "marginTop": 10,
+                              "marginBottom": 6
+                            }
+                          }
+                        },
+                        {
+                          "id": "cards-new-vs-used-1-1-list2",
+                          "type": "prose-list",
+                          "props": {
+                            "ordered": false,
+                            "items": [
+                              {
+                                "text": "Latest technology and materials"
+                              },
+                              {
+                                "text": "Full warranty coverage"
+                              },
+                              {
+                                "text": "Longer service life"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "id": "cards-new-vs-used-1-1-l3",
+                          "type": "text",
+                          "props": {
+                            "text": "Ideal for",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 13,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "ink",
+                              "marginTop": 10,
+                              "marginBottom": 6
+                            }
+                          }
+                        },
+                        {
+                          "id": "cards-new-vs-used-1-1-list4",
+                          "type": "prose-list",
+                          "props": {
+                            "ordered": false,
+                            "items": [
+                              {
+                                "text": "Growing fleets"
+                              },
+                              {
+                                "text": "Long-term equipment"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "cards-new-vs-used-1-2",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 24,
+                          "paddingRight": 24,
+                          "paddingBottom": 24,
+                          "paddingLeft": 24
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "cards-new-vs-used-1-2-h",
+                          "type": "heading",
+                          "props": {
+                            "text": "Used Dry Van Trailer",
+                            "headingLevel": 3,
+                            "align": "left"
+                          }
+                        },
+                        {
+                          "id": "cards-new-vs-used-1-2-l1",
+                          "type": "text",
+                          "props": {
+                            "text": "Benefits",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 13,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "ink",
+                              "marginTop": 10,
+                              "marginBottom": 6
+                            }
+                          }
+                        },
+                        {
+                          "id": "cards-new-vs-used-1-2-list2",
+                          "type": "prose-list",
+                          "props": {
+                            "ordered": false,
+                            "items": [
+                              {
+                                "text": "Lower upfront cost"
+                              },
+                              {
+                                "text": "Faster ROI in certain markets"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "id": "cards-new-vs-used-1-2-l3",
+                          "type": "text",
+                          "props": {
+                            "text": "Ideal for",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 13,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "ink",
+                              "marginTop": 10,
+                              "marginBottom": 6
+                            }
+                          }
+                        },
+                        {
+                          "id": "cards-new-vs-used-1-2-list4",
+                          "type": "prose-list",
+                          "props": {
+                            "ordered": false,
+                            "items": [
+                              {
+                                "text": "Owner-operators scaling cautiously"
+                              },
+                              {
+                                "text": "Supplementing seasonal demand"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "p-new-vs-used-2",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>When reviewing used units, always check:</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-new-vs-used-3",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Floor condition"
+                      },
+                      {
+                        "text": "Roof integrity"
+                      },
+                      {
+                        "text": "Door alignment"
+                      },
+                      {
+                        "text": "Suspension wear"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-faq",
+                  "type": "heading",
+                  "props": {
+                    "text": "Common Questions About Dry Van Dimensions",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "faq"
+                  }
+                },
+                {
+                  "id": "questions-faq-1",
+                  "type": "qa-list",
+                  "props": {
+                    "items": [
+                      {
+                        "q": "What is the standard height of a dry van?",
+                        "a": "Most interior heights are around 110 inches, though this can vary slightly by manufacturer."
+                      },
+                      {
+                        "q": "Are all dry van trailers 53 feet long?",
+                        "a": "No. While 53 feet is most common, you may also see 48-foot and shorter configurations depending on the operation type."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-faq-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Understanding dry van trailer specifications doesn't have to be complicated. When you focus on dimensions, weight ratings, floor strength, and suspension quality, you're setting your business up for long-term success. At <a href=\"/locations/trailer-sales\">Sun State Trailers</a>, we believe professionalism and straightforward service aren't optional; they're expected. As a family-owned business, we treat our customers like part of our community.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-faq-3",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>The right dry van trailer should:</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-faq-4",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Maximize payload"
+                      },
+                      {
+                        "text": "Reduce maintenance surprises"
+                      },
+                      {
+                        "text": "Support consistent freight operations"
+                      },
+                      {
+                        "text": "Strengthen your trailer ROI"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "links-faq-5-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "links-faq-5",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "marginTop": 40,
+                          "marginBottom": 8
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "links-faq-5-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-new-trailers",
+                                "label": "New Trailers"
+                              },
+                              {
+                                "ctaId": "browse-used-trailers",
+                                "label": "Used Trailers"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Trailer sales",
+          "heading": "Equipment you can count on.",
+          "body": "Call 800.741.7566 to talk with our team about dry van specifications at any Sun State location in Florida.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Browse trailer inventory",
+          "secondaryUrl": "/store/inventory?type=trailer"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/dry-van-trailer-specifications-explained-simply\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/dry-van-trailer-specifications-explained-simply\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n/* Its type cards set their sentences small, and their lists at 14px. */\n[data-bz-node=\"art-body\"] .ss-cl--type3 .ss-cl__p { font-size: 13px; line-height: 1.8; letter-spacing: .04em; margin: 0 0 6px; }\n[data-bz-node=\"art-body\"] .bz-col .ss-prose-list { padding-left: 18px; }\n[data-bz-node=\"art-body\"] .bz-col .ss-prose-list li { font-size: 14px; }\n\n/* Its questions are ruled above each, and closed off below the last. */\n[data-bz-node=\"art-body\"] .ss-qa { margin-bottom: 20px; }\n[data-bz-node=\"art-body\"] .ss-qa__i { border-bottom: 0; border-top: 1px solid var(--line); }\n[data-bz-node=\"art-body\"] .ss-qa__i:last-child { border-bottom: 1px solid var(--line); }\n[data-bz-node=\"art-body\"] .ss-qa__a { font-size: 15px; }\n"
+}

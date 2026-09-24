@@ -1,0 +1,743 @@
+{
+  "slug": "why-choose-hyundai-dry-van-trailer-dealers",
+  "title": "Why Choose Hyundai Dry Van Trailer Dealers",
+  "date": "2026-04-30",
+  "description": "Hyundai dry van trailer dealers you can trust. Find reliable trailers with Sun State Trailers, and contact us today to get started.",
+  "status": "published",
+  "coverImage": "/img/blog/why-choose-hyundai-dry-van-trailer-dealers/hero.jpg",
+  "topic": "Trailer Sales",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Trailer Sales",
+          "title": "Why Choose Hyundai Dry Van Trailer Dealers",
+          "topic": "Trailer Sales",
+          "date": "April 30, 2026",
+          "readTime": "5 min read",
+          "author": "Sun State Trailers",
+          "image": {
+            "src": "/img/blog/why-choose-hyundai-dry-van-trailer-dealers/hero.jpg",
+            "width": 1000,
+            "height": 667,
+            "alt": "International semi-truck with a Hyundai Translead dry van trailer at Sun State Trailers"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "What Sets Hyundai Trailers Apart",
+                        "href": "#stands-apart"
+                      },
+                      {
+                        "label": "The Right Dealer Difference",
+                        "href": "#dealer-difference"
+                      },
+                      {
+                        "label": "Supporting Your Bottom Line",
+                        "href": "#bottom-line"
+                      },
+                      {
+                        "label": "What to Look For",
+                        "href": "#what-to-look-for"
+                      },
+                      {
+                        "label": "Why Sun State Is Trusted",
+                        "href": "#trusted-choice"
+                      },
+                      {
+                        "label": "Find Your Next Trailer",
+                        "href": "#find-your-trailer"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "SHOPPING FOR A TRAILER?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Talk to our team about new and used Hyundai Translead dry van inventory.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "trailer-sales-location",
+                                "label": "Talk to a Rep →"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "When you're investing in a dry van trailer, the manufacturer matters, but the dealer you choose matters just as much. Working with experienced Hyundai dry van trailer dealers like Sun State Trailers ensures you're not just getting a trailer; you're getting the right trailer for your business, backed by people who understand what's on the line. For owner-operators and fleet managers, that difference shows up in uptime, cost savings, and peace of mind.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "h-stands-apart",
+                  "type": "heading",
+                  "props": {
+                    "text": "What Sets Hyundai Trailers Apart",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "stands-apart"
+                  }
+                },
+                {
+                  "id": "p-stands-apart-1",
+                  "type": "text",
+                  "props": {
+                    "text": "There's a reason Hyundai trailers have become a trusted name in the industry. Built with durability, efficiency, and performance in mind, they're designed to handle the daily demands of freight transport without cutting corners. Here's what makes a Hyundai semi-trailer stand out:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "features-stands-apart-2",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 2,
+                    "columns": 3,
+                    "items": [
+                      {
+                        "label": "Built for Long-Term Durability",
+                        "desc": "Hyundai trailers are engineered with high-quality materials that resist wear and tear. That means fewer repairs, longer lifespans, and better resale value."
+                      },
+                      {
+                        "label": "Lightweight Without Sacrificing Strength",
+                        "desc": "A lighter trailer means more payload capacity. For businesses focused on maximizing each haul, that efficiency directly impacts profitability."
+                      },
+                      {
+                        "label": "Consistent Performance Across Fleets",
+                        "desc": "Whether you're running one truck or managing a fleet, consistency matters. Hyundai trailers are known for reliability, which helps reduce unexpected downtime."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/why-choose-hyundai-dry-van-trailer-dealers/1.jpg",
+                      "width": 1000,
+                      "height": 667,
+                      "alt": "Row of Hyundai Translead trailer wheels and mudflaps at Sun State Trailers"
+                    }
+                  }
+                },
+                {
+                  "id": "h-dealer-difference",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why the Right Hyundai Dry Van Trailer Dealer Makes a Difference",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "dealer-difference"
+                  }
+                },
+                {
+                  "id": "p-dealer-difference-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Not all dealers operate the same way. And if you've been in this industry long enough, you've probably felt that firsthand. Here's what separates a dependable dealer from the rest:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-dealer-difference-2",
+                  "type": "heading",
+                  "props": {
+                    "text": "1. Straightforward Guidance",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-dealer-difference-3",
+                  "type": "text",
+                  "props": {
+                    "text": "You don't need a sales pitch. You need clear answers about specs, pricing, and availability. The right dealer respects your time and gives you exactly what you need to make a decision.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-dealer-difference-4",
+                  "type": "heading",
+                  "props": {
+                    "text": "2. Inventory That Fits Your Business",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-dealer-difference-5",
+                  "type": "text",
+                  "props": {
+                    "text": "Whether you're searching for a Hyundai trailer for sale or comparing different dry van trailer options, having access to the right inventory matters. A good dealer doesn't push what's available; they help you find what works.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-dealer-difference-6",
+                  "type": "heading",
+                  "props": {
+                    "text": "3. Support Beyond the Sale",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-dealer-difference-7",
+                  "type": "text",
+                  "props": {
+                    "text": "A trailer is an investment, not a one-time transaction. The best Hyundai dry van trailer dealers build relationships, offering support, service, and parts long after the purchase.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-dealer-difference-8-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-dealer-difference-8",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-dealer-difference-8-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "contact-us",
+                                "label": "Talk to a Rep →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-bottom-line",
+                  "type": "heading",
+                  "props": {
+                    "text": "How Hyundai Dry Van Trailers Support Your Bottom Line",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "bottom-line"
+                  }
+                },
+                {
+                  "id": "p-bottom-line-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Every decision you make as an owner-operator or fleet manager comes down to one thing: the bottom line. Choosing the right Hyundai trailer helps in more ways than one:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-bottom-line-2",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Reduced maintenance costs from durable construction"
+                      },
+                      {
+                        "text": "Better fuel efficiency with a lightweight design"
+                      },
+                      {
+                        "text": "Higher resale value when it's time to upgrade"
+                      },
+                      {
+                        "text": "Consistent uptime that keeps your operation moving"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-bottom-line-3",
+                  "type": "text",
+                  "props": {
+                    "text": "When your equipment works the way it should, your business runs better. It's that simple.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-bottom-line-4",
+                  "type": "text",
+                  "props": {
+                    "text": "If you're currently searching for a Hyundai trailer for sale, it's worth working with a team that understands your priorities. <a href=\"/locations/trailer-sales\">Sun State Trailers</a> offers dependable inventory, straightforward guidance, and real support, so you can make the right call the first time. Contact us to find the equipment that fits your operation.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "links-bottom-line-5-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "links-bottom-line-5",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "links-bottom-line-5-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "contact-us",
+                                "label": "Explore Available Trailers",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-what-to-look-for",
+                  "type": "heading",
+                  "props": {
+                    "text": "What to Look for When Choosing a Hyundai Trailer Dealer",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "what-to-look-for"
+                  }
+                },
+                {
+                  "id": "p-what-to-look-for-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Not sure where to start? Here are a few things to keep in mind when evaluating Hyundai dry van trailer dealers:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-what-to-look-for-2",
+                  "type": "heading",
+                  "props": {
+                    "text": "Experience in the Industry",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-what-to-look-for-3",
+                  "type": "text",
+                  "props": {
+                    "text": "A dealer who understands trucking understands your challenges: tight deadlines, rising costs, and the need for reliable equipment.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-what-to-look-for-4",
+                  "type": "heading",
+                  "props": {
+                    "text": "Local Availability",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-what-to-look-for-5",
+                  "type": "text",
+                  "props": {
+                    "text": "Working with a dealer who has locations and inventory nearby makes the process faster and easier when you need something now, not weeks from now.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-what-to-look-for-6",
+                  "type": "heading",
+                  "props": {
+                    "text": "Reputation and Relationships",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-what-to-look-for-7",
+                  "type": "text",
+                  "props": {
+                    "text": "In this industry, word travels fast. Dealers who consistently deliver quality service earn long-term customers, and that says everything.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-what-to-look-for-8",
+                  "type": "text",
+                  "props": {
+                    "text": "Sun State Trailers has built our reputation on exactly that: dependable service, honest communication, and a commitment to helping customers succeed.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-2",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/why-choose-hyundai-dry-van-trailer-dealers/2.jpg",
+                      "width": 1000,
+                      "height": 667,
+                      "alt": "Row of Hyundai Translead dry van trailers parked at Sun State Trailers"
+                    }
+                  }
+                },
+                {
+                  "id": "h-trusted-choice",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Sun State Trailers Is a Trusted Choice",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "trusted-choice"
+                  }
+                },
+                {
+                  "id": "p-trusted-choice-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At the end of the day, you're not just buying a trailer; you're choosing who you want to work with. Sun State Trailers takes a different approach:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-trusted-choice-2",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "A family-oriented business with a customer-first mindset"
+                      },
+                      {
+                        "text": "A focus on long-term relationships, not quick sales"
+                      },
+                      {
+                        "text": "A team that values clear communication and fast service"
+                      },
+                      {
+                        "text": "Access to high-quality Hyundai semi-trailer inventory"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-trusted-choice-3",
+                  "type": "text",
+                  "props": {
+                    "text": "It's a straightforward process, backed by people who respect your time and understand your business.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-find-your-trailer",
+                  "type": "heading",
+                  "props": {
+                    "text": "Find Your Next Hyundai Dry Van Trailer",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "find-your-trailer"
+                  }
+                },
+                {
+                  "id": "p-find-your-trailer-1",
+                  "type": "text",
+                  "props": {
+                    "text": "If you're in the market for a dry van trailer, working with the right dealer makes all the difference. <a href=\"/locations/trailer-sales\">Sun State Trailers</a> is here to help you find a Hyundai trailer that fits your needs, your budget, and your long-term goals. Contact us today to explore trailer sales and get connected with a team you can rely on.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "links-find-your-trailer-2-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "links-find-your-trailer-2",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "marginTop": 40,
+                          "marginBottom": 8
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "links-find-your-trailer-2-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "contact-us",
+                                "label": "Connect With Our Team",
+                                "style": "link"
+                              },
+                              {
+                                "ctaId": "browse-trailers",
+                                "label": "Browse Trailer Inventory"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Trailer sales",
+          "heading": "Find your next Hyundai dry van trailer.",
+          "body": "Call 800.741.7566 to talk with our team about new and used Hyundai Translead inventory at any Sun State location in Florida.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Browse trailer inventory",
+          "secondaryUrl": "/store/inventory?type=trailer"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/why-choose-hyundai-dry-van-trailer-dealers\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/why-choose-hyundai-dry-van-trailer-dealers\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n/* Its reason cards: roomier, 24px apart, the sentence at 15px. */\n[data-bz-node=\"art-body\"] .bz-block--list .bz-grid { gap: 24px; }\n[data-bz-node=\"art-body\"] .bz-block--list .bz-feature { padding: 24px; }\n[data-bz-node=\"art-body\"] .bz-block--list .bz-feature__t { margin: 0 0 10px; }\n[data-bz-node=\"art-body\"] .bz-block--list .bz-feature__d { font-size: 15px; line-height: 1.7; }\n"
+}

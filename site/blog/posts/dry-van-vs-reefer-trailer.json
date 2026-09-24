@@ -1,0 +1,669 @@
+{
+  "slug": "dry-van-vs-reefer-trailer",
+  "title": "Dry Van vs Reefer Trailer: Which Makes Sense?",
+  "date": "2026-03-29",
+  "description": "Dry van vs reefer trailer explained. Compare costs, uses, and benefits to find the right trailer for your fleet today.",
+  "status": "published",
+  "coverImage": "/img/blog/dry-van-vs-reefer-trailer/hero.jpg",
+  "topic": "Trailer Sales",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Trailer Sales",
+          "title": "Dry Van vs Reefer Trailer: Which Makes Sense?",
+          "topic": "Trailer Sales",
+          "date": "March 29, 2026",
+          "readTime": "5 min read",
+          "author": "Sun State Trailers",
+          "image": {
+            "src": "/img/blog/dry-van-vs-reefer-trailer/hero.jpg",
+            "width": 1000,
+            "height": 667,
+            "alt": "International semi-truck with a Hyundai Translead dry van trailer at Sun State Trailers"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "Understanding the Difference",
+                        "href": "#understanding"
+                      },
+                      {
+                        "label": "Why Dry Vans Are So Common",
+                        "href": "#why-dry-van"
+                      },
+                      {
+                        "label": "When a Reefer Makes Sense",
+                        "href": "#reefer-makes-sense"
+                      },
+                      {
+                        "label": "Key Differences",
+                        "href": "#comparison"
+                      },
+                      {
+                        "label": "Finding the Right Trailer",
+                        "href": "#finding-right"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "STILL DECIDING?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "We help compare models, capacities and financing so you pick the right fit.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-trailers",
+                                "label": "Browse Inventory →"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "When expanding your fleet, one of the most common questions trucking businesses face is \"dry van vs reefer trailer, which one makes more sense?\" Both trailer types are essential to the freight industry, but they serve very different purposes. Choosing the right one depends on what you haul, where you haul it, and how you plan to grow your business.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At <a href=\"/locations/trailer-sales\">Sun State Trailers</a>, we work with owner-operators and fleet managers across Florida who are weighing this exact decision. Whether you're purchasing your first trailer or expanding an established fleet, understanding the difference between a dry van trailer and a reefer can help you make a smarter investment.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-understanding",
+                  "type": "heading",
+                  "props": {
+                    "text": "Understanding the Dry Van vs Reefer Trailer Difference",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "understanding"
+                  }
+                },
+                {
+                  "id": "p-understanding-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At a glance, dry vans and refrigerated trailers look similar. Both are enclosed box trailers designed to protect cargo from weather and road conditions. The biggest difference comes down to temperature control.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-understanding-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "type",
+                    "items": [
+                      {
+                        "title": "Dry Van Trailer",
+                        "points": [
+                          {
+                            "text": "Retail goods and consumer products"
+                          },
+                          {
+                            "text": "Furniture and appliances"
+                          },
+                          {
+                            "text": "Electronics"
+                          },
+                          {
+                            "text": "Building materials"
+                          },
+                          {
+                            "text": "Packaged foods that do not require refrigeration"
+                          }
+                        ],
+                        "intro": "A dry van trailer is the most common trailer used in freight transportation. It's fully enclosed but does not include refrigeration or climate control systems. Dry vans are used to haul cargo that does not require temperature regulation.",
+                        "lead": "Common freight includes:"
+                      },
+                      {
+                        "title": "Reefer Trailer",
+                        "points": [
+                          {
+                            "text": "Fresh produce"
+                          },
+                          {
+                            "text": "Frozen foods"
+                          },
+                          {
+                            "text": "Dairy products"
+                          },
+                          {
+                            "text": "Temperature-sensitive goods"
+                          }
+                        ],
+                        "intro": "A reefer trailer (refrigerated trailer) includes a temperature-controlled refrigeration unit that keeps cargo cold or frozen during transport. A reefer trailer is essential when transporting goods that must remain within a specific temperature range.",
+                        "lead": "Typical cargo includes:"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-understanding-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Because of their versatility, dry van trailers account for a large percentage of freight shipments in the United States, while the refrigeration unit allows a reefer to maintain a consistent temperature throughout the entire trip.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-understanding-4-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-understanding-4",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-understanding-4-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-trailers",
+                                "label": "View Our Available Dry Van Trailer Options →"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-why-dry-van",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Are Dry Van Trailers So Common?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "why-dry-van"
+                  }
+                },
+                {
+                  "id": "p-why-dry-van-1",
+                  "type": "text",
+                  "props": {
+                    "text": "When comparing a dry van trailer vs reefer, the dry van typically wins in terms of simplicity and versatility. One reason is demand: trucks move the large majority of the nation's freight, and a large portion of that cargo travels in standard dry vans.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-why-dry-van-2",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>A dry van trailer offers several advantages:</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-why-dry-van-3",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "<strong>Lower Purchase Cost:</strong> Dry vans are generally less expensive than refrigerated trailers because they do not require a refrigeration unit."
+                      },
+                      {
+                        "text": "<strong>Lower Maintenance Costs:</strong> Without refrigeration systems, dry van trailers typically have fewer mechanical components that require maintenance."
+                      },
+                      {
+                        "text": "<strong>Simpler Operation:</strong> Drivers don't need to manage temperature settings or monitor refrigeration equipment."
+                      },
+                      {
+                        "text": "<strong>Versatility:</strong> Dry vans can haul a wide variety of cargo types across many industries."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-why-dry-van-4",
+                  "type": "text",
+                  "props": {
+                    "text": "For many owner-operators, a dry van trailer is the most practical starting point when building a fleet.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/dry-van-vs-reefer-trailer/1.jpg",
+                      "width": 1000,
+                      "height": 667,
+                      "alt": "Sun State team member opening the rear doors of a dry van trailer"
+                    }
+                  }
+                },
+                {
+                  "id": "h-reefer-makes-sense",
+                  "type": "heading",
+                  "props": {
+                    "text": "When a Reefer Trailer Makes More Sense",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "reefer-makes-sense"
+                  }
+                },
+                {
+                  "id": "p-reefer-makes-sense-1",
+                  "type": "text",
+                  "props": {
+                    "text": "While dry vans dominate many freight categories, there are situations where a reefer trailer is the clear choice. If your freight requires temperature control, a refrigerated trailer is essential.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-reefer-makes-sense-2",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Advantages of reefer trailers include:</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-reefer-makes-sense-3",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "<strong>Temperature Protection:</strong> Reefer trailers maintain consistent temperatures, which protect perishable goods from spoilage."
+                      },
+                      {
+                        "text": "<strong>Higher Freight Rates:</strong> Because refrigerated freight requires specialized equipment, it often pays higher rates."
+                      },
+                      {
+                        "text": "<strong>Expanding Industry Demand:</strong> The demand for refrigerated transportation continues to grow with the expansion of grocery delivery, pharmaceuticals, and food distribution."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-reefer-makes-sense-4",
+                  "type": "text",
+                  "props": {
+                    "text": "For some fleets, these additional maintenance and operational costs are worthwhile if they open the door to higher-paying freight.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-comparison",
+                  "type": "heading",
+                  "props": {
+                    "text": "Reefer Trailer vs Dry Van: Key Differences",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "comparison"
+                  }
+                },
+                {
+                  "id": "p-comparison-1",
+                  "type": "text",
+                  "props": {
+                    "text": "If you're comparing a dry van vs a reefer trailer, here's a simple breakdown.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "compare-comparison-2",
+                  "type": "compare-table",
+                  "props": {
+                    "headA": "Feature",
+                    "headB": "Dry Van Trailer",
+                    "headC": "Reefer Trailer",
+                    "rows": [
+                      {
+                        "a": "Temperature Control",
+                        "b": "No",
+                        "c": "Yes"
+                      },
+                      {
+                        "a": "Typical Cargo",
+                        "b": "General freight",
+                        "c": "Perishable goods"
+                      },
+                      {
+                        "a": "Purchase Cost",
+                        "b": "Lower",
+                        "c": "Higher"
+                      },
+                      {
+                        "a": "Maintenance",
+                        "b": "Simpler",
+                        "c": "More complex"
+                      },
+                      {
+                        "a": "Freight Rates",
+                        "b": "Standard",
+                        "c": "Often higher"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-comparison-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Both trailer types play an important role in freight transportation, and many fleets eventually operate a combination of both.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-2",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/dry-van-vs-reefer-trailer/2.jpg",
+                      "width": 1000,
+                      "height": 667,
+                      "alt": "Row of Hyundai Translead dry van trailers at Sun State Trailers with a team member walking past"
+                    }
+                  }
+                },
+                {
+                  "id": "h-finding-right",
+                  "type": "heading",
+                  "props": {
+                    "text": "Finding the Right Trailer for Your Business",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "finding-right"
+                  }
+                },
+                {
+                  "id": "p-finding-right-1",
+                  "type": "text",
+                  "props": {
+                    "text": "The decision between purchasing a dry van or a reefer trailer ultimately depends on the type of freight you haul and how you want your business to grow. Dry vans offer flexibility, lower operating costs, and broad freight opportunities. Reefer trailers provide access to temperature-controlled freight and often higher-paying loads. The most important thing is choosing equipment that supports your operation today while leaving room for future growth.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-finding-right-2",
+                  "type": "text",
+                  "props": {
+                    "text": "If you're weighing dry van vs reefer trailer, the best next step is speaking with a team that understands the trucking business and the equipment behind it. Whether you're searching for a dependable dry van trailer, exploring refrigerated options, or looking for flexible fleet solutions, <a href=\"/locations/trailer-sales\">Sun State Trailers</a> can help.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "links-finding-right-3-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "links-finding-right-3",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "marginTop": 40,
+                          "marginBottom": 8
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "links-finding-right-3-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-new-trailers",
+                                "label": "Shop New Trailers"
+                              },
+                              {
+                                "ctaId": "browse-used-trailers",
+                                "label": "Used Trailers"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Trailer sales",
+          "heading": "Find the right trailer for your freight.",
+          "body": "Call 800.741.7566 to compare dry van and reefer options at any Sun State location in Florida.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Browse trailer inventory",
+          "secondaryUrl": "/store/inventory?type=trailer"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/dry-van-vs-reefer-trailer\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/dry-van-vs-reefer-trailer\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n[data-bz-node=\"art-body\"] .ss-cl--type .ss-cl__list { margin: 0; }\n[data-bz-node=\"art-body\"] .ss-cl--type .ss-cl__list li { font-size: 14px; }\n\n/* Its comparison is ruled in ink under sentence-case headings, with roomier cells. */\n[data-bz-node=\"art-body\"] .ss-cmp { margin-bottom: 20px; }\n[data-bz-node=\"art-body\"] .ss-cmp thead th { letter-spacing: .1em; text-transform: none; border-bottom: 2px solid var(--ink); }\n[data-bz-node=\"art-body\"] .ss-cmp tbody th,\n[data-bz-node=\"art-body\"] .ss-cmp td { padding: 14px; font-size: 15px; line-height: 1.3; }\n[data-bz-node=\"art-body\"] .ss-cmp tbody th { width: auto; }\n@media (max-width: 640px) { [data-bz-node=\"art-body\"] .ss-cmp th, [data-bz-node=\"art-body\"] .ss-cmp td { font-size: 13px; } }\n"
+}

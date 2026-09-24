@@ -44,6 +44,30 @@
         {
           "value": "numbered",
           "label": "Numbered — three across, a small number over a short heading"
+        },
+        {
+          "value": "type",
+          "label": "Type — two across, roomy, a lead-in in bold before the list"
+        },
+        {
+          "value": "option",
+          "label": "Option — three across, a small accent label before the list"
+        },
+        {
+          "value": "type3",
+          "label": "Type, three across"
+        },
+        {
+          "value": "cost",
+          "label": "Cost — one per row, a closing note under the list"
+        },
+        {
+          "value": "num",
+          "label": "Numbered — two across, a large number over the title"
+        },
+        {
+          "value": "num-wide",
+          "label": "Numbered, full width"
         }
       ]
     },
@@ -53,6 +77,11 @@
       "label": "Cards",
       "fields": [
         {
+          "key": "num",
+          "type": "text",
+          "label": "Number above the title (optional)"
+        },
+        {
           "key": "title",
           "type": "text",
           "label": "Title"
@@ -61,6 +90,11 @@
           "key": "intro",
           "type": "richtext",
           "label": "Sentence under the title (optional, may carry a link)"
+        },
+        {
+          "key": "lead",
+          "type": "text",
+          "label": "Lead-in before the points (optional)"
         },
         {
           "key": "points",
@@ -73,10 +107,15 @@
               "label": "Point (may lead in bold)"
             }
           ]
+        },
+        {
+          "key": "outro",
+          "type": "textarea",
+          "label": "Note under the points (optional)"
         }
       ]
     }
   ],
-  "html": "<div class=\"ss-cl ss-cl--{{variant}}\">{{#each items}}<div class=\"ss-cl__card\"><h3 class=\"ss-cl__t\">{{title}}</h3>{{#if intro}}<p class=\"ss-cl__p\">{{&intro}}</p>{{/if}}{{#if points}}<ul class=\"ss-cl__list\">{{#each points}}<li>{{&text}}</li>{{/each}}</ul>{{/if}}</div>{{/each}}</div>",
-  "css": ".ss-cl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}\n.ss-cl--compare{margin:8px 0 24px}\n.ss-cl--group{margin-bottom:8px}\n.ss-cl__card{border:1px solid var(--line)}\n.ss-cl--compare .ss-cl__card{padding:24px}\n.ss-cl--group .ss-cl__card{padding:22px 24px;margin-bottom:16px}\n.ss-cl__t{font:800 19px/1.3 var(--font-heading);color:var(--ink);text-transform:none;margin:30px 0 12px}\n.ss-cl--group .ss-cl__t{margin:0 0 12px}\n.ss-cl__p{font-size:15px;line-height:1.8;color:var(--body-text);margin:0 0 12px}\n.ss-cl__list{margin:0 0 20px;padding-left:20px}\n.ss-cl__list li{font-size:16px;line-height:1.75;color:var(--body-text);margin-bottom:6px}\n.ss-cl--interval{grid-template-columns:repeat(4,minmax(0,1fr));margin:8px 0 24px}\n.ss-cl--interval .ss-cl__card{padding:22px}\n.ss-cl--interval .ss-cl__t{font:700 11px/1 var(--font-body);letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin:0 0 10px}\n.ss-cl--interval .ss-cl__list{margin:0;padding-left:18px}\n.ss-cl--feature{grid-template-columns:repeat(3,minmax(0,1fr));margin-bottom:20px}\n.ss-cl--feature2{margin-bottom:20px}\n.ss-cl--feature .ss-cl__card,.ss-cl--feature2 .ss-cl__card{padding:22px}\n.ss-cl--feature .ss-cl__t,.ss-cl--feature2 .ss-cl__t{margin:0 0 12px}\n.ss-cl--feature .ss-cl__p,.ss-cl--feature2 .ss-cl__p{margin:0}\n.ss-cl__p a{color:var(--accent)}\n.ss-cl--spec{margin-bottom:20px}\n.ss-cl--spec .ss-cl__card{padding:22px}\n.ss-cl--spec .ss-cl__t{margin:0 0 12px}\n.ss-cl--spec .ss-cl__list{margin:0;padding-left:18px}\n.ss-cl--spec .ss-cl__list li{font-size:15px}\n.ss-cl--spec .ss-cl__list li:last-child{margin-bottom:0}\n.ss-cl__list strong{color:var(--ink)}\n.ss-cl--series,.ss-cl--numbered{grid-template-columns:repeat(3,minmax(0,1fr));margin-bottom:24px}\n.ss-cl--series2{margin-bottom:20px}\n.ss-cl--series .ss-cl__card,.ss-cl--series2 .ss-cl__card,.ss-cl--numbered .ss-cl__card{padding:20px}\n.ss-cl--series .ss-cl__t,.ss-cl--series2 .ss-cl__t,.ss-cl--numbered .ss-cl__t{font:700 11px/1 var(--font-body);letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 12px}\n.ss-cl--series .ss-cl__p,.ss-cl--series2 .ss-cl__p,.ss-cl--numbered .ss-cl__p{margin:0}\n.ss-cl--numbered .ss-cl__p{font:800 17px/1.3 var(--font-heading);color:var(--ink);text-transform:none}\n@media (max-width:1100px){.ss-cl--feature,.ss-cl--series,.ss-cl--numbered{grid-template-columns:repeat(2,minmax(0,1fr))}.ss-cl{grid-template-columns:minmax(0,1fr)}.ss-cl--interval{grid-template-columns:repeat(2,minmax(0,1fr))}}\n@media (max-width:640px){.ss-cl--interval,.ss-cl--feature,.ss-cl--series,.ss-cl--feature2,.ss-cl--series2,.ss-cl--numbered{grid-template-columns:minmax(0,1fr)}}"
+  "html": "<div class=\"ss-cl ss-cl--{{variant}}\">{{#each items}}<div class=\"ss-cl__card\">{{#if num}}<span class=\"ss-cl__n\">{{num}}</span>{{/if}}<h3 class=\"ss-cl__t\">{{title}}</h3>{{#if intro}}<p class=\"ss-cl__p\">{{&intro}}</p>{{/if}}{{#if lead}}<p class=\"ss-cl__lead\">{{lead}}</p>{{/if}}{{#if points}}<ul class=\"ss-cl__list\">{{#each points}}<li>{{&text}}</li>{{/each}}</ul>{{/if}}{{#if outro}}<p class=\"ss-cl__o\">{{outro}}</p>{{/if}}</div>{{/each}}</div>",
+  "css": ".ss-cl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}\n.ss-cl--compare{margin:8px 0 24px}\n.ss-cl--group{margin-bottom:8px}\n.ss-cl__card{border:1px solid var(--line)}\n.ss-cl--compare .ss-cl__card{padding:24px}\n.ss-cl--group .ss-cl__card{padding:22px 24px;margin-bottom:16px}\n.ss-cl__t{font:800 19px/1.3 var(--font-heading);color:var(--ink);text-transform:none;margin:30px 0 12px}\n.ss-cl--group .ss-cl__t{margin:0 0 12px}\n.ss-cl__p{font-size:15px;line-height:1.8;color:var(--body-text);margin:0 0 12px}\n.ss-cl__list{margin:0 0 20px;padding-left:20px}\n.ss-cl__list li{font-size:16px;line-height:1.75;color:var(--body-text);margin-bottom:6px}\n.ss-cl--interval{grid-template-columns:repeat(4,minmax(0,1fr));margin:8px 0 24px}\n.ss-cl--interval .ss-cl__card{padding:22px}\n.ss-cl--interval .ss-cl__t{font:700 11px/1 var(--font-body);letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin:0 0 10px}\n.ss-cl--interval .ss-cl__list{margin:0;padding-left:18px}\n.ss-cl--feature{grid-template-columns:repeat(3,minmax(0,1fr));margin-bottom:20px}\n.ss-cl--feature2{margin-bottom:20px}\n.ss-cl--feature .ss-cl__card,.ss-cl--feature2 .ss-cl__card{padding:22px}\n.ss-cl--feature .ss-cl__t,.ss-cl--feature2 .ss-cl__t{margin:0 0 12px}\n.ss-cl--feature .ss-cl__p,.ss-cl--feature2 .ss-cl__p{margin:0}\n.ss-cl__p a{color:var(--accent)}\n.ss-cl--spec{margin-bottom:20px}\n.ss-cl--spec .ss-cl__card{padding:22px}\n.ss-cl--spec .ss-cl__t{margin:0 0 12px}\n.ss-cl--spec .ss-cl__list{margin:0;padding-left:18px}\n.ss-cl--spec .ss-cl__list li{font-size:15px}\n.ss-cl--spec .ss-cl__list li:last-child{margin-bottom:0}\n.ss-cl__list strong{color:var(--ink)}\n.ss-cl--series,.ss-cl--numbered{grid-template-columns:repeat(3,minmax(0,1fr));margin-bottom:24px}\n.ss-cl--series2{margin-bottom:20px}\n.ss-cl--series .ss-cl__card,.ss-cl--series2 .ss-cl__card,.ss-cl--numbered .ss-cl__card{padding:20px}\n.ss-cl--series .ss-cl__t,.ss-cl--series2 .ss-cl__t,.ss-cl--numbered .ss-cl__t{font:700 11px/1 var(--font-body);letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 12px}\n.ss-cl--series .ss-cl__p,.ss-cl--series2 .ss-cl__p,.ss-cl--numbered .ss-cl__p{margin:0}\n.ss-cl--numbered .ss-cl__p{font:800 17px/1.3 var(--font-heading);color:var(--ink);text-transform:none}\n@media (max-width:1100px){.ss-cl--feature,.ss-cl--series,.ss-cl--numbered{grid-template-columns:repeat(2,minmax(0,1fr))}.ss-cl{grid-template-columns:minmax(0,1fr)}.ss-cl--interval{grid-template-columns:repeat(2,minmax(0,1fr))}}\n@media (max-width:640px){.ss-cl--interval,.ss-cl--feature,.ss-cl--series,.ss-cl--feature2,.ss-cl--series2,.ss-cl--numbered{grid-template-columns:minmax(0,1fr)}}\n.ss-cl--type,.ss-cl--option{margin:0 0 20px}\n.ss-cl--option{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}\n.ss-cl--type .ss-cl__card,.ss-cl--option .ss-cl__card{padding:26px;margin:0}\n.ss-cl--type .ss-cl__t{margin:0 0 12px}\n.ss-cl--option .ss-cl__t{margin:0 0 10px}\n.ss-cl--type .ss-cl__p,.ss-cl--option .ss-cl__p{font-size:15px;line-height:1.7;margin:0 0 14px}\n.ss-cl--type .ss-cl__lead{font:700 14px/1.6 var(--font-body);color:var(--ink);margin:0 0 8px}\n.ss-cl--option .ss-cl__lead{font:700 10px/1 var(--font-body);letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:0 0 8px}\n.ss-cl--type .ss-cl__list{margin:0 0 16px;padding-left:18px}\n.ss-cl--option .ss-cl__list{margin:0;padding-left:18px}\n.ss-cl--type .ss-cl__list li{font-size:15px}\n.ss-cl--option .ss-cl__list li{font-size:14px}\n@media (max-width:1100px){.ss-cl--type{grid-template-columns:repeat(2,minmax(0,1fr))}.ss-cl--option{grid-template-columns:repeat(2,minmax(0,1fr))}}\n@media (max-width:640px){.ss-cl--type,.ss-cl--option{grid-template-columns:minmax(0,1fr)}}\n.ss-cl--type3{grid-template-columns:repeat(3,minmax(0,1fr));margin:0 0 20px}\n.ss-cl--type3 .ss-cl__card{padding:24px}\n.ss-cl--type3 .ss-cl__t{margin:0 0 10px}\n.ss-cl--type3 .ss-cl__p{font-size:15px;line-height:1.65;margin:0}\n.ss-cl--cost{grid-template-columns:minmax(0,1fr);gap:8px;margin:0 0 20px}\n.ss-cl--cost .ss-cl__card{padding:24px}\n.ss-cl--cost .ss-cl__t{margin:0 0 10px}\n.ss-cl--cost .ss-cl__p{font-size:15px;line-height:1.8;margin:0 0 10px}\n.ss-cl--cost .ss-cl__list{margin:0;padding-left:18px}\n.ss-cl--cost .ss-cl__list li{font-size:15px}\n.ss-cl__o{font-size:14px;line-height:1.8;color:var(--body-text);margin:10px 0 0}\n.ss-cl--num,.ss-cl--num-wide{margin:0 0 20px}\n.ss-cl--num-wide{grid-template-columns:minmax(0,1fr)}\n.ss-cl--num .ss-cl__card,.ss-cl--num-wide .ss-cl__card{padding:24px}\n.ss-cl__n{display:block;font:800 22px/1 var(--font-heading);color:var(--accent);margin-bottom:10px}\n.ss-cl--num .ss-cl__t,.ss-cl--num-wide .ss-cl__t{margin:0 0 10px}\n.ss-cl--num .ss-cl__p,.ss-cl--num-wide .ss-cl__p{font-size:14px;line-height:1.8;margin:0}\n.ss-cl--num-wide .ss-cl__p{margin:0 0 8px}\n.ss-cl--num .ss-cl__list,.ss-cl--num-wide .ss-cl__list{margin:0;padding-left:18px}\n.ss-cl--num .ss-cl__list li,.ss-cl--num-wide .ss-cl__list li{font-size:14px}\n@media (max-width:1100px){.ss-cl--type3{grid-template-columns:repeat(2,minmax(0,1fr))}.ss-cl--num{grid-template-columns:repeat(2,minmax(0,1fr))}}\n@media (max-width:640px){.ss-cl--type3,.ss-cl--num{grid-template-columns:minmax(0,1fr)}}"
 }

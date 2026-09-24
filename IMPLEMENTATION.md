@@ -553,3 +553,98 @@ goes to `/store/inventory?condition=used`, its configurator, S13 and extended-se
 `/truck-configurator`, `/specifications` and `/extended-service`, and its Tampa, Sarasota and
 Davenport directions pages to those rooftops' generated pages.
 
+---
+
+## 15. Sun State Trailers blog, batch 1 of 2 — six dry-van posts
+
+A Claude Design prototype handoff (`handoff/batch-1`): six Sun State Trailers articles on the
+same post design as §9 — *Why Choose Hyundai Dry Van Trailer Dealers*, *Dry Van Trailer Resale
+Value Over Time*, *How Long Do Dry Van Trailers Last in Real Use?*, *Dry Van Trailer Financing
+at Sun State Trailers*, *Dry Van vs Reefer Trailer* and *Aluminum vs Stainless Steel Dry Van
+Trailer Comparison*. Built by `tools/blog-handoff/convert.py`; body copy and contents rails
+match the handoff word for word, and every rail link lands.
+
+**What was translated and what was not.** The pages run inside the prototype runtime
+(`support.js`, `<x-dc>`, `<helmet>`, `style-hover`, `<sc-for>` menus) and ship a `_ds/` design
+system for an unrelated inventory widget ("Syyo", orange and cream). Per CLAUDE.md §7 none of
+that is carried over: the article markup is read, the chrome is the site's own template, and
+the tokens stay the site's. The photographs were PNGs named `.jpg`; they are re-encoded as real
+JPEGs (2.7 MB for 25) under `public/img/blog/<slug>/`.
+
+**Links.** The prototype links to its sibling design pages by file name. The converter maps
+them by what each link says: inventory calls to action ("Browse / Explore / See … inventory")
+go to the storefront's trailer listings, "New Trailers" and "Used Trailers" to those listings
+filtered by condition, "Sun State Trailers" in prose to the Trailer Sales rooftop page,
+Contact and Financing to their pages. Three buttons were added to the library for this:
+`browse-new-trailers`, `browse-used-trailers` and `trailer-sales-location`.
+*Trailer Specifications* has no page on this site (the Specifications page is the truck
+brochure library), so its two buttons go to the trailer listings, where each unit carries its
+specs — worth revisiting if a trailer specifications page is built.
+
+**Cards and metadata.** These posts are not in the Part 1 listing, so the converter takes each
+card's topic, date and excerpt from the page itself — the hero's topic chip ("Trailer Sales",
+a new chip on the blog page), the publish date, and the lede cut the way the listing cuts it —
+and records them in `tools/blog-handoff/blog-cards.json`. The blog page now carries 58 cards.
+It no longer lists the four posts the dealer set to draft on 24 September (oil change, air
+brakes, electrical diagnostics, alignment), whose typed cards had been linking to pages that
+no longer build, nor the *Diagnostics* chip only one of them used.
+
+New shapes:
+
+| Handoff | Here |
+|---|---|
+| `.type-card` (title, sentence, bold lead-in, list) | **Card lists**, new *Type* style, with a new optional lead-in field |
+| `.option-card` (title, sentence, BEST FOR label, list) | **Card lists**, new *Option* style |
+| `.reason-card` (title and sentence, three across) | the **Feature list**, carded as this batch cards them |
+| a run of `.stage-row` ("0–5 yrs" beside a sentence) | a new **Stage list** coded widget |
+| an empty hidden `h2` kept as a rail target | no heading; its anchor moves to the paragraph it introduces |
+
+**Converter changes, all backwards compatible** (Parts 1–6 re-run to the same output): it keeps
+a post's existing status instead of re-publishing it, reads a page's own ink-ruled comparison
+style, resolves images against the page, and finds a prototype batch's pages beside its index.
+
+---
+
+## 16. Sun State Trailers blog, batch 2 of 2 — six more dry-van posts
+
+The second prototype batch, same format and treatment as §15: *Dry Van Trailer Dimensions and
+What They Mean*, *Dry Van Trailer Maintenance Costs to Plan For*, *Dry Van Trailer
+Specifications Explained Simply*, *Dry Van Trailer Weight Capacity and Payload Basics*, *New vs
+Used Dry Van Trailer* and *Standard Size of a Dry Van Trailer*. Body copy and contents rails
+match the handoff word for word; the blog page carries 64 cards. The prototype runtime and its
+`_ds/` bundle are not carried over, and the photographs (PNGs named `.jpg`) are re-encoded.
+
+New shapes:
+
+| Handoff | Here |
+|---|---|
+| a run of `.cost-card` (title, sentence, list, closing note) | **Card lists**, new *Cost* style — one per row, with a new optional closing-note field |
+| `.num-card` (a large number over a title and text), two across or alone | **Card lists**, new *Numbered* and *Numbered, full width* styles, with a new optional number field |
+| `.type-card` three across; a note after a type card's list | **Card lists**, *Type, three across*; the closing-note field |
+| a type card holding two labelled lists ("Benefits" / "Ideal for") | real blocks in two bordered columns — two lists per card nest deeper than a list widget allows |
+| a run of `.diff-row` (ruled heading, text, list) | real blocks in columns ruled across the top by node styles, set in the article's prose type |
+| questions inside a wrapper, ruled above each | the **Question list**, ruled as that post rules them |
+| a four-column comparison (53 / 48 / 28 ft) | the **Comparison table**, now with an optional fourth column |
+
+The one new design-page link, *Service Appointment*, goes to `/service-appointment`.
+
+**Old addresses.** These twelve trailer posts (§15 and this batch) were published on
+sunstatetrailers.com. Redirects are not authored in this repo — if that domain is pointed at
+this site, the rules below go on **Storefront → 301 Redirects** in Admin (it imports a Simple
+301 Redirects CSV):
+
+| Old path on sunstatetrailers.com | New path |
+|---|---|
+| `/new-trailers/aluminum-vs-stainless-steel-dry-van-trailer/` | `/blog/posts/aluminum-vs-stainless-steel-dry-van-trailer` |
+| `/new-trailers/dry-van-trailer-financing/` | `/blog/posts/dry-van-trailer-financing-at-sun-state-trailers` |
+| `/new-trailers/dry-van-trailer-resale-value-over-time/` | `/blog/posts/dry-van-trailer-resale-value-over-time` |
+| `/uncategorized/dry-van-vs-reefer-trailer/` | `/blog/posts/dry-van-vs-reefer-trailer` |
+| `/new-trailers/how-long-do-dry-van-trailers-last-in-real-use/` | `/blog/posts/how-long-do-dry-van-trailers-last-in-real-use` |
+| `/uncategorized/why-choose-hyundai-dry-van-trailer-dealers/` | `/blog/posts/why-choose-hyundai-dry-van-trailer-dealers` |
+| `/new-trailers/dry-van-trailer-dimensions-and-what-they-mean/` | `/blog/posts/dry-van-trailer-dimensions-and-what-they-mean` |
+| `/new-trailers/dry-van-trailer-maintenance-costs/` | `/blog/posts/dry-van-trailer-maintenance-costs-to-plan-for` |
+| `/new-trailers/dry-van-trailer-specifications/` | `/blog/posts/dry-van-trailer-specifications-explained-simply` |
+| `/new-trailers/dry-van-trailer-weight-capacity/` | `/blog/posts/dry-van-trailer-weight-capacity-and-payload-basics` |
+| `/new-trailers/new-vs-used-dry-van-trailer/` | `/blog/posts/new-vs-used-dry-van-trailer` |
+| `/new-trailers/standard-size-of-a-dry-van-trailer/` | `/blog/posts/standard-size-of-a-dry-van-trailer` |
+
