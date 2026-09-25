@@ -18,6 +18,7 @@
 
 import { attrs, cls, esc, href, image, join, tagAttrs } from './html.mjs';
 import { renderForm } from './forms.mjs';
+import { clockText } from './display-time.mjs';
 
 /** Widgets that install behaviour and render nothing a buyer sees. */
 export const BEHAVIOUR_ONLY = new Set(['heatmaps', 'code-snippet']);
@@ -500,7 +501,7 @@ function hours(config, snapshot) {
                 schedule.heading || config.heading || 'Opening hours',
               )}</caption><tbody>${join(
                 (schedule.hours || []).map(
-                  (r) => `<tr><th scope="row">${esc(r.day)}</th><td>${esc(r.hours)}</td></tr>`,
+                  (r) => `<tr><th scope="row">${esc(r.day)}</th><td>${esc(clockText(r.hours))}</td></tr>`,
                 ),
                 '',
               )}</tbody></table>`,
