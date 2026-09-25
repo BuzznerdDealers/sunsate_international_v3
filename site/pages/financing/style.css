@@ -1,6 +1,7 @@
 [data-bz-node="fin-apply-contact"] .bz-btns { flex-direction: column; align-items: flex-start; gap: 6px; margin-block: 8px 0; }
 [data-bz-node="fin-contact-note"] p { font-size: 13px; color: var(--muted); }
-[data-bz-node="fin-lenders-media"] img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+/* Show the whole upload, at its own proportions — cropping it cut the lender logo off the right edge. */
+[data-bz-node="fin-lenders-media"] img { width: 100%; height: auto; }
 
 /* Keep the finance contact card's list tight under its heading. */
 [data-bz-node="fin-apply-contact"] h2 { font-size: var(--text-h3); }
