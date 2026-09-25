@@ -22,6 +22,9 @@
 // the two sides have to agree — the same coupling widget markup already has with
 // its resolver, and `npm run schemas` carries it into the block catalogue.
 
+import { postRows } from './blog-pages.mjs';
+import { displayRow } from './display-time.mjs';
+
 /** The field an overlay row matches on, and the fields the source owns. */
 export const DATA_SOURCES = [
   {
@@ -210,6 +213,31 @@ export const DATA_SOURCES = [
       { key: 'photo', type: 'image', label: 'Photo' },
     ],
   },
+  {
+    // The one source the platform does not resolve. Posts are files in this
+    // repo, so the build reads them itself: a post published on the Posts screen
+    // is on every card built on this in the next build, with no publish-time bake.
+    id: 'posts',
+    label: 'Blog posts',
+    description:
+      'Every published post, newest first, from the Posts screen. `paginate` gives the build’s current page of nine.',
+    widget: null,
+    path: null,
+    resolvesAt: 'build',
+    match: 'slug',
+    config: ['topic', 'limit', 'paginate'],
+    fields: [
+      { key: 'slug', type: 'text', label: 'Slug' },
+      { key: 'title', type: 'text', label: 'Title' },
+      { key: 'href', type: 'url', label: 'Post link' },
+      { key: 'date', type: 'text', label: 'Date' },
+      { key: 'dateISO', type: 'text', label: 'Date (machine readable)' },
+      { key: 'excerpt', type: 'textarea', label: 'Excerpt' },
+      { key: 'topic', type: 'text', label: 'Topic' },
+      { key: 'topicKey', type: 'text', label: 'Topic key (for filtering)' },
+      { key: 'coverImage', type: 'image', label: 'Cover image' },
+    ],
+  },
 ];
 
 const BY_ID = new Map(DATA_SOURCES.map((s) => [s.id, s]));
@@ -243,7 +271,17 @@ export function resolveDataBinding(binding, resolved, opts = {}) {
   const source = dataSource(binding.source);
   if (!source) return [];
 
-  const rows = Array.isArray(resolved) ? resolved : null;
+  // A build-time source reads the render context, never the baked answer —
+  // there is none. The editor falls back to samples when it holds no posts.
+  const rows =
+    source.resolvesAt === 'build'
+      ? Array.isArray(opts.posts) && (opts.posts.length || !opts.sample)
+        ? postRows(opts.posts, binding.config || {}, opts)
+        : null
+      : Array.isArray(resolved)
+        ? // Hours copy reads 12-hour on the page whatever form it was baked in.
+          resolved.map(displayRow)
+        : null;
   if (!rows) return opts.sample ? sampleRows(source, opts.sampleRows || 3) : [];
 
   const overlay = Array.isArray(binding.overlay) ? binding.overlay : [];
