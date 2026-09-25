@@ -45,14 +45,6 @@ import {
   locationPageNodes,
   locationPath,
   fillTokens,
-  pagedOut,
-  pagedPath,
-  pagerHeadLinks,
-  placesPaginatedPosts,
-  postsPageCount,
-  postsPageSlice,
-  renderPager,
-  renderPostCard,
 } from '../renderer/index.mjs';
 
 const ROOT = process.cwd();
@@ -474,11 +466,7 @@ if (blogSettings.enabled && existsSync(join(BLOG, 'posts'))) {
     if ((post.status || 'published') !== 'published') continue;
     posts.push(post);
   }
-  // Newest first; posts sharing a date go by slug, so the order — and which page
-  // of nine a post lands on — does not depend on how the file system lists them.
-  posts.sort((a, b) =>
-    a.date === b.date ? String(a.slug).localeCompare(String(b.slug)) : a.date < b.date ? 1 : -1,
-  );
+  posts.sort((a, b) => (a.date < b.date ? 1 : -1));
 }
 renderCtx.posts = posts;
 renderCtx.blogBasePath = blogBase;
@@ -530,8 +518,6 @@ function expandLocationPages(entries) {
 }
 
 const emitted = [];
-/** Page 2 onwards of every paged grid, for the sitemap; page 1 is the page itself. */
-const pagedUrls = [];
 for (const p of expandLocationPages(pages)) {
   const status = p.status || 'published';
   if (status === 'archived') continue;
@@ -554,45 +540,32 @@ for (const p of expandLocationPages(pages)) {
   const target = p.location
     ? { kind: 'location', slug: p.slug, group: p.group, location: p.location.slug }
     : { kind: 'page', slug: p.slug, group: p.group };
+  const rendered = renderWithTemplate(target, nodes);
   const noindex = status !== 'published' || !!(p.seo && p.seo.noindex);
 
-  // A page holding a paged posts grid is written once per page of posts, from
-  // the same tree: page 1 at its own address, page N at `<path>/page/N`.
-  const totalPages = placesPaginatedPosts([nodes], renderCtx) ? postsPageCount(posts.length) : 1;
-  let rendered;
-  for (let page = 1; page <= totalPages; page++) {
-    renderCtx.pagePath = p.path;
-    renderCtx.postsPage = page;
-    rendered = renderWithTemplate(target, nodes);
-    const path = pagedPath(p.path, page);
-    write(
-      pagedOut(p.out, page),
-      renderShell({
-        custom: CUSTOM,
-        config,
-        fontsHref: FONTS_HREF,
-        fontPreload: FONT_PRELOAD,
-        chrome: { header: rendered.header, footer: rendered.footer },
-        storefrontPrefix: PREFIX,
-        title: page > 1 ? `${p.title} — Page ${page}` : p.title,
-        description: p.description || config.seo.defaultDescription,
-        canonical: config.url + path,
-        bodyHtml: rendered.body,
-        pageCss: [rendered.styles, css, rendered.nodeStyles].filter(Boolean).join('\n'),
-        pageJs: [...(rendered.scripts ?? []), ...(pageJs ? [pageJs] : [])],
-        ogImage: p.seo && p.seo.ogImage,
-        noindex,
-        keywords: (p.seo && p.seo.keywords) || [],
-        tokenScopes: p.tokenScope ? [p.tokenScope] : [],
-        analyticsPage: { pageType: p.pageType || null },
-        rooftop: rooftopFrom(nodes, p.locationSlug),
-        extraHead: pagerHeadLinks({ page, totalPages, pagePath: p.path, origin: config.url }),
-      }),
-    );
-    if (page > 1 && !noindex) pagedUrls.push(config.url + path);
-  }
-  delete renderCtx.pagePath;
-  delete renderCtx.postsPage;
+  write(
+    p.out,
+    renderShell({
+      custom: CUSTOM,
+      config,
+      fontsHref: FONTS_HREF,
+      fontPreload: FONT_PRELOAD,
+      chrome: { header: rendered.header, footer: rendered.footer },
+      storefrontPrefix: PREFIX,
+      title: p.title,
+      description: p.description || config.seo.defaultDescription,
+      canonical: config.url + p.path,
+      bodyHtml: rendered.body,
+      pageCss: [rendered.styles, css, rendered.nodeStyles].filter(Boolean).join('\n'),
+      pageJs: [...(rendered.scripts ?? []), ...(pageJs ? [pageJs] : [])],
+      ogImage: p.seo && p.seo.ogImage,
+      noindex,
+      keywords: (p.seo && p.seo.keywords) || [],
+      tokenScopes: p.tokenScope ? [p.tokenScope] : [],
+      analyticsPage: { pageType: p.pageType || null },
+      rooftop: rooftopFrom(nodes, p.locationSlug),
+    }),
+  );
   emitted.push({ ...p, status, noindex, template: rendered.resolved.template?.id ?? null });
 }
 
@@ -675,45 +648,38 @@ if (blogSettings.enabled && posts.length) {
       );
     }
 
-    // The index pages the way a placed grid does — nine a page, the newest on
-    // page 1 at the base path — and draws the same card the Latest posts block
-    // does, so the archive and the teasers that link to it match.
     const indexChrome = chromeFor({ kind: 'blog' });
-    const indexPages = postsPageCount(posts.length);
-    for (let page = 1; page <= indexPages; page++) {
-      const path = pagedPath(base, page);
-      write(
-        pagedOut(`${base.slice(1)}/index.html`, page),
-        renderShell({
-          custom: CUSTOM,
-          config,
-          fontsHref: FONTS_HREF,
-          fontPreload: FONT_PRELOAD,
-          chrome: indexChrome,
-          storefrontPrefix: PREFIX,
-          title: page > 1 ? `${settings.title} — Page ${page}` : settings.title,
-          description: settings.description || config.seo.defaultDescription,
-          canonical: config.url + path,
-          analyticsPage: { pageType: POST_PAGE_TYPE },
-          bodyHtml: `<section class="bz-block bz-block--postsList"><div class="bz-container">
+    write(
+      `${base.slice(1)}/index.html`,
+      renderShell({
+        custom: CUSTOM,
+        config,
+        fontsHref: FONTS_HREF,
+        fontPreload: FONT_PRELOAD,
+        chrome: indexChrome,
+        storefrontPrefix: PREFIX,
+        title: settings.title,
+        description: settings.description || config.seo.defaultDescription,
+        canonical: config.url + base,
+        analyticsPage: { pageType: POST_PAGE_TYPE },
+        bodyHtml: `<section class="bz-block"><div class="bz-container">
   <h1>${settings.title}</h1>
   <p class="bz-lede">${settings.description || ''}</p>
-  <div class="bz-grid bz-grid--3">
-${postsPageSlice(posts, page)
-  .map((p) => `    ${renderPostCard(p, renderCtx)}`)
+  <ul class="bz-bare">
+${posts
+  .map(
+    (p) =>
+      `    <li class="bz-loc"><a href="${base}/${p.slug}"><strong>${p.title}</strong></a><span class="bz-loc__s">${p.description || ''}</span></li>`,
+  )
   .join('\n')}
-  </div>
-  ${renderPager({ page, totalPages: indexPages, pagePath: base }, renderCtx)}
+  </ul>
 </div></section>`,
-          pageCss: '',
-          pageJs: null,
-          ogImage: null,
-          noindex: false,
-          extraHead: pagerHeadLinks({ page, totalPages: indexPages, pagePath: base, origin: config.url }),
-        }),
-      );
-      if (page > 1) pagedUrls.push(config.url + path);
-    }
+        pageCss: '',
+        pageJs: null,
+        ogImage: null,
+        noindex: false,
+      }),
+    );
   }
 }
 
@@ -795,7 +761,6 @@ const sitemapUrls = indexable
   .map((p) => config.url + p.path)
   .concat(posts.map((p) => `${config.url}${sitemapBlogBase}/${p.slug}`))
   .concat(sitemapBlogBase ? [config.url + sitemapBlogBase] : [])
-  .concat(pagedUrls)
   .concat([`${config.url}/${PREFIX}`]);
 write(
   'sitemap.xml',
