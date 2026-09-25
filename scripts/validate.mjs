@@ -791,15 +791,19 @@ if (existsSync(configPath)) {
 }
 
 /**
- * `site/redirects.json` — where a page's old address goes after a rename.
+ * `site/redirects.json` — the dealer's redirects: old addresses and where they go.
  *
- * Kept here, in the dealer's own tree, rather than in `vercel.json`: that file
- * is platform-owned and rebuilt from the template on every engine sync, so a
- * rule written into it survives until the next sync and then silently does not.
- * The platform composes this file into `vercel.json` when it bakes.
+ * The rules are kept in BuzzNerd Admin (Storefront → 301 Redirects) and written here
+ * by **Sync from Admin** and by Publish, stamped `"managedBy": "admin"`. Once
+ * stamped the file is a copy, and a hand edit is overwritten by the next sync —
+ * so this checks it rather than inviting edits to it.
  *
- * Absent is the normal case. A repo that has never renamed a page has no such
- * file, and that is not worth a note.
+ * Kept in the dealer's own tree rather than only in `vercel.json`: that file is
+ * platform-owned and rebuilt from the template on every engine sync. The
+ * platform composes this file into `vercel.json` when it bakes.
+ *
+ * Absent is the normal case. A site with no redirects has no such file, and that
+ * is not worth a note.
  */
 const redirectsPath = join(SITE, 'redirects.json');
 if (existsSync(redirectsPath)) {
@@ -840,6 +844,14 @@ if (existsSync(redirectsPath)) {
         }
         if (rule?.from && rule.from === rule?.to) {
           fail('site/redirects.json', `${at}.from`, `"${rule.from}" redirects to itself`);
+        }
+        if (rule?.statusCode !== undefined && ![301, 302, 307, 308].includes(rule.statusCode)) {
+          fail(
+            'site/redirects.json',
+            `${at}.statusCode`,
+            `${JSON.stringify(rule.statusCode)} is not a redirect status`,
+            'Use 301, 302, 307 or 308.',
+          );
         }
       }
       // Two hops is a chain search engines follow grudgingly and some clients

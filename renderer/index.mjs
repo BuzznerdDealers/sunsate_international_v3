@@ -163,7 +163,7 @@
 // nothing when there is none — never a generated street map, which would be a
 // different section wearing this one's clothes. A location also carries a `subtitle`,
 // the name it trades under, because `name` is the place and a card wants both.
-export const RENDERER_VERSION = '4.25.0';
+export const RENDERER_VERSION = '4.24.0';
 
 export {
   LOCATION_SOURCE,
@@ -202,20 +202,7 @@ export {
 
 export { DATA_SOURCES, dataSource, isDataBinding, resolveDataBinding } from './data-sources.mjs';
 
-export { componentCode, documentStyles, placesPaginatedPosts } from './document-assets.mjs';
-export {
-  POSTS_PER_PAGE,
-  clampPostsPage,
-  pagedOut,
-  pagedPath,
-  pagerHeadLinks,
-  postsPageCount,
-  postExcerpt,
-  postRows,
-  postsPageSlice,
-  renderPager,
-  topicKeyOf,
-} from './blog-pages.mjs';
+export { componentCode, documentStyles } from './document-assets.mjs';
 export {
   esc,
   attrs,
@@ -284,7 +271,6 @@ export {
   blockCatalogue,
   getBlock,
   resolveCta,
-  renderPostCard,
   registerCustomWidgets,
   clearCustomWidgets,
   customWidgets,

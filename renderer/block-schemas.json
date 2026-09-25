@@ -1,5 +1,5 @@
 {
-  "rendererVersion": "4.25.0",
+  "rendererVersion": "4.24.0",
   "documentVersion": 2,
   "gridColumns": 12,
   "tokenGroups": {
@@ -753,67 +753,6 @@
           "key": "photo",
           "type": "image",
           "label": "Photo"
-        }
-      ]
-    },
-    {
-      "id": "posts",
-      "label": "Blog posts",
-      "description": "Every published post, newest first, from the Posts screen. `paginate` gives the build’s current page of nine.",
-      "widget": null,
-      "path": null,
-      "resolvesAt": "build",
-      "match": "slug",
-      "config": [
-        "topic",
-        "limit",
-        "paginate"
-      ],
-      "fields": [
-        {
-          "key": "slug",
-          "type": "text",
-          "label": "Slug"
-        },
-        {
-          "key": "title",
-          "type": "text",
-          "label": "Title"
-        },
-        {
-          "key": "href",
-          "type": "url",
-          "label": "Post link"
-        },
-        {
-          "key": "date",
-          "type": "text",
-          "label": "Date"
-        },
-        {
-          "key": "dateISO",
-          "type": "text",
-          "label": "Date (machine readable)"
-        },
-        {
-          "key": "excerpt",
-          "type": "textarea",
-          "label": "Excerpt"
-        },
-        {
-          "key": "topic",
-          "type": "text",
-          "label": "Topic"
-        },
-        {
-          "key": "topicKey",
-          "type": "text",
-          "label": "Topic key (for filtering)"
-        },
-        {
-          "key": "coverImage",
-          "type": "image",
-          "label": "Cover image"
         }
       ]
     }
@@ -3163,11 +3102,6 @@
             "description": "Show each post’s date.",
             "default": true
           },
-          "paginate": {
-            "type": "boolean",
-            "description": "Show every post, nine a page in three columns, with « Older Entries / Next Entries » under the grid. The build writes page 2 onwards under this page’s address (/blog/page/2). Ignores `count`.",
-            "default": false
-          },
           "cta": {
             "type": "object",
             "description": "A call to action. Prefer `ctaId` referencing the dealer's Buttons library over an inline label/url — a library CTA keeps its label, destination and tagging consistent everywhere it appears.",
@@ -3200,17 +3134,6 @@
             }
           }
         }
-      }
-    },
-    {
-      "id": "postsPager",
-      "label": "Blog pager",
-      "category": "prebuilt",
-      "group": "prebuilt",
-      "autoTagged": true,
-      "schema": {
-        "type": "object",
-        "properties": {}
       }
     },
     {

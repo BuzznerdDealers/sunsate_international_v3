@@ -426,10 +426,6 @@ export const LAYOUT_REGISTRY = {
         // section that vanishes the moment a dealer points it at live data, so
         // there it shows the shape instead.
         sample: !!(ctx && ctx.editing),
-        // What a build-time source (blog posts) resolves from.
-        posts: ctx && ctx.posts,
-        blogBasePath: ctx && ctx.blogBasePath,
-        postsPage: ctx && ctx.postsPage,
       });
 
       expanding.add(id);
