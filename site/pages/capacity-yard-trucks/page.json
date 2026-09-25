@@ -129,6 +129,13 @@
                   }
                 },
                 {
+                  "id": "spacer",
+                  "type": "spacer",
+                  "props": {
+                    "size": 6
+                  }
+                },
+                {
                   "id": "cy-why-list",
                   "type": "list",
                   "props": {
