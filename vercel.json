@@ -43,9 +43,9 @@
   ],
   "redirects": [
     {
-      "source": "/about-us",
+      "source": "/about-us{/}?",
       "destination": "/our-story",
-      "permanent": true
+      "statusCode": 301
     }
   ]
 }
