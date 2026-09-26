@@ -994,3 +994,51 @@ Chrome, colours and the unemitted `BlogPosting` data are as in §24.
 | `/uncategorized/how-to-spot-problems-before-a-semi-trailer-tire-blowout/` | `/blog/posts/how-to-spot-problems-before-a-semi-trailer-tire-blowout` |
 | `/new-trailers/benefits-from-new-reefer-trailer-for-sale/` | `/blog/posts/5-ways-you-can-benefit-from-a-new-reefer-trailer-for-sale` |
 | `/used-trailers/lower-overhead-expand-capacity-used-dump-trailer/` | `/blog/posts/lower-overhead-and-expand-capacity-with-a-used-dump-trailer` |
+
+## 26. `SS_International_13` — Sun State Trailers posts, batch 3 (seven new posts)
+
+`handoff-trailer-posts-batch-3`: seven post pages and a preview index, in the §24 format. All
+seven are new; each is published on its file's slug with its card on the Blog page (83 in all).
+Three are the site's first **Trailer Rentals** posts, and the Blog page gains that topic chip.
+
+| Post | Topic, date |
+|---|---|
+| `cost-effective-solutions-why-fleets-buy-used-reefer-trailers` | Trailer Sales, Jan 9, 2026 |
+| `how-to-source-reliable-dry-van-trailers-for-sale` | Trailer Sales, Jan 2, 2026 |
+| `6-reasons-why-you-should-rent-a-trailer` | Trailer Rentals, Dec 26, 2025 |
+| `why-you-should-shop-used-dry-van-trailers-for-sale` | Trailer Sales, Dec 19, 2025 |
+| `5-reasons-why-you-should-look-for-trailers-for-rent` | Trailer Rentals, Nov 28, 2025 |
+| `5-benefits-of-a-reefer-trailer-lease` | Trailer Rentals, Nov 14, 2025 |
+| `how-does-a-reefer-trailer-work` | Trailer Sales, Nov 7, 2025 |
+
+Built by `tools/blog-handoff/convert.py`, using only shapes §24 and §25 already handle. Body copy
+and rails match the handoff word for word (checked mechanically), and each post was rendered beside
+its handoff page: every section lands within 27px at 1280px and within ~90px at phone width.
+
+**One styling addition.** Some type cards here hold a sentence rather than a list; the handoff
+sets it as body text (17px, 1.8 leading). The converter adds that rule to a post whose type cards
+carry a sentence. Batch 2 re-converts unchanged.
+
+**Links, and one new library button.** These posts link rentals. The Inventory page already sends
+trailer rentals to the storefront filtered to rentals (`/store/inventory?type=trailer&condition=rental`),
+so rental links go there through a new **Trailer Rentals →** button (`browse-trailer-rentals`),
+edited on **Buttons** like the rest. Links to `trailer-sales.html` are otherwise read by their
+wording: *New Trailers* / *Used Trailers* → trailer listings filtered to new or used; *Browse New &
+Used Trailers*, *Explore Inventory* → all trailer listings; "Sun State Trailers" in prose → the
+Trailer Sales rooftop page. *Trailer Specifications* links go to the trailer listings (§15).
+
+**Dropped / as elsewhere.** Keep reading is the latest-posts list; chrome, colours and the
+unemitted `BlogPosting` data are as in §24.
+
+**Old addresses.** If sunstatetrailers.com is pointed at this site, these go on **Storefront →
+301 Redirects** in Admin:
+
+| Old path on sunstatetrailers.com | New path |
+|---|---|
+| `/used-trailers/cost-effective-solutions-why-fleets-buy-used-reefer-trailers/` | `/blog/posts/cost-effective-solutions-why-fleets-buy-used-reefer-trailers` |
+| `/new-trailers/how-to-source-reliable-dry-van-trailers-for-sale/` | `/blog/posts/how-to-source-reliable-dry-van-trailers-for-sale` |
+| `/trailer-rentals/6-reasons-why-you-should-rent-a-trailer/` | `/blog/posts/6-reasons-why-you-should-rent-a-trailer` |
+| `/used-trailers/why-you-should-shop-used-dry-van-trailers-for-sale/` | `/blog/posts/why-you-should-shop-used-dry-van-trailers-for-sale` |
+| `/trailer-rentals/tampa-trailer-rental-reasons/` | `/blog/posts/5-reasons-why-you-should-look-for-trailers-for-rent` |
+| `/trailer-rentals/reefer-trailer-lease-benefits/` | `/blog/posts/5-benefits-of-a-reefer-trailer-lease` |
+| `/used-trailers/how-does-a-reefer-trailer-work/` | `/blog/posts/how-does-a-reefer-trailer-work` |

@@ -124,13 +124,18 @@ FLAT_PAGES = {
 
 
 def trailer_sales_href(label):
-    """`trailer-sales.html` is both the business and its stock: what the link says decides."""
+    """`trailer-sales.html` is the business, its stock and its rentals: what the link says decides."""
     l = (label or "").lower()
-    if not re.search(r"inventory|in stock|available|browse|explore", l):
+    if re.search(r"\brent", l):
+        return "/store/inventory?type=trailer&condition=rental"  # as the Inventory page links rentals
+    if "sun state" in l:
         return "/locations/trailer-sales"  # "Sun State Trailers" in the prose
-    if re.search(r"\bused\b", l): return "/store/inventory?type=trailer&condition=used"
-    if re.search(r"\bnew\b", l): return "/store/inventory?type=trailer&condition=new"
-    return "/store/inventory?type=trailer"
+    new, used = re.search(r"\bnew\b", l), re.search(r"\bused\b", l)
+    if new and used: return "/store/inventory?type=trailer"
+    if used: return "/store/inventory?type=trailer&condition=used"
+    if new: return "/store/inventory?type=trailer&condition=new"
+    if re.search(r"inventory|in stock|available|browse|explore", l): return "/store/inventory?type=trailer"
+    return "/locations/trailer-sales"
 
 
 def href_of(a):
@@ -180,7 +185,7 @@ DEST = {
     "/store/inventory?type=trailer": "browse-trailers",
     "/locations/trailer-sales": "trailer-sales-location",
     "/store/inventory?type=trailer&condition=new": "browse-new-trailers",
-    "/store/inventory?type=trailer&condition=used": "browse-used-trailers", "/financing": "financing", "/reviews": "read-reviews",
+    "/store/inventory?type=trailer&condition=used": "browse-used-trailers", "/store/inventory?type=trailer&condition=rental": "browse-trailer-rentals", "/financing": "financing", "/reviews": "read-reviews",
     "/truck-configurator": "truck-configurator-link", "/specifications": "s13-powertrain", "/extended-service": "extended-service",
 }
 lib = {b["id"]: b for b in buttons}
@@ -437,6 +442,9 @@ def normalise_standalone(s):
                      '[data-bz-node="art-body"] .ss-cl--type .ss-cl__t { margin: 0 0 10px; }\n'
                      '[data-bz-node="art-body"] :is(.ss-cl--type, .ss-cl--type3) .ss-cl__list { margin: 0; padding-left: 18px; }\n'
                      '[data-bz-node="art-body"] :is(.ss-cl--type, .ss-cl--type3) .ss-cl__list li { font-size: 14px; }')
+    if s.select(".post-body .type-card > p"):
+        extra.append("/* A type card's sentence is set as body text, as the article's paragraphs are. */\n"
+                     '[data-bz-node="art-body"] :is(.ss-cl--type, .ss-cl--type3) .ss-cl__p { font-size: 17px; line-height: 1.8; margin: 0 0 18px; }')
     for sh in s.select(".post-body > div.share"):
         sh["style"] = "border-top: 1px solid var(--color-line); display: flex"
     for sec in s.find("main").find_all("section", recursive=False):
