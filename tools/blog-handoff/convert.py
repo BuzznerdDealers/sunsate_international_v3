@@ -356,8 +356,13 @@ def callout(cid, box, style, css=None):
         else:
             raise SystemExit(f"callout child <{c.name}>")
     top, bottom = margins(style)
-    return row(f"{cid}-row", [col(cid, kids, styles={**BOX, "paddingTop": 26, "paddingRight": 28, "paddingBottom": 26,
-                                                      "paddingLeft": 28, "marginTop": top, "marginBottom": bottom})])
+    pad = {**BOX, "paddingTop": 26, "paddingRight": 28, "paddingBottom": 26, "paddingLeft": 28}
+    if STANDALONE:
+        # On the row, which sits in the article's normal flow, the margins collapse with the
+        # paragraph above and the photograph below as the design's do; on the column, inside
+        # the row's grid, they would add to them (~50px more around every callout).
+        return row(f"{cid}-row", [col(cid, kids, styles=pad)], styles={"marginTop": top, "marginBottom": bottom})
+    return row(f"{cid}-row", [col(cid, kids, styles={**pad, "marginTop": top, "marginBottom": bottom})])
 
 
 ID_ALIASES = {
@@ -750,8 +755,10 @@ def convert(path):
                 else:
                     rows.append({"text": plain(td)})
             bullet = [plain(tr.find("td")) for tr in el.select("tr")] == ["•"] * len(rows)  # warning signs, not ticks
-            mark = {"mark": "cross"} if "redflag-table" in cls else {"mark": "bullet"} if bullet else {}
-            out.append(n(nid("checks"), "check-list", {**mark, "items": rows}))
+            numbered = [plain(tr.find("td")) for tr in el.select("tr")] == [f"{i+1:02d}" for i in range(len(rows))]  # 01, 02 …
+            mark = {"mark": "cross"} if "redflag-table" in cls else {"mark": "bullet"} if bullet else {"mark": "num"} if numbered else {}
+            run_in = {"runIn": True} if STANDALONE and any("title" in r for r in rows) else {}  # "**Lead:** sentence" on one line
+            out.append(n(nid("checks"), "check-list", {**mark, **run_in, "items": rows}))
         elif el.name == "div" and el.find("img") and "position: relative" in st:
             fig += 1
             img = el.find("img")

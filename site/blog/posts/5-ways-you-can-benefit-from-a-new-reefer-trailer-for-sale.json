@@ -202,6 +202,12 @@
                   "props": {
                     "gap": 0
                   },
+                  "styles": {
+                    "base": {
+                      "marginTop": 34,
+                      "marginBottom": 34
+                    }
+                  },
                   "children": [
                     {
                       "id": "co-intro-2",
@@ -217,9 +223,7 @@
                           "paddingTop": 26,
                           "paddingRight": 28,
                           "paddingBottom": 26,
-                          "paddingLeft": 28,
-                          "marginTop": 34,
-                          "marginBottom": 34
+                          "paddingLeft": 28
                         }
                       },
                       "children": [

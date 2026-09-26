@@ -1212,3 +1212,53 @@ listings (§15). The stat figures follow the Design system's accent like every o
 | `/used-trailers/how-our-parts-and-service-center-keeps-you-on-time/` | `/blog/posts/how-our-parts-and-service-center-keeps-you-on-time` |
 | `/used-trailers/how-a-used-flatbed-trailer-can-help-get-your-business-up-and-running/` | `/blog/posts/how-a-used-flatbed-trailer-helps-your-business` |
 | `/new-trailers/how-a-new-reefer-trailer-can-help-preserve-the-quality-of-your-businesss-products/` | `/blog/posts/new-reefer-trailer-preserves-product-quality` |
+
+## 30. `SS_International_17` — three trailer-service posts, and a callout fix
+
+`handoff-trailer-service-posts-lite`: three post pages and a preview index, in the §24 format.
+All three are new; each is published on its file's slug with its card on the Blog page (109 in all).
+
+| Post | Topic, date |
+|---|---|
+| `why-fleets-should-get-regular-trailer-service` | Service, Jul 11, 2026 |
+| `how-to-reset-the-service-trailer-brake-system-fast` | Service, Jun 29, 2026 |
+| `trailer-preventive-maintenance-checklist-for-fleets` | Service, Jun 8, 2026 |
+
+*Why Fleets Should Get Regular Trailer Service* is the post §24's handoff named among its related
+picks and that the site did not have; it now exists. Built by `tools/blog-handoff/convert.py`;
+body copy and rails match the handoff word for word (checked mechanically).
+
+**Two small widget additions:**
+
+| Handoff | Here |
+|---|---|
+| a `.spec-table` whose marks are 01, 02, 03 … | **Checkmark list**, new *01, 02, 03 — numbered in order* mark, which counts itself, so a row added on the canvas gets the next number |
+| `•` rows led by a bold title in the same sentence ("**Accurate Diagnostics:** Instead of…") | **Checkmark list**, new *Title runs into the sentence* switch |
+
+**A fix to every standalone post with a callout.** Rendering this batch element by element showed
+each bordered callout sat ~50px looser than the design: its margins were on the column, inside the
+row's grid, where they add to the paragraph above and the photograph below instead of collapsing
+with them. They are now on the row, which is in the article's normal flow, so the gaps are the
+design's (34px above, 36px below). This changes only that row's and column's styles, node ids
+unchanged, in the seven earlier posts that have one: *Trusted Trailer Repair…*, *No Running
+Lights…*, *Lift Axle Troubleshooting…*, *How to Spot Problems Before a Semi-Trailer Tire Blowout*,
+*5 Ways You Can Benefit from a New Reefer Trailer…*, *Lower Overhead… Used Dump Trailer* and
+*5 Reasons Why You Should Look for Trailers for Rent*. The Part-format posts (§9–§23) are unchanged.
+The earlier per-section checks averaged this away; the section-by-section comparisons in §25 and
+§26 understated it.
+
+After the fix, each section of the three new posts lands within 45px of the handoff at 1280px.
+What remains is 5–6px per block from the shared long-form layer, the same on every post: the lede,
+and each bordered list card, drawn slightly tighter than the design.
+
+**Dropped / as elsewhere.** Keep reading is the latest-posts list; chrome, colours and the
+unemitted `BlogPosting` data are as in §24.
+
+**Old addresses.** If sunstatetrailers.com is pointed at this site, these go on **Storefront →
+301 Redirects** in Admin:
+
+| Old path on sunstatetrailers.com | New path |
+|---|---|
+| `/uncategorized/why-fleets-should-get-regular-trailer-service/` | `/blog/posts/why-fleets-should-get-regular-trailer-service` |
+| `/uncategorized/how-to-reset-the-service-trailer-brake-system-fast/` | `/blog/posts/how-to-reset-the-service-trailer-brake-system-fast` |
+| `/uncategorized/trailer-preventive-maintenance-checklist-for-fleets/` | `/blog/posts/trailer-preventive-maintenance-checklist-for-fleets` |

@@ -1,0 +1,975 @@
+{
+  "slug": "how-to-reset-the-service-trailer-brake-system-fast",
+  "title": "How to Reset the Service Trailer Brake System Fast",
+  "date": "2026-06-29",
+  "description": "Wondering how to reset service trailer brake warnings? Learn why expert trailer service is the safest solution.",
+  "excerpt": "If you've searched how to reset service trailer brakes, chances are you're dealing with a warning message that appeared at the worst possible time. The first instinct is often to find a quick reset and get…",
+  "status": "published",
+  "coverImage": "/img/blog/how-to-reset-the-service-trailer-brake-system-fast/hero.jpg",
+  "topic": "Service",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Service",
+          "title": "How to Reset the Service Trailer Brake System Fast",
+          "topic": "Service",
+          "date": "June 29, 2026",
+          "readTime": "4 min read",
+          "author": "Sun State Trailers",
+          "image": {
+            "src": "/img/blog/how-to-reset-the-service-trailer-brake-system-fast/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Technician performing brake and undercarriage service on an International truck with the hood raised"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "What the Warning Means",
+                        "href": "#what-means"
+                      },
+                      {
+                        "label": "Can You Reset It Yourself?",
+                        "href": "#reset-yourself"
+                      },
+                      {
+                        "label": "Why DIY Resets Are Risky",
+                        "href": "#diy-risk"
+                      },
+                      {
+                        "label": "Common Causes of the Warning",
+                        "href": "#common-issues"
+                      },
+                      {
+                        "label": "Don't Let It Become Bigger",
+                        "href": "#dont-wait"
+                      },
+                      {
+                        "label": "Why Professional Service Matters",
+                        "href": "#pro-service"
+                      },
+                      {
+                        "label": "Preventive Maintenance",
+                        "href": "#preventive"
+                      },
+                      {
+                        "label": "Schedule Service",
+                        "href": "#schedule"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "SEEING A BRAKE WARNING?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Our technicians diagnose the cause and get your trailer back on the road safely.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "schedule-service",
+                                "label": "Get Professional Guidance →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "If you've searched how to reset service trailer brakes, chances are you're dealing with a warning message that appeared at the worst possible time. The first instinct is often to find a quick reset and get back on the road. But while resetting the warning may seem like the fastest option, it doesn't always address the issue causing it in the first place. When it comes to trailer brake systems, the safest approach is identifying the cause of the warning instead of simply trying to clear it.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "h-what-means",
+                  "type": "heading",
+                  "props": {
+                    "text": "What Does the Service Trailer Brake Warning Mean?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "what-means"
+                  }
+                },
+                {
+                  "id": "p-what-means-1",
+                  "type": "text",
+                  "props": {
+                    "text": "A service trailer brake warning is designed to alert drivers that something within the braking system may need attention. Depending on the trailer and braking setup, the issue could involve:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-what-means-2",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Electrical connection problems"
+                      },
+                      {
+                        "text": "Wiring concerns"
+                      },
+                      {
+                        "text": "Faulty sensors"
+                      },
+                      {
+                        "text": "Brake controller issues"
+                      },
+                      {
+                        "text": "Air brake system irregularities"
+                      },
+                      {
+                        "text": "Wear within braking components"
+                      },
+                      {
+                        "text": "Communication failures between the truck and trailer"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-what-means-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Because modern braking systems are increasingly complex, the same warning light can have multiple causes. This is why understanding how to reset the trailer brake system warnings should start with understanding why the warning appeared in the first place.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-reset-yourself",
+                  "type": "heading",
+                  "props": {
+                    "text": "Can You Reset the Service Trailer Brake System Yourself?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "reset-yourself"
+                  }
+                },
+                {
+                  "id": "p-reset-yourself-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Technically, some vehicles may allow drivers to clear warning messages through dashboard controls or after disconnecting and reconnecting the trailer. However, that doesn't necessarily solve the problem. Think of it this way: if your smoke detector goes off because of a fire, removing the battery doesn't eliminate the fire. The same concept applies here.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-reset-yourself-2",
+                  "type": "text",
+                  "props": {
+                    "text": "A reset may temporarily clear the message, but if there's an underlying issue affecting the braking system, the warning is likely to return. More importantly, continuing to operate equipment with unresolved brake concerns can increase safety risks and potentially lead to more extensive semi trailer repair needs later.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-reset-yourself-3-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "styles": {
+                    "base": {
+                      "marginTop": 34,
+                      "marginBottom": 34
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "co-reset-yourself-3",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-reset-yourself-3-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "service-department",
+                                "label": "Get Professional Guidance →"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/how-to-reset-the-service-trailer-brake-system-fast/1.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Dashboard and steering wheel view inside an International truck cab"
+                    }
+                  }
+                },
+                {
+                  "id": "h-diy-risk",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why DIY Brake Resets Can Be Risky",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "diy-risk"
+                  }
+                },
+                {
+                  "id": "p-diy-risk-1",
+                  "type": "text",
+                  "props": {
+                    "text": "For many owner-operators, handling basic maintenance is simply part of the job. But brake systems are different.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-diy-risk-2",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Trailer brakes play a critical role in:</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-diy-risk-3",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Maintaining stopping power"
+                      },
+                      {
+                        "text": "Improving vehicle control"
+                      },
+                      {
+                        "text": "Supporting load stability"
+                      },
+                      {
+                        "text": "Protecting drivers and others on the road"
+                      },
+                      {
+                        "text": "Meeting DOT compliance standards"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-diy-risk-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Attempting to troubleshoot complex brake system concerns without proper diagnostics can result in misdiagnosis or overlooked issues. According to the Federal Motor Carrier Safety Administration, brake-related violations remain one of the most common factors identified during roadside inspections. Addressing warning signs early helps reduce the risk of unexpected downtime and safety concerns.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-common-issues",
+                  "type": "heading",
+                  "props": {
+                    "text": "Common Issues Behind Service Trailer Brake Warnings",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "common-issues"
+                  }
+                },
+                {
+                  "id": "p-common-issues-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Rather than focusing solely on how to reset service trailer brake alerts, it's helpful to understand what may be triggering them.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-common-issues-2",
+                  "type": "heading",
+                  "props": {
+                    "text": "Electrical Connection Problems",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-common-issues-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Damaged or corroded connectors can interrupt communication between the truck and trailer. Issues may include:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-common-issues-4",
+                  "type": "row",
+                  "props": {
+                    "gap": 4
+                  },
+                  "styles": {
+                    "base": {
+                      "marginBottom": 20
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "cards-common-issues-4-1",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 22,
+                          "paddingRight": 22,
+                          "paddingBottom": 22,
+                          "paddingLeft": 22
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "cards-common-issues-4-1-list",
+                          "type": "prose-list",
+                          "props": {
+                            "ordered": false,
+                            "items": [
+                              {
+                                "text": "Corroded terminals"
+                              },
+                              {
+                                "text": "Loose connections"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "cards-common-issues-4-2",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 22,
+                          "paddingRight": 22,
+                          "paddingBottom": 22,
+                          "paddingLeft": 22
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "cards-common-issues-4-2-list",
+                          "type": "prose-list",
+                          "props": {
+                            "ordered": false,
+                            "items": [
+                              {
+                                "text": "Damaged wiring"
+                              },
+                              {
+                                "text": "Moisture intrusion"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "p-common-issues-5",
+                  "type": "text",
+                  "props": {
+                    "text": "Electrical concerns often require professional diagnostics to pinpoint the exact cause.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-common-issues-6",
+                  "type": "heading",
+                  "props": {
+                    "text": "Brake Component Wear",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-common-issues-7",
+                  "type": "text",
+                  "props": {
+                    "text": "Like any system, brake components experience wear over time. Routine trailer service helps identify problems such as:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-common-issues-8",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Worn brake shoes"
+                      },
+                      {
+                        "text": "Air leaks"
+                      },
+                      {
+                        "text": "Damaged brake chambers"
+                      },
+                      {
+                        "text": "Faulty sensors"
+                      },
+                      {
+                        "text": "ABS concerns"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-common-issues-9",
+                  "type": "text",
+                  "props": {
+                    "text": "Ignoring these warning signs can eventually lead to more extensive trailer repair needs.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-2",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/how-to-reset-the-service-trailer-brake-system-fast/2.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Sockets, wrenches, and brake hardware laid out beneath a trailer wheel during service"
+                    }
+                  }
+                },
+                {
+                  "id": "h3-common-issues-10",
+                  "type": "heading",
+                  "props": {
+                    "text": "Sensor and Controller Issues",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-common-issues-11",
+                  "type": "text",
+                  "props": {
+                    "text": "Modern systems rely heavily on sensors and electronic communication. When these components malfunction, warning messages may appear even if the brakes initially seem to perform normally. This is why accurate diagnostics matter.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-dont-wait",
+                  "type": "heading",
+                  "props": {
+                    "text": "Don't Let Small Problems Become Bigger Ones",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "dont-wait"
+                  }
+                },
+                {
+                  "id": "p-dont-wait-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Brake warnings are your trailer's way of asking for attention before a larger problem develops. The experienced team at <a href=\"/locations/trailer-sales\">Sun State Trailers</a> can diagnose brake concerns quickly and help you get back on the road safely.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-pro-service",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Professional Trailer Service Matters",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "pro-service"
+                  }
+                },
+                {
+                  "id": "p-pro-service-1",
+                  "type": "text",
+                  "props": {
+                    "text": "For fleet managers and owner-operators alike, time matters. But so does confidence. Choosing professional trailer service offers several advantages:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-pro-service-2",
+                  "type": "check-list",
+                  "props": {
+                    "mark": "bullet",
+                    "runIn": true,
+                    "items": [
+                      {
+                        "title": "Accurate Diagnostics:",
+                        "text": "Instead of guessing, trained technicians use specialized equipment to identify the actual issue causing the warning."
+                      },
+                      {
+                        "title": "Reduced Downtime:",
+                        "text": "Addressing problems early often prevents more extensive repairs later."
+                      },
+                      {
+                        "title": "Improved Safety:",
+                        "text": "Brake systems directly impact stopping distance and vehicle control."
+                      },
+                      {
+                        "title": "Long-Term Savings:",
+                        "text": "Resolving the root cause typically costs less than dealing with preventable breakdowns or emergency roadside repairs."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-pro-service-3",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State Trailers, we focus on providing straightforward support that helps customers keep their businesses moving forward.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-preventive",
+                  "type": "heading",
+                  "props": {
+                    "text": "Preventive Maintenance Helps Avoid Brake Issues",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "preventive"
+                  }
+                },
+                {
+                  "id": "p-preventive-1",
+                  "type": "text",
+                  "props": {
+                    "text": "One of the best ways to minimize service trailer brake warnings is through routine inspections and maintenance.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-preventive-2",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>A preventive maintenance routine should include:</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-preventive-3",
+                  "type": "row",
+                  "props": {
+                    "gap": 4
+                  },
+                  "styles": {
+                    "base": {
+                      "marginBottom": 20
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "cards-preventive-3-1",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 22,
+                          "paddingRight": 22,
+                          "paddingBottom": 22,
+                          "paddingLeft": 22
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "cards-preventive-3-1-list",
+                          "type": "prose-list",
+                          "props": {
+                            "ordered": false,
+                            "items": [
+                              {
+                                "text": "Brake system inspections"
+                              },
+                              {
+                                "text": "Air line checks"
+                              },
+                              {
+                                "text": "Electrical connection inspections"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "cards-preventive-3-2",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 22,
+                          "paddingRight": 22,
+                          "paddingBottom": 22,
+                          "paddingLeft": 22
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "cards-preventive-3-2-list",
+                          "type": "prose-list",
+                          "props": {
+                            "ordered": false,
+                            "items": [
+                              {
+                                "text": "Brake adjustment evaluations"
+                              },
+                              {
+                                "text": "Sensor testing"
+                              },
+                              {
+                                "text": "General trailer assessments"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "p-preventive-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Consistent trailer service helps identify wear before it creates unexpected disruptions. For business owners who rely on their equipment every day, prevention often proves far less costly than emergency repairs.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-schedule",
+                  "type": "heading",
+                  "props": {
+                    "text": "Trust Experience Over Guesswork",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "schedule"
+                  }
+                },
+                {
+                  "id": "p-schedule-1",
+                  "type": "text",
+                  "props": {
+                    "text": "If you're searching for how to reset service trailer brake system warnings, it's understandable that you're looking for the quickest solution. But when it comes to brake systems, the fastest answer isn't always the safest one. At Sun State Trailers, we know that your equipment supports your drivers, your customers, and your livelihood. That's why we believe in diagnosing problems correctly the first time and providing dependable semi trailer repair solutions you can trust.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-schedule-2",
+                  "type": "text",
+                  "props": {
+                    "text": "If you're experiencing a service trailer brake warning, don't rely on guesswork or temporary resets. Let the experienced technicians at <a href=\"/locations/trailer-sales\">Sun State Trailers</a> identify the issue and help keep your trailer operating safely and efficiently.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-schedule-3",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "schedule-service",
+                        "label": "Schedule Your Parts and Service Appointment"
+                      },
+                      {
+                        "ctaId": "contact-us",
+                        "label": "Contact Us",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-share",
+                  "type": "post-share",
+                  "props": {
+                    "label": "Share",
+                    "items": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fhow-to-reset-the-service-trailer-brake-system-fast",
+                        "newTab": true
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fhow-to-reset-the-service-trailer-brake-system-fast&text=How%20to%20Reset%20the%20Service%20Trailer%20Brake%20System%20Fast",
+                        "newTab": true
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fhow-to-reset-the-service-trailer-brake-system-fast",
+                        "newTab": true
+                      },
+                      {
+                        "label": "Email",
+                        "url": "mailto:?subject=How%20to%20Reset%20the%20Service%20Trailer%20Brake%20System%20Fast&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fhow-to-reset-the-service-trailer-brake-system-fast",
+                        "newTab": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Parts, service and support",
+          "heading": "Don't guess. Get it diagnosed right.",
+          "body": "Call 800.741.7566 to schedule brake diagnostics or service at any Sun State location in Florida.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Schedule service",
+          "secondaryUrl": "/service-appointment"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/how-to-reset-the-service-trailer-brake-system-fast\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/how-to-reset-the-service-trailer-brake-system-fast\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n/* The hero photograph is framed a little high, as the design frames it. */\n[data-bz-section=\"post-hero\"] [data-bz-node=\"ph-photo\"] img { object-position: center 55%; }\n"
+}
