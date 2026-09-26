@@ -1,0 +1,540 @@
+{
+  "slug": "how-a-used-flatbed-trailer-helps-your-business",
+  "title": "How a Used Flatbed Trailer Can Help Get Your Business Up and Running",
+  "date": "2024-09-23",
+  "description": "The right equipment can make all the difference for your new business. Here's why you need a used flatbed trailer.",
+  "excerpt": "When it comes to starting a business, having the right equipment can make a huge difference. It can make transporting your products easier, save time, and be the backbone of your business. However, building…",
+  "status": "published",
+  "coverImage": "/img/blog/how-a-used-flatbed-trailer-helps-your-business/hero.jpg",
+  "topic": "Used Trailers",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Used Trailers",
+          "title": "How a Used Flatbed Trailer Can Help Get Your Business Up and Running",
+          "topic": "Used Trailers",
+          "date": "September 23, 2024",
+          "readTime": "4 min read",
+          "author": "Sun State Trailers",
+          "image": {
+            "src": "/img/blog/how-a-used-flatbed-trailer-helps-your-business/hero.jpg",
+            "width": 1280,
+            "height": 854,
+            "alt": "Row of red truck tractors and trailers parked at a dealership lot"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "A Financially Flexible Option",
+                        "href": "#flexible-option"
+                      },
+                      {
+                        "label": "What It Can Help With",
+                        "href": "#what-it-helps"
+                      },
+                      {
+                        "label": "Used vs. New Cost Analysis",
+                        "href": "#cost-analysis"
+                      },
+                      {
+                        "label": "Flatbed vs. Other Trailers",
+                        "href": "#comparison"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "WANT THE FULL SHEET?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "View detailed specifications before you compare trailers.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-trailers",
+                                "label": "View Our Trailer Specifications →"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "When it comes to starting a business, having the right equipment can make a huge difference. It can make transporting your products easier, save time, and be the backbone of your business. However, building your fleet can be an expensive investment, and that's where a <a href=\"/store/inventory?type=trailer&condition=used\">used flatbed trailer</a> can help you. Let's explore why shopping for a used flatbed trailer can be the best choice for building your business.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "h-flexible-option",
+                  "type": "heading",
+                  "props": {
+                    "text": "A Financially Flexible Option",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "flexible-option"
+                  }
+                },
+                {
+                  "id": "p-flexible-option-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Starting a business often means operating on a tight budget, and buying used equipment can be a financially flexible option. Buying used allows you to get your business up and running without the significant upfront costs that come with purchasing new equipment. Used equipment such as flatbed trailers gives you flexibility as you build your business and profits before making a larger investment. Once your business has grown and stabilized, you can then upgrade or purchase new equipment.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-what-it-helps",
+                  "type": "heading",
+                  "props": {
+                    "text": "What a Flatbed Trailer Can Help With",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "what-it-helps"
+                  }
+                },
+                {
+                  "id": "p-what-it-helps-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Flatbed trailers are incredibly versatile and can handle a wide variety of transportation needs. They're generally a good choice for transporting large, heavy, or irregularly shaped items that can't fit in your basic dry van. If you need to transport any of the following for your business, then a used flatbed trailer could be a useful purchase for your business:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-what-it-helps-2",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Hauling Equipment"
+                      },
+                      {
+                        "text": "Transporting Building and Construction Materials"
+                      },
+                      {
+                        "text": "Moving Scrap Metal, Tires, and Other Recyclable Materials"
+                      },
+                      {
+                        "text": "Removing Landscaping Debris"
+                      },
+                      {
+                        "text": "Moving Oil and Gas Rigs"
+                      },
+                      {
+                        "text": "Transporting Hay Bales"
+                      },
+                      {
+                        "text": "Any Oversized Loads"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-cost-analysis",
+                  "type": "heading",
+                  "props": {
+                    "text": "Cost Analysis: Used vs. New Flatbed Trailers",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "cost-analysis"
+                  }
+                },
+                {
+                  "id": "p-cost-analysis-1",
+                  "type": "text",
+                  "props": {
+                    "text": "When it comes to purchasing a flatbed trailer, the cost can be a major factor. Opting for a used flatbed trailer can offer significant savings compared to buying new. Here's why:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-cost-analysis-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "stack",
+                    "items": [
+                      {
+                        "title": "Lower Initial Investment",
+                        "points": [],
+                        "intro": "Used trailers come with a lower price tag, which can free up capital for other areas of your business."
+                      },
+                      {
+                        "title": "Depreciation",
+                        "points": [],
+                        "intro": "New trailers depreciate quickly. By purchasing used, you avoid the steepest part of the depreciation curve."
+                      },
+                      {
+                        "title": "Maintenance and Repairs",
+                        "points": [],
+                        "intro": "While used trailers might require more frequent maintenance, the savings on the purchase price often outweigh these costs."
+                      },
+                      {
+                        "title": "Availability",
+                        "points": [],
+                        "intro": "The used market offers a wide range of options, allowing you to find a trailer that fits your specific needs and budget."
+                      }
+                    ]
+                  },
+                  "styles": {
+                    "base": {
+                      "marginBottom": 8
+                    }
+                  }
+                },
+                {
+                  "id": "p-cost-analysis-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Whether you need one trailer or a fleet, shopping used can help you save thousands of dollars. As a new business, these savings can be put toward building other crucial areas, such as marketing, staffing, or additional equipment.",
+                    "align": "left",
+                    "width": "full"
+                  },
+                  "styles": {
+                    "base": {
+                      "marginTop": 34
+                    }
+                  }
+                },
+                {
+                  "id": "h-comparison",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why a Flatbed Might Be the Trailer Choice",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "comparison"
+                  }
+                },
+                {
+                  "id": "p-comparison-1",
+                  "type": "text",
+                  "props": {
+                    "text": "When it comes to choosing the right trailer for your business, understanding the differences between your options can help you make an informed decision. Here's a brief comparison of flatbed trailers with other common types of trailers:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-comparison-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "compare4",
+                    "across": "2",
+                    "items": [
+                      {
+                        "title": "Dry Vans",
+                        "points": [],
+                        "intro": "Enclosed trailers designed to protect cargo from the elements, best suited for boxed or palletized goods. If you have large or bulky products, they may not fit."
+                      },
+                      {
+                        "title": "Refrigerated Trailers (Reefers)",
+                        "points": [],
+                        "intro": "Equipped with refrigeration units for perishable goods. More expensive specialized equipment, so unless you need temperature control, a flatbed might be a better choice."
+                      },
+                      {
+                        "title": "Lowboy Trailers",
+                        "points": [],
+                        "wide": true,
+                        "intro": "Designed with a lower deck height to transport tall and heavy equipment that would exceed height limits on standard flatbeds. Great for oversized machinery, but a regular flatbed is better for smaller loads."
+                      }
+                    ]
+                  },
+                  "styles": {
+                    "base": {
+                      "marginBottom": 34
+                    }
+                  }
+                },
+                {
+                  "id": "h-flexible-options-and-high",
+                  "type": "heading",
+                  "props": {
+                    "text": "Flexible Options and High-Quality Trailers",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-flexible-options-and-high-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At <a href=\"/locations/trailer-sales\">Sun State Trailers</a>, we are committed to providing high-quality trailers and exceptional customer service. Our selection of used flatbed trailers offers a reliable and affordable solution for your business needs. Here's what sets us apart:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-flexible-options-and-high-2",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "<strong>Wide Range of Options:</strong> We offer trailers from top manufacturers like Globe Trailers and Hyundai Translead, ensuring you get the best quality."
+                      },
+                      {
+                        "text": "<strong>Comprehensive Inventory:</strong> Whether you need a flatbed, dry van, dump trailer, or lowboy, we have it all."
+                      },
+                      {
+                        "text": "<strong>Flexible Solutions:</strong> We provide new, used, and rental options to suit your specific requirements."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-flexible-options-and-high-3",
+                  "type": "text",
+                  "props": {
+                    "text": "By choosing Sun State Trailers, you're not just getting a trailer; you're gaining a trusted partner dedicated to helping your business succeed. Contact us today to explore our inventory and find the perfect used flatbed trailer for your needs.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-flexible-options-and-high-4",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "contact-us",
+                        "label": "Contact Us"
+                      },
+                      {
+                        "ctaId": "browse-trailers",
+                        "label": "Browse Trailer Inventory",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-share",
+                  "type": "post-share",
+                  "props": {
+                    "label": "Share",
+                    "items": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fhow-a-used-flatbed-trailer-helps-your-business",
+                        "newTab": true
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fhow-a-used-flatbed-trailer-helps-your-business&text=How%20a%20Used%20Flatbed%20Trailer%20Can%20Help%20Get%20Your%20Business%20Up%20and%20Running",
+                        "newTab": true
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fhow-a-used-flatbed-trailer-helps-your-business",
+                        "newTab": true
+                      },
+                      {
+                        "label": "Email",
+                        "url": "mailto:?subject=How%20a%20Used%20Flatbed%20Trailer%20Can%20Help%20Get%20Your%20Business%20Up%20and%20Running&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fhow-a-used-flatbed-trailer-helps-your-business",
+                        "newTab": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Used trailers",
+          "heading": "Find the perfect used flatbed for your business.",
+          "body": "Call 800.741.7566 to talk with our team at any Sun State location in Florida.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Browse trailer inventory",
+          "secondaryUrl": "/store/inventory?type=trailer"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/how-a-used-flatbed-trailer-helps-your-business\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/how-a-used-flatbed-trailer-helps-your-business\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n/* The hero photograph is framed a little high, as the design frames it. */\n[data-bz-section=\"post-hero\"] [data-bz-node=\"ph-photo\"] img { object-position: center 70%; }\n"
+}

@@ -375,6 +375,8 @@ def card_item(card):
     """A titled card: a title, an optional sentence, an optional list, an optional closing note,
     an optional small label above the title and an accent line at its foot."""
     it = {"title": "", "points": []}
+    if re.search(r"grid-column:\s*1\s*/\s*-1", card.get("style", "")):
+        it["wide"] = True  # the odd card out, spanning the row
     for y in [y for y in card.children if isinstance(y, Tag)]:
         cls = y.get("class", [])
         if y.name == "h3": it["title"] = plain(y)
@@ -385,6 +387,13 @@ def card_item(card):
         elif y.name == "p" and it["points"]: it["outro"] = plain(y)
         else: raise SystemExit(f"card child <{y.name} {cls}>")
     return it
+
+
+def across(cls):
+    """How many columns a design grid draws, as Card lists' Across setting."""
+    for n_, names in (("5", ("grid-5",)), ("4", ("grid--4", "grid-4")), ("3", ("grid--3", "grid-3")), ("2", ("grid--2", "grid-2"))):
+        if any(c in cls for c in names): return n_
+    return ""
 
 
 def style_margins(st, bottom_only=False):
@@ -490,6 +499,12 @@ def normalise_standalone(s):
             d["class"] = ["article__actions--inline"]
             for b in d.select("a.btn--primary"):
                 b["class"] = b.get("class", []) + ["hv-2"]
+    for d in s.select(".post-body > div:not([class])"):
+        cards = d.find_all(recursive=False)
+        if cards and all("card" in c.get("class", []) for c in cards):
+            mb = re.search(r"margin-bottom:\s*([0-9]+)px", d.get("style", ""))
+            if mb: cards[-1]["style"] = f"margin-bottom: {mb.group(1)}px"
+            d.unwrap()  # a run of titled cards: one stacked Card list
     for c in s.select(".post-body > div.check-list"):
         if c.find_all(recursive=False) and all("faq-item" in k.get("class", []) for k in c.find_all(recursive=False)):
             del c["class"]  # a plain run of questions, read as one Question list
@@ -707,9 +722,15 @@ def convert(path):
             # its node named from its first words.
             sec = "-".join(slugify(plain(el)).split("-")[:4])
             out.append(n(f"h-{sec}", "heading", {"text": plain(el), "headingLevel": 2, "align": "left"}))
+            mt = re.search(r"margin-top:\s*([0-9]+)px", st)
+            if STANDALONE and mt:
+                extra_css.append(f'[data-bz-node="art-body"] [data-bz-node="h-{sec}"] h2 {{ margin-top: {mt.group(1)}px; }}')
         elif el.name == "h2":
             sec = el["id"]
             out.append(n(f"h-{sec}", "heading", {"text": plain(el), "headingLevel": 2, "align": "left", "anchor": sec}))
+            mt = re.search(r"margin-top:\s*([0-9]+)px", st)
+            if STANDALONE and mt and "font-family" not in st:
+                extra_css.append(f'[data-bz-node="art-body"] [data-bz-node="h-{sec}"] h2 {{ margin-top: {mt.group(1)}px; }}')
         elif el.name == "h3":
             p = {"text": plain(el), "headingLevel": 3, "align": "left"}
             if el.get("id"):
@@ -795,8 +816,28 @@ def convert(path):
             out.append(n(nid("cards"), "card-lists", {"variant": "decide", "items": [
                 card_item(c) for c in el.find_all("div", class_="decide-card", recursive=False)]}, styles=style_margins(st)))
         elif el.name == "div" and el.find("div", class_="compare-card", recursive=False):
-            out.append(n(nid("cards"), "card-lists", {"variant": "compare4", "items": [
+            out.append(n(nid("cards"), "card-lists", {"variant": "compare4", **({"across": across(cls)} if across(cls) not in ("", "4") else {}), "items": [
                 card_item(c) for c in el.find_all("div", class_="compare-card", recursive=False)]}, styles=style_margins(st)))
+        elif el.name == "div" and el.find("div", class_=["benefit-card", "how-card", "use-card", "product-tag"], recursive=False):
+            # Short titled cards two to five across, or a row of one-line names: Card lists.
+            first = el.find("div", recursive=False).get("class", [])
+            variant = "use" if "use-card" in first else "chip" if "product-tag" in first else "brief"
+            cards = el.find_all("div", recursive=False)
+            items = [{"title": plain(c), "points": []} for c in cards] if variant == "chip" else [card_item(c) for c in cards]
+            out.append(n(nid("cards"), "card-lists", {"variant": variant, "across": across(cls), "items": items}, styles=style_margins(st)))
+        elif el.name == "div" and "stat-strip" in cls:
+            # Figures in bordered, centred cells: the platform Stat band, drawn as the design draws it.
+            cid = nid("stats")
+            stats = [{"value": plain(c.find(class_="num")), "label": plain(c.find(class_="label"))} for c in el.find_all("div", class_="stat-card", recursive=False)]
+            out.append(n(cid, "statBand", {"stats": stats}))
+            sel = f'[data-bz-node="art-body"] [data-bz-node="{cid}"]'
+            extra_css.append(f"/* Its stat strip: {len(stats)} bordered cells, centred, every figure in the accent. */\n"
+                             f"{sel} {{ margin: 8px 0 34px; }}\n"
+                             f"{sel} .bz-stats {{ grid-template-columns: repeat({len(stats)}, minmax(0, 1fr)); gap: 20px; background: none; border: 0; }}\n"
+                             f"{sel} .bz-stat {{ border: 1px solid var(--line); padding: 24px; text-align: center; }}\n"
+                             f"{sel} .bz-stat__v, {sel} .bz-stat:first-child .bz-stat__v {{ font: 800 30px / 1.7 var(--font-heading); color: var(--accent); margin: 0 0 6px; }}\n"
+                             f"{sel} .bz-stat__l {{ font-size: 13.5px; line-height: 1.5; }}\n"
+                             f"@media (max-width: 640px) {{ {sel} .bz-stats {{ grid-template-columns: minmax(0, 1fr); }} }}")
         elif el.name == "div" and "grid--2" in cls and el.select(":scope > .card > h3"):
             out.append(n(nid("cards"), "card-lists", {"variant": "stack2", "items": [
                 card_item(c) for c in el.find_all("div", class_="card", recursive=False)]}, styles=style_margins(st)))

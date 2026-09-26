@@ -1156,3 +1156,59 @@ and 8px here — the style uses one value for both.
 | `/used-trailers/how-much-is-a-flatbed-trailer-what-to-expect-and-what-impacts-the-price/` | `/blog/posts/how-much-is-a-flatbed-trailer` |
 | `/used-trailers/what-you-should-look-for-when-shopping-for-a-used-reefer-trailer-for-sale/` | `/blog/posts/what-to-look-for-in-a-used-reefer-trailer` |
 | `/new-trailers/from-kingpins-to-landing-gears-know-which-trailer-part-you-should-check-before-taking-your-trailer-out-on-the-road/` | `/blog/posts/trailer-parts-to-check-before-the-road` |
+
+## 29. `SS_International_16` — Sun State Trailers posts, batch 6 (six new posts)
+
+`handoff-trailer-posts-batch-6`: six post pages and a preview index, in the §24 format. All six
+are new; each is published on its file's slug with its card on the Blog page (106 in all).
+
+| Post | Topic, date |
+|---|---|
+| `6-businesses-that-benefit-from-used-reefer-trailers` | Used Trailers, Apr 25, 2025 |
+| `new-or-used-dump-trailers-reduce-costs` | Trailer Rentals, Jan 10, 2025 |
+| `which-trailers-are-best-for-your-business` | New Trailers, Dec 12, 2024 |
+| `how-our-parts-and-service-center-keeps-you-on-time` | Used Trailers, Nov 15, 2024 |
+| `how-a-used-flatbed-trailer-helps-your-business` | Used Trailers, Sep 23, 2024 |
+| `new-reefer-trailer-preserves-product-quality` | New Trailers, Sep 13, 2024 |
+
+Topics are as the handoff's bylines give them (*New or Used Dump Trailers* is filed under Trailer
+Rentals there). Built by `tools/blog-handoff/convert.py`. Body copy and rails match the handoff word
+for word (checked mechanically), and each post was rendered beside its handoff page: every section
+lands within 28px at 1280px, and every card grid is the handoff's height to the pixel. The earlier
+batches (§24–§28) re-convert byte for byte.
+
+New shapes, as Card lists styles and one prebuilt block:
+
+| Handoff | Here |
+|---|---|
+| `.benefit-card` / `.how-card` (title over a sentence), two, three or five across | **Card lists**, new *Brief* style |
+| `.use-card`s, two, three or four across | **Card lists**, new *Use* style |
+| `.product-tag`s five across (Fresh Produce, Frozen Foods …) | **Card lists**, new *Chip* style — one-line names, centred |
+| `.compare-card`s two across, with no label | **Card lists**, *Compare*, two across |
+| a card with `grid-column: 1 / -1` (the odd card out, spanning the row) | the card's new **Full width** switch |
+| `.stat-strip` (60+ / 4 / ALL over a line each) | the platform **Stat band**, drawn in the post's CSS as bordered, centred cells |
+| a plain wrapper around a run of titled cards | the run, as one *Stacked* Card list |
+| an `h2` with its own 34px top margin | the heading, with that margin in the post's CSS |
+
+**Card lists now has an Across setting** (two to five), so a style is no longer tied to one column
+count; each count carries the design's gap (28 / 24 / 20 / 14px) and steps down at 1100px and 640px
+as the design does. Posts that do not set it are unchanged.
+
+**Links.** "Order Parts Online" links to the Parts page in the handoff (`parts.html`), so it places
+the *Parts department* button, relabelled; trailer kinds named in prose go to the trailer listings.
+
+**Dropped / as elsewhere.** Keep reading is the latest-posts list; chrome, colours and the
+unemitted `BlogPosting` data are as in §24; *Trailer Specifications* links go to the trailer
+listings (§15). The stat figures follow the Design system's accent like every other accent here.
+
+**Old addresses.** If sunstatetrailers.com is pointed at this site, these go on **Storefront →
+301 Redirects** in Admin:
+
+| Old path on sunstatetrailers.com | New path |
+|---|---|
+| `/used-trailers/6-businesses-that-can-benefit-from-used-reefer-trailers/` | `/blog/posts/6-businesses-that-benefit-from-used-reefer-trailers` |
+| `/uncategorized/new-trailer-or-used-trailer-how-you-can-reduce-costs-when-shopping-for-dump-trailers/` | `/blog/posts/new-or-used-dump-trailers-reduce-costs` |
+| `/new-trailers/from-flatbed-trailers-to-dump-ends-discover-which-trailers-are-best-for-your-business/` | `/blog/posts/which-trailers-are-best-for-your-business` |
+| `/used-trailers/how-our-parts-and-service-center-keeps-you-on-time/` | `/blog/posts/how-our-parts-and-service-center-keeps-you-on-time` |
+| `/used-trailers/how-a-used-flatbed-trailer-can-help-get-your-business-up-and-running/` | `/blog/posts/how-a-used-flatbed-trailer-helps-your-business` |
+| `/new-trailers/how-a-new-reefer-trailer-can-help-preserve-the-quality-of-your-businesss-products/` | `/blog/posts/new-reefer-trailer-preserves-product-quality` |

@@ -1,0 +1,470 @@
+{
+  "slug": "how-our-parts-and-service-center-keeps-you-on-time",
+  "title": "How Our Parts and Service Center Keeps You On Time",
+  "date": "2024-11-15",
+  "description": "Looking for a one-stop shop for your trailer? Our parts and service center is here to get you back on the road.",
+  "excerpt": "Breakdowns are unfortunately an inevitable part of transporting goods. When they happen, it can be stressful trying to get your product delivered with minimal disruption. During this frustrating time, Sun…",
+  "status": "published",
+  "coverImage": "/img/blog/how-our-parts-and-service-center-keeps-you-on-time/hero.jpg",
+  "topic": "Used Trailers",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Used Trailers",
+          "title": "How Our Parts and Service Center Keeps You On Time",
+          "topic": "Used Trailers",
+          "date": "November 15, 2024",
+          "readTime": "4 min read",
+          "author": "Sun State Trailers",
+          "image": {
+            "src": "/img/blog/how-our-parts-and-service-center-keeps-you-on-time/hero.jpg",
+            "width": 1280,
+            "height": 640,
+            "alt": "Sun State technician sorting fittings and parts in the service center"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "No Need to Hunt for Parts",
+                        "href": "#parts"
+                      },
+                      {
+                        "label": "Convenient Locations",
+                        "href": "#locations"
+                      },
+                      {
+                        "label": "One-Stop Shop for Repairs",
+                        "href": "#repairs"
+                      },
+                      {
+                        "label": "Mobile Services",
+                        "href": "#mobile"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "NEED SERVICE NOW?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Our mobile team can meet you wherever you are.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "contact-us",
+                                "label": "Contact Us →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Breakdowns are unfortunately an inevitable part of transporting goods. When they happen, it can be stressful trying to get your product delivered with minimal disruption. During this frustrating time, <a href=\"/locations/trailer-sales\">Sun State Trailers</a> is here to help. Whether you need new parts or service, our team will make sure your trailer is safe to operate. Here's how our parts and service center can keep you on schedule.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "h-parts",
+                  "type": "heading",
+                  "props": {
+                    "text": "No Need to Hunt for Parts",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "parts"
+                  }
+                },
+                {
+                  "id": "p-parts-1",
+                  "type": "text",
+                  "props": {
+                    "text": "If you are looking for parts for your trailer, we offer a wide selection for all different types and manufacturers. Whether you have a dry van, flatbed, dump-end, low boy, refrigerated trailer, or a capacity spotter, we have the equipment and accessories you need to get it back on the road safely. There is no need to hunt for parts with various retailers and pay a premium. This can be time-consuming and energy-draining. Our team will help you find the exact parts you want and make the experience as easy as possible for you.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-locations",
+                  "type": "heading",
+                  "props": {
+                    "text": "Convenient Locations",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "locations"
+                  }
+                },
+                {
+                  "id": "p-locations-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Need a part in person? We have multiple locations in Southwest Florida so you're never too far away to get the part you need. Each of our locations in Tampa, Sarasota, Brooksville, and Davenport has a wide inventory of parts for many makes and models. If you can't make it to one of our places in person, we also offer an online store for your convenience. You can explore and order parts from our vast inventory by registering on our website. We'll get you back on the road in no time.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-repairs",
+                  "type": "heading",
+                  "props": {
+                    "text": "One-Stop Shop for All Repairs",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "repairs"
+                  }
+                },
+                {
+                  "id": "p-repairs-1",
+                  "type": "text",
+                  "props": {
+                    "text": "When it comes to repairs, you can trust your trailer is in good hands with our team at Sun State Trailers.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "stats-repairs-2",
+                  "type": "statBand",
+                  "props": {
+                    "stats": [
+                      {
+                        "value": "60+",
+                        "label": "Experienced, trained technicians on staff"
+                      },
+                      {
+                        "value": "4",
+                        "label": "Florida locations ready to serve you"
+                      },
+                      {
+                        "value": "All",
+                        "label": "Makes and models serviced"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-repairs-3",
+                  "type": "text",
+                  "props": {
+                    "text": "No matter the model you have, our team will ensure your trailer is well-maintained and correctly repaired. Our technicians are recognized in the community for their dedication to detail and quality. Whether it's a simple fix or a larger issue, we have the skills and expertise to handle any type of repair.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-quick-turnarounds",
+                  "type": "heading",
+                  "props": {
+                    "text": "Quick Turnarounds",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-quick-turnarounds-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Your time is valuable, and we're here to help you get the job done on schedule. Our team knows how important it is to have your trailer when you need it. With our parts and service center, we provide nothing less than exceptional service so you can get back on the road without any unnecessary hassles.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-mobile",
+                  "type": "heading",
+                  "props": {
+                    "text": "Mobile Services",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "mobile"
+                  }
+                },
+                {
+                  "id": "p-mobile-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Unexpected emergencies are overwhelming, especially if you are in a time crunch. If you get stuck on the road and need emergency service, Sun State Trailers has you covered. We have a mobile service team ready to assist you when and where you need us. Our experts can help you with repairs, diagnostics, and preventative maintenance. We will meet you wherever you are and get you back on the road safely.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-keeping-you-on-time",
+                  "type": "heading",
+                  "props": {
+                    "text": "Keeping You on Time With Our Expert Team",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-keeping-you-on-time-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Sun State Trailers is the location for all of your trailer needs. Whether you need new parts or a repair, our team can help you get your trailer back in working order. We understand the pressures that come with running a business. Our goal is to help you stay on time with expert care, regular maintenance, and quick service. You can count on us to do a thorough job, even preventing potential problems before they arise. Our Parts and Service Center will ensure you do not waste any time when it comes to your trailer.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-give-your-trailer-the",
+                  "type": "heading",
+                  "props": {
+                    "text": "Give Your Trailer the Care It Deserves",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-give-your-trailer-the-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Your trailer is a valuable asset that helps you run your business effectively. Our Parts and Service Center is here to ensure that you can depend on your trailer for years to come. With quality parts and expert service, we are a reliable partner when it comes to your investment. Our dedication to excellent care is just one way we can show our commitment to you. Give your trailer the service it needs by contacting a member of our team today.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-give-your-trailer-the-2",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "contact-us",
+                        "label": "Contact Us"
+                      },
+                      {
+                        "ctaId": "parts-department",
+                        "label": "Order Parts Online",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-share",
+                  "type": "post-share",
+                  "props": {
+                    "label": "Share",
+                    "items": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fhow-our-parts-and-service-center-keeps-you-on-time",
+                        "newTab": true
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fhow-our-parts-and-service-center-keeps-you-on-time&text=How%20Our%20Parts%20and%20Service%20Center%20Keeps%20You%20On%20Time",
+                        "newTab": true
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fhow-our-parts-and-service-center-keeps-you-on-time",
+                        "newTab": true
+                      },
+                      {
+                        "label": "Email",
+                        "url": "mailto:?subject=How%20Our%20Parts%20and%20Service%20Center%20Keeps%20You%20On%20Time&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fhow-our-parts-and-service-center-keeps-you-on-time",
+                        "newTab": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Used trailers",
+          "heading": "Give your trailer the care it deserves.",
+          "body": "Call 800.741.7566 to talk with our team at any Sun State location in Florida.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Browse trailer inventory",
+          "secondaryUrl": "/store/inventory?type=trailer"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/how-our-parts-and-service-center-keeps-you-on-time\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/how-our-parts-and-service-center-keeps-you-on-time\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n/* The hero photograph is framed a little high, as the design frames it. */\n[data-bz-section=\"post-hero\"] [data-bz-node=\"ph-photo\"] img { object-position: center 40%; }\n\n/* Its stat strip: 3 bordered cells, centred, every figure in the accent. */\n[data-bz-node=\"art-body\"] [data-bz-node=\"stats-repairs-2\"] { margin: 8px 0 34px; }\n[data-bz-node=\"art-body\"] [data-bz-node=\"stats-repairs-2\"] .bz-stats { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; background: none; border: 0; }\n[data-bz-node=\"art-body\"] [data-bz-node=\"stats-repairs-2\"] .bz-stat { border: 1px solid var(--line); padding: 24px; text-align: center; }\n[data-bz-node=\"art-body\"] [data-bz-node=\"stats-repairs-2\"] .bz-stat__v, [data-bz-node=\"art-body\"] [data-bz-node=\"stats-repairs-2\"] .bz-stat:first-child .bz-stat__v { font: 800 30px / 1.7 var(--font-heading); color: var(--accent); margin: 0 0 6px; }\n[data-bz-node=\"art-body\"] [data-bz-node=\"stats-repairs-2\"] .bz-stat__l { font-size: 13.5px; line-height: 1.5; }\n@media (max-width: 640px) { [data-bz-node=\"art-body\"] [data-bz-node=\"stats-repairs-2\"] .bz-stats { grid-template-columns: minmax(0, 1fr); } }\n"
+}
