@@ -30,9 +30,13 @@
   align-items: center;
   justify-content: center;
 }
+/* A fixed logo height, not the whole box: the square International mark
+   would otherwise draw three times the height of the wide wordmarks. At this
+   height the wordmarks fill the width and the mark fills the height, so the
+   four read at one visual weight. */
 [data-bz-section="type-rail"] [data-bz-node^="tr-slide-img"] img {
   width: 100%;
-  height: 100%;
+  height: 110px;
   object-fit: contain;
   object-position: center;
 }
@@ -50,4 +54,5 @@
   [data-bz-section="type-rail"] [data-bz-node^="tr-slide-img"] {
     inset: 20px 20px 72px;
   }
+  [data-bz-section="type-rail"] [data-bz-node^="tr-slide-img"] img { height: 72px }
 }
