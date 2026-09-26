@@ -1,0 +1,53 @@
+/* Brand rail — logos, not photographs.
+   ---------------------------------------------------------------------------
+   The shared type-rail component fills each card with a cover-cropped photo.
+   On this page its items are brand logos of very different shapes (a square
+   badge, wide wordmarks, a stacked mark), and cover cropped every one of them.
+   Here each logo sits in the same fixed box inside its card — between the
+   title and the button — and is scaled to fit whole, centred, never cropped.
+   Scoped to this page, so the component's photo cards elsewhere are untouched. */
+
+/* Every card gets the same visible surface, so a logo with its own background
+   and one without still read as identical cards. */
+[data-bz-section="type-rail"] [data-bz-type="column"][data-bz-node^="tr-slide-"] {
+  background: rgba(255, 255, 255, .04);
+  border: 1px solid rgba(255, 255, 255, .1);
+  border-radius: var(--radius-card);
+}
+
+/* The logo box: clear of the title above and the button below, equal gutters
+   either side. The same box on every card keeps them symmetrical. */
+[data-bz-section="type-rail"] [data-bz-node^="tr-slide-img"] {
+  inset: 120px 32px 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+[data-bz-section="type-rail"] [data-bz-node^="tr-slide-img"] .bz-figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+[data-bz-section="type-rail"] [data-bz-node^="tr-slide-img"] img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* The darkening wash was there to keep a title legible over a photo. The
+   title no longer sits over the logo, and the wash only greyed the marks out. */
+[data-bz-section="type-rail"] [data-bz-node^="tr-slide-img"]::after,
+[data-bz-section="type-rail"] .is-staged > [data-pos="0"] [data-bz-node^="tr-slide-img"]::after {
+  display: none;
+}
+
+/* Phone: the handoff's smaller cards put the title at the foot with no button,
+   so the logo box moves up to clear it. */
+@media (max-width: 640px) {
+  [data-bz-section="type-rail"] [data-bz-node^="tr-slide-img"] {
+    inset: 20px 20px 72px;
+  }
+}
