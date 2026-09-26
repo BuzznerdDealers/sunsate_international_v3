@@ -803,3 +803,39 @@ red (`#EE2D24`, §1's original accent). The site renders them from the Design sy
 `accent` (`#272623`) and `accentDark` (`#ff7144`), which were changed in the dashboard after §1.
 That is the dealer's setting and is left alone; setting **Design system → accent** back to
 `#EE2D24` restores the handoff's red everywhere at once.
+
+## 21. Blog handoff, batch 6 — two new posts, four repeats
+
+Six prototype pages in the §15 format. Two are new posts, each on its live permalink's slug:
+
+| Handoff file | Post | Topic, date |
+|---|---|---|
+| `how-to-fix-an-enclosed-trailer-door-the-right-way` | `how-to-fix-an-enclosed-trailer-door-the-right-way` (Sun State Trailers) | Service, Jun 25, 2026 |
+| `how-used-semi-trucks-can-help-grow-your-business` | `how-used-semi-trucks-can-help-grow-your-business` | Sales, May 9, 2025 |
+
+The other four repeat posts already on the site (every paragraph, list item and heading checked):
+*Heavy Duty Truck Parts Tampa*, *How a New Truck Can Help Grow Your Freight Trucking Business*,
+*How to Choose a Service and Truck Parts Dealer* and *How to Choose the Right Truck Parts and
+Service Dealer*. **They are left as they are**, as in §17–§20, and the converter lists them as
+repeats.
+
+Both new posts were built by the converter from shapes earlier batches already handle — the
+Post hero, the *On this page* rail and its card, prose and Checkmark lists, two-up bordered list
+callouts, a ruled pull statement, bordered button callouts, three **Link cards** (Used trucks /
+Get financing / Service center), photographs and the filled / outlined button pair — and were
+rendered beside the handoff at 1280px; the layout matches section for section. Every button is
+from the Buttons library (*Schedule service*, *Contact us*, *Financing*, *Browse used trucks*),
+relabelled per placement as the design words it. The old used-inventory address is the storefront
+filtered to used (`/store/inventory?condition=used`). *Explore Our Parts and Service* goes to the
+service-appointment page because the handoff's own link does. The blog page now has 70 cards.
+
+**Dropped / as elsewhere.** The handoff's hand-picked "Keep reading" cards are the latest-posts
+list, as on every post. Colours follow the Design system's current accent (§20).
+
+**Old addresses.** If the old domains are pointed at this site, these go on **Storefront → 301
+Redirects** in Admin:
+
+| Old address | New path |
+|---|---|
+| `https://sunstatetrailers.com/new-trailers/how-to-fix-an-enclosed-trailer-door-the-right-way/` | `/blog/posts/how-to-fix-an-enclosed-trailer-door-the-right-way` |
+| `https://www.sunstateintl.com/how-used-semi-trucks-can-help-grow-your-business/` | `/blog/posts/how-used-semi-trucks-can-help-grow-your-business` |
