@@ -875,3 +875,20 @@ Checked as in §20: every paragraph, list item and heading is in the existing po
 rendered beside the built posts at 1280px match section for section. The handoff ships 1000px
 photographs against the 1280px ones already here, so **the existing posts are kept** and the
 converter lists batch 8 as repeats. Colours follow the Design system's current accent (§20).
+
+## 24. Batch 4 delivered a third time — verified, nothing to change
+
+The verified batch-4 handoff (`75128048-10_1.zip`) is the same six pages as §18 and §19:
+
+- `tools/blog-handoff/convert.py`, run on it, regenerates *Building a Fleet? Here are 5
+  Reasons…* byte for byte — the working tree is unchanged afterwards — and skips the five
+  listed repeats.
+- Every paragraph, list item and heading of the five repeats is in the existing posts
+  (*Commercial Truck Oil Change Mistakes*, *Common Problems With Air Brake Parts*, *Diesel
+  Engine Diagnostic*, *Diesel Exhaust Fluid*, *Do Semi Truck Maintenance Costs Outweigh the
+  Benefits?*). The new post's five index-led headings are there too, split into their number
+  and title, as §18 builds them.
+- `renderer/` and `scripts/` are identical to `base-template` `main` (renderer 4.24.0), and
+  `npm run check` passes: validate clean (notes only), 175/175 specs, 36 pages built.
+
+No post, page or component changed. The old-address redirect from §18 still applies.
