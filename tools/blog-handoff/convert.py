@@ -76,7 +76,13 @@ REPEATS = {"batch-3": {"are-aftermarket-semi-truck-parts-as-reliable-as-oem.html
            "batch-5": {"features-to-look-for-in-new-semi-trucks.html", "fleet-maintenance-programs-vs-one-off-repairs.html",
                        "fleet-truck-maintenance-reduces-downtime.html",
                        "fleet-truck-service-in-florida-keeps-businesses-moving.html", "fuel-filter-pressure.html",
-                       "go-to-dealership-for-truck-equipment-in-tampa.html"}}
+                       "go-to-dealership-for-truck-equipment-in-tampa.html"},
+           "batch-6": {"heavy-duty-truck-parts-tampa.html", "how-a-new-truck-can-help-grow-your-fright-trucking-business.html",
+                       "how-to-choose-a-truck-parts-dealer.html", "how-to-choose-the-right-truck-parts-and-service-dealer.html"},
+           "batch-7": {"ordering-semi-truck-parts-online-vs-local-service.html", "preventive-maintenance-for-semi-trucks.html",
+                       "preventive-maintenance-saves-you-more-than-it-costs.html",
+                       "preventive-maintenance-schedule-for-semi-trucks.html", "reliable-parts-for-semi-trucks.html",
+                       "reliable-semi-truck-service-centers-in-florida.html"}}
 POST_TITLES = {}  # "Blog Post - <title>.dc.html" -> slug, filled from the handoff's own pages
 
 

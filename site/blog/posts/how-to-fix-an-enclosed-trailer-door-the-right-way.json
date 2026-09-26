@@ -1,0 +1,1014 @@
+{
+  "slug": "how-to-fix-an-enclosed-trailer-door-the-right-way",
+  "title": "How to Fix an Enclosed Trailer Door the Right Way",
+  "date": "2026-06-25",
+  "description": "Learn how to fix an enclosed trailer door and when to schedule trailer repair with Sun State Trailers.",
+  "excerpt": "Few things are more frustrating than dealing with a trailer door that won't open, won't close properly, or refuses to latch when you're trying to get a load moving. What starts as a minor inconvenience can…",
+  "status": "published",
+  "coverImage": "/img/blog/how-to-fix-an-enclosed-trailer-door-the-right-way/hero.jpg",
+  "topic": "Service",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Service",
+          "title": "How to Fix an Enclosed Trailer Door the Right Way",
+          "topic": "Service",
+          "date": "June 25, 2026",
+          "readTime": "5 min read",
+          "author": "Sun State Trailers",
+          "image": {
+            "src": "/img/blog/how-to-fix-an-enclosed-trailer-door-the-right-way/hero.jpg",
+            "width": 1000,
+            "height": 667,
+            "alt": "Sun State technician working at a service bench beside an open enclosed trailer"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "Why Doors Stop Working",
+                        "href": "#common-reasons"
+                      },
+                      {
+                        "label": "Start With an Inspection",
+                        "href": "#start-inspection"
+                      },
+                      {
+                        "label": "Check Door Alignment",
+                        "href": "#alignment"
+                      },
+                      {
+                        "label": "Inspect the Locking System",
+                        "href": "#locking-system"
+                      },
+                      {
+                        "label": "When DIY Repairs Make Sense",
+                        "href": "#diy"
+                      },
+                      {
+                        "label": "Signs You Need a Pro",
+                        "href": "#pro-signs"
+                      },
+                      {
+                        "label": "Preventive Maintenance",
+                        "href": "#preventive"
+                      },
+                      {
+                        "label": "Schedule Service",
+                        "href": "#schedule"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "DOOR NOT LATCHING RIGHT?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Our technicians diagnose door and body issues and get your trailer road-ready.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "schedule-service",
+                                "label": "Schedule an Inspection →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Few things are more frustrating than dealing with a trailer door that won't open, won't close properly, or refuses to latch when you're trying to get a load moving. What starts as a minor inconvenience can quickly turn into lost time, delayed deliveries, damaged cargo, and even safety concerns.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "If you've been searching for how to fix a trailer door, understanding the potential causes behind the problem is the first step. While some issues may have straightforward solutions, others require professional <a href=\"/service\">trailer repair</a> to prevent bigger and more expensive problems down the road.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/how-to-fix-an-enclosed-trailer-door-the-right-way/1.jpg",
+                      "width": 1000,
+                      "height": 667,
+                      "alt": "Exterior of the Sun State Trailers service bays with roll-up doors open"
+                    }
+                  }
+                },
+                {
+                  "id": "h-common-reasons",
+                  "type": "heading",
+                  "props": {
+                    "text": "Common Reasons Trailer Doors Stop Working",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "common-reasons"
+                  }
+                },
+                {
+                  "id": "p-common-reasons-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Trailer doors are exposed to constant use, road vibration, changing temperatures, and heavy cargo demands. Over time, wear and tear can affect how they function.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-common-reasons-2",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Some of the most common causes include:</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-common-reasons-3",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Misaligned door hinges"
+                      },
+                      {
+                        "text": "Damaged locking mechanisms"
+                      },
+                      {
+                        "text": "Bent door frames"
+                      },
+                      {
+                        "text": "Worn rollers or tracks"
+                      },
+                      {
+                        "text": "Corroded hardware"
+                      },
+                      {
+                        "text": "Damaged seals and gaskets"
+                      },
+                      {
+                        "text": "Impact damage from loading equipment"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-common-reasons-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Identifying the root cause is essential before attempting repairs.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-start-inspection",
+                  "type": "heading",
+                  "props": {
+                    "text": "How to Fix a Trailer Door: Start With an Inspection",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "start-inspection"
+                  }
+                },
+                {
+                  "id": "p-start-inspection-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Before assuming the worst, conduct a thorough visual inspection of the entire door assembly.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-start-inspection-2",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Look for:</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-start-inspection-3",
+                  "type": "row",
+                  "props": {
+                    "gap": 4
+                  },
+                  "styles": {
+                    "base": {
+                      "marginBottom": 20
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "cards-start-inspection-3-1",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 22,
+                          "paddingRight": 22,
+                          "paddingBottom": 22,
+                          "paddingLeft": 22
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "cards-start-inspection-3-1-list",
+                          "type": "prose-list",
+                          "props": {
+                            "ordered": false,
+                            "items": [
+                              {
+                                "text": "Loose bolts or fasteners"
+                              },
+                              {
+                                "text": "Visible cracks or dents"
+                              },
+                              {
+                                "text": "Warped door panels"
+                              },
+                              {
+                                "text": "Broken hinges"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "cards-start-inspection-3-2",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 22,
+                          "paddingRight": 22,
+                          "paddingBottom": 22,
+                          "paddingLeft": 22
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "cards-start-inspection-3-2-list",
+                          "type": "prose-list",
+                          "props": {
+                            "ordered": false,
+                            "items": [
+                              {
+                                "text": "Rust buildup"
+                              },
+                              {
+                                "text": "Damaged latches"
+                              },
+                              {
+                                "text": "Signs of cargo shifting against the door"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "p-start-inspection-4",
+                  "type": "text",
+                  "props": {
+                    "text": "In many cases, catching small issues early can prevent more extensive semi-trailer repairs later.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-alignment",
+                  "type": "heading",
+                  "props": {
+                    "text": "Check Door Alignment",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "alignment"
+                  }
+                },
+                {
+                  "id": "p-alignment-1",
+                  "type": "text",
+                  "props": {
+                    "text": "If the door appears uneven or difficult to open and close, alignment issues could be the culprit.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-alignment-2",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Misalignment may occur because of:</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-alignment-3",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Worn hinges"
+                      },
+                      {
+                        "text": "Trailer frame flex"
+                      },
+                      {
+                        "text": "Repeated heavy use"
+                      },
+                      {
+                        "text": "Accidental impacts during loading"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-alignment-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Minor adjustments may restore function, but severe alignment issues often require professional service to ensure the trailer structure hasn't been compromised.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-locking-system",
+                  "type": "heading",
+                  "props": {
+                    "text": "Inspect the Locking System",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "locking-system"
+                  }
+                },
+                {
+                  "id": "p-locking-system-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Door latches and locking rods experience constant stress during daily operations. If these components become damaged, doors may fail to secure properly.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-locking-system-2",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Inspect for:</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-locking-system-3",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Bent locking rods"
+                      },
+                      {
+                        "text": "Broken handles"
+                      },
+                      {
+                        "text": "Worn latch mechanisms"
+                      },
+                      {
+                        "text": "Corrosion affecting movement"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-locking-system-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Damaged locking components are among the most commonly replaced semi trailer body parts in enclosed trailers.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-locking-system-5-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-locking-system-5",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-locking-system-5-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "schedule-service",
+                                "label": "Schedule an Inspection Today →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "fig-2",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/how-to-fix-an-enclosed-trailer-door-the-right-way/2.jpg",
+                      "width": 1000,
+                      "height": 667,
+                      "alt": "Trailers and service trucks lined up inside the Sun State Trailers repair shop"
+                    }
+                  }
+                },
+                {
+                  "id": "h-diy",
+                  "type": "heading",
+                  "props": {
+                    "text": "When DIY Repairs Make Sense",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "diy"
+                  }
+                },
+                {
+                  "id": "p-diy-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Some basic maintenance tasks can be handled in-house if the issue is minor.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-diy-2",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Examples include:</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-diy-3",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Tightening loose hardware"
+                      },
+                      {
+                        "text": "Lubricating hinges and moving parts"
+                      },
+                      {
+                        "text": "Replacing weather stripping"
+                      },
+                      {
+                        "text": "Cleaning debris from tracks"
+                      },
+                      {
+                        "text": "Addressing minor corrosion"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-diy-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Regular maintenance helps extend the life of door components and reduces unexpected downtime. However, it's important to know when a problem has moved beyond a simple fix.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-pro-signs",
+                  "type": "heading",
+                  "props": {
+                    "text": "Signs You Need Professional Trailer Repair",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "pro-signs"
+                  }
+                },
+                {
+                  "id": "p-pro-signs-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Not every trailer door problem should be handled without professional support. Continuing to operate with a compromised door can lead to damaged freight, safety concerns, and more costly repairs.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-pro-signs-2",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>You should <a href=\"/contact\">schedule trailer repair</a> if you notice:</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-pro-signs-3",
+                  "type": "row",
+                  "props": {
+                    "gap": 4
+                  },
+                  "styles": {
+                    "base": {
+                      "marginBottom": 20
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "cards-pro-signs-3-1",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 22,
+                          "paddingRight": 22,
+                          "paddingBottom": 22,
+                          "paddingLeft": 22
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "cards-pro-signs-3-1-list",
+                          "type": "prose-list",
+                          "props": {
+                            "ordered": false,
+                            "items": [
+                              {
+                                "text": "Significant door misalignment"
+                              },
+                              {
+                                "text": "Bent door frames"
+                              },
+                              {
+                                "text": "Cracked hinges"
+                              },
+                              {
+                                "text": "Doors that won't stay closed"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "cards-pro-signs-3-2",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 22,
+                          "paddingRight": 22,
+                          "paddingBottom": 22,
+                          "paddingLeft": 22
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "cards-pro-signs-3-2-list",
+                          "type": "prose-list",
+                          "props": {
+                            "ordered": false,
+                            "items": [
+                              {
+                                "text": "Damage following an accident"
+                              },
+                              {
+                                "text": "Water intrusion from failed seals"
+                              },
+                              {
+                                "text": "Repeated latch failures"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "p-pro-signs-4",
+                  "type": "text",
+                  "props": {
+                    "text": "At <a href=\"/locations/trailer-sales\">Sun State Trailers</a>, our technicians have the experience to diagnose structural concerns and recommend the right solution to keep your trailer operating safely.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-preventive",
+                  "type": "heading",
+                  "props": {
+                    "text": "Preventive Maintenance Tips for Enclosed Trailer Doors",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "preventive"
+                  }
+                },
+                {
+                  "id": "p-preventive-1",
+                  "type": "text",
+                  "props": {
+                    "text": "The best way to avoid major repairs is through routine inspections and maintenance.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-preventive-2",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Consider incorporating these practices into your maintenance schedule:</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-preventive-3",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Lubricate hinges regularly"
+                      },
+                      {
+                        "text": "Inspect latches and locking rods monthly"
+                      },
+                      {
+                        "text": "Check weather seals for wear"
+                      },
+                      {
+                        "text": "Tighten loose hardware promptly"
+                      },
+                      {
+                        "text": "Inspect door alignment during service intervals"
+                      },
+                      {
+                        "text": "Replace damaged semi trailer body parts before failure occurs"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-preventive-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Preventive maintenance helps extend equipment life while supporting safer operations.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-preventive-5",
+                  "type": "heading",
+                  "props": {
+                    "text": "Choosing the Right Partner for Semi Trailer Repair",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-preventive-6",
+                  "type": "text",
+                  "props": {
+                    "text": "For owner-operators and fleet managers, choosing a service provider comes down to trust. You need a team that understands the importance of clear communication, dependable repairs, and minimizing downtime.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-preventive-7",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State Trailers, we focus on delivering the kind of service that keeps businesses moving. We understand that your equipment supports your livelihood, and we treat every repair with the urgency and professionalism it deserves. Whether you need routine maintenance, replacement semi-trailer body parts, or more extensive semi-trailer repairs, our team is ready to help.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-schedule",
+                  "type": "heading",
+                  "props": {
+                    "text": "Schedule Parts and Service With Sun State Trailers",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "schedule"
+                  }
+                },
+                {
+                  "id": "p-schedule-1",
+                  "type": "text",
+                  "props": {
+                    "text": "If your enclosed trailer door isn't functioning properly, don't wait for the problem to affect your next load. <a href=\"/locations/trailer-sales\">Sun State Trailers</a> can help diagnose the issue, provide quality replacement parts, and get your trailer back on the road.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "links-schedule-2-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "links-schedule-2",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "marginTop": 40,
+                          "marginBottom": 8
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "links-schedule-2-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "schedule-service",
+                                "label": "Explore Our Parts and Service"
+                              },
+                              {
+                                "ctaId": "contact-us",
+                                "label": "Contact Us",
+                                "style": "secondary"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Parts, service and support",
+          "heading": "Get your trailer door back on track.",
+          "body": "Call 800.741.7566 to schedule door and body repairs at any Sun State location in Florida.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Schedule service",
+          "secondaryUrl": "/service-appointment"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/how-to-fix-an-enclosed-trailer-door-the-right-way\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/how-to-fix-an-enclosed-trailer-door-the-right-way\"])) > .bz-card:nth-child(n+4) { display: none; }\n"
+}
