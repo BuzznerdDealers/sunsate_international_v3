@@ -16,6 +16,14 @@
         {
           "value": "cross",
           "label": "✕ Red flag"
+        },
+        {
+          "value": "bullet",
+          "label": "• Bullet"
+        },
+        {
+          "value": "dot",
+          "label": "✓ In a round badge"
         }
       ]
     },
@@ -38,5 +46,5 @@
     }
   ],
   "html": "<ul class=\"ss-check ss-check--{{mark}}\">{{#each items}}<li class=\"ss-check__i\"><span class=\"ss-check__m\" aria-hidden=\"true\"></span><span class=\"ss-check__t\">{{#if title}}<strong class=\"ss-check__h\">{{title}}</strong>{{/if}}{{text}}</span></li>{{/each}}</ul>",
-  "css": ".ss-check{list-style:none;margin:8px 0 20px;padding:0}\n.ss-check__i{display:grid;grid-template-columns:41px minmax(0,1fr);border-bottom:1px solid var(--line)}\n.ss-check__m{padding:12px 0 12px 14px;color:var(--accent);font-weight:800;font-size:15px;line-height:1.7}\n.ss-check__t{padding:12px 14px;font-size:15px;line-height:1.7;color:var(--body-text)}\n.ss-check__h{display:block;color:var(--ink);font-size:15px;margin-bottom:2px}\n.ss-check__m::before{content:\"\\2713\"}\n.ss-check--cross .ss-check__m{color:var(--bad)}\n.ss-check--cross .ss-check__m::before{content:\"\\2715\"}"
+  "css": ".ss-check{list-style:none;margin:8px 0 20px;padding:0}\n.ss-check__i{display:grid;grid-template-columns:41px minmax(0,1fr);border-bottom:1px solid var(--line)}\n.ss-check__m{padding:12px 0 12px 14px;color:var(--accent);font-weight:800;font-size:15px;line-height:1.7}\n.ss-check__t{padding:12px 14px;font-size:15px;line-height:1.7;color:var(--body-text)}\n.ss-check__h{display:block;color:var(--ink);font-size:15px;margin-bottom:2px}\n.ss-check__m::before{content:\"\\2713\"}\n.ss-check--cross .ss-check__m{color:var(--bad)}\n.ss-check--cross .ss-check__m::before{content:\"\\2715\"}\n.ss-check--bullet .ss-check__m::before{content:\"\\2022\"}\n.ss-check--dot{margin:0 0 20px}\n.ss-check--dot .ss-check__i{grid-template-columns:26px minmax(0,1fr);column-gap:14px;align-items:start;padding:18px 0;border-bottom:0;border-top:1px solid var(--line)}\n.ss-check--dot .ss-check__i:last-child{border-bottom:1px solid var(--line)}\n.ss-check--dot .ss-check__m{width:26px;height:26px;padding:0;border-radius:999px;background:var(--accent);color:var(--card);font-size:13px;line-height:1;display:flex;align-items:center;justify-content:center}\n.ss-check--dot .ss-check__t{padding:0;font-size:15.5px;line-height:1.6;font-weight:600}"
 }

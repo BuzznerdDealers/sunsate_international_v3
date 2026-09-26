@@ -938,3 +938,59 @@ Redirects** in Admin:
 | Old address | New path |
 |---|---|
 | `https://sunstatetrailers.com/uncategorized/trusted-trailer-repair-for-florida-fleets-at-sun-state-trailers/` | `/blog/posts/trusted-trailer-repair-for-florida-fleets-at-sun-state-trailers` |
+
+## 25. `SS_International_12` — Sun State Trailers posts, batch 2 (five new posts)
+
+`handoff-trailer-posts-batch-2`: five post pages and a preview index, in the §24 standalone
+format. All five are new; each is published on its file's slug with its card on the Blog page
+(76 in all):
+
+| Post | Topic, date |
+|---|---|
+| `no-running-lights-on-trailer-start-here` | Service, May 21, 2026 |
+| `lift-axle-troubleshooting-for-trailer-owners` | Service, May 15, 2026 |
+| `how-to-spot-problems-before-a-semi-trailer-tire-blowout` | Service, May 11, 2026 |
+| `5-ways-you-can-benefit-from-a-new-reefer-trailer-for-sale` | Trailer Sales, Jan 23, 2026 |
+| `lower-overhead-and-expand-capacity-with-a-used-dump-trailer` | Trailer Sales, Jan 16, 2026 |
+
+Built by `tools/blog-handoff/convert.py` on the shared post layout. Body copy, contents rails
+and rail cards match the handoff word for word (checked mechanically), and each post was rendered
+beside its handoff page: every section lands within 27px at 1280px, drifting to ~70px by the end
+at phone width. `index.html` is the handoff's own preview hub and is not a page here.
+
+New shapes:
+
+| Handoff | Here |
+|---|---|
+| `.check-list` of `.check-item` rows (✓ in a round accent badge, semibold text) | the **Checkmark list** with a new *In a round badge* mark |
+| a `.spec-table` whose marks are `•` (warning signs) | the **Checkmark list** with a new *Bullet* mark |
+| `.type-card`s two or three across (a title over a list) | **Card lists**, *Type* and *Type, three across*, sized to the handoff in the post's CSS |
+| `.article__actions--inline` (a button mid-article) | a button row from the library, 8px above and 34px below |
+
+Both new marks are options on the widget, so any post can switch to them on the canvas.
+
+**Links.** `trailer-sales.html` is chosen by what the link says, as in the prototype batches:
+"Sun State Trailers" in prose → the Trailer Sales rooftop page; *Explore / Browse … Inventory*
+→ trailer listings (`/store/inventory?type=trailer`), filtered to new or used where the link
+says so. *Trailer Specifications* has no page here (§15), so *View Our Trailer Specifications*
+and *Download Trailer Specifications* go to the trailer listings. `financing.html` → `/financing`.
+Every button is from the Buttons library (*Schedule service*, *Contact us*, *Financing*,
+*Browse trailers*, *Browse new trailers*, *Browse used trailers*), relabelled per placement.
+
+**Photographs** are the handoff's 1600px JPEGs, resized to the 1280px the other posts use.
+
+**Dropped / as elsewhere.** The handoff's hand-picked related posts are the latest-posts list;
+several of its picks (*Trailer Brake Lights Not Working?*, *The Basics of DOT Trailer Inspection
+Requirements*, *Trailer Preventive Maintenance Checklist for Fleets*) are not posts on this site.
+Chrome, colours and the unemitted `BlogPosting` data are as in §24.
+
+**Old addresses.** If sunstatetrailers.com is pointed at this site, these go on **Storefront →
+301 Redirects** in Admin:
+
+| Old path on sunstatetrailers.com | New path |
+|---|---|
+| `/uncategorized/no-running-lights-on-trailer-start-here/` | `/blog/posts/no-running-lights-on-trailer-start-here` |
+| `/uncategorized/lift-axle-troubleshooting-for-trailer-owners/` | `/blog/posts/lift-axle-troubleshooting-for-trailer-owners` |
+| `/uncategorized/how-to-spot-problems-before-a-semi-trailer-tire-blowout/` | `/blog/posts/how-to-spot-problems-before-a-semi-trailer-tire-blowout` |
+| `/new-trailers/benefits-from-new-reefer-trailer-for-sale/` | `/blog/posts/5-ways-you-can-benefit-from-a-new-reefer-trailer-for-sale` |
+| `/used-trailers/lower-overhead-expand-capacity-used-dump-trailer/` | `/blog/posts/lower-overhead-and-expand-capacity-with-a-used-dump-trailer` |

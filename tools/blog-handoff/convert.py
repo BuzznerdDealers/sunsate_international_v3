@@ -117,8 +117,20 @@ def dc_href(h, label):
 FLAT_PAGES = {
     "home.html": "/", "blog.html": "/blog", "service.html": "/service",
     "service-appointment.html": "/service-appointment", "contact-us.html": "/contact",
-    "trailer-sales.html": "/locations/trailer-sales",
+    "financing.html": "/financing",
+    # No trailer-specifications page exists on this site; each listing carries its specs (§15).
+    "trailer-specifications.html": "/store/inventory?type=trailer",
 }
+
+
+def trailer_sales_href(label):
+    """`trailer-sales.html` is both the business and its stock: what the link says decides."""
+    l = (label or "").lower()
+    if not re.search(r"inventory|in stock|available|browse|explore", l):
+        return "/locations/trailer-sales"  # "Sun State Trailers" in the prose
+    if re.search(r"\bused\b", l): return "/store/inventory?type=trailer&condition=used"
+    if re.search(r"\bnew\b", l): return "/store/inventory?type=trailer&condition=new"
+    return "/store/inventory?type=trailer"
 
 
 def href_of(a):
@@ -128,6 +140,8 @@ def href_of(a):
 def map_href(h, label=None):
     if h.endswith(".dc.html"):
         return dc_href(h, label)
+    if h == "trailer-sales.html":
+        return trailer_sales_href(label)
     if h in FLAT_PAGES:
         return FLAT_PAGES[h]
     if h.endswith("blog.html"):
@@ -264,7 +278,14 @@ def place_image(slug, src, name):
             im = im.resize((1280, round(im.height * 1280 / im.width)), Image.LANCZOS)
         im.save(dst, "JPEG", quality=85, optimize=True, progressive=False)
     elif is_jpeg:
-        shutil.copyfile(source, dst)
+        from PIL import Image
+        im = Image.open(source)
+        if im.width > 1280:
+            # Batch 12 ships 1600px exports: the 1280px the other posts' photographs are.
+            im.convert("RGB").resize((1280, round(im.height * 1280 / im.width)), Image.LANCZOS).save(
+                dst, "JPEG", quality=85, optimize=True, progressive=False)
+        else:
+            shutil.copyfile(source, dst)
     else:
         # Batch 4 ships its photographs as opaque RGBA PNGs under a .jpg name, at ~1.3 MB
         # each. Served as they are, the file lies about its type; transcode to a real JPEG.
@@ -394,16 +415,28 @@ def normalise_standalone(s):
     for f in s.select(".post-body > figure.figure"):
         assert not f.find("figcaption"), f
         f.name = "div"; f["style"] = "position: relative"; del f["class"]
+    for g in s.select(".post-body > div.grid--3"):
+        g["class"] = ["grid-3"]
     for g in s.select(".post-body > div.grid--2"):
         g["class"] = ["grid-2"]
         for c in g.find_all("div", class_="card", recursive=False):
             c["class"] = ["factor-card"]
     for c in s.select(".post-body > div.callout"):
         c["style"] = "border: 1px solid var(--color-line); margin: 34px 0"  # .callout
-    for a in s.select(".post-body > div.article__actions"):
+    for a in s.select(".post-body > div.article__actions:not(.article__actions--inline)"):
         a["style"] = "display: flex"
         for b in a.select("a.btn--primary"):
             b["class"] = b.get("class", []) + ["hv-2"]
+    for b in s.select(".post-body > div.article__actions--inline a.btn--primary"):
+        b["class"] = b.get("class", []) + ["hv-2"]
+    if s.select(".post-body .type-card"):
+        extra.append("/* Its type cards: 24px in, the title 10px over a 14px list. */\n"
+                     '[data-bz-node="art-body"] .ss-cl--type,\n[data-bz-node="art-body"] .ss-cl--type3 { gap: 24px; }\n'
+                     '[data-bz-node="art-body"] .ss-cl--type { gap: 28px; }\n'
+                     '[data-bz-node="art-body"] .ss-cl--type .ss-cl__card { padding: 24px; }\n'
+                     '[data-bz-node="art-body"] .ss-cl--type .ss-cl__t { margin: 0 0 10px; }\n'
+                     '[data-bz-node="art-body"] :is(.ss-cl--type, .ss-cl--type3) .ss-cl__list { margin: 0; padding-left: 18px; }\n'
+                     '[data-bz-node="art-body"] :is(.ss-cl--type, .ss-cl--type3) .ss-cl__list li { font-size: 14px; }')
     for sh in s.select(".post-body > div.share"):
         sh["style"] = "border-top: 1px solid var(--color-line); display: flex"
     for sec in s.find("main").find_all("section", recursive=False):
@@ -616,7 +649,9 @@ def convert(path):
                     rows.append({"title": t, "text": plain(td)})
                 else:
                     rows.append({"text": plain(td)})
-            out.append(n(nid("checks"), "check-list", {**({"mark": "cross"} if "redflag-table" in cls else {}), "items": rows}))
+            bullet = [plain(tr.find("td")) for tr in el.select("tr")] == ["•"] * len(rows)  # warning signs, not ticks
+            mark = {"mark": "cross"} if "redflag-table" in cls else {"mark": "bullet"} if bullet else {}
+            out.append(n(nid("checks"), "check-list", {**mark, "items": rows}))
         elif el.name == "div" and el.find("img") and "position: relative" in st:
             fig += 1
             img = el.find("img")
@@ -641,6 +676,16 @@ def convert(path):
                 kids = [n(f"{cid}-cta", "buttons", {"align": "left", "items": [cta(plain(a), href_of(a), style_of(a)) for a in anchors]})]
             top, bottom = margins(st)
             out.append(row(f"{cid}-row", [col(cid, kids, styles={"marginTop": top, "marginBottom": bottom})]))
+        elif el.name == "div" and "article__actions--inline" in cls:
+            # A button row mid-article: the end-of-post pair's buttons, 8px / 34px around it.
+            cid = nid("actions")
+            out.append(n(cid, "buttons", {"align": "left", "items": [
+                cta(plain(a), href_of(a), "primary" if "hv-2" in a.get("class", []) else "secondary") for a in el.find_all("a")]}))
+            extra_css.append(f'[data-bz-node="art-body"] > [data-bz-node="{cid}"] .bz-btns {{ margin: 8px 0 34px; }}')
+        elif el.name == "div" and "check-list" in cls and el.find("div", class_="check-item", recursive=False):
+            # Checkmark rows in a round accent badge: the Checkmark list's round-badge mark.
+            out.append(n(nid("checks"), "check-list", {"mark": "dot", "items": [
+                {"text": plain(x.find("p"))} for x in el.find_all("div", class_="check-item", recursive=False)]}))
         elif el.name == "div" and "display: flex" in st:
             its = []
             for a in el.find_all("a"):

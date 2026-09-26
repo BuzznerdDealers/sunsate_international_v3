@@ -1,0 +1,872 @@
+{
+  "slug": "lift-axle-troubleshooting-for-trailer-owners",
+  "title": "Lift Axle Troubleshooting for Trailer Owners",
+  "date": "2026-05-15",
+  "description": "Lift axle troubleshooting tips to reduce downtime and keep your trailer moving. Schedule service with Sun State Trailers today.",
+  "excerpt": "If you run a fleet or operate your own truck, you already know how important every moving part on your trailer is. When something goes wrong with a lift axle, it can quickly lead to uneven tire wear, handling…",
+  "status": "published",
+  "coverImage": "/img/blog/lift-axle-troubleshooting-for-trailer-owners/hero.jpg",
+  "topic": "Service",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Service",
+          "title": "Lift Axle Troubleshooting for Trailer Owners",
+          "topic": "Service",
+          "date": "May 15, 2026",
+          "readTime": "5 min read",
+          "author": "Sun State Trailers",
+          "image": {
+            "src": "/img/blog/lift-axle-troubleshooting-for-trailer-owners/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Sun State technician inspecting the underside of a truck's front axle in the shop"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "Warning Signs",
+                        "href": "#warning-signs"
+                      },
+                      {
+                        "label": "What Causes the Problem",
+                        "href": "#causes"
+                      },
+                      {
+                        "label": "Preventive Maintenance",
+                        "href": "#preventive"
+                      },
+                      {
+                        "label": "Schedule Service",
+                        "href": "#schedule"
+                      },
+                      {
+                        "label": "The Cost of Waiting",
+                        "href": "#cost"
+                      },
+                      {
+                        "label": "When to Call a Pro",
+                        "href": "#when-pro"
+                      },
+                      {
+                        "label": "Keep Moving Forward",
+                        "href": "#keep-moving"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "LIFT AXLE ACTING UP?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Our technicians diagnose suspension and lift axle issues fast.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "schedule-service",
+                                "label": "Get Back on the Road →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "If you run a fleet or operate your own truck, you already know how important every moving part on your trailer is. When something goes wrong with a lift axle, it can quickly lead to uneven tire wear, handling issues, downtime, or even failed inspections. For owner-operators and fleet managers alike, understanding the basics of lift axle troubleshooting can save time, money, and frustration.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At <a href=\"/locations/trailer-sales\">Sun State Trailers</a>, we know that when your equipment is down, your business slows down with it. That's why our team works hard to provide dependable trailer service, quality semi trailer parts, and straightforward support that helps keep you on the road.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-warning-signs",
+                  "type": "heading",
+                  "props": {
+                    "text": "Common Signs You May Need Lift Axle Troubleshooting",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "warning-signs"
+                  }
+                },
+                {
+                  "id": "p-warning-signs-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Lift axles are designed to improve weight distribution and reduce wear on your trailer. But like any mechanical system, they require regular inspection and maintenance. Catching problems early can help prevent more expensive repairs later.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-warning-signs-2",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Here are some common warning signs to watch for:</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-warning-signs-3",
+                  "type": "check-list",
+                  "props": {
+                    "mark": "bullet",
+                    "items": [
+                      {
+                        "text": "Lift axle not raising or lowering properly"
+                      },
+                      {
+                        "text": "Uneven tire wear"
+                      },
+                      {
+                        "text": "Air leaks near suspension components"
+                      },
+                      {
+                        "text": "Poor weight distribution"
+                      },
+                      {
+                        "text": "Trailer leaning to one side"
+                      },
+                      {
+                        "text": "Excessive vibration while driving"
+                      },
+                      {
+                        "text": "Suspension warning lights or system alerts"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-warning-signs-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Ignoring these issues can lead to bigger suspension or axle problems over time. Proper trailer preventive maintenance checklist routines can help reduce unexpected breakdowns and improve safety on the road.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-warning-signs-5-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-warning-signs-5",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 34,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-warning-signs-5-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "contact-us",
+                                "label": "Get Your Trailer Back on the Road →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-causes",
+                  "type": "heading",
+                  "props": {
+                    "text": "What Causes Lift Axle Problems?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "causes"
+                  }
+                },
+                {
+                  "id": "p-causes-1",
+                  "type": "text",
+                  "props": {
+                    "text": "There are several possible causes behind lift axle issues. Some are simple fixes, while others may require professional trailer service.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-causes-2",
+                  "type": "heading",
+                  "props": {
+                    "text": "Air System Problems",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-causes-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Many lift axle systems rely on compressed air to operate correctly. If there's a damaged air line, leaking valve, or faulty airbag, the axle may fail to lift or lower properly.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-causes-4",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Common air system issues include:</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-causes-5",
+                  "type": "row",
+                  "props": {
+                    "gap": 4
+                  },
+                  "styles": {
+                    "base": {
+                      "marginBottom": 20
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "cards-causes-5-1",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 22,
+                          "paddingRight": 22,
+                          "paddingBottom": 22,
+                          "paddingLeft": 22
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "cards-causes-5-1-list",
+                          "type": "prose-list",
+                          "props": {
+                            "ordered": false,
+                            "items": [
+                              {
+                                "text": "Cracked airlines"
+                              },
+                              {
+                                "text": "Loose fittings"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "cards-causes-5-2",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 22,
+                          "paddingRight": 22,
+                          "paddingBottom": 22,
+                          "paddingLeft": 22
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "cards-causes-5-2-list",
+                          "type": "prose-list",
+                          "props": {
+                            "ordered": false,
+                            "items": [
+                              {
+                                "text": "Faulty solenoids"
+                              },
+                              {
+                                "text": "Damaged airbags"
+                              },
+                              {
+                                "text": "Low air pressure"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "p-causes-6",
+                  "type": "text",
+                  "props": {
+                    "text": "A quick inspection can sometimes reveal visible leaks or worn components, but more complex air system issues often require experienced technicians.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-causes-7",
+                  "type": "heading",
+                  "props": {
+                    "text": "Electrical Failures",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-causes-8",
+                  "type": "text",
+                  "props": {
+                    "text": "Modern lift axle systems often include electrical controls and sensors. Damaged wiring, blown fuses, or malfunctioning switches can interfere with operation. If your lift axle responds inconsistently or not at all, electrical diagnostics may be necessary to identify the problem.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-causes-9",
+                  "type": "heading",
+                  "props": {
+                    "text": "Suspension Wear and Damage",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-causes-10",
+                  "type": "text",
+                  "props": {
+                    "text": "Suspension components naturally wear over time, especially under heavy loads and long hauls. Bushings, shocks, brackets, and other semi-trailer parts can loosen or fail after years of use. Routine inspections help catch wear before it becomes a serious safety issue.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/lift-axle-troubleshooting-for-trailer-owners/1.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Silhouette of technicians walking toward the service bay doors at dusk"
+                    }
+                  }
+                },
+                {
+                  "id": "h-preventive",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Preventive Maintenance Matters",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "preventive"
+                  }
+                },
+                {
+                  "id": "p-preventive-1",
+                  "type": "text",
+                  "props": {
+                    "text": "One of the best ways to avoid lift axle failures is by following a consistent trailer preventive maintenance checklist. Preventive maintenance helps extend the life of your equipment, improve safety, and reduce costly downtime.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-preventive-2",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>A strong maintenance routine should include:</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-preventive-3",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Checking airbags and air lines"
+                      },
+                      {
+                        "text": "Inspecting suspension components"
+                      },
+                      {
+                        "text": "Testing lift axle controls"
+                      },
+                      {
+                        "text": "Monitoring tire wear patterns"
+                      },
+                      {
+                        "text": "Lubricating moving parts"
+                      },
+                      {
+                        "text": "Inspecting electrical connections"
+                      },
+                      {
+                        "text": "Verifying axle alignment"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-preventive-4",
+                  "type": "text",
+                  "props": {
+                    "text": "For fleet owners, preventive maintenance also helps reduce unexpected service interruptions that can affect delivery schedules and customer relationships. At Sun State Trailers, our service department helps customers stay ahead of problems before they become major repairs.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-schedule",
+                  "type": "heading",
+                  "props": {
+                    "text": "Schedule Service With Sun State Trailers",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "schedule"
+                  }
+                },
+                {
+                  "id": "p-schedule-1",
+                  "type": "text",
+                  "props": {
+                    "text": "If your trailer is experiencing lift axle issues, don't wait for a breakdown or roadside inspection to force repairs. The team at <a href=\"/locations/trailer-sales\">Sun State Trailers</a> can inspect your suspension system, diagnose lift axle problems, and help you get back on the road with confidence.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-2",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/lift-axle-troubleshooting-for-trailer-owners/2.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Sun State service advisor and shop foreman reviewing a work order at the front counter"
+                    }
+                  }
+                },
+                {
+                  "id": "h-cost",
+                  "type": "heading",
+                  "props": {
+                    "text": "The Cost of Ignoring Lift Axle Issues",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "cost"
+                  }
+                },
+                {
+                  "id": "p-cost-1",
+                  "type": "text",
+                  "props": {
+                    "text": "A lift axle problem may seem minor at first, but waiting too long can lead to bigger expenses. Improper weight distribution can place additional strain on tires, brakes, suspension systems, and axles. Over time, this can lead to:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-cost-2",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Premature tire replacement"
+                      },
+                      {
+                        "text": "Reduced fuel efficiency"
+                      },
+                      {
+                        "text": "Suspension damage"
+                      },
+                      {
+                        "text": "DOT violations"
+                      },
+                      {
+                        "text": "Increased downtime"
+                      },
+                      {
+                        "text": "Unsafe driving conditions"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-cost-3",
+                  "type": "text",
+                  "props": {
+                    "text": "For owner-operators, downtime directly impacts income. Missed deliveries and unexpected repairs create stress not only for drivers, but also for their clients and employees. That's why dependable trailer service matters.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-when-pro",
+                  "type": "heading",
+                  "props": {
+                    "text": "When to Schedule Professional Trailer Service",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "when-pro"
+                  }
+                },
+                {
+                  "id": "p-when-pro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Some basic inspections can be handled in-house, but certain lift axle issues require experienced technicians and specialized equipment.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-when-pro-2",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>You should <a href=\"/contact\">schedule professional trailer service</a> if:</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-when-pro-3",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "The axle will not lift or lower"
+                      },
+                      {
+                        "text": "You hear constant air leaks"
+                      },
+                      {
+                        "text": "Suspension components appear damaged"
+                      },
+                      {
+                        "text": "Tire wear becomes uneven"
+                      },
+                      {
+                        "text": "Warning lights remain active"
+                      },
+                      {
+                        "text": "The trailer feels unstable during operation"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-when-pro-4",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State Trailers, our service teams understand the importance of getting equipment repaired quickly and correctly. We work with customers every day who need reliable solutions without unnecessary delays or confusion.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-keep-moving",
+                  "type": "heading",
+                  "props": {
+                    "text": "Keep Your Trailer Moving Forward",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "keep-moving"
+                  }
+                },
+                {
+                  "id": "p-keep-moving-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Lift axle problems can quickly turn into larger repair issues if left unchecked. Staying proactive with inspections, maintenance, and professional trailer service helps reduce downtime and keeps your equipment performing the way it should. Contact our team at <a href=\"/locations/trailer-sales\">Sun State Trailers</a> to schedule service, inspect your trailer, and keep your equipment road-ready.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-keep-moving-2",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "schedule-service",
+                        "label": "Schedule Service With Sun State Trailers"
+                      },
+                      {
+                        "ctaId": "contact-us",
+                        "label": "Contact Us",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-share",
+                  "type": "post-share",
+                  "props": {
+                    "label": "Share",
+                    "items": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Flift-axle-troubleshooting-for-trailer-owners",
+                        "newTab": true
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Flift-axle-troubleshooting-for-trailer-owners&text=Lift%20Axle%20Troubleshooting%20for%20Trailer%20Owners",
+                        "newTab": true
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Flift-axle-troubleshooting-for-trailer-owners",
+                        "newTab": true
+                      },
+                      {
+                        "label": "Email",
+                        "url": "mailto:?subject=Lift%20Axle%20Troubleshooting%20for%20Trailer%20Owners&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Flift-axle-troubleshooting-for-trailer-owners",
+                        "newTab": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Parts, service and support",
+          "heading": "Keep your suspension in check.",
+          "body": "Call 800.741.7566 to schedule a lift axle or suspension inspection at any Sun State location in Florida.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Schedule service",
+          "secondaryUrl": "/service-appointment"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/lift-axle-troubleshooting-for-trailer-owners\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/lift-axle-troubleshooting-for-trailer-owners\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n/* The hero photograph is framed a little high, as the design frames it. */\n[data-bz-section=\"post-hero\"] [data-bz-node=\"ph-photo\"] img { object-position: center 35%; }\n"
+}
