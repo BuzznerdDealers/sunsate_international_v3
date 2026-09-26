@@ -875,3 +875,18 @@ Checked as in §20: every paragraph, list item and heading is in the existing po
 rendered beside the built posts at 1280px match section for section. The handoff ships 1000px
 photographs against the 1280px ones already here, so **the existing posts are kept** and the
 converter lists batch 8 as repeats. Colours follow the Design system's current accent (§20).
+
+## 24. Why the handoff posts did not show in the dashboard
+
+**Every post from batches 4–8 is on `main`.** Each has its own page and its card on /blog (72
+cards). Two of them, *Commercial Truck Oil Change Mistakes That Cost You* and *Common Problems With
+Air Brake Parts for Semi Trucks*, were `status: "draft"` on `main` and had no page or card. They
+are now published, with the excerpts the handoff's listing gives them.
+
+**The dashboard edits the `draft` branch, and `draft` is not this site.** It is an older, separate
+history (last content edit Sep 21) that shares no commit with `main`: 10 posts instead of 77, the
+posts in their pre-design layout, and without the Link cards, Detail cards, Compare table and
+other components the posts use. Of the handoff's 30 posts, only the two above exist on it as
+published, which is what the dashboard showed. Nothing committed to `main` can appear there until
+`draft` is brought back onto `main`: reconnect the repository (**Website → Connect an existing
+repository**, which resets `draft` to `main`) or reset the branch directly.
