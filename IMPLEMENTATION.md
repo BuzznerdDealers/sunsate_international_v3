@@ -942,3 +942,50 @@ Redirects** in Admin:
 | Old address | New path |
 |---|---|
 | `https://sunstatetrailers.com/uncategorized/the-basics-of-dot-trailer-inspection-requirements/` | `/blog/posts/the-basics-of-dot-trailer-inspection-requirements` |
+
+## 26. `SS_International_10` — Trusted Trailer Repair (T03), a single-article handoff
+
+One post, **T03** on the pending-posts list, in a new handoff format: a framework-agnostic page
+(`index.html`, `css/`, `js/`, `assets/img/`) rather than a batch of Claude Design prototype
+pages.
+
+| Handoff | Post | Topic, date |
+|---|---|---|
+| `handoff-trailer-repair-post/index.html` | `trusted-trailer-repair-for-florida-fleets-at-sun-state-trailers` (Sun State Trailers) | Trailers, Jul 5, 2026 |
+
+**How it was built.** The article is the same shape as the prototype pages, only named
+differently, so a new `tools/blog-handoff/adapt_article.py` rewrites the page into the prototype
+markup and `convert.py` builds it like every other post:
+
+| This handoff | Prototype markup | Here |
+|---|---|---|
+| `.hero--post`, `.post-byline` | `section.post-hero` | the **Post hero** component |
+| `aside.toc`, `.toc__aside` | `aside.post-toc` and its card | the *On this page* rail and its *Need a repair?* card |
+| `table.spec-table` | the same | the **Checkmark list** |
+| `.grid--2 > .card > ul` | `.grid-2 > .factor-card` | the two-up bordered list callouts |
+| `.callout` | the bordered link box | a bordered callout with the *Schedule service* button |
+| `.article__actions` | the inline button pair | *Schedule service* (filled) and *Contact us* (outlined), relabelled as the design words them |
+| `.share` | the ruled share row | the **Share** row |
+| `.figure` | the photograph div | image blocks |
+
+Links to the handoff's flat file names are resolved by name (`service-appointment.html` →
+the service-appointment page, `trailer-sales.html` → the Trailer Sales location page, and so
+on); an unknown one stops the adapter. All 77 headings, paragraphs, list items and checklist rows
+are in the post, and it was rendered beside the handoff at 1280px: the layout matches section for
+section. Colours follow the Design system's current accent (§20). The topic is *Trailers*, as the
+pending list has it, through `convert.py`'s `TOPICS` table (the handoff's chip says *Service*).
+
+**Photographs.** The handoff ships 2000px PNGs (~3 MB each); the adapter writes them as 1280px
+JPEGs (~100–180 KB), matching the other posts.
+
+**Dropped / as elsewhere.** The hand-picked "Keep reading" cards are the latest-posts list, as on
+every post. The header, utility bar and footer are the site template's, not the handoff's copies.
+The blog page has 74 cards.
+
+**Old address.** If the old domain is pointed at this site, these go on **Storefront → 301
+Redirects** in Admin — T03 itself, and T61, which the pending list merges into it:
+
+| Old address | New path |
+|---|---|
+| `https://sunstatetrailers.com/uncategorized/trusted-trailer-repair-for-florida-fleets-at-sun-state-trailers/` | `/blog/posts/trusted-trailer-repair-for-florida-fleets-at-sun-state-trailers` |
+| T61's old address (not in this handoff) | `/blog/posts/trusted-trailer-repair-for-florida-fleets-at-sun-state-trailers` |

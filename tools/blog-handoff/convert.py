@@ -94,7 +94,8 @@ POST_TITLES = {}  # "Blog Post - <title>.dc.html" -> slug, filled from the hando
 # The dealer's own topic for a post, where it differs from the chip the handoff draws: the
 # pending-posts list files every Sun State Trailers post under "Trailers". Applied to the card,
 # the hero's topic chip and the breadcrumb, so a rerun keeps it.
-TOPICS = {"the-basics-of-dot-trailer-inspection-requirements": "Trailers"}
+TOPICS = {"the-basics-of-dot-trailer-inspection-requirements": "Trailers",
+          "trusted-trailer-repair-for-florida-fleets-at-sun-state-trailers": "Trailers"}
 
 
 def dc_href(h, label):
