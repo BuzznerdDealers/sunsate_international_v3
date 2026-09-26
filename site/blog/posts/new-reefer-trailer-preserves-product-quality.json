@@ -1,0 +1,535 @@
+{
+  "slug": "new-reefer-trailer-preserves-product-quality",
+  "title": "How a New Reefer Trailer Can Help Preserve the Quality of Your Business's Products",
+  "date": "2024-09-13",
+  "description": "Guarantee your customers get the best quality product by elevating your transportation. Here's why your business needs a new reefer trailer.",
+  "excerpt": "As a business owner, it's an important responsibility to ensure the quality of your product from the minute it's made to the second it goes into your customer's hands. However, one critical aspect that often…",
+  "status": "published",
+  "coverImage": "/img/blog/new-reefer-trailer-preserves-product-quality/hero.jpg",
+  "topic": "New Trailers",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / New Trailers",
+          "title": "How a New Reefer Trailer Can Help Preserve the Quality of Your Business's Products",
+          "topic": "New Trailers",
+          "date": "September 13, 2024",
+          "readTime": "4 min read",
+          "author": "Sun State Trailers",
+          "image": {
+            "src": "/img/blog/new-reefer-trailer-preserves-product-quality/hero.jpg",
+            "width": 1280,
+            "height": 854,
+            "alt": "Technician inspecting the underride guard between two International trailers"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "How Reefers Work",
+                        "href": "#how-they-work"
+                      },
+                      {
+                        "label": "Products to Transport",
+                        "href": "#what-to-ship"
+                      },
+                      {
+                        "label": "Using a Reefer vs. Not",
+                        "href": "#with-without"
+                      },
+                      {
+                        "label": "Benefits of Buying New",
+                        "href": "#new-benefits"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "WANT THE FULL SHEET?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "View detailed specifications before you compare trailers.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-trailers",
+                                "label": "View Our Trailer Specifications →"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "As a business owner, it's an important responsibility to ensure the quality of your product from the minute it's made to the second it goes into your customer's hands. However, one critical aspect that often gets overlooked is transportation. What happens to your product during this phase? Does it experience damage or spoilage before reaching the customer? A new reefer trailer can be the solution to these problems. Let's explore how investing in a <a href=\"/store/inventory?type=trailer&condition=new\">new reefer trailer</a> can help guarantee the quality of your business's products.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "h-how-they-work",
+                  "type": "heading",
+                  "props": {
+                    "text": "How Do Reefer Trailers Work?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "how-they-work"
+                  }
+                },
+                {
+                  "id": "p-how-they-work-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Reefer trailers are a type of specialized equipment designed to keep your products at the perfect temperature during transport. These trailers use insulation and a closed refrigeration system to remove heat from the interior, maintaining a consistent temperature without actually cooling the products directly. Here's a closer look at how they operate:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-how-they-work-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "brief",
+                    "across": "3",
+                    "items": [
+                      {
+                        "title": "Temperature Range",
+                        "points": [],
+                        "intro": "Reefer trailers can maintain temperatures between -20 and 55 degrees Fahrenheit, making them versatile for various products."
+                      },
+                      {
+                        "title": "Refrigeration Process",
+                        "points": [],
+                        "intro": "The engine powers a compressor that drives the evaporator coil. Air circulates over the coil, removing heat and supplying cooler air back into the truck."
+                      },
+                      {
+                        "title": "Efficiency",
+                        "points": [],
+                        "intro": "A high-quality reefer trailer can keep your products cool for two to three days without needing to refuel, ensuring your goods stay fresh over long distances."
+                      }
+                    ]
+                  },
+                  "styles": {
+                    "base": {
+                      "marginBottom": 8
+                    }
+                  }
+                },
+                {
+                  "id": "h-what-to-ship",
+                  "type": "heading",
+                  "props": {
+                    "text": "Products You Should Transport in a Reefer Trailer",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "what-to-ship"
+                  }
+                },
+                {
+                  "id": "p-what-to-ship-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Using a reefer trailer is essential for transporting items that are sensitive to temperature changes. These trailers prevent overheating, spoilage, and damage, and ensure that your goods arrive in the best possible condition. If you ship any of the following products, purchasing a new reefer trailer could be a great investment in your business:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-what-to-ship-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "chip",
+                    "across": "5",
+                    "items": [
+                      {
+                        "title": "Fresh Produce",
+                        "points": []
+                      },
+                      {
+                        "title": "Frozen Foods",
+                        "points": []
+                      },
+                      {
+                        "title": "Pharmaceuticals",
+                        "points": []
+                      },
+                      {
+                        "title": "Electronics",
+                        "points": []
+                      },
+                      {
+                        "title": "Artwork",
+                        "points": []
+                      },
+                      {
+                        "title": "Hazardous Materials",
+                        "points": []
+                      },
+                      {
+                        "title": "Chocolate",
+                        "points": []
+                      },
+                      {
+                        "title": "Candles",
+                        "points": []
+                      }
+                    ]
+                  },
+                  "styles": {
+                    "base": {
+                      "marginBottom": 8
+                    }
+                  }
+                },
+                {
+                  "id": "h-with-without",
+                  "type": "heading",
+                  "props": {
+                    "text": "Using a Reefer Trailer vs. Not Using a Reefer Trailer",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "with-without"
+                  }
+                },
+                {
+                  "id": "p-with-without-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Even if the products you are transporting aren't particularly heat-sensitive, using a reefer trailer can help maintain overall quality control. Without a reefer trailer, products are exposed to varying temperatures, which can cause spoilage, damage, and reduced shelf life. With a reefer trailer, you can ensure a stable environment, preserving the integrity and quality of your products. It's just one of the ways you can go the extra distance to deliver a great product to your buyers.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-new-benefits",
+                  "type": "heading",
+                  "props": {
+                    "text": "Benefits of Buying a New Reefer Trailer",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "new-benefits"
+                  }
+                },
+                {
+                  "id": "p-new-benefits-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Purchasing a new reefer trailer comes with many benefits that extend far past guaranteeing the best quality of products. Here are just some ways your business can benefit from investing in a new reefer trailer instead of purchasing a used one:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-new-benefits-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "brief",
+                    "across": "5",
+                    "items": [
+                      {
+                        "title": "Dependability",
+                        "points": [],
+                        "intro": "More reliable, with fewer breakdowns and maintenance issues."
+                      },
+                      {
+                        "title": "Accuracy",
+                        "points": [],
+                        "intro": "Advanced systems provide more precise temperature control."
+                      },
+                      {
+                        "title": "Latest Technology",
+                        "points": [],
+                        "intro": "Newer models benefit from the latest innovations in refrigeration."
+                      },
+                      {
+                        "title": "Longevity",
+                        "points": [],
+                        "intro": "A longer lifespan offers a better return on investment."
+                      },
+                      {
+                        "title": "Better Investment",
+                        "points": [],
+                        "intro": "Higher upfront cost, but reduced maintenance costs long-term."
+                      }
+                    ]
+                  },
+                  "styles": {
+                    "base": {
+                      "marginBottom": 8
+                    }
+                  }
+                },
+                {
+                  "id": "p-new-benefits-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Whether you shop new or go with a different option, choosing the right reefer trailer depends on your specific business requirements. Consider factors such as the type of products you transport, the distances covered, and the temperature ranges you need to transport your goods. Consulting with a trusted dealer like Sun State Trailers can help you find the perfect fit for your needs.",
+                    "align": "left",
+                    "width": "full"
+                  },
+                  "styles": {
+                    "base": {
+                      "marginTop": 34
+                    }
+                  }
+                },
+                {
+                  "id": "h-find-the-right-trailer",
+                  "type": "heading",
+                  "props": {
+                    "text": "Find the Right Trailer for Your Needs",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-find-the-right-trailer-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At <a href=\"/locations/trailer-sales\">Sun State Trailers</a>, we offer a wide range of high-quality trailers from renowned manufacturers like Globe Trailers and Hyundai Translead. Whether you need a new, used, or rental trailer, we cover every type of need your business might have. Our selection includes refrigerated trailers, dry vans, dump trailers, and lowboys. By choosing Sun State Trailers, you're not just purchasing a trailer; you're investing in the reliability and quality that come with our exceptional service and industry-leading products. Let us help you transport your goods with confidence, knowing that every detail has been taken care of. Contact us today to explore our inventory and find the perfect trailer for your needs.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-find-the-right-trailer-2",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "contact-us",
+                        "label": "Contact Us"
+                      },
+                      {
+                        "ctaId": "browse-trailers",
+                        "label": "Browse Trailer Inventory",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-share",
+                  "type": "post-share",
+                  "props": {
+                    "label": "Share",
+                    "items": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fnew-reefer-trailer-preserves-product-quality",
+                        "newTab": true
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fnew-reefer-trailer-preserves-product-quality&text=How%20a%20New%20Reefer%20Trailer%20Can%20Help%20Preserve%20the%20Quality%20of%20Your%20Business%27s%20Products",
+                        "newTab": true
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fnew-reefer-trailer-preserves-product-quality",
+                        "newTab": true
+                      },
+                      {
+                        "label": "Email",
+                        "url": "mailto:?subject=How%20a%20New%20Reefer%20Trailer%20Can%20Help%20Preserve%20the%20Quality%20of%20Your%20Business%27s%20Products&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fnew-reefer-trailer-preserves-product-quality",
+                        "newTab": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "New trailers",
+          "heading": "Find the right reefer trailer for your needs.",
+          "body": "Call 800.741.7566 to talk with our team at any Sun State location in Florida.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Browse trailer inventory",
+          "secondaryUrl": "/store/inventory?type=trailer"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/new-reefer-trailer-preserves-product-quality\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/new-reefer-trailer-preserves-product-quality\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n/* The hero photograph is framed a little high, as the design frames it. */\n[data-bz-section=\"post-hero\"] [data-bz-node=\"ph-photo\"] img { object-position: center 55%; }\n\n[data-bz-node=\"art-body\"] [data-bz-node=\"h-what-to-ship\"] h2 { margin-top: 34px; }\n\n[data-bz-node=\"art-body\"] [data-bz-node=\"h-with-without\"] h2 { margin-top: 34px; }\n"
+}

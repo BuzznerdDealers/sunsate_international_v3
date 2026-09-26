@@ -1,0 +1,1123 @@
+{
+  "slug": "trailer-parts-to-check-before-the-road",
+  "title": "From Kingpins to Landing Gears: Know Which Trailer Part You Should Check Before Taking Your Trailer Out on the Road",
+  "date": "2025-05-09",
+  "description": "Before you hit the highway, here's a checklist of every trailer part you should inspect, so you can stay safe and confident on the road.",
+  "excerpt": "Every trailer driver knows that safety doesn't begin when you hit the highway; it starts before you even pull out of the lot. Whether you're hauling freight across the state or preparing for a long-distance…",
+  "status": "published",
+  "coverImage": "/img/blog/trailer-parts-to-check-before-the-road/hero.jpg",
+  "topic": "New Trailers",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / New Trailers",
+          "title": "From Kingpins to Landing Gears: Know Which Trailer Part You Should Check Before Taking Your Trailer Out on the Road",
+          "topic": "New Trailers",
+          "date": "May 9, 2025",
+          "readTime": "4 min read",
+          "author": "Sun State Trailers",
+          "image": {
+            "src": "/img/blog/trailer-parts-to-check-before-the-road/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Close-up of trailer axle, tires and FlowBelow aerodynamic fairing during a pre-trip inspection"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "1. Kingpin & Fifth Wheel",
+                        "href": "#step-1"
+                      },
+                      {
+                        "label": "2. Landing Gear",
+                        "href": "#step-2"
+                      },
+                      {
+                        "label": "3. Tires & Wheels",
+                        "href": "#step-3"
+                      },
+                      {
+                        "label": "4. Lights & Electrical",
+                        "href": "#step-4"
+                      },
+                      {
+                        "label": "5. Braking System",
+                        "href": "#step-5"
+                      },
+                      {
+                        "label": "6. Suspension",
+                        "href": "#step-6"
+                      },
+                      {
+                        "label": "7. Doors & Seals",
+                        "href": "#step-7"
+                      },
+                      {
+                        "label": "8. Underride Guards",
+                        "href": "#step-8"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "NEED PARTS OR SERVICE?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Our team can help with inspections, servicing, or finding the right trailer part.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "contact-us",
+                                "label": "Contact Us →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Every trailer driver knows that safety doesn't begin when you hit the highway; it starts before you even pull out of the lot. Whether you're hauling freight across the state or preparing for a long-distance run, inspecting each critical <a href=\"/parts\">trailer part</a> can help prevent breakdowns, accidents, and costly delays.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "While the temptation might be to do a quick walkaround and say that everything is fine, the reality is that trailer issues account for a large number of roadside violations and service calls. The good news? Most of these problems can be avoided with a thorough inspection and a solid understanding of which parts need your attention. Here's a breakdown of the most important trailer components to check before every trip.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "row-step-1",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "styles": {
+                    "base": {
+                      "display": "flex",
+                      "alignItems": "flex-start",
+                      "gap": 22,
+                      "paddingTop": 30,
+                      "paddingBottom": 30,
+                      "marginTop": 34
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "badge-step-1",
+                      "type": "column",
+                      "props": {
+                        "span": 1
+                      },
+                      "styles": {
+                        "base": {
+                          "flexShrink": 0
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "num-step-1",
+                          "type": "text",
+                          "props": {
+                            "text": "1",
+                            "align": "center",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "background": "accent",
+                              "textColor": "card",
+                              "fontSize": 18,
+                              "fontWeight": "800",
+                              "lineHeight": 1,
+                              "width": 44,
+                              "height": 44,
+                              "radius": 999,
+                              "display": "flex",
+                              "alignItems": "center",
+                              "justifyContent": "center"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "col-step-1",
+                      "type": "column",
+                      "props": {
+                        "span": 11
+                      },
+                      "styles": {
+                        "base": {
+                          "flexGrow": 1
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "h-step-1",
+                          "type": "heading",
+                          "props": {
+                            "text": "Kingpin and Fifth Wheel Connection",
+                            "headingLevel": 2,
+                            "align": "left",
+                            "anchor": "step-1"
+                          }
+                        },
+                        {
+                          "id": "p-step-1",
+                          "type": "text",
+                          "props": {
+                            "text": "The kingpin is what keeps your trailer securely locked into the tractor, and it's one of the most critical connection points in your entire setup. Before you leave, make sure the kingpin is not excessively worn or damaged, and verify that the fifth wheel jaws are fully closed and properly locked around it. Improper kingpin connections can lead to catastrophic trailer disconnects. Take the extra minute to double-check the coupling; you'll thank yourself later.",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "row-step-2",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "styles": {
+                    "base": {
+                      "display": "flex",
+                      "alignItems": "flex-start",
+                      "gap": 22,
+                      "paddingTop": 30,
+                      "paddingBottom": 30,
+                      "borderTopWidth": 1,
+                      "borderLeftWidth": 0,
+                      "borderRightWidth": 0,
+                      "borderBottomWidth": 0,
+                      "borderStyle": "solid",
+                      "borderColor": "line"
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "badge-step-2",
+                      "type": "column",
+                      "props": {
+                        "span": 1
+                      },
+                      "styles": {
+                        "base": {
+                          "flexShrink": 0
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "num-step-2",
+                          "type": "text",
+                          "props": {
+                            "text": "2",
+                            "align": "center",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "background": "accent",
+                              "textColor": "card",
+                              "fontSize": 18,
+                              "fontWeight": "800",
+                              "lineHeight": 1,
+                              "width": 44,
+                              "height": 44,
+                              "radius": 999,
+                              "display": "flex",
+                              "alignItems": "center",
+                              "justifyContent": "center"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "col-step-2",
+                      "type": "column",
+                      "props": {
+                        "span": 11
+                      },
+                      "styles": {
+                        "base": {
+                          "flexGrow": 1
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "h-step-2",
+                          "type": "heading",
+                          "props": {
+                            "text": "Landing Gear",
+                            "headingLevel": 2,
+                            "align": "left",
+                            "anchor": "step-2"
+                          }
+                        },
+                        {
+                          "id": "p-step-2",
+                          "type": "text",
+                          "props": {
+                            "text": "Don't overlook your landing gear, especially if you're dropping and hooking often. These legs support the front of your trailer when it's detached, and damaged or poorly functioning landing gear can make for a tough time at the yard. Check for signs of damage to the legs, crank, and gearbox. Make sure the landing gear raises and lowers smoothly, and that all bolts are tight and secure. A simple failure here can turn into a serious downtime issue if you're not careful.",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "row-step-3",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "styles": {
+                    "base": {
+                      "display": "flex",
+                      "alignItems": "flex-start",
+                      "gap": 22,
+                      "paddingTop": 30,
+                      "paddingBottom": 30,
+                      "borderTopWidth": 1,
+                      "borderLeftWidth": 0,
+                      "borderRightWidth": 0,
+                      "borderBottomWidth": 0,
+                      "borderStyle": "solid",
+                      "borderColor": "line"
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "badge-step-3",
+                      "type": "column",
+                      "props": {
+                        "span": 1
+                      },
+                      "styles": {
+                        "base": {
+                          "flexShrink": 0
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "num-step-3",
+                          "type": "text",
+                          "props": {
+                            "text": "3",
+                            "align": "center",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "background": "accent",
+                              "textColor": "card",
+                              "fontSize": 18,
+                              "fontWeight": "800",
+                              "lineHeight": 1,
+                              "width": 44,
+                              "height": 44,
+                              "radius": 999,
+                              "display": "flex",
+                              "alignItems": "center",
+                              "justifyContent": "center"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "col-step-3",
+                      "type": "column",
+                      "props": {
+                        "span": 11
+                      },
+                      "styles": {
+                        "base": {
+                          "flexGrow": 1
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "h-step-3",
+                          "type": "heading",
+                          "props": {
+                            "text": "Tires and Wheels",
+                            "headingLevel": 2,
+                            "align": "left",
+                            "anchor": "step-3"
+                          }
+                        },
+                        {
+                          "id": "p-step-3",
+                          "type": "text",
+                          "props": {
+                            "text": "Every seasoned hauler knows that tire issues are one of the most common, and avoidable, problems on the road. Look for proper inflation, tread wear, and visible damage like cuts, bulges, or foreign objects. Don't forget to inspect the inner sidewalls and valve stems. Also, make sure your wheels and lug nuts are in good shape. Cracked or bent rims can weaken under stress, and loose lug nuts can cause serious damage or even wheel detachment.",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "row-step-4",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "styles": {
+                    "base": {
+                      "display": "flex",
+                      "alignItems": "flex-start",
+                      "gap": 22,
+                      "paddingTop": 30,
+                      "paddingBottom": 30,
+                      "borderTopWidth": 1,
+                      "borderLeftWidth": 0,
+                      "borderRightWidth": 0,
+                      "borderBottomWidth": 0,
+                      "borderStyle": "solid",
+                      "borderColor": "line"
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "badge-step-4",
+                      "type": "column",
+                      "props": {
+                        "span": 1
+                      },
+                      "styles": {
+                        "base": {
+                          "flexShrink": 0
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "num-step-4",
+                          "type": "text",
+                          "props": {
+                            "text": "4",
+                            "align": "center",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "background": "accent",
+                              "textColor": "card",
+                              "fontSize": 18,
+                              "fontWeight": "800",
+                              "lineHeight": 1,
+                              "width": 44,
+                              "height": 44,
+                              "radius": 999,
+                              "display": "flex",
+                              "alignItems": "center",
+                              "justifyContent": "center"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "col-step-4",
+                      "type": "column",
+                      "props": {
+                        "span": 11
+                      },
+                      "styles": {
+                        "base": {
+                          "flexGrow": 1
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "h-step-4",
+                          "type": "heading",
+                          "props": {
+                            "text": "Lights and Electrical Connections",
+                            "headingLevel": 2,
+                            "align": "left",
+                            "anchor": "step-4"
+                          }
+                        },
+                        {
+                          "id": "p-step-4",
+                          "type": "text",
+                          "props": {
+                            "text": "Faulty lighting is one of the top reasons for roadside stops. Before hitting the road, test your brake lights, turn signals, tail lights, and clearance lights. Make sure your electrical pigtail is securely connected and there's no damage to the wires or plug. You should also check the wiring along the trailer body for wear or exposed connections. Any broken or dim light isn't just unsafe; it's a violation waiting to happen.",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "row-step-5",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "styles": {
+                    "base": {
+                      "display": "flex",
+                      "alignItems": "flex-start",
+                      "gap": 22,
+                      "paddingTop": 30,
+                      "paddingBottom": 30,
+                      "borderTopWidth": 1,
+                      "borderLeftWidth": 0,
+                      "borderRightWidth": 0,
+                      "borderBottomWidth": 0,
+                      "borderStyle": "solid",
+                      "borderColor": "line"
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "badge-step-5",
+                      "type": "column",
+                      "props": {
+                        "span": 1
+                      },
+                      "styles": {
+                        "base": {
+                          "flexShrink": 0
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "num-step-5",
+                          "type": "text",
+                          "props": {
+                            "text": "5",
+                            "align": "center",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "background": "accent",
+                              "textColor": "card",
+                              "fontSize": 18,
+                              "fontWeight": "800",
+                              "lineHeight": 1,
+                              "width": 44,
+                              "height": 44,
+                              "radius": 999,
+                              "display": "flex",
+                              "alignItems": "center",
+                              "justifyContent": "center"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "col-step-5",
+                      "type": "column",
+                      "props": {
+                        "span": 11
+                      },
+                      "styles": {
+                        "base": {
+                          "flexGrow": 1
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "h-step-5",
+                          "type": "heading",
+                          "props": {
+                            "text": "Braking System",
+                            "headingLevel": 2,
+                            "align": "left",
+                            "anchor": "step-5"
+                          }
+                        },
+                        {
+                          "id": "p-step-5",
+                          "type": "text",
+                          "props": {
+                            "text": "Trailer brakes do a lot of the heavy lifting when it comes to stopping power, especially under load. Make sure the air lines are secure and not rubbing or leaking. Check your brakes and brake pads for visible wear or damage. Listen for air leaks during your pre-trip check and verify that your air pressure builds and holds properly. A faulty brake component isn't something you want to discover on a steep downhill grade.",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "row-step-6",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "styles": {
+                    "base": {
+                      "display": "flex",
+                      "alignItems": "flex-start",
+                      "gap": 22,
+                      "paddingTop": 30,
+                      "paddingBottom": 30,
+                      "borderTopWidth": 1,
+                      "borderLeftWidth": 0,
+                      "borderRightWidth": 0,
+                      "borderBottomWidth": 0,
+                      "borderStyle": "solid",
+                      "borderColor": "line"
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "badge-step-6",
+                      "type": "column",
+                      "props": {
+                        "span": 1
+                      },
+                      "styles": {
+                        "base": {
+                          "flexShrink": 0
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "num-step-6",
+                          "type": "text",
+                          "props": {
+                            "text": "6",
+                            "align": "center",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "background": "accent",
+                              "textColor": "card",
+                              "fontSize": 18,
+                              "fontWeight": "800",
+                              "lineHeight": 1,
+                              "width": 44,
+                              "height": 44,
+                              "radius": 999,
+                              "display": "flex",
+                              "alignItems": "center",
+                              "justifyContent": "center"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "col-step-6",
+                      "type": "column",
+                      "props": {
+                        "span": 11
+                      },
+                      "styles": {
+                        "base": {
+                          "flexGrow": 1
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "h-step-6",
+                          "type": "heading",
+                          "props": {
+                            "text": "Suspension Components",
+                            "headingLevel": 2,
+                            "align": "left",
+                            "anchor": "step-6"
+                          }
+                        },
+                        {
+                          "id": "p-step-6",
+                          "type": "text",
+                          "props": {
+                            "text": "Your trailer's suspension system helps handle road stress and load stability. Look for cracked or broken springs, uneven wear, or signs that components are shifting under load. A suspension problem may not show up immediately, but can quickly become a major issue under the weight of a full haul. Regular inspection helps keep your ride smooth and your cargo protected.",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "row-step-7",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "styles": {
+                    "base": {
+                      "display": "flex",
+                      "alignItems": "flex-start",
+                      "gap": 22,
+                      "paddingTop": 30,
+                      "paddingBottom": 30,
+                      "borderTopWidth": 1,
+                      "borderLeftWidth": 0,
+                      "borderRightWidth": 0,
+                      "borderBottomWidth": 0,
+                      "borderStyle": "solid",
+                      "borderColor": "line"
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "badge-step-7",
+                      "type": "column",
+                      "props": {
+                        "span": 1
+                      },
+                      "styles": {
+                        "base": {
+                          "flexShrink": 0
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "num-step-7",
+                          "type": "text",
+                          "props": {
+                            "text": "7",
+                            "align": "center",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "background": "accent",
+                              "textColor": "card",
+                              "fontSize": 18,
+                              "fontWeight": "800",
+                              "lineHeight": 1,
+                              "width": 44,
+                              "height": 44,
+                              "radius": 999,
+                              "display": "flex",
+                              "alignItems": "center",
+                              "justifyContent": "center"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "col-step-7",
+                      "type": "column",
+                      "props": {
+                        "span": 11
+                      },
+                      "styles": {
+                        "base": {
+                          "flexGrow": 1
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "h-step-7",
+                          "type": "heading",
+                          "props": {
+                            "text": "Doors, Seals, and Cargo Securement",
+                            "headingLevel": 2,
+                            "align": "left",
+                            "anchor": "step-7"
+                          }
+                        },
+                        {
+                          "id": "p-step-7",
+                          "type": "text",
+                          "props": {
+                            "text": "It might seem simple, but damaged door hinges or seals can ruin an entire shipment, especially if you're hauling temperature-sensitive or weather-sensitive goods. Make sure doors open and close securely, that locks are functional, and that the gaskets are intact.",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "p-step-7-2",
+                          "type": "text",
+                          "props": {
+                            "text": "Inside the trailer, check that your load is properly secured and balanced. Loose or shifting cargo can be dangerous, even in normal traffic conditions.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "marginTop": 10
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "row-step-8",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "styles": {
+                    "base": {
+                      "display": "flex",
+                      "alignItems": "flex-start",
+                      "gap": 22,
+                      "paddingTop": 30,
+                      "paddingBottom": 30,
+                      "borderTopWidth": 1,
+                      "borderLeftWidth": 0,
+                      "borderRightWidth": 0,
+                      "borderBottomWidth": 0,
+                      "borderStyle": "solid",
+                      "borderColor": "line"
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "badge-step-8",
+                      "type": "column",
+                      "props": {
+                        "span": 1
+                      },
+                      "styles": {
+                        "base": {
+                          "flexShrink": 0
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "num-step-8",
+                          "type": "text",
+                          "props": {
+                            "text": "8",
+                            "align": "center",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "background": "accent",
+                              "textColor": "card",
+                              "fontSize": 18,
+                              "fontWeight": "800",
+                              "lineHeight": 1,
+                              "width": 44,
+                              "height": 44,
+                              "radius": 999,
+                              "display": "flex",
+                              "alignItems": "center",
+                              "justifyContent": "center"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "col-step-8",
+                      "type": "column",
+                      "props": {
+                        "span": 11
+                      },
+                      "styles": {
+                        "base": {
+                          "flexGrow": 1
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "h-step-8",
+                          "type": "heading",
+                          "props": {
+                            "text": "Underride Guards and Reflective Tape",
+                            "headingLevel": 2,
+                            "align": "left",
+                            "anchor": "step-8"
+                          }
+                        },
+                        {
+                          "id": "p-step-8",
+                          "type": "text",
+                          "props": {
+                            "text": "DOT regulations require that trailers have properly installed underride guards and reflective tape for visibility. Check that your ICC bumper (rear underride guard) is securely mounted and not bent or rusted through. Your reflective tape should be clean, complete, and visible from the required distances. This small detail can make a big difference in nighttime safety.",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-trust-the-experts-at",
+                  "type": "heading",
+                  "props": {
+                    "text": "Trust the Experts at Sun State Trailers",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-trust-the-experts-at-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At <a href=\"/locations/trailer-sales\">Sun State Trailers</a>, we take your safety seriously. Whether you're buying new, renting for the season, or just need replacement parts, we're here to help you stay ready for the road ahead. Our trailers are maintained to the highest standards, and our team is always available to answer your questions and offer expert guidance. Before your next haul, take the time to check your equipment. And if you need help with inspections, servicing, or finding the right trailer part, we're only a call away.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-trust-the-experts-at-2",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "contact-us",
+                        "label": "Contact Us"
+                      },
+                      {
+                        "ctaId": "browse-trailers",
+                        "label": "Browse Trailer Inventory",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-share",
+                  "type": "post-share",
+                  "props": {
+                    "label": "Share",
+                    "items": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Ftrailer-parts-to-check-before-the-road",
+                        "newTab": true
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Ftrailer-parts-to-check-before-the-road&text=From%20Kingpins%20to%20Landing%20Gears%3A%20Know%20Which%20Trailer%20Part%20You%20Should%20Check%20Before%20Taking%20Your%20Trailer%20Out%20on%20the%20Road",
+                        "newTab": true
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Ftrailer-parts-to-check-before-the-road",
+                        "newTab": true
+                      },
+                      {
+                        "label": "Email",
+                        "url": "mailto:?subject=From%20Kingpins%20to%20Landing%20Gears%3A%20Know%20Which%20Trailer%20Part%20You%20Should%20Check%20Before%20Taking%20Your%20Trailer%20Out%20on%20the%20Road&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Ftrailer-parts-to-check-before-the-road",
+                        "newTab": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "New trailers",
+          "heading": "Check your equipment before your next haul.",
+          "body": "Call 800.741.7566 to talk with our team at any Sun State location in Florida.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Browse trailer inventory",
+          "secondaryUrl": "/store/inventory?type=trailer"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/trailer-parts-to-check-before-the-road\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/trailer-parts-to-check-before-the-road\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n/* The hero photograph is framed a little high, as the design frames it. */\n[data-bz-section=\"post-hero\"] [data-bz-node=\"ph-photo\"] img { object-position: center 55%; }\n\n/* Its numbered steps: a 22px heading over 16.5px copy, as the design sets them. */\n[data-bz-node=\"art-body\"] .bz-col [data-bz-node^=\"h-step-\"] h2 { font-size: 22px; line-height: 1.28; margin: 0 0 10px; }\n[data-bz-node=\"art-body\"] .bz-col [data-bz-node^=\"p-step-\"] p { font-size: 16.5px; line-height: 1.75; margin: 0; }\n"
+}

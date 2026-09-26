@@ -1,0 +1,616 @@
+{
+  "slug": "how-does-a-reefer-trailer-work",
+  "title": "How Does a Reefer Trailer Work? Know Before You Buy With Our Fleet Owner's Guide",
+  "date": "2025-11-07",
+  "description": "Learn how reefer trailers work, what keeps cargo cold, and how to maintain them. Explore new and used refrigerated trailers at Sun State.",
+  "excerpt": "A reefer trailer, short for refrigerated trailer, is the unsung hero of the logistics world. These specialized trailers are designed to transport perishable goods like produce, dairy, meat, and pharmaceuticals…",
+  "status": "published",
+  "coverImage": "/img/blog/how-does-a-reefer-trailer-work/hero.jpg",
+  "topic": "Trailer Sales",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Trailer Sales",
+          "title": "How Does a Reefer Trailer Work? Know Before You Buy With Our Fleet Owner's Guide",
+          "topic": "Trailer Sales",
+          "date": "November 7, 2025",
+          "readTime": "5 min read",
+          "author": "Sun State Trailers",
+          "image": {
+            "src": "/img/blog/how-does-a-reefer-trailer-work/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Sun State reefer trailer traveling a Florida highway near residential buildings"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "How It Works",
+                        "href": "#how-it-works"
+                      },
+                      {
+                        "label": "Maintenance",
+                        "href": "#maintenance"
+                      },
+                      {
+                        "label": "Temperature Control",
+                        "href": "#temp-control"
+                      },
+                      {
+                        "label": "Choosing the Right Trailer",
+                        "href": "#choosing"
+                      },
+                      {
+                        "label": "Why Fleet Owners Trust Us",
+                        "href": "#why-sunstate"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "WANT THE FULL SHEET?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "View detailed specifications before you compare trailers.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-trailers",
+                                "label": "View Our Trailer Specifications →"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "A reefer trailer, short for refrigerated trailer, is the unsung hero of the logistics world. These specialized trailers are designed to transport perishable goods like produce, dairy, meat, and pharmaceuticals safely across long distances. Unlike standard dry vans, reefer trailers use a refrigerated trailer system that keeps cargo within a specific temperature range, no matter the weather outside.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "For fleet owners and independent operators, understanding how these systems work is essential. Proper operation and maintenance of a reefer trailer mean fewer spoiled loads, better fuel efficiency, and a stronger reputation for reliability, all factors that directly impact your bottom line.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-how-it-works",
+                  "type": "heading",
+                  "props": {
+                    "text": "How Does a Reefer Trailer Work?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "how-it-works"
+                  }
+                },
+                {
+                  "id": "p-how-it-works-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At the core of every reefer trailer is a closed-loop refrigeration system made up of three key components:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-how-it-works-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "type3",
+                    "items": [
+                      {
+                        "title": "Evaporator Coil",
+                        "points": [],
+                        "intro": "Absorbs heat from inside the trailer."
+                      },
+                      {
+                        "title": "Compressor",
+                        "points": [],
+                        "intro": "Pressurizes refrigerant gas and moves it through the system."
+                      },
+                      {
+                        "title": "Condenser Coil",
+                        "points": [],
+                        "intro": "Expels heat outside the trailer."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-how-it-works-3",
+                  "type": "text",
+                  "props": {
+                    "text": "When the reefer unit is powered on, the compressor circulates refrigerant through the coils. As warm air from the trailer passes over the evaporator, heat is absorbed and released outside via the condenser. This continuous cycle creates a controlled environment, keeping internal temperatures steady, often between -20°F and 70°F, depending on the load.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-how-it-works-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Modern reefer trailers are equipped with temperature control systems that allow drivers to set and monitor cargo conditions in real time. Some models even include data tracking and alerts that notify the operator if temperatures fluctuate, protecting valuable shipments before issues arise.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-how-it-works-5",
+                  "type": "text",
+                  "props": {
+                    "text": "A significant share of food produced globally is lost or wasted somewhere in the supply chain each year. Ensuring your company has the right equipment to maintain consistent cooling makes a measurable difference in profitability and sustainability.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/how-does-a-reefer-trailer-work/1.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Sun State technician performing a pre-trip inspection on a reefer trailer with a clipboard"
+                    }
+                  }
+                },
+                {
+                  "id": "h-maintenance",
+                  "type": "heading",
+                  "props": {
+                    "text": "Reefer Trailer Maintenance: The Key to Reliable Cooling",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "maintenance"
+                  }
+                },
+                {
+                  "id": "p-maintenance-1",
+                  "type": "text",
+                  "props": {
+                    "text": "A reefer trailer is only as dependable as its maintenance schedule. Routine reefer trailer maintenance ensures your system runs efficiently and prevents costly downtime. We recommend focusing on:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-maintenance-2",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "<strong>Regular pre-trip inspections</strong> — check fuel levels, belts, hoses, and refrigerant before every haul"
+                      },
+                      {
+                        "text": "<strong>Cleaning evaporator and condenser coils</strong> — debris can restrict airflow and cause uneven cooling"
+                      },
+                      {
+                        "text": "<strong>Monitoring thermostats and sensors</strong> — faulty sensors can misread temperatures, leading to cargo spoilage"
+                      },
+                      {
+                        "text": "<strong>Routine oil changes and filter replacements</strong> — these small steps keep compressors running smoothly and extend system life"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-maintenance-3",
+                  "type": "text",
+                  "props": {
+                    "text": "If you operate in Florida's demanding climate, this maintenance becomes even more critical. High humidity and long hours on the road can strain your cooling unit. That's why Sun State Trailers offers reefer trailer repair and service across multiple locations, helping you stay on schedule and compliant with cold chain regulations.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-maintenance-4",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "browse-new-trailers",
+                        "label": "New Trailers",
+                        "style": "primary"
+                      },
+                      {
+                        "ctaId": "browse-used-trailers",
+                        "label": "Used Trailers",
+                        "style": "secondary"
+                      },
+                      {
+                        "ctaId": "browse-trailer-rentals",
+                        "label": "Trailer Rentals",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-temp-control",
+                  "type": "heading",
+                  "props": {
+                    "text": "Understanding Trailer Temperature Control Systems",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "temp-control"
+                  }
+                },
+                {
+                  "id": "p-temp-control-1",
+                  "type": "text",
+                  "props": {
+                    "text": "The best refrigerated trailer systems give operators flexibility and peace of mind. Whether hauling frozen seafood or pharmaceuticals, temperature control is more than just a setting; it's a safeguard for your business reputation.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-temp-control-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Today's reefer trailers feature advanced control panels that automatically adjust cooling cycles, defrost modes, and humidity levels. Paired with real-time telematics, these systems let fleet managers track performance from anywhere, ensuring every load stays within compliance.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-temp-control-3",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State Trailers, we carry Hyundai Translead refrigerated trailers engineered for energy efficiency, durability, and long-term performance. These units combine high-grade insulation with precision-built refrigeration systems that meet modern hauling standards, ideal for fleets looking to balance performance and cost.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-choosing",
+                  "type": "heading",
+                  "props": {
+                    "text": "Choosing the Right Reefer Trailer for Your Fleet",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "choosing"
+                  }
+                },
+                {
+                  "id": "p-choosing-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Not all refrigerated trailers are built the same. Before purchasing, consider:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-choosing-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "type",
+                    "items": [
+                      {
+                        "title": "Trailer Size and Capacity",
+                        "points": [],
+                        "intro": "Match your trailer to your cargo type and route."
+                      },
+                      {
+                        "title": "Cooling Power",
+                        "points": [],
+                        "intro": "Evaluate whether your operation needs a deep freeze (-20°F) or a moderate chill."
+                      },
+                      {
+                        "title": "Fuel Type",
+                        "points": [],
+                        "intro": "Choose between diesel-powered or electric reefer units depending on trip length."
+                      },
+                      {
+                        "title": "Maintenance Support",
+                        "points": [],
+                        "intro": "Work with a dealership that offers on-site parts and service."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-choosing-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Your reefer trailer should be a partner in your business success, efficient, dependable, and built for the long haul.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-why-sunstate",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Fleet Owners Trust Sun State Trailers",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "why-sunstate"
+                  }
+                },
+                {
+                  "id": "p-why-sunstate-1",
+                  "type": "text",
+                  "props": {
+                    "text": "As a family-owned Florida dealership, Sun State Trailers understands that your equipment isn't just a purchase; it's your livelihood. Our team works directly with fleet owners and owner-operators, providing the tools and support needed to keep businesses on the road.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-why-sunstate-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Whether you're buying new, used, or renting, our goal is to simplify the process. We take pride in offering dependable, straightforward service and top-tier equipment that's built to last. From reefer trailers to dry vans, our inventory is backed by knowledgeable staff and on-site service centers designed to keep your fleet moving forward.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-why-sunstate-3",
+                  "type": "text",
+                  "props": {
+                    "text": "When your livelihood depends on keeping cargo cold, you need a partner who understands the job. <a href=\"/locations/trailer-sales\">Sun State Trailers</a> provides fleets across Florida with refrigerated trailers that combine performance, reliability, and support. Whether you're in the market for a new, used, or rental reefer trailer, we'll help you find the right fit for your routes, your cargo, and your budget.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-why-sunstate-4",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "browse-new-trailers",
+                        "label": "New Trailers",
+                        "style": "primary"
+                      },
+                      {
+                        "ctaId": "browse-used-trailers",
+                        "label": "Used Trailers",
+                        "style": "secondary"
+                      },
+                      {
+                        "ctaId": "browse-trailer-rentals",
+                        "label": "Trailer Rentals",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-share",
+                  "type": "post-share",
+                  "props": {
+                    "label": "Share",
+                    "items": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fhow-does-a-reefer-trailer-work",
+                        "newTab": true
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fhow-does-a-reefer-trailer-work&text=How%20Does%20a%20Reefer%20Trailer%20Work%3F%20Know%20Before%20You%20Buy%20With%20Our%20Fleet%20Owner%27s%20Guide",
+                        "newTab": true
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fhow-does-a-reefer-trailer-work",
+                        "newTab": true
+                      },
+                      {
+                        "label": "Email",
+                        "url": "mailto:?subject=How%20Does%20a%20Reefer%20Trailer%20Work%3F%20Know%20Before%20You%20Buy%20With%20Our%20Fleet%20Owner%27s%20Guide&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fhow-does-a-reefer-trailer-work",
+                        "newTab": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Trailer sales",
+          "heading": "Dependable cooling, built for Florida roads.",
+          "body": "Call 800.741.7566 to talk with our team about reefer trailers at any Sun State location in Florida.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Browse trailer inventory",
+          "secondaryUrl": "/store/inventory?type=trailer"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/how-does-a-reefer-trailer-work\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/how-does-a-reefer-trailer-work\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n/* The hero photograph is framed a little high, as the design frames it. */\n[data-bz-section=\"post-hero\"] [data-bz-node=\"ph-photo\"] img { object-position: center 55%; }\n\n/* Its type cards: 24px in, the title 10px over a 14px list. */\n[data-bz-node=\"art-body\"] .ss-cl--type,\n[data-bz-node=\"art-body\"] .ss-cl--type3 { gap: 24px; }\n[data-bz-node=\"art-body\"] .ss-cl--type { gap: 28px; }\n[data-bz-node=\"art-body\"] .ss-cl--type .ss-cl__card { padding: 24px; }\n[data-bz-node=\"art-body\"] .ss-cl--type .ss-cl__t { margin: 0 0 10px; }\n[data-bz-node=\"art-body\"] :is(.ss-cl--type, .ss-cl--type3) .ss-cl__list { margin: 0; padding-left: 18px; }\n[data-bz-node=\"art-body\"] :is(.ss-cl--type, .ss-cl--type3) .ss-cl__list li { font-size: 14px; }\n\n/* A type card's sentence is set as body text, as the article's paragraphs are. */\n[data-bz-node=\"art-body\"] :is(.ss-cl--type, .ss-cl--type3) .ss-cl__p { font-size: 17px; line-height: 1.8; margin: 0 0 18px; }\n\n[data-bz-node=\"art-body\"] > [data-bz-node=\"actions-maintenance-4\"] .bz-btns { margin: 8px 0 34px; }\n"
+}

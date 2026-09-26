@@ -1,0 +1,955 @@
+{
+  "slug": "no-running-lights-on-trailer-start-here",
+  "title": "No Running Lights on Trailer? Start Here",
+  "date": "2026-05-21",
+  "description": "No running lights on trailer? Learn common causes, safety risks, and when to schedule trailer repair today.",
+  "excerpt": "If you have no running lights on your trailer, it's not something to ignore until your next stop. Running lights play a critical role in keeping your trailer visible during nighttime driving, storms, and…",
+  "status": "published",
+  "coverImage": "/img/blog/no-running-lights-on-trailer-start-here/hero.jpg",
+  "topic": "Service",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Service",
+          "title": "No Running Lights on Trailer? Start Here",
+          "topic": "Service",
+          "date": "May 21, 2026",
+          "readTime": "5 min read",
+          "author": "Sun State Trailers",
+          "image": {
+            "src": "/img/blog/no-running-lights-on-trailer-start-here/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Close-up of a trailer's rear marker and running light assembly"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "Common Causes",
+                        "href": "#common-reasons"
+                      },
+                      {
+                        "label": "Check the Connector",
+                        "href": "#connector"
+                      },
+                      {
+                        "label": "Inspect the Cord",
+                        "href": "#cord"
+                      },
+                      {
+                        "label": "Why It Matters",
+                        "href": "#dont-ignore"
+                      },
+                      {
+                        "label": "Warning Signs",
+                        "href": "#warning-signs"
+                      },
+                      {
+                        "label": "Preventive Maintenance",
+                        "href": "#preventive"
+                      },
+                      {
+                        "label": "Schedule Service",
+                        "href": "#schedule"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "LIGHTS OUT?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Our technicians diagnose trailer electrical issues fast and get you back on the road.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "schedule-service",
+                                "label": "Get a Professional Inspection →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "If you have no running lights on your trailer, it's not something to ignore until your next stop. Running lights play a critical role in keeping your trailer visible during nighttime driving, storms, and low-visibility road conditions. When they stop working, your safety, compliance, and delivery schedule can all be affected.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "For owner-operators and fleet managers, electrical issues can quickly turn into costly downtime if they are not handled early. At <a href=\"/locations/trailer-sales\">Sun State Trailers</a>, we understand how important dependable equipment is to your business. Our team works with customers every day to diagnose electrical problems, provide quality parts, and help keep trailers road-ready. If your trailer running lights stop working, here's where to start.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-common-reasons",
+                  "type": "heading",
+                  "props": {
+                    "text": "Common Reasons You Have No Running Lights on Trailer",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "common-reasons"
+                  }
+                },
+                {
+                  "id": "p-common-reasons-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Trailer lighting systems rely on several electrical components working together correctly. If one part of the system fails, your running lights may stop functioning entirely.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-common-reasons-2",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Some of the most common causes include:</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-common-reasons-3",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Damaged wiring"
+                      },
+                      {
+                        "text": "Corroded electrical connectors"
+                      },
+                      {
+                        "text": "Faulty ground connections"
+                      },
+                      {
+                        "text": "Blown fuses"
+                      },
+                      {
+                        "text": "Failed light assemblies"
+                      },
+                      {
+                        "text": "Damaged semi trailer electrical cord"
+                      },
+                      {
+                        "text": "Faulty semi trailer electrical connector"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-common-reasons-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Electrical problems often develop gradually over time due to road vibration, moisture exposure, and regular wear and tear.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-connector",
+                  "type": "heading",
+                  "props": {
+                    "text": "Check the Semi Trailer Electrical Connector First",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "connector"
+                  }
+                },
+                {
+                  "id": "p-connector-1",
+                  "type": "text",
+                  "props": {
+                    "text": "One of the first places to inspect is the semi trailer electrical connector. This connector links your truck's electrical system to the trailer and powers the running lights, brake lights, and turn signals.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-connector-2",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Over time, connectors can develop problems such as:</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-connector-3",
+                  "type": "row",
+                  "props": {
+                    "gap": 4
+                  },
+                  "styles": {
+                    "base": {
+                      "marginBottom": 20
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "cards-connector-3-1",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 22,
+                          "paddingRight": 22,
+                          "paddingBottom": 22,
+                          "paddingLeft": 22
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "cards-connector-3-1-list",
+                          "type": "prose-list",
+                          "props": {
+                            "ordered": false,
+                            "items": [
+                              {
+                                "text": "Corroded terminals"
+                              },
+                              {
+                                "text": "Bent pins"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "cards-connector-3-2",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 22,
+                          "paddingRight": 22,
+                          "paddingBottom": 22,
+                          "paddingLeft": 22
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "cards-connector-3-2-list",
+                          "type": "prose-list",
+                          "props": {
+                            "ordered": false,
+                            "items": [
+                              {
+                                "text": "Loose wiring"
+                              },
+                              {
+                                "text": "Dirt buildup"
+                              },
+                              {
+                                "text": "Moisture damage"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "p-connector-4",
+                  "type": "text",
+                  "props": {
+                    "text": "A damaged semi trailer electrical connector can interrupt power flow and cause partial or complete lighting failure. If you notice corrosion or damaged pins, <a href=\"/service\">replacing the connector</a> may be necessary to restore proper function.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/no-running-lights-on-trailer-start-here/1.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Sun State technician working at the service bench with a red toolbox"
+                    }
+                  }
+                },
+                {
+                  "id": "h-cord",
+                  "type": "heading",
+                  "props": {
+                    "text": "Inspect the Semi Trailer Electrical Cord",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "cord"
+                  }
+                },
+                {
+                  "id": "p-cord-1",
+                  "type": "text",
+                  "props": {
+                    "text": "The semi trailer electrical cord also experiences constant stress from movement, weather, and vibration. Worn or damaged cords are a common reason for no running lights on trailer systems.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-cord-2",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Look for signs like:</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-cord-3",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Cracked insulation"
+                      },
+                      {
+                        "text": "Frayed wires"
+                      },
+                      {
+                        "text": "Loose plug connections"
+                      },
+                      {
+                        "text": "Pinched sections"
+                      },
+                      {
+                        "text": "Exposed copper wiring"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-cord-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Even minor cord damage can create inconsistent lighting performance that becomes worse over time.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-cord-5-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "styles": {
+                    "base": {
+                      "marginTop": 34,
+                      "marginBottom": 34
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "co-cord-5",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-cord-5-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "schedule-service",
+                                "label": "Get a Professional Inspection →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-dont-ignore",
+                  "type": "heading",
+                  "props": {
+                    "text": "Don't Ignore Trailer Lighting Problems",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "dont-ignore"
+                  }
+                },
+                {
+                  "id": "p-dont-ignore-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Some drivers continue operating with trailer brake lights not working or missing running lights because the trailer still seems functional during daylight hours. The problem is that lighting failures can quickly create dangerous situations on the road.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-dont-ignore-2",
+                  "type": "heading",
+                  "props": {
+                    "text": "Reduced Visibility Creates Safety Risks",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-dont-ignore-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Running lights help other drivers see your trailer at night, during rain, or in low-light conditions. Without them, other vehicles may misjudge your distance or fail to notice your trailer entirely. Keeping your lighting system working properly helps improve safety for everyone on the road.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-dont-ignore-4",
+                  "type": "heading",
+                  "props": {
+                    "text": "DOT Violations Can Lead to Downtime",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-dont-ignore-5",
+                  "type": "text",
+                  "props": {
+                    "text": "Commercial trailers are required to meet federal lighting standards. If an inspection reveals no running lights on trailer systems or trailer brake lights not working, drivers may face citations or even out-of-service orders. Unexpected downtime means delayed loads, missed deadlines, and unnecessary repair expenses.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-dont-ignore-6",
+                  "type": "heading",
+                  "props": {
+                    "text": "Electrical Issues Usually Get Worse",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-dont-ignore-7",
+                  "type": "text",
+                  "props": {
+                    "text": "Small electrical problems rarely stay small for long. A damaged wire or loose connection can eventually affect additional systems, including brake lights, ABS systems, and trailer signals. Fixing problems early helps prevent larger repairs later.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-warning-signs",
+                  "type": "heading",
+                  "props": {
+                    "text": "Signs Your Trailer Electrical System Needs Attention",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "warning-signs"
+                  }
+                },
+                {
+                  "id": "p-warning-signs-1",
+                  "type": "text",
+                  "props": {
+                    "text": "In some cases, running lights fail completely. In others, the system may show warning signs before total failure occurs.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-warning-signs-2",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Watch for:</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-warning-signs-3",
+                  "type": "check-list",
+                  "props": {
+                    "mark": "bullet",
+                    "items": [
+                      {
+                        "text": "Flickering lights"
+                      },
+                      {
+                        "text": "Dim trailer lights"
+                      },
+                      {
+                        "text": "Intermittent lighting issues"
+                      },
+                      {
+                        "text": "Corrosion near connectors"
+                      },
+                      {
+                        "text": "Repeated blown fuses"
+                      },
+                      {
+                        "text": "Moisture inside light housings"
+                      },
+                      {
+                        "text": "Loose wiring connections"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-warning-signs-4",
+                  "type": "text",
+                  "props": {
+                    "text": "If you notice these issues, <a href=\"/contact\">scheduling an inspection sooner</a> rather than later can help avoid roadside problems.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-2",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/no-running-lights-on-trailer-start-here/2.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Sun State service advisor speaking with a customer at the front counter"
+                    }
+                  }
+                },
+                {
+                  "id": "h-ready",
+                  "type": "heading",
+                  "props": {
+                    "text": "Keep Your Trailer Ready for the Road",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "ready"
+                  }
+                },
+                {
+                  "id": "p-ready-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Electrical problems can disrupt your entire operation if they're left unresolved. At Sun State Trailers, our parts and service team helps customers diagnose lighting issues quickly and get back on the road with confidence.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-preventive",
+                  "type": "heading",
+                  "props": {
+                    "text": "Preventive Maintenance Helps Avoid Electrical Failures",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "preventive"
+                  }
+                },
+                {
+                  "id": "p-preventive-1",
+                  "type": "text",
+                  "props": {
+                    "text": "One of the best ways to reduce trailer lighting issues is through regular inspections and maintenance. Electrical systems should always be part of your trailer maintenance routine.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-preventive-2",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>A strong inspection checklist should include:</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-preventive-3",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Testing running lights and brake lights"
+                      },
+                      {
+                        "text": "Inspecting the semi trailer electrical cord"
+                      },
+                      {
+                        "text": "Cleaning electrical connectors"
+                      },
+                      {
+                        "text": "Checking ground connections"
+                      },
+                      {
+                        "text": "Inspecting light assemblies for cracks or moisture"
+                      },
+                      {
+                        "text": "Verifying wiring integrity"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-preventive-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Routine maintenance helps identify wear before it creates major electrical failures.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-preventive-5",
+                  "type": "heading",
+                  "props": {
+                    "text": "When Professional Trailer Repair Makes Sense",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-preventive-6",
+                  "type": "text",
+                  "props": {
+                    "text": "Some electrical issues are easy to spot, but others require advanced diagnostics to find the root cause. Modern trailer electrical systems can become complex, especially when hidden wiring damage or grounding problems are involved.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-preventive-7",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>You should <a href=\"/contact\">schedule professional repair</a> if:</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-preventive-8",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Running lights fail repeatedly"
+                      },
+                      {
+                        "text": "Multiple lighting systems stop working"
+                      },
+                      {
+                        "text": "Wiring damage is visible"
+                      },
+                      {
+                        "text": "Electrical connectors are corroded"
+                      },
+                      {
+                        "text": "Fuses continue blowing"
+                      },
+                      {
+                        "text": "Lights work intermittently"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-schedule",
+                  "type": "heading",
+                  "props": {
+                    "text": "Schedule Parts and Service With Sun State Trailers",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "schedule"
+                  }
+                },
+                {
+                  "id": "p-schedule-1",
+                  "type": "text",
+                  "props": {
+                    "text": "For many trucking businesses, trailers are more than equipment. They are how drivers support their families, serve customers, and keep operations moving every day. That's why dependable trailer repair and maintenance matter. Whether you need electrical diagnostics, replacement parts, or routine service, our service department will help you get back on schedule as quickly as possible.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-schedule-2",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "schedule-service",
+                        "label": "Schedule Your Service Appointment"
+                      },
+                      {
+                        "ctaId": "contact-us",
+                        "label": "Contact Us",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-share",
+                  "type": "post-share",
+                  "props": {
+                    "label": "Share",
+                    "items": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fno-running-lights-on-trailer-start-here",
+                        "newTab": true
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fno-running-lights-on-trailer-start-here&text=No%20Running%20Lights%20on%20Trailer%3F%20Start%20Here",
+                        "newTab": true
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fno-running-lights-on-trailer-start-here",
+                        "newTab": true
+                      },
+                      {
+                        "label": "Email",
+                        "url": "mailto:?subject=No%20Running%20Lights%20on%20Trailer%3F%20Start%20Here&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fno-running-lights-on-trailer-start-here",
+                        "newTab": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Parts, service and support",
+          "heading": "Get your lights fixed right.",
+          "body": "Call 800.741.7566 to schedule electrical diagnostics at any Sun State location in Florida.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Schedule service",
+          "secondaryUrl": "/service-appointment"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/no-running-lights-on-trailer-start-here\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/no-running-lights-on-trailer-start-here\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n/* The hero photograph is framed a little high, as the design frames it. */\n[data-bz-section=\"post-hero\"] [data-bz-node=\"ph-photo\"] img { object-position: center 45%; }\n"
+}

@@ -1,0 +1,645 @@
+{
+  "slug": "what-fleets-should-look-for-in-a-semi-trailer-for-sale",
+  "title": "What Fleets Should Look for in a Semi Trailer for Sale: Specs, Standardization & Resale Value",
+  "date": "2025-10-05",
+  "description": "Looking for a semi-trailer for sale? Learn what fleets should evaluate for specs, ROI, and resale value. Explore new trailers today.",
+  "excerpt": "When you're in the market for a semi-trailer for sale, you're not just making another purchase; you're making an investment in your fleet's uptime, efficiency, and profitability. Whether you manage ten trucks…",
+  "status": "published",
+  "coverImage": "/img/blog/what-fleets-should-look-for-in-a-semi-trailer-for-sale/hero.jpg",
+  "topic": "Trailer Sales",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Trailer Sales",
+          "title": "What Fleets Should Look for in a Semi Trailer for Sale: Specs, Standardization & Resale Value",
+          "topic": "Trailer Sales",
+          "date": "October 5, 2025",
+          "readTime": "5 min read",
+          "author": "Sun State Trailers",
+          "image": {
+            "src": "/img/blog/what-fleets-should-look-for-in-a-semi-trailer-for-sale/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Sun State technician taking notes on a clipboard beside a row of trailers"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "1. Match Specs to Your Operation",
+                        "href": "#specs"
+                      },
+                      {
+                        "label": "2. Standardization",
+                        "href": "#standardization"
+                      },
+                      {
+                        "label": "3. Resale Value & Longevity",
+                        "href": "#resale"
+                      },
+                      {
+                        "label": "4. Buy vs. Rent",
+                        "href": "#buy-vs-rent"
+                      },
+                      {
+                        "label": "5. Partner With a Dealer",
+                        "href": "#dealer"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "WANT THE FULL SHEET?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "View detailed specifications before you compare trailers.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-trailers",
+                                "label": "View Our Trailer Specifications →"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "When you're in the market for a semi-trailer for sale, you're not just making another purchase; you're making an investment in your fleet's uptime, efficiency, and profitability. Whether you manage ten trucks or a hundred, the trailers you choose can make all the difference in your bottom line. At <a href=\"/locations/trailer-sales\">Sun State Trailers</a>, we know that smart buyers don't just look for availability; they look for dependability, long-term ROI, and support they can trust.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Here's what every fleet buyer should look for before signing the deal, from specs and standardization to long-term resale value, and how partnering with a trusted Florida dealer can set your business up for success.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-specs",
+                  "type": "heading",
+                  "props": {
+                    "text": "1. Match Trailer Specs to Your Operation",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "specs"
+                  }
+                },
+                {
+                  "id": "p-specs-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Before anything else, your trailers need to match your freight. It sounds simple, but it's one of the biggest mistakes buyers make: purchasing based on price or brand name instead of suitability.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-specs-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Key considerations when reviewing specs:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-specs-3",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "num3",
+                    "items": [
+                      {
+                        "points": [],
+                        "num": "1",
+                        "title": "Weight Capacity",
+                        "intro": "Know your cargo weights and confirm the trailer's Gross Vehicle Weight Rating (GVWR)."
+                      },
+                      {
+                        "points": [],
+                        "num": "2",
+                        "title": "Flooring and Wall Material",
+                        "intro": "Aluminum can reduce component weight, while steel is more durable but heavier."
+                      },
+                      {
+                        "points": [],
+                        "num": "3",
+                        "title": "Aerodynamics",
+                        "intro": "Modern designs can improve fuel efficiency."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-specs-4",
+                  "type": "text",
+                  "props": {
+                    "text": "When you work with Sun State Trailers, our team helps you evaluate specs that fit your operation's needs today and scale for tomorrow. Whether you're hauling dry goods across the country or managing refrigerated freight, we'll match you with a trailer that delivers performance and reliability mile after mile.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-standardization",
+                  "type": "heading",
+                  "props": {
+                    "text": "2. Standardization Saves Time and Money",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "standardization"
+                  }
+                },
+                {
+                  "id": "p-standardization-1",
+                  "type": "text",
+                  "props": {
+                    "text": "For fleets, standardization is more than convenience; it's a strategic advantage. When all your trailers share similar specs, maintenance costs go down, inventory management gets simpler, and driver training becomes faster.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-standardization-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Uniform trailers also help streamline operations by allowing parts to be interchangeable, reducing downtime when repairs are needed. For example, if your fleet uses standardized dry van trailers, your technicians can work faster and stock fewer replacement parts.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-standardization-3",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State Trailers, we carry a consistent lineup of new semi trailers and used semi trailers for sale from reputable brands like Hyundai Translead, built for performance and supported by our dependable Florida service network.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/what-fleets-should-look-for-in-a-semi-trailer-for-sale/1.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Row of standardized Hyundai Translead trailers parked side by side"
+                    }
+                  }
+                },
+                {
+                  "id": "h-resale",
+                  "type": "heading",
+                  "props": {
+                    "text": "3. Resale Value and Longevity Matter",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "resale"
+                  }
+                },
+                {
+                  "id": "p-resale-1",
+                  "type": "text",
+                  "props": {
+                    "text": "When evaluating a semi trailer for sale, it's important to think long-term. A lower upfront price might look appealing, but if the trailer depreciates faster or needs costly repairs, it'll hurt your ROI.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-resale-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Here's what helps protect your investment:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-resale-3",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "<strong>Brand Reputation</strong> — Well-known manufacturers like Hyundai Translead or Globe Trailers maintain stronger resale value."
+                      },
+                      {
+                        "text": "<strong>Material and Build Quality</strong> — Aluminum structures resist corrosion and hold value longer in humid climates like Florida's. Choosing quality upfront pays dividends when it's time to refresh your fleet."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-buy-vs-rent",
+                  "type": "heading",
+                  "props": {
+                    "text": "4. Consider Buy vs. Rent Options",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "buy-vs-rent"
+                  }
+                },
+                {
+                  "id": "p-buy-vs-rent-1",
+                  "type": "text",
+                  "props": {
+                    "text": "If you're expanding or replacing part of your fleet, it's worth exploring both purchase and rental options. Buying new or used trailers gives you ownership benefits and the ability to claim depreciation, which can help offset costs come tax season (though you should always consult a qualified tax professional for specific guidance).",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-buy-vs-rent-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Renting, on the other hand, can provide flexibility for seasonal demand or temporary contracts without long-term commitments. Sun State Trailers offers both trailer rental and purchase options to fit your business's financial and operational goals.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-buy-vs-rent-3",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "browse-new-trailers",
+                        "label": "Check Out Our New Trailers",
+                        "style": "primary"
+                      },
+                      {
+                        "ctaId": "browse-used-trailers",
+                        "label": "Explore Our Used Trailers",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-dealer",
+                  "type": "heading",
+                  "props": {
+                    "text": "5. Partner With a Dealer That Has Your Back",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "dealer"
+                  }
+                },
+                {
+                  "id": "p-dealer-1",
+                  "type": "text",
+                  "props": {
+                    "text": "The dealership you choose can be just as important as the trailer itself. You deserve a partner who understands the trucking industry, provides clear communication, and stands by their product long after the sale.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-dealer-2",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State Trailers, customer relationships are built on trust, transparency, and dependable service. As a family-owned Florida dealership, we've helped owner-operators and fleets across the state find, finance, and maintain trailers that keep their business moving forward.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-dealer-3",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Our team doesn't just hand you the keys; we make sure you're supported with:</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-dealer-4",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Local service and parts availability"
+                      },
+                      {
+                        "text": "Financing options that make sense for your business"
+                      },
+                      {
+                        "text": "Honest communication from start to finish"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-dealer-5",
+                  "type": "text",
+                  "props": {
+                    "text": "When uptime matters, we make sure you're never left waiting.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-2",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/what-fleets-should-look-for-in-a-semi-trailer-for-sale/2.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Sun State team member greeting visitors at the dealership entrance"
+                    }
+                  }
+                },
+                {
+                  "id": "h-find-the-right-equipment",
+                  "type": "heading",
+                  "props": {
+                    "text": "Find the Right Equipment for Your Business",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-find-the-right-equipment-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Buying a semi trailer for sale is more than a transaction; it's a partnership between your business and your dealer. From specs and standardization to resale value and service support, every choice affects your fleet's future performance. At Sun State Trailers, we're here to make that decision easier with dependable products, straightforward service, and a team that treats you like family.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-find-the-right-equipment-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Ready to upgrade your fleet? Explore our trailer inventory available for sale or contact our team today to get started.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-3",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/what-fleets-should-look-for-in-a-semi-trailer-for-sale/3.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Sun State technician checking the rear door hardware on a trailer"
+                    }
+                  }
+                },
+                {
+                  "id": "actions-find-the-right-equipment-3",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "browse-new-trailers",
+                        "label": "Check Out Our New Trailers",
+                        "style": "primary"
+                      },
+                      {
+                        "ctaId": "browse-used-trailers",
+                        "label": "Explore Our Used Trailers",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-share",
+                  "type": "post-share",
+                  "props": {
+                    "label": "Share",
+                    "items": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhat-fleets-should-look-for-in-a-semi-trailer-for-sale",
+                        "newTab": true
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhat-fleets-should-look-for-in-a-semi-trailer-for-sale&text=What%20Fleets%20Should%20Look%20for%20in%20a%20Semi%20Trailer%20for%20Sale%3A%20Specs%2C%20Standardization%20%26%20Resale%20Value",
+                        "newTab": true
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhat-fleets-should-look-for-in-a-semi-trailer-for-sale",
+                        "newTab": true
+                      },
+                      {
+                        "label": "Email",
+                        "url": "mailto:?subject=What%20Fleets%20Should%20Look%20for%20in%20a%20Semi%20Trailer%20for%20Sale%3A%20Specs%2C%20Standardization%20%26%20Resale%20Value&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhat-fleets-should-look-for-in-a-semi-trailer-for-sale",
+                        "newTab": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Trailer sales",
+          "heading": "Find the right trailer for your fleet.",
+          "body": "Call 800.741.7566 to talk with our team at any Sun State location in Florida.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Browse trailer inventory",
+          "secondaryUrl": "/store/inventory?type=trailer"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/what-fleets-should-look-for-in-a-semi-trailer-for-sale\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/what-fleets-should-look-for-in-a-semi-trailer-for-sale\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n/* The hero photograph is framed a little high, as the design frames it. */\n[data-bz-section=\"post-hero\"] [data-bz-node=\"ph-photo\"] img { object-position: center 40%; }\n\n/* Its numbered cards sit as far apart as the design's grids: 28px two across, 24px three. */\n[data-bz-node=\"art-body\"] .ss-cl--num { gap: 28px; }\n[data-bz-node=\"art-body\"] .ss-cl--num3 { gap: 24px; }\n\n[data-bz-node=\"art-body\"] > [data-bz-node=\"actions-buy-vs-rent-3\"] .bz-btns { margin: 8px 0 34px; }\n"
+}

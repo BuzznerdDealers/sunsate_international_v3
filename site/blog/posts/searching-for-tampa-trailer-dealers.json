@@ -1,0 +1,598 @@
+{
+  "slug": "searching-for-tampa-trailer-dealers",
+  "title": "Searching for Tampa Trailer Dealers? Here's Why Florida Fleets Choose Sun State Trailers as Their Long-Term Partner",
+  "date": "2025-10-24",
+  "description": "Discover why Florida fleets rely on Sun State Trailers for dependable sales, rentals, and service. Contact our Tampa trailer dealers today.",
+  "excerpt": "When you're managing a fleet, every hour your trailers spend off the road costs you money. That's why fleet owners and operators across Florida turn to Sun State Trailers, one of the most trusted Tampa trailer…",
+  "status": "published",
+  "coverImage": "/img/blog/searching-for-tampa-trailer-dealers/hero.jpg",
+  "topic": "Trailer Sales",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Trailer Sales",
+          "title": "Searching for Tampa Trailer Dealers? Here's Why Florida Fleets Choose Sun State Trailers as Their Long-Term Partner",
+          "topic": "Trailer Sales",
+          "date": "October 24, 2025",
+          "readTime": "4 min read",
+          "author": "Sun State Trailers",
+          "image": {
+            "src": "/img/blog/searching-for-tampa-trailer-dealers/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Sun State team member walking past a row of Hyundai Translead trailers at the Florida lot"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "Why Fleets Prefer Local Dealers",
+                        "href": "#local-dealers"
+                      },
+                      {
+                        "label": "Buy, Rent, or Sell",
+                        "href": "#buy-rent"
+                      },
+                      {
+                        "label": "Local Service That Keeps You Moving",
+                        "href": "#service"
+                      },
+                      {
+                        "label": "Why Fleets Stay Loyal",
+                        "href": "#loyalty"
+                      },
+                      {
+                        "label": "The Experienced Partner Advantage",
+                        "href": "#experienced-partner"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "WANT THE FULL SHEET?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "View detailed specifications before you compare trailers.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-trailers",
+                                "label": "View Our Trailer Specifications →"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "When you're managing a fleet, every hour your trailers spend off the road costs you money. That's why fleet owners and operators across Florida turn to <a href=\"/locations/trailer-sales\">Sun State Trailers</a>, one of the most trusted Tampa trailer dealers, for quality, reliability, and dependable customer care.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "As a family-owned business with over 25 years of experience, Sun State Trailers has built its reputation on providing trailers and services that keep freight moving. Whether you're looking to buy, sell, or rent, the team delivers personalized solutions that match your operational needs and your budget.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-local-dealers",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Fleet Owners Prefer Local Dealers Like Sun State",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "local-dealers"
+                  }
+                },
+                {
+                  "id": "p-local-dealers-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Working with a local Tampa trailer dealer gives you something online marketplaces can't: trust and accountability. When your business depends on your equipment, you need a partner who's accessible, transparent, and committed to your success.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-local-dealers-2",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State Trailers, that means:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-local-dealers-3",
+                  "type": "check-list",
+                  "props": {
+                    "mark": "dot",
+                    "items": [
+                      {
+                        "text": "Quick communication when you need parts, service, or sales support"
+                      },
+                      {
+                        "text": "Local expertise that understands Florida's roads, regulations, and conditions"
+                      },
+                      {
+                        "text": "Flexible financing options tailored to your fleet's size and growth goals"
+                      },
+                      {
+                        "text": "On-site service and fast turnaround times to reduce downtime"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-local-dealers-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Bottom line: fleet owners value long-term relationships built on integrity. That's why they keep choosing Sun State.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-buy-rent",
+                  "type": "heading",
+                  "props": {
+                    "text": "Trailers for Every Need: Buy, Rent, or Sell",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "buy-rent"
+                  }
+                },
+                {
+                  "id": "p-buy-rent-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Sun State Trailers understands that no two fleets are alike. Whether you need short-term rentals or a full purchase for expansion, you'll find a variety of options designed to keep your business running smoothly.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-buy-rent-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "type",
+                    "items": [
+                      {
+                        "title": "Buying a Trailer",
+                        "points": [],
+                        "intro": "Investing in a new or used trailer gives you full ownership and control. Sun State Trailers offers industry-leading brands like Hyundai Translead, known for their durability, fuel efficiency, and superior engineering. Purchasing from a reputable dealer also comes with benefits like warranty protection and expert servicing."
+                      },
+                      {
+                        "title": "Renting a Trailer",
+                        "points": [],
+                        "intro": "For seasonal operations or temporary demand spikes, trailer rentals are a cost-effective way to expand capacity without long-term commitment. You can rent dry vans, reefers, or dump trailers on flexible terms, perfect for Florida businesses navigating fluctuating freight demands."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-buy-rent-3",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Bonus tip:</strong> Owning your trailer can also offer potential tax benefits through depreciation, but always consult a tax professional before making financial decisions.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/searching-for-tampa-trailer-dealers/1.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Close-up view under a row of Hyundai Translead trailer axles and mud flaps"
+                    }
+                  }
+                },
+                {
+                  "id": "h-service",
+                  "type": "heading",
+                  "props": {
+                    "text": "Local Service That Keeps You Moving",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "service"
+                  }
+                },
+                {
+                  "id": "p-service-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Beyond sales, what truly sets Sun State apart from other Tampa trailer dealers is its service philosophy. When your trailer needs attention, you shouldn't have to wait weeks for repairs. That's why Sun State Trailers offers fast, reliable service backed by experienced technicians who understand the urgency of keeping your fleet operational.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-service-2",
+                  "type": "text",
+                  "props": {
+                    "text": "From preventive maintenance to emergency repairs, you'll find everything under one roof. Fleet managers also appreciate the convenience of Sun State's multiple Florida locations, Tampa, Sarasota, and Davenport, making support never too far away.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-service-3",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "contact-us",
+                        "label": "Contact the Sun State Trailers Team"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-loyalty",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Florida Fleets Stay Loyal to Sun State",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "loyalty"
+                  }
+                },
+                {
+                  "id": "p-loyalty-1",
+                  "type": "text",
+                  "props": {
+                    "text": "In a crowded market, customer experience is what truly sets Sun State Trailers apart. Our commitment goes beyond a transaction; it's a partnership. When you work with Sun State Trailers, you're backed by:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-loyalty-2",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "A family-owned company that values honesty and hard work"
+                      },
+                      {
+                        "text": "Long-term relationships built on trust and consistent results"
+                      },
+                      {
+                        "text": "Transparent pricing with no hidden surprises"
+                      },
+                      {
+                        "text": "Support after the sale, including financing and parts access"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-loyalty-3",
+                  "type": "text",
+                  "props": {
+                    "text": "It's a formula that's earned Sun State Trailers a reputation as one of Florida's most reliable trailer dealers, with repeat customers and referrals driving much of their growth.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-experienced-partner",
+                  "type": "heading",
+                  "props": {
+                    "text": "The Advantage of Working With an Experienced Local Partner",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "experienced-partner"
+                  }
+                },
+                {
+                  "id": "p-experienced-partner-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Choosing a trailer dealer isn't just about finding the lowest price; it's about finding a partner who supports your business for the long haul. Sun State Trailers' experience in both sales and service ensures that every recommendation is made with your success in mind.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-experienced-partner-2",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Our experts help you:</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-experienced-partner-3",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Select the best trailer model for your routes and freight"
+                      },
+                      {
+                        "text": "Explore lease-to-own or financing options that protect cash flow"
+                      },
+                      {
+                        "text": "Stay compliant with Florida transportation regulations"
+                      },
+                      {
+                        "text": "Access maintenance programs that extend trailer lifespan"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-experienced-partner-4",
+                  "type": "text",
+                  "props": {
+                    "text": "When your business relies on uptime, every detail matters, and that's where Sun State Trailers delivers peace of mind.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-experienced-partner-5",
+                  "type": "text",
+                  "props": {
+                    "text": "Whether you're expanding your operation, upgrading your equipment, or looking to rent trailers for the busy season, <a href=\"/locations/trailer-sales\">Sun State Trailers</a> is your trusted partner in Tampa and beyond. Our combination of dependable service, high-quality trailers, and genuine care makes us more than just a dealership; we're part of the Florida trucking community that keeps freight moving.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-experienced-partner-6",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "contact-us",
+                        "label": "Contact a Team Member"
+                      },
+                      {
+                        "ctaId": "browse-trailers",
+                        "label": "Browse Trailer Inventory",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-share",
+                  "type": "post-share",
+                  "props": {
+                    "label": "Share",
+                    "items": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fsearching-for-tampa-trailer-dealers",
+                        "newTab": true
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fsearching-for-tampa-trailer-dealers&text=Searching%20for%20Tampa%20Trailer%20Dealers%3F%20Here%27s%20Why%20Florida%20Fleets%20Choose%20Sun%20State%20Trailers%20as%20Their%20Long-Term%20Partner",
+                        "newTab": true
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fsearching-for-tampa-trailer-dealers",
+                        "newTab": true
+                      },
+                      {
+                        "label": "Email",
+                        "url": "mailto:?subject=Searching%20for%20Tampa%20Trailer%20Dealers%3F%20Here%27s%20Why%20Florida%20Fleets%20Choose%20Sun%20State%20Trailers%20as%20Their%20Long-Term%20Partner&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fsearching-for-tampa-trailer-dealers",
+                        "newTab": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Trailer sales",
+          "heading": "Your long-term trailer partner in Florida.",
+          "body": "Call 800.741.7566 to talk with our team at any Sun State location in Florida.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Browse trailer inventory",
+          "secondaryUrl": "/store/inventory?type=trailer"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/searching-for-tampa-trailer-dealers\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/searching-for-tampa-trailer-dealers\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n/* The hero photograph is framed a little high, as the design frames it. */\n[data-bz-section=\"post-hero\"] [data-bz-node=\"ph-photo\"] img { object-position: center 45%; }\n\n/* Its type cards: 24px in, the title 10px over a 14px list. */\n[data-bz-node=\"art-body\"] .ss-cl--type,\n[data-bz-node=\"art-body\"] .ss-cl--type3 { gap: 24px; }\n[data-bz-node=\"art-body\"] .ss-cl--type { gap: 28px; }\n[data-bz-node=\"art-body\"] .ss-cl--type .ss-cl__card { padding: 24px; }\n[data-bz-node=\"art-body\"] .ss-cl--type .ss-cl__t { margin: 0 0 10px; }\n[data-bz-node=\"art-body\"] :is(.ss-cl--type, .ss-cl--type3) .ss-cl__list { margin: 0; padding-left: 18px; }\n[data-bz-node=\"art-body\"] :is(.ss-cl--type, .ss-cl--type3) .ss-cl__list li { font-size: 14px; }\n\n/* A type card's sentence is set as body text, as the article's paragraphs are. */\n[data-bz-node=\"art-body\"] :is(.ss-cl--type, .ss-cl--type3) .ss-cl__p { font-size: 17px; line-height: 1.8; margin: 0 0 18px; }\n\n[data-bz-node=\"art-body\"] > [data-bz-node=\"actions-service-3\"] .bz-btns { margin: 8px 0 34px; }\n"
+}

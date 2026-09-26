@@ -1,5 +1,8 @@
 """Blog handoff (Part N of 6) -> site/blog/posts/<slug>.json, and the blog page's cards.
 
+Also reads a prototype batch (`.dc.html` pages beside an index) and a standalone post
+handoff (one framework-free `index.html` with `css/` and `assets/`).
+
     python3 tools/blog-handoff/convert.py <path to sunstate-blog-handoff-part-N>
 
 Needs BeautifulSoup (`pip install beautifulsoup4`). Run `npm run check` afterwards.
@@ -108,6 +111,35 @@ def dc_href(h, label):
     raise SystemExit(f"unmapped design-page link: {h} ({label})")
 
 
+# A standalone post handoff (`SS_International_10`: one `index.html`, framework-free HTML)
+# links to its sibling pages by flat file name. "Sun State Trailers" in its prose is the
+# Trailer Sales rooftop, as in every other trailer post.
+FLAT_PAGES = {
+    "home.html": "/", "blog.html": "/blog", "service.html": "/service",
+    "service-appointment.html": "/service-appointment", "contact-us.html": "/contact",
+    "financing.html": "/financing", "parts.html": "/parts",
+    # No trailer-specifications page exists on this site; each listing carries its specs (§15).
+    "trailer-specifications.html": "/store/inventory?type=trailer",
+}
+
+
+def trailer_sales_href(label):
+    """`trailer-sales.html` is the business, its stock and its rentals: what the link says decides."""
+    l = (label or "").lower()
+    if re.search(r"\brent", l):
+        return "/store/inventory?type=trailer&condition=rental"  # as the Inventory page links rentals
+    if "sun state" in l:
+        return "/locations/trailer-sales"  # "Sun State Trailers" in the prose
+    if "trailer" in l and not re.search(r"\bnew\b|\bused\b", l):
+        return "/store/inventory?type=trailer"  # a kind of trailer named in the prose: the listings
+    new, used = re.search(r"\bnew\b", l), re.search(r"\bused\b", l)
+    if new and used: return "/store/inventory?type=trailer"
+    if used: return "/store/inventory?type=trailer&condition=used"
+    if new: return "/store/inventory?type=trailer&condition=new"
+    if re.search(r"inventory|in stock|available|browse|explore|\bfind\b|check out", l): return "/store/inventory?type=trailer"
+    return "/locations/trailer-sales"
+
+
 def href_of(a):
     return map_href(a["href"], plain(a))
 
@@ -115,6 +147,10 @@ def href_of(a):
 def map_href(h, label=None):
     if h.endswith(".dc.html"):
         return dc_href(h, label)
+    if h == "trailer-sales.html":
+        return trailer_sales_href(label)
+    if h in FLAT_PAGES:
+        return FLAT_PAGES[h]
     if h.endswith("blog.html"):
         return "/blog"
     if h.endswith(".html") and ("/posts/" in h or "/" not in h):
@@ -151,7 +187,7 @@ DEST = {
     "/store/inventory?type=trailer": "browse-trailers",
     "/locations/trailer-sales": "trailer-sales-location",
     "/store/inventory?type=trailer&condition=new": "browse-new-trailers",
-    "/store/inventory?type=trailer&condition=used": "browse-used-trailers", "/financing": "financing", "/reviews": "read-reviews",
+    "/store/inventory?type=trailer&condition=used": "browse-used-trailers", "/store/inventory?type=trailer&condition=rental": "browse-trailer-rentals", "/financing": "financing", "/reviews": "read-reviews",
     "/truck-configurator": "truck-configurator-link", "/specifications": "s13-powertrain", "/extended-service": "extended-service",
 }
 lib = {b["id"]: b for b in buttons}
@@ -230,6 +266,7 @@ IMG_DST = f"{REPO}/public/img/blog/"
 
 
 PAGE_DIR = None  # the handoff page being converted; its images resolve against it
+STANDALONE = False  # a standalone handoff (§24): its inline paragraph margins are read
 
 
 def place_image(slug, src, name):
@@ -237,11 +274,26 @@ def place_image(slug, src, name):
     source = os.path.join(PAGE_DIR, src) if PAGE_DIR and os.path.exists(os.path.join(PAGE_DIR, src)) else IMG_SRC + fname
     os.makedirs(IMG_DST + slug, exist_ok=True)
     dst = f"{IMG_DST}{slug}/{name}.jpg"
-    assert source.lower().endswith((".jpg", ".jpeg")), source
+    assert source.lower().endswith((".jpg", ".jpeg", ".png")), source
     with open(source, "rb") as f:
         is_jpeg = f.read(2) == b"\xff\xd8"
-    if is_jpeg:
-        shutil.copyfile(source, dst)
+    if source.lower().endswith(".png"):
+        # A standalone handoff ships 2000px PNGs at ~3 MB: a real JPEG at the 1280px the
+        # other posts' photographs are.
+        from PIL import Image
+        im = Image.open(source).convert("RGB")
+        if im.width > 1280:
+            im = im.resize((1280, round(im.height * 1280 / im.width)), Image.LANCZOS)
+        im.save(dst, "JPEG", quality=85, optimize=True, progressive=False)
+    elif is_jpeg:
+        from PIL import Image
+        im = Image.open(source)
+        if im.width > 1280:
+            # Batch 12 ships 1600px exports: the 1280px the other posts' photographs are.
+            im.convert("RGB").resize((1280, round(im.height * 1280 / im.width)), Image.LANCZOS).save(
+                dst, "JPEG", quality=85, optimize=True, progressive=False)
+        else:
+            shutil.copyfile(source, dst)
     else:
         # Batch 4 ships its photographs as opaque RGBA PNGs under a .jpg name, at ~1.3 MB
         # each. Served as they are, the file lies about its type; transcode to a real JPEG.
@@ -304,8 +356,13 @@ def callout(cid, box, style, css=None):
         else:
             raise SystemExit(f"callout child <{c.name}>")
     top, bottom = margins(style)
-    return row(f"{cid}-row", [col(cid, kids, styles={**BOX, "paddingTop": 26, "paddingRight": 28, "paddingBottom": 26,
-                                                      "paddingLeft": 28, "marginTop": top, "marginBottom": bottom})])
+    pad = {**BOX, "paddingTop": 26, "paddingRight": 28, "paddingBottom": 26, "paddingLeft": 28}
+    if STANDALONE:
+        # On the row, which sits in the article's normal flow, the margins collapse with the
+        # paragraph above and the photograph below as the design's do; on the column, inside
+        # the row's grid, they would add to them (~50px more around every callout).
+        return row(f"{cid}-row", [col(cid, kids, styles=pad)], styles={"marginTop": top, "marginBottom": bottom})
+    return row(f"{cid}-row", [col(cid, kids, styles={**pad, "marginTop": top, "marginBottom": bottom})])
 
 
 ID_ALIASES = {
@@ -316,7 +373,46 @@ ID_ALIASES = {
     },
 }
 
-RUNS = {"stage-row": "stages", "cost-card": "cost", "diff-row": "diff", "problem-card": "stacked", "repair-card": "inline", "step-row": "steps", "faq-item": "qa"}
+RUNS = {"card": "stack", "stage-row": "stages", "cost-card": "cost", "diff-row": "diff", "problem-card": "stacked", "repair-card": "inline", "step-row": "steps", "faq-item": "qa"}
+
+
+def card_item(card):
+    """A titled card: a title, an optional sentence, an optional list, an optional closing note,
+    an optional small label above the title and an accent line at its foot."""
+    it = {"title": "", "points": []}
+    if re.search(r"grid-column:\s*1\s*/\s*-1", card.get("style", "")):
+        it["wide"] = True  # the odd card out, spanning the row
+    for y in [y for y in card.children if isinstance(y, Tag)]:
+        cls = y.get("class", [])
+        if y.name == "h3": it["title"] = plain(y)
+        elif y.name == "div" and "eyebrow" in cls: it["label"] = plain(y)
+        elif y.name == "div" and "best-for" in cls: it["tag"] = plain(y)
+        elif y.name == "p" and not it["points"] and "intro" not in it: it["intro"] = inline_html(y)
+        elif y.name == "ul": it["points"] = [{"text": inline_html(li)} for li in y.find_all("li", recursive=False)]
+        elif y.name == "p" and it["points"]: it["outro"] = plain(y)
+        else: raise SystemExit(f"card child <{y.name} {cls}>")
+    return it
+
+
+def across(cls):
+    """How many columns a design grid draws, as Card lists' Across setting."""
+    for n_, names in (("5", ("grid-5",)), ("4", ("grid--4", "grid-4")), ("3", ("grid--3", "grid-3")), ("2", ("grid--2", "grid-2"))):
+        if any(c in cls for c in names): return n_
+    return ""
+
+
+def style_margins(st, bottom_only=False):
+    """An element's own inline top and bottom margins, as node styles."""
+    out = {}
+    m = re.search(r"margin-top:\s*([0-9]+)px", st)
+    if m and not bottom_only: out["marginTop"] = int(m.group(1))
+    m = re.search(r"margin-bottom:\s*([0-9]+)px", st)
+    if m: out["marginBottom"] = int(m.group(1))
+    m = re.search(r"(?<![-\w])margin:\s*([0-9]+)px\s+0(?:\s+([0-9]+)px)?", st)
+    if m:
+        if not bottom_only: out["marginTop"] = int(m.group(1))
+        out["marginBottom"] = int(m.group(2) or m.group(1))
+    return out or None
 
 
 def detail_card(card):
@@ -339,18 +435,111 @@ def page_slug(path, raw=None):
     """A sunstateintl.com article keeps its live permalink as its slug — the file may carry a
     shortened name (batch 3 does), and the permalink is the address search engines hold."""
     raw = raw if raw is not None else open(path).read()
+    if os.path.basename(path) == "index.html":
+        # A standalone handoff is always index.html; the post is its canonical permalink.
+        m = re.search(r'rel="canonical" href="https?://[^"]+/([^"/]+)/?"', raw)
+        return m.group(1)
     m = re.search(r'rel="canonical" href="https://www\.sunstateintl\.com/([^"/]+)/?"', raw)
     return m.group(1) if m else os.path.basename(path)[:-5]
 
 
+def normalise_standalone(s):
+    """A standalone post handoff draws the same post as the prototype batches with its own
+    class names. Rename them to the shapes convert() reads, so the post comes out on the
+    shared layout with the same ids, buttons and styling as every other post.
+    Returns the extra CSS the page asks for that the shared layer does not carry."""
+    extra = []
+    hero = s.select_one("section.hero--post")
+    if hero is None:
+        return extra
+    hero["class"] = ["post-hero"]
+    img = hero.find("img")
+    pos = re.search(r"object-position:\s*([^;\"]+)", img.get("style", "")) if img else None
+    if pos and pos.group(1).strip() not in ("center", "center center", "50% 50%"):
+        extra.append(f'/* The hero photograph is framed a little high, as the design frames it. */\n'
+                     f'[data-bz-section="post-hero"] [data-bz-node="ph-photo"] img {{ object-position: {pos.group(1).strip()}; }}')
+    for t in hero.select(".post-byline time"):
+        t.name = "span"  # the byline's date, read with its other parts
+    toc = s.select_one("aside.toc")
+    toc["class"] = ["post-toc"]
+    toc.select_one(".toc__aside")["style"] = "margin-top: 26px"
+    s.select_one(".article__body")["class"] = ["post-body"]
+    for f in s.select(".post-body > figure.figure"):
+        assert not f.find("figcaption"), f
+        f.name = "div"; f["style"] = "position: relative"; del f["class"]
+    for g in s.select(".post-body > div.grid--3"):
+        g["class"] = ["grid-3"]
+    for g in s.select(".post-body > div.grid--2"):
+        if g.find("div", class_="card", recursive=False) and g.select(":scope > .card > h3"):
+            continue  # titled cards two across: stacked Card lists, read below
+        g["class"] = ["grid-2"]
+        for c in g.find_all("div", class_="card", recursive=False):
+            c["class"] = ["factor-card"]
+    for c in s.select(".post-body > div.callout"):
+        c["style"] = "border: 1px solid var(--color-line); margin: 34px 0"  # .callout
+    for a in s.select(".post-body > div.article__actions:not(.article__actions--inline)"):
+        a["style"] = "display: flex"
+        for b in a.select("a.btn--primary"):
+            b["class"] = b.get("class", []) + ["hv-2"]
+    for b in s.select(".post-body > div.article__actions--inline a.btn--primary"):
+        b["class"] = b.get("class", []) + ["hv-2"]
+    if s.select(".post-body .type-card"):
+        extra.append("/* Its type cards: 24px in, the title 10px over a 14px list. */\n"
+                     '[data-bz-node="art-body"] .ss-cl--type,\n[data-bz-node="art-body"] .ss-cl--type3 { gap: 24px; }\n'
+                     '[data-bz-node="art-body"] .ss-cl--type { gap: 28px; }\n'
+                     '[data-bz-node="art-body"] .ss-cl--type .ss-cl__card { padding: 24px; }\n'
+                     '[data-bz-node="art-body"] .ss-cl--type .ss-cl__t { margin: 0 0 10px; }\n'
+                     '[data-bz-node="art-body"] :is(.ss-cl--type, .ss-cl--type3) .ss-cl__list { margin: 0; padding-left: 18px; }\n'
+                     '[data-bz-node="art-body"] :is(.ss-cl--type, .ss-cl--type3) .ss-cl__list li { font-size: 14px; }')
+    if s.select(".post-body .num-card"):
+        extra.append("/* Its numbered cards sit as far apart as the design's grids: 28px two across, 24px three. */\n"
+                     '[data-bz-node="art-body"] .ss-cl--num { gap: 28px; }\n[data-bz-node="art-body"] .ss-cl--num3 { gap: 24px; }')
+    if s.select(".post-body .type-card > p"):
+        extra.append("/* A type card's sentence is set as body text, as the article's paragraphs are. */\n"
+                     '[data-bz-node="art-body"] :is(.ss-cl--type, .ss-cl--type3) .ss-cl__p { font-size: 17px; line-height: 1.8; margin: 0 0 18px; }')
+    for d in s.select(".post-body > div:not([class])"):
+        # A button row written inline (batch 15): the mid-article button row, at its own margins.
+        if "display: flex" in d.get("style", "") and d.find_all(recursive=False) and all(
+                a.name == "a" and "btn" in a.get("class", []) for a in d.find_all(recursive=False)):
+            d["class"] = ["article__actions--inline"]
+            for b in d.select("a.btn--primary"):
+                b["class"] = b.get("class", []) + ["hv-2"]
+    for d in s.select(".post-body > div:not([class])"):
+        cards = d.find_all(recursive=False)
+        if cards and all("card" in c.get("class", []) for c in cards):
+            mb = re.search(r"margin-bottom:\s*([0-9]+)px", d.get("style", ""))
+            if mb: cards[-1]["style"] = f"margin-bottom: {mb.group(1)}px"
+            d.unwrap()  # a run of titled cards: one stacked Card list
+    for c in s.select(".post-body > div.check-list"):
+        if c.find_all(recursive=False) and all("faq-item" in k.get("class", []) for k in c.find_all(recursive=False)):
+            del c["class"]  # a plain run of questions, read as one Question list
+            extra.append("/* Its questions are ruled above each, and closed off below the last. */\n"
+                         '[data-bz-node="art-body"] .ss-qa { margin-bottom: 20px; }\n'
+                         '[data-bz-node="art-body"] .ss-qa__i { border-bottom: 0; border-top: 1px solid var(--line); }\n'
+                         '[data-bz-node="art-body"] .ss-qa__i:last-child { border-bottom: 1px solid var(--line); }\n'
+                         '[data-bz-node="art-body"] .ss-qa__a { font-size: 15px; }')
+    if s.select(".post-body .step-item"):
+        extra.append("/* Its numbered steps: a 22px heading over 16.5px copy, as the design sets them. */\n"
+                     '[data-bz-node="art-body"] .bz-col [data-bz-node^="h-step-"] h2 { font-size: 22px; line-height: 1.28; margin: 0 0 10px; }\n'
+                     '[data-bz-node="art-body"] .bz-col [data-bz-node^="p-step-"] p { font-size: 16.5px; line-height: 1.75; margin: 0; }')
+    for sh in s.select(".post-body > div.share"):
+        sh["style"] = "border-top: 1px solid var(--color-line); display: flex"
+    for sec in s.find("main").find_all("section", recursive=False):
+        for w in sec.select("div.wrap"):
+            w.unwrap()  # the CTA band's eyebrow is then the band's first div's first div
+    return extra
+
+
 def convert(path):
-    global PAGE_DIR
+    global PAGE_DIR, STANDALONE
     PAGE_DIR = os.path.dirname(path)
     slug = page_slug(path)
     raw = open(path).read()
     s = BeautifulSoup(raw, "html.parser")
-    own_style = re.search(r"<style>(.*?)</style>", raw, re.S).group(1)
-    extra_css = []
+    own = re.search(r"<style>(.*?)</style>", raw, re.S)
+    own_style = own.group(1) if own else ""  # a standalone handoff keeps its CSS in css/
+    STANDALONE = s.select_one("section.hero--post") is not None
+    extra_css = normalise_standalone(s)
     main = s.find("main")
     hero = main.select_one("section.post-hero")
     hero_img = hero.find("img")
@@ -437,6 +626,10 @@ def convert(path):
             kind, els = el
             if RUNS[kind] in ("stacked", "inline"):
                 out.append(n(nid("details"), "detail-cards", {"variant": RUNS[kind], "items": [detail_card(x) for x in els]}))
+            elif RUNS[kind] == "stack":
+                # Titled cards one under another (batch 15): Card lists, stacked.
+                out.append(n(nid("cards"), "card-lists", {"variant": "stack", "items": [card_item(x) for x in els]},
+                             styles=style_margins(els[-1].get("style", ""), bottom_only=True)))
             elif RUNS[kind] == "cost":
                 # Cost cards, one per row: title, sentence, list, a closing note — Card lists.
                 items = []
@@ -506,6 +699,10 @@ def convert(path):
                 extra_css.append(f'[data-bz-node="art-body"] .bz-col [data-bz-node="{cid}-text"].bz-block--text p {{ font-family: var(--font-heading); font-size: inherit; line-height: 1.4; font-weight: inherit; color: inherit; margin: 0; max-width: none; }}')
             elif pending_anchor:
                 out.append(text(nid("p"), inline_html(el), anchor=pending_anchor)); pending_anchor = None
+            elif STANDALONE and style_margins(st) and not (
+                    out and out[-1].get("styles", {}).get("base", {}).get("marginBottom") == style_margins(st).get("marginTop")):
+                # (the card row above already carries a 20px foot for the paragraph that follows it)
+                out.append(text(nid("p"), inline_html(el), styles=style_margins(st)))
             else:
                 out.append(text(nid("p"), inline_html(el)))
         elif el.name == "h2" and not plain(el) and "display:none" in st.replace(" ", ""):
@@ -525,9 +722,20 @@ def convert(path):
                 col(f"nh-{sec}-col", [n(f"h-{sec}", "heading", {"text": plain(h), "headingLevel": 2, "align": "left", "anchor": sec})],
                     span=11, styles={"flexGrow": 1}),
             ], styles={"display": "flex", "alignItems": "baseline", "marginTop": 52, "marginBottom": 16}))
+        elif el.name == "h2" and not el.get("id"):
+            # A heading the contents rail does not list (batch 14's closing one): no anchor, and
+            # its node named from its first words.
+            sec = "-".join(slugify(plain(el)).split("-")[:4])
+            out.append(n(f"h-{sec}", "heading", {"text": plain(el), "headingLevel": 2, "align": "left"}))
+            mt = re.search(r"margin-top:\s*([0-9]+)px", st)
+            if STANDALONE and mt:
+                extra_css.append(f'[data-bz-node="art-body"] [data-bz-node="h-{sec}"] h2 {{ margin-top: {mt.group(1)}px; }}')
         elif el.name == "h2":
             sec = el["id"]
             out.append(n(f"h-{sec}", "heading", {"text": plain(el), "headingLevel": 2, "align": "left", "anchor": sec}))
+            mt = re.search(r"margin-top:\s*([0-9]+)px", st)
+            if STANDALONE and mt and "font-family" not in st:
+                extra_css.append(f'[data-bz-node="art-body"] [data-bz-node="h-{sec}"] h2 {{ margin-top: {mt.group(1)}px; }}')
         elif el.name == "h3":
             p = {"text": plain(el), "headingLevel": 3, "align": "left"}
             if el.get("id"):
@@ -546,7 +754,11 @@ def convert(path):
                     rows.append({"title": t, "text": plain(td)})
                 else:
                     rows.append({"text": plain(td)})
-            out.append(n(nid("checks"), "check-list", {**({"mark": "cross"} if "redflag-table" in cls else {}), "items": rows}))
+            bullet = [plain(tr.find("td")) for tr in el.select("tr")] == ["•"] * len(rows)  # warning signs, not ticks
+            numbered = [plain(tr.find("td")) for tr in el.select("tr")] == [f"{i+1:02d}" for i in range(len(rows))]  # 01, 02 …
+            mark = {"mark": "cross"} if "redflag-table" in cls else {"mark": "bullet"} if bullet else {"mark": "num"} if numbered else {}
+            run_in = {"runIn": True} if STANDALONE and any("title" in r for r in rows) else {}  # "**Lead:** sentence" on one line
+            out.append(n(nid("checks"), "check-list", {**mark, **run_in, "items": rows}))
         elif el.name == "div" and el.find("img") and "position: relative" in st:
             fig += 1
             img = el.find("img")
@@ -571,6 +783,94 @@ def convert(path):
                 kids = [n(f"{cid}-cta", "buttons", {"align": "left", "items": [cta(plain(a), href_of(a), style_of(a)) for a in anchors]})]
             top, bottom = margins(st)
             out.append(row(f"{cid}-row", [col(cid, kids, styles={"marginTop": top, "marginBottom": bottom})]))
+        elif el.name == "div" and "article__actions--inline" in cls:
+            # A button row mid-article: the end-of-post pair's buttons, 8px / 34px around it.
+            cid = nid("actions")
+            out.append(n(cid, "buttons", {"align": "left", "items": [
+                cta(plain(a), href_of(a), "primary" if "hv-2" in a.get("class", []) else "secondary") for a in el.find_all("a")]}))
+            top, bottom = margins(st) if st else (8, 34)
+            extra_css.append(f'[data-bz-node="art-body"] > [data-bz-node="{cid}"] .bz-btns {{ margin: {top}px 0 {bottom}px; }}')
+        elif el.name == "div" and "check-list" in cls and el.find("div", class_=["mistake-item", "misstep-item", "pitfall-item"], recursive=False):
+            # Titled rows behind a round ✕ badge — red for mistakes and missteps, ink for pitfalls.
+            rows = el.find_all("div", recursive=False)
+            mark = "xdot-ink" if "pitfall-item" in rows[0].get("class", []) else "xdot"
+            out.append(n(nid("checks"), "check-list", {"mark": mark, "items": [
+                {"title": plain(r.find("h3")), "text": plain(r.find("p"))} for r in rows]}))
+        elif el.name == "div" and el.select(":scope > .type-card > .feat"):
+            # Two labelled cards, each a sentence over ✓ feature rows: real blocks in bordered
+            # columns, the rows a Checkmark list, so every part stays editable.
+            cid = nid("cards"); cols = []
+            for i, card in enumerate(el.find_all("div", class_="type-card", recursive=False)):
+                kids, feats = [], []
+                for j, y in enumerate([y for y in card.children if isinstance(y, Tag)]):
+                    ycls = y.get("class", [])
+                    if y.name == "div" and "eyebrow" in ycls:
+                        kids.append(text(f"{cid}-{i+1}-label", plain(y), styles={"fontSize": 11, "fontWeight": "700", "letterSpacing": 1.76,
+                                         "lineHeight": 1, "textTransform": "uppercase", "textColor": "muted", "marginBottom": 18}))
+                    elif y.name == "h3": kids.append(n(f"{cid}-{i+1}-h", "heading", {"text": plain(y), "headingLevel": 3, "align": "left"}))
+                    elif y.name == "p": kids.append(text(f"{cid}-{i+1}-p", inline_html(y), styles={"fontSize": 14, "lineHeight": 1.8, "marginBottom": 4}))
+                    elif y.name == "div" and "feat" in ycls: feats.append({"title": plain(y.find("h4")), "text": plain(y.find("p"))})
+                    else: raise SystemExit(f"type card child <{y.name} {ycls}>")
+                kids.append(n(f"{cid}-{i+1}-feats", "check-list", {"mark": "tick-ink", "items": feats}))
+                cols.append(col(f"{cid}-{i+1}", kids, span=6, styles={**BOX, "paddingTop": 24, "paddingRight": 24, "paddingBottom": 24, "paddingLeft": 24}))
+            out.append(row(cid, cols, gap=4, styles={"gap": 28, **(style_margins(st) or {})}))  # the design's 28px grid gap
+            extra_css.append(f'[data-bz-node="art-body"] [data-bz-node="{cid}"] .bz-block--heading h3 {{ margin: 0 0 10px; }}')
+        elif el.name == "div" and el.select(":scope > .type-card > .best-for"):
+            # Type cards four across, each ending in an accent BEST FOR line.
+            out.append(n(nid("cards"), "card-lists", {"variant": "type4" if "grid--4" in cls else "type3", "items": [
+                card_item(c) for c in el.find_all("div", class_="type-card", recursive=False)]}, styles=style_margins(st)))
+        elif el.name == "div" and el.find("div", class_="decide-card", recursive=False):
+            out.append(n(nid("cards"), "card-lists", {"variant": "decide", "items": [
+                card_item(c) for c in el.find_all("div", class_="decide-card", recursive=False)]}, styles=style_margins(st)))
+        elif el.name == "div" and el.find("div", class_="compare-card", recursive=False):
+            out.append(n(nid("cards"), "card-lists", {"variant": "compare4", **({"across": across(cls)} if across(cls) not in ("", "4") else {}), "items": [
+                card_item(c) for c in el.find_all("div", class_="compare-card", recursive=False)]}, styles=style_margins(st)))
+        elif el.name == "div" and el.find("div", class_=["benefit-card", "how-card", "use-card", "product-tag"], recursive=False):
+            # Short titled cards two to five across, or a row of one-line names: Card lists.
+            first = el.find("div", recursive=False).get("class", [])
+            variant = "use" if "use-card" in first else "chip" if "product-tag" in first else "brief"
+            cards = el.find_all("div", recursive=False)
+            items = [{"title": plain(c), "points": []} for c in cards] if variant == "chip" else [card_item(c) for c in cards]
+            out.append(n(nid("cards"), "card-lists", {"variant": variant, "across": across(cls), "items": items}, styles=style_margins(st)))
+        elif el.name == "div" and "stat-strip" in cls:
+            # Figures in bordered, centred cells: the platform Stat band, drawn as the design draws it.
+            cid = nid("stats")
+            stats = [{"value": plain(c.find(class_="num")), "label": plain(c.find(class_="label"))} for c in el.find_all("div", class_="stat-card", recursive=False)]
+            out.append(n(cid, "statBand", {"stats": stats}))
+            sel = f'[data-bz-node="art-body"] [data-bz-node="{cid}"]'
+            extra_css.append(f"/* Its stat strip: {len(stats)} bordered cells, centred, every figure in the accent. */\n"
+                             f"{sel} {{ margin: 8px 0 34px; }}\n"
+                             f"{sel} .bz-stats {{ grid-template-columns: repeat({len(stats)}, minmax(0, 1fr)); gap: 20px; background: none; border: 0; }}\n"
+                             f"{sel} .bz-stat {{ border: 1px solid var(--line); padding: 24px; text-align: center; }}\n"
+                             f"{sel} .bz-stat__v, {sel} .bz-stat:first-child .bz-stat__v {{ font: 800 30px / 1.7 var(--font-heading); color: var(--accent); margin: 0 0 6px; }}\n"
+                             f"{sel} .bz-stat__l {{ font-size: 13.5px; line-height: 1.5; }}\n"
+                             f"@media (max-width: 640px) {{ {sel} .bz-stats {{ grid-template-columns: minmax(0, 1fr); }} }}")
+        elif el.name == "div" and "grid--2" in cls and el.select(":scope > .card > h3"):
+            out.append(n(nid("cards"), "card-lists", {"variant": "stack2", "items": [
+                card_item(c) for c in el.find_all("div", class_="card", recursive=False)]}, styles=style_margins(st)))
+        elif el.name == "div" and el.find("div", class_="step-item", recursive=False):
+            # Numbered steps, each a rail target: the number in a round accent badge beside a real
+            # heading (which keeps the anchor) and its paragraph, ruled between.
+            for k, step in enumerate(el.find_all("div", class_="step-item", recursive=False)):
+                num, inner = [x for x in step.children if isinstance(x, Tag)]
+                h2 = inner.find("h2"); sid = step.get("id") or h2.get("id")
+                paras = inner.find_all("p", recursive=False)
+                assert len(paras) + 1 == len(inner.find_all(recursive=False)), step
+                out.append(row(f"row-{sid}", [
+                    col(f"badge-{sid}", [text(f"num-{sid}", plain(num), styles={
+                        "background": "accent", "textColor": "card", "fontSize": 18, "fontWeight": "800", "lineHeight": 1,
+                        "width": 44, "height": 44, "radius": 999, "display": "flex", "alignItems": "center", "justifyContent": "center"}, align="center")],
+                        span=1, styles={"flexShrink": 0}),
+                    col(f"col-{sid}", [n(f"h-{sid}", "heading", {"text": plain(h2), "headingLevel": 2, "align": "left", "anchor": sid}),
+                                       *[text(f"p-{sid}" + (f"-{j+1}" if j else ""), inline_html(q), styles=style_margins(q.get("style", "")))
+                                         for j, q in enumerate(paras)]], span=11, styles={"flexGrow": 1}),
+                ], styles={"display": "flex", "alignItems": "flex-start", "gap": 22, "paddingTop": 30, "paddingBottom": 30,
+                           **({"borderTopWidth": 1, "borderLeftWidth": 0, "borderRightWidth": 0, "borderBottomWidth": 0,
+                               "borderStyle": "solid", "borderColor": "line"} if k else {"marginTop": margins(st)[0]})}))
+        elif el.name == "div" and "check-list" in cls and el.find("div", class_="check-item", recursive=False):
+            # Checkmark rows in a round accent badge: the Checkmark list's round-badge mark.
+            out.append(n(nid("checks"), "check-list", {"mark": "dot", "items": [
+                {"text": plain(x.find("p"))} for x in el.find_all("div", class_="check-item", recursive=False)]}))
         elif el.name == "div" and "display: flex" in st:
             its = []
             for a in el.find_all("a"):
@@ -686,7 +986,7 @@ def convert(path):
                     elif y.name == "ul": it["points"] = [{"text": inline_html(li)} for li in y.find_all("li")]
                     else: raise SystemExit(f"number card child <{y.name}>")
                 items.append(it)
-            out.append(n(nid("cards"), "card-lists", {"variant": "num-wide" if "num-card" in cls else "num", "items": items}))
+            out.append(n(nid("cards"), "card-lists", {"variant": "num-wide" if "num-card" in cls else "num3" if "grid-3" in cls else "num", "items": items}))
         elif el.name == "div" and el.find("div", class_="reason-card", recursive=False) and all(
                 [x.name for x in card.children if isinstance(x, Tag)] == ["h3", "p"]
                 for card in el.find_all("div", class_="reason-card", recursive=False)):
@@ -1010,8 +1310,10 @@ if __name__ == "__main__":
     # Parts 1-6 keep their articles in posts/; a prototype batch keeps them beside index.html.
     files = sorted(glob.glob(f"{PART}/posts/*.html")) or sorted(
         f for f in glob.glob(f"{PART}/*.html") if os.path.basename(f) != "index.html")
+    if not files and "hero--post" in open(f"{PART}/index.html").read():
+        files = [f"{PART}/index.html"]  # a standalone handoff: the one page is the post
     for f in files:
-        h1 = BeautifulSoup(open(f).read(), "html.parser").select_one("section.post-hero h1")
+        h1 = BeautifulSoup(open(f).read(), "html.parser").select_one("section.post-hero h1, section.hero--post h1")
         POST_TITLES[plain(h1)] = page_slug(f)
         # the design page's file name is the title without its question mark or subtitle
         POST_TITLES[plain(h1).split("?")[0].split(":")[0].strip()] = page_slug(f)

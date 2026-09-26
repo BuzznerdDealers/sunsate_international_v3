@@ -1,0 +1,1040 @@
+{
+  "slug": "why-fleets-should-get-regular-trailer-service",
+  "title": "Why Fleets Should Get Regular Trailer Service",
+  "date": "2026-07-11",
+  "description": "Protect your fleet with regular trailer service. Prevent breakdowns and schedule service with Sun State Trailers today.",
+  "excerpt": "Your trailers work hard every day, hauling valuable cargo across thousands of miles in changing road and weather conditions. Like any piece of commercial equipment, they experience wear over time. The…",
+  "status": "published",
+  "coverImage": "/img/blog/why-fleets-should-get-regular-trailer-service/hero.jpg",
+  "topic": "Service",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Service",
+          "title": "Why Fleets Should Get Regular Trailer Service",
+          "topic": "Service",
+          "date": "July 11, 2026",
+          "readTime": "4 min read",
+          "author": "Sun State Trailers",
+          "image": {
+            "src": "/img/blog/why-fleets-should-get-regular-trailer-service/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Technician inspecting the rear of a Hyundai Translead trailer during service"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "Why Service Matters",
+                        "href": "#why-matters"
+                      },
+                      {
+                        "label": "What's Included",
+                        "href": "#included"
+                      },
+                      {
+                        "label": "Preventive Maintenance Checklist",
+                        "href": "#checklist"
+                      },
+                      {
+                        "label": "Schedule Service",
+                        "href": "#schedule"
+                      },
+                      {
+                        "label": "Building a Maintenance Interval",
+                        "href": "#interval"
+                      },
+                      {
+                        "label": "Why It Pays Off",
+                        "href": "#pays-off"
+                      },
+                      {
+                        "label": "Keep Your Fleet Moving",
+                        "href": "#moving"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "DUE FOR SERVICE?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Our technicians inspect, repair and maintain trailers of every make and model.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "schedule-service",
+                                "label": "Schedule Service →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Your trailers work hard every day, hauling valuable cargo across thousands of miles in changing road and weather conditions. Like any piece of commercial equipment, they experience wear over time. The difference between a reliable trailer and one sitting on the side of the road often comes down to one thing: consistent trailer service.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Waiting until something breaks almost always leads to more expensive repairs, unexpected downtime, and missed deliveries. Regular maintenance helps identify small issues before they become major problems, keeping your fleet safer, more reliable, and more profitable.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/why-fleets-should-get-regular-trailer-service/1.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "International day cab and trailer parked in the Sun State trailer yard"
+                    }
+                  }
+                },
+                {
+                  "id": "h-why-matters",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Regular Trailer Service Matters",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "why-matters"
+                  }
+                },
+                {
+                  "id": "p-why-matters-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Every mile puts stress on your trailer's major components. Brakes wear down, suspension parts loosen, tires lose tread, bearings experience friction, and electrical systems are exposed to moisture and road debris. Routine trailer service allows technicians to inspect these systems before a minor concern turns into a costly breakdown.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-why-matters-2",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>The benefits include:</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-why-matters-3",
+                  "type": "row",
+                  "props": {
+                    "gap": 4
+                  },
+                  "styles": {
+                    "base": {
+                      "marginBottom": 20
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "cards-why-matters-3-1",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 22,
+                          "paddingRight": 22,
+                          "paddingBottom": 22,
+                          "paddingLeft": 22
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "cards-why-matters-3-1-list",
+                          "type": "prose-list",
+                          "props": {
+                            "ordered": false,
+                            "items": [
+                              {
+                                "text": "Fewer roadside repairs"
+                              },
+                              {
+                                "text": "Improved driver safety"
+                              },
+                              {
+                                "text": "Longer trailer lifespan"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "cards-why-matters-3-2",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 22,
+                          "paddingRight": 22,
+                          "paddingBottom": 22,
+                          "paddingLeft": 22
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "cards-why-matters-3-2-list",
+                          "type": "prose-list",
+                          "props": {
+                            "ordered": false,
+                            "items": [
+                              {
+                                "text": "Better fuel efficiency"
+                              },
+                              {
+                                "text": "Reduced repair costs"
+                              },
+                              {
+                                "text": "Improved DOT compliance"
+                              },
+                              {
+                                "text": "Increased fleet uptime"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "p-why-matters-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Staying ahead of maintenance isn't just good business; it's a critical part of operating a compliant fleet.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-included",
+                  "type": "heading",
+                  "props": {
+                    "text": "What Should Be Included During Trailer Service?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "included"
+                  }
+                },
+                {
+                  "id": "p-included-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Professional trailer maintenance involves much more than changing worn parts. Every service appointment is an opportunity to evaluate the overall health of the trailer. A comprehensive inspection typically includes:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-included-2",
+                  "type": "heading",
+                  "props": {
+                    "text": "Brake System Inspection",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-included-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Trailer brakes are one of the most important safety systems on the vehicle. Technicians inspect brake shoes, drums, chambers, air lines, slack adjusters, and overall brake performance to ensure everything is operating properly.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-included-4",
+                  "type": "heading",
+                  "props": {
+                    "text": "Suspension Components",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-included-5",
+                  "type": "text",
+                  "props": {
+                    "text": "Suspension systems absorb constant stress from heavy loads and rough roads. Worn bushings, damaged springs, or failing suspension components can lead to uneven tire wear and reduced stability.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-included-6",
+                  "type": "heading",
+                  "props": {
+                    "text": "Tires and Wheels",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-included-7",
+                  "type": "text",
+                  "props": {
+                    "text": "Proper tire pressure and healthy tread help maximize fuel efficiency while reducing the chance of roadside blowouts. During trailer service, technicians inspect:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-included-8",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Tire wear patterns"
+                      },
+                      {
+                        "text": "Inflation levels"
+                      },
+                      {
+                        "text": "Wheel bearings"
+                      },
+                      {
+                        "text": "Hubs"
+                      },
+                      {
+                        "text": "Lug nuts"
+                      },
+                      {
+                        "text": "Wheel seals"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h3-included-9",
+                  "type": "heading",
+                  "props": {
+                    "text": "Lighting and Electrical Systems",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-included-10",
+                  "type": "text",
+                  "props": {
+                    "text": "Damaged wiring or burned-out lights can quickly result in DOT violations. Every service visit should include testing:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-included-11",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Brake lights"
+                      },
+                      {
+                        "text": "Turn signals"
+                      },
+                      {
+                        "text": "Marker lights"
+                      },
+                      {
+                        "text": "ABS systems"
+                      },
+                      {
+                        "text": "Trailer wiring connections"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h3-included-12",
+                  "type": "heading",
+                  "props": {
+                    "text": "Structural Inspection",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-included-13",
+                  "type": "text",
+                  "props": {
+                    "text": "Frames, crossmembers, landing gear, doors, and coupling equipment are inspected for signs of damage, corrosion, or excessive wear that could affect safe operation.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-checklist",
+                  "type": "heading",
+                  "props": {
+                    "text": "Build a Trailer Preventive Maintenance Checklist",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "checklist"
+                  }
+                },
+                {
+                  "id": "p-checklist-1",
+                  "type": "text",
+                  "props": {
+                    "text": "One of the best ways to reduce unexpected repairs is by following a consistent trailer preventive maintenance checklist. Every fleet should regularly inspect:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-checklist-2",
+                  "type": "row",
+                  "props": {
+                    "gap": 4
+                  },
+                  "styles": {
+                    "base": {
+                      "marginBottom": 20
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "cards-checklist-2-1",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 22,
+                          "paddingRight": 22,
+                          "paddingBottom": 22,
+                          "paddingLeft": 22
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "cards-checklist-2-1-list",
+                          "type": "prose-list",
+                          "props": {
+                            "ordered": false,
+                            "items": [
+                              {
+                                "text": "Brakes"
+                              },
+                              {
+                                "text": "Tires"
+                              },
+                              {
+                                "text": "Suspension"
+                              },
+                              {
+                                "text": "Wheel bearings"
+                              },
+                              {
+                                "text": "Air system components"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "cards-checklist-2-2",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 22,
+                          "paddingRight": 22,
+                          "paddingBottom": 22,
+                          "paddingLeft": 22
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "cards-checklist-2-2-list",
+                          "type": "prose-list",
+                          "props": {
+                            "ordered": false,
+                            "items": [
+                              {
+                                "text": "Lighting"
+                              },
+                              {
+                                "text": "Electrical wiring"
+                              },
+                              {
+                                "text": "Landing gear"
+                              },
+                              {
+                                "text": "Door seals and hinges"
+                              },
+                              {
+                                "text": "Trailer frame"
+                              },
+                              {
+                                "text": "Coupling devices"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "p-checklist-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Using a standardized inspection process helps maintenance teams identify trends before they become expensive failures.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-schedule",
+                  "type": "heading",
+                  "props": {
+                    "text": "Schedule Service With Sun State Trailers",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "schedule"
+                  }
+                },
+                {
+                  "id": "p-schedule-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Preventative maintenance is far less expensive than emergency repairs. If your trailers are due for routine inspections or repairs, the experienced technicians at <a href=\"/locations/trailer-sales\">Sun State Trailers</a> are ready to help. Our team works efficiently to minimize downtime while providing the dependable service your fleet relies on.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-schedule-2-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "styles": {
+                    "base": {
+                      "marginTop": 34,
+                      "marginBottom": 34
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "co-schedule-2",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-schedule-2-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "schedule-service",
+                                "label": "Get Professional Service →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "fig-2",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/why-fleets-should-get-regular-trailer-service/2.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Sun State service bay with trailer parts and a trailer backed up to the open bay door"
+                    }
+                  }
+                },
+                {
+                  "id": "h-interval",
+                  "type": "heading",
+                  "props": {
+                    "text": "Creating a Preventive Maintenance Schedule for Semi Trailers",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "interval"
+                  }
+                },
+                {
+                  "id": "p-interval-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Every fleet operates differently, so there isn't a one-size-fits-all maintenance interval. A proper preventive maintenance schedule for semi trailers should consider several factors, including:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-interval-2",
+                  "type": "check-list",
+                  "props": {
+                    "mark": "num",
+                    "items": [
+                      {
+                        "text": "Annual mileage"
+                      },
+                      {
+                        "text": "Cargo weight"
+                      },
+                      {
+                        "text": "Road conditions"
+                      },
+                      {
+                        "text": "Climate"
+                      },
+                      {
+                        "text": "Trailer age"
+                      },
+                      {
+                        "text": "Manufacturer recommendations"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-interval-3",
+                  "type": "text",
+                  "props": {
+                    "text": "High-mileage fleets often require more frequent inspections than trailers used occasionally or on shorter regional routes. Keeping detailed maintenance records also makes it easier to schedule future service before problems develop.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-pays-off",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Preventative Maintenance for Semi Trailers Pays Off",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "pays-off"
+                  }
+                },
+                {
+                  "id": "p-pays-off-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Some maintenance expenses can feel easy to postpone when business gets busy. Unfortunately, deferred maintenance usually costs more in the long run. Investing in preventative maintenance for semi trailers helps fleets:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-pays-off-2",
+                  "type": "row",
+                  "props": {
+                    "gap": 4
+                  },
+                  "styles": {
+                    "base": {
+                      "marginBottom": 20
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "cards-pays-off-2-1",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 22,
+                          "paddingRight": 22,
+                          "paddingBottom": 22,
+                          "paddingLeft": 22
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "cards-pays-off-2-1-list",
+                          "type": "prose-list",
+                          "props": {
+                            "ordered": false,
+                            "items": [
+                              {
+                                "text": "Reduce emergency repair costs"
+                              },
+                              {
+                                "text": "Avoid delivery delays"
+                              },
+                              {
+                                "text": "Improve driver confidence"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "cards-pays-off-2-2",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 22,
+                          "paddingRight": 22,
+                          "paddingBottom": 22,
+                          "paddingLeft": 22
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "cards-pays-off-2-2-list",
+                          "type": "prose-list",
+                          "props": {
+                            "ordered": false,
+                            "items": [
+                              {
+                                "text": "Increase trailer resale value"
+                              },
+                              {
+                                "text": "Reduce out-of-service violations"
+                              },
+                              {
+                                "text": "Extend equipment life"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "p-pays-off-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Instead of replacing major components after a failure, preventative maintenance focuses on repairing normal wear before it creates larger mechanical issues. For fleet owners, that means more predictable maintenance costs and fewer surprises.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-moving",
+                  "type": "heading",
+                  "props": {
+                    "text": "Keep Your Fleet Moving With Sun State Trailers",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "moving"
+                  }
+                },
+                {
+                  "id": "p-moving-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Consistent trailer service is one of the smartest investments you can make for your fleet. By following a reliable trailer preventive maintenance checklist and maintaining a proactive preventive maintenance schedule for semi trailers, you can reduce downtime, improve safety, and avoid costly repairs before they happen. Schedule service with <a href=\"/locations/trailer-sales\">Sun State Trailers</a> today and let our team help keep your trailers working as hard as you do.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-moving-2",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "schedule-service",
+                        "label": "Schedule Service With Sun State Trailers"
+                      },
+                      {
+                        "ctaId": "contact-us",
+                        "label": "Contact Us",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-share",
+                  "type": "post-share",
+                  "props": {
+                    "label": "Share",
+                    "items": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhy-fleets-should-get-regular-trailer-service",
+                        "newTab": true
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhy-fleets-should-get-regular-trailer-service&text=Why%20Fleets%20Should%20Get%20Regular%20Trailer%20Service",
+                        "newTab": true
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhy-fleets-should-get-regular-trailer-service",
+                        "newTab": true
+                      },
+                      {
+                        "label": "Email",
+                        "url": "mailto:?subject=Why%20Fleets%20Should%20Get%20Regular%20Trailer%20Service&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhy-fleets-should-get-regular-trailer-service",
+                        "newTab": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Parts, service and support",
+          "heading": "Keep your trailers on the road.",
+          "body": "Call 800.741.7566 to schedule trailer service at any Sun State location in Florida.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Schedule service",
+          "secondaryUrl": "/service-appointment"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/why-fleets-should-get-regular-trailer-service\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/why-fleets-should-get-regular-trailer-service\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n/* The hero photograph is framed a little high, as the design frames it. */\n[data-bz-section=\"post-hero\"] [data-bz-node=\"ph-photo\"] img { object-position: center 60%; }\n"
+}

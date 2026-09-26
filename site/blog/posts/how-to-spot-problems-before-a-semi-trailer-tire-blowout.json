@@ -1,0 +1,910 @@
+{
+  "slug": "how-to-spot-problems-before-a-semi-trailer-tire-blowout",
+  "title": "How to Spot Problems Before a Semi-Trailer Tire Blowout",
+  "date": "2026-05-11",
+  "description": "Learn how to prevent a semi-trailer tire blowout with maintenance tips and expert trailer service from Sun State Trailers.",
+  "excerpt": "A semi-trailer tire blowout can do more than slow down your day. It can create dangerous driving conditions, damage your trailer, delay deliveries, and lead to expensive downtime that affects your entire…",
+  "status": "published",
+  "coverImage": "/img/blog/how-to-spot-problems-before-a-semi-trailer-tire-blowout/hero.jpg",
+  "topic": "Service",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Service",
+          "title": "How to Spot Problems Before a Semi-Trailer Tire Blowout",
+          "topic": "Service",
+          "date": "May 11, 2026",
+          "readTime": "5 min read",
+          "author": "Sun State Trailers",
+          "image": {
+            "src": "/img/blog/how-to-spot-problems-before-a-semi-trailer-tire-blowout/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Technician kneeling to check a semi-truck wheel and tire with a diagnostic tool"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "What Causes a Blowout",
+                        "href": "#causes"
+                      },
+                      {
+                        "label": "Warning Signs",
+                        "href": "#warning-signs"
+                      },
+                      {
+                        "label": "Preventive Maintenance",
+                        "href": "#preventive"
+                      },
+                      {
+                        "label": "Related Components",
+                        "href": "#components"
+                      },
+                      {
+                        "label": "The Cost of Waiting",
+                        "href": "#cost"
+                      },
+                      {
+                        "label": "Build a Smarter Schedule",
+                        "href": "#schedule-build"
+                      },
+                      {
+                        "label": "Schedule Service",
+                        "href": "#schedule"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "TIRE SHOWING WEAR?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Our technicians catch tire and suspension issues before they become a blowout.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "schedule-service",
+                                "label": "Schedule Your Inspection →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "A semi-trailer tire blowout can do more than slow down your day. It can create dangerous driving conditions, damage your trailer, delay deliveries, and lead to expensive downtime that affects your entire operation. For owner-operators and fleet managers, preventing tire issues before they happen is one of the smartest ways to protect both your equipment and your bottom line. Whether you manage a fleet or operate your own truck, staying ahead of tire problems with regular inspections and preventive maintenance can help you avoid costly repairs and unexpected breakdowns.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "h-causes",
+                  "type": "heading",
+                  "props": {
+                    "text": "What Causes a Semi-Trailer Tire Blowout?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "causes"
+                  }
+                },
+                {
+                  "id": "p-causes-1",
+                  "type": "text",
+                  "props": {
+                    "text": "A semi-trailer tire blowout usually doesn't happen without warning. In many cases, the tire has been showing signs of wear or stress long before failure occurs.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-causes-2",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Some of the most common causes include:</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-causes-3",
+                  "type": "row",
+                  "props": {
+                    "gap": 4
+                  },
+                  "styles": {
+                    "base": {
+                      "marginBottom": 20
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "cards-causes-3-1",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 22,
+                          "paddingRight": 22,
+                          "paddingBottom": 22,
+                          "paddingLeft": 22
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "cards-causes-3-1-list",
+                          "type": "prose-list",
+                          "props": {
+                            "ordered": false,
+                            "items": [
+                              {
+                                "text": "Improper tire pressure"
+                              },
+                              {
+                                "text": "Overloaded trailers"
+                              },
+                              {
+                                "text": "Uneven tire wear"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "cards-causes-3-2",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 22,
+                          "paddingRight": 22,
+                          "paddingBottom": 22,
+                          "paddingLeft": 22
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "cards-causes-3-2-list",
+                          "type": "prose-list",
+                          "props": {
+                            "ordered": false,
+                            "items": [
+                              {
+                                "text": "Suspension issues"
+                              },
+                              {
+                                "text": "Worn wheel components"
+                              },
+                              {
+                                "text": "Poor alignment"
+                              },
+                              {
+                                "text": "Lack of routine maintenance"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "p-causes-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Proper tire inspections and maintenance play a major role in improving roadway safety. The good news is that many blowouts can be prevented with a strong trailer preventive maintenance checklist and consistent service routines.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-causes-5-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "styles": {
+                    "base": {
+                      "marginTop": 34,
+                      "marginBottom": 34
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "co-causes-5",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-causes-5-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "schedule-service",
+                                "label": "Schedule Your Inspection →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-warning-signs",
+                  "type": "heading",
+                  "props": {
+                    "text": "Warning Signs to Watch For",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "warning-signs"
+                  }
+                },
+                {
+                  "id": "p-warning-signs-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Catching small problems early can help prevent larger failures later. Drivers and fleet managers should regularly inspect trailers for signs of tire trouble.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-warning-signs-2",
+                  "type": "heading",
+                  "props": {
+                    "text": "Uneven Tire Wear",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-warning-signs-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Uneven wear patterns often point to alignment or suspension problems. If the tread is wearing faster on one side, it may indicate that the axle alignment needs adjustment or that suspension components are worn. Ignoring uneven wear increases the risk of a semi-trailer tire blowout over time.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-warning-signs-4",
+                  "type": "heading",
+                  "props": {
+                    "text": "Low Tire Pressure",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-warning-signs-5",
+                  "type": "text",
+                  "props": {
+                    "text": "Underinflated tires create excess heat while driving, which is one of the leading causes of blowouts. Tires should always be checked before long hauls, especially during hot Florida weather when road temperatures climb. Even small pressure changes can affect performance and safety.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-warning-signs-6",
+                  "type": "heading",
+                  "props": {
+                    "text": "Cracks, Bulges, or Sidewall Damage",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-warning-signs-7",
+                  "type": "text",
+                  "props": {
+                    "text": "Visible tire damage should never be ignored. Cracks, bubbles, or bulging areas weaken the tire structure and can lead to sudden failure on the road. If you notice damage during inspections, schedule semi trailer repair immediately.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-warning-signs-8",
+                  "type": "heading",
+                  "props": {
+                    "text": "Excessive Vibration",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-warning-signs-9",
+                  "type": "text",
+                  "props": {
+                    "text": "If the trailer suddenly feels unstable or begins vibrating excessively, it may signal tire imbalance, wheel damage, or suspension issues. These problems place extra stress on the tires and increase wear.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/how-to-spot-problems-before-a-semi-trailer-tire-blowout/1.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Sun State service advisor and technician reviewing a maintenance schedule at the counter"
+                    }
+                  }
+                },
+                {
+                  "id": "h-preventive",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Preventive Maintenance Matters",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "preventive"
+                  }
+                },
+                {
+                  "id": "p-preventive-1",
+                  "type": "text",
+                  "props": {
+                    "text": "A consistent preventive maintenance schedule for semi-trailers helps identify issues before they turn into breakdowns. Waiting until something fails usually costs more in repairs, downtime, and missed deliveries.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-preventive-2",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>A strong maintenance routine should include:</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-preventive-3",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Tire pressure checks"
+                      },
+                      {
+                        "text": "Tread depth inspections"
+                      },
+                      {
+                        "text": "Alignment checks"
+                      },
+                      {
+                        "text": "Suspension inspections"
+                      },
+                      {
+                        "text": "Brake system inspections"
+                      },
+                      {
+                        "text": "Wheel bearing checks"
+                      },
+                      {
+                        "text": "Air system inspections"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-preventive-4",
+                  "type": "text",
+                  "props": {
+                    "text": "For fleet owners, preventive maintenance also helps improve fuel efficiency and extend tire life. At <a href=\"/locations/trailer-sales\">Sun State Trailers</a>, our service team works with customers every day to help reduce downtime and keep trailers operating safely and efficiently.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-components",
+                  "type": "heading",
+                  "props": {
+                    "text": "How Trailer Components Affect Tire Performance",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "components"
+                  }
+                },
+                {
+                  "id": "p-components-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Tires don't operate alone. Several trailer systems work together to support proper tire wear and handling.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-components-2",
+                  "type": "heading",
+                  "props": {
+                    "text": "Suspension Systems",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-components-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Worn suspension components place uneven pressure on tires, which can shorten tire life and increase the chance of blowouts. If your trailer feels rough on the road or tires are wearing unevenly, suspension inspections may be necessary.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-components-4",
+                  "type": "heading",
+                  "props": {
+                    "text": "Axle Alignment",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-components-5",
+                  "type": "text",
+                  "props": {
+                    "text": "Poor axle alignment forces tires to drag slightly while driving. Over time, this creates heat buildup and excessive tread wear. Alignment issues are one of the most overlooked causes of premature tire failure.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-components-6",
+                  "type": "heading",
+                  "props": {
+                    "text": "Brake Problems",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-components-7",
+                  "type": "text",
+                  "props": {
+                    "text": "Dragging brakes generate additional heat near the wheels and tires. Excessive heat weakens tire integrity and increases blowout risk. Routine brake inspections should always be included in your trailer preventive maintenance checklist.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-2",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/how-to-spot-problems-before-a-semi-trailer-tire-blowout/2.jpg",
+                      "width": 1280,
+                      "height": 850,
+                      "alt": "Close-up of a blue trailer's rear axle assembly and tires"
+                    }
+                  }
+                },
+                {
+                  "id": "h-cost",
+                  "type": "heading",
+                  "props": {
+                    "text": "The Cost of Ignoring Tire Problems",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "cost"
+                  }
+                },
+                {
+                  "id": "p-cost-1",
+                  "type": "text",
+                  "props": {
+                    "text": "For owner-operators, downtime means lost income. For fleets, unexpected repairs can affect schedules, customer relationships, and operating costs.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-cost-2",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>A semi-trailer tire blowout can lead to:</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-cost-3",
+                  "type": "check-list",
+                  "props": {
+                    "mark": "bullet",
+                    "items": [
+                      {
+                        "text": "Roadside service expenses"
+                      },
+                      {
+                        "text": "Missed deliveries"
+                      },
+                      {
+                        "text": "Trailer damage"
+                      },
+                      {
+                        "text": "Lost productivity"
+                      },
+                      {
+                        "text": "DOT violations"
+                      },
+                      {
+                        "text": "Safety risks for drivers and others on the road"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-cost-4",
+                  "type": "text",
+                  "props": {
+                    "text": "That's why proactive maintenance matters. Businesses like Sun State Trailers focus on helping customers prevent problems before they create bigger disruptions.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-3",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/how-to-spot-problems-before-a-semi-trailer-tire-blowout/3.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Technician inspecting under a trailer near the wheel wells for wear"
+                    }
+                  }
+                },
+                {
+                  "id": "h-schedule-build",
+                  "type": "heading",
+                  "props": {
+                    "text": "Building a Smarter Preventive Maintenance Schedule for Semi Trailers",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "schedule-build"
+                  }
+                },
+                {
+                  "id": "p-schedule-build-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Every operation is different, but consistent inspections and service intervals are key to keeping trailers road-ready. A preventive maintenance schedule for semi trailers should be based on:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-schedule-build-2",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Mileage"
+                      },
+                      {
+                        "text": "Trailer age"
+                      },
+                      {
+                        "text": "Load frequency"
+                      },
+                      {
+                        "text": "Road conditions"
+                      },
+                      {
+                        "text": "Tire performance history"
+                      },
+                      {
+                        "text": "Manufacturer recommendations"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-schedule-build-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Staying organized with maintenance records can also help fleet managers spot patterns before problems become serious.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-schedule",
+                  "type": "heading",
+                  "props": {
+                    "text": "Dependable Service Matters",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "schedule"
+                  }
+                },
+                {
+                  "id": "p-schedule-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Don't wait until a semi-trailer tire blowout leaves you stranded on the side of the road. Whether you need inspections, repairs, or help building a preventive maintenance routine, <a href=\"/locations/trailer-sales\">Sun State Trailers</a> is ready to help.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-schedule-2",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "schedule-service",
+                        "label": "Explore Our Parts and Service"
+                      },
+                      {
+                        "ctaId": "contact-us",
+                        "label": "Contact Us",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-share",
+                  "type": "post-share",
+                  "props": {
+                    "label": "Share",
+                    "items": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fhow-to-spot-problems-before-a-semi-trailer-tire-blowout",
+                        "newTab": true
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fhow-to-spot-problems-before-a-semi-trailer-tire-blowout&text=How%20to%20Spot%20Problems%20Before%20a%20Semi-Trailer%20Tire%20Blowout",
+                        "newTab": true
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fhow-to-spot-problems-before-a-semi-trailer-tire-blowout",
+                        "newTab": true
+                      },
+                      {
+                        "label": "Email",
+                        "url": "mailto:?subject=How%20to%20Spot%20Problems%20Before%20a%20Semi-Trailer%20Tire%20Blowout&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fhow-to-spot-problems-before-a-semi-trailer-tire-blowout",
+                        "newTab": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Parts, service and support",
+          "heading": "Don't wait for a blowout.",
+          "body": "Call 800.741.7566 to schedule a tire and suspension inspection at any Sun State location in Florida.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Schedule service",
+          "secondaryUrl": "/service-appointment"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/how-to-spot-problems-before-a-semi-trailer-tire-blowout\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/how-to-spot-problems-before-a-semi-trailer-tire-blowout\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n/* The hero photograph is framed a little high, as the design frames it. */\n[data-bz-section=\"post-hero\"] [data-bz-node=\"ph-photo\"] img { object-position: center 40%; }\n"
+}

@@ -408,6 +408,15 @@
     "active": true
   },
   {
+    "id": "browse-trailer-rentals",
+    "label": "Trailer Rentals →",
+    "url": "/store/inventory?type=trailer&condition=rental",
+    "style": "link",
+    "intent": "browse-inventory",
+    "newTab": false,
+    "active": true
+  },
+  {
     "id": "trailer-sales-location",
     "label": "Sun State Trailers — Tampa →",
     "url": "/locations/trailer-sales",

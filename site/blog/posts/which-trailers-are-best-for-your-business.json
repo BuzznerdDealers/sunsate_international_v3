@@ -1,0 +1,670 @@
+{
+  "slug": "which-trailers-are-best-for-your-business",
+  "title": "From Flatbed Trailers to Dump-Ends: Discover Which Trailers Are Best for Your Business",
+  "date": "2024-12-12",
+  "description": "Need the right equipment for your business? Discover the unique benefits of each type of trailer, from flatbed trailers to low-boys.",
+  "excerpt": "When you're looking for dependable transportation, the right equipment becomes more than a tool; it's a cornerstone for your business's success. Choosing the right trailer ensures your products or materials…",
+  "status": "published",
+  "coverImage": "/img/blog/which-trailers-are-best-for-your-business/hero.jpg",
+  "topic": "New Trailers",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / New Trailers",
+          "title": "From Flatbed Trailers to Dump-Ends: Discover Which Trailers Are Best for Your Business",
+          "topic": "New Trailers",
+          "date": "December 12, 2024",
+          "readTime": "4 min read",
+          "author": "Sun State Trailers",
+          "image": {
+            "src": "/img/blog/which-trailers-are-best-for-your-business/hero.jpg",
+            "width": 1280,
+            "height": 854,
+            "alt": "Underside view of Hyundai Translead trailers showing axles and mud flaps"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "Flatbed Trailers",
+                        "href": "#flatbed"
+                      },
+                      {
+                        "label": "Dump-Ends",
+                        "href": "#dump-end"
+                      },
+                      {
+                        "label": "Reefers",
+                        "href": "#reefers"
+                      },
+                      {
+                        "label": "Low-Boys",
+                        "href": "#low-boys"
+                      },
+                      {
+                        "label": "Dry Van Trailers",
+                        "href": "#dry-van"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "WANT THE FULL SHEET?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "View detailed specifications before you compare trailers.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-trailers",
+                                "label": "View Our Trailer Specifications →"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "When you're looking for dependable transportation, the right equipment becomes more than a tool; it's a cornerstone for your business's success. Choosing the right <a href=\"/store/inventory?type=trailer\">trailer</a> ensures your products or materials arrive in the best condition, your team works efficiently, and every job gets done right the first time. But with so many types of trailers available, determining which one suits your needs can be a challenge. Let's dive into the features and uses of different trailers to help you make the best decision for your business.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "h-flatbed",
+                  "type": "heading",
+                  "props": {
+                    "text": "Flatbed Trailers",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "flatbed"
+                  }
+                },
+                {
+                  "id": "p-flatbed-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Flatbed trailers are the workhorses of the industry, designed to handle oversized and irregularly shaped loads that don't fit in traditional enclosed trailers. Their open design makes them a versatile option for a wide range of applications, including:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-flatbed-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "use",
+                    "across": "3",
+                    "items": [
+                      {
+                        "title": "Hauling Equipment",
+                        "points": [],
+                        "intro": "Transport heavy machinery, tools, and industrial equipment with ease."
+                      },
+                      {
+                        "title": "Building & Construction Materials",
+                        "points": [],
+                        "intro": "Perfect for large items like steel beams, lumber, haybales, and concrete slabs."
+                      },
+                      {
+                        "title": "Miscellaneous",
+                        "points": [],
+                        "intro": "Ideal for moving tires, metal, and other recyclable materials."
+                      }
+                    ]
+                  },
+                  "styles": {
+                    "base": {
+                      "marginBottom": 8
+                    }
+                  }
+                },
+                {
+                  "id": "p-flatbed-3",
+                  "type": "text",
+                  "props": {
+                    "text": "If your load is big, bulky, or just doesn't fit neatly into a box, a flatbed trailer could be your perfect solution.",
+                    "align": "left",
+                    "width": "full"
+                  },
+                  "styles": {
+                    "base": {
+                      "marginTop": 34
+                    }
+                  }
+                },
+                {
+                  "id": "h-dump-end",
+                  "type": "heading",
+                  "props": {
+                    "text": "Dump-Ends",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "dump-end"
+                  }
+                },
+                {
+                  "id": "p-dump-end-1",
+                  "type": "text",
+                  "props": {
+                    "text": "If you're searching for efficiency, dump-end trailers are hard to beat. These specialized trailers are designed to lift their back end, allowing you to easily unload contents without manual labor. They're particularly useful for industries like:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-dump-end-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "use",
+                    "across": "3",
+                    "items": [
+                      {
+                        "title": "Waste Removal",
+                        "points": [],
+                        "intro": "Quickly and efficiently dump waste at disposal sites."
+                      },
+                      {
+                        "title": "Construction",
+                        "points": [],
+                        "intro": "Haul and unload gravel, dirt, and other construction materials with ease."
+                      },
+                      {
+                        "title": "Landscaping",
+                        "points": [],
+                        "intro": "Perfect for carrying and dumping soil, mulch, or other materials needed for landscaping projects."
+                      }
+                    ]
+                  },
+                  "styles": {
+                    "base": {
+                      "marginBottom": 8
+                    }
+                  }
+                },
+                {
+                  "id": "p-dump-end-3",
+                  "type": "text",
+                  "props": {
+                    "text": "For businesses that need to move and unload large quantities of material quickly, dump-end trailers are as effective as they are convenient.",
+                    "align": "left",
+                    "width": "full"
+                  },
+                  "styles": {
+                    "base": {
+                      "marginTop": 34
+                    }
+                  }
+                },
+                {
+                  "id": "h-reefers",
+                  "type": "heading",
+                  "props": {
+                    "text": "Reefers",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "reefers"
+                  }
+                },
+                {
+                  "id": "p-reefers-1",
+                  "type": "text",
+                  "props": {
+                    "text": "For businesses transporting perishable or sensitive items, refrigerated trailers, or reefers, provide the temperature control needed to maintain your product's quality. Reefers are crucial for:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-reefers-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "use",
+                    "across": "4",
+                    "items": [
+                      {
+                        "title": "Food & Beverages",
+                        "points": [],
+                        "intro": "Ensure fresh produce, frozen goods, and dairy products stay fresh."
+                      },
+                      {
+                        "title": "Pharmaceuticals",
+                        "points": [],
+                        "intro": "Maintain the right temperature for medications and vaccines."
+                      },
+                      {
+                        "title": "Artwork & Antiques",
+                        "points": [],
+                        "intro": "Protect valuable, sensitive items during transport."
+                      },
+                      {
+                        "title": "Electronics",
+                        "points": [],
+                        "intro": "Prevent heat damage to high-tech equipment."
+                      }
+                    ]
+                  },
+                  "styles": {
+                    "base": {
+                      "marginBottom": 8
+                    }
+                  }
+                },
+                {
+                  "id": "p-reefers-3",
+                  "type": "text",
+                  "props": {
+                    "text": "If you're running a restaurant, medical supply company, electronics store, or any business in those sectors, a reefer could be the right investment for you. A stable temperature on a long trip can make an incredible difference in your product's quality.",
+                    "align": "left",
+                    "width": "full"
+                  },
+                  "styles": {
+                    "base": {
+                      "marginTop": 34
+                    }
+                  }
+                },
+                {
+                  "id": "h-low-boys",
+                  "type": "heading",
+                  "props": {
+                    "text": "Low-Boys",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "low-boys"
+                  }
+                },
+                {
+                  "id": "p-low-boys-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Low-boy trailers are engineered for the heaviest of jobs. These trailers sit closer to the ground, providing extra clearance for tall or oversized loads that are too large for flatbed trailers. Common uses include:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-low-boys-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "use",
+                    "across": "2",
+                    "items": [
+                      {
+                        "title": "Heavy Equipment",
+                        "points": [],
+                        "intro": "Transport bulldozers, excavators, and other large machinery."
+                      },
+                      {
+                        "title": "Industrial Loads",
+                        "points": [],
+                        "intro": "Handle massive components for industrial projects."
+                      }
+                    ]
+                  },
+                  "styles": {
+                    "base": {
+                      "marginBottom": 8
+                    }
+                  }
+                },
+                {
+                  "id": "p-low-boys-3",
+                  "type": "text",
+                  "props": {
+                    "text": "When your cargo is too big or heavy for a standard flatbed, you should look into purchasing or renting a low-boy to meet your business needs.",
+                    "align": "left",
+                    "width": "full"
+                  },
+                  "styles": {
+                    "base": {
+                      "marginTop": 34
+                    }
+                  }
+                },
+                {
+                  "id": "h-dry-van",
+                  "type": "heading",
+                  "props": {
+                    "text": "Dry Van Trailers",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "dry-van"
+                  }
+                },
+                {
+                  "id": "p-dry-van-1",
+                  "type": "text",
+                  "props": {
+                    "text": "For businesses looking to protect their products from the elements, but maybe don't need the temperature control of a reefer, dry van trailers are a dependable choice. These fully enclosed trailers are ideal for:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-dry-van-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "use",
+                    "across": "4",
+                    "items": [
+                      {
+                        "title": "Retail Goods",
+                        "points": [],
+                        "intro": "Safeguard clothing and household items during transit."
+                      },
+                      {
+                        "title": "Non-Perishable Food",
+                        "points": [],
+                        "intro": "Transport canned goods, beverages, and more."
+                      },
+                      {
+                        "title": "Paper Products",
+                        "points": [],
+                        "intro": "Keep rolls of paper or cardboard safe from moisture."
+                      },
+                      {
+                        "title": "General Freight",
+                        "points": [],
+                        "intro": "Perfect for businesses that need versatile, enclosed transportation."
+                      }
+                    ]
+                  },
+                  "styles": {
+                    "base": {
+                      "marginBottom": 8
+                    }
+                  }
+                },
+                {
+                  "id": "p-dry-van-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Dry vans are the all-purpose trailers that many businesses rely on daily. They give you the space you need to stack boxes, furniture, and a wide array of products while keeping them safe during their transport.",
+                    "align": "left",
+                    "width": "full"
+                  },
+                  "styles": {
+                    "base": {
+                      "marginTop": 34
+                    }
+                  }
+                },
+                {
+                  "id": "h-determining-the-right-trailer",
+                  "type": "heading",
+                  "props": {
+                    "text": "Determining the Right Trailer for You",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-determining-the-right-trailer-1",
+                  "type": "text",
+                  "props": {
+                    "text": "So, how do you choose the best trailer for your needs? Start by considering the type of cargo you transport, how frequently you'll use the trailer, and whether you need short-term or long-term solutions. Renting a trailer can be a cost-effective way to handle seasonal or temporary needs while purchasing new or used equipment is a better choice for frequent use. Visit one of our dealer locations in Sarasota, Tampa, or Davenport, to explore our inventory, ask questions, and determine which trailer is right for your business.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-explore-our-wide-range",
+                  "type": "heading",
+                  "props": {
+                    "text": "Explore Our Wide Range of Trailers",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-explore-our-wide-range-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At <a href=\"/locations/trailer-sales\">Sun State Trailers</a>, we offer a wide range of trailers to suit every business need. From brands like Globe Trailers and Hyundai Translead, we provide reliable, high-quality options you can trust. Whether you need a flatbed, dry van, reefer, low-boy, or dump-end trailer, our inventory includes both new and used options for rent or purchase. Let us help you find the perfect trailer to get the job done. If you're ready to explore your options, visit one of our locations or contact us today to learn more about how we can support your business.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-explore-our-wide-range-2",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "contact-us",
+                        "label": "Contact Us"
+                      },
+                      {
+                        "ctaId": "browse-trailers",
+                        "label": "Browse Trailer Inventory",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-share",
+                  "type": "post-share",
+                  "props": {
+                    "label": "Share",
+                    "items": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhich-trailers-are-best-for-your-business",
+                        "newTab": true
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhich-trailers-are-best-for-your-business&text=From%20Flatbed%20Trailers%20to%20Dump-Ends%3A%20Discover%20Which%20Trailers%20Are%20Best%20for%20Your%20Business",
+                        "newTab": true
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhich-trailers-are-best-for-your-business",
+                        "newTab": true
+                      },
+                      {
+                        "label": "Email",
+                        "url": "mailto:?subject=From%20Flatbed%20Trailers%20to%20Dump-Ends%3A%20Discover%20Which%20Trailers%20Are%20Best%20for%20Your%20Business&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhich-trailers-are-best-for-your-business",
+                        "newTab": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "New trailers",
+          "heading": "Find the perfect trailer to get the job done.",
+          "body": "Call 800.741.7566 to talk with our team at any Sun State location in Florida.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Browse trailer inventory",
+          "secondaryUrl": "/store/inventory?type=trailer"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/which-trailers-are-best-for-your-business\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/which-trailers-are-best-for-your-business\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n/* The hero photograph is framed a little high, as the design frames it. */\n[data-bz-section=\"post-hero\"] [data-bz-node=\"ph-photo\"] img { object-position: center 45%; }\n"
+}

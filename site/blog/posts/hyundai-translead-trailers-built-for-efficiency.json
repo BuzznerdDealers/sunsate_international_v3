@@ -1,0 +1,471 @@
+{
+  "slug": "hyundai-translead-trailers-built-for-efficiency",
+  "title": "Hyundai Translead Trailers: Built for Efficiency, Backed by Sun State Trailers",
+  "date": "2025-08-15",
+  "description": "Explore the durability and innovation behind every Hyundai Translead trailer, available now at Sun State Trailers.",
+  "excerpt": "When you're running a business that relies on every mile, every load, and every delivery, your trailer choice isn't just about price; it's about performance. Hyundai Translead trailers are known across the…",
+  "status": "published",
+  "coverImage": "/img/blog/hyundai-translead-trailers-built-for-efficiency/hero.jpg",
+  "topic": "Trailer Sales",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Trailer Sales",
+          "title": "Hyundai Translead Trailers: Built for Efficiency, Backed by Sun State Trailers",
+          "topic": "Trailer Sales",
+          "date": "August 15, 2025",
+          "readTime": "4 min read",
+          "author": "Sun State Trailers",
+          "image": {
+            "src": "/img/blog/hyundai-translead-trailers-built-for-efficiency/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Close-up of Hyundai Translead branding on the roofline of two dry van trailers"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "Why Hyundai Translead Stands Out",
+                        "href": "#stands-out"
+                      },
+                      {
+                        "label": "A Partner Who Understands",
+                        "href": "#partner"
+                      },
+                      {
+                        "label": "Choosing the Right Model",
+                        "href": "#choosing"
+                      },
+                      {
+                        "label": "What to Look For",
+                        "href": "#what-to-look-for"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "WANT THE FULL SHEET?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "View detailed specifications before you compare trailers.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-trailers",
+                                "label": "View Our Trailer Specifications →"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "When you're running a business that relies on every mile, every load, and every delivery, your trailer choice isn't just about price; it's about performance. Hyundai Translead trailers are known across the industry for their smart engineering, long-haul durability, and innovative features that make life on the road easier. Whether you're hauling freight across Florida or across the country, these trailers offer the kind of reliability that hardworking carriers depend on. Let's take a closer look at what makes Hyundai Translead a top choice for fleets and owner-operators, and how <a href=\"/locations/trailer-sales\">Sun State Trailers</a> helps keep your business moving forward.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "h-stands-out",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Hyundai Translead Stands Out",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "stands-out"
+                  }
+                },
+                {
+                  "id": "p-stands-out-1",
+                  "type": "text",
+                  "props": {
+                    "text": "There's a reason Hyundai Translead is one of the fastest-growing trailer manufacturers in North America. Their trailers are engineered for strength, fuel efficiency, and maximum uptime.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-stands-out-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "type3",
+                    "items": [
+                      {
+                        "title": "Stronger Builds for Tougher Loads",
+                        "points": [],
+                        "intro": "Premium components like composite side panels, galvanized steel rear frames, and high-tensile floors hold up under pressure. Many models feature a one-piece aluminum roof for added leak protection, while corrosion-resistant materials extend trailer lifespan in humid, coastal regions like Florida."
+                      },
+                      {
+                        "title": "Fuel-Saving Aerodynamics",
+                        "points": [],
+                        "intro": "Aerodynamic features reduce drag and improve MPG. Optional side skirts and nose fairings can be added to maximize efficiency, especially for long-haul routes. Over time, these small design choices can mean big savings."
+                      },
+                      {
+                        "title": "Lighter Weight, Higher Payload",
+                        "points": [],
+                        "intro": "With advanced material blends, Hyundai Translead trailers often weigh less than comparable brands, allowing you to haul more without compromising DOT compliance. Less deadweight means higher margins and better ROI on every load."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-partner",
+                  "type": "heading",
+                  "props": {
+                    "text": "A Partner Who Understands Your Business",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "partner"
+                  }
+                },
+                {
+                  "id": "p-partner-1",
+                  "type": "text",
+                  "props": {
+                    "text": "When you choose Sun State Trailers, you're not dealing with a faceless vendor. You're working with a local team that values your time, respects your business, and makes the process straightforward from day one.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-partner-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "type3",
+                    "items": [
+                      {
+                        "title": "Built-in Support and Custom Options",
+                        "points": [],
+                        "intro": "Need a specific configuration? Looking for trailer availability without the long factory lead times? Our team is here to help you order exactly what you need or get you on the road quickly with in-stock inventory."
+                      },
+                      {
+                        "title": "Local Financing That Works for You",
+                        "points": [],
+                        "intro": "Whether you're looking to purchase, lease, or rent, we'll help you explore the best payment structure for your goals while keeping your cash flow intact."
+                      },
+                      {
+                        "title": "Service That Keeps You Running",
+                        "points": [],
+                        "intro": "From preventive maintenance to urgent repairs, our trailer service and repair teams help keep downtime to a minimum, built around your schedule."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "actions-partner-3",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "browse-trailers",
+                        "label": "Find the Right Trailer",
+                        "style": "primary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-choosing",
+                  "type": "heading",
+                  "props": {
+                    "text": "Choosing the Right Hyundai Translead Trailer Model",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "choosing"
+                  }
+                },
+                {
+                  "id": "p-choosing-1",
+                  "type": "text",
+                  "props": {
+                    "text": "From dry vans to reefers, Hyundai Translead offers a range of trailer options. The right one for you depends on what and where you haul. Need help narrowing it down? Our sales team is here to walk you through available trailer models and help you compare your options.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-what-to-look-for",
+                  "type": "heading",
+                  "props": {
+                    "text": "What You Should Look for in a Hyundai Translead Trailer",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "what-to-look-for"
+                  }
+                },
+                {
+                  "id": "p-what-to-look-for-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Hyundai trailers are built to go the distance, but knowing what to prioritize when making your investment matters just as much.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-what-to-look-for-2",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "<strong>Look for longevity, not just price</strong> — a Hyundai Translead trailer might cost more upfront than some competitors, but its low maintenance requirements and long service life make it a smart long-term investment."
+                      },
+                      {
+                        "text": "<strong>Choose specs that match your routes</strong> — weight, length, and insulation options should match your most common hauls. If you're running cold storage loads or produce, don't settle for a general dry van. Let our team help you spec it right the first time."
+                      },
+                      {
+                        "text": "<strong>Don't overlook dealer support</strong> — buying the trailer is only step one. At Sun State Trailers, we've got a dedicated support team and locations across Florida to help you get what you need fast; no runaround, no red tape."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-what-to-look-for-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Whether you're looking to upgrade your current fleet or purchase your first trailer, Hyundai Translead is a brand you can count on, and Sun State Trailers is the team that stands behind it. Let us help you spec, finance, and maintain a trailer that's truly built for your business.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-what-to-look-for-4",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "browse-trailers",
+                        "label": "Find the Right Trailer",
+                        "style": "primary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-share",
+                  "type": "post-share",
+                  "props": {
+                    "label": "Share",
+                    "items": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fhyundai-translead-trailers-built-for-efficiency",
+                        "newTab": true
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fhyundai-translead-trailers-built-for-efficiency&text=Hyundai%20Translead%20Trailers%3A%20Built%20for%20Efficiency%2C%20Backed%20by%20Sun%20State%20Trailers",
+                        "newTab": true
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fhyundai-translead-trailers-built-for-efficiency",
+                        "newTab": true
+                      },
+                      {
+                        "label": "Email",
+                        "url": "mailto:?subject=Hyundai%20Translead%20Trailers%3A%20Built%20for%20Efficiency%2C%20Backed%20by%20Sun%20State%20Trailers&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fhyundai-translead-trailers-built-for-efficiency",
+                        "newTab": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Trailer sales",
+          "heading": "Built for efficiency. Backed by us.",
+          "body": "Call 800.741.7566 to talk with our team about Hyundai Translead trailers at any Sun State location in Florida.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Browse trailer inventory",
+          "secondaryUrl": "/store/inventory?type=trailer"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/hyundai-translead-trailers-built-for-efficiency\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/hyundai-translead-trailers-built-for-efficiency\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n/* The hero photograph is framed a little high, as the design frames it. */\n[data-bz-section=\"post-hero\"] [data-bz-node=\"ph-photo\"] img { object-position: center 55%; }\n\n/* Its type cards: 24px in, the title 10px over a 14px list. */\n[data-bz-node=\"art-body\"] .ss-cl--type,\n[data-bz-node=\"art-body\"] .ss-cl--type3 { gap: 24px; }\n[data-bz-node=\"art-body\"] .ss-cl--type { gap: 28px; }\n[data-bz-node=\"art-body\"] .ss-cl--type .ss-cl__card { padding: 24px; }\n[data-bz-node=\"art-body\"] .ss-cl--type .ss-cl__t { margin: 0 0 10px; }\n[data-bz-node=\"art-body\"] :is(.ss-cl--type, .ss-cl--type3) .ss-cl__list { margin: 0; padding-left: 18px; }\n[data-bz-node=\"art-body\"] :is(.ss-cl--type, .ss-cl--type3) .ss-cl__list li { font-size: 14px; }\n\n/* A type card's sentence is set as body text, as the article's paragraphs are. */\n[data-bz-node=\"art-body\"] :is(.ss-cl--type, .ss-cl--type3) .ss-cl__p { font-size: 17px; line-height: 1.8; margin: 0 0 18px; }\n\n[data-bz-node=\"art-body\"] > [data-bz-node=\"actions-partner-3\"] .bz-btns { margin: 8px 0 34px; }\n"
+}

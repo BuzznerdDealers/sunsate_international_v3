@@ -875,3 +875,390 @@ Checked as in §20: every paragraph, list item and heading is in the existing po
 rendered beside the built posts at 1280px match section for section. The handoff ships 1000px
 photographs against the 1280px ones already here, so **the existing posts are kept** and the
 converter lists batch 8 as repeats. Colours follow the Design system's current accent (§20).
+
+## 24. `SS_International_10` — the trailer-repair post
+
+A standalone post handoff (`handoff-trailer-repair-post`: one framework-free `index.html`,
+`css/`, `js/site.js`, `assets/`): *Trusted Trailer Repair for Florida Fleets at Sun State
+Trailers* (Sun State Trailers, Service, Jul 5, 2026). It is new — no post on the site carries its
+copy — and is published on its live permalink's slug,
+`trusted-trailer-repair-for-florida-fleets-at-sun-state-trailers`, with its card on the Blog page
+(71 in all).
+
+**How it was built.** The page draws the same post as every other here, under the class names of
+the §8 handoff (`.hero--post`, `.toc`, `.article__body`, `.figure`, `.grid--2 .card`, `.callout`,
+`.article__actions`, `.share`). `tools/blog-handoff/convert.py` now reads that format: a
+normaliser renames those shapes to the ones it already converts, so the post comes out of the
+converter on the shared long-form layout with the same ids, library buttons and node styles as the
+other 70. Pointed at a folder whose only page is `index.html`, the converter treats it as the
+post and takes the slug from its canonical. Nothing else it produces changed.
+
+| Handoff | Here |
+|---|---|
+| `.hero--post` (photo, 72% scrim, breadcrumb, H1, byline) | the **Post hero** component; the photo's `object-position: center 45%` is one rule in the post's CSS |
+| `.toc` + `.toc__aside` | the **Post contents** widget and the bordered promo card (*Schedule service* button, "Get Trailer Repair →") |
+| `.spec-table` ×2 | the **Checkmark list** |
+| `.grid--2` of `.card` lists ×2 | a two-column row of bordered columns, each a **Prose list** |
+| plain `ul` ×2 | the **Prose list** |
+| `.figure` ×2 | image blocks, cropped to 380px (240px on phones) by the shared post CSS |
+| `.callout` | a bordered column with the *Schedule service* button as a link, "Get Trailer Repair →" |
+| `.article__actions` | *Schedule service* (filled, "Get Back on the Road") and *Contact us* (outlined) |
+| `.share` | the **Share row** |
+| related posts | **Latest posts**, as on every post |
+| dark `.cta` band | the **Contact CTA band** |
+
+Body copy matches the handoff word for word (all 86 paragraphs, list items, rows and headings
+checked mechanically), and the built page was rendered beside the handoff at 1280px and 390px:
+each band lands within ~25px of the handoff's at 1280px and within ~100px at phone width.
+
+**Links.** The handoff links by flat file name; they map to this site's routes: `service.html` →
+`/service`, `service-appointment.html` → `/service-appointment`, `contact-us.html` → `/contact`,
+and "Sun State Trailers" in the prose (`trailer-sales.html`) → the Trailer Sales rooftop's page,
+as in the other trailer posts. `tel:8007417566` is `tel:+18007417566`.
+
+**Photographs.** The three are 2000px PNGs at ~3 MB each; they are re-encoded as 1280px JPEGs
+(~100–180 KB) under `public/img/blog/trusted-trailer-repair-for-florida-fleets-at-sun-state-trailers/`.
+
+**Dropped / as elsewhere.**
+
+- The handoff's three hand-picked related posts are the latest-posts list. *Why Fleets Should Get
+  Regular Trailer Service* is not a post on this site; *Semi Truck Road Service* and *Why Go to Sun
+  State Trailers for Semi Trailer Parts* are. The related thumbnails it ships are not used.
+- The header, utility bar and footer are the dealer's current template, not the handoff's (same
+  chrome, re-saved in the dashboard). `js/site.js` is not carried over: mega menus are the Menus
+  screen's, and the contents rail's smooth scroll and scroll-spy are already in the shared post code.
+- Colours follow the Design system's current accent (§20); the handoff's red returns if
+  **Design system → accent** is set back to `#EE2D24`.
+- The `BlogPosting` (with `speakable`) and `BreadcrumbList` JSON-LD are still not emitted for posts
+  (§8). `#post-lede` is on the lede, so a speakable selector will find it once they are.
+
+**Old address.** If sunstatetrailers.com is pointed at this site, this goes on **Storefront → 301
+Redirects** in Admin:
+
+| Old address | New path |
+|---|---|
+| `https://sunstatetrailers.com/uncategorized/trusted-trailer-repair-for-florida-fleets-at-sun-state-trailers/` | `/blog/posts/trusted-trailer-repair-for-florida-fleets-at-sun-state-trailers` |
+
+## 25. `SS_International_12` — Sun State Trailers posts, batch 2 (five new posts)
+
+`handoff-trailer-posts-batch-2`: five post pages and a preview index, in the §24 standalone
+format. All five are new; each is published on its file's slug with its card on the Blog page
+(76 in all):
+
+| Post | Topic, date |
+|---|---|
+| `no-running-lights-on-trailer-start-here` | Service, May 21, 2026 |
+| `lift-axle-troubleshooting-for-trailer-owners` | Service, May 15, 2026 |
+| `how-to-spot-problems-before-a-semi-trailer-tire-blowout` | Service, May 11, 2026 |
+| `5-ways-you-can-benefit-from-a-new-reefer-trailer-for-sale` | Trailer Sales, Jan 23, 2026 |
+| `lower-overhead-and-expand-capacity-with-a-used-dump-trailer` | Trailer Sales, Jan 16, 2026 |
+
+Built by `tools/blog-handoff/convert.py` on the shared post layout. Body copy, contents rails
+and rail cards match the handoff word for word (checked mechanically), and each post was rendered
+beside its handoff page: every section lands within 27px at 1280px, drifting to ~70px by the end
+at phone width. `index.html` is the handoff's own preview hub and is not a page here.
+
+New shapes:
+
+| Handoff | Here |
+|---|---|
+| `.check-list` of `.check-item` rows (✓ in a round accent badge, semibold text) | the **Checkmark list** with a new *In a round badge* mark |
+| a `.spec-table` whose marks are `•` (warning signs) | the **Checkmark list** with a new *Bullet* mark |
+| `.type-card`s two or three across (a title over a list) | **Card lists**, *Type* and *Type, three across*, sized to the handoff in the post's CSS |
+| `.article__actions--inline` (a button mid-article) | a button row from the library, 8px above and 34px below |
+
+Both new marks are options on the widget, so any post can switch to them on the canvas.
+
+**Links.** `trailer-sales.html` is chosen by what the link says, as in the prototype batches:
+"Sun State Trailers" in prose → the Trailer Sales rooftop page; *Explore / Browse … Inventory*
+→ trailer listings (`/store/inventory?type=trailer`), filtered to new or used where the link
+says so. *Trailer Specifications* has no page here (§15), so *View Our Trailer Specifications*
+and *Download Trailer Specifications* go to the trailer listings. `financing.html` → `/financing`.
+Every button is from the Buttons library (*Schedule service*, *Contact us*, *Financing*,
+*Browse trailers*, *Browse new trailers*, *Browse used trailers*), relabelled per placement.
+
+**Photographs** are the handoff's 1600px JPEGs, resized to the 1280px the other posts use.
+
+**Dropped / as elsewhere.** The handoff's hand-picked related posts are the latest-posts list;
+several of its picks (*Trailer Brake Lights Not Working?*, *The Basics of DOT Trailer Inspection
+Requirements*, *Trailer Preventive Maintenance Checklist for Fleets*) are not posts on this site.
+Chrome, colours and the unemitted `BlogPosting` data are as in §24.
+
+**Old addresses.** If sunstatetrailers.com is pointed at this site, these go on **Storefront →
+301 Redirects** in Admin:
+
+| Old path on sunstatetrailers.com | New path |
+|---|---|
+| `/uncategorized/no-running-lights-on-trailer-start-here/` | `/blog/posts/no-running-lights-on-trailer-start-here` |
+| `/uncategorized/lift-axle-troubleshooting-for-trailer-owners/` | `/blog/posts/lift-axle-troubleshooting-for-trailer-owners` |
+| `/uncategorized/how-to-spot-problems-before-a-semi-trailer-tire-blowout/` | `/blog/posts/how-to-spot-problems-before-a-semi-trailer-tire-blowout` |
+| `/new-trailers/benefits-from-new-reefer-trailer-for-sale/` | `/blog/posts/5-ways-you-can-benefit-from-a-new-reefer-trailer-for-sale` |
+| `/used-trailers/lower-overhead-expand-capacity-used-dump-trailer/` | `/blog/posts/lower-overhead-and-expand-capacity-with-a-used-dump-trailer` |
+
+## 26. `SS_International_13` — Sun State Trailers posts, batch 3 (seven new posts)
+
+`handoff-trailer-posts-batch-3`: seven post pages and a preview index, in the §24 format. All
+seven are new; each is published on its file's slug with its card on the Blog page (83 in all).
+Three are the site's first **Trailer Rentals** posts, and the Blog page gains that topic chip.
+
+| Post | Topic, date |
+|---|---|
+| `cost-effective-solutions-why-fleets-buy-used-reefer-trailers` | Trailer Sales, Jan 9, 2026 |
+| `how-to-source-reliable-dry-van-trailers-for-sale` | Trailer Sales, Jan 2, 2026 |
+| `6-reasons-why-you-should-rent-a-trailer` | Trailer Rentals, Dec 26, 2025 |
+| `why-you-should-shop-used-dry-van-trailers-for-sale` | Trailer Sales, Dec 19, 2025 |
+| `5-reasons-why-you-should-look-for-trailers-for-rent` | Trailer Rentals, Nov 28, 2025 |
+| `5-benefits-of-a-reefer-trailer-lease` | Trailer Rentals, Nov 14, 2025 |
+| `how-does-a-reefer-trailer-work` | Trailer Sales, Nov 7, 2025 |
+
+Built by `tools/blog-handoff/convert.py`, using only shapes §24 and §25 already handle. Body copy
+and rails match the handoff word for word (checked mechanically), and each post was rendered beside
+its handoff page: every section lands within 27px at 1280px and within ~90px at phone width.
+
+**One styling addition.** Some type cards here hold a sentence rather than a list; the handoff
+sets it as body text (17px, 1.8 leading). The converter adds that rule to a post whose type cards
+carry a sentence. Batch 2 re-converts unchanged.
+
+**Links, and one new library button.** These posts link rentals. The Inventory page already sends
+trailer rentals to the storefront filtered to rentals (`/store/inventory?type=trailer&condition=rental`),
+so rental links go there through a new **Trailer Rentals →** button (`browse-trailer-rentals`),
+edited on **Buttons** like the rest. Links to `trailer-sales.html` are otherwise read by their
+wording: *New Trailers* / *Used Trailers* → trailer listings filtered to new or used; *Browse New &
+Used Trailers*, *Explore Inventory* → all trailer listings; "Sun State Trailers" in prose → the
+Trailer Sales rooftop page. *Trailer Specifications* links go to the trailer listings (§15).
+
+**Dropped / as elsewhere.** Keep reading is the latest-posts list; chrome, colours and the
+unemitted `BlogPosting` data are as in §24.
+
+**Old addresses.** If sunstatetrailers.com is pointed at this site, these go on **Storefront →
+301 Redirects** in Admin:
+
+| Old path on sunstatetrailers.com | New path |
+|---|---|
+| `/used-trailers/cost-effective-solutions-why-fleets-buy-used-reefer-trailers/` | `/blog/posts/cost-effective-solutions-why-fleets-buy-used-reefer-trailers` |
+| `/new-trailers/how-to-source-reliable-dry-van-trailers-for-sale/` | `/blog/posts/how-to-source-reliable-dry-van-trailers-for-sale` |
+| `/trailer-rentals/6-reasons-why-you-should-rent-a-trailer/` | `/blog/posts/6-reasons-why-you-should-rent-a-trailer` |
+| `/used-trailers/why-you-should-shop-used-dry-van-trailers-for-sale/` | `/blog/posts/why-you-should-shop-used-dry-van-trailers-for-sale` |
+| `/trailer-rentals/tampa-trailer-rental-reasons/` | `/blog/posts/5-reasons-why-you-should-look-for-trailers-for-rent` |
+| `/trailer-rentals/reefer-trailer-lease-benefits/` | `/blog/posts/5-benefits-of-a-reefer-trailer-lease` |
+| `/used-trailers/how-does-a-reefer-trailer-work/` | `/blog/posts/how-does-a-reefer-trailer-work` |
+
+## 27. `SS_International_14` — Sun State Trailers posts, batch 4 (eight new posts)
+
+`handoff-trailer-posts-batch-4`: eight post pages and a preview index, in the §24 format. All
+eight are new; each is published on its file's slug with its card on the Blog page (91 in all).
+
+| Post | Topic, date |
+|---|---|
+| `searching-for-tampa-trailer-dealers` | Trailer Sales, Oct 24, 2025 |
+| `globe-trailers-for-sale-in-florida` | Trailer Sales, Oct 17, 2025 |
+| `what-fleets-should-look-for-in-a-semi-trailer-for-sale` | Trailer Sales, Oct 5, 2025 |
+| `best-trailer-leasing-options-in-florida` | Trailer Rentals, Sep 26, 2025 |
+| `hyundai-translead-trailers-for-sale-in-florida` | Trailer Sales, Sep 19, 2025 |
+| `when-to-consider-a-trailer-upgrade` | Trailer Sales, Aug 22, 2025 |
+| `hyundai-translead-trailers-built-for-efficiency` | Trailer Sales, Aug 15, 2025 |
+| `dry-freight-trailers-smart-choice-for-general-hauling` | Trailer Sales, Aug 8, 2025 |
+
+Built by `tools/blog-handoff/convert.py`. Body copy and rails match the handoff word for word
+(checked mechanically), and each post was rendered beside its handoff page: every section lands
+within 25px at 1280px and within ~80px at phone width. Batches 2 and 3 re-convert unchanged.
+
+New shapes and fixes:
+
+| Handoff | Here |
+|---|---|
+| `.num-card`s three across (a large accent number over a title and a sentence) | **Card lists**, new *Numbered, three across* style (two across below 1100px, one on phones) |
+| numbered cards' 28px / 24px grid gaps | one rule in the post's CSS |
+| a closing `h2` with no id, not in the contents rail | a heading with no anchor, its node named from its first words |
+| *Find the Right Trailer*, *Check Out Our …* buttons | trailer listings (new / used / rentals where the wording says so) |
+
+**Dropped / as elsewhere.** Keep reading is the latest-posts list; chrome, colours and the
+unemitted `BlogPosting` data are as in §24. *Trailer Specifications* links go to the trailer
+listings (§15).
+
+**Old addresses.** If sunstatetrailers.com is pointed at this site, these go on **Storefront →
+301 Redirects** in Admin:
+
+| Old path on sunstatetrailers.com | New path |
+|---|---|
+| `/used-trailers/searching-for-tampa-trailer-dealers-heres-why-florida-fleets-choose-sun-state-trailers-as-their-long-term-partner/` | `/blog/posts/searching-for-tampa-trailer-dealers` |
+| `/used-trailers/globe-trailers-for-sale-in-florida-heavy-duty-roi-for-fleet-hauls/` | `/blog/posts/globe-trailers-for-sale-in-florida` |
+| `/used-trailers/what-fleets-should-look-for-in-a-semi-trailer-for-sale-specs-standardization-resale-value/` | `/blog/posts/what-fleets-should-look-for-in-a-semi-trailer-for-sale` |
+| `/trailer-rentals/best-trailer-leasing-options-in-florida-how-fleets-maximize-uptime-reduce-costs/` | `/blog/posts/best-trailer-leasing-options-in-florida` |
+| `/new-trailers/hyundai-translead-trailers-for-sale-in-florida-proven-efficiency-for-fleet-operations/` | `/blog/posts/hyundai-translead-trailers-for-sale-in-florida` |
+| `/new-trailers/when-to-consider-a-trailer-upgrade-and-why-it-pays-to-buy-new/` | `/blog/posts/when-to-consider-a-trailer-upgrade` |
+| `/new-trailers/hyundai-translead-trailers-built-for-efficiency-backed-by-sun-state-trailers/` | `/blog/posts/hyundai-translead-trailers-built-for-efficiency` |
+| `/new-trailers/dry-freight-trailers-why-theyre-a-smart-choice-for-general-hauling/` | `/blog/posts/dry-freight-trailers-smart-choice-for-general-hauling` |
+
+## 28. `SS_International_15` — Sun State Trailers posts, batch 5 (nine new posts)
+
+`handoff-trailer-posts-batch-5`: nine post pages and a preview index, in the §24 format. All nine
+are new; each is published on its file's slug with its card on the Blog page (100 in all). Three
+topics are new to the site and get chips on the Blog page: **Used Trailers**, **New Trailers** and
+**Financing**.
+
+| Post | Topic, date |
+|---|---|
+| `reefer-trailers-for-sale-what-to-know-before-you-buy-new` | Trailer Sales, Aug 1, 2025 |
+| `your-guide-to-trailer-financing` | Financing, Jul 25, 2025 |
+| `why-businesses-across-florida-trust-sun-state-trailers` | Trailer Sales, Jul 18, 2025 |
+| `why-you-should-choose-a-globe-trailers-dealership` | New Trailers, Jul 11, 2025 |
+| `understanding-the-complete-trailer-cost` | Used Trailers, Jul 4, 2025 |
+| `refrigerator-trailer-or-insulated-trailer` | Used Trailers, Jun 27, 2025 |
+| `how-much-is-a-flatbed-trailer` | Used Trailers, Jun 20, 2025 |
+| `what-to-look-for-in-a-used-reefer-trailer` | Used Trailers, May 29, 2025 |
+| `trailer-parts-to-check-before-the-road` | New Trailers, May 9, 2025 |
+
+Built by `tools/blog-handoff/convert.py`. Body copy and rails match the handoff word for word
+(checked mechanically), and each post was rendered beside its handoff page: every section lands
+within 31px at 1280px. The earlier standalone batches (§24–§27) re-convert byte for byte.
+
+This batch draws more shapes than any before it. Each is an existing block or widget, extended
+with a style where it needed one, so the dealer edits them on the canvas like the rest:
+
+| Handoff | Here |
+|---|---|
+| `.mistake-item` / `.misstep-item` rows (✕ in a red badge, a title over a sentence) | **Checkmark list**, new *✕ in a red badge, titled rows* mark |
+| `.pitfall-item` rows (the same, ink badge) | **Checkmark list**, *✕ in an ink badge* |
+| two labelled `.type-card`s, each a sentence over ✓ `.feat` rows | real blocks in two bordered columns — label, heading, sentence — with the rows as a **Checkmark list**, new *✓ in a small ink badge* mark |
+| runs of titled `.card`s, one under another (title, sentence, list, closing note) | **Card lists**, new *Stacked* style — one list per run, not one box per card |
+| titled `.card`s two across | **Card lists**, *Stacked, two across* |
+| `.type-card`s four across ending in an accent **BEST FOR** line | **Card lists**, new *Type, four across*, with a new optional *accent line at the foot* field |
+| `.decide-card`s (a question over its answer) | **Card lists**, new *Decision* style |
+| `.compare-card`s four across (accent label, title, sentence) | **Card lists**, new *Compare, four across*, with a new optional *small label above the title* field |
+| `.faq-item` questions inside a `.check-list` | the **Question list**, ruled above each as the design rules it |
+| `.step-item`s — a round number beside an `h2` the contents rail links to | per step, a row of real blocks: the number in a round accent badge, then a real heading (which keeps the rail's anchor) and its paragraphs, ruled between |
+| an inline-styled button row, and paragraphs with their own top margin | the mid-article button row at its own margins; the paragraph's margin as a node style |
+
+The eight numbered steps on *From Kingpins to Landing Gears* are eight rows, not one list, because
+each heading is a target the contents rail links to and a list item cannot carry an anchor.
+
+**Links.** `parts.html` → `/parts`. A kind of trailer named in prose ("flatbed trailers",
+"refrigerator trailers", "insulated dry van trailers") → the trailer listings, filtered to new or
+used where the words say so; "Sun State Trailers" stays the Trailer Sales rooftop page.
+
+**Dropped / as elsewhere.** Keep reading is the latest-posts list; chrome, colours and the
+unemitted `BlogPosting` data are as in §24. *Trailer Specifications* links go to the trailer
+listings (§15). Two of the stacked cards' closing notes sit 10px under their list in the handoff
+and 8px here — the style uses one value for both.
+
+**Old addresses.** If sunstatetrailers.com is pointed at this site, these go on **Storefront →
+301 Redirects** in Admin:
+
+| Old path on sunstatetrailers.com | New path |
+|---|---|
+| `/new-trailers/reefer-trailers-for-sale-what-to-know-before-you-buy-new/` | `/blog/posts/reefer-trailers-for-sale-what-to-know-before-you-buy-new` |
+| `/new-trailers/your-guide-to-trailer-financing-with-sun-state-trailers-simple-flexible-fast/` | `/blog/posts/your-guide-to-trailer-financing` |
+| `/new-trailers/why-businesses-across-florida-trust-sun-state-trailers-as-their-preferred-trailer-dealer/` | `/blog/posts/why-businesses-across-florida-trust-sun-state-trailers` |
+| `/new-trailers/when-buying-new-brands-matter-heres-why-you-should-choose-a-globe-trailers-dealership/` | `/blog/posts/why-you-should-choose-a-globe-trailers-dealership` |
+| `/used-trailers/understanding-the-complete-trailer-cost-what-to-expect-when-shopping-new/` | `/blog/posts/understanding-the-complete-trailer-cost` |
+| `/used-trailers/do-you-need-a-refrigerator-trailer-or-just-an-insulated-one-heres-the-difference/` | `/blog/posts/refrigerator-trailer-or-insulated-trailer` |
+| `/used-trailers/how-much-is-a-flatbed-trailer-what-to-expect-and-what-impacts-the-price/` | `/blog/posts/how-much-is-a-flatbed-trailer` |
+| `/used-trailers/what-you-should-look-for-when-shopping-for-a-used-reefer-trailer-for-sale/` | `/blog/posts/what-to-look-for-in-a-used-reefer-trailer` |
+| `/new-trailers/from-kingpins-to-landing-gears-know-which-trailer-part-you-should-check-before-taking-your-trailer-out-on-the-road/` | `/blog/posts/trailer-parts-to-check-before-the-road` |
+
+## 29. `SS_International_16` — Sun State Trailers posts, batch 6 (six new posts)
+
+`handoff-trailer-posts-batch-6`: six post pages and a preview index, in the §24 format. All six
+are new; each is published on its file's slug with its card on the Blog page (106 in all).
+
+| Post | Topic, date |
+|---|---|
+| `6-businesses-that-benefit-from-used-reefer-trailers` | Used Trailers, Apr 25, 2025 |
+| `new-or-used-dump-trailers-reduce-costs` | Trailer Rentals, Jan 10, 2025 |
+| `which-trailers-are-best-for-your-business` | New Trailers, Dec 12, 2024 |
+| `how-our-parts-and-service-center-keeps-you-on-time` | Used Trailers, Nov 15, 2024 |
+| `how-a-used-flatbed-trailer-helps-your-business` | Used Trailers, Sep 23, 2024 |
+| `new-reefer-trailer-preserves-product-quality` | New Trailers, Sep 13, 2024 |
+
+Topics are as the handoff's bylines give them (*New or Used Dump Trailers* is filed under Trailer
+Rentals there). Built by `tools/blog-handoff/convert.py`. Body copy and rails match the handoff word
+for word (checked mechanically), and each post was rendered beside its handoff page: every section
+lands within 28px at 1280px, and every card grid is the handoff's height to the pixel. The earlier
+batches (§24–§28) re-convert byte for byte.
+
+New shapes, as Card lists styles and one prebuilt block:
+
+| Handoff | Here |
+|---|---|
+| `.benefit-card` / `.how-card` (title over a sentence), two, three or five across | **Card lists**, new *Brief* style |
+| `.use-card`s, two, three or four across | **Card lists**, new *Use* style |
+| `.product-tag`s five across (Fresh Produce, Frozen Foods …) | **Card lists**, new *Chip* style — one-line names, centred |
+| `.compare-card`s two across, with no label | **Card lists**, *Compare*, two across |
+| a card with `grid-column: 1 / -1` (the odd card out, spanning the row) | the card's new **Full width** switch |
+| `.stat-strip` (60+ / 4 / ALL over a line each) | the platform **Stat band**, drawn in the post's CSS as bordered, centred cells |
+| a plain wrapper around a run of titled cards | the run, as one *Stacked* Card list |
+| an `h2` with its own 34px top margin | the heading, with that margin in the post's CSS |
+
+**Card lists now has an Across setting** (two to five), so a style is no longer tied to one column
+count; each count carries the design's gap (28 / 24 / 20 / 14px) and steps down at 1100px and 640px
+as the design does. Posts that do not set it are unchanged.
+
+**Links.** "Order Parts Online" links to the Parts page in the handoff (`parts.html`), so it places
+the *Parts department* button, relabelled; trailer kinds named in prose go to the trailer listings.
+
+**Dropped / as elsewhere.** Keep reading is the latest-posts list; chrome, colours and the
+unemitted `BlogPosting` data are as in §24; *Trailer Specifications* links go to the trailer
+listings (§15). The stat figures follow the Design system's accent like every other accent here.
+
+**Old addresses.** If sunstatetrailers.com is pointed at this site, these go on **Storefront →
+301 Redirects** in Admin:
+
+| Old path on sunstatetrailers.com | New path |
+|---|---|
+| `/used-trailers/6-businesses-that-can-benefit-from-used-reefer-trailers/` | `/blog/posts/6-businesses-that-benefit-from-used-reefer-trailers` |
+| `/uncategorized/new-trailer-or-used-trailer-how-you-can-reduce-costs-when-shopping-for-dump-trailers/` | `/blog/posts/new-or-used-dump-trailers-reduce-costs` |
+| `/new-trailers/from-flatbed-trailers-to-dump-ends-discover-which-trailers-are-best-for-your-business/` | `/blog/posts/which-trailers-are-best-for-your-business` |
+| `/used-trailers/how-our-parts-and-service-center-keeps-you-on-time/` | `/blog/posts/how-our-parts-and-service-center-keeps-you-on-time` |
+| `/used-trailers/how-a-used-flatbed-trailer-can-help-get-your-business-up-and-running/` | `/blog/posts/how-a-used-flatbed-trailer-helps-your-business` |
+| `/new-trailers/how-a-new-reefer-trailer-can-help-preserve-the-quality-of-your-businesss-products/` | `/blog/posts/new-reefer-trailer-preserves-product-quality` |
+
+## 30. `SS_International_17` — three trailer-service posts, and a callout fix
+
+`handoff-trailer-service-posts-lite`: three post pages and a preview index, in the §24 format.
+All three are new; each is published on its file's slug with its card on the Blog page (109 in all).
+
+| Post | Topic, date |
+|---|---|
+| `why-fleets-should-get-regular-trailer-service` | Service, Jul 11, 2026 |
+| `how-to-reset-the-service-trailer-brake-system-fast` | Service, Jun 29, 2026 |
+| `trailer-preventive-maintenance-checklist-for-fleets` | Service, Jun 8, 2026 |
+
+*Why Fleets Should Get Regular Trailer Service* is the post §24's handoff named among its related
+picks and that the site did not have; it now exists. Built by `tools/blog-handoff/convert.py`;
+body copy and rails match the handoff word for word (checked mechanically).
+
+**Two small widget additions:**
+
+| Handoff | Here |
+|---|---|
+| a `.spec-table` whose marks are 01, 02, 03 … | **Checkmark list**, new *01, 02, 03 — numbered in order* mark, which counts itself, so a row added on the canvas gets the next number |
+| `•` rows led by a bold title in the same sentence ("**Accurate Diagnostics:** Instead of…") | **Checkmark list**, new *Title runs into the sentence* switch |
+
+**A fix to every standalone post with a callout.** Rendering this batch element by element showed
+each bordered callout sat ~50px looser than the design: its margins were on the column, inside the
+row's grid, where they add to the paragraph above and the photograph below instead of collapsing
+with them. They are now on the row, which is in the article's normal flow, so the gaps are the
+design's (34px above, 36px below). This changes only that row's and column's styles, node ids
+unchanged, in the seven earlier posts that have one: *Trusted Trailer Repair…*, *No Running
+Lights…*, *Lift Axle Troubleshooting…*, *How to Spot Problems Before a Semi-Trailer Tire Blowout*,
+*5 Ways You Can Benefit from a New Reefer Trailer…*, *Lower Overhead… Used Dump Trailer* and
+*5 Reasons Why You Should Look for Trailers for Rent*. The Part-format posts (§9–§23) are unchanged.
+The earlier per-section checks averaged this away; the section-by-section comparisons in §25 and
+§26 understated it.
+
+After the fix, each section of the three new posts lands within 45px of the handoff at 1280px.
+What remains is 5–6px per block from the shared long-form layer, the same on every post: the lede,
+and each bordered list card, drawn slightly tighter than the design.
+
+**Dropped / as elsewhere.** Keep reading is the latest-posts list; chrome, colours and the
+unemitted `BlogPosting` data are as in §24.
+
+**Old addresses.** If sunstatetrailers.com is pointed at this site, these go on **Storefront →
+301 Redirects** in Admin:
+
+| Old path on sunstatetrailers.com | New path |
+|---|---|
+| `/uncategorized/why-fleets-should-get-regular-trailer-service/` | `/blog/posts/why-fleets-should-get-regular-trailer-service` |
+| `/uncategorized/how-to-reset-the-service-trailer-brake-system-fast/` | `/blog/posts/how-to-reset-the-service-trailer-brake-system-fast` |
+| `/uncategorized/trailer-preventive-maintenance-checklist-for-fleets/` | `/blog/posts/trailer-preventive-maintenance-checklist-for-fleets` |
