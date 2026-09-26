@@ -878,8 +878,8 @@ converter lists batch 8 as repeats. Colours follow the Design system's current a
 
 ## 24. Why the handoff posts did not show in the dashboard
 
-**Every post from batches 4–8 is on `main`.** Each has its own page and its card on /blog (72
-cards). Two of them, *Commercial Truck Oil Change Mistakes That Cost You* and *Common Problems With
+**Every post from batches 4–8 is on `main`.** Each has its own page and its card on /blog. Two of
+them, *Commercial Truck Oil Change Mistakes That Cost You* and *Common Problems With
 Air Brake Parts for Semi Trucks*, were `status: "draft"` on `main` and had no page or card. They
 are now published, with the excerpts the handoff's listing gives them.
 
@@ -890,3 +890,9 @@ other components the posts use. Of the handoff's 30 posts, only the two above ex
 published, which is what the dashboard showed. Nothing committed to `main` can appear there until
 `draft` is brought back onto `main`: reconnect the repository (**Website → Connect an existing
 repository**, which resets `draft` to `main`) or reset the branch directly.
+
+**Every blog the dashboard's `draft` showed stays.** All 10 posts on `draft` also exist on `main`.
+Two that were published on `draft` but drafts on `main` — *How Electrical Diagnostic Tools Prevent
+Breakdowns* and *When to Schedule Semi Truck Alignment Near Me* — are now published here too, as
+the dealer wrote them (identical to `draft`). /blog carries 74 cards: every published post, no
+title twice, and no two posts sharing more than 37% of their vocabulary.
