@@ -1,0 +1,533 @@
+{
+  "slug": "your-guide-to-trailer-financing",
+  "title": "Your Guide to Trailer Financing With Sun State Trailers: Simple, Flexible, Fast",
+  "date": "2025-07-25",
+  "description": "Learn how Sun State Trailers makes trailer financing simple and flexible with personalized support tailored to your business needs.",
+  "excerpt": "Whether you're replacing a single trailer or expanding your fleet, a new trailer is a big investment. But that doesn't mean it has to be complicated. At Sun State Trailers, we make trailer financing simple…",
+  "status": "published",
+  "coverImage": "/img/blog/your-guide-to-trailer-financing/hero.jpg",
+  "topic": "Financing",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Financing",
+          "title": "Your Guide to Trailer Financing With Sun State Trailers: Simple, Flexible, Fast",
+          "topic": "Financing",
+          "date": "July 25, 2025",
+          "readTime": "4 min read",
+          "author": "Sun State Trailers",
+          "image": {
+            "src": "/img/blog/your-guide-to-trailer-financing/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Sun State technician climbing into an International truck cab"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "Financing Built Around You",
+                        "href": "#built-around"
+                      },
+                      {
+                        "label": "New and Used Trailers",
+                        "href": "#new-and-used"
+                      },
+                      {
+                        "label": "How the Process Works",
+                        "href": "#how-it-works"
+                      },
+                      {
+                        "label": "The Sun State Difference",
+                        "href": "#difference"
+                      },
+                      {
+                        "label": "Common Questions",
+                        "href": "#faq"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "WANT THE FULL SHEET?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "View detailed specifications before you compare trailers.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-trailers",
+                                "label": "View Our Trailer Specifications →"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Whether you're replacing a single trailer or expanding your fleet, a new trailer is a big investment. But that doesn't mean it has to be complicated. At <a href=\"/locations/trailer-sales\">Sun State Trailers</a>, we make trailer financing simple, flexible, and fast, so you can get what you need and get back on the road without delay. We work with haulers of all sizes to create financing solutions that make sense for your business. Here's how our approach helps you move forward with confidence.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "h-built-around",
+                  "type": "heading",
+                  "props": {
+                    "text": "Financing Built Around Your Business",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "built-around"
+                  }
+                },
+                {
+                  "id": "p-built-around-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Every trucking operation is different. That's why our trailer financing options are designed to work for small owner-operators, large logistics companies, and everything in between. We understand the seasonal nature of the industry, cash flow fluctuations, and the need to plan ahead. That's why we offer:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-built-around-2",
+                  "type": "check-list",
+                  "props": {
+                    "mark": "dot",
+                    "items": [
+                      {
+                        "text": "Multiple loan and lease structures"
+                      },
+                      {
+                        "text": "Short and long-term repayment plans"
+                      },
+                      {
+                        "text": "Low down payment options for qualified buyers"
+                      },
+                      {
+                        "text": "Balloon payment plans and flexible rates"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-built-around-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Our finance team will walk you through each option so you can choose what's best for your operation.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-new-and-used",
+                  "type": "heading",
+                  "props": {
+                    "text": "Financing for New and Used Trailers",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "new-and-used"
+                  }
+                },
+                {
+                  "id": "p-new-and-used-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Whether you're buying a brand-new Hyundai Translead or a pre-owned flatbed, Sun State can help you finance it. Our in-house and third-party lenders offer competitive rates across our entire inventory.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-new-and-used-2",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "contact-us",
+                        "label": "Talk to a Sales Rep"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-how-it-works",
+                  "type": "heading",
+                  "props": {
+                    "text": "How the Process Works",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "how-it-works"
+                  }
+                },
+                {
+                  "id": "p-how-it-works-1",
+                  "type": "text",
+                  "props": {
+                    "text": "We know you're busy. That's why we've streamlined our trailer financing process to be as quick and straightforward as possible.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-how-it-works-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "num",
+                    "items": [
+                      {
+                        "points": [],
+                        "num": "1",
+                        "title": "Get in Touch",
+                        "intro": "Contact our sales or finance team to start the process. You can visit us in person, call your local Sun State Trailers location, or start online by browsing our trailer inventory."
+                      },
+                      {
+                        "points": [],
+                        "num": "2",
+                        "title": "Discuss Your Needs",
+                        "intro": "We'll ask the right questions to understand your goals, timeline, and budget. From there, we'll recommend financing plans tailored to your situation, not someone else's."
+                      },
+                      {
+                        "points": [],
+                        "num": "3",
+                        "title": "Apply and Get Approved",
+                        "intro": "With minimal paperwork and a team that guides you every step of the way, most approvals happen fast. We work with a network of trusted lenders and offer in-house finance options to help expedite the process."
+                      },
+                      {
+                        "points": [],
+                        "num": "4",
+                        "title": "Hit the Road",
+                        "intro": "Once your financing is in place, we finalize the paperwork and get you on your way. It's that simple."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-difference",
+                  "type": "heading",
+                  "props": {
+                    "text": "The Sun State Difference",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "difference"
+                  }
+                },
+                {
+                  "id": "p-difference-1",
+                  "type": "text",
+                  "props": {
+                    "text": "When it comes to trailer financing, the dealer you choose matters just as much as the loan terms. At Sun State, our reputation for honest service, clear communication, and long-term support sets us apart.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-difference-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "type3",
+                    "items": [
+                      {
+                        "title": "Personal, Human Support",
+                        "points": [],
+                        "intro": "You won't get bounced between departments or handed off to a call center. Our finance manager will work with you directly to make sure everything stays clear, manageable, and on track."
+                      },
+                      {
+                        "title": "Local Knowledge, Trusted Lenders",
+                        "points": [],
+                        "intro": "We've helped Florida haulers finance trailers for decades. Our relationships with banks and lenders are built on mutual trust, which means better terms, faster approvals, and fewer surprises for you."
+                      },
+                      {
+                        "title": "We Don't Oversell — We Align",
+                        "points": [],
+                        "intro": "Our goal is to match you with the right trailer and the right financing, not to sell you more than you need. If we think a lower-cost trailer is a better fit for your budget, we'll tell you. That's how we earn long-term loyalty."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-faq",
+                  "type": "heading",
+                  "props": {
+                    "text": "Common Questions About Trailer Financing",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "faq"
+                  }
+                },
+                {
+                  "id": "questions-faq-1",
+                  "type": "qa-list",
+                  "props": {
+                    "items": [
+                      {
+                        "q": "What kind of credit do I need to finance a trailer?",
+                        "a": "We work with buyers of all credit backgrounds. If you have strong credit, we can secure top-tier terms. If your credit is less than ideal, we can still explore realistic options."
+                      },
+                      {
+                        "q": "Can I finance a used trailer?",
+                        "a": "Yes. We finance both new and used trailers, and we'll walk you through the best financing structure for each."
+                      },
+                      {
+                        "q": "What if I'm a first-time buyer?",
+                        "a": "No problem. We work with many new owner-operators and can walk you through each step."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-faq-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Have more questions about our financing plans? Contact a member of our team.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-faq-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Buying a trailer shouldn't feel like jumping through hoops. With <a href=\"/locations/trailer-sales\">Sun State Trailers</a>, you get straightforward support, flexible financing, and a team that treats your business like their own. We're here to help you get the equipment you need without sacrificing your budget.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-faq-4",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "contact-us",
+                        "label": "Contact Us"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-share",
+                  "type": "post-share",
+                  "props": {
+                    "label": "Share",
+                    "items": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fyour-guide-to-trailer-financing",
+                        "newTab": true
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fyour-guide-to-trailer-financing&text=Your%20Guide%20to%20Trailer%20Financing%20With%20Sun%20State%20Trailers%3A%20Simple%2C%20Flexible%2C%20Fast",
+                        "newTab": true
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fyour-guide-to-trailer-financing",
+                        "newTab": true
+                      },
+                      {
+                        "label": "Email",
+                        "url": "mailto:?subject=Your%20Guide%20to%20Trailer%20Financing%20With%20Sun%20State%20Trailers%3A%20Simple%2C%20Flexible%2C%20Fast&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fyour-guide-to-trailer-financing",
+                        "newTab": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Financing",
+          "heading": "Let's build a financing plan that works for you.",
+          "body": "Call 800.741.7566 to talk with our finance team at any Sun State location in Florida.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Contact us",
+          "secondaryUrl": "/contact"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/your-guide-to-trailer-financing\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/your-guide-to-trailer-financing\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n/* The hero photograph is framed a little high, as the design frames it. */\n[data-bz-section=\"post-hero\"] [data-bz-node=\"ph-photo\"] img { object-position: center 45%; }\n\n/* Its type cards: 24px in, the title 10px over a 14px list. */\n[data-bz-node=\"art-body\"] .ss-cl--type,\n[data-bz-node=\"art-body\"] .ss-cl--type3 { gap: 24px; }\n[data-bz-node=\"art-body\"] .ss-cl--type { gap: 28px; }\n[data-bz-node=\"art-body\"] .ss-cl--type .ss-cl__card { padding: 24px; }\n[data-bz-node=\"art-body\"] .ss-cl--type .ss-cl__t { margin: 0 0 10px; }\n[data-bz-node=\"art-body\"] :is(.ss-cl--type, .ss-cl--type3) .ss-cl__list { margin: 0; padding-left: 18px; }\n[data-bz-node=\"art-body\"] :is(.ss-cl--type, .ss-cl--type3) .ss-cl__list li { font-size: 14px; }\n\n/* Its numbered cards sit as far apart as the design's grids: 28px two across, 24px three. */\n[data-bz-node=\"art-body\"] .ss-cl--num { gap: 28px; }\n[data-bz-node=\"art-body\"] .ss-cl--num3 { gap: 24px; }\n\n/* A type card's sentence is set as body text, as the article's paragraphs are. */\n[data-bz-node=\"art-body\"] :is(.ss-cl--type, .ss-cl--type3) .ss-cl__p { font-size: 17px; line-height: 1.8; margin: 0 0 18px; }\n\n/* Its questions are ruled above each, and closed off below the last. */\n[data-bz-node=\"art-body\"] .ss-qa { margin-bottom: 20px; }\n[data-bz-node=\"art-body\"] .ss-qa__i { border-bottom: 0; border-top: 1px solid var(--line); }\n[data-bz-node=\"art-body\"] .ss-qa__i:last-child { border-bottom: 1px solid var(--line); }\n[data-bz-node=\"art-body\"] .ss-qa__a { font-size: 15px; }\n\n[data-bz-node=\"art-body\"] > [data-bz-node=\"actions-new-and-used-2\"] .bz-btns { margin: 8px 0 34px; }\n"
+}

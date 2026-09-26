@@ -1089,3 +1089,70 @@ listings (§15).
 | `/new-trailers/when-to-consider-a-trailer-upgrade-and-why-it-pays-to-buy-new/` | `/blog/posts/when-to-consider-a-trailer-upgrade` |
 | `/new-trailers/hyundai-translead-trailers-built-for-efficiency-backed-by-sun-state-trailers/` | `/blog/posts/hyundai-translead-trailers-built-for-efficiency` |
 | `/new-trailers/dry-freight-trailers-why-theyre-a-smart-choice-for-general-hauling/` | `/blog/posts/dry-freight-trailers-smart-choice-for-general-hauling` |
+
+## 28. `SS_International_15` — Sun State Trailers posts, batch 5 (nine new posts)
+
+`handoff-trailer-posts-batch-5`: nine post pages and a preview index, in the §24 format. All nine
+are new; each is published on its file's slug with its card on the Blog page (100 in all). Three
+topics are new to the site and get chips on the Blog page: **Used Trailers**, **New Trailers** and
+**Financing**.
+
+| Post | Topic, date |
+|---|---|
+| `reefer-trailers-for-sale-what-to-know-before-you-buy-new` | Trailer Sales, Aug 1, 2025 |
+| `your-guide-to-trailer-financing` | Financing, Jul 25, 2025 |
+| `why-businesses-across-florida-trust-sun-state-trailers` | Trailer Sales, Jul 18, 2025 |
+| `why-you-should-choose-a-globe-trailers-dealership` | New Trailers, Jul 11, 2025 |
+| `understanding-the-complete-trailer-cost` | Used Trailers, Jul 4, 2025 |
+| `refrigerator-trailer-or-insulated-trailer` | Used Trailers, Jun 27, 2025 |
+| `how-much-is-a-flatbed-trailer` | Used Trailers, Jun 20, 2025 |
+| `what-to-look-for-in-a-used-reefer-trailer` | Used Trailers, May 29, 2025 |
+| `trailer-parts-to-check-before-the-road` | New Trailers, May 9, 2025 |
+
+Built by `tools/blog-handoff/convert.py`. Body copy and rails match the handoff word for word
+(checked mechanically), and each post was rendered beside its handoff page: every section lands
+within 31px at 1280px. The earlier standalone batches (§24–§27) re-convert byte for byte.
+
+This batch draws more shapes than any before it. Each is an existing block or widget, extended
+with a style where it needed one, so the dealer edits them on the canvas like the rest:
+
+| Handoff | Here |
+|---|---|
+| `.mistake-item` / `.misstep-item` rows (✕ in a red badge, a title over a sentence) | **Checkmark list**, new *✕ in a red badge, titled rows* mark |
+| `.pitfall-item` rows (the same, ink badge) | **Checkmark list**, *✕ in an ink badge* |
+| two labelled `.type-card`s, each a sentence over ✓ `.feat` rows | real blocks in two bordered columns — label, heading, sentence — with the rows as a **Checkmark list**, new *✓ in a small ink badge* mark |
+| runs of titled `.card`s, one under another (title, sentence, list, closing note) | **Card lists**, new *Stacked* style — one list per run, not one box per card |
+| titled `.card`s two across | **Card lists**, *Stacked, two across* |
+| `.type-card`s four across ending in an accent **BEST FOR** line | **Card lists**, new *Type, four across*, with a new optional *accent line at the foot* field |
+| `.decide-card`s (a question over its answer) | **Card lists**, new *Decision* style |
+| `.compare-card`s four across (accent label, title, sentence) | **Card lists**, new *Compare, four across*, with a new optional *small label above the title* field |
+| `.faq-item` questions inside a `.check-list` | the **Question list**, ruled above each as the design rules it |
+| `.step-item`s — a round number beside an `h2` the contents rail links to | per step, a row of real blocks: the number in a round accent badge, then a real heading (which keeps the rail's anchor) and its paragraphs, ruled between |
+| an inline-styled button row, and paragraphs with their own top margin | the mid-article button row at its own margins; the paragraph's margin as a node style |
+
+The eight numbered steps on *From Kingpins to Landing Gears* are eight rows, not one list, because
+each heading is a target the contents rail links to and a list item cannot carry an anchor.
+
+**Links.** `parts.html` → `/parts`. A kind of trailer named in prose ("flatbed trailers",
+"refrigerator trailers", "insulated dry van trailers") → the trailer listings, filtered to new or
+used where the words say so; "Sun State Trailers" stays the Trailer Sales rooftop page.
+
+**Dropped / as elsewhere.** Keep reading is the latest-posts list; chrome, colours and the
+unemitted `BlogPosting` data are as in §24. *Trailer Specifications* links go to the trailer
+listings (§15). Two of the stacked cards' closing notes sit 10px under their list in the handoff
+and 8px here — the style uses one value for both.
+
+**Old addresses.** If sunstatetrailers.com is pointed at this site, these go on **Storefront →
+301 Redirects** in Admin:
+
+| Old path on sunstatetrailers.com | New path |
+|---|---|
+| `/new-trailers/reefer-trailers-for-sale-what-to-know-before-you-buy-new/` | `/blog/posts/reefer-trailers-for-sale-what-to-know-before-you-buy-new` |
+| `/new-trailers/your-guide-to-trailer-financing-with-sun-state-trailers-simple-flexible-fast/` | `/blog/posts/your-guide-to-trailer-financing` |
+| `/new-trailers/why-businesses-across-florida-trust-sun-state-trailers-as-their-preferred-trailer-dealer/` | `/blog/posts/why-businesses-across-florida-trust-sun-state-trailers` |
+| `/new-trailers/when-buying-new-brands-matter-heres-why-you-should-choose-a-globe-trailers-dealership/` | `/blog/posts/why-you-should-choose-a-globe-trailers-dealership` |
+| `/used-trailers/understanding-the-complete-trailer-cost-what-to-expect-when-shopping-new/` | `/blog/posts/understanding-the-complete-trailer-cost` |
+| `/used-trailers/do-you-need-a-refrigerator-trailer-or-just-an-insulated-one-heres-the-difference/` | `/blog/posts/refrigerator-trailer-or-insulated-trailer` |
+| `/used-trailers/how-much-is-a-flatbed-trailer-what-to-expect-and-what-impacts-the-price/` | `/blog/posts/how-much-is-a-flatbed-trailer` |
+| `/used-trailers/what-you-should-look-for-when-shopping-for-a-used-reefer-trailer-for-sale/` | `/blog/posts/what-to-look-for-in-a-used-reefer-trailer` |
+| `/new-trailers/from-kingpins-to-landing-gears-know-which-trailer-part-you-should-check-before-taking-your-trailer-out-on-the-road/` | `/blog/posts/trailer-parts-to-check-before-the-road` |

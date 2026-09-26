@@ -1,0 +1,751 @@
+{
+  "slug": "refrigerator-trailer-or-insulated-trailer",
+  "title": "Do You Need a Refrigerator Trailer or Just an Insulated One? Here's the Difference",
+  "date": "2025-06-27",
+  "description": "Not sure if you need a refrigerator trailer or an insulated one? Discover the key differences and find the right fit for your business.",
+  "excerpt": "Choosing the right trailer for temperature-sensitive goods is one of the most important decisions a business owner can make. Whether you haul produce, pharmaceuticals, or specialty goods across Florida…",
+  "status": "published",
+  "coverImage": "/img/blog/refrigerator-trailer-or-insulated-trailer/hero.jpg",
+  "topic": "Used Trailers",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Used Trailers",
+          "title": "Do You Need a Refrigerator Trailer or Just an Insulated One? Here's the Difference",
+          "topic": "Used Trailers",
+          "date": "June 27, 2025",
+          "readTime": "5 min read",
+          "author": "Sun State Trailers",
+          "image": {
+            "src": "/img/blog/refrigerator-trailer-or-insulated-trailer/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Row of dry van and reefer trailers parked at a Sun State lot"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "Reefer vs. Insulated",
+                        "href": "#reefer-vs-insulated"
+                      },
+                      {
+                        "label": "Which One Do You Need?",
+                        "href": "#which-one"
+                      },
+                      {
+                        "label": "Questions to Ask",
+                        "href": "#questions"
+                      },
+                      {
+                        "label": "Common Missteps",
+                        "href": "#missteps"
+                      },
+                      {
+                        "label": "FAQs",
+                        "href": "#faqs"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "WANT THE FULL SHEET?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "View detailed specifications before you compare trailers.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-trailers",
+                                "label": "View Our Trailer Specifications →"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Choosing the right trailer for temperature-sensitive goods is one of the most important decisions a business owner can make. Whether you haul produce, pharmaceuticals, or specialty goods across Florida, protecting that cargo is key. But how do you know if you need a full-fledged refrigerator trailer or if an insulated dry van will do the job? Let's break down the differences so you can make the right choice for your business.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "h-reefer-vs-insulated",
+                  "type": "heading",
+                  "props": {
+                    "text": "What Sets Reefer Trailers and Insulated Dry Van Trailers Apart?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "reefer-vs-insulated"
+                  }
+                },
+                {
+                  "id": "p-reefer-vs-insulated-1",
+                  "type": "text",
+                  "props": {
+                    "text": "While they might look similar from the outside, <a href=\"/store/inventory?type=trailer\">refrigerator trailers</a> and <a href=\"/store/inventory?type=trailer\">insulated dry van trailers</a> serve very different purposes. Understanding their construction and capabilities helps you choose the right tool for the job.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-reefer-vs-insulated-2",
+                  "type": "row",
+                  "props": {
+                    "gap": 4
+                  },
+                  "styles": {
+                    "base": {
+                      "gap": 28,
+                      "marginTop": 8,
+                      "marginBottom": 34
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "cards-reefer-vs-insulated-2-1",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 24,
+                          "paddingRight": 24,
+                          "paddingBottom": 24,
+                          "paddingLeft": 24
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "cards-reefer-vs-insulated-2-1-label",
+                          "type": "text",
+                          "props": {
+                            "text": "REEFER TRAILER",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 11,
+                              "fontWeight": "700",
+                              "letterSpacing": 1.76,
+                              "lineHeight": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "muted",
+                              "marginBottom": 18
+                            }
+                          }
+                        },
+                        {
+                          "id": "cards-reefer-vs-insulated-2-1-h",
+                          "type": "heading",
+                          "props": {
+                            "text": "What Is a Refrigerator Trailer?",
+                            "headingLevel": 3,
+                            "align": "left"
+                          }
+                        },
+                        {
+                          "id": "cards-reefer-vs-insulated-2-1-p",
+                          "type": "text",
+                          "props": {
+                            "text": "A fully insulated trailer with a refrigerated unit added, designed to maintain a specific temperature range using an onboard cooling system.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.8,
+                              "marginBottom": 4
+                            }
+                          }
+                        },
+                        {
+                          "id": "cards-reefer-vs-insulated-2-1-feats",
+                          "type": "check-list",
+                          "props": {
+                            "mark": "tick-ink",
+                            "items": [
+                              {
+                                "title": "Built-in Refrigeration Unit",
+                                "text": "Uses a diesel-powered cooling system to regulate temperature."
+                              },
+                              {
+                                "title": "Precise Temperature Control",
+                                "text": "Ideal for perishable or temperature-sensitive goods."
+                              },
+                              {
+                                "title": "Higher Cost",
+                                "text": "Due to the technology and maintenance involved, these trailers cost more than their insulated counterparts."
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "cards-reefer-vs-insulated-2-2",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 24,
+                          "paddingRight": 24,
+                          "paddingBottom": 24,
+                          "paddingLeft": 24
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "cards-reefer-vs-insulated-2-2-label",
+                          "type": "text",
+                          "props": {
+                            "text": "INSULATED TRAILER",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 11,
+                              "fontWeight": "700",
+                              "letterSpacing": 1.76,
+                              "lineHeight": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "muted",
+                              "marginBottom": 18
+                            }
+                          }
+                        },
+                        {
+                          "id": "cards-reefer-vs-insulated-2-2-h",
+                          "type": "heading",
+                          "props": {
+                            "text": "What Is an Insulated Trailer?",
+                            "headingLevel": 3,
+                            "align": "left"
+                          }
+                        },
+                        {
+                          "id": "cards-reefer-vs-insulated-2-2-p",
+                          "type": "text",
+                          "props": {
+                            "text": "A dry van constructed with materials that help reduce heat transfer, but does not include a refrigeration system or \"reefer unit.\"",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.8,
+                              "marginBottom": 4
+                            }
+                          }
+                        },
+                        {
+                          "id": "cards-reefer-vs-insulated-2-2-feats",
+                          "type": "check-list",
+                          "props": {
+                            "mark": "tick-ink",
+                            "items": [
+                              {
+                                "title": "No Active Cooling",
+                                "text": "Relies on ambient conditions to preserve temperature for shorter durations."
+                              },
+                              {
+                                "title": "Basic Protection",
+                                "text": "Helps maintain internal temps, but can't cool the space."
+                              },
+                              {
+                                "title": "More Affordable",
+                                "text": "Lower upfront and maintenance costs make it a good fit for certain hauls."
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-which-one",
+                  "type": "heading",
+                  "props": {
+                    "text": "Which One Do You Actually Need?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "which-one"
+                  }
+                },
+                {
+                  "id": "p-which-one-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Not every haul needs a reefer. In fact, using the wrong type of trailer can mean wasted money, or worse, compromised cargo.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-which-one-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "type",
+                    "items": [
+                      {
+                        "title": "When to Choose a Refrigerator Trailer",
+                        "points": [
+                          {
+                            "text": "<strong>You're Hauling Perishable Goods:</strong> Think dairy, seafood, meat, frozen foods."
+                          },
+                          {
+                            "text": "<strong>You Require Temperature Precision:</strong> Some medical and chemical goods must be transported within a strict range."
+                          },
+                          {
+                            "text": "<strong>You Cover Long Distances:</strong> The longer the route, the greater the risk of spoilage without active cooling."
+                          }
+                        ]
+                      },
+                      {
+                        "title": "When an Insulated Dry Van Might Be Enough",
+                        "points": [
+                          {
+                            "text": "<strong>Short-Distance Runs:</strong> If your hauls are under a few hours, and temperatures aren't extreme."
+                          },
+                          {
+                            "text": "<strong>Non-Perishable Goods:</strong> Items that benefit from protection but don't require specific temps."
+                          },
+                          {
+                            "text": "<strong>Budget-Conscious Operations:</strong> When cutting costs is a priority, and risk is minimal."
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-which-one-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Looking for the right refrigerated trailer or insulated dry van trailer? Explore our selection of new models designed for real-world use.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-which-one-4",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "browse-trailers",
+                        "label": "Check Out Our Inventory",
+                        "style": "primary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-questions",
+                  "type": "heading",
+                  "props": {
+                    "text": "How to Decide: Questions to Ask Before You Buy",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "questions"
+                  }
+                },
+                {
+                  "id": "p-questions-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Not sure what fits your business? Asking the right questions can make your choice much easier.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-questions-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "decide",
+                    "items": [
+                      {
+                        "title": "What kind of cargo will I haul?",
+                        "points": [],
+                        "intro": "If your cargo is highly sensitive to heat or cold, opt for a refrigerator trailer. For more stable goods, insulation may suffice."
+                      },
+                      {
+                        "title": "What distances am I covering?",
+                        "points": [],
+                        "intro": "Long routes with no climate control will expose cargo to greater temperature variation, increasing the need for refrigeration."
+                      },
+                      {
+                        "title": "What are the weather conditions?",
+                        "points": [],
+                        "intro": "Florida's heat and humidity can quickly ruin goods if not properly managed. Factor in seasonal changes and region-specific needs."
+                      },
+                      {
+                        "title": "What's my maintenance capacity?",
+                        "points": [],
+                        "intro": "Refrigerator trailers require more upkeep due to the onboard systems. Make sure your team can manage that responsibility."
+                      }
+                    ]
+                  },
+                  "styles": {
+                    "base": {
+                      "marginBottom": 34
+                    }
+                  }
+                },
+                {
+                  "id": "h-missteps",
+                  "type": "heading",
+                  "props": {
+                    "text": "Common Missteps to Avoid",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "missteps"
+                  }
+                },
+                {
+                  "id": "p-missteps-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Mistakes in trailer selection can cost time, money, and customer trust. Here are a few things to steer clear of:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-missteps-2",
+                  "type": "check-list",
+                  "props": {
+                    "mark": "xdot",
+                    "items": [
+                      {
+                        "title": "Assuming More Is Always Better",
+                        "text": "Buying a reefer when you don't need one means higher costs for fuel, repairs, and purchase price. If your goods don't require cooling, save the money."
+                      },
+                      {
+                        "title": "Overlooking Seasonal Needs",
+                        "text": "Even if you're hauling stable goods, summer heat in Florida may require insulation you wouldn't need in winter."
+                      },
+                      {
+                        "title": "Failing to Plan for the Future",
+                        "text": "Buy with growth in mind. If you expect to take on new clients or longer routes, a reefer might make sense now rather than replacing an insulated trailer later."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-faqs",
+                  "type": "heading",
+                  "props": {
+                    "text": "FAQs: Clarifying the Confusion",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "faqs"
+                  }
+                },
+                {
+                  "id": "questions-faqs-1",
+                  "type": "qa-list",
+                  "props": {
+                    "items": [
+                      {
+                        "q": "Are insulated trailers ever refrigerated?",
+                        "a": "No. Insulated trailers do not include active refrigeration systems. They only maintain internal temperature for a limited time based on external conditions."
+                      },
+                      {
+                        "q": "Can I upgrade an insulated trailer later?",
+                        "a": "Retrofitting an insulated trailer with a cooling unit is not recommended. It's typically more cost-effective to buy a dedicated reefer."
+                      },
+                      {
+                        "q": "Do both trailer types come in the same sizes?",
+                        "a": "Yes. Both options are available in similar dimensions, so capacity won't be a limiting factor."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-choose-the-right-fit",
+                  "type": "heading",
+                  "props": {
+                    "text": "Choose the Right Fit for Your Haul",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-choose-the-right-fit-1",
+                  "type": "text",
+                  "props": {
+                    "text": "When it comes to protecting your cargo, one size doesn't fit all. Insulated trailers offer light-duty protection and affordability, while refrigerator trailers provide temperature precision for critical hauls. Knowing the difference helps you protect your investment, stay compliant, and serve your clients reliably.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-choose-the-right-fit-2",
+                  "type": "text",
+                  "props": {
+                    "text": "At <a href=\"/locations/trailer-sales\">Sun State Trailers</a>, we carry a full inventory of both options, and our team is here to help you choose what makes the most sense for your business today and down the road. From reliable insulated trailers to state-of-the-art refrigerated units, we have your next trailer ready to roll. Take a look at our inventory to find the trailer that's right for your business.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-choose-the-right-fit-3",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "browse-trailers",
+                        "label": "Check Out Our Inventory",
+                        "style": "primary"
+                      },
+                      {
+                        "ctaId": "contact-us",
+                        "label": "Contact Us",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-share",
+                  "type": "post-share",
+                  "props": {
+                    "label": "Share",
+                    "items": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Frefrigerator-trailer-or-insulated-trailer",
+                        "newTab": true
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Frefrigerator-trailer-or-insulated-trailer&text=Do%20You%20Need%20a%20Refrigerator%20Trailer%20or%20Just%20an%20Insulated%20One%3F%20Here%27s%20the%20Difference",
+                        "newTab": true
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Frefrigerator-trailer-or-insulated-trailer",
+                        "newTab": true
+                      },
+                      {
+                        "label": "Email",
+                        "url": "mailto:?subject=Do%20You%20Need%20a%20Refrigerator%20Trailer%20or%20Just%20an%20Insulated%20One%3F%20Here%27s%20the%20Difference&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Frefrigerator-trailer-or-insulated-trailer",
+                        "newTab": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Used trailers",
+          "heading": "Choose the right fit for your haul.",
+          "body": "Call 800.741.7566 to talk with our team at any Sun State location in Florida.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Browse trailer inventory",
+          "secondaryUrl": "/store/inventory?type=trailer"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/refrigerator-trailer-or-insulated-trailer\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/refrigerator-trailer-or-insulated-trailer\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n/* The hero photograph is framed a little high, as the design frames it. */\n[data-bz-section=\"post-hero\"] [data-bz-node=\"ph-photo\"] img { object-position: center 55%; }\n\n/* Its type cards: 24px in, the title 10px over a 14px list. */\n[data-bz-node=\"art-body\"] .ss-cl--type,\n[data-bz-node=\"art-body\"] .ss-cl--type3 { gap: 24px; }\n[data-bz-node=\"art-body\"] .ss-cl--type { gap: 28px; }\n[data-bz-node=\"art-body\"] .ss-cl--type .ss-cl__card { padding: 24px; }\n[data-bz-node=\"art-body\"] .ss-cl--type .ss-cl__t { margin: 0 0 10px; }\n[data-bz-node=\"art-body\"] :is(.ss-cl--type, .ss-cl--type3) .ss-cl__list { margin: 0; padding-left: 18px; }\n[data-bz-node=\"art-body\"] :is(.ss-cl--type, .ss-cl--type3) .ss-cl__list li { font-size: 14px; }\n\n/* A type card's sentence is set as body text, as the article's paragraphs are. */\n[data-bz-node=\"art-body\"] :is(.ss-cl--type, .ss-cl--type3) .ss-cl__p { font-size: 17px; line-height: 1.8; margin: 0 0 18px; }\n\n/* Its questions are ruled above each, and closed off below the last. */\n[data-bz-node=\"art-body\"] .ss-qa { margin-bottom: 20px; }\n[data-bz-node=\"art-body\"] .ss-qa__i { border-bottom: 0; border-top: 1px solid var(--line); }\n[data-bz-node=\"art-body\"] .ss-qa__i:last-child { border-bottom: 1px solid var(--line); }\n[data-bz-node=\"art-body\"] .ss-qa__a { font-size: 15px; }\n\n[data-bz-node=\"art-body\"] [data-bz-node=\"cards-reefer-vs-insulated-2\"] .bz-block--heading h3 { margin: 0 0 10px; }\n\n[data-bz-node=\"art-body\"] > [data-bz-node=\"actions-which-one-4\"] .bz-btns { margin: 8px 0 8px; }\n"
+}

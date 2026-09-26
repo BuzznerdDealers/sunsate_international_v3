@@ -1,0 +1,524 @@
+{
+  "slug": "why-businesses-across-florida-trust-sun-state-trailers",
+  "title": "Why Businesses Across Florida Trust Sun State Trailers as Their Preferred Trailer Dealer",
+  "date": "2025-07-18",
+  "description": "Discover why Sun State Trailers is Florida's trusted trailer dealer, backed by decades of dependable service, expertise, and long-term customer care.",
+  "excerpt": "In the trailer industry, trust isn't built overnight. It's earned mile by mile, deal by deal, and repair by repair. Across Florida, businesses large and small turn to Sun State Trailers not just because we…",
+  "status": "published",
+  "coverImage": "/img/blog/why-businesses-across-florida-trust-sun-state-trailers/hero.jpg",
+  "topic": "Trailer Sales",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Trailer Sales",
+          "title": "Why Businesses Across Florida Trust Sun State Trailers as Their Preferred Trailer Dealer",
+          "topic": "Trailer Sales",
+          "date": "July 18, 2025",
+          "readTime": "5 min read",
+          "author": "Sun State Trailers",
+          "image": {
+            "src": "/img/blog/why-businesses-across-florida-trust-sun-state-trailers/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Sun State team members walking together past a row of trucks"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "Decades of Experience",
+                        "href": "#experience"
+                      },
+                      {
+                        "label": "On-Site Service and Parts",
+                        "href": "#service"
+                      },
+                      {
+                        "label": "Inventory That Reflects Real Needs",
+                        "href": "#inventory"
+                      },
+                      {
+                        "label": "Why Operators Trust Us",
+                        "href": "#why-trust"
+                      },
+                      {
+                        "label": "Florida-Owned, Family-Run",
+                        "href": "#family-run"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "WANT THE FULL SHEET?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "View detailed specifications before you compare trailers.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-trailers",
+                                "label": "View Our Trailer Specifications →"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "In the trailer industry, trust isn't built overnight. It's earned mile by mile, deal by deal, and repair by repair. Across Florida, businesses large and small turn to <a href=\"/locations/trailer-sales\">Sun State Trailers</a> not just because we carry the brands they rely on, but because of the way we do business. With a reputation built on decades of honest work, dependable support, and a customer-first mindset, Sun State Trailers stands apart as more than just another trailer dealer. Here's why so many businesses continue to choose us as their long-term partner.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "h-experience",
+                  "type": "heading",
+                  "props": {
+                    "text": "Decades of Experience in Florida",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "experience"
+                  }
+                },
+                {
+                  "id": "p-experience-1",
+                  "type": "text",
+                  "props": {
+                    "text": "We've been serving Florida businesses for over 20 years, and we know the regional demands of this market inside and out. From coastal corrosion considerations to inland agricultural hauls, we know what works here because we've worked here. Our team doesn't just sell trailers; we solve problems. When you come to Sun State, you get a partner that understands your industry, your budget, and your long-term business goals. That kind of insight doesn't happen overnight. It's the product of consistent work, loyal customers, and doing right by people time and time again.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-experience-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Our long-standing customer relationships speak volumes. Whether it's a one-trailer owner or a multi-unit fleet manager, we treat every customer like they matter, because they do. Many of our clients return year after year, not only for new trailers but for parts, service, and ongoing support. We pride ourselves on being the kind of trailer dealer you can call anytime, whether you're facing a breakdown or planning a major expansion.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-service",
+                  "type": "heading",
+                  "props": {
+                    "text": "On-Site Service and Parts Support",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "service"
+                  }
+                },
+                {
+                  "id": "p-service-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Our Florida locations aren't just showrooms. They're fully equipped parts and service centers that provide:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-service-2",
+                  "type": "check-list",
+                  "props": {
+                    "mark": "dot",
+                    "items": [
+                      {
+                        "text": "Preventive maintenance"
+                      },
+                      {
+                        "text": "Safety inspections"
+                      },
+                      {
+                        "text": "Access to trailer parts from top brands"
+                      },
+                      {
+                        "text": "Emergency repairs when you need them most"
+                      },
+                      {
+                        "text": "Experienced technicians who work fast and communicate clearly"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-service-3",
+                  "type": "text",
+                  "props": {
+                    "text": "We invest in the tools and staff needed to get your team back on the road quickly and safely.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-inventory",
+                  "type": "heading",
+                  "props": {
+                    "text": "Trailer Inventory That Reflects Real Needs",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "inventory"
+                  }
+                },
+                {
+                  "id": "p-inventory-1",
+                  "type": "text",
+                  "props": {
+                    "text": "We carry an inventory of new and used trailers that serve the needs of dry van haulers, refrigerated freight operators, flatbed fleets, food service distribution, and agriculture and logistics pros.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-inventory-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Every trailer on our lot is inspected and maintained with the same level of care we'd want for our own equipment. We don't carry every brand; we carry the right brands. From Hyundai Translead to Globe Trailer, we can help you find and order the ideal solution.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-inventory-3",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "contact-us",
+                        "label": "Talk to a Sales Rep"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-why-trust",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Owner-Operators and Fleet Managers Trust Sun State Trailers",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "why-trust"
+                  }
+                },
+                {
+                  "id": "p-why-trust-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Whether you're running an eight-truck operation or managing a fleet of 80, you need a dealer who understands the bottom line.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-why-trust-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "type3",
+                    "items": [
+                      {
+                        "title": "We Respect Your Time",
+                        "points": [],
+                        "intro": "Fast answers. Clear options. Honest timelines. We know that every minute off the road costs money, so our process is built around efficiency and transparency from quote to delivery."
+                      },
+                      {
+                        "title": "Real People, Not Runaround",
+                        "points": [],
+                        "intro": "We don't hide behind call centers or confusing systems. When you work with us, you get a real person who knows your name and understands your business."
+                      },
+                      {
+                        "title": "Solutions That Respect Your Budget",
+                        "points": [],
+                        "intro": "Honest appraisals on trade-ins, flexible financing options, and cost-saving recommendations based on your needs. We work hard to make sure you see value in every dollar you spend."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-family-run",
+                  "type": "heading",
+                  "props": {
+                    "text": "Florida-Owned, Family-Run, and Focused on You",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "family-run"
+                  }
+                },
+                {
+                  "id": "p-family-run-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Being locally rooted means we're invested in more than transactions. We're invested in the community, in long-term customer relationships, and in doing right by the people who count on us. With multiple locations across the state, we're positioned to support businesses in Tampa, Davenport, Sarasota, and Brooksville.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-family-run-2",
+                  "type": "text",
+                  "props": {
+                    "text": "And we're always expanding to better meet the needs of Florida's diverse industries. We know our roads, our regulations, and what it takes to get the job done here in the Sunshine State.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-family-run-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Our team isn't here to make a quick sale. We're here to support you for the long haul. Many of our employees have been with us for years, just like our customers. That kind of continuity builds trust, consistency, and service you can count on.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-family-run-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Whether you're upgrading your fleet, stepping into a new business venture, or looking for a dependable trailer partner, <a href=\"/locations/trailer-sales\">Sun State Trailers</a> is ready to help. Browse our inventory of trailers or get in touch with a local team member today. We'll make sure you get the right trailer, the right service, and the right support every time.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-family-run-5",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "contact-us",
+                        "label": "Contact Us"
+                      },
+                      {
+                        "ctaId": "browse-trailers",
+                        "label": "Browse Trailer Inventory",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-share",
+                  "type": "post-share",
+                  "props": {
+                    "label": "Share",
+                    "items": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhy-businesses-across-florida-trust-sun-state-trailers",
+                        "newTab": true
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhy-businesses-across-florida-trust-sun-state-trailers&text=Why%20Businesses%20Across%20Florida%20Trust%20Sun%20State%20Trailers%20as%20Their%20Preferred%20Trailer%20Dealer",
+                        "newTab": true
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhy-businesses-across-florida-trust-sun-state-trailers",
+                        "newTab": true
+                      },
+                      {
+                        "label": "Email",
+                        "url": "mailto:?subject=Why%20Businesses%20Across%20Florida%20Trust%20Sun%20State%20Trailers%20as%20Their%20Preferred%20Trailer%20Dealer&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhy-businesses-across-florida-trust-sun-state-trailers",
+                        "newTab": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Trailer sales",
+          "heading": "A dealer who has your back.",
+          "body": "Call 800.741.7566 to talk with our team at any Sun State location in Florida.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Browse trailer inventory",
+          "secondaryUrl": "/store/inventory?type=trailer"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/why-businesses-across-florida-trust-sun-state-trailers\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/why-businesses-across-florida-trust-sun-state-trailers\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n/* The hero photograph is framed a little high, as the design frames it. */\n[data-bz-section=\"post-hero\"] [data-bz-node=\"ph-photo\"] img { object-position: center 40%; }\n\n/* Its type cards: 24px in, the title 10px over a 14px list. */\n[data-bz-node=\"art-body\"] .ss-cl--type,\n[data-bz-node=\"art-body\"] .ss-cl--type3 { gap: 24px; }\n[data-bz-node=\"art-body\"] .ss-cl--type { gap: 28px; }\n[data-bz-node=\"art-body\"] .ss-cl--type .ss-cl__card { padding: 24px; }\n[data-bz-node=\"art-body\"] .ss-cl--type .ss-cl__t { margin: 0 0 10px; }\n[data-bz-node=\"art-body\"] :is(.ss-cl--type, .ss-cl--type3) .ss-cl__list { margin: 0; padding-left: 18px; }\n[data-bz-node=\"art-body\"] :is(.ss-cl--type, .ss-cl--type3) .ss-cl__list li { font-size: 14px; }\n\n/* A type card's sentence is set as body text, as the article's paragraphs are. */\n[data-bz-node=\"art-body\"] :is(.ss-cl--type, .ss-cl--type3) .ss-cl__p { font-size: 17px; line-height: 1.8; margin: 0 0 18px; }\n\n[data-bz-node=\"art-body\"] > [data-bz-node=\"actions-inventory-3\"] .bz-btns { margin: 8px 0 34px; }\n"
+}
