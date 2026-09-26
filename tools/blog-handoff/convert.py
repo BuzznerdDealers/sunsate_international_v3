@@ -1,5 +1,8 @@
 """Blog handoff (Part N of 6) -> site/blog/posts/<slug>.json, and the blog page's cards.
 
+Also reads a prototype batch (`.dc.html` pages beside an index) and a standalone post
+handoff (one framework-free `index.html` with `css/` and `assets/`).
+
     python3 tools/blog-handoff/convert.py <path to sunstate-blog-handoff-part-N>
 
 Needs BeautifulSoup (`pip install beautifulsoup4`). Run `npm run check` afterwards.
@@ -108,6 +111,16 @@ def dc_href(h, label):
     raise SystemExit(f"unmapped design-page link: {h} ({label})")
 
 
+# A standalone post handoff (`SS_International_10`: one `index.html`, framework-free HTML)
+# links to its sibling pages by flat file name. "Sun State Trailers" in its prose is the
+# Trailer Sales rooftop, as in every other trailer post.
+FLAT_PAGES = {
+    "home.html": "/", "blog.html": "/blog", "service.html": "/service",
+    "service-appointment.html": "/service-appointment", "contact-us.html": "/contact",
+    "trailer-sales.html": "/locations/trailer-sales",
+}
+
+
 def href_of(a):
     return map_href(a["href"], plain(a))
 
@@ -115,6 +128,8 @@ def href_of(a):
 def map_href(h, label=None):
     if h.endswith(".dc.html"):
         return dc_href(h, label)
+    if h in FLAT_PAGES:
+        return FLAT_PAGES[h]
     if h.endswith("blog.html"):
         return "/blog"
     if h.endswith(".html") and ("/posts/" in h or "/" not in h):
@@ -237,10 +252,18 @@ def place_image(slug, src, name):
     source = os.path.join(PAGE_DIR, src) if PAGE_DIR and os.path.exists(os.path.join(PAGE_DIR, src)) else IMG_SRC + fname
     os.makedirs(IMG_DST + slug, exist_ok=True)
     dst = f"{IMG_DST}{slug}/{name}.jpg"
-    assert source.lower().endswith((".jpg", ".jpeg")), source
+    assert source.lower().endswith((".jpg", ".jpeg", ".png")), source
     with open(source, "rb") as f:
         is_jpeg = f.read(2) == b"\xff\xd8"
-    if is_jpeg:
+    if source.lower().endswith(".png"):
+        # A standalone handoff ships 2000px PNGs at ~3 MB: a real JPEG at the 1280px the
+        # other posts' photographs are.
+        from PIL import Image
+        im = Image.open(source).convert("RGB")
+        if im.width > 1280:
+            im = im.resize((1280, round(im.height * 1280 / im.width)), Image.LANCZOS)
+        im.save(dst, "JPEG", quality=85, optimize=True, progressive=False)
+    elif is_jpeg:
         shutil.copyfile(source, dst)
     else:
         # Batch 4 ships its photographs as opaque RGBA PNGs under a .jpg name, at ~1.3 MB
@@ -339,8 +362,54 @@ def page_slug(path, raw=None):
     """A sunstateintl.com article keeps its live permalink as its slug — the file may carry a
     shortened name (batch 3 does), and the permalink is the address search engines hold."""
     raw = raw if raw is not None else open(path).read()
+    if os.path.basename(path) == "index.html":
+        # A standalone handoff is always index.html; the post is its canonical permalink.
+        m = re.search(r'rel="canonical" href="https?://[^"]+/([^"/]+)/?"', raw)
+        return m.group(1)
     m = re.search(r'rel="canonical" href="https://www\.sunstateintl\.com/([^"/]+)/?"', raw)
     return m.group(1) if m else os.path.basename(path)[:-5]
+
+
+def normalise_standalone(s):
+    """A standalone post handoff draws the same post as the prototype batches with its own
+    class names. Rename them to the shapes convert() reads, so the post comes out on the
+    shared layout with the same ids, buttons and styling as every other post.
+    Returns the extra CSS the page asks for that the shared layer does not carry."""
+    extra = []
+    hero = s.select_one("section.hero--post")
+    if hero is None:
+        return extra
+    hero["class"] = ["post-hero"]
+    img = hero.find("img")
+    pos = re.search(r"object-position:\s*([^;\"]+)", img.get("style", "")) if img else None
+    if pos and pos.group(1).strip() not in ("center", "center center", "50% 50%"):
+        extra.append(f'/* The hero photograph is framed a little high, as the design frames it. */\n'
+                     f'[data-bz-section="post-hero"] [data-bz-node="ph-photo"] img {{ object-position: {pos.group(1).strip()}; }}')
+    for t in hero.select(".post-byline time"):
+        t.name = "span"  # the byline's date, read with its other parts
+    toc = s.select_one("aside.toc")
+    toc["class"] = ["post-toc"]
+    toc.select_one(".toc__aside")["style"] = "margin-top: 26px"
+    s.select_one(".article__body")["class"] = ["post-body"]
+    for f in s.select(".post-body > figure.figure"):
+        assert not f.find("figcaption"), f
+        f.name = "div"; f["style"] = "position: relative"; del f["class"]
+    for g in s.select(".post-body > div.grid--2"):
+        g["class"] = ["grid-2"]
+        for c in g.find_all("div", class_="card", recursive=False):
+            c["class"] = ["factor-card"]
+    for c in s.select(".post-body > div.callout"):
+        c["style"] = "border: 1px solid var(--color-line); margin: 34px 0"  # .callout
+    for a in s.select(".post-body > div.article__actions"):
+        a["style"] = "display: flex"
+        for b in a.select("a.btn--primary"):
+            b["class"] = b.get("class", []) + ["hv-2"]
+    for sh in s.select(".post-body > div.share"):
+        sh["style"] = "border-top: 1px solid var(--color-line); display: flex"
+    for sec in s.find("main").find_all("section", recursive=False):
+        for w in sec.select("div.wrap"):
+            w.unwrap()  # the CTA band's eyebrow is then the band's first div's first div
+    return extra
 
 
 def convert(path):
@@ -349,8 +418,9 @@ def convert(path):
     slug = page_slug(path)
     raw = open(path).read()
     s = BeautifulSoup(raw, "html.parser")
-    own_style = re.search(r"<style>(.*?)</style>", raw, re.S).group(1)
-    extra_css = []
+    own = re.search(r"<style>(.*?)</style>", raw, re.S)
+    own_style = own.group(1) if own else ""  # a standalone handoff keeps its CSS in css/
+    extra_css = normalise_standalone(s)
     main = s.find("main")
     hero = main.select_one("section.post-hero")
     hero_img = hero.find("img")
@@ -1010,8 +1080,10 @@ if __name__ == "__main__":
     # Parts 1-6 keep their articles in posts/; a prototype batch keeps them beside index.html.
     files = sorted(glob.glob(f"{PART}/posts/*.html")) or sorted(
         f for f in glob.glob(f"{PART}/*.html") if os.path.basename(f) != "index.html")
+    if not files and "hero--post" in open(f"{PART}/index.html").read():
+        files = [f"{PART}/index.html"]  # a standalone handoff: the one page is the post
     for f in files:
-        h1 = BeautifulSoup(open(f).read(), "html.parser").select_one("section.post-hero h1")
+        h1 = BeautifulSoup(open(f).read(), "html.parser").select_one("section.post-hero h1, section.hero--post h1")
         POST_TITLES[plain(h1)] = page_slug(f)
         # the design page's file name is the title without its question mark or subtitle
         POST_TITLES[plain(h1).split("?")[0].split(":")[0].strip()] = page_slug(f)

@@ -875,3 +875,66 @@ Checked as in §20: every paragraph, list item and heading is in the existing po
 rendered beside the built posts at 1280px match section for section. The handoff ships 1000px
 photographs against the 1280px ones already here, so **the existing posts are kept** and the
 converter lists batch 8 as repeats. Colours follow the Design system's current accent (§20).
+
+## 24. `SS_International_10` — the trailer-repair post
+
+A standalone post handoff (`handoff-trailer-repair-post`: one framework-free `index.html`,
+`css/`, `js/site.js`, `assets/`): *Trusted Trailer Repair for Florida Fleets at Sun State
+Trailers* (Sun State Trailers, Service, Jul 5, 2026). It is new — no post on the site carries its
+copy — and is published on its live permalink's slug,
+`trusted-trailer-repair-for-florida-fleets-at-sun-state-trailers`, with its card on the Blog page
+(71 in all).
+
+**How it was built.** The page draws the same post as every other here, under the class names of
+the §8 handoff (`.hero--post`, `.toc`, `.article__body`, `.figure`, `.grid--2 .card`, `.callout`,
+`.article__actions`, `.share`). `tools/blog-handoff/convert.py` now reads that format: a
+normaliser renames those shapes to the ones it already converts, so the post comes out of the
+converter on the shared long-form layout with the same ids, library buttons and node styles as the
+other 70. Pointed at a folder whose only page is `index.html`, the converter treats it as the
+post and takes the slug from its canonical. Nothing else it produces changed.
+
+| Handoff | Here |
+|---|---|
+| `.hero--post` (photo, 72% scrim, breadcrumb, H1, byline) | the **Post hero** component; the photo's `object-position: center 45%` is one rule in the post's CSS |
+| `.toc` + `.toc__aside` | the **Post contents** widget and the bordered promo card (*Schedule service* button, "Get Trailer Repair →") |
+| `.spec-table` ×2 | the **Checkmark list** |
+| `.grid--2` of `.card` lists ×2 | a two-column row of bordered columns, each a **Prose list** |
+| plain `ul` ×2 | the **Prose list** |
+| `.figure` ×2 | image blocks, cropped to 380px (240px on phones) by the shared post CSS |
+| `.callout` | a bordered column with the *Schedule service* button as a link, "Get Trailer Repair →" |
+| `.article__actions` | *Schedule service* (filled, "Get Back on the Road") and *Contact us* (outlined) |
+| `.share` | the **Share row** |
+| related posts | **Latest posts**, as on every post |
+| dark `.cta` band | the **Contact CTA band** |
+
+Body copy matches the handoff word for word (all 86 paragraphs, list items, rows and headings
+checked mechanically), and the built page was rendered beside the handoff at 1280px and 390px:
+each band lands within ~25px of the handoff's at 1280px and within ~100px at phone width.
+
+**Links.** The handoff links by flat file name; they map to this site's routes: `service.html` →
+`/service`, `service-appointment.html` → `/service-appointment`, `contact-us.html` → `/contact`,
+and "Sun State Trailers" in the prose (`trailer-sales.html`) → the Trailer Sales rooftop's page,
+as in the other trailer posts. `tel:8007417566` is `tel:+18007417566`.
+
+**Photographs.** The three are 2000px PNGs at ~3 MB each; they are re-encoded as 1280px JPEGs
+(~100–180 KB) under `public/img/blog/trusted-trailer-repair-for-florida-fleets-at-sun-state-trailers/`.
+
+**Dropped / as elsewhere.**
+
+- The handoff's three hand-picked related posts are the latest-posts list. *Why Fleets Should Get
+  Regular Trailer Service* is not a post on this site; *Semi Truck Road Service* and *Why Go to Sun
+  State Trailers for Semi Trailer Parts* are. The related thumbnails it ships are not used.
+- The header, utility bar and footer are the dealer's current template, not the handoff's (same
+  chrome, re-saved in the dashboard). `js/site.js` is not carried over: mega menus are the Menus
+  screen's, and the contents rail's smooth scroll and scroll-spy are already in the shared post code.
+- Colours follow the Design system's current accent (§20); the handoff's red returns if
+  **Design system → accent** is set back to `#EE2D24`.
+- The `BlogPosting` (with `speakable`) and `BreadcrumbList` JSON-LD are still not emitted for posts
+  (§8). `#post-lede` is on the lede, so a speakable selector will find it once they are.
+
+**Old address.** If sunstatetrailers.com is pointed at this site, this goes on **Storefront → 301
+Redirects** in Admin:
+
+| Old address | New path |
+|---|---|
+| `https://sunstatetrailers.com/uncategorized/trusted-trailer-repair-for-florida-fleets-at-sun-state-trailers/` | `/blog/posts/trusted-trailer-repair-for-florida-fleets-at-sun-state-trailers` |
