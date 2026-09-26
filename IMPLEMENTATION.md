@@ -857,3 +857,21 @@ Checked as in §20: every paragraph, list item and heading is in the existing po
 rendered beside the built posts at 1280px match section for section. The handoff ships 1000px
 photographs against the 1280px ones already here, so **the existing posts are kept** and the
 converter lists batch 7 as repeats. Colours follow the Design system's current accent (§20).
+
+## 23. Blog handoff, batch 8 — six repeats, nothing new
+
+Six prototype pages in the §15 format, and every one is a post already on the site:
+
+| Handoff file | Existing post |
+|---|---|
+| `reliable-truck-and-trailer-parts-in-tampa` | `where-to-find-reliable-truck-and-trailer-parts-in-tampa` |
+| `routine-dot-inspection-keeps-your-fleet-on-the-road` | `how-a-routine-dot-inspection-keeps-your-fleet-on-the-road` |
+| `searching-for-an-international-truck-dealer` | `searching-for-an-international-truck-dealer-sun-state-international-is-the-place-for-you-heres-why` |
+| `semi-truck-brake-maintenance` | `semi-truck-brake-maintenance` |
+| `semi-truck-engine-problems-every-driver-should-watch-for` | `semi-truck-engine-problems-every-driver-should-watch-for` |
+| `semi-truck-maintenance-checklist` | `semi-truck-maintenance-checklist` |
+
+Checked as in §20: every paragraph, list item and heading is in the existing post, and the pages
+rendered beside the built posts at 1280px match section for section. The handoff ships 1000px
+photographs against the 1280px ones already here, so **the existing posts are kept** and the
+converter lists batch 8 as repeats. Colours follow the Design system's current accent (§20).

@@ -82,7 +82,10 @@ REPEATS = {"batch-3": {"are-aftermarket-semi-truck-parts-as-reliable-as-oem.html
            "batch-7": {"ordering-semi-truck-parts-online-vs-local-service.html", "preventive-maintenance-for-semi-trucks.html",
                        "preventive-maintenance-saves-you-more-than-it-costs.html",
                        "preventive-maintenance-schedule-for-semi-trucks.html", "reliable-parts-for-semi-trucks.html",
-                       "reliable-semi-truck-service-centers-in-florida.html"}}
+                       "reliable-semi-truck-service-centers-in-florida.html"},
+           "batch-8": {"reliable-truck-and-trailer-parts-in-tampa.html", "routine-dot-inspection-keeps-your-fleet-on-the-road.html",
+                       "searching-for-an-international-truck-dealer.html", "semi-truck-brake-maintenance.html",
+                       "semi-truck-engine-problems-every-driver-should-watch-for.html", "semi-truck-maintenance-checklist.html"}}
 POST_TITLES = {}  # "Blog Post - <title>.dc.html" -> slug, filled from the handoff's own pages
 
 
