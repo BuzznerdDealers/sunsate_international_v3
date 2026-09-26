@@ -43,8 +43,8 @@
   ],
   "redirects": [
     {
-      "source": "/about-us{/}?",
-      "destination": "/our-story",
+      "source": "/our-story{/}?",
+      "destination": "/about-us",
       "statusCode": 301
     }
   ]

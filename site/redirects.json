@@ -4,9 +4,10 @@
   "useWildcards": false,
   "redirects": [
     {
-      "from": "/about-us",
-      "to": "/our-story",
-      "statusCode": 301
+      "from": "/our-story",
+      "to": "/about-us",
+      "statusCode": 301,
+      "note": "Page moved to /about-us"
     }
   ]
 }
