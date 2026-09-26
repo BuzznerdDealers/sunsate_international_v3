@@ -891,4 +891,15 @@ The verified batch-4 handoff (`75128048-10_1.zip`) is the same six pages as §18
 - `renderer/` and `scripts/` are identical to `base-template` `main` (renderer 4.24.0), and
   `npm run check` passes: validate clean (notes only), 175/175 specs, 36 pages built.
 
-No post, page or component changed. The old-address redirect from §18 still applies.
+**Two of the six were not on the site.** *Commercial Truck Oil Change Mistakes That Cost You* and
+*Common Problems With Air Brake Parts for Semi Trucks* had been `"status": "draft"` since the
+platform's Sep 24 snapshot (a3d30bf), so the build skipped them and /blog had no card for either.
+Both are now published, each with the excerpt from the original blog listing (they had none, so
+their cards were blank). The blog page has 72 cards, and the air-brake post adds a *Commercial
+trucks* topic chip (its topic in that listing). The other four were already published.
+
+**The dashboard's `draft` branch does not share `main`'s history** and has 10 posts to `main`'s
+77. If the preview or the published site comes from `draft`, none of this work is on it until the
+platform re-syncs `draft` from `main`.
+
+The old-address redirect from §18 still applies.
