@@ -839,3 +839,21 @@ Redirects** in Admin:
 |---|---|
 | `https://sunstatetrailers.com/new-trailers/how-to-fix-an-enclosed-trailer-door-the-right-way/` | `/blog/posts/how-to-fix-an-enclosed-trailer-door-the-right-way` |
 | `https://www.sunstateintl.com/how-used-semi-trucks-can-help-grow-your-business/` | `/blog/posts/how-used-semi-trucks-can-help-grow-your-business` |
+
+## 22. Blog handoff, batch 7 — six repeats, nothing new
+
+Six prototype pages in the §15 format, and every one is a post already on the site:
+
+| Handoff file | Existing post |
+|---|---|
+| `ordering-semi-truck-parts-online-vs-local-service` | `ordering-semi-truck-parts-online-vs-local-service-what-florida-fleets-should-know` |
+| `preventive-maintenance-for-semi-trucks` | `preventive-maintenance-for-semi-trucks` |
+| `preventive-maintenance-saves-you-more-than-it-costs` | `preventive-maintenance-for-semi-trucks-why-it-saves-you-more-than-it-costs` |
+| `preventive-maintenance-schedule-for-semi-trucks` | `preventive-maintenance-schedule-for-semi-trucks` |
+| `reliable-parts-for-semi-trucks` | `avoid-cheap-parts-how-to-find-reliable-parts-for-semi-trucks` |
+| `reliable-semi-truck-service-centers-in-florida` | `why-you-need-reliable-semi-truck-service-centers-like-sun-state-international-in-florida` |
+
+Checked as in §20: every paragraph, list item and heading is in the existing post, and the pages
+rendered beside the built posts at 1280px match section for section. The handoff ships 1000px
+photographs against the 1280px ones already here, so **the existing posts are kept** and the
+converter lists batch 7 as repeats. Colours follow the Design system's current accent (§20).
