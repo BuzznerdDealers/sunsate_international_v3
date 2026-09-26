@@ -444,7 +444,7 @@
           "id": "our-story",
           "label": "OUR STORY",
           "type": "page",
-          "ref": "our-story",
+          "ref": "about-us",
           "url": null,
           "newTab": false,
           "children": [
@@ -460,7 +460,7 @@
                   "id": "os-story",
                   "label": "Our Story",
                   "type": "page",
-                  "ref": "our-story",
+                  "ref": "about-us",
                   "url": null,
                   "newTab": false,
                   "children": []
@@ -1148,7 +1148,7 @@
           "id": "nm-about",
           "label": "About",
           "type": "page",
-          "ref": "our-story",
+          "ref": "about-us",
           "url": null,
           "newTab": false,
           "children": [
@@ -1164,7 +1164,7 @@
                   "id": "nm-about-story",
                   "label": "Our Story",
                   "type": "page",
-                  "ref": "our-story",
+                  "ref": "about-us",
                   "url": null,
                   "newTab": false,
                   "children": []
@@ -1645,7 +1645,7 @@
           "id": "fc-about",
           "label": "About Us",
           "type": "page",
-          "ref": "our-story",
+          "ref": "about-us",
           "url": null,
           "newTab": false,
           "children": []

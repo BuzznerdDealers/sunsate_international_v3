@@ -44,12 +44,12 @@
     }
   },
   {
-    "slug": "our-story",
+    "slug": "about-us",
     "title": "Our Story",
     "description": "Family-owned International Truck and trailer dealer serving West Central Florida for over 30 years.",
-    "path": "/our-story",
-    "out": "our-story/index.html",
-    "dir": "our-story",
+    "path": "/about-us",
+    "out": "about-us/index.html",
+    "dir": "about-us",
     "status": "published",
     "group": "company",
     "seo": {
@@ -432,6 +432,21 @@
       "header": null,
       "footer": null,
       "utilityNav": null
+    }
+  },
+  {
+    "slug": "new-home-copy",
+    "title": "Home New (copy)",
+    "description": "Draft rebuild of the Sun State International home page, carrying the new International-style mega navigation.",
+    "path": "/new-home-copy",
+    "out": "new-home-copy/index.html",
+    "dir": "new-home-copy",
+    "status": "draft",
+    "group": "entry",
+    "seo": {
+      "ogImage": null,
+      "noindex": true,
+      "keywords": []
     }
   }
 ]
