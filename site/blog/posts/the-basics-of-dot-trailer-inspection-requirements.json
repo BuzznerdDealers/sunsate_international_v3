@@ -1,0 +1,861 @@
+{
+  "slug": "the-basics-of-dot-trailer-inspection-requirements",
+  "title": "The Basics of DOT Trailer Inspection Requirements",
+  "date": "2026-06-05",
+  "description": "Learn DOT trailer inspection requirements, stay compliant, and schedule trailer service with Sun State Trailers today.",
+  "excerpt": "Keeping your trailer on the road starts long before an inspector pulls you over. Understanding DOT trailer inspection requirements helps protect your drivers, avoid costly violations, and reduce unexpected…",
+  "status": "published",
+  "coverImage": "/img/blog/the-basics-of-dot-trailer-inspection-requirements/hero.jpg",
+  "topic": "Trailers",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Trailers",
+          "title": "The Basics of DOT Trailer Inspection Requirements",
+          "topic": "Trailers",
+          "date": "June 5, 2026",
+          "readTime": "4 min read",
+          "author": "Sun State Trailers",
+          "image": {
+            "src": "/img/blog/the-basics-of-dot-trailer-inspection-requirements/hero.jpg",
+            "width": 1000,
+            "height": 667,
+            "alt": "Sun State Trailers service desk staff reviewing paperwork at the front counter"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "What Are the Requirements?",
+                        "href": "#what-are"
+                      },
+                      {
+                        "label": "A Semi Trailer Checklist",
+                        "href": "#checklist"
+                      },
+                      {
+                        "label": "Schedule Service",
+                        "href": "#schedule"
+                      },
+                      {
+                        "label": "Preventive Maintenance",
+                        "href": "#preventive"
+                      },
+                      {
+                        "label": "Common Mistakes",
+                        "href": "#mistakes"
+                      },
+                      {
+                        "label": "Stay Inspection Ready",
+                        "href": "#year-round"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "DUE FOR A DOT INSPECTION?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Our technicians perform complete DOT inspections and keep your fleet compliant.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "schedule-service",
+                                "label": "Schedule Service →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Keeping your trailer on the road starts long before an inspector pulls you over. Understanding DOT trailer inspection requirements helps protect your drivers, avoid costly violations, and reduce unexpected downtime. Whether you manage an entire fleet or operate a single trailer, regular inspections and preventive maintenance are essential for staying compliant and keeping your equipment performing at its best.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At <a href=\"/locations/trailer-sales\">Sun State Trailers</a>, we know that trailer uptime is critical to your business. That's why our experienced service team helps customers stay ahead of repairs with professional inspections, quality parts, and dependable service. Our goal is simple: help you spend more time hauling and less time sitting in the shop.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/the-basics-of-dot-trailer-inspection-requirements/1.jpg",
+                      "width": 1000,
+                      "height": 667,
+                      "alt": "Sun State technician logging a trailer inspection on a clipboard in the yard"
+                    }
+                  }
+                },
+                {
+                  "id": "h-what-are",
+                  "type": "heading",
+                  "props": {
+                    "text": "What Are DOT Trailer Inspection Requirements?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "what-are"
+                  }
+                },
+                {
+                  "id": "p-what-are-1",
+                  "type": "text",
+                  "props": {
+                    "text": "DOT trailer inspection requirements are federal safety standards established by the Federal Motor Carrier Safety Administration (FMCSA). These regulations are designed to ensure commercial trailers operate safely on public roads while reducing the risk of accidents caused by equipment failure.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-what-are-2",
+                  "type": "text",
+                  "props": {
+                    "text": "In addition to required annual inspections, drivers are expected to perform pre-trip and post-trip inspections to identify potential problems before they become safety hazards.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-what-are-3",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>A proper inspection helps verify that critical systems are functioning correctly, including:</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-what-are-4",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Brakes"
+                      },
+                      {
+                        "text": "Tires and wheels"
+                      },
+                      {
+                        "text": "Suspension"
+                      },
+                      {
+                        "text": "Lights and reflectors"
+                      },
+                      {
+                        "text": "Coupling devices"
+                      },
+                      {
+                        "text": "Frame and structural components"
+                      },
+                      {
+                        "text": "Landing gear"
+                      },
+                      {
+                        "text": "Safety equipment"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-what-are-5",
+                  "type": "text",
+                  "props": {
+                    "text": "According to the FMCSA, regular inspections and preventive maintenance play an important role in reducing roadside violations and improving highway safety.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-checklist",
+                  "type": "heading",
+                  "props": {
+                    "text": "A Semi Trailer Inspection Checklist Every Fleet Should Follow",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "checklist"
+                  }
+                },
+                {
+                  "id": "p-checklist-1",
+                  "type": "text",
+                  "props": {
+                    "text": "While every operation has unique needs, a thorough semi trailer inspection checklist should cover the major safety components required under DOT trailer regulations.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-checklist-2",
+                  "type": "heading",
+                  "props": {
+                    "text": "Braking System",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-checklist-3",
+                  "type": "text",
+                  "props": {
+                    "text": "The braking system is one of the most heavily inspected areas during any DOT inspection. Check for:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-checklist-4",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Air leaks"
+                      },
+                      {
+                        "text": "Worn brake linings"
+                      },
+                      {
+                        "text": "Damaged brake chambers"
+                      },
+                      {
+                        "text": "Slack adjuster operation"
+                      },
+                      {
+                        "text": "Proper air pressure"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-checklist-5",
+                  "type": "text",
+                  "props": {
+                    "text": "Brake issues are one of the leading causes of out-of-service violations, making routine inspections especially important.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-checklist-6",
+                  "type": "heading",
+                  "props": {
+                    "text": "Tires and Wheels",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-checklist-7",
+                  "type": "text",
+                  "props": {
+                    "text": "Damaged tires don't just create expensive roadside repairs — they also increase the risk of blowouts and accidents. Inspect for:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-checklist-8",
+                  "type": "row",
+                  "props": {
+                    "gap": 4
+                  },
+                  "styles": {
+                    "base": {
+                      "marginBottom": 20
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "cards-checklist-8-1",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 22,
+                          "paddingRight": 22,
+                          "paddingBottom": 22,
+                          "paddingLeft": 22
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "cards-checklist-8-1-list",
+                          "type": "prose-list",
+                          "props": {
+                            "ordered": false,
+                            "items": [
+                              {
+                                "text": "Proper tire pressure"
+                              },
+                              {
+                                "text": "Uneven tread wear"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "cards-checklist-8-2",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 22,
+                          "paddingRight": 22,
+                          "paddingBottom": 22,
+                          "paddingLeft": 22
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "cards-checklist-8-2-list",
+                          "type": "prose-list",
+                          "props": {
+                            "ordered": false,
+                            "items": [
+                              {
+                                "text": "Sidewall damage"
+                              },
+                              {
+                                "text": "Loose or cracked wheel components"
+                              },
+                              {
+                                "text": "Missing lug nuts"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "p-checklist-9",
+                  "type": "text",
+                  "props": {
+                    "text": "Catching tire issues early often prevents much larger repair bills later.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-checklist-10",
+                  "type": "heading",
+                  "props": {
+                    "text": "Lighting and Electrical Components",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-checklist-11",
+                  "type": "text",
+                  "props": {
+                    "text": "DOT regulations require all lighting systems to operate properly. Verify that your trailer's brake lights, turn signals, clearance lights, marker lights, and reflectors are all clean, functional, and visible before every trip.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-checklist-12",
+                  "type": "heading",
+                  "props": {
+                    "text": "Suspension and Frame",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-checklist-13",
+                  "type": "text",
+                  "props": {
+                    "text": "Your suspension absorbs thousands of pounds of force every day. Inspect for:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-checklist-14",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Broken leaf springs"
+                      },
+                      {
+                        "text": "Worn bushings"
+                      },
+                      {
+                        "text": "Cracked welds"
+                      },
+                      {
+                        "text": "Bent frame members"
+                      },
+                      {
+                        "text": "Loose suspension hardware"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-checklist-15",
+                  "type": "text",
+                  "props": {
+                    "text": "Ignoring structural damage can quickly lead to more extensive <a href=\"/service\">trailer repair</a> needs.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-2",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/the-basics-of-dot-trailer-inspection-requirements/2.jpg",
+                      "width": 1000,
+                      "height": 667,
+                      "alt": "Sun State technician checking trailer wheels and coupling in the yard"
+                    }
+                  }
+                },
+                {
+                  "id": "h-schedule",
+                  "type": "heading",
+                  "props": {
+                    "text": "Schedule Service With Sun State Trailers",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "schedule"
+                  }
+                },
+                {
+                  "id": "p-schedule-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Don't wait until a failed inspection sidelines your equipment. Our experienced technicians provide comprehensive trailer service, inspections, maintenance, and trailer repair to help keep your fleet compliant and on the road.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-schedule-2-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "co-schedule-2",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28,
+                          "marginTop": 8,
+                          "marginBottom": 34
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-schedule-2-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "contact-us",
+                                "label": "Contact Us at Sun State →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-preventive",
+                  "type": "heading",
+                  "props": {
+                    "text": "Preventive Maintenance Makes DOT Compliance Easier",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "preventive"
+                  }
+                },
+                {
+                  "id": "p-preventive-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Passing an annual inspection shouldn't be your only goal. The most successful fleets build preventive maintenance into their regular operations instead of waiting for inspection time.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-preventive-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Regular trailer service helps identify worn components before they fail, reducing emergency breakdowns and keeping your equipment compliant throughout the year. Working with a trusted service provider also helps maintain detailed maintenance records, making inspections smoother and providing documentation if questions arise.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-mistakes",
+                  "type": "heading",
+                  "props": {
+                    "text": "Common DOT Inspection Mistakes",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "mistakes"
+                  }
+                },
+                {
+                  "id": "p-mistakes-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Many roadside violations are preventable. Some of the most common issues inspectors find include:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-mistakes-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Inoperative lights"
+                      },
+                      {
+                        "text": "Tire tread below legal limits"
+                      },
+                      {
+                        "text": "Brake adjustment problems"
+                      },
+                      {
+                        "text": "Missing reflective tape"
+                      },
+                      {
+                        "text": "Damaged air lines"
+                      },
+                      {
+                        "text": "Loose coupling components"
+                      },
+                      {
+                        "text": "Cracked mud flaps"
+                      },
+                      {
+                        "text": "Incomplete maintenance records"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-mistakes-3",
+                  "type": "text",
+                  "props": {
+                    "text": "These small problems may seem minor, but they can result in citations, out-of-service orders, delivery delays, and lost revenue. Routine inspections by qualified technicians significantly reduce these risks.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-year-round",
+                  "type": "heading",
+                  "props": {
+                    "text": "Stay Inspection Ready Year-Round",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "year-round"
+                  }
+                },
+                {
+                  "id": "p-year-round-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Understanding DOT trailer inspection requirements is about more than checking a compliance box. It's about protecting your drivers, reducing downtime, extending the life of your equipment, and keeping your business moving. Routine inspections, preventive maintenance, and timely repairs all work together to improve reliability and reduce costly surprises on the road. If it's time for your next inspection or your fleet needs dependable trailer service, the team at <a href=\"/locations/trailer-sales\">Sun State Trailers</a> is ready to help.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-year-round-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Schedule service with Sun State Trailers today and let our experienced technicians help keep your trailers safe, compliant, and ready for every mile.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "links-year-round-3-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "links-year-round-3",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "marginTop": 40,
+                          "marginBottom": 8
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "links-year-round-3-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "schedule-service",
+                                "label": "Schedule Service With Sun State Trailers"
+                              },
+                              {
+                                "ctaId": "contact-us",
+                                "label": "Contact Us",
+                                "style": "secondary"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Parts, service and support",
+          "heading": "Stay ahead of your next inspection.",
+          "body": "Call 800.741.7566 to schedule DOT inspections or service at any Sun State location in Florida.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Schedule service",
+          "secondaryUrl": "/service-appointment"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/the-basics-of-dot-trailer-inspection-requirements\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/the-basics-of-dot-trailer-inspection-requirements\"])) > .bz-card:nth-child(n+4) { display: none; }\n"
+}

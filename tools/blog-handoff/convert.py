@@ -85,8 +85,16 @@ REPEATS = {"batch-3": {"are-aftermarket-semi-truck-parts-as-reliable-as-oem.html
                        "reliable-semi-truck-service-centers-in-florida.html"},
            "batch-8": {"reliable-truck-and-trailer-parts-in-tampa.html", "routine-dot-inspection-keeps-your-fleet-on-the-road.html",
                        "searching-for-an-international-truck-dealer.html", "semi-truck-brake-maintenance.html",
-                       "semi-truck-engine-problems-every-driver-should-watch-for.html", "semi-truck-maintenance-checklist.html"}}
+                       "semi-truck-engine-problems-every-driver-should-watch-for.html", "semi-truck-maintenance-checklist.html"},
+           "batch-9": {"semi-truck-maintenance-mistakes-that-cost-fleets-thousands.html", "semi-truck-road-service.html",
+                       "signs-its-time-to-replace-your-semi-truck-battery.html",
+                       "take-your-business-further-with-these-fleet-services.html",
+                       "the-latest-design-and-safety-updates-in-new-tractor-trailers.html"}}
 POST_TITLES = {}  # "Blog Post - <title>.dc.html" -> slug, filled from the handoff's own pages
+# The dealer's own topic for a post, where it differs from the chip the handoff draws: the
+# pending-posts list files every Sun State Trailers post under "Trailers". Applied to the card,
+# the hero's topic chip and the breadcrumb, so a rerun keeps it.
+TOPICS = {"the-basics-of-dot-trailer-inspection-requirements": "Trailers"}
 
 
 def dc_href(h, label):
@@ -1020,6 +1028,14 @@ if __name__ == "__main__":
             print(f"kept    {page_slug(f)} (a repeat of the earlier handoff's page)")
             continue
         slug, c = convert(f)
+        if slug in TOPICS:
+            was, c["topic"] = c["topic"], TOPICS[slug]
+            hero = c["nodes"][0]["props"]["values"]
+            hero["topic"] = TOPICS[slug]
+            hero["breadcrumb"] = hero["breadcrumb"].rsplit(" / ", 1)[0] + " / " + TOPICS[slug]
+            if meta.get(slug, {}).get("topic") == was:
+                meta[slug]["topic"] = TOPICS[slug]
+                json.dump(meta, open(os.path.join(os.path.dirname(__file__), "blog-cards.json"), "w"), indent=1, ensure_ascii=False)
         p = f"{REPO}/site/blog/posts/{slug}.json"
         old = json.load(open(p)) if os.path.exists(p) else {}
         if slug not in meta:

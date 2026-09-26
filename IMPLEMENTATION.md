@@ -903,3 +903,42 @@ trucks* topic chip (its topic in that listing). The other four were already publ
 platform re-syncs `draft` from `main`.
 
 The old-address redirect from §18 still applies.
+
+## 25. Blog handoff, batch 9 — one new post, five repeats
+
+Six prototype pages in the §15 format. One is new, and is **T08** on the pending-posts list:
+
+| Handoff file | Post | Topic, date |
+|---|---|---|
+| `the-basics-of-dot-trailer-inspection-requirements` | `the-basics-of-dot-trailer-inspection-requirements` (Sun State Trailers) | Trailers, Jun 5, 2026 |
+
+The other five repeat posts already on the site (every paragraph, list item and heading checked):
+*Semi Truck Maintenance Mistakes That Cost Fleets Thousands*, *Semi Truck Road Service*, *Signs
+It's Time to Replace Your Semi Truck Battery*, *Take Your Business Further With These Fleet
+Services* and *The Latest Design and Safety Updates in New Tractor-Trailers*. **They are left as
+they are** and the converter lists batch 9's five as repeats.
+
+The new post was built by the converter from shapes earlier batches already handle — the Post
+hero, the *On this page* rail and its *Due for a DOT inspection?* card, prose and Checkmark lists,
+the two-up bordered callout, two photographs and the filled / outlined button pair (*Schedule
+service*, *Contact us*, relabelled as the design words them). All 55 headings, paragraphs and
+list items are in it. The photographs are 1000px JPEGs (~100 KB each).
+
+**Topic.** The handoff's chip says *Service*; the dealer's pending-posts list files every Sun State
+Trailers post under **Trailers**, so the converter's new `TOPICS` table sets the card, the hero
+chip and the breadcrumb to *Trailers* and keeps it on a rerun. The blog page has 73 cards and a
+*Trailers* topic chip.
+
+**Not compared visually.** The prototype loads React from unpkg.com, which this build
+environment cannot reach, so the handoff did not render; the built page was checked at 1280px
+and the structure compared element by element instead.
+
+**Dropped / as elsewhere.** The hand-picked "Keep reading" cards (two of them pending posts T04
+and T07) are the latest-posts list, as on every post.
+
+**Old address.** If the old domain is pointed at this site, this goes on **Storefront → 301
+Redirects** in Admin:
+
+| Old address | New path |
+|---|---|
+| `https://sunstatetrailers.com/uncategorized/the-basics-of-dot-trailer-inspection-requirements/` | `/blog/posts/the-basics-of-dot-trailer-inspection-requirements` |
