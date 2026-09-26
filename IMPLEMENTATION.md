@@ -775,3 +775,31 @@ overwritten on sync. The blog page is now written for the renderer this repo act
 
 If the platform later ships a `posts` source in the template, bind the grid back to it and
 drop the typed rows.
+
+## 20. Blog handoff, batch 5 — six repeats, nothing new
+
+Six prototype pages in the §15 format, and every one is a post already on the site:
+
+| Handoff file | Existing post |
+|---|---|
+| `features-to-look-for-in-new-semi-trucks` | `features-to-look-for-in-new-semi-trucks` |
+| `fleet-maintenance-programs-vs-one-off-repairs` | `fleet-maintenance-programs-vs-one-off-repairs` |
+| `fleet-truck-maintenance-reduces-downtime` | `how-fleet-truck-maintenance-services-reduce-downtime` |
+| `fleet-truck-service-in-florida-keeps-businesses-moving` | `fleet-truck-service-in-florida-how-sun-state-international-keeps-businesses-moving` |
+| `fuel-filter-pressure` | `why-fuel-filter-pressure-in-your-semi-truck-matters` |
+| `go-to-dealership-for-truck-equipment-in-tampa` | `why-sun-state-international-is-the-go-to-dealership-for-truck-equipment-in-tampa-florida` |
+
+Checked three ways: every paragraph, list item and heading is in the existing post; the pages
+were rendered beside the built posts at 1280px and the layout matches section for section
+(hero, contents rail and its card, checkmark lists, bordered callouts, link cards, photographs,
+the button pair, share row, Keep reading and the CTA band); and the converter, run on them,
+produced only regressions — the 1000px photographs over the 1280px ones already here, and an
+empty *On this page* list, because the handoff draws that list and the share row from template
+holes (`{{ r.title }}`, `{{ sl.label }}`). **The existing posts are kept**, and the converter lists
+batch 5 as repeats so a rerun cannot overwrite them.
+
+**Colour.** The handoff draws checkmarks, the topic chip, inline links and the primary button in
+red (`#EE2D24`, §1's original accent). The site renders them from the Design system's current
+`accent` (`#272623`) and `accentDark` (`#ff7144`), which were changed in the dashboard after §1.
+That is the dealer's setting and is left alone; setting **Design system → accent** back to
+`#EE2D24` restores the handoff's red everywhere at once.

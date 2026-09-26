@@ -70,7 +70,13 @@ REPEATS = {"batch-3": {"are-aftermarket-semi-truck-parts-as-reliable-as-oem.html
                        "best-semi-truck-tires-for-long-term-hauls.html"},
            "batch-4": {"commercial-truck-oil-change-mistakes.html", "common-air-brake-problems.html",
                        "diesel-engine-diagnostic.html", "diesel-exhaust-fluid.html",
-                       "do-semi-truck-maintenance-costs-outweigh-the-benefits.html"}}
+                       "do-semi-truck-maintenance-costs-outweigh-the-benefits.html"},
+           # Every page of batch 5 repeats a post built from Parts 1-6; its "On this page" list and
+           # share row are template holes ({{ r.title }}, {{ sl.label }}) with nothing to read.
+           "batch-5": {"features-to-look-for-in-new-semi-trucks.html", "fleet-maintenance-programs-vs-one-off-repairs.html",
+                       "fleet-truck-maintenance-reduces-downtime.html",
+                       "fleet-truck-service-in-florida-keeps-businesses-moving.html", "fuel-filter-pressure.html",
+                       "go-to-dealership-for-truck-equipment-in-tampa.html"}}
 POST_TITLES = {}  # "Blog Post - <title>.dc.html" -> slug, filled from the handoff's own pages
 
 
