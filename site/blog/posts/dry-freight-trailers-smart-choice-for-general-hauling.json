@@ -1,0 +1,515 @@
+{
+  "slug": "dry-freight-trailers-smart-choice-for-general-hauling",
+  "title": "Dry Freight Trailers: Why They're a Smart Choice for General Hauling",
+  "date": "2025-08-08",
+  "description": "Dry freight trailers offer versatility, fuel savings, and reliable cargo protection. Learn why they're a smart business move.",
+  "excerpt": "When it comes to transporting everyday goods, few trailers offer the versatility and dependability of a dry freight trailer. Also known as dry vans, these enclosed box trailers are the backbone of general…",
+  "status": "published",
+  "coverImage": "/img/blog/dry-freight-trailers-smart-choice-for-general-hauling/hero.jpg",
+  "topic": "Trailer Sales",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Trailer Sales",
+          "title": "Dry Freight Trailers: Why They're a Smart Choice for General Hauling",
+          "topic": "Trailer Sales",
+          "date": "August 8, 2025",
+          "readTime": "4 min read",
+          "author": "Sun State Trailers",
+          "image": {
+            "src": "/img/blog/dry-freight-trailers-smart-choice-for-general-hauling/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Sun State International sleeper truck parked beside a row of Hyundai Translead dry van trailers"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "What Is a Dry Freight Trailer?",
+                        "href": "#what-is"
+                      },
+                      {
+                        "label": "Why They Make Business Sense",
+                        "href": "#business-sense"
+                      },
+                      {
+                        "label": "How to Choose the Right One",
+                        "href": "#choosing"
+                      },
+                      {
+                        "label": "Partnering With Sun State",
+                        "href": "#partnering"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "WANT THE FULL SHEET?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "View detailed specifications before you compare trailers.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-trailers",
+                                "label": "View Our Trailer Specifications →"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "When it comes to transporting everyday goods, few trailers offer the versatility and dependability of a dry freight trailer. Also known as dry vans, these enclosed box trailers are the backbone of general freight hauling. If you're moving packaged cargo, consumer goods, palletized loads, or non-perishables, dry freight trailers offer the security, efficiency, and flexibility your business needs to keep rolling.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At <a href=\"/locations/trailer-sales\">Sun State Trailers</a>, we work with Florida's owner-operators and fleet managers to match them with the right dry freight trailer for the job, whether they're expanding a fleet or just getting started. Here's what makes these trailers so essential, how to choose the right one, and how Sun State Trailers can help you spec, finance, and service it locally.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-what-is",
+                  "type": "heading",
+                  "props": {
+                    "text": "What Is a Dry Freight Trailer?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "what-is"
+                  }
+                },
+                {
+                  "id": "p-what-is-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Dry freight trailers are enclosed trailers designed to protect goods from weather, road debris, and theft. They're the industry standard for hauling general cargo and are used in nearly every sector, from retail distribution to e-commerce to regional delivery.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-what-is-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "type",
+                    "items": [
+                      {
+                        "title": "Enclosed, Weather-Proof Design",
+                        "points": [],
+                        "intro": "Keeps cargo safe from rain, sun, wind, and road grime."
+                      },
+                      {
+                        "title": "Standardized Sizing",
+                        "points": [],
+                        "intro": "Most dry vans come in 28', 48', or 53' lengths, making them adaptable for various hauls."
+                      },
+                      {
+                        "title": "Dock-Level Compatibility",
+                        "points": [],
+                        "intro": "Built for fast, efficient loading and unloading at warehouses and retail locations."
+                      },
+                      {
+                        "title": "Durable Construction",
+                        "points": [],
+                        "intro": "Options for composite, aluminum, or galvanized steel exteriors to match load demands and environments."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-what-is-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Dry freight trailers are ideal for packaged goods, non-perishable food and beverages, building materials, textiles, electronics, and furniture; the possibilities are endless. If your cargo doesn't need refrigeration but still needs protection from the elements, this trailer type is likely your best option.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-business-sense",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Dry Freight Trailers Make Business Sense",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "business-sense"
+                  }
+                },
+                {
+                  "id": "p-business-sense-1",
+                  "type": "text",
+                  "props": {
+                    "text": "For many owner-operators, the dry van trailer is their most-used and most-profitable asset. Here's why.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-business-sense-2",
+                  "type": "check-list",
+                  "props": {
+                    "mark": "dot",
+                    "items": [
+                      {
+                        "text": "Versatility means more load opportunities — dry vans can handle a wide range of freight types, giving you more freedom to accept backhauls, pivot with demand, or serve multiple clients with one piece of equipment"
+                      },
+                      {
+                        "text": "Easier to maintain — with no refrigeration unit or hydraulic systems, dry freight trailers are generally easier and cheaper to maintain, meaning fewer breakdowns and lower service costs"
+                      },
+                      {
+                        "text": "Maximized fuel efficiency — modern dry vans feature lightweight materials and aerodynamic designs, letting you haul more without exceeding DOT weight limits"
+                      },
+                      {
+                        "text": "Strong ROI — low maintenance needs, consistent demand, and better fuel economy make dry freight trailers one of the best investments in trucking"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "actions-business-sense-3",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "browse-trailers",
+                        "label": "Find the Right Trailer",
+                        "style": "primary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-choosing",
+                  "type": "heading",
+                  "props": {
+                    "text": "How to Choose the Right Dry Freight Trailer",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "choosing"
+                  }
+                },
+                {
+                  "id": "p-choosing-1",
+                  "type": "text",
+                  "props": {
+                    "text": "The \"right\" trailer depends on your hauls, routes, and long-term business goals. Here are a few key points to keep in mind.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-choosing-2",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "<strong>Consider size and payload</strong> — while 53-foot trailers are common for long-haul freight, a 48' or even 28' may be better suited for local or regional deliveries. Think about where you'll be hauling and how often you'll be loading and unloading."
+                      },
+                      {
+                        "text": "<strong>Look at the wall and floor materials</strong> — do you need reinforced walls for heavy cargo? Will your trailer be exposed to moisture or corrosive environments? Composite and aluminum walls, high-tensile steel rear frames, and scuff-resistant floors can help extend the life of your trailer."
+                      },
+                      {
+                        "text": "<strong>Don't forget your budget</strong> — Sun State Trailers offers trailer financing options to keep your cash flow stable while you invest in quality equipment. Whether you're buying new or considering an upgrade, we'll help you compare cost vs. value."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-partnering",
+                  "type": "heading",
+                  "props": {
+                    "text": "Partnering with Sun State Trailers for Your Dry Freight Trailer",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "partnering"
+                  }
+                },
+                {
+                  "id": "p-partnering-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State Trailers, we take pride in doing more than just selling trailers. We take the time to understand your hauls, your business goals, and your routes, then guide you toward equipment that works as hard as you do.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-partnering-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "type3",
+                    "items": [
+                      {
+                        "title": "In-Stock and Custom Orders",
+                        "points": [],
+                        "intro": "Need a trailer now? We stock high-quality dry freight trailers ready to roll. Need something more specific? We'll help you custom-order the perfect build from top manufacturers like Hyundai Translead."
+                      },
+                      {
+                        "title": "Local Support You Can Count On",
+                        "points": [],
+                        "intro": "With service locations across Tampa, Sarasota, and Davenport, you'll never be far from help. Whether it's a quick repair or long-term maintenance, our service team has your back."
+                      },
+                      {
+                        "title": "Built on Relationships, Not Just Sales",
+                        "points": [],
+                        "intro": "We know that owner-operators don't just need equipment; they need a team that respects their time and treats their business like their own. That's what we aim to deliver every day."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-partnering-3",
+                  "type": "text",
+                  "props": {
+                    "text": "If your business depends on getting general freight where it needs to go, a dry freight trailer is the workhorse that makes it happen. And with the right specs, financing plan, and local support from <a href=\"/locations/trailer-sales\">Sun State Trailers</a>, you'll be set up for long-term success.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-partnering-4",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "browse-trailers",
+                        "label": "Find the Right Trailer",
+                        "style": "primary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-share",
+                  "type": "post-share",
+                  "props": {
+                    "label": "Share",
+                    "items": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fdry-freight-trailers-smart-choice-for-general-hauling",
+                        "newTab": true
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fdry-freight-trailers-smart-choice-for-general-hauling&text=Dry%20Freight%20Trailers%3A%20Why%20They%27re%20a%20Smart%20Choice%20for%20General%20Hauling",
+                        "newTab": true
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fdry-freight-trailers-smart-choice-for-general-hauling",
+                        "newTab": true
+                      },
+                      {
+                        "label": "Email",
+                        "url": "mailto:?subject=Dry%20Freight%20Trailers%3A%20Why%20They%27re%20a%20Smart%20Choice%20for%20General%20Hauling&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fdry-freight-trailers-smart-choice-for-general-hauling",
+                        "newTab": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Trailer sales",
+          "heading": "Haul smarter with a dry freight trailer.",
+          "body": "Call 800.741.7566 to talk with our team about dry freight trailers at any Sun State location in Florida.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Browse trailer inventory",
+          "secondaryUrl": "/store/inventory?type=trailer"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/dry-freight-trailers-smart-choice-for-general-hauling\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/dry-freight-trailers-smart-choice-for-general-hauling\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n/* The hero photograph is framed a little high, as the design frames it. */\n[data-bz-section=\"post-hero\"] [data-bz-node=\"ph-photo\"] img { object-position: center 55%; }\n\n/* Its type cards: 24px in, the title 10px over a 14px list. */\n[data-bz-node=\"art-body\"] .ss-cl--type,\n[data-bz-node=\"art-body\"] .ss-cl--type3 { gap: 24px; }\n[data-bz-node=\"art-body\"] .ss-cl--type { gap: 28px; }\n[data-bz-node=\"art-body\"] .ss-cl--type .ss-cl__card { padding: 24px; }\n[data-bz-node=\"art-body\"] .ss-cl--type .ss-cl__t { margin: 0 0 10px; }\n[data-bz-node=\"art-body\"] :is(.ss-cl--type, .ss-cl--type3) .ss-cl__list { margin: 0; padding-left: 18px; }\n[data-bz-node=\"art-body\"] :is(.ss-cl--type, .ss-cl--type3) .ss-cl__list li { font-size: 14px; }\n\n/* A type card's sentence is set as body text, as the article's paragraphs are. */\n[data-bz-node=\"art-body\"] :is(.ss-cl--type, .ss-cl--type3) .ss-cl__p { font-size: 17px; line-height: 1.8; margin: 0 0 18px; }\n\n[data-bz-node=\"art-body\"] > [data-bz-node=\"actions-business-sense-3\"] .bz-btns { margin: 8px 0 34px; }\n"
+}

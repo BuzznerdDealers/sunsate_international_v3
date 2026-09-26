@@ -134,7 +134,7 @@ def trailer_sales_href(label):
     if new and used: return "/store/inventory?type=trailer"
     if used: return "/store/inventory?type=trailer&condition=used"
     if new: return "/store/inventory?type=trailer&condition=new"
-    if re.search(r"inventory|in stock|available|browse|explore", l): return "/store/inventory?type=trailer"
+    if re.search(r"inventory|in stock|available|browse|explore|\bfind\b|check out", l): return "/store/inventory?type=trailer"
     return "/locations/trailer-sales"
 
 
@@ -442,6 +442,9 @@ def normalise_standalone(s):
                      '[data-bz-node="art-body"] .ss-cl--type .ss-cl__t { margin: 0 0 10px; }\n'
                      '[data-bz-node="art-body"] :is(.ss-cl--type, .ss-cl--type3) .ss-cl__list { margin: 0; padding-left: 18px; }\n'
                      '[data-bz-node="art-body"] :is(.ss-cl--type, .ss-cl--type3) .ss-cl__list li { font-size: 14px; }')
+    if s.select(".post-body .num-card"):
+        extra.append("/* Its numbered cards sit as far apart as the design's grids: 28px two across, 24px three. */\n"
+                     '[data-bz-node="art-body"] .ss-cl--num { gap: 28px; }\n[data-bz-node="art-body"] .ss-cl--num3 { gap: 24px; }')
     if s.select(".post-body .type-card > p"):
         extra.append("/* A type card's sentence is set as body text, as the article's paragraphs are. */\n"
                      '[data-bz-node="art-body"] :is(.ss-cl--type, .ss-cl--type3) .ss-cl__p { font-size: 17px; line-height: 1.8; margin: 0 0 18px; }')
@@ -636,6 +639,11 @@ def convert(path):
                 col(f"nh-{sec}-col", [n(f"h-{sec}", "heading", {"text": plain(h), "headingLevel": 2, "align": "left", "anchor": sec})],
                     span=11, styles={"flexGrow": 1}),
             ], styles={"display": "flex", "alignItems": "baseline", "marginTop": 52, "marginBottom": 16}))
+        elif el.name == "h2" and not el.get("id"):
+            # A heading the contents rail does not list (batch 14's closing one): no anchor, and
+            # its node named from its first words.
+            sec = "-".join(slugify(plain(el)).split("-")[:4])
+            out.append(n(f"h-{sec}", "heading", {"text": plain(el), "headingLevel": 2, "align": "left"}))
         elif el.name == "h2":
             sec = el["id"]
             out.append(n(f"h-{sec}", "heading", {"text": plain(el), "headingLevel": 2, "align": "left", "anchor": sec}))
@@ -809,7 +817,7 @@ def convert(path):
                     elif y.name == "ul": it["points"] = [{"text": inline_html(li)} for li in y.find_all("li")]
                     else: raise SystemExit(f"number card child <{y.name}>")
                 items.append(it)
-            out.append(n(nid("cards"), "card-lists", {"variant": "num-wide" if "num-card" in cls else "num", "items": items}))
+            out.append(n(nid("cards"), "card-lists", {"variant": "num-wide" if "num-card" in cls else "num3" if "grid-3" in cls else "num", "items": items}))
         elif el.name == "div" and el.find("div", class_="reason-card", recursive=False) and all(
                 [x.name for x in card.children if isinstance(x, Tag)] == ["h3", "p"]
                 for card in el.find_all("div", class_="reason-card", recursive=False)):

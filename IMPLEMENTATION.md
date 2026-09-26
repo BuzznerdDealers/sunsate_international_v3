@@ -1042,3 +1042,50 @@ unemitted `BlogPosting` data are as in §24.
 | `/trailer-rentals/tampa-trailer-rental-reasons/` | `/blog/posts/5-reasons-why-you-should-look-for-trailers-for-rent` |
 | `/trailer-rentals/reefer-trailer-lease-benefits/` | `/blog/posts/5-benefits-of-a-reefer-trailer-lease` |
 | `/used-trailers/how-does-a-reefer-trailer-work/` | `/blog/posts/how-does-a-reefer-trailer-work` |
+
+## 27. `SS_International_14` — Sun State Trailers posts, batch 4 (eight new posts)
+
+`handoff-trailer-posts-batch-4`: eight post pages and a preview index, in the §24 format. All
+eight are new; each is published on its file's slug with its card on the Blog page (91 in all).
+
+| Post | Topic, date |
+|---|---|
+| `searching-for-tampa-trailer-dealers` | Trailer Sales, Oct 24, 2025 |
+| `globe-trailers-for-sale-in-florida` | Trailer Sales, Oct 17, 2025 |
+| `what-fleets-should-look-for-in-a-semi-trailer-for-sale` | Trailer Sales, Oct 5, 2025 |
+| `best-trailer-leasing-options-in-florida` | Trailer Rentals, Sep 26, 2025 |
+| `hyundai-translead-trailers-for-sale-in-florida` | Trailer Sales, Sep 19, 2025 |
+| `when-to-consider-a-trailer-upgrade` | Trailer Sales, Aug 22, 2025 |
+| `hyundai-translead-trailers-built-for-efficiency` | Trailer Sales, Aug 15, 2025 |
+| `dry-freight-trailers-smart-choice-for-general-hauling` | Trailer Sales, Aug 8, 2025 |
+
+Built by `tools/blog-handoff/convert.py`. Body copy and rails match the handoff word for word
+(checked mechanically), and each post was rendered beside its handoff page: every section lands
+within 25px at 1280px and within ~80px at phone width. Batches 2 and 3 re-convert unchanged.
+
+New shapes and fixes:
+
+| Handoff | Here |
+|---|---|
+| `.num-card`s three across (a large accent number over a title and a sentence) | **Card lists**, new *Numbered, three across* style (two across below 1100px, one on phones) |
+| numbered cards' 28px / 24px grid gaps | one rule in the post's CSS |
+| a closing `h2` with no id, not in the contents rail | a heading with no anchor, its node named from its first words |
+| *Find the Right Trailer*, *Check Out Our …* buttons | trailer listings (new / used / rentals where the wording says so) |
+
+**Dropped / as elsewhere.** Keep reading is the latest-posts list; chrome, colours and the
+unemitted `BlogPosting` data are as in §24. *Trailer Specifications* links go to the trailer
+listings (§15).
+
+**Old addresses.** If sunstatetrailers.com is pointed at this site, these go on **Storefront →
+301 Redirects** in Admin:
+
+| Old path on sunstatetrailers.com | New path |
+|---|---|
+| `/used-trailers/searching-for-tampa-trailer-dealers-heres-why-florida-fleets-choose-sun-state-trailers-as-their-long-term-partner/` | `/blog/posts/searching-for-tampa-trailer-dealers` |
+| `/used-trailers/globe-trailers-for-sale-in-florida-heavy-duty-roi-for-fleet-hauls/` | `/blog/posts/globe-trailers-for-sale-in-florida` |
+| `/used-trailers/what-fleets-should-look-for-in-a-semi-trailer-for-sale-specs-standardization-resale-value/` | `/blog/posts/what-fleets-should-look-for-in-a-semi-trailer-for-sale` |
+| `/trailer-rentals/best-trailer-leasing-options-in-florida-how-fleets-maximize-uptime-reduce-costs/` | `/blog/posts/best-trailer-leasing-options-in-florida` |
+| `/new-trailers/hyundai-translead-trailers-for-sale-in-florida-proven-efficiency-for-fleet-operations/` | `/blog/posts/hyundai-translead-trailers-for-sale-in-florida` |
+| `/new-trailers/when-to-consider-a-trailer-upgrade-and-why-it-pays-to-buy-new/` | `/blog/posts/when-to-consider-a-trailer-upgrade` |
+| `/new-trailers/hyundai-translead-trailers-built-for-efficiency-backed-by-sun-state-trailers/` | `/blog/posts/hyundai-translead-trailers-built-for-efficiency` |
+| `/new-trailers/dry-freight-trailers-why-theyre-a-smart-choice-for-general-hauling/` | `/blog/posts/dry-freight-trailers-smart-choice-for-general-hauling` |
