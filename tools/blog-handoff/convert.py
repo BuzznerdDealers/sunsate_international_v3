@@ -945,26 +945,40 @@ POST_CSS = {
 def update_listing(meta):
     """The blog page's Latest posts rail and its topic chips.
 
-    The cards are not written here: the rail's `posts` list is bound to the
-    renderer's `posts` source with paging, so every published post is a card —
-    title, date, topic and cover from the post file, and the listing's excerpt
-    from the post's own `excerpt`, which convert() writes. Only the chips are
-    typed, and they are derived from the topics in play so a new topic gets one."""
+    This renderer has no `posts` data source and no pager block, so the rail's
+    `posts` list is written here, one row per published post, newest first, from
+    the post files themselves: title, date, topic and cover from the post, and
+    the listing's excerpt from the post's own `excerpt`, which convert() writes.
+    Every post is a card and the topic chips filter them in place. Rerun this
+    after adding a post so its card appears. The chips are derived from the
+    topics in play so a new topic gets one."""
+    import datetime
     p = f"{REPO}/site/pages/blog/page.json"
     page = json.load(open(p))
     rail = [x for x in page["nodes"] if x["id"] == "bl-posts"][0]
     key = lambda t: re.sub(r"[^a-z0-9]+", "-", t.lower().replace("&", "and")).strip("-")
-    topics = set()
+    topics, rows = set(), []
     for f in glob.glob(f"{REPO}/site/blog/posts/*.json"):
         d = json.load(open(f))
-        if d.get("status", "published") == "published":
-            topics.add(d["topic"])
-    rail["props"]["values"]["posts"] = {"source": "posts", "config": {"paginate": True}}
+        if d.get("status", "published") != "published":
+            continue
+        topics.add(d["topic"])
+        day = datetime.date.fromisoformat(d["date"][:10])
+        row = {"topic": d["topic"], "topicKey": key(d["topic"]),
+               "date": f"{day:%b} {day.day}, {day.year}", "dateISO": day.isoformat(),
+               "title": d["title"], "href": f"/blog/posts/{d['slug']}", "excerpt": d.get("excerpt", "")}
+        if d.get("coverImage"):
+            row["coverImage"] = {"src": d["coverImage"], "alt": d["title"]}
+        rows.append(row)
+    rows.sort(key=lambda r: (r["dateISO"], r["title"]), reverse=True)
+    rail["props"]["values"]["posts"] = rows
     chips = ["Parts", "Commercial trucks", "Service", "Maintenance", "Company", "Sales", "Trucks", "Parts & Service", "Fleet"]
     chips += sorted(topics - set(chips))
     rail["props"]["values"]["topics"] = [{"label": t, "value": key(t)} for t in chips]
+    # The pager band drew a block this renderer does not have; every card is on the one page.
+    page["nodes"] = [x for x in page["nodes"] if x["id"] != "bl-pager"]
     json.dump(page, open(p, "w"), indent=2, ensure_ascii=False); open(p, "a").write("\n")
-    print(f"blog page: {len(topics)} topics; cards come from the posts source")
+    print(f"blog page: {len(topics)} topics; {len(rows)} cards from the post files")
 
 
 def related_css(slug):

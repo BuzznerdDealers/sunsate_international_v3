@@ -753,3 +753,25 @@ Redirects** in Admin:
 | Old path on sunstateintl.com | New path |
 |---|---|
 | `/building-a-fleet-here-are-5-reasons-why-you-should-choose-international-trucks/` | `/blog/posts/building-a-fleet-here-are-5-reasons-why-you-should-choose-international-trucks` |
+
+## 19. Batch 4 re-delivered; the blog grid back on this renderer
+
+The verified batch-4 handoff was checked against §18. It is the same six pages: the converter
+regenerates *Building a Fleet? Here are 5 Reasons…* byte for byte, and every paragraph, list
+item and heading of the five repeats is already in the existing posts. No post changed.
+
+**`npm run validate` was failing on `main`.** The platform sync in 9a46bcb brought `renderer/`
+back to the template's (4.24.0), which has no `posts` data source and no `postsPager` block —
+the ones §18 relied on were hand-restored platform files (a85b8af), and platform files are
+overwritten on sync. The blog page is now written for the renderer this repo actually has:
+
+- The **Post grid**'s `posts` list is typed rows again, one per published post, newest first,
+  written by `tools/blog-handoff/convert.py` from the post files (title, date, topic, cover,
+  excerpt). The dealer sees these under **Typed in here** on the placement. A post added later
+  on the **Posts** screen gets its page, but not a card on /blog until the converter's listing
+  step is rerun or a row is added by hand.
+- The pager band (`bl-pager`) is removed. All 68 cards are on /blog and the topic chips
+  filter them in place, as before paging was added.
+
+If the platform later ships a `posts` source in the template, bind the grid back to it and
+drop the typed rows.
