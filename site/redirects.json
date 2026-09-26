@@ -2,5 +2,16 @@
   "version": 1,
   "managedBy": "admin",
   "useWildcards": false,
-  "redirects": []
+  "redirects": [
+    {
+      "from": "/our-story",
+      "to": "/about-us",
+      "statusCode": 301
+    },
+    {
+      "from": "/home-dark",
+      "to": "/locations/tampa",
+      "statusCode": 301
+    }
+  ]
 }

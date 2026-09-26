@@ -40,5 +40,17 @@
         }
       ]
     }
+  ],
+  "redirects": [
+    {
+      "source": "/our-story{/}?",
+      "destination": "/about-us",
+      "statusCode": 301
+    },
+    {
+      "source": "/home-dark{/}?",
+      "destination": "/locations/tampa",
+      "statusCode": 301
+    }
   ]
 }
