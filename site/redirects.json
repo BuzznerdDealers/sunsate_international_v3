@@ -2,12 +2,5 @@
   "version": 1,
   "managedBy": "admin",
   "useWildcards": false,
-  "redirects": [
-    {
-      "from": "/our-story",
-      "to": "/about-us",
-      "statusCode": 301,
-      "note": "Page moved to /about-us"
-    }
-  ]
+  "redirects": []
 }
