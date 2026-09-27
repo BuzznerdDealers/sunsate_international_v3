@@ -1389,3 +1389,56 @@ Redirects** in Admin (the three sunstateintl.com posts keep their paths under `/
 | `https://sunstatetrailers.com/uncategorized/benefits-of-a-short-term-trailer-rental-for-your-local-job/` | `/blog/posts/benefits-of-a-short-term-trailer-rental` |
 | `https://www.sunstateintl.com/which-is-better-for-your-fleet-freight-truck-parts-oem-vs-aftermarket/` | `/blog/posts/which-is-better-for-your-fleet-freight-truck-parts-oem-vs-aftermarket` |
 | `https://www.sunstateintl.com/when-to-schedule-semi-truck-alignment-near-me/` | `/blog/posts/when-to-schedule-semi-truck-alignment-near-me` (once published) |
+
+## 33. `SS_International_20` — batch 9: two new posts, four drafts rebuilt, two repeats
+
+`handoff-trailer-posts-batch-9`: eight post pages and a preview index, in the §24 format — two Sun
+State Trailers articles and six sunstateintl.com truck articles on their live permalinks' slugs.
+Six of the eight are already posts here, all set to draft by the dealer.
+
+| Post | Topic, date | |
+|---|---|---|
+| `the-basics-of-dot-trailer-inspection-requirements` | Service, Jun 5, 2026 | **new, published** |
+| `trailer-brake-lights-not-working` | Service, May 26, 2026 | **new, published** |
+| `how-electrical-diagnostic-tools-prevent-breakdowns` | Service, Jul 13, 2026 | rebuilt, **still a draft** |
+| `signs-you-need-to-replace-your-semi-truck-suspension-parts` | Commercial Trucks, Jun 29, 2026 | rebuilt, **still a draft** |
+| `why-sun-state-is-one-of-the-top-fleet-service-providers` | Service, Jul 5, 2026 | rebuilt, **still a draft** |
+| `why-visit-your-local-international-truck-service-department` | Service, Jul 15, 2026 | rebuilt, **still a draft** |
+| `commercial-truck-oil-change-mistakes-that-cost-you` | — | repeat, kept (draft) |
+| `common-problems-with-air-brake-parts-for-semi-trucks` | — | repeat, kept (draft) |
+
+- **Two repeats.** The oil-change and air-brake posts are already on the shared post layout here,
+  word for word (every paragraph, heading, rail entry and button), with the same 1280px
+  photographs. They are kept as they are, and the converter lists them as repeats.
+- **Four draft stubs rebuilt.** These held only a plain section and a CTA — three of them only the
+  excerpt (§6, §14) — with no hero, rail or cover. Each is rebuilt from this handoff on the shared
+  post layout, with its photographs, and **left as a draft**: publishing is the dealer's call, on
+  **Posts**. Topics are the Blog page's existing cards' (the suspension post's is *Commercial
+  Trucks*).
+
+The Blog page carries 125 cards (the two new posts; drafts get their card when published). Body
+copy and rails match the handoff word for word (checked mechanically). Every post, the drafts
+built published for the purpose and set back, was compared element by element at 1280px: no block
+differs by more than 8px and each post ends within 15px of its handoff. Earlier batches
+re-convert byte for byte.
+
+**Two converter fixes, found in this batch.**
+
+- **Links between posts.** The handoffs name a sibling post by its file, and a sunstateintl.com
+  article's file is not its slug. *Signs You Need to Replace Your Semi Truck Suspension Parts*
+  links to `semi-truck-alignment-near-me.html`, which would have become
+  `/blog/posts/semi-truck-alignment-near-me` — a page that does not exist. The converter now
+  resolves the file to the post's real slug (`when-to-schedule-semi-truck-alignment-near-me`) and
+  refuses to write a link to a post that does not exist. Both of those posts are drafts; the link
+  lands once both are published.
+- **Run-in titles.** A checkmark row's bold title runs into its sentence (§30) only when the design
+  sets them on one line; *How Electrical Diagnostic Tools…* breaks the line after each title, so
+  there the titles sit on their own line.
+
+**Old addresses.** If the old domains are pointed at this site, these go on **Storefront → 301
+Redirects** in Admin (the six sunstateintl.com posts keep their paths under `/blog/posts/`):
+
+| Old address | New path |
+|---|---|
+| `https://sunstatetrailers.com/uncategorized/the-basics-of-dot-trailer-inspection-requirements/` | `/blog/posts/the-basics-of-dot-trailer-inspection-requirements` |
+| `https://sunstatetrailers.com/uncategorized/trailer-brake-lights-not-working/` | `/blog/posts/trailer-brake-lights-not-working` |

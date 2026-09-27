@@ -88,6 +88,9 @@ REPEATS = {"batch-3": {"are-aftermarket-semi-truck-parts-as-reliable-as-oem.html
                        "reliable-semi-truck-service-centers-in-florida.html"},
            # Batch 8 of the standalone trailer handoffs repeats the service-center post word for word.
            "handoff-trailer-posts-batch-8": {"international-truck-service-center.html"},
+           # Batch 9: the oil-change and air-brake posts repeat, word for word, posts built from Parts 1-6.
+           "handoff-trailer-posts-batch-9": {"commercial-truck-oil-change-mistakes-that-cost-you.html",
+                                             "common-problems-with-air-brake-parts-for-semi-trucks.html"},
            "batch-8": {"reliable-truck-and-trailer-parts-in-tampa.html", "routine-dot-inspection-keeps-your-fleet-on-the-road.html",
                        "searching-for-an-international-truck-dealer.html", "semi-truck-brake-maintenance.html",
                        "semi-truck-engine-problems-every-driver-should-watch-for.html", "semi-truck-maintenance-checklist.html"}}
@@ -142,6 +145,28 @@ def trailer_sales_href(label):
     return "/locations/trailer-sales"
 
 
+# Standalone handoffs name a sibling post by its file, which is not always its slug: a
+# sunstateintl.com article keeps its live permalink (page_slug). Files from earlier batches:
+POST_FILES = {
+    "semi-truck-alignment-near-me.html": "when-to-schedule-semi-truck-alignment-near-me",
+    "international-truck-service-center.html": "what-to-expect-from-an-international-truck-service-center",
+    "oem-vs-aftermarket-freight-truck-parts.html": "which-is-better-for-your-fleet-freight-truck-parts-oem-vs-aftermarket",
+}
+BATCH_SLUGS = set()  # the posts this run writes, so a link to one of them is not taken for a dangling one
+
+
+def post_slug(name):
+    if name in POST_FILES:
+        slug = POST_FILES[name]
+    elif PAGE_DIR and os.path.exists(os.path.join(PAGE_DIR, name)):
+        slug = page_slug(os.path.join(PAGE_DIR, name))
+    else:
+        slug = name[:-5]
+    if slug not in BATCH_SLUGS and not os.path.exists(f"{REPO}/site/blog/posts/{slug}.json"):
+        raise SystemExit(f"link to a post that does not exist: {name} -> {slug}")
+    return slug
+
+
 def href_of(a):
     return map_href(a["href"], plain(a))
 
@@ -156,7 +181,7 @@ def map_href(h, label=None):
     if h.endswith("blog.html"):
         return "/blog"
     if h.endswith(".html") and ("/posts/" in h or "/" not in h):
-        return "/blog/posts/" + h.rsplit("/", 1)[-1][:-5]
+        return "/blog/posts/" + post_slug(h.rsplit("/", 1)[-1])
     if re.match(r"https://([a-z]+\.)?(international|hyundaitranslead)\.com(/|$)", h):
         return h  # the manufacturer's own site: an outbound link, kept as written
     if h not in LINK_MAP:
@@ -771,7 +796,8 @@ def convert(path):
             bullet = [plain(tr.find("td")) for tr in el.select("tr")] == ["•"] * len(rows)  # warning signs, not ticks
             numbered = [plain(tr.find("td")) for tr in el.select("tr")] == [f"{i+1:02d}" for i in range(len(rows))]  # 01, 02 …
             mark = {"mark": "cross"} if "redflag-table" in cls else {"mark": "bullet"} if bullet else {"mark": "num"} if numbered else {}
-            run_in = {"runIn": True} if STANDALONE and any("title" in r for r in rows) else {}  # "**Lead:** sentence" on one line
+            # "**Lead:** sentence" on one line — unless the design breaks the line after the title.
+            run_in = {"runIn": True} if STANDALONE and any("title" in r for r in rows) and not el.select("td br") else {}
             out.append(n(nid("checks"), "check-list", {**mark, **run_in, "items": rows}))
         elif el.name == "div" and el.find("img") and "position: relative" in st:
             fig += 1
@@ -1363,6 +1389,7 @@ if __name__ == "__main__":
         f for f in glob.glob(f"{PART}/*.html") if os.path.basename(f) != "index.html")
     if not files and "hero--post" in open(f"{PART}/index.html").read():
         files = [f"{PART}/index.html"]  # a standalone handoff: the one page is the post
+    BATCH_SLUGS.update(page_slug(f) for f in files)
     for f in files:
         h1 = BeautifulSoup(open(f).read(), "html.parser").select_one("section.post-hero h1, section.hero--post h1")
         POST_TITLES[plain(h1)] = page_slug(f)
