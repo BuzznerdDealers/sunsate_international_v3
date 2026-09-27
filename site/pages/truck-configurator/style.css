@@ -54,3 +54,58 @@
    was using the 90px house rhythm where the handoff sets its own. */
 [data-bz-node="tcf-series"].bz-section,
 [data-bz-node="tcf-series"] > .bz-section { padding-block: 80px 80px; }
+
+/* ===========================================================================
+   Phone fixes from the mobile QA pass. Every rule below sits inside
+   max-width: 640px, so desktop and tablet render exactly as before.
+   =========================================================================== */
+@media (max-width: 640px) {
+  /* Hero: the platform's `.bz-block img { height: auto }` outranks the hero's
+     own `height: 100%`, so on a phone the photo drew at its natural 2:1 height
+     — a 195px strip across the top of a 600px band, with the rest bare. It now
+     covers the whole band. */
+  [data-bz-node="tcf-hero"] .bz-hero__bg .bz-hero__img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  /* "Start from a series": the band's 80px desktop top sat on the build
+     band's 20px, a 100px gap under the configurator note. */
+  [data-bz-node="tcf-series"].bz-section,
+  [data-bz-node="tcf-series"] > .bz-section { padding-block: 44px 64px; }
+
+  /* "From build to delivery": each step carries a step number and a link
+     drawn in ink on the ink band, so on a phone they stacked as blank space
+     between the steps. They read on the dark band here, and the steps sit on
+     a faint rule instead of an invisible one. */
+  [data-bz-node="tcf-how"] [data-bz-type="column"][data-bz-node^="fg-card-"][data-bz-node] {
+    border-top-color: rgba(255, 255, 255, .18);
+    padding-top: 16px;
+  }
+  [data-bz-node="tcf-how"] [data-bz-node^="fg-card-h"] .bz-eyebrow { color: var(--chrome-text, #fff); font-size: 12px; margin-bottom: 8px; }
+  [data-bz-node="tcf-how"] h3 { font-size: 20px; margin-bottom: 6px; }
+  [data-bz-node="tcf-how"] [data-bz-node^="fg-card-b"] p { margin-bottom: 0; }
+  [data-bz-node="tcf-how"] [data-bz-node^="fg-card-cta"] .bz-btns { margin-block: 10px 0; }
+  [data-bz-node="tcf-how"] [data-bz-node^="fg-card-cta"] .bz-btn { color: #fff; min-height: 0; }
+  [data-bz-node="tcf-how"] [data-bz-node="fg-grid"] { row-gap: 28px; }
+
+  /* "Call" and "Send your build": the band paints both buttons white on the
+     node itself, which also flattened their hover and focus states. A pressed,
+     hovered or focused button now turns orange, and keyboard focus
+     draws a ring clear of the button. The site's --accent is the same
+     near-black as this band, so the lit state is the orange --accent-dark. */
+  [data-bz-node="tcf-cta"][data-bz-node] .bz-btn {
+    transition: background-color .15s ease, color .15s ease, box-shadow .15s ease;
+  }
+  [data-bz-node="tcf-cta"][data-bz-node] .bz-btn:hover,
+  [data-bz-node="tcf-cta"][data-bz-node] .bz-btn:active,
+  [data-bz-node="tcf-cta"][data-bz-node] .bz-btn:focus-visible {
+    background-color: var(--accent-dark);
+    color: #fff;
+  }
+  [data-bz-node="tcf-cta"][data-bz-node] .bz-btn:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 3px;
+  }
+}
