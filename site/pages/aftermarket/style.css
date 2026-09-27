@@ -161,3 +161,33 @@
 [data-bz-node="aft-faq"] > .bz-section { padding-block: 100px 100px; }
 [data-bz-node="aft-cta"].bz-section,
 [data-bz-node="aft-cta"] > .bz-section { padding-block: 80px 80px; }
+
+/* ===========================================================================
+   Phone fixes from the mobile QA pass. Every rule below sits inside
+   max-width: 640px, so desktop and tablet render exactly as before.
+   =========================================================================== */
+@media (max-width: 640px) {
+  /* "Aftermarket FAQs": the trailer cards' 90px and the FAQ band's 100px,
+     both on white, stacked into about 216px of blank page. */
+  [data-bz-node="aft-trailers"] > .bz-section { padding-bottom: 0; }
+  [data-bz-node="aft-faq"].bz-section,
+  [data-bz-node="aft-faq"] > .bz-section { padding-top: 48px; }
+
+  /* "Call" and "Request an appointment": the band paints both buttons white
+     on the node itself, which also flattened their hover and focus states. A
+     hovered, pressed or focused button now turns orange, and keyboard focus
+     draws a ring clear of the button — as on the Truck Configurator page. */
+  [data-bz-node="aft-cta"][data-bz-node] .bz-btn {
+    transition: background-color .15s ease, color .15s ease;
+  }
+  [data-bz-node="aft-cta"][data-bz-node] .bz-btn:hover,
+  [data-bz-node="aft-cta"][data-bz-node] .bz-btn:active,
+  [data-bz-node="aft-cta"][data-bz-node] .bz-btn:focus-visible {
+    background-color: var(--accent-dark);
+    color: #fff;
+  }
+  [data-bz-node="aft-cta"][data-bz-node] .bz-btn:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 3px;
+  }
+}

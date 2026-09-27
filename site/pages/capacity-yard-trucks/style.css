@@ -37,3 +37,30 @@
      the photo and the eyebrow. The band above hands straight on instead. */
   [data-bz-node="cy-why"].bz-section { padding-bottom: 0; }
 }
+@media (max-width: 640px) {
+  /* Hero: the platform's `.bz-block img { height: auto }` outranks the hero's
+     own `height: 100%`, so on a phone the photo drew at its natural 16:9
+     height — a strip across the top of the band. It now covers the band, as it
+     already does on desktop. */
+  [data-bz-node="cy-hero"] .bz-hero__bg .bz-hero__img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  /* "Keeping it in the yard, not the shop": each card's rule and link were
+     drawn in ink on the ink band, so on a phone they stacked as blank space.
+     The band takes the phone's 64px rhythm, the links read, and the cards sit
+     on a faint rule with tighter spacing. */
+  [data-bz-node="cy-parts"].bz-section,
+  [data-bz-node="cy-parts"] > .bz-section { padding-block: 64px; }
+  [data-bz-node="cy-parts"] [data-bz-node="fg-body"] p { margin-bottom: 28px; }
+  [data-bz-node="cy-parts"] [data-bz-node="fg-grid"] { row-gap: 28px; }
+  [data-bz-node="cy-parts"] [data-bz-type="column"][data-bz-node^="fg-card-"][data-bz-node] {
+    border-top-color: rgba(255, 255, 255, .18);
+    padding-top: 16px;
+  }
+  [data-bz-node="cy-parts"] h3 { font-size: 20px; margin-bottom: 6px; }
+  [data-bz-node="cy-parts"] [data-bz-node^="fg-card-cta"] .bz-btns { margin-block: 10px 0; }
+  [data-bz-node="cy-parts"] [data-bz-node^="fg-card-cta"] .bz-btn { color: #fff; min-height: 0; }
+}
