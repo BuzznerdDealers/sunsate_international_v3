@@ -1,0 +1,534 @@
+{
+  "slug": "how-much-is-a-new-trailer-new-vs-used",
+  "title": "How Much Is a New Trailer? Let's Break Down the Cost of Shopping New vs. Used",
+  "date": "2025-03-21",
+  "description": "When you're building your fleet, cost is a major consideration. Let's take a look at how much a new trailer is compared to used trailers.",
+  "excerpt": "If you're in the market for a trailer, one of the first questions you're probably asking is, \"How much is a new trailer?\" Whether you're expanding your fleet, replacing an older unit, or investing in your…",
+  "status": "published",
+  "coverImage": "/img/blog/how-much-is-a-new-trailer-new-vs-used/hero.jpg",
+  "topic": "Used Trailers",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Used Trailers",
+          "title": "How Much Is a New Trailer? Let's Break Down the Cost of Shopping New vs. Used",
+          "topic": "Used Trailers",
+          "date": "March 21, 2025",
+          "readTime": "4 min read",
+          "author": "Sun State Trailers",
+          "image": {
+            "src": "/img/blog/how-much-is-a-new-trailer-new-vs-used/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Row of Sun State Leasing and Rental trailers parked side by side"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "Cost of a New Trailer",
+                        "href": "#new-cost"
+                      },
+                      {
+                        "label": "Cost of a Used Trailer",
+                        "href": "#used-cost"
+                      },
+                      {
+                        "label": "New vs. Used",
+                        "href": "#which-is-right"
+                      },
+                      {
+                        "label": "Financing Options",
+                        "href": "#financing"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "WANT THE FULL SHEET?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "View detailed specifications before you compare trailers.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-trailers",
+                                "label": "View Our Trailer Specifications →"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "If you're in the market for a trailer, one of the first questions you're probably asking is, \"How much is a new trailer?\" Whether you're expanding your fleet, replacing an older unit, or investing in your first trailer, understanding the costs involved can help you make an informed decision. While a new trailer offers reliability and longevity, a used trailer might seem like a budget-friendly alternative. Let's break down the key differences in cost, value, and what you should consider when choosing between new and <a href=\"/store/inventory?type=trailer&condition=used\">used trailers</a>.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "h-new-cost",
+                  "type": "heading",
+                  "props": {
+                    "text": "The Cost of a New Trailer",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "new-cost"
+                  }
+                },
+                {
+                  "id": "p-new-cost-1",
+                  "type": "text",
+                  "props": {
+                    "text": "When purchasing a brand-new trailer, pricing can vary depending on the model, features, and manufacturer. Here are some of the factors that influence the cost:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-new-cost-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "stack",
+                    "items": [
+                      {
+                        "title": "Trailer Type",
+                        "points": [],
+                        "intro": "A simple flatbed trailer generally costs less than a refrigerated or enclosed cargo trailer."
+                      },
+                      {
+                        "title": "Size and Load Capacity",
+                        "points": [],
+                        "intro": "Larger trailers with higher weight capacities will be priced higher due to higher floor ratings and engineering required to support heavier loads."
+                      },
+                      {
+                        "title": "Materials and Build Quality",
+                        "points": [],
+                        "intro": "Aluminum trailers, for example, are more expensive than steel ones due to their lightweight and corrosion-resistant properties."
+                      },
+                      {
+                        "title": "Customization and Features",
+                        "points": [],
+                        "intro": "Add-ons like liftgates, aerodynamic designs, GPS tracking, and enhanced security features can increase the overall cost."
+                      }
+                    ]
+                  },
+                  "styles": {
+                    "base": {
+                      "marginBottom": 8
+                    }
+                  }
+                },
+                {
+                  "id": "p-new-cost-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Despite the upfront cost, investing in a new trailer means you get a warranty, modern safety features, and lower maintenance costs in the first few years. Plus, you won't have to worry about hidden mechanical issues from previous owners.",
+                    "align": "left",
+                    "width": "full"
+                  },
+                  "styles": {
+                    "base": {
+                      "marginTop": 34
+                    }
+                  }
+                },
+                {
+                  "id": "h-used-cost",
+                  "type": "heading",
+                  "props": {
+                    "text": "The Cost of a Used Trailer",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "used-cost"
+                  }
+                },
+                {
+                  "id": "p-used-cost-1",
+                  "type": "text",
+                  "props": {
+                    "text": "A used trailer can be an attractive option if you're looking to save money upfront. Prices for used trailers vary widely depending on their age, condition, and history. While the lower price tag is appealing, there are some factors to consider:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-used-cost-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "stack",
+                    "items": [
+                      {
+                        "title": "Save Funds",
+                        "points": [],
+                        "intro": "Previously-owned trailers can give you room to save funds and put them towards other areas of your business."
+                      },
+                      {
+                        "title": "Potential Repairs",
+                        "points": [],
+                        "intro": "Some used trailers can come in good shape, while others may need small repairs over time."
+                      },
+                      {
+                        "title": "Higher Maintenance Costs",
+                        "points": [],
+                        "intro": "While used trailers can have an initial lower cost, they may need parts replaced sooner, leading to more maintenance expenses over time."
+                      }
+                    ]
+                  },
+                  "styles": {
+                    "base": {
+                      "marginBottom": 8
+                    }
+                  }
+                },
+                {
+                  "id": "p-used-cost-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Buying a used trailer can be a great option to lower initial costs. While it may need more care later down the road, the trade-off may still make sense for your purposes. Whether it's right for you depends on your business's immediate needs and fleet demands.",
+                    "align": "left",
+                    "width": "full"
+                  },
+                  "styles": {
+                    "base": {
+                      "marginTop": 34
+                    }
+                  }
+                },
+                {
+                  "id": "h-which-is-right",
+                  "type": "heading",
+                  "props": {
+                    "text": "New vs. Used: Which Is Right for You?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "which-is-right"
+                  }
+                },
+                {
+                  "id": "p-which-is-right-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Choosing between a new and used trailer comes down to your budget, business needs, and long-term plans. Here are some key considerations to help you decide:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-which-is-right-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "note",
+                    "items": [
+                      {
+                        "title": "BUDGET FLEXIBILITY",
+                        "intro": "If you're looking for a budget-friendly option, a used trailer is your best upfront option, but if you have the expenses for a new trailer, the long-term savings on repairs and fuel efficiency can be a better investment.",
+                        "points": []
+                      },
+                      {
+                        "title": "USAGE AND MILEAGE",
+                        "intro": "If you need a trailer for heavy-duty, high-mileage use, a new one will provide better durability and longevity. If you don't need your trailer for long periods of time or demanding jobs, you can save money with a used trailer.",
+                        "points": []
+                      },
+                      {
+                        "title": "TECHNOLOGY AND FEATURES",
+                        "intro": "Depending on the features you require for your trailers, it could be the difference between choosing a used trailer and a new trailer. For more advanced options, you may want a new trailer, but if you have no specific requirements then a used trailer could provide what you need.",
+                        "points": [],
+                        "wide": true
+                      }
+                    ]
+                  },
+                  "styles": {
+                    "base": {
+                      "marginBottom": 34
+                    }
+                  }
+                },
+                {
+                  "id": "p-which-is-right-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Ultimately, if you're planning for the long haul, investing in a new trailer can provide reliability, efficiency, and peace of mind. However, if you're just starting out or need a temporary solution, a well-maintained used trailer might be the better option.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-financing",
+                  "type": "heading",
+                  "props": {
+                    "text": "Financing Options for Your Trailer Purchase",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "financing"
+                  }
+                },
+                {
+                  "id": "p-financing-1",
+                  "type": "text",
+                  "props": {
+                    "text": "If the cost of a new trailer seems overwhelming, financing can make it easier to manage. At <a href=\"/locations/trailer-sales\">Sun State Trailers</a>, we offer flexible financing options to help businesses get the equipment they need without straining their budget. Whether you're buying new or used, we can tailor a financing plan that fits your financial situation, helping you spread out payments while keeping your business moving forward.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-find-the-right-match",
+                  "type": "heading",
+                  "props": {
+                    "text": "Find the Right Match for Your Business",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-find-the-right-match-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State Trailers, we specialize in providing high-quality trailers for all types of industries. We offer a wide selection of both new and used trailers, ensuring you find the perfect match for your business needs. Our experienced team is here to guide you through the buying process, from selecting the right trailer to securing financing. Contact us today or visit one of our locations to explore our inventory and find the best trailer for your business.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-find-the-right-match-2",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "contact-us",
+                        "label": "Contact Us"
+                      },
+                      {
+                        "ctaId": "browse-trailers",
+                        "label": "Browse Trailer Inventory",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-share",
+                  "type": "post-share",
+                  "props": {
+                    "label": "Share",
+                    "items": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fhow-much-is-a-new-trailer-new-vs-used",
+                        "newTab": true
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fhow-much-is-a-new-trailer-new-vs-used&text=How%20Much%20Is%20a%20New%20Trailer%3F%20Let%27s%20Break%20Down%20the%20Cost%20of%20Shopping%20New%20vs.%20Used",
+                        "newTab": true
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fhow-much-is-a-new-trailer-new-vs-used",
+                        "newTab": true
+                      },
+                      {
+                        "label": "Email",
+                        "url": "mailto:?subject=How%20Much%20Is%20a%20New%20Trailer%3F%20Let%27s%20Break%20Down%20the%20Cost%20of%20Shopping%20New%20vs.%20Used&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fhow-much-is-a-new-trailer-new-vs-used",
+                        "newTab": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Used trailers",
+          "heading": "Find the right match for your business.",
+          "body": "Call 800.741.7566 to talk with our team at any Sun State location in Florida.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Browse trailer inventory",
+          "secondaryUrl": "/store/inventory?type=trailer"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/how-much-is-a-new-trailer-new-vs-used\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/how-much-is-a-new-trailer-new-vs-used\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n/* The hero photograph is framed a little high, as the design frames it. */\n[data-bz-section=\"post-hero\"] [data-bz-node=\"ph-photo\"] img { object-position: center 45%; }\n\n/* Its type cards: 24px in, the title 10px over a 14px list. */\n[data-bz-node=\"art-body\"] .ss-cl--type,\n[data-bz-node=\"art-body\"] .ss-cl--type3 { gap: 24px; }\n[data-bz-node=\"art-body\"] .ss-cl--type { gap: 28px; }\n[data-bz-node=\"art-body\"] .ss-cl--type .ss-cl__card { padding: 24px; }\n[data-bz-node=\"art-body\"] .ss-cl--type .ss-cl__t { margin: 0 0 10px; }\n[data-bz-node=\"art-body\"] :is(.ss-cl--type, .ss-cl--type3) .ss-cl__list { margin: 0; padding-left: 18px; }\n[data-bz-node=\"art-body\"] :is(.ss-cl--type, .ss-cl--type3) .ss-cl__list li { font-size: 14px; }\n\n/* A type card's sentence is set as body text, as the article's paragraphs are. */\n[data-bz-node=\"art-body\"] :is(.ss-cl--type, .ss-cl--type3) .ss-cl__p { font-size: 17px; line-height: 1.8; margin: 0 0 18px; }\n"
+}

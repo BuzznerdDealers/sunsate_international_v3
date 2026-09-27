@@ -1,0 +1,423 @@
+{
+  "slug": "unexpected-breakdown-trailer-repair",
+  "title": "Unexpected Breakdown? Here's How You Can Quickly Get a Trailer Repair and Back on the Road",
+  "date": "2025-03-07",
+  "description": "Has your trailer broken down? Don't get stuck on the side of the road. Here's how you can safely and quickly get a trailer repair!",
+  "excerpt": "Unexpected breakdowns are frustrating and, unfortunately, inevitable. Whether you're hauling cargo across the state or making local deliveries, a sudden mechanical issue can cause serious delays, impacting…",
+  "status": "published",
+  "coverImage": "/img/blog/unexpected-breakdown-trailer-repair/hero.jpg",
+  "topic": "Used Trailers",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Used Trailers",
+          "title": "Unexpected Breakdown? Here's How You Can Quickly Get a Trailer Repair and Back on the Road",
+          "topic": "Used Trailers",
+          "date": "March 7, 2025",
+          "readTime": "3 min read",
+          "author": "Sun State Trailers",
+          "image": {
+            "src": "/img/blog/unexpected-breakdown-trailer-repair/hero.jpg",
+            "width": 1280,
+            "height": 854,
+            "alt": "Close-up of Globe Trailers logo on a gooseneck trailer neck"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "Getting Repairs ASAP",
+                        "href": "#repairs-asap"
+                      },
+                      {
+                        "label": "A Team You Can Trust",
+                        "href": "#trust"
+                      },
+                      {
+                        "label": "Online Parts Locator",
+                        "href": "#parts-locator"
+                      },
+                      {
+                        "label": "Prevent Breakdowns",
+                        "href": "#prevent"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "NEED A REPAIR NOW?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Our mobile service can come to you, wherever your trailer is stuck.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "contact-us",
+                                "label": "Contact Us →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Unexpected breakdowns are frustrating and, unfortunately, inevitable. Whether you're hauling cargo across the state or making local deliveries, a sudden mechanical issue can cause serious delays, impacting both your schedule and your bottom line. When your trailer breaks down, getting it repaired quickly and efficiently is crucial. Here's what you can do to minimize downtime and get back on the road as soon as possible.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "h-repairs-asap",
+                  "type": "heading",
+                  "props": {
+                    "text": "Getting Repairs ASAP",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "repairs-asap"
+                  }
+                },
+                {
+                  "id": "p-repairs-asap-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Once you've determined that your trailer needs professional repair, the next step is getting it to a service center, or better yet, having the service come to you. At <a href=\"/locations/trailer-sales\">Sun State Trailers</a>, we offer a mobile service that will come out to where you are to repair your trailer, so you can get back on the road as soon as possible. Whether you're stuck roadside or at a job site, our expert technicians are ready to provide efficient, on-the-spot repairs to minimize downtime. And if you need in-shop service, we have convenient locations in Tampa, Davenport, and Sarasota, making it easy to get the professional repairs you need, no matter where your journey takes you.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-trust",
+                  "type": "heading",
+                  "props": {
+                    "text": "Work With a Repair and Service Team You Can Trust",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "trust"
+                  }
+                },
+                {
+                  "id": "p-trust-1",
+                  "type": "text",
+                  "props": {
+                    "text": "When it comes to trailer repair, you want more than just a quick fix; you need a repair shop that provides reliable, high-quality service. Choosing the nearest shop isn't always the best solution. You need a service provider that is transparent in their pricing, upfront about repair timelines, and dedicated to excellent customer service.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-trust-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Sun State Trailers has built a reputation for providing expert trailer repair services. Our skilled technicians diagnose problems accurately and get you back on the road quickly, all while keeping you informed throughout the process. With years of experience in the industry, we understand the importance of efficiency, safety, and durability in trailer maintenance and repair.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-parts-locator",
+                  "type": "heading",
+                  "props": {
+                    "text": "Use Our Online Parts Locator",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "parts-locator"
+                  }
+                },
+                {
+                  "id": "p-parts-locator-1",
+                  "type": "text",
+                  "props": {
+                    "text": "One of the biggest obstacles in trailer repair is finding the right parts, especially for specialized or older models. At Sun State Trailers, we make the process simple with our convenient in-store locations and our online parts locator. Our service centers stock a wide selection of high-quality parts for quick, on-site repairs. If we don't have the exact part you need in stock, our online parts locator can source it for you from any manufacturer and arrange convenient delivery to your location or one of our service centers. This streamlined system ensures that your repairs are completed as quickly as possible, reducing downtime and getting you back on the road faster.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-prevent",
+                  "type": "heading",
+                  "props": {
+                    "text": "Prevent Breakdowns Before They Happen",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "prevent"
+                  }
+                },
+                {
+                  "id": "p-prevent-1",
+                  "type": "text",
+                  "props": {
+                    "text": "The best way to handle trailer breakdowns is to prevent them from happening in the first place. Regular maintenance and safety inspections can help catch potential issues before they turn into costly repairs. The Department of Transportation (DOT) requires annual trailer inspections to ensure compliance with safety regulations, but proactive maintenance should be performed more frequently.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-a-partner-you-can",
+                  "type": "heading",
+                  "props": {
+                    "text": "A Partner You Can Trust",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-a-partner-you-can-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State Trailers, we understand that your trailer is an essential part of your business. We specialize in servicing a wide range of trailer models and offer expert guidance to keep your fleet in peak condition. With locations in Tampa, Davenport, and Sarasota, we make it easy to access top-tier trailer repair and maintenance services. Our experienced technicians, transparent pricing, and commitment to customer satisfaction set us apart as a trusted partner in the transportation industry.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-a-partner-you-can-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Don't let an unexpected breakdown derail your operations. Contact <a href=\"/locations/trailer-sales\">Sun State Trailers</a> today for professional trailer repair services, quality parts, and preventative maintenance solutions that keep you moving forward. Whether you need an emergency fix or routine service, we're here to ensure that your trailer remains reliable, road-ready, and built to last.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-a-partner-you-can-3",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "contact-us",
+                        "label": "Contact Us"
+                      },
+                      {
+                        "ctaId": "browse-trailers",
+                        "label": "Browse Trailer Inventory",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-share",
+                  "type": "post-share",
+                  "props": {
+                    "label": "Share",
+                    "items": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Funexpected-breakdown-trailer-repair",
+                        "newTab": true
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Funexpected-breakdown-trailer-repair&text=Unexpected%20Breakdown%3F%20Here%27s%20How%20You%20Can%20Quickly%20Get%20a%20Trailer%20Repair%20and%20Back%20on%20the%20Road",
+                        "newTab": true
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Funexpected-breakdown-trailer-repair",
+                        "newTab": true
+                      },
+                      {
+                        "label": "Email",
+                        "url": "mailto:?subject=Unexpected%20Breakdown%3F%20Here%27s%20How%20You%20Can%20Quickly%20Get%20a%20Trailer%20Repair%20and%20Back%20on%20the%20Road&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Funexpected-breakdown-trailer-repair",
+                        "newTab": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Used trailers",
+          "heading": "Don't let a breakdown derail your operations.",
+          "body": "Call 800.741.7566 to talk with our team at any Sun State location in Florida.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Browse trailer inventory",
+          "secondaryUrl": "/store/inventory?type=trailer"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/unexpected-breakdown-trailer-repair\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/unexpected-breakdown-trailer-repair\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n/* The hero photograph is framed a little high, as the design frames it. */\n[data-bz-section=\"post-hero\"] [data-bz-node=\"ph-photo\"] img { object-position: center 45%; }\n"
+}

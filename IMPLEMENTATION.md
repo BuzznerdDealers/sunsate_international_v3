@@ -1319,3 +1319,73 @@ listings (§15).
 | `/used-trailers/prevent-accidents-before-they-occur-how-we-keep-your-trailer-safe-with-trailer-maintenance-and-safety-inspections/` | `/blog/posts/trailer-maintenance-and-safety-inspections` |
 | `/new-trailers/searching-for-a-new-reefer-trailer-for-sale-here-are-5-things-you-should-keep-in-mind/` | `/blog/posts/new-reefer-trailer-for-sale-5-things` |
 | `/used-trailers/why-hyundai-trailers-are-the-leading-brand-in-trailers/` | `/blog/posts/why-hyundai-trailers-are-the-leading-brand` |
+
+## 32. `SS_International_19` — batch 8: six new posts, one rebuilt draft, one repeat
+
+`handoff-trailer-posts-batch-8`: eight post pages and a preview index, in the §24 format — five
+Sun State Trailers articles and three sunstateintl.com truck articles, the latter on their live
+permalinks' slugs.
+
+| Handoff file | Post | Topic, date | |
+|---|---|---|---|
+| `how-sun-state-became-one-of-the-most-reliable-trailer-dealers` | same | Used Trailers, Mar 28, 2025 | new |
+| `how-much-is-a-new-trailer-new-vs-used` | same | Used Trailers, Mar 21, 2025 | new |
+| `unexpected-breakdown-trailer-repair` | same | Used Trailers, Mar 7, 2025 | new |
+| `why-renting-a-trailer-might-benefit-your-business` | same | Trailer Rentals, Dec 19, 2024 | new |
+| `benefits-of-a-short-term-trailer-rental` | same | Trailer Rentals, Nov 22, 2024 | new |
+| `oem-vs-aftermarket-freight-truck-parts` | `which-is-better-for-your-fleet-freight-truck-parts-oem-vs-aftermarket` | Parts & Service, May 16, 2025 | new |
+| `semi-truck-alignment-near-me` | `when-to-schedule-semi-truck-alignment-near-me` | Service, Jul 30, 2026 | **rebuilt, still a draft** |
+| `international-truck-service-center` | `what-to-expect-from-an-international-truck-service-center` | — | **repeat, kept** |
+
+- **The service-center post is a repeat.** Every paragraph, heading and rail entry is already in
+  the published post, which is on the shared post layout. It is kept, and the converter lists it as
+  a repeat, as in §17–§23.
+- **The alignment post was a draft stub** — the article's text in one plain section and a CTA,
+  with no hero, contents rail, cover image or its closing *Keep Your Truck Moving Forward* section
+  (it was one of the four posts the dealer set to draft on 24 September, §15). It is rebuilt on the
+  shared post layout from this handoff, with its photographs and cover, and **left as a draft**:
+  publishing it is the dealer's call, on **Posts**. Its old node ids (`intro`, `post-cta`) are
+  replaced; nothing on that draft had been edited since the migration.
+
+The Blog page has 123 cards (the draft has none until it is published). Body copy and rails match
+the handoff word for word (checked mechanically). Compared element by element at 1280px, each post
+ends within 14px of its handoff; the draft was built published for the comparison and set back.
+Earlier batches re-convert byte for byte.
+
+New shapes:
+
+| Handoff | Here |
+|---|---|
+| `.card`s with a `.card__label`, a linked `h3`, and a 3px ink or accent rule across the top | **Card lists**, *Stacked, two across*, with three new per-card fields: the label, **Title links to**, and **Rule across the top** |
+| `a.card--link`s three across (label, destination) | the existing **Link cards** widget, sized to the design in the post's CSS |
+| `.fleet-card`s (label, title, sentence), three across | **Card lists**, *Brief*, three across, 18px apart |
+| `.brand-card`s | **Card lists**, new *Brand* style |
+| `.type-card`s holding only a muted label and a paragraph (one spanning the row) | **Card lists**, new *Note* style |
+| `p.pullquote` | the ruled pull statement |
+
+Three things drawn as the handoff renders rather than as its CSS reads: the card and fleet labels
+are coloured `var(--color-accent-text)`, which `tokens.css` never defines, so they are ink; and
+`.pullquote` asks for 22px / 1.4, but `.article__body p` outranks it, so the statement is 17px /
+1.8. A pull statement's margins now go on its row, as a callout's do (§30) — this is the first
+standalone post to have one.
+
+**The Blog page's *Trailer articles* panel** linked out to sunstatetrailers.com for *Unexpected
+breakdown?* and *How to find trailer parts in Tampa*. Both are posts here now, so those two links
+point at `/blog/posts/unexpected-breakdown-trailer-repair` and
+`/blog/posts/how-to-find-trailer-parts-in-tampa`. Labels, ids and styles are unchanged.
+
+**Links.** `aftermarket.html` → `/aftermarket`; the OEM links → `/parts`; *Order Parts Online* and
+*Find the Part You Need* → the online parts store, as on the other truck posts.
+
+**Old addresses.** If the old domains are pointed at this site, these go on **Storefront → 301
+Redirects** in Admin (the three sunstateintl.com posts keep their paths under `/blog/posts/`):
+
+| Old address | New path |
+|---|---|
+| `https://sunstatetrailers.com/used-trailers/how-sun-state-became-one-of-the-most-reliable-trailer-dealers-in-the-industry/` | `/blog/posts/how-sun-state-became-one-of-the-most-reliable-trailer-dealers` |
+| `https://sunstatetrailers.com/used-trailers/how-much-is-a-new-trailer-lets-break-down-the-cost-of-shopping-new-v-used/` | `/blog/posts/how-much-is-a-new-trailer-new-vs-used` |
+| `https://sunstatetrailers.com/used-trailers/unexpected-breakdown-heres-how-you-can-quickly-get-a-trailer-repair-and-back-on-the-road/` | `/blog/posts/unexpected-breakdown-trailer-repair` |
+| `https://sunstatetrailers.com/uncategorized/why-your-business-might-benefit-from-renting-a-trailer-instead-of-buying/` | `/blog/posts/why-renting-a-trailer-might-benefit-your-business` |
+| `https://sunstatetrailers.com/uncategorized/benefits-of-a-short-term-trailer-rental-for-your-local-job/` | `/blog/posts/benefits-of-a-short-term-trailer-rental` |
+| `https://www.sunstateintl.com/which-is-better-for-your-fleet-freight-truck-parts-oem-vs-aftermarket/` | `/blog/posts/which-is-better-for-your-fleet-freight-truck-parts-oem-vs-aftermarket` |
+| `https://www.sunstateintl.com/when-to-schedule-semi-truck-alignment-near-me/` | `/blog/posts/when-to-schedule-semi-truck-alignment-near-me` (once published) |
