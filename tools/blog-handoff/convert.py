@@ -825,13 +825,15 @@ def convert(path):
         elif el.name == "div" and el.find("div", class_="compare-card", recursive=False):
             out.append(n(nid("cards"), "card-lists", {"variant": "compare4", **({"across": across(cls)} if across(cls) not in ("", "4") else {}), "items": [
                 card_item(c) for c in el.find_all("div", class_="compare-card", recursive=False)]}, styles=style_margins(st)))
-        elif el.name == "div" and el.find("div", class_=["benefit-card", "how-card", "use-card", "product-tag"], recursive=False):
+        elif el.name == "div" and el.find("div", class_=["benefit-card", "how-card", "use-card", "product-tag", "inspect-card", "service-card"], recursive=False):
             # Short titled cards two to five across, or a row of one-line names: Card lists.
             first = el.find("div", recursive=False).get("class", [])
             variant = "use" if "use-card" in first else "chip" if "product-tag" in first else "brief"
             cards = el.find_all("div", recursive=False)
             items = [{"title": plain(c), "points": []} for c in cards] if variant == "chip" else [card_item(c) for c in cards]
             out.append(n(nid("cards"), "card-lists", {"variant": variant, "across": across(cls), "items": items}, styles=style_margins(st)))
+            if "service-card" in first:  # the Brief card with its title a half-point larger, as the design sets it
+                extra_css.append(f'[data-bz-node="art-body"] [data-bz-node="{out[-1]["id"]}"] .ss-cl__t {{ font-size: 16px; }}')
         elif el.name == "div" and "stat-strip" in cls:
             # Figures in bordered, centred cells: the platform Stat band, drawn as the design draws it.
             cid = nid("stats")
@@ -867,6 +869,15 @@ def convert(path):
                 ], styles={"display": "flex", "alignItems": "flex-start", "gap": 22, "paddingTop": 30, "paddingBottom": 30,
                            **({"borderTopWidth": 1, "borderLeftWidth": 0, "borderRightWidth": 0, "borderBottomWidth": 0,
                                "borderStyle": "solid", "borderColor": "line"} if k else {"marginTop": margins(st)[0]})}))
+        elif el.name == "div" and "check-list" in cls and el.find("div", class_="trust-item", recursive=False):
+            # Semibold statements behind a round ✓ badge in ink.
+            out.append(n(nid("checks"), "check-list", {"mark": "dot-ink", "items": [
+                {"text": plain(x.find("p"))} for x in el.find_all("div", class_="trust-item", recursive=False)]}))
+        elif el.name == "div" and el.find("div", class_="milestone-item", recursive=False):
+            # A year beside each sentence, ruled between: the Stage list, timeline look.
+            out.append(n(nid("stages"), "stage-list", {"look": "timeline", "items": [
+                {"label": plain(x.find("div", class_="milestone-year")), "text": plain(x.find("p"))}
+                for x in el.find_all("div", class_="milestone-item", recursive=False)]}, styles=style_margins(st)))
         elif el.name == "div" and "check-list" in cls and el.find("div", class_="check-item", recursive=False):
             # Checkmark rows in a round accent badge: the Checkmark list's round-badge mark.
             out.append(n(nid("checks"), "check-list", {"mark": "dot", "items": [
@@ -969,6 +980,9 @@ def convert(path):
                     else: raise SystemExit(f"card child <{x.name}>")
                 items.append(it)
             out.append(n(nid("cards"), "card-lists", {"variant": variant, "items": items}))
+            if STANDALONE and all(re.search(r"margin-bottom:\s*0", (c.find("p", recursive=False) or {}).get("style", "")) for c in cards):
+                # its sentences carry the design's own margin-bottom: 0
+                extra_css.append(f'[data-bz-node="art-body"] [data-bz-node="{out[-1]["id"]}"] .ss-cl__p {{ margin-bottom: 0; }}')
             if variant == "type" and re.search(r"\.type-card ul li\s*\{\s*font-size:\s*14px", own_style):
                 extra_css.append('[data-bz-node="art-body"] .ss-cl--type .ss-cl__list { margin: 0; }\n'
                                  '[data-bz-node="art-body"] .ss-cl--type .ss-cl__list li { font-size: 14px; }')

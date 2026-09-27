@@ -1262,3 +1262,60 @@ unemitted `BlogPosting` data are as in §24.
 | `/uncategorized/why-fleets-should-get-regular-trailer-service/` | `/blog/posts/why-fleets-should-get-regular-trailer-service` |
 | `/uncategorized/how-to-reset-the-service-trailer-brake-system-fast/` | `/blog/posts/how-to-reset-the-service-trailer-brake-system-fast` |
 | `/uncategorized/trailer-preventive-maintenance-checklist-for-fleets/` | `/blog/posts/trailer-preventive-maintenance-checklist-for-fleets` |
+
+## 31. `SS_International_18` — Sun State Trailers posts, batch 7 (eight new posts)
+
+`handoff-trailer-posts-batch-7`: eight post pages and a preview index, in the §24 format. All eight
+are new; each is published on its file's slug with its card on the Blog page (117 in all).
+
+| Post | Topic, date |
+|---|---|
+| `why-your-fleet-needs-to-follow-dot-trailer-regulations` | Service, Jul 3, 2026 |
+| `how-to-find-trailer-parts-in-tampa` | Parts & Service, Dec 12, 2025 |
+| `before-buying-dry-van-trailers-for-sale` | Trailer Sales, Dec 5, 2025 |
+| `preventive-fleet-trailer-maintenance-saves-thousands` | Parts & Service, Oct 10, 2025 |
+| `semi-trailer-financing-made-simple` | Financing, Sep 12, 2025 |
+| `trailer-maintenance-and-safety-inspections` | Service, Jun 13, 2025 |
+| `new-reefer-trailer-for-sale-5-things` | New Trailers, May 16, 2025 |
+| `why-hyundai-trailers-are-the-leading-brand` | Used Trailers, Apr 11, 2025 |
+
+*Why Your Fleet Needs to Follow DOT Trailer Regulations* is another of the related picks earlier
+handoffs named and the site did not have. Built by `tools/blog-handoff/convert.py`; body copy and
+rails match the handoff word for word (checked mechanically). Compared element by element at
+1280px, no block differs from the handoff by more than 8px and every post ends within 13px of it.
+Earlier batches re-convert byte for byte.
+
+New shapes:
+
+| Handoff | Here |
+|---|---|
+| `.inspect-card`s / `.service-card`s (title over a sentence), three across | **Card lists**, *Brief*, three across (the service cards' 16px titles as one rule on the node) |
+| `.trust-item` rows (✓ in an ink badge, semibold statement) | **Checkmark list**, new *✓ In an ink badge* mark |
+| `.milestone-item`s (1998 / 2012 / 2013 beside a sentence) | **Stage list**, new *Timeline* look |
+| a type card's sentence with its own `margin-bottom: 0` | one rule on that node |
+
+The milestone years render in ink in the handoff: they are coloured `var(--color-accent-text)`, a
+token its own `tokens.css` never defines, so they fall back to the inherited ink. The build draws
+what the handoff draws.
+
+**Links.** "Rent a Trailer" → trailer rentals; "Shop Our Selection of Trailers", "Commercial
+trailers" → trailer listings; "Reserve a Trailer", "Book Your Inspection", "Expand Your Fleet" →
+the contact page, as the handoff links them; "Parts Department" → the Parts page.
+
+**Dropped / as elsewhere.** Keep reading is the latest-posts list; chrome, colours and the
+unemitted `BlogPosting` data are as in §24; *Trailer Specifications* links go to the trailer
+listings (§15).
+
+**Old addresses.** If sunstatetrailers.com is pointed at this site, these go on **Storefront →
+301 Redirects** in Admin:
+
+| Old path on sunstatetrailers.com | New path |
+|---|---|
+| `/uncategorized/why-your-fleet-needs-to-follow-dot-trailer-regulations/` | `/blog/posts/why-your-fleet-needs-to-follow-dot-trailer-regulations` |
+| `/trailer-rentals/how-to-find-trailer-parts-in-tampa-at-sun-state-trailers/` | `/blog/posts/how-to-find-trailer-parts-in-tampa` |
+| `/trailer-rentals/what-you-should-know-before-buying-dry-van-trailers-for-sale/` | `/blog/posts/before-buying-dry-van-trailers-for-sale` |
+| `/used-trailers/how-preventive-fleet-trailer-maintenance-saves-florida-businesses-thousands-in-repairs/` | `/blog/posts/preventive-fleet-trailer-maintenance-saves-thousands` |
+| `/new-trailers/semi-trailer-financing-made-simple-scalable-options-for-florida-fleets/` | `/blog/posts/semi-trailer-financing-made-simple` |
+| `/used-trailers/prevent-accidents-before-they-occur-how-we-keep-your-trailer-safe-with-trailer-maintenance-and-safety-inspections/` | `/blog/posts/trailer-maintenance-and-safety-inspections` |
+| `/new-trailers/searching-for-a-new-reefer-trailer-for-sale-here-are-5-things-you-should-keep-in-mind/` | `/blog/posts/new-reefer-trailer-for-sale-5-things` |
+| `/used-trailers/why-hyundai-trailers-are-the-leading-brand-in-trailers/` | `/blog/posts/why-hyundai-trailers-are-the-leading-brand` |

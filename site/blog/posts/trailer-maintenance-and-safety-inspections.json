@@ -1,0 +1,554 @@
+{
+  "slug": "trailer-maintenance-and-safety-inspections",
+  "title": "Prevent Accidents Before They Occur: How We Keep Your Trailer Safe With Maintenance and Safety Inspections",
+  "date": "2025-06-13",
+  "description": "Stay safe on the road with professional trailer maintenance and safety inspections from Sun State Trailers.",
+  "excerpt": "At Sun State Trailers, we know what's at stake when your trailer hits the road. Whether you're hauling food, equipment, or freight, you depend on your trailer to perform safely, reliably, and efficiently.…",
+  "status": "published",
+  "coverImage": "/img/blog/trailer-maintenance-and-safety-inspections/hero.jpg",
+  "topic": "Service",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Service",
+          "title": "Prevent Accidents Before They Occur: How We Keep Your Trailer Safe With Maintenance and Safety Inspections",
+          "topic": "Service",
+          "date": "June 13, 2025",
+          "readTime": "4 min read",
+          "author": "Sun State Trailers",
+          "image": {
+            "src": "/img/blog/trailer-maintenance-and-safety-inspections/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Close-up of Globe trailer undercarriage, axles and tires during a safety inspection"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "Why Inspections Matter",
+                        "href": "#why-matters"
+                      },
+                      {
+                        "label": "What's Included",
+                        "href": "#includes"
+                      },
+                      {
+                        "label": "Preventive & Cost-Effective",
+                        "href": "#cost-effective"
+                      },
+                      {
+                        "label": "Why Businesses Trust Us",
+                        "href": "#why-trust"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "NEED A REEFER RENTAL?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Short-term job coming up? We'll help you find a reliable reefer rental fast.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "contact-us",
+                                "label": "Reserve a Trailer →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State Trailers, we know what's at stake when your trailer hits the road. Whether you're hauling food, equipment, or freight, you depend on your trailer to perform safely, reliably, and efficiently. That's why trailer maintenance and safety inspections aren't just a box to check; they're a crucial part of keeping your business running and protecting everyone on the road.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "We don't believe in cutting corners. When you bring your trailer to us, we inspect it like it's our own, because for over 40 years, our name has been on the line with every repair, every inspection, and every job we do.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-why-matters",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Trailer Maintenance and Safety Inspections Matter",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "why-matters"
+                  }
+                },
+                {
+                  "id": "p-why-matters-1",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"/store/inventory?type=trailer\">Commercial trailers</a> take a beating. Long hauls, heavy loads, and demanding weather conditions all contribute to wear and tear that can turn into major issues if left unchecked.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-why-matters-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Regular maintenance and inspections help you:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-why-matters-3",
+                  "type": "check-list",
+                  "props": {
+                    "mark": "dot",
+                    "items": [
+                      {
+                        "text": "Prevent roadside breakdowns"
+                      },
+                      {
+                        "text": "Avoid DOT violations and fines"
+                      },
+                      {
+                        "text": "Increase fuel efficiency"
+                      },
+                      {
+                        "text": "Extend the life of your trailer"
+                      },
+                      {
+                        "text": "Keep your drivers and cargo safe"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-why-matters-4",
+                  "type": "text",
+                  "props": {
+                    "text": "And if you manage a fleet, the stakes are even higher. One overlooked issue can impact multiple loads, delay schedules, and cost your business thousands.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-includes",
+                  "type": "heading",
+                  "props": {
+                    "text": "What Our Inspections Include",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "includes"
+                  }
+                },
+                {
+                  "id": "p-includes-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Our trailer maintenance and safety inspections follow a detailed, multi-point process designed to spot small issues before they become big problems. Every inspection includes:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-includes-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "brief",
+                    "across": "3",
+                    "items": [
+                      {
+                        "title": "Brake System Check",
+                        "points": [],
+                        "intro": "We examine brake pads, drums, lines, and air systems to ensure responsive, reliable stopping power."
+                      },
+                      {
+                        "title": "Lights and Electrical",
+                        "points": [],
+                        "intro": "We check all lighting, wiring, and connectors for proper function and DOT compliance."
+                      },
+                      {
+                        "title": "Suspension and Axles",
+                        "points": [],
+                        "intro": "Worn suspension components can lead to poor ride quality and uneven tire wear. We look at leaf springs, hangers, bushings, and axles."
+                      },
+                      {
+                        "title": "Tires and Wheels",
+                        "points": [],
+                        "intro": "We inspect tires for uneven wear, tread depth, sidewall damage, and check wheel bearings and lug torque."
+                      },
+                      {
+                        "title": "Frame and Body",
+                        "points": [],
+                        "intro": "Our team checks for structural damage, cracked welds, and corrosion, especially around the undercarriage and fifth wheel."
+                      },
+                      {
+                        "title": "Doors and Seals",
+                        "points": [],
+                        "intro": "Proper cargo containment is key. We inspect seals, hinges, and locking mechanisms."
+                      }
+                    ]
+                  },
+                  "styles": {
+                    "base": {
+                      "marginBottom": 8
+                    }
+                  }
+                },
+                {
+                  "id": "p-includes-3",
+                  "type": "text",
+                  "props": {
+                    "text": "If we spot something, we'll let you know right away, along with a clear explanation of what needs to be done, how long it will take, and what it'll cost. No upselling. No pressure. Just honest, straightforward service.",
+                    "align": "left",
+                    "width": "full"
+                  },
+                  "styles": {
+                    "base": {
+                      "marginTop": 34
+                    }
+                  }
+                },
+                {
+                  "id": "h-cost-effective",
+                  "type": "heading",
+                  "props": {
+                    "text": "Trailer Maintenance Isn't Just Preventive, It's Cost-Effective",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "cost-effective"
+                  }
+                },
+                {
+                  "id": "p-cost-effective-1",
+                  "type": "text",
+                  "props": {
+                    "text": "The cost of a breakdown goes far beyond the repair bill. A trailer stuck on the side of the road means missed deliveries, idle drivers, lost revenue, and damage to your reputation. Routine trailer maintenance and inspections help you avoid these risks entirely.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-cost-effective-2",
+                  "type": "text",
+                  "props": {
+                    "text": "At our <a href=\"/locations/trailer-sales\">service department</a> at Sun State Trailers, we've seen it all, from small fixes that save thousands in damage to last-minute repairs that could have been avoided with one quick checkup. Investing in preventive maintenance pays off, plain and simple.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-why-trust",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Businesses Trust Sun State Trailers",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "why-trust"
+                  }
+                },
+                {
+                  "id": "p-why-trust-1",
+                  "type": "text",
+                  "props": {
+                    "text": "We've earned the trust of hardworking business owners across Florida by doing things the right way every time. Here's why our customers keep coming back:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-why-trust-2",
+                  "type": "check-list",
+                  "props": {
+                    "mark": "dot-ink",
+                    "items": [
+                      {
+                        "text": "Certified, experienced technicians who know trailers inside and out"
+                      },
+                      {
+                        "text": "Quick turnaround times that keep your fleet on the road"
+                      },
+                      {
+                        "text": "Upfront communication and fair pricing"
+                      },
+                      {
+                        "text": "High-quality parts and workmanship backed by a reputation built over decades"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-why-trust-3",
+                  "type": "text",
+                  "props": {
+                    "text": "We're not here to sell you something you don't need. We're here to help you run your business smoothly, safely, and confidently.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-schedule-your-safety-inspection",
+                  "type": "heading",
+                  "props": {
+                    "text": "Schedule Your Safety Inspection Today",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-schedule-your-safety-inspection-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Whether you run a single trailer or manage a full fleet, consistent maintenance and inspections are non-negotiable. Don't wait for a breakdown or DOT citation to remind you. At Sun State Trailers, we'll make it easy to stay ahead of the curve. Ready to stay ahead of costly breakdowns? Book your inspection today. You can expect fast turnaround and trusted service at all three locations because your safety is our priority.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-schedule-your-safety-inspection-2",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "contact-us",
+                        "label": "Book Your Inspection"
+                      },
+                      {
+                        "ctaId": "browse-trailers",
+                        "label": "Browse Trailer Inventory",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-share",
+                  "type": "post-share",
+                  "props": {
+                    "label": "Share",
+                    "items": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Ftrailer-maintenance-and-safety-inspections",
+                        "newTab": true
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Ftrailer-maintenance-and-safety-inspections&text=Prevent%20Accidents%20Before%20They%20Occur%3A%20How%20We%20Keep%20Your%20Trailer%20Safe%20With%20Maintenance%20and%20Safety%20Inspections",
+                        "newTab": true
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Ftrailer-maintenance-and-safety-inspections",
+                        "newTab": true
+                      },
+                      {
+                        "label": "Email",
+                        "url": "mailto:?subject=Prevent%20Accidents%20Before%20They%20Occur%3A%20How%20We%20Keep%20Your%20Trailer%20Safe%20With%20Maintenance%20and%20Safety%20Inspections&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Ftrailer-maintenance-and-safety-inspections",
+                        "newTab": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Service",
+          "heading": "Stay ahead of costly breakdowns.",
+          "body": "Call 800.741.7566 to schedule a safety inspection at any Sun State location in Florida.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Browse trailer inventory",
+          "secondaryUrl": "/store/inventory?type=trailer"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/trailer-maintenance-and-safety-inspections\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/trailer-maintenance-and-safety-inspections\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n/* The hero photograph is framed a little high, as the design frames it. */\n[data-bz-section=\"post-hero\"] [data-bz-node=\"ph-photo\"] img { object-position: center 55%; }\n"
+}
