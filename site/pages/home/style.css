@@ -69,8 +69,6 @@
 /* The closing band is the compact one, 560px wide with a 34px heading. */
 [data-bz-section="cta-compact"] > .bz-section { padding-block: 100px; }
 [data-bz-section="cta-compact"] > .bz-section > .bz-container { max-width: calc(560px + 2 * var(--container-pad)); }
-[data-bz-section="cta-compact"] .bz-btn--primary { background: var(--accent); }
-[data-bz-section="cta-compact"] .bz-btn--primary:hover { background: var(--accent-dark); }
 [data-bz-section="cta-compact"] [data-bz-node="ctc-note"] p { color: #B0B0B0; }
 [data-bz-section="cta-compact"] h2 { font-size: 34px; margin-bottom: 14px; }
 [data-bz-section="cta-compact"] .bz-block + .bz-block { padding-block-start: 0; }
