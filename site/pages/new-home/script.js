@@ -31,3 +31,23 @@
     press(dx < 0 ? 'tr-next' : 'tr-prev');
   }, { passive: true });
 })();
+
+/* Open the brand coverflow on its first card — International — rather than
+ * the middle one the type-rail component centres by default. The component's
+ * script has already staged the rail by now (component scripts run before page
+ * scripts), and clicking a card is how it brings that card to the centre, so
+ * this asks it to do exactly that, with the easing held off for the first
+ * paint. Reorder the brands on the Components screen and whichever is first
+ * leads. Every screen size.
+ */
+(function () {
+  var rail = document.querySelector('[data-bz-node="home-types"] [data-bz-node="tr-rail"]');
+  if (!rail || !rail.classList.contains('is-staged')) return;
+  var first = rail.querySelector('[data-bz-node^="tr-slide-"][data-pos]');
+  if (!first || first.getAttribute('data-pos') === '0') return;
+  var slides = rail.querySelectorAll('[data-bz-node^="tr-slide-"][data-pos]');
+  slides.forEach(function (slide) { slide.style.transition = 'none'; });
+  first.click();
+  void rail.offsetWidth;
+  slides.forEach(function (slide) { slide.style.transition = ''; });
+})();
