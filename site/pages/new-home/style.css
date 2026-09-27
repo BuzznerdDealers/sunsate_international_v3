@@ -236,3 +236,89 @@
    outrank the two the generated node style carries. */
 [data-bz-node="home-trailers"][data-bz-node][data-bz-node],
 [data-bz-node="home-brands"][data-bz-node][data-bz-node] { height: auto; }
+
+/* ===========================================================================
+   Phone fixes from the mobile QA pass. Every rule below sits inside
+   max-width: 640px, so desktop and tablet render exactly as before.
+   =========================================================================== */
+@media (max-width: 640px) {
+  /* Team photo under the hero: the split's own 400px floor outranked the
+     200px above, so the photo ran edge to edge at 390x400 while the copy under
+     it sat on the 20px gutter. It now sits on the same gutter at 4:3. */
+  [data-bz-node="home-about"] > .bz-section > [data-bz-node="mb-row"] > [data-bz-node="mb-media"] {
+    display: block;
+    min-height: 0;
+    padding: 40px 20px 0;
+  }
+  [data-bz-node="home-about"] [data-bz-node="mb-img"] .bz-figure { height: auto; }
+  [data-bz-node="home-about"] [data-bz-node="mb-img"] img { height: auto; aspect-ratio: 4 / 3; }
+  [data-bz-node="home-about"] > .bz-section > [data-bz-node="mb-row"] > [data-bz-node="mb-copy"] { padding-top: 28px; }
+
+  /* "Choose a brand to explore": the phone used to drop the coverflow for a
+     scroll rail with no arrows and no "View now" button. It keeps the desktop
+     staging instead, sized for the screen — a centre card with its neighbours
+     peeking in either side, the button on the centre card and the arrows under
+     it. With scripts off (and on the Design canvas) the scroll rail stays. */
+  [data-bz-node="home-types"] [data-bz-node="tr-rail"].is-staged {
+    display: block;
+    position: relative;
+    height: 340px;
+    padding: 0;
+    overflow: visible;
+    scroll-snap-type: none;
+  }
+  [data-bz-node="home-types"] [data-bz-node="tr-rail"].is-staged > [data-bz-type="column"][data-bz-node^="tr-slide-"] {
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 240px; height: 320px;
+    margin: -160px 0 0 -120px;
+    flex: none;
+    padding: 24px 0 0;
+    justify-content: flex-start;
+    scroll-snap-align: none;
+  }
+  [data-bz-node="home-types"] [data-bz-node="tr-rail"].is-staged > [data-pos] {
+    transform: translateX(0) scale(.5); opacity: 0; pointer-events: none; z-index: 1;
+  }
+  [data-bz-node="home-types"] [data-bz-node="tr-rail"].is-staged > [data-pos="0"]  { transform: translateX(0) scale(1);       opacity: 1;   z-index: 10; pointer-events: auto; }
+  [data-bz-node="home-types"] [data-bz-node="tr-rail"].is-staged > [data-pos="-1"] { transform: translateX(-160px) scale(.78); opacity: .6;  z-index: 9;  pointer-events: auto; }
+  [data-bz-node="home-types"] [data-bz-node="tr-rail"].is-staged > [data-pos="1"]  { transform: translateX(160px) scale(.78);  opacity: .6;  z-index: 9;  pointer-events: auto; }
+  [data-bz-node="home-types"] [data-bz-node="tr-rail"].is-staged > [data-pos="-2"] { transform: translateX(-270px) scale(.6);  opacity: .32; z-index: 8; }
+  [data-bz-node="home-types"] [data-bz-node="tr-rail"].is-staged > [data-pos="2"]  { transform: translateX(270px) scale(.6);   opacity: .32; z-index: 8; }
+  [data-bz-node="home-types"] [data-bz-node="tr-rail"].is-staged > [data-bz-type="column"] [data-bz-node^="tr-slide-h"] h3 {
+    font-size: 14px; color: #B5B5B5; text-align: center; padding: 0 16px;
+  }
+  [data-bz-node="home-types"] [data-bz-node="tr-rail"].is-staged > [data-pos="0"] [data-bz-node^="tr-slide-h"] h3 { font-size: 20px; color: #fff; }
+  [data-bz-node="home-types"] [data-bz-node="tr-rail"].is-staged > [data-pos="0"] [data-bz-node^="tr-slide-cta"] {
+    display: block;
+    position: absolute; bottom: 24px; left: 50%; transform: translateX(-50%); margin-top: 0;
+  }
+  [data-bz-node="home-types"] [data-bz-node="tr-rail"].is-staged ~ [data-bz-node="tr-nav"] { display: flex; margin-top: 20px; }
+
+  /* Find a location: the band's 120px desktop air is the phone's 64px, and
+     the map frame holds its 460px desktop floor no longer — a 2.4:1 map on a
+     350px screen is 146px tall, which left 300px of empty frame under it. */
+  [data-bz-section="location-rail"] > .bz-section { padding-block: 64px; }
+  [data-bz-section="location-rail"] [data-bz-node="lr-head"] { margin-bottom: 28px; }
+  [data-bz-section="location-rail"] [data-bz-node="lr-map"] .bz-pinmap { min-height: 0; }
+  [data-bz-section="location-rail"] [data-bz-node="lr-map-row"] { margin-bottom: 24px; }
+
+  /* The brand filter: the label, the chips and the rail arrows each carried
+     their desktop spacing, 60px and more between one control and the next.
+     The chips wrap so all five are in view, as they are on desktop. */
+  [data-bz-section="location-rail"] .ss-filter { gap: 8px; }
+  [data-bz-section="location-rail"] .ss-filter__pills { flex-wrap: wrap; gap: 8px; padding-bottom: 0; }
+  [data-bz-section="location-rail"] .ss-pill { padding: 8px 12px; font-size: 12px; }
+  [data-bz-section="location-rail"] [data-bz-node="lr-brands"] { margin-bottom: 0; }
+  [data-bz-section="location-rail"] [data-bz-node="lr-perks"] { display: none; }
+  [data-bz-section="location-rail"] [data-bz-node="lr-nav-row"] { margin-block: 16px 12px; }
+
+  /* New & Used Trailers: 100px of the band's own top padding sat on the 64px
+     under the service rows. The button now clears the photo below it, and the
+     band hands straight on to the brands card, which carries the gap. */
+  [data-bz-node="home-trailers"] > .bz-section > .bz-container { padding-block: 36px 0; }
+  [data-bz-node="home-trailers"] [data-bz-node="mb-media"] { margin-top: 28px; }
+  [data-bz-node="home-trailers"][data-bz-node][data-bz-node],
+  [data-bz-node="home-brands"][data-bz-node][data-bz-node] { min-height: 0; }
+  [data-bz-node="home-brands"] > .bz-section[data-bz-node="mb"] > .bz-container { padding-top: 48px; }
+}
