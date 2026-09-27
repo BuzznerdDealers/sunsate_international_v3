@@ -26,3 +26,29 @@
   .bz-block--hero { padding-block: 72px; }
   .bz-block--hero h1 { font-size: 32px; }
 }
+
+/* ===========================================================================
+   Phone fixes from the mobile QA pass. Every rule below sits inside
+   max-width: 640px, so desktop and tablet render exactly as before.
+   =========================================================================== */
+@media (max-width: 640px) {
+  /* Hero: the platform's `.bz-block img { height: auto }` outranks the hero's
+     own `height: 100%`, so on a phone the photo drew at its natural 2:1 height
+     — a strip across the top of the band, with the rest bare. It now covers
+     the whole band. */
+  [data-bz-node="fin-hero"] .bz-hero__bg .bz-hero__img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  /* The closing band's buttons: every other page draws this band's buttons
+     white with black text and the site's 8px corner. This one carried a 21px
+     pill and no fill, which left "Call" near-black on the near-black band. */
+  [data-bz-node="fin-cta"][data-bz-node][data-bz-section] .bz-btn {
+    border-radius: 8px;
+    background-color: #fff;
+    color: #000;
+    border-color: #fff;
+  }
+}
