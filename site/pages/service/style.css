@@ -39,3 +39,16 @@
 [data-bz-node="svc-what"] > .bz-section { padding-block: 90px 0px; }
 [data-bz-node="svc-services"].bz-section,
 [data-bz-node="svc-services"] > .bz-section { padding-block: 56px 90px; }
+
+/* ===========================================================================
+   Phone fixes from the mobile QA pass. Every rule below sits inside
+   max-width: 640px, so desktop and tablet render exactly as before.
+   =========================================================================== */
+@media (max-width: 640px) {
+  /* 80px of desktop air under the hero, and 90px above "What we service"
+     after the stat cards. */
+  [data-bz-node="svc-summary"].bz-section,
+  [data-bz-node="svc-summary"] > .bz-section { padding-top: 48px; }
+  [data-bz-node="svc-what"].bz-section,
+  [data-bz-node="svc-what"] > .bz-section { padding-top: 56px; }
+}

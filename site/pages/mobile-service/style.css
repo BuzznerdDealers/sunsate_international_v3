@@ -27,3 +27,41 @@
    was using the 90px house rhythm where the handoff sets its own. */
 [data-bz-node="mob-flyer"].bz-section,
 [data-bz-node="mob-flyer"] > .bz-section { padding-block: 90px 90px; }
+
+/* ===========================================================================
+   Phone fixes from the mobile QA pass. Every rule below sits inside
+   max-width: 640px, so desktop and tablet render exactly as before.
+   =========================================================================== */
+@media (max-width: 640px) {
+  /* "Call" and "Request mobile service": every other page draws this band's
+     buttons white with black text. This one kept the site's near-black
+     primary, which left "Call" near-black on the near-black band. They now
+     match, and hovered, pressed or focused they turn orange with a focus ring,
+     as on the Truck Configurator and Aftermarket pages. */
+  [data-bz-node="mob-cta"][data-bz-node][data-bz-section] .bz-btn {
+    border-radius: 8px;
+    background-color: #fff;
+    color: #000;
+    border-color: #fff;
+    transition: background-color .15s ease, color .15s ease;
+  }
+  [data-bz-node="mob-cta"][data-bz-node][data-bz-section] .bz-btn:hover,
+  [data-bz-node="mob-cta"][data-bz-node][data-bz-section] .bz-btn:active,
+  [data-bz-node="mob-cta"][data-bz-node][data-bz-section] .bz-btn:focus-visible {
+    background-color: var(--accent-dark);
+    border-color: var(--accent-dark);
+    color: #fff;
+  }
+  [data-bz-node="mob-cta"][data-bz-node][data-bz-section] .bz-btn:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 3px;
+  }
+}
+
+@media (max-width: 640px) {
+  /* "Mobile service flyer": the band's 90px desktop padding sat on the copy's
+     own 44px above it (134px of white under the dispatch band) and left 90px
+     under the photo before the FAQ band. The copy's own padding carries it. */
+  [data-bz-node="mob-flyer"].bz-section,
+  [data-bz-node="mob-flyer"] > .bz-section { padding-block: 0; }
+}
