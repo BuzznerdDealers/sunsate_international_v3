@@ -30,3 +30,29 @@
    was using the 90px house rhythm where the handoff sets its own. */
 [data-bz-node="br-s13"].bz-section,
 [data-bz-node="br-s13"] > .bz-section { padding-block: 80px 80px; }
+
+/* ===========================================================================
+   Phone fixes from the mobile QA pass. Every rule below sits inside
+   max-width: 640px, so desktop and tablet render exactly as before.
+   =========================================================================== */
+@media (max-width: 640px) {
+  /* Hero: the platform's `.bz-block img { height: auto }` outranks the hero's
+     own `height: 100%`, so on a phone the photo drew at its natural 16:9
+     height — a strip across the top of the band, with the rest bare. It now
+     covers the whole band. */
+  [data-bz-node="br-hero"] .bz-hero__bg .bz-hero__img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  /* Brochure groups: the title and its "· N documents" line share a wrapping
+     row, so a short title such as "LoneStar" kept the count beside it while
+     every longer one pushed it underneath. On a phone they always stack. */
+  [data-bz-node="br-library"] .ss-docs__h {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+}
