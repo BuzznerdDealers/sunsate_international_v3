@@ -2,59 +2,718 @@
   "slug": "why-sun-state-is-one-of-the-top-fleet-service-providers",
   "title": "Why Sun State is One of the Top Fleet Service Providers",
   "date": "2026-07-05",
-  "description": "Every vehicle in your operation plays a critical role in your business, and even one unexpected breakdown can create a ripple effect of missed deliveries, unhappy customers, and lost revenue. That’s why choosing the right fleet service providers matters.",
+  "description": "Need trusted fleet service providers? Sun State International keeps fleets moving. Contact us today to reduce downtime.",
+  "excerpt": "Managing a commercial fleet is about much more than keeping trucks fueled and drivers on schedule. Every vehicle in your operation plays a critical role in your business, and even one unexpected breakdown can…",
   "status": "draft",
-  "coverImage": null,
-  "topic": "Fleet",
+  "coverImage": "/img/blog/why-sun-state-is-one-of-the-top-fleet-service-providers/hero.jpg",
+  "topic": "Service",
   "nodes": [
     {
-      "id": "intro",
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Service",
+          "title": "Why Sun State is One of the Top Fleet Service Providers",
+          "topic": "Service",
+          "date": "July 5, 2026",
+          "readTime": "5 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/why-sun-state-is-one-of-the-top-fleet-service-providers/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Sun State International technician working at a toolbox in the service bay"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
       "type": "section",
       "props": {
         "width": "boxed",
-        "paddingY": 7
+        "background": "card",
+        "paddingY": 8
       },
       "children": [
         {
-          "id": "intro-row",
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "Why It Makes a Difference",
+                        "href": "#why-it-matters"
+                      },
+                      {
+                        "label": "Under One Roof",
+                        "href": "#under-one-roof"
+                      },
+                      {
+                        "label": "A Service Center You Can Depend On",
+                        "href": "#service-center"
+                      },
+                      {
+                        "label": "Ready to Keep Moving?",
+                        "href": "#ready"
+                      },
+                      {
+                        "label": "Reducing Downtime",
+                        "href": "#reduce-downtime"
+                      },
+                      {
+                        "label": "Why Businesses Choose Us",
+                        "href": "#why-businesses"
+                      },
+                      {
+                        "label": "Partner With Us",
+                        "href": "#partner"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "FLEET SERVICE",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Ask about preventive maintenance programs for your fleet.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "contact-us",
+                                "label": "Contact Us →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Managing a commercial fleet is about much more than keeping trucks fueled and drivers on schedule. Every vehicle in your operation plays a critical role in your business, and even one unexpected breakdown can create a ripple effect of missed deliveries, unhappy customers, and lost revenue. That’s why choosing the right fleet service providers matters. A dependable service partner helps prevent problems before they happen, completes repairs efficiently, and keeps your fleet operating at its highest level.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, we understand what’s at stake. As Florida’s trusted International truck service center, we provide comprehensive fleet repair and maintenance, quality OEM parts, and experienced technicians dedicated to helping businesses maximize uptime. We believe customer service is just as important as technical expertise, because your success is our priority.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-why-it-matters",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why the Right Fleet Service Providers Make a Difference",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "why-it-matters"
+                  }
+                },
+                {
+                  "id": "p-why-it-matters-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Every hour a truck spends in the shop is an hour it isn’t generating revenue. When fleets experience unexpected downtime, the impact extends beyond repair costs to delayed shipments, scheduling issues, and customer satisfaction. The best fleet service providers focus on preventing these disruptions through proactive maintenance and efficient repairs.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-why-it-matters-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Instead of waiting for major failures, a preventive maintenance strategy helps identify issues involving:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-why-it-matters-3",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Braking systems"
+                      },
+                      {
+                        "text": "Suspension components"
+                      },
+                      {
+                        "text": "Cooling systems"
+                      },
+                      {
+                        "text": "Electrical systems"
+                      },
+                      {
+                        "text": "Engine performance"
+                      },
+                      {
+                        "text": "Tires and alignment"
+                      },
+                      {
+                        "text": "Drivetrain components"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-why-it-matters-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Addressing small concerns early often prevents larger, more expensive repairs later.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-under-one-roof",
+                  "type": "heading",
+                  "props": {
+                    "text": "Complete Fleet Repair and Maintenance Under One Roof",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "under-one-roof"
+                  }
+                },
+                {
+                  "id": "p-under-one-roof-1",
+                  "type": "text",
+                  "props": {
+                    "text": "One challenge many fleet managers face is coordinating service between multiple vendors. Parts come from one supplier. Repairs happen somewhere else. Warranty work requires another appointment. At Sun State International, we simplify the process.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-under-one-roof-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Our fleet repair and maintenance services include:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-under-one-roof-3",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Preventive maintenance programs"
+                      },
+                      {
+                        "text": "Oil and fluid services"
+                      },
+                      {
+                        "text": "Brake inspections and repairs"
+                      },
+                      {
+                        "text": "Suspension repairs"
+                      },
+                      {
+                        "text": "Engine diagnostics"
+                      },
+                      {
+                        "text": "Electrical troubleshooting"
+                      },
+                      {
+                        "text": "Transmission service"
+                      },
+                      {
+                        "text": "Cooling system repairs"
+                      },
+                      {
+                        "text": "DOT inspections"
+                      },
+                      {
+                        "text": "Warranty repairs"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-under-one-roof-4",
+                  "type": "text",
+                  "props": {
+                    "text": "With sales, service, and parts working together, your fleet spends less time waiting and more time on the road. Our mission has always been to provide quality transportation products, parts, and services while supporting our customers’ long-term success.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/why-sun-state-is-one-of-the-top-fleet-service-providers/1.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Sun State International parts team pulling genuine truck parts from warehouse shelving"
+                    }
+                  }
+                },
+                {
+                  "id": "h-service-center",
+                  "type": "heading",
+                  "props": {
+                    "text": "An International Truck Service Center You Can Depend On",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "service-center"
+                  }
+                },
+                {
+                  "id": "p-service-center-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Not every repair facility has the specialized training needed to service today’s commercial trucks. As an authorized International truck service center, Sun State International provides factory-trained technicians who understand International trucks inside and out.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-service-center-2",
+                  "type": "heading",
+                  "props": {
+                    "text": "Specialized Diagnostics",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-service-center-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Today’s trucks rely on sophisticated electronics and onboard diagnostic systems. Our technicians use manufacturer-approved diagnostic equipment to quickly identify problems with:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-service-center-4",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Engine performance"
+                      },
+                      {
+                        "text": "Emissions systems"
+                      },
+                      {
+                        "text": "Electrical components"
+                      },
+                      {
+                        "text": "Sensors"
+                      },
+                      {
+                        "text": "Transmission systems"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-service-center-5",
+                  "type": "text",
+                  "props": {
+                    "text": "Accurate diagnostics reduce guesswork and help minimize unnecessary repairs.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-service-center-6",
+                  "type": "heading",
+                  "props": {
+                    "text": "Genuine OEM Parts",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-service-center-7",
+                  "type": "text",
+                  "props": {
+                    "text": "Quality repairs begin with quality parts. Our extensive inventory of genuine International components helps reduce repair delays while maintaining the reliability your trucks were built for. OEM parts are engineered specifically for your vehicle, helping maximize durability and long-term performance.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-ready",
+                  "type": "heading",
+                  "props": {
+                    "text": "Ready to Keep Your Fleet Moving?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "ready"
+                  }
+                },
+                {
+                  "id": "p-ready-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Whether you manage five trucks or five hundred, preventive maintenance is one of the smartest investments you can make. Contact Sun State International today to learn how our fleet service programs can help reduce downtime and keep your operation running efficiently.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-ready-2",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "contact-us",
+                        "label": "Get Back on the Road"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-reduce-downtime",
+                  "type": "heading",
+                  "props": {
+                    "text": "How Professional Commercial Truck Service Reduces Downtime",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "reduce-downtime"
+                  }
+                },
+                {
+                  "id": "p-reduce-downtime-1",
+                  "type": "text",
+                  "props": {
+                    "text": "One of the biggest goals for any fleet manager is finding ways to reduce truck downtime services without sacrificing quality. Routine maintenance plays a significant role in achieving that goal. Benefits include:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-reduce-downtime-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Fewer roadside breakdowns"
+                      },
+                      {
+                        "text": "Improved fuel efficiency"
+                      },
+                      {
+                        "text": "Longer equipment life"
+                      },
+                      {
+                        "text": "Better driver safety"
+                      },
+                      {
+                        "text": "Lower repair costs over time"
+                      },
+                      {
+                        "text": "Increased fleet availability"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-reduce-downtime-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Rather than reacting to problems after they happen, proactive commercial truck service helps keep trucks operating consistently throughout the year.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-2",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/why-sun-state-is-one-of-the-top-fleet-service-providers/2.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Wrenches and sockets laid out beside a truck wheel during alignment work"
+                    }
+                  }
+                },
+                {
+                  "id": "h-why-businesses",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Businesses Choose Sun State International",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "why-businesses"
+                  }
+                },
+                {
+                  "id": "p-why-businesses-1",
+                  "type": "text",
+                  "props": {
+                    "text": "For many companies, choosing a service provider isn’t just about repairs. It’s about building a relationship with a team they can trust. Sun State International has earned that trust by focusing on what matters most:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-why-businesses-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Honest recommendations"
+                      },
+                      {
+                        "text": "Responsive communication"
+                      },
+                      {
+                        "text": "Experienced technicians"
+                      },
+                      {
+                        "text": "Quality OEM parts"
+                      },
+                      {
+                        "text": "Efficient turnaround times"
+                      },
+                      {
+                        "text": "Customer-first service"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-why-businesses-3",
+                  "type": "text",
+                  "props": {
+                    "text": "As a family-owned business, we’ve built our reputation through hard work, dependable service, and genuine relationships with the businesses we serve. We believe in treating every customer like part of our extended family while delivering straightforward solutions that keep operations moving.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-partner",
+                  "type": "heading",
+                  "props": {
+                    "text": "Partner with Fleet Service Providers Who Put Your Business First",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "partner"
+                  }
+                },
+                {
+                  "id": "p-partner-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State International, we provide dependable commercial truck service, comprehensive fleet repair and maintenance, genuine OEM parts, and the expertise businesses across Florida rely on every day. Whether you need routine maintenance, major repairs, or long-term fleet support, our experienced team is ready to help. Contact Sun State International today to schedule service and discover why businesses throughout Florida trust us as one of the region’s leading fleet service providers.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-partner-2",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "contact-us",
+                        "label": "Get Started With Sun State"
+                      },
+                      {
+                        "ctaId": "service-department",
+                        "label": "Service Department",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-share",
+                  "type": "post-share",
+                  "props": {
+                    "label": "Share",
+                    "items": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhy-sun-state-is-one-of-the-top-fleet-service-providers",
+                        "newTab": true
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhy-sun-state-is-one-of-the-top-fleet-service-providers&text=Why%20Sun%20State%20is%20One%20of%20the%20Top%20Fleet%20Service%20Providers",
+                        "newTab": true
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhy-sun-state-is-one-of-the-top-fleet-service-providers",
+                        "newTab": true
+                      },
+                      {
+                        "label": "Email",
+                        "url": "mailto:?subject=Why%20Sun%20State%20is%20One%20of%20the%20Top%20Fleet%20Service%20Providers&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhy-sun-state-is-one-of-the-top-fleet-service-providers",
+                        "newTab": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
           "type": "row",
           "props": {
             "gap": 5
           },
           "children": [
             {
-              "id": "intro-col",
+              "id": "related-col",
               "type": "column",
               "props": {
                 "span": 12
               },
               "children": [
                 {
-                  "id": "intro-text",
-                  "type": "text",
+                  "id": "related-h",
+                  "type": "heading",
                   "props": {
-                    "text": "Every vehicle in your operation plays a critical role in your business, and even one unexpected breakdown can create a ripple effect of missed deliveries, unhappy customers, and lost revenue. That’s why choosing the right fleet service providers matters.",
-                    "width": "full"
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
                   }
                 },
                 {
-                  "id": "intro-note",
-                  "type": "text",
+                  "id": "related-posts",
+                  "type": "postsList",
                   "props": {
-                    "text": "The full article was published on sunstateintl.com. Paste the migrated body here in Posts → this post, and the card on the blog index updates with it.",
-                    "width": "full"
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
                   }
                 },
                 {
-                  "id": "intro-cta",
+                  "id": "related-cta",
                   "type": "buttons",
                   "props": {
+                    "align": "left",
                     "items": [
                       {
-                        "label": "Read the original article →",
-                        "url": "https://www.sunstateintl.com/why-sun-state-is-one-of-the-top-fleet-service-providers/",
-                        "style": "link",
-                        "intent": "read-post"
+                        "ctaId": "all-blog-posts"
                       }
                     ]
                   }
@@ -67,62 +726,21 @@
     },
     {
       "id": "post-cta",
-      "type": "section",
+      "type": "sharedSection",
       "props": {
-        "width": "boxed",
-        "background": "paper",
-        "paddingY": 8
-      },
-      "children": [
-        {
-          "id": "post-cta-row",
-          "type": "row",
-          "props": {
-            "gap": 5
-          },
-          "children": [
-            {
-              "id": "post-cta-col",
-              "type": "column",
-              "props": {
-                "span": 12
-              },
-              "children": [
-                {
-                  "id": "post-cta-h",
-                  "type": "heading",
-                  "props": {
-                    "text": "Got the same symptom on a unit you run?",
-                    "headingLevel": 2
-                  }
-                },
-                {
-                  "id": "post-cta-b",
-                  "type": "text",
-                  "props": {
-                    "text": "Call 800.741.7566 and we'll look at the specific truck or trailer instead of the general case.",
-                    "width": "full"
-                  }
-                },
-                {
-                  "id": "post-cta-btn",
-                  "type": "buttons",
-                  "props": {
-                    "items": [
-                      {
-                        "ctaId": "request-appointment"
-                      },
-                      {
-                        "ctaId": "call-main-secondary"
-                      }
-                    ]
-                  }
-                }
-              ]
-            }
-          ]
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Fleet service",
+          "heading": "Partner with fleet service providers who put your business first.",
+          "body": "Call 800.741.7566 to talk with our team at any Sun State location in Florida.",
+          "primaryLabel": "Get started",
+          "primaryUrl": "/contact",
+          "secondaryLabel": "Schedule service",
+          "secondaryUrl": "/service-appointment"
         }
-      ]
+      },
+      "children": []
     }
-  ]
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/why-sun-state-is-one-of-the-top-fleet-service-providers\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/why-sun-state-is-one-of-the-top-fleet-service-providers\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n[data-bz-node=\"art-body\"] > [data-bz-node=\"actions-ready-2\"] .bz-btns { margin: 8px 0 34px; }\n"
 }

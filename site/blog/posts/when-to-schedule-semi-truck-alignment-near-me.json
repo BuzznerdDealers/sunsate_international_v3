@@ -2,536 +2,708 @@
   "slug": "when-to-schedule-semi-truck-alignment-near-me",
   "title": "When to Schedule Semi Truck Alignment Near Me",
   "date": "2026-07-30",
-  "description": "Maybe your truck pulls to one side, your steering wheel feels off-center, or your tires are wearing unevenly. While these may seem like minor issues at first, they can quickly turn into expensive repairs, poor fuel economy, and unnecessary downtime.",
+  "description": "Need a semi truck alignment near me? Improve tire life and handling. Schedule service with Sun State International today.",
+  "excerpt": "If you’ve been searching for semi truck alignment near me, chances are you’ve noticed something isn’t quite right. Maybe your truck pulls to one side, your steering wheel feels off-center, or your tires are…",
   "status": "draft",
-  "coverImage": null,
+  "coverImage": "/img/blog/when-to-schedule-semi-truck-alignment-near-me/hero.jpg",
   "topic": "Service",
   "nodes": [
     {
-      "id": "intro",
-      "type": "section",
+      "id": "hero",
+      "type": "sharedSection",
       "props": {
-        "width": "boxed",
-        "paddingY": 0
-      },
-      "children": [
-        {
-          "id": "intro-row",
-          "type": "row",
-          "props": {
-            "gap": 5
-          },
-          "children": [
-            {
-              "id": "intro-col",
-              "type": "column",
-              "props": {
-                "span": 12
-              },
-              "children": [
-                {
-                  "id": "image",
-                  "type": "image",
-                  "props": {
-                    "width": "full",
-                    "image": {
-                      "src": "https://vendure.buzznerdrv.com/assets/source/6c/1.1.jpg",
-                      "alt": "1.3.jpg",
-                      "width": 2000,
-                      "height": 1333
-                    }
-                  }
-                },
-                {
-                  "id": "spacer",
-                  "type": "spacer",
-                  "props": {
-                    "size": 6
-                  }
-                },
-                {
-                  "id": "intro-text",
-                  "type": "text",
-                  "props": {
-                    "width": "full",
-                    "text": "If you’ve been searching for semi truck alignment near me, chances are you’ve noticed something isn’t quite right. Maybe your truck pulls to one side, your steering wheel feels off-center, or your tires are wearing unevenly. While these may seem like minor issues at first, they can quickly turn into expensive repairs, poor fuel economy, and unnecessary downtime.\n\nThat’s why knowing when to get a semi truck alignment matters. Here’s the best time to get the necessary maintenance to keep your trucks safe, efficient, and on the road where they’re making money."
-                  }
-                },
-                {
-                  "id": "spacer-2",
-                  "type": "spacer",
-                  "props": {
-                    "size": 6
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "heading-2",
-          "type": "heading",
-          "props": {
-            "headingLevel": 2,
-            "align": "left",
-            "text": "Why Alignment Matters More Than You Think"
-          }
-        },
-        {
-          "id": "text",
-          "type": "text",
-          "props": {
-            "align": "left",
-            "width": "full",
-            "text": "Many drivers assume alignment only affects steering comfort. In reality, proper alignment impacts nearly every part of your truck’s performance.\n\nA correctly aligned truck helps:"
-          }
-        },
-        {
-          "id": "text-helps",
-          "type": "list",
-          "props": {
-            "headingLevel": 3,
-            "columns": 2,
-            "items": [
-              {
-                "label": "Extend tire life"
-              },
-              {
-                "label": "Improve fuel efficiency"
-              },
-              {
-                "label": "Reduce strain on suspension components"
-              },
-              {
-                "label": "Improve handling and driver comfort"
-              },
-              {
-                "label": "Increase overall safety"
-              }
-            ]
-          }
-        },
-        {
-          "id": "text-b",
-          "type": "text",
-          "props": {
-            "align": "left",
-            "width": "full",
-            "text": "Even small improvements become significant across an entire fleet. Ignoring alignment issues often leads to premature tire replacement and more extensive truck suspension repair, costing far more than addressing the problem early."
-          }
-        },
-        {
-          "id": "spacer-3",
-          "type": "spacer",
-          "props": {
-            "size": 6
-          }
-        },
-        {
-          "id": "heading-3",
-          "type": "heading",
-          "props": {
-            "headingLevel": 2,
-            "align": "left",
-            "text": "Signs You Need a Semi Truck Alignment"
-          }
-        },
-        {
-          "id": "text-2",
-          "type": "text",
-          "props": {
-            "align": "left",
-            "width": "full",
-            "text": "Not every alignment issue is obvious. Watch for these common warning signs:"
-          }
-        },
-        {
-          "id": "text-2-wear-h",
-          "type": "heading",
-          "props": {
-            "headingLevel": 3,
-            "align": "left",
-            "text": "Uneven Tire Wear"
-          }
-        },
-        {
-          "id": "text-2-wear-p",
-          "type": "text",
-          "props": {
-            "align": "left",
-            "width": "full",
-            "text": "One of the earliest indicators is uneven tread wear. If one edge of the tire wears faster than the other, your alignment could be off."
-          }
-        },
-        {
-          "id": "text-2-pull-h",
-          "type": "heading",
-          "props": {
-            "headingLevel": 3,
-            "align": "left",
-            "text": "Pulling While Driving"
-          }
-        },
-        {
-          "id": "text-2-pull-p",
-          "type": "text",
-          "props": {
-            "align": "left",
-            "width": "full",
-            "text": "Does your truck drift left or right even on straight roads? That’s a strong sign it’s time to search for semi truck alignment near me before the issue worsens."
-          }
-        },
-        {
-          "id": "text-2-wheel-h",
-          "type": "heading",
-          "props": {
-            "headingLevel": 3,
-            "align": "left",
-            "text": "Crooked Steering Wheel"
-          }
-        },
-        {
-          "id": "text-2-wheel-p",
-          "type": "text",
-          "props": {
-            "align": "left",
-            "width": "full",
-            "text": "If your steering wheel isn’t centered while driving straight, your alignment should be inspected."
-          }
-        },
-        {
-          "id": "text-2-vib-h",
-          "type": "heading",
-          "props": {
-            "headingLevel": 3,
-            "align": "left",
-            "text": "Vibration or Poor Handling"
-          }
-        },
-        {
-          "id": "text-2-vib-p",
-          "type": "text",
-          "props": {
-            "align": "left",
-            "width": "full",
-            "text": "Suspension problems and alignment issues often work together. Excessive vibration may indicate worn semi truck suspension parts that should be replaced during the alignment process."
-          }
-        },
-        {
-          "id": "spacer-4",
-          "type": "spacer",
-          "props": {
-            "size": 6
-          }
-        },
-        {
-          "id": "heading-4",
-          "type": "heading",
-          "props": {
-            "headingLevel": 2,
-            "align": "left",
-            "text": "What Causes Alignment Problems?"
-          }
-        },
-        {
-          "id": "text-3",
-          "type": "text",
-          "props": {
-            "align": "left",
-            "width": "full",
-            "text": "Commercial trucks face conditions every day that can gradually knock components out of specification. Some of the most common causes include:"
-          }
-        },
-        {
-          "id": "text-3-causes",
-          "type": "list",
-          "props": {
-            "headingLevel": 3,
-            "columns": 2,
-            "items": [
-              {
-                "label": "Hitting potholes or curbs"
-              },
-              {
-                "label": "Rough construction zones"
-              },
-              {
-                "label": "Heavy or uneven loads"
-              },
-              {
-                "label": "Worn steering components"
-              },
-              {
-                "label": "Damaged suspension parts"
-              },
-              {
-                "label": "Normal wear over thousands of miles"
-              }
-            ]
-          }
-        },
-        {
-          "id": "text-3-b",
-          "type": "text",
-          "props": {
-            "align": "left",
-            "width": "full",
-            "text": "As suspension components wear, alignment naturally changes. That’s why routine inspections are such an important part of preventive maintenance."
-          }
-        },
-        {
-          "id": "spacer-5",
-          "type": "spacer",
-          "props": {
-            "size": 6
-          }
-        },
-        {
-          "id": "heading-5",
-          "type": "heading",
-          "props": {
-            "headingLevel": 2,
-            "align": "left",
-            "text": "Need Replacement Parts?"
-          }
-        },
-        {
-          "id": "text-4",
-          "type": "text",
-          "props": {
-            "align": "left",
-            "width": "full",
-            "text": "If your inspection reveals worn steering or suspension components, Sun State International’s Online Parts Store makes it easy to find quality semi truck suspension parts backed by trusted manufacturers. Replacing worn components with dependable parts helps ensure your alignment lasts longer and your truck stays road-ready."
-          }
-        },
-        {
-          "id": "spacer-6",
-          "type": "spacer",
-          "props": {
-            "size": 6
-          }
-        },
-        {
-          "id": "heading-6",
-          "type": "heading",
-          "props": {
-            "headingLevel": 2,
-            "align": "left",
-            "text": "Alignment and Suspension Go Hand in Hand"
-          }
-        },
-        {
-          "id": "text-5",
-          "type": "text",
-          "props": {
-            "align": "left",
-            "width": "full",
-            "text": "A wheel alignment isn’t always the complete solution. If technicians discover worn bushings, shocks, kingpins, tie rods, or other suspension components, they’ll recommend completing the necessary truck suspension repair first. Trying to align a truck with worn suspension parts is like balancing a table with broken legs. The alignment simply won’t hold.\n\nThat’s why experienced commercial truck technicians inspect the entire steering and suspension system before performing an alignment."
-          }
-        },
-        {
-          "id": "spacer-10",
-          "type": "spacer",
-          "props": {
-            "size": 6
-          }
-        },
-        {
-          "id": "image-2",
-          "type": "image",
-          "props": {
-            "width": "full",
-            "image": {
-              "src": "https://vendure.buzznerdrv.com/assets/source/28/1.2.jpg",
-              "alt": "1.2.jpg",
-              "width": 1000,
-              "height": 1000
-            }
-          }
-        },
-        {
-          "id": "spacer-7",
-          "type": "spacer",
-          "props": {
-            "size": 6
-          }
-        },
-        {
-          "id": "heading-7",
-          "type": "heading",
-          "props": {
-            "headingLevel": 2,
-            "align": "left",
-            "text": "Don’t Rely on Semi Truck Alignment Tools Alone"
-          }
-        },
-        {
-          "id": "text-6",
-          "type": "text",
-          "props": {
-            "align": "left",
-            "width": "full",
-            "text": "Some fleet operators invest in basic semi truck alignment tools for quick inspections, but commercial truck alignment requires much more than measuring angles. Professional alignment equipment uses computerized technology to measure axle geometry and manufacturer specifications with incredible precision.\n\nJust as importantly, experienced technicians know how to identify underlying suspension issues that handheld tools simply cannot detect. At Sun State International, our technicians combine advanced diagnostic equipment with years of experience servicing heavy-duty trucks, helping you avoid repeat repairs and unnecessary downtime."
-          }
-        },
-        {
-          "id": "spacer-8",
-          "type": "spacer",
-          "props": {
-            "size": 6
-          }
-        },
-        {
-          "id": "heading-8",
-          "type": "heading",
-          "props": {
-            "headingLevel": 2,
-            "align": "left",
-            "text": "How Often Should You Schedule Alignment?"
-          }
-        },
-        {
-          "id": "text-7",
-          "type": "text",
-          "props": {
-            "align": "left",
-            "width": "full",
-            "text": "There’s no universal mileage interval because every operation is different. You should schedule an inspection if:"
-          }
-        },
-        {
-          "id": "text-7-when",
-          "type": "list",
-          "props": {
-            "headingLevel": 3,
-            "columns": 2,
-            "items": [
-              {
-                "label": "You’ve replaced steering or suspension components"
-              },
-              {
-                "label": "Your truck was involved in a collision"
-              },
-              {
-                "label": "You notice uneven tire wear"
-              },
-              {
-                "label": "Steering feels different than normal"
-              },
-              {
-                "label": "The truck regularly hauls heavy loads"
-              },
-              {
-                "label": "It’s part of your preventive maintenance schedule"
-              }
-            ]
-          }
-        },
-        {
-          "id": "text-7-b",
-          "type": "text",
-          "props": {
-            "align": "left",
-            "width": "full",
-            "text": "Many fleets include alignment checks during scheduled service appointments because preventing problems is almost always less expensive than repairing them later. Whether you operate one truck or an entire fleet, proactive maintenance helps reduce costly interruptions."
-          }
-        },
-        {
-          "id": "spacer-9",
-          "type": "spacer",
-          "props": {
-            "size": 6
-          }
-        },
-        {
-          "id": "heading-9",
-          "type": "heading",
-          "props": {
-            "headingLevel": 2,
-            "align": "left",
-            "text": "Trust Sun State International for Heavy-Duty Truck Service"
-          }
-        },
-        {
-          "id": "text-8",
-          "type": "text",
-          "props": {
-            "align": "left",
-            "width": "full",
-            "text": "When searching for heavy-duty truck repair in Florida, experience matters. At Sun State International, we provide comprehensive service designed around one goal: maximizing your uptime. Our service departments understand commercial vehicles because that’s all we do. From alignments and suspension repairs to diagnostics, preventive maintenance, and OEM parts, everything is focused on helping your operation stay productive."
-          }
-        },
-        {
-          "id": "spacer-11",
-          "type": "spacer",
-          "props": {
-            "size": 6
-          }
-        },
-        {
-          "id": "image-3",
-          "type": "image",
-          "props": {
-            "width": "full",
-            "image": {
-              "src": "https://vendure.buzznerdrv.com/assets/source/33/1.3.jpg",
-              "alt": "1.3.jpg",
-              "height": 1000,
-              "width": 1000
-            }
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Service",
+          "title": "When to Schedule Semi Truck Alignment Near Me",
+          "topic": "Service",
+          "date": "July 30, 2026",
+          "readTime": "5 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/when-to-schedule-semi-truck-alignment-near-me/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Sun State International technician performing a wheel service on a semi truck"
           }
         }
-      ]
+      },
+      "children": []
     },
     {
-      "id": "post-cta",
+      "id": "article",
       "type": "section",
       "props": {
         "width": "boxed",
-        "background": "paper",
+        "background": "card",
         "paddingY": 8
       },
       "children": [
         {
-          "id": "post-cta-row",
+          "id": "art-row",
           "type": "row",
           "props": {
-            "gap": 5
+            "gap": 8
           },
           "children": [
             {
-              "id": "post-cta-col",
+              "id": "art-side",
               "type": "column",
               "props": {
-                "span": 12
+                "span": 3
               },
               "children": [
                 {
-                  "id": "post-cta-h",
-                  "type": "heading",
+                  "id": "art-toc",
+                  "type": "post-toc",
                   "props": {
-                    "text": "Got the same symptom on a unit you run?",
-                    "headingLevel": 2
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "Why Alignment Matters",
+                        "href": "#why-alignment-matters"
+                      },
+                      {
+                        "label": "Signs You Need an Alignment",
+                        "href": "#signs"
+                      },
+                      {
+                        "label": "What Causes Problems",
+                        "href": "#causes"
+                      },
+                      {
+                        "label": "Replacement Parts",
+                        "href": "#replacement-parts"
+                      },
+                      {
+                        "label": "Alignment & Suspension",
+                        "href": "#suspension"
+                      },
+                      {
+                        "label": "Beyond Alignment Tools",
+                        "href": "#tools"
+                      },
+                      {
+                        "label": "How Often to Schedule",
+                        "href": "#how-often"
+                      },
+                      {
+                        "label": "Keep Moving Forward",
+                        "href": "#keep-moving"
+                      }
+                    ]
                   }
                 },
                 {
-                  "id": "post-cta-b",
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "NEED SERVICE?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Schedule an alignment check with our heavy-duty technicians.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "schedule-service",
+                                "label": "Service Appointment →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
                   "type": "text",
                   "props": {
-                    "text": "Call 800.741.7566 and we'll look at the specific truck or trailer instead of the general case.",
+                    "text": "If you’ve been searching for semi truck alignment near me, chances are you’ve noticed something isn’t quite right. Maybe your truck pulls to one side, your steering wheel feels off-center, or your tires are wearing unevenly. While these may seem like minor issues at first, they can quickly turn into expensive repairs, poor fuel economy, and unnecessary downtime.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "That’s why knowing when to get a semi truck alignment matters. Here’s the best time to get the necessary maintenance to keep your trucks safe, efficient, and on the road where they’re making money.",
+                    "align": "left",
                     "width": "full"
                   }
                 },
                 {
-                  "id": "post-cta-btn",
-                  "type": "buttons",
+                  "id": "h-why-alignment-matters",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Alignment Matters More Than You Think",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "why-alignment-matters"
+                  }
+                },
+                {
+                  "id": "p-why-alignment-matters-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Many drivers assume alignment only affects steering comfort. In reality, proper alignment impacts nearly every part of your truck’s performance.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-why-alignment-matters-2",
+                  "type": "text",
+                  "props": {
+                    "text": "A correctly aligned truck helps:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-why-alignment-matters-3",
+                  "type": "check-list",
                   "props": {
                     "items": [
                       {
-                        "ctaId": "request-appointment"
+                        "text": "Extend tire life"
                       },
                       {
-                        "ctaId": "call-main-secondary"
+                        "text": "Improve fuel efficiency"
+                      },
+                      {
+                        "text": "Reduce strain on suspension components"
+                      },
+                      {
+                        "text": "Improve handling and driver comfort"
+                      },
+                      {
+                        "text": "Increase overall safety"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-why-alignment-matters-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Even small improvements become significant across an entire fleet. Ignoring alignment issues often leads to premature tire replacement and more extensive truck suspension repair, costing far more than addressing the problem early.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-why-alignment-matters-5",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "schedule-service",
+                        "label": "Schedule Tire Alignment Services"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-signs",
+                  "type": "heading",
+                  "props": {
+                    "text": "Signs You Need a Semi Truck Alignment",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "signs"
+                  }
+                },
+                {
+                  "id": "p-signs-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Not every alignment issue is obvious. Watch for these common warning signs:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-signs-2",
+                  "type": "heading",
+                  "props": {
+                    "text": "Uneven Tire Wear",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-signs-3",
+                  "type": "text",
+                  "props": {
+                    "text": "One of the earliest indicators is uneven tread wear. If one edge of the tire wears faster than the other, your alignment could be off.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-signs-4",
+                  "type": "heading",
+                  "props": {
+                    "text": "Pulling While Driving",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-signs-5",
+                  "type": "text",
+                  "props": {
+                    "text": "Does your truck drift left or right even on straight roads? That’s a strong sign it’s time to search for semi truck alignment near me before the issue worsens.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-signs-6",
+                  "type": "heading",
+                  "props": {
+                    "text": "Crooked Steering Wheel",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-signs-7",
+                  "type": "text",
+                  "props": {
+                    "text": "If your steering wheel isn’t centered while driving straight, your alignment should be inspected.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-signs-8",
+                  "type": "heading",
+                  "props": {
+                    "text": "Vibration or Poor Handling",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-signs-9",
+                  "type": "text",
+                  "props": {
+                    "text": "Suspension problems and alignment issues often work together. Excessive vibration may indicate worn semi truck suspension parts that should be replaced during the alignment process.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-causes",
+                  "type": "heading",
+                  "props": {
+                    "text": "What Causes Alignment Problems?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "causes"
+                  }
+                },
+                {
+                  "id": "p-causes-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Commercial trucks face conditions every day that can gradually knock components out of specification. Some of the most common causes include:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-causes-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Hitting potholes or curbs"
+                      },
+                      {
+                        "text": "Rough construction zones"
+                      },
+                      {
+                        "text": "Heavy or uneven loads"
+                      },
+                      {
+                        "text": "Worn steering components"
+                      },
+                      {
+                        "text": "Damaged suspension parts"
+                      },
+                      {
+                        "text": "Normal wear over thousands of miles"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-causes-3",
+                  "type": "text",
+                  "props": {
+                    "text": "As suspension components wear, alignment naturally changes. That’s why routine inspections are such an important part of preventive maintenance.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-replacement-parts",
+                  "type": "heading",
+                  "props": {
+                    "text": "Need Replacement Parts?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "replacement-parts"
+                  }
+                },
+                {
+                  "id": "p-replacement-parts-1",
+                  "type": "text",
+                  "props": {
+                    "text": "If your inspection reveals worn steering or suspension components, Sun State International’s Online Parts Store makes it easy to find quality semi truck suspension parts backed by trusted manufacturers. Replacing worn components with dependable parts helps ensure your alignment lasts longer and your truck stays road-ready.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-replacement-parts-2-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "styles": {
+                    "base": {
+                      "marginTop": 34,
+                      "marginBottom": 34
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "co-replacement-parts-2",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-replacement-parts-2-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "order-parts-online",
+                                "label": "Find the Part You Need →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-suspension",
+                  "type": "heading",
+                  "props": {
+                    "text": "Alignment and Suspension Go Hand in Hand",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "suspension"
+                  }
+                },
+                {
+                  "id": "p-suspension-1",
+                  "type": "text",
+                  "props": {
+                    "text": "A wheel alignment isn’t always the complete solution. If technicians discover worn bushings, shocks, kingpins, tie rods, or other suspension components, they’ll recommend completing the necessary truck suspension repair first. Trying to align a truck with worn suspension parts is like balancing a table with broken legs. The alignment simply won’t hold.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-suspension-2",
+                  "type": "text",
+                  "props": {
+                    "text": "That’s why experienced commercial truck technicians inspect the entire steering and suspension system before performing an alignment.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/when-to-schedule-semi-truck-alignment-near-me/1.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Wrenches and sockets laid out beside a truck wheel during alignment work"
+                    }
+                  }
+                },
+                {
+                  "id": "h-tools",
+                  "type": "heading",
+                  "props": {
+                    "text": "Don’t Rely on Semi Truck Alignment Tools Alone",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "tools"
+                  }
+                },
+                {
+                  "id": "p-tools-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Some fleet operators invest in basic semi truck alignment tools for quick inspections, but commercial truck alignment requires much more than measuring angles. Professional alignment equipment uses computerized technology to measure axle geometry and manufacturer specifications with incredible precision.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-tools-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Just as importantly, experienced technicians know how to identify underlying suspension issues that handheld tools simply cannot detect. At Sun State International, our technicians combine advanced diagnostic equipment with years of experience servicing heavy-duty trucks, helping you avoid repeat repairs and unnecessary downtime.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-how-often",
+                  "type": "heading",
+                  "props": {
+                    "text": "How Often Should You Schedule Alignment?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "how-often"
+                  }
+                },
+                {
+                  "id": "p-how-often-1",
+                  "type": "text",
+                  "props": {
+                    "text": "There’s no universal mileage interval because every operation is different. You should schedule an inspection if:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-how-often-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "You’ve replaced steering or suspension components"
+                      },
+                      {
+                        "text": "Your truck was involved in a collision"
+                      },
+                      {
+                        "text": "You notice uneven tire wear"
+                      },
+                      {
+                        "text": "Steering feels different than normal"
+                      },
+                      {
+                        "text": "The truck regularly hauls heavy loads"
+                      },
+                      {
+                        "text": "It’s part of your preventive maintenance schedule"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-how-often-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Many fleets include alignment checks during scheduled service appointments because preventing problems is almost always less expensive than repairing them later. Whether you operate one truck or an entire fleet, proactive maintenance helps reduce costly interruptions.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-trust-sun-state",
+                  "type": "heading",
+                  "props": {
+                    "text": "Trust Sun State International for Heavy-Duty Truck Service",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "trust-sun-state"
+                  }
+                },
+                {
+                  "id": "p-trust-sun-state-1",
+                  "type": "text",
+                  "props": {
+                    "text": "When searching for heavy-duty truck repair in Florida, experience matters. At Sun State International, we provide comprehensive service designed around one goal: maximizing your uptime. Our service departments understand commercial vehicles because that’s all we do. From alignments and suspension repairs to diagnostics, preventive maintenance, and OEM parts, everything is focused on helping your operation stay productive.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-2",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/when-to-schedule-semi-truck-alignment-near-me/2.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Sun State International service department check-in counter with rates and specials board"
+                    }
+                  }
+                },
+                {
+                  "id": "h-keep-moving",
+                  "type": "heading",
+                  "props": {
+                    "text": "Keep Your Truck Moving Forward",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "keep-moving"
+                  }
+                },
+                {
+                  "id": "p-keep-moving-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Whether you need truck suspension repair, replacement semi truck suspension parts, or complete heavy-duty truck repair in Florida, we’re here to help keep your fleet moving. <a href=\"/service-appointment\">Schedule your service appointment with Sun State International today</a> and let our experienced technicians get your truck back on the road with confidence.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-keep-moving-2",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "schedule-service",
+                        "label": "Schedule Your Service Appointment"
+                      },
+                      {
+                        "ctaId": "service-department",
+                        "label": "Service Department",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-share",
+                  "type": "post-share",
+                  "props": {
+                    "label": "Share",
+                    "items": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhen-to-schedule-semi-truck-alignment-near-me",
+                        "newTab": true
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhen-to-schedule-semi-truck-alignment-near-me&text=When%20to%20Schedule%20Semi%20Truck%20Alignment%20Near%20Me",
+                        "newTab": true
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhen-to-schedule-semi-truck-alignment-near-me",
+                        "newTab": true
+                      },
+                      {
+                        "label": "Email",
+                        "url": "mailto:?subject=When%20to%20Schedule%20Semi%20Truck%20Alignment%20Near%20Me&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhen-to-schedule-semi-truck-alignment-near-me",
+                        "newTab": false
                       }
                     ]
                   }
@@ -541,6 +713,84 @@
           ]
         }
       ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Service",
+          "heading": "Get your truck back on the road with confidence.",
+          "body": "Call 800.741.7566 to talk with our team at any Sun State location in Florida.",
+          "primaryLabel": "Schedule service",
+          "primaryUrl": "/service-appointment",
+          "secondaryLabel": "Service department",
+          "secondaryUrl": "/service"
+        }
+      },
+      "children": []
     }
-  ]
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/when-to-schedule-semi-truck-alignment-near-me\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/when-to-schedule-semi-truck-alignment-near-me\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n[data-bz-node=\"art-body\"] > [data-bz-node=\"actions-why-alignment-matters-5\"] .bz-btns { margin: 8px 0 34px; }\n"
 }

@@ -1,0 +1,576 @@
+{
+  "slug": "preventive-fleet-trailer-maintenance-saves-thousands",
+  "title": "How Preventive Fleet Trailer Maintenance Saves Florida Businesses Thousands in Repairs",
+  "date": "2025-10-10",
+  "description": "Keep your fleet reliable and profitable. Learn how preventive trailer maintenance reduces costly repairs and downtime.",
+  "excerpt": "When you manage a fleet in Florida, you know one thing for certain: downtime costs money. Every hour a trailer is off the road means delayed deliveries, lost revenue, and frustrated customers. That's why…",
+  "status": "published",
+  "coverImage": "/img/blog/preventive-fleet-trailer-maintenance-saves-thousands/hero.jpg",
+  "topic": "Parts & Service",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Parts & Service",
+          "title": "How Preventive Fleet Trailer Maintenance Saves Florida Businesses Thousands in Repairs",
+          "topic": "Parts & Service",
+          "date": "October 10, 2025",
+          "readTime": "5 min read",
+          "author": "Sun State Trailers",
+          "image": {
+            "src": "/img/blog/preventive-fleet-trailer-maintenance-saves-thousands/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Sun State service technicians talking in a busy truck repair shop"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "Why It Matters",
+                        "href": "#why-matters"
+                      },
+                      {
+                        "label": "What a Program Should Include",
+                        "href": "#program"
+                      },
+                      {
+                        "label": "The Financial Case",
+                        "href": "#financial-case"
+                      },
+                      {
+                        "label": "How Often to Service",
+                        "href": "#service-schedule"
+                      },
+                      {
+                        "label": "Building a Reliable Partner",
+                        "href": "#partner"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "WANT THE FULL SHEET?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "View detailed specifications before you compare trailers.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-trailers",
+                                "label": "View Our Trailer Specifications →"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "When you manage a fleet in Florida, you know one thing for certain: downtime costs money. Every hour a trailer is off the road means delayed deliveries, lost revenue, and frustrated customers. That's why preventive trailer maintenance isn't an expense; it's an investment in your fleet's long-term performance.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At <a href=\"/locations/trailer-sales\">Sun State Trailers</a>, we've seen firsthand how a proactive maintenance plan keeps Florida businesses running smoothly and helps fleet owners avoid expensive surprises. Whether you're running two trailers or twenty, consistent upkeep is one of the smartest financial decisions you can make.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-why-matters",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Preventive Maintenance Matters",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "why-matters"
+                  }
+                },
+                {
+                  "id": "p-why-matters-1",
+                  "type": "text",
+                  "props": {
+                    "text": "A fleet trailer takes on more than its fair share of stress. From Florida's humidity and salt-laden air to long-haul miles and heavy loads, every component, brakes, axles, wiring, seals, faces constant wear. Waiting until something breaks might seem convenient, but it's far more costly in the long run.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-why-matters-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Unplanned roadside repairs have been climbing year over year, and those costs don't include lost time, missed hauls, or the extra pressure it puts on your drivers and equipment. Preventive maintenance keeps your trailers safe, compliant, and efficient. By inspecting and servicing them on a regular schedule, you can identify small issues before they turn into major repairs.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-program",
+                  "type": "heading",
+                  "props": {
+                    "text": "What Should Be Included in a Preventive Trailer Maintenance Program",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "program"
+                  }
+                },
+                {
+                  "id": "p-program-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Every fleet is different, but most routine maintenance checks focus on these essential areas:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-program-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "num3",
+                    "items": [
+                      {
+                        "points": [],
+                        "num": "1",
+                        "title": "Brake Systems",
+                        "intro": "Brake pads, drums, and lines should be inspected and serviced routinely. Regular adjustments help prevent uneven wear and ensure your trailers stop safely under load."
+                      },
+                      {
+                        "points": [],
+                        "num": "2",
+                        "title": "Tires and Suspension",
+                        "intro": "Uneven tire wear and misaligned axles are early signs of trouble. Preventive maintenance includes tire rotation, proper inflation, and suspension checks to reduce rolling resistance and extend tire life."
+                      },
+                      {
+                        "points": [],
+                        "num": "3",
+                        "title": "Electrical and Lighting",
+                        "intro": "Corrosion and wiring issues are common in Florida's humid climate. Routine checks ensure your lighting systems stay compliant with DOT standards and reduce the risk of inspection fines."
+                      },
+                      {
+                        "points": [],
+                        "num": "4",
+                        "title": "Seals, Doors, and Flooring",
+                        "intro": "For dry van and refrigerated trailers, damaged seals and flooring lead to cargo loss. Regular inspections help prevent moisture damage, protect insulation, and maintain temperature control."
+                      },
+                      {
+                        "points": [],
+                        "num": "5",
+                        "title": "Lubrication and Alignment",
+                        "intro": "Keeping components lubricated prevents premature wear. Alignment services maintain fuel efficiency and prevent uneven stress on axles and tires."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-program-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Preventive maintenance doesn't just improve performance; it also safeguards your business reputation. Customers count on your reliability. Every trailer that stays on the road instead of in the shop helps reinforce that trust.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/preventive-fleet-trailer-maintenance-saves-thousands/1.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Technician performing repair work under a truck at the Sun State service shop"
+                    }
+                  }
+                },
+                {
+                  "id": "h-financial-case",
+                  "type": "heading",
+                  "props": {
+                    "text": "The Financial Case for Preventive Maintenance",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "financial-case"
+                  }
+                },
+                {
+                  "id": "p-financial-case-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Fleet owners often think maintenance cuts into profits, but the truth is the opposite. Preventive maintenance directly impacts three key areas of your bottom line:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-financial-case-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "type3",
+                    "items": [
+                      {
+                        "title": "Reduced Repair Costs",
+                        "points": [],
+                        "intro": "A proactive inspection schedule catches issues early, meaning you pay for minor fixes instead of full replacements later."
+                      },
+                      {
+                        "title": "Higher Resale Value",
+                        "points": [],
+                        "intro": "Well-maintained trailers hold their value longer. When it's time to sell or trade in, detailed maintenance records help justify a better price."
+                      },
+                      {
+                        "title": "Increased Uptime",
+                        "points": [],
+                        "intro": "Every hour on the road is potential revenue. Preventive care keeps your trailers road-ready, reducing the risk of downtime and scheduling disruptions."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-financial-case-3",
+                  "type": "text",
+                  "props": {
+                    "text": "A dependable maintenance plan also makes budgeting predictable. Instead of being blindsided by a sudden thousand-dollar axle replacement, you can plan smaller, scheduled expenses that protect your cash flow.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-service-schedule",
+                  "type": "heading",
+                  "props": {
+                    "text": "How Often Should You Service Fleet Trailers?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "service-schedule"
+                  }
+                },
+                {
+                  "id": "p-service-schedule-1",
+                  "type": "text",
+                  "props": {
+                    "text": "For most fleets, trailers should undergo a thorough inspection every 10,000 to 15,000 miles or every three months, whichever comes first. Florida's warm climate and frequent rainfall make corrosion and tire wear more aggressive than in other regions, so staying ahead of these issues is key.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-service-schedule-2",
+                  "type": "text",
+                  "props": {
+                    "text": "If your fleet includes specialized equipment, like reefer trailers or dump trailers, their maintenance schedules will differ slightly. At Sun State Trailers, our technicians can help you build a custom preventive plan designed for your specific trailer types and usage.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-service-schedule-3",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "browse-trailers",
+                        "label": "Explore Our Available Inventory",
+                        "style": "primary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-partner",
+                  "type": "heading",
+                  "props": {
+                    "text": "Build a Reliable Maintenance Partner in Sun State Trailers",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "partner"
+                  }
+                },
+                {
+                  "id": "p-partner-1",
+                  "type": "text",
+                  "props": {
+                    "text": "As a family-owned business with locations across Florida, Sun State Trailers understands what it takes to keep fleets moving. We've built our reputation on dependable service, honest communication, and high-quality equipment, because we know your business runs best when your trailers do too.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-partner-2",
+                  "type": "text",
+                  "props": {
+                    "text": "From parts to full-service trailer maintenance, our team helps you maximize uptime and minimize stress. You don't need to juggle multiple vendors or worry about inconsistent service. With Sun State, you get a single, trusted partner who values your time, your investment, and your success on the road.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-2",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/preventive-fleet-trailer-maintenance-saves-thousands/2.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Sun State technician inspecting the interior wall of a trailer with a clipboard"
+                    }
+                  }
+                },
+                {
+                  "id": "p-partner-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Ready to plan your next purchase or upgrade your fleet? Download detailed trailer specifications to see which models best fit your business needs and maintenance goals.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-partner-4",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "browse-trailers",
+                        "label": "Download Trailer Specifications",
+                        "style": "primary"
+                      },
+                      {
+                        "ctaId": "contact-us",
+                        "label": "Contact Us",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-share",
+                  "type": "post-share",
+                  "props": {
+                    "label": "Share",
+                    "items": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fpreventive-fleet-trailer-maintenance-saves-thousands",
+                        "newTab": true
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fpreventive-fleet-trailer-maintenance-saves-thousands&text=How%20Preventive%20Fleet%20Trailer%20Maintenance%20Saves%20Florida%20Businesses%20Thousands%20in%20Repairs",
+                        "newTab": true
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fpreventive-fleet-trailer-maintenance-saves-thousands",
+                        "newTab": true
+                      },
+                      {
+                        "label": "Email",
+                        "url": "mailto:?subject=How%20Preventive%20Fleet%20Trailer%20Maintenance%20Saves%20Florida%20Businesses%20Thousands%20in%20Repairs&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fpreventive-fleet-trailer-maintenance-saves-thousands",
+                        "newTab": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Parts & service",
+          "heading": "Keep your fleet road-ready.",
+          "body": "Call 800.741.7566 to talk with our parts and service team at any Sun State location in Florida.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Contact us",
+          "secondaryUrl": "/contact"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/preventive-fleet-trailer-maintenance-saves-thousands\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/preventive-fleet-trailer-maintenance-saves-thousands\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n/* The hero photograph is framed a little high, as the design frames it. */\n[data-bz-section=\"post-hero\"] [data-bz-node=\"ph-photo\"] img { object-position: center 40%; }\n\n/* Its type cards: 24px in, the title 10px over a 14px list. */\n[data-bz-node=\"art-body\"] .ss-cl--type,\n[data-bz-node=\"art-body\"] .ss-cl--type3 { gap: 24px; }\n[data-bz-node=\"art-body\"] .ss-cl--type { gap: 28px; }\n[data-bz-node=\"art-body\"] .ss-cl--type .ss-cl__card { padding: 24px; }\n[data-bz-node=\"art-body\"] .ss-cl--type .ss-cl__t { margin: 0 0 10px; }\n[data-bz-node=\"art-body\"] :is(.ss-cl--type, .ss-cl--type3) .ss-cl__list { margin: 0; padding-left: 18px; }\n[data-bz-node=\"art-body\"] :is(.ss-cl--type, .ss-cl--type3) .ss-cl__list li { font-size: 14px; }\n\n/* Its numbered cards sit as far apart as the design's grids: 28px two across, 24px three. */\n[data-bz-node=\"art-body\"] .ss-cl--num { gap: 28px; }\n[data-bz-node=\"art-body\"] .ss-cl--num3 { gap: 24px; }\n\n/* A type card's sentence is set as body text, as the article's paragraphs are. */\n[data-bz-node=\"art-body\"] :is(.ss-cl--type, .ss-cl--type3) .ss-cl__p { font-size: 17px; line-height: 1.8; margin: 0 0 18px; }\n\n[data-bz-node=\"art-body\"] > [data-bz-node=\"actions-service-schedule-3\"] .bz-btns { margin: 8px 0 34px; }\n"
+}

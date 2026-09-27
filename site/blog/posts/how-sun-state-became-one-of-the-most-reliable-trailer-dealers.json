@@ -1,0 +1,562 @@
+{
+  "slug": "how-sun-state-became-one-of-the-most-reliable-trailer-dealers",
+  "title": "How Sun State Became One of the Most Reliable Trailer Dealers in the Industry",
+  "date": "2025-03-28",
+  "description": "Your search for trailer dealers ends here. Learn more about Sun State Trailers and how we can get you the best equipment for your business.",
+  "excerpt": "When it comes to finding a trusted trailer dealer, reliability and expertise matter. At Sun State Trailers, we've built our reputation by providing top-tier commercial trailers, exceptional service, and an…",
+  "status": "published",
+  "coverImage": "/img/blog/how-sun-state-became-one-of-the-most-reliable-trailer-dealers/hero.jpg",
+  "topic": "Used Trailers",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Used Trailers",
+          "title": "How Sun State Became One of the Most Reliable Trailer Dealers in the Industry",
+          "topic": "Used Trailers",
+          "date": "March 28, 2025",
+          "readTime": "4 min read",
+          "author": "Sun State Trailers",
+          "image": {
+            "src": "/img/blog/how-sun-state-became-one-of-the-most-reliable-trailer-dealers/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Sun State team member talking with a customer between two dump trucks"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "Who We Are",
+                        "href": "#who-we-are"
+                      },
+                      {
+                        "label": "Integrity & Dependability",
+                        "href": "#integrity"
+                      },
+                      {
+                        "label": "Customer Service",
+                        "href": "#customer-service"
+                      },
+                      {
+                        "label": "What to Expect",
+                        "href": "#our-trailers"
+                      },
+                      {
+                        "label": "Leading Brands",
+                        "href": "#brands"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "WANT THE FULL SHEET?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "View detailed specifications before you compare trailers.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-trailers",
+                                "label": "View Our Trailer Specifications →"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "When it comes to finding a trusted trailer dealer, reliability and expertise matter. At <a href=\"/locations/trailer-sales\">Sun State Trailers</a>, we've built our reputation by providing top-tier commercial trailers, exceptional service, and an unwavering commitment to our customers. Whether you need a single trailer or an entire fleet, our team is here to help you find the right solution for your business. Here's what sets us apart from other trailer dealers and why so many businesses continue to trust Sun State Trailers.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "h-who-we-are",
+                  "type": "heading",
+                  "props": {
+                    "text": "Who We Are",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "who-we-are"
+                  }
+                },
+                {
+                  "id": "p-who-we-are-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Sun State Trailers has been serving the transportation industry for years, supplying businesses with high-quality trailers that keep their operations moving. With locations in Tampa, Davenport, and Sarasota, we make it easy for customers to find the commercial trailers and services they need. Our goal is to be more than just a supplier; we aim to be a long-term partner in your success. By offering industry-leading trailers and an extensive inventory, we ensure that every customer has access to the best equipment available.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-integrity",
+                  "type": "heading",
+                  "props": {
+                    "text": "Built on Integrity and Dependability",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "integrity"
+                  }
+                },
+                {
+                  "id": "p-integrity-1",
+                  "type": "text",
+                  "props": {
+                    "text": "What makes Sun State stand out among other trailer dealers? Our core values drive everything we do. We believe in transparency, reliability, and customer-first service. From the moment you walk into one of our locations, you'll experience a team that's committed to helping you make the best investment for your business.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-integrity-2",
+                  "type": "text",
+                  "props": {
+                    "text": "We understand that purchasing a trailer is a big decision. That's why we take the time to work with our customers, helping them choose the right trailer for their specific hauling needs. Our mission is to provide high-quality, long-lasting solutions that support the growth and success of your business.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-customer-service",
+                  "type": "heading",
+                  "props": {
+                    "text": "Unmatched Customer Service: Putting You First",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "customer-service"
+                  }
+                },
+                {
+                  "id": "p-customer-service-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State Trailers, we don't just sell commercial trailers, we build relationships. We know that reliability and efficiency are crucial in the trucking industry, and we take pride in offering a seamless buying experience from start to finish.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-customer-service-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Our knowledgeable team is always available to answer questions, provide expert advice, and guide you through the selection process. Whether you need help finding the perfect trailer or assistance with financing options, we're here to make the process easy and stress-free. And our commitment doesn't stop after the sale; our service centers ensure that your trailer stays in top condition for years to come. Even offering a mobile service that can come to you so you can get back on the road as soon as possible.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-our-trailers",
+                  "type": "heading",
+                  "props": {
+                    "text": "What You Can Expect from Our Trailers",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "our-trailers"
+                  }
+                },
+                {
+                  "id": "p-our-trailers-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Every trailer we offer is built for durability, efficiency, and performance. We understand that downtime is costly, which is why we only stock trailers that can withstand the demands of the road. Our inventory includes trailers designed for various industries, from construction and logistics to agriculture and waste management.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-our-trailers-2",
+                  "type": "heading",
+                  "props": {
+                    "text": "When you purchase from Sun State, you can expect:",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "checks-our-trailers-3",
+                  "type": "check-list",
+                  "props": {
+                    "mark": "dot",
+                    "items": [
+                      {
+                        "text": "Reliable and high-performing trailers that meet industry standards"
+                      },
+                      {
+                        "text": "Customizable options to suit your specific hauling needs"
+                      },
+                      {
+                        "text": "Heavy-duty construction that enhances longevity and minimizes repairs"
+                      },
+                      {
+                        "text": "A range of financing options to help you invest in your business without financial strain"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-brands",
+                  "type": "heading",
+                  "props": {
+                    "text": "The Industry's Leading Brands: Hyundai Translead and Globe Trailers",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "brands"
+                  }
+                },
+                {
+                  "id": "p-brands-1",
+                  "type": "text",
+                  "props": {
+                    "text": "To provide our customers with the best, we partner with two of the most respected names in the industry.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-brands-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "brand",
+                    "items": [
+                      {
+                        "title": "Hyundai Translead",
+                        "points": [],
+                        "intro": "Known for its innovation and high-quality manufacturing, Hyundai Translead produces dry vans, reefers, and flatbeds designed to maximize efficiency and performance."
+                      },
+                      {
+                        "title": "Globe Trailers",
+                        "points": [],
+                        "intro": "Specializing in lowboys and dump trailers, Globe Trailers is a go-to brand for industries that require rugged, high-capacity transport solutions."
+                      }
+                    ]
+                  },
+                  "styles": {
+                    "base": {
+                      "marginBottom": 34
+                    }
+                  }
+                },
+                {
+                  "id": "p-brands-3",
+                  "type": "text",
+                  "props": {
+                    "text": "By offering these top-tier brands, Sun State ensures that our customers get access to the best commercial trailers on the market.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-comprehensive-support-beyond-sales",
+                  "type": "heading",
+                  "props": {
+                    "text": "Comprehensive Support Beyond Sales",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-comprehensive-support-beyond-sales-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Our relationship with customers doesn't end after a purchase. We provide a full range of services to keep your commercial trailers in peak condition, including:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-comprehensive-support-beyond-sales-2",
+                  "type": "check-list",
+                  "props": {
+                    "mark": "dot",
+                    "items": [
+                      {
+                        "text": "Certified service centers for maintenance and repairs"
+                      },
+                      {
+                        "text": "Mobile service units to assist with roadside issues"
+                      },
+                      {
+                        "text": "A vast parts inventory to keep your fleet running smoothly"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-comprehensive-support-beyond-sales-3",
+                  "type": "text",
+                  "props": {
+                    "text": "We're here to support you throughout the lifespan of your trailer, so you can focus on running your business without worrying about unexpected downtime.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-visit-sun-state-trailers",
+                  "type": "heading",
+                  "props": {
+                    "text": "Visit Sun State Trailers Today",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-visit-sun-state-trailers-1",
+                  "type": "text",
+                  "props": {
+                    "text": "If you're looking for a reliable trailer dealer that puts your business first, Sun State Trailers is your trusted partner. With high-quality trailers, industry-leading brands, and a customer-first approach, we're dedicated to helping you find the perfect trailer for your needs.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-visit-sun-state-trailers-2",
+                  "type": "text",
+                  "props": {
+                    "text": "Contact us today or visit one of our locations in Tampa, Davenport, or Sarasota to explore our inventory and see why so many businesses rely on Sun State for their trailer solutions. Whether you're upgrading your fleet or purchasing your first trailer, we're ready to help you drive your business forward.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-visit-sun-state-trailers-3",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "contact-us",
+                        "label": "Contact Us"
+                      },
+                      {
+                        "ctaId": "browse-trailers",
+                        "label": "Browse Trailer Inventory",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-share",
+                  "type": "post-share",
+                  "props": {
+                    "label": "Share",
+                    "items": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fhow-sun-state-became-one-of-the-most-reliable-trailer-dealers",
+                        "newTab": true
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fhow-sun-state-became-one-of-the-most-reliable-trailer-dealers&text=How%20Sun%20State%20Became%20One%20of%20the%20Most%20Reliable%20Trailer%20Dealers%20in%20the%20Industry",
+                        "newTab": true
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fhow-sun-state-became-one-of-the-most-reliable-trailer-dealers",
+                        "newTab": true
+                      },
+                      {
+                        "label": "Email",
+                        "url": "mailto:?subject=How%20Sun%20State%20Became%20One%20of%20the%20Most%20Reliable%20Trailer%20Dealers%20in%20the%20Industry&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fhow-sun-state-became-one-of-the-most-reliable-trailer-dealers",
+                        "newTab": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Used trailers",
+          "heading": "Your search for a trailer dealer ends here.",
+          "body": "Call 800.741.7566 to talk with our team at any Sun State location in Florida.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Browse trailer inventory",
+          "secondaryUrl": "/store/inventory?type=trailer"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/how-sun-state-became-one-of-the-most-reliable-trailer-dealers\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/how-sun-state-became-one-of-the-most-reliable-trailer-dealers\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n/* The hero photograph is framed a little high, as the design frames it. */\n[data-bz-section=\"post-hero\"] [data-bz-node=\"ph-photo\"] img { object-position: center 40%; }\n"
+}

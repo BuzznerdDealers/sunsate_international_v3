@@ -1,0 +1,942 @@
+{
+  "slug": "trailer-brake-lights-not-working",
+  "title": "Trailer Brake Lights Not Working? Here's Why You Shouldn't Wait",
+  "date": "2026-05-26",
+  "description": "Trailer brake lights not working? Learn common causes, safety risks, and when to schedule trailer repair today.",
+  "excerpt": "When trailer brake lights stop working, it's more than just an inconvenience. Faulty trailer lighting creates serious safety risks on the road, increases the chance of accidents, and can lead to DOT violations…",
+  "status": "published",
+  "coverImage": "/img/blog/trailer-brake-lights-not-working/hero.jpg",
+  "topic": "Service",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Service",
+          "title": "Trailer Brake Lights Not Working? Here's Why You Shouldn't Wait",
+          "topic": "Service",
+          "date": "May 26, 2026",
+          "readTime": "5 min read",
+          "author": "Sun State Trailers",
+          "image": {
+            "src": "/img/blog/trailer-brake-lights-not-working/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Sun State technician inspecting an air line and electrical cord in the service bay"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "Common Causes",
+                        "href": "#common-reasons"
+                      },
+                      {
+                        "label": "Warning Signs",
+                        "href": "#warning-signs"
+                      },
+                      {
+                        "label": "Why It Matters",
+                        "href": "#never-ignore"
+                      },
+                      {
+                        "label": "Keep Your Trailer Road-Ready",
+                        "href": "#road-ready"
+                      },
+                      {
+                        "label": "Preventive Maintenance",
+                        "href": "#preventive"
+                      },
+                      {
+                        "label": "When to Call a Pro",
+                        "href": "#schedule-pro"
+                      },
+                      {
+                        "label": "Schedule Service",
+                        "href": "#schedule"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "LIGHTS OUT?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Our technicians diagnose trailer electrical issues fast and get you back on the road.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "schedule-service",
+                                "label": "Restore Your Brake Lights →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "When trailer brake lights stop working, it's more than just an inconvenience. Faulty trailer lighting creates serious safety risks on the road, increases the chance of accidents, and can lead to DOT violations that cost time and money. For owner-operators and fleet managers, electrical issues can quickly turn into expensive downtime if they are ignored for too long.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "p-intro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At <a href=\"/locations/trailer-sales\">Sun State Trailers</a>, we understand that your trailer needs to stay road-ready every day. Whether you're hauling locally across Florida or making long-distance runs, dependable lighting systems are critical for safety, compliance, and protecting your business. If your trailer brake lights are not working, here's what may be causing the issue and why fast trailer repair matters.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-common-reasons",
+                  "type": "heading",
+                  "props": {
+                    "text": "Common Reasons Trailer Brake Lights Stop Working",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "common-reasons"
+                  }
+                },
+                {
+                  "id": "p-common-reasons-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Brake light problems can come from several different areas within the trailer's electrical system. Some issues are simple, while others require professional diagnostics and repair.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-common-reasons-2",
+                  "type": "heading",
+                  "props": {
+                    "text": "Faulty Semi Trailer Electrical Connector",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-common-reasons-3",
+                  "type": "text",
+                  "props": {
+                    "text": "One of the most common causes of trailer brake lights not working is a damaged or loose semi-trailer electrical connector. The connector links the trailer's electrical system to the truck, allowing power to flow to the brake lights, turn signals, and running lights.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-common-reasons-4",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Over time, connectors can experience:</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-common-reasons-5",
+                  "type": "row",
+                  "props": {
+                    "gap": 4
+                  },
+                  "styles": {
+                    "base": {
+                      "marginBottom": 20
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "cards-common-reasons-5-1",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 22,
+                          "paddingRight": 22,
+                          "paddingBottom": 22,
+                          "paddingLeft": 22
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "cards-common-reasons-5-1-list",
+                          "type": "prose-list",
+                          "props": {
+                            "ordered": false,
+                            "items": [
+                              {
+                                "text": "Corrosion"
+                              },
+                              {
+                                "text": "Bent pins"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "cards-common-reasons-5-2",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 22,
+                          "paddingRight": 22,
+                          "paddingBottom": 22,
+                          "paddingLeft": 22
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "cards-common-reasons-5-2-list",
+                          "type": "prose-list",
+                          "props": {
+                            "ordered": false,
+                            "items": [
+                              {
+                                "text": "Moisture damage"
+                              },
+                              {
+                                "text": "Loose wiring"
+                              },
+                              {
+                                "text": "Dirt and debris buildup"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "p-common-reasons-6",
+                  "type": "text",
+                  "props": {
+                    "text": "If the connection becomes unstable, the trailer may lose brake light function completely or intermittently.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-common-reasons-7",
+                  "type": "heading",
+                  "props": {
+                    "text": "Damaged Wiring",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-common-reasons-8",
+                  "type": "text",
+                  "props": {
+                    "text": "Electrical wiring on trailers takes a beating from road conditions, weather exposure, and constant vibration. Wires can become frayed, disconnected, or pinched over time.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-common-reasons-9",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Damaged wiring may lead to:</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-common-reasons-10",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "No trailer brake lights"
+                      },
+                      {
+                        "text": "Flickering lights"
+                      },
+                      {
+                        "text": "Intermittent brake light failure"
+                      },
+                      {
+                        "text": "Blown fuses"
+                      },
+                      {
+                        "text": "Short circuits"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-common-reasons-11",
+                  "type": "text",
+                  "props": {
+                    "text": "Electrical issues are not always visible during a quick walkaround inspection, which is why routine trailer repair and inspections are important.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-common-reasons-12",
+                  "type": "heading",
+                  "props": {
+                    "text": "Burned-Out Bulbs or LED Failures",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-common-reasons-13",
+                  "type": "text",
+                  "props": {
+                    "text": "Sometimes the issue is as simple as a failed light bulb or damaged LED assembly. While newer LED systems tend to last longer, they can still fail due to moisture intrusion or electrical overload. Checking light assemblies regularly should be part of every trailer maintenance routine.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-common-reasons-14",
+                  "type": "heading",
+                  "props": {
+                    "text": "Grounding Problems",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-common-reasons-15",
+                  "type": "text",
+                  "props": {
+                    "text": "Poor grounding is another major cause of semi trailer brake lights not working. If the electrical ground connection is weak or corroded, power may not flow properly through the lighting system. Grounding issues often create inconsistent lighting behavior that can be difficult to diagnose without professional electrical testing.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/trailer-brake-lights-not-working/1.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Technician sitting on a trailer tailgate logging inspection notes on a clipboard"
+                    }
+                  }
+                },
+                {
+                  "id": "h-warning-signs",
+                  "type": "heading",
+                  "props": {
+                    "text": "Warning Signs of Trailer Electrical Problems",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "warning-signs"
+                  }
+                },
+                {
+                  "id": "p-warning-signs-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Sometimes electrical issues appear before the brake lights fail completely. Catching these signs early can help prevent breakdowns and safety issues.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-warning-signs-2",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Watch for:</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-warning-signs-3",
+                  "type": "check-list",
+                  "props": {
+                    "mark": "bullet",
+                    "items": [
+                      {
+                        "text": "Flickering trailer lights"
+                      },
+                      {
+                        "text": "Dim brake lights"
+                      },
+                      {
+                        "text": "Lights working intermittently"
+                      },
+                      {
+                        "text": "Corrosion near connectors"
+                      },
+                      {
+                        "text": "Blown fuses"
+                      },
+                      {
+                        "text": "Loose wiring harnesses"
+                      },
+                      {
+                        "text": "Moisture inside light assemblies"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-warning-signs-4",
+                  "type": "text",
+                  "props": {
+                    "text": "If you notice any of these symptoms, it's a good idea to <a href=\"/service-appointment\">schedule an inspection</a> before the problem worsens.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-warning-signs-5-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "styles": {
+                    "base": {
+                      "marginTop": 34,
+                      "marginBottom": 34
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "co-warning-signs-5",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-warning-signs-5-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "schedule-service",
+                                "label": "Restore Your Brake Lights →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "h-never-ignore",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Brake Light Problems Should Never Be Ignored",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "never-ignore"
+                  }
+                },
+                {
+                  "id": "p-never-ignore-1",
+                  "type": "text",
+                  "props": {
+                    "text": "It may seem tempting to delay repairs when you're busy trying to keep loads moving, but brake light problems can create much bigger issues if left unresolved.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-never-ignore-2",
+                  "type": "heading",
+                  "props": {
+                    "text": "Safety Risks on the Road",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-never-ignore-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Brake lights alert drivers behind you when slowing or stopping. Without properly functioning brake lights, rear-end collisions become far more likely, especially during poor weather or nighttime driving. Proper lighting plays a major role in reducing those risks.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-never-ignore-4",
+                  "type": "heading",
+                  "props": {
+                    "text": "DOT Violations and Fines",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-never-ignore-5",
+                  "type": "text",
+                  "props": {
+                    "text": "Commercial trailers are required to meet federal lighting standards. During inspections, faulty brake lights can result in violations, citations, or even out-of-service orders. Unexpected downtime affects delivery schedules, customer relationships, and revenue.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-never-ignore-6",
+                  "type": "heading",
+                  "props": {
+                    "text": "Electrical Damage Can Spread",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-never-ignore-7",
+                  "type": "text",
+                  "props": {
+                    "text": "Small electrical problems often grow into larger system failures over time. A damaged semi-trailer electrical connector or exposed wire can eventually affect additional lighting systems, ABS functions, or trailer components. Addressing problems early helps prevent more expensive trailer repair later.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fig-2",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/trailer-brake-lights-not-working/2.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Sun State Translead trailer and service truck parked at the yard"
+                    }
+                  }
+                },
+                {
+                  "id": "h-road-ready",
+                  "type": "heading",
+                  "props": {
+                    "text": "Keep Your Trailer Road-Ready",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "road-ready"
+                  }
+                },
+                {
+                  "id": "p-road-ready-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Electrical problems rarely fix themselves. At <a href=\"/locations/trailer-sales\">Sun State Trailers</a>, our parts and service team helps customers diagnose trailer lighting issues quickly so they can get back on the road with confidence.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-preventive",
+                  "type": "heading",
+                  "props": {
+                    "text": "Preventive Maintenance Helps Reduce Electrical Problems",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "preventive"
+                  }
+                },
+                {
+                  "id": "p-preventive-1",
+                  "type": "text",
+                  "props": {
+                    "text": "One of the best ways to avoid lighting failures is by following a regular trailer maintenance schedule. Electrical inspections should always be part of a complete preventive maintenance program.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-preventive-2",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Routine inspections should include:</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-preventive-3",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Checking the semi-trailer electrical connector"
+                      },
+                      {
+                        "text": "Inspecting wiring harnesses"
+                      },
+                      {
+                        "text": "Testing brake lights and signals"
+                      },
+                      {
+                        "text": "Cleaning electrical contacts"
+                      },
+                      {
+                        "text": "Checking ground connections"
+                      },
+                      {
+                        "text": "Inspecting light housings for moisture"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-preventive-4",
+                  "type": "text",
+                  "props": {
+                    "text": "Consistent maintenance helps reduce unexpected failures and keeps your trailer compliant with DOT standards.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-schedule-pro",
+                  "type": "heading",
+                  "props": {
+                    "text": "When to Schedule Professional Trailer Repair",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "schedule-pro"
+                  }
+                },
+                {
+                  "id": "p-schedule-pro-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Some lighting issues are easy to spot, but many electrical problems require professional diagnostics. Modern trailer electrical systems can become complicated, especially when wiring damage or hidden shorts are involved.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-schedule-pro-2",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>You should <a href=\"/contact\">schedule trailer repair</a> if:</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-schedule-pro-3",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Brake lights stop working repeatedly"
+                      },
+                      {
+                        "text": "Multiple lighting systems fail"
+                      },
+                      {
+                        "text": "Wiring appears damaged"
+                      },
+                      {
+                        "text": "Electrical connectors show corrosion"
+                      },
+                      {
+                        "text": "Fuses continue blowing"
+                      },
+                      {
+                        "text": "Trailer lights work inconsistently"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "h-schedule",
+                  "type": "heading",
+                  "props": {
+                    "text": "Dependable Service From People Who Understand the Industry",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "schedule"
+                  }
+                },
+                {
+                  "id": "p-schedule-1",
+                  "type": "text",
+                  "props": {
+                    "text": "If your trailer brake lights are not working, don't wait for a roadside inspection or safety issue to force repairs. You need service teams that respect your time, communicate clearly, and provide solutions that actually solve the problem. Whether you need electrical diagnostics, connector replacement, or full trailer repair, <a href=\"/locations/trailer-sales\">Sun State Trailers</a> is ready to help.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-schedule-2",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "schedule-service",
+                        "label": "Schedule Service With Sun State Trailers"
+                      },
+                      {
+                        "ctaId": "contact-us",
+                        "label": "Contact Us",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-share",
+                  "type": "post-share",
+                  "props": {
+                    "label": "Share",
+                    "items": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Ftrailer-brake-lights-not-working",
+                        "newTab": true
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Ftrailer-brake-lights-not-working&text=Trailer%20Brake%20Lights%20Not%20Working%3F%20Here%27s%20Why%20You%20Shouldn%27t%20Wait",
+                        "newTab": true
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Ftrailer-brake-lights-not-working",
+                        "newTab": true
+                      },
+                      {
+                        "label": "Email",
+                        "url": "mailto:?subject=Trailer%20Brake%20Lights%20Not%20Working%3F%20Here%27s%20Why%20You%20Shouldn%27t%20Wait&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Ftrailer-brake-lights-not-working",
+                        "newTab": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Parts, service and support",
+          "heading": "Get your lights fixed right.",
+          "body": "Call 800.741.7566 to schedule electrical diagnostics at any Sun State location in Florida.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Schedule service",
+          "secondaryUrl": "/service-appointment"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/trailer-brake-lights-not-working\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/trailer-brake-lights-not-working\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n/* The hero photograph is framed a little high, as the design frames it. */\n[data-bz-section=\"post-hero\"] [data-bz-node=\"ph-photo\"] img { object-position: center 30%; }\n"
+}

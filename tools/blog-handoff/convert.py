@@ -86,6 +86,11 @@ REPEATS = {"batch-3": {"are-aftermarket-semi-truck-parts-as-reliable-as-oem.html
                        "preventive-maintenance-saves-you-more-than-it-costs.html",
                        "preventive-maintenance-schedule-for-semi-trucks.html", "reliable-parts-for-semi-trucks.html",
                        "reliable-semi-truck-service-centers-in-florida.html"},
+           # Batch 8 of the standalone trailer handoffs repeats the service-center post word for word.
+           "handoff-trailer-posts-batch-8": {"international-truck-service-center.html"},
+           # Batch 9: the oil-change and air-brake posts repeat, word for word, posts built from Parts 1-6.
+           "handoff-trailer-posts-batch-9": {"commercial-truck-oil-change-mistakes-that-cost-you.html",
+                                             "common-problems-with-air-brake-parts-for-semi-trucks.html"},
            "batch-8": {"reliable-truck-and-trailer-parts-in-tampa.html", "routine-dot-inspection-keeps-your-fleet-on-the-road.html",
                        "searching-for-an-international-truck-dealer.html", "semi-truck-brake-maintenance.html",
                        "semi-truck-engine-problems-every-driver-should-watch-for.html", "semi-truck-maintenance-checklist.html"}}
@@ -117,7 +122,7 @@ def dc_href(h, label):
 FLAT_PAGES = {
     "home.html": "/", "blog.html": "/blog", "service.html": "/service",
     "service-appointment.html": "/service-appointment", "contact-us.html": "/contact",
-    "financing.html": "/financing", "parts.html": "/parts",
+    "financing.html": "/financing", "parts.html": "/parts", "aftermarket.html": "/aftermarket",
     # No trailer-specifications page exists on this site; each listing carries its specs (§15).
     "trailer-specifications.html": "/store/inventory?type=trailer",
 }
@@ -140,6 +145,28 @@ def trailer_sales_href(label):
     return "/locations/trailer-sales"
 
 
+# Standalone handoffs name a sibling post by its file, which is not always its slug: a
+# sunstateintl.com article keeps its live permalink (page_slug). Files from earlier batches:
+POST_FILES = {
+    "semi-truck-alignment-near-me.html": "when-to-schedule-semi-truck-alignment-near-me",
+    "international-truck-service-center.html": "what-to-expect-from-an-international-truck-service-center",
+    "oem-vs-aftermarket-freight-truck-parts.html": "which-is-better-for-your-fleet-freight-truck-parts-oem-vs-aftermarket",
+}
+BATCH_SLUGS = set()  # the posts this run writes, so a link to one of them is not taken for a dangling one
+
+
+def post_slug(name):
+    if name in POST_FILES:
+        slug = POST_FILES[name]
+    elif PAGE_DIR and os.path.exists(os.path.join(PAGE_DIR, name)):
+        slug = page_slug(os.path.join(PAGE_DIR, name))
+    else:
+        slug = name[:-5]
+    if slug not in BATCH_SLUGS and not os.path.exists(f"{REPO}/site/blog/posts/{slug}.json"):
+        raise SystemExit(f"link to a post that does not exist: {name} -> {slug}")
+    return slug
+
+
 def href_of(a):
     return map_href(a["href"], plain(a))
 
@@ -154,7 +181,7 @@ def map_href(h, label=None):
     if h.endswith("blog.html"):
         return "/blog"
     if h.endswith(".html") and ("/posts/" in h or "/" not in h):
-        return "/blog/posts/" + h.rsplit("/", 1)[-1][:-5]
+        return "/blog/posts/" + post_slug(h.rsplit("/", 1)[-1])
     if re.match(r"https://([a-z]+\.)?(international|hyundaitranslead)\.com(/|$)", h):
         return h  # the manufacturer's own site: an outbound link, kept as written
     if h not in LINK_MAP:
@@ -382,10 +409,14 @@ def card_item(card):
     it = {"title": "", "points": []}
     if re.search(r"grid-column:\s*1\s*/\s*-1", card.get("style", "")):
         it["wide"] = True  # the odd card out, spanning the row
+    for r in ("ink", "accent"):
+        if f"card--rule-{r}" in card.get("class", []): it["rule"] = r  # a 3px rule across the top
     for y in [y for y in card.children if isinstance(y, Tag)]:
         cls = y.get("class", [])
-        if y.name == "h3": it["title"] = plain(y)
-        elif y.name == "div" and "eyebrow" in cls: it["label"] = plain(y)
+        if y.name == "h3":
+            it["title"] = plain(y)
+            if y.find("a"): it["url"] = href_of(y.find("a"))  # a title that is itself a link
+        elif y.name == "div" and ("eyebrow" in cls or "card__label" in cls): it["label"] = plain(y)
         elif y.name == "div" and "best-for" in cls: it["tag"] = plain(y)
         elif y.name == "p" and not it["points"] and "intro" not in it: it["intro"] = inline_html(y)
         elif y.name == "ul": it["points"] = [{"text": inline_html(li)} for li in y.find_all("li", recursive=False)]
@@ -522,6 +553,9 @@ def normalise_standalone(s):
         extra.append("/* Its numbered steps: a 22px heading over 16.5px copy, as the design sets them. */\n"
                      '[data-bz-node="art-body"] .bz-col [data-bz-node^="h-step-"] h2 { font-size: 22px; line-height: 1.28; margin: 0 0 10px; }\n'
                      '[data-bz-node="art-body"] .bz-col [data-bz-node^="p-step-"] p { font-size: 16.5px; line-height: 1.75; margin: 0; }')
+    for q in s.select(".post-body > p.pullquote"):
+        # .pullquote asks for 22px / 1.4, but `.article__body p` outranks it: the design draws 17px / 1.8.
+        q["style"] = "font-family: var(--font-display); font-size: 17px; line-height: 1.8; border-top: 1px solid var(--color-line); margin: 28px 0"
     for sh in s.select(".post-body > div.share"):
         sh["style"] = "border-top: 1px solid var(--color-line); display: flex"
     for sec in s.find("main").find_all("section", recursive=False):
@@ -688,15 +722,20 @@ def convert(path):
                 # and size are node styles; only the face has no style field.
                 cid = nid("pull")
                 fs = re.search(r"font-size:\s*([0-9.]+)px", st)
+                lh_m = re.search(r"line-height:\s*([0-9.]+)", st)
+                lh = float(lh_m.group(1)) if lh_m else 1.4
                 top, bottom = margins(st)
                 # The ruled box is a column, as a callout's is: the long-form layout zeroes a
                 # block's own padding, not a column's.
+                ruled = {"borderTopWidth": 1, "borderBottomWidth": 1, "borderLeftWidth": 0, "borderRightWidth": 0,
+                         "borderStyle": "solid", "borderColor": "line", "paddingTop": 24, "paddingBottom": 24}
+                edge = {"marginTop": top, "marginBottom": bottom}
+                # In a standalone handoff the margins go on the row, in the article's normal flow, so
+                # they collapse with the neighbours' as the design's do (as a callout's, §30).
                 out.append(row(f"{cid}-row", [col(cid, [text(f"{cid}-text", inline_html(el), styles={
-                    "fontSize": int(float(fs.group(1))) if fs else 22, "fontWeight": "800", "lineHeight": 1.4, "textColor": "ink"})],
-                    styles={"borderTopWidth": 1, "borderBottomWidth": 1, "borderLeftWidth": 0, "borderRightWidth": 0,
-                            "borderStyle": "solid", "borderColor": "line", "paddingTop": 24, "paddingBottom": 24,
-                            "marginTop": top, "marginBottom": bottom})]))
-                extra_css.append(f'[data-bz-node="art-body"] .bz-col [data-bz-node="{cid}-text"].bz-block--text p {{ font-family: var(--font-heading); font-size: inherit; line-height: 1.4; font-weight: inherit; color: inherit; margin: 0; max-width: none; }}')
+                    "fontSize": int(float(fs.group(1))) if fs else 22, "fontWeight": "800", "lineHeight": lh, "textColor": "ink"})],
+                    styles=ruled if STANDALONE else {**ruled, **edge})], styles=edge if STANDALONE else None))
+                extra_css.append(f'[data-bz-node="art-body"] .bz-col [data-bz-node="{cid}-text"].bz-block--text p {{ font-family: var(--font-heading); font-size: inherit; line-height: {lh:g}; font-weight: inherit; color: inherit; margin: 0; max-width: none; }}')
             elif pending_anchor:
                 out.append(text(nid("p"), inline_html(el), anchor=pending_anchor)); pending_anchor = None
             elif STANDALONE and style_margins(st) and not (
@@ -757,7 +796,8 @@ def convert(path):
             bullet = [plain(tr.find("td")) for tr in el.select("tr")] == ["•"] * len(rows)  # warning signs, not ticks
             numbered = [plain(tr.find("td")) for tr in el.select("tr")] == [f"{i+1:02d}" for i in range(len(rows))]  # 01, 02 …
             mark = {"mark": "cross"} if "redflag-table" in cls else {"mark": "bullet"} if bullet else {"mark": "num"} if numbered else {}
-            run_in = {"runIn": True} if STANDALONE and any("title" in r for r in rows) else {}  # "**Lead:** sentence" on one line
+            # "**Lead:** sentence" on one line — unless the design breaks the line after the title.
+            run_in = {"runIn": True} if STANDALONE and any("title" in r for r in rows) and not el.select("td br") else {}
             out.append(n(nid("checks"), "check-list", {**mark, **run_in, "items": rows}))
         elif el.name == "div" and el.find("img") and "position: relative" in st:
             fig += 1
@@ -825,13 +865,37 @@ def convert(path):
         elif el.name == "div" and el.find("div", class_="compare-card", recursive=False):
             out.append(n(nid("cards"), "card-lists", {"variant": "compare4", **({"across": across(cls)} if across(cls) not in ("", "4") else {}), "items": [
                 card_item(c) for c in el.find_all("div", class_="compare-card", recursive=False)]}, styles=style_margins(st)))
-        elif el.name == "div" and el.find("div", class_=["benefit-card", "how-card", "use-card", "product-tag"], recursive=False):
+        elif el.name == "div" and el.select(":scope > .type-card > .eyebrow") and not el.select(":scope > .type-card > h3"):
+            # A small muted label over a paragraph, two across: Card lists, Note.
+            out.append(n(nid("cards"), "card-lists", {"variant": "note", "items": [
+                {"title": plain(c.find(class_="eyebrow")), "intro": inline_html(c.find("p")), "points": [],
+                 **({"wide": True} if "grid-column" in c.get("style", "") else {})}
+                for c in el.find_all("div", class_="type-card", recursive=False)]}, styles=style_margins(st)))
+        elif el.name == "div" and el.find("div", class_="brand-card", recursive=False):
+            out.append(n(nid("cards"), "card-lists", {"variant": "brand", "items": [
+                card_item(c) for c in el.find_all("div", class_="brand-card", recursive=False)]}, styles=style_margins(st)))
+        elif el.name == "div" and el.find("a", class_="card--link", recursive=False):
+            # Whole cards that are one link each: the Link cards widget, set as the design sets them.
+            cid = nid("links")
+            cards = el.find_all("a", class_="card--link", recursive=False)
+            out.append(n(cid, "link-cards", {"across": "3" if across(cls) == "3" else "2", "items": [
+                {"label": plain(a.find(class_="card__label")), "title": plain(a.find(class_="card__link-title")),
+                 "url": href_of(a), "newTab": href_of(a).startswith("http")} for a in cards]}))
+            sel = f'[data-bz-node="art-body"] [data-bz-node="{cid}"]'
+            extra_css.append(f"/* Its link cards: 22px in, 24px apart, the label in ink and the title at the article's leading. */\n"
+                             f"{sel} .ss-lc {{ gap: 24px; margin-bottom: 20px; }}\n{sel} .ss-lc__card {{ padding: 22px; }}\n"
+                             f"{sel} .ss-lc__l {{ color: var(--ink); }}\n{sel} .ss-lc__t {{ line-height: 1.7; }}")
+        elif el.name == "div" and el.find("div", class_=["benefit-card", "how-card", "use-card", "product-tag", "inspect-card", "service-card", "fleet-card"], recursive=False):
             # Short titled cards two to five across, or a row of one-line names: Card lists.
             first = el.find("div", recursive=False).get("class", [])
             variant = "use" if "use-card" in first else "chip" if "product-tag" in first else "brief"
             cards = el.find_all("div", recursive=False)
             items = [{"title": plain(c), "points": []} for c in cards] if variant == "chip" else [card_item(c) for c in cards]
-            out.append(n(nid("cards"), "card-lists", {"variant": variant, "across": across(cls), "items": items}, styles=style_margins(st)))
+            out.append(n(nid("cards"), "card-lists", {"variant": variant, "across": across(cls) or ("3" if "fleet-grid" in cls else ""), "items": items}, styles=style_margins(st)))
+            if "fleet-grid" in cls:
+                extra_css.append(f'[data-bz-node="art-body"] [data-bz-node="{out[-1]["id"]}"] .ss-cl {{ gap: 18px; }}')
+            if "service-card" in first:  # the Brief card with its title a half-point larger, as the design sets it
+                extra_css.append(f'[data-bz-node="art-body"] [data-bz-node="{out[-1]["id"]}"] .ss-cl__t {{ font-size: 16px; }}')
         elif el.name == "div" and "stat-strip" in cls:
             # Figures in bordered, centred cells: the platform Stat band, drawn as the design draws it.
             cid = nid("stats")
@@ -847,7 +911,8 @@ def convert(path):
                              f"@media (max-width: 640px) {{ {sel} .bz-stats {{ grid-template-columns: minmax(0, 1fr); }} }}")
         elif el.name == "div" and "grid--2" in cls and el.select(":scope > .card > h3"):
             out.append(n(nid("cards"), "card-lists", {"variant": "stack2", "items": [
-                card_item(c) for c in el.find_all("div", class_="card", recursive=False)]}, styles=style_margins(st)))
+                card_item(c) for c in el.find_all("div", class_="card", recursive=False)]},
+                styles=style_margins(st) or ({"marginBottom": 20} if "grid--mb" in cls else None)))  # .grid--mb
         elif el.name == "div" and el.find("div", class_="step-item", recursive=False):
             # Numbered steps, each a rail target: the number in a round accent badge beside a real
             # heading (which keeps the anchor) and its paragraph, ruled between.
@@ -867,6 +932,15 @@ def convert(path):
                 ], styles={"display": "flex", "alignItems": "flex-start", "gap": 22, "paddingTop": 30, "paddingBottom": 30,
                            **({"borderTopWidth": 1, "borderLeftWidth": 0, "borderRightWidth": 0, "borderBottomWidth": 0,
                                "borderStyle": "solid", "borderColor": "line"} if k else {"marginTop": margins(st)[0]})}))
+        elif el.name == "div" and "check-list" in cls and el.find("div", class_="trust-item", recursive=False):
+            # Semibold statements behind a round ✓ badge in ink.
+            out.append(n(nid("checks"), "check-list", {"mark": "dot-ink", "items": [
+                {"text": plain(x.find("p"))} for x in el.find_all("div", class_="trust-item", recursive=False)]}))
+        elif el.name == "div" and el.find("div", class_="milestone-item", recursive=False):
+            # A year beside each sentence, ruled between: the Stage list, timeline look.
+            out.append(n(nid("stages"), "stage-list", {"look": "timeline", "items": [
+                {"label": plain(x.find("div", class_="milestone-year")), "text": plain(x.find("p"))}
+                for x in el.find_all("div", class_="milestone-item", recursive=False)]}, styles=style_margins(st)))
         elif el.name == "div" and "check-list" in cls and el.find("div", class_="check-item", recursive=False):
             # Checkmark rows in a round accent badge: the Checkmark list's round-badge mark.
             out.append(n(nid("checks"), "check-list", {"mark": "dot", "items": [
@@ -969,6 +1043,9 @@ def convert(path):
                     else: raise SystemExit(f"card child <{x.name}>")
                 items.append(it)
             out.append(n(nid("cards"), "card-lists", {"variant": variant, "items": items}))
+            if STANDALONE and all(re.search(r"margin-bottom:\s*0", (c.find("p", recursive=False) or {}).get("style", "")) for c in cards):
+                # its sentences carry the design's own margin-bottom: 0
+                extra_css.append(f'[data-bz-node="art-body"] [data-bz-node="{out[-1]["id"]}"] .ss-cl__p {{ margin-bottom: 0; }}')
             if variant == "type" and re.search(r"\.type-card ul li\s*\{\s*font-size:\s*14px", own_style):
                 extra_css.append('[data-bz-node="art-body"] .ss-cl--type .ss-cl__list { margin: 0; }\n'
                                  '[data-bz-node="art-body"] .ss-cl--type .ss-cl__list li { font-size: 14px; }')
@@ -1312,6 +1389,7 @@ if __name__ == "__main__":
         f for f in glob.glob(f"{PART}/*.html") if os.path.basename(f) != "index.html")
     if not files and "hero--post" in open(f"{PART}/index.html").read():
         files = [f"{PART}/index.html"]  # a standalone handoff: the one page is the post
+    BATCH_SLUGS.update(page_slug(f) for f in files)
     for f in files:
         h1 = BeautifulSoup(open(f).read(), "html.parser").select_one("section.post-hero h1, section.hero--post h1")
         POST_TITLES[plain(h1)] = page_slug(f)

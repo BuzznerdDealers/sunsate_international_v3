@@ -1262,3 +1262,183 @@ unemitted `BlogPosting` data are as in §24.
 | `/uncategorized/why-fleets-should-get-regular-trailer-service/` | `/blog/posts/why-fleets-should-get-regular-trailer-service` |
 | `/uncategorized/how-to-reset-the-service-trailer-brake-system-fast/` | `/blog/posts/how-to-reset-the-service-trailer-brake-system-fast` |
 | `/uncategorized/trailer-preventive-maintenance-checklist-for-fleets/` | `/blog/posts/trailer-preventive-maintenance-checklist-for-fleets` |
+
+## 31. `SS_International_18` — Sun State Trailers posts, batch 7 (eight new posts)
+
+`handoff-trailer-posts-batch-7`: eight post pages and a preview index, in the §24 format. All eight
+are new; each is published on its file's slug with its card on the Blog page (117 in all).
+
+| Post | Topic, date |
+|---|---|
+| `why-your-fleet-needs-to-follow-dot-trailer-regulations` | Service, Jul 3, 2026 |
+| `how-to-find-trailer-parts-in-tampa` | Parts & Service, Dec 12, 2025 |
+| `before-buying-dry-van-trailers-for-sale` | Trailer Sales, Dec 5, 2025 |
+| `preventive-fleet-trailer-maintenance-saves-thousands` | Parts & Service, Oct 10, 2025 |
+| `semi-trailer-financing-made-simple` | Financing, Sep 12, 2025 |
+| `trailer-maintenance-and-safety-inspections` | Service, Jun 13, 2025 |
+| `new-reefer-trailer-for-sale-5-things` | New Trailers, May 16, 2025 |
+| `why-hyundai-trailers-are-the-leading-brand` | Used Trailers, Apr 11, 2025 |
+
+*Why Your Fleet Needs to Follow DOT Trailer Regulations* is another of the related picks earlier
+handoffs named and the site did not have. Built by `tools/blog-handoff/convert.py`; body copy and
+rails match the handoff word for word (checked mechanically). Compared element by element at
+1280px, no block differs from the handoff by more than 8px and every post ends within 13px of it.
+Earlier batches re-convert byte for byte.
+
+New shapes:
+
+| Handoff | Here |
+|---|---|
+| `.inspect-card`s / `.service-card`s (title over a sentence), three across | **Card lists**, *Brief*, three across (the service cards' 16px titles as one rule on the node) |
+| `.trust-item` rows (✓ in an ink badge, semibold statement) | **Checkmark list**, new *✓ In an ink badge* mark |
+| `.milestone-item`s (1998 / 2012 / 2013 beside a sentence) | **Stage list**, new *Timeline* look |
+| a type card's sentence with its own `margin-bottom: 0` | one rule on that node |
+
+The milestone years render in ink in the handoff: they are coloured `var(--color-accent-text)`, a
+token its own `tokens.css` never defines, so they fall back to the inherited ink. The build draws
+what the handoff draws.
+
+**Links.** "Rent a Trailer" → trailer rentals; "Shop Our Selection of Trailers", "Commercial
+trailers" → trailer listings; "Reserve a Trailer", "Book Your Inspection", "Expand Your Fleet" →
+the contact page, as the handoff links them; "Parts Department" → the Parts page.
+
+**Dropped / as elsewhere.** Keep reading is the latest-posts list; chrome, colours and the
+unemitted `BlogPosting` data are as in §24; *Trailer Specifications* links go to the trailer
+listings (§15).
+
+**Old addresses.** If sunstatetrailers.com is pointed at this site, these go on **Storefront →
+301 Redirects** in Admin:
+
+| Old path on sunstatetrailers.com | New path |
+|---|---|
+| `/uncategorized/why-your-fleet-needs-to-follow-dot-trailer-regulations/` | `/blog/posts/why-your-fleet-needs-to-follow-dot-trailer-regulations` |
+| `/trailer-rentals/how-to-find-trailer-parts-in-tampa-at-sun-state-trailers/` | `/blog/posts/how-to-find-trailer-parts-in-tampa` |
+| `/trailer-rentals/what-you-should-know-before-buying-dry-van-trailers-for-sale/` | `/blog/posts/before-buying-dry-van-trailers-for-sale` |
+| `/used-trailers/how-preventive-fleet-trailer-maintenance-saves-florida-businesses-thousands-in-repairs/` | `/blog/posts/preventive-fleet-trailer-maintenance-saves-thousands` |
+| `/new-trailers/semi-trailer-financing-made-simple-scalable-options-for-florida-fleets/` | `/blog/posts/semi-trailer-financing-made-simple` |
+| `/used-trailers/prevent-accidents-before-they-occur-how-we-keep-your-trailer-safe-with-trailer-maintenance-and-safety-inspections/` | `/blog/posts/trailer-maintenance-and-safety-inspections` |
+| `/new-trailers/searching-for-a-new-reefer-trailer-for-sale-here-are-5-things-you-should-keep-in-mind/` | `/blog/posts/new-reefer-trailer-for-sale-5-things` |
+| `/used-trailers/why-hyundai-trailers-are-the-leading-brand-in-trailers/` | `/blog/posts/why-hyundai-trailers-are-the-leading-brand` |
+
+## 32. `SS_International_19` — batch 8: six new posts, one rebuilt draft, one repeat
+
+`handoff-trailer-posts-batch-8`: eight post pages and a preview index, in the §24 format — five
+Sun State Trailers articles and three sunstateintl.com truck articles, the latter on their live
+permalinks' slugs.
+
+| Handoff file | Post | Topic, date | |
+|---|---|---|---|
+| `how-sun-state-became-one-of-the-most-reliable-trailer-dealers` | same | Used Trailers, Mar 28, 2025 | new |
+| `how-much-is-a-new-trailer-new-vs-used` | same | Used Trailers, Mar 21, 2025 | new |
+| `unexpected-breakdown-trailer-repair` | same | Used Trailers, Mar 7, 2025 | new |
+| `why-renting-a-trailer-might-benefit-your-business` | same | Trailer Rentals, Dec 19, 2024 | new |
+| `benefits-of-a-short-term-trailer-rental` | same | Trailer Rentals, Nov 22, 2024 | new |
+| `oem-vs-aftermarket-freight-truck-parts` | `which-is-better-for-your-fleet-freight-truck-parts-oem-vs-aftermarket` | Parts & Service, May 16, 2025 | new |
+| `semi-truck-alignment-near-me` | `when-to-schedule-semi-truck-alignment-near-me` | Service, Jul 30, 2026 | **rebuilt, still a draft** |
+| `international-truck-service-center` | `what-to-expect-from-an-international-truck-service-center` | — | **repeat, kept** |
+
+- **The service-center post is a repeat.** Every paragraph, heading and rail entry is already in
+  the published post, which is on the shared post layout. It is kept, and the converter lists it as
+  a repeat, as in §17–§23.
+- **The alignment post was a draft stub** — the article's text in one plain section and a CTA,
+  with no hero, contents rail, cover image or its closing *Keep Your Truck Moving Forward* section
+  (it was one of the four posts the dealer set to draft on 24 September, §15). It is rebuilt on the
+  shared post layout from this handoff, with its photographs and cover, and **left as a draft**:
+  publishing it is the dealer's call, on **Posts**. Its old node ids (`intro`, `post-cta`) are
+  replaced; nothing on that draft had been edited since the migration.
+
+The Blog page has 123 cards (the draft has none until it is published). Body copy and rails match
+the handoff word for word (checked mechanically). Compared element by element at 1280px, each post
+ends within 14px of its handoff; the draft was built published for the comparison and set back.
+Earlier batches re-convert byte for byte.
+
+New shapes:
+
+| Handoff | Here |
+|---|---|
+| `.card`s with a `.card__label`, a linked `h3`, and a 3px ink or accent rule across the top | **Card lists**, *Stacked, two across*, with three new per-card fields: the label, **Title links to**, and **Rule across the top** |
+| `a.card--link`s three across (label, destination) | the existing **Link cards** widget, sized to the design in the post's CSS |
+| `.fleet-card`s (label, title, sentence), three across | **Card lists**, *Brief*, three across, 18px apart |
+| `.brand-card`s | **Card lists**, new *Brand* style |
+| `.type-card`s holding only a muted label and a paragraph (one spanning the row) | **Card lists**, new *Note* style |
+| `p.pullquote` | the ruled pull statement |
+
+Three things drawn as the handoff renders rather than as its CSS reads: the card and fleet labels
+are coloured `var(--color-accent-text)`, which `tokens.css` never defines, so they are ink; and
+`.pullquote` asks for 22px / 1.4, but `.article__body p` outranks it, so the statement is 17px /
+1.8. A pull statement's margins now go on its row, as a callout's do (§30) — this is the first
+standalone post to have one.
+
+**The Blog page's *Trailer articles* panel** linked out to sunstatetrailers.com for *Unexpected
+breakdown?* and *How to find trailer parts in Tampa*. Both are posts here now, so those two links
+point at `/blog/posts/unexpected-breakdown-trailer-repair` and
+`/blog/posts/how-to-find-trailer-parts-in-tampa`. Labels, ids and styles are unchanged.
+
+**Links.** `aftermarket.html` → `/aftermarket`; the OEM links → `/parts`; *Order Parts Online* and
+*Find the Part You Need* → the online parts store, as on the other truck posts.
+
+**Old addresses.** If the old domains are pointed at this site, these go on **Storefront → 301
+Redirects** in Admin (the three sunstateintl.com posts keep their paths under `/blog/posts/`):
+
+| Old address | New path |
+|---|---|
+| `https://sunstatetrailers.com/used-trailers/how-sun-state-became-one-of-the-most-reliable-trailer-dealers-in-the-industry/` | `/blog/posts/how-sun-state-became-one-of-the-most-reliable-trailer-dealers` |
+| `https://sunstatetrailers.com/used-trailers/how-much-is-a-new-trailer-lets-break-down-the-cost-of-shopping-new-v-used/` | `/blog/posts/how-much-is-a-new-trailer-new-vs-used` |
+| `https://sunstatetrailers.com/used-trailers/unexpected-breakdown-heres-how-you-can-quickly-get-a-trailer-repair-and-back-on-the-road/` | `/blog/posts/unexpected-breakdown-trailer-repair` |
+| `https://sunstatetrailers.com/uncategorized/why-your-business-might-benefit-from-renting-a-trailer-instead-of-buying/` | `/blog/posts/why-renting-a-trailer-might-benefit-your-business` |
+| `https://sunstatetrailers.com/uncategorized/benefits-of-a-short-term-trailer-rental-for-your-local-job/` | `/blog/posts/benefits-of-a-short-term-trailer-rental` |
+| `https://www.sunstateintl.com/which-is-better-for-your-fleet-freight-truck-parts-oem-vs-aftermarket/` | `/blog/posts/which-is-better-for-your-fleet-freight-truck-parts-oem-vs-aftermarket` |
+| `https://www.sunstateintl.com/when-to-schedule-semi-truck-alignment-near-me/` | `/blog/posts/when-to-schedule-semi-truck-alignment-near-me` (once published) |
+
+## 33. `SS_International_20` — batch 9: two new posts, four drafts rebuilt, two repeats
+
+`handoff-trailer-posts-batch-9`: eight post pages and a preview index, in the §24 format — two Sun
+State Trailers articles and six sunstateintl.com truck articles on their live permalinks' slugs.
+Six of the eight are already posts here, all set to draft by the dealer.
+
+| Post | Topic, date | |
+|---|---|---|
+| `the-basics-of-dot-trailer-inspection-requirements` | Service, Jun 5, 2026 | **new, published** |
+| `trailer-brake-lights-not-working` | Service, May 26, 2026 | **new, published** |
+| `how-electrical-diagnostic-tools-prevent-breakdowns` | Service, Jul 13, 2026 | rebuilt, **still a draft** |
+| `signs-you-need-to-replace-your-semi-truck-suspension-parts` | Commercial Trucks, Jun 29, 2026 | rebuilt, **still a draft** |
+| `why-sun-state-is-one-of-the-top-fleet-service-providers` | Service, Jul 5, 2026 | rebuilt, **still a draft** |
+| `why-visit-your-local-international-truck-service-department` | Service, Jul 15, 2026 | rebuilt, **still a draft** |
+| `commercial-truck-oil-change-mistakes-that-cost-you` | — | repeat, kept (draft) |
+| `common-problems-with-air-brake-parts-for-semi-trucks` | — | repeat, kept (draft) |
+
+- **Two repeats.** The oil-change and air-brake posts are already on the shared post layout here,
+  word for word (every paragraph, heading, rail entry and button), with the same 1280px
+  photographs. They are kept as they are, and the converter lists them as repeats.
+- **Four draft stubs rebuilt.** These held only a plain section and a CTA — three of them only the
+  excerpt (§6, §14) — with no hero, rail or cover. Each is rebuilt from this handoff on the shared
+  post layout, with its photographs, and **left as a draft**: publishing is the dealer's call, on
+  **Posts**. Topics are the Blog page's existing cards' (the suspension post's is *Commercial
+  Trucks*).
+
+The Blog page carries 125 cards (the two new posts; drafts get their card when published). Body
+copy and rails match the handoff word for word (checked mechanically). Every post, the drafts
+built published for the purpose and set back, was compared element by element at 1280px: no block
+differs by more than 8px and each post ends within 15px of its handoff. Earlier batches
+re-convert byte for byte.
+
+**Two converter fixes, found in this batch.**
+
+- **Links between posts.** The handoffs name a sibling post by its file, and a sunstateintl.com
+  article's file is not its slug. *Signs You Need to Replace Your Semi Truck Suspension Parts*
+  links to `semi-truck-alignment-near-me.html`, which would have become
+  `/blog/posts/semi-truck-alignment-near-me` — a page that does not exist. The converter now
+  resolves the file to the post's real slug (`when-to-schedule-semi-truck-alignment-near-me`) and
+  refuses to write a link to a post that does not exist. Both of those posts are drafts; the link
+  lands once both are published.
+- **Run-in titles.** A checkmark row's bold title runs into its sentence (§30) only when the design
+  sets them on one line; *How Electrical Diagnostic Tools…* breaks the line after each title, so
+  there the titles sit on their own line.
+
+**Old addresses.** If the old domains are pointed at this site, these go on **Storefront → 301
+Redirects** in Admin (the six sunstateintl.com posts keep their paths under `/blog/posts/`):
+
+| Old address | New path |
+|---|---|
+| `https://sunstatetrailers.com/uncategorized/the-basics-of-dot-trailer-inspection-requirements/` | `/blog/posts/the-basics-of-dot-trailer-inspection-requirements` |
+| `https://sunstatetrailers.com/uncategorized/trailer-brake-lights-not-working/` | `/blog/posts/trailer-brake-lights-not-working` |

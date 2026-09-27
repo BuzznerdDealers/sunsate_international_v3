@@ -1,0 +1,551 @@
+{
+  "slug": "why-hyundai-trailers-are-the-leading-brand",
+  "title": "Why Hyundai Trailers Are the Leading Brand in Trailers",
+  "date": "2025-04-11",
+  "description": "We offer only the most reliable brands for our customers. Learn why customers have been trusting Hyundai trailers for over 70 years.",
+  "excerpt": "At Sun State Trailers, we're committed to offering only the best and most reliable brands for our customers. That's why we're proud to sell Hyundai Translead trailers. Hyundai Translead has established itself…",
+  "status": "published",
+  "coverImage": "/img/blog/why-hyundai-trailers-are-the-leading-brand/hero.jpg",
+  "topic": "Used Trailers",
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Used Trailers",
+          "title": "Why Hyundai Trailers Are the Leading Brand in Trailers",
+          "topic": "Used Trailers",
+          "date": "April 11, 2025",
+          "readTime": "4 min read",
+          "author": "Sun State Trailers",
+          "image": {
+            "src": "/img/blog/why-hyundai-trailers-are-the-leading-brand/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Close-up of Hyundai Composite badge on a trailer panel"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "70+ Years Trusted",
+                        "href": "#trusted-brand"
+                      },
+                      {
+                        "label": "Innovation & Sustainability",
+                        "href": "#innovation"
+                      },
+                      {
+                        "label": "Customer-Centric Services",
+                        "href": "#services"
+                      },
+                      {
+                        "label": "Our Inventory",
+                        "href": "#inventory"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "WANT THE FULL SHEET?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "View detailed specifications before you compare trailers.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "browse-trailers",
+                                "label": "View Our Trailer Specifications →"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "At <a href=\"/locations/trailer-sales\">Sun State Trailers</a>, we're committed to offering only the best and most reliable brands for our customers. That's why we're proud to sell Hyundai Translead trailers. Hyundai Translead has established itself as a leading manufacturer in the trailer industry, offering a diverse range of products that cater to various transportation needs. Their commitment to quality, innovation, and customer satisfaction has made them a trusted name among businesses seeking reliable trailer solutions. Here's why you can rely on Hyundai trailers to help build your fleet.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "h-trusted-brand",
+                  "type": "heading",
+                  "props": {
+                    "text": "A Trusted Brand for Over 70 Years",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "trusted-brand"
+                  }
+                },
+                {
+                  "id": "p-trusted-brand-1",
+                  "type": "text",
+                  "props": {
+                    "text": "The Hyundai brand has been a trusted household name since 1947. In 1989, the company expanded its products to include trailers and today, Hyundai Translead has grown to become the number one trailer manufacturer in North America. They have celebrated over 35 years of bringing top-of-the-line equipment to help customers move their businesses forward. Their product lineup includes dry and refrigerated van trailers, flatbeds, chassis, and dollies, all designed with a focus on durability and performance.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-innovation",
+                  "type": "heading",
+                  "props": {
+                    "text": "Innovative Features and Sustainability",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "innovation"
+                  }
+                },
+                {
+                  "id": "p-innovation-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Hyundai Translead has been at the forefront of introducing groundbreaking features to enhance trailer longevity and environmental responsibility.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "stages-innovation-2",
+                  "type": "stage-list",
+                  "props": {
+                    "look": "timeline",
+                    "items": [
+                      {
+                        "label": "1998",
+                        "text": "First manufacturer to offer hot-dipped galvanization (HDG) for trailers, providing superior corrosion resistance."
+                      },
+                      {
+                        "label": "2012",
+                        "text": "Earned EPA SmartWay Certification, marking its investment in eco-friendly manufacturing practices."
+                      },
+                      {
+                        "label": "2013",
+                        "text": "Hot-dipped galvanization became a standard feature on all trailers, extending the service life of their products."
+                      }
+                    ]
+                  },
+                  "styles": {
+                    "base": {
+                      "marginBottom": 8
+                    }
+                  }
+                },
+                {
+                  "id": "p-innovation-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Hyundai Translead was also the first manufacturer to earn ISO 9001 Certification, and has kept it every year since. As the company continues to grow, its innovation does as well. It's no wonder that they have become the number one trailer manufacturer in the US.",
+                    "align": "left",
+                    "width": "full"
+                  },
+                  "styles": {
+                    "base": {
+                      "marginTop": 34
+                    }
+                  }
+                },
+                {
+                  "id": "h-services",
+                  "type": "heading",
+                  "props": {
+                    "text": "Customer-Centric Services",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "services"
+                  }
+                },
+                {
+                  "id": "p-services-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Hyundai Translead is a brand that understands customer service goes beyond the point of sale. Hyundai Translead offers a suite of services designed to enhance the ownership experience:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-services-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "brief",
+                    "across": "3",
+                    "items": [
+                      {
+                        "title": "HT360™",
+                        "points": [],
+                        "intro": "Helping you grow your business with access to knowledge, business tools, and comprehensive support."
+                      },
+                      {
+                        "title": "myHT™",
+                        "points": [],
+                        "intro": "An online portal that gives you access to the data you need to make better decisions for your equipment and your business."
+                      },
+                      {
+                        "title": "HT Aftermarket™",
+                        "points": [],
+                        "intro": "Provides genuine parts that ensure optimal performance and longevity, helping you save big over the lifecycle of your trailer."
+                      },
+                      {
+                        "title": "HT Trailer Finance™",
+                        "points": [],
+                        "intro": "Offers flexible financing solutions tailored to unique business cycles, making equipment acquisition more accessible."
+                      },
+                      {
+                        "title": "HT LinkSense™",
+                        "points": [],
+                        "intro": "An open-platform smart trailer solution with universal connectivity across sensor and telematics providers, for end-to-end fleet visibility."
+                      }
+                    ]
+                  },
+                  "styles": {
+                    "base": {
+                      "marginBottom": 8
+                    }
+                  }
+                },
+                {
+                  "id": "p-services-3",
+                  "type": "text",
+                  "props": {
+                    "text": "These tools provide you with a more seamless customer experience to help troubleshoot any issues when they arise. Hyundai Translead also offers a reliable warranty on all trailers, so you can have peace of mind that your purchase is protected. With Hyundai Translead's continuous development of new technologies and services, they continue to improve the customer care experience, so you only get the best care every time.",
+                    "align": "left",
+                    "width": "full"
+                  },
+                  "styles": {
+                    "base": {
+                      "marginTop": 34
+                    }
+                  }
+                },
+                {
+                  "id": "h-inventory",
+                  "type": "heading",
+                  "props": {
+                    "text": "Our Inventory at Sun State Trailers",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "inventory"
+                  }
+                },
+                {
+                  "id": "p-inventory-1",
+                  "type": "text",
+                  "props": {
+                    "text": "At Sun State Trailers, we are proud to offer a comprehensive selection of Hyundai Translead trailers, including:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cards-inventory-2",
+                  "type": "card-lists",
+                  "props": {
+                    "variant": "brief",
+                    "across": "3",
+                    "items": [
+                      {
+                        "title": "Dry Vans",
+                        "points": [],
+                        "intro": "Flexible, strong, and serviceable, these trailers can be custom-built to meet the specific needs of your operation."
+                      },
+                      {
+                        "title": "Refrigerated Vans",
+                        "points": [],
+                        "intro": "Light, durable, and long-lasting, the ThermoTech® series is designed for optimal temperature-controlled transportation."
+                      },
+                      {
+                        "title": "Flatbeds",
+                        "points": [],
+                        "intro": "Engineered for strength and versatility, suitable for various hauling requirements."
+                      }
+                    ]
+                  },
+                  "styles": {
+                    "base": {
+                      "marginBottom": 8
+                    }
+                  }
+                },
+                {
+                  "id": "p-inventory-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Hyundai Translead also offers customization to ensure that each trailer meets your specific operational needs. We invite you to visit our locations in Tampa, Sarasota, or Davenport to explore our inventory and discover how Hyundai Translead trailers can help you build your business's fleet.",
+                    "align": "left",
+                    "width": "full"
+                  },
+                  "styles": {
+                    "base": {
+                      "marginTop": 34
+                    }
+                  }
+                },
+                {
+                  "id": "h-take-your-business-further",
+                  "type": "heading",
+                  "props": {
+                    "text": "Take Your Business Further",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-take-your-business-further-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Sun State Trailers is committed to providing top-quality trailer solutions, backed by exceptional customer service. Our partnership with Hyundai Translead allows us to offer innovative and reliable trailers that help our customers achieve their transportation goals. Whether you're looking for new or used trailers, our team is dedicated to assisting you in finding the perfect match for your operations.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-take-your-business-further-2",
+                  "type": "text",
+                  "props": {
+                    "text": "For more information or to schedule a visit, please contact us or stop by one of our convenient locations in Tampa, Sarasota, or Davenport. Let Sun State Trailers and Hyundai Translead drive your business forward with confidence and efficiency.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-take-your-business-further-3",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "contact-us",
+                        "label": "Contact Us"
+                      },
+                      {
+                        "ctaId": "browse-trailers",
+                        "label": "Browse Trailer Inventory",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-share",
+                  "type": "post-share",
+                  "props": {
+                    "label": "Share",
+                    "items": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhy-hyundai-trailers-are-the-leading-brand",
+                        "newTab": true
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhy-hyundai-trailers-are-the-leading-brand&text=Why%20Hyundai%20Trailers%20Are%20the%20Leading%20Brand%20in%20Trailers",
+                        "newTab": true
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhy-hyundai-trailers-are-the-leading-brand",
+                        "newTab": true
+                      },
+                      {
+                        "label": "Email",
+                        "url": "mailto:?subject=Why%20Hyundai%20Trailers%20Are%20the%20Leading%20Brand%20in%20Trailers&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhy-hyundai-trailers-are-the-leading-brand",
+                        "newTab": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "related-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "related-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
+                  }
+                },
+                {
+                  "id": "related-posts",
+                  "type": "postsList",
+                  "props": {
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "related-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "all-blog-posts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Used trailers",
+          "heading": "Build your fleet with Hyundai Translead.",
+          "body": "Call 800.741.7566 to talk with our team at any Sun State location in Florida.",
+          "primaryLabel": "Call 800.741.7566",
+          "primaryUrl": "tel:+18007417566",
+          "secondaryLabel": "Browse trailer inventory",
+          "secondaryUrl": "/store/inventory?type=trailer"
+        }
+      },
+      "children": []
+    }
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/why-hyundai-trailers-are-the-leading-brand\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/why-hyundai-trailers-are-the-leading-brand\"])) > .bz-card:nth-child(n+4) { display: none; }\n\n/* The hero photograph is framed a little high, as the design frames it. */\n[data-bz-section=\"post-hero\"] [data-bz-node=\"ph-photo\"] img { object-position: center 45%; }\n\n[data-bz-node=\"art-body\"] [data-bz-node=\"cards-services-2\"] .ss-cl__t { font-size: 16px; }\n\n[data-bz-node=\"art-body\"] [data-bz-node=\"cards-inventory-2\"] .ss-cl__t { font-size: 16px; }\n"
+}

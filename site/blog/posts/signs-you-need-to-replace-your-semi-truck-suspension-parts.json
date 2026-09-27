@@ -2,59 +2,812 @@
   "slug": "signs-you-need-to-replace-your-semi-truck-suspension-parts",
   "title": "Signs You Need to Replace Your Semi Truck Suspension Parts",
   "date": "2026-06-29",
-  "description": "Understanding how semi truck suspension parts work and when they need attention is one of the best ways to keep your trucks operating safely and efficiently.",
+  "description": "Worn semi truck suspension parts can lead to downtime. Learn the signs and schedule service with Sun State International.",
+  "excerpt": "Your truck’s suspension system does more than provide a smoother ride. It plays a major role in vehicle stability, steering control, tire wear, cargo protection, and overall driver safety. When suspension…",
   "status": "draft",
-  "coverImage": null,
-  "topic": "Parts",
+  "coverImage": "/img/blog/signs-you-need-to-replace-your-semi-truck-suspension-parts/hero.jpg",
+  "topic": "Commercial Trucks",
   "nodes": [
     {
-      "id": "intro",
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Commercial Trucks",
+          "title": "Signs You Need to Replace Your Semi Truck Suspension Parts",
+          "topic": "Commercial Trucks",
+          "date": "June 29, 2026",
+          "readTime": "5 min read",
+          "author": "Sun State International",
+          "image": {
+            "src": "/img/blog/signs-you-need-to-replace-your-semi-truck-suspension-parts/hero.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "Wrenches and sockets laid out beside a truck wheel during alignment work"
+          }
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "article",
       "type": "section",
       "props": {
         "width": "boxed",
-        "paddingY": 7
+        "background": "card",
+        "paddingY": 8
       },
       "children": [
         {
-          "id": "intro-row",
+          "id": "art-row",
+          "type": "row",
+          "props": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "id": "art-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "art-toc",
+                  "type": "post-toc",
+                  "props": {
+                    "label": "On this page",
+                    "items": [
+                      {
+                        "label": "Why Suspension Matters",
+                        "href": "#why-it-matters"
+                      },
+                      {
+                        "label": "Parts That Wear Out",
+                        "href": "#common-parts"
+                      },
+                      {
+                        "label": "Warning Signs",
+                        "href": "#signs"
+                      },
+                      {
+                        "label": "Suspension Parts",
+                        "href": "#parts"
+                      },
+                      {
+                        "label": "Downtime Risks",
+                        "href": "#downtime"
+                      },
+                      {
+                        "label": "Preventative Maintenance",
+                        "href": "#preventative"
+                      },
+                      {
+                        "label": "Keep Riding Smoothly",
+                        "href": "#keep-moving"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-aside-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "art-aside",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 20,
+                          "paddingRight": 20,
+                          "paddingBottom": 20,
+                          "paddingLeft": 20,
+                          "marginTop": 26
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "aside-label",
+                          "type": "text",
+                          "props": {
+                            "text": "NEED A PART?",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 10,
+                              "fontWeight": "700",
+                              "letterSpacing": 1,
+                              "textTransform": "uppercase",
+                              "textColor": "accent",
+                              "marginBottom": 10
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Order OEM and aftermarket suspension parts online.",
+                            "align": "left",
+                            "width": "full"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 14,
+                              "lineHeight": 1.65,
+                              "marginBottom": 14
+                            }
+                          }
+                        },
+                        {
+                          "id": "aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "order-parts-online",
+                                "label": "Order Parts Online →",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "art-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Your truck’s suspension system does more than provide a smoother ride. It plays a major role in vehicle stability, steering control, tire wear, cargo protection, and overall driver safety. When suspension components begin to wear out, small issues can quickly turn into expensive repairs and unexpected downtime. For owner-operators and fleet managers, recognizing the warning signs early can help prevent bigger problems on the road. Understanding how semi truck suspension parts work and when they need attention is one of the best ways to keep your trucks operating safely and efficiently.",
+                    "align": "left",
+                    "width": "full",
+                    "anchor": "post-lede"
+                  }
+                },
+                {
+                  "id": "h-why-it-matters",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Semi Truck Suspension Parts Matter",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "why-it-matters"
+                  }
+                },
+                {
+                  "id": "p-why-it-matters-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Commercial trucks take on enormous stress every day. Heavy loads, uneven roads, long-distance driving, and stop-and-go traffic all place strain on suspension systems over time. Your truck’s suspension system helps:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-why-it-matters-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Absorb road shock"
+                      },
+                      {
+                        "text": "Maintain tire contact with the road"
+                      },
+                      {
+                        "text": "Support proper steering and handling"
+                      },
+                      {
+                        "text": "Protect cargo during transport"
+                      },
+                      {
+                        "text": "Reduce wear on other vehicle systems"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-why-it-matters-3",
+                  "type": "text",
+                  "props": {
+                    "text": "When suspension components begin failing, the effects often spread into other areas of the truck, including tires, steering, and driveline systems. That’s why routine inspections and timely truck suspension repair are so important for fleet performance and safety.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-common-parts",
+                  "type": "heading",
+                  "props": {
+                    "text": "Common Semi Truck Suspension Parts That Wear Out",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "common-parts"
+                  }
+                },
+                {
+                  "id": "p-common-parts-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Several suspension components naturally wear down with mileage and heavy use. Frequently replaced suspension components include:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-common-parts-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Shocks and struts"
+                      },
+                      {
+                        "text": "Air springs and airbags"
+                      },
+                      {
+                        "text": "Torque rods"
+                      },
+                      {
+                        "text": "Bushings"
+                      },
+                      {
+                        "text": "Leaf springs"
+                      },
+                      {
+                        "text": "U-bolts"
+                      },
+                      {
+                        "text": "Suspension hangers"
+                      },
+                      {
+                        "text": "Control arms"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-common-parts-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Over time, even quality semi truck suspension parts eventually need replacement due to daily wear and tear.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-signs",
+                  "type": "heading",
+                  "props": {
+                    "text": "Signs Your Suspension System Needs Attention",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "signs"
+                  }
+                },
+                {
+                  "id": "p-signs-1",
+                  "type": "text",
+                  "props": {
+                    "text": "The earlier you catch suspension problems, the easier and less expensive repairs usually become. Here are some of the most common warning signs to watch for.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-signs-2",
+                  "type": "heading",
+                  "props": {
+                    "text": "Uneven Tire Wear",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-signs-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Uneven tire wear is often one of the first signs of suspension trouble. When suspension components wear out, the truck’s weight may no longer distribute evenly across the tires. You may notice:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-signs-4",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Excessive wear on one side"
+                      },
+                      {
+                        "text": "Cupping or scalloped tread patterns"
+                      },
+                      {
+                        "text": "Premature tire replacement needs"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-signs-5",
+                  "type": "text",
+                  "props": {
+                    "text": "Suspension issues and alignment problems often go hand in hand, which is why a professional <a href=\"/blog/posts/when-to-schedule-semi-truck-alignment-near-me\">truck alignment service</a> is important when abnormal tire wear appears. Ignoring tire wear problems can increase operating costs and reduce fuel efficiency over time.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-signs-6",
+                  "type": "heading",
+                  "props": {
+                    "text": "Rougher Ride Quality",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-signs-7",
+                  "type": "text",
+                  "props": {
+                    "text": "If your truck suddenly feels rougher on the road, the suspension system may no longer be absorbing impact properly. Drivers often notice:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-signs-8",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Increased vibration"
+                      },
+                      {
+                        "text": "Excessive bouncing"
+                      },
+                      {
+                        "text": "Harsh impacts over bumps"
+                      },
+                      {
+                        "text": "Reduced steering stability"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-signs-9",
+                  "type": "text",
+                  "props": {
+                    "text": "While some ride changes happen gradually, they should never be ignored. A rough ride can affect driver comfort, cargo protection, and vehicle handling.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-signs-10",
+                  "type": "heading",
+                  "props": {
+                    "text": "Leaning or Sagging",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-signs-11",
+                  "type": "text",
+                  "props": {
+                    "text": "A truck that appears uneven while parked or loaded may indicate worn air springs, broken leaf springs, or damaged suspension supports. Leaning or sagging can place additional strain on other systems and may even affect braking performance. If you notice your truck sitting lower on one side, schedule truck suspension repair as soon as possible.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-signs-12",
+                  "type": "heading",
+                  "props": {
+                    "text": "Steering Problems and Poor Handling",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-signs-13",
+                  "type": "text",
+                  "props": {
+                    "text": "Worn suspension parts often affect steering response and vehicle control. Common symptoms include:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "list-signs-14",
+                  "type": "prose-list",
+                  "props": {
+                    "ordered": false,
+                    "items": [
+                      {
+                        "text": "Drifting while driving"
+                      },
+                      {
+                        "text": "Loose steering feel"
+                      },
+                      {
+                        "text": "Difficulty maintaining alignment"
+                      },
+                      {
+                        "text": "Excessive body roll during turns"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-signs-15",
+                  "type": "text",
+                  "props": {
+                    "text": "Poor handling not only increases driver fatigue but can also create safety risks on busy highways or during poor weather conditions.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h3-signs-16",
+                  "type": "heading",
+                  "props": {
+                    "text": "Excessive Vibrations",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "p-signs-17",
+                  "type": "text",
+                  "props": {
+                    "text": "Not all vibrations come from tires alone. Damaged suspension components or worn driveline parts can create vibrations throughout the truck. Sometimes the issue may involve both the suspension system and driveline parts for commercial trucks working together under heavy loads. Professional diagnostics can help pinpoint the exact source before it develops into a larger repair.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-parts",
+                  "type": "heading",
+                  "props": {
+                    "text": "Need Reliable Semi Truck Suspension Parts?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "parts"
+                  }
+                },
+                {
+                  "id": "p-parts-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Finding quality parts quickly matters when trucks need repairs. Sun State International’s parts department offers dependable OEM and aftermarket semi truck suspension parts designed to support all makes and models of semi-trucks and trailers throughout Florida.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "co-parts-2-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "styles": {
+                    "base": {
+                      "marginTop": 34,
+                      "marginBottom": 34
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "co-parts-2",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "borderWidth": 1,
+                          "borderStyle": "solid",
+                          "borderColor": "line",
+                          "paddingTop": 26,
+                          "paddingRight": 28,
+                          "paddingBottom": 26,
+                          "paddingLeft": 28
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "co-parts-2-cta",
+                          "type": "buttons",
+                          "props": {
+                            "align": "left",
+                            "items": [
+                              {
+                                "ctaId": "parts-department",
+                                "label": "Explore Our Parts Inventory →"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "fig-1",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "/img/blog/signs-you-need-to-replace-your-semi-truck-suspension-parts/1.jpg",
+                      "width": 1280,
+                      "height": 853,
+                      "alt": "Sun State International technician performing a wheel service on a semi truck"
+                    }
+                  }
+                },
+                {
+                  "id": "h-downtime",
+                  "type": "heading",
+                  "props": {
+                    "text": "How Suspension Problems Lead to Downtime",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "downtime"
+                  }
+                },
+                {
+                  "id": "p-downtime-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Many fleet owners delay suspension repairs because the truck is still technically operational. Unfortunately, waiting too long often creates bigger and more expensive problems later. Failing suspension systems can lead to:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-downtime-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Accelerated tire wear"
+                      },
+                      {
+                        "text": "Steering component damage"
+                      },
+                      {
+                        "text": "Driveline strain"
+                      },
+                      {
+                        "text": "Brake system issues"
+                      },
+                      {
+                        "text": "Increased fuel consumption"
+                      },
+                      {
+                        "text": "Unsafe driving conditions"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-downtime-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Most importantly, breakdowns create costly downtime. For trucking businesses, downtime affects scheduling, customer relationships, driver productivity, and overall profitability. That’s why many fleets prioritize preventative maintenance and reduce truck downtime services whenever possible.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-preventative",
+                  "type": "heading",
+                  "props": {
+                    "text": "Preventative Maintenance Helps Protect Your Fleet",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "preventative"
+                  }
+                },
+                {
+                  "id": "p-preventative-1",
+                  "type": "text",
+                  "props": {
+                    "text": "Routine inspections are one of the best ways to catch suspension issues early. During preventative maintenance, technicians can check:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "checks-preventative-2",
+                  "type": "check-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Suspension bushings"
+                      },
+                      {
+                        "text": "Air suspension systems"
+                      },
+                      {
+                        "text": "Shock absorbers"
+                      },
+                      {
+                        "text": "Alignment settings"
+                      },
+                      {
+                        "text": "Driveline components"
+                      },
+                      {
+                        "text": "Steering performance"
+                      },
+                      {
+                        "text": "Tire wear patterns"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-preventative-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Regular inspections not only improve safety but also help extend the life of other vehicle systems. At Sun State International, our service teams work with owner-operators and fleets throughout Florida to help identify maintenance concerns before they lead to major downtime.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "h-keep-moving",
+                  "type": "heading",
+                  "props": {
+                    "text": "Keep Your Trucks Riding Smoothly With Sun State International",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "anchor": "keep-moving"
+                  }
+                },
+                {
+                  "id": "p-keep-moving-1",
+                  "type": "text",
+                  "props": {
+                    "text": "The longer worn components go ignored, the more strain they place on tires, steering systems, and driveline components. If your truck is showing signs of suspension wear, now is the time to have it inspected. From truck alignment service to complete suspension system repairs, Sun State International is here to help fleets and owner-operators reduce downtime and stay safely on the road. Schedule your service appointment today and let our team help keep your operation moving forward.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "actions-keep-moving-2",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "schedule-service",
+                        "label": "Schedule Truck Suspension Service Today"
+                      },
+                      {
+                        "ctaId": "parts-department",
+                        "label": "Replace Your Suspension Parts",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "art-share",
+                  "type": "post-share",
+                  "props": {
+                    "label": "Share",
+                    "items": [
+                      {
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fsigns-you-need-to-replace-your-semi-truck-suspension-parts",
+                        "newTab": true
+                      },
+                      {
+                        "label": "X",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fsigns-you-need-to-replace-your-semi-truck-suspension-parts&text=Signs%20You%20Need%20to%20Replace%20Your%20Semi%20Truck%20Suspension%20Parts",
+                        "newTab": true
+                      },
+                      {
+                        "label": "LinkedIn",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fsigns-you-need-to-replace-your-semi-truck-suspension-parts",
+                        "newTab": true
+                      },
+                      {
+                        "label": "Email",
+                        "url": "mailto:?subject=Signs%20You%20Need%20to%20Replace%20Your%20Semi%20Truck%20Suspension%20Parts&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fsigns-you-need-to-replace-your-semi-truck-suspension-parts",
+                        "newTab": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 10
+      },
+      "children": [
+        {
+          "id": "related-row",
           "type": "row",
           "props": {
             "gap": 5
           },
           "children": [
             {
-              "id": "intro-col",
+              "id": "related-col",
               "type": "column",
               "props": {
                 "span": 12
               },
               "children": [
                 {
-                  "id": "intro-text",
-                  "type": "text",
+                  "id": "related-h",
+                  "type": "heading",
                   "props": {
-                    "text": "Understanding how semi truck suspension parts work and when they need attention is one of the best ways to keep your trucks operating safely and efficiently.",
-                    "width": "full"
+                    "text": "More from the blog.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Keep reading"
                   }
                 },
                 {
-                  "id": "intro-note",
-                  "type": "text",
+                  "id": "related-posts",
+                  "type": "postsList",
                   "props": {
-                    "text": "The full article was published on sunstateintl.com. Paste the migrated body here in Posts → this post, and the card on the blog index updates with it.",
-                    "width": "full"
+                    "count": 4,
+                    "showDates": true,
+                    "headingLevel": 3
                   }
                 },
                 {
-                  "id": "intro-cta",
+                  "id": "related-cta",
                   "type": "buttons",
                   "props": {
+                    "align": "left",
                     "items": [
                       {
-                        "label": "Read the original article →",
-                        "url": "https://www.sunstateintl.com/signs-you-need-to-replace-your-semi-truck-suspension-parts/",
-                        "style": "link",
-                        "intent": "read-post"
+                        "ctaId": "all-blog-posts"
                       }
                     ]
                   }
@@ -67,62 +820,21 @@
     },
     {
       "id": "post-cta",
-      "type": "section",
+      "type": "sharedSection",
       "props": {
-        "width": "boxed",
-        "background": "paper",
-        "paddingY": 8
-      },
-      "children": [
-        {
-          "id": "post-cta-row",
-          "type": "row",
-          "props": {
-            "gap": 5
-          },
-          "children": [
-            {
-              "id": "post-cta-col",
-              "type": "column",
-              "props": {
-                "span": 12
-              },
-              "children": [
-                {
-                  "id": "post-cta-h",
-                  "type": "heading",
-                  "props": {
-                    "text": "Got the same symptom on a unit you run?",
-                    "headingLevel": 2
-                  }
-                },
-                {
-                  "id": "post-cta-b",
-                  "type": "text",
-                  "props": {
-                    "text": "Call 800.741.7566 and we'll look at the specific truck or trailer instead of the general case.",
-                    "width": "full"
-                  }
-                },
-                {
-                  "id": "post-cta-btn",
-                  "type": "buttons",
-                  "props": {
-                    "items": [
-                      {
-                        "ctaId": "request-appointment"
-                      },
-                      {
-                        "ctaId": "call-main-secondary"
-                      }
-                    ]
-                  }
-                }
-              ]
-            }
-          ]
+        "sectionId": "cta-band",
+        "values": {
+          "eyebrow": "Suspension service",
+          "heading": "Keep your trucks riding smoothly.",
+          "body": "Call 800.741.7566 to talk with our team at any Sun State location in Florida.",
+          "primaryLabel": "Schedule suspension service",
+          "primaryUrl": "/service-appointment",
+          "secondaryLabel": "Parts department",
+          "secondaryUrl": "/parts"
         }
-      ]
+      },
+      "children": []
     }
-  ]
+  ],
+  "css": "/* Latest posts cannot leave out the post being read, so it asks for four and\n   this post's own card is hidden (or, when it is not among them, the fourth). */\n[data-bz-node=\"related-posts\"] .bz-card[href$=\"/signs-you-need-to-replace-your-semi-truck-suspension-parts\"] { display: none; }\n[data-bz-node=\"related-posts\"] .bz-grid:not(:has(.bz-card[href$=\"/signs-you-need-to-replace-your-semi-truck-suspension-parts\"])) > .bz-card:nth-child(n+4) { display: none; }\n"
 }
