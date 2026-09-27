@@ -292,6 +292,12 @@
     position: absolute; bottom: 24px; left: 50%; transform: translateX(-50%); margin-top: 0;
   }
   [data-bz-node="home-types"] [data-bz-node="tr-rail"].is-staged ~ [data-bz-node="tr-nav"] { display: flex; margin-top: 20px; }
+  /* Logo cards on the phone stage: the plate at the top and the brand name
+     under it, as on desktop, rather than a title floated over a photo. */
+  [data-bz-node="home-types"] [data-bz-node="tr-rail"].is-staged > [data-bz-type="column"][data-bz-node^="tr-slide-"]:is(.bz-col--bg-card, .bz-col--bg-ink) {
+    padding: 16px 16px 24px;
+  }
+  [data-bz-node="home-types"] [data-bz-node="tr-rail"].is-staged > :is(.bz-col--bg-card, .bz-col--bg-ink) [data-bz-node^="tr-slide-h"] h3 { padding: 0; color: #fff; }
 
   /* Find a location: the band's 120px desktop air is the phone's 64px, and
      the map frame holds its 460px desktop floor no longer — a 2.4:1 map on a
