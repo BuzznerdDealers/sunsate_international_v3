@@ -92,3 +92,41 @@
   [data-bz-node="loc-afterhours"][data-bz-section] > .bz-section > [data-bz-node="mb-row"] > [data-bz-node="mb-copy"] { padding: 64px var(--container-pad-mobile); }
   [data-bz-node="loc-cta"][data-bz-section] > .bz-section { padding-block: 90px; }
 }
+
+/* ===========================================================================
+   Phone fixes from the mobile QA pass. Every rule below sits inside
+   max-width: 640px, so desktop and tablet render exactly as before.
+   =========================================================================== */
+@media (max-width: 640px) {
+  /* Hero: the platform's `.bz-block img { height: auto }` outranks the hero's
+     own `height: 100%`, so on a phone the photo drew as a strip across the top
+     of the band. It now covers the band. */
+  [data-bz-node="loc-hero"] .bz-hero__bg .bz-hero__img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  /* "Find a location": 90px of desktop air under the hero. */
+  [data-bz-node="loc-summary"].bz-section,
+  [data-bz-node="loc-summary"] > .bz-section { padding-top: 56px; }
+  [data-bz-node="loc-sum-head-b"] .bz-text p:last-child { margin-bottom: 28px; }
+
+  /* The map: on a phone the frame was a fixed 320px box holding the art at
+     80% of its height, while the width was capped at the screen — so the art
+     was squeezed sideways, and the pins, placed at percentages of the art,
+     landed off their towns. The art now keeps its own shape, full width, and
+     the frame is the art's height. */
+  [data-bz-node="loc-map"] .bz-widget { height: auto; display: block; }
+  [data-bz-node="loc-map"] .bz-pinmap { height: auto; width: 100%; }
+  [data-bz-node="loc-map"] .bz-pinmap__art { width: 100%; height: auto; max-width: 100%; }
+  [data-bz-node="loc-map"] .bz-pinmap:has(.bz-pinmap__empty) { height: 240px; }
+
+  /* Under the map: the location cards' 90px desktop top. */
+  [data-bz-node="loc-list"][data-bz-section] > .bz-section { padding-block: 32px 64px; }
+
+  /* After-hours band: the copy kept 64px under its links before the photo. */
+  [data-bz-node="loc-afterhours"][data-bz-section] > .bz-section > [data-bz-node="mb-row"] > [data-bz-node="mb-copy"] {
+    padding: 48px var(--container-pad-mobile) 28px;
+  }
+}

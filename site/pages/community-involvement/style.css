@@ -77,3 +77,13 @@
   [data-bz-node="ci-logos"] .bz-card img { height: 116px; padding: 20px 22px; }
   [data-bz-node="ci-logos"] .bz-card__body { padding: 14px 16px; }
 }
+
+/* ===========================================================================
+   Phone fixes from the mobile QA pass. Every rule below sits inside
+   max-width: 640px, so desktop and tablet render exactly as before.
+   =========================================================================== */
+@media (max-width: 640px) {
+  /* The "$100K+" card sat flush under the paragraph above it: the paragraph's
+     own 32px is zeroed as the block's last child. The block carries it. */
+  [data-bz-node="ci-sum-t"].bz-block { padding-bottom: 28px; }
+}
