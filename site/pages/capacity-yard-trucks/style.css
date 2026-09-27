@@ -26,3 +26,14 @@
 [data-bz-node="cy-intro"] > .bz-section { padding-block: 76px 0px; }
 [data-bz-node="cy-parts"].bz-section,
 [data-bz-node="cy-parts"] > .bz-section { padding-block: 80px 80px; }
+
+/* ===========================================================================
+   Phone fixes from the mobile QA pass. Every rule below sits inside
+   max-width: 640px, so desktop and tablet render exactly as before.
+   =========================================================================== */
+@media (max-width: 640px) {
+  /* "The original 'Trailer Jockey'": this band and the one above are both
+     white, so their 64px paddings stacked into 128px of blank page between
+     the photo and the eyebrow. The band above hands straight on instead. */
+  [data-bz-node="cy-why"].bz-section { padding-bottom: 0; }
+}
