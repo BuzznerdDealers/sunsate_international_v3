@@ -18,7 +18,8 @@
         "width": "full",
         "background": "none",
         "paddingY": 0,
-        "behaviour": "scrollstate"
+        "behaviour": "scrollstate",
+        "behaviourOptions": "{\"after\":0}"
       },
       "styles": {
         "base": {
