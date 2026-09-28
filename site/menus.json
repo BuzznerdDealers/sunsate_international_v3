@@ -707,27 +707,27 @@
                 {
                   "id": "nm-trucks-all",
                   "label": "All truck inventory",
-                  "type": "inventory",
-                  "ref": "https://sunsateinternationalv3-buzznerd.vercel.app/store/inventory/truck",
-                  "url": null,
+                  "type": "url",
+                  "ref": null,
+                  "url": "https://sunsateinternationalv3-buzznerd.vercel.app/store/inventory/truck",
                   "newTab": false,
                   "children": []
                 },
                 {
                   "id": "nm-trucks-new",
                   "label": "New trucks",
-                  "type": "inventory",
-                  "ref": "https://sunsateinternationalv3-buzznerd.vercel.app/store/inventory/truck?fvid=67",
-                  "url": null,
+                  "type": "url",
+                  "ref": null,
+                  "url": "https://sunsateinternationalv3-buzznerd.vercel.app/store/inventory/truck?fvid=67",
                   "newTab": false,
                   "children": []
                 },
                 {
                   "id": "nm-trucks-used",
                   "label": "Used trucks",
-                  "type": "inventory",
-                  "ref": "https://sunsateinternationalv3-buzznerd.vercel.app/store/inventory/truck?fvid=112",
-                  "url": null,
+                  "type": "url",
+                  "ref": null,
+                  "url": "https://sunsateinternationalv3-buzznerd.vercel.app/store/inventory/truck?fvid=112",
                   "newTab": false,
                   "children": []
                 },
@@ -818,27 +818,27 @@
                 {
                   "id": "nm-trailers-all",
                   "label": "All trailer inventory",
-                  "type": "inventory",
-                  "ref": "https://sunsateinternationalv3-buzznerd.vercel.app/store/inventory/trailer",
-                  "url": null,
+                  "type": "url",
+                  "ref": null,
+                  "url": "https://sunsateinternationalv3-buzznerd.vercel.app/store/inventory/trailer",
                   "newTab": false,
                   "children": []
                 },
                 {
                   "id": "nm-trailers-new",
                   "label": "New trailers",
-                  "type": "inventory",
-                  "ref": "https://sunsateinternationalv3-buzznerd.vercel.app/store/inventory/trailer?fvid=116",
-                  "url": null,
+                  "type": "url",
+                  "ref": null,
+                  "url": "https://sunsateinternationalv3-buzznerd.vercel.app/store/inventory/trailer?fvid=116",
                   "newTab": false,
                   "children": []
                 },
                 {
                   "id": "nm-trailers-used",
                   "label": "Used trailers",
-                  "type": "inventory",
-                  "ref": "https://sunsateinternationalv3-buzznerd.vercel.app/store/inventory/trailer?fvid=135",
-                  "url": null,
+                  "type": "url",
+                  "ref": null,
+                  "url": "https://sunsateinternationalv3-buzznerd.vercel.app/store/inventory/trailer?fvid=135",
                   "newTab": false,
                   "children": []
                 }
