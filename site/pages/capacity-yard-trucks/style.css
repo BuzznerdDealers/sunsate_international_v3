@@ -27,6 +27,17 @@
 [data-bz-node="cy-parts"].bz-section,
 [data-bz-node="cy-parts"] > .bz-section { padding-block: 80px 80px; }
 
+/* "Keeping it in the yard, not the shop": the card links were drawn in ink on
+   the ink band, so they could not be read. White at every width, with an
+   underline on hover and keyboard focus. */
+[data-bz-node="cy-parts"] [data-bz-node^="fg-card-cta"] .bz-btn { color: #fff; }
+[data-bz-node="cy-parts"] [data-bz-node^="fg-card-cta"] .bz-btn:hover,
+[data-bz-node="cy-parts"] [data-bz-node^="fg-card-cta"] .bz-btn:focus-visible {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 /* ===========================================================================
    Phone fixes from the mobile QA pass. Every rule below sits inside
    max-width: 640px, so desktop and tablet render exactly as before.
