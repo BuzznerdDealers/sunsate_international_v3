@@ -26,8 +26,7 @@
           "background": "#ff0000",
           "backgroundImage": "https://vendure.buzznerdrv.com/assets/source/68/screenshot2022-08-07231217.jpg",
           "backgroundSize": "cover",
-          "objectFit": "cover",
-          "height": 500
+          "objectFit": "cover"
         }
       },
       "children": [
@@ -149,6 +148,14 @@
           ]
         }
       ]
+    },
+    {
+      "id": "hero",
+      "type": "hero",
+      "props": {
+        "headingLevel": 2,
+        "headline": "Hero (full-bleed)"
+      }
     },
     {
       "id": "content",
