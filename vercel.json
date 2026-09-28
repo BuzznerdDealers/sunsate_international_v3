@@ -46,6 +46,11 @@
       "source": "/our-story{/}?",
       "destination": "/about-us",
       "statusCode": 301
+    },
+    {
+      "source": "/blog{/}?",
+      "destination": "/blogs",
+      "statusCode": 301
     }
   ]
 }

@@ -7,6 +7,12 @@
       "from": "/our-story",
       "to": "/about-us",
       "statusCode": 301
+    },
+    {
+      "from": "/blog",
+      "to": "/blogs",
+      "statusCode": 301,
+      "note": "Page moved to /blogs"
     }
   ]
 }
