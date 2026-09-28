@@ -8,6 +8,8 @@
       "ref": null
     }
   ],
+  "css": "",
+  "js": "",
   "nodes": [
     {
       "id": "site-header",
@@ -27,6 +29,11 @@
             "gap": 5,
             "align": "center",
             "stackOn": "never"
+          },
+          "styles": {
+            "base": {
+              "backgroundImage": "https://vendure.buzznerdrv.com/assets/source/0b/67599767.jpg"
+            }
           },
           "children": [
             {
