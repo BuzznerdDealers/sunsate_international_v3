@@ -691,7 +691,7 @@
         {
           "id": "nm-trucks",
           "label": "Trucks",
-          "type": "inventory",
+          "type": "label",
           "ref": null,
           "url": null,
           "newTab": false,
@@ -708,7 +708,7 @@
                   "id": "nm-trucks-all",
                   "label": "All truck inventory",
                   "type": "inventory",
-                  "ref": null,
+                  "ref": "https://sunsateinternationalv3-buzznerd.vercel.app/store/inventory/truck",
                   "url": null,
                   "newTab": false,
                   "children": []
@@ -717,7 +717,7 @@
                   "id": "nm-trucks-new",
                   "label": "New trucks",
                   "type": "inventory",
-                  "ref": null,
+                  "ref": "https://sunsateinternationalv3-buzznerd.vercel.app/store/inventory/truck?fvid=67",
                   "url": null,
                   "newTab": false,
                   "children": []
@@ -726,7 +726,7 @@
                   "id": "nm-trucks-used",
                   "label": "Used trucks",
                   "type": "inventory",
-                  "ref": null,
+                  "ref": "https://sunsateinternationalv3-buzznerd.vercel.app/store/inventory/truck?fvid=112",
                   "url": null,
                   "newTab": false,
                   "children": []
