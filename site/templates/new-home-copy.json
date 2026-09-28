@@ -23,7 +23,11 @@
       },
       "styles": {
         "base": {
-          "background": "#ff0000"
+          "background": "#ff0000",
+          "backgroundImage": "https://vendure.buzznerdrv.com/assets/source/68/screenshot2022-08-07231217.jpg",
+          "backgroundSize": "cover",
+          "objectFit": "cover",
+          "height": 500
         }
       },
       "children": [
