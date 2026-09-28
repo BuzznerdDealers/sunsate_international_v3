@@ -21,6 +21,11 @@
         "behaviour": "scrollstate",
         "behaviourOptions": "{\"after\":0}"
       },
+      "styles": {
+        "base": {
+          "background": "#ff0000"
+        }
+      },
       "children": [
         {
           "id": "header-row",
