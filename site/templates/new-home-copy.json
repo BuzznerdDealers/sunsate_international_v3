@@ -18,8 +18,7 @@
         "width": "full",
         "background": "none",
         "paddingY": 0,
-        "behaviour": "scrollstate",
-        "behaviourOptions": "{\"after\":0}"
+        "behaviour": "scrollstate"
       },
       "styles": {
         "base": {
@@ -148,14 +147,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": "hero",
-      "type": "hero",
-      "props": {
-        "headingLevel": 2,
-        "headline": "Hero (full-bleed)"
-      }
     },
     {
       "id": "content",
