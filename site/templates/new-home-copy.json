@@ -8,6 +8,8 @@
       "ref": null
     }
   ],
+  "css": "",
+  "js": "",
   "nodes": [
     {
       "id": "site-header",
@@ -36,23 +38,7 @@
                 "span": 4,
                 "align": "center"
               },
-              "children": [
-                {
-                  "id": "header-logo",
-                  "type": "logo",
-                  "props": {
-                    "url": "/",
-                    "text": "Sun State International Trucks",
-                    "image": {
-                      "src": "https://vendure.buzznerdrv.com/assets/source/a7/ss-intwhite-logo.png",
-                      "alt": "Sun State International Trucks",
-                      "width": 3638,
-                      "height": 887
-                    },
-                    "height": 75
-                  }
-                }
-              ]
+              "children": []
             },
             {
               "id": "header-bar",
