@@ -18,12 +18,6 @@
   },
   "fields": [
     {
-      "id": "ca-name",
-      "type": "full_name",
-      "label": "Full name",
-      "required": true
-    },
-    {
       "id": "ca-email",
       "type": "email",
       "label": "Email",
@@ -79,5 +73,5 @@
       "email": "leads@sunstateintl.com,e-contact@sunstateintl.com"
     }
   ],
-  "updatedAt": "2026-09-28T15:45:25.461Z"
+  "updatedAt": "2026-09-28T20:19:25.684Z"
 }
