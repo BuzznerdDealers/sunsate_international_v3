@@ -2,7 +2,12 @@
   "version": 2,
   "id": "new-home-copy",
   "name": "Site template — New Home design copy",
-  "conditions": [],
+  "conditions": [
+    {
+      "type": "inventory",
+      "ref": null
+    }
+  ],
   "nodes": [
     {
       "id": "site-header",
