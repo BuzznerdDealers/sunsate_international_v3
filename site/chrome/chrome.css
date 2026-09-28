@@ -31,3 +31,876 @@
   .nav-toggle{display:flex}
   .mobilenav:not([hidden]){display:flex}
 }
+
+/* === BEGIN storefront chrome copy (tools/storefront-chrome/sync.mjs) — do not edit by hand === */
+
+/* --- Site-wide Custom code CSS --- */
+/* ===========================================================================
+   Sun State International — site design layer
+   The tokens carry colour, type and spacing; this file carries the handful of
+   structural decisions the handoff makes that tokens alone cannot express:
+   the 48px page gutter, the 90px section rhythm, hard-edged chrome, and the
+   contrast rules for text on the near-black chrome and the red accent bands.
+   Everything below is scoped to platform block classes or to a node id.
+   =========================================================================== */
+
+/* The handoff sets text-wrap: pretty on <body>, so every heading and paragraph
+   on the site is laid out with it. It is the reason its headings break where
+   they do — without it the same text, at the same size in the same box, keeps
+   one more word on the first line and strands the last. */
+body { text-wrap: pretty; }
+
+
+/* --- Page gutter -----------------------------------------------------------
+   blocks.css pins a section's container to --space-4; the handoff's gutter is
+   48px / 32px / 20px, which is what layout.padDesktop et al. already record. */
+.bz-section > .bz-container { padding-inline: var(--container-pad); }
+@media (max-width: 1100px) { .bz-section > .bz-container { padding-inline: var(--container-pad-tablet); } }
+@media (max-width: 640px)  { .bz-section > .bz-container { padding-inline: var(--container-pad-mobile); } }
+
+/* --- Section rhythm --------------------------------------------------------
+   The handoff's own token says 120px, but the sections it draws almost all use
+   90 (68 of them) with 80 and 100 next; 120 appears nowhere. Sections ask for
+   the band rhythm with paddingY 10, so that is what 10 means here. 8 and 9 stay
+   64/80 for tighter bands. */
+:root { --space-10: 90px; }
+/* The handoff separates the dark *chrome* (#141414 — header, footer, the type
+   rail, the legal hero) from --color-ink (#242424), which is body text and the
+   contact band. The platform has one ink token, so the chrome values live here. */
+:root {
+  --chrome: #141414;
+  --chrome-line: #333333;
+  --chrome-text: #EDEDED;
+  --chrome-body: #C7C1B4;
+  --chrome-meta: #A0A0A0;
+  --chrome-label: #8A8A8A;
+  --chrome-dim: #B5B5B5;
+  --body-text: #3f3f3f;
+}
+@media (max-width: 640px) {
+  :root { --space-8: 48px; --space-9: 56px; --space-10: 64px; }
+}
+
+
+/* --- Block padding ---------------------------------------------------------
+   blocks.css opens every block with 16px of vertical padding. The handoff sets
+   its rhythm with margins on the headings and gaps on the grids instead, so the
+   padding doubles every gap it participates in. Zeroing it here puts the two
+   models back in step; spacing that is wanted is asked for explicitly. */
+.bz-block { padding-block: 0; }
+
+/* --- Type ------------------------------------------------------------------ */
+body { color: #242424; font-size: var(--text-body); line-height: var(--leading-body); }
+h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); letter-spacing: normal; }
+/* The handoff tracks in only its display headings: 32 of them carry -.01em and
+   not one of its 227 section headings does. */
+.bz-block h1 { letter-spacing: -0.01em; }
+.bz-block h2, .bz-block h3, .bz-block h4 { letter-spacing: normal; }
+.bz-block h1 { font-size: var(--text-h1); line-height: 1.05; }
+.bz-block h2 { font-size: var(--text-h2); line-height: 1.6; }
+.bz-block h3 { font-size: var(--text-h3); }
+@media (max-width: 1100px) { .bz-block h1 { font-size: 46px; } }
+@media (max-width: 640px) {
+  .bz-block h1 { font-size: 30px; }
+  .bz-block h2 { font-size: 28px; }
+  .bz-block h3 { font-size: 24px; }
+}
+
+/* The handoff's eyebrow: tracked-out micro-label, muted on light, not accent. */
+.bz-block .bz-eyebrow, .bz-eyebrow {
+  font: 700 var(--text-eyebrow) / 1 var(--font-body);
+  letter-spacing: 0.16em;
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+.bz-section--bg-ink .bz-eyebrow, .bz-col--bg-ink .bz-eyebrow { color: #E2E2E2; }
+.bz-section--bg-accent .bz-eyebrow { color: rgba(255,255,255,.9); }
+.bz-lede { color: #3f3f3f; font-size: var(--text-body); line-height: 1.7; max-width: 62ch; }
+.bz-section--bg-ink .bz-lede, .bz-lede--on-dark { color: #C7C1B4; }
+.bz-block p { line-height: 1.7; }
+
+/* --- Colour on dark chrome and on the accent band --------------------------
+   The handoff states these as their own tokens rather than opacities so the
+   contrast is explicit; keep them explicit here too. */
+.bz-section--bg-ink, .bz-col--bg-ink { color: #EDEDED; }
+.bz-section--bg-ink p, .bz-col--bg-ink p { color: #C7C1B4; }
+.bz-section--bg-accent, .bz-col--bg-accent { color: #fff; }
+.bz-section--bg-accent :is(h1,h2,h3,h4,h5,h6), .bz-col--bg-accent :is(h1,h2,h3,h4,h5,h6) { color: #fff; }
+.bz-section--bg-accent a, .bz-col--bg-accent a { color: #fff; }
+
+/* --- Buttons ---------------------------------------------------------------
+   One primitive, hard edges, display face at 700, hover darkens the fill.
+   There is no scale or bounce anywhere in this system. */
+.bz-btn {
+  min-height: 46px;
+  padding: 0 16px;
+  border-radius: 0;
+  gap: 8px;
+  /* base.css sets .btn in --font-display: the all-caps display face IS the
+     button style here, not a text-transform. Only .btn--secondary and
+     .btn--ghost drop back to the body face (below). */
+  font: 700 var(--text-small) / 1.6 var(--font-heading);
+}
+/* A component's optional button is a CTA with an empty label when the placement
+   leaves it out; the renderer still emits the anchor. Hide the empty ones. */
+.bz-btn:empty { display: none; }
+/* Every CTA on the site, primary or secondary, on any band: white with black
+   text and an 8px corner, turning orange (--accent-dark) with white text when
+   hovered, pressed or focused. This is the "Built a spec?" band's look, drawn
+   once here so no page or component paints its own. The 1px black edge keeps a
+   white button visible on a white or light-grey band; on a dark band it
+   disappears into the background. The white is a literal because a dark page
+   redefines --card as a dark grey, and the doubled class outranks the
+   renderer's transparent secondary on a dark hero. */
+.bz-btn:is(.bz-btn--primary, .bz-btn--secondary) {
+  background: #fff; color: #000;
+  border: 1px solid #000; border-radius: 8px;
+  transition: background-color .15s ease, border-color .15s ease, color .15s ease;
+}
+.bz-btn:is(.bz-btn--primary, .bz-btn--secondary):is(:hover, :active, :focus-visible) {
+  background: var(--accent-dark); border-color: var(--accent-dark); color: #fff;
+}
+.bz-btn:is(.bz-btn--primary, .bz-btn--secondary):focus-visible {
+  outline: 2px solid var(--accent-dark); outline-offset: 3px;
+}
+.bz-btn--link {
+  /* A text link in this design is text, not a box: the base button's 1.5px
+     transparent border would add 3px to its height. */
+  min-height: 0; padding: 0; border: 0; background: none;
+  color: var(--accent);
+  text-decoration: none;
+}
+.bz-btn--link:hover { text-decoration: underline; text-underline-offset: 3px; }
+.bz-btn--on-dark.bz-btn--link { color: #fff; }
+
+/* --- Form controls --------------------------------------------------------- */
+.bz-input, .bz-field select, .bz-field textarea {
+  min-height: 50px; border-radius: 0; padding: 12px 14px;
+  background: var(--paper); border: 1px solid var(--line);
+  font-family: var(--font-body); font-size: 15px;
+}
+.bz-field textarea { min-height: 140px; }
+
+/* The handoff sets a form on the page rather than in a card, repeats no title,
+   and pairs the short fields two to a row. */
+.bz-form {
+  background: none; border: 0; border-radius: 0; padding: 0; max-width: none;
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 20px;
+}
+.bz-form__t { display: none; }
+.bz-field { grid-column: span 1; gap: 8px; }
+.bz-field:has(textarea), .bz-field--consent, .bz-field--hp { grid-column: 1 / -1; }
+.bz-form > button, .bz-form__status, .bz-form > .bz-btn { grid-column: 1 / -1; justify-self: start; }
+.bz-label { font: 700 11px / 1 var(--font-body); letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+@media (max-width: 640px) { .bz-form { grid-template-columns: minmax(0, 1fr); } .bz-field { grid-column: 1 / -1; } }
+.bz-label {
+  font: 700 var(--text-eyebrow) / 1.4 var(--font-body);
+  letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted);
+}
+.bz-req { color: var(--accent); }
+
+/* --- Cards and rules -------------------------------------------------------
+   Resting surfaces separate with a 1px line, never a shadow; shadow is for
+   floating chrome only. */
+.bz-card, .bz-quick, .bz-service, .bz-person, .bz-post, .bz-quote {
+  border-radius: 0;
+  border: 1px solid var(--line);
+  background: var(--card);
+  box-shadow: none;
+}
+.bz-hr { border-color: var(--line); }
+
+/* --- FAQ accordion ---------------------------------------------------------
+   The handoff draws 132 of these; the platform's faq widget renders native
+   <details>, which needs no script and is open-able in the editor. */
+/* The handoff's FAQ band holds a 900px well; every page's is the same shape. */
+.bz-section:has(.bz-faqs) { padding-block: 100px; }
+.bz-section:has(.bz-faqs) > .bz-container { max-width: calc(900px + 2 * var(--container-pad)); }
+@media (max-width: 640px) { .bz-section:has(.bz-faqs) { padding-block: 64px; } }
+.bz-section:has(.bz-faqs) .bz-block h2 { font-size: 32px; margin-bottom: 40px; }
+.bz-section:has(.bz-faqs) .bz-eyebrow { margin-bottom: 18px; }
+.bz-faqs { border-top: 1px solid var(--line); gap: 0; }
+.bz-faq { background: none; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; padding: 0; }
+.bz-faq > summary {
+  display: flex; align-items: center; justify-content: space-between; gap: var(--space-4);
+  padding: 22px 0; cursor: pointer; list-style: none;
+  font: 700 17px / 1.6 var(--font-heading); color: var(--ink);
+}
+.bz-faq > summary::-webkit-details-marker { display: none; }
+.bz-faq > summary::after { content: "+"; font-weight: 400; font-size: 22px; color: var(--accent); line-height: 1; transition: transform .18s ease; }
+.bz-faq[open] > summary::after { transform: rotate(45deg); }
+.bz-block .bz-faq__a { margin-top: 0; padding: 0 0 24px; color: var(--body-text); font-size: 15px; line-height: 1.7; max-width: 760px; }
+
+/* --- Photography -----------------------------------------------------------
+   Every photograph in the handoff is still a slot. The placeholder art ships as
+   an image so each one stays a real, replaceable image block on the canvas. */
+img[src$="photo-placeholder.svg"] { width: 100%; height: 100%; object-fit: cover; background: #D8D8D8; }
+
+/* --- Hero ------------------------------------------------------------------
+   Scrim at rgba(20,20,20,.68), per the handoff's --scrim-hero. */
+.bz-block--hero { position: relative; background: var(--chrome); color: #fff; padding-block: 96px; text-align: center; }
+.bz-hero__img { opacity: 1; }
+.bz-block--hero .bz-hero__bg::after {
+  content: ""; position: absolute; inset: 0; background: rgba(20,20,20,.68); pointer-events: none;
+}
+.bz-block--hero .bz-hero__copy { max-width: 960px; margin-inline: auto; }
+.bz-block--hero h1, .bz-block--hero h2 {
+  color: #fff; font-size: 44px; line-height: 1.14; letter-spacing: -0.01em; margin: 0 0 20px;
+}
+.bz-block--hero .bz-hero__sub {
+  color: #E2E2E2; font-size: 17px; line-height: 1.7; max-width: 700px; margin: 0 auto 30px;
+}
+.bz-block--hero .bz-eyebrow { color: #E2E2E2; margin-bottom: 22px; }
+.bz-block--hero .bz-btns { justify-content: center; gap: 14px; margin-block: 0; }
+.bz-block--hero .bz-btn { min-height: 48px; padding: 0 26px; }
+@media (max-width: 1100px) {
+  .bz-block--hero { padding-block: 72px; }
+  .bz-block--hero h1, .bz-block--hero h2 { font-size: 36px; }
+}
+@media (max-width: 640px) {
+  .bz-block--hero { padding-block: 56px; }
+  .bz-block--hero h1, .bz-block--hero h2 { font-size: 30px; }
+}
+
+/* --- Chrome: header, utility bar, footer ----------------------------------- */
+.bz-menu--horizontal .bz-nav, .bz-menu--mega .bz-nav { gap: var(--space-4); }
+.bz-navitem > a, .bz-navlabel { font-family: var(--font-body); font-weight: 600; }
+.bz-menu--mega .bz-nav > .bz-navitem > a { padding: 8px 10px; }
+.bz-subnav { border-radius: 0; box-shadow: 0 12px 30px rgba(0,0,0,.18); }
+
+/* --- Image blocks that fill their node ------------------------------------
+   An image block nests block > container > figure > img. A `height: 100%` on
+   the figure resolves against the container, so the container has to carry the
+   height too or the picture keeps its intrinsic 16:9 and leaves a gap. With an
+   auto-height block all three resolve to auto, so this is inert everywhere it
+   is not wanted. */
+.bz-block--image > .bz-container,
+.bz-block--image .bz-figure { height: 100%; }
+.bz-block--image .bz-figure { margin: 0; }
+
+/* --- Stacked rows collapse to one track ----------------------------------
+   blocks.css stacks a row by setting `grid-column: 1 / -1` on its columns, but
+   the row keeps twelve tracks and eleven gaps. At this site's 48px gap and 20px
+   mobile gutter that is 528px of gap inside a 350px container, so the row runs
+   off the side of a phone. Collapsing the template to a single track at the
+   same breakpoints the platform stacks at fixes it without touching the
+   renderer. (Worth reporting: the same arithmetic bites any site whose gap is
+   larger than about a twelfth of the mobile content width.) */
+@media (max-width: 640px) {
+  .bz-row--stack-tablet,
+  .bz-row--stack-mobile { grid-template-columns: minmax(0, 1fr); }
+}
+@media (min-width: 641px) and (max-width: 1100px) {
+  .bz-row--stack-tablet { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* --- Testimonial cards ----------------------------------------------------
+   The handoff draws a plain white card with a rule, the quote at 15px and the
+   attribution under it. Stars are not part of that design, so they are hidden
+   here and shown again only where a page actually rates something. */
+.bz-quote {
+  border-radius: 0;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.bz-quote blockquote { font-size: 15px; line-height: 1.7; color: #3f3f3f; margin: 0 }
+.bz-quote figcaption { gap: 4px }
+.bz-quote__n { font: 700 13px/1.4 var(--font-body); color: var(--ink) }
+.bz-quote__r { font-size: 13px; color: var(--muted) }
+.bz-stars { display: none }
+
+/* --- Stat bands -----------------------------------------------------------
+   Three figures with a tracked-out caps label, the way the handoff sets them:
+   the number in ink at display weight, the label small and muted, each in its
+   own bordered card across the full width of the band. blocks.css draws this
+   block as a dark two-column claim-and-figures split; the handoff's is a plain
+   row of cards on the page, so the split is undone here. */
+.bz-block--statBand { background: none; color: inherit; padding-block: 0; }
+.bz-block--statBand .bz-band { display: block; }
+.bz-block--statBand .bz-stat { border: 0; padding: 32px 28px; background: var(--ink); }
+.bz-block--statBand .bz-stats { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; }
+.bz-block--statBand .bz-stat__v { color: #fff; }
+.bz-block--statBand .bz-stat__l { color: var(--chrome-meta); letter-spacing: 0.14em; }
+.bz-stats { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: var(--space-6) }
+
+.bz-stat__v { font: 800 38px/1 var(--font-heading); color: var(--ink) }
+.bz-stat__l {
+  font: 700 11px/1.4 var(--font-body);
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: 12px;
+}
+.bz-section--bg-ink .bz-stat__v { color: #fff }
+.bz-section--bg-ink .bz-stat__l { color: #A0A0A0 }
+
+/* --- Inventory listing cards ---------------------------------------------
+   The live inventory widget's card, dressed as the handoff's listing card:
+   photo, title, price, spec chips and a hard-edged rule around it. */
+.bz-card { border-radius: 0; overflow: hidden; display: flex; flex-direction: column; height: 100% }
+.bz-card img, .bz-card .bz-photo { width: 100%; aspect-ratio: 16 / 10; object-fit: cover }
+.bz-card__body { padding: 22px; display: flex; flex-direction: column; gap: 10px }
+.bz-card__t { font: 800 17px/1.3 var(--font-heading); color: var(--ink); text-transform: uppercase }
+.bz-card__m { font: 800 22px/1 var(--font-heading); color: var(--ink) }
+.bz-card__facts { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 }
+.bz-card__facts > div {
+  display: inline-flex; align-items: baseline; gap: 5px;
+  border: 1px solid var(--line); padding: 6px 9px;
+  font-size: 12px; color: var(--muted);
+}
+.bz-card__facts dt { order: 2; font-weight: 400 }
+.bz-card__facts dd { order: 1; margin: 0; font-weight: 700; color: var(--ink) }
+
+
+/* --- Feature lists ---------------------------------------------------------
+   The handoff draws a `list` as a ruled column of plain statements, not a grid
+   of titled cards: a hairline above each item, 15px body copy, no heading face.
+   blocks.css sets the item title on an <h3>, which `.bz-block h3` then sizes at
+   the display step, so these have to win on specificity. */
+.bz-block--list .bz-grid { gap: 0 24px; }
+.bz-feature { border-top: 1px solid var(--line); padding: 16px 0; }
+.bz-block .bz-feature__t { font: 400 15px / 1.5 var(--font-body); color: var(--body-text); margin: 0; }
+.bz-block .bz-feature__d { font-size: 15px; line-height: 1.5; color: var(--muted); margin: 0; }
+
+/* --- Responsive steps, taken from the handoff's own two breakpoints ----------
+   The handoff drops .grid-3 and .grid-4 to two-up below 1100px and every grid
+   to one-up below 640px, and keeps its 48px page gutter until 640px. The
+   platform's own breakpoints are the same two widths. A column's span is an
+   inline custom property, so these steps have to outrank it. Rows the author
+   marked "never stack" — the header and utility bars — are left alone. */
+@media (min-width: 641px) and (max-width: 1100px) {
+  .bz-row:not(.bz-row--stack-never):not(.bz-row--stack-tablet) > .bz-col[style*="--bz-span:3"],
+  .bz-row:not(.bz-row--stack-never):not(.bz-row--stack-tablet) > .bz-col[style*="--bz-span:4"] {
+    --bz-span: 6 !important;
+  }
+}
+/* Below 640px the handoff sets every section heading to 26px, whatever size it
+   carries at desktop. Two attributes so a page's own desktop size, set at
+   (0,1,1), does not keep winning here. */
+@media (max-width: 640px) {
+  .bz-section .bz-block h2 { font-size: 26px; }
+}
+/* The FAQ band sets its own 32px heading at a higher specificity, so the 26px
+   mobile step has to be said again at that weight. */
+@media (max-width: 640px) {
+  .bz-section:has(.bz-faqs) .bz-block h2 { font-size: 26px; }
+}
+
+
+/* --- Band content width ----------------------------------------------------
+   The handoff draws two band geometries and the split is exact: all 93 bands
+   with no background cap the SECTION at 1280px, so the 48px gutter eats into
+   it and their content is 1184 wide; all 54 bands that paint a background
+   (paper, ink, chrome) put the gutter on the section and a 1280px wrapper
+   inside it, so their colour runs full-bleed and their content is a full 1280.
+   A white/card band is never one of the 54 - it has no background to bleed. */
+.bz-section--bg-paper > .bz-container,
+.bz-section--bg-ink > .bz-container,
+.bz-section--bg-accent > .bz-container {
+  max-width: calc(1280px + 2 * var(--container-pad));
+}
+@media (max-width: 1100px) {
+  .bz-section--bg-paper > .bz-container,
+  .bz-section--bg-ink > .bz-container,
+  .bz-section--bg-accent > .bz-container {
+    max-width: calc(1280px + 2 * var(--container-pad-tablet));
+  }
+}
+@media (max-width: 640px) {
+  .bz-section--bg-paper > .bz-container,
+  .bz-section--bg-ink > .bz-container,
+  .bz-section--bg-accent > .bz-container {
+    max-width: calc(1280px + 2 * var(--container-pad-mobile));
+  }
+}
+
+
+/* --- Mega panel anchoring --------------------------------------------------
+   blocks.css centres the viewport-wide panel on its trigger
+   (left:50%; translateX(-50%); width:100vw), which only lands correctly when
+   the trigger happens to sit mid-viewport. This header's nav is right-aligned,
+   so every panel was offset by its trigger's position and ran off the right
+   edge - "Location Details" by 446px. Worth reporting upstream: any right- or
+   left-aligned mega nav hits this.
+
+   So the panel is hung off the nav list rather than off the item that owns it:
+   the item goes out of the positioning flow and the <ul> becomes the containing
+   block. That fixes both halves of it. The panel's left edge lines up with the
+   first nav item and it is at least as wide as the bar, so whichever item the
+   pointer is on it is directly above the panel and can be moved straight down
+   into it. And it is only as wide as it needs to be: stretched edge to edge, a
+   three-column panel on a 1440px viewport left ~750px of empty white either
+   side of the links, which read as a broken band rather than a menu.
+   `width: max-content` sizes it to the columns it holds and no wider, and the
+   max-width keeps it inside the page gutter at any viewport.
+
+   Below 1100px the panel is the platform's stacked disclosure, which is already
+   the right shape, so none of this applies there.
+   (No ancestor may clip overflow for this to work - see CLAUDE.md 4a.) */
+.bz-menu--mega .bz-nav { position: relative; }
+.bz-menu--mega .bz-nav > .bz-navitem--has-sub { position: static; }
+@media (min-width: 1101px) {
+  .bz-menu--mega .bz-nav > .bz-navitem--has-sub > .bz-subnav {
+    left: 0;
+    right: auto;
+    transform: none;
+    min-width: 100%;
+    width: max-content;
+    max-width: calc(100vw - 2 * var(--container-pad));
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    border: 1px solid var(--line);
+  }
+}
+.bz-block--categoryGrid .bz-card img, .bz-card .bz-photo {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: contain;
+}
+.bz-widget--inventory-search {
+    display: block;
+    max-width: 500px;
+    width: 100%;
+}
+
+/* --- Blog post masthead ----------------------------------------------------
+   scripts/build.mjs composes a post's date, title and cover ahead of its node
+   tree: an eyebrow and an h1 inside a .bz-prose well, then the cover image in
+   a full .bz-container. Three things need saying here, none of which the post
+   document can reach.
+
+   The well is 68ch while the cover is the full 1280 container, so the date and
+   the title started 270px inside the picture's left edge and inside every
+   section of the body below it. The masthead's measure is set to the container
+   so the whole article shares one left edge; the h1 keeps a headline measure of
+   its own instead.
+
+   .bz-block's vertical padding is zeroed further up this file, which is right
+   for a band inside a section and wrong for the first thing in the article: the
+   date landed on the header's bottom edge. The band gets its own rhythm back.
+
+   And --text-h1 is 64px, which is the size a homepage hero's headline is set
+   at, not a post title's; at that size a normal title ran five lines deep.
+
+   The h1 runs the full container rather than a headline measure of its own. A
+   capped measure re-created the thing the well above was widened to fix: the
+   title broke over three lines and stopped short of the cover image's right
+   edge, so the masthead read as a narrower column sitting on a wider article.
+   Full width, one shared left and right edge, and `text-wrap: balance` keeps a
+   long title's lines even instead of leaving one word on the last one. */
+
+article > .bz-block:first-child { padding-top: var(--space-7); padding-bottom: var(--space-6); }
+article > .bz-block:first-child > .bz-container.bz-prose { max-width: var(--container); }
+article > .bz-block:first-child .bz-eyebrow { margin-bottom: 14px; }
+article > .bz-block:first-child h1 {
+  font-size: 52px; line-height: 1.08; margin: 0 0 var(--space-5);
+  max-width: none; text-wrap: balance;
+}
+/* The cover is emitted at 1200x630 whatever the file's own proportions are, so
+   a 400x250 thumbnail off the old site was stretched to a wider box. Cropping
+   to a fixed ratio keeps every post's cover the same shape and none of them
+   distorted. */
+article > .bz-block:first-child > .bz-container:not(.bz-prose) img {
+  display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover;
+}
+@media (max-width: 1100px) { article > .bz-block:first-child h1 { font-size: 40px; } }
+@media (max-width: 640px)  { article > .bz-block:first-child h1 { font-size: 30px; } }
+
+/* --- Subheadings inside a post --------------------------------------------
+   Two things a post needs that an ordinary page does not.
+
+   .bz-block + .bz-block zeroes a block's top padding, which is right for two
+   stacked bands and leaves a subheading sitting on the paragraph above it.
+
+   And --text-h3 is 30px against an h2 at 34px - close enough that a subheading
+   inside an article read as another section heading rather than a step below
+   one. Both are scoped to `article`, which only a post emits. */
+article .bz-block + .bz-block--heading { padding-top: var(--space-6); }
+/* Same cause, between two paragraphs: .bz-block's padding is zeroed site-wide
+   and a text block's last <p> drops its margin, so a paragraph that is its own
+   block butted straight against the one before it. Inside a post that is the
+   normal case, because a list or a subheading splits what was one block in two.
+   This restores the same 16px a paragraph gets inside a single block. */
+article .bz-block--text + .bz-block--text { padding-top: var(--space-4); }
+article .bz-block h3 { font-size: 22px; }
+
+/* --- Lists inside a post ---------------------------------------------------
+   The Feature list block is the only list primitive the renderer has, and it
+   draws items bare: no marker, and a 24px grid gap sized for a three-up card
+   band rather than for four consecutive bullets. Inside a post's prose that
+   reads as a paragraph someone broke by accident, which is exactly how the
+   run-on lines it replaced read.
+
+   These rules are scoped to `article`, which only a post page emits, so a
+   Feature list used as a card band on an ordinary page is untouched. */
+/* .bz-block + .bz-block zeroes a block's top padding, which is right for two
+   stacked bands and wrong for a list sitting between two paragraphs: the
+   bullets touched the line that introduces them and the one that follows. */
+article .bz-block--list { padding-block: var(--space-3); }
+article .bz-block--list .bz-grid { gap: 2px 24px; }
+/* The rule above the block styles an item as a divided table row - a border and
+   16px of padding - which is right for the spec rows it was written for and
+   reads as a table dropped into the prose here. */
+article .bz-block--list .bz-feature {
+  position: relative; border-top: 0; padding: 2px 0 2px 1.35em;
+}
+article .bz-block--list .bz-feature::before {
+  content: ""; position: absolute; left: 0.2em; top: 0.62em;
+  width: 7px; height: 7px; background: var(--accent);
+}
+/* An item is emitted as a heading because that is the block's shape. In a post
+   it is a bullet, so it is set in body type rather than at heading weight. */
+article .bz-block--list .bz-feature__t { font: 400 var(--text-body) / 1.6 var(--font-body); margin: 0; }
+article .bz-block--list .bz-feature__d { margin-top: 2px; }
+
+/* --- Long-form posts --------------------------------------------------------
+   Every post built on the blog design shares one article layout: the Post hero,
+   then an `article` section holding an `art-row` of two columns — `art-side`
+   (the Post contents rail and a promo card) and `art-body` (the prose) — then
+   `related` (Latest posts) and the Contact CTA band. Those five node ids are the
+   contract a post opts into; the rules here are written once instead of in each
+   post's own CSS, so a change to the article's type or rhythm is one edit.
+
+   Boxes inside the prose — callouts, the rail's promo card, the two-column
+   cards — carry their border, padding and label type as node styles, so they
+   are restyled on the canvas and keep their look when a dealer duplicates one.
+   What is left for this layer is what a node style cannot say: the grid, the
+   sticky rail, and the prose typography of the blocks directly in the body. */
+
+[data-bz-node="article"].bz-section { padding-block: 64px 0; }
+[data-bz-node="article"].bz-section > .bz-container { max-width: 1180px; }
+[data-bz-node="art-row"] { grid-template-columns: 240px minmax(0, 1fr); gap: 64px; }
+[data-bz-node="art-row"] > .bz-col { grid-column: auto; }
+/* The rail travels with the prose: the column sticks as one, so the list and
+   the promo card under it stay together. `align-self: start` is what gives a
+   sticky grid item room to move. */
+[data-bz-node="art-side"] { position: sticky; top: 24px; align-self: start; }
+
+/* Every block inside the article sets its own rhythm with margins, the way the
+   design's prose does, so the padding the site layer puts between stacked
+   blocks is handed back rather than doubling every gap. */
+[data-bz-node="art-body"] .bz-block,
+[data-bz-node="art-body"] .bz-block + .bz-block,
+[data-bz-node="art-side"] .bz-block,
+[data-bz-node="art-side"] .bz-block + .bz-block { padding-block: 0; }
+[data-bz-node="art-body"] .bz-text,
+[data-bz-node="art-side"] .bz-text { max-width: none; }
+[data-bz-node="art-body"] .bz-container,
+[data-bz-node="art-side"] .bz-container { padding-inline: 0; max-width: none; }
+/* A text block's type comes from its node styles inside a box, so a paragraph
+   there inherits rather than restating the prose size. */
+[data-bz-node="art-body"] .bz-col .bz-block--text p,
+[data-bz-node="art-side"] .bz-block--text p { font: inherit; color: inherit; letter-spacing: inherit; text-transform: inherit; margin: 0; }
+
+/* The prose: 17px/1.8 body against 28px headings, the lede a step up in ink.
+   The headings carry the ids the rail links to, so each keeps a scroll margin. */
+[data-bz-node="art-body"] > .bz-block--heading h2 {
+  font-size: 28px; line-height: 1.22; letter-spacing: -0.01em;
+  margin: 52px 0 16px; scroll-margin-top: 24px; text-wrap: wrap;
+}
+[data-bz-node="art-body"] .bz-block--heading h3 { font-size: 19px; line-height: 1.3; margin: 30px 0 12px; text-transform: none; }
+[data-bz-node="art-body"] .bz-col .bz-block--heading h3 { margin-top: 0; }
+[data-bz-node="art-body"] > .bz-block--text p {
+  font-size: 17px; line-height: 1.8; color: var(--body-text); margin: 0 0 18px; text-wrap: pretty;
+}
+[data-bz-node="art-body"] .bz-block--text strong { color: var(--ink); }
+[data-bz-node="art-body"] > [data-bz-node="lede"] p { font-size: 19px; line-height: 1.75; color: var(--ink); }
+[data-bz-node="art-body"] .bz-block--text a { color: var(--accent); }
+[data-bz-node="art-body"] .ss-prose-list { margin: 0 0 20px; padding-left: 20px; max-width: none; }
+[data-bz-node="art-body"] .ss-prose-list li { font-size: 16px; line-height: 1.75; margin: 0 0 6px; }
+[data-bz-node="art-body"] .ss-prose-list li::marker { color: currentColor; }
+[data-bz-node="art-body"] .bz-col .ss-prose-list { margin: 0; }
+[data-bz-node="art-body"] .bz-col .ss-prose-list li:last-child { margin-bottom: 0; }
+[data-bz-node="art-body"] .bz-row { margin-inline: 0; }
+
+/* Definition rows inside a post are the design's label/detail table (the
+   diesel diagnostic's smoke colours): a 130px bold label, ruled underneath. */
+[data-bz-node="art-body"] .ss-def { border-top: 0; margin: 8px 0 20px; }
+[data-bz-node="art-body"] .ss-def__r { grid-template-columns: 130px minmax(0, 1fr); gap: 0; padding: 0; }
+[data-bz-node="art-body"] .ss-def__l,
+[data-bz-node="art-body"] .ss-def__t { padding: 14px; font-size: 15px; line-height: 1.6; }
+[data-bz-node="art-body"] .ss-def__l { font-weight: 800; color: var(--ink); }
+/* A Feature list inside a post is the design's grid of bordered title-and-
+   sentence cards, four across (DOT inspection points, tyre factors). */
+[data-bz-node="art-body"] .bz-block--list { margin: 8px 0 24px; }
+[data-bz-node="art-body"] .bz-block--list .bz-grid { gap: 16px; }
+[data-bz-node="art-body"] .bz-block--list .bz-grid--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+[data-bz-node="art-body"] .bz-block--list .bz-feature { position: static; border: 1px solid var(--line); padding: 20px; background: none; box-shadow: none; }
+[data-bz-node="art-body"] .bz-block--list .bz-feature::before { content: none; }
+[data-bz-node="art-body"] .bz-block--list .bz-feature__t { font: 800 19px / 1.3 var(--font-heading); color: var(--ink); text-transform: none; margin: 0 0 12px; }
+[data-bz-node="art-body"] .bz-block--list .bz-feature__d { font-size: 14.5px; line-height: 1.8; color: var(--body-text); margin: 0; }
+/* A Stat band inside a post is two white cells on a hairline grid, the first
+   figure in the accent — not the dark band it is on a page. */
+[data-bz-node="art-body"] .bz-block--statBand .bz-stats {
+  grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; background: var(--line);
+  border: 1px solid var(--line); margin: 8px 0 34px;
+}
+[data-bz-node="art-body"] .bz-block--statBand .bz-stat { background: var(--card); padding: 30px 28px; }
+[data-bz-node="art-body"] .bz-block--statBand .bz-stat__v { font: 800 34px / 1.5 var(--font-heading); color: var(--ink); margin: 0 0 6px; }
+[data-bz-node="art-body"] .bz-block--statBand .bz-stat:first-child .bz-stat__v { color: var(--accent); }
+[data-bz-node="art-body"] .bz-block--statBand .bz-stat__l { font: 400 14px / 1.8 var(--font-body); letter-spacing: 0; text-transform: none; color: var(--body-text); margin: 0; }
+/* A photograph in its own column is shown whole, not cropped. */
+[data-bz-node="art-body"] .bz-col .bz-figure { margin: 0; }
+[data-bz-node="art-body"] .bz-col .bz-block--image img { width: 100%; height: auto; display: block; }
+
+/* A numbered section heading ("Mistake #1"): the badge and the heading sit in
+   one row laid out by node styles; the heading is set as the prose h2, with no
+   margin of its own because the row carries it. */
+[data-bz-node="art-body"] .bz-col > .bz-block--heading h2 {
+  font-size: 28px; line-height: 1.22; letter-spacing: -0.01em; margin: 0; scroll-margin-top: 24px; text-wrap: wrap;
+}
+[data-bz-node="art-body"] [data-bz-node$="-num"] { font-family: var(--font-heading); text-align: center; }
+[data-bz-node="art-body"] [data-bz-node$="-badge"] { width: 36px; }
+
+/* A numbered section ("01"): the row's node styles set a 56px / 1fr grid, so its two
+   columns take the tracks rather than their twelve-column spans, and the body column
+   carries the prose type the article's own paragraphs have. */
+[data-bz-node="art-body"] [data-bz-node^="numbered-"][data-bz-type="row"] > .bz-col { grid-column: auto; }
+[data-bz-node="art-body"] [data-bz-node^="numbered-"][data-bz-node$="-body"] .bz-block--text p {
+  font-size: 17px; line-height: 1.8; color: var(--body-text); margin: 0 0 18px; text-wrap: pretty;
+}
+[data-bz-node="art-body"] [data-bz-node^="numbered-"][data-bz-node$="-body"] .bz-block--heading h3 { margin: 0 0 12px; }
+/* A ruled section ("1. Upfront Cost vs Long-Term Value"): a column ruled across the top by
+   node styles, holding the prose at the article's own measure. */
+[data-bz-node="art-body"] [data-bz-node^="diff-"][data-bz-type="column"] .bz-block--text p {
+  font-size: 17px; line-height: 1.8; color: var(--body-text); margin: 0 0 18px; text-wrap: pretty;
+}
+[data-bz-node="art-body"] [data-bz-node^="diff-"][data-bz-type="column"] .bz-block--heading h3 { margin: 0 0 8px; }
+[data-bz-node="art-body"] [data-bz-node^="diff-"][data-bz-type="column"] .ss-prose-list { margin: 0; padding-left: 20px; }
+[data-bz-node="art-body"] [data-bz-node^="diff-"][data-bz-type="column"] .ss-prose-list li { font-size: 16px; line-height: 1.75; margin: 0 0 6px; }
+
+/* A row of arrow links sits 14px apart. */
+[data-bz-node="art-body"] .bz-col .bz-btns { gap: 14px; }
+
+/* In-body photographs are cropped to 380px (240px at phone width), whatever
+   the upload's proportions. */
+[data-bz-node="art-body"] > .bz-block--image { margin: 36px 0; }
+[data-bz-node="art-body"] > .bz-block--image .bz-figure { margin: 0; }
+[data-bz-node="art-body"] > .bz-block--image img { width: 100%; height: 380px; object-fit: cover; display: block; border-radius: 0; }
+
+/* Buttons: the link style in a callout or the rail is the design's 15px arrow
+   link; a row of two is 48px tall and drawn like every other CTA. */
+[data-bz-node="art-body"] .bz-btns,
+[data-bz-node="art-side"] .bz-btns { margin-block: 0; }
+[data-bz-node="art-body"] > .bz-block--buttons .bz-btns { gap: 14px; margin: 40px 0 8px; }
+[data-bz-node="art-body"] > .bz-block--buttons .bz-btn {
+  min-height: 48px; padding: 0 26px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html:has([data-bz-node="art-toc"]) { scroll-behavior: smooth; }
+}
+
+/* A post's own FAQ band, when it has one. */
+[data-bz-node="faq"].bz-section { padding-block: 90px; }
+
+/* Keep reading — the platform's Latest posts block, dressed as the design's
+   card: a 180px crop, the date over the title, no excerpt. */
+[data-bz-node="related"].bz-section { padding-block: 80px; }
+[data-bz-node="related-h"] h2 { font-size: 32px; margin: 0 0 40px; }
+[data-bz-node="related-posts"] .bz-sechead { display: none; }
+[data-bz-node="related-posts"] .bz-grid { gap: 24px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+[data-bz-node="related-posts"] .bz-card { border: 1px solid var(--line); background: var(--card); }
+[data-bz-node="related-posts"] .bz-card img,
+[data-bz-node="related-posts"] .bz-card .bz-photo { height: 180px; aspect-ratio: auto; object-fit: cover; }
+[data-bz-node="related-posts"] .bz-card__body { padding: 22px; gap: 0; }
+[data-bz-node="related-posts"] .bz-card__m { font-size: 12px; color: var(--muted); margin-bottom: 10px; }
+[data-bz-node="related-posts"] .bz-card__t {
+  font: 800 18px / 1.3 var(--font-heading); color: var(--ink); text-transform: none; margin-bottom: 14px;
+}
+[data-bz-node="related-posts"] .bz-post__d { display: none; }
+/* The whole card is the link, so the design's "Read more →" is drawn rather
+   than authored as a second anchor to the same destination. */
+[data-bz-node="related-posts"] .bz-card__body::after {
+  content: "Read more \2192"; font: 700 14px / 1 var(--font-body); color: var(--accent); margin-top: auto;
+}
+[data-bz-node="related-posts"] .bz-card:hover .bz-card__t { color: var(--accent); }
+[data-bz-node="related-cta"] .bz-btns { margin: 34px 0 0; }
+
+@media (max-width: 1100px) {
+  [data-bz-node="art-row"] { grid-template-columns: minmax(0, 1fr); gap: 36px; }
+  [data-bz-node="art-body"] .bz-block--list .bz-grid--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  [data-bz-node="art-body"] .bz-block--statBand .bz-stats { grid-template-columns: minmax(0, 1fr); }
+  [data-bz-node="art-side"] { position: static; }
+  [data-bz-node="related-posts"] .bz-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 640px) {
+  [data-bz-node="article"].bz-section { padding-block: 40px 0; }
+  [data-bz-node="art-body"] > .bz-block--heading h2 { font-size: 23px; margin-top: 40px; }
+  [data-bz-node="art-body"] .bz-col > .bz-block--heading h2 { font-size: 23px; }
+  [data-bz-node="art-body"] > [data-bz-node="lede"] p { font-size: 17px; }
+  [data-bz-node="art-body"] .bz-row > .bz-col { grid-column: 1 / -1; }
+  [data-bz-node="art-body"] > .bz-block--image img { height: 240px; }
+  [data-bz-node="art-body"] .ss-def__r { grid-template-columns: 90px minmax(0, 1fr); }
+  [data-bz-node="art-body"] .bz-block--list .bz-grid--4 { grid-template-columns: minmax(0, 1fr); }
+  [data-bz-node="related-posts"] .bz-grid { grid-template-columns: minmax(0, 1fr); }
+  [data-bz-node="faq"].bz-section,
+  [data-bz-node="related"].bz-section { padding-block: 64px; }
+}
+
+
+/* --- Buttons: one typography for the whole site -----------------------------
+   Before this, 41 rules across this file, ten components, three templates and
+   nine page stylesheets each set a button's face, size, weight or case, and the
+   site rendered eleven different button typographies. The pair that showed it
+   worst sat side by side in a CTA band: a primary in the display face, which
+   can only draw caps, beside a secondary in the body face showing the label as
+   typed — "CALL (800) 741-7566" next to "Contact us".
+
+   The case is stated here rather than left to the typeface. The display face is
+   dropped for buttons: it cannot render lowercase at all, so nothing set in it
+   can ever match anything set in the body face. The body face at 700 with an
+   explicit uppercase gives primaries the same caps they already had, and lets
+   every other button match them whatever case the label was typed in on the
+   Buttons screen. */
+.bz-btn {
+  font: 700 13px/1.2 var(--font-body);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+/* A text link is text rather than a box, so it keeps sentence case. */
+.bz-btn--link {
+  font: 600 14px/1.6 var(--font-body);
+  letter-spacing: 0;
+  text-transform: none;
+}
+/* A carousel arrow is a glyph, not a word, so it keeps a glyph's size. Stated
+   once here for both rails rather than differently in each component. */
+[data-bz-node="lr-nav"] .bz-btn,
+[data-bz-node="tr-nav"] .bz-btn {
+  font: 400 16px/1 var(--font-body);
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+
+
+/* --- Phone: the rules the rest of this file assumed a mouse for --------------
+   Everything above is written for a pointer on a wide screen. These are the
+   places where that assumption costs a visitor on a phone something real. */
+@media (max-width: 640px) {
+  /* iOS Safari zooms the whole page in whenever a field whose text is under
+     16px takes focus, and every control on this site was 15px. The zoom is not
+     undone when the field blurs: the visitor is left mid-form on a page wider
+     than the screen, panning sideways to read it. Raised on the controls only,
+     so nothing else about the forms changes. */
+  .bz-input, .bz-select, .bz-textarea,
+  .bz-field input, .bz-field select, .bz-field textarea,
+  input[type="text"], input[type="email"], input[type="tel"], input[type="date"],
+  input[type="number"], input[type="search"], input[type="url"], select, textarea {
+    font-size: 16px;
+  }
+
+  /* The eyebrow token is 11px, which reads as a considered small-caps label at
+     arm's length and as noise at phone distance. One token, so every eyebrow,
+     field label, breadcrumb, byline and chip built on it moves together. */
+  :root { --text-eyebrow: 0.75rem; }
+
+  /* Touch targets. A text link here is deliberately text rather than a box, so
+     it carries no padding and stands 22px tall — half of what a thumb needs.
+     The padding added back is cancelled by an equal negative margin, so the
+     target grows to 44px and nothing on the page moves. Used only where the
+     links stand alone; a stacked list is given real height instead, below. */
+  .bz-btns > .bz-btn--link,
+  .bz-loclist .bz-loc__p {
+    padding-block: 11px;
+    margin-block: -11px;
+  }
+
+  /* Stacked navigation — footer columns and the open header drawer. These sit
+     one under another, so the negative-margin trick would make neighbouring
+     targets overlap and swallow each other's taps. The list is allowed to grow
+     instead. */
+  .bz-menu--vertical .bz-navitem > a,
+  .bz-menu--vertical .bz-navitem > .bz-navlabel,
+  .bz-menu--horizontal .bz-navitem > a {
+    padding-block: 9px;
+  }
+
+  /* A checkbox is 13px of native control. The label already toggles it, so the
+     whole row is made the target rather than the box alone. */
+  .bz-choices .bz-choice,
+  .bz-field--consent .bz-choice {
+    min-height: 44px;
+    align-items: center;
+  }
+  .bz-choice input[type="checkbox"],
+  .bz-choice input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    flex: 0 0 20px;
+  }
+}
+.bz-phones span.bz-phone__l {
+    display: none;
+}
+ul.bz-phones.bz-bare {
+    display: none;
+}
+.bz-searchbar__chips {
+    display: none;
+}
+
+/* --- Phone: hero photographs cover their band --------------------------------
+   The platform's `.bz-block img { height: auto }` outranks the hero's own
+   `.bz-hero__img { height: 100% }`, so on a phone every hero photo drew at its
+   natural shape — a strip across the top of the band, with the rest bare. On
+   desktop the band is shorter than the photo, which is why it only shows here.
+   Phone only; every hero on the site, so a page built tomorrow has it too. */
+@media (max-width: 640px) {
+  .bz-block--hero .bz-hero__bg .bz-hero__img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+/* --- Components placed by the "Site template — New Home design" template --- */
+/* The footer sits on the darker chrome, and its first column is wider than the
+   three link columns, which the twelve-column grid cannot express on its own. */
+/* The legal strip below carries the footer's closing padding, so this band
+   runs straight into its divider the way the handoff's does. */
+[data-bz-section="site-footer"] > .bz-section { background: var(--chrome); padding-block: 80px 60px }
+[data-bz-section="site-footer"] [data-bz-node="sf-row"] { grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 0 }
+[data-bz-section="site-footer"] [data-bz-node="sf-row"] > .bz-col { grid-column: auto }
+[data-bz-section="site-footer"] .bz-block { padding-block: 0 }
+[data-bz-section="site-footer"] .bz-block + .bz-block { padding-block-start: 0 }
+[data-bz-section="site-footer"] h2 { font: 700 11px/1 var(--font-body); letter-spacing: .1em; text-transform: uppercase; color: var(--chrome-label); margin: 0 0 16px }
+[data-bz-section="site-footer"] .bz-menu .bz-nav { gap: 10px }
+[data-bz-section="site-footer"] .bz-navitem { font-size: 14px; line-height: 1.6 }
+[data-bz-section="site-footer"] .bz-navitem > a { color: #fff; font-size: 14px; line-height: 1.6; font-weight: 400; font-family: var(--font-body); padding: 0 }
+[data-bz-section="site-footer"] .bz-navitem > a:hover { text-decoration: underline }
+/* Doubled attribute: this component's own `.bz-block + .bz-block` rule sits at
+   (0,3,0) and was zeroing the three paddings that set the first column. */
+[data-bz-section="site-footer"] [data-bz-node="sf-blurb"][data-bz-node] { padding-block-start: 16px }
+[data-bz-section="site-footer"] p { color: var(--chrome-meta); font-size: 13px; line-height: 1.6; max-width: 260px; margin: 0 }
+[data-bz-section="site-footer"] .bz-logo__img { height: 56px; width: auto; display: block }
+/* The brand anchor is inline, so its line box added 10px under the mark. */
+[data-bz-section="site-footer"] [data-bz-node="sf-logo"] .bz-brand { display: block }
+[data-bz-section="site-footer"] [data-bz-node="sf-logo"] { padding-block: 0 }
+[data-bz-section="site-footer"] .bz-btn--link { color: var(--chrome-meta); padding: 0; min-height: 0; text-decoration: none }
+[data-bz-section="site-footer"] .bz-btn--link:hover { color: #fff; text-decoration: underline }
+[data-bz-section="site-footer"] [data-bz-node="sf-email"][data-bz-node] { padding-block-start: 12px }
+[data-bz-section="site-footer"] [data-bz-node="sf-email"] .bz-btns { margin-block: 0 }
+[data-bz-section="site-footer"] [data-bz-node="sf-social"][data-bz-node] { padding-block-start: 19px }
+[data-bz-section="site-footer"] [data-bz-node="sf-social"] .ss-social { gap: 14px }
+[data-bz-section="site-footer"] [data-bz-node="sf-social"] .ss-social__a img { width: 16px; height: 16px }
+@media (max-width: 1100px) { [data-bz-section="site-footer"] [data-bz-node="sf-row"] { grid-template-columns: 1fr 1fr } }
+@media (max-width: 640px) { [data-bz-section="site-footer"] [data-bz-node="sf-row"] { grid-template-columns: 1fr } }
+@media (max-width: 640px) {
+  /* The footer is a stack of link columns, so its rows are given real height
+     rather than an overhanging hit area that would swallow the tap meant for
+     the link below. */
+  [data-bz-section="site-footer"] .bz-navitem > a { display: block; padding-block: 9px }
+  [data-bz-section="site-footer"] .bz-menu .bz-nav { gap: 2px }
+  [data-bz-section="site-footer"] .bz-btn--link { padding-block: 11px; margin-block: -11px }
+}
+
+/* --- Node styles of the "Site template — New Home design" template --- */
+[data-bz-node="header-bar"][data-bz-node]{border-radius:6px}
+[data-bz-node="main-nav"][data-bz-node]{font-size:13px;font-weight:500;text-transform:uppercase}
+[data-bz-node="header-phone"][data-bz-node] .bz-btn{border-radius:8px}
+
+/* === END storefront chrome copy === */
