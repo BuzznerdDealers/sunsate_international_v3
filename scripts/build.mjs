@@ -343,13 +343,16 @@ const CUSTOM = {
 };
 if (CUSTOM.hasJs) write('scripts/custom.js', customCodeRaw.js);
 
-// The storefront only loads /partials/chrome.css. Brand pages also inline each
-// template's `css` field, so a site that styles its header there looks right
-// on the homepage and unstyled around inventory. Always publish the inventory
-// template's CSS with the legacy chrome.css file.
+// The storefront only loads /partials/chrome.css. Brand pages also inline the
+// site's custom CSS (site/custom-code.json `css`, before the page CSS) and each
+// template's `css` field, so a site that styles its header there looks right on
+// the homepage and unstyled around inventory. Always publish both with the legacy
+// chrome.css file, in the order a brand page applies them: custom, then template.
+// (Sun State, 29 Sep 2026: the site's "design layer" — header pill, buttons,
+// container — lived in custom-code.json and never reached /store.)
 const inventoryTemplateCss =
   resolveTemplate({ kind: 'inventory' }, templates).template?.css || '';
-const chromeCss = [readText(join(SITE, 'chrome', 'chrome.css')), inventoryTemplateCss]
+const chromeCss = [readText(join(SITE, 'chrome', 'chrome.css')), CUSTOM.css, inventoryTemplateCss]
   .filter((s) => s && s.trim())
   .join('\n\n');
 const chromeJs = readText(join(SITE, 'chrome', 'chrome.js'));
