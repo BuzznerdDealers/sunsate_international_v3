@@ -716,18 +716,18 @@
                 {
                   "id": "nm-trucks-new",
                   "label": "New trucks",
-                  "type": "url",
-                  "ref": null,
-                  "url": "/store/inventory/truck?fvid=67",
+                  "type": "inventory",
+                  "ref": "inventory/truck?fvid=67",
+                  "url": null,
                   "newTab": false,
                   "children": []
                 },
                 {
                   "id": "nm-trucks-used",
                   "label": "Used trucks",
-                  "type": "url",
-                  "ref": null,
-                  "url": "/store/inventory/truck?fvid=112",
+                  "type": "inventory",
+                  "ref": "inventory/truck?fvid=112",
+                  "url": null,
                   "newTab": false,
                   "children": []
                 },
@@ -743,9 +743,9 @@
                 {
                   "id": "nm-trucks-dump",
                   "label": "Dump trucks",
-                  "type": "url",
-                  "ref": null,
-                  "url": "/store/inventory/truck?q=dump+trucks",
+                  "type": "inventory",
+                  "ref": "inventory/truck?q=dump+trucks",
+                  "url": null,
                   "newTab": false,
                   "children": []
                 },
