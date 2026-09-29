@@ -14,7 +14,7 @@
       "props": {
         "sectionId": "post-hero",
         "values": {
-          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Trailer Rentals",
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blogs\">Blog</a> / Trailer Rentals",
           "title": "6 Reasons Why You Should Rent a Trailer",
           "topic": "Trailer Rentals",
           "date": "December 26, 2025",
@@ -461,7 +461,7 @@
                   "id": "p-when-to-rent-4",
                   "type": "text",
                   "props": {
-                    "text": "If you're ready to invest in equipment that works as hard as you do, used dry van trailers are a smart place to start. <a href=\"/store/inventory?type=trailer\">Explore inventory</a> to find available used dry van trailers for sale, or download trailer specifications to make an informed decision that supports your business today, and down the road.",
+                    "text": "If you're ready to invest in equipment that works as hard as you do, used dry van trailers are a smart place to start. <a href=\"/store/inventory/trailer\">Explore inventory</a> to find available used dry van trailers for sale, or download trailer specifications to make an informed decision that supports your business today, and down the road.",
                     "align": "left",
                     "width": "full"
                   }
@@ -493,22 +493,22 @@
                     "items": [
                       {
                         "label": "Facebook",
-                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2F6-reasons-why-you-should-rent-a-trailer",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsunstateintl.com%2Fblog%2Fposts%2F6-reasons-why-you-should-rent-a-trailer",
                         "newTab": true
                       },
                       {
                         "label": "X",
-                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2F6-reasons-why-you-should-rent-a-trailer&text=6%20Reasons%20Why%20You%20Should%20Rent%20a%20Trailer",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fsunstateintl.com%2Fblog%2Fposts%2F6-reasons-why-you-should-rent-a-trailer&text=6%20Reasons%20Why%20You%20Should%20Rent%20a%20Trailer",
                         "newTab": true
                       },
                       {
                         "label": "LinkedIn",
-                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2F6-reasons-why-you-should-rent-a-trailer",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsunstateintl.com%2Fblog%2Fposts%2F6-reasons-why-you-should-rent-a-trailer",
                         "newTab": true
                       },
                       {
                         "label": "Email",
-                        "url": "mailto:?subject=6%20Reasons%20Why%20You%20Should%20Rent%20a%20Trailer&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2F6-reasons-why-you-should-rent-a-trailer",
+                        "url": "mailto:?subject=6%20Reasons%20Why%20You%20Should%20Rent%20a%20Trailer&body=https%3A%2F%2Fsunstateintl.com%2Fblog%2Fposts%2F6-reasons-why-you-should-rent-a-trailer",
                         "newTab": false
                       }
                     ]
@@ -592,7 +592,7 @@
           "primaryLabel": "Call (800) 741-7566",
           "primaryUrl": "tel:+18007417566",
           "secondaryLabel": "Browse trailer rentals",
-          "secondaryUrl": "/store/inventory?type=trailer&condition=rental"
+          "secondaryUrl": "/store/inventory/trailer"
         }
       },
       "children": []

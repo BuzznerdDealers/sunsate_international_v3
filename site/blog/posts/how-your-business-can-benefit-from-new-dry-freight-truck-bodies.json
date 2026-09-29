@@ -14,7 +14,7 @@
       "props": {
         "sectionId": "post-hero",
         "values": {
-          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Sales",
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blogs\">Blog</a> / Sales",
           "title": "How Your Business Can Benefit from New Dry Freight Truck Bodies",
           "topic": "Sales",
           "date": "Apr 18, 2025",
@@ -398,7 +398,7 @@
                   "id": "p-choose-1",
                   "type": "text",
                   "props": {
-                    "text": "At <a href=\"/\">Sun State International</a>, we offer a wide selection of <a href=\"https://www.international.com/\">International brand trucks</a>, high-quality <a href=\"https://www.hyundaitranslead.com/\">Hyundai Translead</a> truck bodies, and <a href=\"/store/inventory?type=trailer\">Globe and Hyundai trailers</a>. Our team is committed to helping you find the equipment that meets your business’s needs, providing expert guidance and top-tier customer service. We also offer flexible <a href=\"/financing\">financing options</a> to make your investment more manageable. <a href=\"/contact\">Contact us today</a> to learn more about our inventory, financing solutions, or to visit one of our locations to explore our trucks and trailers firsthand. Let us help you take your business further with reliable, high-performance equipment.",
+                    "text": "At <a href=\"/\">Sun State International</a>, we offer a wide selection of <a href=\"https://www.international.com/\">International brand trucks</a>, high-quality <a href=\"https://www.hyundaitranslead.com/\">Hyundai Translead</a> truck bodies, and <a href=\"/store/inventory/trailer\">Globe and Hyundai trailers</a>. Our team is committed to helping you find the equipment that meets your business’s needs, providing expert guidance and top-tier customer service. We also offer flexible <a href=\"/financing\">financing options</a> to make your investment more manageable. <a href=\"/contact\">Contact us today</a> to learn more about our inventory, financing solutions, or to visit one of our locations to explore our trucks and trailers firsthand. Let us help you take your business further with reliable, high-performance equipment.",
                     "align": "left",
                     "width": "full"
                   }
@@ -412,13 +412,13 @@
                       {
                         "label": "INTERNATIONAL",
                         "title": "New Trucks →",
-                        "url": "/store/inventory?condition=new",
+                        "url": "/store/inventory/truck?fvid=67",
                         "newTab": false
                       },
                       {
                         "label": "GLOBE & HYUNDAI",
                         "title": "New Trailers →",
-                        "url": "/store/inventory?type=trailer&condition=new",
+                        "url": "/store/inventory/trailer?fvid=116",
                         "newTab": false
                       },
                       {

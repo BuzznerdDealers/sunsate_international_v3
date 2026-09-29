@@ -12,13 +12,13 @@
         "ctas": [
           {
             "label": "Search truck inventory",
-            "url": "/store/inventory?type=truck",
+            "url": "/store/inventory/truck",
             "style": "primary",
             "intent": "browse-inventory"
           },
           {
             "label": "Browse trailers",
-            "url": "/store/inventory?type=trailer",
+            "url": "/store/inventory/trailer",
             "style": "secondary",
             "intent": "browse-inventory"
           }
@@ -92,7 +92,7 @@
               "title": "New trucks",
               "body": "New International heavy and medium-duty trucks — LT, RH, HX, HV, MV, eMV and CV Series — with the S13 Integrated Powertrain available on LT, RH and HX.",
               "linkLabel": "Browse new trucks →",
-              "linkUrl": "/store/inventory?type=truck&condition=new",
+              "linkUrl": "/store/inventory/truck?fvid=67",
               "link2Label": "Build a spec in the configurator →",
               "link2Url": "/truck-configurator"
             },
@@ -107,7 +107,7 @@
               "title": "Used trucks",
               "body": "Inspected trade-ins and off-lease units, day cabs, sleepers, dump and vocational trucks, with service history from our own technicians.",
               "linkLabel": "Browse used trucks →",
-              "linkUrl": "/store/inventory?type=truck&condition=used",
+              "linkUrl": "/store/inventory/truck?fvid=112",
               "link2Label": "Extended service coverage →",
               "link2Url": "/extended-service"
             },
@@ -124,7 +124,7 @@
               "linkLabel": "Capacity yard trucks →",
               "linkUrl": "/capacity-yard-trucks",
               "link2Label": "Search Capacity inventory →",
-              "link2Url": "/store/inventory?brand=capacity"
+              "link2Url": "/store/inventory"
             },
             {
               "image": {
@@ -137,7 +137,7 @@
               "title": "New trailers",
               "body": "New dry van, reefer, flatbed and specialty trailers from Sun State Trailers, with specifications for every configuration.",
               "linkLabel": "Browse new trailers →",
-              "linkUrl": "/store/inventory?type=trailer&condition=new",
+              "linkUrl": "/store/inventory/trailer?fvid=116",
               "link2Label": "Trailer Sales, Tampa →",
               "link2Url": "/locations/trailer-sales"
             },
@@ -152,7 +152,7 @@
               "title": "Used trailers",
               "body": "A rotating selection of used trailers coming off trade and lease, repaired and inspected in our own trailer bays before they go out.",
               "linkLabel": "Browse used trailers →",
-              "linkUrl": "/store/inventory?type=trailer&condition=used",
+              "linkUrl": "/store/inventory/trailer?fvid=135",
               "link2Label": "Trailer parts & service →",
               "link2Url": "/service"
             },
@@ -167,7 +167,7 @@
               "title": "Trailer rentals",
               "body": "Rent instead of buy when volume spikes or a unit is down. Rentals are handled through Sun State Trailers in Tampa.",
               "linkLabel": "Trailer rentals →",
-              "linkUrl": "/store/inventory?type=trailer&condition=rental",
+              "linkUrl": "/store/inventory/trailer",
               "link2Label": "Call (813) 621-1331 →",
               "link2Url": "tel:+18136211331"
             }
@@ -191,19 +191,19 @@
               "title": "Dry van",
               "body": "General freight vans from Hyundai Translead, the volume workhorse for distribution and line-haul.",
               "linkLabel": "Browse dry vans →",
-              "linkUrl": "/store/inventory?type=trailer&category=dry-van"
+              "linkUrl": "/store/inventory/trailer"
             },
             {
               "title": "Reefer",
               "body": "Refrigerated vans for temperature-controlled freight, with liftgate and door options available.",
               "linkLabel": "Browse reefers →",
-              "linkUrl": "/store/inventory?type=trailer&category=refrigerated"
+              "linkUrl": "/store/inventory/trailer"
             },
             {
               "title": "Flatbed",
               "body": "Flatbeds and drop decks for construction materials, equipment and oversized loads.",
               "linkLabel": "Browse flatbeds →",
-              "linkUrl": "/store/inventory?type=trailer&category=flatbed"
+              "linkUrl": "/store/inventory/trailer"
             },
             {
               "title": "Specialty & Globe",
@@ -273,7 +273,8 @@
               "hours": "Sales 7:00 AM – 7:00 PM M–F, 8:00 AM – 12:00 PM Sat",
               "phone": "(813) 621-1331",
               "phoneUrl": "tel:+18136211331",
-              "url": "/locations/tampa"
+              "href": "/locations/tampa",
+              "mapUrl": "https://www.google.com/maps/search/?api=1&query=6020%20Adamo%20Drive%2C%20Tampa%2C%20FL%2033619"
             },
             {
               "tag": "TRUCKS · PARTS · SERVICE",
@@ -282,7 +283,8 @@
               "hours": "Sales 8:00 AM – 4:30 PM M–F",
               "phone": "(863) 424-2411",
               "phoneUrl": "tel:+18634242411",
-              "url": "/locations/davenport"
+              "href": "/locations/davenport",
+              "mapUrl": "https://www.google.com/maps/search/?api=1&query=41609%20Hwy%2027%2C%20Davenport%2C%20FL%2033837"
             },
             {
               "tag": "TRUCKS · PARTS · SERVICE",
@@ -291,7 +293,8 @@
               "hours": "Sales 8:00 AM – 5:00 PM M–F",
               "phone": "(941) 355-7681",
               "phoneUrl": "tel:+19413557681",
-              "url": "/locations/sarasota"
+              "href": "/locations/sarasota",
+              "mapUrl": "https://www.google.com/maps/search/?api=1&query=1000%20Sarasota%20Center%20Blvd.%2C%20Sarasota%2C%20FL%2034240"
             },
             {
               "tag": "SUN STATE TRAILERS",
@@ -300,7 +303,8 @@
               "hours": "Store 8:00 AM – 5:00 PM M–F",
               "phone": "(813) 621-1331",
               "phoneUrl": "tel:+18136211331",
-              "url": "/locations/trailer-sales"
+              "href": "/locations/trailer-sales",
+              "mapUrl": "https://www.google.com/maps/search/?api=1&query=6020%20Adamo%20Drive%2C%20Tampa%2C%20FL%2033619"
             }
           ]
         },

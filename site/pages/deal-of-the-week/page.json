@@ -131,7 +131,7 @@
               "body": "Add this week's featured new or used International, IC Bus or Capacity yard truck here — year, make, model and what makes it a deal.",
               "specs": "<strong>Year / make / model</strong> To be filled\n\n<strong>Mileage</strong> To be filled\n\n<strong>Location</strong> Tampa / Davenport / Sarasota",
               "linkLabel": "View truck inventory →",
-              "linkUrl": "/store/inventory?type=truck"
+              "linkUrl": "/store/inventory/truck"
             },
             {
               "image": {
@@ -145,7 +145,7 @@
               "body": "Add this week's featured Hyundai Translead or Globe trailer — dry van, reefer, flatbed or specialty, new or used.",
               "specs": "<strong>Type</strong> To be filled\n\n<strong>Year / length</strong> To be filled\n\n<strong>Location</strong> Trailer Sales, Tampa",
               "linkLabel": "View trailer inventory →",
-              "linkUrl": "/store/inventory?type=trailer"
+              "linkUrl": "/store/inventory/trailer"
             },
             {
               "image": {
@@ -216,13 +216,13 @@
               "title": "New trucks",
               "body": "International, IC Bus and Capacity yard trucks, spec'd for Florida work and ready to configure.",
               "linkLabel": "New trucks →",
-              "linkUrl": "/store/inventory?type=truck&condition=new"
+              "linkUrl": "/store/inventory/truck?fvid=67"
             },
             {
               "title": "Used trucks",
               "body": "Inspected trade-ins and off-lease units, with service history from our own technicians.",
               "linkLabel": "Used trucks →",
-              "linkUrl": "/store/inventory?type=truck&condition=used"
+              "linkUrl": "/store/inventory/truck?fvid=112"
             },
             {
               "title": "Trailers",

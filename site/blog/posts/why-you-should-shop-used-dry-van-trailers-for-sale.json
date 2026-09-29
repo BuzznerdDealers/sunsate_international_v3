@@ -14,7 +14,7 @@
       "props": {
         "sectionId": "post-hero",
         "values": {
-          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Trailer Sales",
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blogs\">Blog</a> / Trailer Sales",
           "title": "Why You Should Shop Used Dry Van Trailers for Sale",
           "topic": "Trailer Sales",
           "date": "December 19, 2025",
@@ -520,7 +520,7 @@
                   "id": "p-why-sunstate-5",
                   "type": "text",
                   "props": {
-                    "text": "If you're ready to invest in equipment that works as hard as you do, used dry van trailers are a smart place to start. <a href=\"/store/inventory?type=trailer\">Explore inventory</a> to find available used dry van trailers for sale, or download trailer specifications to make an informed decision that supports your business today, and down the road.",
+                    "text": "If you're ready to invest in equipment that works as hard as you do, used dry van trailers are a smart place to start. <a href=\"/store/inventory/trailer\">Explore inventory</a> to find available used dry van trailers for sale, or download trailer specifications to make an informed decision that supports your business today, and down the road.",
                     "align": "left",
                     "width": "full"
                   }
@@ -552,22 +552,22 @@
                     "items": [
                       {
                         "label": "Facebook",
-                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhy-you-should-shop-used-dry-van-trailers-for-sale",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsunstateintl.com%2Fblog%2Fposts%2Fwhy-you-should-shop-used-dry-van-trailers-for-sale",
                         "newTab": true
                       },
                       {
                         "label": "X",
-                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhy-you-should-shop-used-dry-van-trailers-for-sale&text=Why%20You%20Should%20Shop%20Used%20Dry%20Van%20Trailers%20for%20Sale",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fsunstateintl.com%2Fblog%2Fposts%2Fwhy-you-should-shop-used-dry-van-trailers-for-sale&text=Why%20You%20Should%20Shop%20Used%20Dry%20Van%20Trailers%20for%20Sale",
                         "newTab": true
                       },
                       {
                         "label": "LinkedIn",
-                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhy-you-should-shop-used-dry-van-trailers-for-sale",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsunstateintl.com%2Fblog%2Fposts%2Fwhy-you-should-shop-used-dry-van-trailers-for-sale",
                         "newTab": true
                       },
                       {
                         "label": "Email",
-                        "url": "mailto:?subject=Why%20You%20Should%20Shop%20Used%20Dry%20Van%20Trailers%20for%20Sale&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhy-you-should-shop-used-dry-van-trailers-for-sale",
+                        "url": "mailto:?subject=Why%20You%20Should%20Shop%20Used%20Dry%20Van%20Trailers%20for%20Sale&body=https%3A%2F%2Fsunstateintl.com%2Fblog%2Fposts%2Fwhy-you-should-shop-used-dry-van-trailers-for-sale",
                         "newTab": false
                       }
                     ]
@@ -651,7 +651,7 @@
           "primaryLabel": "Call (800) 741-7566",
           "primaryUrl": "tel:+18007417566",
           "secondaryLabel": "Browse trailer inventory",
-          "secondaryUrl": "/store/inventory?type=trailer"
+          "secondaryUrl": "/store/inventory/trailer"
         }
       },
       "children": []

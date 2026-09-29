@@ -14,7 +14,7 @@
       "props": {
         "sectionId": "post-hero",
         "values": {
-          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Trailer Sales",
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blogs\">Blog</a> / Trailer Sales",
           "title": "Why Businesses Across Florida Trust Sun State Trailers as Their Preferred Trailer Dealer",
           "topic": "Trailer Sales",
           "date": "July 18, 2025",
@@ -415,22 +415,22 @@
                     "items": [
                       {
                         "label": "Facebook",
-                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhy-businesses-across-florida-trust-sun-state-trailers",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsunstateintl.com%2Fblog%2Fposts%2Fwhy-businesses-across-florida-trust-sun-state-trailers",
                         "newTab": true
                       },
                       {
                         "label": "X",
-                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhy-businesses-across-florida-trust-sun-state-trailers&text=Why%20Businesses%20Across%20Florida%20Trust%20Sun%20State%20Trailers%20as%20Their%20Preferred%20Trailer%20Dealer",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fsunstateintl.com%2Fblog%2Fposts%2Fwhy-businesses-across-florida-trust-sun-state-trailers&text=Why%20Businesses%20Across%20Florida%20Trust%20Sun%20State%20Trailers%20as%20Their%20Preferred%20Trailer%20Dealer",
                         "newTab": true
                       },
                       {
                         "label": "LinkedIn",
-                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhy-businesses-across-florida-trust-sun-state-trailers",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsunstateintl.com%2Fblog%2Fposts%2Fwhy-businesses-across-florida-trust-sun-state-trailers",
                         "newTab": true
                       },
                       {
                         "label": "Email",
-                        "url": "mailto:?subject=Why%20Businesses%20Across%20Florida%20Trust%20Sun%20State%20Trailers%20as%20Their%20Preferred%20Trailer%20Dealer&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhy-businesses-across-florida-trust-sun-state-trailers",
+                        "url": "mailto:?subject=Why%20Businesses%20Across%20Florida%20Trust%20Sun%20State%20Trailers%20as%20Their%20Preferred%20Trailer%20Dealer&body=https%3A%2F%2Fsunstateintl.com%2Fblog%2Fposts%2Fwhy-businesses-across-florida-trust-sun-state-trailers",
                         "newTab": false
                       }
                     ]
@@ -514,7 +514,7 @@
           "primaryLabel": "Call (800) 741-7566",
           "primaryUrl": "tel:+18007417566",
           "secondaryLabel": "Browse trailer inventory",
-          "secondaryUrl": "/store/inventory?type=trailer"
+          "secondaryUrl": "/store/inventory/trailer"
         }
       },
       "children": []

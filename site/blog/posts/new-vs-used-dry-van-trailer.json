@@ -14,7 +14,7 @@
       "props": {
         "sectionId": "post-hero",
         "values": {
-          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Trailer Sales",
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blogs\">Blog</a> / Trailer Sales",
           "title": "New vs Used Dry Van Trailer: What to Know",
           "topic": "Trailer Sales",
           "date": "March 13, 2026",
@@ -908,7 +908,7 @@
           "primaryLabel": "Call (800) 741-7566",
           "primaryUrl": "tel:+18007417566",
           "secondaryLabel": "Browse trailer inventory",
-          "secondaryUrl": "/store/inventory?type=trailer"
+          "secondaryUrl": "/store/inventory/trailer"
         }
       },
       "children": []

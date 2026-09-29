@@ -140,7 +140,7 @@
               },
               "label": "International ",
               "ctaLabel": "View Now →",
-              "ctaUrl": "#",
+              "ctaUrl": "/store/inventory/truck",
               "logoBackdrop": "card"
             },
             {
@@ -152,7 +152,7 @@
               },
               "label": "Capacity yard trucks",
               "ctaLabel": "View Now →",
-              "ctaUrl": "#",
+              "ctaUrl": "/capacity-yard-trucks",
               "logoBackdrop": "card"
             },
             {
@@ -163,7 +163,7 @@
                 "height": 409
               },
               "ctaLabel": "View Now →",
-              "ctaUrl": "#",
+              "ctaUrl": "/store/inventory/trailer",
               "label": "HYUNDAI TRANSLEAD",
               "logoBackdrop": "ink"
             },
@@ -176,7 +176,7 @@
               },
               "label": "Globe Trailers",
               "ctaLabel": "View Now →",
-              "ctaUrl": "#",
+              "ctaUrl": "/store/inventory/trailer",
               "logoBackdrop": "ink"
             }
           ],
@@ -2518,21 +2518,21 @@
               "title": "Trucks",
               "body": "Shop our wide selection of new and International trucks built to handle any job, equipped with advanced telematics via OnCommand Connection for real-time fleet insights.",
               "linkLabel": "Browse trucks →",
-              "linkUrl": "#"
+              "linkUrl": "/store/inventory/truck"
             },
             {
               "num": "02",
               "title": "Trailers",
               "body": "Explore our diverse inventory of trailers, including flatbeds, dump trailers, and reefers, from trusted brands like Hyundai Translead and Globe Trailers.",
               "linkLabel": "Browse trailers →",
-              "linkUrl": "#"
+              "linkUrl": "/store/inventory/trailer"
             },
             {
               "num": "03",
               "title": "IC Bus",
               "body": "Built for safety and reliability, our IC Bus selection offers top-of-the-line school and commercial buses from industry-leading manufacturers.",
               "linkLabel": "Browse buses →",
-              "linkUrl": "#"
+              "linkUrl": "https://www.sunstatebuscenters.com/"
             },
             {
               "num": "04",
@@ -2586,7 +2586,7 @@
             "height": 900
           },
           "width": "boxed",
-          "ctaUrl": "#"
+          "ctaUrl": "/store/inventory/trailer"
         }
       },
       "styles": {
@@ -2608,7 +2608,7 @@
           "heading": "Built by industry leaders.",
           "body": "At Sun State, we offer only the best quality for the best price — International trucks, IC Bus, and trailers from industry leaders like Hyundai Translead and Globe Trailers. When you choose a truck or trailer through Sun State, you're investing in durability, reliability, and innovation.",
           "ctaLabel": "Globe Trailers",
-          "ctaUrl": "#",
+          "ctaUrl": "/store/inventory/trailer",
           "ctaStyle": "primary",
           "background": "card",
           "anchor": "brands",

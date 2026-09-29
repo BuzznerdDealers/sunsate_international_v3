@@ -14,7 +14,7 @@
       "props": {
         "sectionId": "post-hero",
         "values": {
-          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / New Trailers",
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blogs\">Blog</a> / New Trailers",
           "title": "From Flatbed Trailers to Dump-Ends: Discover Which Trailers Are Best for Your Business",
           "topic": "New Trailers",
           "date": "December 12, 2024",
@@ -173,7 +173,7 @@
                   "id": "lede",
                   "type": "text",
                   "props": {
-                    "text": "When you're looking for dependable transportation, the right equipment becomes more than a tool; it's a cornerstone for your business's success. Choosing the right <a href=\"/store/inventory?type=trailer\">trailer</a> ensures your products or materials arrive in the best condition, your team works efficiently, and every job gets done right the first time. But with so many types of trailers available, determining which one suits your needs can be a challenge. Let's dive into the features and uses of different trailers to help you make the best decision for your business.",
+                    "text": "When you're looking for dependable transportation, the right equipment becomes more than a tool; it's a cornerstone for your business's success. Choosing the right <a href=\"/store/inventory/trailer\">trailer</a> ensures your products or materials arrive in the best condition, your team works efficiently, and every job gets done right the first time. But with so many types of trailers available, determining which one suits your needs can be a challenge. Let's dive into the features and uses of different trailers to help you make the best decision for your business.",
                     "align": "left",
                     "width": "full",
                     "anchor": "post-lede"
@@ -561,22 +561,22 @@
                     "items": [
                       {
                         "label": "Facebook",
-                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhich-trailers-are-best-for-your-business",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsunstateintl.com%2Fblog%2Fposts%2Fwhich-trailers-are-best-for-your-business",
                         "newTab": true
                       },
                       {
                         "label": "X",
-                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhich-trailers-are-best-for-your-business&text=From%20Flatbed%20Trailers%20to%20Dump-Ends%3A%20Discover%20Which%20Trailers%20Are%20Best%20for%20Your%20Business",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fsunstateintl.com%2Fblog%2Fposts%2Fwhich-trailers-are-best-for-your-business&text=From%20Flatbed%20Trailers%20to%20Dump-Ends%3A%20Discover%20Which%20Trailers%20Are%20Best%20for%20Your%20Business",
                         "newTab": true
                       },
                       {
                         "label": "LinkedIn",
-                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhich-trailers-are-best-for-your-business",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsunstateintl.com%2Fblog%2Fposts%2Fwhich-trailers-are-best-for-your-business",
                         "newTab": true
                       },
                       {
                         "label": "Email",
-                        "url": "mailto:?subject=From%20Flatbed%20Trailers%20to%20Dump-Ends%3A%20Discover%20Which%20Trailers%20Are%20Best%20for%20Your%20Business&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhich-trailers-are-best-for-your-business",
+                        "url": "mailto:?subject=From%20Flatbed%20Trailers%20to%20Dump-Ends%3A%20Discover%20Which%20Trailers%20Are%20Best%20for%20Your%20Business&body=https%3A%2F%2Fsunstateintl.com%2Fblog%2Fposts%2Fwhich-trailers-are-best-for-your-business",
                         "newTab": false
                       }
                     ]
@@ -660,7 +660,7 @@
           "primaryLabel": "Call (800) 741-7566",
           "primaryUrl": "tel:+18007417566",
           "secondaryLabel": "Browse trailer inventory",
-          "secondaryUrl": "/store/inventory?type=trailer"
+          "secondaryUrl": "/store/inventory/trailer"
         }
       },
       "children": []

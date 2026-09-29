@@ -14,7 +14,7 @@
       "props": {
         "sectionId": "post-hero",
         "values": {
-          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Used Trailers",
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blogs\">Blog</a> / Used Trailers",
           "title": "What to Look For When Shopping for a Used Reefer Trailer for Sale",
           "topic": "Used Trailers",
           "date": "May 29, 2025",
@@ -181,7 +181,7 @@
                   "id": "lede",
                   "type": "text",
                   "props": {
-                    "text": "Buying a <a href=\"/store/inventory?type=trailer&condition=used\">used reefer trailer</a> isn't just a matter of finding a good price. It's about protecting your investment and ensuring you've got equipment you can count on. Whether you're hauling produce across the state or frozen goods across the country, a dependable refrigerated trailer is the backbone of your operation. But with used inventory, not every trailer is built, or maintained, the same. If you're searching for a used reefer trailer for sale, here's what to keep in mind before making your decision.",
+                    "text": "Buying a <a href=\"/store/inventory/trailer?fvid=135\">used reefer trailer</a> isn't just a matter of finding a good price. It's about protecting your investment and ensuring you've got equipment you can count on. Whether you're hauling produce across the state or frozen goods across the country, a dependable refrigerated trailer is the backbone of your operation. But with used inventory, not every trailer is built, or maintained, the same. If you're searching for a used reefer trailer for sale, here's what to keep in mind before making your decision.",
                     "align": "left",
                     "width": "full",
                     "anchor": "post-lede"
@@ -915,22 +915,22 @@
                     "items": [
                       {
                         "label": "Facebook",
-                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhat-to-look-for-in-a-used-reefer-trailer",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsunstateintl.com%2Fblog%2Fposts%2Fwhat-to-look-for-in-a-used-reefer-trailer",
                         "newTab": true
                       },
                       {
                         "label": "X",
-                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhat-to-look-for-in-a-used-reefer-trailer&text=What%20to%20Look%20For%20When%20Shopping%20for%20a%20Used%20Reefer%20Trailer%20for%20Sale",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fsunstateintl.com%2Fblog%2Fposts%2Fwhat-to-look-for-in-a-used-reefer-trailer&text=What%20to%20Look%20For%20When%20Shopping%20for%20a%20Used%20Reefer%20Trailer%20for%20Sale",
                         "newTab": true
                       },
                       {
                         "label": "LinkedIn",
-                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhat-to-look-for-in-a-used-reefer-trailer",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsunstateintl.com%2Fblog%2Fposts%2Fwhat-to-look-for-in-a-used-reefer-trailer",
                         "newTab": true
                       },
                       {
                         "label": "Email",
-                        "url": "mailto:?subject=What%20to%20Look%20For%20When%20Shopping%20for%20a%20Used%20Reefer%20Trailer%20for%20Sale&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhat-to-look-for-in-a-used-reefer-trailer",
+                        "url": "mailto:?subject=What%20to%20Look%20For%20When%20Shopping%20for%20a%20Used%20Reefer%20Trailer%20for%20Sale&body=https%3A%2F%2Fsunstateintl.com%2Fblog%2Fposts%2Fwhat-to-look-for-in-a-used-reefer-trailer",
                         "newTab": false
                       }
                     ]
@@ -1014,7 +1014,7 @@
           "primaryLabel": "Call (800) 741-7566",
           "primaryUrl": "tel:+18007417566",
           "secondaryLabel": "Browse trailer inventory",
-          "secondaryUrl": "/store/inventory?type=trailer"
+          "secondaryUrl": "/store/inventory/trailer"
         }
       },
       "children": []

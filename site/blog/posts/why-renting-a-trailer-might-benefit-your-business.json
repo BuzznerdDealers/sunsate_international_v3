@@ -14,7 +14,7 @@
       "props": {
         "sectionId": "post-hero",
         "values": {
-          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Trailer Rentals",
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blogs\">Blog</a> / Trailer Rentals",
           "title": "Why Your Business Might Benefit From Renting a Trailer Instead of Buying",
           "topic": "Trailer Rentals",
           "date": "December 19, 2024",
@@ -174,7 +174,7 @@
                   "id": "lede",
                   "type": "text",
                   "props": {
-                    "text": "When it comes to running a business that relies on dependable transportation, one of the biggest decisions you'll face is whether to buy or <a href=\"/store/inventory?type=trailer&condition=rental\">rent a trailer</a>. This choice can have a significant impact on your finances and operations. While owning a trailer might seem like the natural choice, renting can often be a more flexible option that aligns with your business's needs. Renting a trailer offers a range of benefits that can help you save money, grow your services, and stay adaptable in an ever-changing market. Let's take a deeper look into why renting might be the best choice for your business.",
+                    "text": "When it comes to running a business that relies on dependable transportation, one of the biggest decisions you'll face is whether to buy or <a href=\"/store/inventory/trailer\">rent a trailer</a>. This choice can have a significant impact on your finances and operations. While owning a trailer might seem like the natural choice, renting can often be a more flexible option that aligns with your business's needs. Renting a trailer offers a range of benefits that can help you save money, grow your services, and stay adaptable in an ever-changing market. Let's take a deeper look into why renting might be the best choice for your business.",
                     "align": "left",
                     "width": "full",
                     "anchor": "post-lede"
@@ -391,22 +391,22 @@
                     "items": [
                       {
                         "label": "Facebook",
-                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhy-renting-a-trailer-might-benefit-your-business",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsunstateintl.com%2Fblog%2Fposts%2Fwhy-renting-a-trailer-might-benefit-your-business",
                         "newTab": true
                       },
                       {
                         "label": "X",
-                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhy-renting-a-trailer-might-benefit-your-business&text=Why%20Your%20Business%20Might%20Benefit%20From%20Renting%20a%20Trailer%20Instead%20of%20Buying",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fsunstateintl.com%2Fblog%2Fposts%2Fwhy-renting-a-trailer-might-benefit-your-business&text=Why%20Your%20Business%20Might%20Benefit%20From%20Renting%20a%20Trailer%20Instead%20of%20Buying",
                         "newTab": true
                       },
                       {
                         "label": "LinkedIn",
-                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhy-renting-a-trailer-might-benefit-your-business",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsunstateintl.com%2Fblog%2Fposts%2Fwhy-renting-a-trailer-might-benefit-your-business",
                         "newTab": true
                       },
                       {
                         "label": "Email",
-                        "url": "mailto:?subject=Why%20Your%20Business%20Might%20Benefit%20From%20Renting%20a%20Trailer%20Instead%20of%20Buying&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fwhy-renting-a-trailer-might-benefit-your-business",
+                        "url": "mailto:?subject=Why%20Your%20Business%20Might%20Benefit%20From%20Renting%20a%20Trailer%20Instead%20of%20Buying&body=https%3A%2F%2Fsunstateintl.com%2Fblog%2Fposts%2Fwhy-renting-a-trailer-might-benefit-your-business",
                         "newTab": false
                       }
                     ]
@@ -490,7 +490,7 @@
           "primaryLabel": "Call (800) 741-7566",
           "primaryUrl": "tel:+18007417566",
           "secondaryLabel": "Browse trailer inventory",
-          "secondaryUrl": "/store/inventory?type=trailer"
+          "secondaryUrl": "/store/inventory/trailer"
         }
       },
       "children": []

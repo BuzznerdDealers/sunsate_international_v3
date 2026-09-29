@@ -14,7 +14,7 @@
       "props": {
         "sectionId": "post-hero",
         "values": {
-          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Trailer Sales",
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blogs\">Blog</a> / Trailer Sales",
           "title": "Lower Overhead and Expand Capacity With a Used Dump Trailer",
           "topic": "Trailer Sales",
           "date": "January 16, 2026",
@@ -643,7 +643,7 @@
                   "id": "p-why-sunstate-4",
                   "type": "text",
                   "props": {
-                    "text": "Our customers come to us because they want equipment they can rely on, and a dealer who stands behind it. Ready to expand capacity without expanding overhead? <a href=\"/store/inventory?type=trailer\">Explore inventory</a> to find the right used dump trailer at Sun State Trailers.",
+                    "text": "Our customers come to us because they want equipment they can rely on, and a dealer who stands behind it. Ready to expand capacity without expanding overhead? <a href=\"/store/inventory/trailer\">Explore inventory</a> to find the right used dump trailer at Sun State Trailers.",
                     "align": "left",
                     "width": "full"
                   }
@@ -675,22 +675,22 @@
                     "items": [
                       {
                         "label": "Facebook",
-                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Flower-overhead-and-expand-capacity-with-a-used-dump-trailer",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsunstateintl.com%2Fblog%2Fposts%2Flower-overhead-and-expand-capacity-with-a-used-dump-trailer",
                         "newTab": true
                       },
                       {
                         "label": "X",
-                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Flower-overhead-and-expand-capacity-with-a-used-dump-trailer&text=Lower%20Overhead%20and%20Expand%20Capacity%20With%20a%20Used%20Dump%20Trailer",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fsunstateintl.com%2Fblog%2Fposts%2Flower-overhead-and-expand-capacity-with-a-used-dump-trailer&text=Lower%20Overhead%20and%20Expand%20Capacity%20With%20a%20Used%20Dump%20Trailer",
                         "newTab": true
                       },
                       {
                         "label": "LinkedIn",
-                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Flower-overhead-and-expand-capacity-with-a-used-dump-trailer",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsunstateintl.com%2Fblog%2Fposts%2Flower-overhead-and-expand-capacity-with-a-used-dump-trailer",
                         "newTab": true
                       },
                       {
                         "label": "Email",
-                        "url": "mailto:?subject=Lower%20Overhead%20and%20Expand%20Capacity%20With%20a%20Used%20Dump%20Trailer&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Flower-overhead-and-expand-capacity-with-a-used-dump-trailer",
+                        "url": "mailto:?subject=Lower%20Overhead%20and%20Expand%20Capacity%20With%20a%20Used%20Dump%20Trailer&body=https%3A%2F%2Fsunstateintl.com%2Fblog%2Fposts%2Flower-overhead-and-expand-capacity-with-a-used-dump-trailer",
                         "newTab": false
                       }
                     ]
@@ -774,7 +774,7 @@
           "primaryLabel": "Call (800) 741-7566",
           "primaryUrl": "tel:+18007417566",
           "secondaryLabel": "Browse trailer inventory",
-          "secondaryUrl": "/store/inventory?type=trailer"
+          "secondaryUrl": "/store/inventory/trailer"
         }
       },
       "children": []

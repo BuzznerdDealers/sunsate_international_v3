@@ -14,7 +14,7 @@
       "props": {
         "sectionId": "post-hero",
         "values": {
-          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Used Trailers",
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blogs\">Blog</a> / Used Trailers",
           "title": "Do You Need a Refrigerator Trailer or Just an Insulated One? Here's the Difference",
           "topic": "Used Trailers",
           "date": "June 27, 2025",
@@ -193,7 +193,7 @@
                   "id": "p-reefer-vs-insulated-1",
                   "type": "text",
                   "props": {
-                    "text": "While they might look similar from the outside, <a href=\"/store/inventory?type=trailer\">refrigerator trailers</a> and <a href=\"/store/inventory?type=trailer\">insulated dry van trailers</a> serve very different purposes. Understanding their construction and capabilities helps you choose the right tool for the job.",
+                    "text": "While they might look similar from the outside, <a href=\"/store/inventory/trailer\">refrigerator trailers</a> and <a href=\"/store/inventory/trailer\">insulated dry van trailers</a> serve very different purposes. Understanding their construction and capabilities helps you choose the right tool for the job.",
                     "align": "left",
                     "width": "full"
                   }
@@ -642,22 +642,22 @@
                     "items": [
                       {
                         "label": "Facebook",
-                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Frefrigerator-trailer-or-insulated-trailer",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsunstateintl.com%2Fblog%2Fposts%2Frefrigerator-trailer-or-insulated-trailer",
                         "newTab": true
                       },
                       {
                         "label": "X",
-                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Frefrigerator-trailer-or-insulated-trailer&text=Do%20You%20Need%20a%20Refrigerator%20Trailer%20or%20Just%20an%20Insulated%20One%3F%20Here%27s%20the%20Difference",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fsunstateintl.com%2Fblog%2Fposts%2Frefrigerator-trailer-or-insulated-trailer&text=Do%20You%20Need%20a%20Refrigerator%20Trailer%20or%20Just%20an%20Insulated%20One%3F%20Here%27s%20the%20Difference",
                         "newTab": true
                       },
                       {
                         "label": "LinkedIn",
-                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Frefrigerator-trailer-or-insulated-trailer",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsunstateintl.com%2Fblog%2Fposts%2Frefrigerator-trailer-or-insulated-trailer",
                         "newTab": true
                       },
                       {
                         "label": "Email",
-                        "url": "mailto:?subject=Do%20You%20Need%20a%20Refrigerator%20Trailer%20or%20Just%20an%20Insulated%20One%3F%20Here%27s%20the%20Difference&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Frefrigerator-trailer-or-insulated-trailer",
+                        "url": "mailto:?subject=Do%20You%20Need%20a%20Refrigerator%20Trailer%20or%20Just%20an%20Insulated%20One%3F%20Here%27s%20the%20Difference&body=https%3A%2F%2Fsunstateintl.com%2Fblog%2Fposts%2Frefrigerator-trailer-or-insulated-trailer",
                         "newTab": false
                       }
                     ]
@@ -741,7 +741,7 @@
           "primaryLabel": "Call (800) 741-7566",
           "primaryUrl": "tel:+18007417566",
           "secondaryLabel": "Browse trailer inventory",
-          "secondaryUrl": "/store/inventory?type=trailer"
+          "secondaryUrl": "/store/inventory/trailer"
         }
       },
       "children": []
