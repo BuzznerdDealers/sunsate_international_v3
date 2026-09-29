@@ -1089,8 +1089,9 @@
                   "id": "item-70",
                   "label": "Aftermarkets",
                   "type": "url",
-                  "url": "/locations/aftermarket-part",
                   "ref": null,
+                  "url": "/locations/aftermarket-part",
+                  "newTab": false,
                   "children": []
                 }
               ]
@@ -1935,15 +1936,6 @@
           "label": "Financing and credit applications →",
           "type": "page",
           "ref": "financing",
-          "url": null,
-          "newTab": false,
-          "children": []
-        },
-        {
-          "id": "cql-careers",
-          "label": "Careers at Sun State →",
-          "type": "page",
-          "ref": "careers",
           "url": null,
           "newTab": false,
           "children": []
