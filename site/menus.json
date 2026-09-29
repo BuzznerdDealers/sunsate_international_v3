@@ -743,9 +743,9 @@
                 {
                   "id": "nm-trucks-dump",
                   "label": "Dump trucks",
-                  "type": "inventory",
-                  "ref": "inventory/truck",
-                  "url": null,
+                  "type": "url",
+                  "ref": null,
+                  "url": "/store/inventory/truck?q=dump+trucks",
                   "newTab": false,
                   "children": []
                 },
