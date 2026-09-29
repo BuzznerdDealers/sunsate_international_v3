@@ -13,6 +13,10 @@
       "destination": "https://vikas-group.buzznerdrv.com/store/"
     },
     {
+      "source": "/store/:path*/",
+      "destination": "https://vikas-group.buzznerdrv.com/store/:path*/"
+    },
+    {
       "source": "/store/:path*",
       "destination": "https://vikas-group.buzznerdrv.com/store/:path*"
     }
