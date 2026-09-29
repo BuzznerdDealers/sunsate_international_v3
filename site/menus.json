@@ -1395,36 +1395,36 @@
         {
           "id": "hb-international",
           "label": "INTERNATIONAL",
-          "type": "inventory",
-          "ref": "/store/showrooms?fvid=84",
-          "url": null,
+          "type": "url",
+          "ref": null,
+          "url": "/store/showrooms?fvid=84",
           "newTab": false,
           "children": []
         },
         {
           "id": "hb-icbus",
           "label": "CAPACITY YARD TRUCK",
-          "type": "inventory",
-          "ref": "/store/showrooms?fvid=86",
-          "url": null,
+          "type": "url",
+          "ref": null,
+          "url": "/store/showrooms?fvid=86",
           "newTab": false,
           "children": []
         },
         {
           "id": "hb-hyundai",
           "label": "HYUNDAI TRANSLEAD",
-          "type": "inventory",
-          "ref": "/store/showrooms?fvid=104",
-          "url": null,
+          "type": "url",
+          "ref": null,
+          "url": "/store/showrooms?fvid=104",
           "newTab": false,
           "children": []
         },
         {
           "id": "hb-globe",
           "label": "GLOBE TRAILERS",
-          "type": "inventory",
-          "ref": "/store/inventory/trailer?fvid=195",
-          "url": null,
+          "type": "url",
+          "ref": null,
+          "url": "/store/inventory/trailer?fvid=195",
           "newTab": false,
           "children": []
         }
