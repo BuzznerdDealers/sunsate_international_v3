@@ -691,8 +691,8 @@
         {
           "id": "nm-trucks",
           "label": "Trucks",
-          "type": "label",
-          "ref": null,
+          "type": "inventory",
+          "ref": "inventory/truck",
           "url": null,
           "newTab": false,
           "children": [
