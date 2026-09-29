@@ -8,13 +8,15 @@
       "ref": null
     }
   ],
+  "css": "",
+  "js": "",
   "nodes": [
     {
       "id": "site-header",
       "type": "section",
       "props": {
         "width": "full",
-        "background": "none",
+        "background": "ink",
         "paddingY": 0,
         "behaviour": "scrollstate",
         "behaviourOptions": "{\"after\":0}"
