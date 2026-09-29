@@ -1404,7 +1404,7 @@
                   "id": "lg-card-addr",
                   "type": "text",
                   "props": {
-                    "text": "{{streetAddress}}, {{city}}, {{region}} {{postalCode}}",
+                    "text": "{{streetAddress}}",
                     "width": "full"
                   }
                 },
