@@ -855,26 +855,26 @@
                 {
                   "id": "nm-trailers-dryvan",
                   "label": "Dry van trailers",
-                  "type": "inventory",
-                  "ref": "inventory/trailer",
-                  "url": null,
+                  "type": "url",
+                  "ref": null,
+                  "url": "/store/inventory/trailer?q=dry+van",
                   "newTab": false,
                   "children": []
                 },
                 {
                   "id": "nm-trailers-reefer",
                   "label": "Refrigerated trailers",
-                  "type": "inventory",
-                  "ref": "inventory/trailer",
-                  "url": null,
+                  "type": "url",
+                  "ref": null,
+                  "url": "/store/inventory/trailer?q=Reefer",
                   "newTab": false,
                   "children": []
                 },
                 {
                   "id": "nm-trailers-flat",
                   "label": "Flatbed trailers",
-                  "type": "inventory",
-                  "ref": "inventory/trailer",
+                  "type": "url",
+                  "ref": null,
                   "url": null,
                   "newTab": false,
                   "children": []
