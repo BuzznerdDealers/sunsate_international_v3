@@ -1507,7 +1507,7 @@
           "id": "fb-international",
           "label": "International",
           "type": "inventory",
-          "ref": "inventory/truck",
+          "ref": "/store/showrooms?fvid=84",
           "url": null,
           "newTab": false,
           "children": []
@@ -1515,8 +1515,8 @@
         {
           "id": "fb-icbus",
           "label": "Capacity Yard Truck ",
-          "type": "page",
-          "ref": "capacity-yard-trucks",
+          "type": "inventory",
+          "ref": "/store/showrooms?fvid=86",
           "url": null,
           "newTab": false,
           "children": []
@@ -1525,7 +1525,7 @@
           "id": "fb-hyundai",
           "label": "Hyundai Translead",
           "type": "inventory",
-          "ref": "inventory/trailer",
+          "ref": "/store/showrooms?fvid=104",
           "url": null,
           "newTab": false,
           "children": []
@@ -1534,7 +1534,7 @@
           "id": "fb-globe",
           "label": "Globe Trailers",
           "type": "inventory",
-          "ref": "inventory/trailer",
+          "ref": "/store/inventory/trailer?fvid=195",
           "url": null,
           "newTab": false,
           "children": []
