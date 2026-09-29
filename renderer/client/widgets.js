@@ -575,6 +575,18 @@
       });
     });
 
+    // An open mobile menu closes when the visitor taps or clicks anywhere
+    // outside it. pointerdown rather than click: iOS Safari does not dispatch a
+    // click on non-interactive page content, so a tap on plain copy would miss.
+    document.addEventListener('pointerdown', function (event) {
+      Array.prototype.forEach.call(document.querySelectorAll('[data-bz-collapse][data-open]'), function (wrap) {
+        if (wrap.contains(event.target)) return;
+        wrap.removeAttribute('data-open');
+        var toggle = wrap.querySelector('.bz-menu-toggle');
+        if (toggle) toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+
     // A parent with a submenu is a link *and* a disclosure. On a pointer device
     // hover opens it and the link still works; on touch there is no hover, so
     // the first tap opens and the second follows.
