@@ -12,7 +12,7 @@
         "ctas": [
           {
             "label": "View Capacity inventory",
-            "url": "#",
+            "url": "/store/inventory",
             "style": "primary",
             "intent": "browse-inventory"
           },
@@ -440,13 +440,13 @@
               "title": "Trucks",
               "body": "New and used International heavy and medium-duty trucks.",
               "linkLabel": "New trucks →",
-              "linkUrl": "#"
+              "linkUrl": "/store/inventory/truck?fvid=67"
             },
             {
               "title": "Trailers",
               "body": "New, used and rental Hyundai Translead and Globe Trailers.",
               "linkLabel": "Browse trailers →",
-              "linkUrl": "#"
+              "linkUrl": "/store/inventory/trailer"
             },
             {
               "title": "Let's get you going",
@@ -631,7 +631,7 @@
           "primaryLabel": "Call (800) 741-7566",
           "primaryUrl": "tel:+18007417566",
           "secondaryLabel": "View Capacity inventory",
-          "secondaryUrl": "#",
+          "secondaryUrl": "/store/inventory",
           "background": "ink"
         }
       },

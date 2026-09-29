@@ -14,7 +14,7 @@
       "props": {
         "sectionId": "post-hero",
         "values": {
-          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Parts & Service",
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blogs\">Blog</a> / Parts & Service",
           "title": "Why Sun State International is the Go-To Dealership for Truck Equipment in Tampa, Florida",
           "topic": "Parts & Service",
           "date": "May 23, 2025",
@@ -277,7 +277,7 @@
                   "id": "p-one-stop-2",
                   "type": "text",
                   "props": {
-                    "text": "Need a new or used International® truck? Looking for a reliable repair? We’ve got the <a href=\"/store/inventory?condition=new\">inventory</a>, <a href=\"/parts\">tools</a>, and <a href=\"/service\">technicians</a> to keep your business running strong. Our <a href=\"/store/inventory?condition=new\">onsite fleet inventory</a>, <a href=\"/parts\">parts department</a>, and <a href=\"/service\">service center</a> are here to make your life easier, so you can focus on the road ahead instead of chasing down vendors.",
+                    "text": "Need a new or used International® truck? Looking for a reliable repair? We’ve got the <a href=\"/store/inventory/truck?fvid=67\">inventory</a>, <a href=\"/parts\">tools</a>, and <a href=\"/service\">technicians</a> to keep your business running strong. Our <a href=\"/store/inventory/truck?fvid=67\">onsite fleet inventory</a>, <a href=\"/parts\">parts department</a>, and <a href=\"/service\">service center</a> are here to make your life easier, so you can focus on the road ahead instead of chasing down vendors.",
                     "align": "left",
                     "width": "full"
                   }
@@ -291,7 +291,7 @@
                       {
                         "label": "INVENTORY",
                         "title": "Fleet Inventory →",
-                        "url": "/store/inventory?condition=new",
+                        "url": "/store/inventory/truck?fvid=67",
                         "newTab": false
                       },
                       {

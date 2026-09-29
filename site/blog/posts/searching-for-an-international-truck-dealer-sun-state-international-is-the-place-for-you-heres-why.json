@@ -14,7 +14,7 @@
       "props": {
         "sectionId": "post-hero",
         "values": {
-          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Sales",
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blogs\">Blog</a> / Sales",
           "title": "Searching for an International Truck Dealer? Sun State International Is the Place for You, Here’s Why",
           "topic": "Sales",
           "date": "June 27, 2025",
@@ -291,7 +291,7 @@
                   "id": "p-inventory-1",
                   "type": "text",
                   "props": {
-                    "text": "When you walk into <a href=\"/\">Sun State International</a>, you’re not browsing a handful of options. We offer a wide selection of both new and used International trucks, ready to meet the needs of fleets of every size. Looking for a <a href=\"/store/inventory?condition=new\">brand-new, fuel-efficient long-hauler</a>? We’ve got you covered. Need a pre-owned truck to round out your fleet? We have <a href=\"/store/inventory?condition=used\">used inventory</a> backed by expert guidance and transparent pricing. Our goal is to give you options, not push a single solution. You tell us your goals, and we’ll find the truck that makes the most sense for your business.",
+                    "text": "When you walk into <a href=\"/\">Sun State International</a>, you’re not browsing a handful of options. We offer a wide selection of both new and used International trucks, ready to meet the needs of fleets of every size. Looking for a <a href=\"/store/inventory/truck?fvid=67\">brand-new, fuel-efficient long-hauler</a>? We’ve got you covered. Need a pre-owned truck to round out your fleet? We have <a href=\"/store/inventory/truck?fvid=112\">used inventory</a> backed by expert guidance and transparent pricing. Our goal is to give you options, not push a single solution. You tell us your goals, and we’ll find the truck that makes the most sense for your business.",
                     "align": "left",
                     "width": "full"
                   }
@@ -305,13 +305,13 @@
                       {
                         "label": "NEW",
                         "title": "New Trucks →",
-                        "url": "/store/inventory?condition=new",
+                        "url": "/store/inventory/truck?fvid=67",
                         "newTab": false
                       },
                       {
                         "label": "PRE-OWNED",
                         "title": "Used Trucks →",
-                        "url": "/store/inventory?condition=used",
+                        "url": "/store/inventory/truck?fvid=112",
                         "newTab": false
                       }
                     ]

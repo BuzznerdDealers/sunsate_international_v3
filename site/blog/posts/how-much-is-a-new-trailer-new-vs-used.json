@@ -14,7 +14,7 @@
       "props": {
         "sectionId": "post-hero",
         "values": {
-          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Used Trailers",
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blogs\">Blog</a> / Used Trailers",
           "title": "How Much Is a New Trailer? Let's Break Down the Cost of Shopping New vs. Used",
           "topic": "Used Trailers",
           "date": "March 21, 2025",
@@ -169,7 +169,7 @@
                   "id": "lede",
                   "type": "text",
                   "props": {
-                    "text": "If you're in the market for a trailer, one of the first questions you're probably asking is, \"How much is a new trailer?\" Whether you're expanding your fleet, replacing an older unit, or investing in your first trailer, understanding the costs involved can help you make an informed decision. While a new trailer offers reliability and longevity, a used trailer might seem like a budget-friendly alternative. Let's break down the key differences in cost, value, and what you should consider when choosing between new and <a href=\"/store/inventory?type=trailer&condition=used\">used trailers</a>.",
+                    "text": "If you're in the market for a trailer, one of the first questions you're probably asking is, \"How much is a new trailer?\" Whether you're expanding your fleet, replacing an older unit, or investing in your first trailer, understanding the costs involved can help you make an informed decision. While a new trailer offers reliability and longevity, a used trailer might seem like a budget-friendly alternative. Let's break down the key differences in cost, value, and what you should consider when choosing between new and <a href=\"/store/inventory/trailer?fvid=135\">used trailers</a>.",
                     "align": "left",
                     "width": "full",
                     "anchor": "post-lede"
@@ -425,22 +425,22 @@
                     "items": [
                       {
                         "label": "Facebook",
-                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fhow-much-is-a-new-trailer-new-vs-used",
+                        "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsunstateintl.com%2Fblog%2Fposts%2Fhow-much-is-a-new-trailer-new-vs-used",
                         "newTab": true
                       },
                       {
                         "label": "X",
-                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fhow-much-is-a-new-trailer-new-vs-used&text=How%20Much%20Is%20a%20New%20Trailer%3F%20Let%27s%20Break%20Down%20the%20Cost%20of%20Shopping%20New%20vs.%20Used",
+                        "url": "https://x.com/intent/tweet?url=https%3A%2F%2Fsunstateintl.com%2Fblog%2Fposts%2Fhow-much-is-a-new-trailer-new-vs-used&text=How%20Much%20Is%20a%20New%20Trailer%3F%20Let%27s%20Break%20Down%20the%20Cost%20of%20Shopping%20New%20vs.%20Used",
                         "newTab": true
                       },
                       {
                         "label": "LinkedIn",
-                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fhow-much-is-a-new-trailer-new-vs-used",
+                        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsunstateintl.com%2Fblog%2Fposts%2Fhow-much-is-a-new-trailer-new-vs-used",
                         "newTab": true
                       },
                       {
                         "label": "Email",
-                        "url": "mailto:?subject=How%20Much%20Is%20a%20New%20Trailer%3F%20Let%27s%20Break%20Down%20the%20Cost%20of%20Shopping%20New%20vs.%20Used&body=https%3A%2F%2Fwww.sunstateintl.com%2Fblog%2Fposts%2Fhow-much-is-a-new-trailer-new-vs-used",
+                        "url": "mailto:?subject=How%20Much%20Is%20a%20New%20Trailer%3F%20Let%27s%20Break%20Down%20the%20Cost%20of%20Shopping%20New%20vs.%20Used&body=https%3A%2F%2Fsunstateintl.com%2Fblog%2Fposts%2Fhow-much-is-a-new-trailer-new-vs-used",
                         "newTab": false
                       }
                     ]
@@ -524,7 +524,7 @@
           "primaryLabel": "Call (800) 741-7566",
           "primaryUrl": "tel:+18007417566",
           "secondaryLabel": "Browse trailer inventory",
-          "secondaryUrl": "/store/inventory?type=trailer"
+          "secondaryUrl": "/store/inventory/trailer"
         }
       },
       "children": []
