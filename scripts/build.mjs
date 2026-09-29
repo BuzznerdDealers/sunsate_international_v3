@@ -749,6 +749,19 @@ write(
       // entries be keyed by template id instead.
       defaultChrome: defaultChrome.id,
       routes: table,
+      // Who the storefront pages proxied in under /store belong to. Without it
+      // they were titled "Trucks - Buzznerd Store" under the dealer's own domain
+      // and showed no favicon: the storefront had no way to learn either. The
+      // same values the brand pages use (dealer.config.json, edited in the
+      // dashboard's Business Profile), so /store titles read like every other
+      // page's ("Trucks | Sun State International").
+      brand: {
+        name: config.name || null,
+        shortName: config.shortName || null,
+        titleTemplate: config.seo?.titleTemplate || null,
+        defaultTitle: config.seo?.defaultTitle || null,
+        favicon: config.favicon || null,
+      },
     },
     null,
     2,
