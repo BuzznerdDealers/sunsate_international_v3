@@ -3,7 +3,6 @@
   "name": "Check availability",
   "status": "live",
   "system": true,
-  "pdpContext": true,
   "surfaces": [
     "pdp",
     "partsPdp",
@@ -18,6 +17,12 @@
     "text": "I agree to be contacted about this enquiry by phone, text or email."
   },
   "fields": [
+    {
+      "id": "f-muo5wgoo1",
+      "type": "full_name",
+      "label": "Full name",
+      "required": false
+    },
     {
       "id": "ca-email",
       "type": "email",
@@ -74,5 +79,5 @@
       "email": "leads@sunstateintl.com,e-contact@sunstateintl.com,ash@buzznerd.com,sharma@buzznerd.com"
     }
   ],
-  "updatedAt": "2026-09-29T01:58:04.193Z"
+  "updatedAt": "2026-09-30T13:49:47.643Z"
 }
