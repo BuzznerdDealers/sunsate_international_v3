@@ -9,6 +9,11 @@
         "eyebrow": "HOME / POLICIES",
         "headline": "Policies",
         "subhead": "Order, shipping and return policies for parts and accessories purchased from Sun State International Trucks and Sun State Trailers. Last updated September 11, 2026."
+      },
+      "styles": {
+        "base": {
+          "textColor": "#ffffff"
+        }
       }
     },
     {
@@ -61,6 +66,11 @@
                         "label": "Restocking fee on preauthorized returns"
                       }
                     ]
+                  },
+                  "styles": {
+                    "base": {
+                      "textColor": "#ffffff"
+                    }
                   }
                 },
                 {
@@ -399,7 +409,8 @@
       },
       "styles": {
         "base": {
-          "buttonRadius": 8
+          "buttonRadius": 8,
+          "textColor": "#ffffff"
         }
       },
       "children": []
