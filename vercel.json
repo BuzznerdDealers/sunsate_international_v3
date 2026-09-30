@@ -170,6 +170,11 @@
       "source": "/finance-trucks-trailers-tampa-orlando-florida-financing{/}?",
       "destination": "/financing",
       "statusCode": 301
+    },
+    {
+      "source": "/parts-department-test{/}?",
+      "destination": "/parts",
+      "statusCode": 301
     }
   ]
 }
