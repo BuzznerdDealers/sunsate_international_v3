@@ -9,7 +9,7 @@
           "id": "trucks-trailers",
           "label": "TRUCK & TRAILERS",
           "type": "page",
-          "ref": "inventory",
+          "ref": "inventory-old",
           "url": null,
           "newTab": false,
           "children": [
@@ -171,7 +171,7 @@
                   "id": "tt-hub",
                   "label": "Inventory hub",
                   "type": "page",
-                  "ref": "inventory",
+                  "ref": "inventory-old",
                   "url": null,
                   "newTab": false,
                   "children": []
