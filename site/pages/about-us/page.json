@@ -14,6 +14,11 @@
           "width": 1600,
           "height": 900
         }
+      },
+      "styles": {
+        "base": {
+          "textColor": "#ffffff"
+        }
       }
     },
     {
@@ -85,6 +90,11 @@
             "gap": 7,
             "align": "start",
             "stackOn": "tablet"
+          },
+          "styles": {
+            "base": {
+              "textColor": "#ffffff"
+            }
           },
           "children": [
             {
@@ -213,6 +223,11 @@
                       }
                     ],
                     "columns": 1
+                  },
+                  "styles": {
+                    "base": {
+                      "textColor": "#ffffff"
+                    }
                   }
                 }
               ]
@@ -302,6 +317,11 @@
                   "props": {
                     "text": "OUR MISSION\n\nWe strive to be the premier provider of quality transportation products, parts and service at a fair price, with an unrivaled commitment to our customers' success — matched only by our dedication to our employees' growth, development and well-being, and our calling to have a meaningful impact in our community.",
                     "align": "center"
+                  },
+                  "styles": {
+                    "base": {
+                      "textColor": "#ffffff"
+                    }
                   }
                 }
               ]
