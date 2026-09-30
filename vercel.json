@@ -180,6 +180,11 @@
       "source": "/inventory{/}?",
       "destination": "/store/inventory/truck",
       "statusCode": 301
+    },
+    {
+      "source": "/careers-jobs-at-our-international-trucks-dealership-florida-employment{/}?",
+      "destination": "https://sunstateinternationaltrucks.hireology.careers/",
+      "statusCode": 301
     }
   ]
 }
