@@ -132,6 +132,12 @@
       "from": "/parts-department-test",
       "to": "/parts",
       "statusCode": 301
+    },
+    {
+      "from": "/inventory",
+      "to": "/store/inventory/truck",
+      "statusCode": 301,
+      "note": "Page moved to /inventory-old"
     }
   ]
 }

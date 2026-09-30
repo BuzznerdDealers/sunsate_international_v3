@@ -175,6 +175,11 @@
       "source": "/parts-department-test{/}?",
       "destination": "/parts",
       "statusCode": 301
+    },
+    {
+      "source": "/inventory{/}?",
+      "destination": "/store/inventory/truck",
+      "statusCode": 301
     }
   ]
 }
