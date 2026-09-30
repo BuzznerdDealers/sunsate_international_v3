@@ -4,15 +4,129 @@
   "useWildcards": false,
   "redirects": [
     {
-      "from": "/our-story",
-      "to": "/about-us",
+      "from": "/aftermarket-business-tampa-fl",
+      "to": "/locations/aftermarket-parts",
       "statusCode": 301
     },
     {
-      "from": "/blog",
-      "to": "/blogs",
-      "statusCode": 301,
-      "note": "Page moved to /blogs"
+      "from": "/modifications-alterations-heavy-medium-duty-trucks-trailers-florida-aftermarket",
+      "to": "/aftermarket",
+      "statusCode": 301
+    },
+    {
+      "from": "/maps-and-directions-hours-brooksville",
+      "to": "/locations/brooksville",
+      "statusCode": 301
+    },
+    {
+      "from": "/contact-call-email-internationals-trucks-dealerships-florida-xcontact",
+      "to": "/contact",
+      "statusCode": 301
+    },
+    {
+      "from": "/learn-more-about-internationalspecifications",
+      "to": "/specifications",
+      "statusCode": 301
+    },
+    {
+      "from": "/read-our-privacy-statement",
+      "to": "/legal/privacy",
+      "statusCode": 301
+    },
+    {
+      "from": "/read-our-policy-statement",
+      "to": "/legal/policies",
+      "statusCode": 301
+    },
+    {
+      "from": "/mobile-service-flyer",
+      "to": "/mobile-service",
+      "statusCode": 301
+    },
+    {
+      "from": "/international-trucks-dealership-in-the-news-florida-news",
+      "to": "/news",
+      "statusCode": 301
+    },
+    {
+      "from": "/read-our-terms-and-conditions",
+      "to": "/legal/terms",
+      "statusCode": 301
+    },
+    {
+      "from": "/request-service-repair-heavy-medium-duty-trucks-trailers-florida-service-appointment",
+      "to": "/service-appointment",
+      "statusCode": 301
+    },
+    {
+      "from": "/learn-more-about-videos",
+      "to": "/videos",
+      "statusCode": 301
+    },
+    {
+      "from": "/read-other-customers-comments-about-us-xtestimonials",
+      "to": "/reviews",
+      "statusCode": 301
+    },
+    {
+      "from": "/used-heavy-medium-duty-trucks-for-sale-tampa-florida-xpreownedinventoryatlight-duty-truckmedium-duty-truckheavy-duty-truck",
+      "to": "/store/inventory?type=truck&condition=used",
+      "statusCode": 301
+    },
+    {
+      "from": "/new-heavy-medium-duty-trucks-for-sale-tampa-florida-xnewinventoryatlight-duty-truckmedium-duty-truckheavy-duty-truck",
+      "to": "/store/inventory?type=truck&condition=new",
+      "statusCode": 301
+    },
+    {
+      "from": "/maps-and-directions-hours-tampa-adamo",
+      "to": "/locations/tampa",
+      "statusCode": 301
+    },
+    {
+      "from": "/maps-and-directions-hours-davenport",
+      "to": "/locations/davenport",
+      "statusCode": 301
+    },
+    {
+      "from": "/learn-more-about-press-kit",
+      "to": "/press-kit",
+      "statusCode": 301
+    },
+    {
+      "from": "/maps-and-directions-hours-sarasota",
+      "to": "/locations/sarasota",
+      "statusCode": 301
+    },
+    {
+      "from": "/learn-more-about-s13-powertrain",
+      "to": "/specifications",
+      "statusCode": 301
+    },
+    {
+      "from": "/hours-location-florida-international-truck-dealerships-hours",
+      "to": "/locations",
+      "statusCode": 301
+    },
+    {
+      "from": "/maps-and-directions-hours-trailer",
+      "to": "/locations/trailer-sales",
+      "statusCode": 301
+    },
+    {
+      "from": "/service-repair-heavy-medium-duty-trucks-trailers-florida-service",
+      "to": "/service",
+      "statusCode": 301
+    },
+    {
+      "from": "/parts-accessories-heavy-medium-duty-trucks-trailers-florida-parts",
+      "to": "/parts",
+      "statusCode": 301
+    },
+    {
+      "from": "/finance-trucks-trailers-tampa-orlando-florida-financing",
+      "to": "/financing",
+      "statusCode": 301
     }
   ]
 }

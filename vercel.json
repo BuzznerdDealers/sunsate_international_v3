@@ -47,13 +47,128 @@
   ],
   "redirects": [
     {
-      "source": "/our-story{/}?",
-      "destination": "/about-us",
+      "source": "/aftermarket-business-tampa-fl{/}?",
+      "destination": "/locations/aftermarket-parts",
       "statusCode": 301
     },
     {
-      "source": "/blog{/}?",
-      "destination": "/blogs",
+      "source": "/modifications-alterations-heavy-medium-duty-trucks-trailers-florida-aftermarket{/}?",
+      "destination": "/aftermarket",
+      "statusCode": 301
+    },
+    {
+      "source": "/maps-and-directions-hours-brooksville{/}?",
+      "destination": "/locations/brooksville",
+      "statusCode": 301
+    },
+    {
+      "source": "/contact-call-email-internationals-trucks-dealerships-florida-xcontact{/}?",
+      "destination": "/contact",
+      "statusCode": 301
+    },
+    {
+      "source": "/learn-more-about-internationalspecifications{/}?",
+      "destination": "/specifications",
+      "statusCode": 301
+    },
+    {
+      "source": "/read-our-privacy-statement{/}?",
+      "destination": "/legal/privacy",
+      "statusCode": 301
+    },
+    {
+      "source": "/read-our-policy-statement{/}?",
+      "destination": "/legal/policies",
+      "statusCode": 301
+    },
+    {
+      "source": "/mobile-service-flyer{/}?",
+      "destination": "/mobile-service",
+      "statusCode": 301
+    },
+    {
+      "source": "/international-trucks-dealership-in-the-news-florida-news{/}?",
+      "destination": "/news",
+      "statusCode": 301
+    },
+    {
+      "source": "/read-our-terms-and-conditions{/}?",
+      "destination": "/legal/terms",
+      "statusCode": 301
+    },
+    {
+      "source": "/request-service-repair-heavy-medium-duty-trucks-trailers-florida-service-appointment{/}?",
+      "destination": "/service-appointment",
+      "statusCode": 301
+    },
+    {
+      "source": "/learn-more-about-videos{/}?",
+      "destination": "/videos",
+      "statusCode": 301
+    },
+    {
+      "source": "/read-other-customers-comments-about-us-xtestimonials{/}?",
+      "destination": "/reviews",
+      "statusCode": 301
+    },
+    {
+      "source": "/used-heavy-medium-duty-trucks-for-sale-tampa-florida-xpreownedinventoryatlight-duty-truckmedium-duty-truckheavy-duty-truck{/}?",
+      "destination": "/store/inventory?type=truck&condition=used",
+      "statusCode": 301
+    },
+    {
+      "source": "/new-heavy-medium-duty-trucks-for-sale-tampa-florida-xnewinventoryatlight-duty-truckmedium-duty-truckheavy-duty-truck{/}?",
+      "destination": "/store/inventory?type=truck&condition=new",
+      "statusCode": 301
+    },
+    {
+      "source": "/maps-and-directions-hours-tampa-adamo{/}?",
+      "destination": "/locations/tampa",
+      "statusCode": 301
+    },
+    {
+      "source": "/maps-and-directions-hours-davenport{/}?",
+      "destination": "/locations/davenport",
+      "statusCode": 301
+    },
+    {
+      "source": "/learn-more-about-press-kit{/}?",
+      "destination": "/press-kit",
+      "statusCode": 301
+    },
+    {
+      "source": "/maps-and-directions-hours-sarasota{/}?",
+      "destination": "/locations/sarasota",
+      "statusCode": 301
+    },
+    {
+      "source": "/learn-more-about-s13-powertrain{/}?",
+      "destination": "/specifications",
+      "statusCode": 301
+    },
+    {
+      "source": "/hours-location-florida-international-truck-dealerships-hours{/}?",
+      "destination": "/locations",
+      "statusCode": 301
+    },
+    {
+      "source": "/maps-and-directions-hours-trailer{/}?",
+      "destination": "/locations/trailer-sales",
+      "statusCode": 301
+    },
+    {
+      "source": "/service-repair-heavy-medium-duty-trucks-trailers-florida-service{/}?",
+      "destination": "/service",
+      "statusCode": 301
+    },
+    {
+      "source": "/parts-accessories-heavy-medium-duty-trucks-trailers-florida-parts{/}?",
+      "destination": "/parts",
+      "statusCode": 301
+    },
+    {
+      "source": "/finance-trucks-trailers-tampa-orlando-florida-financing{/}?",
+      "destination": "/financing",
       "statusCode": 301
     }
   ]
