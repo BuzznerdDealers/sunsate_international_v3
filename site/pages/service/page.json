@@ -26,7 +26,8 @@
       },
       "styles": {
         "base": {
-          "buttonRadius": 8
+          "buttonRadius": 8,
+          "textColor": "#ffffff"
         }
       }
     },
@@ -80,6 +81,11 @@
                         "label": "ASED diagnostic evaluation and estimate"
                       }
                     ]
+                  },
+                  "styles": {
+                    "base": {
+                      "textColor": "#ffffff"
+                    }
                   }
                 }
               ]
@@ -447,6 +453,11 @@
               "type": "column",
               "props": {
                 "span": 12
+              },
+              "styles": {
+                "base": {
+                  "textColor": "#ffffff"
+                }
               },
               "children": [
                 {
