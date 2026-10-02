@@ -193,7 +193,12 @@
     },
     {
       "source": "/hours-location-sarasota-dealership--hours-davenport{/}?",
-      "destination": "/locations",
+      "destination": "/locations/davenport",
+      "statusCode": 301
+    },
+    {
+      "source": "/hours-location-florida-international-truck-dealerships--hours-trailer{/}?",
+      "destination": "/locations/tampa",
       "statusCode": 301
     }
   ]
