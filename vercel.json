@@ -200,6 +200,11 @@
       "source": "/hours-location-florida-international-truck-dealerships--hours-trailer{/}?",
       "destination": "/locations/tampa",
       "statusCode": 301
+    },
+    {
+      "source": "/hours-location-florida-international-truck-dealerships--hours-tampa-6th-ave{/}?",
+      "destination": "/locations/aftermarket-parts",
+      "statusCode": 301
     }
   ]
 }
