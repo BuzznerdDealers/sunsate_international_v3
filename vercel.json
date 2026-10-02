@@ -190,6 +190,11 @@
       "source": "/new-trailers{/}?",
       "destination": "/store/inventory/trailer?fvid=116",
       "statusCode": 301
+    },
+    {
+      "source": "/hours-location-sarasota-dealership--hours-davenport{/}?",
+      "destination": "/locations",
+      "statusCode": 301
     }
   ]
 }
