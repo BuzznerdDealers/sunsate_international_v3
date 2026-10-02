@@ -1289,15 +1289,6 @@
                   "url": null,
                   "newTab": false,
                   "children": []
-                },
-                {
-                  "id": "nm-loc-trailer",
-                  "label": "Trailer Sales — Tampa",
-                  "type": "location",
-                  "ref": "trailer-sales",
-                  "url": null,
-                  "newTab": false,
-                  "children": []
                 }
               ]
             },
@@ -2283,8 +2274,9 @@
           "id": "item-6",
           "label": "TikTok",
           "type": "url",
-          "url": "https://www.tiktok.com/@sun.state.bus",
           "ref": null,
+          "url": "https://www.tiktok.com/@sun.state.bus",
+          "newTab": false,
           "children": []
         }
       ]
