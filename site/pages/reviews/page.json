@@ -162,7 +162,8 @@
       "type": "section",
       "props": {
         "width": "boxed",
-        "paddingY": 7
+        "paddingY": 7,
+        "background": "card"
       },
       "children": [
         {
@@ -288,7 +289,7 @@
                           "props": {
                             "width": "full",
                             "video": {
-                              "src": "https://www.youtube.com/watch?si=hPGR5PtZEPfLAquf&v=xEPu2uXyeH4&feature=youtu.be"
+                              "src": "https://youtu.be/gVdppOwDrAE?si=xOmDmqVwsb9vSLsG"
                             }
                           }
                         }
@@ -307,7 +308,7 @@
                           "props": {
                             "width": "full",
                             "video": {
-                              "src": "https://www.youtube.com/watch?si=L6kzoBgsTO2v2jjB&v=BNIzmkP7PwI&feature=youtu.be"
+                              "src": "https://youtu.be/YHF55PA4SRE?si=QuAxyW2IyYUd6Iqr"
                             }
                           }
                         }
@@ -326,11 +327,60 @@
                           "props": {
                             "width": "full",
                             "video": {
-                              "src": "https://youtu.be/DTn7LYER5rg?si=hFsehlsIVfSWXu1F"
+                              "src": "https://youtu.be/PuMFd8zqDgk?si=r4HZY3TYARZMMqBn"
                             }
                           }
                         }
                       ]
+                    }
+                  ]
+                },
+                {
+                  "id": "row-5",
+                  "type": "row",
+                  "props": {
+                    "gap": 6
+                  },
+                  "styles": {
+                    "base": {
+                      "paddingTop": 20
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "column-9",
+                      "type": "column",
+                      "props": {
+                        "span": 4
+                      },
+                      "children": [
+                        {
+                          "id": "video-7",
+                          "type": "video",
+                          "props": {
+                            "width": "full",
+                            "video": {
+                              "src": "https://youtu.be/Y2htJxBbh4c?si=Fb1OigGG8CYMXw-L"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "column-10",
+                      "type": "column",
+                      "props": {
+                        "span": 4
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "column-11",
+                      "type": "column",
+                      "props": {
+                        "span": 4
+                      },
+                      "children": []
                     }
                   ]
                 }
