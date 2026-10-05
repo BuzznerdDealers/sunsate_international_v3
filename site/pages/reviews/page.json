@@ -158,6 +158,189 @@
       ]
     },
     {
+      "id": "section",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "row",
+          "type": "row",
+          "props": {
+            "gap": 6
+          },
+          "children": [
+            {
+              "id": "column",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "row-2",
+                  "type": "row",
+                  "props": {
+                    "gap": 6
+                  },
+                  "children": [
+                    {
+                      "id": "column-2",
+                      "type": "column",
+                      "props": {
+                        "span": 4
+                      },
+                      "children": [
+                        {
+                          "id": "video",
+                          "type": "video",
+                          "props": {
+                            "width": "full",
+                            "video": {
+                              "src": "https://www.youtube.com/watch?si=hPGR5PtZEPfLAquf&v=xEPu2uXyeH4&feature=youtu.be"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "column-3",
+                      "type": "column",
+                      "props": {
+                        "span": 4
+                      },
+                      "children": [
+                        {
+                          "id": "video-2",
+                          "type": "video",
+                          "props": {
+                            "width": "full",
+                            "video": {
+                              "src": "https://www.youtube.com/watch?si=L6kzoBgsTO2v2jjB&v=BNIzmkP7PwI&feature=youtu.be"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "column-4",
+                      "type": "column",
+                      "props": {
+                        "span": 4
+                      },
+                      "children": [
+                        {
+                          "id": "video-3",
+                          "type": "video",
+                          "props": {
+                            "width": "full",
+                            "video": {
+                              "src": "https://youtu.be/DTn7LYER5rg?si=hFsehlsIVfSWXu1F"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "row-3",
+          "type": "row",
+          "props": {
+            "gap": 6
+          },
+          "children": [
+            {
+              "id": "column-5",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "row-4",
+                  "type": "row",
+                  "props": {
+                    "gap": 6
+                  },
+                  "styles": {
+                    "base": {
+                      "paddingTop": 20
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "column-6",
+                      "type": "column",
+                      "props": {
+                        "span": 4
+                      },
+                      "children": [
+                        {
+                          "id": "video-4",
+                          "type": "video",
+                          "props": {
+                            "width": "full",
+                            "video": {
+                              "src": "https://www.youtube.com/watch?si=hPGR5PtZEPfLAquf&v=xEPu2uXyeH4&feature=youtu.be"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "column-7",
+                      "type": "column",
+                      "props": {
+                        "span": 4
+                      },
+                      "children": [
+                        {
+                          "id": "video-5",
+                          "type": "video",
+                          "props": {
+                            "width": "full",
+                            "video": {
+                              "src": "https://www.youtube.com/watch?si=L6kzoBgsTO2v2jjB&v=BNIzmkP7PwI&feature=youtu.be"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "column-8",
+                      "type": "column",
+                      "props": {
+                        "span": 4
+                      },
+                      "children": [
+                        {
+                          "id": "video-6",
+                          "type": "video",
+                          "props": {
+                            "width": "full",
+                            "video": {
+                              "src": "https://youtu.be/DTn7LYER5rg?si=hFsehlsIVfSWXu1F"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "reviews-testimonials",
       "type": "section",
       "props": {
