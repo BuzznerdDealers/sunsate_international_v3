@@ -167,6 +167,15 @@
       },
       "children": [
         {
+          "id": "heading-2",
+          "type": "heading",
+          "props": {
+            "headingLevel": 2,
+            "align": "left",
+            "text": "In Their Words"
+          }
+        },
+        {
           "id": "row",
           "type": "row",
           "props": {
