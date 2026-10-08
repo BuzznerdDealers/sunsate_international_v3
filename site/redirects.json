@@ -168,6 +168,11 @@
       "from": "/hours-location-sarasota-dealership--hours-sarasota",
       "to": "/locations/sarasota",
       "statusCode": 301
+    },
+    {
+      "from": "/locations/aftermarket-part",
+      "to": "/locations/aftermarket-parts",
+      "statusCode": 301
     }
   ]
 }
