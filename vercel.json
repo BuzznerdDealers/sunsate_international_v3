@@ -210,6 +210,16 @@
       "source": "/hours-location-sarasota-dealership--hours-sarasota{/}?",
       "destination": "/locations/sarasota",
       "statusCode": 301
+    },
+    {
+      "source": "/locations/aftermarket-part{/}?",
+      "destination": "/locations/aftermarket-parts",
+      "statusCode": 301
+    },
+    {
+      "source": "/locations/trailer-sales{/}?",
+      "destination": "/locations",
+      "statusCode": 301
     }
   ]
 }
