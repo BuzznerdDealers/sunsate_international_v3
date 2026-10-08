@@ -215,6 +215,11 @@
       "source": "/locations/aftermarket-part{/}?",
       "destination": "/locations/aftermarket-parts",
       "statusCode": 301
+    },
+    {
+      "source": "/locations/trailer-sales{/}?",
+      "destination": "/locations",
+      "statusCode": 301
     }
   ]
 }
