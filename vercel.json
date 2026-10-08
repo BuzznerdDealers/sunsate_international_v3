@@ -6,19 +6,19 @@
   "rewrites": [
     {
       "source": "/store",
-      "destination": "https://test.buzznerdrv.com/store"
+      "destination": "https://sunstateintl.buzznerdrv.com/store"
     },
     {
       "source": "/store/",
-      "destination": "https://test.buzznerdrv.com/store/"
+      "destination": "https://sunstateintl.buzznerdrv.com/store/"
     },
     {
       "source": "/store/:path*/",
-      "destination": "https://test.buzznerdrv.com/store/:path*/"
+      "destination": "https://sunstateintl.buzznerdrv.com/store/:path*/"
     },
     {
       "source": "/store/:path*",
-      "destination": "https://test.buzznerdrv.com/store/:path*"
+      "destination": "https://sunstateintl.buzznerdrv.com/store/:path*"
     }
   ],
   "headers": [
