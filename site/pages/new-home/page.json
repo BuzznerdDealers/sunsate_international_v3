@@ -183,6 +183,14 @@
               "ctaLabel": "View Now →",
               "ctaUrl": "/store/inventory/trailer?fvid=195",
               "logoBackdrop": "ink"
+            },
+            {
+              "image": {
+                "src": "https://vendure.buzznerdrv.com/assets/source/d7/ic_bus_logo_footer-removebg-preview.png"
+              },
+              "logoBackdrop": "card",
+              "label": "IC Bus",
+              "ctaLabel": "View Now →"
             }
           ],
           "background": "ink"
@@ -2340,9 +2348,7 @@
             {
               "num": "08",
               "title": "Lease & Rental Department",
-              "body": "To reach our Lease & Rental Department, please call 813-621-1331",
-              "linkLabel": "Call Now →",
-              "linkUrl": "tel:8136211331"
+              "body": "To reach our Lease & Rental Department, please call 813-621-1331"
             }
           ]
         }
