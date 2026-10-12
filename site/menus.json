@@ -739,23 +739,30 @@
                   "url": null,
                   "newTab": false,
                   "children": []
-                },
+                }
+              ]
+            },
+            {
+              "id": "item-71",
+              "label": "Shop New ",
+              "type": "label",
+              "url": null,
+              "ref": null,
+              "children": [
                 {
-                  "id": "item-69",
+                  "id": "item-72",
                   "label": "International",
                   "type": "url",
-                  "ref": null,
                   "url": "/store/showrooms?fvid=84",
-                  "newTab": false,
+                  "ref": null,
                   "children": []
                 },
                 {
-                  "id": "item-70",
-                  "label": "Capacity Yard Trucks",
+                  "id": "item-73",
+                  "label": "Capacity Yard",
                   "type": "url",
-                  "ref": null,
                   "url": "/store/showrooms?fvid=86",
-                  "newTab": false,
+                  "ref": null,
                   "children": []
                 }
               ]
