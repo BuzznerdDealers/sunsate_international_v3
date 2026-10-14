@@ -15,6 +15,11 @@
           "width": 1600,
           "height": 900
         }
+      },
+      "styles": {
+        "base": {
+          "textColor": "#ffffff"
+        }
       }
     },
     {
@@ -71,6 +76,11 @@
                         "label": "Awards & recognitions"
                       }
                     ]
+                  },
+                  "styles": {
+                    "base": {
+                      "textColor": "#ffffff"
+                    }
                   }
                 }
               ]
@@ -651,7 +661,8 @@
       },
       "styles": {
         "base": {
-          "buttonRadius": 8
+          "buttonRadius": 8,
+          "textColor": "#ffffff"
         }
       },
       "children": []

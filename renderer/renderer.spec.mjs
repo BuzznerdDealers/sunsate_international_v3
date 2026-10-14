@@ -60,6 +60,7 @@ import {
   validateDocument,
   validateTemplate,
 } from './index.mjs';
+import { ICON_SLOT_IDS, iconsManifest, parseIcons } from './index.mjs';
 
 import { defaultConfirmation } from './forms.mjs';
 
@@ -3208,4 +3209,58 @@ test('a form submission and a behaviour event do not share one emit function', (
   const src = readFileSync(new URL('./client/widgets.js', import.meta.url), 'utf8');
   assert.equal((src.match(/function emit\(/g) || []).length, 1);
   assert.match(src, /function emitOn\(/);
+});
+
+/* -------------------------------------------------------------------- icons */
+
+test('icons.json maps storefront slots onto a class or an image', () => {
+  const { value, problems } = parseIcons({
+    version: 1,
+    stylesheets: ['https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css'],
+    slots: {
+      search: { class: 'fa-solid fa-magnifying-glass' },
+      save: { src: 'https://vendure.buzznerdrv.com/assets/source/38/heart.svg' },
+      close: { src: 'https://vendure.buzznerdrv.com/assets/source/e2/x.png', tint: false },
+    },
+  });
+  assert.deepEqual(problems, []);
+  assert.deepEqual(value.slots, {
+    search: { class: 'fa-solid fa-magnifying-glass' },
+    save: { src: 'https://vendure.buzznerdrv.com/assets/source/38/heart.svg', tint: true },
+    close: { src: 'https://vendure.buzznerdrv.com/assets/source/e2/x.png', tint: false },
+  });
+  assert.equal(value.stylesheets.length, 1);
+});
+
+test('icons.json drops anything that could break out of a class, a url() or an attribute', () => {
+  const { value, problems } = parseIcons({
+    stylesheets: ['http://insecure.example/icons.css', 'javascript:alert(1)'],
+    slots: {
+      search: { class: 'fa"><script>' },
+      save: { src: 'https://x.example/a.svg") , url("https://evil.example/b.svg' },
+      saved: { src: 'http://x.example/a.svg' },
+      share: { src: 'https://x.example/not-an-image.js' },
+      next: { class: 'a', src: 'https://x.example/a.svg' },
+      prev: {},
+      'not-a-slot': { class: 'x' },
+    },
+  });
+  assert.deepEqual(value.slots, {});
+  assert.deepEqual(value.stylesheets, []);
+  assert.equal(problems.length, 9);
+  assert.ok(problems.some((p) => p.where === 'slots.not-a-slot'));
+});
+
+test('a site that maps nothing publishes no icons, so /store is unchanged', () => {
+  assert.equal(iconsManifest(null), null);
+  assert.equal(iconsManifest({ stylesheets: ['https://a.example/icons.css'], slots: {} }), null);
+  assert.deepEqual(iconsManifest({ slots: { 'arrow-left': { class: 'icon-back' } } }), {
+    stylesheets: [],
+    slots: { 'arrow-left': { class: 'icon-back' } },
+  });
+});
+
+test('every storefront slot id is a plain kebab-case word', () => {
+  for (const id of ICON_SLOT_IDS) assert.match(id, /^[a-z]+(-[a-z]+)*$/);
+  assert.equal(new Set(ICON_SLOT_IDS).size, ICON_SLOT_IDS.length);
 });

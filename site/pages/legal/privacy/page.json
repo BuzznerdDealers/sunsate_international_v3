@@ -9,6 +9,11 @@
         "eyebrow": "HOME / PRIVACY POLICY",
         "headline": "Privacy Policy",
         "subhead": "Applies to the Sun State International Trucks and Sun State Trailers websites. Last updated September 11, 2026."
+      },
+      "styles": {
+        "base": {
+          "textColor": "#ffffff"
+        }
       }
     },
     {
@@ -748,6 +753,11 @@
           "secondaryLabel": "Contact us",
           "secondaryUrl": "/contact",
           "background": "ink"
+        }
+      },
+      "styles": {
+        "base": {
+          "textColor": "#ffffff"
         }
       },
       "children": []

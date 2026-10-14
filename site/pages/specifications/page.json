@@ -32,7 +32,8 @@
       },
       "styles": {
         "base": {
-          "buttonRadius": 8
+          "buttonRadius": 8,
+          "textColor": "#ffffff"
         }
       }
     },
@@ -115,6 +116,11 @@
                   "type": "text",
                   "props": {
                     "text": "A clean sheet of paper and decades of experience. That's what the engineering team started with when they began work on the International® S13® Integrated Powertrain.\n\nThanks to this spirit of collaboration between partner companies, the team was able to shift what's possible and rethink, redesign and reinvent what an integrated powertrain can be. The result is an engine, transmission and after treatment system designed to work as one that's simple, easy to service and delivers stellar performance with superior operating economy."
+                  },
+                  "styles": {
+                    "base": {
+                      "textColor": "#ffffff"
+                    }
                   }
                 },
                 {
@@ -746,7 +752,8 @@
       },
       "styles": {
         "base": {
-          "buttonRadius": 8
+          "buttonRadius": 8,
+          "textColor": "#ffffff"
         }
       },
       "children": []

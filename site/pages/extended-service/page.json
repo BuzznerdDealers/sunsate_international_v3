@@ -32,7 +32,8 @@
       },
       "styles": {
         "base": {
-          "buttonRadius": 8
+          "buttonRadius": 8,
+          "textColor": "#ffffff"
         }
       }
     },
@@ -86,6 +87,11 @@
                         "label": "Certified factory-trained technicians performing covered repairs"
                       }
                     ]
+                  },
+                  "styles": {
+                    "base": {
+                      "textColor": "#ffffff"
+                    }
                   }
                 }
               ]
@@ -375,7 +381,8 @@
       },
       "styles": {
         "base": {
-          "buttonRadius": 8
+          "buttonRadius": 8,
+          "textColor": "#ffffff"
         }
       },
       "children": []

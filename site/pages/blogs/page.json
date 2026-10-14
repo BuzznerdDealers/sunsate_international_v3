@@ -15,6 +15,11 @@
           "width": 1280,
           "height": 853
         }
+      },
+      "styles": {
+        "base": {
+          "textColor": "#ffffff"
+        }
       }
     },
     {
@@ -2065,7 +2070,8 @@
       },
       "styles": {
         "base": {
-          "buttonRadius": 8
+          "buttonRadius": 8,
+          "textColor": "#ffffff"
         }
       },
       "children": []

@@ -32,7 +32,8 @@
       },
       "styles": {
         "base": {
-          "buttonRadius": 8
+          "buttonRadius": 8,
+          "textColor": "#ffffff"
         }
       }
     },
@@ -226,24 +227,19 @@
                     "meta": "3 DOCUMENTS",
                     "docs": [
                       {
-                        "label": "BMO Credit Application",
-                        "url": "https://vendure.buzznerdrv.com/assets/source/88/bmo-credit-app-1-2026.pdf",
-                        "kind": "PDF"
-                      },
-                      {
-                        "label": "Navistar Financial Credit Application",
-                        "url": "https://vendure.buzznerdrv.com/assets/source/e8/international-financial-credit-application-fillable-8-26-26.pdf",
-                        "kind": "PDF"
+                        "label": "International Financial Credit Application",
+                        "kind": "PDF",
+                        "url": "https://vendure.buzznerdrv.com/assets/source/92/ifinn-credit-application-031725.pdf"
                       },
                       {
                         "label": "Sun State Credit Application",
-                        "url": "https://vendure.buzznerdrv.com/assets/source/f4/sunstatefinapp.pdf",
+                        "url": "https://vendure.buzznerdrv.com/assets/source/e0/ibs-credit-app-for-intranet.pdf",
                         "kind": "PDF"
                       },
                       {
-                        "label": "International Credit Application ",
-                        "kind": "PDF",
-                        "url": "https://vendure.buzznerdrv.com/assets/source/92/ifinn-credit-application-031725.pdf"
+                        "label": "BMO Credit Application",
+                        "url": "https://vendure.buzznerdrv.com/assets/source/88/bmo-credit-app-1-2026.pdf",
+                        "kind": "PDF"
                       }
                     ]
                   }
@@ -363,12 +359,12 @@
                   "props": {
                     "items": [
                       {
-                        "label": "BMO Harris Bank",
-                        "desc": "Competitive rates and flexible financing solutions."
+                        "label": "International  Financial",
+                        "desc": "International® Financial is your trusted partner for simple, transparent, and flexible financing solutions tailored for the transportation market. Backed by decades of industry expertise, we make it easy for customers to secure the right loans or leases—whether purchasing new, used, on-highway, vocational, or bus products. We deliver a customer-first experience with fast credit decisions, competitive options, and a dedicated team that understands the transportation industry. From seasonal and skip-payment structures to specialized commercial financing, International Financial helps ensure your business has the support it needs to keep moving forward."
                       },
                       {
-                        "label": "Navistar Financial",
-                        "desc": "Factory financing for International trucks."
+                        "label": "BMO Harris Bank",
+                        "desc": "Competitive rates and flexible financing solutions."
                       },
                       {
                         "label": "CAG Truck Capital",
@@ -392,8 +388,8 @@
                   "props": {
                     "items": [
                       {
-                        "label": "Navistar Financial →",
-                        "url": "https://www.navistarfinancial.com/",
+                        "label": "International Financial →",
+                        "url": "https://www.international.com/services/financing",
                         "style": "link",
                         "intent": "learn-more"
                       }
@@ -443,7 +439,7 @@
               "title": "Financing trailers",
               "body": "A good business starts with the right equipment. Talk to a member of our sales team about available inventory, financing, or to schedule an in-person appointment, and we'll structure the trailer the same way we structure trucks.",
               "linkLabel": "Sun State Credit Application (PDF) →",
-              "linkUrl": "https://vendure.buzznerdrv.com/assets/source/f4/sunstatefinapp.pdf"
+              "linkUrl": "https://vendure.buzznerdrv.com/assets/source/7f/bmo-credit-app-9-2026.pdf"
             },
             {
               "title": "Credit for parts and service",
@@ -577,7 +573,8 @@
       },
       "styles": {
         "base": {
-          "buttonRadius": 8
+          "buttonRadius": 8,
+          "textColor": "#ffffff"
         }
       },
       "children": []

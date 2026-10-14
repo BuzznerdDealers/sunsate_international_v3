@@ -35,7 +35,8 @@
           "textTransform": "uppercase",
           "backgroundImage": "https://vendure.buzznerdrv.com/assets/source/ac/aftermarket-2.jpg",
           "backgroundSize": "cover",
-          "buttonRadius": 8
+          "buttonRadius": 8,
+          "textColor": "#ffffff"
         }
       }
     },
@@ -89,6 +90,11 @@
                         "label": "Aftermarket store hours, Monday through Friday"
                       }
                     ]
+                  },
+                  "styles": {
+                    "base": {
+                      "textColor": "#ffffff"
+                    }
                   }
                 }
               ]
@@ -401,7 +407,8 @@
       },
       "styles": {
         "base": {
-          "buttonRadius": 8
+          "buttonRadius": 8,
+          "textColor": "#ffffff"
         }
       },
       "children": []
