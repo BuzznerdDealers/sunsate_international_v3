@@ -2388,32 +2388,6 @@
                     "snapshot": {
                       "listings": [
                         {
-                          "slug": "8-2026-kenworth-t880",
-                          "href": "products/8-2026-kenworth-t880",
-                          "title": "2026 Kenworth T880",
-                          "price": "$0",
-                          "facts": [
-                            {
-                              "label": "Condition",
-                              "value": "new"
-                            },
-                            {
-                              "label": "Make",
-                              "value": "PACCAR"
-                            },
-                            {
-                              "label": "Mileage",
-                              "value": "10"
-                            }
-                          ],
-                          "image": {
-                            "src": "preview/a9/1.1__03__preview.jpg",
-                            "alt": "2026 Kenworth T880",
-                            "width": 600,
-                            "height": 400
-                          }
-                        },
-                        {
                           "slug": "8-new-blower-motor",
                           "href": "products/8-new-blower-motor",
                           "title": "New blower motor",
@@ -2457,6 +2431,28 @@
                           "image": {
                             "src": "preview/70/c1__02__preview.jpg",
                             "alt": "Hyundai 48\"",
+                            "width": 600,
+                            "height": 400
+                          }
+                        },
+                        {
+                          "slug": "8-international-workstar",
+                          "href": "products/8-international-workstar",
+                          "title": "INTERNATIONAL WORKSTAR",
+                          "price": "$0",
+                          "facts": [
+                            {
+                              "label": "Make",
+                              "value": "INTERNATIONAL"
+                            },
+                            {
+                              "label": "Model",
+                              "value": "WORKSTAR"
+                            }
+                          ],
+                          "image": {
+                            "src": "preview/94/productdetail_gallery_workstar2_dt_1280x450__preview.jpg",
+                            "alt": "INTERNATIONAL WORKSTAR",
                             "width": 600,
                             "height": 400
                           }
