@@ -12,7 +12,7 @@
   "submitLabel": "Send to the finance team",
   "successMessage": "Thanks — a finance manager will be in touch. Nothing you sent is a credit application or a credit check.",
   "consent": {
-    "enabled": true,
+    "enabled": false,
     "required": true,
     "text": "I agree to be contacted about financing by phone, text or email."
   },
@@ -139,5 +139,6 @@
       "contactName": "Sun State International",
       "email": "leads@sunstateintl.com,e-contact@sunstateintl.com,ash@buzznerd.com,sharma@buzznerd.com"
     }
-  ]
+  ],
+  "updatedAt": "2026-10-14T18:52:45.794Z"
 }
