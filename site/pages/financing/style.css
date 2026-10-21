@@ -52,3 +52,12 @@
     border-color: #fff;
   }
 }
+
+/* --- Lending partners accordion ---------------------------------------------
+   The partners are a faq widget so each one opens on its (+) and starts closed.
+   The site-wide FAQ-band rules (custom-code.json) key on `:has(.bz-faqs)` and
+   would shrink this band to the 900px FAQ well; keep it the 7/5 split it is. */
+[data-bz-node="fin-lenders"].bz-section { padding-block: var(--bz-pad, var(--space-7)); }
+[data-bz-node="fin-lenders"].bz-section > .bz-container { max-width: calc(1280px + 2 * var(--container-pad)); }
+[data-bz-node="fin-lenders"].bz-section .bz-block h2 { font-size: var(--text-h2); margin-bottom: var(--space-4); }
+[data-bz-node="fin-lenders"] .bz-faqs { margin-block: 24px 28px; }
