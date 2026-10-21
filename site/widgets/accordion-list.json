@@ -1,7 +1,7 @@
 {
   "id": "accordion-list",
   "label": "Accordion list",
-  "description": "Titles with a + that open to show their text, closed until clicked. Drawn with <details>, so it opens with the keyboard and needs no script. Ruled like the Feature list, so it sits flush above one.",
+  "description": "Titles with a + that open to show their text, closed until clicked. Drawn with <details>, so it opens with the keyboard and needs no script. Typeset like the Feature list and ruled the same way, so it sits flush above one, and uses the same accent + marker as the FAQ accordion.",
   "props": [
     {
       "key": "items",
@@ -22,5 +22,5 @@
     }
   ],
   "html": "<div class=\"ss-acc\">{{#each items}}<details class=\"ss-acc__i\"><summary class=\"ss-acc__t\">{{label}}</summary><p class=\"ss-acc__d\">{{desc}}</p></details>{{/each}}</div>",
-  "css": ".ss-acc__i{border-top:1px solid var(--line);padding:24px 0}\n.ss-acc__t{display:flex;align-items:center;justify-content:space-between;gap:16px;cursor:pointer;list-style:none;font:800 20px/1.3 var(--font-heading);color:var(--ink);text-transform:uppercase;letter-spacing:.01em}\n.ss-acc__t::-webkit-details-marker{display:none}\n.ss-acc__t::after{content:\"+\";flex:none;width:24px;text-align:center;font:400 26px/1 var(--font-body);color:var(--ink)}\n.ss-acc__i[open] .ss-acc__t::after{content:\"×\"}\n.ss-acc__t:focus-visible{outline:2px solid var(--accent);outline-offset:4px}\n.ss-acc__d{font-size:16px;line-height:1.85;color:var(--body-text);margin:20px 0 0}"
+  "css": ".ss-acc__i{border-top:1px solid var(--line)}\n.ss-acc__t{display:flex;align-items:flex-start;justify-content:space-between;gap:24px;padding:16px 0;cursor:pointer;list-style:none;font:400 15px/1.5 var(--font-body);color:var(--body-text)}\n.ss-acc__t::-webkit-details-marker{display:none}\n.ss-acc__t::after{content:\"+\";flex:none;font:400 22px/1.4 var(--font-body);color:var(--accent);transition:transform .18s ease}\n.ss-acc__i[open] .ss-acc__t::after{transform:rotate(45deg)}\n.ss-acc__t:focus-visible{outline:2px solid var(--accent);outline-offset:4px}\n.ss-acc__i[open] .ss-acc__t{padding-bottom:0}\n.ss-acc__d{font-size:15px;line-height:1.5;color:var(--muted);margin:0;padding:0 0 16px}\n@media (prefers-reduced-motion: reduce){.ss-acc__t::after{transition:none}}"
 }
