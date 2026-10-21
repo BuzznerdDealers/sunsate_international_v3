@@ -1,0 +1,26 @@
+{
+  "id": "accordion-list",
+  "label": "Accordion list",
+  "description": "Titles with a + that open to show their text, closed until clicked. Drawn with <details>, so it opens with the keyboard and needs no script. Ruled like the Feature list, so it sits flush above one.",
+  "props": [
+    {
+      "key": "items",
+      "type": "list",
+      "label": "Items",
+      "fields": [
+        {
+          "key": "label",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "key": "desc",
+          "type": "textarea",
+          "label": "Text"
+        }
+      ]
+    }
+  ],
+  "html": "<div class=\"ss-acc\">{{#each items}}<details class=\"ss-acc__i\"><summary class=\"ss-acc__t\">{{label}}</summary><p class=\"ss-acc__d\">{{desc}}</p></details>{{/each}}</div>",
+  "css": ".ss-acc__i{border-top:1px solid var(--line);padding:24px 0}\n.ss-acc__t{display:flex;align-items:center;justify-content:space-between;gap:16px;cursor:pointer;list-style:none;font:800 20px/1.3 var(--font-heading);color:var(--ink);text-transform:uppercase;letter-spacing:.01em}\n.ss-acc__t::-webkit-details-marker{display:none}\n.ss-acc__t::after{content:\"+\";flex:none;width:24px;text-align:center;font:400 26px/1 var(--font-body);color:var(--ink)}\n.ss-acc__i[open] .ss-acc__t::after{content:\"×\"}\n.ss-acc__t:focus-visible{outline:2px solid var(--accent);outline-offset:4px}\n.ss-acc__d{font-size:16px;line-height:1.85;color:var(--body-text);margin:20px 0 0}"
+}
