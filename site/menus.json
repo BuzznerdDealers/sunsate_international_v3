@@ -733,11 +733,19 @@
                 },
                 {
                   "id": "nm-trucks-yard",
-                  "label": "Capacity yard trucks",
-                  "type": "page",
-                  "ref": "capacity-yard-trucks",
+                  "label": "Capacity Yard",
+                  "type": "inventory",
+                  "ref": "inventory/truck?fvid=182",
                   "url": null,
                   "newTab": false,
+                  "children": []
+                },
+                {
+                  "id": "item-72",
+                  "label": "International ",
+                  "type": "inventory",
+                  "url": null,
+                  "ref": "inventory/truck?fvid=153",
                   "children": []
                 }
               ]
@@ -746,23 +754,26 @@
               "id": "item-71",
               "label": "Shop Brands",
               "type": "label",
-              "url": null,
               "ref": null,
+              "url": null,
+              "newTab": false,
               "children": [
                 {
                   "id": "item-72",
                   "label": "International",
                   "type": "url",
-                  "url": "/store/showrooms?fvid=84",
                   "ref": null,
+                  "url": "/store/showrooms?fvid=84",
+                  "newTab": false,
                   "children": []
                 },
                 {
                   "id": "item-73",
                   "label": "Capacity Yard",
                   "type": "url",
-                  "url": "/store/showrooms?fvid=86",
                   "ref": null,
+                  "url": "/store/showrooms?fvid=86",
+                  "newTab": false,
                   "children": []
                 }
               ]
