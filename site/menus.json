@@ -744,8 +744,9 @@
                   "id": "item-72",
                   "label": "International ",
                   "type": "inventory",
-                  "url": null,
                   "ref": "inventory/truck?fvid=153",
+                  "url": null,
+                  "newTab": false,
                   "children": []
                 }
               ]
@@ -864,16 +865,18 @@
                   "id": "item-73",
                   "label": "Hyundai ",
                   "type": "inventory",
-                  "url": null,
                   "ref": "inventory/trailer?fvid=168",
+                  "url": null,
+                  "newTab": false,
                   "children": []
                 },
                 {
                   "id": "item-74",
                   "label": "Globe ",
                   "type": "inventory",
+                  "ref": "https://sunstateintl.com/store/inventory/trailer?fvid=195",
                   "url": null,
-                  "ref": "/store/inventory/trailer?fvid=195",
+                  "newTab": false,
                   "children": []
                 }
               ]
