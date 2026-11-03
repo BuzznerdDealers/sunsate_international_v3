@@ -10,7 +10,7 @@
   "submitLabel": "Submit service request",
   "successMessage": "Request received. Submitting a request does not confirm an appointment — a service advisor will contact you by phone or email to confirm the date, time and scope of work.",
   "consent": {
-    "enabled": true,
+    "enabled": false,
     "required": true,
     "text": "I agree to be contacted about this service request by phone, text or email."
   },
@@ -256,5 +256,5 @@
       "contactName": "Service Appointment "
     }
   ],
-  "updatedAt": "2026-09-29T20:37:38.813Z"
+  "updatedAt": "2026-11-03T16:49:44.332Z"
 }
